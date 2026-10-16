@@ -153,3 +153,231 @@ body { background: radial-gradient(ellipse at 50% 30%, #49314d, #100d19 75%); }
 @media (prefers-reduced-motion: reduce) {
   button { transition: none; }
 }
+
+/* UI v2 art direction. Use the supplied frames themselves across every screen. */
+:root {
+  --v2-button: url('assets/ui-v2/button-violet.webp');
+  --v2-gold: url('assets/ui-v2/button-gold.webp');
+  --v2-danger: url('assets/ui-v2/button-danger.webp');
+  --v2-panel: url('assets/ui-v2/panel-wide.webp');
+  --v2-slot: url('assets/ui-v2/slot-square.webp');
+  --v2-tab: url('assets/ui-v2/tab-inactive.webp');
+  --v2-active: url('assets/ui-v2/tab-active.webp');
+}
+button { -webkit-tap-highlight-color: transparent; }
+button:hover:not(:disabled) { filter: brightness(1.15); }
+button:focus-visible { outline: 2px solid #c5f4df; outline-offset: 3px; }
+button:disabled { cursor: not-allowed; }
+.coin-icon { width: 25px; height: 27px; }
+
+/* Image buttons include transparent ornament margins; enlarge only vertically. */
+:is(#enter-battle, #result-again, #buy-staff-pack, #promo-next, #guide-next,
+    .summon-row .summon, .shop-row button:not(.equipped)) {
+  background: var(--v2-gold) center / 100% 165% no-repeat;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #442315;
+  text-shadow: 0 1px #ffe9a9;
+  padding-inline: 22px;
+}
+:is(.battle-top button, #upgrade-open, #start, #skill, #skill-help,
+    #result-home, #retry-reward, #shop-to-roster, #deck-close, #equipment-close,
+    #info-close, #guide-next, #menu button, #leave button, #perk button,
+    .staff-action, .archive-back, .sheet-head button, .comic-nav button) {
+  background: var(--v2-button) center / 100% 165% no-repeat;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #fff0c7;
+  text-shadow: 0 2px #25102e;
+}
+:is(#reset, #leave-confirm) { background-image: var(--v2-danger) !important; }
+:is(#enter-battle, #result-again, #buy-staff-pack, .summon-row .summon):active:not(:disabled) {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.app-header { background: linear-gradient(#30203c, #1e142b); border-color: #997044; }
+.profile-mark { background-color: transparent; border: 0; border-radius: 0; }
+.wallet { min-width: 83px; min-height: 42px; padding: 7px 14px; gap: 4px; background: url('assets/ui-v2/hud-capsule.webp') center / 100% 160% no-repeat; border: 0; box-shadow: none; }
+.app-header #menu-open { border: 0; box-shadow: none; background: var(--v2-tab) center / 100% 100% no-repeat; }
+#lobby .lobby-title { top: 10px; left: 0; right: 0; text-align: center; }
+#lobby .lobby-title .title-eyebrow { font-size: 9px; letter-spacing: 3px; text-shadow: 0 2px 5px #10081f; }
+#lobby .lobby-title h1 { width: clamp(180px, 54vw, 235px); margin: -3px auto -7px; }
+#lobby .lobby-title p { background: transparent; box-shadow: none; padding: 0; color: #f4d7ac; font-size: 10px; text-shadow: 0 2px 4px #150d22; }
+#lobby .lobby-shortcuts { top: auto; bottom: 40px; right: 14px; }
+#lobby .lobby-shortcuts button { background: var(--v2-tab) center / 120% 125% no-repeat; width: 53px; height: 59px; border: 0; box-shadow: none; padding: 9px 5px; }
+#lobby .lobby-gobi, #lobby .lobby-gobi[data-motion] { height: 55%; max-height: 55%; max-width: 49%; bottom: 5%; right: 27%; }
+#lobby .lobby-badge { left: 50%; transform: translateX(-50%); bottom: 8px; border: 0; background: #1a102bdd; padding: 5px 11px; font-size: 9px; }
+#lobby .lobby-bottom { background: linear-gradient(#241530f5, #160e22); border-top: 1px solid #b98d4d; padding-top: 10px; }
+#lobby .mode-card { min-height: 59px; padding: 10px 22px; margin-bottom: 8px; background: var(--v2-panel) center / 100% 140% no-repeat; border: 0; box-shadow: none; }
+#lobby .mode-card > span { width: 25px; }
+#lobby .mode-card small { font-size: 9px; letter-spacing: 1px; }
+#lobby .mode-card b { font-size: 14px; }
+#lobby .mode-card .mode-label { border: 0; background: #142b26; border-radius: 2px; padding: 5px 7px; font-size: 8px; }
+#lobby #deck-open { border: 0; background: var(--v2-panel) center / 100% 170% no-repeat; padding-inline: 29px; box-shadow: none; height: 53px; min-height: 53px; margin-bottom: 9px; }
+#lobby #deck-summary { gap: 1px; }
+#lobby #deck-summary img, #lobby #deck-summary canvas { padding: 3px; background: var(--v2-slot) center / 100% 100% no-repeat; height: 36px; width: 32px; max-height: 36px; }
+#lobby #deck-label { font-size: 10px; }
+#lobby .support-label { font-size: 9px; color: #e9cd9d; margin: 0 7px 3px; }
+#lobby .merc-slot { background: var(--v2-panel) center / 100% 175% no-repeat; border: 0; padding: 7px 30px; min-height: 43px; font-size: 10px; margin-bottom: 8px; }
+#lobby #enter-battle { min-height: 65px; font-size: 25px; padding-block: 8px; background: var(--v2-gold) center / 100% 160% no-repeat; box-shadow: none; border: 0; }
+#lobby #enter-battle small { font-size: 9px; color: #68401d; }
+#lobby #enter-battle > span { line-height: 28px; }
+#lobby #enter-battle small { line-height: 12px; margin-top: 0; }
+#lobby #enter-battle > b { display: none; }
+#lobby .reward-hint { font-size: 9px; margin: 6px 0 8px; }
+#lobby .lobby-links { padding-top: 6px; gap: 2px; border-top-color: #6b4a51; background: #180e24; }
+#lobby .lobby-links button { min-height: 61px; background: var(--v2-tab) center / 120% 125% no-repeat; border: 0; padding: 10px 3px 8px; gap: 2px; border-radius: 0; color: #d2b9db; }
+#lobby .lobby-links .nav-home { background: var(--v2-active) center / 120% 125% no-repeat; border: 0; color: #ffe8aa; }
+#lobby .lobby-links .ui-icon { width: 23px; height: 23px; opacity: 1; }
+#lobby .lobby-links span { font-size: 9px; }
+
+.battle-top { background: linear-gradient(#352040, #20132c); border-color: #a07548; }
+.wave-pill { background: url('assets/ui-v2/hud-capsule.webp') center / 100% 155% no-repeat; border: 0; padding-inline: 12px; }
+.battle-top button { padding-inline: 12px; }
+.battle-controls { background: linear-gradient(#2b1838, #170e24); }
+.battle-notice { background: url('assets/ui-v2/dialogue-panel.webp') center / 100% 160% no-repeat; border: 0; padding: 6px 17px; }
+.summon-row > span { border: 0; background: url('assets/ui-v2/hud-capsule.webp') center / 100% 160% no-repeat; padding-inline: 9px; }
+.summon-row #upgrade-open { background: var(--v2-tab) center / 100% 100% no-repeat; border: 0; box-shadow: none; }
+.skill-row #skill, .skill-row #skill-help { border: 0; background: var(--v2-button) center / 100% 165% no-repeat; box-shadow: none; }
+.item-buttons button { border: 0; background: var(--v2-panel) center / 100% 155% no-repeat; box-shadow: none; padding-inline: 8px; }
+.item-buttons button.active { background-image: var(--v2-button); outline-color: #ffe3a0; }
+.item-buttons b { right: 6px; top: 2px; background: #20132b; }
+
+/* Framed rooms retain a scrollable content surface on small devices. */
+dialog::backdrop { background: #100919cf; backdrop-filter: blur(5px); }
+.bottom-sheet {
+  border: 0;
+  border-radius: 0;
+  background: url('assets/ui-v2/panel-modal.webp') center / 100% 100% no-repeat, #21122eee;
+  box-shadow: 0 -12px 60px #090610aa;
+  padding: 28px 24px max(24px, env(safe-area-inset-bottom));
+}
+.bottom-sheet::before { display: none; }
+.sheet-head { border-bottom: 1px solid #bd8c4d77; box-shadow: none; padding-bottom: 12px; margin-bottom: 15px; align-items: center; }
+.sheet-head h2 { font-size: 24px; letter-spacing: -1px; margin: 5px 0; }
+.sheet-head small { font-size: 8px; color: #d7b77d; letter-spacing: 2px; }
+.sheet-head button { min-height: 44px; min-width: 70px; padding: 6px 12px; font-size: 11px; }
+#shop, #roster {
+  border: 0;
+  padding: 24px 20px max(25px, env(safe-area-inset-bottom));
+  background-color: #1c102a;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+  box-shadow: inset 0 0 40px #140a24;
+}
+#shop { background-image: linear-gradient(#160b2633, #160b2688 30%, #160b26ee 85%), url('assets/ui-v2/background-market.webp'); }
+#roster { background-image: linear-gradient(#160b2633, #160b2677 40%, #160b26ee 85%), url('assets/ui-v2/background-archive.webp'); }
+#shop .sheet-head, #roster .sheet-head { background: #1c102abb; margin-inline: -4px; padding: 10px 9px; border-bottom: 1px solid #a0784f; }
+#shop-close { position: static; width: auto; background: var(--v2-button) center / 100% 165% no-repeat; }
+.shop-wallet { background: url('assets/ui-v2/hud-capsule.webp') center / 100% 160% no-repeat; box-shadow: none; border: 0; padding: 16px 36px; }
+.shop-wallet > span { color: #dfc18a; font-size: 9px; letter-spacing: 2px; }
+.shop-tabs { gap: 8px; margin-top: 14px; }
+.shop-tabs button, .archive-tabs button { background: var(--v2-button) center / 100% 150% no-repeat; min-height: 46px; border: 0; border-radius: 0; box-shadow: none; font-size: 11px; color: #bfa7ce; padding: 7px 12px; }
+.shop-tabs button.active, .archive-tabs button.active { background: var(--v2-gold) center / 100% 150% no-repeat; color: #472817; text-shadow: none; box-shadow: none; border: 0; }
+.recruit-shop { background: url('assets/ui-v2/panel-modal.webp') center / 100% 100% no-repeat, #21122dcc; border: 0; border-radius: 0; padding: 32px 40px 40px; margin: 16px 0; }
+.recruit-envelope { width: 92px; height: 96px; background: var(--v2-active) center / 100% 100% no-repeat; border: 0; outline: 0; box-shadow: none; border-radius: 0; transform: none; }
+.recruit-envelope .ui-icon { width: 36px; height: 39px; margin-bottom: 3px; }
+.recruit-envelope small { font-size: 9px; letter-spacing: 1px; }
+.recruit-shop h3 { font-size: 23px; margin-top: 8px; }
+.recruit-shop p { font-size: 11px; }
+#buy-staff-pack { min-height: 54px; border: 0; border-radius: 0; font-size: 13px; }
+#shop-to-roster { min-height: 45px; border: 0; border-radius: 0; font-size: 10px; }
+.shop-row { margin: 11px 0; padding: 15px 17px; gap: 8px; background: var(--v2-panel) center / 100% 120% no-repeat; border: 0; border-radius: 0; box-shadow: none; }
+.shop-row img { border: 0; background: var(--v2-slot) center / 100% 100% no-repeat; padding: 5px; width: 54px; height: 56px; }
+.shop-row button { min-height: 49px; padding-inline: 13px; font-size: 10px !important; }
+#shop .shop-row button:not(.equipped) { min-width: 105px; max-width: 45%; }
+.shop-row button.equipped { background: var(--v2-button) center / 100% 165% no-repeat; border: 0; box-shadow: none; color: #c4eccd; }
+.shop-note { border: 0; background: #21132dcc; padding: 14px; box-shadow: none; }
+.shop-note p { font-size: 10px; }
+
+.archive-banner { background: #21122dbb; border: 0; border-radius: 0; padding: 16px 12px; }
+.archive-banner > b { border-color: #ac834f; color: #eac78f; }
+.archive-banner h3 { color: #ffe1a5; }
+.staff-deck { border: 0; background: url('assets/ui-v2/panel-modal.webp') center / 100% 100% no-repeat, #20122acc; padding: 32px 38px; border-radius: 0; }
+.staff-deck > b { font-size: 11px; }
+.deck-slots { gap: 4px; }
+.deck-slots button, .empty-deck { border: 0; background: var(--v2-slot) center / 100% 100% no-repeat; border-radius: 0; padding: 8px 2px; min-height: 65px; }
+.deck-slots small { font-size: 8px; }
+.deck-slots img, .deck-slots canvas { width: 35px; height: 35px; }
+.archive-tabs { gap: 3px; }
+.archive-tabs button { padding-inline: 7px; font-size: 10px; }
+#roster-list { gap: 12px; }
+.staff-pass { min-height: 268px; padding: 24px 17px 53px; background: url('assets/ui-v2/panel-card.webp') center / 100% 100% no-repeat, #21122b99; border: 0; border-radius: 0; box-shadow: none; align-items: center; text-align: center; }
+.staff-pass:active { box-shadow: none; }
+.pass-meta { position: absolute; top: 32px; left: 0; right: 0; width: auto; font-size: 0; justify-content: center; min-height: 12px; letter-spacing: .3px; }
+.pass-meta b { font-size: 8px; }
+.pass-portrait { height: 105px; margin: 24px 0 3px; }
+.pass-portrait img, .pass-portrait canvas { width: 104px; height: 104px; }
+.pass-job { font-size: 9px; }
+.staff-pass > strong { font-size: 19px; margin: 3px 0 5px; letter-spacing: -.8px; color: #ffe6b0; }
+.pass-role { display: none; }
+.pass-quote { display: none; }
+.pass-open { position: absolute; bottom: 23px; left: 14px; right: 14px; width: auto; border: 0; text-align: center; font-size: 8px; color: #f1d496; padding: 0; }
+.staff-locked { background-color: #1b1128; }
+.dossier-hero { border: 0; border-radius: 0; background: url('assets/ui-v2/panel-card.webp') center / 100% 100% no-repeat, #21132c; padding: 28px 24px 50px; }
+.dossier-hero::before { display: none; }
+.dossier-stamp { right: 22px; top: 45px; }
+.dossier-section { border: 1px solid #96704d66; border-radius: 3px; background: #241430e8; }
+#roster-detail blockquote { background: #2f1c3ee8; border-color: #c99d59; }
+.staff-action { min-height: 48px; }
+.deck-choice { background: var(--v2-slot) center / 100% 100% no-repeat; border: 0; padding: 13px 7px; font-size: 10px; }
+.deck-choice.picked { border: 0; background-image: var(--v2-active); }
+.cards .card { background: var(--v2-panel) center / 100% 120% no-repeat; border: 0; box-shadow: none; padding: 13px; }
+.cards .card b { border: 0; background: #21142d; }
+
+/* The report has its own room, illustrated seal, and supplied ribbon. */
+#result.result-screen { background: linear-gradient(#160c2322, #160c2399 45%, #160c23ee), url('assets/ui-v2/background-result.webp') center top / cover !important; padding: 30px 24px !important; }
+.result-icon { display: grid; place-items: center; width: 130px; height: 140px; margin: 20px auto 12px; border: 0; border-radius: 0; box-shadow: none; background: var(--v2-active) center / 100% 100% no-repeat; }
+.result-icon img { width: 105px; height: 112px; object-fit: contain; image-rendering: pixelated; }
+.result-ribbon { min-height: 68px; display: grid; place-items: center; padding: 12px 35px 4px; background: url('assets/ui-v2/ribbon-result.webp') center / 100% 135% no-repeat; border: 0; font-size: 21px; font-weight: 900; letter-spacing: 4px; }
+.result-eyebrow { display: block; margin: 8px 0 18px; font-size: 9px; letter-spacing: 1px; color: #d3b58b; }
+.result-screen h1 { font-size: 26px; }
+#result-stats > div { border: 0; border-radius: 0; background: var(--v2-panel) center / 100% 170% no-repeat; padding: 14px 36px; font-size: 11px; }
+.result-screen #result-text { border: 0; border-radius: 0; background: url('assets/ui-v2/dialogue-panel.webp') center / 100% 130% no-repeat; padding: 23px; box-shadow: none; font-size: 12px; line-height: 1.8; }
+.result-screen button { min-height: 53px; }
+.result-screen #result-home { background: var(--v2-button) center / 100% 165% no-repeat; border: 0; box-shadow: none; }
+
+@media (max-width: 350px) {
+  #shop, #roster { padding-inline: 12px; }
+  .shop-row { padding-inline: 13px; gap: 5px; }
+  .shop-row img { width: 43px; height: 47px; }
+  #shop .shop-row span { font-size: 11px; }
+  #shop .shop-row small { font-size: 9px; }
+  #shop .shop-row button { min-width: 70px !important; font-size: 9px !important; padding-inline: 7px; }
+  #roster-list { gap: 8px; }
+  .staff-pass { padding-inline: 14px; min-height: 245px; padding-top: 23px; }
+  .pass-portrait { height: 91px; }
+  .pass-portrait img, .pass-portrait canvas { height: 90px; width: 90px; }
+  .staff-pass > strong { font-size: 17px; }
+  .pass-meta { font-size: 5px; }
+  .pass-meta b { font-size: 6px; }
+}
+@media (max-height: 740px) {
+  #lobby .lobby-title h1 { width: 177px; }
+  #lobby .lobby-title p { display: none; }
+  #lobby .lobby-bottom { max-height: 57dvh; padding-top: 6px; }
+  #lobby #deck-open { min-height: 45px; height: 45px; margin-bottom: 6px; }
+  #lobby .merc-slot { min-height: 39px; margin-bottom: 5px; }
+  #lobby #enter-battle { min-height: 58px; font-size: 23px; }
+  #lobby .lobby-links button { min-height: 54px; }
+  #lobby .reward-hint { margin: 4px 0 6px; }
+}
+@media (max-height: 650px) {
+  #lobby .lobby-title h1 { width: 155px; }
+  #lobby .lobby-shortcuts { right: 11px; bottom: 28px; gap: 5px; }
+  #lobby .lobby-shortcuts button { width: 46px; height: 51px; padding-block: 7px; }
+  #lobby .lobby-shortcuts small { font-size: 8px; }
+  #lobby .lobby-badge { display: none; }
+  #lobby .lobby-gobi, #lobby .lobby-gobi[data-motion] { bottom: 2%; }
+  #lobby .lobby-bottom { max-height: 53dvh; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  #lobby .lobby-bottom { max-height: 100%; }
+  #lobby .lobby-title h1 { width: 170px; }
+  #lobby .lobby-gobi, #lobby .lobby-gobi[data-motion] { height: 56%; max-height: 56%; right: 23%; }
+  .result-icon { margin-top: 0; }
+}
