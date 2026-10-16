@@ -1,0 +1,155 @@
+/* Shared UI assets: night violet, warm brass, and readable mobile controls. */
+:root {
+  --ui-muted: #c6b6ce;
+  --ui-edge: #947053;
+  --ui-surface: #291d36;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.ui-icon { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; flex-shrink: 0; }
+body { background: radial-gradient(ellipse at 50% 30%, #49314d, #100d19 75%); }
+#app-shell { border-inline: 1px solid #977650; }
+.app-header { height: 64px; padding: 8px 14px; gap: 10px; border-bottom: 1px solid #9c7754; box-shadow: 0 3px 14px #100b1e88; }
+.brand { flex: 1; padding: 0; border: 0; box-shadow: none; background: none; gap: 9px; }
+.brand > span:last-child { font-size: 13px; }
+.brand small { font-size: 8px; letter-spacing: 1px; color: var(--ui-muted); }
+.profile-mark { width: 36px; height: 38px; border-color: #b89465; background-color: #20162d; }
+.wallet { border: 1px solid #9a774e; box-shadow: inset 0 1px #ead19a22; padding: 7px 10px; min-height: 38px; background: #1a1427; }
+.wallet b { font-size: 17px; }
+.app-header #menu-open { width: 42px; min-height: 42px; box-shadow: inset 0 1px #fff2; border: 1px solid #927151; }
+
+/* The illustration stays spacious; preparation and navigation have fixed places. */
+#lobby.lobby-screen { grid-template-rows: minmax(180px, 1fr) auto; }
+#lobby .lobby-art {
+  background-image: linear-gradient(0deg, #21162c 0%, transparent 24%, #110b1822 100%), url('assets/ui-v2/background-lobby.webp');
+  background-position: center, center 36%;
+  background-size: cover;
+  border-bottom: 0;
+}
+#lobby .lobby-title { top: 12px; left: 16px; right: 70px; }
+#lobby .lobby-title .title-eyebrow { font-size: 10px; letter-spacing: 2px; color: #efdcad; }
+#lobby .lobby-title h1 { width: clamp(175px, 53vw, 245px); max-width: 100%; margin: 0 0 -5px; line-height: 0; }
+#lobby .title-logo { width: 100%; height: auto; display: block; filter: drop-shadow(0 4px 3px #150b20aa); }
+#lobby .lobby-title p { font-size: 11px; border: 0; background: #1d152cbb; padding: 5px 9px; border-radius: 4px; }
+#lobby .lobby-gobi, #lobby .lobby-gobi[data-motion] { height: 60%; max-height: 60%; max-width: 54%; right: 12%; bottom: 8%; filter: drop-shadow(0 9px 8px #100b20aa); }
+#lobby .lobby-shortcuts { top: 18px; right: 14px; gap: 12px; }
+#lobby .lobby-shortcuts button { width: 48px; height: 54px; padding: 5px; border: 1px solid #bc9565; background: #2a1c39e8; box-shadow: inset 0 0 0 3px #4d354e, 0 3px 8px #140c23aa; }
+#lobby .lobby-shortcuts .ui-icon { display: block; margin: 0 auto 2px; width: 23px; height: 23px; }
+#lobby .lobby-shortcuts small { font-size: 9px; }
+#lobby .lobby-badge { left: 16px; bottom: 12px; font-size: 10px; border: 1px solid #8b736a; padding: 6px 9px; border-radius: 20px; background: #21182cdd; box-shadow: none; }
+#lobby .lobby-bottom { padding: 12px 16px 0; max-height: 58dvh; background: linear-gradient(#302039, #1c1529); border-top: 1px solid #b5905d; }
+#lobby .mode-card { padding: 9px 11px; min-height: 59px; margin-bottom: 10px; border: 1px solid #aa855a; box-shadow: inset 0 0 0 3px #21152e; border-radius: 6px; }
+#lobby .mode-card::before, #lobby .mode-card::after { display: none; }
+#lobby .mode-card > span { width: 32px; height: 34px; border: 0; background: none; }
+#lobby .mode-card small { font-size: 10px; color: var(--ui-muted); }
+#lobby .mode-card b { font-size: 15px; }
+#lobby .mode-card .mode-label { font-size: 9px; letter-spacing: 1px; padding: 5px 7px; border: 1px solid #b8dfb2; background: #345b4c; color: #cce8c5; box-shadow: none; }
+#lobby #deck-open { height: 54px; min-height: 54px; max-height: none; padding: 5px 10px; margin-bottom: 11px; background: #20182c; border: 1px solid #79607b; box-shadow: inset 0 1px #fff1; }
+#lobby #deck-summary { flex-basis: 176px; max-width: 54%; height: 38px; gap: 5px; }
+#lobby #deck-summary img, #lobby #deck-summary canvas { max-width: 32px; height: 36px; max-height: 36px; }
+#lobby #deck-label { font-size: 11px; color: #f0d6ac; }
+#lobby .support-label { font-size: 10px; letter-spacing: 1px; margin: 0 2px 5px; color: #ddc9db; }
+#lobby .support-label span { font-size: 10px; color: #baa7c4; }
+#lobby .merc-slot { min-height: 44px; margin-bottom: 12px; padding: 7px 10px; font-size: 11px; border: 1px dashed #8c748e; background: #23192e; box-shadow: none; color: #cdbdd2; }
+#lobby #enter-battle { min-height: 60px; font-size: 23px; border-radius: 6px; letter-spacing: .5px; }
+#lobby #enter-battle::before, #lobby #enter-battle::after { display: none; }
+#lobby #enter-battle small { font-size: 10px; letter-spacing: .5px; margin-top: 2px; }
+#lobby #enter-battle > b { right: 19px; }
+#lobby .reward-hint { font-size: 10px; color: #bfaec5; margin: 11px 0; }
+#lobby .lobby-links { margin: 0 -16px; padding: 7px 8px max(7px, env(safe-area-inset-bottom)); gap: 4px; background: #1b1427; border-top: 1px solid #735269; }
+#lobby .lobby-links button { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 5px; min-height: 56px; border: 1px solid transparent; background: transparent; box-shadow: none; color: #bcabc8; border-radius: 5px; }
+#lobby .lobby-links .ui-icon { width: 25px; height: 25px; opacity: .75; }
+#lobby .lobby-links span { font-size: 10px; margin: 0; }
+#lobby .lobby-links .nav-home { border-color: #a58051; background: linear-gradient(#50384c, #322337); color: #ffe3a1; transform: none; }
+#lobby .nav-home .ui-icon { opacity: 1; }
+
+/* Combat: distinct resources, primary actions, and secondary equipment controls. */
+.battle-top { height: 56px; padding: 6px 10px; gap: 8px; background: #2a1e36; }
+.battle-top button { min-height: 42px; font-size: 11px; padding: 6px 10px; border-color: #876780; box-shadow: inset 0 1px #ffffff19; }
+.wave-pill { padding: 5px 9px; min-height: 38px; border-color: #a58259; box-shadow: none; }
+.wave-pill b { font-size: 20px; }
+.battle-top #life { font-size: 20px; }
+.battle-sub { padding: 6px 0; }
+.battle-sub #enemy-preview { font-size: 10px; color: #cbb8d1; }
+#tutorial-strip { padding: 6px 10px; font-size: 11px; line-height: 1.5; background: #534039; color: #ffe5af; }
+#next-boss { padding: 5px 10px; font-size: 10px; }
+.board-stage { padding: 7px 10px; background: radial-gradient(ellipse, #4b3455, #21182d); }
+.board-stage canvas { border: 2px solid #c19a66; border-radius: 5px; box-shadow: 0 0 0 2px #21152d, 0 4px 14px #100b20aa; }
+.battle-controls { padding: 9px 12px max(9px, env(safe-area-inset-bottom)); border-top: 1px solid #ab855c; background: linear-gradient(#35233f, #20172c); box-shadow: inset 0 1px #e4c18e22; }
+.battle-notice { min-height: 39px; height: auto; padding: 4px 7px; margin-bottom: 9px; border-color: #71536e; background: #21172e; }
+.battle-notice #message { font-size: 11px; line-height: 1.45; max-height: 34px; }
+.summon-row { gap: 8px; }
+.summon-row > span { display: flex; align-items: center; justify-content: center; gap: 3px; min-width: 82px; min-height: 48px; padding: 5px; border: 1px solid #668d86; background: #18282d; box-shadow: none; font-size: 10px; }
+.summon-row > span .ui-icon { width: 15px; height: 21px; }
+.summon-row #sp { font-size: 19px; }
+.summon-row .summon { min-height: 48px; font-size: 15px; }
+.summon-row #upgrade-open { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 2px; min-height: 48px; min-width: 51px; padding: 4px 7px; font-size: 10px; border: 1px solid #b58bc0; box-shadow: inset 0 1px #efcaff33; }
+#upgrade-open .ui-icon { width: 20px; height: 20px; }
+.start-battle { min-height: 44px; font-size: 13px; border-width: 1px; }
+.skill-row { margin-top: 9px; gap: 7px; }
+.skill-row #skill { min-height: 42px; border-width: 1px; font-size: 12px; }
+.skill-row #skill-help { min-width: 44px; min-height: 44px; }
+.item-buttons { gap: 9px; margin-top: 10px; }
+.item-buttons button { min-height: 49px; border: 1px solid #9a7d68; border-radius: 5px; background: #36283f; box-shadow: inset 0 1px #fff1; }
+.item-buttons span { font-size: 10px; }
+.item-buttons b { right: 2px; top: 2px; font-size: 10px; }
+#item-hint { font-size: 10px; margin-top: 7px; color: #c4adcc; }
+
+@media (max-height: 740px) {
+  .app-header { height: 54px; padding-block: 5px; }
+  #lobby .lobby-bottom { padding-top: 9px; max-height: 58dvh; }
+  #lobby .mode-card { min-height: 48px; padding-block: 6px; margin-bottom: 8px; }
+  #lobby .mode-card b { font-size: 13px; }
+  #lobby #deck-open { height: 44px; min-height: 44px; margin-bottom: 8px; }
+  #lobby .merc-slot { margin-bottom: 9px; }
+  #lobby #enter-battle { min-height: 53px; font-size: 21px; }
+  #lobby .reward-hint { margin: 8px 0; }
+  #lobby .lobby-links button { min-height: 49px; }
+  .battle-top { height: 48px; }
+  .battle-controls { padding: 6px 10px; }
+  .battle-notice { display: none; }
+  .item-buttons { margin-top: 7px; }
+  .skill-row { margin-top: 6px; }
+}
+@media (max-height: 650px) {
+  #lobby .lobby-title h1 { width: 160px; }
+  #lobby .lobby-title .title-eyebrow { font-size: 9px; }
+  #lobby .support-label { display: none; }
+  #lobby .lobby-bottom { max-height: 56dvh; }
+  #app-shell:has(#battle:not([hidden])) .app-header { display: none; }
+  .battle-top { height: 46px; }
+  .battle-top button { padding: 4px 7px; min-height: 36px; white-space: nowrap; }
+  #tutorial-strip { padding-block: 4px; font-size: 10px; }
+  #next-boss { padding-block: 3px; }
+  .battle-sub { padding-block: 4px; }
+  .battle-controls { padding: 6px 9px; }
+  .summon-row > span, .summon-row .summon, .summon-row #upgrade-open { min-height: 42px; }
+  .start-battle { min-height: 38px; margin-top: 7px; }
+  .skill-row #skill, .skill-row #skill-help { min-height: 38px; }
+  .item-buttons button { min-height: 42px; }
+  #item-hint { margin-top: 5px; font-size: 9px; }
+}
+@media (max-width: 350px) {
+  #lobby #deck-summary { max-width: 48%; gap: 2px; }
+  #lobby #deck-label { font-size: 10px; }
+  .battle-top { gap: 6px; padding-inline: 8px; }
+  .wave-pill { gap: 4px; padding-inline: 7px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  #lobby.lobby-screen { grid-template-rows: minmax(0, 1fr); }
+  #lobby .lobby-bottom { max-height: 100%; padding-top: 8px; }
+  #lobby .mode-card { display: none; }
+  #lobby .lobby-links { position: sticky; }
+  .battle-controls { overflow-y: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  button { transition: none; }
+}
