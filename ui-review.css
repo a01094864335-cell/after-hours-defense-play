@@ -259,3 +259,9 @@ button:disabled{filter:saturate(.4) brightness(.86);color:#d8c8e1;opacity:1}
  #shop:has(#shop-mercs:not([hidden])) .shop-tabs{top:auto;left:auto;right:auto;bottom:auto}
  #shop .shop-row small{word-break:keep-all}
 }
+
+@media(max-width:600px),(max-height:1066px){
+ #shop .recruit-reveal{max-height:min(90dvh,calc(var(--stage-h) - 24px))}
+ #shop .recruit-reveal:has(.recruit-point-guide)>img,#shop .recruit-reveal:has(.recruit-point-guide)>canvas[data-motion]{width:120px;height:140px}
+ #shop .recruit-reveal>p.recruit-point-guide{font-size:14px;line-height:1.5;word-break:keep-all}
+}

@@ -7,7 +7,7 @@ function renderRecruitShop(){
 }
 function revealRecruit(id,duplicate){
  const r=staffRecords.find(r=>r.id===id);
- document.querySelector('#recruit-result').innerHTML='<div class="recruit-reveal"><img src="'+r.image+'" alt="'+r.name+'"><b>'+(duplicate?'다시 만난 동료':'신입 사원 도착!')+'</b><strong>'+r.name+' · '+r.job+'</strong><p>'+(duplicate?'중복 채용 → 채용 포인트 +1':'“'+r.quote+'”<br>직원 도감에서 근무 명단에 넣어주세요.')+'</p></div>';
+ document.querySelector('#recruit-result').innerHTML='<div class="recruit-reveal"><img src="'+r.image+'" alt="'+r.name+'"><b>'+(duplicate?'다시 만난 동료':'신입 사원 도착!')+'</b><strong>'+r.name+' · '+r.job+'</strong><p'+(duplicate?' class="recruit-point-guide"':'')+'>'+ (duplicate?'중복 채용 → 채용 포인트 +1<br>이미 보유한 직원 대신 받는 포인트예요.<br>'+RECRUIT_POINTS+'포인트로 미채용 직원 1명을 골라 채용해요.<br>사용: 직원 도감 → 미채용 → 지정 채용<br>현재 보유 '+meta.recruitPoints+'포인트':'“'+r.quote+'”<br>직원 도감에서 근무 명단에 넣어주세요.')+'</p></div>';
  renderRecruitShop();renderStaffArchive();renderMeta();
 }
 function buyStaffPack(){
