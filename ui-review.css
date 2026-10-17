@@ -265,3 +265,5 @@ button:disabled{filter:saturate(.4) brightness(.86);color:#d8c8e1;opacity:1}
  #shop .recruit-reveal:has(.recruit-point-guide)>img,#shop .recruit-reveal:has(.recruit-point-guide)>canvas[data-motion]{width:120px;height:140px}
  #shop .recruit-reveal>p.recruit-point-guide{font-size:14px;line-height:1.5;word-break:keep-all}
 }
+
+#shop .recruit-shop>p{word-break:keep-all}
