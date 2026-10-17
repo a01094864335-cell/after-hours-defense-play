@@ -444,3 +444,12 @@ button{min-height:48px}
 #shop .shop-row>button{grid-column:2;grid-row:2;justify-self:end;margin:0!important;max-width:100%!important;width:auto;min-width:110px!important;min-height:54px!important}
 #equipment .cards .card{background-size:100% 170%!important}
 @media(max-width:350px){#shop .shop-row{grid-template-columns:44px minmax(0,1fr);column-gap:9px;padding-inline:28px!important}#shop .shop-row>img,#shop .shop-row>canvas[data-motion]{width:44px;height:49px}#shop .shop-row>button{min-width:100px!important;font-size:11px!important}}
+/* Battle/menu inspection: avoid wrapped header labels and ornamental collisions. */
+.battle-top{height:62px!important;min-height:62px;gap:6px!important;align-items:center}
+.battle-top button{height:48px!important;min-height:48px!important;padding:10px 12px!important;font-size:12px!important;line-height:1.2;white-space:nowrap;flex-shrink:0}
+.battle-top #pause{width:48px;min-width:48px;font-size:0!important;padding:10px!important}.battle-top #pause::after{content:'Ⅱ';font-size:20px;line-height:1}.battle-top #pause[aria-label='계속하기']::after{content:'▶';font-size:17px}
+.battle-top #speed{width:48px;min-width:48px;padding-inline:8px!important}.wave-pill{padding-inline:9px!important;gap:4px}.wave-pill b{font-size:18px}
+.battle-notice{min-height:58px!important;height:auto!important;padding:13px 25px!important;background-size:100% 185%!important;align-items:center}.battle-notice #message{font-size:10px;line-height:1.5;max-height:32px}
+.bottom-sheet{padding-top:66px!important;padding-bottom:max(62px,env(safe-area-inset-bottom))!important;background-size:100% 110%!important}
+#promo-skip{min-height:48px!important;min-width:92px;font-size:12px!important;padding:12px 22px!important;background-size:104% 198%!important}
+@media(max-width:350px){.battle-top{gap:4px!important;padding-inline:6px}.battle-top #battle-back{font-size:10px!important;padding-inline:10px!important}.wave-pill small{font-size:7px}.wave-pill{padding-inline:6px!important}.battle-top #life{font-size:17px}.bottom-sheet{padding-inline:23px!important}}
