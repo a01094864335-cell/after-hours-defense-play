@@ -263,3 +263,19 @@
 #roster .archive-tabs button::before{content:'';display:block;width:calc(36*var(--u));height:calc(36*var(--u));flex-shrink:0;background:url('assets/ui-v2/icons/staff.svg') center/contain no-repeat}
 #roster #roster-tab-incoming::before{background-image:url('assets/ui-v2/icons/scroll.svg')}
 #roster #roster-tab-merc::before{background-image:url('assets/ui-v2/icons/shield.svg')}
+/* Product and mercenary artwork have distinct source header dimensions. */
+#shop .ref-market-scene{height:calc(580*var(--u));background-image:url('assets/reference-ui/market-scene.svg?v=3')}
+#shop>.shop-wallet{top:calc(40*var(--u));right:calc(123*var(--u));width:calc(247*var(--u));height:calc(92*var(--u))}
+#shop #shop-close{position:absolute;top:calc(40*var(--u));right:calc(20*var(--u));width:calc(97*var(--u));height:calc(92*var(--u));margin:0}
+#shop .shop-tabs{top:calc(595*var(--u))}
+#shop #shop-items{top:calc(720*var(--u));height:calc(490*var(--u))}
+#shop #shop-items .shop-row{height:calc(490*var(--u))}
+#shop .recruit-shop{top:calc(1230*var(--u));height:calc(390*var(--u))}
+#shop .recruit-envelope{display:block;background:url('assets/reference-ui/recruit-envelope-art.webp') center/contain no-repeat!important;transform:none;outline:0;border:0}
+#shop .recruit-envelope::before{display:none}
+#shop:has(#shop-mercs:not([hidden])) .ref-market-scene{height:calc(550*var(--u));background-image:url('assets/reference-ui/grid-market-mercs.svg?v=3')}
+#shop:has(#shop-mercs:not([hidden]))>.shop-wallet{top:calc(8*var(--u));right:calc(130*var(--u));width:calc(270*var(--u));height:calc(88*var(--u))}
+#shop:has(#shop-mercs:not([hidden])) #shop-close{top:calc(8*var(--u));right:calc(20*var(--u));width:calc(97*var(--u));height:calc(88*var(--u))}
+#shop:has(#shop-mercs:not([hidden])) .shop-tabs{top:calc(550*var(--u))}
+#pause-window #pause-continue{background:var(--gold-button) center/100% 100% no-repeat;color:#3c220f}
+#shop .ref-recruit-actions button:last-child{background-image:var(--violet);color:#f3d9ff}

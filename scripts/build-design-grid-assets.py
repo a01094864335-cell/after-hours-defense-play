@@ -57,3 +57,13 @@ for name, source, top, height in [
     ('night','17-story-night-duty',180,1020),
 ]:
     viewport('grid-story-' + name + '.svg', source, top, height)
+
+
+def live_hud(name, height, rectangles):
+    """Remove painted sample balances/close controls behind the real interactive HUD."""
+    uri = embedded(name)
+    holes = ''.join(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="black"/>' for x,y,w,h in rectangles)
+    (ASSETS / name).write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="941" height="{height}" viewBox="0 0 941 {height}" preserveAspectRatio="none"><defs><mask id="live-hud" maskUnits="userSpaceOnUse"><rect width="941" height="1672" fill="white"/>{holes}</mask></defs><image width="941" height="1672" href="{uri}" mask="url(#live-hud)"/></svg>')
+
+live_hud('market-scene.svg', 580, [(566,35,256,100),(818,35,110,100)])
+live_hud('grid-market-mercs.svg', 550, [(535,3,280,100),(815,3,115,105)])
