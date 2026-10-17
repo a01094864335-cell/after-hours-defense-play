@@ -475,3 +475,7 @@ button{min-height:48px}
 .bottom-sheet .sheet-head{gap:8px}.bottom-sheet .sheet-head button{flex-shrink:0;padding-inline:18px!important}
 .bottom-sheet>button{max-width:100%;box-sizing:border-box}
 @media(max-width:350px){.bottom-sheet{padding-inline:40px!important}.dossier-hero>small{left:38px;right:38px}.dossier-hero>.dossier-stamp{right:37px}.staff-pass .pass-open{font-size:7px;bottom:36px!important}.recruit-shop{padding-inline:35px!important}}
+.dossier-hero>img,.dossier-hero>canvas{top:101px;width:166px!important;height:174px!important}
+.dossier-hero>span:not(.dossier-stamp){top:280px}
+.dossier-hero>h3{top:304px;line-height:30px;font-size:25px}
+.dossier-hero>.dossier-stamp{right:61px}
