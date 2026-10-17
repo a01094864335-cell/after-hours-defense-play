@@ -453,3 +453,5 @@ button{min-height:48px}
 .bottom-sheet{padding-top:66px!important;padding-bottom:max(62px,env(safe-area-inset-bottom))!important;background-size:100% 110%!important}
 #promo-skip{min-height:48px!important;min-width:92px;font-size:12px!important;padding:12px 22px!important;background-size:104% 198%!important}
 @media(max-width:350px){.battle-top{gap:4px!important;padding-inline:6px}.battle-top #battle-back{font-size:10px!important;padding-inline:10px!important}.wave-pill small{font-size:7px}.wave-pill{padding-inline:6px!important}.battle-top #life{font-size:17px}.bottom-sheet{padding-inline:23px!important}}
+/* Keep sheet headings and descriptions inside the frame's side rails. */
+.bottom-sheet>.sheet-head,.bottom-sheet>p{margin-left:22px!important;margin-right:22px!important}
