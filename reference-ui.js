@@ -14,7 +14,7 @@
  q('#shop').insertBefore(q('.recruit-shop'),q('.shop-note'));
  q('#info>h2').textContent='근무 안내';
  const help=q('#info>p:last-of-type');help.outerHTML='<div class="ref-guide-step"><b>①</b><div><h3>직원 소환</h3><p>SP를 사용해 빈 자리에 랜덤 직원을 파견하세요.</p></div><img src="assets/mobile/lobby-gobi.webp" alt="직원 소환"></div><div class="ref-guide-step"><b>②</b><div><h3>같은 종류·등급 합성</h3><p>같은 직원을 합치면 더 높은 등급의 랜덤 직원이 와요. 합성 실패 확률을 확인하세요.</p></div><img src="assets/mobile/item-grade.webp" alt="등급 합성"></div><div class="ref-guide-step"><b>③</b><div><h3>5등급 스킬 해금</h3><p>5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.</p></div><img src="assets/ui-v2/icons/lightning.svg" alt="고유 스킬"></div>';
- const menuHelp=document.createElement('button');menuHelp.id='ref-menu-help';menuHelp.textContent='근무 안내';menuHelp.onclick=()=>{q('#menu').close();q('#help-open').click()};q('#menu').insertBefore(menuHelp,q('#reset'));q('#menu').insertBefore(q('#menu-story'),q('#reset'));q('#menu').insertBefore(q('#reset'),q('#menu-close'));
+ const menuHelp=document.createElement('button');menuHelp.id='ref-menu-help';menuHelp.textContent='근무 안내';menuHelp.onclick=()=>{q('#menu').close();q('#help-open').click()};q('#menu').insertBefore(menuHelp,q('#reset'));q('#menu').insertBefore(q('#menu-story'),menuHelp);q('#menu').insertBefore(q('#reset'),q('#menu-close'));
  const pause=document.createElement('div');pause.id='ref-pause';pause.hidden=true;pause.setAttribute('role','dialog');pause.setAttribute('aria-label','잠깐 쉬는 중');pause.innerHTML='<section id="pause-window"><h2>☾ 잠깐 쉬는 중</h2><div class="ref-pause-art" aria-hidden="true"></div><p>당직은 잠시 멈춰요</p><button id="pause-continue">▶ 계속 근무</button><button id="pause-guide">▤ 근무 안내</button><button id="pause-home">⌂ 로비로</button></section>';q('#battle').append(pause);
  q('#pause-continue').onclick=()=>{paused=false;sync()};q('#pause-guide').onclick=()=>openSheet('info');q('#pause-home').onclick=()=>q('#battle-back').click();pause.addEventListener('keydown',e=>{if(e.key==='Escape'){paused=false;sync()}});
  const stories=['story-first','story-invasion','story-recruitment','story-night'];
@@ -29,7 +29,7 @@
   }
   if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
   document.querySelectorAll('.staff-pass').forEach(card=>{const equipped=String(meta.deck.includes(card.dataset.staff));if(card.dataset.equipped!==equipped)card.dataset.equipped=equipped;const name=card.querySelector('.pass-open');if(name&&/인사기록|채용 방법/.test(name.textContent)){const record=staffRecords.find(r=>r.id===card.dataset.staff);name.textContent=record&&staffOwned(record)?record.name:'???'}card.querySelector(':scope>strong')?.remove()});
-  document.querySelectorAll('#shop-mercs .shop-row button').forEach(button=>{if(button.textContent.includes('글로벌'))button.textContent=button.textContent.replace(' 글로벌 코인 · ',' 코인\n')});
+  document.querySelectorAll('#shop-mercs .shop-row button').forEach(button=>{const label=button.textContent.replace(/\s*(?:글로벌\s*)?코인\s*·\s*(?:영구\s*)?고용/,' 코인\n고용');if(label!==button.textContent)button.textContent=label});
   const reveal=q('.recruit-reveal');if(reveal&&!reveal.querySelector('.ref-recruit-actions')){const actions=document.createElement('div');actions.className='ref-recruit-actions';actions.innerHTML='<button>직원 도감으로</button><button>확인</button>';actions.children[0].onclick=()=>{q('#recruit-result').innerHTML='';q('#shop').close();q('#roster-open').click()};actions.children[1].onclick=()=>q('#recruit-result').innerHTML='';reveal.append(actions)}
   refresh();
  }

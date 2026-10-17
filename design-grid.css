@@ -279,3 +279,39 @@
 #shop:has(#shop-mercs:not([hidden])) .shop-tabs{top:calc(550*var(--u))}
 #pause-window #pause-continue{background:var(--gold-button) center/100% 100% no-repeat;color:#3c220f}
 #shop .ref-recruit-actions button:last-child{background-image:var(--violet);color:#f3d9ff}
+#shop #shop-mercs .shop-row button{word-break:keep-all}
+/* Each comic page retains its own approved navigation arrangement. */
+#promo:has(#promo-face[src*='01-first']) .comic-bottom{left:calc(25*var(--u));right:calc(25*var(--u));bottom:calc(30*var(--u));padding:calc(25*var(--u));isolation:isolate;background:none!important}
+#promo:has(#promo-face[src*='01-first']) .comic-bottom::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;border:calc(24*var(--u)) solid transparent;border-image:var(--grid-card) 24 fill / calc(24*var(--u)) / 0 stretch}
+#promo:has(#promo-face[src*='01-first']) .comic-copy::before{display:none}
+#promo:has(#promo-face[src*='01-first']) .comic-nav{display:grid;grid-template-columns:calc(150*var(--u)) minmax(0,1fr) calc(150*var(--u));margin-inline:calc(115*var(--u))}
+#promo:has(#promo-face[src*='01-first']) #promo-prev{grid-column:1}
+#promo:has(#promo-face[src*='01-first']) #promo-next{grid-column:3}
+#promo:has(#promo-face[src*='01-first']) #promo-count{position:fixed;left:calc(330*var(--u));right:calc(330*var(--u));bottom:calc(55*var(--u));height:calc(110*var(--u));display:grid;place-items:center;font-size:calc(37*var(--u));background:var(--violet) center/100% 100% no-repeat;z-index:7;pointer-events:none}
+#promo:has(#promo-face[src*='01-first']) .comic-nav button{font-size:0}
+#promo:has(#promo-face[src*='01-first']) #promo-prev::before{content:'‹';font-size:calc(75*var(--u));line-height:.8}
+#promo:has(#promo-face[src*='01-first']) #promo-next::before{content:'›';font-size:calc(75*var(--u));line-height:.8}
+#promo:has(#promo-face[src*='02-invasion']) .comic-chapter{left:calc(35*var(--u));right:calc(35*var(--u));top:calc(35*var(--u));height:calc(190*var(--u));padding:calc(25*var(--u));gap:calc(10*var(--u))}
+#promo:has(#promo-face[src*='02-invasion']) .comic-chapter h2{font-size:calc(59*var(--u))}
+#promo:has(#promo-face[src*='02-invasion']) .comic-chapter span{font-size:calc(28*var(--u))}
+#promo:has(#promo-face[src*='02-invasion']) .comic-head #promo-skip{position:fixed;top:calc(160*var(--u));right:calc(25*var(--u));width:calc(175*var(--u));height:calc(80*var(--u));font-size:calc(26*var(--u));padding:calc(15*var(--u))}
+#promo:has(#promo-face[src*='03-emergency']) .comic-chapter{left:calc(25*var(--u));right:auto;top:calc(15*var(--u));width:calc(450*var(--u));height:calc(120*var(--u));padding:calc(20*var(--u))}
+#promo:has(#promo-face[src*='03-emergency']) .comic-chapter h2{font-size:calc(55*var(--u))}
+#promo:has(#promo-face[src*='03-emergency']) #promo-count{position:fixed;top:calc(30*var(--u));right:calc(35*var(--u));width:calc(240*var(--u));height:calc(80*var(--u));display:grid;place-items:center;font-size:calc(37*var(--u));background:var(--violet) center/100% 100% no-repeat;z-index:7}
+#promo:has(#promo-face[src*='03-emergency']) .comic-nav{display:grid;grid-template-columns:calc(200*var(--u)) minmax(0,1fr) calc(200*var(--u));gap:calc(25*var(--u))}
+#promo:has(#promo-face[src*='03-emergency']) #promo-prev{grid-column:1}
+#promo:has(#promo-face[src*='03-emergency']) #promo-next{grid-column:2}
+#promo:has(#promo-face[src*='03-emergency']) .comic-head #promo-skip{position:fixed;top:auto;bottom:calc(30*var(--u));right:calc(25*var(--u));width:calc(200*var(--u));height:calc(155*var(--u));font-size:calc(26*var(--u));line-height:1.3;white-space:normal;padding:calc(25*var(--u))}
+#promo:has(#promo-face[src*='04-night']) .comic-nav{display:grid;grid-template-columns:calc(120*var(--u)) calc(200*var(--u)) minmax(0,1fr);gap:calc(25*var(--u))}
+#promo:has(#promo-face[src*='04-night']) #promo-prev{grid-column:1;font-size:0}
+#promo:has(#promo-face[src*='04-night']) #promo-prev::before{content:'‹';font-size:calc(75*var(--u));line-height:.8}
+#promo:has(#promo-face[src*='04-night']) #promo-next{grid-column:3}
+#promo:has(#promo-face[src*='04-night']) #promo-count{position:fixed;left:calc(170*var(--u));bottom:calc(30*var(--u));width:calc(200*var(--u));height:calc(110*var(--u));display:grid;place-items:center;font-size:calc(37*var(--u));background:var(--violet) center/100% 100% no-repeat;z-index:7;pointer-events:none}
+#promo:has(#promo-face[src*='01-first']) .comic-chapter{left:calc(215*var(--u));right:calc(215*var(--u));top:calc(35*var(--u));height:calc(120*var(--u))}
+#promo:has(#promo-face[src*='01-first']) .comic-chapter h2{font-size:calc(55*var(--u))}
+#promo:has(#promo-face[src*='02-invasion']) .comic-chapter{flex-direction:column-reverse}
+#promo:has(#promo-face[src*='04-night']) .comic-chapter{left:calc(130*var(--u));right:calc(130*var(--u));top:calc(30*var(--u));height:calc(140*var(--u))}
+#promo:has(#promo-face[src*='04-night']) .comic-chapter h2{font-size:calc(50*var(--u))}
+#promo:has(#promo-face[src*='04-night']) .comic-head #promo-skip{display:none}
+#promo:has(#promo-face[src*='01-first']) .comic-chapter,#promo:has(#promo-face[src*='03-emergency']) .comic-chapter,#promo:has(#promo-face[src*='04-night']) .comic-chapter{z-index:8}
+#promo #promo-count{color:#f3d7a3;opacity:1}
