@@ -1,0 +1,21 @@
+/* Let the illustration keep its source ratio in the space between title and dialogue. */
+#promo[open]{display:grid!important;grid-template-rows:76px minmax(0,1fr) auto;height:100dvh;max-height:100dvh}
+#promo .comic-head{position:absolute;inset:0 0 auto;height:76px;padding:0}
+#promo .comic-stage{position:relative;inset:auto;grid-row:2;min-height:0;overflow:visible;background:none}
+#promo .comic-stage::before{inset:0!important;width:auto!important;height:auto!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important}
+#promo .comic-chapter{position:fixed!important;top:10px!important;left:12px!important;right:108px!important;bottom:auto!important;width:auto!important;height:56px!important;min-height:0!important;padding:8px 12px!important;gap:3px!important;flex-direction:column!important;z-index:8}
+#promo .comic-chapter h2{font-size:20px!important;line-height:1.25!important}
+#promo #promo-count{position:static!important;inset:auto!important;width:auto!important;height:auto!important;background:none!important;font-size:12px!important;line-height:1.3!important}
+#promo .comic-head #promo-skip{display:block!important;position:fixed!important;top:14px!important;right:10px!important;bottom:auto!important;width:90px!important;height:44px!important;min-height:44px;padding:8px!important;font-size:12px!important;line-height:1.4}
+#promo .comic-bottom{position:relative!important;inset:auto!important;grid-row:3;min-height:0;padding:10px!important;background:#21142d!important}
+#promo .comic-bottom::before{display:none!important}
+#promo .comic-copy{min-height:0!important;max-height:30dvh!important;height:auto;margin:0 0 8px;padding:34px 14px 12px!important;overflow:auto}
+#promo .comic-copy::before{display:block!important}
+#promo .comic-copy #promo-speaker{position:absolute;top:10px;left:14px;font-size:12px;line-height:1.5}
+#promo .comic-copy #promo-line,#promo .comic-copy #promo-aside{font-size:14px!important;line-height:1.5!important}
+#promo .comic-nav{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important;height:44px!important;margin:0!important}
+#promo .comic-nav button{height:44px!important;min-height:44px;padding:10px!important;font-size:14px!important;line-height:1.4}
+#promo .comic-nav button::before{display:none!important}
+#promo #promo-prev{grid-column:1!important}
+#promo #promo-next{grid-column:2!important}
+#promo{background:#21142d!important}
