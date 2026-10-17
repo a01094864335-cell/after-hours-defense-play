@@ -9,9 +9,9 @@ const staffIdentity=[
  ['루프','심야 배송팀','벽도 군단도 통과하는 유령 배달부. 수취인 부재라는 말은 모른다.','특급 배송이요! 방패 너머까지 갑니다~','시간 엄수 · 낙천적','#a5e9d5']
 ];
 const staffRecords=kinds.slice(0,6).map((k,i)=>({id:k.file,name:staffIdentity[i][0],job:k.name,dept:staffIdentity[i][1],story:staffIdentity[i][2],quote:staffIdentity[i][3],traits:staffIdentity[i][4],color:staffIdentity[i][5],group:'staff',image:'assets/pixel/'+k.file+'.webp',role:roles[i],ability:[
- '가장 앞선 적 한 명에게 석궁을 발사합니다. 기본 피해 12 · 기본 간격 0.8초.',
- '선두 적 주변 반경 65 안의 적을 함께 공격합니다. 기본 피해 23 · 기본 간격 1.5초.',
- '세제 공격으로 2초간 이동 속도를 50% 낮춥니다. 기본 피해 4 · 기본 간격 1.1초.',
+ '가장 앞선 적 한 명에게 석궁을 발사합니다. 기본 피해 14 · 기본 간격 0.8초.',
+ '선두 적 주변 반경 65 안의 적을 함께 공격합니다. 기본 피해 20 · 기본 간격 1.5초.',
+ '세제 공격으로 2초간 이동 속도를 50% 낮춥니다. 군단장에게는 25% 감속. 기본 피해 5 · 기본 간격 1.1초.',
  '5초마다 등급 × (5 + 장비 레벨 × 2) SP를 생산합니다. 직접 공격은 하지 않습니다.',
  '130 거리 안의 적에게 최대 3명까지 번개를 연결합니다. 기본 피해 16, 다음 대상마다 80%로 감소 · 기본 간격 1.25초.',
  '일직선 경로의 적들을 관통하는 소포를 던집니다. 기본 피해 20 · 기본 간격 1.4초.'
@@ -32,6 +32,10 @@ for(const [id,name,job,dept,role,story,quote,traits,color,skill,ability,ultimate
 ].forEach(([key,name,dept,role,story,quote,traits,color,skill])=>{const k=mercCatalog[key];staffRecords.push({id:'merc-'+key,name,job:k.name,dept,role,story,quote,traits,color,group:'merc',image:'assets/mobile/merc-'+key+'.webp',ability:k.desc,skill,skillText:'보드 밖에서 자동 발동 · 당직 시작 전 1명 장착',status:'특수 용병',price:k.price})});
 for(let i=0;i<RECRUIT_STAFF.length;i++){const r=staffRecords.find(v=>v.id===RECRUIT_STAFF[i]);r.ability=kinds[i+6].desc;r.skill=skillNames[i+6];r.skillText=skillDescriptions[i+6]+' · 재사용 20초';}
 function staffOwned(r){return r.group==='merc'?meta.owned.includes(r.id.slice(5)):meta.staff.includes(r.id)}
+// Numeric support rules stay visible in the employee dossier.
+staffRecords.find(r=>r.id==='kobold-recruiter').ability='상하좌우 직원 공속 +[12 + (등급-1)×3 + (장비 Lv.-1)×2]%, 최대 38%. 여러 명이면 가장 높은 효과만 적용합니다. 기절 중에는 지원이 멈춥니다.';
+staffRecords.find(r=>r.id==='nightmare-counselor').ability='기본 피해 10 · 간격 1.6초. 대상마다 2초에 한 번 스킬을 0.5초 지연하며 군단장은 0.2초만 지연합니다.';
+staffRecords.find(r=>r.id==='skeleton-chef').ability='기본 피해 10 · 간격 1.6초. 4초간 초당 6×[1+(등급-1)×0.3]×장비 배수의 화상. 중첩하지 않고 가장 강한 화상만 적용하며 각 화상의 시간은 독립적입니다.';
 function staffStatus(r){return staffOwned(r)?r.group==='merc'?'고용 완료':meta.deck.includes(r.id)?'근무 편성':'채용 완료':'미채용'}
 let rosterGroup='staff',rosterSelected=null;
 function renderStaffArchive(){
