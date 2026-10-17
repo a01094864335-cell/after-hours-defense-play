@@ -479,3 +479,5 @@ button{min-height:48px}
 .dossier-hero>span:not(.dossier-stamp){top:280px}
 .dossier-hero>h3{top:304px;line-height:30px;font-size:25px}
 .dossier-hero>.dossier-stamp{right:61px}
+
+.staff-pass .pass-open{font-size:14px!important;font-weight:900;line-height:20px!important;bottom:35px!important;color:#ffe6b0}
