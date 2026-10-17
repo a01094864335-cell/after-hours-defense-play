@@ -29,6 +29,9 @@ def frame(name, rect, corner, uri, gold=False):
         if name == 'archive-slot-frame.svg' and index == 1:
             # The source top-right check badge overlaps its corner: mirror the clean left corner.
             parts.append(f'<g transform="translate({width} 0) scale(-1 1)"><svg x="0" y="0" width="{k}" height="{k}" viewBox="{x} {y} {k} {k}" preserveAspectRatio="none"><use href="#art"/></svg></g>')
+        elif name == 'archive-deck-frame.svg' and index == 5:
+            # Source labels touch the bottom edge. Mirror the clean top strip instead.
+            parts.append(f'<g transform="translate(0 {height}) scale(1 -1)"><svg x="{k}" y="0" width="{width-2*k}" height="{k}" viewBox="{x+width/2} {y} 20 {k}" preserveAspectRatio="none"><use href="#art"/></svg></g>')
         else:
             parts.append(f'<svg x="{dx}" y="{dy}" width="{dw}" height="{dh}" viewBox="{sx} {sy} {sw} {sh}" preserveAspectRatio="none"><use href="#art"/></svg>')
     (ASSETS / name).write_text(''.join(parts) + '</svg>')
