@@ -2,7 +2,7 @@
 function renderRecruitShop(){
  const allHired=RECRUIT_STAFF.every(id=>meta.staff.includes(id));
  const button=document.querySelector('#buy-staff-pack');button.disabled=!!saveWarning||meta.coins<PACK_PRICE||allHired||playing&&!ended;
- button.textContent=allHired?'전 직원 채용 완료':playing&&!ended?'당직 종료 후 채용 가능':PACK_PRICE+' 글로벌 코인 · 채용팩 열기';
+ button.textContent=allHired?'전 직원 채용 완료':playing&&!ended?'당직 종료 후 채용 가능':PACK_PRICE+' 코인 · 채용팩 열기'+(meta.coins<PACK_PRICE?' · '+(PACK_PRICE-meta.coins)+'코인 부족':'');
  document.querySelector('#recruit-balance').textContent='보유 '+meta.coins+' 코인 · 채용 포인트 '+meta.recruitPoints+' / '+RECRUIT_POINTS;
 }
 function revealRecruit(id,duplicate){
