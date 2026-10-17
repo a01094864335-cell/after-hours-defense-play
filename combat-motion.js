@@ -3,8 +3,8 @@ let mercGesture = { motionState: null };
 function cueMercenary() { Motion.start(mercGesture, 'skill', .8); }
 function animateDefeat(e) {
   if (!Number.isFinite(e.x) || !legion[e.type]) return;
-  burst('defeat', e.x, e.y, legion[e.type].color, .38,
-    { sprite: legion[e.type].file, size: e.type === 'boss' ? 68 : 40 });
+  burst('defeat', e.x, e.y, enemyDefinition(e).color, .38,
+    { sprite: enemyDefinition(e).file, size: e.type === 'boss' ? 68 : 40 });
 }
 function drawAmbient() {
   if (reduce?.matches) return;
@@ -43,13 +43,14 @@ function drawEnemyMotion(e,h) {
   const moving=!reduce?.matches&&!(e.freeze>0),step=moving?Math.sin(e.progress/8):0;
   let pose=Motion.frame('walk',e.progress/65);
   if(e.freeze>0)pose=0;
-  if(e.cast>0)pose=Motion.frame('cast',.6-e.cast,.6);
   if(e.hurt>0)pose=5;
-  ctx.save();
+  if(e.cast>0)pose=Motion.frame('cast',.6-e.cast,.6);
+  if(e.type==='boss'&&e.warning)pose=3;
+  ctx.save();if(e.decoy)ctx.globalAlpha=.55;
   ctx.fillStyle='#100b243d';ctx.beginPath();ctx.ellipse(e.x,e.y+10,h*.22,4,0,0,Math.PI*2);ctx.fill();
   const recoil=reduce?.matches?0:e.hurt/0.15*2;
-  if(e.rush>0&&!reduce?.matches){Motion.draw(ctx,legion[e.type].file,e.x-6,e.y+12,h*.91,pose,{alpha:.18})}
-  if(!Motion.draw(ctx,legion[e.type].file,e.x-recoil,e.y+12-Math.abs(step),h*.91,pose))image(legion[e.type].file,e.x,e.y+13,h);
+  if(e.rush>0&&!reduce?.matches){Motion.draw(ctx,enemyDefinition(e).file,e.x-6,e.y+12,h*.91,pose,{alpha:.18})}
+  if(!Motion.draw(ctx,enemyDefinition(e).file,e.x-recoil,e.y+12-Math.abs(step),h*.91,pose))image(e.type==='boss'?'hero-leon':enemyDefinition(e).file,e.x,e.y+13,h);
   ctx.restore();
 }
 function drawMercenary() {
