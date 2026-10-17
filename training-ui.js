@@ -1,0 +1,28 @@
+'use strict';
+let trainingGroup='staff',trainingResume=false,trainingRenderKey='';
+function renderTraining(){
+ const q=s=>document.querySelector(s),entry=q('#training-entry-summary');
+ if(entry)entry.textContent='직원 '+trainingLevel('staff',false)+' · 용병 '+trainingLevel('merc',false)+' →';
+ const dialog=q('#training-dialog');if(!dialog)return;
+ const key=[trainingGroup,meta.coins,meta.training.staff,meta.training.merc,playing,ended,saveWarning,meta.staff.join(','),meta.owned.join(',')].join('|');if(key===trainingRenderKey)return;trainingRenderKey=key;
+ const group=trainingGroup,level=trainingLevel(group,false),next=Math.min(TRAINING_MAX,level+1),price=trainingCost(level),milestone=TRAINING_MILESTONES.find(n=>n>level),locked=playing&&!ended;
+ q('#training-tab-staff').setAttribute('aria-pressed',String(group==='staff'));q('#training-tab-merc').setAttribute('aria-pressed',String(group==='merc'));
+ q('#training-tab-staff').classList.toggle('active',group==='staff');q('#training-tab-merc').classList.toggle('active',group==='merc');
+ const bonus=((level-1)*1.5).toFixed(1);
+ const nextBonus=((next-1)*1.5).toFixed(1);
+ const basic=group==='staff'?'공격 피해 +'+bonus+'% → +'+nextBonus+'%':'회계사 기본 정산 +'+(2+(level-1)*.02).toFixed(2)+' → +'+(2+(next-1)*.02).toFixed(2)+' SP';
+ const support=group==='staff'?'고비 기본 수입 최대 +14.5% · 간호사 증폭·인사담당 지원도 완만하게 성장':'결계 발동 정산 +'+((level-1)*.5+(level>=10?10:0))+' SP · 지원 사격 '+((.08+(level-1)*.0005)*100).toFixed(2)+'%';
+ q('#training-summary').innerHTML='<div class="training-level"><span>'+(group==='staff'?'직원 전체':'특수 용병 전체')+'</span><strong>Lv.'+level+' <small>/ 30</small></strong></div><div class="training-progress" role="progressbar" aria-label="훈련 레벨" aria-valuemin="1" aria-valuemax="30" aria-valuenow="'+level+'"><i style="width:'+((level-1)/29*100)+'%"></i></div><b>'+ (level===30?'최대 레벨 달성':basic)+'</b><p>'+support+'</p><small>'+(milestone?'다음 고유 효과: Lv.'+milestone+' · '+(milestone-level)+'레벨 남음':'모든 고유 효과 해금 완료')+'</small>'+(group==='staff'?'<p>전투 SP 장비 보너스와 합산합니다. 공격력 외 효과는 캐릭터별 상한을 적용해요.</p>':'<p>영구 고용한 용병의 능력만 전투에 적용돼요. 훈련은 고용을 대신하지 않아요.</p>');
+ const records=group==='staff'?kinds.map((k,i)=>({id:k.file,name:typeof staffRecords==='undefined'?k.name:staffRecords.find(r=>r.id===k.file)?.name||k.name,job:k.name,image:staffImagePath(k.file),owned:meta.staff.includes(k.file)})):Object.entries(mercCatalog).map(([id,k])=>({id,name:k.name,job:trainedMercDescription(id,false),image:'assets/mobile/merc-'+id+'.webp',owned:meta.owned.includes(id)}));
+ q('#training-effects').innerHTML=records.map(r=>{const sealed=group==='staff'&&!r.owned;return '<article class="training-character '+(sealed?'staff-locked':'')+'"><div class="training-character-title"><img src="'+r.image+'" alt="" loading="lazy"><div><b>'+(sealed?'미채용 직원':r.name)+'</b><small>'+(sealed?'채용하면 현재 훈련 레벨이 적용돼요.':r.job)+'</small></div><span>'+(r.owned?'훈련 적용':'채용 후 적용')+'</span></div><ol>'+trainingEffectText[r.id].map((text,i)=>'<li class="'+(!sealed&&level>=TRAINING_MILESTONES[i]?'unlocked':'locked')+'"><b>Lv.'+TRAINING_MILESTONES[i]+'</b><span>'+(sealed?'채용 후 고유 효과 공개':text)+'</span><small>'+(sealed?'미채용':level>=TRAINING_MILESTONES[i]?'해금':'잠김')+'</small></li>').join('')+'</ol></article>'}).join('');
+ q('#training-wallet').textContent='보유 '+meta.coins.toLocaleString()+' 코인';const button=q('#training-upgrade');button.disabled=!!saveWarning||locked||level===30||meta.coins<price;button.textContent=level===30?'MAX · 훈련 완료':'Lv.'+next+' 훈련 · '+price+' 코인';q('#training-price-hint').textContent=saveWarning|| (locked?'전투가 끝난 뒤 훈련할 수 있어요.':level===30?'영구 훈련은 다음 판에도 유지됩니다.':meta.coins<price?(price-meta.coins)+'코인 부족 · 전투 종료 보상으로 모아보세요.':'확정 성공 · '+(meta.coins-price)+'코인 남음'+(TRAINING_MILESTONES.includes(next)?' · 고유 효과 해금!':''));
+}
+function openTraining(){const inherited=typeof panelResume!=='undefined'&&panelResume;trainingResume=playing&&!ended&&(!paused||inherited);if(typeof panelResume!=='undefined')panelResume=false;document.querySelector('#menu')?.close();if(playing&&!ended)paused=true;trainingRenderKey='';document.querySelector('#training-status').textContent='';renderTraining();document.querySelector('#training-dialog').showModal()}
+document.querySelector('#training-entry').onclick=openTraining;document.querySelector('#menu-training').onclick=openTraining;document.querySelector('#result-training').onclick=openTraining;document.querySelector('#training-close').onclick=()=>document.querySelector('#training-dialog').close();
+for(const group of ['staff','merc'])document.querySelector('#training-tab-'+group).onclick=()=>{trainingGroup=group;renderTraining()};
+document.querySelector('#training-upgrade').onclick=()=>{if(trainGroup(trainingGroup))document.querySelector('#training-status').textContent='훈련 완료! Lv.'+trainingLevel(trainingGroup,false)+' · 다음 당직에도 유지됩니다.';else document.querySelector('#training-status').textContent=saveWarning?'저장 오류를 먼저 해결해주세요.':'훈련하지 못했어요. 코인·전투 상태를 확인해주세요.'};
+document.querySelector('#training-dialog').addEventListener('close',()=>{if(trainingResume&&!ended)paused=false;trainingResume=false;sync()});
+renderTraining();
+
+// The illustrated lobby has fixed card zones; use its shortcut column instead of covering a card.
+if(typeof window.getComputedStyle==='function'&&document.documentElement&&window.getComputedStyle(document.documentElement).getPropertyValue('--u')){const entry=document.querySelector('#training-entry'),shortcuts=document.querySelector('.lobby-shortcuts');if(entry&&shortcuts){entry.setAttribute('aria-label','영구 훈련소 열기');shortcuts.append(entry)}}
