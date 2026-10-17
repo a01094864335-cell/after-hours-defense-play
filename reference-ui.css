@@ -114,3 +114,29 @@ button:focus-visible{outline:0!important;filter:drop-shadow(0 0 2px #b6f4d4) dro
 #result:has(#retry-reward:not([hidden])) #result-text{font-size:calc(20*var(--u));line-height:1.5;padding-block:calc(24*var(--u))}
 
 #deck-options .deck-choice.picked{background-image:var(--active)!important}
+/* Story artwork has its own landscape-safe canvas: never crop it to the portrait viewport. */
+#promo .comic-stage{inset:calc(245*var(--u)) calc(26*var(--u)) calc(430*var(--u));background-size:contain;background-position:center;background-color:#21142d}
+#promo{background:#21142d url('assets/ui-v2/background-archive.webp') center/100% 100% no-repeat}
+#promo .comic-chapter{left:calc(50*var(--u));right:calc(50*var(--u));top:calc(120*var(--u));padding:calc(25*var(--u)) calc(110*var(--u));min-height:calc(115*var(--u))}
+#promo .comic-head>span{padding:calc(19*var(--u)) calc(38*var(--u));font-size:calc(20*var(--u))}
+#promo #promo-skip{padding:calc(18*var(--u)) calc(37*var(--u));min-height:calc(80*var(--u));font-size:calc(23*var(--u))}
+#promo .comic-copy{min-height:calc(235*var(--u));max-height:calc(355*var(--u));padding:calc(85*var(--u)) calc(80*var(--u)) calc(38*var(--u))}
+#promo .comic-copy #promo-speaker{left:calc(82*var(--u));top:calc(25*var(--u));width:calc(210*var(--u));font-size:calc(20*var(--u));text-align:center}
+#promo .comic-copy #promo-line{font-size:calc(28*var(--u))!important;line-height:1.5!important;word-break:keep-all}
+#promo .comic-copy #promo-aside{font-size:calc(21*var(--u))!important;word-break:keep-all}
+#promo .comic-nav button{padding-inline:15%;min-height:calc(100*var(--u));font-size:calc(28*var(--u));white-space:normal}
+/* Painted arrows/corners occupy the outer 12–15%; labels must stay in the quiet interior. */
+:is(.archive-tabs,.shop-tabs) button{padding-inline:calc(42*var(--u));white-space:normal;word-break:keep-all}
+:is(#menu,#info,#leave,#perk,#guide) button{padding-left:15%;padding-right:15%;word-break:keep-all;white-space:normal}
+#result-stats>div{padding-left:calc(65*var(--u));padding-right:calc(65*var(--u));gap:calc(25*var(--u))}
+#roster .staff-pass .pass-meta{right:calc(50*var(--u));max-width:calc(190*var(--u));overflow-wrap:anywhere}
+#roster .staff-pass .pass-open{padding-right:calc(24*var(--u));font-size:calc(27*var(--u))!important;word-break:keep-all}
+#roster .staff-deck>h3,#roster .staff-deck>p{padding-inline:calc(30*var(--u));word-break:keep-all}
+/* Chapter is anchored to the full dialog, independently of the illustration bounds. */
+#promo .comic-stage{inset:0;background-size:calc(100% - 52*var(--u)) auto;background-position:center calc(245*var(--u));background-color:transparent}
+#promo .comic-stage{background:none}
+#promo .comic-stage::before{content:'';position:absolute;top:calc(245*var(--u));left:calc(26*var(--u));right:calc(26*var(--u));height:calc(945*var(--u));background:var(--story-art) center top/100% auto no-repeat;pointer-events:none}
+.battle-controls .battle-notice{padding-left:calc(90*var(--u));padding-right:calc(90*var(--u))}
+.dossier-section h4{display:flex;align-items:center;justify-content:space-between;gap:calc(15*var(--u));flex-wrap:wrap}
+.dossier-section h4>span{float:none;flex-shrink:0;max-width:100%}
+:is(#guide,#perk,#menu,#info,#leave)>h2{padding-left:calc(75*var(--u));padding-right:calc(75*var(--u));word-break:keep-all}
