@@ -437,3 +437,10 @@ button{min-height:48px}
 #equipment .cards{grid-template-columns:1fr!important}#equipment .cards .card{min-height:96px;padding:19px 27px!important}#equipment .cards .card span{font-size:14px}#equipment .cards .card b{font-size:12px}
 @media(max-width:350px){#shop .shop-row button{min-width:104px!important;font-size:12px!important}.archive-tabs button{font-size:11px!important;padding-inline:15px!important}#lobby .lobby-shortcuts button{width:50px!important}.deck-slots{gap:3px}}
 @media(max-height:650px){.battle-top button{min-height:44px!important;min-width:44px;font-size:11px!important;padding:10px 12px!important}.battle-top{min-height:54px}.summon-row #upgrade-open{min-height:48px!important}.item-buttons button{min-height:48px!important}.skill-row #skill{min-height:44px!important}.battle-controls{overflow-y:auto;max-height:48dvh}}
+/* Real 390px shop review: never let wrapped price buttons sit on the rim. */
+#shop .shop-row{display:grid;grid-template-columns:54px minmax(0,1fr);grid-template-rows:auto auto;column-gap:12px;row-gap:12px;min-height:184px;padding:29px 35px!important;background-size:100% 170%!important;align-items:center}
+#shop .shop-row>img,#shop .shop-row>canvas[data-motion]{grid-column:1;grid-row:1;width:54px;height:57px}
+#shop .shop-row>span{grid-column:2;grid-row:1;display:block;min-width:0;font-size:13px!important;line-height:1.5}
+#shop .shop-row>button{grid-column:2;grid-row:2;justify-self:end;margin:0!important;max-width:100%!important;width:auto;min-width:110px!important;min-height:54px!important}
+#equipment .cards .card{background-size:100% 170%!important}
+@media(max-width:350px){#shop .shop-row{grid-template-columns:44px minmax(0,1fr);column-gap:9px;padding-inline:28px!important}#shop .shop-row>img,#shop .shop-row>canvas[data-motion]{width:44px;height:49px}#shop .shop-row>button{min-width:100px!important;font-size:11px!important}}
