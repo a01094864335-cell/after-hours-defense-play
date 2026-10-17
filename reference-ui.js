@@ -3,6 +3,7 @@
 (()=>{
  if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s);
+ const lobbyDeck=q('#deck-open');
  function icon(el,name){if(!el)return;el.querySelectorAll('.ui-icon,.skin-icon,.ref-icon').forEach(n=>n.remove());const first=el.firstChild;if(first?.nodeType===3)first.textContent=first.textContent.replace(/[📖♟⌂🛍?☾☰⚡↑]/gu,'').trim();const im=document.createElement('img');im.src='assets/ui-v2/icons/'+name+'.svg';im.alt='';im.className='ref-icon';el.prepend(im)}
  for(const [selector,name] of [['#quick-story','book'],['#quick-help','help'],['#roster-open','scroll'],['.nav-home','home'],['#shop-open','shop'],['#menu-open','gear'],['.mode-card>span','moon'],['#upgrade-open','staff']])icon(q(selector),name);
  q('.brand small').textContent='야간 당직';
@@ -22,9 +23,10 @@
  function refresh(){pause.hidden=!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]'));q('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');}
  function decorate(){
   const slot=q('#merc-slot');if(!slot.querySelector('.ref-merc-plus')){
-   if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-empty" aria-hidden="true">✚</span><span>지원 용병<br><small>함께할 용병을 선택하세요</small></span>'}
+   if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-heading">지원 용병</span>'}
    const plus=document.createElement('button');plus.className='ref-merc-plus';plus.textContent='+';plus.setAttribute('aria-label','지원 용병 선택');plus.onclick=()=>{q('#shop-open').click();shopTab('mercs')};slot.append(plus);
   }
+  if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
   document.querySelectorAll('.staff-pass').forEach(card=>{const name=card.querySelector('.pass-open');if(name&&/인사기록|채용 방법/.test(name.textContent)){const record=staffRecords.find(r=>r.id===card.dataset.staff);name.textContent=record&&staffOwned(record)?record.name:'???'}card.querySelector(':scope>strong')?.remove()});
   const reveal=q('.recruit-reveal');if(reveal&&!reveal.querySelector('.ref-recruit-actions')){const actions=document.createElement('div');actions.className='ref-recruit-actions';actions.innerHTML='<button>직원 도감으로</button><button>확인</button>';actions.children[0].onclick=()=>{q('#recruit-result').innerHTML='';q('#shop').close();q('#roster-open').click()};actions.children[1].onclick=()=>q('#recruit-result').innerHTML='';reveal.append(actions)}
   refresh();
