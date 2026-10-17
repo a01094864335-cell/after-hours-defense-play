@@ -1,10 +1,12 @@
 'use strict';
 /* The approved illustrations are presentation assets; all data and actions stay live. */
 (()=>{
+ if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s);
  function icon(el,name){if(!el)return;el.querySelectorAll('.ui-icon,.skin-icon,.ref-icon').forEach(n=>n.remove());const first=el.firstChild;if(first?.nodeType===3)first.textContent=first.textContent.replace(/[📖♟⌂🛍?☾☰⚡↑]/gu,'').trim();const im=document.createElement('img');im.src='assets/ui-v2/icons/'+name+'.svg';im.alt='';im.className='ref-icon';el.prepend(im)}
  for(const [selector,name] of [['#quick-story','book'],['#quick-help','help'],['#roster-open','scroll'],['.nav-home','home'],['#shop-open','shop'],['#menu-open','gear'],['.mode-card>span','moon'],['#upgrade-open','staff']])icon(q(selector),name);
  q('.brand small').textContent='야간 당직';
+ for(const key of ['grade','kind','king']){const im=q('#buy-'+key).parentElement.querySelector('img');if(im)im.src='assets/reference-ui/item-'+key+'-art.webp'}
  q('.lobby-badge').textContent='마왕님 휴식 중  ᶻᶻᶻ';
  const market=document.createElement('div');market.className='ref-market-scene';market.setAttribute('aria-hidden','true');q('#shop').prepend(market);
  // Match the approved product-first layout while preserving all purchase handlers.
