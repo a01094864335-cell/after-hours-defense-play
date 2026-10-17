@@ -19,6 +19,7 @@
  q('#pause-continue').onclick=()=>{paused=false;sync()};q('#pause-guide').onclick=()=>openSheet('info');q('#pause-home').onclick=()=>q('#battle-back').click();pause.addEventListener('keydown',e=>{if(e.key==='Escape'){paused=false;sync()}});
  const stories=['story-first','story-invasion','story-recruitment','story-night'];
  const oldPromo=showPromo;showPromo=function(){oldPromo();q('#promo').style.setProperty('--story-art',"url('assets/reference-ui/"+stories[promoIndex]+".svg')")};
+ const originalMeta=renderMeta;renderMeta=function(){originalMeta();decorate()};
  const originalRender=appRender;appRender=function(){originalRender();refresh()};
  function refresh(){pause.hidden=!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]'));q('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');}
  function decorate(){
