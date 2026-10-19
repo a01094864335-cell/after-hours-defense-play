@@ -157,14 +157,14 @@
     "design-grid.css": "399f7e0abe2ca5b474f2c21ec05c3be3ccfdb63e341093de03da2cfb8cdbafe2",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "7ae1c524bb7ff1deed2f59b5d346260210841ed121a6aa5df938f5a7a77c9acd",
-    "index.html": "cd44df8fc58938126956285911b256be5bc0594f6f4b867acde725439eb97291",
+    "index.html": "719ade6ecd7630760fdf0714b064985cb9316da2f55c42b2b5f5dcb72c8c15e8",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
-    "meta.js": "0b8333d21e2d01a6eababfc861aa61167f07fb4998d7f7062db6f5a338834a84",
+    "meta.js": "579f13f7835ab0e46eb15ad8661bbe7aa09aea57ac9b21e95daf6b579d7ff6ac",
     "mobile-ui.css": "69af50b41b488df7c780a2e474b51fcf2b405b77e6dea8d9448a6d58b8524cca",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "8c7f001a4119ba3312faf80843769e0a218ede9f2023655cea6de78c0ee6402e",
-    "progression.js": "7168aa4e3b4de422b992218bf3cf51608aa477029a541f115b9e387f684630b1",
+    "progression.js": "7a6cc5238960fd08e22797751140aa3f70ab6b34a893d74ec0082638a44c9a92",
     "prologue-layout.css": "e8eee50c9142bb72c9155a3edc602e269ae4b63e94bc009edbeb21caf3786625",
     "recruitment.js": "fff82ffa026c813f6aea84df858a71363696988a93cb13abb22778ca200ba0ba",
     "reference-ui.css": "9ea6f27ecfc94d4af9739ddd80d894b8a80e3091ef6fe1947811f938fec41a68",
@@ -174,6 +174,10 @@
     "training-ui.js": "2e8c734b7d044662efec5c9d56be5967ddf110a46c2724c6275428645f513aa9",
     "training.css": "8d9e983f0adbe8450717bc2ad5d952edbe24bc79fb4b8d4ed70e3c7effc57f69",
     "training.js": "2dfba551491999c9eef33f04a37c6572bd678e7765b277b41581cd0d1c553068",
-    "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792"
-  }
+    "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792",
+    "session-guard.js": "a4dfedad81fff255b08cb8914ae4750eb0aea40a3ea8a3353936e6afe5d88835",
+    "orientation.js": "cca9a4316d8ecaba0d3398b53f7ef28f657e762afa3ad75a2182a7a0adc585b0",
+    "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782"
+  },
+  "patch": "release-safety-1"
 }

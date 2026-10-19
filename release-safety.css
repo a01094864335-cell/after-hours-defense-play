@@ -1,0 +1,58 @@
+/* Saving/session notices are independent of the scaled game illustration. */
+#session-notice, #rotation-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #160f24f5;
+  color: #fff0d0;
+  font: 16px/1.6 system-ui, sans-serif;
+}
+#session-notice { z-index: 210; }
+#session-notice > div, #rotation-notice > div { width: min(100%, 420px); }
+#session-notice h2, #rotation-notice h2 { font-size: 24px; margin: 0 0 16px; }
+#session-notice p, #rotation-notice p { color: #e9d5ed; font-size: 16px; }
+#session-notice button { min-height: 48px; padding: 12px 24px; font-size: 16px; }
+#session-notice[hidden], #rotation-notice[hidden] { display: none !important; }
+
+/* Short phones keep the board first, rather than shrinking it to fit a large
+   speech panel and several fixed-height control rows. */
+@media (orientation: portrait) and (max-height: 740px) {
+  #battle { padding: 54px 0 0; }
+  #battle .battle-top { height: 50px; }
+  #battle #tutorial-strip, #battle #next-boss {
+    min-height: 20px;
+    height: 20px;
+    padding: 2px 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  #battle .board-stage { min-height: 0; max-height: none; padding: 4px 6px; }
+  #battle .battle-controls,
+  #battle .battle-controls:has(#start:not([hidden])) {
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 6px 8px;
+    gap: 6px;
+    grid-template-rows: 28px 44px 52px;
+  }
+  #battle .battle-controls:has(#start:not([hidden])) { grid-template-rows: 28px 44px 52px 44px; }
+  #battle .battle-notice { grid-row: 1; min-width: 0; width: 100%; min-height: 28px; height: 28px; padding: 4px 8px; }
+  #battle .battle-notice img, #battle .battle-notice canvas[data-motion] { display: none; }
+  #battle .battle-notice #message { min-width: 0; font-size: 12px; line-height: 20px; white-space: nowrap; max-height: 20px; overflow: hidden; text-overflow: ellipsis; }
+  #battle .summon-row { grid-row: 2; min-width: 0; width: 100%; height: 44px; }
+  #battle .summon-row > span { padding: 4px; }
+  #battle #summon { padding: 6px; font-size: 14px; }
+  #battle .skill-row, #battle .item-buttons { grid-row: 3; height: 52px; }
+  #battle .skill-row #skill { height: 52px; padding: 4px; }
+  #battle .item-buttons img { width: 22px; height: 22px; }
+  #battle .item-buttons button { padding: 4px; gap: 2px; }
+  #battle #item-hint { display: none; }
+  #battle #start { grid-row: 4; min-height: 44px; height: 44px; padding: 6px; }
+}
