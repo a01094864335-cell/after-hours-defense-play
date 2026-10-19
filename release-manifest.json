@@ -157,7 +157,7 @@
     "design-grid.css": "399f7e0abe2ca5b474f2c21ec05c3be3ccfdb63e341093de03da2cfb8cdbafe2",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "7ae1c524bb7ff1deed2f59b5d346260210841ed121a6aa5df938f5a7a77c9acd",
-    "index.html": "719ade6ecd7630760fdf0714b064985cb9316da2f55c42b2b5f5dcb72c8c15e8",
+    "index.html": "e70403391f569f0e91817e28670006d5e3346b6254d176a6d11c541b1bb4b878",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
     "meta.js": "579f13f7835ab0e46eb15ad8661bbe7aa09aea57ac9b21e95daf6b579d7ff6ac",
@@ -177,7 +177,8 @@
     "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792",
     "session-guard.js": "a4dfedad81fff255b08cb8914ae4750eb0aea40a3ea8a3353936e6afe5d88835",
     "orientation.js": "cca9a4316d8ecaba0d3398b53f7ef28f657e762afa3ad75a2182a7a0adc585b0",
-    "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782"
+    "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782",
+    "visual-polish.css": "eb2d6fb3af6febf8b71d4ecde592bb224df478254c4e748c78c7e84fa86b1a82"
   },
-  "patch": "release-safety-1"
+  "patch": "visual-polish-1"
 }
