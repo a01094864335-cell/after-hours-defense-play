@@ -1,0 +1,187 @@
+/* Use rendered CSS pixels for legibility, independent of the illustration grid. */
+:root{--body-copy:14px;--support-copy:12px;--safe-x:16px;--safe-y:12px}
+:is(button,[role='button'],summary):focus-visible{outline:3px solid #bdebd9!important;outline-offset:2px}
+button{min-height:44px;font-size:14px}
+:is(.wallet b,#sp,#shop-coins,.wave-pill b){white-space:nowrap;overflow-wrap:normal;word-break:normal;font-variant-numeric:tabular-nums}
+#battle .summon-row{grid-template-columns:minmax(64px,max-content) minmax(0,1fr) 54px;gap:8px}
+#battle .summon-row>span{min-width:64px;width:auto;padding:4px;display:flex;flex-direction:column;justify-content:center;gap:0}
+#battle .summon-row>span b,#battle #sp{font-size:22px;line-height:24px;white-space:nowrap;overflow-wrap:normal}
+#battle .summon-row>span .ui-icon{display:none}
+#battle .summon-row>span{font-size:12px;line-height:12px}
+#battle .battle-notice{cursor:pointer}
+#battle .battle-notice:focus-visible{outline:2px solid #bdebd9}
+#battle #skill:disabled{color:#e5d8ec;filter:none;background-image:var(--violet)}
+#battle #skill[data-state='ready']{outline:2px solid #ffe5a2;outline-offset:-4px}
+#battle .item-buttons button:disabled{color:#e5d8ec;filter:saturate(.25);opacity:1}
+#perk button:disabled,.staff-action:disabled{color:#e5d8ec!important;filter:saturate(.2);background-image:var(--violet);opacity:1}
+#boss-readout{position:absolute;top:4px;left:8%;right:8%;z-index:4;background:#211629f5;border:1px solid #b59777;padding:6px 8px;color:#fff1d5;text-align:left;box-shadow:0 2px 8px #0008}
+#boss-readout summary{display:grid;grid-template-columns:1fr;gap:2px;cursor:pointer;list-style:none;min-height:44px}
+#boss-readout strong{font-size:14px;line-height:18px}
+#boss-readout strong::after{content:' ⓘ';color:#bdebd9}
+#boss-readout span{font-size:12px;line-height:16px;color:#f1dfe9}
+#boss-readout meter{width:100%;height:8px;appearance:none}
+#boss-readout meter::-webkit-meter-bar{background:#67516c;border:0}
+#boss-readout meter::-webkit-meter-optimum-value{background:#e6bc82}
+#boss-readout p{font-size:14px;line-height:1.5;margin:8px 0 0;color:#f1dfe9;max-height:120px;overflow:auto}
+#boss-guide-list p{font-size:14px;line-height:1.6;color:#eddfef}
+#boss-guide-list h3{font-size:16px}
+#boss-guide-list .boss-counter{color:#bdebd9}
+.boss-label{display:inline-block;color:#ffe2a4;margin-right:8px;font-weight:800}
+#boss-guide-list .boss-common{font-size:12px;color:#dfcde7}
+#boss-guide-list :is(img,canvas[data-motion]){flex-basis:44px;width:44px;height:52px}
+/* A nested native dialog lives above the scrolled shop and traps keyboard focus. */
+#recruit-dialog{position:fixed;inset:0;margin:auto;width:min(420px,calc(100vw - 32px));height:fit-content;max-height:calc(100dvh - 32px);padding:16px;border:1px solid #b59777;background:#241a30;color:#fff1d5;overflow:auto;overscroll-behavior:contain}
+#recruit-dialog::backdrop{background:#100919df}
+#recruit-dialog #recruit-result{position:static;inset:auto;padding:0;width:100%;height:auto;display:block;transform:none}
+#recruit-dialog .recruit-reveal{position:static;inset:auto;transform:none;animation:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:0;margin:0;width:100%;height:auto;max-height:none;background:none;border:0;box-shadow:none;color:#fff1d5}
+#recruit-dialog .recruit-reveal>:is(img,canvas[data-motion]){position:static;inset:auto;width:120px;height:128px;object-fit:contain;flex-shrink:0;order:0}
+#recruit-dialog .recruit-reveal>:is(b,strong,p){position:static;inset:auto;margin:0;padding:0;width:100%;height:auto;text-align:center;font-size:14px;line-height:1.5;color:#eddfef;order:0}
+#recruit-dialog .recruit-reveal>b{font-size:22px;color:#ffe2a4}
+#recruit-dialog .ref-recruit-actions{position:sticky;bottom:-16px;inset-inline:auto;display:flex;gap:8px;width:100%;padding:12px 0 0;margin:0;background:#241a30;order:1}
+#recruit-dialog .ref-recruit-actions button{flex:1;min-width:0;min-height:44px;padding:8px;font-size:14px;background:var(--violet) center/100% 100% no-repeat;border:0}
+#recruit-dialog .ref-recruit-actions button:last-child{background-image:var(--gold-button);color:#38220f;text-shadow:none}
+/* Equipment: stable context, a single scrolling list. */
+#equipment[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 24px);padding:12px!important;overflow:hidden}
+#equipment>.sheet-head{position:static;flex-shrink:0;min-height:48px;margin:0;padding:4px}
+#equipment>#equipment-balance{flex-shrink:0;margin:4px 0 8px;min-height:0;font-size:14px;padding:4px}
+#equipment .equipment-content{overflow:auto;overscroll-behavior:contain;min-height:0;padding:0 2px 8px}
+#equipment .cards .card{min-height:116px!important}
+#equipment .cards .card>b{min-height:44px;font-size:14px}
+#equipment #equipment-close{min-width:44px;min-height:44px}
+/* Training: persistent group and level, only the detail body scrolls. */
+#training-dialog[open]{display:flex;flex-direction:column;height:min(840px,calc(100dvh - 24px));max-height:calc(100dvh - 24px);overflow:hidden}
+#training-dialog .training-header{position:static;flex-shrink:0;padding:8px 12px}
+#training-dialog .training-header small{display:none}
+#training-dialog h2{font-size:22px;margin:0}
+#training-dialog .training-intro{font-size:12px;line-height:1.5;margin:8px 12px;padding:0;flex-shrink:0}
+#training-dialog .training-intro small{font-size:12px}
+#training-context{margin:0;padding:4px 12px;color:#bdebd9;font-size:12px;line-height:1.5;flex-shrink:0}
+#training-dialog .training-tabs{padding:4px 12px;flex-shrink:0}
+#training-dialog .training-tabs button{font-size:14px;min-height:44px}
+#training-dialog .training-body{min-height:0;overflow:auto;overscroll-behavior:contain;padding-bottom:12px}
+#training-dialog .training-footer{position:static;flex-shrink:0;padding:6px 12px;background:#21172c}
+#training-dialog #training-upgrade{min-height:44px;margin:4px 0}
+#training-dialog .training-footer p{margin:4px 0;font-size:12px}
+#training-dialog #training-summary{margin:8px 12px;padding:12px}
+#training-dialog #training-summary>p{font-size:14px;line-height:1.5}
+#training-dialog #training-summary>p:last-child{font-size:12px}
+#training-dialog .training-sealed{border:1px solid #82677d;padding:12px;color:#dfcde7}
+#training-dialog .training-sealed summary{font-size:14px;line-height:1.5;min-height:44px;cursor:pointer}
+#training-dialog .training-sealed p{font-size:14px;line-height:1.5}
+#training-dialog .training-character-title>span,#training-dialog li>small{font-size:12px}
+#training-dialog .training-character-title{flex-wrap:wrap}
+#training-dialog li{display:grid;grid-template-columns:40px minmax(0,1fr) auto;font-size:14px;line-height:1.5}
+/* Readable, compact archive: three complete list cards fit on short phones. */
+#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head{height:64px;background:#2a1d34;border-bottom:1px solid #96775d;padding:8px 12px}
+#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head>div{visibility:visible!important;background:none!important;margin:0!important}
+#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head small{display:none}
+#roster:not(:has(#roster-detail:not([hidden]))) #roster-title{font-size:22px!important;background:none!important;color:#fff1d5!important;padding:0!important;height:auto!important;line-height:1.3}
+#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head::before,#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head::after{display:none!important}
+#roster #roster-close{top:8px!important;right:12px!important;width:44px!important;height:44px!important}
+#roster-overview{top:64px!important;bottom:0!important;left:0!important;right:0!important;grid-template-rows:48px 112px 40px minmax(0,1fr) 20px!important}
+#roster .archive-banner{display:none!important}
+#roster .archive-tabs{padding:2px 8px;gap:8px}
+#roster .archive-tabs button{height:44px;min-height:44px;font-size:12px;padding:8px 4px}
+#roster .staff-deck{padding:8px 12px!important;margin:0 8px;height:112px}
+#roster .staff-deck>b{font-size:14px;height:20px}
+#roster .deck-slots{height:52px;margin:0;gap:4px}
+#roster .deck-slots button,#roster .empty-deck{height:52px;min-height:44px;padding:0 0 14px}
+#roster .deck-slots :is(img,canvas[data-motion]){height:38px;width:40px}
+#roster .deck-slots small{font-size:12px}
+#roster .staff-deck #deck-status{font-size:12px;line-height:18px;margin:0}
+#roster #roster-note{margin:0;padding:4px 12px;font-size:12px;line-height:16px;background:#21172cf5;color:#dfcde7}
+#roster #roster-list{grid-auto-rows:82px;gap:8px;padding:4px 8px 8px;background:#21172cf5;border-block:1px solid #82677d;scrollbar-width:thin}
+#roster .staff-pass{height:82px}
+#roster .staff-pass .pass-portrait,#roster .staff-pass .pass-portrait :is(img,canvas[data-motion]){width:70px;height:70px}
+#roster .staff-pass .pass-job{top:8px;left:90px;font-size:12px}
+#roster .staff-pass .pass-open{top:30px;left:90px!important;font-size:20px!important}
+#roster .staff-pass .pass-role{left:90px;bottom:8px;font-size:12px}
+#roster .archive-footer{font-size:12px;margin:0;background:#21172c}
+#deck #deck-options button{padding:12px;gap:8px;min-height:160px;display:flex;flex-direction:column;align-items:center}
+#deck #deck-options button strong{font-size:16px}
+#deck #deck-options button :is(span,small){font-size:12px;position:static}
+#deck #deck-options .picked{outline:2px solid #bdebd9;outline-offset:-5px}
+#deck #deck-options .picked small{padding:4px 8px;margin-top:auto}
+/* Shop: shorter illustration, scan prices and conditions independently. */
+#shop .ref-market-scene,#shop:has(#shop-mercs:not([hidden])) .ref-market-scene{height:140px;background-size:cover;background-position:center 35%}
+#shop .shop-tabs{position:sticky;top:0;z-index:3;background:#241a30;padding:4px 0}
+#shop #shop-items .shop-row,#shop #shop-mercs .shop-row{grid-template-columns:48px minmax(0,1fr) 84px;min-height:116px;padding:12px;gap:8px}
+#shop #shop-items .shop-row :is(img,canvas[data-motion]),#shop #shop-mercs .shop-row :is(img,canvas[data-motion]){width:48px!important;height:64px!important}
+#shop .shop-row>span{font-size:14px!important;line-height:1.5}
+#shop .shop-row small{font-size:12px!important;line-height:1.5;color:#dfcde7!important}
+#shop #shop-items .shop-row button,#shop #shop-mercs .shop-row button{width:84px;min-height:64px;padding:8px 6px;line-height:1.4;white-space:normal!important;text-align:right}
+#shop .shop-row button strong{font-size:18px;color:#fff1d5;white-space:nowrap}
+#shop .shop-row button span{font-size:12px;color:inherit}
+#shop .shop-row button small{display:block;font-size:12px!important;color:inherit!important}
+#shop .shop-row button:disabled{filter:none;background-image:var(--violet);color:#e5d8ec}
+#shop .shop-row button:not(:disabled) strong{color:#38220f}
+#shop .recruit-shop{grid-template-columns:48px 1fr;padding:16px;gap:12px;min-height:0}
+#shop .recruit-shop .recruit-facts{grid-column:1/-1;margin:0;font-size:14px;width:100%}
+.recruit-facts>div{display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px solid #82677d}
+.recruit-facts dt{color:#dfcde7}.recruit-facts dd{margin:0;color:#fff1d5;text-align:right}
+.recruit-help{grid-column:1/-1;font-size:14px;line-height:1.5}
+.recruit-help summary{min-height:44px;padding:10px 0;cursor:pointer;color:#bdebd9}
+#shop .recruit-help p{font-size:14px;line-height:1.5}
+/* Help and comic keep their text columns stable even at 320px. */
+#info .ref-guide-step{grid-template-columns:20px minmax(0,1fr) 40px!important;gap:8px;padding:12px;min-height:0}
+#info .ref-guide-step :is(img,canvas[data-motion]){grid-row:1!important;grid-column:3!important;width:40px;height:48px;align-self:start}
+#info .ref-guide-step h3{font-size:16px}
+#info .ref-guide-step p{font-size:14px;line-height:1.5}
+#promo[open]{display:flex;flex-direction:column;padding:0!important;overflow:hidden}
+#promo .comic-stage{flex:1;min-height:0;position:relative;height:auto!important}
+#promo .comic-stage::before{top:76px!important;height:calc(100% - 76px)!important;background-size:auto 100%!important;background-position:center!important}
+#promo .comic-bottom{position:relative!important;inset:auto!important;flex-shrink:0;padding:8px 12px!important;width:100%;background:#241a30}
+#promo .comic-copy{margin:0 0 8px;max-height:32dvh!important;padding:32px 12px 12px!important}
+#promo .comic-copy #promo-line,#promo .comic-copy #promo-aside{font-size:14px!important;line-height:1.5!important}
+/* Report prioritizes the outcome, reward, and next action. */
+#result.result-screen,#result.result-screen:has(#retry-reward:not([hidden])){padding:110px 12px 16px!important;gap:8px}
+#result .result-icon,#result:has(#retry-reward:not([hidden])) .result-icon{height:106px;background-size:auto 100%}
+#result>.result-ribbon,#result>small{display:none}
+#result h1{font-size:24px;line-height:1.3}
+#result #result-title-badge{font-size:12px;line-height:18px;min-height:18px}
+#result #result-stats{padding:8px 12px;min-height:0}
+#result #result-stats>div{min-height:34px;height:34px;margin:0;padding:2px 0;grid-template-columns:28px 1fr auto;gap:8px}
+#result .grid-stat-icon{width:28px;height:28px;font-size:20px}
+#result #result-stats>div>b{font-size:24px;padding:0;line-height:30px}
+#result #result-stats details{font-size:12px;padding:4px 0}
+#result #result-stats summary{min-height:32px;padding:8px 0;cursor:pointer}
+#result-breakdown{font-size:12px;color:#dfcde7;text-align:left;flex-shrink:0;background:#241a30;padding:0 12px}
+#result-breakdown>summary{min-height:32px;padding:8px 0;cursor:pointer}
+#result #result-text{font-size:14px;line-height:1.5;min-height:0;background:none;padding:8px 0}
+#result #result-again,#result #result-home,#result #result-training{width:100%;min-height:44px;height:auto;padding:10px 12px;margin:0;align-self:stretch;font-size:14px}
+#lobby .lobby-shortcuts small{font-size:12px!important}
+#lobby .reward-hint{font-size:12px;line-height:1.5}
+.notice-dialog{width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:20px;background:#241a30;color:#fff1d5;border:1px solid #b59777;overflow:auto}
+.notice-dialog h2{font-size:22px}.notice-dialog p{font-size:14px;line-height:1.6}.notice-dialog button{width:100%;min-height:44px;background:var(--gold-button) center/100% 100% no-repeat;color:#38220f;border:0;padding:12px}
+@media(max-height:740px){#training-dialog .training-intro{display:none}#training-dialog .training-header{padding:4px 12px}#training-dialog .training-header h2{font-size:20px}#training-dialog .training-header button{min-height:44px}#training-dialog .training-tabs{padding-block:0}#training-context{padding-block:2px}#training-dialog .training-footer{padding-block:4px}#training-dialog .training-footer p{margin:2px 0}#result.result-screen,#result.result-screen:has(#retry-reward:not([hidden])){padding-top:76px!important}#result .result-icon,#result:has(#retry-reward:not([hidden])) .result-icon{height:72px}#recruit-dialog .recruit-reveal>:is(img,canvas[data-motion]){width:88px;height:92px}}
+@media(min-width:601px) and (min-height:1067px){#roster .staff-pass .pass-portrait{left:10px;top:6px}#roster .staff-pass .pass-meta{inset:10px 14px auto auto}#roster #roster-list{grid-template-columns:1fr}}
+#roster #roster-close{position:absolute!important;inset:8px 12px auto auto!important;background:var(--violet) center/100% 100% no-repeat!important;margin:0;padding:0!important;z-index:5}
+#roster #roster-close::after{content:'×'!important;font-size:26px!important;line-height:44px;color:#fff1d5}
+#roster:not(:has(#roster-detail:not([hidden])))>.sheet-head>div{margin-right:52px!important}
+#training-dialog .training-rules{margin-top:8px;color:#dfcde7}
+#training-dialog .training-rules summary{font-size:12px;min-height:32px;padding:8px 0;cursor:pointer}
+#training-dialog .training-rules p{font-size:14px;line-height:1.5}
+#shop .shop-row button small{white-space:pre-line}
+#recruit-dialog .ref-recruit-actions button:first-child{color:#fff1d5;text-shadow:none;background-image:var(--violet)}
+#training-dialog .training-overview>summary{min-height:44px;font-size:14px;line-height:20px;padding:12px 0;cursor:pointer;color:#bdebd9}
+#training-dialog #training-summary{padding:4px 12px}
+#training-dialog .training-overview[open]>.training-level{margin-top:8px}
+.brand>span:last-child{font-size:14px}.brand small{font-size:12px;line-height:1.3}.wallet b{font-size:18px}
+#shop .shop-row button.equipped{color:#bdebd9!important;background-image:var(--violet)}
+.wallet{width:auto;min-width:84px;max-width:42%;gap:4px;padding-inline:10px;flex-shrink:0}
+.wallet b{min-width:0;font-size:clamp(12px,3.8vw,18px)}
+.brand{min-width:0;padding-inline:8px}
+.brand>span:last-child{min-width:0;white-space:normal;line-height:1.2}
+.brand .profile-mark{width:28px;height:30px}
+@media(max-width:350px){#shop #shop-items .shop-row,#shop #shop-mercs .shop-row{grid-template-columns:40px minmax(0,1fr) 80px}#shop #shop-items .shop-row :is(img,canvas[data-motion]),#shop #shop-mercs .shop-row :is(img,canvas[data-motion]){width:40px!important}#shop #shop-items .shop-row button,#shop #shop-mercs .shop-row button{width:80px}}
+#battle .battle-top{padding:3px 6px;gap:6px;align-items:center}
+#battle .battle-top :is(#battle-back,#pause,#speed){width:44px;min-width:44px;height:44px;min-height:44px;padding:6px}
+#battle .battle-top #life{min-width:54px;width:54px}
+#promo[open]{display:grid!important;grid-template-rows:76px minmax(0,1fr) auto}
+#promo .comic-stage::before{top:0!important;height:100%!important}
+@media(orientation:portrait) and (max-height:740px){
+ #battle .battle-controls{grid-template-rows:44px 44px 52px}
+ #battle .battle-controls:has(#start:not([hidden])){grid-template-rows:44px 44px 52px 44px}
+ #battle .battle-notice{height:44px;min-height:44px}
+ #battle .battle-notice #message{white-space:normal;font-size:12px;line-height:18px;max-height:36px}
+}
