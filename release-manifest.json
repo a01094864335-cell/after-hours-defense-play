@@ -156,15 +156,15 @@
     "combat-motion.js": "fadd3c3b3e966dfc128210c34daa9567e68ebb5100f063afd0b5582e0c8ba9b3",
     "design-grid.css": "399f7e0abe2ca5b474f2c21ec05c3be3ccfdb63e341093de03da2cfb8cdbafe2",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
-    "game.js": "7ae1c524bb7ff1deed2f59b5d346260210841ed121a6aa5df938f5a7a77c9acd",
-    "index.html": "909d8f76b3c4cb350ed3d1d3514a6d937d9724c91d9deafd02751a256dd890e3",
+    "game.js": "dd2ca6e47cbfe50eba0b5c81c0f96e105803fdc2842254666e69b340a5d4231d",
+    "index.html": "8a200fa30b667f88e5888b5b0f1f41d6a90dfb1126dc538051abce413682881d",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
     "meta.js": "579f13f7835ab0e46eb15ad8661bbe7aa09aea57ac9b21e95daf6b579d7ff6ac",
     "mobile-ui.css": "69af50b41b488df7c780a2e474b51fcf2b405b77e6dea8d9448a6d58b8524cca",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "8c7f001a4119ba3312faf80843769e0a218ede9f2023655cea6de78c0ee6402e",
-    "progression.js": "7a6cc5238960fd08e22797751140aa3f70ab6b34a893d74ec0082638a44c9a92",
+    "progression.js": "57add14f769ea0dc9cf3b204bfe80287dde32460d1eb503ca1dd9c681171830e",
     "prologue-layout.css": "e8eee50c9142bb72c9155a3edc602e269ae4b63e94bc009edbeb21caf3786625",
     "recruitment.js": "ca9d9bf6cd49cf2b81e6a3270a565fa12da59218a30c439181f3ad840561fca8",
     "reference-ui.css": "9ea6f27ecfc94d4af9739ddd80d894b8a80e3091ef6fe1947811f938fec41a68",
@@ -179,8 +179,8 @@
     "orientation.js": "cca9a4316d8ecaba0d3398b53f7ef28f657e762afa3ad75a2182a7a0adc585b0",
     "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782",
     "visual-polish.css": "eb2d6fb3af6febf8b71d4ecde592bb224df478254c4e748c78c7e84fa86b1a82",
-    "usability.css": "f21e7400f8702c9e0aeca6d67903978bbd0d8e33dc4301c89a946c70f9c36d10",
+    "usability.css": "aa120a2a6f831d105fef51d8f57dc023731753df711432ff74333b45d1592660",
     "usability.js": "95bc9acfad48304fd3981f6a023f71ae10ba9afa39a14c03b71acc9a41907f26"
   },
-  "patch": "usability-1"
+  "patch": "balance-1"
 }

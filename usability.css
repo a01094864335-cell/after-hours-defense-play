@@ -185,3 +185,12 @@ button{min-height:44px;font-size:14px}
  #battle .battle-notice{height:44px;min-height:44px}
  #battle .battle-notice #message{white-space:normal;font-size:12px;line-height:18px;max-height:36px}
 }
+
+/* Milestone rewards remain scrollable on short phones. */
+#perk{max-height:calc(100dvh - 24px);overflow:auto}
+#perk-options,#perk-targets{display:grid;gap:8px;margin:0;padding:0;border:0}
+#perk #perk-options button,#perk #perk-targets button{width:100%;min-height:48px;margin:0;font-size:14px;line-height:1.5}
+#perk-targets legend{padding:8px 0;font-size:16px;color:#bdebd9}
+#perk-intro,#perk-note{font-size:14px;line-height:1.5}
+
+#battle #summon[data-discount='true']{outline:2px solid #bdebd9;outline-offset:-4px}
