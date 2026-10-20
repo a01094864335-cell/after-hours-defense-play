@@ -194,3 +194,17 @@ button{min-height:44px;font-size:14px}
 #perk-intro,#perk-note{font-size:14px;line-height:1.5}
 
 #battle #summon[data-discount='true']{outline:2px solid #bdebd9;outline-offset:-4px}
+
+/* First-play practice: readable model, then a real discounted summon. */
+#discount-practice{padding:8px;background:#21172c;color:#dfcde7;border:1px solid #82677d;margin:8px 0}
+#discount-practice>small{font-size:12px;color:#bdebd9}
+#discount-practice>div{display:flex;align-items:center;justify-content:center;gap:12px}
+#discount-practice figure{margin:4px;text-align:center}
+#discount-practice :is(img,canvas[data-motion]){width:48px;height:56px;object-fit:contain;image-rendering:pixelated}
+#discount-practice figcaption{font-size:12px;line-height:1.4}
+#discount-practice.example-failed figure:first-child :is(img,canvas[data-motion]){opacity:.2;filter:grayscale(1)}
+#discount-practice.example-failed figure:first-child figcaption::after{content:' · 실패';color:#ffd1d7}
+#guide #discount-tutorial-skip{width:100%;margin-top:8px;min-height:44px;font-size:14px;padding:10px;background:var(--violet) center/100% 100% no-repeat;color:#fff1d5}
+#guide[data-discount-lesson] #guide-title{font-size:20px;line-height:1.4}
+#guide[data-discount-lesson] #guide-text{font-size:14px;line-height:1.5}
+#battle #summon.tutorial-target{outline:3px solid #bdebd9;outline-offset:-5px;box-shadow:0 0 0 2px #241a30!important}
