@@ -12,7 +12,8 @@ window.GameOrientation = (() => {
     document.querySelector('#app-shell').inert = blocked;
     for (const dialog of document.querySelectorAll('dialog')) dialog.inert = blocked;
   }
-  landscape.addEventListener('change', refresh);
+  if(landscape.addEventListener)landscape.addEventListener('change',refresh);
+  else if(landscape.addListener)landscape.addListener(refresh);
   refresh();
   return {refresh};
 })();

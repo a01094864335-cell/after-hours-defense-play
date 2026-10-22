@@ -30,7 +30,7 @@ button{min-height:44px;font-size:14px}
 #boss-guide-list .boss-common{font-size:12px;color:#dfcde7}
 #boss-guide-list :is(img,canvas[data-motion]){flex-basis:44px;width:44px;height:52px}
 /* A nested native dialog lives above the scrolled shop and traps keyboard focus. */
-#recruit-dialog{position:fixed;inset:0;margin:auto;width:min(420px,calc(100vw - 32px));height:fit-content;max-height:calc(100dvh - 32px);padding:16px;border:1px solid #b59777;background:#241a30;color:#fff1d5;overflow:auto;overscroll-behavior:contain}
+#recruit-dialog{position:fixed;inset:0;margin:auto;width:min(420px,calc(100vw - 32px));height:fit-content;max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 32px);padding:16px;border:1px solid #b59777;background:#241a30;color:#fff1d5;overflow:auto;overscroll-behavior:contain}
 #recruit-dialog::backdrop{background:#100919df}
 #recruit-dialog #recruit-result{position:static;inset:auto;padding:0;width:100%;height:auto;display:block;transform:none}
 #recruit-dialog .recruit-reveal{position:static;inset:auto;transform:none;animation:none;display:flex;flex-direction:column;align-items:center;gap:12px;padding:0;margin:0;width:100%;height:auto;max-height:none;background:none;border:0;box-shadow:none;color:#fff1d5}
@@ -41,7 +41,7 @@ button{min-height:44px;font-size:14px}
 #recruit-dialog .ref-recruit-actions button{flex:1;min-width:0;min-height:44px;padding:8px;font-size:14px;background:var(--violet) center/100% 100% no-repeat;border:0}
 #recruit-dialog .ref-recruit-actions button:last-child{background-image:var(--gold-button);color:#38220f;text-shadow:none}
 /* Equipment: stable context, a single scrolling list. */
-#equipment[open]{display:flex;flex-direction:column;max-height:calc(100dvh - 24px);padding:12px!important;overflow:hidden}
+#equipment[open]{display:flex;flex-direction:column;max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 24px);padding:12px!important;overflow:hidden}
 #equipment>.sheet-head{position:static;flex-shrink:0;min-height:48px;margin:0;padding:4px}
 #equipment>#equipment-balance{flex-shrink:0;margin:4px 0 8px;min-height:0;font-size:14px;padding:4px}
 #equipment .equipment-content{overflow:auto;overscroll-behavior:contain;min-height:0;padding:0 2px 8px}
@@ -49,7 +49,7 @@ button{min-height:44px;font-size:14px}
 #equipment .cards .card>b{min-height:44px;font-size:14px}
 #equipment #equipment-close{min-width:44px;min-height:44px}
 /* Training: persistent group and level, only the detail body scrolls. */
-#training-dialog[open]{display:flex;flex-direction:column;height:min(840px,calc(100dvh - 24px));max-height:calc(100dvh - 24px);overflow:hidden}
+#training-dialog[open]{display:flex;flex-direction:column;height:min(840px,calc(calc(var(--viewport-unit, 1vh)*100) - 24px));max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 24px);overflow:hidden}
 #training-dialog .training-header{position:static;flex-shrink:0;padding:8px 12px}
 #training-dialog .training-header small{display:none}
 #training-dialog h2{font-size:22px;margin:0}
@@ -131,7 +131,7 @@ button{min-height:44px;font-size:14px}
 #promo .comic-stage{flex:1;min-height:0;position:relative;height:auto!important}
 #promo .comic-stage::before{top:76px!important;height:calc(100% - 76px)!important;background-size:auto 100%!important;background-position:center!important}
 #promo .comic-bottom{position:relative!important;inset:auto!important;flex-shrink:0;padding:8px 12px!important;width:100%;background:#241a30}
-#promo .comic-copy{margin:0 0 8px;max-height:32dvh!important;padding:32px 12px 12px!important}
+#promo .comic-copy{margin:0 0 8px;max-height:calc(var(--viewport-unit, 1vh)*32)!important;padding:32px 12px 12px!important}
 #promo .comic-copy #promo-line,#promo .comic-copy #promo-aside{font-size:14px!important;line-height:1.5!important}
 /* Report prioritizes the outcome, reward, and next action. */
 #result.result-screen,#result.result-screen:has(#retry-reward:not([hidden])){padding:110px 12px 16px!important;gap:8px}
@@ -151,7 +151,7 @@ button{min-height:44px;font-size:14px}
 #result #result-again,#result #result-home,#result #result-training{width:100%;min-height:44px;height:auto;padding:10px 12px;margin:0;align-self:stretch;font-size:14px}
 #lobby .lobby-shortcuts small{font-size:12px!important}
 #lobby .reward-hint{font-size:12px;line-height:1.5}
-.notice-dialog{width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:20px;background:#241a30;color:#fff1d5;border:1px solid #b59777;overflow:auto}
+.notice-dialog{width:min(420px,calc(100vw - 32px));max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 32px);padding:20px;background:#241a30;color:#fff1d5;border:1px solid #b59777;overflow:auto}
 .notice-dialog h2{font-size:22px}.notice-dialog p{font-size:14px;line-height:1.6}.notice-dialog button{width:100%;min-height:44px;background:var(--gold-button) center/100% 100% no-repeat;color:#38220f;border:0;padding:12px}
 @media(max-height:740px){#training-dialog .training-intro{display:none}#training-dialog .training-header{padding:4px 12px}#training-dialog .training-header h2{font-size:20px}#training-dialog .training-header button{min-height:44px}#training-dialog .training-tabs{padding-block:0}#training-context{padding-block:2px}#training-dialog .training-footer{padding-block:4px}#training-dialog .training-footer p{margin:2px 0}#result.result-screen,#result.result-screen:has(#retry-reward:not([hidden])){padding-top:76px!important}#result .result-icon,#result:has(#retry-reward:not([hidden])) .result-icon{height:72px}#recruit-dialog .recruit-reveal>:is(img,canvas[data-motion]){width:88px;height:92px}}
 @media(min-width:601px) and (min-height:1067px){#roster .staff-pass .pass-portrait{left:10px;top:6px}#roster .staff-pass .pass-meta{inset:10px 14px auto auto}#roster #roster-list{grid-template-columns:1fr}}
@@ -187,7 +187,7 @@ button{min-height:44px;font-size:14px}
 }
 
 /* Milestone rewards remain scrollable on short phones. */
-#perk{max-height:calc(100dvh - 24px);overflow:auto}
+#perk{max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 24px);overflow:auto}
 #perk-options,#perk-targets{display:grid;gap:8px;margin:0;padding:0;border:0}
 #perk #perk-options button,#perk #perk-targets button{width:100%;min-height:48px;margin:0;font-size:14px;line-height:1.5}
 #perk-targets legend{padding:8px 0;font-size:16px;color:#bdebd9}

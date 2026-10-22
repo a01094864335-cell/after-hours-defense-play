@@ -12,7 +12,8 @@ window.GamePerformance=(()=>{
  function requestUI(){uiDirty=true;if(!inFrame)schedule(callback)}
  function applyMode(){document.documentElement.classList.toggle('power-save',lowPower);if(typeof Motion!=='undefined')Motion.invalidate();invalidate();document.dispatchEvent(new Event('power-mode-change'))}
  function setMode(value){explicit=lowPower=!!value;try{localStorage.setItem('after-hours-power-save-v1',lowPower?'on':'off')}catch{}applyMode()}
- mobile.addEventListener('change',()=>{if(explicit===null){lowPower=mobile.matches;applyMode()}});
+ const onMobileChange=()=>{if(explicit===null){lowPower=mobile.matches;applyMode()}};
+ if(mobile.addEventListener)mobile.addEventListener('change',onMobileChange);else if(mobile.addListener)mobile.addListener(onMobileChange);
  document.addEventListener('visibilitychange',()=>{cancel();accumulator=0;if(typeof last!=='undefined')last=0;if(!document.hidden){dirty=uiDirty=true;schedule(callback)}});
  document.addEventListener('load',invalidate,true);
  for(const event of ['click','change','pointermove','keydown'])document.addEventListener(event,invalidate,{passive:true});
