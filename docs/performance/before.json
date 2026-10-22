@@ -1,0 +1,32 @@
+{
+  "lobby": {
+    "update": 180,
+    "sync": 0,
+    "renderMeta": 0,
+    "renderProgress": 0,
+    "draw": 0,
+    "frame": 179,
+    "mutations": 180,
+    "performanceMode": null
+  },
+  "battle": {
+    "update": 180,
+    "sync": 180,
+    "renderMeta": 180,
+    "renderProgress": 360,
+    "draw": 180,
+    "frame": 179,
+    "mutations": 9180,
+    "performanceMode": null
+  },
+  "paused": {
+    "update": 180,
+    "sync": 0,
+    "renderMeta": 0,
+    "renderProgress": 0,
+    "draw": 180,
+    "frame": 179,
+    "mutations": 180,
+    "performanceMode": null
+  }
+}

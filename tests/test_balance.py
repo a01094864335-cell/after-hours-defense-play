@@ -74,5 +74,5 @@ class BalanceTests(unittest.TestCase):
             self.assertIn(str(expected)+'배속',a.locator('#speed').get_attribute('aria-label'))
         a.evaluate("paused=true;speed=2;sync();document.querySelector('#speed').click()");self.assertTrue(a.evaluate('paused'));a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.evaluate('resumeRun()');self.assertEqual(a.evaluate('speed'),3)
         self.assertTrue(a.evaluate('paused'))
-        dt=a.evaluate('''()=>{const originalUpdate=update,originalRAF=requestAnimationFrame;let observed;try{update=d=>observed=d;requestAnimationFrame=()=>{};last=1000;frame(1010)}finally{update=originalUpdate;requestAnimationFrame=originalRAF}return observed}''')
-        self.assertAlmostEqual(dt,.03)
+        dt=a.evaluate("()=>{let observed;GamePerformance.resetSimulation();GamePerformance.advance(1/60,speed,d=>{observed=d});return observed}")
+        self.assertAlmostEqual(dt,.05)

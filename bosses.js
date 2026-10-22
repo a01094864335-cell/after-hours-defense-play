@@ -139,20 +139,21 @@ function renderBossGuide(){
 function drawBossFields(){
  for(const e of enemies){if(e.type!=='boss'||e.decoy||e.hp<=0)continue;const b=bossDefinition(e);
   const indices=e.warning?e.warningCells:e.scorchLeft>0?e.scorchCells:[];
-  for(const i of indices||[]){const p=cells[i];ctx.save();ctx.fillStyle=b.color+(e.warning?'24':'40');ctx.strokeStyle=b.color;ctx.lineWidth=2;round(p.x-35,p.y-42,70,85,8);ctx.fill();ctx.stroke();ctx.font='bold '+Math.max(18,Math.ceil(12*600/(ctx.canvas.getBoundingClientRect().width||600)))+'px system-ui';ctx.fillStyle='#fff1d5';ctx.strokeStyle='#171020';ctx.lineWidth=4;ctx.strokeText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.fillText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.restore()}
+  for(const i of indices||[]){const p=cells[i];ctx.save();ctx.fillStyle=b.color+(e.warning?'24':'40');ctx.strokeStyle=b.color;ctx.lineWidth=2;round(p.x-35,p.y-42,70,85,8);ctx.fill();ctx.stroke();ctx.font='bold '+Math.max(18,Math.ceil(12*600/(GamePerformance.boardWidth||600)))+'px system-ui';ctx.fillStyle='#fff1d5';ctx.strokeStyle='#171020';ctx.lineWidth=4;ctx.strokeText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.fillText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.restore()}
  }
 }
+let bossReadout=null,bossReadoutNodes=null;
 function drawBossHUD(){
- let panel=document.querySelector('#boss-readout');
+ let panel=bossReadout;
  const e=enemies.find(e=>e.type==='boss'&&!e.decoy&&e.hp>0&&!e.escaped);
- if(!e){if(panel)panel.hidden=true;return}
- if(!panel){panel=document.createElement('details');panel.id='boss-readout';panel.innerHTML='<summary><strong></strong><span></span><meter min="0" max="1" aria-label="군단장 체력"></meter></summary><p></p>';document.querySelector('.board-stage').append(panel)}
- panel.hidden=false;const b=bossDefinition(e),name=panel.querySelector('strong'),status=panel.querySelector('span'),text=b.skillName+(e.silence>0?' · 봉인 중':e.warning?' · ⚠ 시전 임박':' · '+Math.ceil(e.skill)+'초');
+ if(!e){if(panel)uiProp(panel,'hidden',true);return}
+ if(!panel){panel=document.createElement('details');panel.id='boss-readout';panel.innerHTML='<summary><strong></strong><span></span><meter min="0" max="1" aria-label="군단장 체력"></meter></summary><p></p>';document.querySelector('.board-stage').append(panel);bossReadout=panel;bossReadoutNodes={name:panel.querySelector('strong'),status:panel.querySelector('span'),meter:panel.querySelector('meter'),detail:panel.querySelector('p')}}
+ uiProp(panel,'hidden',false);const b=bossDefinition(e),name=bossReadoutNodes.name,status=bossReadoutNodes.status,text=b.skillName+(e.silence>0?' · 봉인 중':e.warning?' · ⚠ 시전 임박':' · '+Math.ceil(e.skill)+'초');
  if(name.textContent!==b.name)name.textContent=b.name;
  if(status.textContent!==text)status.textContent=text;
- panel.querySelector('meter').value=Math.max(0,e.hp/e.max);
+ uiProp(bossReadoutNodes.meter,'value',Math.max(0,e.hp/e.max));
  const detail=b.trait+' · '+b.traitText+(e.shield>0?' · 보호막 적용':'')+' / 대응: '+b.counter;
- if(panel.querySelector('p').textContent!==detail)panel.querySelector('p').textContent=detail;
+ uiText(bossReadoutNodes.detail,detail);
 }
 function drawBossEffect(f,t){
  if(!f.effect.startsWith('boss'))return false;

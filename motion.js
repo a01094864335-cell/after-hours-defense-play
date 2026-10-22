@@ -7,13 +7,13 @@ const Motion = (() => {
   const reduced = window.matchMedia?.('(prefers-reduced-motion: reduce)');
   let uiTime = 0, uiLast = 0, uiDrawn = -1;
   const observer = typeof IntersectionObserver === 'undefined' ? null :
-    new IntersectionObserver(entries => entries.forEach(e => { e.target.motionVisible = e.isIntersecting; }));
+    new IntersectionObserver(entries => entries.forEach(e => {e.target.motionVisible=e.isIntersecting;if(e.isIntersecting){e.target.motionKey=null;uiDrawn=-Infinity;window.GamePerformance?.invalidate()}}));
 
   function asset(key) {
     if (!sheets[key]) return null;
     if (!cache.has(key)) {
       const im = new Image();
-      im.src = scriptBase + sheets[key].file;
+      im.addEventListener('load',()=>{invalidate();window.GamePerformance?.invalidate()});im.src = scriptBase + sheets[key].file;
       cache.set(key, im);
     }
     return cache.get(key);
@@ -82,7 +82,7 @@ const Motion = (() => {
       const key = img.dataset.motion || img.getAttribute('src')?.split('/').pop()?.replace(/\.(?:png|webp)$/, '');
       if (!sheets[key]) continue;
       const c = document.createElement('canvas');
-      c.width = c.height = 320;
+      c.width = c.height = 64;
       c.className = img.className;
       c.dataset.motion = key;
       c.setAttribute('role', 'img');
@@ -94,39 +94,48 @@ const Motion = (() => {
       c.motionMode = img.dataset.motionMode || 'auto';
       img.replaceWith(c);
       portraits.add(c);
-      observer?.observe(c);
+      observer?.observe(c);resizeObserver?.observe(c);img.addEventListener('load',()=>{c.motionKey=null;uiDrawn=-Infinity;window.GamePerformance?.invalidate()});window.GamePerformance?.invalidate();
     }
   }
 
-  function drawUI(now, frozen = false) {
-    const dt = uiLast ? Math.min((now - uiLast) / 1000, .1) : 0;
-    uiLast = now;
-    if (document.hidden) return;
-    if (!frozen) uiTime += dt;
-    if (now - uiDrawn < 80) return; // UI portraits need at most 12.5 fps.
-    uiDrawn = now;
-    for (const c of portraits) {
-      if (!c.isConnected) { observer?.unobserve(c); portraits.delete(c); continue; }
-      if (!c.motionVisible) continue;
-      const key = c.dataset.motion, data = sheets[key], t = uiTime + c.motionPhase;
-      let pose = frame('idle', t);
-      const mode = c.motionMode;
-      if (!reduced?.matches) {
-        if (mode === 'walk' || data?.group === 'enemy' && mode === 'auto') pose = frame('walk', t);
-        else if (mode === 'action') pose = [2, 3, 4, 5, 0][Math.floor(t * 6) % 5];
-        else if (mode === 'auto' && t % 7 > 5.8) pose = [2, 3, 4, 5][Math.min(3, Math.floor((t % 7 - 5.8) / .3))];
-      }
-      const cc = c.getContext('2d');
-      cc.clearRect(0, 0, 320, 320);
-      cc.fillStyle = '#130e2428';
-      cc.beginPath();cc.ellipse(160, 293, 68, 12, 0, 0, Math.PI * 2);cc.fill();
-      if (!draw(cc, key, 160, 294, 248, pose)) {
-        const fallback = c.motionFallback;
-        if (fallback.complete && fallback.naturalWidth) cc.drawImage(fallback, 20, 14, 280, 280);
-      }
+  function resolution(c,box){
+    const cap=window.GamePerformance?.lowPower?192:320;
+    return Math.min(cap,Math.max(64,Math.ceil(Math.max(box.width,box.height)*Math.min(devicePixelRatio||1,1.5)/32)*32));
+  }
+  const resizeObserver=typeof ResizeObserver==='undefined'?null:new ResizeObserver(entries=>{
+    for(const e of entries){if(!e.contentRect.width||!e.contentRect.height)continue;const n=resolution(e.target,e.contentRect);if(e.target.motionResolution!==n){e.target.motionResolution=n;e.target.motionKey=null;uiDrawn=-Infinity;window.GamePerformance?.invalidate()}}
+  });
+  function drawUI(now,frozen=false){
+    const dt=uiLast?Math.min((now-uiLast)/1000,.1):0;uiLast=now;
+    if(document.hidden)return;
+    if(!frozen)uiTime+=dt;
+    if(now-uiDrawn<80)return;
+    uiDrawn=now;
+    for(const c of portraits){
+      if(!c.isConnected){observer?.unobserve(c);resizeObserver?.unobserve(c);portraits.delete(c);continue}
+      if(!c.motionVisible||c.closest('[hidden],dialog:not([open])'))continue;
+      const key=c.dataset.motion,data=sheets[key],t=uiTime+c.motionPhase,mode=c.motionMode;
+      let pose=frame('idle',t);
+      if(window.GamePerformance?.lowPower||reduced?.matches)pose=0;
+      else if(frozen)pose=c.motionLastPose??0;
+      else if(mode==='walk'||data?.group==='enemy'&&mode==='auto')pose=frame('walk',t);
+      else if(mode==='action')pose=[2,3,4,5,0][Math.floor(t*6)%5];
+      else if(mode==='auto'&&t%7>5.8)pose=[2,3,4,5][Math.min(3,Math.floor((t%7-5.8)/.3))];
+      if(!c.motionResolution)c.motionResolution=resolution(c,c.getBoundingClientRect());
+      const n=c.motionResolution,im=asset(key),fallback=c.motionFallback;
+      const drawKey=[pose,n,im?.complete&&im.naturalWidth>0,fallback.complete&&fallback.naturalWidth>0].join('|');
+      if(c.motionKey===drawKey)continue;
+      c.motionKey=drawKey;c.motionLastPose=pose;
+      if(c.width!==n)c.width=c.height=n;
+      const cc=c.motionContext||(c.motionContext=c.getContext('2d'));cc.setTransform(1,0,0,1,0,0);cc.clearRect(0,0,n,n);cc.setTransform(n/320,0,0,n/320,0,0);
+      cc.fillStyle='#130e2428';cc.beginPath();cc.ellipse(160,293,68,12,0,0,Math.PI*2);cc.fill();
+      if(!draw(cc,key,160,294,248,pose)&&fallback.complete&&fallback.naturalWidth)cc.drawImage(fallback,20,14,280,280);
+      if(window.GamePerformance)GamePerformance.stats.portraitDraws++;
     }
   }
-  function preview(mode) { for (const c of portraits) c.motionMode = mode; }
+  function invalidate(){uiDrawn=-Infinity;for(const c of portraits){c.motionKey=null;c.motionResolution=null}}
+  function hasAnimated(){for(const c of portraits)if(c.isConnected&&c.motionVisible&&!c.closest('[hidden],dialog:not([open])'))return true;return false}
+  function preview(mode) {for(const c of portraits){c.motionMode=mode;c.motionKey=null}window.GamePerformance?.invalidate()}
   if (typeof MutationObserver !== 'undefined' && document.body) {
     new MutationObserver(records => {
       for (const record of records) for (const node of record.addedNodes) {
@@ -134,5 +143,5 @@ const Motion = (() => {
       }
     }).observe(document.body, { childList: true, subtree: true });
   }
-  return { draw, frame, start, tick, unitFrame, mount, drawUI, preview, preload: asset, reduced, sheets };
+  return { draw, frame, start, tick, unitFrame, mount, drawUI, invalidate, hasAnimated, preview, preload: asset, reduced, sheets };
 })();

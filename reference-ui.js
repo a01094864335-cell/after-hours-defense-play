@@ -21,7 +21,7 @@
  const oldPromo=showPromo;showPromo=function(){oldPromo();q('#promo').style.setProperty('--story-art',"url('assets/reference-ui/"+stories[promoIndex]+".svg')")};
  const originalMeta=renderMeta;renderMeta=function(){originalMeta();decorate()};
  const originalRender=appRender;appRender=function(){originalRender();refresh()};
- function refresh(){pause.hidden=!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]'));q('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');}
+ function refresh(){uiProp(pause,'hidden',!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]')));uiAttr(q('#pause'),'aria-label',paused?'계속하기':'일시정지');}
  function decorate(){
   const slot=q('#merc-slot');if(!slot.querySelector('.ref-merc-plus')){
    if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-heading">지원 용병</span>'}
@@ -36,7 +36,7 @@
  // Report summaries use actual run values; detailed employee statistics remain expandable.
  if(typeof describeStats==='function'){const originalStats=describeStats;describeStats=function(){originalStats();const el=q('#result-stats'),details=el.innerHTML;q('#result').dataset.reward=runReward?.paid?'paid':'pending';q('#result-again').disabled=q('#result-home').disabled=!!runReward&&!runReward.paid;el.innerHTML=[['☾','도달 웨이브',wave],['⚔','저지한 용사',kills],['●','획득 코인',runReward?.paid?'+'+(runReward?.total||0):'미지급']].map(([icon,label,value])=>'<div><span class="grid-stat-icon" aria-hidden="true">'+icon+'</span><span class="grid-stat-label">'+label+'</span><b>'+value+'</b></div>').join('')+'<details><summary>직원별 근무 기록</summary>'+details+'<p>'+q('#record-highest').textContent+'</p></details>'};}
  // Painted slot borders also render inside the live combat canvas.
- const textures={};for(const key of ['slot-square','tab-active']){const im=new Image();im.src='assets/reference-ui/'+(key==='slot-square'?'archive-slot-frame':key)+'.svg';textures[key]=im}
+ const textures={};for(const key of ['slot-square','tab-active']){const im=new Image();im.addEventListener('load',()=>GamePerformance.invalidate());im.src='assets/reference-ui/'+(key==='slot-square'?'archive-slot-frame':key)+'.svg';textures[key]=im}
  window.GameSkin={frame(context,key,x,y,w,h){if(key==='slot-square')return false;const im=textures[key];if(!im?.complete||!im.naturalWidth)return false;context.drawImage(im,x,y,w,h);return true},refresh,story(index){q('#promo').style.setProperty('--story-art',"url('assets/reference-ui/"+stories[index]+".svg')")},scan:decorate};
  refresh();
 })();

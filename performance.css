@@ -1,0 +1,6 @@
+/* Only decorative motion is reduced. Danger marks, health and skill states stay visible. */
+.power-save .lobby-art::before,.power-save .lobby-art::after,.power-save .lobby-badge i,
+.power-save .item-buttons img,.power-save .item-product img,.power-save .lobby-gobi,
+.power-save .reward-hint,.power-save .nav-home{animation:none!important;transition:none!important}
+.power-save dialog::backdrop{backdrop-filter:none}
+#power-save-toggle{width:100%;min-height:44px;font-size:14px;padding:12px;color:#fff1d5;background:var(--violet) center/100% 100% no-repeat;border:0}

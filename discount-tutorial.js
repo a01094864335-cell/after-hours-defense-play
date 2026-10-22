@@ -9,7 +9,7 @@
  guide.insertBefore(model,next);
  const skip=document.createElement('button');skip.id='discount-tutorial-skip';skip.textContent='이 안내 건너뛰기';skip.hidden=true;guide.append(skip);
  function clean(){guide.removeAttribute('data-discount-lesson');model.hidden=true;skip.hidden=true;next.textContent='알겠어요 · 계속하기'}
- function highlight(){q('#summon').classList.toggle('tutorial-target',tutorialMode&&stage==='summon'&&appScreen==='battle'&&!ended)}
+ function highlight(){const target=tutorialMode&&stage==='summon'&&appScreen==='battle'&&!ended;if(q('#summon').classList.contains('tutorial-target')!==target)q('#summon').classList.toggle('tutorial-target',target)}
  function persist(){highlight();saveActiveRun()}
  function display(){
   guide.dataset.discountLesson=stage;model.hidden=false;skip.hidden=false;model.classList.toggle('example-failed',stage==='offer');
