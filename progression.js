@@ -19,7 +19,7 @@ function perkReward(){
 function renderPerkChoices(){
  const r=perkReward();
  document.querySelector('#perk-intro').textContent=wave+'단계 돌파 · 보상 '+r.tier+'단계 · 하나만 선택하세요.';
- document.querySelector('#perk-targets').hidden=true;document.querySelector('#perk-options').hidden=false;
+ document.querySelector('#perk-targets').hidden=true;document.querySelector('#perk-options').hidden=false;document.querySelector('#perk-back').hidden=true;
  document.querySelector('#perk-sp').textContent='운영비 +'+r.sp+' SP';
  document.querySelector('#perk-life').textContent=life>=3?'왕좌 생명 3 / 3 · 최대치':'왕좌 생명 '+life+' → '+Math.min(3,life+r.life)+' / 3';
  document.querySelector('#perk-life').disabled=life>=3;
@@ -37,7 +37,7 @@ function showPerkTargets(id){
  const field=document.querySelector('#perk-targets');field.replaceChildren();
  const legend=document.createElement('legend');legend.textContent=id==='equipment'?'강화할 직군을 골라주세요':'받을 직원을 골라주세요';field.append(legend);
  for(const type of runDeck){const button=document.createElement('button');button.textContent=kinds[type].name+(id==='equipment'?' · Lv.'+levels[type]+' → '+Math.min(5,levels[type]+perkReward().equipment):' · '+perkReward().pip+'등급');button.disabled=id==='equipment'&&levels[type]>=5;button.onclick=()=>choosePerk(id,type);field.append(button)}
- const back=document.createElement('button');back.textContent='← 다른 보상 보기';back.onclick=renderPerkChoices;field.append(back);
+ const back=document.querySelector('#perk-back');back.hidden=false;back.onclick=renderPerkChoices;
  document.querySelector('#perk-options').hidden=true;field.hidden=false;field.querySelector('button:not(:disabled)').focus();
 }
 function choosePerk(id,type){

@@ -157,14 +157,14 @@
     "design-grid.css": "c0d6ede4f7654830d1065e99493d6a3a60467e3e750181014a83e32d4f81df40",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "ccbc0d91fe095988de7fddf88d97b1aff20a10631e556f766732243901863d1a",
-    "index.html": "36c6946322fdd054e75f1d3a77f0c62340f01255ebc1f7534b9df506201c35d1",
+    "index.html": "b5e1edab1d2b4c51863f1ff5cb1820d4f8c4390a082c68ca48ea92da0c1ef975",
     "legacy-ui.css": "d6bc10a44d0ab6f11809c9eef9a7d86bfaad8284d81c8cf33712906cdb1980fa",
     "lobby-layout.css": "e226a5febe7e42ca537ec9cb7efc3e3c677e7a6d3c9980743d60e33e4086c893",
     "meta.js": "1309b6c307496acf7cdbb42d9153cd7f95716b1dcdb0c065550af2bb51d84af1",
     "mobile-ui.css": "6d79270ecbb6b377d8a93e767adb54c3faa9099d38788e0e27e199555709d569",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "fcd061d47d6c9cfd450a7e7fde2b722725eec96fab6a20008ec6edf9c005f184",
-    "progression.js": "8ef364c17d21fe2f6a1a01b770dc29acd8cac8790fe705f06a7e58fc16bd372a",
+    "progression.js": "3d2fd8043023f3a2e8ed3e002f8669a57a8f03b390a5aa09502f4cfb3ef582c1",
     "prologue-layout.css": "5b81ae5d8a760f54a4ab9e4e27190a90c1c332d688be87d953ebbe2501df6fc0",
     "recruitment.js": "ca9d9bf6cd49cf2b81e6a3270a565fa12da59218a30c439181f3ad840561fca8",
     "reference-ui.css": "4088656dbb1a3f8997cb3bf35ac8e5515e53e760708b2b8d8a545e43a817b13f",
@@ -179,12 +179,12 @@
     "orientation.js": "a8c087037676e6358ed56fd88f065f4acb379ac552151c286dd4cdea78550181",
     "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782",
     "visual-polish.css": "eb2d6fb3af6febf8b71d4ecde592bb224df478254c4e748c78c7e84fa86b1a82",
-    "usability.css": "8d272f093b6839ea88af3836d449ec25788f2a7de35ad3ca20f52157de7d2b55",
-    "usability.js": "65898785dc11d0d08a6e13b5b24760872ff2bf19904ed6faa13e5f770021d910",
+    "usability.css": "97d28135c7931576da62fc1f3d670993dfeb44c947e7143f80f64ef08264a0cd",
+    "usability.js": "a030679779b789c8538146b8c6c78c2b28042862d9e9b595d4f6cc52c10e0296",
     "discount-tutorial.js": "f527b712e819bec5ad925ea8a49cb65d16812eaccfa484e60a707dd24c3bd28c",
     "performance.js": "81ec84fe73e7801a6f5b3c800e144bfd3d0b15765d3abd63baa35a6c7ac36cec",
     "performance-ui.js": "4be274dd51de9507544b3d426c7acd0b621d301fdfa2cfc9c7fb22432d6adef6",
     "performance.css": "4873c5c45a739664bd2b5038b6104e8e29dacbc10a6f16e90879f84d48e99093"
   },
-  "patch": "android-compat-1"
+  "patch": "visible-ui-1"
 }

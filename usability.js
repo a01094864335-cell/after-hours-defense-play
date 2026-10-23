@@ -3,6 +3,13 @@
 (()=>{
  const q=s=>document.querySelector(s);
  const equipment=q('#equipment'),content=document.createElement('div');content.className='equipment-content';content.append(q('#cards'));equipment.append(content);
+ // Fixed heading/action areas keep autofocus from scrolling away the help title.
+ const help=q('#info'),helpBody=document.createElement('div');helpBody.className='help-content';
+ for(const child of [...help.children])if(child!==q('#info>h2')&&child!==q('#info-close'))helpBody.append(child);
+ q('#info-close').before(helpBody);
+ const perk=q('#perk'),perkBody=document.createElement('div');perkBody.className='perk-content';
+ for(const child of [...perk.children])if(child.id!=='perk-back')perkBody.append(child);
+ perk.prepend(perkBody);
  const intro=q('.training-intro');intro.innerHTML='같은 그룹 전체 성장 · 신규 채용에도 적용<br><small>코인 사용 · 확정 성공 · 현재 기기·브라우저에 저장</small>';
  const breakdown=document.createElement('details');breakdown.id='result-breakdown';breakdown.innerHTML='<summary>보상 내역·다음 안내</summary>';q('#result-text').before(breakdown);breakdown.append(q('#result-text'));
  const originalStats=describeStats;describeStats=function(){originalStats();breakdown.open=!runReward?.paid||tutorialMode&&!tutorialWon};
@@ -13,7 +20,7 @@
    const amount=document.createElement('strong');amount.textContent=match[1];
    const unit=document.createElement('span');unit.textContent=' 코인';
    const note=document.createElement('small');note.textContent=match[2].replace(/^\s*[·\n]\s*/, '').trim().replace(/(\d+개)\s*/, '$1\n').replace(/(영구 고용)\s*/, '$1\n');
-   button.replaceChildren(amount,unit,note);button.dataset.formattedPrice=button.textContent;
+   const price=document.createElement('span');price.className='price-line';price.append(amount,unit);button.replaceChildren(price,note);button.dataset.formattedPrice=button.textContent;
   }
  }
  const oldMeta=renderMeta;renderMeta=function(){oldMeta();prices()};prices();

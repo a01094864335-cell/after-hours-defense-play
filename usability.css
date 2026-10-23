@@ -208,3 +208,36 @@ button{min-height:44px;font-size:14px}
 #guide[data-discount-lesson] #guide-title{font-size:20px;line-height:1.4}
 #guide[data-discount-lesson] #guide-text{font-size:14px;line-height:1.5}
 #battle #summon.tutorial-target{outline:3px solid #bdebd9;outline-offset:-5px;box-shadow:0 0 0 2px #241a30!important}
+
+/* Capture review V01–V10: independent text boxes and visible scroll boundaries. */
+#battle .summon-row>.sp-balance{display:flex;align-items:center;justify-content:center;padding:4px 6px;gap:0;overflow:hidden}
+#battle .sp-balance #sp{font-size:22px;line-height:22px;margin:0;padding:0}
+#battle .sp-balance .sp-unit{display:block;font-size:11px;line-height:12px;color:#eddfef;margin:0;padding:0}
+#battle #start,#enter-battle,#summon,#result-again,#info-close{color:#38220f;text-shadow:none}
+#battle #skill:disabled{background:#30233e;color:#f0e5f4;text-shadow:none;opacity:1}
+#battle #tutorial-strip{height:auto;min-height:22px;white-space:normal;overflow:visible;text-overflow:clip;font-size:12px;line-height:16px;padding:3px 8px;flex-shrink:0}
+#info[open]{display:flex;flex-direction:column;max-height:calc(var(--viewport-unit,1vh)*100 - 24px);overflow:hidden;padding:12px!important}
+#info>h2{flex-shrink:0;font-size:22px;line-height:28px;margin:0 0 8px;padding:8px!important}
+#info .help-content{overflow:auto;min-height:0;overscroll-behavior:contain;padding:0 4px 12px;scrollbar-gutter:stable}
+#info #info-close{flex-shrink:0;margin:8px 0 0;min-height:44px}
+#info .ref-guide-step{margin:8px 0}
+#perk[open]{display:flex;flex-direction:column;overflow:hidden}
+#perk .perk-content{min-height:0;overflow:auto;overscroll-behavior:contain;padding-bottom:12px;scrollbar-gutter:stable}
+#perk #perk-back{flex-shrink:0;min-height:48px;margin:8px 0 0;width:100%;font-size:14px;line-height:20px;text-shadow:none}
+#shop #shop-items .shop-row button,#shop #shop-mercs .shop-row button{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:4px;text-shadow:none}
+#shop .shop-row button .price-line{display:flex;align-items:baseline;justify-content:center;gap:2px;white-space:nowrap}
+#shop .shop-row button small{width:100%;text-align:center;line-height:16px}
+#roster #roster-list{padding-bottom:20px;scroll-padding-block:12px;scrollbar-gutter:stable}
+#roster .archive-footer{border-top:1px solid #82677d;line-height:20px}
+#training-dialog .training-body{padding-bottom:24px;scroll-padding-block:12px;scrollbar-gutter:stable}
+#training-dialog .training-footer{border-top:1px solid #82677d}
+#lobby .merc-slot #deck-label{font-size:12px;line-height:16px}
+#lobby .reward-hint{margin:0;line-height:16px;top:auto!important;bottom:calc(170*var(--u));padding:2px 8px;background:#21172ce8}
+@media(orientation:portrait) and (max-height:740px){
+ #battle #tutorial-strip{min-height:22px;height:auto;padding:3px 6px;font-size:12px;line-height:16px;white-space:normal;overflow:visible;text-overflow:clip}
+}
+#info #skill-info{font-size:14px;line-height:1.5;margin:8px 0 12px;padding:0;color:#dfcde7}
+#info .ref-guide-step{grid-template-columns:20px minmax(0,1fr) 32px!important;gap:6px}
+#info .ref-guide-step :is(img,canvas[data-motion]){width:32px;height:40px}
+#perk .perk-content>h2{font-size:22px;line-height:1.4;margin:4px 0 16px;text-align:center}
+#battle #tutorial-strip{word-break:keep-all;overflow-wrap:normal}

@@ -45,7 +45,7 @@ class BalanceTests(unittest.TestCase):
         self.assertTrue(a.locator('#perk-staff').is_disabled());self.assertTrue(a.locator('#perk-equipment').is_disabled());self.assertTrue(a.evaluate('bonusPending'))
     def test_late_reward_choices_fit_short_phone(self):
         a=self.open(320,568);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset();playing=true;wave=20;sync()');self.reward(a,20)
-        self.inside(a,'#perk');a.locator('#perk-staff').click();a.locator('#perk-targets button').last.click();self.assertFalse(a.locator('#perk-options').is_hidden())
+        self.inside(a,'#perk');a.locator('#perk-staff').click();a.locator('#perk-back').click();self.assertFalse(a.locator('#perk-options').is_hidden())
     def fail_merge(self,a):
         a.evaluate('''()=>{paused=false;guaranteedMerge=0;board[0]={type:0,pip:1};board[1]={type:0,pip:1};const original=Math.random;try{Math.random=()=>0;merge(0,1)}finally{Math.random=original}}''')
     def test_failure_discounts_only_next_successful_summon_and_preserves_base_growth(self):
