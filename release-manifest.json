@@ -157,10 +157,10 @@
     "design-grid.css": "c0d6ede4f7654830d1065e99493d6a3a60467e3e750181014a83e32d4f81df40",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "ccbc0d91fe095988de7fddf88d97b1aff20a10631e556f766732243901863d1a",
-    "index.html": "8bb41e302478eea4b76eb41774f5bcc7278460e7702de5f9df25a8aba7b8afe5",
+    "index.html": "e46c10492d3ad22b3381622e67ee669bff62b434baa6120c1016d1b1668e6844",
     "legacy-ui.css": "d6bc10a44d0ab6f11809c9eef9a7d86bfaad8284d81c8cf33712906cdb1980fa",
     "lobby-layout.css": "e226a5febe7e42ca537ec9cb7efc3e3c677e7a6d3c9980743d60e33e4086c893",
-    "meta.js": "6972eeef6fbbf475807042a85dc974a2b7520f674d9891bacc7ecadf9d4499ce",
+    "meta.js": "1820e0f8847d2f9208a2595ccec68702a2bfcd3daee7acea37a803019d2d326d",
     "mobile-ui.css": "6d79270ecbb6b377d8a93e767adb54c3faa9099d38788e0e27e199555709d569",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "fcd061d47d6c9cfd450a7e7fde2b722725eec96fab6a20008ec6edf9c005f184",
@@ -168,8 +168,8 @@
     "prologue-layout.css": "5b81ae5d8a760f54a4ab9e4e27190a90c1c332d688be87d953ebbe2501df6fc0",
     "recruitment.js": "9a8bd12842f61b32538cf394fe569131a15b48b4d16d73df7c7dab816e5a65eb",
     "reference-ui.css": "4088656dbb1a3f8997cb3bf35ac8e5515e53e760708b2b8d8a545e43a817b13f",
-    "reference-ui.js": "7b24dbdeadca8066544a7b842197e0cba3ede08153dabb367fce2483d5897cb2",
-    "staff-codex.js": "c5fe4e2b10149a3e41579f7e400b579f1546dbb64881d7f28db7c6411e7602eb",
+    "reference-ui.js": "5bcb2f26115cb8d514895b4d2fc5ae2251971a378d7e117c28c82172a2a2d306",
+    "staff-codex.js": "deb0f8ac4039c256bf0c2e83c27bf8b483349003b64769fef1f434b5dd078528",
     "staff-combat.js": "ffb304715afc3a81bb15aeeb36061e9157225c1186c34e2f1135ce5d8b04b8b7",
     "training-ui.js": "674500751347729c34972b2db24a36636665de01d023af6d128db266d023facf",
     "training.css": "ac4015a437e8a107b03514fbd017450f0bfcb6f722ed1c0fc6b7a7ec5eb57846",
@@ -187,7 +187,9 @@
     "performance.css": "4873c5c45a739664bd2b5038b6104e8e29dacbc10a6f16e90879f84d48e99093",
     "gm-mode.js": "6d9e6fc8a7065cee1b1c9a5828411b8cfd6e276102b040b732af3473ac5cc763",
     "gm-ui.js": "649af29709f33e3de6ae7f148a155028291f530a9b78f55c4ed076e2a3163489",
-    "gm-mode.css": "9335dff9c91520895a3af27b54747ce927283722c35f2f4a633767798d245de6"
+    "gm-mode.css": "9335dff9c91520895a3af27b54747ce927283722c35f2f4a633767798d245de6",
+    "shop-system.js": "11004ae3d140f951cee636d4a1d4016e6c4a7d446064c319386ee2ceeab1b154",
+    "shop-system.css": "164ecf970461e3bddbffc2a2a7a10be3487f71d891686ffada7568ecc917ff7d"
   },
   "patch": "coin-prices-1",
   "patches": [
@@ -203,6 +205,18 @@
         "gm-mode.js",
         "gm-ui.js",
         "gm-mode.css"
+      ]
+    },
+    {
+      "feature": "unified-recruitment-shop",
+      "sourceRevision": "587a758d5463d895ebcc2c482df5af896db6ec62",
+      "files": [
+        "index.html",
+        "meta.js",
+        "reference-ui.js",
+        "staff-codex.js",
+        "shop-system.js",
+        "shop-system.css"
       ]
     }
   ]

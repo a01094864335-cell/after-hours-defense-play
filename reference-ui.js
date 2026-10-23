@@ -25,7 +25,7 @@
  function decorate(){
   const slot=q('#merc-slot');if(!slot.querySelector('.ref-merc-plus')){
    if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-heading">지원 용병</span>'}
-   const plus=document.createElement('button');plus.className='ref-merc-plus';plus.textContent='+';plus.setAttribute('aria-label','지원 용병 선택');plus.onclick=()=>{q('#shop-open').click();shopTab('mercs')};slot.append(plus);
+   const plus=document.createElement('button');plus.className='ref-merc-plus';plus.textContent='+';plus.setAttribute('aria-label','지원 용병 선택');plus.onclick=()=>{openSupportArchive()};slot.append(plus);
   }
   if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
   document.querySelectorAll('.staff-pass').forEach(card=>{const equipped=String(meta.deck.includes(card.dataset.staff));if(card.dataset.equipped!==equipped)card.dataset.equipped=equipped;const name=card.querySelector('.pass-open');if(name&&/인사기록|채용 방법/.test(name.textContent)){const record=staffRecords.find(r=>r.id===card.dataset.staff);name.textContent=record&&staffOwned(record)?record.name:'???'}card.querySelector(':scope>strong')?.remove()});

@@ -1,0 +1,5 @@
+
+/* Pack recruitment and individual consumables share one simple shop. */
+#shop .recruit-shop[hidden],#shop #shop-mercs{display:none!important}
+#shop .recruit-shop>p{word-break:keep-all}
+#support-equip{width:100%;min-height:44px}
