@@ -1,7 +1,7 @@
 'use strict';
 const BASE_STAFF=['goblin-guard','orc-technician','slime-cleaner','gobi','electric-technician','ghost-courier'];
 const RECRUIT_STAFF=['bat-nurse','skeleton-chef','mimic-storekeeper','spider-tailor','nightmare-counselor','kobold-recruiter'];
-const PACK_PRICE=30, RECRUIT_POINTS=3;
+const PACK_PRICE=120, RECRUIT_POINTS=3;
 const META_KEY='after-hours-defense-v1';
 function freshMeta(){return {version:1,coins:0,items:{grade:0,kind:0,king:0},owned:[],equipped:null,settled:[],staff:BASE_STAFF.slice(),deck:BASE_STAFF.slice(0,5),recruitPoints:0,training:{staff:1,merc:1}}}
 let saveWarning='';
@@ -9,8 +9,8 @@ function loadMeta(){try{const raw=localStorage.getItem(META_KEY);if(!raw)return 
 let meta=loadMeta();
 function saveChange(change){if(!GameSession.canWrite())return false;if(saveWarning){showMetaStatus(saveWarning);return false}const next=JSON.parse(JSON.stringify(meta));change(next);try{localStorage.setItem(META_KEY,JSON.stringify(next));meta=next;return true}catch(e){showMetaStatus('저장 실패: 구매·소비·지급을 적용하지 않았습니다. 브라우저 저장 공간을 확인해주세요.');return false}}
 function showMetaStatus(text){document.querySelector('#meta-status').textContent=text;document.querySelector('#shop-status').textContent=text}
-const itemCatalog={grade:{name:'등급 합성권',price:8,icon:'🎲',image:'item-grade',desc:'종류가 달라도 같은 등급 합성'},kind:{name:'종류 합성권',price:12,icon:'📜',image:'item-kind',desc:'등급이 달라도 같은 종류 합성'},king:{name:'마왕 깨우기',price:20,icon:'🔔',image:'item-king',desc:'현재 적이 있을 때 마왕 즉시 출동'}};
-const mercCatalog={ward:{name:'결계 계약직',price:25,file:'../mobile/merc-ward',desc:'한 판에 첫 돌파 피해 1회 완전 방어'},accountant:{name:'야간 회계사',price:30,file:'../mobile/merc-accountant',desc:'처치한 적마다 전투 SP +2'},rescue:{name:'비상 대응반',price:40,file:'../mobile/merc-rescue',desc:'15초마다 전 적 최대 체력의 8% 피해'}};
+const itemCatalog={grade:{name:'등급 합성권',price:20,icon:'🎲',image:'item-grade',desc:'종류가 달라도 같은 등급 합성'},kind:{name:'종류 합성권',price:30,icon:'📜',image:'item-kind',desc:'등급이 달라도 같은 종류 합성'},king:{name:'마왕 깨우기',price:50,icon:'🔔',image:'item-king',desc:'현재 적이 있을 때 마왕 즉시 출동'}};
+const mercCatalog={ward:{name:'결계 계약직',price:150,file:'../mobile/merc-ward',desc:'한 판에 첫 돌파 피해 1회 완전 방어'},accountant:{name:'야간 회계사',price:200,file:'../mobile/merc-accountant',desc:'처치한 적마다 전투 SP +2'},rescue:{name:'비상 대응반',price:250,file:'../mobile/merc-rescue',desc:'15초마다 전 적 최대 체력의 8% 피해'}};
 function buyItem(key){const k=itemCatalog[key];if(!k||meta.coins<k.price)return;if(saveChange(d=>{d.coins-=k.price;d.items[key]++})){showMetaStatus(k.name+' 1개 구매 완료');renderMeta()}}
 function buyMerc(key){const k=mercCatalog[key];if(!k||playing&&!ended){showMetaStatus('용병 구매·선택은 당직 시작 전 또는 종료 후 가능합니다.');return}if(meta.owned.includes(key)){if(saveChange(d=>{d.equipped=d.equipped===key?null:key}))renderMeta();return}if(meta.coins<k.price)return;if(saveChange(d=>{d.coins-=k.price;d.owned.push(key);d.equipped=key})){showMetaStatus(k.name+' 영구 고용 완료');renderMeta()}}
 function renderMeta(){

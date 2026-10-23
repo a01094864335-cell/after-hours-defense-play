@@ -1,5 +1,6 @@
 'use strict';
 function renderRecruitShop(){
+ uiText(document.querySelector('#staff-pack-price'),PACK_PRICE+' 코인');
  const allHired=RECRUIT_STAFF.every(id=>meta.staff.includes(id));
  const button=document.querySelector('#buy-staff-pack');button.disabled=!!saveWarning||meta.coins<PACK_PRICE||allHired||playing&&!ended;
  button.textContent=allHired?'전 직원 채용 완료':playing&&!ended?'당직 종료 후 채용 가능':PACK_PRICE+' 코인 · 채용팩 열기'+(meta.coins<PACK_PRICE?' · '+(PACK_PRICE-meta.coins)+'코인 부족':'');

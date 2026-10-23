@@ -157,16 +157,16 @@
     "design-grid.css": "c0d6ede4f7654830d1065e99493d6a3a60467e3e750181014a83e32d4f81df40",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "ccbc0d91fe095988de7fddf88d97b1aff20a10631e556f766732243901863d1a",
-    "index.html": "b5e1edab1d2b4c51863f1ff5cb1820d4f8c4390a082c68ca48ea92da0c1ef975",
+    "index.html": "94fd49950ec99fe764c2a503d31120504d4640ee79489c781986126b8a5bb7e2",
     "legacy-ui.css": "d6bc10a44d0ab6f11809c9eef9a7d86bfaad8284d81c8cf33712906cdb1980fa",
     "lobby-layout.css": "e226a5febe7e42ca537ec9cb7efc3e3c677e7a6d3c9980743d60e33e4086c893",
-    "meta.js": "1309b6c307496acf7cdbb42d9153cd7f95716b1dcdb0c065550af2bb51d84af1",
+    "meta.js": "3650e6e61eee352e23bb36b92151777e5ea04bb9e1548d038cb9ffcadb1020ff",
     "mobile-ui.css": "6d79270ecbb6b377d8a93e767adb54c3faa9099d38788e0e27e199555709d569",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "fcd061d47d6c9cfd450a7e7fde2b722725eec96fab6a20008ec6edf9c005f184",
     "progression.js": "3d2fd8043023f3a2e8ed3e002f8669a57a8f03b390a5aa09502f4cfb3ef582c1",
     "prologue-layout.css": "5b81ae5d8a760f54a4ab9e4e27190a90c1c332d688be87d953ebbe2501df6fc0",
-    "recruitment.js": "ca9d9bf6cd49cf2b81e6a3270a565fa12da59218a30c439181f3ad840561fca8",
+    "recruitment.js": "9a8bd12842f61b32538cf394fe569131a15b48b4d16d73df7c7dab816e5a65eb",
     "reference-ui.css": "4088656dbb1a3f8997cb3bf35ac8e5515e53e760708b2b8d8a545e43a817b13f",
     "reference-ui.js": "7b24dbdeadca8066544a7b842197e0cba3ede08153dabb367fce2483d5897cb2",
     "staff-codex.js": "c5fe4e2b10149a3e41579f7e400b579f1546dbb64881d7f28db7c6411e7602eb",
@@ -186,5 +186,5 @@
     "performance-ui.js": "4be274dd51de9507544b3d426c7acd0b621d301fdfa2cfc9c7fb22432d6adef6",
     "performance.css": "4873c5c45a739664bd2b5038b6104e8e29dacbc10a6f16e90879f84d48e99093"
   },
-  "patch": "visible-ui-1"
+  "patch": "coin-prices-1"
 }

@@ -140,12 +140,12 @@ class ReleaseSafetyTests(unittest.TestCase):
         self.assertTrue(other.locator('#session-notice').is_visible())
         self.page.evaluate("buyItem('grade')")
         other.evaluate("buyItem('kind');saveActiveRun();clearActiveRun()")
-        self.assertEqual(self.page.evaluate('[meta.coins,meta.items.grade,meta.items.kind]'), [92, 1, 0])
+        self.assertEqual(self.page.evaluate('[meta.coins,meta.items.grade,meta.items.kind]'), [80, 1, 0])
         self.page.close()
         other.locator('#session-notice button').click()
         other.wait_for_function('GameSession.canWrite()')
         other.evaluate("buyItem('kind')")
-        self.assertEqual(other.evaluate('[meta.coins,meta.items.grade,meta.items.kind]'), [80, 1, 1])
+        self.assertEqual(other.evaluate('[meta.coins,meta.items.grade,meta.items.kind]'), [50, 1, 1])
 
     def test_reload_resume_keeps_run_and_training(self):
         self.start_normal()
