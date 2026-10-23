@@ -157,14 +157,14 @@
     "design-grid.css": "c0d6ede4f7654830d1065e99493d6a3a60467e3e750181014a83e32d4f81df40",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
     "game.js": "ccbc0d91fe095988de7fddf88d97b1aff20a10631e556f766732243901863d1a",
-    "index.html": "94fd49950ec99fe764c2a503d31120504d4640ee79489c781986126b8a5bb7e2",
+    "index.html": "8bb41e302478eea4b76eb41774f5bcc7278460e7702de5f9df25a8aba7b8afe5",
     "legacy-ui.css": "d6bc10a44d0ab6f11809c9eef9a7d86bfaad8284d81c8cf33712906cdb1980fa",
     "lobby-layout.css": "e226a5febe7e42ca537ec9cb7efc3e3c677e7a6d3c9980743d60e33e4086c893",
-    "meta.js": "3650e6e61eee352e23bb36b92151777e5ea04bb9e1548d038cb9ffcadb1020ff",
+    "meta.js": "6972eeef6fbbf475807042a85dc974a2b7520f674d9891bacc7ecadf9d4499ce",
     "mobile-ui.css": "6d79270ecbb6b377d8a93e767adb54c3faa9099d38788e0e27e199555709d569",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
     "motion.js": "fcd061d47d6c9cfd450a7e7fde2b722725eec96fab6a20008ec6edf9c005f184",
-    "progression.js": "3d2fd8043023f3a2e8ed3e002f8669a57a8f03b390a5aa09502f4cfb3ef582c1",
+    "progression.js": "9b54086b278460143e7a50c2ec97a313a49d392d141cb7b012c2b29a61c737f0",
     "prologue-layout.css": "5b81ae5d8a760f54a4ab9e4e27190a90c1c332d688be87d953ebbe2501df6fc0",
     "recruitment.js": "9a8bd12842f61b32538cf394fe569131a15b48b4d16d73df7c7dab816e5a65eb",
     "reference-ui.css": "4088656dbb1a3f8997cb3bf35ac8e5515e53e760708b2b8d8a545e43a817b13f",
@@ -175,16 +175,35 @@
     "training.css": "ac4015a437e8a107b03514fbd017450f0bfcb6f722ed1c0fc6b7a7ec5eb57846",
     "training.js": "2dfba551491999c9eef33f04a37c6572bd678e7765b277b41581cd0d1c553068",
     "ui-review.css": "8ee325a640513990418b2148c3b79e78686da7d9fc9513fa08b0ff62c82d8095",
-    "session-guard.js": "a4dfedad81fff255b08cb8914ae4750eb0aea40a3ea8a3353936e6afe5d88835",
+    "session-guard.js": "7e433866efa7d9b93b5f05cc40791097548a9d60dce852e6972bbbc8234febd7",
     "orientation.js": "a8c087037676e6358ed56fd88f065f4acb379ac552151c286dd4cdea78550181",
     "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782",
     "visual-polish.css": "eb2d6fb3af6febf8b71d4ecde592bb224df478254c4e748c78c7e84fa86b1a82",
     "usability.css": "97d28135c7931576da62fc1f3d670993dfeb44c947e7143f80f64ef08264a0cd",
     "usability.js": "a030679779b789c8538146b8c6c78c2b28042862d9e9b595d4f6cc52c10e0296",
     "discount-tutorial.js": "f527b712e819bec5ad925ea8a49cb65d16812eaccfa484e60a707dd24c3bd28c",
-    "performance.js": "81ec84fe73e7801a6f5b3c800e144bfd3d0b15765d3abd63baa35a6c7ac36cec",
+    "performance.js": "38b18057efdcfb9237eb0c3c742346baabb62585373bec5e20515f1508bcc56b",
     "performance-ui.js": "4be274dd51de9507544b3d426c7acd0b621d301fdfa2cfc9c7fb22432d6adef6",
-    "performance.css": "4873c5c45a739664bd2b5038b6104e8e29dacbc10a6f16e90879f84d48e99093"
+    "performance.css": "4873c5c45a739664bd2b5038b6104e8e29dacbc10a6f16e90879f84d48e99093",
+    "gm-mode.js": "6d9e6fc8a7065cee1b1c9a5828411b8cfd6e276102b040b732af3473ac5cc763",
+    "gm-ui.js": "649af29709f33e3de6ae7f148a155028291f530a9b78f55c4ed076e2a3163489",
+    "gm-mode.css": "9335dff9c91520895a3af27b54747ce927283722c35f2f4a633767798d245de6"
   },
-  "patch": "coin-prices-1"
+  "patch": "coin-prices-1",
+  "patches": [
+    {
+      "feature": "gm-mode",
+      "sourceRevision": "e91b78238ce5293aa8ac24e4fd80e270a360bed5",
+      "files": [
+        "index.html",
+        "meta.js",
+        "progression.js",
+        "performance.js",
+        "session-guard.js",
+        "gm-mode.js",
+        "gm-ui.js",
+        "gm-mode.css"
+      ]
+    }
+  ]
 }

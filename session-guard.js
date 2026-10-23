@@ -3,6 +3,7 @@
 // One writer owns both the wallet and the active run. Do not let a second tab
 // initialize from stale data and later replace the first tab's entire save.
 window.GameSession = (() => {
+  if (GMTest.enabled) return {canWrite: () => true};
   let owner = false, requesting = false, release = null, loaded = false;
   let panel, message, retry;
   const canWrite = () => owner;
@@ -24,7 +25,7 @@ window.GameSession = (() => {
     meta = loadMeta();
     reset();
     sync();
-    document.querySelector('#resume-run').hidden = !localStorage.getItem(RUN_SAVE);
+    document.querySelector('#resume-run').hidden = !GameStorage.getItem(RUN_SAVE);
     if (typeof restorePendingSettlement === 'function') restorePendingSettlement();
     document.querySelector('#app-shell').inert = false;
     for (const dialog of document.querySelectorAll('dialog')) dialog.inert = false;

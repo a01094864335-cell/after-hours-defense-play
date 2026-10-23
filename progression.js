@@ -60,10 +60,10 @@ function onProgressUpdate(dt){if(playing&&!ended&&!paused){savedElapsed+=dt/Math
 function noteRoster(){for(const u of board)if(u){runStats[u.type].highest=Math.max(runStats[u.type].highest,u.pip);if(!seenStaff.has(u.type)){seenStaff.add(u.type);say(kinds[u.type].name+': “'+(staffRecords.find(r=>r.id===kinds[u.type].file)?.quote||'당직 준비 완료!')+'”')}}}
 function describeStats(){const names=['damage','kills','income'];document.querySelector('#result-stats').innerHTML=names.map((key,j)=>{const top=runStats.map((s,i)=>({value:s[key],i})).sort((a,b)=>b.value-a.value)[0];return '<div><small>'+['최다 피해','최다 처치','최다 SP 생산'][j]+'</small><b>'+(top?.value>0?kinds[top.i].name:'기록 없음')+'</b><span>'+Math.floor(top?.value||0)+'</span></div>'}).join('');document.querySelector('#result-title').textContent=tutorialMode?(tutorialWon?'신입 연수 수료!':'여기서 다시 배워봐요'):'수고했어요, 고비!';document.querySelector('#result-title-badge').textContent=tutorialMode?(tutorialWon?'정식 당직자 임명':'연수 재도전'):runStats[3].income>=300?'오늘의 알뜰 당직':kills>=300?'오늘의 야근왕':'무사히 근무 종료';document.querySelector('#result-again').textContent=tutorialMode&&!tutorialWon?'실패한 공격부터 다시':'다시 당직 서기';document.querySelector('#record-highest').textContent='최고 등급 '+Math.max(0,...runStats.map(s=>s.highest));}
 function runSnapshot(){return JSON.parse(JSON.stringify({version:1,discountTutorial:window.DiscountTutorial?.snapshot()??null,bossPlans,runTraining,wardChargesUsed,runId,board,levels,sp,life,wave,cost,summonDiscount,enemies:enemies.map(e=>({...e,links:null,linkIds:(e.links||[]).map(n=>enemies.indexOf(n)).filter(i=>i>=0)})),queue,timer,intermission,playing,ended,selected:-1,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,seenStaff:[...seenStaff]}))}
-function saveActiveRun(){if(!GameSession.canWrite()||!playing||ended)return;try{localStorage.setItem(RUN_SAVE,JSON.stringify({snapshot:runSnapshot(),checkpoint:tutorialCheckpoint}));document.querySelector('#resume-run').hidden=false}catch(e){showMetaStatus('전투 자동 저장에 실패했어요. 코인 저장과 별도로 브라우저 공간을 확인해주세요.')}}
-function clearActiveRun(){if(!GameSession.canWrite()||(ended&&runReward&&!runReward.paid))return;try{localStorage.removeItem(RUN_SAVE)}catch(e){}document.querySelector('#resume-run').hidden=true}
+function saveActiveRun(){if(!GameSession.canWrite()||!playing||ended)return;try{GameStorage.setItem(RUN_SAVE,JSON.stringify({snapshot:runSnapshot(),checkpoint:tutorialCheckpoint}));document.querySelector('#resume-run').hidden=false}catch(e){showMetaStatus('전투 자동 저장에 실패했어요. 코인 저장과 별도로 브라우저 공간을 확인해주세요.')}}
+function clearActiveRun(){if(!GameSession.canWrite()||(ended&&runReward&&!runReward.paid))return;try{GameStorage.removeItem(RUN_SAVE)}catch(e){}document.querySelector('#resume-run').hidden=true}
 function applySnapshot(s,allowSettled=false){if(!s||s.version!==1||!Array.isArray(s.board)||s.board.length!==15||!Array.isArray(s.levels)||s.levels.length!==kinds.length||!Array.isArray(s.enemies)||!Array.isArray(s.queue)||!Array.isArray(s.runDeck)||s.runDeck.length!==5||s.runDeck.some(i=>!Number.isInteger(i)||!kinds[i])||s.board.some(u=>u&&(!kinds[u.type]||!Number.isInteger(u.pip)||u.pip<1||u.pip>7))||s.enemies.some(e=>!legion[e.type]||(e.bossId&&!bossCatalog.some(b=>b.id===e.bossId)))||!Number.isFinite(s.sp)||s.sp<0||!Number.isInteger(s.life)||s.life<1||s.life>3||!Number.isInteger(s.wave)||s.wave<1||!Array.isArray(s.runStats)||s.runStats.length!==kinds.length||s.runStats.some(r=>!r||['damage','kills','income','highest'].some(k=>!Number.isFinite(r[k])||r[k]<0))||!s.trainingItems||['grade','kind','king'].some(k=>!Number.isSafeInteger(s.trainingItems[k])||s.trainingItems[k]<0)||s.levels.some(l=>!Number.isInteger(l)||l<1||l>5)||!s.kingEvent||!['idle','question','refuse','entrance','afterglow'].includes(s.kingEvent.state)||(s.activeMerc!==null&&!mercCatalog[s.activeMerc])||typeof s.runId!=='string'||(!allowSettled&&meta.settled.includes(s.runId)))throw Error('invalid saved run');if((s.runTraining!==undefined&&!validTraining(s.runTraining))||(s.wardChargesUsed!==undefined&&(!Number.isInteger(s.wardChargesUsed)||s.wardChargesUsed<0||s.wardChargesUsed>2)))throw Error('invalid training snapshot');if(s.guaranteedMerge!==undefined&&typeof s.guaranteedMerge!=='boolean'&&(!Number.isInteger(s.guaranteedMerge)||s.guaranteedMerge<0||s.guaranteedMerge>3))throw Error('invalid merge guarantees');if(s.summonDiscount!==undefined&&typeof s.summonDiscount!=='boolean')throw Error('invalid summon discount');if(s.speed!==undefined&&![1,2,3].includes(s.speed))throw Error('invalid speed');window.DiscountTutorial?.validate(s.discountTutorial);const restoredBossPlans=readBossPlans(s);runTraining=s.runTraining?{...s.runTraining}:{staff:1,merc:1};wardChargesUsed=s.wardChargesUsed??(s.wardUsed?1:0);({board,levels,sp,life,wave,cost,enemies,queue,timer,intermission,playing,selected,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,runId}=s);window.DiscountTutorial?.restore(s.discountTutorial);speed=s.speed??1;summonDiscount=s.summonDiscount??false;guaranteedMerge=Number(s.guaranteedMerge||0);bossPlans=restoredBossPlans;clearBossWarning();for(const e of enemies){e.links=e.linkIds?.length?e.linkIds.map(i=>enemies[i]).filter(Boolean):null;restoreBoss(e)}ended=false;runReward=null;fx=[];drag=null;itemMode=null;seenStaff=new Set(s.seenStaff);paused=true;setScreen('battle');if(wave%5===4||wave%5===0&&queue.includes('boss'))announceBossWave();sync()}
-function resumeRun(){try{const data=JSON.parse(localStorage.getItem(RUN_SAVE));applySnapshot(data.snapshot);tutorialCheckpoint=data.checkpoint;if(bonusPending){renderPerkChoices();document.querySelector('#perk').showModal();}else{showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.');window.DiscountTutorial?.resume()}return true}catch(e){showMetaStatus('저장된 전투를 불러오지 못했어요. 새 당직을 시작할 수 있습니다.');return false}}
+function resumeRun(){try{const data=JSON.parse(GameStorage.getItem(RUN_SAVE));applySnapshot(data.snapshot);tutorialCheckpoint=data.checkpoint;if(bonusPending){renderPerkChoices();document.querySelector('#perk').showModal();}else{showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.');window.DiscountTutorial?.resume()}return true}catch(e){showMetaStatus('저장된 전투를 불러오지 못했어요. 새 당직을 시작할 수 있습니다.');return false}}
 function renderDeckOptions(){
  const available=staffRecords.filter(r=>r.group!=='merc'&&staffOwned(r));
  document.querySelector('#deck-tip').textContent=deckSwap===-1?'출전 중 '+meta.deck.length+' / 5 · 대기 직원을 고른 뒤 교체할 출전 직원을 누르세요. 교체 즉시 저장됩니다.':staffRecords.find(r=>r.id===deckSwap).name+' 선택됨 · 교체할 출전 직원을 누르세요. 다시 누르면 취소합니다.';
@@ -95,12 +95,12 @@ const baseMerge=merge;merge=function(a,b){const valid=compatible(board[a],board[
 const baseSummon=summon;summon=function(){const before=cost;baseSummon();noteRoster();if(cost!==before)saveActiveRun()};document.querySelector('#summon').onclick=summon;document.querySelector('#skill').onclick=useSkill;
 const PENDING_REWARD_SAVE='after-hours-defense-pending-v1';
 function writePendingSettlement(){
- try{localStorage.setItem(PENDING_REWARD_SAVE,JSON.stringify({version:1,snapshot:runSnapshot()}));return true}catch(e){return false}
+ try{GameStorage.setItem(PENDING_REWARD_SAVE,JSON.stringify({version:1,snapshot:runSnapshot()}));return true}catch(e){return false}
 }
 function restorePendingSettlement(){
  if(!GameSession.canWrite())return;
  try{
-  const raw=localStorage.getItem(PENDING_REWARD_SAVE);if(!raw)return;
+  const raw=GameStorage.getItem(PENDING_REWARD_SAVE);if(!raw)return;
   const pending=JSON.parse(raw);
   if(pending.version!==1||!pending.snapshot||pending.snapshot.ended!==true)throw Error('invalid pending result');
   const snapshot=pending.snapshot;
@@ -120,11 +120,11 @@ settleRun=function(){
  if(!runReward.paid){
   let recovery='저장 공간을 확보한 뒤 이 화면에서 다시 시도해주세요.';
   if(pendingSaved)recovery='미지급 결과를 보관했어요. 다시 접속하면 지급을 재시도합니다.';
-  else {try{if(localStorage.getItem(RUN_SAVE))recovery='미지급 결과를 새로 저장하지 못했어요. 다시 접속하면 마지막 자동 저장된 전투부터 복구할 수 있어요.'}catch(e){}}
+  else {try{if(GameStorage.getItem(RUN_SAVE))recovery='미지급 결과를 새로 저장하지 못했어요. 다시 접속하면 마지막 자동 저장된 전투부터 복구할 수 있어요.'}catch(e){}}
   document.querySelector('#result-text').textContent+=' · '+recovery;
   document.querySelector('#retry-reward').hidden=false;
  }else{
-  try{localStorage.removeItem(PENDING_REWARD_SAVE)}catch(e){}
+  try{GameStorage.removeItem(PENDING_REWARD_SAVE)}catch(e){}
   clearActiveRun();
  }
  describeStats();
@@ -133,7 +133,7 @@ const baseRestart=restartTo;restartTo=function(target){if(target==='battle'&&tut
 const startOld=document.querySelector('#start').onclick;document.querySelector('#start').onclick=()=>{runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));startOld()};
 const syncOld=sync;sync=function(){syncOld();if(typeof runStats!=='undefined')renderProgress()};
 initRunProgress();
-try{document.querySelector('#resume-run').hidden=!localStorage.getItem(RUN_SAVE)}catch(e){}
+try{document.querySelector('#resume-run').hidden=!GameStorage.getItem(RUN_SAVE)}catch(e){}
 if(typeof window.addEventListener==='function'){window.addEventListener('pagehide',saveActiveRun);document.addEventListener?.('visibilitychange',()=>{if(document.hidden)saveActiveRun()})}
 
 // Keep retry on the complete settlement path, including the one-time graduation award.

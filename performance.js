@@ -2,7 +2,7 @@
 // Rendering policy is independent of game speed and of the combat save format.
 window.GamePerformance=(()=>{
  const mobile=matchMedia('(pointer: coarse), (max-width: 600px)');
- let explicit=null;try{const value=localStorage.getItem('after-hours-power-save-v1');if(value==='on'||value==='off')explicit=value==='on'}catch{}
+ let explicit=null;try{const value=GameStorage.getItem('after-hours-power-save-v1');if(value==='on'||value==='off')explicit=value==='on'}catch{}
  let lowPower=explicit??mobile.matches,callback=null,timer=null,raf=null,inFrame=false;
  let dirty=true,uiDirty=true,lastUI=-Infinity,lastDraw=-Infinity,accumulator=0;
  const stats={draws:0,updates:0,uiFlushes:0,backgroundBuilds:0,portraitDraws:0};
@@ -11,7 +11,7 @@ window.GamePerformance=(()=>{
  function invalidate(){dirty=true;if(!inFrame)schedule(callback)}
  function requestUI(){uiDirty=true;if(!inFrame)schedule(callback)}
  function applyMode(){document.documentElement.classList.toggle('power-save',lowPower);if(typeof Motion!=='undefined')Motion.invalidate();invalidate();document.dispatchEvent(new Event('power-mode-change'))}
- function setMode(value){explicit=lowPower=!!value;try{localStorage.setItem('after-hours-power-save-v1',lowPower?'on':'off')}catch{}applyMode()}
+ function setMode(value){explicit=lowPower=!!value;try{GameStorage.setItem('after-hours-power-save-v1',lowPower?'on':'off')}catch{}applyMode()}
  const onMobileChange=()=>{if(explicit===null){lowPower=mobile.matches;applyMode()}};
  if(mobile.addEventListener)mobile.addEventListener('change',onMobileChange);else if(mobile.addListener)mobile.addListener(onMobileChange);
  document.addEventListener('visibilitychange',()=>{cancel();accumulator=0;if(typeof last!=='undefined')last=0;if(!document.hidden){dirty=uiDirty=true;schedule(callback)}});
