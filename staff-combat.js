@@ -23,7 +23,7 @@ function extraAttack(u,i,target,damage){
  const living=enemies.filter(e=>e.hp>0);let victim=target;
  if(u.type===8)victim=living.sort((a,b)=>a.hp/a.max-b.hp/b.max)[0];
  if(!victim)return;
- const pip=u.pip||1,power=staffPower(u.type),tier=trainingTier(),support=(trainingLevel('staff')-1)*.001;
+ const pip=u.pip||1,power=staffPower(u.type)*gradePower(u.pip),tier=trainingTier(),support=(trainingLevel('staff')-1)*.001;
  if(u.type===6)markEnemy(victim,4+tier*.25,Math.min(1.35+support,1.25+(pip-1)*.01+(levels[6]-1)*.01+support));
  if(u.type===7)burnEnemy(victim,4+tier*.25,6*(1+(pip-1)*.3)*power);
  if(u.type===9)linkEnemies([victim,...living.filter(e=>e!==victim).sort((a,b)=>Math.hypot(a.x-victim.x,a.y-victim.y)-Math.hypot(b.x-victim.x,b.y-victim.y)).slice(0,trainingLevel('staff')>=20?2:1)],4);

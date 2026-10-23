@@ -156,8 +156,8 @@
     "combat-motion.js": "630f679ffff2b72f5510bc82893bf9c292662b6eb0067e72d16639fee53186ac",
     "design-grid.css": "c0d6ede4f7654830d1065e99493d6a3a60467e3e750181014a83e32d4f81df40",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
-    "game.js": "ccbc0d91fe095988de7fddf88d97b1aff20a10631e556f766732243901863d1a",
-    "index.html": "e46c10492d3ad22b3381622e67ee669bff62b434baa6120c1016d1b1668e6844",
+    "game.js": "fa19e108257aec7ded81573117d212c7a7fcb9e3ad6de609588fba0ca62132d7",
+    "index.html": "2a3009b5857d2d9f347c9632cf8c3178175070c81cb5e69b3a8660981b3ce8dc",
     "legacy-ui.css": "d6bc10a44d0ab6f11809c9eef9a7d86bfaad8284d81c8cf33712906cdb1980fa",
     "lobby-layout.css": "e226a5febe7e42ca537ec9cb7efc3e3c677e7a6d3c9980743d60e33e4086c893",
     "meta.js": "1820e0f8847d2f9208a2595ccec68702a2bfcd3daee7acea37a803019d2d326d",
@@ -170,10 +170,10 @@
     "reference-ui.css": "4088656dbb1a3f8997cb3bf35ac8e5515e53e760708b2b8d8a545e43a817b13f",
     "reference-ui.js": "5bcb2f26115cb8d514895b4d2fc5ae2251971a378d7e117c28c82172a2a2d306",
     "staff-codex.js": "deb0f8ac4039c256bf0c2e83c27bf8b483349003b64769fef1f434b5dd078528",
-    "staff-combat.js": "ffb304715afc3a81bb15aeeb36061e9157225c1186c34e2f1135ce5d8b04b8b7",
-    "training-ui.js": "674500751347729c34972b2db24a36636665de01d023af6d128db266d023facf",
+    "staff-combat.js": "6eb47457848e10494a2997f1c45b66eb701282b9953d6e6ba3740a80b8b0efac",
+    "training-ui.js": "62a521e061254d303c859ced2d60009c7c2abd782e2142807f87dd29d2392512",
     "training.css": "ac4015a437e8a107b03514fbd017450f0bfcb6f722ed1c0fc6b7a7ec5eb57846",
-    "training.js": "2dfba551491999c9eef33f04a37c6572bd678e7765b277b41581cd0d1c553068",
+    "training.js": "5549320609cab2002aae0b9a366c1c72fa3fe8bd27d44d93a0d4b31941401829",
     "ui-review.css": "8ee325a640513990418b2148c3b79e78686da7d9fc9513fa08b0ff62c82d8095",
     "session-guard.js": "7e433866efa7d9b93b5f05cc40791097548a9d60dce852e6972bbbc8234febd7",
     "orientation.js": "a8c087037676e6358ed56fd88f065f4acb379ac552151c286dd4cdea78550181",
@@ -217,6 +217,17 @@
         "staff-codex.js",
         "shop-system.js",
         "shop-system.css"
+      ]
+    },
+    {
+      "feature": "growth-balance",
+      "sourceRevision": "15f1e704203d951139a1d3c3fa6d6e63f851a365",
+      "files": [
+        "game.js",
+        "index.html",
+        "staff-combat.js",
+        "training.js",
+        "training-ui.js"
       ]
     }
   ]

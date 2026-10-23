@@ -5,10 +5,14 @@ function validTraining(t){return !!t&&['staff','merc'].every(k=>Number.isInteger
 function trainingLevel(group,battle=true){const value=battle&&typeof playing!=='undefined'&&playing&&runTraining?runTraining:meta.training;return value?.[group]||1}
 function trainingTier(group='staff',level=trainingLevel(group)){return TRAINING_MILESTONES.filter(n=>level>=n).length}
 function trainingCost(level){return level>=TRAINING_MAX?0:Math.round((8+2*(level-1)+.6*(level-1)**2)/2)*2}
-function staffPower(type){return 1+(levels[type]-1)*.45+(trainingLevel('staff')-1)*.015}
-function trainingIncome(u){const base=u.pip*(7+(levels[3]-1)*2+7*(trainingLevel('staff')-1)*.005);u.paydays=(u.paydays||0)+1;return Math.round((base+(u.paydays%5===0?u.pip*trainingTier():0))*100)/100}
+function staffTrainingMultiplier(level=trainingLevel('staff')){return 1+(level-1)*.8/29}
+const GRADE_POWER=Object.freeze([1,1.05,1.2,1.5,2,2.7,3.8]);
+function gradePower(pip){return GRADE_POWER[Math.max(1,Math.min(7,pip||1))-1]}
+function enemyGrowth(base,early,late,w){return base*Math.pow(early,Math.min(w,15))*Math.pow(late,Math.max(0,w-15))}
+function staffPower(type){return (1+(levels[type]-1)*.45)*staffTrainingMultiplier()}
+function trainingIncome(u){const base=u.pip*(7+(levels[3]-1)*2)*(1+(trainingLevel('staff')-1)*.4/29);u.paydays=(u.paydays||0)+1;return Math.round((base+(u.paydays%5===0?u.pip*trainingTier():0))*100)/100}
 function trainingAttack(u,damage){if(u.type!==0)return damage;u.shots=(u.shots||0)+1;const t=trainingTier();return t&&u.shots%(t>=2?7:8)===0?damage*([1,1.2,1.2,1.35,1.5][t]):damage}
-function trainingSlow(e){const tier=e.slowTrainingTier||0;return e.type==='boss'?Math.max(.65,.75-tier*.01):Math.max(.4,.5-tier*.01)}
+function trainingSlow(e){const tier=e.slowTrainingTier||0,level=e.slowTrainingLevel||1,progress=(level-1)/29;return e.type==='boss'?Math.max(.65,.75-tier*.01-progress*.03):Math.max(.35,.5-tier*.01-progress*.06)}
 function mercInterval(){const level=trainingLevel('merc');return level>=30?13:level>=10?14:15}
 function mercDamageRate(){return .08+(trainingLevel('merc')-1)*.0005}
 function accountantIncome(){const tier=trainingTier('merc');return 2+(trainingLevel('merc')-1)*.02+(kills%10===0?tier*2:0)}
@@ -42,4 +46,4 @@ const trainingEffectText={
  'rescue':['지원 사격 후 피해 +10% 표식 1초','지원 주기 15→14초','약화 표식 1→2초','지원 주기 14→13초']
 };
 
-function trainingDossier(record){const group=record.group==='merc'?'merc':'staff',id=record.id.replace(/^merc-/,''),level=trainingLevel(group,false);return '<section class="dossier-section"><h4>영구 훈련 Lv.'+level+' / 30</h4><p>'+(group==='staff'?'공격 피해 +'+((level-1)*1.5).toFixed(1)+'% · SP 장비와 합산':'특수 용병 전체에 공통 적용')+'</p>'+trainingEffectText[id].map((text,i)=>'<p>'+ (level>=TRAINING_MILESTONES[i]?'✓ 해금':'잠김')+' · Lv.'+TRAINING_MILESTONES[i]+' '+text+'</p>').join('')+'</section>'}
+function trainingDossier(record){const group=record.group==='merc'?'merc':'staff',id=record.id.replace(/^merc-/,''),level=trainingLevel(group,false);return '<section class="dossier-section"><h4>영구 훈련 Lv.'+level+' / 30</h4><p>'+(group==='staff'?'공격 피해 +'+((staffTrainingMultiplier(level)-1)*100).toFixed(1)+'% · SP 장비와 별도 곱셈':'특수 용병 전체에 공통 적용')+'</p>'+trainingEffectText[id].map((text,i)=>'<p>'+ (level>=TRAINING_MILESTONES[i]?'✓ 해금':'잠김')+' · Lv.'+TRAINING_MILESTONES[i]+' '+text+'</p>').join('')+'</section>'}
