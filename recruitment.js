@@ -1,30 +1,14 @@
 'use strict';
 function renderRecruitShop(){
- uiText(document.querySelector('#staff-pack-price'),PACK_PRICE+' 코인');
  const allHired=RECRUIT_STAFF.every(id=>meta.staff.includes(id));
  const button=document.querySelector('#buy-staff-pack');button.disabled=!!saveWarning||meta.coins<PACK_PRICE||allHired||playing&&!ended;
  button.textContent=allHired?'전 직원 채용 완료':playing&&!ended?'당직 종료 후 채용 가능':PACK_PRICE+' 코인 · 채용팩 열기'+(meta.coins<PACK_PRICE?' · '+(PACK_PRICE-meta.coins)+'코인 부족':'');
  document.querySelector('#recruit-balance').textContent='보유 '+meta.coins+' 코인 · 채용 포인트 '+meta.recruitPoints+' / '+RECRUIT_POINTS;
 }
-// Use the browser top layer: a scrolled shop must never clip a purchase result.
-const recruitDialog=document.createElement('dialog');recruitDialog.id='recruit-dialog';
-recruitDialog.setAttribute('aria-label','직원 채용 결과');
-recruitDialog.append(document.querySelector('#recruit-result'));document.body.append(recruitDialog);
-function closeRecruit(){recruitDialog.close();document.querySelector('#recruit-result').replaceChildren()}
-recruitDialog.addEventListener('keydown',e=>{
- if(e.key!=='Tab')return;
- const buttons=[...recruitDialog.querySelectorAll('button:not(:disabled)')];
- const first=buttons[0],last=buttons[buttons.length-1];
- if(!first)return;
- if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}
- else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}
-});
-recruitDialog.addEventListener('cancel',e=>{e.preventDefault();closeRecruit()});
 function revealRecruit(id,duplicate){
  const r=staffRecords.find(r=>r.id===id);
  document.querySelector('#recruit-result').innerHTML='<div class="recruit-reveal"><img src="'+r.image+'" alt="'+r.name+'"><b>'+(duplicate?'다시 만난 동료':'신입 사원 도착!')+'</b><strong>'+r.name+' · '+r.job+'</strong><p'+(duplicate?' class="recruit-point-guide"':'')+'>'+ (duplicate?'중복 채용 → 채용 포인트 +1<br>이미 보유한 직원 대신 받는 포인트예요.<br>'+RECRUIT_POINTS+'포인트로 미채용 직원 1명을 골라 채용해요.<br>사용: 직원 도감 → 미채용 → 지정 채용<br>현재 보유 '+meta.recruitPoints+'포인트':'“'+r.quote+'”<br>직원 도감에서 근무 명단에 넣어주세요.')+'</p></div>';
  renderRecruitShop();renderStaffArchive();renderMeta();
- document.querySelector('#recruit-dialog').showModal();
 }
 function buyStaffPack(){
  if(saveWarning||meta.coins<PACK_PRICE||playing&&!ended||RECRUIT_STAFF.every(id=>meta.staff.includes(id)))return false;

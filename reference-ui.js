@@ -21,7 +21,7 @@
  const oldPromo=showPromo;showPromo=function(){oldPromo();q('#promo').style.setProperty('--story-art',"url('assets/reference-ui/"+stories[promoIndex]+".svg')")};
  const originalMeta=renderMeta;renderMeta=function(){originalMeta();decorate()};
  const originalRender=appRender;appRender=function(){originalRender();refresh()};
- function refresh(){uiProp(pause,'hidden',!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]')));uiAttr(q('#pause'),'aria-label',paused?'계속하기':'일시정지');}
+ function refresh(){pause.hidden=!(appScreen==='battle'&&playing&&paused&&!ended&&!document.querySelector('dialog[open]'));q('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');}
  function decorate(){
   const slot=q('#merc-slot');if(!slot.querySelector('.ref-merc-plus')){
    if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-heading">지원 용병</span>'}
@@ -29,14 +29,14 @@
   }
   if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
   document.querySelectorAll('.staff-pass').forEach(card=>{const equipped=String(meta.deck.includes(card.dataset.staff));if(card.dataset.equipped!==equipped)card.dataset.equipped=equipped;const name=card.querySelector('.pass-open');if(name&&/인사기록|채용 방법/.test(name.textContent)){const record=staffRecords.find(r=>r.id===card.dataset.staff);name.textContent=record&&staffOwned(record)?record.name:'???'}card.querySelector(':scope>strong')?.remove()});
-  const reveal=q('.recruit-reveal');if(reveal&&!reveal.querySelector('.ref-recruit-actions')){const actions=document.createElement('div');actions.className='ref-recruit-actions';actions.innerHTML='<button>직원 도감으로</button><button>확인</button>';actions.children[0].onclick=()=>{closeRecruit();q('#shop').close();q('#roster-open').click()};actions.children[1].onclick=closeRecruit;reveal.append(actions);actions.children[1].focus()}
+  const reveal=q('.recruit-reveal');if(reveal&&!reveal.querySelector('.ref-recruit-actions')){const actions=document.createElement('div');actions.className='ref-recruit-actions';actions.innerHTML='<button>직원 도감으로</button><button>확인</button>';actions.children[0].onclick=()=>{q('#recruit-result').innerHTML='';q('#shop').close();q('#roster-open').click()};actions.children[1].onclick=()=>q('#recruit-result').innerHTML='';reveal.append(actions)}
   refresh();
  }
  let queued=false;const observer=new MutationObserver(()=>{if(queued)return;queued=true;queueMicrotask(()=>{queued=false;decorate()})});for(const id of ['merc-slot','roster-list','recruit-result']){const node=q('#'+id);if(node)observer.observe(node,{childList:true,subtree:true})};const modalObserver=new MutationObserver(refresh);for(const d of document.querySelectorAll('dialog')){modalObserver.observe(d,{attributes:true,attributeFilter:['open']});d.addEventListener('close',refresh)}decorate();
  // Report summaries use actual run values; detailed employee statistics remain expandable.
  if(typeof describeStats==='function'){const originalStats=describeStats;describeStats=function(){originalStats();const el=q('#result-stats'),details=el.innerHTML;q('#result').dataset.reward=runReward?.paid?'paid':'pending';q('#result-again').disabled=q('#result-home').disabled=!!runReward&&!runReward.paid;el.innerHTML=[['☾','도달 웨이브',wave],['⚔','저지한 용사',kills],['●','획득 코인',runReward?.paid?'+'+(runReward?.total||0):'미지급']].map(([icon,label,value])=>'<div><span class="grid-stat-icon" aria-hidden="true">'+icon+'</span><span class="grid-stat-label">'+label+'</span><b>'+value+'</b></div>').join('')+'<details><summary>직원별 근무 기록</summary>'+details+'<p>'+q('#record-highest').textContent+'</p></details>'};}
  // Painted slot borders also render inside the live combat canvas.
- const textures={};for(const key of ['slot-square','tab-active']){const im=new Image();im.addEventListener('load',()=>GamePerformance.invalidate());im.src='assets/reference-ui/'+(key==='slot-square'?'archive-slot-frame':key)+'.svg';textures[key]=im}
+ const textures={};for(const key of ['slot-square','tab-active']){const im=new Image();im.src='assets/reference-ui/'+(key==='slot-square'?'archive-slot-frame':key)+'.svg';textures[key]=im}
  window.GameSkin={frame(context,key,x,y,w,h){if(key==='slot-square')return false;const im=textures[key];if(!im?.complete||!im.naturalWidth)return false;context.drawImage(im,x,y,w,h);return true},refresh,story(index){q('#promo').style.setProperty('--story-art',"url('assets/reference-ui/"+stories[index]+".svg')")},scan:decorate};
  refresh();
 })();

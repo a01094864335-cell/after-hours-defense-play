@@ -1,0 +1,38 @@
+/* Each daily story has four full-scene illustrations; keep the complete artwork visible. */
+#promo .castle-story-picker{display:block;margin:0 0 8px;font-size:10px;color:#c7afcf}
+#promo #castle-story-select{display:block;width:100%;min-height:36px;max-width:100%;margin:4px 0 0;padding:6px 10px;border:1px solid #87678c;border-radius:7px;background:#302139;color:#ffe3b8;font:inherit;font-size:12px}
+#promo.castle-daily-story .comic-stage{overflow:hidden!important;isolation:isolate;background:#21142d!important;border-radius:12px;margin:6px 12px}
+#promo.castle-daily-story .comic-stage::before,#promo.castle-daily-story .comic-stage::after,#promo.castle-daily-story .story-illustration{display:none!important}
+#promo.castle-daily-story #promo-face{display:block!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;z-index:2;filter:none;animation:castleCharacterIn .35s ease-out!important}
+#promo.castle-daily-story .comic-chapter h2{font-size:17px!important}
+#promo.castle-daily-story .comic-copy{max-height:27dvh!important}
+@keyframes castleCharacterIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-height:640px){#promo .castle-story-picker{margin-bottom:4px}#promo #castle-story-select{min-height:30px;margin-top:2px}#promo.castle-daily-story .comic-copy{max-height:24dvh!important}}
+@media(prefers-reduced-motion:reduce){#promo.castle-daily-story #promo-face{animation:none!important}}
+#story-discovery{margin:0 0 8px;color:#ffdb8f;font-size:12px;font-weight:700}
+#story-retry{font-size:12px;margin-bottom:8px}
+#story-archive{box-sizing:border-box;width:min(100%,480px);max-width:100%;max-height:92dvh;padding:18px;background:#241a30;color:#fff0d7;border:1px solid #806184;border-radius:20px;overflow:auto}
+#story-archive::backdrop{background:#100b1bd9}
+#story-archive .sheet-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#story-archive h2{font-size:22px;margin:6px 0}
+#story-archive header small{font-size:9px;color:#b49dbd}
+#story-archive-close{min-height:44px;flex-shrink:0}
+#story-progress{background:#44314c;padding:12px;border-radius:12px;color:#ffdc90;font-weight:bold}
+.story-policy{font-size:12px;line-height:1.7;color:#cfbfd6}
+#story-archive-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#story-archive .story-card{display:flex;flex-direction:column;gap:5px;text-align:left;min-width:0;padding:8px;background:#35263e;border:1px solid #68506f;border-radius:12px;color:#ffe9c4;overflow:hidden}
+.story-cover{display:grid;place-items:center;width:100%;aspect-ratio:3/4;overflow:hidden;border-radius:8px;background:radial-gradient(ellipse,#594362,#21182c)}
+.story-cover img{width:100%;height:100%;object-fit:cover}
+.story-cover>span{font-size:50px;color:#a28aab}
+.story-card small,.story-card em{font-size:10px;font-style:normal;color:#bca8c6}
+.story-card b{font-size:13px;line-height:1.4}
+#story-archive .story-card.locked{opacity:.7}
+
+#lobby-story-collection{display:flex;align-items:center;gap:10px;width:100%;min-height:66px;margin:0 0 8px;padding:10px 12px;border:1px solid #a27a50;border-radius:13px;background:linear-gradient(115deg,#463044,#292039);color:#ffedcd;text-align:left;box-sizing:border-box}
+.lobby-story-icon{font-size:27px;flex-shrink:0}
+.lobby-story-copy{flex:1;min-width:0}
+.lobby-story-copy strong{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13px}
+.lobby-story-copy strong b{font-size:12px;color:#ffdc90;white-space:nowrap}
+.lobby-story-copy small{display:block;margin:4px 0 6px;font-size:10px;line-height:1.4;color:#d2bdd7}
+.lobby-story-track{display:block;height:4px;background:#17121e;border-radius:4px;overflow:hidden}
+#lobby-story-fill{display:block;height:100%;width:0;background:#f6ca78;border-radius:4px;transition:width .25s}

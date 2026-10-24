@@ -17,7 +17,7 @@ function mercInterval(){const level=trainingLevel('merc');return level>=30?13:le
 function mercDamageRate(){return .08+(trainingLevel('merc')-1)*.0005}
 function accountantIncome(){const tier=trainingTier('merc');return 2+(trainingLevel('merc')-1)*.02+(kills%10===0?tier*2:0)}
 function wardCapacity(){return trainingLevel('merc')>=30?2:1}
-function trainedMercDescription(key,battle=false){const level=trainingLevel('merc',battle),tier=trainingTier('merc',level);if(key==='accountant')return '처치마다 +'+(2+(level-1)*.02).toFixed(2)+' SP'+(tier?' · 10처치마다 +'+tier*2+' SP':'');if(key==='rescue')return (level>=30?13:level>=10?14:15)+'초마다 전 적 최대 HP의 '+((.08+(level-1)*.0005)*100).toFixed(2)+'% 피해'+(tier?' · 피해 +10% 표식 '+(level>=20?2:1)+'초':'');return '첫 돌파 '+(level>=30?2:1)+'회 완전 방어'+(tier?' · 발동 시 전체 감속':'')+(level>1?' · 발동 정산 +'+((level-1)*.5+(level>=10?10:0))+' SP':'')+(level>=20?' · 짧은 전체 정지':'')}
+function trainedMercDescription(key,battle=false){const extra=expansionMercDescription(key,battle);if(extra)return extra;const level=trainingLevel('merc',battle),tier=trainingTier('merc',level);if(key==='accountant')return '처치마다 +'+(2+(level-1)*.02).toFixed(2)+' SP'+(tier?' · 10처치마다 +'+tier*2+' SP':'');if(key==='rescue')return (level>=30?13:level>=10?14:15)+'초마다 전 적 최대 HP의 '+((.08+(level-1)*.0005)*100).toFixed(2)+'% 피해'+(tier?' · 피해 +10% 표식 '+(level>=20?2:1)+'초':'');return '첫 돌파 '+(level>=30?2:1)+'회 완전 방어'+(tier?' · 발동 시 전체 감속':'')+(level>1?' · 발동 정산 +'+((level-1)*.5+(level>=10?10:0))+' SP':'')+(level>=20?' · 짧은 전체 정지':'')}
 function trainGroup(group){
  if(!['staff','merc'].includes(group)||saveWarning)return false;
  if(typeof playing!=='undefined'&&playing&&!ended){showMetaStatus('영구 훈련은 당직이 끝난 뒤에 할 수 있어요.');return false}
@@ -46,4 +46,15 @@ const trainingEffectText={
  'rescue':['지원 사격 후 피해 +10% 표식 1초','지원 주기 15→14초','약화 표식 1→2초','지원 주기 14→13초']
 };
 
+Object.assign(trainingEffectText,{
+ 'duru-archivist':['보호막 배수 2.5→2.6','보호막 배수 2.6→2.7','보호막 배수 2.7→2.8','보호막 배수 2.8→2.9'],
+ 'kkangtong-engineer':['기본 밀기 +2 · 스킬 +3','기본 밀기 +4 · 스킬 +6','기본 밀기 +6 · 스킬 +9','기본 밀기 +8 · 스킬 +12'],
+ 'ddangkong-miner':['강화 지뢰 피해 +5%','강화 지뢰 피해 +10%','강화 지뢰 피해 +15%','강화 지뢰 피해 +20%'],
+ 'chalkak-photographer':['집중 중첩당 +13%','집중 중첩당 +14%','집중 중첩당 +15%','집중 중첩당 +16%'],
+ 'bongtu-postmaster':['충전 +0.5%p · 결재 상한 6.25초','충전 +1%p · 결재 상한 6.5초','충전 +1.5%p · 결재 상한 6.75초','충전 +2%p · 결재 상한 7초'],
+ 'chikchik':['무료 소환 시 +3 SP','무료 소환 시 +6 SP','무료 소환 시 +9 SP','무료 소환 시 +12 SP'],
+ 'banchang':['정화 간격 7.5초','정화 간격 7초','정화 2명 · 간격 6.5초','정화 간격 6초'],
+ 'coco':['정지 1.1초 · 간격 9.5초','정지 1.2초 · 간격 9초','대상 4명 · 정지 1.3초 · 간격 8.5초','정지 1.4초 · 간격 8초'],
+ 'q':['6.5초간 피해 +22.5%','7초간 피해 +25%','7.5초간 피해 +27.5%','8초간 피해 +30%']
+});
 function trainingDossier(record){const group=record.group==='merc'?'merc':'staff',id=record.id.replace(/^merc-/,''),level=trainingLevel(group,false);return '<section class="dossier-section"><h4>영구 훈련 Lv.'+level+' / 30</h4><p>'+(group==='staff'?'공격 피해 +'+((staffTrainingMultiplier(level)-1)*100).toFixed(1)+'% · SP 장비와 별도 곱셈':'특수 용병 전체에 공통 적용')+'</p>'+trainingEffectText[id].map((text,i)=>'<p>'+ (level>=TRAINING_MILESTONES[i]?'✓ 해금':'잠김')+' · Lv.'+TRAINING_MILESTONES[i]+' '+text+'</p>').join('')+'</section>'}
