@@ -1301,59 +1301,59 @@ const MotionSheets = {
   "demon-king": {
     "name": "마왕 벨모어",
     "group": "king",
-    "file": "assets/motion/demon-king.webp",
-    "fallback": "assets/demon-king.webp",
+    "file": "assets/motion/demon-king-slim-v2.webp",
+    "fallback": "assets/demon-king-slim-v2.webp",
     "width": 1536,
     "sheetHeight": 1024,
-    "height": 493,
+    "height": 503,
     "frames": [
       {
-        "x": 97,
-        "y": 5,
-        "w": 435,
-        "h": 492,
-        "pivotX": 186.0,
-        "pivotY": 488
+        "x": 197,
+        "y": 4,
+        "w": 246,
+        "h": 503,
+        "pivotX": 79.0,
+        "pivotY": 499
       },
       {
-        "x": 532,
-        "y": 5,
-        "w": 496,
-        "h": 493,
-        "pivotX": 240.0,
-        "pivotY": 489
+        "x": 679,
+        "y": 4,
+        "w": 243,
+        "h": 503,
+        "pivotX": 79.0,
+        "pivotY": 499
       },
       {
-        "x": 1028,
-        "y": 5,
-        "w": 466,
-        "h": 492,
-        "pivotX": 224.0,
-        "pivotY": 489
+        "x": 1159,
+        "y": 4,
+        "w": 244,
+        "h": 503,
+        "pivotX": 78.0,
+        "pivotY": 499
       },
       {
-        "x": 50,
-        "y": 500,
-        "w": 531,
+        "x": 118,
+        "y": 510,
+        "w": 345,
+        "h": 496,
+        "pivotX": 166.0,
+        "pivotY": 492
+      },
+      {
+        "x": 682,
+        "y": 512,
+        "w": 243,
         "h": 499,
-        "pivotX": 255.0,
+        "pivotX": 74.0,
         "pivotY": 495
       },
       {
-        "x": 581,
-        "y": 504,
-        "w": 443,
-        "h": 495,
-        "pivotX": 184.0,
-        "pivotY": 491
-      },
-      {
-        "x": 1064,
-        "y": 505,
-        "w": 430,
-        "h": 493,
-        "pivotX": 188.0,
-        "pivotY": 489
+        "x": 1158,
+        "y": 511,
+        "w": 246,
+        "h": 499,
+        "pivotX": 77.0,
+        "pivotY": 496
       }
     ]
   }

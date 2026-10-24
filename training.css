@@ -1,4 +1,4 @@
-#training-dialog{box-sizing:border-box;width:min(100% - 16px,470px);max-height:calc(calc(var(--viewport-unit, 1vh)*100) - 24px);padding:0;border:2px solid #d5b06e;border-radius:14px;color:#f9ebd2;background:linear-gradient(#382741,#20192b);overflow-y:auto;overscroll-behavior:contain;font-family:system-ui;box-shadow:0 15px 60px #0009}
+#training-dialog{box-sizing:border-box;width:min(100% - 16px,470px);max-height:calc(100dvh - 24px);padding:0;border:2px solid #d5b06e;border-radius:14px;color:#f9ebd2;background:linear-gradient(#382741,#20192b);overflow-y:auto;overscroll-behavior:contain;font-family:system-ui;box-shadow:0 15px 60px #0009}
 #training-dialog::backdrop{background:#100b20d9}
 #training-dialog .training-header{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#302138;padding:12px 14px;border-bottom:1px solid #91735e}
 #training-dialog h2{font-size:22px;margin:3px 0}#training-dialog small{color:#cbb8d1}#training-close{font-size:12px;min-height:44px;white-space:nowrap}

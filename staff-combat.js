@@ -20,6 +20,7 @@ function extraEnemyUpdate(e,dt){
  e.counselDelayCD=Math.max(0,(e.counselDelayCD||0)-dt);e.silence=Math.max(0,(e.silence||0)-dt);e.linkTime=Math.max(0,(e.linkTime||0)-dt);if(!e.linkTime)e.linkGroup=null;
 }
 function extraAttack(u,i,target,damage){
+ if(expansionType(u.type)){expansionAttack(u,i,target,damage);return;}
  const living=enemies.filter(e=>e.hp>0);let victim=target;
  if(u.type===8)victim=living.sort((a,b)=>a.hp/a.max-b.hp/b.max)[0];
  if(!victim)return;
@@ -29,9 +30,11 @@ function extraAttack(u,i,target,damage){
  if(u.type===9)linkEnemies([victim,...living.filter(e=>e!==victim).sort((a,b)=>Math.hypot(a.x-victim.x,a.y-victim.y)-Math.hypot(b.x-victim.x,b.y-victim.y)).slice(0,trainingLevel('staff')>=20?2:1)],4);
  if(u.type===10&&!(victim.counselDelayCD>0)){victim.skill=Math.min(victim.skill+(victim.type==='boss'?.2+tier*.01:.5+tier*.025),8);victim.counselDelayCD=2;burst('charge',victim.x,victim.y-15,'#baaceb',.4)}
  hitEnemy(victim,damage*(u.type===8&&victim.hp/victim.max<=.3+tier*.01?2:1),false);
- fx.push({x:cells[i].x,y:cells[i].y-25,tx:victim.x,ty:victim.y-14,life:.42,max:.42,type:u.type===7?2:u.type===8?6:4,color:kinds[u.type].color});
+ objectFlight(expansionObject(u.type),{x:cells[i].x,y:cells[i].y-25},{x:victim.x,y:victim.y-14},kinds[u.type].color);
 }
 function extraSkill(u,power){
+ if(expansionType(u.type)){expansionSkill(u,power);return;}
+ const source=cells[board.indexOf(u)];if(source)for(const e of enemies.filter(e=>e.hp>0).slice(0,12))objectFlight(expansionObject(u.type),{x:source.x,y:source.y-25},{x:e.x,y:e.y-15},kinds[u.type].color,true);
  const living=enemies.filter(e=>e.hp>0),tier=trainingTier();
  if(u.type===6){const e=living.sort((a,b)=>b.hp-a.hp)[0];if(e)markEnemy(e,6+tier*.25,Math.min(1.72,1.6+Math.max(0,u.pip-5)*.02+(levels[6]-1)*.02))}
  if(u.type===7)for(const e of living)burnEnemy(e,6+tier*.25,u.pip*8*power);

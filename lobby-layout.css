@@ -1,9 +1,9 @@
 /* Keep the lobby stable when deck, tutorial and resume controls change. */
-#app-shell{height:100vh;height:calc(var(--viewport-unit, 1vh)*100);min-height:0;overflow:hidden}
+#app-shell{height:100vh;height:100dvh;min-height:0;overflow:hidden}
 #lobby.lobby-screen{display:grid;grid-template-rows:minmax(170px,1fr) auto;min-height:0;overflow:hidden}
 #lobby[hidden]{display:none!important}
 #lobby .lobby-art{min-height:0;position:relative;overflow:hidden;container-type:size;isolation:isolate}
-#lobby .lobby-bottom{position:relative;inset:auto;width:auto;flex:none;min-height:0;max-height:54vh;max-height:calc(var(--viewport-unit, 1vh)*54);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:10px 14px 0;scrollbar-width:thin}
+#lobby .lobby-bottom{position:relative;inset:auto;width:auto;flex:none;min-height:0;max-height:54vh;max-height:54dvh;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:10px 14px 0;scrollbar-width:thin}
 #lobby .lobby-title{top:12px;left:16px;right:58px;z-index:2;pointer-events:none}
 #lobby .lobby-title h1{font-size:clamp(26px,11cqh,42px);line-height:1.12;margin:7px 0;letter-spacing:-1px}
 #lobby .lobby-title .title-eyebrow{font-size:6px;letter-spacing:1px}
@@ -33,5 +33,5 @@
 #lobby .lobby-links{position:sticky;bottom:0;z-index:5;display:flex;flex-wrap:nowrap;gap:0;margin:0 -14px;padding:4px 5px max(5px,env(safe-area-inset-bottom));background:#251b30;border-top:1px solid #967258}
 #lobby .lobby-links button{flex:1;min-width:0;min-height:46px;padding:3px 1px;font-size:18px}
 #lobby .lobby-links span{font-size:8px;white-space:nowrap}
-@media(max-height:650px){#lobby.lobby-screen{grid-template-rows:minmax(145px,1fr) auto}#lobby .lobby-bottom{max-height:calc(var(--viewport-unit, 1vh)*53);padding-top:7px}#lobby .lobby-title h1{font-size:26px}#lobby .mode-card{display:none}#lobby .lobby-title p{display:none}#lobby .support-label{display:none}#lobby .lobby-badge{display:none}}
+@media(max-height:650px){#lobby.lobby-screen{grid-template-rows:minmax(145px,1fr) auto}#lobby .lobby-bottom{max-height:53dvh;padding-top:7px}#lobby .lobby-title h1{font-size:26px}#lobby .mode-card{display:none}#lobby .lobby-title p{display:none}#lobby .support-label{display:none}#lobby .lobby-badge{display:none}}
 @media(orientation:landscape) and (max-height:500px){#lobby.lobby-screen{grid-template-columns:minmax(0,1fr) minmax(270px,47%);grid-template-rows:minmax(0,1fr)}#lobby .lobby-bottom{position:relative;inset:auto;width:100%;max-height:100%;border-left:1px solid #8e6c68;border-top:0}#lobby .lobby-gobi,#lobby .lobby-gobi[data-motion]{right:10%;height:62%;max-height:62%;max-width:58%;bottom:5%}#lobby .lobby-title{left:12px;right:55px}#lobby .lobby-shortcuts{right:8px;top:10px}#lobby .lobby-title h1{font-size:26px}#lobby .lobby-links{position:sticky}}

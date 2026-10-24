@@ -134,26 +134,21 @@ function bossSkills(e){if(e.decoy)return;if(e.skill<=1.2&&!e.warning)warnBoss(e)
 function nextBossText(){const next=(Math.floor(wave/5)+1)*5,b=plannedBoss(next);return b?next+'차 '+b.short+' · '+b.skillName:next+'차 · 군단장 정찰 중'}
 function renderBossGuide(){
  const list=document.querySelector('#boss-guide-list');if(!list)return;
- list.innerHTML='<p class="boss-common">매 5차에 무작위 등장 · 각 1/7 확률</p>'+bossCatalog.map(b=>'<article><img src="assets/ui-v2/icons/shield.svg" data-motion="'+b.file+'" alt="'+b.name+'"><div><h3>'+b.name+'</h3><p><span class="boss-label">특성</span><b>'+b.trait+'</b> · '+b.traitText+'</p><p><span class="boss-label">위험</span><b>'+b.skillName+'</b> · '+b.skillText+' ('+b.cooldown+'초 주기)</p><p class="boss-counter">공략 · '+b.counter+'</p></div></article>').join('');
+ list.innerHTML=bossCatalog.map(b=>'<article><img src="assets/ui-v2/icons/shield.svg" data-motion="'+b.file+'" alt="'+b.name+'"><div><small>매 5차에 랜덤 등장 · 각 1/7 확률</small><h3>'+b.name+'</h3><p><b>'+b.trait+'</b> · '+b.traitText+'</p><p><b>'+b.skillName+'</b> · '+b.skillText+' ('+b.cooldown+'초 주기)</p><p class="boss-counter">공략 · '+b.counter+'</p></div></article>').join('');
 }
 function drawBossFields(){
  for(const e of enemies){if(e.type!=='boss'||e.decoy||e.hp<=0)continue;const b=bossDefinition(e);
   const indices=e.warning?e.warningCells:e.scorchLeft>0?e.scorchCells:[];
-  for(const i of indices||[]){const p=cells[i];ctx.save();ctx.fillStyle=b.color+(e.warning?'24':'40');ctx.strokeStyle=b.color;ctx.lineWidth=2;round(p.x-35,p.y-42,70,85,8);ctx.fill();ctx.stroke();ctx.font='bold '+Math.max(18,Math.ceil(12*600/(GamePerformance.boardWidth||600)))+'px system-ui';ctx.fillStyle='#fff1d5';ctx.strokeStyle='#171020';ctx.lineWidth=4;ctx.strokeText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.fillText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1):'↓30%',p.x,p.y-26);ctx.restore()}
+  for(const i of indices||[]){const p=cells[i];ctx.save();ctx.fillStyle=b.color+(e.warning?'24':'40');ctx.strokeStyle=b.color;ctx.lineWidth=2;round(p.x-35,p.y-42,70,85,8);ctx.fill();ctx.stroke();ctx.font='bold 11px system-ui';ctx.fillStyle=b.color;ctx.fillText(e.warning?'! '+Math.max(.1,e.skill).toFixed(1)+'초':'공속 −30%',p.x,p.y-26);ctx.restore()}
  }
 }
-let bossReadout=null,bossReadoutNodes=null;
 function drawBossHUD(){
- let panel=bossReadout;
- const e=enemies.find(e=>e.type==='boss'&&!e.decoy&&e.hp>0&&!e.escaped);
- if(!e){if(panel)uiProp(panel,'hidden',true);return}
- if(!panel){panel=document.createElement('details');panel.id='boss-readout';panel.innerHTML='<summary><strong></strong><span></span><meter min="0" max="1" aria-label="군단장 체력"></meter></summary><p></p>';document.querySelector('.board-stage').append(panel);bossReadout=panel;bossReadoutNodes={name:panel.querySelector('strong'),status:panel.querySelector('span'),meter:panel.querySelector('meter'),detail:panel.querySelector('p')}}
- uiProp(panel,'hidden',false);const b=bossDefinition(e),name=bossReadoutNodes.name,status=bossReadoutNodes.status,text=b.skillName+(e.silence>0?' · 봉인 중':e.warning?' · ⚠ 시전 임박':' · '+Math.ceil(e.skill)+'초');
- if(name.textContent!==b.name)name.textContent=b.name;
- if(status.textContent!==text)status.textContent=text;
- uiProp(bossReadoutNodes.meter,'value',Math.max(0,e.hp/e.max));
- const detail=b.trait+' · '+b.traitText+(e.shield>0?' · 보호막 적용':'')+' / 대응: '+b.counter;
- uiText(bossReadoutNodes.detail,detail);
+ const e=enemies.find(e=>e.type==='boss'&&!e.decoy&&e.hp>0&&!e.escaped);if(!e)return;
+ const b=bossDefinition(e);ctx.save();ctx.fillStyle='#171020ed';round(135,16,330,66,10);ctx.fill();ctx.strokeStyle=b.color;ctx.lineWidth=1;ctx.stroke();ctx.textAlign='left';ctx.font='bold 13px system-ui';ctx.fillStyle=b.color;ctx.fillText(b.name,146,34);ctx.font='10px system-ui';ctx.fillStyle='#f9eacc';ctx.fillText(b.trait+' · '+b.skillName+(e.silence>0?' · 봉인 중':e.warning?' · 시전 임박':' · '+Math.ceil(e.skill)+'초'),146,51);
+ ctx.fillStyle='#48344e';ctx.fillRect(146,59,306,5);ctx.fillStyle=b.color;ctx.fillRect(146,59,306*Math.max(0,e.hp/e.max),5);
+ if(e.shield>0){ctx.fillStyle='#d5fff5';ctx.fillRect(146,68,306*Math.min(1,e.shield/(e.max*.4)),3)}
+ if(e.introLeft>0){ctx.fillStyle='#171020eb';round(135,84,330,33,7);ctx.fill();ctx.fillStyle='#f6e8d1';ctx.font='10px system-ui';ctx.fillText(b.traitText.slice(0,30),146,98);if(b.traitText.length>30)ctx.fillText(b.traitText.slice(30),146,111)}
+ ctx.restore();
 }
 function drawBossEffect(f,t){
  if(!f.effect.startsWith('boss'))return false;

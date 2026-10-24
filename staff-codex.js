@@ -30,6 +30,8 @@ for(const [id,name,job,dept,role,story,quote,traits,color,skill,ability,ultimate
  ['accountant','오울리','재무 지원실','운영비 지원','밤눈만큼 숫자에도 밝은 부엉이. 처치 실적을 한 푼도 빠짐없이 정산한다.','야근 수당, 제가 챙겨드릴게요.','계산 정확 · 현실적','#e3c68e','꼼꼼한 정산'],
  ['rescue','플레어','비상 대응실','광역 지원','비상벨보다 먼저 달려오는 작은 임프. 성 안에서 가장 뜨거운 동료다.','불렀어요? 이미 출동했어요!','행동파 · 열정','#efa28b','비상 출동']
 ].forEach(([key,name,dept,role,story,quote,traits,color,skill])=>{const k=mercCatalog[key];staffRecords.push({id:'merc-'+key,name,job:k.name,dept,role,story,quote,traits,color,group:'merc',image:'assets/mobile/merc-'+key+'.webp',ability:k.desc,skill,skillText:'보드 밖에서 자동 발동 · 당직 시작 전 1명 장착',status:'특수 용병',price:k.price})});
+for(const k of NightExpansion.staff)staffRecords.push({id:k.id,name:k.name,job:k.job,dept:k.dept,role:k.role,story:k.story,quote:k.quote,traits:k.traits,color:k.color,group:'incoming',image:staffImagePath(k.id),ability:k.desc,skill:k.skill,skillText:k.skillText+' · 재사용 20초',status:'입사 예정'});
+for(const k of NightExpansion.mercs)staffRecords.push({id:'merc-'+k.id,name:k.name,job:k.job,dept:k.dept,role:k.role,story:k.story,quote:k.quote,traits:k.traits,color:k.color,group:'merc',image:mercImagePath(k.id),ability:k.desc,skill:k.skill,skillText:'보드 밖 자동 지원 · 당직 전 1명 장착',status:'지원 영웅',price:k.price});
 for(let i=0;i<RECRUIT_STAFF.length;i++){const r=staffRecords.find(v=>v.id===RECRUIT_STAFF[i]);r.ability=kinds[i+6].desc;r.skill=skillNames[i+6];r.skillText=skillDescriptions[i+6]+' · 재사용 20초';}
 function staffOwned(r){return r.group==='merc'?meta.owned.includes(r.id.slice(5)):meta.staff.includes(r.id)}
 // Numeric support rules stay visible in the employee dossier.
@@ -44,7 +46,7 @@ function renderStaffArchive(){
  for(const r of list)document.querySelector('[data-staff="'+r.id+'"]').onclick=()=>showStaffRecord(r.id);
  for(const key of ['staff','incoming','merc']){const b=document.querySelector('#roster-tab-'+key);b.classList.toggle('active',key===rosterGroup);b.setAttribute('aria-pressed',String(key===rosterGroup))}
  document.querySelector('#roster-tab-staff').textContent='채용 직원 '+meta.staff.length;
- document.querySelector('#roster-tab-incoming').textContent='미채용 '+(12-meta.staff.length);
+ document.querySelector('#roster-tab-incoming').textContent='미채용 '+(kinds.length-meta.staff.length);
  document.querySelector('#roster-note').textContent=rosterGroup==='incoming'?'채용팩으로 새로운 동료를 만나세요. 채용 전에는 실루엣만 공개돼요.':rosterGroup==='merc'?'지원 영웅은 채용팩에서 획득해요. 인사기록을 열어 보드 밖에 1명 선택하세요.':'사원증에서 근무 명단에 추가하거나 해제할 수 있어요.';
 }
 function showStaffRecord(id){
@@ -62,7 +64,7 @@ renderStaffArchive();
 
 function showLockedRecord(r){
  const isMerc=r.group==='merc';
- const detail=document.querySelector('#roster-detail');detail.innerHTML=`<div class="dossier-hero staff-locked"><small>SEALED PERSONNEL FILE</small><img src="${r.image}" alt="미채용 캐릭터 실루엣"><h3>???</h3><p>채용하면 이름과 능력이 공개돼요.</p></div><section class="dossier-section"><h4>새 동료를 만나는 방법</h4><p>${isMerc?'채용팩에서 지원 영웅이 총 10% 확률로 등장해요. 지원 3종은 각 약 3.33%예요.':'상점에서 '+PACK_PRICE+' 글로벌 코인으로 채용팩을 구매하세요. 일반 직원 총 90% · 일반 12종 각 7.5% 확률이에요.'}</p></section>${isMerc?'':`<section class="dossier-section"><h4>지정 채용</h4><p>중복 채용으로 모은 포인트로 이 직원을 확정 채용해요.<br>보유 ${meta.recruitPoints} / 필요 ${RECRUIT_POINTS} 포인트</p><button id="recruit-specific" class="staff-action">${RECRUIT_POINTS} 포인트 · 이 직원 채용</button></section>`}<button id="archive-shop" class="staff-action">${'채용팩 상점으로'} →</button>`;
+ const detail=document.querySelector('#roster-detail');detail.innerHTML=`<div class="dossier-hero staff-locked"><small>SEALED PERSONNEL FILE</small><img src="${r.image}" alt="미채용 캐릭터 실루엣"><h3>???</h3><p>채용하면 이름과 능력이 공개돼요.</p></div><section class="dossier-section"><h4>새 동료를 만나는 방법</h4><p>${isMerc?'채용팩에서 지원 영웅이 총 10% 확률로 등장해요. 지원 7종은 각 약 1.43%예요.':'상점에서 '+PACK_PRICE+' 글로벌 코인으로 채용팩을 구매하세요. 일반 직원 총 90% · 일반 17종 각 약 5.29% 확률이에요.'}</p></section>${isMerc?'':`<section class="dossier-section"><h4>지정 채용</h4><p>중복 채용으로 모은 포인트로 이 직원을 확정 채용해요.<br>보유 ${meta.recruitPoints} / 필요 ${RECRUIT_POINTS} 포인트</p><button id="recruit-specific" class="staff-action">${RECRUIT_POINTS} 포인트 · 이 직원 채용</button></section>`}<button id="archive-shop" class="staff-action">${'채용팩 상점으로'} →</button>`;
  if(!isMerc){const b=document.querySelector('#recruit-specific');b.disabled=!!saveWarning||meta.recruitPoints<RECRUIT_POINTS||playing&&!ended;b.onclick=()=>recruitByPoints(r.id)}
  document.querySelector('#archive-shop').onclick=()=>{document.querySelector('#roster').close();document.querySelector('#shop-open').onclick();shopTab('pack')};
  document.querySelector('#roster-overview').hidden=true;detail.hidden=false;document.querySelector('#roster-back').hidden=false;document.querySelector('#roster-title').textContent='봉인된 인사기록';document.querySelector('#roster').scrollTop=0;document.querySelector('#roster-back').focus?.();
