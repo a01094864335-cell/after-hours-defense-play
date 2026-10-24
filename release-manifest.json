@@ -258,23 +258,23 @@
     "expansion-catalog.js": "f39ea8c31dab8e41500e1d1060f41dccbb111cb6b5b3cca419ebf9879b38394e",
     "expansion-combat.js": "51ca427300569bb8a24bd157c13471ad1fe3a9917d511fb8ae5b1185d9881295",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
-    "game.js": "e0914b267bb86b9cb14d761c15c25f1de714787afa6983d0b03a8d205495cf30",
+    "game.js": "48a1aa16494396a59e8e4c9906750c542b794294067bd1be88b089559daf012d",
     "gm-mode.css": "5cd1bd087d433e83b8100218457ab048538833b5a66937276e6f72f4cd9b0bac",
     "gm-mode.js": "6d9e6fc8a7065cee1b1c9a5828411b8cfd6e276102b040b732af3473ac5cc763",
     "gm-ui.js": "c0e3ca338870b3637163dc4691cbc4d7f63d0925296316fd95b4d6a3b8de2797",
-    "index.html": "fab37c23fd5c2456c81a61f957a244750f2af72055a5bfd98a852b9fe8469625",
+    "index.html": "9fbf3e78b8b660a2c98f86152414e31cdeb05e0f3fddac196470f51b4f72e337",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
-    "meta.js": "35ed8e3425c23176d7c0d06257ce146978a818d714fd64d345e9905842875b83",
+    "meta.js": "dd92e9a8c4bb25cdde71a09d7ca84f054353764328aeecdd47081fd53d22b0b7",
     "mobile-ui.css": "69af50b41b488df7c780a2e474b51fcf2b405b77e6dea8d9448a6d58b8524cca",
     "motion.css": "33ec198407b9cda86169997f855411234127131658dfddfa26b99de08b39494e",
-    "motion.js": "df770610880fb44e76236c7468ac9b752c868dc5076b2b7c6e60ff4f37227858",
+    "motion.js": "e7b35012ab861b79e0c51532faa5d1b651ab3a112bc0074be7072189f6dd8f78",
     "new-hire-trial.js": "d0da2ab41aa0ad31dcd8bed9a56c61723ffde611d2ba2309e1f041cdd1b4a437",
-    "progression.js": "d6b596cd72b56e994eec3a3e10cf803820c51f9595a380362c61e67d16bf4a9b",
+    "progression.js": "077f99aeaee8351463667d6bfa460faa46ef122ed2b623f84e49bb68c36aadc8",
     "prologue-layout.css": "e8eee50c9142bb72c9155a3edc602e269ae4b63e94bc009edbeb21caf3786625",
     "recruitment.js": "fff82ffa026c813f6aea84df858a71363696988a93cb13abb22778ca200ba0ba",
     "reference-ui.css": "9ea6f27ecfc94d4af9739ddd80d894b8a80e3091ef6fe1947811f938fec41a68",
-    "reference-ui.js": "400dfbb0e1e2cb8d61bc8a5334c212dc908df5391b452876414b858aaacb74dc",
+    "reference-ui.js": "1af9398e6f0514ad27e20d9ae5d167cb1306c17dedefc61af7b46575eed9ce76",
     "shop-system.css": "164ecf970461e3bddbffc2a2a7a10be3487f71d891686ffada7568ecc917ff7d",
     "shop-system.js": "78cf7d2ffdab8c8339e2596a6eebea42a73509142a8f1bda9a53988b69745da1",
     "staff-codex.js": "21a4e79d82b77eae40e86577a3784abcf94b9514939b694c80b3d3be67583ced",
@@ -283,7 +283,16 @@
     "training-ui.js": "400c0f07612f60ba0453a4a3f14199b79e14a53bfb738da03bc398cb42e1f172",
     "training.css": "8d9e983f0adbe8450717bc2ad5d952edbe24bc79fb4b8d4ed70e3c7effc57f69",
     "training.js": "7a0e097d328c4d5c2d18ab6a1778570a6d9a0507ef358ca41194318fa9d17480",
-    "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792"
+    "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792",
+    "recruitment-dialog.js": "b50ea74ba4a3c64fee4e7c909e47e2d6ae997ced179b53163fbfaab1d0fcebd8",
+    "usability.js": "74b1020b74ab8720dd67e4093b75a1e97adc39be62eafe1265b89c18e8a9c9eb",
+    "discount-tutorial.js": "abbf03023e7fe37a0f4ccbab24108696b39a57e662edd570ea87971d2625f2dd",
+    "performance-ui.js": "607ca816f2939593f43902d3af855e3f5d81da7c3e83765a208a2e4ec5151e75",
+    "performance.js": "38b18057efdcfb9237eb0c3c742346baabb62585373bec5e20515f1508bcc56b",
+    "session-guard.js": "7e433866efa7d9b93b5f05cc40791097548a9d60dce852e6972bbbc8234febd7",
+    "orientation.js": "a8c087037676e6358ed56fd88f065f4acb379ac552151c286dd4cdea78550181",
+    "release-safety.css": "4c0e47f70119d64ea62b9ee9327323245ab9552eac5b6ab507a8b29c443a3782",
+    "usability.css": "97d28135c7931576da62fc1f3d670993dfeb44c947e7143f80f64ef08264a0cd"
   },
   "patches": [
     {
@@ -293,6 +302,27 @@
         "meta.js",
         "index.html",
         "gm-ui.js"
+      ]
+    },
+    {
+      "feature": "restore-regressed-runtime-policies",
+      "baseline": "e53ad6c",
+      "files": [
+        "game.js",
+        "index.html",
+        "meta.js",
+        "motion.js",
+        "progression.js",
+        "reference-ui.js",
+        "recruitment-dialog.js",
+        "usability.js",
+        "discount-tutorial.js",
+        "performance-ui.js",
+        "performance.js",
+        "session-guard.js",
+        "orientation.js",
+        "release-safety.css",
+        "usability.css"
       ]
     }
   ]

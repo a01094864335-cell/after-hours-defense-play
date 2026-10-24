@@ -3,16 +3,16 @@ const BASE_STAFF=['goblin-guard','orc-technician','slime-cleaner','gobi','electr
 const CLASSIC_RECRUIT_STAFF=['bat-nurse','skeleton-chef','mimic-storekeeper','spider-tailor','nightmare-counselor','kobold-recruiter'];
 const RECRUIT_STAFF=[...CLASSIC_RECRUIT_STAFF,...NightExpansion.staff.map(k=>k.id)];
 const MERC_IDS=['ward','accountant','rescue',...NightExpansion.mercs.map(k=>k.id)];
-const PACK_PRICE=30, RECRUIT_POINTS=3;
+const PACK_PRICE=120, RECRUIT_POINTS=3;
 const META_KEY='after-hours-defense-v1';
 function freshMeta(){return {version:1,coins:GMTest.enabled?GMTest.initialCoins:0,items:{grade:0,kind:0,king:0},owned:[],equipped:null,settled:[],stories:[],staff:BASE_STAFF.slice(),deck:BASE_STAFF.slice(0,5),recruitPoints:0,training:{staff:1,merc:1}}}
 let saveWarning='';
 function gmUnlockRoster(data){if(GMTest.enabled){data.staff=[...BASE_STAFF,...RECRUIT_STAFF];data.owned=typeof MERC_IDS!=='undefined'?MERC_IDS.slice():['ward','accountant','rescue']}return data}
 function loadMeta(){try{const raw=GameStorage.getItem(META_KEY);if(!raw)return gmUnlockRoster(freshMeta());const d=JSON.parse(raw);if(d.version!==1||!Number.isSafeInteger(d.coins)||d.coins<0||!d.items||!Array.isArray(d.owned)||!Array.isArray(d.settled))throw Error('invalid save');if(d.owned.some(k=>!MERC_IDS.includes(k))||(d.equipped!==null&&(!d.owned.includes(d.equipped)||!MERC_IDS.includes(d.equipped)))||d.settled.some(id=>typeof id!=='string'))throw Error('invalid merc/save');for(const k of ['grade','kind','king'])if(!Number.isSafeInteger(d.items[k])||d.items[k]<0)throw Error('invalid inventory');if(d.staff===undefined){d.staff=BASE_STAFF.slice();d.deck=BASE_STAFF.slice(0,5);d.recruitPoints=0}if(!Array.isArray(d.staff)||!Array.isArray(d.deck)||new Set(d.staff).size!==d.staff.length||new Set(d.deck).size!==d.deck.length||d.deck.length>5||d.staff.some(id=>![...BASE_STAFF,...RECRUIT_STAFF].includes(id))||BASE_STAFF.some(id=>!d.staff.includes(id))||d.deck.some(id=>!d.staff.includes(id))||!Number.isSafeInteger(d.recruitPoints)||d.recruitPoints<0)throw Error('invalid staff');if(d.stories===undefined)d.stories=[];if(!Array.isArray(d.stories)||d.stories.some(id=>typeof id!=='string')||new Set(d.stories).size!==d.stories.length)throw Error('invalid stories');if(d.training===undefined)d.training={staff:1,merc:1};if(!validTraining(d.training))throw Error('invalid training');return gmUnlockRoster(d)}catch(e){saveWarning='저장 데이터를 읽지 못했습니다. 저장이 복구될 때까지 구매·보상 지급을 중지합니다.';return freshMeta()}}
 let meta=loadMeta();
-function saveChange(change){if(saveWarning){showMetaStatus(saveWarning);return false}const next=JSON.parse(JSON.stringify(meta));change(next);try{GameStorage.setItem(META_KEY,JSON.stringify(next));meta=next;return true}catch(e){showMetaStatus('저장 실패: 구매·소비·지급을 적용하지 않았습니다. 브라우저 저장 공간을 확인해주세요.');return false}}
+function saveChange(change){if(!GameSession.canWrite())return false;if(saveWarning){showMetaStatus(saveWarning);return false}const next=JSON.parse(JSON.stringify(meta));change(next);try{GameStorage.setItem(META_KEY,JSON.stringify(next));meta=next;return true}catch(e){showMetaStatus('저장 실패: 구매·소비·지급을 적용하지 않았습니다. 브라우저 저장 공간을 확인해주세요.');return false}}
 function showMetaStatus(text){document.querySelector('#meta-status').textContent=text;document.querySelector('#shop-status').textContent=text}
-const itemCatalog={grade:{name:'등급 합성권',price:8,icon:'🎲',image:'item-grade',desc:'종류가 달라도 같은 등급 합성'},kind:{name:'종류 합성권',price:12,icon:'📜',image:'item-kind',desc:'등급이 달라도 같은 종류 합성'},king:{name:'마왕 깨우기',price:20,icon:'🔔',image:'item-king',desc:'현재 적이 있을 때 마왕 즉시 출동'}};
+const itemCatalog={grade:{name:'등급 합성권',price:20,icon:'🎲',image:'item-grade',desc:'종류가 달라도 같은 등급 합성'},kind:{name:'종류 합성권',price:30,icon:'📜',image:'item-kind',desc:'등급이 달라도 같은 종류 합성'},king:{name:'마왕 깨우기',price:50,icon:'🔔',image:'item-king',desc:'현재 적이 있을 때 마왕 즉시 출동'}};
 const mercCatalog={ward:{name:'결계 계약직',price:25,file:'../mobile/merc-ward',desc:'한 판에 첫 돌파 피해 1회 완전 방어'},accountant:{name:'야간 회계사',price:30,file:'../mobile/merc-accountant',desc:'처치한 적마다 전투 SP +2'},rescue:{name:'비상 대응반',price:40,file:'../mobile/merc-rescue',desc:'15초마다 전 적 최대 체력의 8% 피해'}};
 for(const k of NightExpansion.mercs)mercCatalog[k.id]={name:k.name+' · '+k.job,price:k.price,file:'../expansion-v2/merc-'+k.id+'-portrait',desc:k.desc};
 function mercImagePath(key){return NightExpansion.mercs.some(k=>k.id===key)?'assets/expansion-v2/merc-'+key+'-portrait.webp':'assets/mobile/merc-'+key+'.webp'}
@@ -34,6 +34,19 @@ function nextPromo(){if(promoIndex>=promoLines.length-1)closePromo();else{promoI
 function selectItem(key){if(saveWarning||!(typeof itemCount==='function'?itemCount(key):meta.items[key])||paused||ended)return;if(key==='king'){if(!playing||!enemies.some(e=>e.hp>0)||['entrance','afterglow'].includes(kingEvent.state))return;if(!(typeof consumeItem==='function'?consumeItem('king'):saveChange(d=>d.items.king--)))return;kingEvent={state:'entrance',elapsed:0,timer:0};itemMode=null;say('🔔 마왕: 누가 깨웠나… 전부 조용히 해라!');sync();return}itemMode=itemMode===key?null:key;selected=-1;document.querySelector('#item-hint').textContent=itemMode?itemCatalog[key].desc+' · 높은 등급 +1 / 실패율 유지 / 유효 시도 시 1개 소비':'합성권 선택 → 두 직원 선택 또는 드래그. 다시 누르면 취소.';sync()}
 function specialCompatible(a,b){return a&&b&&Math.max(a.pip,b.pip)<7&&(itemMode==='grade'?a.pip===b.pip:itemMode==='kind'?a.type===b.type:false)}
 function recordKill(e){if(e.rewarded)return;e.rewarded=true;animateDefeat(e);if(e.decoy)return;if(activeMerc==='accountant'){cueMercenary();objectFlight('coin',{x:e.x,y:e.y-15},{x:300,y:535},'#ffda7d');}kills++;if(e.type==='boss')runBoss++;else runNormal++;sp+=10+Math.floor(wave/3)+(activeMerc==='accountant'?accountantIncome():0)}
-function settleRun(){if(!ended)return;const base=Math.floor(runNormal/10),bonus=runBoss*5,total=base+bonus;let paid=meta.settled.includes(runId);if(!paid)paid=saveChange(d=>{if(!d.settled.includes(runId)){d.coins+=total;d.settled.push(runId)}});runReward={base,bonus,total,paid};document.querySelector('#result').hidden=false;document.querySelector('#result-text').textContent=wave+'차 · 일반 '+runNormal+'명 / 군단장 '+runBoss+'명 · 기본 '+base+' + 군단장 '+bonus+' = '+total+' 코인 '+(paid?'지급 완료':'저장 실패 · 재시도 필요');document.querySelector('#retry-reward').hidden=paid;renderMeta()}
+function settleRun(graduationBonus=0){
+ if(!ended||!GameSession.canWrite())return;
+ const base=Math.floor(runNormal/10),bonus=runBoss*5,total=base+bonus+graduationBonus;
+ let paid=meta.settled.includes(runId)&&(!graduationBonus||meta.tutorialComplete);
+ if(!paid)paid=saveChange(d=>{
+  if(!d.settled.includes(runId)){d.coins+=base+bonus;d.settled.push(runId)}
+  if(graduationBonus&&!d.tutorialComplete){d.coins+=graduationBonus;d.tutorialComplete=true}
+ });
+ runReward={base,bonus,graduationBonus,total,paid};
+ document.querySelector('#result').hidden=false;
+ document.querySelector('#result-text').textContent=wave+'차 · 일반 '+runNormal+'명 / 군단장 '+runBoss+'명 · 기본 '+base+' + 군단장 '+bonus+(graduationBonus?' + 연수 수료 '+graduationBonus:'')+' = '+total+' 코인 '+(paid?'지급 완료':'저장 실패 · 재시도 필요')+(graduationBonus?' · 5명 편성 해금':'');
+ document.querySelector('#retry-reward').hidden=paid;
+ renderMeta();
+}
 function mercUpdate(dt){expansionUpdate(dt);if(activeMerc!=='rescue')return;mercTimer-=dt;if(mercTimer<=0){if(enemies.some(e=>e.hp>0)){for(const e of enemies)if(e.hp>0){hitEnemy(e,e.max*mercDamageRate(),false);if(trainingTier('merc'))markEnemy(e,trainingLevel('merc')>=20?2:1,1.1);burst('lightning',300,530,'#ffe477',.55,{tx:e.x,ty:e.y-15})}cueMercenary();say('비상 대응반: 지원 사격!')}mercTimer=mercInterval()}}
 function breachDamage(amount){if(activeMerc==='ward'&&wardChargesUsed<wardCapacity()){wardChargesUsed++;wardUsed=wardChargesUsed>=wardCapacity();cueMercenary();burst('command',518,493,'#a9c9f0',1);const level=trainingLevel('merc');if(level>=5)for(const e of enemies)e.slow=Math.max(e.slow||0,1);sp+=(level-1)*.5+(level>=10?10:0);if(level>=20)for(const e of enemies)e.freeze=Math.max(e.freeze||0,e.type==='boss'?.5:1);say('결계 계약직: 막았습니다! 남은 방어 '+(wardCapacity()-wardChargesUsed)+'회');return}life=Math.max(0,life-amount)}

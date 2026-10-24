@@ -1,6 +1,7 @@
 'use strict';
 /* Presentation structure only; purchases and combat continue through existing handlers. */
 (()=>{
+ if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s);
  const equipment=q('#equipment'),content=document.createElement('div');content.className='equipment-content';content.append(q('#cards'));equipment.append(content);
  // Fixed heading/action areas keep autofocus from scrolling away the help title.

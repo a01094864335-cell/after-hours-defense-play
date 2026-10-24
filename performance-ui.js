@@ -1,9 +1,10 @@
 'use strict';
 (()=>{
+ if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s);
  let metaKey='',progressKey='';
  const previousMeta=renderMeta;renderMeta=function(){
-  const key=JSON.stringify([meta.coins,meta.items,meta.owned,meta.equipped,meta.deck,meta.staff,meta.recruitPoints,meta.training,runTraining,trainingItems,playing,paused,ended,itemMode,activeMerc,wardChargesUsed,Math.ceil(mercTimer||0),enemies.some(e=>e.hp>0),kingEvent.state,saveWarning,appScreen,q('#shop').open,q('#training-dialog').open]);
+  const key=JSON.stringify([meta.coins,meta.items,meta.owned,meta.equipped,meta.deck,meta.staff,meta.recruitPoints,meta.training,expansionState,runTraining,trainingItems,playing,paused,ended,itemMode,activeMerc,wardChargesUsed,Math.ceil(mercTimer||0),enemies.some(e=>e.hp>0),kingEvent.state,saveWarning,appScreen,q('#shop').open,q('#training-dialog').open]);
   if(key===metaKey)return;metaKey=key;previousMeta();
  };
  const previousProgress=renderProgress;renderProgress=function(){

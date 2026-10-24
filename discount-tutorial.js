@@ -1,6 +1,7 @@
 'use strict';
 /* The failure is an explicitly labelled model; the discounted summon is real. */
 (()=>{
+ if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s),guide=q('#guide'),next=q('#guide-next');
  const stages=['unseen','intro','offer','summon','done','skipped'];
  let stage=tutorialMode?'unseen':'done';
@@ -34,7 +35,7 @@
  skip.onclick=()=>{stage='skipped';clean();guide.close();paused=false;sync();persist()};
  const previousSummon=summon;summon=function(){
   const before=cost,discounted=summonDiscount,price=summonPrice();previousSummon();
-  if(tutorialMode&&stage==='summon'&&discounted&&cost>before){
+  if(tutorialMode&&stage==='summon'&&discounted&&!summonDiscount&&cost>before){
    stage='done';clean();showGuide('반값 소환 연습 · 3 / 3 완료',price+' SP로 직원을 소환했어요! 할인은 1회 사용됐고, 다음 소환은 기본 '+cost+' SP입니다. 합성에 실패해도 반값 소환으로 다시 전력을 채워보세요.');persist();
   }
  };
