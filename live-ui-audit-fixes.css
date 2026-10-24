@@ -127,6 +127,6 @@ html body #lobby #merc-slot>span:not(.ref-merc-heading){font-size:17px!important
 html body #lobby #merc-slot>span:not(.ref-merc-heading)::before{content:'지원 용병';display:block;font-size:11px;letter-spacing:.08em;color:#c6ad89;margin-bottom:5px}
 html body #lobby #merc-slot>span:not(.ref-merc-heading) small{display:block;font-size:12px!important;line-height:1.6!important;color:#d8c9e1!important;margin-top:4px}
 html body #lobby #merc-slot>#deck-open{border-top:1px solid #8e705555!important;padding-top:14px!important}
-html body #lobby #merc-slot:not(:has(>img,>canvas))::after{content:'지원 용병을 선택해 함께 출근하세요';grid-column:1/-1;grid-row:2;padding:16px 12px;border:1px dashed #8e7055;color:#cfbca0;text-align:center;font-size:12px;line-height:1.6}
+html body #lobby #merc-slot:not(:has(>img,>canvas))::after{display:block!important;content:'지원 용병을 선택해 함께 출근하세요'!important;grid-column:1/-1;grid-row:2;padding:16px 12px;border:1px dashed #8e7055;color:#cfbca0;text-align:center;font-size:12px;line-height:1.6}
 html body #lobby #merc-slot:not(:has(>img,>canvas))>#deck-open{grid-row:3!important}
 @media(max-width:350px){html body #lobby #merc-slot{grid-template-columns:72px minmax(0,1fr) 44px!important}html body #lobby #merc-slot>:is(img,canvas){width:72px!important;height:88px!important}html body #lobby #merc-slot>span:not(.ref-merc-heading){font-size:15px!important}}
