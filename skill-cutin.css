@@ -1,0 +1,20 @@
+/* The entire mobile stage dims; input and the battle clock keep working. */
+#skill-cutin{position:absolute;inset:0;z-index:65;overflow:hidden;pointer-events:none;isolation:isolate;display:grid;place-items:center;container-type:inline-size;--cutin-color:#ffe18c;--cutin-scale:1;--cutin-slide:0px;--cutin-ray-turn:0deg;color:#fff7e5}
+#skill-cutin[hidden]{display:none!important}
+#skill-cutin *{box-sizing:border-box;pointer-events:none}
+#skill-cutin .cutin-dim{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 47%,#181022a6 0%,#0c0718df 75%)}
+#skill-cutin .cutin-rays{position:absolute;width:170%;aspect-ratio:1;left:-35%;top:50%;opacity:.15;transform:translateY(-50%) rotate(var(--cutin-ray-turn));background:repeating-conic-gradient(from 0deg,transparent 0deg 13deg,var(--cutin-color) 13deg 15deg,transparent 15deg 30deg);mask-image:radial-gradient(circle,transparent 15%,#000 70%)}
+#skill-cutin .cutin-band{position:absolute;top:33%;left:-15%;width:130%;height:40%;transform:skewY(-10deg);border-block:2px solid var(--cutin-color);background:linear-gradient(100deg,transparent,#ffffff0d,transparent);box-shadow:0 0 40px #0004}
+#skill-cutin .cutin-stage{position:relative;display:flex;align-items:center;flex-direction:column;width:100%;max-height:100%;padding:16px 10px 25px;transform:translateX(var(--cutin-slide)) scale(var(--cutin-scale));text-align:center}
+#skill-cutin .cutin-badge{display:block;border:1px solid var(--cutin-color);border-radius:3px;padding:5px 12px;background:#21162ef0;color:var(--cutin-color);font:800 clamp(10px,3cqw,15px)/1.2 system-ui;letter-spacing:2px}
+#skill-cutin[data-side="enemy"] .cutin-badge{background:#7c2535;color:#fff0d9;border-color:#ffa59c}
+#skill-cutin .cutin-art{width:min(100%,440px);margin:-4px 0 -12px;filter:drop-shadow(0 0 13px var(--cutin-color))}
+#skill-cutin canvas{display:block;width:100%;height:auto;aspect-ratio:520/440;max-height:none;border:0;background:none;box-shadow:none;image-rendering:pixelated}
+#skill-cutin .cutin-copy{position:relative;width:100%;padding:0 4px}
+#skill-cutin .cutin-caster{display:inline-block;padding:5px 16px;background:#170c20e8;border-inline:2px solid var(--cutin-color);color:var(--cutin-color);font:800 clamp(13px,3.8cqw,20px)/1.4 system-ui}
+#skill-cutin .cutin-shout{display:block;max-width:100%;margin:10px auto 0;font:950 clamp(24px,8cqw,46px)/1.25 system-ui;letter-spacing:-1.5px;overflow-wrap:anywhere;word-break:keep-all;text-wrap:balance;text-shadow:2px 3px 0 #251430,-2px -2px 0 #251430,0 0 14px var(--cutin-color);transform:rotate(-3deg)}
+#skill-cutin[data-side="enemy"] .cutin-shout{transform:rotate(3deg)}
+#skill-cutin .cutin-chain{display:block;min-height:18px;margin-top:8px;color:#fff2ce;font:700 12px/1.4 system-ui}
+.cutin-announcement{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-height:600px){#skill-cutin .cutin-art{width:min(82%,310px)}#skill-cutin .cutin-stage{padding-block:8px}#skill-cutin .cutin-shout{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){#skill-cutin .cutin-rays{display:none}#skill-cutin .cutin-stage,#skill-cutin .cutin-shout{transform:none!important}#skill-cutin .cutin-art{filter:none}}

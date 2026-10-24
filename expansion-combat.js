@@ -103,10 +103,23 @@ function restoreExpansionState(value){
  return s;
 }
 // Object glyphs are drawn with canvas primitives, keeping projectiles legible at phone size.
-function drawObject(object,x,y,color,scale=1,angle=0){
+function drawObject(object,x,y,color,scale=1,angle=0,surface=ctx){
+ const ctx=surface;
+ const pixel=(x,y,w,h,color)=>{ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),w,h)};
+ const spark=(x,y,r,color)=>{pixel(x-2,y-r,4,r*2,color);pixel(x-r,y-2,r*2,4,color)};
  ctx.save();ctx.translate(Math.round(x),Math.round(y));ctx.rotate(angle);ctx.scale(scale,scale);ctx.lineWidth=2;ctx.strokeStyle='#32253f';ctx.fillStyle=color;
  const block=(x,y,w,h,c)=>pixel(x,y,w,h,c||color);
- if(object==='letter'||object==='scroll'){
+ if(object==='arrow'){
+  block(-14,-2,23,4,'#b98957');block(10,-4,4,8,'#e4d8b6');block(14,-2,4,4,'#fff4d8');block(-13,-6,5,12,color);
+ }else if(object==='wrench'){
+  block(-3,-7,6,20,'#b2c0d3');block(-8,-13,5,10,'#d9e1ed');block(3,-13,5,10,'#d9e1ed');block(-8,-6,16,5,'#b2c0d3');block(-1,8,2,3,'#5a647b');
+ }else if(object==='bubble'){
+  ctx.strokeStyle=color;ctx.beginPath();ctx.arc(0,0,11,0,Math.PI*2);ctx.stroke();block(-5,-6,4,3,'#e6ffff');ctx.beginPath();ctx.arc(11,-10,4,0,Math.PI*2);ctx.stroke();
+ }else if(object==='bolt'){
+  ctx.beginPath();ctx.moveTo(1,-15);ctx.lineTo(-10,2);ctx.lineTo(-1,2);ctx.lineTo(-4,15);ctx.lineTo(11,-4);ctx.lineTo(3,-4);ctx.closePath();ctx.fill();
+ }else if(object==='parcel'){
+  block(-11,-9,22,19,'#bc936b');block(-11,-9,22,5,'#e0ba85');block(-2,-9,4,19,color);block(4,0,5,5,'#fff0c9');
+ }else if(object==='letter'||object==='scroll'){
   block(-10,-7,20,14,'#fff0cd');block(-11,-8,22,2,'#b98458');block(-11,6,22,2,'#b98458');
   ctx.strokeStyle='#c99b75';ctx.beginPath();ctx.moveTo(-8,-5);ctx.lineTo(0,1);ctx.lineTo(8,-5);ctx.stroke();block(-2,-1,5,5,object==='scroll'?'#be405d':'#e9ae58');
  }else if(object==='magnet'){

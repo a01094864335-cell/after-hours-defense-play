@@ -15,7 +15,7 @@
  function display(){
   guide.dataset.discountLesson=stage;model.hidden=false;skip.hidden=false;model.classList.toggle('example-failed',stage==='offer');
   q('#guide-title').textContent=stage==='intro'?'반값 소환 연습 · 1 / 3':'반값 소환 연습 · 2 / 3';
-  q('#guide-text').textContent=stage==='intro'?'합성은 실패할 수도 있어요. 실전에서는 이동한 직원 1명이 사라지고, 다음 소환 1회가 50% 할인돼요. 먼저 연습 모형으로 실패 상황을 확인해보세요.':'실패 상황을 확인했어요. 다음 소환은 기본 '+cost+' SP 대신 '+summonPrice()+' SP예요. 실제 소환 버튼을 눌러 할인받아보세요.';
+  q('#guide-text').textContent=stage==='intro'?'합성은 실패할 수도 있어요. 실전에서는 이동한 직원 1명이 사라지고, 다음 소환 1회가 50% 할인돼요. 먼저 연습 모형으로 실패 상황을 확인해보세요.':'실패 상황을 확인했어요. 다음 소환은 기본 '+summonBasePrice()+' SP 대신 '+summonPrice()+' SP예요. 실제 소환 버튼을 눌러 할인받아보세요.';
   next.textContent=stage==='intro'?'연습 모형으로 실패 확인':'반값 소환 해보기';
   if(!guide.open)guide.showModal();paused=true;sync();
  }
@@ -36,7 +36,7 @@
  const previousSummon=summon;summon=function(){
   const before=cost,discounted=summonDiscount,price=summonPrice();previousSummon();
   if(tutorialMode&&stage==='summon'&&discounted&&!summonDiscount&&cost>before){
-   stage='done';clean();showGuide('반값 소환 연습 · 3 / 3 완료',price+' SP로 직원을 소환했어요! 할인은 1회 사용됐고, 다음 소환은 기본 '+cost+' SP입니다. 합성에 실패해도 반값 소환으로 다시 전력을 채워보세요.');persist();
+   stage='done';clean();showGuide('반값 소환 연습 · 3 / 3 완료',price+' SP로 직원을 소환했어요! 할인은 1회 사용됐고, 다음 소환은 기본 '+summonBasePrice()+' SP입니다. 합성에 실패해도 반값 소환으로 다시 전력을 채워보세요.');persist();
   }
  };
  q('#summon').onclick=summon;

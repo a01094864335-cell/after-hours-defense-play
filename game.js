@@ -12,15 +12,14 @@ const extraKinds=[
 ];kinds.push(...extraKinds,...NightExpansion.staff.map(k=>({...k,file:k.id,name:k.name+' · '+k.job})));
 function staffImagePath(file){if(NightExpansion.staff.some(k=>k.id===file))return 'assets/expansion-v2/'+file+'-portrait.webp';return 'assets/'+(RECRUIT_STAFF.includes(file)?'staff-expansion/':'pixel/')+file+'.webp'}
 ctx.imageSmoothingEnabled=false;
-const images={};for(const file of [...kinds.map(k=>k.file),'novice-adventurer','rogue-scout','hero-leon','shield-knight','healing-priest','lightning-mage','lobby-background']){const im=new Image();im.addEventListener?.('load',()=>GamePerformance.invalidate());im.src=staffImagePath(file);images[file]=im}
-for(const key of MERC_IDS){const im=new Image();im.src=mercImagePath(key);images['merc-'+key]=im}
+const images={};function lazyImage(key,path){let image;Object.defineProperty(images,key,{enumerable:true,get(){if(!image){image=new Image();image.decoding='async';image.addEventListener?.('load',()=>GamePerformance.invalidate());image.src=path}return image}})}for(const file of [...kinds.map(k=>k.file),'novice-adventurer','rogue-scout','hero-leon','shield-knight','healing-priest','lightning-mage','lobby-background']){lazyImage(file,staffImagePath(file))}
+for(const key of MERC_IDS){lazyImage('merc-'+key,mercImagePath(key))}
 const cells=Array.from({length:15},(_,i)=>({x:148+i%5*76,y:245+Math.floor(i/5)*95}));
 const path=[{x:82,y:520},{x:82,y:123},{x:518,y:123},{x:518,y:493}];
-let board,levels,sp,life,wave,cost,enemies,fx,queue,timer,intermission,playing,paused,ended,selected,drag,speed,summonDiscount=false,time=0,last=0,kills,teamBoost=0;
+let board,levels,sp,life,wave,cost,enemies,fx,queue,timer,intermission,playing,paused,ended,selected,drag,speed,summonDiscount=false,time=0,last=0,kills,teamBoost=0,boardFocus=0;
 // The gallery and the entrance share one character definition, including fallback art.
 const kingArt=Motion.sheets['demon-king'];
-const kingPortrait=new Image();kingPortrait.src=kingArt.fallback;
-Motion.preload('demon-king');
+const kingPortrait=new Image();kingPortrait.decoding='async';kingPortrait.src=kingArt.fallback;
 let kingEvent={state:'idle',timer:35,elapsed:0};
 const reduce=window.matchMedia?.('(prefers-reduced-motion: reduce)');
 function uiText(e,value){const text=String(value);if(e.textContent!==text)e.textContent=text}
@@ -30,7 +29,10 @@ function requestSync(){GamePerformance.requestUI()}
 function say(t){uiText($('#message'),t);GamePerformance.invalidate()}
 function reset(){if(typeof ended!=='undefined'&&ended&&runReward&&!runReward.paid){say('보상 저장을 먼저 재시도해주세요.');return}resetBossPlans();board=Array(15).fill(null);levels=Array(kinds.length).fill(1);sp=150;life=3;wave=0;cost=10;summonDiscount=false;enemies=[];fx=[];queue=[];timer=0;intermission=0;playing=false;paused=false;ended=false;selected=-1;drag=null;speed=1;kills=0;teamBoost=0;mercGesture={motionState:null};kingEvent={state:'idle',timer:30+Math.random()*20,elapsed:0};$('#enemy-preview').textContent='첫 공격: 견습 용사 · 3차 질주 · 4차 방패 · 6차 치유 · 8차 번개';say('고비: 파견 명단을 확인하고 직원을 소환하세요. 같은 직원끼리 합치면 더 높은 등급의 랜덤 직원이 와요!');newRunMeta();sync()}
 function randomType(){const pool=meta.deck;return kinds.findIndex(k=>k.file===pool[Math.floor(Math.random()*pool.length)])}
-function summonPrice(){if(activeMerc==='chikchik'&&expansionState.freeSummon>0)return 0;return summonDiscount?Math.ceil(cost*.5):cost}
+function summonBasePrice(base=cost){return Math.ceil(base*(typeof dailyModifier==='function'?dailyModifier('summonCost'):1))}
+function summonPrice(){if(activeMerc==='chikchik'&&expansionState.freeSummon>0)return 0;const base=summonBasePrice();return summonDiscount?Math.ceil(base*.5):base}
+function equipmentCost(type){return Math.ceil(100*levels[type]*(typeof dailyModifier==='function'?dailyModifier('equipmentCost'):1))}
+function skillCooldown(){return 20*(typeof dailyModifier==='function'?dailyModifier('skillCooldown'):1)}
 function summon(){if(ended)return;if(meta.deck.length!==5){say('직원 도감에서 근무 직원 5명을 편성해주세요.');return;}const empty=board.map((u,i)=>u?-1:i).filter(i=>i>=0);if(!empty.length){say('근무 자리가 꽉 찼어요. 같은 종류·등급의 직원을 합쳐주세요.');return}const free=activeMerc==='chikchik'&&expansionState.freeSummon>0;if(!free&&sp<summonPrice()){say('운영비가 부족해요. 적을 처치하거나 서기의 수입을 기다리세요.');return}if(free){expansionState.freeSummon=0;sp+=trainingTier('merc')*3;objectImpact('train',300,535,'#7dcaf3',true);}else {sp-=summonPrice();summonDiscount=false;}cost+=10;const i=empty[Math.floor(Math.random()*empty.length)];board[i]={type:randomType(),pip:1,cool:0,attack:0,arrival:.4,income:5};say(kinds[board[i].type].name+' 파견 완료! 다음 파견 비용이 10 SP 올랐어요.');sync()}
 function compatible(a,b){return itemMode?specialCompatible(a,b):a&&b&&a.type===b.type&&a.pip===b.pip&&a.pip<7}
 function failChance(pip){return (pip-1)*.05}
@@ -41,7 +43,7 @@ const skillDescriptions=['선두 적에 강력한 화살 6발','모든 적에 �
 skillDescriptions.push('최고 체력 적에게 6초간 피해 +60~72% · 평타로 연장 불가','모든 적에게 6초간 등급 × 8 화상 피해/초','체력 30% 이하 일반 적 1명 처치, 그 외 등급 × 45 피해','선두 5명을 6초간 연결 · 피해 35% 공유','일반 적 스킬 4초 · 군단장 1.5초 봉인','빈 칸에 랜덤 1등급 무료 소환 · 7등급이면 2등급 소환');
 skillNames.push(...NightExpansion.staff.map(k=>k.skill));
 skillDescriptions.push(...NightExpansion.staff.map(k=>k.skillText));
-function useSkill(){const u=board[selected];if(!u||u.pip<5||(u.skillCD||0)>0||u.stun>0||!playing||paused||ended)return;if(u.type===11&&board.every(Boolean)){say('긴급 채용을 위한 빈 칸이 필요해요.');return}const p=cells[selected],power=staffPower(u.type)*gradePower(u.pip);u.skillCD=20;u.attack=.2;Motion.start(u,'skill',.7);burst('skillAura',p.x,p.y-15,kinds[u.type].color,.7);
+function useSkill(){const u=board[selected];if(!u||u.pip<5||(u.skillCD||0)>0||u.stun>0||!playing||paused||ended)return;if(u.type===11&&board.every(Boolean)){say('긴급 채용을 위한 빈 칸이 필요해요.');return}const p=cells[selected],power=staffPower(u.type)*gradePower(u.pip);u.skillCD=skillCooldown();u.attack=.2;Motion.start(u,'skill',.7);burst('skillAura',p.x,p.y-15,kinds[u.type].color,.7);
  if(u.type===0){for(let n=0;n<6;n++){const target=enemies.filter(e=>e.hp>0).sort((a,b)=>b.progress-a.progress)[0];if(!target)break;hitEnemy(target,30*u.pip*power,false);fx.push({x:p.x+n*3,y:p.y-30,tx:target.x+n*2,ty:target.y-14,life:.42,max:.42,type:0,color:kinds[0].color})}}
  if(u.type===1){for(const e of enemies){hitEnemy(e,35*u.pip*power,false);fx.push({x:e.x,y:e.y,life:.65,max:.65,ring:true,color:'#ffb17f'})}}
  if(u.type===2){for(const e of enemies){e.freeze=Math.max(e.freeze||0,bossFreezeTime(e,e.type==='boss'?1.5:3));fx.push({x:e.x,y:e.y,life:.65,max:.65,ring:true,color:'#9ef5ec'})}}
@@ -49,13 +51,14 @@ function useSkill(){const u=board[selected];if(!u||u.pip<5||(u.skillCD||0)>0||u.
  if(u.type===4){for(const e of enemies){hitEnemy(e,25*u.pip*power,false);e.freeze=Math.max(e.freeze||0,bossFreezeTime(e,e.type==='boss'?.5:1));fx.push({x:p.x,y:p.y-25,tx:e.x,ty:e.y-14,life:.42,max:.42,type:5,color:kinds[4].color})}}
  if(u.type===5){for(const e of enemies.filter(e=>e.hp>0).sort((a,b)=>b.progress-a.progress).slice(0,8)){hitEnemy(e,40*u.pip*power,false,false,true);fx.push({x:p.x,y:p.y-25,tx:e.x,ty:e.y-14,life:.42,max:.42,type:6,color:kinds[5].color})}}
  if(u.type>=6)extraSkill(u,power);
+ SkillCutin.staff(u);
  say(kinds[u.type].name+' · '+skillNames[u.type]+' 발동! '+skillDescriptions[u.type]);sync();}
 function syncSkill(){const u=board[selected],state=!u?'empty':u.stun>0?'stunned':u.pip<5?'locked':(u.skillCD||0)>0?'cooldown':!playing?'preparing':paused?'paused':'ready';
  uiProp($('#skill'),'disabled',!u||u.pip<5||!playing||paused||ended||(u.skillCD||0)>0||u.stun>0);
  uiText($('#skill'),!u?'직원을 선택하세요':u.stun>0?'기절 중 · 잠시 대기':u.pip<5?'고유 스킬 · 5등급 해금':(u.skillCD||0)>0?skillNames[u.type]+' · '+Math.ceil(u.skillCD)+'초':skillNames[u.type]+' 사용');uiAttr($('#skill'),'data-state',state);
- uiText($('#skill-info'),!u?'5등급 이상 직원을 선택하면 고유 스킬을 사용할 수 있습니다.':kinds[u.type].name+' · '+u.pip+'등급 / '+(u.pip<7?'다음 합성 실패 '+Math.round(failChance(u.pip+1)*100)+'%':'최대 등급')+' / '+skillDescriptions[u.type]+' · 재사용 20초');}
+ uiText($('#skill-info'),!u?'5등급 이상 직원을 선택하면 고유 스킬을 사용할 수 있습니다.':kinds[u.type].name+' · '+u.pip+'등급 / '+(u.pip<7?'다음 합성 실패 '+Math.round(failChance(u.pip+1)*100)+'%':'최대 등급')+' / '+skillDescriptions[u.type]+' · 재사용 '+skillCooldown()+'초');syncBoardAccess();}
 $('#skill').onclick=useSkill;
-function upgrade(type){const c=100*levels[type];if(ended||levels[type]>=5||sp<c)return;sp-=c;levels[type]++;say(kinds[type].name+' 전체 장비 Lv.'+levels[type]+' 달성!');sync()}
+function upgrade(type){const c=equipmentCost(type);if(ended||levels[type]>=5||sp<c)return;sp-=c;levels[type]++;say(kinds[type].name+' 전체 장비 Lv.'+levels[type]+' 달성!');sync()}
 
 function equipmentPreview(i){
  const lv=levels[i],next=Math.min(5,lv+1),power=n=>Math.round((1+(n-1)*.45)*100);
@@ -64,20 +67,26 @@ function equipmentPreview(i){
 }
 function sync(){
  if(typeof appRender==='function')appRender();renderMeta();syncSkill();
+ SkillCutin.syncVisibility();
  uiText($('#sp'),Math.floor(sp));uiText($('#life'),'♥'.repeat(life)+'♡'.repeat(3-life));uiText($('#wave'),wave);
  uiText($('#summon'),(summonPrice()===0?'무료 소환 · ':summonDiscount?'반값 소환 · ':'직원 소환 · ')+summonPrice()+' SP');uiAttr($('#summon'),'data-discount',summonDiscount);
  uiAttr($('#summon'),'aria-label',summonDiscount?'다음 직원 소환 50% 할인 · 기본 '+cost+' SP에서 '+summonPrice()+' SP':'직원 소환 '+cost+' SP');
  uiProp($('#summon'),'disabled',ended||sp<summonPrice()||board.every(Boolean));uiProp($('#start'),'disabled',playing||ended);
  uiText($('#start'),playing?'자동 웨이브 진행 중':'당직 시작');uiProp($('#pause'),'disabled',!playing||ended);uiText($('#pause'),paused?'▶':'Ⅱ');
  uiText($('#speed'),'×'+speed);uiAttr($('#speed'),'aria-label','현재 '+speed+'배속 · 누르면 '+(speed%3+1)+'배속');
- kinds.forEach((k,i)=>{const button=$('#up'+i);uiProp(button,'hidden',!meta.deck.includes(k.file));uiProp(button,'disabled',ended||levels[i]>=5||sp<100*levels[i]);const label=levels[i]>=5?'최대 레벨':'강화 · '+100*levels[i]+' SP'+(sp<100*levels[i]?' · '+Math.ceil(100*levels[i]-sp)+' 부족':'');uiText(button.querySelector('b'),label);const preview=equipmentPreview(i);uiText(button.querySelector('small'),preview);uiAttr(button,'aria-label',k.name+' '+preview+' '+label)})
+ kinds.forEach((k,i)=>{const button=$('#up'+i);uiProp(button,'hidden',!meta.deck.includes(k.file));uiProp(button,'disabled',ended||levels[i]>=5||sp<equipmentCost(i));const label=levels[i]>=5?'최대 레벨':'강화 · '+equipmentCost(i)+' SP'+(sp<equipmentCost(i)?' · '+Math.ceil(equipmentCost(i)-sp)+' 부족':'');uiText(button.querySelector('b'),label);const preview=equipmentPreview(i);uiText(button.querySelector('small'),preview);uiAttr(button,'aria-label',k.name+' '+preview+' '+label)})
 }
 $('#cards').innerHTML=kinds.map((k,i)=>'<button class="card" id="up'+i+'"><img src="'+staffImagePath(k.file)+'" alt=""><span>'+k.name+'<br><small></small></span><b></b></button>').join('');kinds.forEach((_,i)=>$('#up'+i).onclick=()=>upgrade(i));$('#summon').onclick=summon;$('#reset').onclick=reset;$('#start').onclick=()=>{if(playing||ended)return;if(meta.deck.length!==5){say('근무 명단은 정확히 5명이 필요해요.');return}if(!board.some(Boolean)){say('먼저 직원을 소환해주세요.');return}activeMerc=meta.equipped;runTraining={...meta.training};mercTimer=mercInterval();playing=true;nextWave();sync()};$('#pause').onclick=()=>{paused=!paused;sync()};$('#speed').onclick=()=>{speed=speed===1?2:1;sync()};
-function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*600/r.width,y:(e.clientY-r.top)*600/r.height}}
+function point(e){const r=canvas.getBoundingClientRect(),size=Math.min(r.width,r.height);return{x:(e.clientX-r.left-(r.width-size)/2)*600/size,y:(e.clientY-r.top-(r.height-size)/2)*600/size}}
 function cellAt(p){return cells.findIndex(c=>Math.abs(c.x-p.x)<39&&Math.abs(c.y-p.y)<43)}
+function boardCellLabel(i){const u=board?.[i];return (Math.floor(i/5)+1)+'행 '+(i%5+1)+'열 · '+(u?kinds[u.type].name+' '+u.pip+'등급':'빈자리')}
+function syncBoardAccess(){uiAttr(canvas,'aria-label','근무 보드. '+boardCellLabel(boardFocus)+(selected>=0?' / 선택: '+boardCellLabel(selected):' / 선택 없음')+'. 방향키로 이동, Enter로 선택·합성, Escape로 취소, S로 스킬.');}
+function selectBoardCell(i){if(ended)return;boardFocus=i;if(!board[i]){selected=-1;}else if(selected>=0&&selected!==i){merge(selected,i);selected=-1;}else selected=selected===i?-1:i;syncSkill();GamePerformance.invalidate();}
+canvas.onkeydown=e=>{const key=e.key;if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(key)){e.preventDefault();const row=Math.floor(boardFocus/5),col=boardFocus%5;boardFocus=key==='ArrowLeft'?row*5+Math.max(0,col-1):key==='ArrowRight'?row*5+Math.min(4,col+1):key==='ArrowUp'?Math.max(0,row-1)*5+col:Math.min(2,row+1)*5+col;syncBoardAccess();GamePerformance.invalidate();return;}if(key==='Escape'){e.preventDefault();selected=-1;drag=null;syncSkill();GamePerformance.invalidate();}else if((key==='Enter'||key===' ')&&!paused&&!ended){e.preventDefault();selectBoardCell(boardFocus);}else if((key==='s'||key==='S')&&!e.repeat){e.preventDefault();useSkill();}};
+canvas.onfocus=()=>{syncBoardAccess();GamePerformance.invalidate()};canvas.onblur=()=>GamePerformance.invalidate();
 canvas.onpointerdown=e=>{if(ended)return;const p=point(e),i=cellAt(p);if(i<0||!board[i]){selected=-1;return}drag={from:i,x:p.x,y:p.y,start:p,moved:false};canvas.setPointerCapture(e.pointerId)};
 canvas.onpointermove=e=>{if(!drag)return;const p=point(e);drag.x=p.x;drag.y=p.y;if(Math.hypot(p.x-drag.start.x,p.y-drag.start.y)>8)drag.moved=true};
-canvas.onpointerup=e=>{if(!drag)return;const from=drag.from,to=cellAt(point(e)),moved=drag.moved;drag=null;if(moved){if(to>=0&&to!==from)merge(from,to);selected=-1}else if(selected>=0&&selected!==from){merge(selected,from);selected=-1}else selected=selected===from?-1:from;syncSkill()};canvas.onpointercancel=()=>{drag=null};
+canvas.onpointerup=e=>{if(!drag)return;const from=drag.from,to=cellAt(point(e)),moved=drag.moved;drag=null;if(moved){if(to>=0&&to!==from)merge(from,to);selected=-1;syncSkill()}else selectBoardCell(from)};canvas.onpointercancel=()=>{drag=null};
 const legion={normal:{name:'견습 용사',file:'novice-adventurer',badge:'검',color:'#ffd18b',speed:52,hp:1},fast:{name:'도적 정찰병',file:'rogue-scout',badge:'질주',color:'#f7a6bc',speed:70,hp:.7},knight:{name:'방패 기사',file:'shield-knight',badge:'방패',color:'#a9c9f0',speed:38,hp:1.7},priest:{name:'치유 사제',file:'healing-priest',badge:'치유',color:'#9febbc',speed:45,hp:1.1},mage:{name:'번개 마법사',file:'lightning-mage',badge:'번개',color:'#d6b4ff',speed:43,hp:1.2},boss:{name:'군단장 레온',file:'hero-leon',badge:'군단장',color:'#ffd580',speed:35,hp:1}};
 function nextWave(){wave++;announceBossWave();queue=[];const boss=wave%5===0;for(let i=0;i<8+Math.min(wave,25);i++){let type='normal';if(wave>=3&&i%4===0)type='fast';if(wave>=4&&i%5===1)type='knight';if(wave>=6&&i%6===2)type='priest';if(wave>=8&&i%7===3)type='mage';queue.push(type)}if(boss){queue.push('boss');Motion.preload(bossForWave(wave).file)}timer=.3;const names=[...new Set(queue)].map(t=>t==='boss'?bossForWave(wave).name:legion[t].name).join(' · ');$('#enemy-preview').textContent='공격 '+wave+' : '+names;say(boss?bossForWave(wave).name+' 출현 예정 · '+bossForWave(wave).trait+' / '+bossForWave(wave).skillName:'공격 '+wave+' · '+names)}
 function spawn(type){const k=legion[type],hp=type==='boss'?enemyGrowth(600,1.2,1.15,wave):enemyGrowth(35,1.16,1.145,wave)*k.hp;enemies.push({type,hp,max:hp,x:82,y:520,segment:0,progress:0,speed:k.speed,slow:0,hurt:0,skill:type==='boss'?8:type==='mage'?6:type==='priest'?4:3,shield:type==='knight'?hp*.4:0,rush:0,cast:0,warning:0});if(type==='boss')initBoss(enemies.at(-1))}
@@ -101,7 +110,7 @@ function updateKing(dt){
  return kingEvent.state==='entrance'||kingEvent.state==='afterglow';
 }
 function drawKing(){
- const state=kingEvent.state,t=kingEvent.elapsed,visualTime=reduce?.matches?0:t;if(state==='idle')return;Motion.preload('demon-king');
+ const state=kingEvent.state,t=kingEvent.elapsed,visualTime=reduce?.matches?0:t;if(state==='idle')return;if(!kingPortrait.src)kingPortrait.src=kingArt.fallback;Motion.preload('demon-king');
  if(state==='question'||state==='refuse'){
  ctx.save();ctx.fillStyle='#fff2d8';ctx.strokeStyle='#6e456c';ctx.lineWidth=2;round(230,458,330,54,10);ctx.fill();ctx.stroke();ctx.beginPath();ctx.moveTo(503,512);ctx.lineTo(517,532);ctx.lineTo(531,512);ctx.fill();ctx.fillStyle='#4b2b4b';ctx.textAlign='center';ctx.font='bold 14px system-ui';ctx.fillText(state==='question'?'밖이 왜 이렇게 시끄러워… 나가 볼까?':'아… 귀찮다. 알아서 하겠지.',395,490);ctx.restore();return;
  }
@@ -197,7 +206,8 @@ function drawBoardBase(){
  ctx.drawImage(staticBoardLayer,0,0);
 }
 function draw(){ctx.clearRect(0,0,600,600);const bg=images['lobby-background'];if(bg.complete&&bg.naturalWidth){ctx.drawImage(bg,0,0,600,600);ctx.fillStyle='#211b3538';ctx.fillRect(0,0,600,600)}drawAmbient();ctx.lineJoin='round';ctx.lineCap='round';ctx.beginPath();path.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.strokeStyle='#8b7899';ctx.lineWidth=2;ctx.strokeStyle='#d9bbec40';ctx.stroke();ctx.textAlign='center';ctx.font='12px system-ui';ctx.fillStyle='#e6c9a0';ctx.fillText('침입',82,562);ctx.fillText('왕좌',518,562);ctx.font='bold 14px system-ui';ctx.fillText('야간 근무 보드',300,181);
- cells.forEach((c,i)=>{const u=board[i],source=drag?board[drag.from]:board[selected];const match=source&&i!==(drag?drag.from:selected)&&compatible(source,u);ctx.fillStyle=match?'#4f513dcc':u?'#352a40ee':'#221c2bdc';round(c.x-38,c.y-43,76,88,10);ctx.fill();ctx.strokeStyle=match?'#b4f4c9':selected===i?'#ffe1a0':u?'#8b6d9c':'#65506f';ctx.lineWidth=match?3:1;ctx.stroke();if((selected===i||match)&&typeof GameSkin!=='undefined')GameSkin.frame(ctx,selected===i||match?'tab-active':'slot-square',c.x-38,c.y-43,76,88,10);if(!u){ctx.font='22px system-ui';ctx.fillStyle='#68556f';ctx.fillText('·',c.x,c.y)}else if(!(drag?.moved&&drag.from===i))drawUnit(u,i)});
+ cells.forEach((c,i)=>{const u=board[i],source=drag?board[drag.from]:board[selected];const match=source&&i!==(drag?drag.from:selected)&&compatible(source,u);ctx.fillStyle=match?'#4f513dcc':u?'#352a40ee':'#221c2bdc';round(c.x-38,c.y-43,76,88,10);ctx.fill();ctx.strokeStyle=match?'#b4f4c9':selected===i?'#ffe1a0':u?'#8b6d9c':'#65506f';ctx.lineWidth=match?3:1;ctx.stroke();if(typeof LiveUIAssets!=='undefined'){LiveUIAssets.cell(ctx,c.x-38,c.y-43,76,88,selected===i,match)}else if((selected===i||match)&&typeof GameSkin!=='undefined')GameSkin.frame(ctx,selected===i||match?'tab-active':'slot-square',c.x-38,c.y-43,76,88,10);if(!u){ctx.font='22px system-ui';ctx.fillStyle='#68556f';ctx.fillText('·',c.x,c.y)}else if(!(drag?.moved&&drag.from===i))drawUnit(u,i)});
+ if(document.activeElement===canvas){const c=cells[boardFocus];ctx.strokeStyle='#ffffff';ctx.lineWidth=4;ctx.strokeRect(c.x-36,c.y-41,72,84);}
  drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle=enemyDefinition(e).color;ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
  for(const f of fx)drawEffect(f);ctx.globalAlpha=1;if(drag?.moved)drawUnit(board[drag.from],drag.from,drag.x,drag.y,true);
  drawMercenary();drawBossHUD();drawKing();
@@ -210,8 +220,9 @@ function frame(now){
  if(!document.hidden){
   if(active)performancePolicy.advance(elapsed,speed,dt=>{update(dt);return !paused&&!ended&&(typeof appScreen==='undefined'||appScreen==='battle')});else performancePolicy.resetSimulation();
   if(battle&&!paused&&!ended)tickBossWarning(elapsed);
+  SkillCutin.tick(elapsed);
   performancePolicy.flushUI(now,()=>sync());
-  if(battle&&(active||performancePolicy.dirty)&&performancePolicy.shouldDraw(now)){draw();performancePolicy.drawn(now)}
+  if(battle&&(active||performancePolicy.dirty)&&performancePolicy.shouldDraw(now)){draw();SkillCutin.render();performancePolicy.drawn(now)}
   if(!battle)performancePolicy.settled();
   Motion.drawUI(now,performancePolicy.lowPower||battle&&(paused||ended));
   const frozen=battle&&(paused||ended);if(document.documentElement.classList.contains('motion-paused')!==frozen)document.documentElement.classList.toggle('motion-paused',frozen);

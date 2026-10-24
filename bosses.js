@@ -129,6 +129,7 @@ function castBoss(e){
   const old={x:e.x,y:e.y};placeEnemyAtProgress(e,e.progress-110);e.hp=Math.min(e.max,e.hp+e.max*.04);burst('bossClock',old.x,old.y-20,b.color,1);burst('bossClock',e.x,e.y-20,b.color,1);
  }
  e.skill=b.cooldown;e.warning=0;e.warningCells=[];enemyEffect(e,b.skillName+'!',b.color);say(b.short+' · '+b.skillName+'! '+b.skillText);
+ SkillCutin.boss(e);
 }
 function bossSkills(e){if(e.decoy)return;if(e.skill<=1.2&&!e.warning)warnBoss(e);if(e.skill<=0)castBoss(e)}
 function nextBossText(){const next=(Math.floor(wave/5)+1)*5,b=plannedBoss(next);return b?next+'차 '+b.short+' · '+b.skillName:next+'차 · 군단장 정찰 중'}

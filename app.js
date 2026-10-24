@@ -16,7 +16,7 @@ document.querySelector('#battle-back').onclick=()=>{if(playing&&!ended)askLeave(
 document.querySelector('#leave-cancel').onclick=()=>document.querySelector('#leave').close();document.querySelector('#leave').addEventListener('close',()=>{if(leaveResume&&!ended)paused=false;leaveResume=false;sync()});
 document.querySelector('#leave-confirm').onclick=()=>{document.querySelector('#leave').close();restartTo('lobby')};
 setScreen('lobby');sync();
-function fitBoard(){const area=document.querySelector('.board-stage'),rect=area.getBoundingClientRect();if(rect.width>12&&rect.height>0){const size=Math.floor(Math.min(rect.width-12,rect.height));canvas.style.width=size+'px';canvas.style.height=size+'px'}}
+function fitBoard(){const area=document.querySelector('.board-stage'),rect=area.getBoundingClientRect();if(rect.width>12&&rect.height>2){const size=Math.floor(Math.min(rect.width-2,rect.height-2));canvas.style.setProperty('width',size+'px','important');canvas.style.setProperty('height',size+'px','important')}}
 if(typeof ResizeObserver!=='undefined'){const boardObserver=new ResizeObserver(fitBoard);boardObserver.observe(document.querySelector('.board-stage'))}
 if(typeof window.addEventListener==='function')window.addEventListener('resize',fitBoard);
 fitBoard();

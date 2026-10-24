@@ -20,7 +20,15 @@ function renderTraining(){
 function openTraining(){const inherited=typeof panelResume!=='undefined'&&panelResume;trainingResume=playing&&!ended&&(!paused||inherited);if(typeof panelResume!=='undefined')panelResume=false;document.querySelector('#menu')?.close();if(playing&&!ended)paused=true;trainingRenderKey='';document.querySelector('#training-status').textContent='';renderTraining();document.querySelector('#training-dialog').showModal()}
 document.querySelector('#training-entry').onclick=openTraining;document.querySelector('#menu-training').onclick=openTraining;document.querySelector('#result-training').onclick=openTraining;document.querySelector('#training-close').onclick=()=>document.querySelector('#training-dialog').close();
 for(const group of ['staff','merc'])document.querySelector('#training-tab-'+group).onclick=()=>{trainingGroup=group;renderTraining()};
-document.querySelector('#training-upgrade').onclick=()=>{if(trainGroup(trainingGroup))document.querySelector('#training-status').textContent='훈련 완료! Lv.'+trainingLevel(trainingGroup,false)+' · 다음 당직에도 유지됩니다.';else document.querySelector('#training-status').textContent=saveWarning?'저장 오류를 먼저 해결해주세요.':'훈련하지 못했어요. 코인·전투 상태를 확인해주세요.'};
+document.querySelector('#training-upgrade').onclick=()=>{
+ const status=document.querySelector('#training-status'),level=trainingLevel(trainingGroup,false),price=trainingCost(level);
+ if(saveWarning){status.textContent='저장 오류를 먼저 해결해주세요. 코인과 레벨은 그대로예요.';return}
+ if(playing&&!ended){status.textContent='당직이 끝난 뒤 훈련할 수 있어요.';return}
+ if(level>=TRAINING_MAX){status.textContent='이미 최대 레벨이에요.';return}
+ if(meta.coins<price){status.textContent=(price-meta.coins)+'코인이 부족해요.';return}
+ if(trainGroup(trainingGroup))status.textContent='훈련 완료! Lv.'+trainingLevel(trainingGroup,false)+' · 다음 당직에도 유지됩니다.';
+ else status.textContent='훈련을 저장하지 못했어요. 코인과 레벨은 그대로예요. 브라우저 저장 공간과 저장 연결을 확인한 뒤 다시 시도해주세요.';
+};
 document.querySelector('#training-dialog').addEventListener('close',()=>{if(trainingResume&&!ended)paused=false;trainingResume=false;sync()});
 renderTraining();
 

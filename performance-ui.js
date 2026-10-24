@@ -8,7 +8,7 @@
   if(key===metaKey)return;metaKey=key;previousMeta();
  };
  const previousProgress=renderProgress;renderProgress=function(){
-  const key=JSON.stringify([meta.tutorialComplete,meta.deck,playing,ended,wave,tutorialMode,tutorialWon,dailyRule,dailyEnabled,bossPlans]);
+  const key=JSON.stringify([meta.tutorialComplete,meta.deck,playing,ended,wave,tutorialMode,tutorialWon,dailyRule,dailyEnabled,dailyDate,bossPlans]);
   if(key===progressKey)return;progressKey=key;previousProgress();
  };
  const previousSync=sync;sync=function(){previousSync();GamePerformance.invalidate()};

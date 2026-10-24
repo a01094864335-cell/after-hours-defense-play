@@ -1,5 +1,5 @@
 /* Source grid: 941 × 1672. Frames use fixed corner slices instead of stretched ornaments. */
-:root{--grid-card:url('assets/reference-ui/archive-card-frame.svg');--grid-deck:url('assets/reference-ui/archive-deck-frame.svg?v=2');--grid-slot:url('assets/reference-ui/archive-slot-frame.svg');--violet:url('assets/reference-ui/grid-button-violet.svg');--gold-button:url('assets/reference-ui/grid-button-gold.svg')}
+:root{--grid-card:url('assets/reference-ui/archive-card-frame.lite.svg');--grid-deck:url('assets/reference-ui/archive-deck-frame.lite.svg?v=2');--grid-slot:url('assets/reference-ui/archive-slot-frame.lite.svg');--violet:url('assets/reference-ui/grid-button-violet.lite.svg');--gold-button:url('assets/reference-ui/grid-button-gold.lite.svg')}
 /* Shared rectangular panel geometry, matching the approved quiet interior and fine corners. */
 :is(.mode-card,.merc-slot,.brand,.staff-pass,.staff-deck,.dossier-section,#roster-detail blockquote,.shop-row,.recruit-shop,.shop-note,.battle-notice,#result-stats,#result-stats>div){isolation:isolate;background:none!important}
 :is(.mode-card,.merc-slot,.brand,.staff-pass,.staff-deck,.dossier-section,#roster-detail blockquote,.shop-row,.recruit-shop,.shop-note,.battle-notice,#result-stats,#result-stats>div)::before{content:''!important;display:block!important;position:absolute!important;inset:0!important;width:auto!important;height:auto!important;transform:none!important;opacity:1!important;border:calc(24*var(--u)) solid transparent!important;border-image:var(--grid-card) 24 fill / calc(24*var(--u)) / 0 stretch!important;background:none!important;box-shadow:none!important;z-index:-1!important;pointer-events:none}
@@ -234,10 +234,10 @@
 #promo .comic-chapter{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:calc(5*var(--u));height:calc(110*var(--u));padding:calc(12*var(--u)) calc(35*var(--u))}
 #promo .comic-chapter span{display:block;line-height:1}
 #promo .comic-chapter h2{line-height:1.1;font-size:calc(38*var(--u));margin:0}
-#promo:has(#promo-face[src*='01-first']) .comic-stage::before{top:calc(170*var(--u));height:calc(1040*var(--u));background-image:url('assets/reference-ui/grid-story-first.svg')}
-#promo:has(#promo-face[src*='02-invasion']) .comic-stage::before{top:calc(250*var(--u));height:calc(1000*var(--u));background-image:url('assets/reference-ui/grid-story-invasion.svg')}
-#promo:has(#promo-face[src*='03-emergency']) .comic-stage::before{top:calc(140*var(--u));height:calc(930*var(--u));background-image:url('assets/reference-ui/grid-story-recruitment.svg')}
-#promo:has(#promo-face[src*='04-night']) .comic-stage::before{top:calc(180*var(--u));height:calc(1020*var(--u));background-image:url('assets/reference-ui/grid-story-night.svg')}
+#promo:has(#promo-face[src*='01-first']) .comic-stage::before{top:calc(170*var(--u));height:calc(1040*var(--u));background-image:url('assets/reference-ui/grid-story-first.lite.svg')}
+#promo:has(#promo-face[src*='02-invasion']) .comic-stage::before{top:calc(250*var(--u));height:calc(1000*var(--u));background-image:url('assets/reference-ui/grid-story-invasion.lite.svg')}
+#promo:has(#promo-face[src*='03-emergency']) .comic-stage::before{top:calc(140*var(--u));height:calc(930*var(--u));background-image:url('assets/reference-ui/grid-story-recruitment.lite.svg')}
+#promo:has(#promo-face[src*='04-night']) .comic-stage::before{top:calc(180*var(--u));height:calc(1020*var(--u));background-image:url('assets/reference-ui/grid-story-night.lite.svg')}
 #promo:has(#promo-face[src*='03-emergency']) .comic-copy{min-height:calc(350*var(--u));max-height:calc(420*var(--u))}
 #promo:has(#promo-face[src*='03-emergency']) .comic-nav{height:calc(155*var(--u))}
 #menu{top:calc(50% + 160*var(--u));height:calc(820*var(--u));padding-top:calc(35*var(--u));padding-bottom:calc(35*var(--u))}
