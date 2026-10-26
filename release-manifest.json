@@ -1,5 +1,5 @@
 {
-  "sourceRevision": "5004ebf874e042c470fd9cd1f8ec85eebe63c027",
+  "sourceRevision": "2049d3271f5f041180cb0309e871b77485093a76",
   "entry": "index.html",
   "files": {
     "app.js": "84e578d37d1ad1199f95ed3428cbd8cd4c41b240fa3654fbc4f0d7fd1024b6fc",
@@ -317,17 +317,19 @@
     "expansion-catalog.js": "f39ea8c31dab8e41500e1d1060f41dccbb111cb6b5b3cca419ebf9879b38394e",
     "expansion-combat.js": "d70e368e6e094d65aca7bdc1e72af0f0e774f1356835109c41d0398c51f30a93",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
-    "game-ui.bundle.css": "a3938ccc24ae2cab962f5fa8b0c848c6417cb0f67b71c6695fb124226466f8e8",
+    "game-ui.bundle.css": "4d3daad406024743106bf619cf8435638f6002c0f34ef7d893e01094c5fcea3f",
     "game.js": "05d809482fb97eedb75219e1d50ae61e9274c455b3b60d7e708926030301e889",
     "gm-mode.css": "5cd1bd087d433e83b8100218457ab048538833b5a66937276e6f72f4cd9b0bac",
     "gm-mode.js": "6d9e6fc8a7065cee1b1c9a5828411b8cfd6e276102b040b732af3473ac5cc763",
     "gm-ui.js": "c0e3ca338870b3637163dc4691cbc4d7f63d0925296316fd95b4d6a3b8de2797",
-    "index.html": "9c952fcd0e9817f7184ea03f3c78e48c551bbd075ec3161c7c4c0994d4d6e1ed",
+    "index.html": "4d18c7f1bc9fe89b86b91bfbbd89b1f469aa3d66fdaf46b7fc318adf1f45c193",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
     "live-proposal-skin.css": "e89f594ebf73fa7671280d395fb1d66a70b23deef11a942f7863f90fd876bd11",
     "live-proposal-skin.js": "0c715de43f176c4ed5823cf20e635a42be62c1e52cfbdf1af9485fbf1dced95a",
     "live-ui-audit-fixes.css": "7565d6d282f70e62defa9f41b909ec9f3384d145ae54bb350b624648a648eb52",
     "live-ui-audit-fixes.js": "017fe134b3fa78cca22476d1a982a83d34a30bb6b4e44cc7d038448c578bb24f",
+    "lobby-duo.css": "64f610a6571e56e4a305ca15a85f693e9931045c466306e3e5e369918e6a3bd5",
+    "lobby-duo.js": "40cf56a15b1f84a7d2ddf2359ea3b075b79619c2df156798ba6d6d9442b5cbb8",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
     "meta.js": "b3f013763da6ee09505e8905b856516620b02938e29a6cb65a48888476726989",
     "mobile-ui.css": "69af50b41b488df7c780a2e474b51fcf2b405b77e6dea8d9448a6d58b8524cca",
@@ -358,6 +360,5 @@
     "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792",
     "usability.css": "97d28135c7931576da62fc1f3d670993dfeb44c947e7143f80f64ef08264a0cd",
     "usability.js": "74b1020b74ab8720dd67e4093b75a1e97adc39be62eafe1265b89c18e8a9c9eb"
-  },
-  "patch": "css-buttons-1"
+  }
 }
