@@ -317,16 +317,16 @@
     "expansion-catalog.js": "f39ea8c31dab8e41500e1d1060f41dccbb111cb6b5b3cca419ebf9879b38394e",
     "expansion-combat.js": "d70e368e6e094d65aca7bdc1e72af0f0e774f1356835109c41d0398c51f30a93",
     "game-skin.css": "0e298bcec111281b31c211b13a44b6c6550be744b8e60f0652c89a831da5c602",
-    "game-ui.bundle.css": "bfc04a5d9dc75f71250cfbffbcb192eb2fabdc5ac6adabeb402fe751e3f01b49",
+    "game-ui.bundle.css": "a3938ccc24ae2cab962f5fa8b0c848c6417cb0f67b71c6695fb124226466f8e8",
     "game.js": "05d809482fb97eedb75219e1d50ae61e9274c455b3b60d7e708926030301e889",
     "gm-mode.css": "5cd1bd087d433e83b8100218457ab048538833b5a66937276e6f72f4cd9b0bac",
     "gm-mode.js": "6d9e6fc8a7065cee1b1c9a5828411b8cfd6e276102b040b732af3473ac5cc763",
     "gm-ui.js": "c0e3ca338870b3637163dc4691cbc4d7f63d0925296316fd95b4d6a3b8de2797",
-    "index.html": "81fd89df6e1b15e9820cbc1223e8e600ec6ce6de86a12db0c8d6d4736b7c1519",
+    "index.html": "9c952fcd0e9817f7184ea03f3c78e48c551bbd075ec3161c7c4c0994d4d6e1ed",
     "legacy-ui.css": "29168a5b7ac2f231c01d471eb3290731ab8acff9b4d8c20732565c07e9d1c783",
-    "live-proposal-skin.css": "edf54bcc73dd475afee912ff6c26201df69ebdd21e58af8335cf9d6584726073",
+    "live-proposal-skin.css": "e89f594ebf73fa7671280d395fb1d66a70b23deef11a942f7863f90fd876bd11",
     "live-proposal-skin.js": "0c715de43f176c4ed5823cf20e635a42be62c1e52cfbdf1af9485fbf1dced95a",
-    "live-ui-audit-fixes.css": "6d7f6fd2f1857e0345247fc11792127fe7d5953627c4c81545380163ed191eaa",
+    "live-ui-audit-fixes.css": "7565d6d282f70e62defa9f41b909ec9f3384d145ae54bb350b624648a648eb52",
     "live-ui-audit-fixes.js": "017fe134b3fa78cca22476d1a982a83d34a30bb6b4e44cc7d038448c578bb24f",
     "lobby-layout.css": "afdfbfc7cee1b65e2c596dd0a14d1ede82859f27c56e9b8b1d87749419572b02",
     "meta.js": "b3f013763da6ee09505e8905b856516620b02938e29a6cb65a48888476726989",
@@ -358,5 +358,6 @@
     "ui-review.css": "cee6e7b0773b058f5f1dd24b806eb207eb120c3ea0aa927d426095f71d340792",
     "usability.css": "97d28135c7931576da62fc1f3d670993dfeb44c947e7143f80f64ef08264a0cd",
     "usability.js": "74b1020b74ab8720dd67e4093b75a1e97adc39be62eafe1265b89c18e8a9c9eb"
-  }
+  },
+  "patch": "css-buttons-1"
 }

@@ -1311,7 +1311,7 @@ button{min-height:44px;font-size:14px}
 
 /* live-proposal-skin.css */
 /* Live adaptation of the approved mobile proposal. Loaded after legacy skins. */
-:root{--live-ui:url('assets/ui-live/panel-standard.svg');--gold-button:url('assets/reference-ui/grid-button-gold.lite.svg');--violet:url('assets/ui-live/button-violet.svg');--stage-w:min(100vw,480px);--stage-h:100dvh;--u:1px;--cream:#fff4dd;--lilac:#d8cce3}
+:root{--live-ui:url('assets/ui-live/panel-standard.svg');--gold-button:linear-gradient(#d3b27a,#c9a369);--violet:url('assets/ui-live/button-violet.svg');--stage-w:min(100vw,480px);--stage-h:100dvh;--u:1px;--cream:#fff4dd;--lilac:#d8cce3}
 html,body{width:100%;height:100%;overflow:hidden;background:#110c1a!important;font-size:16px;color:#fff4dd}body{display:grid;place-items:center;font-family:'Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
 #app-shell{width:min(100vw,480px)!important;height:100dvh!important;max-height:100dvh!important;background:#17111f!important;border:0!important;display:flex!important;flex-direction:column;overflow:hidden!important;position:relative}
 #app-shell .app-header{position:relative!important;inset:auto!important;height:64px!important;min-height:64px;padding:8px 16px!important;background:url('assets/ui-live/topbar-surface.svg') center/100% 100%!important;gap:10px;z-index:4;border:0}
@@ -1510,3 +1510,7 @@ html body #lobby #merc-slot>#deck-open{border-top:1px solid #8e705555!important;
 html body #lobby #merc-slot:not(:has(>img,>canvas))::after{display:block!important;content:'지원 용병을 선택해 함께 출근하세요'!important;grid-column:1/-1;grid-row:2;padding:16px 12px;border:1px dashed #8e7055;color:#cfbca0;text-align:center;font-size:12px;line-height:1.6}
 html body #lobby #merc-slot:not(:has(>img,>canvas))>#deck-open{grid-row:3!important}
 @media(max-width:350px){html body #lobby #merc-slot{grid-template-columns:72px minmax(0,1fr) 44px!important}html body #lobby #merc-slot>:is(img,canvas){width:72px!important;height:88px!important}html body #lobby #merc-slot>span:not(.ref-merc-heading){font-size:15px!important}}
+
+/* CSS primary buttons: same quiet rectangular treatment as secondary controls. */
+html body :is(#enter-battle,#summon,#start,#result-again,#info-close,#guide-next,#promo-next,#pause-continue,#training-upgrade,#buy-staff-pack,#retry-reward,.staff-action,#recruit-dialog .ref-recruit-actions button:last-child):not(:disabled){border:1px solid #e2c593!important;border-radius:3px!important;background-size:100% 100%!important;text-shadow:none!important}
+html body #equipment #cards .card:not(:disabled)>b{border:1px solid #e2c593!important;border-radius:3px!important}
