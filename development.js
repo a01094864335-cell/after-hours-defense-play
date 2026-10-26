@@ -72,7 +72,7 @@ function renderJourney(){
  const entry=document.querySelector('#training-entry-summary');if(entry)uiText(entry,'직원 '+meta.training.staff+' · 용병 '+meta.training.merc+' →');
  const best=profile().best,target=(Math.floor(best/5)+1)*5,last=profile().records.find(r=>!r.tutorial);
  const text='최고 '+best+'웨이브 돌파 · 다음 목표 '+target+'웨이브'+(last?'\n최근 '+last.wave+'차 · '+last.rule+' · 직원 Lv.'+last.training.staff+' / 지원 Lv.'+last.training.merc:'');
- const summary=text+(deckWarning()?'\n'+deckWarning():'');if(host.textContent!==summary)host.textContent=summary;
+ const summary=text+(deckWarning()?'\n'+deckWarning():'');if(document.documentElement.classList.contains('duo-live')){if(host.dataset.summary!==summary){host.dataset.summary=summary;const copy=document.createElement('span');copy.textContent=summary;host.replaceChildren(copy);host.setAttribute('aria-label',summary+' · 기록과 편성 보관함 열기');}}else if(host.textContent!==summary)host.textContent=summary;
  const list=document.querySelector('#run-history-list');if(list&&document.querySelector('#journey-dialog')?.open)list.innerHTML=profile().records.map(r=>'<li><b>'+r.wave+'차 · '+r.coins+'코인</b><span>'+safeText(r.rule)+' · 직원 '+r.training.staff+' / 지원 '+r.training.merc+' · 마왕 '+r.king.appearances+'회</span></li>').join('')||'<li>당직을 마치면 최근 20판을 기록해요.</li>';
 }
 function savePreset(index){if(!Number.isInteger(index)||index<0||index>2||meta.deck.length!==5||playing&&!ended||!meta.tutorialComplete)return false;return saveChange(d=>{d.profile.presets[index]={staff:d.deck.slice(),support:d.equipped};});}
