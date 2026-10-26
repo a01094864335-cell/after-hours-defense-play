@@ -11,7 +11,7 @@ function discoverCastleStory(){
  renderStoryLobby();sync();
 }
 function castlePortrait(key){if(key==='demon-king')return typeof MotionSheets!=='undefined'?MotionSheets[key].fallback:'assets/demon-king-slim-v2.webp';if(key.startsWith('merc-'))return 'assets/mobile/'+key+'.webp';return 'assets/'+(RECRUIT_STAFF.includes(key)?'staff-expansion/':'pixel/')+key+'.webp'}
-function castleIllustration(episode,index){return 'assets/castle-stories/'+episode.id+'/'+String(index+1).padStart(2,'0')+'.png'}
+function castleIllustration(episode,index){return 'assets/castle-stories/'+episode.id+'/'+String(index+1).padStart(2,'0')+'.webp'}
 let castleNextIllustration=null;
 const originalShowPromo=showPromo;
 function renderCastleStory(){

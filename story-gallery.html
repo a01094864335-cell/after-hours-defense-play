@@ -18,7 +18,7 @@ for(const [i,s] of CastleStories.entries()){
  const option=document.createElement('option');option.value=s.id;option.textContent=heading.textContent;document.querySelector('#filter').append(option);
  for(let n=0;n<4;n++){
   const panel=s.original?[originalTitles[n],'','','']:s.panels[n];
-  const src=s.original?'assets/comic/'+originalFiles[n]+'.webp':'assets/castle-stories/'+s.id+'/'+String(n+1).padStart(2,'0')+'.png';
+  const src=s.original?'assets/comic/'+originalFiles[n]+'.webp':'assets/castle-stories/'+s.id+'/'+String(n+1).padStart(2,'0')+'.webp';
   const entry={src,title:s.title+' · '+(n+1)+'/4',panel};const index=all.push(entry)-1;
   const figure=document.createElement('figure'),img=document.createElement('img'),caption=document.createElement('figcaption'),b=document.createElement('b'),line=document.createElement('p'),aside=document.createElement('small');
   img.src=src;img.alt=panel[0];img.loading='lazy';img.decoding='async';img.tabIndex=0;img.setAttribute('role','button');

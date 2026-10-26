@@ -1,5 +1,14 @@
-name: Runtime regression checks
-on: [push, pull_request]
+name: Validate and deploy game
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: game-pages-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
   runtime:
     runs-on: ubuntu-latest
@@ -8,4 +17,22 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - run: node --test tests/release-regressions.test.cjs
+      - run: node --test tests/*.test.cjs
+      - run: node scripts/build-pages.cjs /tmp/game-pages
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        with:
+          path: /tmp/game-pages
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: runtime
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment

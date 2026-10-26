@@ -22,6 +22,7 @@ window.GameSession = (() => {
   function initialize() {
     // Re-read only after acquiring the lock: the other tab may have saved while
     // this page's scripts were loading.
+    SaveTransfer.recover();
     meta = loadMeta();
     reset();
     sync();

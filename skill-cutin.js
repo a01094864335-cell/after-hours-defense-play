@@ -1,7 +1,7 @@
 'use strict';
 // Presentation only: combat resolves immediately, independently of this real-time queue.
 const SkillCutin = (() => {
- const pending=[],fallbacks=new Map(),layouts=new Map();
+ const pending=[],fallbacks=new Map(),layouts=new Map(),seen=new Set();
  let current=null,age=0,duration=1.15,root=null,art=null,artContext=null,caption=null,shout=null,badge=null,chain=null,live=null;
  const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
  function context(){
@@ -18,11 +18,11 @@ const SkillCutin = (() => {
   host.append(root);art=root.querySelector('canvas');artContext=art.getContext('2d');caption=root.querySelector('.cutin-caster');shout=root.querySelector('.cutin-shout');badge=root.querySelector('.cutin-badge');chain=root.querySelector('.cutin-chain');
   live=document.createElement('span');live.className='cutin-announcement';live.setAttribute('role','status');live.setAttribute('aria-live','polite');live.setAttribute('aria-atomic','true');host.append(live);
  }
- function clear(){pending.length=0;current=null;age=0;if(root)root.hidden=true;if(live)live.textContent='';}
- function syncVisibility(){const state=context();if(state==='clear')clear();else if(root)root.hidden=state!=='show'||!current;return state;}
+ function clear(resetHistory=false){if(resetHistory)seen.clear();pending.length=0;current=null;age=0;if(root)root.hidden=true;if(live)live.textContent='';}
+ function syncVisibility(){const state=context();if(state==='clear')clear();else if(root){root.hidden=state!=='show'||!current;root.dataset.suppressed=String(!!document.querySelector('#boss-warning')&&!document.querySelector('#boss-warning').hidden||enemies.some(e=>e.hp>0&&e.warning>0));}return state;}
  function announce(){
   if(!root||!current)return;
-  root.dataset.side=current.side;root.style.setProperty('--cutin-color',current.color);
+  root.dataset.side=current.side;root.dataset.compact=String(current.compact);seen.add(current.key);root.style.setProperty('--cutin-color',current.color);
   badge.textContent=current.side==='enemy'?'군단장 고유 스킬':'직원 고유 스킬';
   caption.textContent=current.name;shout.textContent='“'+current.skill+'!”';
   chain.textContent=current.count>1?'동시 발동 ×'+current.count:'';
@@ -34,7 +34,7 @@ const SkillCutin = (() => {
   // Several identical staff can cast at once. Keep a count instead of stacking identical scenes.
   const existing=current?.key===key&&age<.18?current:pending.find(e=>e.key===key);
   if(existing){existing.count++;if(existing===current)announce();return true;}
-  const item={...event,key,count:1};
+  const item={...event,key,count:1,compact:meta.profile.compactFX||seen.has(key)};
   // At most one waiting entry per identity (17 staff + 7 commanders).
   if(pending.length>=24)return false;
   if(item.side==='enemy'){const firstStaff=pending.findIndex(e=>e.side==='ally');pending.splice(firstStaff<0?pending.length:firstStaff,0,item);}else pending.push(item);
@@ -52,7 +52,7 @@ const SkillCutin = (() => {
  function tick(elapsed){
   if(syncVisibility()!=='show')return;
   if(current){age+=Math.min(.1,Math.max(0,elapsed));if(age>=duration){current=null;age=0;}}
-  if(!current&&pending.length){current=pending.shift();age=0;duration=pending.length?.9:1.15;mount();announce();}
+  if(!current&&pending.length){current=pending.shift();age=0;duration=current.compact?.6:.85;mount();announce();}
   if(root)root.hidden=!current;
  }
  function fallback(key){

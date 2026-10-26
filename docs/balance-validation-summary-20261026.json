@@ -1,0 +1,167 @@
+{
+  "runs": 1536,
+  "stats": [
+    {
+      "king": false,
+      "level": 1,
+      "n": 256,
+      "mean": 26.54296875,
+      "min": 7,
+      "max": 39,
+      "censored": 0
+    },
+    {
+      "king": false,
+      "level": 15,
+      "n": 256,
+      "mean": 33.15625,
+      "min": 10,
+      "max": 42,
+      "censored": 0
+    },
+    {
+      "king": false,
+      "level": 30,
+      "n": 256,
+      "mean": 37.59765625,
+      "min": 14,
+      "max": 50,
+      "censored": 0
+    },
+    {
+      "king": true,
+      "level": 1,
+      "n": 256,
+      "mean": 28.83203125,
+      "min": 6,
+      "max": 41,
+      "censored": 0
+    },
+    {
+      "king": true,
+      "level": 15,
+      "n": 256,
+      "mean": 34.421875,
+      "min": 12,
+      "max": 45,
+      "censored": 0
+    },
+    {
+      "king": true,
+      "level": 30,
+      "n": 256,
+      "mean": 38.5,
+      "min": 14,
+      "max": 51,
+      "censored": 0
+    }
+  ],
+  "grouped": [
+    {
+      "deck": 0,
+      "noKing1": 33.03125,
+      "noKing15": 37.40625,
+      "noKing30": 40.15625,
+      "king1": 33.125,
+      "king15": 37.0625,
+      "king30": 41.21875
+    },
+    {
+      "deck": 1,
+      "noKing1": 33.53125,
+      "noKing15": 39.625,
+      "noKing30": 46.25,
+      "king1": 36.125,
+      "king15": 41.5625,
+      "king30": 46.8125
+    },
+    {
+      "deck": 2,
+      "noKing1": 29.53125,
+      "noKing15": 35.5625,
+      "noKing30": 40.875,
+      "king1": 30.625,
+      "king15": 38.9375,
+      "king30": 40.375
+    },
+    {
+      "deck": 3,
+      "noKing1": 22.28125,
+      "noKing15": 28.78125,
+      "noKing30": 36.5625,
+      "king1": 27.5,
+      "king15": 32.0625,
+      "king30": 34.21875
+    },
+    {
+      "deck": 4,
+      "noKing1": 27.59375,
+      "noKing15": 33.5625,
+      "noKing30": 37.9375,
+      "king1": 28.5625,
+      "king15": 34.875,
+      "king30": 38.75
+    },
+    {
+      "deck": 5,
+      "noKing1": 29.53125,
+      "noKing15": 38.21875,
+      "noKing30": 41.46875,
+      "king1": 33.71875,
+      "king15": 38.15625,
+      "king30": 43.71875
+    },
+    {
+      "deck": 6,
+      "noKing1": 17.625,
+      "noKing15": 25.53125,
+      "noKing30": 29.75,
+      "king1": 19.875,
+      "king15": 28.875,
+      "king30": 31.28125
+    },
+    {
+      "deck": 7,
+      "noKing1": 19.21875,
+      "noKing15": 26.5625,
+      "noKing30": 27.78125,
+      "king1": 21.125,
+      "king15": 23.84375,
+      "king30": 31.625
+    }
+  ],
+  "support": [
+    {
+      "id": null,
+      "mean": 38.625
+    },
+    {
+      "id": "ward",
+      "mean": 38.9375
+    },
+    {
+      "id": "accountant",
+      "mean": 38.1875
+    },
+    {
+      "id": "rescue",
+      "mean": 39.40625
+    },
+    {
+      "id": "chikchik",
+      "mean": 38.46875
+    },
+    {
+      "id": "banchang",
+      "mean": 38.4375
+    },
+    {
+      "id": "coco",
+      "mean": 37.8125
+    },
+    {
+      "id": "q",
+      "mean": 38.125
+    }
+  ]
+}
