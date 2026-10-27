@@ -24,10 +24,34 @@ function initMetaUI(){document.querySelector('#shop-items').innerHTML=Object.ent
 let itemMode=null,runId='',runNormal=0,runBoss=0,runReward=null,activeMerc=null,wardUsed=false,mercTimer=15,shopResume=false,promoIndex=0,comicResume=false;
 function newRunMeta(){runInsights=freshInsights();expansionState=freshExpansionState();runTraining={...meta.training};wardChargesUsed=0;itemMode=null;runId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);runNormal=0;runBoss=0;runReward=null;activeMerc=null;wardUsed=false;mercTimer=15;document.querySelector('#result').hidden=true;document.querySelector('#item-hint').textContent='합성권 선택 → 두 직원 선택 또는 드래그. 다시 누르면 취소.';promoIndex=0;}
 const promoLines=[
- {file:'01-first-shift',title:'첫 당직',speaker:'마왕',line:'“문만 잘 잠그면 된다. 별일 없을 거야.”',aside:'첫 출근에 야간 당직을 맡은 고비. 마왕은 업무를 마치고 성 안 휴게실로 향했다.'},
- {file:'02-invasion',title:'별일이 생겼다',speaker:'용사 군단 / 고비',line:'용사 군단: “마왕이 퇴근했다! 지금이다!”',aside:'고비: “문을 잠갔는데도 몰려와요! 방어선을 세워야겠어요!”'},
- {file:'03-emergency-staff',title:'긴급 파견',speaker:'고비 / 뽀득 (청소부)',line:'고비: “용사들이 쳐들어왔어요! 지금 성에 있는 직원들, 전부 로비로 모여주세요!”',aside:'청소부: “저도요? 난 청소분데?”\n고비: “잘됐네요! 용사들 좀 싹 쓸어주세요!”\n청소부: “…그 청소가 아닌데.”'},
- {file:'04-night-duty',title:'오늘 밤의 책임자',speaker:'고비 / 마왕',line:'고비: “일단 왕좌부터 지켜요!”',aside:'휴게실의 마왕: “시끄러우면… 나갈까. 귀찮은데.”'}
+  {
+    "file": "01-first-shift",
+    "title": "첫 당직",
+    "speaker": "마왕",
+    "line": "“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”",
+    "aside": "고비: “네. 쉬시는 동안 잘 보고 있을게요.”"
+  },
+  {
+    "file": "02-invasion",
+    "title": "성문 앞의 불빛",
+    "speaker": "고비 / 마왕",
+    "line": "고비: “성문 앞에 몰려오는 사람들… 용사들 맞죠?”",
+    "aside": "마왕: “벌써 왔나. 비상벨부터 눌러.”"
+  },
+  {
+    "file": "03-emergency-staff",
+    "title": "직원들을 부르다",
+    "speaker": "고비 / 뽀득",
+    "line": "고비: “성문 쪽에 사람이 필요해요. 잠깐 도와주실 수 있어요?”",
+    "aside": "뽀득: “싸우는 건 잘 못하는데…”\n고비: “괜찮아요. 길목을 막는 것부터 같이 해요.”"
+  },
+  {
+    "file": "04-night-duty",
+    "title": "첫 방어 준비",
+    "speaker": "고비 / 브릭",
+    "line": "고비: “저는 여기서 상황을 볼게요. 성문 쪽 부탁드려요.”",
+    "aside": "브릭: “네. 혼자 버티지 말고, 급하면 바로 부르세요.”\n뒤편 휴게실에서는 마왕이 벌써 잠들어 있었다."
+  }
 ];
 function showPromo(){const d=document.querySelector('#promo'),line=promoLines[promoIndex];const face=document.querySelector('#promo-face');face.src='assets/comic/'+line.file+'.webp';face.style.animation='none';void face.offsetWidth;face.style.animation='';document.querySelector('#promo-face').alt=line.title+' — '+line.aside;d.classList.toggle('comic-dialogue',promoIndex===2);document.querySelector('#promo-speaker').textContent=line.speaker;document.querySelector('#promo-title').textContent=line.title;document.querySelector('#promo-count').textContent=(promoIndex+1)+' / 4';document.querySelector('#promo-line').textContent=line.line;document.querySelector('#promo-aside').textContent=line.aside;document.querySelector('#promo-prev').disabled=promoIndex===0;document.querySelector('#promo-next').textContent=promoIndex===3?'당직 준비하기 →':'다음 →';for(const panel of promoLines){const im=new Image();im.src='assets/comic/'+panel.file+'.webp'}if(!d.open)d.showModal();if(typeof GameSkin!=='undefined')GameSkin.story(promoIndex)}
 function closePromo(){try{GameStorage.setItem('after-hours-comic-v1-seen','1')}catch(e){}document.querySelector('#promo').close()}
