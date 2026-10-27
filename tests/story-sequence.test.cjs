@@ -1,0 +1,14 @@
+const assert=require('node:assert/strict');
+const boot=require('./runtime-boot.cjs');
+const {run}=boot('?gm=1');
+assert.equal(run("meta.stories=[];nextCastleStory().id"),'first-shift');
+run('showPromo()');
+assert.equal(run('currentCastleStory.id'),'first-shift');
+const coins=run('meta.coins');
+run('showPromo()');
+assert.equal(run('meta.coins'),coins,'same run must not pay twice');
+assert.equal(run(`(()=>{const ids=new Set();for(let i=0;i<19;i++){Math.random=()=>i/19;ids.add(nextCastleStory().id)}return ids.size===19&&!ids.has('first-shift')})()`),true);
+run("replayCastleStory('first-shift')");
+assert.equal(run('currentCastleStory.id'),'first-shift','opening remains replayable');
+assert.equal(run('meta.coins'),coins,'replay must not pay twice');
+console.log('PASS: opening precedes daily stories; all 19 daily entries reachable; replay and rewards preserved');

@@ -24,8 +24,8 @@ function initMetaUI(){document.querySelector('#shop-items').innerHTML=Object.ent
 let itemMode=null,runId='',runNormal=0,runBoss=0,runReward=null,activeMerc=null,wardUsed=false,mercTimer=15,shopResume=false,promoIndex=0,comicResume=false;
 function newRunMeta(){runInsights=freshInsights();expansionState=freshExpansionState();runTraining={...meta.training};wardChargesUsed=0;itemMode=null;runId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);runNormal=0;runBoss=0;runReward=null;activeMerc=null;wardUsed=false;mercTimer=15;document.querySelector('#result').hidden=true;document.querySelector('#item-hint').textContent='합성권 선택 → 두 직원 선택 또는 드래그. 다시 누르면 취소.';promoIndex=0;}
 const promoLines=[
- {file:'01-first-shift',title:'첫 당직',speaker:'마왕',line:'“문만 잘 잠그면 된다. 별일 없을 거야.”',aside:'고비의 첫 출근. 첫 야간 당직. 그리고 아주 커다란 열쇠.'},
- {file:'02-invasion',title:'별일이 생겼다',speaker:'용사 군단 / 고비',line:'용사 군단: “마왕이 퇴근했다! 지금이다!”',aside:'고비: “아직 인수인계도 안 끝났는데?!”'},
+ {file:'01-first-shift',title:'첫 당직',speaker:'마왕',line:'“문만 잘 잠그면 된다. 별일 없을 거야.”',aside:'첫 출근에 야간 당직을 맡은 고비. 마왕은 업무를 마치고 성 안 휴게실로 향했다.'},
+ {file:'02-invasion',title:'별일이 생겼다',speaker:'용사 군단 / 고비',line:'용사 군단: “마왕이 퇴근했다! 지금이다!”',aside:'고비: “문을 잠갔는데도 몰려와요! 방어선을 세워야겠어요!”'},
  {file:'03-emergency-staff',title:'긴급 파견',speaker:'고비 / 뽀득 (청소부)',line:'고비: “용사들이 쳐들어왔어요! 지금 성에 있는 직원들, 전부 로비로 모여주세요!”',aside:'청소부: “저도요? 난 청소분데?”\n고비: “잘됐네요! 용사들 좀 싹 쓸어주세요!”\n청소부: “…그 청소가 아닌데.”'},
  {file:'04-night-duty',title:'오늘 밤의 책임자',speaker:'고비 / 마왕',line:'고비: “일단 왕좌부터 지켜요!”',aside:'휴게실의 마왕: “시끄러우면… 나갈까. 귀찮은데.”'}
 ];

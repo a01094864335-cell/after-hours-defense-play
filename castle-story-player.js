@@ -2,7 +2,8 @@
 // Existing dialogue controls keep ownership of pause/resume, swipe and skip.
 const STORY_DISCOVERY_REWARD=5;
 let currentCastleStory=CastleStories[0],castleStoryRun=null,castleReplay=false,castleArchiveResume=false,castleDiscovery='',castleRunEpisode=null;
-function nextCastleStory(){return CastleStories[Math.floor(Math.random()*CastleStories.length)]}
+// Establish the premise first; later entries are non-chronological castle memories.
+function nextCastleStory(){if(!meta.stories.includes('first-shift'))return CastleStories[0];const daily=CastleStories.filter(s=>!s.original);return daily[Math.floor(Math.random()*daily.length)]}
 function discoverCastleStory(){
  if(meta.stories.includes(currentCastleStory.id)){castleDiscovery='수집한 이야기 · 다시 만난 마왕성의 하루';return}
  const paid=saveChange(d=>{d.stories.push(currentCastleStory.id);d.coins+=STORY_DISCOVERY_REWARD});
@@ -32,7 +33,7 @@ function renderCastleStory(){
   document.querySelector('#promo-next').textContent=promoIndex===3?'당직 준비하기 →':'다음 →';
   if(!dialog.open)dialog.showModal();
  }
- document.querySelector('#promo-count').textContent=episode.tag+' · '+(promoIndex+1)+' / 4';
+ document.querySelector('#promo-count').textContent=(episode.original?episode.tag:'지난 근무 일지 · '+episode.tag)+' · '+(promoIndex+1)+' / 4';
  document.querySelector('#story-discovery').textContent=castleReplay?'수집한 이야기 다시 보기':castleDiscovery;
  document.querySelector('#promo-next').textContent=promoIndex===3?(castleReplay?'도감으로 →':'당직 준비하기 →'):'다음 →';
 }
@@ -74,7 +75,7 @@ function renderStoryLobby(){
  const count=CastleStories.filter(s=>meta.stories.includes(s.id)).length;
  document.querySelector('#lobby-story-count').textContent=count+' / '+CastleStories.length;
  document.querySelector('#lobby-story-fill').style.width=(count/CastleStories.length*100)+'%';
- document.querySelector('#lobby-story-hint').textContent=count===CastleStories.length?'모든 이야기를 모았어요! 다시 읽어볼까요?':'매 판 랜덤 이야기 · 첫 발견 시 글로벌 코인 +'+STORY_DISCOVERY_REWARD;
+ document.querySelector('#lobby-story-hint').textContent=count===CastleStories.length?'모든 이야기를 모았어요! 다시 읽어볼까요?':'첫 당직부터 시작 · 이후 무작위 일지 · 첫 발견 +'+STORY_DISCOVERY_REWARD;
 }
 document.querySelector('#lobby-story-collection').onclick=openStoryArchive;
 renderStoryLobby();
