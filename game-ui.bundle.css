@@ -1628,3 +1628,8 @@ html.duo-live #lobby#lobby .lobby-gobi{height:clamp(64px,calc((100% - var(--duo-
 html.duo-live #lobby#lobby .duo-companion{height:clamp(80px,calc((100% - var(--duo-footer-height,180px) - 180px)*.52),190px)!important;min-height:0!important}
 html.duo-live #lobby#lobby .duo-companion[data-empty=true]{height:54px!important;bottom:calc(var(--duo-footer-height,180px) + 116px)!important}
 @media(max-height:650px){html.duo-live #lobby#lobby .duo-shortcuts{top:68px;right:5%;gap:2px}html.duo-live #lobby#lobby .duo-shortcuts :is(#lobby-story-collection,#training-entry,#journey-summary){height:44px!important}html.duo-live #lobby#lobby .lobby-title{width:45%!important;left:10%!important}html.duo-live #lobby#lobby .duo-logo-float{inset:0}html.duo-live #lobby#lobby .lobby-links{margin-top:4px!important}}
+
+/* Original skin: lift the preparation panel 10px above fixed navigation. */
+html.duo-live #lobby#lobby::after{bottom:72px!important;height:calc(var(--duo-footer-height,180px) + 32px)!important}
+html.duo-live #lobby#lobby .lobby-links{margin-top:18px!important}
+@media(max-height:650px){html.duo-live #lobby#lobby .lobby-links{margin-top:14px!important}}
