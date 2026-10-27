@@ -22,7 +22,7 @@ function renderCastleStory(){
   const [scene,speaker,line,aside,portrait]=episode.panels[promoIndex];
   const face=document.querySelector('#promo-face');face.onerror=null;
   face.src=castleIllustration(episode,promoIndex);face.alt=episode.title+' · '+scene;
-  if(promoIndex<episode.panels.length-1){castleNextIllustration=new Image();castleNextIllustration.src=castleIllustration(episode,promoIndex+1)}
+  if(promoIndex<episode.panels.length-1){castleNextIllustration=new Image();castleNextIllustration.decoding='async';castleNextIllustration.fetchPriority='low';castleNextIllustration.src=castleIllustration(episode,promoIndex+1)}
   dialog.classList.toggle('comic-dialogue',false);
   document.querySelector('#promo-title').textContent=scene;
   document.querySelector('#promo-speaker').textContent=speaker;

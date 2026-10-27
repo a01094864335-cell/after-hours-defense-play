@@ -1,0 +1,19 @@
+/* Portrait story panels fill the screen without stretching; dialogue overlays the lower scene. */
+#promo#promo#promo[open]{display:flex!important;flex-direction:column!important;isolation:isolate;background:#17111f!important}
+#promo#promo#promo .comic-stage{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;margin:0!important;z-index:-1!important;overflow:hidden!important;background:#17111f!important}
+#promo#promo#promo #promo-face{object-fit:cover!important;object-position:50% 35%!important;width:100%!important;height:100%!important;image-rendering:auto!important}
+#promo#promo#promo .comic-head{position:relative!important;z-index:3!important;min-height:60px!important;height:auto!important;padding:8px 14px!important;background:linear-gradient(#17111fe8,#17111f99)!important;border:0!important;box-shadow:none!important;gap:12px!important}
+#promo#promo#promo .comic-head>span{line-height:1.35!important;max-width:calc(100% - 96px)!important}
+#promo#promo#promo #promo-skip{flex-shrink:0!important;min-height:44px!important}
+#promo#promo#promo .comic-bottom{margin-top:auto!important;z-index:3!important;background:linear-gradient(#21172aee,#17111ff8)!important;border:0!important;border-top:1px solid #d4b98355!important;border-radius:16px 16px 0 0!important;box-shadow:0 -12px 28px #17111f55!important;padding:12px 16px max(12px,env(safe-area-inset-bottom))!important;max-height:42%!important;overflow:auto!important}
+#promo#promo#promo .comic-copy{max-height:none!important;margin-bottom:8px!important}
+#promo#promo#promo .comic-copy>*{font-size:14px!important;line-height:1.45!important;margin:4px 0!important}
+#promo#promo#promo #promo-aside{font-size:12px!important}
+#promo#promo#promo .comic-nav button{min-height:44px!important;height:44px!important}
+@media(max-height:620px){#promo#promo#promo .comic-bottom{padding:8px 12px!important;max-height:44%!important}#promo#promo#promo .comic-copy>*{font-size:12px!important;margin:2px 0!important}#promo#promo#promo #promo-aside{font-size:11px!important}}
+/* Dialogue is part of the illustration: a soft bottom dim, no framed speech panel. */
+#promo#promo#promo .comic-bottom{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;isolation:isolate;padding-top:20px!important}
+#promo#promo#promo .comic-bottom::before{content:''!important;display:block!important;position:absolute!important;inset:-90px 0 0!important;background:linear-gradient(180deg,transparent 0%,#100d1bc4 30%,#100d1bed 65%,#100d1bf5 100%)!important;z-index:-1!important;border:0!important;border-image:none!important;border-radius:0!important;box-shadow:none!important;pointer-events:none!important;transform:none!important}
+#promo#promo#promo .comic-copy{background:none!important;border:0!important;box-shadow:none!important;text-shadow:0 2px 5px #0009!important;max-height:24dvh!important;overflow:auto!important}
+#promo#promo#promo .comic-copy::before,#promo#promo#promo .comic-copy::after{display:none!important}
+#promo#promo#promo .comic-head{background:linear-gradient(#100d1bc9,transparent)!important}

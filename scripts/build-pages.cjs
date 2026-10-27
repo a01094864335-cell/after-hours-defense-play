@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypt
 const root=path.resolve(__dirname,'..'),out=path.resolve(process.argv[2]||'/tmp/after-hours-pages');
 if(out===root||out.startsWith(root+path.sep))throw Error('Build outside the source checkout');
 const old=JSON.parse(fs.readFileSync(path.join(root,'release-manifest.json'))),files=new Set(Object.keys(old.files).filter(f=>!/^assets\/castle-stories\/.*\.png$/.test(f)));
-for(const f of ['index.html','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
+for(const f of ['index.html','intro-cinematic.css','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
 for(const dir of fs.readdirSync(path.join(root,'assets/castle-stories'))){const p=path.join(root,'assets/castle-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/castle-stories/'+dir+'/'+name);}
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const revision=process.env.GITHUB_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();

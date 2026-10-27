@@ -19,7 +19,7 @@ const path=[{x:82,y:520},{x:82,y:123},{x:518,y:123},{x:518,y:493}];
 let board,levels,sp,life,wave,cost,enemies,fx,queue,timer,intermission,playing,paused,ended,selected,drag,speed,summonDiscount=false,time=0,last=0,kills,teamBoost=0,boardFocus=0;
 // The gallery and the entrance share one character definition, including fallback art.
 const kingArt=Motion.sheets['demon-king'];
-const kingPortrait=new Image();kingPortrait.decoding='async';kingPortrait.src=kingArt.fallback;
+const kingPortrait=new Image();kingPortrait.decoding='async';
 let kingEvent={state:'idle',timer:35,elapsed:0};
 const reduce=window.matchMedia?.('(prefers-reduced-motion: reduce)');
 function uiText(e,value){const text=String(value);if(e.textContent!==text)e.textContent=text}

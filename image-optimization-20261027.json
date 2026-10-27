@@ -1,0 +1,226 @@
+{
+  "files": [
+    {
+      "path": "assets/bosses/commander-aegis.webp",
+      "before": 1686886,
+      "after": 381886,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/bosses/commander-chrono.webp",
+      "before": 1767774,
+      "after": 440172,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/bosses/commander-lumen.webp",
+      "before": 1690246,
+      "after": 391294,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/bosses/commander-mira.webp",
+      "before": 1748996,
+      "after": 426030,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/bosses/commander-neve.webp",
+      "before": 1921672,
+      "after": 483700,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/bosses/commander-ruby.webp",
+      "before": 1699970,
+      "after": 394844,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/bongtu-postmaster.webp",
+      "before": 886146,
+      "after": 263672,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/chalkak-photographer.webp",
+      "before": 902326,
+      "after": 257016,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/ddangkong-miner.webp",
+      "before": 1000264,
+      "after": 281400,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/duru-archivist.webp",
+      "before": 1035572,
+      "after": 320752,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+      "before": 180316,
+      "after": 52848,
+      "size": [
+        352,
+        422
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/kkangtong-engineer.webp",
+      "before": 1188702,
+      "after": 361506,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/merc-banchang-portrait.webp",
+      "before": 241540,
+      "after": 66480,
+      "size": [
+        454,
+        463
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/merc-banchang.webp",
+      "before": 1402256,
+      "after": 367992,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/merc-chikchik.webp",
+      "before": 1184202,
+      "after": 362268,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/merc-coco.webp",
+      "before": 847144,
+      "after": 240274,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/expansion-v2/merc-q.webp",
+      "before": 956116,
+      "after": 280494,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/motion/demon-king-slim-v2.webp",
+      "before": 788270,
+      "after": 257056,
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "path": "assets/reference-ui/archive-deck-frame.lite.svg",
+      "before": 336200,
+      "after": 82548
+    },
+    {
+      "path": "assets/reference-ui/archive-header.lite.svg",
+      "before": 364583,
+      "after": 76755
+    },
+    {
+      "path": "assets/reference-ui/grid-market-mercs.svg",
+      "before": 2814105,
+      "after": 437902
+    },
+    {
+      "path": "assets/reference-ui/grid-story-first.lite.svg",
+      "before": 1518888,
+      "after": 278664
+    },
+    {
+      "path": "assets/reference-ui/grid-story-first.svg",
+      "before": 2748508,
+      "after": 389957
+    },
+    {
+      "path": "assets/reference-ui/grid-story-invasion.lite.svg",
+      "before": 1479008,
+      "after": 270216
+    },
+    {
+      "path": "assets/reference-ui/grid-story-invasion.svg",
+      "before": 2722060,
+      "after": 385253
+    },
+    {
+      "path": "assets/reference-ui/grid-story-night.lite.svg",
+      "before": 1556748,
+      "after": 301324
+    },
+    {
+      "path": "assets/reference-ui/grid-story-night.svg",
+      "before": 2867052,
+      "after": 427573
+    },
+    {
+      "path": "assets/reference-ui/grid-story-recruitment.lite.svg",
+      "before": 1280917,
+      "after": 225229
+    },
+    {
+      "path": "assets/reference-ui/grid-story-recruitment.svg",
+      "before": 2570646,
+      "after": 340539
+    }
+  ],
+  "before": 41387113,
+  "after": 8845644,
+  "rasterQuality": 88,
+  "embeddedQuality": 90,
+  "preserved": "dimensions and alpha; already-lossy images left unchanged"
+}
