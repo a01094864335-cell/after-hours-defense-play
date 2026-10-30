@@ -30,5 +30,5 @@
  const showNotice=()=>{const d=document.createElement('dialog');d.className='notice-dialog';const h=document.createElement('h2');h.textContent='전투 안내';const p=document.createElement('p');p.textContent=q('#message').textContent;const close=document.createElement('button');close.textContent='알겠어요';close.onclick=()=>d.close();d.append(h,p,close);document.body.append(d);const resume=playing&&!paused&&!ended;if(resume){paused=true;sync()}d.addEventListener('close',()=>{d.remove();if(resume&&!ended){paused=false;sync()}});d.showModal()};
  notice.addEventListener('click',showNotice);notice.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showNotice()}});
  // Keep initial instructions concise enough to read on short phones.
- const oldSync=sync;sync=function(){oldSync();if(appScreen==='battle'&&!playing&&!ended)uiText(q('#message'),'직원을 소환한 뒤 당직 시작을 누르세요.');if(appScreen!=='battle'||ended){const hud=q('#boss-readout');if(hud)uiProp(hud,'hidden',true)}};
+ const oldSync=sync;sync=function(){oldSync();if(appScreen==='battle'&&!playing&&!ended)uiText(q('#message'),'준비 '+preparationCount()+'/5 · 직원을 5회 소환하면 자동으로 당직이 시작돼요.');if(appScreen!=='battle'||ended){const hud=q('#boss-readout');if(hud)uiProp(hud,'hidden',true)}};
 })();

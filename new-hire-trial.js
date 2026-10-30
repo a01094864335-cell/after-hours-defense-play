@@ -1,4 +1,5 @@
 'use strict';
+document.querySelector('#promo').addEventListener('close',()=>{if(GMTest.enabled&&!playing&&!ended&&wave===4&&board.filter(Boolean).length>=5)startDuty()});
 // The gallery trial uses the real battle and the existing memory-only GM save.
 function prepareNewHireTrial(support='banchang') {
  if(!GMTest.enabled||saveWarning||playing&&!ended||ended&&runReward&&!runReward.paid)return false;
@@ -34,7 +35,7 @@ function prepareNewHireTrial(support='banchang') {
  const choice=document.querySelector('#gm-new-support'),button=document.querySelector('#gm-new-prepare'),status=document.querySelector('#gm-new-status');
  choice.value='banchang';
  button.onclick=()=>{
-  if(prepareNewHireTrial(choice.value)){panel.open=false;status.textContent='이야기를 넘긴 뒤 당직 시작을 누르세요. 직원 선택 → 고유 스킬로 효과를 확인할 수 있어요.';}
+  if(prepareNewHireTrial(choice.value)){panel.open=false;status.textContent='이야기를 넘기면 당직이 자동으로 시작돼요. 직원 선택 → 고유 스킬로 효과를 확인할 수 있어요.';}
   else status.textContent='현재 판을 종료한 뒤 다시 준비할 수 있어요.';
  };
  const previous=renderMeta;renderMeta=function(){previous();button.disabled=!!saveWarning||playing&&!ended||ended&&runReward&&!runReward.paid;choice.disabled=button.disabled;};
