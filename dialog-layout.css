@@ -1,0 +1,38 @@
+/* All panel content stays inside its decorative frame, including short screens. */
+html body dialog.contained-panel[open],html body dialog#roster[open]{display:flex!important;flex-direction:column!important;overflow:hidden!important;box-sizing:border-box!important;max-height:calc(100dvh - 16px)!important;max-width:calc(100vw - 16px)!important;margin:auto!important;min-height:0!important;padding-bottom:16px!important}
+html body dialog.contained-panel>.panel-scroll-body,html body #roster #roster-overview:not([hidden]),html body #roster #roster-detail>.panel-scroll-body{flex:1 1 auto!important;min-height:0!important;min-width:0!important;overflow:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable;scroll-padding:16px;padding:4px 4px 16px!important;width:100%!important;box-sizing:border-box!important;max-height:none!important}
+html body dialog.contained-panel>:not(.panel-scroll-body){flex-shrink:0!important;position:relative!important;inset:auto!important}
+html body dialog.contained-panel>.sheet-head,html body #roster>.sheet-head{flex-shrink:0!important;position:relative!important;inset:auto!important;margin:0 0 12px!important;width:100%!important;box-sizing:border-box!important}
+html body #roster #roster-detail:not([hidden]){display:flex!important;flex-direction:column!important;flex:1 1 auto!important;min-height:0!important;overflow:hidden!important;padding:0!important;margin:0!important}
+html body #roster #roster-detail>.live-dossier-actions{position:relative!important;inset:auto!important;transform:none!important;width:100%!important;max-width:100%!important;flex:0 0 auto!important;margin:0!important;padding:12px 4px 0!important;background:#24192f!important}
+html body #roster #roster-detail .staff-action{position:static!important;inset:auto!important;transform:none!important;width:100%!important}
+html body #roster:has(#roster-detail:not([hidden])) #roster-back{position:absolute!important;top:16px!important;left:20px!important}
+html body #roster #roster-list{width:100%!important;min-width:0!important;margin:0!important;padding:4px!important;box-sizing:border-box!important;overflow:visible!important}
+html body .panel-scroll-body>*{max-width:100%;box-sizing:border-box;overflow-wrap:anywhere}
+html body dialog :is(.equipment-content,.help-content,.perk-content){max-height:none!important;overflow:visible!important;height:auto!important}
+html body dialog.contained-panel :is(#info-close,#guide-next,#discount-tutorial-skip,#leave-confirm,#leave-cancel,#perk-back){flex-shrink:0!important;margin:8px 0 0!important;width:100%!important}
+html body dialog#training-dialog[open]{max-height:calc(100dvh - 16px)!important;max-width:calc(100vw - 16px)!important;margin:auto!important;overflow:hidden!important;padding-bottom:16px!important}
+html body #training-dialog .training-footer{margin:0!important;padding:12px 0 0!important;max-width:100%!important}
+html body #result .live-result-body{min-height:0!important;overflow:auto!important;overscroll-behavior:contain}
+html body #result .live-result-actions{flex-shrink:0!important}
+html body #roster [hidden],html body dialog.contained-panel [hidden]{display:none!important}
+html body #roster .archive-tabs{position:sticky!important;top:0!important;margin:0 0 12px!important;z-index:2!important;background:#24192f!important}
+html body dialog.contained-panel .panel-scroll-body :is(.shop-tabs,.sheet-head){position:static!important;inset:auto!important}
+html body #recruit-dialog[open]{max-height:calc(100dvh - 16px)!important;max-width:calc(100vw - 16px)!important;margin:auto!important;overflow:hidden!important;justify-content:flex-start!important}
+html body #recruit-result{display:flex!important;flex-direction:column!important;min-height:0!important;flex:1!important;overflow:hidden!important}
+html body #recruit-result .recruit-reveal{flex:1 1 auto!important;min-height:0!important;overflow:auto!important;padding:8px!important;overscroll-behavior:contain}
+html body #recruit-result .ref-recruit-actions{flex-shrink:0!important;position:static!important;inset:auto!important}
+html body #recruit-result .recruit-reveal{display:flex!important;flex-direction:column!important;overflow:hidden!important}
+html body #recruit-result .recruit-reveal>.panel-scroll-body{min-height:0!important;overflow:auto!important;flex:1 1 auto!important;text-align:center;padding:8px!important}
+html body #recruit-result .recruit-reveal>.ref-recruit-actions{flex:0 0 auto!important}
+html body #recruit-result .panel-scroll-body>:is(img,canvas){max-width:100%!important;width:160px!important;height:180px!important;object-fit:contain!important}
+html body dialog.contained-panel:is(#shop,#equipment,#info,#menu,#leave,#story-archive,#guide,#perk,#deck,#daily-events-dialog,#journey-dialog,#save-transfer-dialog)[open]{display:flex!important;flex-direction:column!important;overflow:hidden!important;max-height:calc(100dvh - 16px)!important;max-width:calc(100vw - 16px)!important;min-height:0!important;margin:auto!important;padding-bottom:16px!important}
+html body dialog.contained-panel>.panel-scroll-body{order:1!important}
+html body dialog.contained-panel>:not(.panel-scroll-body){order:0!important}
+html body dialog.contained-panel>:is(#info-close,#guide-next,#discount-tutorial-skip,#leave-confirm,#leave-cancel,#perk-back){order:2!important}
+html body #shop>.shop-tabs{position:static!important;margin:8px 0 12px!important}
+html body dialog.contained-panel>#save-restore{order:2!important;flex:0 0 auto!important;margin:8px 0 0!important;width:100%!important}
+html body #daily-events-close{font-size:0!important}
+html body #daily-events-close::after{font-size:28px!important}
+html body #recruit-result .panel-scroll-body>strong{display:block;font-size:22px;color:#ffe1a1;margin:12px 0}
+html body #recruit-result .panel-scroll-body>p{font-size:14px;line-height:1.6;padding:16px}
