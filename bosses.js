@@ -4,7 +4,7 @@ const bossCatalog = [
  {id:'leon',name:'군단장 레온',short:'레온',file:'hero-leon',badge:'지휘',color:'#ffd580',speed:35,hp:1,cooldown:8,
   trait:'노련한 지휘관',traitText:'이동 감속 효과가 일반 용사보다 약해요.',skillName:'진격 명령',skillText:'근무 배치를 뒤섞고 모든 용사를 2초간 가속해요.',counter:'핵심 직원의 스킬을 준비하고 배치가 바뀌면 인접 지원을 확인하세요.'},
  {id:'aegis',name:'철벽 단장 아이기스',short:'아이기스',file:'commander-aegis',badge:'방벽',color:'#81e0bf',speed:29,hp:.9,cooldown:9,
-  trait:'중갑 방패',traitText:'최대 체력의 30%만큼 방패를 두르고 등장해요.',skillName:'방벽 전개',skillText:'자신의 방패 20%, 가까운 용사의 방패 15%를 보충해요.',counter:'유령 배달부의 특급 배송은 방패를 무시해요.'},
+  trait:'중갑 방패',traitText:'최대 체력의 30%만큼 방패를 두르고 등장해요.',skillName:'방벽 전개',skillText:'자신의 방패 15%, 가까운 용사의 방패 15%를 보충해요.',counter:'유령 배달부의 특급 배송은 방패를 무시해요.'},
  {id:'ruby',name:'홍련 창기사 루비',short:'루비',file:'commander-ruby',badge:'홍련',color:'#ff967d',speed:36,hp:.9,cooldown:9,
   trait:'불굴의 돌진',traitText:'체력이 절반 이하가 되면 이동 속도가 20% 빨라져요.',skillName:'화염 돌파',skillText:'3초간 돌진하고 예고한 세로줄의 공격 속도를 4초간 30% 낮춰요.',counter:'불이 예고된 칸에서 합성해 피하고 청소부로 돌진을 늦추세요.'},
  {id:'lumen',name:'성가대장 루멘',short:'루멘',file:'commander-lumen',badge:'축복',color:'#ffe9a3',speed:32,hp:.9,cooldown:10,
@@ -14,7 +14,7 @@ const bossCatalog = [
  {id:'mira',name:'환영 단장 미라',short:'미라',file:'commander-mira',badge:'환영',color:'#d2a9ff',speed:42,hp:.8,cooldown:10,
   trait:'가벼운 발걸음',traitText:'레온보다 20% 빠르게 이동하지만 체력이 20% 낮아요.',skillName:'거울 행진',skillText:'앞쪽에 체력 8%의 분신 둘을 만들어요. 4초 후 사라져요.',counter:'분신에는 처치 보상이 없어요. 광역·연쇄 공격으로 빠르게 걷어내세요.'},
  {id:'chrono',name:'시계기사 크로노',short:'크로노',file:'commander-chrono',badge:'태엽',color:'#efc783',speed:30,hp:1,cooldown:12,
-  trait:'감기는 태엽',traitText:'등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.',skillName:'시간 역행',skillText:'지나온 길을 110만큼 되돌아가며 체력을 4% 회복해요.',counter:'회복 전에 5등급 스킬을 집중하고 상담사로 시전을 늦추세요.'}
+  trait:'감기는 태엽',traitText:'등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.',skillName:'시간 빨리 감기',skillText:'1.5초 예고 후 2초간 최대 2배속으로 전진해요. 감속과 이동 정지는 적용돼요.',counter:'빨리 감기 예고에 맞춰 감속·이동 정지를 쓰거나 상담사로 시전을 늦추세요.'}
 ];
 let bossPlans={},bossWarning=null;
 function bossWaveKey(w){return Math.max(5,Math.ceil(w/5)*5)}
@@ -72,6 +72,7 @@ function restoreBoss(e){
  e.warningCells=indices(e.warningCells);e.scorchCells=indices(e.scorchCells);
  e.scorchLeft=Number.isFinite(e.scorchLeft)?Math.max(0,Math.min(4,e.scorchLeft)):0;
  e.bossAge=Number.isFinite(e.bossAge)?Math.max(0,e.bossAge):0;
+ e.fastForwardLeft=Number.isFinite(e.fastForwardLeft)?Math.max(0,Math.min(2,e.fastForwardLeft)):0;
  e.decoy=!!e.decoy&&e.bossId==='mira';if(e.decoy)e.decoyLife=Number.isFinite(e.decoyLife)?Math.max(0,Math.min(4,e.decoyLife)):0;
  Motion.preload(bossDefinition(e).file);
 }
@@ -87,12 +88,13 @@ function bossFreezeTime(e,duration){return e.type==='boss'&&bossDefinition(e).id
 function bossSpeed(e){
  if(e.type!=='boss')return 1;
  const id=bossDefinition(e).id;
+ if(id==='chrono'&&e.fastForwardLeft>0)return 2/(e.rush>0?1.65:1);
  return id==='ruby'&&e.hp/e.max<=.5?1.2:id==='chrono'?1+Math.min(3,Math.floor((e.bossAge||0)/10))*.1:1;
 }
 function bossStaffRate(index){return enemies.some(e=>e.hp>0&&e.scorchLeft>0&&e.scorchCells?.includes(index))?.7:1}
 function tickBoss(e,dt){
  if(e.type!=='boss')return;
- e.bossAge=(e.bossAge||0)+dt;e.introLeft=Math.max(0,(e.introLeft||0)-dt);e.scorchLeft=Math.max(0,(e.scorchLeft||0)-dt);
+ e.fastForwardLeft=Math.max(0,(e.fastForwardLeft||0)-dt);e.bossAge=(e.bossAge||0)+dt;e.introLeft=Math.max(0,(e.introLeft||0)-dt);e.scorchLeft=Math.max(0,(e.scorchLeft||0)-dt);
  if(e.decoy){e.decoyLife-=dt;if(e.decoyLife<=0){e.escaped=true;burst('bossMirror',e.x,e.y-20,bossDefinition(e).color,.5)}}
 }
 function placeEnemyAtProgress(e,progress){
@@ -113,7 +115,7 @@ function castBoss(e){
   for(const n of living){n.rush=2;burst('dash',n.x,n.y,b.color,.6)}selected=-1;drag=null;
   board.forEach((u,i)=>{if(u)burst('shuffle',cells[i].x,cells[i].y-15,'#ceacff',.7)});burst('command',e.x,e.y-20,b.color,1);
  }else if(b.id==='aegis'){
-  for(const n of living)if(n===e||Math.hypot(n.x-e.x,n.y-e.y)<145){n.shield=Math.min(n.max*.4,(n.shield||0)+n.max*(n===e?.2:.15));burst('bossShield',n.x,n.y-20,b.color,.9)}
+  for(const n of living)if(n===e||Math.hypot(n.x-e.x,n.y-e.y)<145){n.shield=Math.min(n.max*.4,(n.shield||0)+n.max*.15);burst('bossShield',n.x,n.y-20,b.color,.9)}
  }else if(b.id==='ruby'){
   e.rush=3;e.scorchLeft=4;e.scorchCells=[...(e.warningCells||[])];burst('bossFlame',e.x,e.y-20,b.color,.9);
   for(const i of e.scorchCells)burst('bossFlame',cells[i].x,cells[i].y-10,b.color,.8);
@@ -126,12 +128,12 @@ function castBoss(e){
   for(const n of enemies)if(n.decoy)n.escaped=true;
   for(let i=0;i<2;i++){const d={type:'boss',bossId:b.id,decoy:true,decoyLife:4,hp:e.max*.08,max:e.max*.08,speed:e.speed,slow:0,hurt:0,skill:999,shield:0,rush:0,cast:0,warning:0,bossAge:0};placeEnemyAtProgress(d,e.progress+45+i*35);enemies.push(d);burst('bossMirror',d.x,d.y-20,b.color,.8)}
  }else if(b.id==='chrono'){
-  const old={x:e.x,y:e.y};placeEnemyAtProgress(e,e.progress-110);e.hp=Math.min(e.max,e.hp+e.max*.04);burst('bossClock',old.x,old.y-20,b.color,1);burst('bossClock',e.x,e.y-20,b.color,1);
+  e.fastForwardLeft=2;burst('bossClock',e.x,e.y-20,b.color,2);burst('dash',e.x,e.y,b.color,2);
  }
  e.skill=b.cooldown;e.warning=0;e.warningCells=[];enemyEffect(e,b.skillName+'!',b.color);say(b.short+' · '+b.skillName+'! '+b.skillText);
  SkillCutin.boss(e);
 }
-function bossSkills(e){if(e.decoy)return;if(e.skill<=1.2&&!e.warning)warnBoss(e);if(e.skill<=0)castBoss(e)}
+function bossSkills(e){if(e.decoy)return;if(e.skill<=(bossDefinition(e).id==='chrono'?1.5:1.2)&&!e.warning)warnBoss(e);if(e.skill<=0)castBoss(e)}
 function nextBossText(){const next=(Math.floor(wave/5)+1)*5,b=plannedBoss(next);return b?next+'차 '+b.short+' · '+b.skillName:next+'차 · 군단장 정찰 중'}
 function renderBossGuide(){
  const list=document.querySelector('#boss-guide-list');if(!list)return;
@@ -145,7 +147,7 @@ function drawBossFields(){
 }
 function drawBossHUD(){
  const e=enemies.find(e=>e.type==='boss'&&!e.decoy&&e.hp>0&&!e.escaped);if(!e)return;
- const b=bossDefinition(e);ctx.save();ctx.fillStyle='#171020ed';round(135,16,330,66,10);ctx.fill();ctx.strokeStyle=b.color;ctx.lineWidth=1;ctx.stroke();ctx.textAlign='left';ctx.font='bold 13px system-ui';ctx.fillStyle=b.color;ctx.fillText(b.name,146,34);ctx.font='10px system-ui';ctx.fillStyle='#f9eacc';ctx.fillText(b.trait+' · '+b.skillName+(e.silence>0?' · 봉인 중':e.warning?' · 시전 임박':' · '+Math.ceil(e.skill)+'초'),146,51);
+ const b=bossDefinition(e);ctx.save();ctx.fillStyle='#171020ed';round(135,16,330,66,10);ctx.fill();ctx.strokeStyle=b.color;ctx.lineWidth=1;ctx.stroke();ctx.textAlign='left';ctx.font='bold 13px system-ui';ctx.fillStyle=b.color;ctx.fillText(b.name,146,34);ctx.font='10px system-ui';ctx.fillStyle='#f9eacc';ctx.fillText(b.trait+' · '+b.skillName+(e.fastForwardLeft>0?' · 빨리 감기!':e.silence>0?' · 봉인 중':e.warning?' · 시전 임박':' · '+Math.ceil(e.skill)+'초'),146,51);
  ctx.fillStyle='#48344e';ctx.fillRect(146,59,306,5);ctx.fillStyle=b.color;ctx.fillRect(146,59,306*Math.max(0,e.hp/e.max),5);
  if(e.shield>0){ctx.fillStyle='#d5fff5';ctx.fillRect(146,68,306*Math.min(1,e.shield/(e.max*.4)),3)}
  if(e.introLeft>0){ctx.fillStyle='#171020eb';round(135,84,330,33,7);ctx.fill();ctx.fillStyle='#f6e8d1';ctx.font='10px system-ui';ctx.fillText(b.traitText.slice(0,30),146,98);if(b.traitText.length>30)ctx.fillText(b.traitText.slice(30),146,111)}
