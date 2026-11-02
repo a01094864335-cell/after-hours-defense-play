@@ -881,7 +881,9 @@ legend {
   color: #ddcce4;
 }
 #item-hint {
-  display: none;
+  font-size: 11px;
+  color: var(--gold);
+  padding: 6px 10px;
 }
 #ref-pause {
   position: absolute;
@@ -2675,3 +2677,13 @@ dialog p {
   #approved-battle-support { min-height: 42px; padding: 4px 8px; margin-bottom: 4px; }
   #approved-battle-support :is(img, canvas) { width: 30px; height: 32px; }
 }
+
+/* Quiet, static emphasis for the action being practiced. */
+button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offset: 2px; }
+#tutorial-practice-skip { flex: none; align-self: flex-end; min-height: 32px; font-size: 10px; padding: 3px 10px; margin: 0 12px 4px; background: transparent; }
+#guide-text { white-space: pre-line; }
+#tutorial-strip { line-height: 1.55; }
+
+#battle[data-tutorial="true"] #approved-battle-support,
+#battle[data-teach-skill="hidden"] .skill-row,
+#battle[data-teach-items="hidden"] .item-buttons { display: none; }
