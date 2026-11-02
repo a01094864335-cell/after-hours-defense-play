@@ -11,6 +11,7 @@ files.add('play-design.css');
 files.add('detail-ui.css');
 files.add('ui.css');
 // Publish the isolated design reference without replacing the live game.
+for(const name of fs.readdirSync(path.join(root,'previews/ui-directions-20261102')))if(/\.(html|css|js|png)$/.test(name))files.add('previews/ui-directions-20261102/'+name);
 for(const name of fs.readdirSync(path.join(root,'previews/lobby-direction')))if(/\.(html|css|png)$/.test(name))files.add('previews/lobby-direction/'+name);
 files.add('assets/ui-approved/lobby-background.webp');
 for(const f of ['approved-ui.css','approved-ui.js','assets/ui-approved/lobby-scene.webp'])files.add(f);
