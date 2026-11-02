@@ -18,12 +18,37 @@
     if (el) dock.append(el);
   }
   lobby.append(dock);
-  // The existing live support summary already tracks equipment and cooldowns.
-  // Keep that data owner; move the view beside the battle instead of duplicating it.
-  const support = q("#merc-slot"), board = q(".board-stage");
-  if (support && board) {
-    support.classList.add("approved-battle-support");
+  const board = q(".board-stage");
+  if (board && typeof renderMeta === "function") {
+    const support = document.createElement("div");
+    support.id = "approved-battle-support";
     board.after(support);
+    let lastSupport = "";
+    const originalRenderMeta = renderMeta;
+    renderMeta = function (...args) {
+      const result = originalRenderMeta.apply(this, args);
+      const id = playing ? activeMerc : meta.equipped;
+      const merc = id && mercCatalog[id];
+      const signature = merc ? id + trainedMercDescription(id, playing) : "none";
+      if (signature !== lastSupport) {
+        lastSupport = signature;
+        support.replaceChildren();
+        if (merc) {
+          const image = document.createElement("img");
+          image.src = "assets/pixel/" + merc.file + ".webp";
+          image.alt = "";
+          const copy = document.createElement("span");
+          const title = document.createElement("b");
+          title.textContent = merc.name;
+          const description = document.createElement("small");
+          description.textContent = trainedMercDescription(id, playing);
+          copy.append(title, description);
+          support.append(image, copy);
+        } else support.textContent = "지원 영웅 미선택 · 당직실에서 편성하세요";
+      }
+      return result;
+    };
+    renderMeta();
   }
   const upgrade = q("#upgrade-open");
   if (upgrade) {

@@ -2646,17 +2646,17 @@ dialog p {
 }
 
 /* Approved direction: shared surface treatment without changing game rules. */
-#merc-slot.approved-battle-support {
+#approved-battle-support {
   display: flex; flex: 0 0 auto; align-items: center; gap: 10px;
   margin: 0 12px 8px; padding: 8px 10px; min-height: 56px;
   border: 1px solid var(--line-soft); border-radius: 5px;
   background: #2c2433; font-size: 12px;
 }
-#merc-slot.approved-battle-support :is(img, canvas) {
+#approved-battle-support :is(img, canvas) {
   width: 40px; height: 44px; flex: none; object-fit: contain;
   image-rendering: pixelated;
 }
-#merc-slot.approved-battle-support small { display: block; font-size: 10px; }
+#approved-battle-support small { display: block; font-size: 10px; }
 :is(.archive-tabs, .shop-tabs, .training-tabs) {
   padding: 0; gap: 0; background: transparent; border: 0;
   border-bottom: 1px solid var(--line-soft); border-radius: 0;
@@ -2669,6 +2669,6 @@ dialog p {
   border-bottom-color: var(--gold); background: #e8bb6808; color: var(--gold);
 }
 @media (max-height: 650px) {
-  #merc-slot.approved-battle-support { min-height: 42px; padding: 4px 8px; margin-bottom: 4px; }
-  #merc-slot.approved-battle-support :is(img, canvas) { width: 30px; height: 32px; }
+  #approved-battle-support { min-height: 42px; padding: 4px 8px; margin-bottom: 4px; }
+  #approved-battle-support :is(img, canvas) { width: 30px; height: 32px; }
 }
