@@ -124,3 +124,7 @@
 @layer enamel {
 #app-shell #battle .battle-notice::before{position:static!important;inset:auto!important;transform:none!important;margin:0!important;padding:0!important;border:0!important;border-image:none!important;box-shadow:none!important;opacity:1!important;filter:none!important;z-index:auto!important}
 }
+@layer enamel {
+#app-shell #battle #pause{font-size:18px!important;line-height:20px!important;display:grid!important;place-items:center!important;width:42px!important;min-width:42px!important;overflow:hidden!important}
+#app-shell #battle .battle-controls{min-height:0!important;height:auto!important;grid-template:none!important;align-content:initial!important}
+}
