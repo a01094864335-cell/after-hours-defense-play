@@ -12,6 +12,7 @@ files.add('detail-ui.css');
 files.add('ui.css');
 files.add('tutorial-coach.js');
 files.add('assets/pixel/demon-king.webp');
+files.add('assets/tutorial/demon-king-night-mentor.webp');
 for(const f of ['hiring-stories.js','hiring-stories.css','assets/hiring-stories/game-data.js'])files.add(f);
 for(const dir of fs.readdirSync(path.join(root,'assets/hiring-stories'))){const p=path.join(root,'assets/hiring-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/hiring-stories/'+dir+'/'+name);}
 

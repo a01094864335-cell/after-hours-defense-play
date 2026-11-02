@@ -15,7 +15,7 @@ window.TutorialCoach=(()=>{
  discount:['실패 뒤에도 수습할 기회가 있다','잘했다. 방금은 실패 보상 덕분에 반값으로 한 명을 더 불렀다.\n할인은 다음 유료 소환 한 번에만 적용된다. 이제 소환 가격이 원래대로 돌아왔는지 확인하거라.']};
  function finish(message,lesson=task?.kind){task={kind:'feedback',lesson,delay:1.6};say(message);sync();saveActiveRun()}
  function showFeedback(){const entry=feedbackCopy[task.lesson];task.delay=-1;speak(entry[0],entry[1],'알겠습니다 · 계속하기',()=>{task=null;sync();saveActiveRun()});saveActiveRun()}
- function speak(title,text,label='계속하기',next=()=>{},speaker='king'){compact=false;dialogueNext=next;if(!dialogue){showGuide(title,text);return;}uiAttr(q('#coach-portrait'),'src',speaker==='gobi'?'assets/mobile/lobby-gobi.webp':'assets/pixel/demon-king.webp');uiAttr(q('#coach-portrait'),'alt',speaker==='gobi'?'고비':'마왕');uiText(q('#coach-speaker'),speaker==='gobi'?'고비':'마왕');q('#coach-title').textContent=title;q('#coach-copy').textContent=text;q('#coach-next').textContent=label;dialogueNext=next;dialogue.hidden=false;paused=true;sync()}
+ function speak(title,text,label='계속하기',next=()=>{},speaker='king'){compact=false;dialogueNext=next;if(!dialogue){showGuide(title,text);return;}uiAttr(q('#coach-portrait'),'src',speaker==='gobi'?'assets/mobile/lobby-gobi.webp':'assets/tutorial/demon-king-night-mentor.webp');uiAttr(q('#coach-portrait'),'alt',speaker==='gobi'?'고비':'마왕');uiText(q('#coach-speaker'),speaker==='gobi'?'고비':'마왕');q('#coach-title').textContent=title;q('#coach-copy').textContent=text;q('#coach-next').textContent=label;dialogueNext=next;dialogue.hidden=false;paused=true;sync()}
  function dismiss(){if(dialogue)dialogue.hidden=true;paused=false;const next=dialogueNext;dialogueNext=null;next?.();sync();saveActiveRun()}
  const originalGuide=showGuide;showGuide=function(title,text){if(tutorialMode&&dialogue)speak(title,text);else originalGuide(title,text)};
  function guide(title,text){speak(title,text,task?'직접 해보기':wave===0?'소환 연습 시작':'계속하기')}
@@ -61,7 +61,7 @@ window.TutorialCoach=(()=>{
  }
  const previousInit=initRunProgress;initRunProgress=function(){task=null;if(dialogue)dialogue.hidden=true;dialogueNext=null;previousInit();if(tutorialMode){bossPlans={5:'leon',10:'ruby'};}refresh()};
  const previousType=randomType;randomType=function(){if(tutorialMode&&preparingDuty()&&preparationCount()<=5)return [0,0,1,2,3][Math.max(0,preparationCount()-1)];return previousType()};
- const previousClose=closePromo;closePromo=function(){previousClose();if(tutorialMode&&appScreen==='battle'&&preparingDuty()&&preparationCount()===0)speak('첫 전투를 앞두고','마왕님, 첫 전투인데… 제가 어떻게 해야 할까요?','마왕의 대답 듣기',()=>guide('먼저 동료부터 불러라','처음부터 혼자 막으려 하지 마라. 오늘은 내가 기본을 알려주마.\n아래 직원 소환 버튼을 다섯 번 눌러라. 준비금 150 SP면 충분하다. 다섯 명이 모이면 전투가 시작된다.\n첫 연습은 내가 직원을 골라뒀다. 이후 소환과 합성 결과는 랜덤이라는 점을 기억해라.'),'gobi')};
+ const previousClose=closePromo;closePromo=function(){previousClose();if(tutorialMode&&appScreen==='battle'&&preparingDuty()&&preparationCount()===0)speak('첫 전투를 앞두고','마왕님, 첫 전투인데… 제가 어떻게 해야 할까요?','마왕의 대답 듣기',()=>guide('먼저 동료부터 불러라','막 자려던 참이지만… 첫 근무니 기본은 알려주마. 혼자 막으려 하지 말고, 동료부터 불러라.\n아래 직원 소환 버튼을 다섯 번 눌러라. 준비금 150 SP면 충분하다. 다섯 명이 모이면 전투가 시작된다.\n첫 연습은 내가 직원을 골라뒀다. 이후 소환과 합성 결과는 랜덤이라는 점을 기억해라.'),'gobi')};
  q('#promo-skip').onclick=closePromo;
  const previousWave=afterWaveStart;afterWaveStart=function(){
   if(!tutorialMode)return previousWave();task=null;itemMode=null;
