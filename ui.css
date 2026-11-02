@@ -960,8 +960,10 @@ dialog > * {
   flex-shrink: 0;
   min-width: 0;
 }
+/* Use content-sized flex bases: zero-percent bases can collapse an auto-height
+   dialog body on mobile WebKit, leaving only its header and footer. */
 dialog :is(.panel-scroll-body, .live-training-body, #roster-overview) {
-  flex: 1;
+  flex: 1 1 auto;
   min-height: 0;
   overflow: auto;
   overscroll-behavior: contain;
@@ -1372,11 +1374,11 @@ dialog p {
   flex-direction: column;
   gap: 12px;
   min-height: 0;
-  flex: 1;
+  flex: 1 1 auto;
 }
 #roster-detail > .panel-scroll-body {
   min-height: 0;
-  flex: 1;
+  flex: 1 1 auto;
   overflow: auto;
 }
 .dossier-hero {
@@ -1988,7 +1990,7 @@ dialog p {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  flex: 1;
+  flex: 1 1 auto;
   min-height: 0;
 }
 #recruit-result .panel-scroll-body {
