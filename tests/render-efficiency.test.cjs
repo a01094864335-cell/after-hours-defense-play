@@ -2,6 +2,7 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 test('static board rendering builds once and reuses its canvas',()=>{
  const b=boot('');b.run(`document.createElement=()=>({getContext:()=>ctx});drawBoardBase();drawBoardBase();drawBoardBase();`);
  assert.equal(b.run('GamePerformance.stats.backgroundBuilds'),1);
+ assert.match(fs.readFileSync('game.js','utf8'),/function draw\(\)\{[^\n]*ctx.textAlign="center"/);
  assert.match(fs.readFileSync('game.js','utf8'),/function draw\(\)\{[^\n]*drawBoardBase\(\)/);
 });
 test('power-saving UI portraits do not fetch animation atlases and redraw only when changed',()=>{
