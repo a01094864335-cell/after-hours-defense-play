@@ -25,7 +25,7 @@ let itemMode=null,runId='',runNormal=0,runBoss=0,runReward=null,activeMerc=null,
 function newRunMeta(){runInsights=freshInsights();expansionState=freshExpansionState();runTraining={...meta.training};wardChargesUsed=0;itemMode=null;runId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);runNormal=0;runBoss=0;runReward=null;activeMerc=null;wardUsed=false;mercTimer=15;document.querySelector('#result').hidden=true;document.querySelector('#item-hint').textContent='합성권 선택 → 두 직원 선택 또는 드래그. 다시 누르면 취소.';promoIndex=0;}
 const promoLines=[
   {
-    "file": "01-first-shift",
+    "file": "01-first-shift-sd",
     "title": "첫 당직",
     "speaker": "마왕",
     "line": "“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”",

@@ -49,7 +49,7 @@ function renderStoryArchive(){
  const owned=CastleStories.filter(s=>meta.stories.includes(s.id));
  document.querySelector('#story-progress').textContent=owned.length+' / '+CastleStories.length+' 이야기 수집';
  document.querySelector('#story-archive-list').innerHTML=CastleStories.map((s,i)=>{
-  const unlocked=meta.stories.includes(s.id),src=s.original?'assets/comic/01-first-shift.webp':castleIllustration(s,0);
+  const unlocked=meta.stories.includes(s.id),src=s.original?'assets/comic/01-first-shift-sd.webp':castleIllustration(s,0);
   return '<button class="story-card '+(unlocked?'collected':'locked')+'" data-story="'+s.id+'" '+(unlocked?'':'disabled')+'><span class="story-cover">'+(unlocked?'<img loading="lazy" src="'+src+'" alt="">':'<span aria-hidden="true">?</span>')+'</span><small>야간 일지 '+String(i+1).padStart(2,'0')+'</small><b>'+(unlocked?s.title:'아직 발견하지 못한 하루')+'</b><em>'+(unlocked?'수집 완료 · 다시 보기':'당직 시작 시 무작위 발견')+'</em></button>';
  }).join('');
 }
