@@ -1,0 +1,555 @@
+[
+  {
+    "file": "assets/ui-approved/lobby-background.webp",
+    "before": 318776,
+    "after": 124818,
+    "originalWidth": 1122,
+    "width": 768
+  },
+  {
+    "file": "assets/mobile/lobby-gobi.webp",
+    "before": 239262,
+    "after": 112026,
+    "originalWidth": 1230,
+    "width": 768
+  },
+  {
+    "file": "assets/pixel/lobby-background.webp",
+    "before": 120810,
+    "after": 42746,
+    "originalWidth": 1254,
+    "width": 600
+  },
+  {
+    "file": "assets/hiring-stories/bat-nurse/01.webp",
+    "before": 187118,
+    "after": 141126,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bat-nurse/02.webp",
+    "before": 191468,
+    "after": 145018,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bat-nurse/03.webp",
+    "before": 213494,
+    "after": 159260,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bat-nurse/04.webp",
+    "before": 193236,
+    "after": 146090,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bongtu-postmaster/01.webp",
+    "before": 218058,
+    "after": 161546,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bongtu-postmaster/02.webp",
+    "before": 211500,
+    "after": 156162,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bongtu-postmaster/03.webp",
+    "before": 237298,
+    "after": 176478,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/bongtu-postmaster/04.webp",
+    "before": 191590,
+    "after": 145090,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/chalkak-photographer/01.webp",
+    "before": 189290,
+    "after": 141482,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/chalkak-photographer/02.webp",
+    "before": 215058,
+    "after": 162382,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/chalkak-photographer/03.webp",
+    "before": 217082,
+    "after": 161956,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/chalkak-photographer/04.webp",
+    "before": 206806,
+    "after": 160490,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ddangkong-miner/01.webp",
+    "before": 217134,
+    "after": 161070,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ddangkong-miner/02.webp",
+    "before": 274154,
+    "after": 200144,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ddangkong-miner/03.webp",
+    "before": 266786,
+    "after": 194088,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ddangkong-miner/04.webp",
+    "before": 244756,
+    "after": 181642,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/duru-archivist/01.webp",
+    "before": 226102,
+    "after": 165492,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/duru-archivist/02.webp",
+    "before": 256600,
+    "after": 190172,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/duru-archivist/03.webp",
+    "before": 247820,
+    "after": 187314,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/duru-archivist/04.webp",
+    "before": 176060,
+    "after": 133722,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ghost-courier/01.webp",
+    "before": 216622,
+    "after": 162068,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ghost-courier/02.webp",
+    "before": 187914,
+    "after": 143154,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ghost-courier/03.webp",
+    "before": 233590,
+    "after": 174026,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/ghost-courier/04.webp",
+    "before": 204004,
+    "after": 152642,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kkangtong-engineer/01.webp",
+    "before": 223522,
+    "after": 168470,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kkangtong-engineer/02.webp",
+    "before": 283632,
+    "after": 206780,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kkangtong-engineer/03.webp",
+    "before": 270066,
+    "after": 200196,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kkangtong-engineer/04.webp",
+    "before": 234644,
+    "after": 175322,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kobold-recruiter/01.webp",
+    "before": 231564,
+    "after": 171936,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kobold-recruiter/02.webp",
+    "before": 220404,
+    "after": 165356,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kobold-recruiter/03.webp",
+    "before": 255502,
+    "after": 190448,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/kobold-recruiter/04.webp",
+    "before": 216526,
+    "after": 164680,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-accountant/01.webp",
+    "before": 210302,
+    "after": 157458,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-accountant/02.webp",
+    "before": 202874,
+    "after": 150560,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-accountant/03.webp",
+    "before": 262614,
+    "after": 193252,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-accountant/04.webp",
+    "before": 195904,
+    "after": 147564,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-banchang/01.webp",
+    "before": 216376,
+    "after": 161994,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-banchang/02.webp",
+    "before": 213666,
+    "after": 159788,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-banchang/03.webp",
+    "before": 201040,
+    "after": 149168,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-banchang/04.webp",
+    "before": 223190,
+    "after": 165692,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-chikchik/01.webp",
+    "before": 288008,
+    "after": 210834,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-chikchik/02.webp",
+    "before": 249948,
+    "after": 189686,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-chikchik/03.webp",
+    "before": 217650,
+    "after": 162148,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-chikchik/04.webp",
+    "before": 276400,
+    "after": 206112,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-coco/01.webp",
+    "before": 198204,
+    "after": 149686,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-coco/02.webp",
+    "before": 173670,
+    "after": 130800,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-coco/03.webp",
+    "before": 228884,
+    "after": 170430,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-coco/04.webp",
+    "before": 185744,
+    "after": 139748,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-q/01.webp",
+    "before": 209326,
+    "after": 158768,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-q/02.webp",
+    "before": 289032,
+    "after": 203746,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-q/03.webp",
+    "before": 246250,
+    "after": 182034,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-q/04.webp",
+    "before": 247722,
+    "after": 182856,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-rescue/01.webp",
+    "before": 229674,
+    "after": 170882,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-rescue/02.webp",
+    "before": 234806,
+    "after": 175184,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-rescue/03.webp",
+    "before": 274614,
+    "after": 201808,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-rescue/04.webp",
+    "before": 211470,
+    "after": 161560,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-ward/01.webp",
+    "before": 229296,
+    "after": 170496,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-ward/02.webp",
+    "before": 242758,
+    "after": 180558,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-ward/03.webp",
+    "before": 242062,
+    "after": 180834,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/merc-ward/04.webp",
+    "before": 211256,
+    "after": 157956,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/mimic-storekeeper/01.webp",
+    "before": 188296,
+    "after": 144586,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/mimic-storekeeper/02.webp",
+    "before": 233052,
+    "after": 174720,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/mimic-storekeeper/03.webp",
+    "before": 219686,
+    "after": 163798,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/mimic-storekeeper/04.webp",
+    "before": 217968,
+    "after": 160720,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/nightmare-counselor/01.webp",
+    "before": 226296,
+    "after": 169686,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/nightmare-counselor/02.webp",
+    "before": 211220,
+    "after": 159818,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/nightmare-counselor/03.webp",
+    "before": 230358,
+    "after": 169618,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/nightmare-counselor/04.webp",
+    "before": 222024,
+    "after": 167630,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/skeleton-chef/01.webp",
+    "before": 217908,
+    "after": 160994,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/skeleton-chef/02.webp",
+    "before": 203520,
+    "after": 152394,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/skeleton-chef/03.webp",
+    "before": 236878,
+    "after": 174354,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/skeleton-chef/04.webp",
+    "before": 198382,
+    "after": 148646,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/spider-tailor/01.webp",
+    "before": 212468,
+    "after": 161462,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/spider-tailor/02.webp",
+    "before": 214254,
+    "after": 158920,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/spider-tailor/03.webp",
+    "before": 233498,
+    "after": 178108,
+    "originalWidth": 941,
+    "width": 768
+  },
+  {
+    "file": "assets/hiring-stories/spider-tailor/04.webp",
+    "before": 231258,
+    "after": 174572,
+    "originalWidth": 941,
+    "width": 768
+  }
+]

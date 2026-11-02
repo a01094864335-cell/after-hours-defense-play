@@ -122,14 +122,21 @@ const Motion = (() => {
       else if(mode==='action')pose=[2,3,4,5,0][Math.floor(t*6)%5];
       else if(mode==='auto'&&t%7>5.8)pose=[2,3,4,5][Math.min(3,Math.floor((t%7-5.8)/.3))];
       if(!c.motionResolution)c.motionResolution=resolution(c,c.getBoundingClientRect());
-      const n=c.motionResolution,im=asset(key),fallback=c.motionFallback;
-      const drawKey=[pose,n,im?.complete&&im.naturalWidth>0,fallback.complete&&fallback.naturalWidth>0].join('|');
+      const staticPortrait=window.GamePerformance?.lowPower||reduced?.matches;
+      const n=c.motionResolution,fallback=c.motionFallback,im=staticPortrait?null:asset(key);
+      // Lazy thumbnails are detached by mount; request only once actually visible.
+      if(fallback.loading==='lazy')fallback.loading='eager';
+      const drawKey=[staticPortrait,pose,n,im?.complete&&im.naturalWidth>0,fallback.complete&&fallback.naturalWidth>0].join('|');
       if(c.motionKey===drawKey)continue;
       c.motionKey=drawKey;c.motionLastPose=pose;
       if(c.width!==n)c.width=c.height=n;
       const cc=c.motionContext||(c.motionContext=c.getContext('2d'));cc.setTransform(1,0,0,1,0,0);cc.clearRect(0,0,n,n);cc.setTransform(n/320,0,0,n/320,0,0);
       cc.fillStyle='#130e2428';cc.beginPath();cc.ellipse(160,293,68,12,0,0,Math.PI*2);cc.fill();
-      if(!draw(cc,key,160,294,248,pose)&&fallback.complete&&fallback.naturalWidth)cc.drawImage(fallback,20,14,280,280);
+      if((staticPortrait||!draw(cc,key,160,294,248,pose))&&fallback.complete&&fallback.naturalWidth){
+        const scale=Math.min(280/fallback.naturalWidth,280/fallback.naturalHeight);
+        const w=fallback.naturalWidth*scale,h=fallback.naturalHeight*scale;
+        cc.drawImage(fallback,(320-w)/2,294-h,w,h);
+      }
       if(window.GamePerformance)GamePerformance.stats.portraitDraws++;
     }
   }

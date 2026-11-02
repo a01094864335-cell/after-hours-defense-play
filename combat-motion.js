@@ -7,7 +7,7 @@ function animateDefeat(e) {
     { sprite: enemyDefinition(e).file, size: e.type === 'boss' ? 68 : 40 });
 }
 function drawAmbient() {
-  if (reduce?.matches) return;
+  if (reduce?.matches || GamePerformance.lowPower) return;
   ctx.save();
   const lights = [[37,43],[145,22],[455,22],[563,43],[40,194],[560,194],[40,381],[560,381]];
   for (let i = 0; i < lights.length; i++) {
