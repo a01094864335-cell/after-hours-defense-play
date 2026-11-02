@@ -2687,3 +2687,17 @@ button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offs
 #battle[data-tutorial="true"] #approved-battle-support,
 #battle[data-teach-skill="hidden"] .skill-row,
 #battle[data-teach-items="hidden"] .item-buttons { display: none; }
+
+/* Gobi teaches inside the battlefield, leaving the board visible. */
+#tutorial-gobi { flex:none; display:flex; gap:10px; margin:4px 12px 8px; padding:12px; background:#292133; border:1px solid #796245; border-radius:12px; box-shadow:0 4px 12px #0004; max-height:34dvh; overflow:auto; }
+#tutorial-gobi[hidden] { display:none; }
+#tutorial-gobi>:is(img,canvas) { width:52px!important; height:72px!important; object-fit:contain; image-rendering:pixelated; align-self:flex-end; flex:none; }
+#tutorial-gobi>div { min-width:0; flex:1; }
+#tutorial-gobi small { display:block; font-size:10px; color:#c3ad88; }
+#coach-title { display:block; margin:3px 0 6px; color:#ffe3a3; font-size:14px; }
+#coach-copy { white-space:pre-line; font-size:12px; line-height:1.55; margin:0 0 10px; }
+#coach-next { min-height:38px; width:100%; padding:8px 12px; background:#e5c27d; color:#302318; font-weight:800; }
+#battle[data-tutorial="true"]:has(#tutorial-gobi:not([hidden])) #tutorial-strip,
+#battle[data-tutorial="true"] .battle-notice { display:none; }
+@media(max-height:650px) { #tutorial-gobi { padding:8px; max-height:38dvh; } #coach-copy { font-size:11px; } #tutorial-gobi>:is(img,canvas) { width:40px!important; height:56px!important; } }
+body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }

@@ -1,5 +1,5 @@
 'use strict';
-/* One explanation, followed by a real discounted summon. No simulated loss. */
+/* Explain the real failed merge, then spend its discount through the summon control. */
 (()=>{
  if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s),guide=q('#guide'),next=q('#guide-next');
@@ -8,7 +8,8 @@
  function clean(){guide.removeAttribute('data-discount-lesson');skip.hidden=true;next.textContent='알겠어요 · 계속하기'}
  function highlight(){q('#summon').classList.toggle('tutorial-target',tutorialMode&&stage==='summon'&&appScreen==='battle'&&!ended)}
  function persist(){highlight();saveActiveRun()}
- function display(){guide.dataset.discountLesson=stage;skip.hidden=false;q('#guide-title').textContent='합성 성공! 이번에는 반값 소환';q('#guide-text').textContent='실전 합성은 실패할 수 있어요. 실패하면 이동한 직원 1명이 사라지고 다음 유료 소환 1회가 반값이 됩니다.\n지금은 직원 손실 없이 연습용 할인을 1회 지급해요. 아래 버튼을 누른 뒤 실제 소환 버튼으로 사용해보세요.';next.textContent='연습용 반값 소환 받기';if(!guide.open)guide.showModal();paused=true;sync()}
+ function display(){if(window.TutorialCoach?.speak){window.TutorialCoach.speak('반값 소환으로 빈자리를 채워요','방금 합성 실패로 받은 할인을 사용해볼까요?\n직원 소환 버튼을 누르면 표시된 반값만큼 SP를 쓰고, 다음 소환부터는 원래 가격으로 돌아가요.','직원 소환하기',()=>{stage='summon';if(!summonDiscount)summonDiscount=true;sp+=Math.max(0,summonPrice()-sp);sync();persist()});return;}guide.dataset.discountLesson=stage;skip.hidden=false;q('#guide-title').textContent='실패 보상 · 반값 소환';q('#guide-text').textContent='다음 유료 소환 1회가 반값입니다.';next.textContent='계속하기';if(!guide.open)guide.showModal();paused=true;sync()}
+
  function start(){if(!tutorialMode||stage!=='unseen')return false;stage='intro';display();persist();return true}
  function resume(){if(!tutorialMode||!['intro','offer'].includes(stage))return false;display();return true}
  function skipLesson(){stage='skipped';const ours=guide.hasAttribute('data-discount-lesson');clean();if(ours)guide.close();paused=false;sync();persist()}
