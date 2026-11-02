@@ -75,3 +75,9 @@
  #daily-events-close{font-size:0!important;display:grid!important;place-items:center!important}
  @media(max-width:350px){dialog .archive-tabs button{padding:16px 10px!important;font-size:11px!important}}
 }
+@layer enamel {
+ /* The story toolbar has a fixed compact action width in the legacy skin. */
+ #promo .comic-head{gap:12px!important;align-items:center!important}
+ #promo .comic-head>span{flex:1!important;min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+ #promo #promo-skip{width:auto!important;min-width:120px!important;max-width:none!important;height:60px!important;min-height:60px!important;padding:18px 20px!important;white-space:nowrap!important;line-height:24px!important;font-size:14px!important;flex-shrink:0!important}
+}
