@@ -1,0 +1,38 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "productZonesSeparate": true,
+    "purchase": true,
+    "training": true,
+    "rosterNavigation": true,
+    "recruit": true,
+    "runtimeErrors": []
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "productZonesSeparate": true,
+    "purchase": true,
+    "training": true,
+    "rosterNavigation": true,
+    "recruit": true,
+    "runtimeErrors": []
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "productZonesSeparate": true,
+    "purchase": true,
+    "training": true,
+    "rosterNavigation": true,
+    "recruit": true,
+    "runtimeErrors": []
+  }
+]

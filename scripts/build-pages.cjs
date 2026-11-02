@@ -8,6 +8,7 @@ files.add('enamel-ui.css');
 files.add('visual-pass.css');
 files.add('roomy-buttons.css');
 files.add('play-design.css');
+files.add('detail-ui.css');
 for(const f of ['approved-ui.css','approved-ui.js','assets/ui-approved/lobby-scene.webp'])files.add(f);
 files.add('assets/ui-b/gallery.html');
 files.add('assets/ui-b/manifest.json');

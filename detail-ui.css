@@ -1,0 +1,159 @@
+/* Continue the approved plum / lavender / amber language in every detail view.
+   Keep the existing modal headers, scroll containers, IDs and action handlers. */
+@layer enamel {
+html body dialog:not(#promo){--detail-line:#796381;--detail-text:#f1e5d7;--detail-muted:#c1aecb;background:linear-gradient(155deg,#3b2d46,#251d31 65%)!important;color:var(--detail-text)!important;border:1px solid var(--detail-line)!important;border-image:none!important;border-radius:20px!important;box-shadow:0 16px 70px #100b21a8,inset 0 1px #ffffff0d!important;padding:18px!important}
+html body dialog::backdrop{background:#100b20b8!important;backdrop-filter:blur(5px)}
+html body dialog :is(button,input,textarea,select){box-sizing:border-box!important;font-family:inherit!important}
+html body dialog button{border-image:none!important;border:1px solid #8b7097!important;border-radius:10px!important;background:linear-gradient(#655073,#483552)!important;color:#f3e5d4!important;min-height:44px!important;padding:10px 14px!important;font-size:13px!important;line-height:20px!important;box-shadow:inset 0 1px #ffffff0b!important;white-space:normal!important;word-break:keep-all!important;overflow-wrap:break-word!important;text-shadow:none!important;transform:none!important}
+html body dialog button:active:not(:disabled){border-image:none!important;background:#776080!important;transform:translateY(1px)!important}
+html body dialog button:disabled{border-image:none!important;background:#332a3e!important;border-color:#62516e!important;color:#ac9ab8!important;opacity:1!important;filter:none!important}
+html body dialog button:focus-visible{outline:2px solid #b6eddc!important;outline-offset:2px!important}
+html body dialog :is(h1,h2,h3,h4){color:#f7e8cf!important;word-break:keep-all!important;text-shadow:none!important}
+html body dialog h2{font-size:22px!important;line-height:30px!important;letter-spacing:-.5px!important}
+html body dialog :is(p,li){color:#d0bfd8!important;font-size:13px!important;line-height:1.65!important;word-break:keep-all!important;overflow-wrap:break-word!important}
+html body dialog :is(.sheet-head,.training-header){display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;margin:0 0 14px!important;padding:0 0 14px!important;border:0!important;border-bottom:1px solid #8c729333!important;background:none!important;border-image:none!important;min-height:58px!important}
+html body dialog :is(.sheet-head,.training-header) h2{margin:2px 0 0!important}
+html body dialog :is(.sheet-head,.training-header) small{font-size:9px!important;line-height:14px!important;letter-spacing:1.4px!important;color:#b9a2c7!important}
+html body dialog :is(.sheet-head,.training-header)>div{min-width:0!important}
+html body dialog :is(#roster-close,#shop-close,#training-close,#equipment-close,#menu-close,#story-archive-close,#daily-events-close){flex:none!important;display:grid!important;place-items:center!important;width:40px!important;min-width:40px!important;height:40px!important;min-height:40px!important;padding:10px!important;border:1px solid #80678d!important;border-radius:12px!important;background:#493752!important;font-size:22px!important;line-height:20px!important}
+html body dialog :is(#roster-close,#shop-close,#training-close,#equipment-close,#menu-close,#story-archive-close) img{position:static!important;width:19px!important;height:19px!important;transform:none!important;margin:0!important}
+html body dialog :is(#roster-close,#shop-close,#training-close,#equipment-close,#menu-close,#story-archive-close)::before,html body dialog :is(#roster-close,#shop-close,#training-close,#equipment-close,#menu-close,#story-archive-close)::after{content:none!important;display:none!important}
+html body dialog :is(.archive-tabs,.training-tabs,.shop-tabs,.ref-shop-tabs){display:flex!important;gap:6px!important;padding:5px!important;background:#241c30!important;border:1px solid #71597e77!important;border-radius:12px!important;margin:0 0 14px!important;border-image:none!important}
+html body dialog :is(.archive-tabs,.training-tabs,.shop-tabs,.ref-shop-tabs) button{flex:1!important;min-width:0!important;min-height:42px!important;padding:8px 5px!important;font-size:12px!important;line-height:18px!important;border:1px solid transparent!important;border-radius:8px!important;background:none!important;color:#bba8c7!important}
+html body dialog :is(.archive-tabs,.training-tabs,.shop-tabs,.ref-shop-tabs) button:is(.active,[aria-pressed=true],[aria-selected=true]){border:1px solid #ae8db6!important;border-image:none!important;background:linear-gradient(#755888,#523d62)!important;color:#ffe6ae!important;box-shadow:inset 0 1px #ffffff12!important}
+html body dialog :is(#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore){border:1px solid #ffe4b3!important;background:linear-gradient(#ffdc94,#ffbc58)!important;color:#4b3022!important;font-weight:800!important;min-height:50px!important;padding:12px 16px!important;font-size:15px!important;line-height:22px!important}
+html body dialog :is(#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#leave-cancel,#save-restore):disabled{background:linear-gradient(#63523f,#493e37)!important;border-color:#8a7659!important;color:#c9b494!important}
+html body dialog :is(#reset,#leave-confirm){background:#593647!important;border-color:#a96b84!important;color:#ffd1d8!important}
+html body dialog :is(.shop-wallet,.shop-row,.shop-note,.roster-card,.staff-pass,.dossier-section,.training-character,#training-summary,.journey-card,.daily-event-card,.ref-guide-step){border:1px solid #80658c66!important;border-image:none!important;border-radius:13px!important;background:linear-gradient(130deg,#46344f99,#2e243b)!important;box-shadow:none!important}
+html body dialog .panel-scroll-body{scrollbar-width:thin!important;scrollbar-color:#826891 #2b2136!important;padding:2px 2px 14px!important}
+/* Shop: product art, readable description and a distinct purchase zone. */
+html body #shop .shop-wallet{display:flex!important;align-items:center!important;justify-content:space-between!important;min-height:54px!important;padding:12px 16px!important;margin:0 0 12px!important;background:linear-gradient(100deg,#4b394f,#30243c)!important}
+html body #shop .shop-wallet>span{font-size:10px!important;letter-spacing:1.2px!important;color:#c4b0cc!important}
+html body #shop .shop-wallet b{display:flex!important;align-items:center!important;gap:8px!important;color:#ffe0a0!important}
+html body #shop #shop-status:empty{display:none!important;min-height:0!important}
+html body #shop .ref-market-scene{height:88px!important;min-height:88px!important;border-radius:12px!important;border:1px solid #81618b66!important;margin:0 0 14px!important;opacity:1!important;overflow:hidden!important}
+html body #shop .recruit-shop{padding:18px 14px!important;margin:0 0 16px!important;border:1px solid #a27b9266!important;border-image:none!important;border-radius:14px!important;background:radial-gradient(ellipse at 50% 0,#6c4e6977,transparent 75%),#33263e!important}
+html body #shop .recruit-envelope{margin:0 auto 10px!important;filter:drop-shadow(0 5px 10px #140e25)!important}
+html body #shop .recruit-shop h3{font-size:20px!important;line-height:28px!important;margin:8px 0!important}
+html body #shop .recruit-shop>p{font-size:12px!important;line-height:21px!important;margin:8px 0 14px!important;color:#c9b6d2!important}
+html body #shop #buy-staff-pack{width:100%!important;margin:0 0 8px!important}
+html body #shop #shop-to-roster{width:100%!important;min-height:42px!important;font-size:12px!important;margin-top:8px!important}
+html body #shop .shop-row{display:grid!important;grid-template-columns:60px minmax(0,1fr)!important;gap:8px 14px!important;padding:14px!important;margin:0 0 12px!important;align-items:center!important}
+html body #shop .shop-row>img{width:58px!important;height:64px!important;object-fit:contain!important;grid-row:1!important}
+html body #shop .shop-row>span{font-size:15px!important;line-height:23px!important;min-width:0!important;color:#f5e8d3!important}
+html body #shop .shop-row small{display:block!important;font-size:12px!important;line-height:20px!important;color:#c4afcf!important;margin-top:4px!important}
+html body #shop .shop-row>button{grid-column:1/-1!important;width:100%!important;min-height:46px!important;padding:10px 14px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important}
+html body #shop .shop-row>button:not(:disabled){background:linear-gradient(#745880,#523d60)!important;border-color:#b08bbb!important;color:#ffe5b5!important}
+html body #shop .shop-note{padding:16px!important;margin:14px 0 0!important}
+html body #shop .shop-note p{font-size:11px!important;margin-bottom:0!important}
+/* Personnel: quiet identity cards rather than nested decorative frames. */
+html body #roster .archive-banner{padding:16px!important;margin:0 0 14px!important;min-height:104px!important;border:1px solid #98779666!important;border-image:none!important;border-radius:14px!important;background:radial-gradient(ellipse at 100% 0,#79566c66,transparent 80%),#392b44!important;box-shadow:none!important}
+html body #roster .archive-banner h3{font-size:19px!important;line-height:26px!important;margin:4px 0!important}
+html body #roster .archive-banner p{font-size:11px!important;line-height:18px!important;margin:0!important}
+html body #roster #staff-deck{border:1px solid #80648c77!important;border-image:none!important;border-radius:12px!important;background:#31253e!important;padding:12px!important;box-shadow:none!important}
+html body #roster .staff-pass{display:grid!important;grid-template-columns:60px minmax(0,1fr) 60px!important;gap:5px 12px!important;min-height:102px!important;padding:14px!important;margin:0 0 10px!important;align-items:center!important;overflow:hidden!important}
+html body #roster .staff-pass[data-equipped=true]{border-color:#b3908f!important;background:linear-gradient(115deg,#59414b,#35283f)!important}
+html body #roster .staff-pass .pass-portrait{width:60px!important;height:66px!important;border:1px solid #9a7da466!important;border-image:none!important;border-radius:10px!important;background:#57405e!important;box-shadow:none!important}
+html body #roster .staff-pass .pass-open{padding:0!important;min-height:0!important;border:0!important;background:none!important;box-shadow:none!important;font-size:17px!important;line-height:25px!important;color:#fff0d9!important;text-align:left!important}
+html body #roster .staff-pass .pass-job{font-size:11px!important;line-height:18px!important;color:#baa5c6!important}
+html body #roster .staff-pass .pass-meta b{font-size:10px!important;line-height:17px!important;color:#bce1d0!important;border:1px solid #79928255!important;border-radius:6px!important;background:#32453d66!important;padding:3px 5px!important}
+html body #roster :is(.dossier-hero,.dossier-section,.live-biography,.live-training-details){padding:16px!important;margin:0 0 12px!important;border:1px solid #876b9266!important;border-image:none!important;border-radius:13px!important;background:#35283f!important;box-shadow:none!important}
+html body #roster .dossier-hero{background:radial-gradient(ellipse at 20% 20%,#795a7866,transparent 75%),#382a43!important;gap:14px!important}
+html body #roster .dossier-hero h3{font-size:24px!important;line-height:32px!important;margin:4px 0!important}
+html body #roster :is(.dossier-section h4,summary){font-size:14px!important;line-height:22px!important;color:#f2dbaf!important}
+html body #roster .dossier-section p{font-size:12px!important;line-height:21px!important}
+html body #roster .live-dossier-actions{border-top:1px solid #82678c66!important;background:#2a2035!important;padding:12px 2px 0!important}
+html body #roster #roster-back:not([hidden]){width:40px!important;height:40px!important;min-height:40px!important;min-width:40px!important;padding:10px!important;align-self:flex-start!important}
+html body #roster #roster-back img{width:19px!important;height:19px!important}
+/* Training: shared tabs and card surfaces, fixed action footer. */
+html body #training-dialog .training-intro{font-size:12px!important;line-height:21px!important;margin:0 0 14px!important}
+html body #training-dialog #training-summary{padding:18px!important;margin-bottom:16px!important}
+html body #training-dialog .training-level strong{font-size:30px!important;color:#ffe1a3!important}
+html body #training-dialog .training-progress{height:7px!important;border:0!important;border-radius:8px!important;background:#211a2c!important;overflow:hidden!important;margin:14px 0!important}
+html body #training-dialog .training-progress i{background:linear-gradient(90deg,#ad88c1,#dfb5c3)!important;border-radius:8px!important}
+html body #training-dialog .training-character{padding:14px!important;margin-bottom:12px!important}
+html body #training-dialog .training-character-title{display:flex!important;align-items:center!important;gap:10px!important;min-width:0!important}
+html body #training-dialog .training-character-title img{width:46px!important;height:50px!important;object-fit:contain!important;border-radius:9px!important;background:#4a3655!important}
+html body #training-dialog .training-character-title>div{flex:1!important;min-width:0!important}
+html body #training-dialog .training-character-title>span{font-size:9px!important;line-height:15px!important;max-width:54px!important;flex:none!important;color:#cbb7d5!important}
+html body #training-dialog .training-character li{padding:8px 0!important;gap:8px!important;border-bottom:1px solid #8a709422!important;font-size:11px!important;line-height:19px!important}
+html body #training-dialog .training-footer{border-top:1px solid #82678c66!important;background:#2b2135!important;padding:14px 0 0!important}
+html body #training-dialog #training-upgrade{width:100%!important}
+/* Supporting screens, battle dialogs and reports. */
+html body dialog :is(input,textarea,select){width:100%!important;max-width:100%!important;border:1px solid #94779f!important;border-radius:9px!important;padding:12px!important;background:#241b30!important;color:#f6eadb!important;font-size:14px!important;line-height:22px!important}
+html body dialog summary{padding:10px 0!important;color:#e1cda8!important;cursor:pointer}
+html body dialog :is(.ref-guide-step,.board-access-list){padding:14px!important;margin:0 0 12px!important;border:1px solid #80658c66!important;border-radius:12px!important;background:#33263f!important}
+html body #equipment #cards .card{border:1px solid #8c6d9866!important;border-image:none!important;border-radius:12px!important;background:linear-gradient(#4b3658,#30243d)!important;min-height:108px!important;padding:14px 10px!important;gap:6px!important}
+html body #equipment #cards .card:not(:disabled){border-color:#a384af!important}
+html body #equipment #equipment-balance{padding:12px!important;border:1px solid #6b9b9566!important;border-radius:10px!important;background:#25464788!important;color:#c2efdf!important;margin:0 0 12px!important}
+html body #journey-dialog :is(article,.journey-summary,.journey-record,.journey-preset){border:1px solid #82658f66!important;border-image:none!important;border-radius:12px!important;background:#382a42!important;padding:14px!important;margin-bottom:12px!important}
+html body #daily-events-dialog #daily-events-list>*,html body #story-archive #story-archive-list>*,html body #deck #deck-presets>*,html body #journey-dialog #journey-presets>*{border:1px solid #82658f66!important;border-image:none!important;border-radius:12px!important;background:#382a42!important;padding:14px!important;margin-bottom:10px!important}
+html body #story-archive #story-archive-list button{width:100%!important;text-align:left!important}
+html body #recruit-dialog .recruit-reveal{border:0!important;border-image:none!important;background:radial-gradient(ellipse at 50% 20%,#76516c66,transparent 70%)!important;box-shadow:none!important;border-radius:12px!important}
+html body #recruit-dialog .ref-recruit-actions{gap:8px!important;padding-top:12px!important}
+html body #recruit-dialog .ref-recruit-actions button{flex:1!important}
+html body #promo{background:#2c2137!important;border:1px solid #856b8e!important;border-image:none!important;border-radius:18px!important;overflow:hidden!important}
+html body #promo .comic-head{background:#392a44!important;border-bottom:1px solid #82658f66!important}
+html body #promo .comic-bottom{background:linear-gradient(#3a2b45,#251d31)!important;border:0!important;border-image:none!important;padding:16px!important}
+html body #promo .comic-copy{border:1px solid #80658c66!important;border-image:none!important;border-radius:12px!important;background:#2a2037!important;padding:14px!important}
+html body #promo .comic-nav{gap:8px!important;margin-top:12px!important}
+html body #app-shell #result{background:radial-gradient(ellipse at 50% 10%,#65455c66,transparent 65%),#241b30!important;padding:20px 16px 12px!important}
+html body #app-shell #result :is(#live-result-reward,#result-text,#result-stats){border:1px solid #8b6e9566!important;border-image:none!important;border-radius:14px!important;background:#392a43!important;box-shadow:none!important;padding:16px!important}
+html body #app-shell #result .live-result-actions{gap:8px!important;padding-top:12px!important}
+html body #app-shell #result .live-result-actions button{border:1px solid #8b7097!important;border-image:none!important;border-radius:11px!important;background:linear-gradient(#645071,#44324f)!important;color:#f0e1d0!important;min-height:48px!important;padding:12px 16px!important;font-size:14px!important}
+html body #app-shell #result #result-again{border-color:#ffe4ac!important;background:linear-gradient(#ffdc94,#ffba55)!important;color:#4b3022!important;font-size:18px!important;font-weight:800!important}
+html body #ref-pause #pause-window{border:1px solid #9b7ba2!important;border-image:none!important;border-radius:18px!important;background:linear-gradient(#49354f,#2a2036)!important;padding:24px!important;box-shadow:0 14px 60px #100b2188!important}
+html body #ref-pause button{border:1px solid #9b7ba2!important;border-image:none!important;border-radius:10px!important;background:#594267!important;color:#f6e6d1!important;min-height:46px!important;padding:12px!important}
+html body #ref-pause #pause-continue{background:linear-gradient(#ffdc94,#ffba55)!important;border-color:#ffe4ac!important;color:#4b3022!important}
+@media(max-width:350px){html body dialog:not(#promo){padding:14px!important;border-radius:16px!important}html body dialog h2{font-size:20px!important;line-height:28px!important}html body #roster .staff-pass{grid-template-columns:48px minmax(0,1fr) 50px!important;padding:12px!important;gap:5px 9px!important}html body #roster .staff-pass .pass-portrait{width:48px!important;height:56px!important}html body #roster .staff-pass .pass-open{font-size:16px!important}html body #shop .shop-row{padding:12px!important;gap:8px 12px!important}}
+@media(prefers-reduced-motion:no-preference){html body dialog[open]{animation:detail-appear .16s ease-out}@keyframes detail-appear{from{opacity:0;translate:0 6px}to{opacity:1;translate:0 0}}}
+}
+@layer enamel {
+html body dialog:not(#promo)::before,html body dialog:not(#promo)::after{content:none!important;display:none!important;border-image:none!important;background:none!important}
+html body #shop .shop-row{height:auto!important;min-height:0!important;grid-template-rows:auto auto!important}
+html body #shop .shop-row>button{grid-row:2!important;grid-column:1/-1!important;max-width:none!important;width:100%!important;height:auto!important;min-height:46px!important;margin:0!important;flex-direction:row!important}
+html body #shop .shop-row>button :is(.price-line,small){position:static!important;inset:auto!important;transform:none!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:4px!important;width:auto!important;flex:none!important;margin:0!important;background:none!important;border:0!important;font-size:12px!important;line-height:20px!important;color:inherit!important}
+html body #shop .shop-row>button .price-line strong{font-size:17px!important;line-height:22px!important;color:#ffe4ac!important}
+html body #shop :is(#recruit-pool-info,#recruit-balance){display:block!important;background:none!important;border:0!important;padding:0!important;margin:0!important;color:#cdbad5!important;line-height:21px!important}
+html body #roster #roster-overview{border:0!important;border-image:none!important;border-radius:0!important;background:none!important;box-shadow:none!important;outline:0!important}
+html body #roster #roster-note{min-height:0!important;height:auto!important;margin:8px 0 14px!important;font-size:11px!important;line-height:18px!important}
+html body #roster #staff-deck{min-height:0!important;margin-bottom:0!important}
+html body #roster #staff-deck .deck-slots{margin:10px 0 8px!important}
+html body #roster #staff-deck .deck-slots button{padding:8px 4px!important;min-height:68px!important;border-radius:10px!important;background:linear-gradient(#66506f,#43324e)!important}
+html body #roster #staff-deck #deck-status{font-size:10px!important;line-height:17px!important;margin:8px 0 0!important;color:#b9a5c6!important}
+html body :is(#journey-dialog,#save-transfer-dialog)>header{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;border-bottom:1px solid #8c729333!important;margin:0 0 12px!important;padding:0 0 14px!important}
+html body :is(#journey-dialog,#save-transfer-dialog)>header h2{margin:0!important;font-size:20px!important;line-height:28px!important}
+html body :is(#journey-dialog,#save-transfer-dialog)>header button{flex:none!important;min-width:54px!important;padding:9px!important}
+html body #journey-dialog :is(#deck-presets>*,#run-history-list>li){padding:14px!important;margin:0 0 12px!important;border:1px solid #80658c66!important;border-radius:12px!important;background:#36283f!important}
+html body #journey-dialog #deck-presets button{min-height:42px!important;padding:8px 10px!important}
+html body #training-dialog :is(#training-wallet,#training-price-hint){background:none!important;border:0!important;padding:0!important}
+html body #app-shell #result #result-stats>div{background:none!important;border-image:none!important;border:0!important;border-bottom:1px solid #8b6e9533!important;border-radius:0!important;padding:12px 0!important}
+}
+@layer enamel {
+/* Retired archive overlays used viewport-sized pseudo-elements. */
+html body #roster :is(#staff-deck,.deck-slots>button,.staff-pass,.pass-portrait,.archive-tabs)::before,html body #roster :is(#staff-deck,.deck-slots>button,.staff-pass,.pass-portrait,.archive-tabs)::after{content:none!important;display:none!important;border-image:none!important;background:none!important}
+html body #roster #staff-deck{position:relative!important;inset:auto!important;isolation:isolate!important}
+html body #roster #roster-list{padding-top:0!important}
+html body #roster #roster-note:empty{display:none!important}
+html body #perk #perk-options button:disabled,html body #perk #perk-targets button:disabled{color:#bfaacb!important;background:#362b41!important;border:1px solid #685475!important;border-image:none!important}
+html body #perk :is(#perk-note,#perk-intro){background:none!important;padding:0!important;color:#cbb7d5!important}
+html body #menu :is(fieldset,.audio-settings){border:1px solid #80658c66!important;border-radius:12px!important;background:#34263e!important;padding:14px!important;margin:0 0 14px!important}
+html body #menu input[type=range]{padding:0!important;accent-color:#e1b77c!important;min-height:28px!important;background:none!important}
+html body #story-archive #story-progress{border:1px solid #80658c66!important;border-image:none!important;border-radius:10px!important;background:#32263e!important;padding:14px!important;margin:0 0 12px!important}
+html body #story-archive :is(.story-policy,.story-progress-track){border-image:none!important;border-radius:9px!important;background:none!important}
+html body #deck .sheet-head{min-height:62px!important}
+html body #deck #deck-options button{border:1px solid #8f749a!important;border-image:none!important;border-radius:12px!important;padding:12px!important;min-height:82px!important;background:#483450!important}
+html body #deck #deck-options button b{background:#37584c!important;border:1px solid #8ab39b66!important;border-radius:5px!important;color:#ccf2de!important;padding:2px 6px!important;font-size:10px!important}
+html body #deck #deck-options button.selected{border-color:#d5b49c!important;background:#5a414e!important}
+html body #app-shell #result #result-title-badge{border:1px solid #aa8a9566!important;border-image:none!important;border-radius:8px!important;background:#594250!important;color:#f3dcae!important;padding:8px 14px!important;box-shadow:none!important}
+html body #app-shell #battle #boss-warning{border:1px solid #d598a2!important;border-image:none!important;border-radius:12px!important;background:linear-gradient(110deg,#69414b,#3e2c42)!important;box-shadow:0 5px 18px #140e2255!important;padding:12px 14px!important;color:#ffe4d3!important}
+html body #app-shell #battle #boss-warning::before,html body #app-shell #battle #boss-warning::after{display:none!important;content:none!important}
+}
+@layer enamel {
+html body #roster #roster-note{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;color:#bba7c6!important}
+html body #shop .recruit-shop #recruit-pool-info{background:none!important;border:0!important;box-shadow:none!important;padding:0!important}
+}
+@layer enamel {
+html body #perk #perk-options button:not(:disabled),html body #perk #perk-targets button:not(:disabled){color:#f4e6d4!important;background:linear-gradient(#655073,#483552)!important;border:1px solid #997aa5!important;border-image:none!important}
+html body #shop .recruit-shop>p{background:none!important;border:0!important;box-shadow:none!important}
+}
