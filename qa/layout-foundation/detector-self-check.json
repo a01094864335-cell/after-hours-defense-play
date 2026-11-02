@@ -1,0 +1,16 @@
+{
+  "caughtDeliberateOverflow": true,
+  "issues": [
+    {
+      "type": "button-vertical-overflow",
+      "element": "#layout-detector-probe",
+      "client": 8,
+      "scroll": 21
+    },
+    {
+      "type": "button-ink-outside",
+      "element": "#layout-detector-probe",
+      "text": "This deliberately overflowing text must be detected"
+    }
+  ]
+}
