@@ -2037,6 +2037,7 @@ dialog p {
 }
 /* Full-screen story illustration with a readable bottom dim. */
 #promo {
+  border: 0;
   width: min(480px, 100%);
   max-width: 100%;
   height: 100dvh;
