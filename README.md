@@ -14,3 +14,7 @@
 ## B UI 애셋 적용
 
 공개 게임의 기존 UX를 유지하며 B 에나멜 부품을 연결했습니다. [배포 경로·적용 범위](docs/enamel-b-live-integration.md), [텍스트 규격](designs/enamel-b/README.md), [공개 애셋 갤러리](https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-b/gallery.html)를 확인하세요.
+
+## 모바일 시각 검수 1차
+
+[전체 화면 수정 전후 비교](qa/visual-pass/index.html)와 [발견·수정 내역](qa/visual-pass/README.md)을 기록했습니다. 320·390·430px에서 프레임 안전 여백, 제목·탭, 코인·SP, 채용 결과, 좁은 화면의 상품·도움말을 보정했습니다.
