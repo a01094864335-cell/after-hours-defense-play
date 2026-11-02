@@ -1,17 +1,17 @@
 'use strict';
 // First-run lessons use the real controls. Only the teaching encounters are held.
 window.TutorialCoach=(()=>{
- const q=s=>document.querySelector(s);let task=null,skip=null,dialogue=null,dialogueNext=null;
+ const q=s=>document.querySelector(s);let task=null,skip=null,dialogue=null,dialogueNext=null,compact=false;
  const place=i=>(Math.floor(i/5)+1)+'행 '+(i%5+1)+'열';
  const unit=type=>({type,pip:1,cool:0,attack:0,arrival:.4,income:5,skillCD:0});
  function pairFor(item=false){for(let a=0;a<15;a++)for(let b=a+1;b<15;b++)if(board[a]&&board[b]&&board[a].pip===board[b].pip&&board[a].pip<7&&(item?board[a].type!==board[b].type:board[a].type===board[b].type))return [a,b];return null}
  function practicePair(item=false){let pair=pairFor(item);if(pair)return pair;const empty=board.map((u,i)=>u?-1:i).filter(i=>i>=0);if(empty.length<2)return null;board[empty[0]]=unit(0);board[empty[1]]=unit(item?1:0);return empty.slice(0,2)}
  function held(){return tutorialMode&&!ended&&(!!task||window.DiscountTutorial?.waitingForSummon?.())}
  function finish(message){task=null;say(message);sync();saveActiveRun()}
- function speak(title,text,label='계속하기',next=()=>{}){dialogueNext=next;if(!dialogue){showGuide(title,text);return;}q('#coach-title').textContent=title;q('#coach-copy').textContent=text;q('#coach-next').textContent=label;dialogueNext=next;dialogue.hidden=false;paused=true;sync()}
+ function speak(title,text,label='계속하기',next=()=>{}){compact=false;dialogueNext=next;if(!dialogue){showGuide(title,text);return;}q('#coach-title').textContent=title;q('#coach-copy').textContent=text;q('#coach-next').textContent=label;dialogueNext=next;dialogue.hidden=false;paused=true;sync()}
  function dismiss(){if(dialogue)dialogue.hidden=true;paused=false;const next=dialogueNext;dialogueNext=null;next?.();sync();saveActiveRun()}
  const originalGuide=showGuide;showGuide=function(title,text){if(tutorialMode&&dialogue)speak(title,text);else originalGuide(title,text)};
- function guide(title,text){speak(title,text,task?'직접 해보기':'계속하기')}
+ function guide(title,text){speak(title,text,task?'직접 해보기':wave===0?'소환 연습 시작':'계속하기')}
  function failurePractice(){const pair=practicePair();if(!pair){task=null;window.DiscountTutorial?.start();return;}task={kind:'mergefail',pair};guide('이번에는 실패도 연습해봐요','필요하면 연습용 직원을 추가해뒀어요. 표시한 두 직원을 합쳐보세요. 이번 1회만 연습을 위해 반드시 실패해요.\n이동한 직원과 남은 직원이 어떻게 달라지는지 같이 볼게요.');sync();saveActiveRun()}
  function showResult(){const outcome=task.outcome;task.delay=-1;speak(outcome==='success'?'성공! 등급이 하나 올랐어요':'실패… 이동한 직원만 사라졌어요',outcome==='success'?'빈칸이 된 출발 자리와 별이 늘어난 도착 자리를 확인해보세요. 종류는 랜덤으로 바뀌어요.\n다음은 실패했을 때의 변화도 연습해볼게요.':'도착 자리에 있던 직원은 그대로 남아 있어요. 대신 다음 유료 소환 1회가 반값이 됐어요.\n이건 이번 연습에만 정해진 결과예요. 실전에서는 표시된 확률로 실패합니다.',outcome==='success'?'실패도 연습하기':'반값 소환 해보기',()=>{task=null;if(outcome==='success')failurePractice();else window.DiscountTutorial?.start();});saveActiveRun()}
  function mergeResult(outcome,a,b){task={kind:'merge-result',outcome,pair:[a,b],delay:1.6};selected=-1;paused=false;say(outcome==='success'?'합성 성공 · 보드의 변화를 확인하세요':'합성 실패 · 출발 직원 소멸 / 대상 직원 유지');sync();saveActiveRun()}
@@ -30,6 +30,15 @@ window.TutorialCoach=(()=>{
   return wave>=9?'실전 연습 · 소환·합성·장비·스킬로 10웨이브까지 막으세요.':'자동 공격 중 · 빈자리에는 소환, 같은 종류·등급은 합성하세요.';
  }
  function refresh(){
+  const preparing=tutorialMode&&appScreen==='battle'&&preparingDuty();
+  uiAttr(q('#battle'),'data-tutorial-preparing',preparing?'true':'false');
+  if(dialogue){
+   if(preparing&&!paused){compact=true;dialogue.hidden=false;const count=preparationCount();uiText(q('#coach-title'),'첫 동료 부르기 · '+count+'/5');uiText(q('#coach-copy'),count===0?'아래 노란 직원 소환 버튼을 눌러보세요. 빈 보드에 동료가 한 명씩 들어와요.':'좋아요! '+count+'명이 왔어요. '+(5-count)+'번 더 소환하면 자동으로 전투가 시작돼요.');}
+   else if(compact){compact=false;dialogue.hidden=true;}
+   uiAttr(dialogue,'data-compact',compact?'true':'false');uiProp(q('#coach-next'),'hidden',compact);
+  }
+  if(preparing&&!paused){const count=preparationCount();uiText(q('#summon'),'직원 소환 · '+summonPrice()+' SP ('+count+'/5)');uiAttr(q('#summon'),'aria-label','직원 소환 '+summonPrice()+' SP · 준비 '+count+'/5');}
+
   uiAttr(q('#battle'),'data-tutorial',tutorialMode?'true':'false');
   uiAttr(q('#battle'),'data-teach-skill',tutorialMode&&wave<6?'hidden':'shown');
   uiAttr(q('#battle'),'data-teach-items',tutorialMode&&wave<7?'hidden':'shown');
@@ -72,5 +81,5 @@ window.TutorialCoach=(()=>{
  const previousDraw=draw;draw=function(){previousDraw();if(!tutorialMode||!task)return;const slots=task.pair||(task.index!==undefined?[task.index]:[]);ctx.save();ctx.strokeStyle=task.kind==='merge-result'&&task.outcome==='failure'?'#ff8d98':'#f0cc86';ctx.lineWidth=3;ctx.fillStyle='#f0cc86';ctx.font='bold 11px system-ui';ctx.textAlign='center';slots.forEach((i,n)=>{const c=cells[i];ctx.strokeRect(c.x-36,c.y-41,72,84);ctx.fillText(task.kind==='merge-result'?(n===0?'빈자리':task.outcome==='success'?'등급 +1':'직원 유지'):slots.length===2?String(n+1):'스킬',c.x,c.y-46)});ctx.restore()};
  if(typeof document.createElement==='function'){dialogue=document.createElement('section');dialogue.id='tutorial-gobi';dialogue.hidden=true;dialogue.setAttribute('aria-label','고비의 신입 연수 안내');dialogue.innerHTML='<img src="assets/mobile/lobby-gobi.webp" alt="고비"><div><small>신입 동료 · 고비</small><strong id="coach-title"></strong><p id="coach-copy"></p><button id="coach-next">계속하기</button></div>';q('#tutorial-strip').after(dialogue);q('#coach-next').onclick=dismiss;skip=document.createElement('button');skip.id='tutorial-practice-skip';skip.textContent='이번 연습 건너뛰기';skip.onclick=()=>{if(window.DiscountTutorial?.waitingForSummon?.())window.DiscountTutorial.skip();task=null;itemMode=null;paused=false;sync();saveActiveRun()};q('#tutorial-strip').after(skip);}
  if(tutorialMode&&!playing)bossPlans={5:'leon',10:'ruby'};refresh();
- return {held,refresh,speak,dismiss,speaking:()=>!!(dialogue&&!dialogue.hidden),get task(){return task}};
+ return {held,refresh,speak,dismiss,speaking:()=>!!(dialogue&&!dialogue.hidden&&!compact),get task(){return task}};
 })();

@@ -2703,3 +2703,10 @@ button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offs
 body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 /* Boss banners wait until Gobi has finished speaking. */
 #battle:has(#tutorial-gobi:not([hidden])) #boss-warning { display:none!important; }
+
+#tutorial-gobi[data-compact="true"] { padding:10px 12px; }
+#tutorial-gobi[data-compact="true"] #coach-copy { margin-bottom:0; }
+#tutorial-gobi[data-compact="true"]>:is(img,canvas) { height:54px!important; align-self:center; }
+#battle[data-tutorial-preparing="true"] #next-boss { display:none; }
+#battle[data-tutorial-preparing="true"] .board-stage { align-items:flex-start; margin-top:8px; }
+#battle[data-tutorial-preparing="true"] #summon { font-size:clamp(12px,3.3vw,17px); }
