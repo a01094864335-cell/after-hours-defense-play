@@ -3,7 +3,7 @@
 // One writer owns both the wallet and the active run. Do not let a second tab
 // initialize from stale data and later replace the first tab's entire save.
 window.GameSession = (() => {
-  if (GMTest.enabled) return {canWrite: () => true};
+  if (GMTest.enabled || GMTest.fresh) return {canWrite: () => true};
   let owner = false, requesting = false, release = null, loaded = false;
   let panel, message, retry;
   const canWrite = () => owner;
