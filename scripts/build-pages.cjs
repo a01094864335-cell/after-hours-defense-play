@@ -4,6 +4,10 @@ const root=path.resolve(__dirname,'..'),out=path.resolve(process.argv[2]||'/tmp/
 if(out===root||out.startsWith(root+path.sep))throw Error('Build outside the source checkout');
 const old=JSON.parse(fs.readFileSync(path.join(root,'release-manifest.json'))),files=new Set(Object.keys(old.files).filter(f=>!/^assets\/castle-stories\/.*\.png$/.test(f)));
 for(const f of ['dialog-layout.js','dialog-layout.css','index.html','game-audio.js','game-sfx.js','assets/audio/lobby-night.wav','assets/audio/night-shift.wav','assets/audio/commander.wav','intro-cinematic.css','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
+files.add('enamel-ui.css');
+files.add('assets/ui-b/gallery.html');
+files.add('assets/ui-b/manifest.json');
+for(const name of fs.readdirSync(path.join(root,'assets/ui-b')))if(name.endsWith('.png')||name.endsWith('.svg'))files.add('assets/ui-b/'+name);
 for(const dir of fs.readdirSync(path.join(root,'assets/castle-stories'))){const p=path.join(root,'assets/castle-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/castle-stories/'+dir+'/'+name);}
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const revision=process.env.GITHUB_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();

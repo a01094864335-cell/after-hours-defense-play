@@ -1,0 +1,1579 @@
+{
+  "version": 1,
+  "style": "B · 에나멜 키캡",
+  "scope": "UI 부품 라이브러리. enamel-ui.css로 실제 게임에 적용하며 기존 UX와 게임 로직은 유지한다.",
+  "units": "CSS px at native size; PNG exported @2x",
+  "assets": [
+    {
+      "id": "button-primary--default",
+      "family": "button-primary",
+      "state": "default",
+      "svg": "assets/ui-b/button-primary--default.svg",
+      "png": "assets/ui-b/button-primary--default.png",
+      "size": [
+        320,
+        64
+      ],
+      "safe": [
+        24,
+        16,
+        272,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "단일 주요 행동",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-primary--pressed",
+      "family": "button-primary",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-primary--pressed.svg",
+      "png": "assets/ui-b/button-primary--pressed.png",
+      "size": [
+        320,
+        64
+      ],
+      "safe": [
+        24,
+        16,
+        272,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "단일 주요 행동",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-primary--disabled",
+      "family": "button-primary",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-primary--disabled.svg",
+      "png": "assets/ui-b/button-primary--disabled.png",
+      "size": [
+        320,
+        64
+      ],
+      "safe": [
+        24,
+        16,
+        272,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "단일 주요 행동",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-primary--selected",
+      "family": "button-primary",
+      "state": "selected",
+      "svg": "assets/ui-b/button-primary--selected.svg",
+      "png": "assets/ui-b/button-primary--selected.png",
+      "size": [
+        320,
+        64
+      ],
+      "safe": [
+        24,
+        16,
+        272,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "단일 주요 행동",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-primary-stacked--default",
+      "family": "button-primary-stacked",
+      "state": "default",
+      "svg": "assets/ui-b/button-primary-stacked--default.svg",
+      "png": "assets/ui-b/button-primary-stacked--default.png",
+      "size": [
+        360,
+        72
+      ],
+      "safe": [
+        28,
+        12,
+        304,
+        44
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "당직 시작: 제목+기존 영문 보조 문구",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-primary-stacked--pressed",
+      "family": "button-primary-stacked",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-primary-stacked--pressed.svg",
+      "png": "assets/ui-b/button-primary-stacked--pressed.png",
+      "size": [
+        360,
+        72
+      ],
+      "safe": [
+        28,
+        12,
+        304,
+        44
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "당직 시작: 제목+기존 영문 보조 문구",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-primary-stacked--disabled",
+      "family": "button-primary-stacked",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-primary-stacked--disabled.svg",
+      "png": "assets/ui-b/button-primary-stacked--disabled.png",
+      "size": [
+        360,
+        72
+      ],
+      "safe": [
+        28,
+        12,
+        304,
+        44
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "당직 시작: 제목+기존 영문 보조 문구",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-primary-stacked--selected",
+      "family": "button-primary-stacked",
+      "state": "selected",
+      "svg": "assets/ui-b/button-primary-stacked--selected.svg",
+      "png": "assets/ui-b/button-primary-stacked--selected.png",
+      "size": [
+        360,
+        72
+      ],
+      "safe": [
+        28,
+        12,
+        304,
+        44
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "당직 시작: 제목+기존 영문 보조 문구",
+      "textColor": "#2c1730",
+      "slice": 12
+    },
+    {
+      "id": "button-secondary--default",
+      "family": "button-secondary",
+      "state": "default",
+      "svg": "assets/ui-b/button-secondary--default.svg",
+      "png": "assets/ui-b/button-secondary--default.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "장비·돌아가기·닫기",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-secondary--pressed",
+      "family": "button-secondary",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-secondary--pressed.svg",
+      "png": "assets/ui-b/button-secondary--pressed.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "장비·돌아가기·닫기",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-secondary--disabled",
+      "family": "button-secondary",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-secondary--disabled.svg",
+      "png": "assets/ui-b/button-secondary--disabled.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "장비·돌아가기·닫기",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-secondary--selected",
+      "family": "button-secondary",
+      "state": "selected",
+      "svg": "assets/ui-b/button-secondary--selected.svg",
+      "png": "assets/ui-b/button-secondary--selected.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "장비·돌아가기·닫기",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-neutral--default",
+      "family": "button-neutral",
+      "state": "default",
+      "svg": "assets/ui-b/button-neutral--default.svg",
+      "png": "assets/ui-b/button-neutral--default.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "취소·이전",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-neutral--pressed",
+      "family": "button-neutral",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-neutral--pressed.svg",
+      "png": "assets/ui-b/button-neutral--pressed.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "취소·이전",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-neutral--disabled",
+      "family": "button-neutral",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-neutral--disabled.svg",
+      "png": "assets/ui-b/button-neutral--disabled.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "취소·이전",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-neutral--selected",
+      "family": "button-neutral",
+      "state": "selected",
+      "svg": "assets/ui-b/button-neutral--selected.svg",
+      "png": "assets/ui-b/button-neutral--selected.png",
+      "size": [
+        200,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        160,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "취소·이전",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-danger--default",
+      "family": "button-danger",
+      "state": "default",
+      "svg": "assets/ui-b/button-danger--default.svg",
+      "png": "assets/ui-b/button-danger--default.png",
+      "size": [
+        240,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        200,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "초기화·종료하고 로비로",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-danger--pressed",
+      "family": "button-danger",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-danger--pressed.svg",
+      "png": "assets/ui-b/button-danger--pressed.png",
+      "size": [
+        240,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        200,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "초기화·종료하고 로비로",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-danger--disabled",
+      "family": "button-danger",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-danger--disabled.svg",
+      "png": "assets/ui-b/button-danger--disabled.png",
+      "size": [
+        240,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        200,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "초기화·종료하고 로비로",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-danger--selected",
+      "family": "button-danger",
+      "state": "selected",
+      "svg": "assets/ui-b/button-danger--selected.svg",
+      "png": "assets/ui-b/button-danger--selected.png",
+      "size": [
+        240,
+        52
+      ],
+      "safe": [
+        20,
+        12,
+        200,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "초기화·종료하고 로비로",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase--default",
+      "family": "button-purchase",
+      "state": "default",
+      "svg": "assets/ui-b/button-purchase--default.svg",
+      "png": "assets/ui-b/button-purchase--default.png",
+      "size": [
+        152,
+        52
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "짧은 가격·장착",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase--pressed",
+      "family": "button-purchase",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-purchase--pressed.svg",
+      "png": "assets/ui-b/button-purchase--pressed.png",
+      "size": [
+        152,
+        52
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "짧은 가격·장착",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase--disabled",
+      "family": "button-purchase",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-purchase--disabled.svg",
+      "png": "assets/ui-b/button-purchase--disabled.png",
+      "size": [
+        152,
+        52
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "짧은 가격·장착",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase--selected",
+      "family": "button-purchase",
+      "state": "selected",
+      "svg": "assets/ui-b/button-purchase--selected.svg",
+      "png": "assets/ui-b/button-purchase--selected.png",
+      "size": [
+        152,
+        52
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "짧은 가격·장착",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase-stacked--default",
+      "family": "button-purchase-stacked",
+      "state": "default",
+      "svg": "assets/ui-b/button-purchase-stacked--default.svg",
+      "png": "assets/ui-b/button-purchase-stacked--default.png",
+      "size": [
+        152,
+        56
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        30
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "긴 가격·영구 고용; 모바일 상점 전용",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase-stacked--pressed",
+      "family": "button-purchase-stacked",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-purchase-stacked--pressed.svg",
+      "png": "assets/ui-b/button-purchase-stacked--pressed.png",
+      "size": [
+        152,
+        56
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        30
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "긴 가격·영구 고용; 모바일 상점 전용",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase-stacked--disabled",
+      "family": "button-purchase-stacked",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-purchase-stacked--disabled.svg",
+      "png": "assets/ui-b/button-purchase-stacked--disabled.png",
+      "size": [
+        152,
+        56
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        30
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "긴 가격·영구 고용; 모바일 상점 전용",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-purchase-stacked--selected",
+      "family": "button-purchase-stacked",
+      "state": "selected",
+      "svg": "assets/ui-b/button-purchase-stacked--selected.svg",
+      "png": "assets/ui-b/button-purchase-stacked--selected.png",
+      "size": [
+        152,
+        56
+      ],
+      "safe": [
+        16,
+        12,
+        120,
+        30
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "긴 가격·영구 고용; 모바일 상점 전용",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-skill--default",
+      "family": "button-skill",
+      "state": "default",
+      "svg": "assets/ui-b/button-skill--default.svg",
+      "png": "assets/ui-b/button-skill--default.png",
+      "size": [
+        280,
+        56
+      ],
+      "safe": [
+        20,
+        12,
+        240,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "직원 선택·스킬·재사용 시간",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-skill--pressed",
+      "family": "button-skill",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-skill--pressed.svg",
+      "png": "assets/ui-b/button-skill--pressed.png",
+      "size": [
+        280,
+        56
+      ],
+      "safe": [
+        20,
+        12,
+        240,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "직원 선택·스킬·재사용 시간",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-skill--disabled",
+      "family": "button-skill",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-skill--disabled.svg",
+      "png": "assets/ui-b/button-skill--disabled.png",
+      "size": [
+        280,
+        56
+      ],
+      "safe": [
+        20,
+        12,
+        240,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "직원 선택·스킬·재사용 시간",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-skill--selected",
+      "family": "button-skill",
+      "state": "selected",
+      "svg": "assets/ui-b/button-skill--selected.svg",
+      "png": "assets/ui-b/button-skill--selected.png",
+      "size": [
+        280,
+        56
+      ],
+      "safe": [
+        20,
+        12,
+        240,
+        28
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "직원 선택·스킬·재사용 시간",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-icon--default",
+      "family": "button-icon",
+      "state": "default",
+      "svg": "assets/ui-b/button-icon--default.svg",
+      "png": "assets/ui-b/button-icon--default.png",
+      "size": [
+        48,
+        48
+      ],
+      "safe": [
+        12,
+        10,
+        24,
+        24
+      ],
+      "maxLines": 0,
+      "multilineForbidden": true,
+      "role": "메뉴 ☰·정지·닫기·배속; 아이콘 또는 짧은 기호만",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-icon--pressed",
+      "family": "button-icon",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-icon--pressed.svg",
+      "png": "assets/ui-b/button-icon--pressed.png",
+      "size": [
+        48,
+        48
+      ],
+      "safe": [
+        12,
+        10,
+        24,
+        24
+      ],
+      "maxLines": 0,
+      "multilineForbidden": true,
+      "role": "메뉴 ☰·정지·닫기·배속; 아이콘 또는 짧은 기호만",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-icon--disabled",
+      "family": "button-icon",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-icon--disabled.svg",
+      "png": "assets/ui-b/button-icon--disabled.png",
+      "size": [
+        48,
+        48
+      ],
+      "safe": [
+        12,
+        10,
+        24,
+        24
+      ],
+      "maxLines": 0,
+      "multilineForbidden": true,
+      "role": "메뉴 ☰·정지·닫기·배속; 아이콘 또는 짧은 기호만",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-icon--selected",
+      "family": "button-icon",
+      "state": "selected",
+      "svg": "assets/ui-b/button-icon--selected.svg",
+      "png": "assets/ui-b/button-icon--selected.png",
+      "size": [
+        48,
+        48
+      ],
+      "safe": [
+        12,
+        10,
+        24,
+        24
+      ],
+      "maxLines": 0,
+      "multilineForbidden": true,
+      "role": "메뉴 ☰·정지·닫기·배속; 아이콘 또는 짧은 기호만",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-shortcut--default",
+      "family": "button-shortcut",
+      "state": "default",
+      "svg": "assets/ui-b/button-shortcut--default.svg",
+      "png": "assets/ui-b/button-shortcut--default.png",
+      "size": [
+        64,
+        72
+      ],
+      "safe": [
+        10,
+        42,
+        44,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "이야기·근무 안내; 위 아이콘 영역 20,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-shortcut--pressed",
+      "family": "button-shortcut",
+      "state": "pressed",
+      "svg": "assets/ui-b/button-shortcut--pressed.svg",
+      "png": "assets/ui-b/button-shortcut--pressed.png",
+      "size": [
+        64,
+        72
+      ],
+      "safe": [
+        10,
+        42,
+        44,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "이야기·근무 안내; 위 아이콘 영역 20,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "button-shortcut--disabled",
+      "family": "button-shortcut",
+      "state": "disabled",
+      "svg": "assets/ui-b/button-shortcut--disabled.svg",
+      "png": "assets/ui-b/button-shortcut--disabled.png",
+      "size": [
+        64,
+        72
+      ],
+      "safe": [
+        10,
+        42,
+        44,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "이야기·근무 안내; 위 아이콘 영역 20,10,24,24",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "button-shortcut--selected",
+      "family": "button-shortcut",
+      "state": "selected",
+      "svg": "assets/ui-b/button-shortcut--selected.svg",
+      "png": "assets/ui-b/button-shortcut--selected.png",
+      "size": [
+        64,
+        72
+      ],
+      "safe": [
+        10,
+        42,
+        44,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "이야기·근무 안내; 위 아이콘 영역 20,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-nav--default",
+      "family": "tab-nav",
+      "state": "default",
+      "svg": "assets/ui-b/tab-nav--default.svg",
+      "png": "assets/ui-b/tab-nav--default.png",
+      "size": [
+        72,
+        64
+      ],
+      "safe": [
+        6,
+        40,
+        60,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "하단 GNB; 위 아이콘 영역 24,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-nav--pressed",
+      "family": "tab-nav",
+      "state": "pressed",
+      "svg": "assets/ui-b/tab-nav--pressed.svg",
+      "png": "assets/ui-b/tab-nav--pressed.png",
+      "size": [
+        72,
+        64
+      ],
+      "safe": [
+        6,
+        40,
+        60,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "하단 GNB; 위 아이콘 영역 24,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-nav--disabled",
+      "family": "tab-nav",
+      "state": "disabled",
+      "svg": "assets/ui-b/tab-nav--disabled.svg",
+      "png": "assets/ui-b/tab-nav--disabled.png",
+      "size": [
+        72,
+        64
+      ],
+      "safe": [
+        6,
+        40,
+        60,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "하단 GNB; 위 아이콘 영역 24,10,24,24",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "tab-nav--selected",
+      "family": "tab-nav",
+      "state": "selected",
+      "svg": "assets/ui-b/tab-nav--selected.svg",
+      "png": "assets/ui-b/tab-nav--selected.png",
+      "size": [
+        72,
+        64
+      ],
+      "safe": [
+        6,
+        40,
+        60,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "하단 GNB; 위 아이콘 영역 24,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-category--default",
+      "family": "tab-category",
+      "state": "default",
+      "svg": "assets/ui-b/tab-category--default.svg",
+      "png": "assets/ui-b/tab-category--default.png",
+      "size": [
+        160,
+        48
+      ],
+      "safe": [
+        16,
+        12,
+        128,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "소모 아이템·특수 용병",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-category--pressed",
+      "family": "tab-category",
+      "state": "pressed",
+      "svg": "assets/ui-b/tab-category--pressed.svg",
+      "png": "assets/ui-b/tab-category--pressed.png",
+      "size": [
+        160,
+        48
+      ],
+      "safe": [
+        16,
+        12,
+        128,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "소모 아이템·특수 용병",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "tab-category--disabled",
+      "family": "tab-category",
+      "state": "disabled",
+      "svg": "assets/ui-b/tab-category--disabled.svg",
+      "png": "assets/ui-b/tab-category--disabled.png",
+      "size": [
+        160,
+        48
+      ],
+      "safe": [
+        16,
+        12,
+        128,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "소모 아이템·특수 용병",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "tab-category--selected",
+      "family": "tab-category",
+      "state": "selected",
+      "svg": "assets/ui-b/tab-category--selected.svg",
+      "png": "assets/ui-b/tab-category--selected.png",
+      "size": [
+        160,
+        48
+      ],
+      "safe": [
+        16,
+        12,
+        128,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "소모 아이템·특수 용병",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-mode--default",
+      "family": "panel-mode",
+      "state": "default",
+      "svg": "assets/ui-b/panel-mode--default.svg",
+      "png": "assets/ui-b/panel-mode--default.png",
+      "size": [
+        360,
+        84
+      ],
+      "safe": [
+        72,
+        16,
+        212,
+        50
+      ],
+      "maxLines": 3,
+      "multilineForbidden": false,
+      "role": "오늘의 근무·제목·싱글 플레이; 우측 SOLO 별도",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-support--default",
+      "family": "panel-support",
+      "state": "default",
+      "svg": "assets/ui-b/panel-support--default.svg",
+      "png": "assets/ui-b/panel-support--default.png",
+      "size": [
+        360,
+        64
+      ],
+      "safe": [
+        20,
+        14,
+        320,
+        36
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "미장착 안내 또는 용병 이름·설명",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-card--default",
+      "family": "panel-card",
+      "state": "default",
+      "svg": "assets/ui-b/panel-card--default.svg",
+      "png": "assets/ui-b/panel-card--default.png",
+      "size": [
+        360,
+        136
+      ],
+      "safe": [
+        96,
+        18,
+        244,
+        100
+      ],
+      "maxLines": 5,
+      "multilineForbidden": false,
+      "role": "상점·직원 카드; 왼쪽 일러스트 20,20,60,76",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-sheet--default",
+      "family": "panel-sheet",
+      "state": "default",
+      "svg": "assets/ui-b/panel-sheet--default.svg",
+      "png": "assets/ui-b/panel-sheet--default.png",
+      "size": [
+        360,
+        480
+      ],
+      "safe": [
+        24,
+        28,
+        312,
+        424
+      ],
+      "maxLines": 18,
+      "multilineForbidden": false,
+      "role": "장비·도움말·메뉴; 내부 스크롤 가능",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-dialog--default",
+      "family": "panel-dialog",
+      "state": "default",
+      "svg": "assets/ui-b/panel-dialog--default.svg",
+      "png": "assets/ui-b/panel-dialog--default.png",
+      "size": [
+        336,
+        240
+      ],
+      "safe": [
+        24,
+        24,
+        288,
+        188
+      ],
+      "maxLines": 8,
+      "multilineForbidden": false,
+      "role": "퇴장 확인 등 모달",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-dialogue--default",
+      "family": "panel-dialogue",
+      "state": "default",
+      "svg": "assets/ui-b/panel-dialogue--default.svg",
+      "png": "assets/ui-b/panel-dialogue--default.png",
+      "size": [
+        360,
+        80
+      ],
+      "safe": [
+        80,
+        14,
+        260,
+        48
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "고비 알림; 왼쪽 초상 16,12,52,52",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "panel-result--default",
+      "family": "panel-result",
+      "state": "default",
+      "svg": "assets/ui-b/panel-result--default.svg",
+      "png": "assets/ui-b/panel-result--default.png",
+      "size": [
+        360,
+        300
+      ],
+      "safe": [
+        24,
+        24,
+        312,
+        248
+      ],
+      "maxLines": 10,
+      "multilineForbidden": false,
+      "role": "결과·보상 내역",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "hud-profile--default",
+      "family": "hud-profile",
+      "state": "default",
+      "svg": "assets/ui-b/hud-profile--default.svg",
+      "png": "assets/ui-b/hud-profile--default.png",
+      "size": [
+        200,
+        48
+      ],
+      "safe": [
+        52,
+        8,
+        132,
+        30
+      ],
+      "maxLines": 2,
+      "multilineForbidden": false,
+      "role": "프로필 이름·보조 문구; 초상 10,8,32,32",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "hud-currency--default",
+      "family": "hud-currency",
+      "state": "default",
+      "svg": "assets/ui-b/hud-currency--default.svg",
+      "png": "assets/ui-b/hud-currency--default.png",
+      "size": [
+        120,
+        44
+      ],
+      "safe": [
+        40,
+        10,
+        64,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "코인 수치; 아이콘 12,10,24,24",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "hud-wave--default",
+      "family": "hud-wave",
+      "state": "default",
+      "svg": "assets/ui-b/hud-wave--default.svg",
+      "png": "assets/ui-b/hud-wave--default.png",
+      "size": [
+        120,
+        44
+      ],
+      "safe": [
+        16,
+        10,
+        88,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "차수",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "hud-life--default",
+      "family": "hud-life",
+      "state": "default",
+      "svg": "assets/ui-b/hud-life--default.svg",
+      "png": "assets/ui-b/hud-life--default.png",
+      "size": [
+        120,
+        44
+      ],
+      "safe": [
+        16,
+        10,
+        88,
+        20
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "하트 세 개",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "badge-status--default",
+      "family": "badge-status",
+      "state": "default",
+      "svg": "assets/ui-b/badge-status--default.svg",
+      "png": "assets/ui-b/badge-status--default.png",
+      "size": [
+        288,
+        32
+      ],
+      "safe": [
+        16,
+        6,
+        256,
+        16
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "마왕님 휴식 중 · 당직 인원 모집",
+      "textColor": "#fff1d4",
+      "slice": 6
+    },
+    {
+      "id": "badge-mode--default",
+      "family": "badge-mode",
+      "state": "default",
+      "svg": "assets/ui-b/badge-mode--default.svg",
+      "png": "assets/ui-b/badge-mode--default.png",
+      "size": [
+        56,
+        28
+      ],
+      "safe": [
+        6,
+        6,
+        44,
+        12
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "SOLO",
+      "textColor": "#fff1d4",
+      "slice": 6
+    },
+    {
+      "id": "slot-staff--default",
+      "family": "slot-staff",
+      "state": "default",
+      "svg": "assets/ui-b/slot-staff--default.svg",
+      "png": "assets/ui-b/slot-staff--default.png",
+      "size": [
+        64,
+        76
+      ],
+      "safe": [
+        10,
+        54,
+        44,
+        12
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "등급·별; 직원 그림 10,10,44,40",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "slot-staff--pressed",
+      "family": "slot-staff",
+      "state": "pressed",
+      "svg": "assets/ui-b/slot-staff--pressed.svg",
+      "png": "assets/ui-b/slot-staff--pressed.png",
+      "size": [
+        64,
+        76
+      ],
+      "safe": [
+        10,
+        54,
+        44,
+        12
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "등급·별; 직원 그림 10,10,44,40",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "slot-staff--disabled",
+      "family": "slot-staff",
+      "state": "disabled",
+      "svg": "assets/ui-b/slot-staff--disabled.svg",
+      "png": "assets/ui-b/slot-staff--disabled.png",
+      "size": [
+        64,
+        76
+      ],
+      "safe": [
+        10,
+        54,
+        44,
+        12
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "등급·별; 직원 그림 10,10,44,40",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "slot-staff--selected",
+      "family": "slot-staff",
+      "state": "selected",
+      "svg": "assets/ui-b/slot-staff--selected.svg",
+      "png": "assets/ui-b/slot-staff--selected.png",
+      "size": [
+        64,
+        76
+      ],
+      "safe": [
+        10,
+        54,
+        44,
+        12
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "등급·별; 직원 그림 10,10,44,40",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "slot-item--default",
+      "family": "slot-item",
+      "state": "default",
+      "svg": "assets/ui-b/slot-item--default.svg",
+      "png": "assets/ui-b/slot-item--default.png",
+      "size": [
+        100,
+        76
+      ],
+      "safe": [
+        10,
+        48,
+        80,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "아이템 이름; 수량은 우측 상단 별도",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "slot-item--pressed",
+      "family": "slot-item",
+      "state": "pressed",
+      "svg": "assets/ui-b/slot-item--pressed.svg",
+      "png": "assets/ui-b/slot-item--pressed.png",
+      "size": [
+        100,
+        76
+      ],
+      "safe": [
+        10,
+        48,
+        80,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "아이템 이름; 수량은 우측 상단 별도",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "slot-item--disabled",
+      "family": "slot-item",
+      "state": "disabled",
+      "svg": "assets/ui-b/slot-item--disabled.svg",
+      "png": "assets/ui-b/slot-item--disabled.png",
+      "size": [
+        100,
+        76
+      ],
+      "safe": [
+        10,
+        48,
+        80,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "아이템 이름; 수량은 우측 상단 별도",
+      "textColor": "#ded1df",
+      "slice": 12
+    },
+    {
+      "id": "slot-item--selected",
+      "family": "slot-item",
+      "state": "selected",
+      "svg": "assets/ui-b/slot-item--selected.svg",
+      "png": "assets/ui-b/slot-item--selected.png",
+      "size": [
+        100,
+        76
+      ],
+      "safe": [
+        10,
+        48,
+        80,
+        18
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "아이템 이름; 수량은 우측 상단 별도",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "ribbon-result--default",
+      "family": "ribbon-result",
+      "state": "default",
+      "svg": "assets/ui-b/ribbon-result--default.svg",
+      "png": "assets/ui-b/ribbon-result--default.png",
+      "size": [
+        300,
+        56
+      ],
+      "safe": [
+        28,
+        14,
+        244,
+        24
+      ],
+      "maxLines": 1,
+      "multilineForbidden": true,
+      "role": "결과 제목",
+      "textColor": "#fff1d4",
+      "slice": 12
+    },
+    {
+      "id": "progress-track--default",
+      "family": "progress-track",
+      "state": "default",
+      "svg": "assets/ui-b/progress-track--default.svg",
+      "png": "assets/ui-b/progress-track--default.png",
+      "size": [
+        280,
+        16
+      ],
+      "safe": [
+        8,
+        4,
+        264,
+        8
+      ],
+      "maxLines": 0,
+      "multilineForbidden": true,
+      "role": "텍스트 없는 진행 바 배경",
+      "textColor": "#fff1d4",
+      "slice": 6
+    }
+  ],
+  "reuse": [
+    "assets/mobile/",
+    "assets/pixel/",
+    "assets/comic/",
+    "assets/staff-expansion/",
+    "assets/ui-v2/background-*.webp",
+    "assets/ui-v2/icons/"
+  ],
+  "textPolicy": "텍스트는 SVG/PNG에 포함하지 않는다. safe 좌표 내부에 별도 레이어로 배치한다."
+}

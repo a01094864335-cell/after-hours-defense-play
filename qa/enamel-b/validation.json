@@ -1,0 +1,395 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "geometryChanges": [],
+    "buttons": [
+      {
+        "id": "menu-open",
+        "text": "",
+        "rect": [
+          330,
+          10,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-icon--default.png\")"
+      },
+      {
+        "id": "lobby-story-collection",
+        "text": "📖마왕성 야간 일지 0 / 20첫 당직부터 시작 · 이후 무작위 일지 · 첫 발견 +5",
+        "rect": [
+          314.8125,
+          94.796875,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "journey-summary",
+        "text": "최고 0웨이브 돌파 · 다음 목표 5웨이브",
+        "rect": [
+          314.8125,
+          147.796875,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "training-entry",
+        "text": "훈련소 전체 직원 · 특수 용병 영구 성장직원 1 · 용병 1",
+        "rect": [
+          314.8125,
+          200.796875,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "duo-companion",
+        "text": "함께 출근할 동료지원 용병 선택 +",
+        "rect": [
+          222.296875,
+          459.5,
+          128.703125,
+          54
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "deck-open",
+        "text": "브릭토르크뽀득고비찌릿근무 5/5 · 편성\n공격 3 · 지원 2",
+        "rect": [
+          31.1875,
+          567.5,
+          327.625,
+          64
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "enter-battle",
+        "text": "당직 준비",
+        "rect": [
+          31.1875,
+          658,
+          327.625,
+          50
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-primary--default.png\")"
+      },
+      {
+        "id": "roster-open",
+        "text": "직원 도감",
+        "rect": [
+          13.984375,
+          734,
+          114,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "nav-home",
+        "text": "당직실",
+        "rect": [
+          137.984375,
+          734,
+          114.015625,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--selected.png\")"
+      },
+      {
+        "id": "shop-open",
+        "text": "상점",
+        "rect": [
+          262,
+          734,
+          114.015625,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "daily-events-open",
+        "text": "15종 보기",
+        "rect": [
+          377.1875,
+          525.5,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-secondary--default.png\")"
+      }
+    ]
+  },
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "errors": [],
+    "geometryChanges": [],
+    "buttons": [
+      {
+        "id": "menu-open",
+        "text": "",
+        "rect": [
+          260,
+          10,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-icon--default.png\")"
+      },
+      {
+        "id": "lobby-story-collection",
+        "text": "📖마왕성 야간 일지 0 / 20첫 당직부터 시작 · 이후 무작위 일지 · 첫 발견 +5",
+        "rect": [
+          260,
+          68,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "journey-summary",
+        "text": "최고 0웨이브 돌파 · 다음 목표 5웨이브",
+        "rect": [
+          260,
+          114,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "training-entry",
+        "text": "훈련소 전체 직원 · 특수 용병 영구 성장직원 1 · 용병 1",
+        "rect": [
+          260,
+          160,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "duo-companion",
+        "text": "함께 출근할 동료지원 용병 선택 +",
+        "rect": [
+          182.390625,
+          187.5,
+          105.609375,
+          54
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "deck-open",
+        "text": "브릭토르크뽀득고비찌릿근무 5/5 · 편성\n공격 3 · 지원 2",
+        "rect": [
+          25.59375,
+          295.5,
+          268.8125,
+          64
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "enter-battle",
+        "text": "당직 준비",
+        "rect": [
+          25.59375,
+          386,
+          268.8125,
+          50
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-primary--default.png\")"
+      },
+      {
+        "id": "roster-open",
+        "text": "직원 도감",
+        "rect": [
+          14,
+          458,
+          90.671875,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "nav-home",
+        "text": "당직실",
+        "rect": [
+          114.671875,
+          458,
+          90.671875,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--selected.png\")"
+      },
+      {
+        "id": "shop-open",
+        "text": "상점",
+        "rect": [
+          215.34375,
+          458,
+          90.671875,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "daily-events-open",
+        "text": "15종 보기",
+        "rect": [
+          301.59375,
+          253.5,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-secondary--default.png\")"
+      }
+    ]
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "errors": [],
+    "geometryChanges": [],
+    "buttons": [
+      {
+        "id": "menu-open",
+        "text": "",
+        "rect": [
+          370,
+          10,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-icon--default.png\")"
+      },
+      {
+        "id": "lobby-story-collection",
+        "text": "📖마왕성 야간 일지 0 / 20첫 당직부터 시작 · 이후 무작위 일지 · 첫 발견 +5",
+        "rect": [
+          351.609375,
+          105.359375,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "journey-summary",
+        "text": "최고 0웨이브 돌파 · 다음 목표 5웨이브",
+        "rect": [
+          351.609375,
+          158.359375,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "training-entry",
+        "text": "훈련소 전체 직원 · 특수 용병 영구 성장직원 1 · 용병 1",
+        "rect": [
+          351.609375,
+          211.359375,
+          44,
+          48
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-shortcut--default.png\")"
+      },
+      {
+        "id": "duo-companion",
+        "text": "함께 출근할 동료지원 용병 선택 +",
+        "rect": [
+          245.09375,
+          547.5,
+          141.90625,
+          54
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "deck-open",
+        "text": "브릭토르크뽀득고비찌릿근무 5/5 · 편성\n공격 3 · 지원 2",
+        "rect": [
+          34.390625,
+          655.5,
+          361.21875,
+          64
+        ],
+        "asset": "none"
+      },
+      {
+        "id": "enter-battle",
+        "text": "당직 준비",
+        "rect": [
+          34.390625,
+          746,
+          361.21875,
+          50
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-primary--default.png\")"
+      },
+      {
+        "id": "roster-open",
+        "text": "직원 도감",
+        "rect": [
+          14,
+          822,
+          127.328125,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "nav-home",
+        "text": "당직실",
+        "rect": [
+          151.328125,
+          822,
+          127.34375,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--selected.png\")"
+      },
+      {
+        "id": "shop-open",
+        "text": "상점",
+        "rect": [
+          288.671875,
+          822,
+          127.34375,
+          52
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/tab-nav--default.png\")"
+      },
+      {
+        "id": "daily-events-open",
+        "text": "15종 보기",
+        "rect": [
+          420.390625,
+          613.5,
+          44,
+          44
+        ],
+        "asset": "url(\"http://127.0.0.1:8766/assets/ui-b/button-secondary--default.png\")"
+      }
+    ]
+  }
+]
