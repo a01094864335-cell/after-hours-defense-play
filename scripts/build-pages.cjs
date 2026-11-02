@@ -10,6 +10,9 @@ files.add('roomy-buttons.css');
 files.add('play-design.css');
 files.add('detail-ui.css');
 files.add('ui.css');
+for(const f of ['hiring-stories.js','hiring-stories.css','assets/hiring-stories/game-data.js'])files.add(f);
+for(const dir of fs.readdirSync(path.join(root,'assets/hiring-stories'))){const p=path.join(root,'assets/hiring-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/hiring-stories/'+dir+'/'+name);}
+
 // Publish the isolated design reference without replacing the live game.
 for(const name of fs.readdirSync(path.join(root,'previews/ui-directions-20261102')))if(/\.(html|css|js|png)$/.test(name))files.add('previews/ui-directions-20261102/'+name);
 for(const name of fs.readdirSync(path.join(root,'previews/lobby-direction')))if(/\.(html|css|png)$/.test(name))files.add('previews/lobby-direction/'+name);
