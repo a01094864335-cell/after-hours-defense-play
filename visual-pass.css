@@ -4,7 +4,7 @@
  dialog button:where(:not(.staff-pass):not(.card):not([data-staff]):not([data-deck])){padding:12px 16px!important;min-height:44px!important;line-height:20px!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:anywhere!important}
  button:where(:not(:disabled):not(#deck-open):not(.duo-companion)){color:#fff1d4!important}
  :is(#enter-battle,#summon,#start,#result-again,#info-close,#guide-next,#promo-next,#pause-continue,#training-upgrade,#buy-staff-pack,.staff-action,#perk-sp,#retry-reward,.ref-recruit-actions button:last-child):not(:disabled){color:#2c1730!important}
- :is(#perk-sp,#retry-reward,.ref-recruit-actions button:last-child){--enamel:url('assets/ui-b/button-primary--default.png');--enamel-pressed:url('assets/ui-b/button-primary--pressed.png');--enamel-disabled:url('assets/ui-b/button-primary--disabled.png');--enamel-selected:url('assets/ui-b/button-primary--selected.png')}
+ :is(#perk-sp,#retry-reward,.ref-recruit-actions button:last-child){--enamel:url('assets/ui-b/button-primary--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-primary--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-primary--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-primary--selected.png?v=clean-20261102')}
  /* Remove native auto-focus outlines on scrollports, retain keyboard focus. */
  :is(.panel-scroll-body,.training-body,#roster-overview):focus:not(:focus-visible){outline:none!important}
  :is(.panel-scroll-body,.training-body,#roster-overview):focus-visible{outline:2px solid #9bdbc1!important;outline-offset:-3px!important}
@@ -107,6 +107,6 @@
 }
 @layer enamel {
  /* Long archive navigation uses the explicitly two-line component. */
- #shop-to-roster{--enamel:url('assets/ui-b/button-purchase-stacked--default.png');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png');display:block!important;min-height:64px!important;line-height:20px!important;text-align:center!important}
+ #shop-to-roster{--enamel:url('assets/ui-b/button-purchase-stacked--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png?v=clean-20261102');display:block!important;min-height:64px!important;line-height:20px!important;text-align:center!important}
  #shop-to-roster img{display:inline-block!important;vertical-align:middle!important;width:16px!important;height:16px!important;margin:0 0 0 4px!important}
 }

@@ -6,6 +6,7 @@ const old=JSON.parse(fs.readFileSync(path.join(root,'release-manifest.json'))),f
 for(const f of ['dialog-layout.js','dialog-layout.css','index.html','game-audio.js','game-sfx.js','assets/audio/lobby-night.wav','assets/audio/night-shift.wav','assets/audio/commander.wav','intro-cinematic.css','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
 files.add('enamel-ui.css');
 files.add('visual-pass.css');
+files.add('roomy-buttons.css');
 files.add('assets/ui-b/gallery.html');
 files.add('assets/ui-b/manifest.json');
 for(const name of fs.readdirSync(path.join(root,'assets/ui-b')))if(name.endsWith('.png')||name.endsWith('.svg'))files.add('assets/ui-b/'+name);

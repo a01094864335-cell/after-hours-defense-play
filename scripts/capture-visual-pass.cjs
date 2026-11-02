@@ -1,5 +1,5 @@
 const{chromium}=require('playwright');const fs=require('fs');
-const root=require('path').resolve(__dirname,'../qa/visual-pass'),phase=process.env.AUDIT_PHASE||'after';
+const root=process.env.UI_QA_DIR||require('path').resolve(__dirname,'../qa/visual-pass'),phase=process.env.AUDIT_PHASE||'after';
 (async()=>{const b=await chromium.launch({executablePath:process.env.UI_CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});let all=[];
 for(const[w,h]of[[390,844],[320,568],[430,932]]){const dir=`${root}/${phase}/${w}`;fs.mkdirSync(dir,{recursive:true});const p=await b.newPage({viewport:{width:w,height:h},deviceScaleFactor:1,isMobile:true,hasTouch:true,reducedMotion:'reduce'});let errors=[];p.on('pageerror',e=>errors.push(e.message));await p.goto((process.env.UI_BASE_URL||'http://127.0.0.1:8766/')+'?gm=1&coins=999999');await p.waitForTimeout(350);if(phase==='before')await p.evaluate(()=>{const link=document.querySelector('link[href^="visual-pass.css"]');if(link)link.disabled=true});await p.evaluate(()=>{document.body.classList.remove('gm-test-active');document.querySelector('#gm-test-panel').style.display='none';saveChange(d=>{d.tutorialComplete=true;d.equipped='rescue';});restartTo('lobby');});let counter=0;
 const close=()=>p.evaluate(()=>{for(const d of document.querySelectorAll('dialog[open]'))d.close();});

@@ -75,3 +75,7 @@ index.html이 기존 스타일 다음에 enamel-ui.css를 로드한다. 공개 �
 ## 검증과 배포
 
 편집 원본은 assets/ui-b/*.svg이며 대응 PNG는 2배 출력이다. 전체 검증은 `node --test tests/*.test.cjs`, 배포 빌드는 `node scripts/build-pages.cjs /tmp/game-pages`다. Pages artifact에 모든 UI 애셋이 포함되는지 tests/enamel-release.test.cjs가 검증한다.
+
+## 실제 표시 여백 수정
+
+2026-11-02 버튼 크기·여백을 확대한 최신 표시 규격은 [roomy-buttons](../../docs/roomy-buttons.md)를 따른다. 원본 크기와 실제 버튼 크기를 혼동하지 않는다. 71개 원본의 검정 외곽 도형을 제거하고 PNG를 재출력했다.
