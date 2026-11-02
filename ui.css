@@ -2684,9 +2684,7 @@ button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offs
 #guide-text { white-space: pre-line; }
 #tutorial-strip { line-height: 1.55; }
 
-#battle[data-tutorial="true"] #approved-battle-support,
-#battle[data-teach-skill="hidden"] .skill-row,
-#battle[data-teach-items="hidden"] .item-buttons { display: none; }
+
 
 /* Tutorial dialogue sits over the unchanged battlefield, like an RPG conversation. */
 #battle { position:relative; isolation:isolate; }
@@ -2705,8 +2703,8 @@ button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offs
 #tutorial-gobi[data-compact="true"] #coach-copy { margin:0; font-size:11px; line-height:1.45; }
 body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 #battle:has(#tutorial-gobi:not([hidden])) #boss-warning { display:none!important; }
-#battle[data-tutorial="true"] .battle-notice { display:none; }
-#battle[data-tutorial-preparing="true"] #summon { font-size:clamp(12px,3.3vw,17px); }
+
+
 @media(max-height:650px) { #tutorial-gobi>div { padding:12px 14px; max-height:55%; } #coach-copy { font-size:12px; line-height:1.5; margin-bottom:10px; } #coach-title { font-size:13px; } #tutorial-gobi>:is(img,canvas) { height:min(38dvh,230px)!important; } }
 /* Current objective stays above the battlefield, independent of dialogue. */
 #battle[data-tutorial="true"] #tutorial-strip {

@@ -37,7 +37,7 @@ window.TutorialCoach=(()=>{
    else if(compact){compact=false;dialogue.hidden=true;}
    uiAttr(dialogue,'data-compact',compact?'true':'false');uiProp(q('#coach-next'),'hidden',compact);
   }
-  if(preparing&&!paused){const count=preparationCount();uiText(q('#summon'),'직원 소환 · '+summonPrice()+' SP ('+count+'/5)');uiAttr(q('#summon'),'aria-label','직원 소환 '+summonPrice()+' SP · 준비 '+count+'/5');}
+  if(preparing&&!paused){const count=preparationCount();uiAttr(q('#summon'),'aria-label','직원 소환 '+summonPrice()+' SP · 준비 '+count+'/5');}
 
   uiAttr(q('#battle'),'data-tutorial',tutorialMode?'true':'false');
   uiAttr(q('#battle'),'data-teach-skill',tutorialMode&&wave<6?'hidden':'shown');
