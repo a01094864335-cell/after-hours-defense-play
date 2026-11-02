@@ -2710,3 +2710,15 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 #battle[data-tutorial-preparing="true"] #next-boss { display:none; }
 #battle[data-tutorial-preparing="true"] .board-stage { align-items:flex-start; margin-top:8px; }
 #battle[data-tutorial-preparing="true"] #summon { font-size:clamp(12px,3.3vw,17px); }
+/* Keep the preparation board and its summon controls together. */
+#battle[data-tutorial-preparing="true"] .board-stage {
+  flex:0 1 auto;
+  width:100%;
+  aspect-ratio:1;
+  min-height:0;
+}
+#battle[data-tutorial-preparing="true"] .battle-controls {
+  margin-top:8px;
+  border-bottom:1px solid var(--line);
+  border-radius:17px;
+}
