@@ -62,7 +62,9 @@ button span {
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto auto;
   overflow: hidden;
-  background: #211b2a;
+  background:
+    linear-gradient(180deg, #18122470 0%, transparent 42%, #1c172434 100%),
+    url("../../assets/ui-approved/lobby-background.webp") 55% 48% / cover no-repeat;
   isolation: isolate;
 }
 .scene {
@@ -70,10 +72,7 @@ button span {
   min-height: 0;
   overflow: hidden;
   container: scene/size;
-  background:
-    linear-gradient(180deg, #18122470 0%, transparent 42%, #1c172434 100%),
-    url("../../assets/ui-approved/lobby-background.webp") 55% 48% / cover
-      no-repeat;
+  background: transparent;
 }
 .hud {
   position: absolute;
@@ -259,7 +258,7 @@ button span {
   border: 1px solid #8d778064;
   border-bottom: 0;
   border-radius: 12px 12px 0 0;
-  background: linear-gradient(140deg, #322936, #211c2a 75%);
+  background: linear-gradient(140deg, #322936e8, #211c2ae6 75%);
   box-shadow: 0 -6px 24px #120d2055;
 }
 .duty-board::before,
@@ -433,7 +432,7 @@ button span {
   min-height: 61px;
   padding: 5px 12px max(5px, env(safe-area-inset-bottom));
   border-top: 1px solid #8f75834d;
-  background: #1c1824;
+  background: #1c1824e8;
 }
 .gnb button {
   position: relative;

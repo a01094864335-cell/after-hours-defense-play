@@ -18,6 +18,13 @@
     if (el) dock.append(el);
   }
   lobby.append(dock);
+  // The existing live support summary already tracks equipment and cooldowns.
+  // Keep that data owner; move the view beside the battle instead of duplicating it.
+  const support = q("#merc-slot"), board = q(".board-stage");
+  if (support && board) {
+    support.classList.add("approved-battle-support");
+    board.after(support);
+  }
   const upgrade = q("#upgrade-open");
   if (upgrade) {
     const icon = document.createElement("img");

@@ -2,17 +2,17 @@
    Decorative scenes never define a text box or an interactive hit target. */
 :root {
   color-scheme: dark;
-  --ink: #f5e8d6;
-  --muted: #c4b2ce;
-  --dim: #a38eaf;
-  --base: #211a2b;
-  --panel: #30253b;
-  --card: #3c2d46;
-  --line: #7f658b;
-  --line-soft: #80658b55;
-  --gold: #ffce7c;
-  --mint: #bdebd9;
-  --radius: 14px;
+  --ink: #f1e6d7;
+  --muted: #b5a4bd;
+  --dim: #9a8ba2;
+  --base: #211b2a;
+  --panel: #2c2433;
+  --card: #342b3a;
+  --line: #89718155;
+  --line-soft: #89718140;
+  --gold: #e8bb68;
+  --mint: #acd0bc;
+  --radius: 6px;
   --space: 12px;
   font:
     14px/1.5 system-ui,
@@ -58,8 +58,8 @@ button {
   min-width: 0;
   padding: 11px 14px;
   border: 1px solid var(--line);
-  border-radius: 10px;
-  background: linear-gradient(#624b70, #46334f);
+  border-radius: 6px;
+  background: #302736;
   color: var(--ink);
   font-weight: 650;
   line-height: 1.5;
@@ -70,7 +70,7 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 button:active:not(:disabled) {
-  background: #735a80;
+  background: #443849;
 }
 button:disabled {
   background: #332b3d;
@@ -170,7 +170,7 @@ select {
   max-width: 100%;
   min-width: 0;
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: 6px;
   background: #241c30;
   padding: 11px 12px;
   line-height: 1.5;
@@ -209,7 +209,7 @@ fieldset {
   margin: 0;
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
 }
 legend {
   padding: 0 5px;
@@ -228,9 +228,9 @@ legend {
 #leave-cancel,
 #save-restore,
 #pause-continue {
-  background: linear-gradient(#ffdb91, #ffba55);
-  border-color: #ffe1a5;
-  color: #4d3121;
+  background: linear-gradient(#f0cc86, #d6a24f);
+  border-color: #e8c480;
+  color: #352512;
   font-weight: 800;
 }
 :is(
@@ -356,7 +356,7 @@ legend {
   z-index: 20;
   background: #593744e8;
   border: 1px solid #b68a97;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 10px;
   font-size: 12px;
 }
@@ -366,7 +366,9 @@ legend {
 #lobby {
   display: grid;
   grid-template-rows: minmax(0, 1fr) auto;
-  background: #271c31;
+  background:
+    linear-gradient(180deg, #18122470 0%, transparent 42%, #1c172434 100%),
+    url("assets/ui-approved/lobby-background.webp") 55% 48% / cover no-repeat;
 }
 .live-lobby-scroll,
 .lobby-bottom,
@@ -378,8 +380,7 @@ legend {
   position: relative;
   min-height: 0;
   container: lobby-art / size;
-  background: url("assets/ui-approved/lobby-background.webp") center 54% / cover
-    no-repeat;
+  background: transparent;
   overflow: hidden;
 }
 .lobby-shortcuts,
@@ -393,12 +394,11 @@ legend {
 }
 .lobby-gobi {
   position: absolute;
-  left: 26px;
-  bottom: 74px;
-  width: auto;
-  height: calc(100cqh - 169px - 41.05cqw);
-  max-height: 320px;
-  max-width: 72%;
+  left: 12px;
+  bottom: 12px;
+  width: min(76cqw, 300px);
+  height: min(calc(100cqh - 200px), 310px);
+  max-width: 76%;
   object-fit: contain;
   object-position: left bottom;
   pointer-events: none;
@@ -407,7 +407,7 @@ legend {
   position: absolute;
   top: 68px;
   left: 18px;
-  width: 52%;
+  width: 148px;
   pointer-events: none;
 }
 .duo-logo-float {
@@ -430,7 +430,7 @@ legend {
 .duo-shortcuts {
   position: absolute;
   right: 14px;
-  top: 98px;
+  top: 84px;
   display: grid;
   gap: 10px;
   width: 56px;
@@ -440,8 +440,8 @@ legend {
   min-height: 62px;
   padding: 7px 4px;
   border-color: #9b7ea4;
-  border-radius: 12px;
-  background: linear-gradient(#5d4668, #382b44);
+  border-radius: 6px;
+  background: linear-gradient(#423144ed, #241d2deb);
 }
 .duo-shortcuts button > :not(.approved-shortcut-face) {
   display: none;
@@ -493,8 +493,8 @@ legend {
   padding: 0 12px;
   border: 1px solid var(--line);
   border-bottom: 0;
-  border-radius: 18px 18px 0 0;
-  background: linear-gradient(#392b42, #251d31);
+  border-radius: 7px 7px 0 0;
+  background: linear-gradient(#392b42e8, #251d31e6);
   box-shadow: 0 -4px 18px #140d2444;
 }
 #daily-option {
@@ -541,7 +541,7 @@ legend {
 }
 #deck-open {
   display: grid;
-  grid-template-columns: 78px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   width: 100%;
   padding: 8px 4px;
   gap: 8px;
@@ -552,6 +552,10 @@ legend {
   text-align: left;
 }
 #deck-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   grid-column: 1;
   grid-row: 1;
   font-size: 9px;
@@ -568,8 +572,8 @@ legend {
   margin-bottom: 3px;
 }
 #deck-summary {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 5px;
@@ -581,12 +585,13 @@ legend {
   min-width: 0;
 }
 .live-staff-token :is(img, canvas) {
-  width: 34px;
-  height: 34px;
+  width: 100%;
+  height: 43px;
+  padding: 3px;
   object-fit: contain;
-  border: 1px solid #977b9c;
+  border: 1px solid var(--line-soft);
   border-radius: 7px;
-  background: #503c59;
+  background: #302736;
 }
 .live-staff-token small {
   font-size: 9px;
@@ -708,8 +713,8 @@ legend {
   gap: 8px;
   padding: 6px 10px;
   border: 1px solid var(--line);
-  border-radius: 10px;
-  background: #35273f;
+  border-radius: 6px;
+  background: linear-gradient(#211b2ae8, #211b2a60);
   min-height: 36px;
 }
 .wave-pill small {
@@ -785,7 +790,7 @@ legend {
   gap: 3px;
   padding: 6px;
   border: 1px solid #609c98;
-  border-radius: 10px;
+  border-radius: 6px;
   background: linear-gradient(#25585c, #193f46);
   color: #c6f4e6;
   font-size: 11px;
@@ -818,7 +823,7 @@ legend {
   grid-template-columns: minmax(0, 1fr) 38px;
   align-items: stretch;
   border: 1px solid var(--line);
-  border-radius: 10px;
+  border-radius: 6px;
   background: #443250;
   overflow: hidden;
 }
@@ -891,7 +896,7 @@ legend {
   width: 100%;
   padding: 22px;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 6px;
   background: linear-gradient(#49354f, #2a2036);
   text-align: center;
 }
@@ -915,7 +920,7 @@ legend {
   gap: 10px;
   padding: 12px;
   border: 1px solid #d29ba4;
-  border-radius: 12px;
+  border-radius: 6px;
   background: linear-gradient(110deg, #69414b, #3e2c42);
   pointer-events: none;
 }
@@ -941,7 +946,7 @@ dialog {
   margin: auto;
   padding: var(--dialog-pad);
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 6px;
   background: linear-gradient(150deg, #3b2c45, #251d31 70%);
   color: var(--ink);
   box-shadow: 0 16px 70px #100b2199;
@@ -1014,7 +1019,7 @@ dialog p {
   min-height: 44px;
   padding: 10px;
   font-size: 0;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 :is(.sheet-head, .training-header, .ui-dialog-header) > button img {
   width: 21px;
@@ -1036,7 +1041,7 @@ dialog p {
   gap: 6px;
   padding: 5px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #241c30;
 }
 :is(.archive-tabs, .shop-tabs, .training-tabs) button {
@@ -1049,8 +1054,8 @@ dialog p {
 }
 :is(.archive-tabs, .shop-tabs, .training-tabs)
   :is(.active, [aria-pressed="true"], [aria-selected="true"]) {
-  border-color: #ae8db6;
-  background: linear-gradient(#755888, #523d62);
+  border-color: #e8bb68;
+  background: #e8bb6812;
   color: #ffe3ac;
 }
 :is(.shop-wallet, #equipment-balance, #story-progress) {
@@ -1060,8 +1065,8 @@ dialog p {
   gap: 8px;
   padding: 12px 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
-  background: #3a2c44;
+  border-radius: 6px;
+  background: #302736;
   font-size: 12px;
 }
 .shop-wallet > span {
@@ -1092,7 +1097,7 @@ dialog p {
   height: 82px;
   flex: none;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: url("assets/ui-approved/lobby-background.webp") center 72% / cover
     no-repeat;
 }
@@ -1101,7 +1106,7 @@ dialog p {
 .shop-row {
   padding: 16px;
   border: 1px solid var(--line-soft);
-  border-radius: 14px;
+  border-radius: 6px;
   background: linear-gradient(130deg, #48344f88, #30243b);
 }
 .recruit-shop {
@@ -1232,7 +1237,7 @@ dialog p {
 #staff-deck {
   padding: 12px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #33263e;
 }
 #staff-deck > b {
@@ -1305,7 +1310,7 @@ dialog p {
   width: 56px;
   height: 62px;
   border: 1px solid #9a7da466;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #513d59;
 }
 .pass-portrait :is(img, canvas) {
@@ -1390,7 +1395,7 @@ dialog p {
   gap: 4px 14px;
   padding: 16px;
   border: 1px solid var(--line-soft);
-  border-radius: 14px;
+  border-radius: 6px;
   background:
     radial-gradient(ellipse at 0 0, #795a7866, transparent 80%), #382a43;
 }
@@ -1436,7 +1441,7 @@ dialog p {
 .live-training-details {
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #36283f;
 }
 .dossier-section h4 {
@@ -1535,7 +1540,7 @@ dialog p {
 }
 .training-progress {
   height: 7px;
-  background: #211a2b;
+  background: #211b2a;
   border-radius: 7px;
   overflow: hidden;
 }
@@ -1688,7 +1693,7 @@ dialog p {
   gap: 8px;
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #382a42;
 }
 #deck-presets span {
@@ -1716,7 +1721,7 @@ dialog p {
 #run-history-list li {
   padding: 12px;
   border: 1px solid var(--line-soft);
-  border-radius: 10px;
+  border-radius: 6px;
   background: #382a42;
   margin-bottom: 8px;
 }
@@ -1759,7 +1764,7 @@ dialog p {
   place-items: center;
   width: 62px;
   height: 80px;
-  border-radius: 8px;
+  border-radius: 6px;
   background: #251b31;
   overflow: hidden;
 }
@@ -1796,7 +1801,7 @@ dialog p {
 #daily-events-list > article {
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #382a42;
 }
 #daily-events-list h3 {
@@ -1859,7 +1864,7 @@ dialog p {
   gap: 10px;
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #36283f;
 }
 .ref-guide-step h3 {
@@ -1878,7 +1883,7 @@ dialog p {
 .board-access-list {
   padding: 14px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
+  border-radius: 6px;
   background: #32263d;
 }
 .board-access-grid {
@@ -1996,7 +2001,7 @@ dialog p {
 #recruit-result .panel-scroll-body {
   text-align: center;
   background: radial-gradient(ellipse at 50% 20%, #76516c55, transparent 70%);
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 12px;
 }
 .recruit-reveal .panel-scroll-body > :is(img, canvas) {
@@ -2028,7 +2033,7 @@ dialog p {
   padding-top: 12px;
   border-top: 1px solid var(--line-soft);
 }
-/* Story art is an image region, followed by a separate dialogue region. */
+/* Full-screen story illustration with a readable bottom dim. */
 #promo {
   width: min(480px, 100%);
   max-width: 100%;
@@ -2040,6 +2045,8 @@ dialog p {
   background: #241b30;
 }
 .comic-head {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2047,7 +2054,7 @@ dialog p {
   padding: 10px 14px;
   min-height: 64px;
   border-bottom: 1px solid var(--line-soft);
-  background: #35273f;
+  background: linear-gradient(#211b2ae8, #211b2a60);
 }
 .comic-head > span {
   min-width: 0;
@@ -2062,8 +2069,8 @@ dialog p {
   min-width: 86px;
 }
 .comic-stage {
-  position: relative;
-  flex: 1;
+  position: absolute;
+  inset: 0;
   min-height: 100px;
   overflow: hidden;
   background: #1f172b;
@@ -2072,18 +2079,21 @@ dialog p {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .comic-chapter {
   display: none;
 }
 .comic-bottom {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
   display: grid;
   gap: 10px;
   min-height: 0;
   max-height: 52%;
   padding: 12px;
-  background: #2b2037;
+  background: linear-gradient(transparent, #211b2aeb 16%, #211b2a);
 }
 .comic-copy {
   min-height: 0;
@@ -2091,8 +2101,9 @@ dialog p {
   max-height: 27dvh;
   padding: 12px;
   border: 1px solid var(--line-soft);
-  border-radius: 12px;
-  background: #33263e;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
 }
 .live-story-meta {
   display: grid;
@@ -2161,7 +2172,7 @@ dialog p {
   padding: 10px;
   background: #251b32e8;
   border: 1px solid var(--line);
-  border-radius: 9px;
+  border-radius: 6px;
   font-size: 12px;
   z-index: 3;
 }
@@ -2203,7 +2214,7 @@ dialog p {
   display: block;
   padding: 8px 12px;
   border: 1px solid #aa8a9566;
-  border-radius: 9px;
+  border-radius: 6px;
   background: #594250;
   color: #f4ddb1;
   font-size: 12px;
@@ -2214,7 +2225,7 @@ dialog p {
 #run-analysis {
   padding: 16px;
   border: 1px solid var(--line-soft);
-  border-radius: 14px;
+  border-radius: 6px;
   background: #382a42;
 }
 #live-result-reward > * {
@@ -2311,7 +2322,7 @@ dialog p {
   height: 100px;
   z-index: 5;
   border: 1px solid #977856;
-  border-radius: 10px;
+  border-radius: 6px;
   background: #211829ee;
 }
 #skill-cutin[data-compact="true"]
@@ -2372,7 +2383,7 @@ dialog p {
     height: 26px;
   }
   #deck-open {
-    grid-template-columns: 68px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 6px;
   }
   #deck-summary {
@@ -2578,7 +2589,7 @@ dialog p {
   }
 }
 /* Control density follows the actual scene space, including a visible resume row. */
-@container lobby-art (max-height: 480px) {
+@container lobby-art (max-height: 320px) {
   .lobby-title {
     top: 64px;
     left: 12px;
@@ -2632,4 +2643,32 @@ dialog p {
     animation: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* Approved direction: shared surface treatment without changing game rules. */
+#merc-slot.approved-battle-support {
+  display: flex; flex: 0 0 auto; align-items: center; gap: 10px;
+  margin: 0 12px 8px; padding: 8px 10px; min-height: 56px;
+  border: 1px solid var(--line-soft); border-radius: 5px;
+  background: #2c2433; font-size: 12px;
+}
+#merc-slot.approved-battle-support :is(img, canvas) {
+  width: 40px; height: 44px; flex: none; object-fit: contain;
+  image-rendering: pixelated;
+}
+#merc-slot.approved-battle-support small { display: block; font-size: 10px; }
+:is(.archive-tabs, .shop-tabs, .training-tabs) {
+  padding: 0; gap: 0; background: transparent; border: 0;
+  border-bottom: 1px solid var(--line-soft); border-radius: 0;
+}
+:is(.archive-tabs, .shop-tabs, .training-tabs) button {
+  border: 0; border-bottom: 2px solid transparent; border-radius: 0;
+}
+:is(.archive-tabs, .shop-tabs, .training-tabs)
+:is(.active, [aria-pressed="true"], [aria-selected="true"]) {
+  border-bottom-color: var(--gold); background: #e8bb6808; color: var(--gold);
+}
+@media (max-height: 650px) {
+  #merc-slot.approved-battle-support { min-height: 42px; padding: 4px 8px; margin-bottom: 4px; }
+  #merc-slot.approved-battle-support :is(img, canvas) { width: 30px; height: 32px; }
 }
