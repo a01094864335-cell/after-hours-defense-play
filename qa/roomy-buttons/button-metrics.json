@@ -1,0 +1,71 @@
+[
+  {
+    "width": 320,
+    "tabs": [
+      {
+        "width": 78,
+        "scroll": 78,
+        "height": 56,
+        "text": "채용 직원 17"
+      },
+      {
+        "width": 78,
+        "scroll": 78,
+        "height": 56,
+        "text": "미채용 0"
+      },
+      {
+        "width": 78,
+        "scroll": 78,
+        "height": 56,
+        "text": "지원 영웅 7"
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "tabs": [
+      {
+        "width": 101,
+        "scroll": 101,
+        "height": 56,
+        "text": "채용 직원 17"
+      },
+      {
+        "width": 101,
+        "scroll": 101,
+        "height": 56,
+        "text": "미채용 0"
+      },
+      {
+        "width": 101,
+        "scroll": 101,
+        "height": 56,
+        "text": "지원 영웅 7"
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "tabs": [
+      {
+        "width": 114,
+        "scroll": 114,
+        "height": 56,
+        "text": "채용 직원 17"
+      },
+      {
+        "width": 114,
+        "scroll": 114,
+        "height": 56,
+        "text": "미채용 0"
+      },
+      {
+        "width": 114,
+        "scroll": 114,
+        "height": 56,
+        "text": "지원 영웅 7"
+      }
+    ]
+  }
+]

@@ -1,0 +1,77 @@
+/* Room for labels, separate from the decorative 8px trim. */
+@layer enamel {
+ button:where(:not(.duo-companion):not(#deck-open)){border-image-width:8px!important;filter:none!important;box-shadow:none!important}
+ dialog button:where(:not(.staff-pass):not(.card):not([data-staff]):not([data-deck])){min-height:60px!important;padding:18px 24px!important;line-height:24px!important;font-size:15px!important}
+ :is(#enter-battle,#result-again,#pause-continue,#training-upgrade,#buy-staff-pack,#guide-next,#info-close,#promo-next,.staff-action){min-height:68px!important;height:auto!important;padding:20px 28px!important;line-height:24px!important}
+ #lobby #enter-battle{min-height:76px!important;height:76px!important;padding:22px 28px!important}
+ #lobby .lobby-links{height:88px!important;min-height:88px!important;padding:8px 12px!important;gap:12px!important;border-image:none!important;background:transparent!important}
+ #lobby .lobby-links button{height:72px!important;min-height:72px!important;padding:12px 18px!important;gap:8px!important;justify-content:center!important;line-height:20px!important}
+ #lobby .lobby-links button span{font-size:12px!important;line-height:18px!important;margin:0!important}
+ .duo-shortcuts :is(#lobby-story-collection,#journey-summary,#training-entry){width:60px!important;height:72px!important;min-height:72px!important;padding:12px!important;gap:8px!important;justify-content:center!important}
+ .duo-shortcuts button::after{line-height:16px!important;font-size:11px!important}
+ #menu-open{width:56px!important;height:56px!important;min-height:56px!important;padding:16px!important}
+ .app-header{min-height:64px!important;height:64px!important}
+ .wallet{min-height:52px!important;padding:12px 18px!important;border-image-width:8px!important}
+ :is(.sheet-head,.training-header,dialog header){min-height:68px!important;gap:16px!important;margin-bottom:16px!important}
+ dialog :is(.sheet-head,.training-header,header)>button{width:auto!important;min-width:56px!important;height:56px!important;min-height:56px!important;padding:16px!important}
+ #roster-back{width:56px!important;min-width:56px!important;height:56px!important;padding:16px!important}
+ #roster:has(#roster-detail:not([hidden]))>.sheet-head>div{margin-left:68px!important}
+ dialog :is(.archive-tabs,.training-tabs,.shop-tabs){gap:12px!important;margin-bottom:16px!important}
+ dialog :is(.archive-tabs,.training-tabs,.shop-tabs) button{min-height:56px!important;padding:16px 20px!important;font-size:13px!important;line-height:20px!important}
+ #menu .panel-scroll-body>button,#perk-options button,#perk-targets button{margin:8px 0!important;min-height:60px!important;padding:18px 24px!important}
+ #menu fieldset{border:1px solid #846990!important;padding:16px!important;margin:0 0 16px!important}
+ #menu fieldset button{width:100%!important;margin-top:14px!important}
+ .shop-row button{min-height:76px!important;padding:18px 20px!important;max-width:130px!important;line-height:20px!important}
+ .shop-row button :is(.price-line,small){line-height:20px!important}
+ #shop-to-roster{min-height:80px!important;padding:20px 24px!important;line-height:20px!important}
+ .ref-recruit-actions{gap:16px!important}
+ .live-result-actions{gap:16px!important;padding:16px!important}
+ .live-result-actions button{min-height:64px!important;padding:20px 24px!important;line-height:24px!important}
+ #battle .battle-top{height:76px!important;min-height:76px!important;gap:10px!important;padding:10px 12px!important}
+ #battle .battle-top button{width:auto!important;min-width:52px!important;min-height:52px!important;padding:14px!important}
+ #battle .summon-row>span{min-height:64px!important;padding:16px 12px!important}
+ #battle .summon-row .summon{min-height:64px!important;padding:20px 18px!important;font-size:15px!important;line-height:24px!important}
+ #battle .summon-row #upgrade-open,#battle .skill-row #skill-help{min-width:52px!important;min-height:56px!important;padding:14px!important}
+ #battle .summon-row{grid-template-columns:88px minmax(0,1fr) 52px!important;gap:12px!important}
+ #battle .skill-row{gap:12px!important;margin-top:12px!important}
+ #battle .skill-row #skill{min-height:56px!important;padding:16px 20px!important;line-height:22px!important}
+ #battle .item-buttons{gap:12px!important;margin-top:12px!important}
+ #battle .item-buttons button{min-height:68px!important;padding:14px 12px!important;gap:6px!important}
+ #battle .item-buttons button b{top:8px!important;right:8px!important}
+ #pause-window{padding:28px!important}#pause-window button{min-height:64px!important;padding:18px 24px!important;margin:12px 0 0!important}
+ @media(max-width:350px){
+  #lobby #enter-battle{min-height:68px!important;height:68px!important;padding:20px 24px!important}
+  #lobby .lobby-links{height:80px!important;min-height:80px!important;gap:8px!important;padding:8px!important}
+  #lobby .lobby-links button{height:64px!important;min-height:64px!important;padding:10px 12px!important;gap:6px!important}
+  #lobby .lobby-links button span{font-size:11px!important}
+  .duo-shortcuts :is(#lobby-story-collection,#journey-summary,#training-entry){width:52px!important;height:60px!important;min-height:60px!important;padding:10px!important;gap:6px!important}
+  .duo-shortcuts{right:6%!important;gap:6px!important}
+  dialog :is(.archive-tabs,.training-tabs,.shop-tabs){gap:8px!important}
+  dialog :is(.archive-tabs,.training-tabs,.shop-tabs) button{padding:16px 10px!important;font-size:11px!important}
+  dialog button:where(:not(.staff-pass):not(.card):not([data-staff]):not([data-deck])){padding:18px 20px!important}
+  #battle .battle-top{gap:6px!important;padding:10px 8px!important}
+  #battle .battle-top button{min-width:48px!important;padding:12px!important}
+  #battle .wave-pill{min-width:60px!important}
+  #battle .summon-row{grid-template-columns:76px minmax(0,1fr) 48px!important;gap:8px!important}
+  #battle .summon-row>span{min-width:76px!important;padding:16px 8px!important}
+  #battle .summon-row .summon{font-size:12px!important;padding:20px 12px!important}
+  #battle .summon-row #upgrade-open{min-width:48px!important}
+  #battle .item-buttons{gap:8px!important}
+  #battle .item-buttons button{min-height:76px!important;padding:14px 10px!important}
+  #shop .shop-row>button{min-height:76px!important;max-width:none!important;padding:18px 24px!important}
+ }
+}
+@layer enamel {
+ @media(max-width:350px) and (max-height:650px){
+  #lobby .duo-companion{left:54%!important;right:26%!important}
+ }
+}
+@layer enamel {
+ dialog .archive-tabs{gap:8px!important}
+ dialog .archive-tabs button{white-space:nowrap!important;padding:16px 12px!important;font-size:12px!important}
+ #menu-open{display:grid!important;place-items:center!important}
+ :is(#menu-close,#equipment-close,#shop-close,#roster-close,#training-close,#story-archive-close,#roster-back):has(img){display:grid!important;place-items:center!important;font-size:0!important}
+ :is(#menu-close,#equipment-close,#shop-close,#roster-close,#training-close,#story-archive-close,#roster-back,#menu-open)>img{position:static!important;inset:auto!important;transform:none!important;translate:none!important;display:block!important;margin:0!important;width:24px!important;height:24px!important}
+ #daily-events-close{font-size:0!important;display:grid!important;place-items:center!important}
+ @media(max-width:350px){dialog .archive-tabs button{padding:16px 10px!important;font-size:11px!important}}
+}
