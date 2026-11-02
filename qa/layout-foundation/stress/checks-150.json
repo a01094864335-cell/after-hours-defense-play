@@ -1,0 +1,206 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "case": "shop",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 3
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "case": "personnel",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 9
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "case": "detail",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 3
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "case": "training",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 4
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "case": "shop",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 4
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "case": "personnel",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 11
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "case": "detail",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 3
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "case": "training",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 4
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "case": "shop",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 4
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "case": "personnel",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 11
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "case": "detail",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 3
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "case": "training",
+    "fontScale": 1.5,
+    "longCopy": true,
+    "top": {
+      "issues": [],
+      "checkedButtons": 4
+    },
+    "bottom": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  }
+]

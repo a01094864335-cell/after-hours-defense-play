@@ -1,0 +1,61 @@
+{
+  "baselineAndScrollSnapshots": 130,
+  "layoutIssues": 0,
+  "runtimeErrors": [],
+  "stress130": 12,
+  "stress150": 12,
+  "lobbyCombinations": 16,
+  "play": {
+    "errors": [],
+    "final": {
+      "wave": 12,
+      "life": 0,
+      "sp": 3247,
+      "ended": true,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    }
+  },
+  "packagedReleaseInteractions": [
+    {
+      "size": [
+        320,
+        568
+      ],
+      "productZonesSeparate": true,
+      "purchase": true,
+      "training": true,
+      "rosterNavigation": true,
+      "recruit": true,
+      "battleNotice": true,
+      "runtimeErrors": []
+    },
+    {
+      "size": [
+        390,
+        844
+      ],
+      "productZonesSeparate": true,
+      "purchase": true,
+      "training": true,
+      "rosterNavigation": true,
+      "recruit": true,
+      "battleNotice": true,
+      "runtimeErrors": []
+    },
+    {
+      "size": [
+        430,
+        932
+      ],
+      "productZonesSeparate": true,
+      "purchase": true,
+      "training": true,
+      "rosterNavigation": true,
+      "recruit": true,
+      "battleNotice": true,
+      "runtimeErrors": []
+    }
+  ]
+}

@@ -1,0 +1,617 @@
+{
+  "errors": [],
+  "history": [
+    {
+      "wave": 1,
+      "life": 3,
+      "sp": 70,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 2,
+      "life": 3,
+      "sp": 127,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 2,
+      "life": 3,
+      "sp": 194,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 2,
+      "life": 3,
+      "sp": 241,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 3,
+      "life": 3,
+      "sp": 311,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 3,
+      "life": 3,
+      "sp": 384,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 4,
+      "life": 3,
+      "sp": 454,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 4,
+      "life": 3,
+      "sp": 505,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 4,
+      "life": 3,
+      "sp": 567,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 4,
+      "life": 3,
+      "sp": 596,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 648,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 722,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 773,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 791,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 798,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 805,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 812,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 819,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 837,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 5,
+      "life": 3,
+      "sp": 867,
+      "ended": false,
+      "playing": true,
+      "paused": true,
+      "units": 5
+    },
+    {
+      "wave": 6,
+      "life": 3,
+      "sp": 1048,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 6,
+      "life": 3,
+      "sp": 1103,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 6,
+      "life": 3,
+      "sp": 1183,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 6,
+      "life": 3,
+      "sp": 1207,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 7,
+      "life": 3,
+      "sp": 1256,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 7,
+      "life": 3,
+      "sp": 1311,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 7,
+      "life": 3,
+      "sp": 1366,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 7,
+      "life": 3,
+      "sp": 1409,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 7,
+      "life": 3,
+      "sp": 1452,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1501,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1544,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1587,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1642,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1678,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 8,
+      "life": 3,
+      "sp": 1709,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1760,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1832,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1865,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1911,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1963,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 1983,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 9,
+      "life": 3,
+      "sp": 2003,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2053,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2086,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2132,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2178,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2308,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 10,
+      "life": 3,
+      "sp": 2346,
+      "ended": false,
+      "playing": true,
+      "paused": true,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2659,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2692,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2725,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2784,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2804,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2817,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2863,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2896,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2929,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 11,
+      "life": 3,
+      "sp": 2929,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 2966,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 2987,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3023,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3058,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3086,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3135,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3156,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3184,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 2,
+      "sp": 3233,
+      "ended": false,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    },
+    {
+      "wave": 12,
+      "life": 0,
+      "sp": 3247,
+      "ended": true,
+      "playing": true,
+      "paused": false,
+      "units": 5
+    }
+  ]
+}
