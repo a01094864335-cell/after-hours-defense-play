@@ -2701,3 +2701,5 @@ button.tutorial-target:not(:disabled) { outline: 2px solid #e8bb68; outline-offs
 #battle[data-tutorial="true"] .battle-notice { display:none; }
 @media(max-height:650px) { #tutorial-gobi { padding:8px; max-height:38dvh; } #coach-copy { font-size:11px; } #tutorial-gobi>:is(img,canvas) { width:40px!important; height:56px!important; } }
 body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
+/* Boss banners wait until Gobi has finished speaking. */
+#battle:has(#tutorial-gobi:not([hidden])) #boss-warning { display:none!important; }
