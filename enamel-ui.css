@@ -3,38 +3,38 @@
    important chrome rules. No layout, copy, hit-target or route changes. */
 @layer enamel {
  button:where(:not(.duo-companion):not(#deck-open)){
-  --enamel:url('assets/ui-b/button-secondary--default.png?v=clean-20261102');
-  --enamel-pressed:url('assets/ui-b/button-secondary--pressed.png?v=clean-20261102');
-  --enamel-disabled:url('assets/ui-b/button-secondary--disabled.png?v=clean-20261102');
-  --enamel-selected:url('assets/ui-b/button-secondary--selected.png?v=clean-20261102');
+  --enamel:url('assets/ui-b/button-secondary--default.png?v=play-20261102');
+  --enamel-pressed:url('assets/ui-b/button-secondary--pressed.png?v=play-20261102');
+  --enamel-disabled:url('assets/ui-b/button-secondary--disabled.png?v=play-20261102');
+  --enamel-selected:url('assets/ui-b/button-secondary--selected.png?v=play-20261102');
   background:transparent!important;border-radius:0!important;box-shadow:none!important;
   border-image:var(--enamel) 24 fill / 12px / 0 stretch!important;
  }
  :is(#enter-battle,#summon,#start,#result-again,#info-close,#guide-next,#promo-next,#pause-continue,#training-upgrade,#buy-staff-pack,.staff-action){
-  --enamel:url('assets/ui-b/button-primary--default.png?v=clean-20261102');
-  --enamel-pressed:url('assets/ui-b/button-primary--pressed.png?v=clean-20261102');
-  --enamel-disabled:url('assets/ui-b/button-primary--disabled.png?v=clean-20261102');
-  --enamel-selected:url('assets/ui-b/button-primary--selected.png?v=clean-20261102');
+  --enamel:url('assets/ui-b/button-primary--default.png?v=play-20261102');
+  --enamel-pressed:url('assets/ui-b/button-primary--pressed.png?v=play-20261102');
+  --enamel-disabled:url('assets/ui-b/button-primary--disabled.png?v=play-20261102');
+  --enamel-selected:url('assets/ui-b/button-primary--selected.png?v=play-20261102');
   color:#2c1730!important;
  }
- :is(#reset,#leave-confirm){--enamel:url('assets/ui-b/button-danger--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-danger--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-danger--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-danger--selected.png?v=clean-20261102')}
- :is(#menu-open,#speed,#pause,#skill-help){--enamel:url('assets/ui-b/button-icon--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-icon--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-icon--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-icon--selected.png?v=clean-20261102')}
- .duo-shortcuts button{--enamel:url('assets/ui-b/button-shortcut--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-shortcut--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-shortcut--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-shortcut--selected.png?v=clean-20261102')}
- .lobby-links button{--enamel:url('assets/ui-b/tab-nav--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/tab-nav--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/tab-nav--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/tab-nav--selected.png?v=clean-20261102')}
- :is(.shop-tabs,.ref-shop-tabs) button{--enamel:url('assets/ui-b/tab-category--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/tab-category--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/tab-category--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/tab-category--selected.png?v=clean-20261102')}
- .shop-row button{--enamel:url('assets/ui-b/button-purchase-stacked--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png?v=clean-20261102')}
- .item-buttons button{--enamel:url('assets/ui-b/slot-item--default.png?v=clean-20261102');--enamel-pressed:url('assets/ui-b/slot-item--pressed.png?v=clean-20261102');--enamel-disabled:url('assets/ui-b/slot-item--disabled.png?v=clean-20261102');--enamel-selected:url('assets/ui-b/slot-item--selected.png?v=clean-20261102')}
+ :is(#reset,#leave-confirm){--enamel:url('assets/ui-b/button-danger--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/button-danger--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/button-danger--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/button-danger--selected.png?v=play-20261102')}
+ :is(#menu-open,#speed,#pause,#skill-help){--enamel:url('assets/ui-b/button-icon--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/button-icon--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/button-icon--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/button-icon--selected.png?v=play-20261102')}
+ .duo-shortcuts button{--enamel:url('assets/ui-b/button-shortcut--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/button-shortcut--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/button-shortcut--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/button-shortcut--selected.png?v=play-20261102')}
+ .lobby-links button{--enamel:url('assets/ui-b/tab-nav--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/tab-nav--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/tab-nav--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/tab-nav--selected.png?v=play-20261102')}
+ :is(.shop-tabs,.ref-shop-tabs) button{--enamel:url('assets/ui-b/tab-category--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/tab-category--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/tab-category--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/tab-category--selected.png?v=play-20261102')}
+ .shop-row button{--enamel:url('assets/ui-b/button-purchase-stacked--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png?v=play-20261102')}
+ .item-buttons button{--enamel:url('assets/ui-b/slot-item--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/slot-item--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/slot-item--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/slot-item--selected.png?v=play-20261102')}
  button:is(.active,.equipped,[aria-current=page],[aria-selected=true]){border-image-source:var(--enamel-selected)!important}
  button:active:not(:disabled){border-image-source:var(--enamel-pressed)!important;transform:none!important;filter:none!important}
  button:disabled{border-image-source:var(--enamel-disabled)!important;color:#ded1df!important;opacity:1!important}
  button:focus-visible{outline:2px solid #9bdbc1!important;outline-offset:2px!important}
  /* Image texture fills only; existing coordinates and padding remain intact. */
- :is(.wallet,.wave-pill,.shop-wallet,.summon-row>span){background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/hud-currency--default.png?v=clean-20261102') 24 fill / 10px!important}
- :is(.shop-row,.roster-card,.shop-note,#result-text){background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-card--default.png?v=clean-20261102') 24 fill / 12px!important}
- dialog:not(#promo){background:#251b30!important;border-radius:0!important;border-image:url('assets/ui-b/panel-sheet--default.png?v=clean-20261102') 24 fill / 12px!important}
- .duo-companion>span{background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-support--default.png?v=clean-20261102') 24 fill / 8px!important}
- #lobby::after{background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-sheet--default.png?v=clean-20261102') 24 fill / 12px!important}
- .lobby-links{background:transparent!important;border-image:url('assets/ui-b/panel-support--default.png?v=clean-20261102') 24 fill / 10px!important}
+ :is(.wallet,.wave-pill,.shop-wallet,.summon-row>span){background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/hud-currency--default.png?v=play-20261102') 24 fill / 10px!important}
+ :is(.shop-row,.roster-card,.shop-note,#result-text){background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-card--default.png?v=play-20261102') 24 fill / 12px!important}
+ dialog:not(#promo){background:#251b30!important;border-radius:0!important;border-image:url('assets/ui-b/panel-sheet--default.png?v=play-20261102') 24 fill / 12px!important}
+ .duo-companion>span{background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-support--default.png?v=play-20261102') 24 fill / 8px!important}
+ #lobby::after{background:transparent!important;border-radius:0!important;border-image:url('assets/ui-b/panel-sheet--default.png?v=play-20261102') 24 fill / 12px!important}
+ .lobby-links{background:transparent!important;border-image:url('assets/ui-b/panel-support--default.png?v=play-20261102') 24 fill / 10px!important}
  /* A frameless character portrait stays frameless, as in the approved live UX. */
  .duo-companion,#deck-open{border-image:none!important}
 }

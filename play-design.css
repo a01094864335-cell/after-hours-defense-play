@@ -1,0 +1,84 @@
+/* Visual hierarchy learned from actual purchase, training and combat play. */
+@layer enamel {
+ /* Never let the icon-centering rule resurrect an intentionally hidden control. */
+ #roster #roster-back[hidden]{display:none!important}
+ #roster #roster-back:not([hidden]){align-self:center!important}
+ :is(.archive-tabs,.training-tabs,.shop-tabs) button:is(.active,[aria-selected=true],[aria-pressed=true]),.lobby-links button[aria-current=page]{color:#ffe6a9!important;border-image-source:var(--enamel-selected)!important;font-weight:800!important}
+ :is(.archive-tabs,.training-tabs,.shop-tabs) button:not(.active):not([aria-pressed=true]):not([aria-selected=true]){color:#cdbfd5!important}
+ dialog>:is(h2,#guide-title),dialog .sheet-head h2{background:none!important;border-image:none!important;box-shadow:none!important;color:#ffe6b5!important}
+ dialog .panel-scroll-body{scrollbar-width:thin!important;scrollbar-color:#947389 #281f35!important}
+ dialog :is(p,li){word-break:keep-all!important;overflow-wrap:break-word!important}
+ /* Context labels are secondary; numbers and actionable content lead. */
+ #shop .shop-wallet{min-height:52px!important}
+ #shop .shop-wallet>span{font-size:10px!important;letter-spacing:1px!important;color:#b7a5c5!important}
+ #shop .shop-wallet #shop-coins{font-size:22px!important;font-weight:800!important;color:#ffe3a1!important}
+ #shop-status{min-height:28px!important;margin:0 0 8px!important;font-size:12px!important;line-height:20px!important;color:#bce5ca!important;text-align:left!important}
+ #shop-status:empty{visibility:hidden!important}
+ #shop .ref-market-scene{height:76px!important;min-height:76px!important;margin:0 0 16px!important;opacity:.85!important}
+ #shop .shop-row{gap:12px!important}
+ #shop .shop-row>span{font-size:15px!important;line-height:22px!important;font-weight:800!important}
+ #shop .shop-row small{font-size:12px!important;line-height:20px!important;color:#c2b1cd!important}
+ #shop .recruit-shop>h3{font-size:20px!important;line-height:28px!important;margin-bottom:12px!important}
+ #shop .recruit-shop>p{font-size:13px!important;line-height:22px!important;color:#d0c0db!important}
+ /* Reduce redundant explanation spacing without compressing the five slots. */
+ #roster #staff-deck{padding:12px!important;margin-bottom:4px!important}
+ #roster #deck-status{font-size:11px!important;line-height:18px!important;color:#c5b4d1!important}
+ #roster #roster-note{opacity:1!important;visibility:visible!important;color:#c5b4d1!important;font-size:12px!important;line-height:20px!important;margin:8px 0 16px!important}
+ #roster .staff-pass{min-height:96px!important;gap:6px 12px!important;padding:16px!important}
+ #roster .staff-pass .pass-open{font-size:18px!important;line-height:24px!important;color:#fff1d4!important}
+ #roster .staff-pass .pass-job{font-size:12px!important;line-height:20px!important;color:#c6b5d0!important}
+ #roster .staff-pass .pass-meta b{font-size:11px!important;line-height:18px!important;color:#bfe2ce!important}
+ .training-character-title{gap:10px!important}
+ .training-character-title b{font-size:14px!important;line-height:20px!important}
+ .training-character-title small{font-size:11px!important;line-height:18px!important;color:#c2b0cd!important}
+ .training-character li{padding:6px 0!important;line-height:20px!important}
+ .training-character li.unlocked{color:#ffe0a1!important}
+ .training-character li.locked{color:#b5a7bd!important}
+ /* A whole equipment card is the action; the price is not a nested button. */
+ #equipment #cards .card>b{background:none!important;border:0!important;border-image:none!important;box-shadow:none!important;color:#dcc6a2!important;padding:4px 0 0!important;font-size:12px!important;line-height:20px!important}
+ #equipment #cards .card>span{font-size:14px!important;line-height:22px!important}
+ #equipment #cards .card small{font-size:11px!important;line-height:18px!important;color:#c6b8ce!important}
+ #battle .battle-top{background:#21192c!important;border-bottom:1px solid #61485f!important;border-image:none!important}
+ #battle .wave-pill{background:transparent!important}
+ #battle .battle-notice{background:#241c30!important;border:1px solid #49384f!important;border-radius:4px!important}
+ #battle .battle-notice #message{color:#c3b6cc!important;font-size:11px!important;line-height:17px!important}
+ #battle .skill-row #skill:disabled{color:#c4b8ce!important}
+ #battle .item-buttons button:disabled{opacity:.8!important}
+ /* Read the current party at a glance without competing with the main action. */
+ #lobby #deck-label{font-size:10px!important;line-height:15px!important;width:80px!important;max-width:80px!important;color:#cab8d2!important}
+ #lobby #deck-label::before{font-size:10px!important;line-height:16px!important;color:#ffe6b5!important;margin-bottom:4px!important}
+ #lobby #deck-summary .live-staff-token small{font-size:10px!important;line-height:14px!important;color:#e9d9ed!important}
+ #lobby .duo-companion>span{background:#281e33cc!important;color:#f5e6cc!important}
+ .live-result-body #result-stats{margin-top:16px!important}
+ .live-result-body #result-stats>div{padding:16px 0!important}
+ .live-result-body #live-result-reward strong{font-variant-numeric:tabular-nums!important}
+ @media(max-height:700px){#shop .ref-market-scene{display:none!important}}
+ @media(max-width:350px){
+  #lobby #deck-label{width:64px!important;max-width:64px!important;font-size:9px!important;line-height:14px!important}
+  #lobby #deck-label::before{font-size:9px!important;line-height:14px!important}
+  #lobby #deck-summary .live-staff-token small{font-size:9px!important;line-height:13px!important}
+  #roster .staff-pass{grid-template-columns:52px minmax(0,1fr) 52px!important;padding:14px!important;gap:4px 10px!important}
+  #roster .staff-pass .pass-portrait{width:52px!important;height:56px!important}
+  #roster .staff-pass .pass-open{font-size:16px!important;line-height:22px!important}
+  #roster .staff-pass .pass-meta b{font-size:10px!important;line-height:16px!important}
+ }
+}
+@layer enamel {
+ #daily-events-close{display:grid!important;place-items:center!important;width:56px!important;height:56px!important;min-width:56px!important;min-height:56px!important;padding:16px!important;box-sizing:border-box!important;font-size:0!important}
+ #daily-events-close::after{position:static!important;inset:auto!important;transform:none!important;translate:none!important;display:block!important;margin:0!important;font-size:24px!important;line-height:24px!important}
+ #deck-presets button{--enamel:url('assets/ui-b/button-purchase-stacked--default.png?v=play-20261102');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png?v=play-20261102');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png?v=play-20261102');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png?v=play-20261102')}
+}
+@layer enamel {
+ #result .result-icon{height:80px!important;min-height:80px!important;width:100%!important;margin:12px auto 8px!important}
+ #result .result-icon img{height:80px!important;width:84px!important;object-fit:contain!important}
+ #result h1{font-size:26px!important;line-height:34px!important;margin:8px 0!important}
+ #result #live-result-reward{padding:16px!important;min-height:0!important;margin-top:12px!important}
+ #result #live-result-reward strong{font-size:36px!important;line-height:44px!important}
+ #result #result-stats>div{padding:12px 0!important}
+ #result #result-stats{margin-top:12px!important}
+}
+@layer enamel {
+ #daily-events-close{font-size:26px!important;line-height:24px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+ #daily-events-close::before,#daily-events-close::after{content:none!important;display:none!important}
+ #result .result-icon>canvas[data-motion],#result .result-icon>img{width:84px!important;height:80px!important;max-width:84px!important;max-height:80px!important;min-height:0!important;position:static!important;inset:auto!important;transform:none!important;margin:0 auto!important;display:block!important;object-fit:contain!important}
+}
