@@ -8,6 +8,7 @@ files.add('enamel-ui.css');
 files.add('visual-pass.css');
 files.add('roomy-buttons.css');
 files.add('play-design.css');
+for(const f of ['approved-ui.css','approved-ui.js','assets/ui-approved/lobby-scene.webp'])files.add(f);
 files.add('assets/ui-b/gallery.html');
 files.add('assets/ui-b/manifest.json');
 for(const name of fs.readdirSync(path.join(root,'assets/ui-b')))if(name.endsWith('.png')||name.endsWith('.svg'))files.add('assets/ui-b/'+name);

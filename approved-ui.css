@@ -1,0 +1,126 @@
+/* Approved two-screen composition. Scope to the two live surfaces. */
+@layer enamel {
+#app-shell{background:#191321!important;color:#f9efd9!important}
+#app-shell #lobby{position:relative!important;height:100dvh!important;min-height:568px!important;padding:0!important;overflow:hidden!important;background:#211829!important}
+#app-shell #lobby::after,#app-shell #lobby::before{display:none!important}
+#app-shell #lobby .live-lobby-scroll,#app-shell #lobby .lobby-bottom,#app-shell #lobby .live-lobby-footer{display:contents!important}
+#app-shell #lobby .lobby-art{position:absolute!important;inset:0 0 220px!important;width:100%!important;height:auto!important;min-height:0!important;background:url('assets/ui-approved/lobby-scene.webp') center 54%/cover no-repeat!important;border:0!important;overflow:hidden!important}
+#app-shell #lobby .lobby-art::before,#app-shell #lobby .lobby-art::after,#app-shell #lobby .lobby-gobi,#app-shell #lobby .lobby-badge,#app-shell #lobby .reward-hint,#app-shell #lobby .support-label,#app-shell #lobby #merc-slot{display:none!important}
+#app-shell .app-header{position:absolute!important;top:0!important;left:0!important;right:0!important;z-index:10!important;height:66px!important;min-height:0!important;padding:12px 16px!important;background:linear-gradient(#201629b8,transparent)!important;border:0!important;gap:8px!important}
+#app-shell .app-header .brand{font-size:15px!important;line-height:20px!important;color:#fff1d5!important;gap:8px!important}
+#app-shell .app-header .brand small{font-size:10px!important;color:#d6c5db!important;line-height:15px!important}
+#app-shell .app-header .wallet{height:34px!important;min-width:80px!important;padding:4px 10px!important;border:1px solid #87708a!important;border-radius:12px!important;background:#34273cdb!important;box-shadow:none!important;font-size:17px!important}
+#app-shell .app-header .wallet small{display:none!important}
+#app-shell .app-header #menu-open{width:36px!important;height:36px!important;min-height:36px!important;min-width:36px!important;padding:8px!important;border:1px solid #87708a!important;border-image:none!important;border-radius:11px!important;background:#3c2e46!important;box-shadow:none!important}
+#app-shell #lobby .lobby-title{position:absolute!important;left:18px!important;top:68px!important;width:58%!important;height:auto!important;margin:0!important;padding:0!important;transform:none!important;z-index:2!important}
+#app-shell #lobby .duo-logo-float{width:100%!important;height:auto!important;animation:none!important;transform:none!important;filter:drop-shadow(0 3px 2px #25142d)!important}
+#app-shell #lobby .duo-logo-float img{width:100%!important;height:auto!important;display:block!important}
+#app-shell #lobby .duo-logo-shadow{display:none!important}
+#app-shell #lobby .lobby-title p{font-size:10px!important;text-align:center!important;margin:0!important;white-space:nowrap!important;color:#f7e2b5!important;text-shadow:0 2px 3px #201126!important}
+#app-shell #lobby .duo-shortcuts{position:absolute!important;top:98px!important;right:14px!important;bottom:auto!important;display:flex!important;flex-direction:column!important;gap:10px!important;width:56px!important;z-index:4!important}
+#app-shell #lobby .duo-shortcuts button{position:relative!important;inset:auto!important;transform:none!important;width:56px!important;height:62px!important;min-height:62px!important;padding:0!important;border:1px solid #8d728d!important;border-image:none!important;border-radius:12px!important;background:linear-gradient(#5a4563,#382a44)!important;box-shadow:0 3px 5px #160e2766,inset 0 1px #ffffff12!important}
+#app-shell #lobby .duo-shortcuts button>:not(.approved-shortcut-face){display:none!important}
+#app-shell #lobby .approved-shortcut-face{display:flex!important;height:100%!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;gap:5px!important;color:#f8e7bd!important;font-size:11px!important;line-height:14px!important}
+#app-shell #lobby .approved-shortcut-face i{font-style:normal!important;font-size:24px!important;line-height:26px!important}
+#app-shell #lobby .duo-companion{position:absolute!important;right:15px!important;bottom:20px!important;top:auto!important;left:auto!important;width:auto!important;max-width:46%!important;min-height:34px!important;height:auto!important;padding:7px 12px!important;border:1px solid #977d95!important;border-image:none!important;border-radius:10px!important;background:#302439de!important;box-shadow:none!important;transform:none!important}
+#app-shell #lobby .duo-companion small{display:none!important}
+#app-shell #lobby .duo-companion b{font-size:11px!important;line-height:16px!important;color:#eddfc8!important}
+#app-shell #lobby .duo-companion img{width:32px!important;height:32px!important}
+#app-shell #lobby .approved-lobby-dock{position:absolute!important;bottom:0!important;left:8px!important;right:8px!important;z-index:6!important;padding:0 12px!important;border:1px solid #79667e!important;border-radius:18px 18px 0 0!important;background:linear-gradient(#382b40f5,#241c30)!important;box-shadow:0 -5px 20px #140f2466!important;display:flex!important;flex-direction:column!important;gap:0!important}
+#app-shell #lobby .approved-lobby-dock button{border-image:none!important;box-shadow:none!important;transform:none!important}
+#app-shell #lobby #daily-option{position:static!important;display:flex!important;align-items:center!important;gap:8px!important;height:36px!important;min-height:36px!important;margin:0!important;padding:0 4px!important;background:none!important;border:0!important;border-bottom:1px solid #a48ca02e!important;box-shadow:none!important}
+#app-shell #lobby #daily-option::before{content:'✦'!important;color:#e8c88b!important;font-size:20px!important}
+#app-shell #lobby #daily-option small{font-size:11px!important;color:#cfbed2!important}
+#app-shell #lobby #daily-label{font-size:12px!important;color:#ffe2a8!important}
+#app-shell #lobby #daily-events-open{margin-left:auto!important;font-size:0!important;width:25px!important;min-width:25px!important;height:28px!important;min-height:28px!important;padding:0!important;border:0!important;background:none!important}
+#app-shell #lobby #daily-events-open::after{content:'›'!important;font-size:22px!important;color:#bda6c5!important}
+#app-shell #lobby #deck-open{position:static!important;display:flex!important;flex-direction:row-reverse!important;align-items:center!important;justify-content:space-between!important;gap:8px!important;height:66px!important;min-height:66px!important;width:100%!important;padding:6px 4px!important;margin:0!important;border:0!important;border-bottom:1px solid #a48ca02e!important;border-radius:0!important;background:none!important}
+#app-shell #lobby #deck-label{width:76px!important;flex:none!important;font-size:9px!important;line-height:15px!important;text-align:left!important;color:#c7b4cb!important;white-space:normal!important}
+#app-shell #lobby #deck-label::before{font-size:10px!important;color:#f2e3cf!important;white-space:nowrap!important}
+#app-shell #lobby #deck-summary{display:flex!important;flex:1!important;gap:5px!important;justify-content:space-between!important;min-width:0!important}
+#app-shell #lobby .live-staff-token{width:34px!important;min-width:0!important;padding:0!important;border:0!important;background:none!important;gap:2px!important}
+#app-shell #lobby .live-staff-token :is(img,canvas){width:34px!important;height:34px!important;object-fit:contain!important;border:1px solid #9a7e9b!important;border-radius:7px!important;background:#56405d!important;box-sizing:border-box!important}
+#app-shell #lobby .live-staff-token small{font-size:9px!important;line-height:12px!important;color:#d1bfd4!important}
+#app-shell #lobby .mode-card{position:static!important;display:flex!important;align-items:center!important;gap:8px!important;height:30px!important;min-height:30px!important;padding:0 4px!important;margin:0!important;border:0!important;background:none!important;box-shadow:none!important}
+#app-shell #lobby .mode-card>span{font-size:17px!important;color:#dfc598!important}
+#app-shell #lobby .mode-card>div{display:flex!important;gap:8px!important;align-items:center!important}
+#app-shell #lobby .mode-card small{font-size:10px!important;color:#baa8c3!important}
+#app-shell #lobby #mode-name{font-size:12px!important;color:#eaddcf!important}
+#app-shell #lobby :is(#mode-desc,.mode-label){display:none!important}
+#app-shell #lobby #enter-battle{position:static!important;width:100%!important;height:52px!important;min-height:52px!important;margin:2px 0 8px!important;padding:10px 24px!important;border:1px solid #ffe4aa!important;border-radius:11px!important;background:linear-gradient(#ffdc91,#ffbc57)!important;color:#4c301e!important;text-shadow:none!important;font-size:22px!important;line-height:28px!important;font-weight:900!important}
+#app-shell #lobby #enter-battle::after{content:'›'!important;position:absolute!important;right:20px!important;font-size:27px!important}
+#app-shell #lobby .lobby-links{position:static!important;display:grid!important;grid-template-columns:repeat(3,1fr)!important;width:calc(100% + 24px)!important;height:53px!important;min-height:53px!important;margin:0 -12px!important;padding:5px 7px!important;border:0!important;border-top:1px solid #a48ca02e!important;background:none!important;gap:5px!important;box-shadow:none!important}
+#app-shell #lobby .lobby-links button{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:6px!important;height:42px!important;min-height:42px!important;padding:5px!important;border:0!important;border-radius:9px!important;background:none!important;color:#cdbbd3!important;font-size:12px!important;line-height:18px!important}
+#app-shell #lobby .lobby-links button img{width:22px!important;height:22px!important}
+#app-shell #lobby .lobby-links button[aria-current=page]{position:relative!important;background:linear-gradient(#65516e,#463650)!important;color:#ffe4ad!important;border:1px solid #9d809c!important}
+#app-shell #lobby .lobby-links button[aria-current=page]::before{content:''!important;position:absolute!important;top:-4px!important;left:calc(50% - 3px)!important;width:6px!important;height:6px!important;background:#ffd387!important;border-radius:50%!important}
+#app-shell #lobby #resume-run:not([hidden]){min-height:30px!important;height:30px!important;font-size:11px!important;padding:4px!important;background:#594360!important;border:1px solid #8e7397!important;border-radius:8px!important}
+/* Battle: a single readable control dock under the live five by three board. */
+#app-shell #battle{height:100dvh!important;min-height:568px!important;padding:0!important;gap:0!important;background:#211a2b!important;overflow:hidden!important}
+#app-shell #battle button{border-image:none!important;box-shadow:none!important;border-radius:10px!important;text-shadow:none!important}
+#app-shell #battle .battle-top{height:58px!important;min-height:58px!important;padding:8px 12px!important;gap:9px!important;border:0!important;background:#292033!important}
+#app-shell #battle .battle-top button{height:36px!important;min-height:36px!important;padding:6px 9px!important;border:1px solid #776080!important;background:#44334e!important;color:#f3e6ce!important}
+#app-shell #battle #battle-back{width:36px!important;min-width:36px!important;font-size:0!important}
+#app-shell #battle #battle-back::after{content:'‹'!important;font-size:27px!important;line-height:24px!important}
+#app-shell #battle .wave-pill{height:36px!important;min-width:82px!important;padding:4px 10px!important;border:1px solid #705776!important;border-radius:11px!important;background:#34263e!important;gap:8px!important;font-size:18px!important}
+#app-shell #battle .wave-pill small{font-size:10px!important;color:#b5a0bf!important}
+#app-shell #battle #life{margin-left:auto!important;font-size:18px!important;letter-spacing:2px!important;color:#f6879e!important;white-space:nowrap!important}
+#app-shell #battle #next-boss{height:29px!important;min-height:29px!important;padding:5px 14px!important;margin:0!important;border:0!important;border-bottom:1px solid #70577655!important;background:#33263e!important;font-size:11px!important;line-height:18px!important;color:#c2b0cc!important}
+#app-shell #battle .board-stage{flex:1 1 auto!important;min-height:0!important;width:100%!important;padding:0!important;margin:0!important;border:0!important;background:#241b31!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important}
+#app-shell #battle .battle-controls{flex:none!important;display:flex!important;flex-direction:column!important;gap:9px!important;padding:13px 13px 10px!important;margin:0 6px!important;border:1px solid #7d6385!important;border-bottom:0!important;border-radius:17px 17px 0 0!important;background:linear-gradient(#3a2b45,#271e32)!important;box-shadow:0 -6px 20px #17102166!important}
+#app-shell #battle .summon-row{display:grid!important;grid-template-columns:82px 1fr 76px!important;gap:8px!important;height:48px!important;min-height:48px!important}
+#app-shell #battle .summon-row>span{display:flex!important;align-items:center!important;justify-content:center!important;gap:3px!important;padding:4px!important;border:1px solid #5c9b99!important;border-radius:10px!important;background:linear-gradient(#25585d,#193e46)!important;color:#c0f6e9!important;font-size:12px!important;white-space:nowrap!important}
+#app-shell #battle #sp{font-size:20px!important;color:#d1fff1!important}
+#app-shell #battle #summon{height:48px!important;min-height:48px!important;padding:8px!important;border:1px solid #ffe2a5!important;background:linear-gradient(#ffdd94,#ffba54)!important;color:#4d3222!important;font-size:18px!important;font-weight:900!important}
+#app-shell #battle #upgrade-open{display:flex!important;align-items:center!important;justify-content:center!important;gap:5px!important;height:48px!important;min-height:48px!important;padding:7px!important;border:1px solid #9f81a8!important;background:linear-gradient(#6b5278,#4a365a)!important;color:#f6e8cf!important;font-size:12px!important}
+#app-shell #battle #upgrade-open::after{content:'장비'!important;font-size:12px!important}
+#app-shell #battle #upgrade-open img{width:22px!important;height:22px!important}
+#app-shell #battle .skill-row{display:flex!important;height:39px!important;min-height:39px!important;gap:0!important;border:1px solid #796087!important;border-radius:9px!important;background:#4a3958!important;overflow:hidden!important}
+#app-shell #battle #skill{flex:1!important;min-width:0!important;min-height:37px!important;height:37px!important;padding:6px 10px!important;border:0!important;background:none!important;color:#e0d2e8!important;font-size:12px!important;opacity:1!important}
+#app-shell #battle #skill:disabled{color:#aa98b8!important;background:#3b2e48!important}
+#app-shell #battle #skill-help{width:38px!important;min-width:38px!important;height:37px!important;min-height:37px!important;padding:7px!important;border:0!important;background:none!important}
+#app-shell #battle .item-buttons{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;margin:0!important}
+#app-shell #battle .item-buttons button{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:4px!important;min-height:46px!important;height:46px!important;padding:6px 4px!important;border:1px solid #8c7199!important;background:linear-gradient(#665076,#493653)!important;color:#e7d9ed!important;font-size:10px!important;line-height:15px!important}
+#app-shell #battle .item-buttons button:disabled{background:#34293e!important;border-color:#594560!important;color:#9c89aa!important;opacity:1!important}
+#app-shell #battle .item-buttons img{width:24px!important;height:24px!important}
+#app-shell #battle .item-buttons b{position:static!important;font-size:10px!important;padding:0!important;background:none!important;border:0!important}
+#app-shell #battle .battle-notice{position:static!important;display:flex!important;align-items:center!important;gap:8px!important;min-height:32px!important;height:auto!important;padding:0 3px!important;margin:0!important;border:0!important;background:none!important;box-shadow:none!important}
+#app-shell #battle .battle-notice img{width:30px!important;height:32px!important;object-fit:cover!important;object-position:top!important}
+#app-shell #battle #message{font-size:11px!important;line-height:16px!important;color:#dacbdf!important;margin:0!important}
+@media(max-width:350px){#app-shell #lobby .lobby-title{top:66px!important;width:57%!important}#app-shell #lobby .duo-shortcuts{top:85px!important;gap:7px!important}#app-shell #lobby .duo-shortcuts button{height:52px!important;min-height:52px!important}#app-shell #lobby #deck-label{width:65px!important;font-size:8px!important}#app-shell #lobby .live-staff-token :is(img,canvas){width:29px!important;height:29px!important}#app-shell #battle .battle-top{gap:5px!important;padding:8px!important}#app-shell #battle .wave-pill{min-width:65px!important;padding:4px 6px!important}#app-shell #battle .summon-row{grid-template-columns:72px 1fr 64px!important}#app-shell #battle .battle-controls{padding:10px!important;gap:7px!important}#app-shell #battle #summon{font-size:15px!important}}
+}
+@layer enamel {
+#app-shell #lobby .lobby-title{height:auto!important;display:block!important}
+#app-shell #lobby .duo-logo-float{position:relative!important;inset:auto!important;height:auto!important;aspect-ratio:1154/911!important}
+#app-shell #lobby .duo-logo-float img{position:static!important;inset:auto!important;transform:none!important;height:100%!important}
+#app-shell #lobby .lobby-title p{position:static!important;inset:auto!important;transform:none!important;display:block!important}
+#app-shell #lobby .duo-shortcuts button::after,#app-shell #lobby .duo-shortcuts button::before,#app-shell #lobby .duo-companion::after,#app-shell #lobby .duo-companion::before{display:none!important}
+#app-shell #lobby .duo-companion span,#app-shell #lobby .duo-companion b{border:0!important;background:none!important;box-shadow:none!important}
+#app-shell #lobby .approved-lobby-dock>*{order:0!important;flex-shrink:0!important}
+#app-shell #lobby .lobby-art{bottom:248px!important}
+}
+@layer enamel {
+#app-shell #lobby #deck-open{flex-direction:row!important}
+#app-shell #lobby #deck-label{order:-1!important}
+#app-shell #battle #battle-back::before,#app-shell #battle #battle-back img{display:none!important}
+#app-shell #battle .summon-row>span{box-sizing:border-box!important;height:48px!important;min-height:48px!important;max-height:48px!important}
+#app-shell #battle .battle-notice img{display:block!important;flex:none!important}
+#app-shell #battle #upgrade-open{flex-direction:row!important}
+#app-shell #battle .wave-pill{flex:none!important;width:auto!important;min-width:82px!important}
+#app-shell #battle #summon:disabled{opacity:1!important;background:linear-gradient(#dec78e,#bc9759)!important;color:#614b31!important}
+}
+@layer enamel {
+#app-shell #battle #game{object-fit:fill!important;aspect-ratio:auto!important}
+#app-shell #battle #battle-back::after{display:block!important}
+#app-shell #battle .battle-notice img{visibility:visible!important;opacity:1!important}
+@media(max-height:650px){#app-shell #lobby .duo-companion{bottom:8px!important;right:9px!important;max-width:37%!important;padding:5px 8px!important}#app-shell #lobby .duo-companion img{width:22px!important;height:22px!important}#app-shell #lobby .duo-companion b{font-size:9px!important}#app-shell #lobby .lobby-title{width:52%!important;top:61px!important}#app-shell #lobby .duo-shortcuts{top:65px!important;width:48px!important}#app-shell #lobby .duo-shortcuts button{width:48px!important;height:48px!important;min-height:48px!important}}
+}
+@layer enamel {
+#app-shell #lobby .approved-shortcut-face img{position:static!important;display:block!important;width:25px!important;height:25px!important;margin:0!important;transform:none!important}
+#app-shell #battle #skill:disabled::before{content:''!important;display:inline-block!important;width:16px!important;height:18px!important;margin-right:9px!important;vertical-align:middle!important;background:url('assets/ui-v2/icons/lock.svg') center/contain no-repeat!important}
+#app-shell #battle .battle-notice::before{content:''!important;display:block!important;flex:0 0 28px!important;width:28px!important;height:30px!important;background:url('assets/mobile/lobby-gobi.webp') center 15%/cover!important;border-radius:50%!important}
+#app-shell #battle .battle-notice img{display:none!important}
+}
+@layer enamel {
+#app-shell #battle .battle-notice::before{position:static!important;inset:auto!important;transform:none!important;margin:0!important;padding:0!important;border:0!important;border-image:none!important;box-shadow:none!important;opacity:1!important;filter:none!important;z-index:auto!important}
+}
