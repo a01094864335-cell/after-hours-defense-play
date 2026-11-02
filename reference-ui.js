@@ -27,7 +27,9 @@
    if(!meta.equipped&&!playing){slot.innerHTML='<span class="ref-merc-heading">지원 용병</span>'}
    const plus=document.createElement('button');plus.className='ref-merc-plus';plus.textContent='+';plus.setAttribute('aria-label','지원 용병 선택');plus.onclick=()=>{openSupportArchive()};slot.append(plus);
   }
-  if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
+  const approvedDock=q('.approved-lobby-dock');
+  if(approvedDock){if(lobbyDeck.parentElement!==approvedDock)approvedDock.insertBefore(lobbyDeck,q('.mode-card'));}
+  else if(lobbyDeck.parentElement!==slot)slot.append(lobbyDeck);
   document.querySelectorAll('.staff-pass').forEach(card=>{const equipped=String(meta.deck.includes(card.dataset.staff));if(card.dataset.equipped!==equipped)card.dataset.equipped=equipped;const name=card.querySelector('.pass-open');if(name&&/인사기록|채용 방법/.test(name.textContent)){const record=staffRecords.find(r=>r.id===card.dataset.staff);name.textContent=record&&staffOwned(record)?record.name:'???'}card.querySelector(':scope>strong')?.remove()});
   const reveal=q('.recruit-reveal');if(reveal&&!reveal.querySelector('.ref-recruit-actions')){const actions=document.createElement('div');actions.className='ref-recruit-actions';actions.innerHTML='<button>직원 도감으로</button><button>확인</button>';actions.children[0].onclick=()=>{closeRecruit();q('#shop').close();q('#roster-open').click()};actions.children[1].onclick=closeRecruit;reveal.append(actions)}
   refresh();

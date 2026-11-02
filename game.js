@@ -81,7 +81,7 @@ function sync(){
 }
 $('#cards').innerHTML=kinds.map((k,i)=>'<button class="card" id="up'+i+'"><img src="'+staffImagePath(k.file)+'" alt=""><span>'+k.name+'<br><small></small></span><b></b></button>').join('');kinds.forEach((_,i)=>$('#up'+i).onclick=()=>upgrade(i));$('#summon').onclick=summon;$('#reset').onclick=reset;$('#pause').onclick=()=>{paused=!paused;sync()};$('#speed').onclick=()=>{speed=speed===1?2:1;sync()};
 function startDuty(){if(playing||ended||(wave===0&&preparationCount()<5))return;if(meta.deck.length!==5){say('근무 명단은 정확히 5명이 필요해요.');return}if(!board.some(Boolean)){say('먼저 직원을 소환해주세요.');return}activeMerc=meta.equipped;runTraining={...meta.training};mercTimer=mercInterval();playing=true;nextWave();sync()}
-function point(e){const r=canvas.getBoundingClientRect(),size=Math.min(r.width,r.height);return{x:(e.clientX-r.left-(r.width-size)/2)*600/size,y:(e.clientY-r.top-(r.height-size)/2)*600/size}}
+function point(e){const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*600/r.width,y:(e.clientY-r.top)*600/r.height}}
 function cellAt(p){return cells.findIndex(c=>Math.abs(c.x-p.x)<39&&Math.abs(c.y-p.y)<43)}
 function boardCellLabel(i){const u=board?.[i];return (Math.floor(i/5)+1)+'행 '+(i%5+1)+'열 · '+(u?kinds[u.type].name+' '+u.pip+'등급':'빈자리')}
 function syncBoardAccess(){uiAttr(canvas,'aria-label','근무 보드. '+boardCellLabel(boardFocus)+(selected>=0?' / 선택: '+boardCellLabel(selected):' / 선택 없음')+'. 방향키로 이동, Enter로 선택·합성, Escape로 취소, S로 스킬.');}
