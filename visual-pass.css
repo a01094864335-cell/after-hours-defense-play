@@ -1,0 +1,112 @@
+/* First visual QA pass: preserve routes and controls, reserve actual frame interiors. */
+@layer enamel {
+ /* Text belongs inside the 12px border, rather than on its highlight. */
+ dialog button:where(:not(.staff-pass):not(.card):not([data-staff]):not([data-deck])){padding:12px 16px!important;min-height:44px!important;line-height:20px!important;box-sizing:border-box!important;white-space:normal!important;overflow-wrap:anywhere!important}
+ button:where(:not(:disabled):not(#deck-open):not(.duo-companion)){color:#fff1d4!important}
+ :is(#enter-battle,#summon,#start,#result-again,#info-close,#guide-next,#promo-next,#pause-continue,#training-upgrade,#buy-staff-pack,.staff-action,#perk-sp,#retry-reward,.ref-recruit-actions button:last-child):not(:disabled){color:#2c1730!important}
+ :is(#perk-sp,#retry-reward,.ref-recruit-actions button:last-child){--enamel:url('assets/ui-b/button-primary--default.png');--enamel-pressed:url('assets/ui-b/button-primary--pressed.png');--enamel-disabled:url('assets/ui-b/button-primary--disabled.png');--enamel-selected:url('assets/ui-b/button-primary--selected.png')}
+ /* Remove native auto-focus outlines on scrollports, retain keyboard focus. */
+ :is(.panel-scroll-body,.training-body,#roster-overview):focus:not(:focus-visible){outline:none!important}
+ :is(.panel-scroll-body,.training-body,#roster-overview):focus-visible{outline:2px solid #9bdbc1!important;outline-offset:-3px!important}
+ dialog :is(.sheet-head,.training-header,header){margin:0 0 12px!important;min-width:0!important;width:100%!important;padding:8px 4px!important;background:none!important;border:0!important;border-image:none!important;box-shadow:none!important;gap:12px!important;flex-shrink:0!important}
+ dialog :is(.sheet-head,.training-header,header)>div{min-width:0!important;flex:1!important}
+ dialog :is(.sheet-head,.training-header,header) h2{font-size:20px!important;line-height:28px!important;margin:0!important;overflow-wrap:anywhere!important}
+ dialog :is(.sheet-head,.training-header,header)>button{flex-shrink:0!important}
+ #roster-back{position:static!important;inset:auto!important;margin:0!important;width:44px!important;height:44px!important;min-width:44px!important;padding:10px!important}
+ #roster:has(#roster-detail:not([hidden]))>.sheet-head>div{margin-left:54px!important}
+ #roster:has(#roster-detail:not([hidden])) #roster-back{position:absolute!important;left:20px!important;top:24px!important}
+ #training-dialog .training-header{margin:0 0 12px!important}
+ dialog :is(.archive-tabs,.training-tabs,.shop-tabs){padding:0!important;background:none!important;border:0!important;box-shadow:none!important;gap:8px!important;flex-shrink:0!important}
+ dialog :is(.archive-tabs,.training-tabs,.shop-tabs) button{min-width:0!important;font-size:12px!important;line-height:18px!important;padding:12px 10px!important}
+ /* A single container owns each frame. Inner scrollports have no extra lines. */
+ dialog .panel-scroll-body{border:0!important;box-shadow:none!important;padding:8px 4px 20px!important;scroll-padding:12px!important}
+ #roster #staff-deck{height:auto!important;min-height:0!important;padding:16px!important;display:block!important;margin-bottom:12px!important}
+ #staff-deck .deck-slots{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;gap:6px!important;height:auto!important;margin:12px 0!important}
+ #staff-deck .deck-slots>button{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:4px!important;padding:12px 6px!important;height:auto!important;min-height:84px!important;min-width:0!important}
+ #staff-deck .deck-slots>button :is(img,canvas){position:static!important;width:30px!important;height:34px!important;margin:0!important;flex-shrink:0!important}
+ #staff-deck .deck-slots>button small{position:static!important;inset:auto!important;transform:none!important;margin:0!important;font-size:10px!important;line-height:14px!important;white-space:nowrap!important}
+ #staff-deck #deck-status{position:static!important;margin:12px 0 0!important;height:auto!important;line-height:20px!important;white-space:normal!important}
+ #staff-deck>*{min-width:0!important;max-width:100%!important}
+ #roster-note{position:static!important;margin:12px 0 20px!important;line-height:20px!important;clear:both!important}
+ /* Coin labels and values form one row; no absolute nested value placement. */
+ .shop-wallet{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;height:auto!important;min-height:52px!important;padding:12px 16px!important}
+ .shop-wallet>:is(span,b){position:static!important;inset:auto!important;transform:none!important;width:auto!important;height:auto!important;min-width:0!important;margin:0!important}
+ .shop-wallet b{display:flex!important;align-items:center!important;gap:6px!important;flex-shrink:0!important}
+ .shop-wallet b :is(span,i){position:static!important;inset:auto!important;transform:none!important;width:auto!important;height:auto!important;margin:0!important;font-size:18px!important;line-height:24px!important}
+ .shop-wallet>span{font-size:10px!important;line-height:16px!important}
+ .wallet{gap:6px!important;padding:8px 12px!important;min-width:0!important}
+ .wallet b{font-variant-numeric:tabular-nums!important}
+ /* Price and purchase information keep their own two-line safe region. */
+ .shop-row button{min-width:88px!important;max-width:116px!important;padding:12px!important;line-height:18px!important;min-height:60px!important}
+ .shop-row button :is(.price-line,small){position:static!important;inset:auto!important;margin:0!important;line-height:18px!important}
+ #shop-to-roster{display:flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;flex-wrap:wrap!important}
+ .recruit-reveal>.panel-scroll-body{display:flex!important;flex-direction:column!important;align-items:center!important;gap:12px!important}
+ .recruit-reveal>.panel-scroll-body>:is(img,canvas){flex-shrink:0!important;margin:0 auto!important}
+ .recruit-reveal>.panel-scroll-body>b{display:block!important;text-align:center!important;margin:0!important;max-width:100%!important}
+ .recruit-reveal>.panel-scroll-body>strong{display:block!important;text-align:center!important;margin:0!important;line-height:30px!important}
+ .recruit-reveal .ref-recruit-actions{display:grid!important;gap:12px!important;margin:12px 0 0!important;padding:0!important}
+ /* Do not let the 15-event shortcut escape the right edge of the dock. */
+ #lobby #daily-option{display:flex!important;align-items:center!important;gap:8px!important;min-width:0!important;width:auto!important;overflow:visible!important}
+ #lobby #daily-label{min-width:0!important;flex:1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ #lobby #daily-events-open{flex:0 0 44px!important;margin:0!important;max-width:44px!important;min-width:44px!important;width:44px!important;height:44px!important;position:static!important}
+ /* Keep compact HUDs single-line with labels inside the capsule. */
+ #battle .wave-pill{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:6px!important;padding:8px 12px!important;min-width:70px!important;line-height:20px!important}
+ #battle .wave-pill :is(small,b){position:static!important;inset:auto!important;transform:none!important;margin:0!important;width:auto!important;line-height:20px!important}
+ .summon-row>span{display:flex!important;align-items:center!important;justify-content:center!important;gap:3px!important;padding:10px 12px!important;min-width:78px!important;white-space:nowrap!important}
+ .summon-row>span :is(b,small){position:static!important;inset:auto!important;margin:0!important;line-height:18px!important}
+ #battle .skill-row #skill{padding:12px 16px!important;line-height:18px!important;min-height:44px!important}
+ #battle .item-buttons{gap:8px!important}
+ #battle .item-buttons button{min-width:0!important;padding:10px 8px!important;min-height:52px!important;gap:4px!important}
+ #battle .item-buttons button span{min-width:0!important;white-space:normal!important;line-height:14px!important;font-size:10px!important}
+ #battle .item-buttons button img{width:22px!important;height:22px!important;flex-shrink:0!important}
+ #battle .item-buttons button b{position:absolute!important;top:4px!important;right:6px!important;min-width:12px!important;line-height:14px!important;font-size:9px!important}
+ #equipment #cards .card{padding:16px!important;gap:10px!important;min-height:104px!important}
+ #equipment #cards .card>span{min-width:0!important;line-height:20px!important}
+ .live-dossier-actions{gap:12px!important;padding:12px 0 0!important}
+ .live-dossier-actions button{width:100%!important;margin:0!important}
+ @media(max-width:350px){
+  dialog :is(.sheet-head,.training-header,header) h2{font-size:17px!important;line-height:24px!important}
+  dialog :is(.archive-tabs,.training-tabs,.shop-tabs){gap:6px!important}
+  dialog :is(.archive-tabs,.training-tabs,.shop-tabs) button{font-size:10px!important;padding:12px 8px!important}
+  .shop-wallet{gap:8px!important;padding:12px!important}.shop-wallet b :is(span,i){font-size:16px!important}
+  #battle .item-buttons button{padding:10px 7px!important;flex-direction:column!important;gap:2px!important;min-height:66px!important}
+  #battle .item-buttons button span{font-size:9px!important;line-height:12px!important;white-space:nowrap!important}
+  #battle .wave-pill{min-width:62px!important;gap:3px!important;padding:8px 10px!important}
+ }
+}
+@layer enamel {
+ #lobby #daily-events-open{border-image:none!important;background:url('assets/ui-v2/icons/arrow-right.svg') center/18px 18px no-repeat!important}
+ #roster .archive-tabs{background:#251b30!important;padding:6px 0!important;isolation:isolate!important}
+ #battle .board-stage{border:0!important;outline:none!important;box-shadow:none!important;background:none!important}
+ #battle .summon-row{grid-template-columns:minmax(88px,max-content) minmax(0,1fr) 44px!important}
+ #battle .summon-row>span{flex-direction:row!important;min-width:88px!important;font-size:11px!important;line-height:20px!important}
+ #battle #sp{font-size:18px!important;line-height:20px!important}
+ #battle .summon-row .summon{padding:12px!important;white-space:nowrap!important;line-height:20px!important}
+ /* The default text ink in inner price labels cannot follow a gold-button rule. */
+ button:disabled *{color:#ded1df!important}
+ @media(max-width:350px){#battle .summon-row .summon{font-size:13px!important}.shop-row button{min-width:78px!important;max-width:88px!important}}
+}
+@layer enamel {
+ #roster #staff-deck[hidden]{display:none!important}
+ #info .ref-guide-step{display:grid!important;grid-template-columns:20px minmax(0,1fr) 28px!important;gap:10px!important;padding:16px!important;align-items:start!important}
+ #info .ref-guide-step>div{min-width:0!important}
+ #info .ref-guide-step :is(h3,p){position:static!important;width:auto!important;margin:0 0 6px!important;line-height:22px!important;word-break:keep-all!important;overflow-wrap:break-word!important}
+ #info .ref-guide-step>img{position:static!important;width:28px!important;height:32px!important;margin:0!important;object-fit:contain!important}
+ .training-character li span{word-break:keep-all!important;overflow-wrap:normal!important}
+ @media(max-width:350px){
+  #info .ref-guide-step{grid-template-columns:18px minmax(0,1fr)!important;gap:8px!important;padding:12px!important}
+  #info .ref-guide-step>img{display:none!important}
+  #shop .shop-row{display:grid!important;grid-template-columns:40px minmax(0,1fr)!important;gap:10px!important;padding:16px!important}
+  #shop .shop-row>img{width:40px!important;height:48px!important;grid-row:1!important;grid-column:1!important}
+  #shop .shop-row>span{grid-row:1!important;grid-column:2!important;min-width:0!important;word-break:keep-all!important;line-height:20px!important}
+  #shop .shop-row>button{grid-row:2!important;grid-column:1/-1!important;min-width:0!important;max-width:none!important;width:100%!important;min-height:60px!important}
+ }
+}
+@layer enamel {
+ :is(#enter-battle,#summon,#start,#result-again,#info-close,#guide-next,#promo-next,#pause-continue,#training-upgrade,#buy-staff-pack,.staff-action,#perk-sp,#retry-reward,.ref-recruit-actions button:last-child):disabled{color:#ded1df!important}
+}
+@layer enamel {
+ /* Long archive navigation uses the explicitly two-line component. */
+ #shop-to-roster{--enamel:url('assets/ui-b/button-purchase-stacked--default.png');--enamel-pressed:url('assets/ui-b/button-purchase-stacked--pressed.png');--enamel-disabled:url('assets/ui-b/button-purchase-stacked--disabled.png');--enamel-selected:url('assets/ui-b/button-purchase-stacked--selected.png');display:block!important;min-height:64px!important;line-height:20px!important;text-align:center!important}
+ #shop-to-roster img{display:inline-block!important;vertical-align:middle!important;width:16px!important;height:16px!important;margin:0 0 0 4px!important}
+}
