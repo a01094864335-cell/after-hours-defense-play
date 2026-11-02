@@ -78,7 +78,7 @@ const Motion = (() => {
     const candidates = [...root.querySelectorAll('img')];
     if (root.tagName === 'IMG') candidates.push(root);
     for (const img of candidates) {
-      if (img.id === 'promo-face' || img.closest?.('.staff-locked')) continue; // Keep unrecruited silhouettes anonymous.
+      if (img.id === 'promo-face' || img.id === 'coach-portrait' || img.closest?.('.staff-locked')) continue; // Keep unrecruited silhouettes anonymous.
       const key = img.dataset.motion || img.getAttribute('src')?.split('/').pop()?.replace(/\.(?:png|webp)$/, '').replace(/-portrait$/, '');
       if (!sheets[key]) continue;
       const c = document.createElement('canvas');

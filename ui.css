@@ -2739,3 +2739,6 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
   #battle[data-tutorial="true"] #tutorial-strip { top:94px; padding:8px 10px; font-size:10px; }
   #battle[data-tutorial="true"] #tutorial-practice-skip { top:158px; }
 }
+
+/* Dialogue uses full-resolution portraits, never the 64px board animation canvas. */
+#tutorial-gobi>#coach-portrait { image-rendering:auto; }

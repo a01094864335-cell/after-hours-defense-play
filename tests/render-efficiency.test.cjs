@@ -14,3 +14,9 @@ test('power-saving UI portraits do not fetch animation atlases and redraw only w
  assert.equal(loads,0);assert.equal(img.loading,'eager');assert.equal(policy.stats.portraitDraws,1);
  policy.lowPower=false;vm.runInContext('Motion.invalidate();Motion.drawUI(300);',sb);assert.equal(loads,1);
 });
+
+test('large tutorial portraits remain original images instead of 64px canvases',()=>{
+ const img={id:'coach-portrait',tagName:'IMG',dataset:{},getAttribute:()=> 'assets/mobile/lobby-gobi.webp',replaceWith(){throw Error('portrait was downscaled')}};
+ const sb={window:{matchMedia:()=>({matches:false})},document:{querySelectorAll:()=>[img]},MotionSheets:{'lobby-gobi':{file:'atlas.webp',frames:[]}}};
+ vm.createContext(sb);vm.runInContext(fs.readFileSync('motion.js','utf8')+';Motion.mount();',sb);
+});

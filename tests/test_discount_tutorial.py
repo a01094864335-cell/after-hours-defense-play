@@ -19,7 +19,7 @@ class DiscountTutorialTests(unittest.TestCase):
         self.assertTrue(a.evaluate('TutorialCoach.held()'))
         before=a.evaluate('sp');price=a.evaluate('summonPrice()');a.locator('#summon').click()
         self.assertEqual(a.evaluate('DiscountTutorial.snapshot().stage'),'done')
-        self.assertFalse(a.evaluate('TutorialCoach.held()'));self.assertFalse(a.evaluate('summonDiscount'))
+        self.assertEqual(a.evaluate('TutorialCoach.task.lesson'),'discount');a.locator('#coach-next').wait_for(state='visible');a.locator('#coach-next').click();self.assertFalse(a.evaluate('TutorialCoach.held()'));self.assertFalse(a.evaluate('summonDiscount'))
     def test_reload_restores_pending_discount_without_duplicate_grant(self):
         a=self.open(390,844);self.lesson(a);a.locator('#coach-next').click();before=a.evaluate('sp')
         a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.locator('#resume-run').click();a.locator('#coach-next').click()
