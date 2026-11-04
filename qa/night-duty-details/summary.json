@@ -1,0 +1,13 @@
+{
+  "base": "2b59d98",
+  "screenSnapshots": 133,
+  "screenIssues": [],
+  "dailyCombinations": 120,
+  "focusedIssues": [],
+  "lobbyCombinations": 16,
+  "lobbyIssues": [],
+  "stressCases": 12,
+  "stressIssues": [],
+  "runtimeTests": 54,
+  "browserSmokeTests": 8
+}

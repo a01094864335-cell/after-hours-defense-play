@@ -1,0 +1,2218 @@
+[
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "01-lobby",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "02-menu",
+    "bad": [],
+    "dialogs": [
+      "menu"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "02-menu-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "03-records",
+    "bad": [],
+    "dialogs": [
+      "journey-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "04-training-staff",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "04-training-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "05-roster-staff",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 14
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "05-roster-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "06-shop-pack",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "07-story-archive",
+    "bad": [],
+    "dialogs": [
+      "story-archive"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "07-story-archive-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "08-daily-events",
+    "bad": [],
+    "dialogs": [
+      "daily-events-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "08-daily-events-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "09-help",
+    "bad": [],
+    "dialogs": [
+      "info"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "10-training-merc",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "10-training-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "11-roster-merc",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 13
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "11-roster-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "12-staff-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "13-merc-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "13-merc-detail-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "14-roster-locked",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 14
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "14-roster-locked-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "15-locked-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "16-shop-items",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "16-shop-items-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "17-recruit-reveal",
+    "bad": [],
+    "dialogs": [
+      "recruit-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "18-deck",
+    "bad": [],
+    "dialogs": [
+      "deck"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "19-save-transfer",
+    "bad": [],
+    "dialogs": [
+      "save-transfer-dialog"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "20-story-opening",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "21-battle-preparation",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "22-equipment",
+    "bad": [],
+    "dialogs": [
+      "equipment"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "23-battle-running",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "24-pause",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 13
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "25-leave",
+    "bad": [],
+    "dialogs": [
+      "leave"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "26-guide",
+    "bad": [],
+    "dialogs": [
+      "guide"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "27-bonus",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "28-bonus-target",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "29-boss-warning",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "30-story-daily",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "31-story-opening-last",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "screen": "32-result",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      390,
+      844
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "runtimeErrors": []
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "01-lobby",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "02-menu",
+    "bad": [],
+    "dialogs": [
+      "menu"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "02-menu-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "03-records",
+    "bad": [],
+    "dialogs": [
+      "journey-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "03-records-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "04-training-staff",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "04-training-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "05-roster-staff",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "05-roster-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "06-shop-pack",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "06-shop-pack-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "07-story-archive",
+    "bad": [],
+    "dialogs": [
+      "story-archive"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "07-story-archive-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "08-daily-events",
+    "bad": [],
+    "dialogs": [
+      "daily-events-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "08-daily-events-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "09-help",
+    "bad": [],
+    "dialogs": [
+      "info"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "09-help-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "10-training-merc",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "10-training-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "11-roster-merc",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "11-roster-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "12-staff-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "12-staff-detail-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "13-merc-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "13-merc-detail-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "14-roster-locked",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "14-roster-locked-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "15-locked-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "15-locked-detail-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "16-shop-items",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "16-shop-items-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "17-recruit-reveal",
+    "bad": [],
+    "dialogs": [
+      "recruit-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "18-deck",
+    "bad": [],
+    "dialogs": [
+      "deck"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "18-deck-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "19-save-transfer",
+    "bad": [],
+    "dialogs": [
+      "save-transfer-dialog"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "19-save-transfer-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "20-story-opening",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "21-battle-preparation",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "22-equipment",
+    "bad": [],
+    "dialogs": [
+      "equipment"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "22-equipment-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "23-battle-running",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "24-pause",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 13
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "25-leave",
+    "bad": [],
+    "dialogs": [
+      "leave"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "26-guide",
+    "bad": [],
+    "dialogs": [
+      "guide"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "27-bonus",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "28-bonus-target",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "29-boss-warning",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "30-story-daily",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "31-story-opening-last",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "screen": "32-result",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      320,
+      568
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "runtimeErrors": []
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "01-lobby",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "02-menu",
+    "bad": [],
+    "dialogs": [
+      "menu"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "03-records",
+    "bad": [],
+    "dialogs": [
+      "journey-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "04-training-staff",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "04-training-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "05-roster-staff",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 14
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "05-roster-staff-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "06-shop-pack",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "07-story-archive",
+    "bad": [],
+    "dialogs": [
+      "story-archive"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 7
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "07-story-archive-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "08-daily-events",
+    "bad": [],
+    "dialogs": [
+      "daily-events-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "08-daily-events-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "09-help",
+    "bad": [],
+    "dialogs": [
+      "info"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "10-training-merc",
+    "bad": [],
+    "dialogs": [
+      "training-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "10-training-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "11-roster-merc",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 14
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "11-roster-merc-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "12-staff-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "13-merc-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "13-merc-detail-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "14-roster-locked",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 14
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "14-roster-locked-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "15-locked-detail",
+    "bad": [],
+    "dialogs": [
+      "roster"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 4
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "16-shop-items",
+    "bad": [],
+    "dialogs": [
+      "shop"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "16-shop-items-bottom",
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "17-recruit-reveal",
+    "bad": [],
+    "dialogs": [
+      "recruit-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "18-deck",
+    "bad": [],
+    "dialogs": [
+      "deck"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 8
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "19-save-transfer",
+    "bad": [],
+    "dialogs": [
+      "save-transfer-dialog"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "20-story-opening",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "21-battle-preparation",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "22-equipment",
+    "bad": [],
+    "dialogs": [
+      "equipment"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "23-battle-running",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "24-pause",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 13
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "25-leave",
+    "bad": [],
+    "dialogs": [
+      "leave"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 2
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "26-guide",
+    "bad": [],
+    "dialogs": [
+      "guide"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 1
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "27-bonus",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 5
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "28-bonus-target",
+    "bad": [],
+    "dialogs": [
+      "perk"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 6
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "29-boss-warning",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 10
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "30-story-daily",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "31-story-opening-last",
+    "bad": [],
+    "dialogs": [
+      "promo"
+    ],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "screen": "32-result",
+    "bad": [],
+    "dialogs": [],
+    "body": [
+      430,
+      932
+    ],
+    "layout": {
+      "issues": [],
+      "checkedButtons": 3
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "runtimeErrors": []
+  }
+]

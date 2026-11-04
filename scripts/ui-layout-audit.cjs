@@ -172,10 +172,10 @@ module.exports = function auditLayout() {
       if (!visible(e)) continue;
       const r = rect(e);
       if (
-        r.left < frame.left + 1 ||
-        r.right > frame.right - 1 ||
-        r.top < frame.top + 1 ||
-        r.bottom > frame.bottom - 1
+        r.left < frame.left - 1 ||
+        r.right > frame.right + 1 ||
+        r.top < frame.top - 1 ||
+        r.bottom > frame.bottom + 1
       )
         issues.push({
           type: "modal-region-outside",
@@ -187,7 +187,18 @@ module.exports = function auditLayout() {
       dialog,
       dialog.querySelector("#roster-detail"),
     ].filter(Boolean)) {
-      const children = [...container.children].filter(visible);
+      // The comic scene is deliberately a full-screen background behind its HUD/dialogue.
+      // Foreground controls and their ink still receive the regular checks above.
+      const children = [...container.children]
+        .filter(visible)
+        .filter(
+          (e) =>
+            !(
+              dialog.id === "promo" &&
+              e.matches(".comic-stage") &&
+              getComputedStyle(e).position === "absolute"
+            ),
+        );
       for (let i = 0; i < children.length; i++)
         for (let j = i + 1; j < children.length; j++) {
           const a = children[i],

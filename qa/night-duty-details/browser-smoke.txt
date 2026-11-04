@@ -1,0 +1,13 @@
+test_fresh_player_starts_combat_through_visible_controls (test_browser_smoke.GameplaySmokeTests.test_fresh_player_starts_combat_through_visible_controls) ... ok
+test_wave_six_instruction_requires_one_selection (test_browser_smoke.GameplaySmokeTests.test_wave_six_instruction_requires_one_selection) ... ok
+test_reload_resume_keeps_run_and_training (test_release_smoke.ReleaseSafetyTests.test_reload_resume_keeps_run_and_training) ... ok
+test_second_tab_cannot_write_and_reconnect_reads_latest (test_release_smoke.ReleaseSafetyTests.test_second_tab_cannot_write_and_reconnect_reads_latest) ... ok
+test_normal_reward_does_not_pay_twice (test_release_smoke.ReleaseSafetyTests.test_normal_reward_does_not_pay_twice) ... ok
+test_failed_purchase_keeps_wallet_and_inventory (test_release_smoke.ReleaseSafetyTests.test_failed_purchase_keeps_wallet_and_inventory) ... ok
+test_pending_reward_recovers_after_reload (test_release_smoke.ReleaseSafetyTests.test_pending_reward_recovers_after_reload) ... ok
+test_rotation_pauses_and_requires_explicit_continue (test_release_smoke.ReleaseSafetyTests.test_rotation_pauses_and_requires_explicit_continue) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 18.503s
+
+OK

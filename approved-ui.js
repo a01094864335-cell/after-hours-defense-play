@@ -18,6 +18,40 @@
     if (el) dock.append(el);
   }
   lobby.append(dock);
+  const pauseBackground = () =>
+    document.documentElement.classList.toggle(
+      "ui-background-paused",
+      document.hidden,
+    );
+  document.addEventListener("visibilitychange", pauseBackground);
+  pauseBackground();
+  // Keep the existing live effect node: renderProgress remains its data owner.
+  const daily = q("#daily-option"),
+    dailyCopy = document.createElement("div"),
+    dailyTitle = document.createElement("div");
+  dailyCopy.className = "daily-copy";
+  dailyTitle.className = "daily-title";
+  dailyTitle.append(q(".daily-event-heading > small"), q("#daily-label"));
+  dailyCopy.append(dailyTitle, q("#daily-effect"));
+  daily.prepend(dailyCopy);
+  q("#daily-events-open").setAttribute(
+    "aria-label",
+    "오늘의 변주 효과와 전체 목록 보기",
+  );
+
+  // Recruitment rules stay one tap away, ahead of the purchase action.
+  const pack = q(".recruit-shop"),
+    rules = pack.querySelector(":scope > p");
+  if (rules) {
+    const details = document.createElement("details"),
+      summary = document.createElement("summary");
+    details.className = "recruit-rules";
+    const supportRate = Math.round(RECRUIT_SUPPORT_RATE * 100);
+    summary.textContent = `일반 ${100 - supportRate}% · 지원 ${supportRate}% · 상세 규칙`;
+    rules.before(details);
+    details.append(summary, rules);
+  }
+
   const board = q(".board-stage");
   if (board && typeof renderMeta === "function") {
     const support = document.createElement("div");
@@ -29,7 +63,9 @@
       const result = originalRenderMeta.apply(this, args);
       const id = playing ? activeMerc : meta.equipped;
       const merc = id && mercCatalog[id];
-      const signature = merc ? id + trainedMercDescription(id, playing) : "none";
+      const signature = merc
+        ? id + trainedMercDescription(id, playing)
+        : "none";
       if (signature !== lastSupport) {
         lastSupport = signature;
         support.replaceChildren();

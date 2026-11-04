@@ -1,0 +1,78 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "dailyVariants": 30,
+    "issues": [],
+    "shopIssues": [],
+    "supportAction": true,
+    "purchase": true,
+    "rulesDisclosure": true,
+    "motion": {
+      "reduced": "none",
+      "active": "gobi-breathe",
+      "modalPaused": "none",
+      "lowPower": "none"
+    },
+    "errors": []
+  },
+  {
+    "size": [
+      375,
+      667
+    ],
+    "dailyVariants": 30,
+    "issues": [],
+    "shopIssues": [],
+    "supportAction": true,
+    "purchase": true,
+    "rulesDisclosure": true,
+    "motion": {
+      "reduced": "none",
+      "active": "gobi-breathe",
+      "modalPaused": "none",
+      "lowPower": "none"
+    },
+    "errors": []
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "dailyVariants": 30,
+    "issues": [],
+    "shopIssues": [],
+    "supportAction": true,
+    "purchase": true,
+    "rulesDisclosure": true,
+    "motion": {
+      "reduced": "none",
+      "active": "gobi-breathe",
+      "modalPaused": "none",
+      "lowPower": "none"
+    },
+    "errors": []
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "dailyVariants": 30,
+    "issues": [],
+    "shopIssues": [],
+    "supportAction": true,
+    "purchase": true,
+    "rulesDisclosure": true,
+    "motion": {
+      "reduced": "none",
+      "active": "gobi-breathe",
+      "modalPaused": "none",
+      "lowPower": "none"
+    },
+    "errors": []
+  }
+]
