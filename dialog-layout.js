@@ -71,7 +71,8 @@
     const ordered = [header, ...context, body, footer].filter(Boolean);
     if (ordered.some((node, i) => dialog.children[i] !== node))
       dialog.replaceChildren(...ordered);
-    dialog.classList.add("contained-panel");
+    if (!dialog.classList.contains("contained-panel"))
+      dialog.classList.add("contained-panel");
   }
   function detail() {
     const detail = q("#roster-detail");

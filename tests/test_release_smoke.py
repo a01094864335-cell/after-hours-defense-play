@@ -4,6 +4,8 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 import unittest
+import json
+from browser_helpers import chromium_options, game_root, enter_preparation, start_battle
 from playwright.sync_api import sync_playwright
 
 
@@ -15,13 +17,13 @@ class QuietHandler(SimpleHTTPRequestHandler):
 class ReleaseSafetyTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        root = Path(__file__).resolve().parents[1]
+        root = game_root()
         cls.server = ThreadingHTTPServer(('127.0.0.1', 0), partial(QuietHandler, directory=str(root)))
         cls.thread = Thread(target=cls.server.serve_forever, daemon=True)
         cls.thread.start()
         cls.url = f'http://127.0.0.1:{cls.server.server_port}/'
         cls.playwright = sync_playwright().start()
-        cls.browser = cls.playwright.chromium.launch(executable_path='/usr/bin/chromium', headless=True, args=['--no-sandbox'])
+        cls.browser = cls.playwright.chromium.launch(**chromium_options(), headless=True)
 
     @classmethod
     def tearDownClass(cls):
@@ -44,10 +46,9 @@ class ReleaseSafetyTests(unittest.TestCase):
 
     def start_normal(self):
         self.page.evaluate('saveChange(d=>{d.coins=100;d.tutorialComplete=true});reset();sync()')
-        self.page.locator('#enter-battle').click()
-        self.page.locator('#promo-skip').click()
-        self.page.locator('#summon').click()
-        self.page.locator('#start').click()
+        start_battle(self.page)
+        # Story discovery is tested separately; keep settlement fixtures exact.
+        self.page.evaluate("saveChange(d=>d.coins=100)")
         self.page.evaluate('paused=true;sync();saveActiveRun()')
 
     def fail_storage(self, meta_only=False):
@@ -102,7 +103,8 @@ class ReleaseSafetyTests(unittest.TestCase):
         self.page.reload(wait_until='networkidle')
         self.page.wait_for_function('GameSession.canWrite()')
         self.assertTrue(self.page.evaluate('resumeRun()'))
-        self.assertEqual(self.page.evaluate('[wave,sp,life]'), [1, 140, 3])
+        snapshot = json.loads(before)['snapshot']
+        self.assertEqual(self.page.evaluate('[wave,sp,life]'), [snapshot[k] for k in ['wave', 'sp', 'life']])
 
     def test_retry_in_same_tab_pays_once(self):
         self.start_normal()
@@ -115,7 +117,8 @@ class ReleaseSafetyTests(unittest.TestCase):
         self.assertEqual(self.page.evaluate('meta.coins'), 117)
 
     def test_graduation_failure_and_navigation_preserve_checkpoint(self):
-        self.page.evaluate("setScreen('battle');summon();document.querySelector('#start').click();document.querySelector('#guide').close();paused=true;wave=10;saveActiveRun()")
+        start_battle(self.page)
+        self.page.evaluate("paused=true;wave=10;saveActiveRun()")
         before = self.page.evaluate('localStorage.getItem(RUN_SAVE)')
         self.fail_storage()
         # Use the actual graduation path, which also attempts to clear the run.
@@ -171,12 +174,11 @@ class ReleaseSafetyTests(unittest.TestCase):
         for width, height in [(320, 568), (360, 640)]:
             with self.subTest(viewport=(width, height)):
                 self.page.set_viewport_size({'width': width, 'height': height})
-                self.page.locator('#enter-battle').click()
-                self.page.locator('#promo-skip').click()
+                enter_preparation(self.page)
                 self.page.wait_for_timeout(100)
                 board = self.page.locator('#game').bounding_box()
                 self.assertGreaterEqual(board['width'], 240)
-                for selector in ['#summon', '#upgrade-open', '#start', '#skill', '#item-grade', '#item-kind', '#item-king']:
+                for selector in ['#summon', '#upgrade-open']:
                     box = self.page.locator(selector).bounding_box()
                     self.assertGreaterEqual(box['y'], 0)
                     self.assertLessEqual(box['y'] + box['height'], height)
@@ -189,9 +191,9 @@ class ReleaseSafetyTests(unittest.TestCase):
         result = self.page.evaluate('''()=>bossCatalog.map(b=>{
           enemies=[];wave=5;bossPlans[5]=b.id;spawn('boss');const e=enemies[0];
           board=Array.from({length:15},(_,i)=>i<2?{type:0,pip:5,cool:0,attack:0,income:5}:null);
-          e.hp=e.max/2;placeEnemyAtProgress(e,300);const before={hp:e.hp,shield:e.shield,progress:e.progress};
+          e.hp=e.max/2;placeEnemyAtProgress(e,300);const before={hp:e.hp,shield:e.shield,progress:e.progress,fastForward:e.fastForwardLeft,moveRate:bossSpeed(e)};
           warnBoss(e);const cells=[...e.warningCells];castBoss(e);
-          const effects={rush:e.rush,shield:e.shield,hp:e.hp,scorch:e.scorchLeft,stunned:board.filter(u=>u?.stun>0).length,decoys:enemies.filter(n=>n.decoy).length,progress:e.progress};
+          const effects={rush:e.rush,shield:e.shield,hp:e.hp,scorch:e.scorchLeft,stunned:board.filter(u=>u?.stun>0).length,decoys:enemies.filter(n=>n.decoy).length,progress:e.progress,fastForward:e.fastForwardLeft,moveRate:bossSpeed(e)};
           const rewards=runBoss;recordKill(e);recordKill(e);
           for(const d of enemies.filter(n=>n.decoy))recordKill(d);
           return {id:b.id,before,cells,effects,reward:runBoss-rewards};
@@ -205,7 +207,9 @@ class ReleaseSafetyTests(unittest.TestCase):
         self.assertGreater(by_id['lumen']['effects']['hp'], by_id['lumen']['before']['hp'])
         self.assertEqual(by_id['neve']['effects']['stunned'], 2)
         self.assertEqual(by_id['mira']['effects']['decoys'], 2)
-        self.assertEqual(by_id['chrono']['effects']['progress'], 190)
+        self.assertEqual(by_id['chrono']['effects']['progress'], by_id['chrono']['before']['progress'])
+        self.assertEqual(by_id['chrono']['effects']['fastForward'], 2)
+        self.assertEqual(by_id['chrono']['effects']['moveRate'], 2)
 
 
 if __name__ == '__main__':

@@ -1,5 +1,6 @@
 """Android touch loading and feature-restricted browser regressions."""
 import unittest
+from browser_helpers import enter_preparation, start_battle
 import test_usability as ui
 
 class AndroidCompatibilityTests(unittest.TestCase):
@@ -21,14 +22,14 @@ class AndroidCompatibilityTests(unittest.TestCase):
         page,errors=self.open_android()
         shell=page.locator('#app-shell').bounding_box();self.assertGreater(shell['width'],300);self.assertGreater(shell['height'],500)
         self.assertEqual(page.evaluate('GamePerformance.fps'),30)
-        page.locator('#enter-battle').tap();page.locator('#promo-skip').tap()
+        enter_preparation(page, touch=True)
         self.assertTrue(page.locator('#battle').is_visible());page.locator('#summon').tap()
         self.assertEqual(page.evaluate('board.filter(Boolean).length'),1)
         self.assertFalse(errors,errors)
     def test_old_viewport_units_and_media_listeners_still_start(self):
         page,errors=self.open_android(legacy=True)
         shell=page.locator('#app-shell').bounding_box();self.assertGreater(shell['width'],300);self.assertGreater(shell['height'],500)
-        page.locator('#enter-battle').tap();page.locator('#promo-skip').tap();page.locator('#summon').tap()
+        enter_preparation(page, touch=True);page.locator('#summon').tap()
         self.assertEqual(page.evaluate('board.filter(Boolean).length'),1)
         page.set_viewport_size({'width':851,'height':393});page.wait_for_timeout(200)
         self.assertTrue(page.locator('#rotation-notice').is_visible())

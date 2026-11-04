@@ -4,7 +4,7 @@
 
 이 저장소가 현재 게임의 **소스·자산·검증·배포 기준**입니다. 이전 소스 저장소의 내보내기 결과로 덮어쓰지 마세요.
 
-수정 → `node --test tests/*.test.cjs` → `node scripts/build-pages.cjs /tmp/game-pages` → main 반영 순서로 작업합니다. GitHub Actions의 runtime 작업이 성공해야 Pages에 배포됩니다. 원본 이야기 PNG는 보관하되 배포 파일에서는 제외합니다.
+수정 → `node --test tests/*.test.cjs` → `node scripts/build-pages.cjs /tmp/game-pages` → main 반영 순서로 작업합니다. GitHub Actions의 runtime 작업에서 로직 테스트·빌드·배포 산출물의 Chromium smoke 검사가 모두 성공해야 Pages에 배포됩니다. 원본 이야기 PNG는 보관하되 배포 파일에서는 제외합니다.
 
 - [개선 사항과 정책](docs/development-20261026.md)
 - [현재 17종·지원 7종 밸런스 검증](docs/balance-validation-20261026.md)
@@ -23,3 +23,22 @@
 ## 실제 플레이 기반 디자인 정리
 
 [플레이 화면 비교](qa/play-design/index.html)와 [디자인 수정 내역](qa/play-design/README.md)을 기록했습니다. 패널 위계·선택 탭·로비 명단·상점·도감·전투 알림·결과 가독성을 정리했으며 게임 규칙과 기능은 유지합니다.
+
+## 브라우저 회귀 검사
+
+```sh
+python3 -m pip install -r tests/requirements-browser.txt
+python3 -m playwright install chromium
+python3 -m unittest discover -s tests -v
+```
+
+`/usr/bin/chromium`이 있으면 기본으로 사용합니다. 다른 실행 파일은 `UI_CHROMIUM_PATH`로 지정하고, Playwright 설치 브라우저를 사용하려면 `UI_CHROMIUM_PATH=''`로 실행하세요.
+
+CI와 동일한 배포 산출물 smoke 검사:
+
+```sh
+node scripts/build-pages.cjs /tmp/game-pages
+UI_GAME_ROOT=/tmp/game-pages python3 -m unittest discover -s tests -p 'test_browser_smoke.py' -v
+```
+
+신규 시작·5회 소환·일시정지·6웨이브 스킬 선택, 이어하기, 다중 탭 저장 보호, 정산 중복 방지·저장 실패 복구, 화면 회전을 확인합니다. 전체 브라우저 검사에는 화면 배치·구매·보스·성능 회귀 검사도 포함됩니다.
