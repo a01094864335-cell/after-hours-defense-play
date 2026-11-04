@@ -14,7 +14,22 @@
  const companion=document.createElement('button');companion.type='button';companion.className='duo-companion';companion.onclick=()=>q('.ref-merc-plus')?.click();
  const portrait=new Image();portrait.alt='';portrait.dataset.motion='static-duo-companion';const copy=document.createElement('span'),tag=document.createElement('small'),name=document.createElement('b');copy.append(tag,name);companion.append(portrait,copy);art.append(companion);
  const daily=q('#daily-option');lobby.append(daily);const footer=q('.live-lobby-footer');footer.prepend(q('.mode-card'));
- let last='';function refresh(){const key=meta.equipped||'';companion.dataset.merc=key;if(key===last&&companion.dataset.ready)return;last=key;companion.dataset.ready='1';companion.dataset.empty=String(!key);const merc=key&&mercCatalog[key];portrait.hidden=!merc;if(merc)portrait.src='assets/pixel/'+merc.file+'.webp';tag.textContent=merc?'오늘의 동료':'함께 출근할 동료';name.textContent=merc?merc.name:'지원 용병 선택 +';companion.setAttribute('aria-label',merc?merc.name+' · 지원 용병 변경':'지원 용병 선택');q('.lobby-badge').textContent=merc?'오늘은 내가 지켜줄게!':'같이 출근할 동료를 골라볼까?'}
+ let last='';
+ function refresh(){
+  const key=meta.equipped||'';
+  companion.dataset.merc=key;
+  if(key===last&&companion.dataset.ready)return;
+  last=key;companion.dataset.ready='1';companion.dataset.empty=String(!key);
+  const merc=key&&mercCatalog[key];
+  const identity=merc&&staffRecords.find(r=>r.id==='merc-'+key);
+  const displayName=identity?.name||merc?.name;
+  portrait.hidden=false;
+  portrait.src=merc?'assets/pixel/'+merc.file+'.webp':'assets/ui-v2/icons/scroll.svg';
+  tag.textContent=merc?'오늘의 동료':'함께 출근할 동료';
+  name.textContent=merc?displayName:'지원 영웅 선택 +';
+  companion.setAttribute('aria-label',merc?displayName+' · '+merc.name+' · 지원 영웅 변경':'지원 영웅 선택');
+  q('.lobby-badge').textContent=merc?'오늘은 내가 지켜줄게!':'같이 출근할 동료를 골라볼까?';
+ }
  const original=renderMeta;renderMeta=function(...args){const result=original.apply(this,args);refresh();return result};refresh();
  const sizeFooter=()=>{const h=footer.getBoundingClientRect().height;if(h)lobby.style.setProperty('--duo-footer-height',h+'px')};if(typeof ResizeObserver!=='undefined')new ResizeObserver(sizeFooter).observe(footer);sizeFooter();
 })();

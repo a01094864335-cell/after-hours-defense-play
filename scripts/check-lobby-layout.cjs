@@ -61,7 +61,13 @@ const { chromium } = require("playwright"),
               .querySelector(".approved-lobby-dock")
               .getBoundingClientRect();
           return {
-            gap: companion.top - shortcuts.bottom,
+            verticalGap: companion.top - shortcuts.bottom,
+            gap: Math.max(
+              companion.top - shortcuts.bottom,
+              shortcuts.top - companion.bottom,
+              companion.left - shortcuts.right,
+              shortcuts.left - companion.right,
+            ),
             sceneGap: dock.top - art.bottom,
             inside:
               shortcuts.top >= art.top &&

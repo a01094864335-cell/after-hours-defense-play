@@ -1,0 +1,242 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "resume": false,
+    "verticalGap": 26.421875,
+    "gap": 138,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      320,
+      568
+    ],
+    "resume": true,
+    "verticalGap": -17.578125,
+    "gap": 138,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      360,
+      640
+    ],
+    "resume": false,
+    "verticalGap": 80.40625,
+    "gap": 178,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      360,
+      640
+    ],
+    "resume": true,
+    "verticalGap": 36.40625,
+    "gap": 178,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      375,
+      667
+    ],
+    "resume": false,
+    "verticalGap": 88.40625,
+    "gap": 193,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      375,
+      667
+    ],
+    "resume": true,
+    "verticalGap": 44.40625,
+    "gap": 193,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      390,
+      568
+    ],
+    "resume": false,
+    "verticalGap": 8.40625,
+    "gap": 208,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      568
+    ],
+    "resume": true,
+    "verticalGap": -35.59375,
+    "gap": 208,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      390,
+      640
+    ],
+    "resume": false,
+    "verticalGap": 80.40625,
+    "gap": 208,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      640
+    ],
+    "resume": true,
+    "verticalGap": 36.40625,
+    "gap": 208,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "resume": false,
+    "verticalGap": 161.40625,
+    "gap": 161.40625,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "resume": true,
+    "verticalGap": 117.40625,
+    "gap": 117.40625,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      430,
+      568
+    ],
+    "resume": false,
+    "verticalGap": 8.40625,
+    "gap": 248,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      568
+    ],
+    "resume": true,
+    "verticalGap": -35.59375,
+    "gap": 248,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "resume": false,
+    "verticalGap": 249.40625,
+    "gap": 249.40625,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 11
+    }
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "resume": true,
+    "verticalGap": 205.40625,
+    "gap": 205.40625,
+    "sceneGap": 0,
+    "inside": true,
+    "layout": {
+      "issues": [],
+      "checkedButtons": 12
+    }
+  }
+]
