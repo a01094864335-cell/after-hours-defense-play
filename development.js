@@ -14,7 +14,7 @@ buyStaffPack=function(){
  revealRecruit(support?'merc-'+id:id,duplicate);return true;
 };
 const previousRecruitShop=renderRecruitShop;let recruitRenderKey='';
-renderRecruitShop=function(){const key=JSON.stringify([meta.coins,meta.recruitPoints,meta.owned,meta.staff,profile().pity,playing,ended,saveWarning]);if(key===recruitRenderKey)return;recruitRenderKey=key;previousRecruitShop();document.querySelector('#recruit-balance').textContent='보유 '+meta.coins+' 코인 · 채용 포인트 '+meta.recruitPoints+' · '+(missingSupports().length?'미보유 지원 보장 '+profile().pity+'/10':'지원 수집 완료');};
+renderRecruitShop=function(){if(!document.querySelector('#shop').open)return;const key=JSON.stringify([meta.coins,meta.recruitPoints,meta.owned,meta.staff,profile().pity,playing,ended,saveWarning]);if(key===recruitRenderKey)return;recruitRenderKey=key;previousRecruitShop();document.querySelector('#recruit-balance').textContent='보유 '+meta.coins+' 코인 · 채용 포인트 '+meta.recruitPoints+' · '+(missingSupports().length?'미보유 지원 보장 '+profile().pity+'/10':'지원 수집 완료');};
 function recruitSupport(id){
  if(!MERC_IDS.includes(id)||meta.owned.includes(id)||saveWarning||playing&&!ended||meta.recruitPoints<SUPPORT_POINTS)return false;
  if(!saveChange(d=>{d.recruitPoints-=SUPPORT_POINTS;d.owned.push(id);d.profile.pity=0;}))return false;

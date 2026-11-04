@@ -4,6 +4,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
 import unittest
+from browser_helpers import chromium_options, game_root, enter_preparation, start_battle
 from playwright.sync_api import sync_playwright
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -13,10 +14,10 @@ class QuietHandler(SimpleHTTPRequestHandler):
 class UsabilityTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=str(Path(__file__).resolve().parents[1])))
+        cls.server=ThreadingHTTPServer(('127.0.0.1',0),partial(QuietHandler,directory=game_root()))
         Thread(target=cls.server.serve_forever,daemon=True).start()
         cls.pw=sync_playwright().start()
-        cls.browser=cls.pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox'])
+        cls.browser=cls.pw.chromium.launch(**chromium_options())
     @classmethod
     def tearDownClass(cls):
         cls.browser.close();cls.pw.stop();cls.server.shutdown();cls.server.server_close()
@@ -31,6 +32,9 @@ class UsabilityTests(unittest.TestCase):
     def test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible(self):
         for w,h in [(320,568),(360,640),(390,844)]:
             a=self.open(w,h);a.evaluate('saveChange(d=>d.coins=120);renderMeta()');a.locator('#shop-open').click();a.locator('#buy-staff-pack').click()
+            if a.locator('#hiring-story[open]').count():
+                self.assertTrue(a.locator('#hiring-story').evaluate('e=>e.contains(document.activeElement)'))
+                a.locator('[data-hire-close]').click()
             a.wait_for_selector('#recruit-dialog[open] .ref-recruit-actions');self.inside(a,'#recruit-dialog');self.inside(a,'.ref-recruit-actions button:last-child')
             self.assertTrue(a.evaluate("document.querySelector('#recruit-dialog').contains(document.activeElement)"))
             for _ in range(6):a.keyboard.press('Tab');self.assertTrue(a.evaluate("document.querySelector('#recruit-dialog').contains(document.activeElement)"))
@@ -39,7 +43,7 @@ class UsabilityTests(unittest.TestCase):
             self.assertEqual(a.locator('#recruit-dialog[open]').count(),0);a.context.close()
     def test_sp_four_digits_stay_on_one_line(self):
         for w,h in [(320,568),(390,844),(1280,900)]:
-            a=self.open(w,h);a.locator('#enter-battle').click();a.locator('#promo-skip').click();a.evaluate('sp=9999;sync()')
+            a=self.open(w,h);enter_preparation(a);a.evaluate('sp=9999;sync()')
             size=a.locator('#sp').evaluate('(e)=>({w:e.scrollWidth,c:e.clientWidth,h:e.getBoundingClientRect().height,line:parseFloat(getComputedStyle(e).lineHeight)})')
             self.assertLessEqual(size['h'],size['line']+1);self.inside(a,'#summon');self.inside(a,'#upgrade-open');a.context.close()
     def test_short_roster_shows_three_complete_cards(self):
@@ -47,17 +51,30 @@ class UsabilityTests(unittest.TestCase):
         count=a.locator('#roster-list').evaluate('(e)=>{const r=e.getBoundingClientRect();return [...e.children].filter(c=>{const b=c.getBoundingClientRect();return b.top>=r.top&&b.bottom<=r.bottom}).length}')
         self.assertGreaterEqual(count,3)
     def test_equipment_context_and_training_context_survive_scrolling(self):
-        a=self.open(320,568);a.locator('#enter-battle').click();a.locator('#promo-skip').click();a.locator('#upgrade-open').click()
+        a=self.open(320,568);enter_preparation(a);a.locator('#upgrade-open').click()
         before=a.locator('#equipment-close').bounding_box();a.locator('.equipment-content').evaluate('e=>e.scrollTop=e.scrollHeight')
         self.assertEqual(before,a.locator('#equipment-close').bounding_box());self.inside(a,'#equipment-close');self.inside(a,'#equipment-balance');a.locator('#equipment-close').click()
-        a.evaluate("document.querySelector('#training-entry').click()");a.locator('.training-body').evaluate('e=>e.scrollTop=e.scrollHeight')
-        for selector in ['#training-context','#training-tab-merc','#training-upgrade','#training-close']:self.inside(a,selector)
-        self.assertIn('Lv.',a.locator('#training-context').inner_text())
+        a.evaluate("document.querySelector('#training-entry').click()");a.locator('.live-training-body').evaluate('e=>e.scrollTop=e.scrollHeight')
+        for selector in ['#training-title','#training-tab-merc','#training-upgrade','#training-close']:self.inside(a,selector)
+        a.locator('#training-summary').scroll_into_view_if_needed()
+        self.assertIn('Lv.',a.locator('#training-summary').inner_text())
     def test_short_report_primary_action_is_visible(self):
         a=self.open(320,568);a.evaluate('wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()')
-        self.inside(a,'#result-again');self.inside(a,'#result-title');self.inside(a,'#result-stats');a.locator('#result-again').click()
+        self.inside(a,'#result-again');self.inside(a,'#result-title');a.locator('#result-stats').scroll_into_view_if_needed();self.assertTrue(a.locator('#result-stats').is_visible());a.locator('#result-again').click()
         self.assertEqual(a.locator('#result:not([hidden])').count(),0)
-    def test_boss_readout_uses_legible_screen_text(self):
-        a=self.open(320,568);a.locator('#enter-battle').click();a.locator('#promo-skip').click();a.evaluate("wave=5;bossPlans[5]='ruby';spawn('boss');sync();drawBossHUD()")
-        self.inside(a,'#boss-readout');self.assertGreaterEqual(a.locator('#boss-readout strong').evaluate('e=>parseFloat(getComputedStyle(e).fontSize)'),14)
-        a.locator('#boss-readout summary').click();self.assertIn('대응:',a.locator('#boss-readout p').inner_text())
+    def test_boss_canvas_hud_and_help_show_current_identity(self):
+        a=self.open(320,568);enter_preparation(a)
+        labels=a.evaluate("""()=>{
+          wave=5;bossPlans[5]='ruby';spawn('boss');sync();
+          const labels=[],original=ctx.fillText;
+          try{ctx.fillText=function(text,...args){labels.push(text);return original.call(this,text,...args)};drawBossHUD()}
+          finally{ctx.fillText=original}
+          return labels;
+        }""")
+        self.assertTrue(any('루비' in text for text in labels))
+        self.assertTrue(any('화염 돌파' in text for text in labels))
+        a.locator('#battle-back').click();a.locator('#menu-open').click();a.locator('#ref-menu-help').click()
+        a.locator('.boss-guide summary').click()
+        self.assertIn('루비',a.locator('#boss-guide-list').inner_text())
+        self.assertEqual(a.locator('#boss-guide-list .boss-counter').count(),7)
+        self.assertTrue(all(text.strip() for text in a.locator('#boss-guide-list .boss-counter').all_inner_texts()))

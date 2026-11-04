@@ -1,5 +1,6 @@
 """Progression rewards, recovery discounts, and speed controls."""
 import unittest
+from browser_helpers import enter_preparation, start_battle
 import test_usability as ui
 
 class BalanceTests(unittest.TestCase):
@@ -68,7 +69,7 @@ class BalanceTests(unittest.TestCase):
         a.evaluate("document.querySelectorAll('dialog[open]').forEach(d=>d.close());ended=false;runReward=null;reset()")
         self.assertFalse(a.evaluate('summonDiscount'))
     def test_speed_cycles_to_three_preserves_pause_and_reloads(self):
-        a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset()');a.locator('#enter-battle').click();a.locator('#promo-skip').click();a.locator('#summon').click();a.locator('#start').click()
+        a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset()');start_battle(a)
         for expected in [2,3,1,2,3]:
             a.locator('#speed').click();self.assertEqual(a.evaluate('speed'),expected);self.assertFalse(a.evaluate('paused'))
             self.assertIn(str(expected)+'배속',a.locator('#speed').get_attribute('aria-label'))
