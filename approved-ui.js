@@ -31,7 +31,8 @@
     dailyTitle = document.createElement("div");
   dailyCopy.className = "daily-copy";
   dailyTitle.className = "daily-title";
-  dailyTitle.append(q(".daily-event-heading > small"), q("#daily-label"));
+  q(".daily-event-heading > small")?.remove();
+  dailyTitle.append(q("#daily-label"));
   dailyCopy.append(dailyTitle, q("#daily-effect"));
   daily.prepend(dailyCopy);
   q("#daily-events-open").setAttribute(
@@ -47,7 +48,8 @@
       summary = document.createElement("summary");
     details.className = "recruit-rules";
     const supportRate = Math.round(RECRUIT_SUPPORT_RATE * 100);
-    summary.textContent = `일반 ${100 - supportRate}% · 지원 ${supportRate}% · 상세 규칙`;
+    summary.textContent = `일반 ${100 - supportRate}% · 지원 ${supportRate}%`;
+    summary.setAttribute("aria-label", `${summary.textContent}. 확률·보장 규칙 펼치기`);
     rules.before(details);
     details.append(summary, rules);
   }
@@ -56,7 +58,7 @@
   if (board && typeof renderMeta === "function") {
     const support = document.createElement("div");
     support.id = "approved-battle-support";
-    board.after(support);
+    q("#info .help-content").append(support);
     let lastSupport = "";
     const originalRenderMeta = renderMeta;
     renderMeta = function (...args) {
@@ -80,7 +82,7 @@
           description.textContent = trainedMercDescription(id, playing);
           copy.append(title, description);
           support.append(image, copy);
-        } else support.textContent = "지원 영웅 미선택 · 당직실에서 편성하세요";
+        } else support.textContent = "지원 영웅 미편성";
       }
       return result;
     };

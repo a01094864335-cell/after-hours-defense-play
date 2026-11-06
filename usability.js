@@ -11,7 +11,7 @@
  const perk=q('#perk'),perkBody=document.createElement('div');perkBody.className='perk-content';
  for(const child of [...perk.children])if(child.id!=='perk-back')perkBody.append(child);
  perk.prepend(perkBody);
- const intro=q('.training-intro');intro.innerHTML='같은 그룹 전체 성장 · 신규 채용에도 적용<br><small>코인 사용 · 확정 성공 · 현재 기기·브라우저에 저장</small>';
+ const intro=q('.training-intro');intro.remove();
  const breakdown=document.createElement('details');breakdown.id='result-breakdown';breakdown.innerHTML='<summary>보상 내역·다음 안내</summary>';q('#result-text').before(breakdown);breakdown.append(q('#result-text'));
  const originalStats=describeStats;describeStats=function(){originalStats();breakdown.open=!runReward?.paid||tutorialMode&&!tutorialWon};
  function prices(){
@@ -30,5 +30,5 @@
  const showNotice=()=>{const d=document.createElement('dialog');d.className='notice-dialog';const h=document.createElement('h2');h.textContent='전투 안내';const p=document.createElement('p');p.textContent=q('#message').textContent;const close=document.createElement('button');close.textContent='알겠어요';close.onclick=()=>d.close();d.append(h,p,close);document.body.append(d);const resume=playing&&!paused&&!ended;if(resume){paused=true;sync()}d.addEventListener('close',()=>{d.remove();if(resume&&!ended){paused=false;sync()}});d.showModal()};
  notice.addEventListener('click',showNotice);notice.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showNotice()}});
  // Keep initial instructions concise enough to read on short phones.
- const oldSync=sync;sync=function(){oldSync();if(appScreen==='battle'&&!playing&&!ended)uiText(q('#message'),'준비 '+preparationCount()+'/5 · 직원을 5회 소환하면 자동으로 당직이 시작돼요.');if(appScreen!=='battle'||ended){const hud=q('#boss-readout');if(hud)uiProp(hud,'hidden',true)}};
+ const oldSync=sync;sync=function(){oldSync();if(appScreen==='battle'&&!playing&&!ended)uiText(q('#message'),'소환 '+preparationCount()+'/5 · 5명부터 전투 시작');if(appScreen!=='battle'||ended){const hud=q('#boss-readout');if(hud)uiProp(hud,'hidden',true)}};
 })();

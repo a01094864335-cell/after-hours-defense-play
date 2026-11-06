@@ -1,0 +1,806 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 320,
+      "h": 48
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 48,
+      "w": 320,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 77.5,
+      "w": 320,
+      "h": 293.5
+    },
+    "#game": {
+      "x": -0.5,
+      "y": 56.346153259277344,
+      "w": 321,
+      "h": 321
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 371,
+      "w": 308,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 16,
+      "y": 380,
+      "w": 288,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 16,
+      "y": 434,
+      "w": 288,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 16,
+      "y": 482,
+      "w": 288,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 16,
+      "y": 534,
+      "w": 288,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 0.9345794392523364,
+      "right": 599.0654205607476,
+      "top": 39.53990044994889,
+      "bottom": 588.1380312910704
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 94,
+        "y": 380,
+        "w": 140,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 240,
+        "y": 380,
+        "w": 64,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 17,
+        "y": 435,
+        "w": 248,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 265,
+        "y": 435,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 16,
+        "y": 482,
+        "w": 91.328125,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 114.328125,
+        "y": 482,
+        "w": 91.328125,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 212.65625,
+        "y": 482,
+        "w": 91.34375,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  },
+  {
+    "viewport": [
+      360,
+      640
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 360,
+      "h": 48
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 48,
+      "w": 360,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 77.5,
+      "w": 360,
+      "h": 365.5
+    },
+    "#game": {
+      "x": -7.5,
+      "y": 70.19230651855469,
+      "w": 375,
+      "h": 375
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 443,
+      "w": 348,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 19,
+      "y": 452,
+      "w": 322,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 19,
+      "y": 506,
+      "w": 322,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 19,
+      "y": 554,
+      "w": 322,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 19,
+      "y": 606,
+      "w": 322,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 12,
+      "right": 588,
+      "top": 11.6923095703125,
+      "bottom": 596.4923095703125
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 109,
+        "y": 452,
+        "w": 148,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 265,
+        "y": 452,
+        "w": 76,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 20,
+        "y": 507,
+        "w": 282,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 302,
+        "y": 507,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 19,
+        "y": 554,
+        "w": 102.65625,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 128.65625,
+        "y": 554,
+        "w": 102.671875,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 238.328125,
+        "y": 554,
+        "w": 102.65625,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  },
+  {
+    "viewport": [
+      375,
+      667
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 56
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 56,
+      "w": 375,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 85.5,
+      "w": 375,
+      "h": 384.5
+    },
+    "#game": {
+      "x": -7.5,
+      "y": 81.26923370361328,
+      "w": 390,
+      "h": 390
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 470,
+      "w": 363,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 19,
+      "y": 479,
+      "w": 337,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 19,
+      "y": 533,
+      "w": 337,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 19,
+      "y": 581,
+      "w": 337,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 19,
+      "y": 633,
+      "w": 337,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 11.538461538461538,
+      "right": 588.4615384615385,
+      "top": 6.508871225210337,
+      "bottom": 598.0473327636719
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 109,
+        "y": 479,
+        "w": 163,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 280,
+        "y": 479,
+        "w": 76,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 20,
+        "y": 534,
+        "w": 297,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 317,
+        "y": 534,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 19,
+        "y": 581,
+        "w": 107.65625,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 133.65625,
+        "y": 581,
+        "w": 107.671875,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 248.328125,
+        "y": 581,
+        "w": 107.65625,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      740
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 56
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 56,
+      "w": 390,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 85.5,
+      "w": 390,
+      "h": 457.5
+    },
+    "#game": {
+      "x": -8,
+      "y": 111.25,
+      "w": 406,
+      "h": 406
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 543,
+      "w": 378,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 19,
+      "y": 552,
+      "w": 352,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 19,
+      "y": 606,
+      "w": 352,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 19,
+      "y": 654,
+      "w": 352,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 19,
+      "y": 706,
+      "w": 352,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 11.822660098522167,
+      "right": 588.1773399014778,
+      "top": 0,
+      "bottom": 600
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 109,
+        "y": 552,
+        "w": 178,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 295,
+        "y": 552,
+        "w": 76,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 20,
+        "y": 607,
+        "w": 312,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 332,
+        "y": 607,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 19,
+        "y": 654,
+        "w": 112.65625,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 138.65625,
+        "y": 654,
+        "w": 112.671875,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 258.328125,
+        "y": 654,
+        "w": 112.65625,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 390,
+      "h": 56
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 56,
+      "w": 390,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 85.5,
+      "w": 390,
+      "h": 561.5
+    },
+    "#game": {
+      "x": -8,
+      "y": 163.25,
+      "w": 406,
+      "h": 406
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 647,
+      "w": 378,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 19,
+      "y": 656,
+      "w": 352,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 19,
+      "y": 710,
+      "w": 352,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 19,
+      "y": 758,
+      "w": 352,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 19,
+      "y": 810,
+      "w": 352,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 11.822660098522167,
+      "right": 588.1773399014778,
+      "top": 0,
+      "bottom": 600
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 109,
+        "y": 656,
+        "w": 178,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 295,
+        "y": 656,
+        "w": 76,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 20,
+        "y": 711,
+        "w": 312,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 332,
+        "y": 711,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 19,
+        "y": 758,
+        "w": 112.65625,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 138.65625,
+        "y": 758,
+        "w": 112.671875,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 258.328125,
+        "y": 758,
+        "w": 112.65625,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    ".battle-top": {
+      "x": 0,
+      "y": 0,
+      "w": 430,
+      "h": 56
+    },
+    "#next-boss": {
+      "x": 0,
+      "y": 56,
+      "w": 430,
+      "h": 29.5
+    },
+    ".board-stage": {
+      "x": 0,
+      "y": 85.5,
+      "w": 430,
+      "h": 649.5
+    },
+    "#game": {
+      "x": -8.5,
+      "y": 186.75,
+      "w": 447,
+      "h": 447
+    },
+    "#approved-battle-support": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    ".battle-controls": {
+      "x": 6,
+      "y": 735,
+      "w": 418,
+      "h": 197
+    },
+    ".summon-row": {
+      "x": 19,
+      "y": 744,
+      "w": 392,
+      "h": 48
+    },
+    ".skill-row": {
+      "x": 19,
+      "y": 798,
+      "w": 392,
+      "h": 42
+    },
+    ".item-buttons": {
+      "x": 19,
+      "y": 846,
+      "w": 392,
+      "h": 46
+    },
+    ".battle-notice": {
+      "x": 19,
+      "y": 898,
+      "w": 392,
+      "h": 26
+    },
+    "visibleWorld": {
+      "left": 11.409395973154362,
+      "right": 588.5906040268457,
+      "top": 0,
+      "bottom": 600
+    },
+    "controls": [
+      {
+        "id": "summon",
+        "x": 109,
+        "y": 744,
+        "w": 218,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "upgrade-open",
+        "x": 335,
+        "y": 744,
+        "w": 76,
+        "h": 48,
+        "overflow": false
+      },
+      {
+        "id": "skill",
+        "x": 20,
+        "y": 799,
+        "w": 352,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "skill-help",
+        "x": 372,
+        "y": 799,
+        "w": 38,
+        "h": 40,
+        "overflow": false
+      },
+      {
+        "id": "item-grade",
+        "x": 19,
+        "y": 846,
+        "w": 126,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-kind",
+        "x": 152,
+        "y": 846,
+        "w": 126,
+        "h": 46,
+        "overflow": false
+      },
+      {
+        "id": "item-king",
+        "x": 285,
+        "y": 846,
+        "w": 126,
+        "h": 46,
+        "overflow": false
+      }
+    ],
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "startPauseResume": "passed",
+    "errors": []
+  }
+]

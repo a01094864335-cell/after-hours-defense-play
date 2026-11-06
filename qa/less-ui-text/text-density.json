@@ -1,0 +1,57 @@
+{
+  "beforeRevision": "b996b814a2d49e417403a01ce7d2535e5ddd3a5e",
+  "screens": {
+    "lobby": {
+      "before": 105,
+      "after": 74,
+      "reductionPercent": 30
+    },
+    "roster": {
+      "before": 454,
+      "after": 217,
+      "reductionPercent": 52
+    },
+    "training": {
+      "before": 1737,
+      "after": 303,
+      "reductionPercent": 83
+    },
+    "shop": {
+      "before": 145,
+      "after": 76,
+      "reductionPercent": 48
+    },
+    "daily": {
+      "before": 384,
+      "after": 302,
+      "reductionPercent": 21
+    },
+    "records": {
+      "before": 204,
+      "after": 121,
+      "reductionPercent": 41
+    },
+    "stories": {
+      "before": 546,
+      "after": 473,
+      "reductionPercent": 13
+    },
+    "battle": {
+      "before": 119,
+      "after": 80,
+      "reductionPercent": 33
+    },
+    "result": {
+      "before": 295,
+      "after": 104,
+      "reductionPercent": 65
+    }
+  },
+  "checks": [
+    "training keyboard disclosure",
+    "purchase rates and guarantee rules",
+    "support details available in help",
+    "full battle notice available",
+    "result analysis disclosure"
+  ]
+}
