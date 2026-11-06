@@ -26,5 +26,6 @@ test('all original music files are valid PCM loop assets within mobile budget',(
 test('staff practice pauses parent music and closing it resumes the lobby',async()=>{
  const b=boot();b.events.pointerdown();await Promise.resolve();assert.equal(b.players[0].paused,false);
  b.nodes['#staff-trial'].dataset={practicing:'true'};b.tick();assert(b.players.every(a=>a.paused));
- b.nodes['#staff-trial'].dataset.practicing='false';b.tick();await Promise.resolve();assert.equal(b.players[0].paused,false);
+ await new Promise(resolve=>setImmediate(resolve));b.tick();assert(b.players.every(a=>a.paused));
+ b.nodes['#staff-trial'].dataset.practicing='false';b.tick();await new Promise(resolve=>setImmediate(resolve));assert.equal(b.players[0].paused,false);
 });
