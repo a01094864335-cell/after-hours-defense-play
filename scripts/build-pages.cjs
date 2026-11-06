@@ -11,6 +11,7 @@ files.add('play-design.css');
 files.add('detail-ui.css');
 files.add('ui.css');
 files.add('tutorial-coach.js');
+files.add('tactical-duty.js');
 files.add('assets/pixel/demon-king.webp');
 files.add('assets/tutorial/demon-king-night-mentor.webp');
 files.add('assets/comic/01-first-shift-sd.webp');

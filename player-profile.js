@@ -1,6 +1,6 @@
 'use strict';
 // Optional, versioned additions. Old wallets keep every coin, hero and item.
-function freshProfile(){return {version:1,pity:0,compactFX:true,presets:[null,null,null],records:[],best:0};}
+function freshProfile(){return {version:1,pity:0,compactFX:true,presets:[null,null,null],records:[],best:0,starterClaim:null};}
 function readProfile(value){
  if(value===undefined)return freshProfile();
  const p=JSON.parse(JSON.stringify(value));
@@ -10,6 +10,8 @@ function readProfile(value){
  for(const deck of p.presets)if(deck!==null&&(!deck||!Array.isArray(deck.staff)||deck.staff.length!==5||new Set(deck.staff).size!==5||deck.staff.some(id=>!staff.includes(id))||(deck.support!==null&&!MERC_IDS.includes(deck.support))))throw Error('invalid deck preset');
  for(const r of p.records)if(!r||typeof r.id!=='string'||!integer(r.wave,100000)||!integer(r.cleared,100000)||!integer(r.coins,1000000000)||!Number.isFinite(r.seconds)||r.seconds<0||typeof r.rule!=='string'||!Array.isArray(r.deck)||r.deck.some(id=>!staff.includes(id))||!validTraining(r.training)||!r.king||!integer(r.king.kills,10000000)||!integer(r.king.appearances,100000)||!integer(r.king.bosses,1000000))throw Error('invalid run record');
  for(const r of p.records){r.bosses??=[];if(!Array.isArray(r.bosses)||r.bosses.length>30||r.bosses.some(b=>!b||typeof b.name!=='string'||b.name.length>100||!integer(b.wave,100000)||!Number.isFinite(b.seconds)||b.seconds<0||typeof b.king!=='boolean'))throw Error('invalid boss records');}
+ if(p.starterClaim!==undefined&&p.starterClaim!==null&&!staff.includes(p.starterClaim)&&p.starterClaim!=='complete')throw Error('invalid starter claim');
+ p.starterClaim??=null;
  return p;
 }
 function freshInsights(){return {version:1,seconds:0,summons:0,merges:0,failed:0,skills:0,items:{grade:0,kind:0,king:0},king:{appearances:0,kills:0,bosses:0},support:{damage:0,sp:0,prevented:0,cleanses:0,stops:0,boost:0},help:Array.from({length:17},()=>0),breaches:[],bosses:[]};}

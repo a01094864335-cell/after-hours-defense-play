@@ -30,8 +30,9 @@
     if (typeof appScreen === 'undefined' || appScreen !== 'battle') return 'lobby';
     return typeof enemies !== 'undefined' && enemies?.some(e => e.type === 'boss' && e.hp > 0) ? 'boss' : 'battle';
   }
+  function staffTrialOpen() { return document.querySelector('#staff-trial')?.dataset?.practicing === 'true'; }
   function update() {
-    const stopped = document.hidden || !unlocked || muted || volume === 0 ||
+    const stopped = document.hidden || staffTrialOpen() || !unlocked || muted || volume === 0 ||
       (typeof appScreen !== 'undefined' && appScreen === 'battle' && typeof paused !== 'undefined' && paused);
     active = scene();
     if (stopped) {
@@ -53,7 +54,7 @@
         pending.add(audio);
         Promise.resolve(audio.play()).then(() => {
           if (status) status.textContent = '';
-          if (document.hidden || muted || !unlocked || volume === 0) audio.pause();
+          if (document.hidden || staffTrialOpen() || muted || !unlocked || volume === 0) audio.pause();
         }).catch(() => {
           unlocked = false;
           if (status) status.textContent = '화면을 한 번 누르면 음악이 시작돼요.';

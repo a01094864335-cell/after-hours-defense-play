@@ -2,6 +2,7 @@
 import unittest
 import test_usability as ui
 import test_release_smoke as safety
+import test_tactical_duty as tactics
 from browser_helpers import start_battle
 
 
@@ -56,4 +57,5 @@ def load_tests(loader, tests, pattern):
         'test_rotation_pauses_and_requires_explicit_continue',
     ]:
         suite.addTest(safety.ReleaseSafetyTests(name))
+    suite.addTests(loader.loadTestsFromTestCase(tactics.TacticalDutyTests))
     return suite

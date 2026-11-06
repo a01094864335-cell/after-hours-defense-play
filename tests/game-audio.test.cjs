@@ -23,3 +23,9 @@ test('all original music files are valid PCM loop assets within mobile budget',(
  let peak=0;for(let i=44;i<b.length;i+=2)peak=Math.max(peak,Math.abs(b.readInt16LE(i)));assert(peak>8000&&peak<30000);assert(Math.abs(b.readInt16LE(44)-b.readInt16LE(b.length-2))<1500);
  }
 });
+test('staff practice pauses parent music and closing it resumes the lobby',async()=>{
+ const b=boot();b.events.pointerdown();await Promise.resolve();assert.equal(b.players[0].paused,false);
+ b.nodes['#staff-trial'].dataset={practicing:'true'};b.tick();assert(b.players.every(a=>a.paused));
+ await new Promise(resolve=>setImmediate(resolve));b.tick();assert(b.players.every(a=>a.paused));
+ b.nodes['#staff-trial'].dataset.practicing='false';b.tick();await new Promise(resolve=>setImmediate(resolve));assert.equal(b.players[0].paused,false);
+});

@@ -2740,3 +2740,58 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 .ui-copy-details { font-size: 12px; }
 .ui-copy-details > summary { font-size: 12px; }
 .ui-copy-details p { padding-bottom: 8px; line-height: 1.7; }
+
+/* Tactical choices appear only while planning; normal combat keeps its footprint. */
+.board-stage { position: relative; }
+#tactical-preview {
+  position: absolute; z-index: 8; width: 216px; max-width: calc(100% - 16px);
+  padding: 8px; border: 1px solid var(--gold); border-radius: 7px;
+  background: #211829f5; color: #ffe4a0; font-size: 11px; text-align: center;
+  pointer-events: none; box-shadow: 0 4px 12px #0008;
+}
+#tactical-preview[hidden], #tactical-prep[hidden], #tactical-owned[hidden],
+#reposition-done[hidden], #starter-choice-open[hidden], #tactical-bonuses[hidden],
+#build-choices[hidden], #perk-cashout[hidden], #result-threat[hidden] { display: none; }
+#battle[data-repositioning="true"] #ref-pause { display: none; }
+#reposition-done { min-height: 44px; width: 100%; color: var(--gold); }
+#tactical-prep { text-align: center; font-size: 10px; }
+#tactical-bonuses { display: grid; gap: 8px; border-top: 1px solid var(--line-soft); padding-top: 12px; margin-top: 12px; }
+#tactical-bonuses button { width: 100%; min-height: 48px; font-size: 12px; padding: 10px; }
+#build-choices button { display: flex; flex-direction: column; gap: 4px; margin-bottom: 8px; }
+#build-choices button small { font-size: 11px; font-weight: 400; }
+#perk-cashout { background: linear-gradient(#eed18d,#d6a650); color: #372616; }
+#starter-choice-open { width: 100%; min-height: 44px; margin: 8px 0; color: var(--gold); font-size: 13px; }
+:is(#starter-choice,#staff-trial)[open] { display: flex; flex-direction: column; gap: 12px; max-height: calc(100dvh - 24px); }
+#starter-options { overflow-y: auto; min-height: 0; display: grid; gap: 12px; }
+#starter-options article { display: grid; grid-template-columns: 64px minmax(0,1fr); gap: 4px 12px; align-items: center; padding: 12px; border: 1px solid var(--line-soft); border-radius: 8px; }
+#starter-options article > img { grid-row: 1 / 3; width: 64px; height: 68px; object-fit: contain; }
+#starter-options article > div { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+#starter-options button { font-size: 12px; min-height: 44px; padding: 8px; }
+#trial-arena { position: relative; flex: none; height: 150px; border: 1px solid var(--line-soft); border-radius: 10px; background: #211b2a; display: flex; align-items: center; justify-content: space-around; }
+#trial-face { width: 100px; height: 110px; object-fit: contain; z-index: 1; }
+.trial-target { font-size: 58px; color: #f4c67f; z-index: 1; }
+.trial-ray { position: absolute; left: 30%; top: 50%; height: 4px; width: 40%; background: var(--gold); opacity: 0; }
+#trial-arena[data-active="true"] .trial-ray { animation: trial-cue .6s ease-out both; }
+#trial-arena[data-active="true"] .trial-target { animation: trial-hit .6s ease-out both; }
+#staff-trial { overflow-y: auto; }
+#trial-ability,#trial-skill { font-size: 12px; line-height: 1.7; }
+#trial-result { min-height: 16px; color: var(--gold); }
+#result-threat { text-align: center; font-size: 12px; color: var(--gold); }
+@keyframes trial-cue { 0% { opacity:0; transform:scaleX(0); } 40% { opacity:1; transform:scaleX(1); } 100% { opacity:0; } }
+@keyframes trial-hit { 35% { transform:translateX(0); } 65% { transform:translateX(8px); color:#fff; } 100% { transform:translateX(0); } }
+@media(prefers-reduced-motion:reduce) { #trial-arena[data-active="true"] .trial-ray { animation:none; opacity:1; } #trial-arena[data-active="true"] .trial-target { animation:none; color:#fff; } }
+#practice-frame { width: 100%; height: min(68dvh,620px); min-height: 360px; border: 1px solid var(--line); border-radius: 8px; flex: 1 0 auto; }
+#staff-trial[data-practicing="true"] :is(#trial-arena,#trial-ability,details,#trial-play,#trial-result) { display: none; }
+#starter-options,#trial-body { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+#trial-body { display: flex; flex-direction: column; gap: 12px; }
+#trial-body > * { flex-shrink: 0; }
+#starter-options article > :is(b,small) { grid-column: 2; }
+#starter-options article > img { grid-column: 1; }
+:is(#starter-close,#trial-close) img { width: 22px; height: 22px; }
+#staff-trial[data-practicing="true"] { width: 100%; max-width: 100%; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; padding: 10px; gap: 8px; }
+#staff-trial[data-practicing="true"] #trial-body { overflow: hidden; }
+#staff-trial[data-practicing="true"] #trial-body > small { display: none; }
+#staff-trial[data-practicing="true"] #practice-frame { height: 100%; min-height: 0; flex: 1 1 auto; }
+.staff-practice :is(.summon-row,.item-buttons,.battle-notice,#next-boss,#tactical-prep,#item-hint) { display: none; }
+#result-threat:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 8px; }
+#result-threat img { width: 32px; height: 36px; object-fit: contain; }
