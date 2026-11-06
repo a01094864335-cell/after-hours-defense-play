@@ -33,3 +33,11 @@ def start_battle(page, touch=False):
         getattr(page.locator('#summon'), 'tap' if touch else 'click')()
     page.wait_for_function('playing && wave === 1')
     dismiss_coach(page, touch)
+
+
+def board_point(page, cell):
+    return page.evaluate("""p=>{
+        if(window.BattlePresentation?.enabled)return BattlePresentation.screenPoint(p);
+        const r=document.querySelector('#game').getBoundingClientRect();
+        return {x:r.x+p.x*r.width/600,y:r.y+p.y*r.height/600};
+    }""", cell)

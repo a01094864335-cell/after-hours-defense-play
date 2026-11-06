@@ -3,7 +3,7 @@ import unittest
 import test_usability as ui
 import test_release_smoke as safety
 import test_tactical_duty as tactics
-from browser_helpers import start_battle
+from browser_helpers import start_battle, board_point
 
 
 class GameplaySmokeTests(unittest.TestCase):
@@ -35,9 +35,8 @@ class GameplaySmokeTests(unittest.TestCase):
         page.locator('#coach-next').click()
         self.assertEqual(page.evaluate('selected'), -1)
         cell = page.evaluate('cells[TutorialCoach.task.index]')
-        box = page.locator('#game').bounding_box()
-        page.mouse.click(box['x'] + cell['x'] * box['width'] / 600,
-                         box['y'] + cell['y'] * box['height'] / 600)
+        pos = board_point(page, cell)
+        page.mouse.click(pos['x'], pos['y'])
         self.assertTrue(page.locator('#skill').is_enabled())
         page.locator('#skill').click()
         self.assertEqual(page.evaluate('TutorialCoach.task.lesson'), 'skill')
