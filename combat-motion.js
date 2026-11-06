@@ -54,15 +54,20 @@ function drawEnemyMotion(e,h) {
   ctx.restore();
 }
 function drawMercenary() {
-  if(!activeMerc)return;
-  const key='merc-'+activeMerc,pose=mercGesture.motionState?Motion.frame('skill',mercGesture.motionAge,.8):Motion.frame('idle',time,1,8);
-  ctx.save();ctx.fillStyle='#21182ec9';round(265,520,70,59,10);ctx.fill();
-  if(!Motion.draw(ctx,key,300,567,45,pose)){
+  const id=playing?activeMerc:meta.equipped;
+  if(!id)return;
+  const key='merc-'+id,pose=mercGesture.motionState?Motion.frame('skill',mercGesture.motionAge,.8):Motion.frame('idle',time,1,8);
+  // Last staff slot ends at y=479; keep every support pose below it and
+  // the platform above the visible bottom edge (y=588 on short screens).
+  ctx.save();ctx.fillStyle='#21182eed';round(220,487,160,98,12);ctx.fill();
+  ctx.strokeStyle='#a58251';ctx.lineWidth=1.5;ctx.stroke();
+  ctx.fillStyle='#e9c89816';ctx.beginPath();ctx.ellipse(300,567,57,9,0,0,Math.PI*2);ctx.fill();
+  if(!Motion.draw(ctx,key,300,568,72,pose)){
     const im=images[key];
-    if(im?.complete&&im.naturalWidth&&im.naturalHeight){const scale=Math.min(60/im.naturalWidth,45/im.naturalHeight),w=im.naturalWidth*scale,h=im.naturalHeight*scale;ctx.drawImage(im,300-w/2,567-h,w,h);}
+    if(im?.complete&&im.naturalWidth&&im.naturalHeight){const scale=Math.min(120/im.naturalWidth,72/im.naturalHeight),w=im.naturalWidth*scale,h=im.naturalHeight*scale;ctx.drawImage(im,300-w/2,568-h,w,h);}
   }
-  ctx.font='bold 9px system-ui';ctx.fillStyle='#e9c898';ctx.fillText('지원',300,578);
-  if(mercGesture.motionState&&!reduce?.matches)spark(325,535,4,'#ffe7b4');ctx.restore();
+  ctx.font='bold 11px system-ui';ctx.fillStyle='#e9c898';ctx.fillText('지원 영웅',300,581);
+  if(mercGesture.motionState&&!reduce?.matches)spark(352,523,5,'#ffe7b4');ctx.restore();
 }
 function drawMotionEffect(f,t) {
   if(f.effect==='defeat'){
