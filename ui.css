@@ -1079,7 +1079,8 @@ dialog p {
   flex: none;
   border: 1px solid var(--line-soft);
   border-radius: 6px;
-  background: url("assets/ui-approved/lobby-background.webp") center 72% / cover
+  /* Decorative only: preserve the live recruitment controls and banner size. */
+  background: url("assets/ui-approved/shop-rush.webp") center 50% / cover
     no-repeat;
 }
 .recruit-shop,
@@ -2854,3 +2855,67 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 .battle-d .battle-notice #item-hint { position:absolute;left:55px;right:32px;top:8px;margin:0;padding:0;max-height:45px;overflow:hidden;font-size:11px;line-height:1.6;z-index:1; }
 .battle-d .battle-notice:has(#item-hint:not([hidden])) #message { visibility:hidden; }
 .battle-d #boss-warning {z-index:2;}
+/* A · Summoning stage: art above, a readable live recruitment console below. */
+#shop.summon-stage-shop {
+  width:min(480px,100%); max-width:100%; height:100dvh; max-height:100dvh;
+  margin:0 auto; padding:max(14px,env(safe-area-inset-top)) 16px max(12px,env(safe-area-inset-bottom));
+  border:0; border-radius:0; gap:12px;
+  background:radial-gradient(ellipse at 50% 30%,#76507930,transparent 60%),linear-gradient(#211429,#241a30 75%,#191321);
+}
+#shop.summon-stage-shop .sheet-head { padding:0; border:0; gap:10px; flex-wrap:wrap; }
+#shop.summon-stage-shop .sheet-head>div { flex:1; }
+#shop.summon-stage-shop h2 { font-size:20px; color:#ffe8bc; letter-spacing:-.8px; }
+#shop.summon-stage-shop .shop-wallet { flex:none; gap:6px; padding:6px 10px; min-height:36px; border:1px solid #bc9859; border-radius:7px; background:#302038; box-shadow:inset 0 0 0 2px #dfbb6c15; }
+#shop.summon-stage-shop .shop-wallet>span { display:none; }
+#shop.summon-stage-shop .shop-wallet b { font-size:18px; gap:5px; }
+#shop.summon-stage-shop #shop-close { width:44px; height:44px; border-color:#be995c; background:linear-gradient(#65445f,#34223b); }
+#shop.summon-stage-shop .shop-tabs { gap:8px; border:0; }
+#shop.summon-stage-shop .shop-tabs button { min-height:46px; border:1px solid #82627e; border-radius:8px 8px 3px 3px; background:linear-gradient(#44304b,#2c2035); font-size:14px; color:#bdaac3; }
+#shop.summon-stage-shop .shop-tabs button.active { border-color:#edc77e; color:#ffe1a0; background:linear-gradient(#70506a,#453047); box-shadow:inset 0 -3px #efbe64,0 0 15px #f6cb7010; }
+#shop.summon-stage-shop>.panel-scroll-body { padding:0; display:flex; flex-direction:column; scroll-padding:12px; }
+#shop.summon-stage-shop .ref-market-scene {
+  height:clamp(200px,34dvh,350px); min-height:200px; margin:0; border:0; border-radius:0;
+  background:linear-gradient(transparent 80%,#2e2137),url("assets/ui-approved/shop-stage.webp") center 52% / cover no-repeat;
+}
+#shop.summon-stage-shop .recruit-shop {
+  position:relative; margin:0; padding:18px 16px 16px; gap:12px;
+  border:1px solid #b48d65; border-radius:15px 15px 8px 8px;
+  background:linear-gradient(145deg,#51354eea,#2b2036fa 65%);
+  box-shadow:inset 0 0 0 3px #e1b57512,0 -6px 24px #170f2480;
+}
+#shop.summon-stage-shop .recruit-shop>h3 { order:0; font-size:23px; line-height:1.3; color:#ffe3ad; letter-spacing:-.8px; margin:-38px 8px 0; padding:10px 12px; border:1px solid #bc985d; border-radius:7px; background:linear-gradient(#633e5c,#342439); box-shadow:inset 0 0 0 2px #e9c18518,0 3px 8px #170c2180; }
+#shop.summon-stage-shop .recruit-rules { order:1; border-color:#b08b6866; background:#20172780; padding:0 12px; }
+#shop.summon-stage-shop .recruit-rules summary { min-height:44px; padding:11px 0; font-size:12px; color:#f2d9ac; }
+#shop.summon-stage-shop .recruit-rules p { font-size:11px; }
+#shop.summon-stage-shop #recruit-balance { order:2; display:flex; align-items:center; gap:12px; padding:12px 10px; min-height:60px; border:1px solid #9d75864d; border-radius:6px; background:#21172b70; margin:0; text-align:left; color:#e0c8db; }
+.pack-points { flex:1; font-size:12px; font-weight:700; color:#f2d3a2; }
+.pack-pity { flex:1.3; display:grid; gap:7px; font-size:10px; }
+.pack-pity-track { display:grid; grid-template-columns:repeat(10,minmax(0,1fr)); gap:3px; }
+.pack-pity-track i { height:8px; border:1px solid #9f7f9b; border-radius:2px; background:#51384f; }
+.pack-pity-track .lit { background:#f6cb70; border-color:#ffe2a0; box-shadow:0 0 5px #efc16888; }
+#shop.summon-stage-shop #buy-staff-pack { order:3; min-height:58px; padding:14px 12px; font-size:16px; line-height:1.5; border:1px solid #f3d69d; border-radius:8px; box-shadow:inset 0 0 0 3px #fff2c526,0 3px #170f25; }
+#shop.summon-stage-shop #buy-staff-pack:disabled { background:linear-gradient(#60504a,#46383d); border-color:#a58b6b; color:#cfbea9; box-shadow:inset 0 0 0 3px #d5b6850e; }
+#shop.summon-stage-shop #recruit-result { order:4; }
+#shop.summon-stage-shop #recruit-result:empty { display:none; }
+#shop.summon-stage-shop #shop-to-roster { order:5; min-height:46px; width:86%; justify-self:center; border-color:#ae895e; border-radius:7px; background:linear-gradient(#50364e,#342439); color:#f1dbb2; }
+#shop.summon-stage-shop #shop-items { margin-top:0; }
+#shop.summon-stage-shop:has(#shop-items:not([hidden])) .ref-market-scene { height:110px; min-height:110px; margin-bottom:14px; background-image:linear-gradient(transparent 65%,#241a30),url("assets/ui-approved/shop-rush.webp"); }
+#shop.summon-stage-shop #shop-status:not(:empty) { padding:8px 10px; border:1px solid #96bca566; border-radius:5px; background:#223b2b; font-size:11px; }
+@media(max-width:350px) {
+  #shop.summon-stage-shop { padding-inline:12px; gap:10px; }
+  #shop.summon-stage-shop h2 { font-size:17px; }
+  #shop.summon-stage-shop .sheet-head { gap:7px; }
+  #shop.summon-stage-shop .shop-wallet { padding:5px 7px; }
+  #shop.summon-stage-shop .shop-wallet b { font-size:16px; }
+  #shop.summon-stage-shop .recruit-shop { padding:16px 12px 12px; gap:10px; }
+  #shop.summon-stage-shop .recruit-shop>h3 { font-size:21px; margin-inline:4px; }
+  #shop.summon-stage-shop #buy-staff-pack { font-size:14px; }
+  .pack-points { font-size:11px; }
+  .pack-pity { font-size:9px; }
+}
+@media(max-height:700px) {
+  #shop.summon-stage-shop .ref-market-scene { height:200px; min-height:200px; }
+}
+
+#shop.summon-stage-shop .sheet-head>.shop-wallet { flex:0 0 auto; width:auto; }
+#shop.summon-stage-shop .shop-wallet b { font-variant-numeric:tabular-nums; }

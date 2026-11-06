@@ -1,0 +1,56 @@
+{
+  "checks": [
+    {
+      "width": 320,
+      "height": 568,
+      "underfunded": true,
+      "details": true,
+      "itemPurchase": true,
+      "packPurchase": true,
+      "guaranteeProgress": true,
+      "archive": true
+    },
+    {
+      "width": 375,
+      "height": 667,
+      "underfunded": true,
+      "details": true,
+      "itemPurchase": true,
+      "packPurchase": true,
+      "guaranteeProgress": true,
+      "archive": true
+    },
+    {
+      "width": 390,
+      "height": 724,
+      "underfunded": true,
+      "details": true,
+      "itemPurchase": true,
+      "packPurchase": true,
+      "guaranteeProgress": true,
+      "archive": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "underfunded": true,
+      "details": true,
+      "itemPurchase": true,
+      "packPurchase": true,
+      "guaranteeProgress": true,
+      "archive": true
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "underfunded": true,
+      "details": true,
+      "itemPurchase": true,
+      "packPurchase": true,
+      "guaranteeProgress": true,
+      "archive": true
+    }
+  ],
+  "errors": [],
+  "missing": []
+}

@@ -12,7 +12,7 @@
     leave: { title: "h2", actions: "#leave-confirm,#leave-cancel" },
     shop: {
       header: ".sheet-head",
-      context: ".shop-wallet,#shop-status,.shop-tabs",
+      context: ".shop-wallet:not(.stage-wallet),#shop-status,.shop-tabs",
     },
     "story-archive": { header: ".sheet-head", context: "#story-progress" },
     guide: {
