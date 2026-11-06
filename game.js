@@ -36,10 +36,10 @@ function summonBasePrice(base=cost){if(preparingDuty())return base;return Math.c
 function summonPrice(){if(activeMerc==='chikchik'&&expansionState.freeSummon>0)return 0;const base=summonBasePrice();return summonDiscount?Math.ceil(base*.5):base}
 function equipmentCost(type){return Math.ceil(100*levels[type]*(typeof dailyModifier==='function'?dailyModifier('equipmentCost'):1))}
 function skillCooldown(){return 20*(typeof dailyModifier==='function'?dailyModifier('skillCooldown'):1)}
-function summon(){if(ended)return;if(meta.deck.length!==5){say('직원 도감에서 근무 직원 5명을 편성해주세요.');return;}const empty=board.map((u,i)=>u?-1:i).filter(i=>i>=0);if(!empty.length){say('근무 자리가 꽉 찼어요. 같은 종류·등급의 직원을 합쳐주세요.');return}const free=activeMerc==='chikchik'&&expansionState.freeSummon>0;if(!free&&sp<summonPrice()){say('운영비가 부족해요. 적을 처치하거나 서기의 수입을 기다리세요.');return}if(free){expansionState.freeSummon=0;sp+=trainingTier('merc')*3;objectImpact('train',300,535,'#7dcaf3',true);}else {sp-=summonPrice();summonDiscount=false;}cost+=10;const i=empty[Math.floor(Math.random()*empty.length)];board[i]={type:randomType(),pip:1,cool:0,attack:0,arrival:.4,income:5};say(kinds[board[i].type].name+' 소환 완료');if(preparingDuty()&&preparationCount()===5)startDuty();sync()}
+function summon(){if(ended)return;if(meta.deck.length!==5){say('직원 도감에서 근무 직원 5명을 편성해주세요.');return;}const empty=board.map((u,i)=>u?-1:i).filter(i=>i>=0);if(!empty.length){say('근무 자리가 꽉 찼어요. 같은 종류·등급의 직원을 합쳐주세요.');return}const free=activeMerc==='chikchik'&&expansionState.freeSummon>0;if(!free&&sp<summonPrice()){say('운영비가 부족해요. 적을 처치하거나 서기의 수입을 기다리세요.');return}if(free){expansionState.freeSummon=0;sp+=trainingTier('merc')*3;objectImpact('train',300,535,'#7dcaf3',true);}else {sp-=summonPrice();summonDiscount=false;}cost+=10;const i=empty[Math.floor(Math.random()*empty.length)];board[i]={type:randomType(),pip:1,cool:0,attack:0,arrival:.4,income:5};burst('arrival',cells[i].x,cells[i].y,kinds[board[i].type].color,.55);say(kinds[board[i].type].name+' 소환 완료');if(preparingDuty()&&preparationCount()===5)startDuty();sync()}
 function compatible(a,b){return itemMode?specialCompatible(a,b):a&&b&&a.type===b.type&&a.pip===b.pip&&a.pip<7}
 function failChance(pip){return (pip-1)*.05}
-function merge(a,b){if(ended||paused||a===b)return false;if(!compatible(board[a],board[b])){say('같은 종류·같은 등급끼리 합칠 수 있어요. 7등급은 최대입니다.');return false}const keepType=window.TacticalDuty?.keepType(a,b);const pip=Math.max(board[a].pip,board[b].pip)+1,chance=keepType!==undefined?0:failChance(pip);if(itemMode){const key=itemMode;if((typeof itemCount==='function'?itemCount(key):meta.items[key])<1||!(typeof consumeItem==='function'?consumeItem(key):saveChange(d=>d.items[key]--)))return false;itemMode=null;$('#item-hint').textContent='합성권 사용 완료 · 다른 아이템을 선택할 수 있어요.'}runInsights.merges++;board[a]=null;selected=-1;if(Math.random()<chance){runInsights.failed++;burst('smoke',cells[a].x,cells[a].y-15,'#c7b1d9',.85);fx.push({x:cells[a].x,y:cells[a].y,life:1,max:1,text:'합성 실패',color:'#ff8d98'});summonDiscount=true;say('합성 실패! 다음 유료 소환 1회 반값 · 실패 확률 '+Math.round(chance*100)+'% · 이동한 직원 1명 소멸, 대상 직원은 그대로 유지됩니다.');sync();return false}board[b]={type:keepType??randomType(),pip,cool:0,attack:0,arrival:.5,income:5,skillCD:0};fx.push({x:cells[b].x,y:cells[b].y,life:.5,max:.5,color:'#ffdc89',ring:true});if(keepType!==undefined)window.TacticalDuty.consumeKeep();say(pip+'등급 '+kinds[board[b].type].name+' · '+(pip>=5?'스킬 해금':'합성 성공'));sync();return true}
+function merge(a,b){if(ended||paused||a===b)return false;if(!compatible(board[a],board[b])){say('같은 종류·같은 등급끼리 합칠 수 있어요. 7등급은 최대입니다.');return false}const keepType=window.TacticalDuty?.keepType(a,b);const pip=Math.max(board[a].pip,board[b].pip)+1,chance=keepType!==undefined?0:failChance(pip);if(itemMode){const key=itemMode;if((typeof itemCount==='function'?itemCount(key):meta.items[key])<1||!(typeof consumeItem==='function'?consumeItem(key):saveChange(d=>d.items[key]--)))return false;itemMode=null;$('#item-hint').textContent='합성권 사용 완료 · 다른 아이템을 선택할 수 있어요.'}runInsights.merges++;board[a]=null;selected=-1;if(Math.random()<chance){runInsights.failed++;burst('smoke',cells[a].x,cells[a].y-15,'#c7b1d9',.85);fx.push({x:cells[a].x,y:cells[a].y,life:1,max:1,text:'합성 실패',color:'#ff8d98'});summonDiscount=true;say('합성 실패! 다음 유료 소환 1회 반값 · 실패 확률 '+Math.round(chance*100)+'% · 이동한 직원 1명 소멸, 대상 직원은 그대로 유지됩니다.');sync();return false}board[b]={type:keepType??randomType(),pip,cool:0,attack:0,arrival:.5,income:5,skillCD:0};burst('promotion',cells[b].x,cells[b].y,'#f1cd88',.7,{pip});if(keepType!==undefined)window.TacticalDuty.consumeKeep();say(pip+'등급 '+kinds[board[b].type].name+' · '+(pip>=5?'스킬 해금':'합성 성공'));sync();return true}
 const skillNames=['연발 석궁','공구 대폭발','대청소','긴급 예산','과부하 방전','특급 배송'];
 skillNames.push('집중 진료','야식 대잔치','긴급 재고 정리','단체 수선','강제 상담 시간','긴급 채용');
 const skillDescriptions=['선두 적에 강력한 화살 6발','모든 적에 광역 피해','일반 적 3초 · 군단장 1.5초 이동 정지','등급 × 40 SP 획득 · 장비당 +10%','모든 적에 번개 피해 · 일반 1초 / 군단장 0.5초 정지','선두 8명에게 방패를 무시하는 소포 폭격'];
@@ -143,7 +143,7 @@ if(u.type!==4)fx.push({x:cells[i].x,y:cells[i].y-25,tx:u.type===5?endX:target.x,
  if(typeof runStats!=='undefined')attackOwner=null;enemies=enemies.filter(e=>{if(e.hp<=0){recordKill(e);return false}return true});if(!queue.length&&!enemies.length){intermission+=dt;if(intermission>=3){sp+=30;intermission=0;if(typeof advanceProgress==='function')advanceProgress();else nextWave()}}requestSync()}
 function image(file,x,y,h,angle=0,sx=1,sy=1){const im=images[file];if(!im?.complete||!im.naturalWidth)return;const w=h*im.naturalWidth/im.naturalHeight;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.scale(sx,sy);ctx.drawImage(im,-w/2,-h,w,h);ctx.restore()}
 function round(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
-function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;ctx.fillStyle='#171122ee';round(x-29,y+20,58,15,6);ctx.fill();ctx.fillStyle=k.color;for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(x+(n-(u.pip-1)/2)*7,y+27,2.2,0,Math.PI*2);ctx.fill()}if(u.pip>=5){ctx.fillStyle='#ffdd93';ctx.font='bold 10px system-ui';ctx.fillText((u.skillCD||0)>0?'스킬 '+Math.ceil(u.skillCD)+'s':'★ 스킬',x,y-64)}if(u.stun>0){spark(x,y-68,7,'#d6b4ff');ctx.font='bold 10px system-ui';ctx.fillStyle='#e8d1ff';ctx.fillText('기절',x,y-80)}ctx.restore()}
+function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;ctx.fillStyle='#102126ee';round(x-29,y+20,58,15,3);ctx.fill();ctx.fillStyle=k.color;for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(x+(n-(u.pip-1)/2)*7,y+27,2.2,0,Math.PI*2);ctx.fill()}if(u.pip>=5){ctx.fillStyle='#ffdd93';ctx.font='bold 10px system-ui';ctx.fillText((u.skillCD||0)>0?'스킬 '+Math.ceil(u.skillCD)+'s':'★ 스킬',x,y-64)}if(u.stun>0){spark(x,y-68,7,'#d6b4ff');ctx.font='bold 10px system-ui';ctx.fillStyle='#e8d1ff';ctx.fillText('기절',x,y-80)}ctx.restore()}
 // Pixel-sized primitives keep effects in the same style as the sprites.
 function pixel(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),w,h)}
 function spark(x,y,r,color){pixel(x-2,y-r,4,r*2,color);pixel(x-r,y-2,r*2,4,color)}
@@ -199,18 +199,27 @@ function drawEffect(f){
 }
 let staticBoardLayer=null,staticBoardReady=false;
 function drawBoardBase(){
- const bg=images['lobby-background'],ready=bg.complete&&bg.naturalWidth>0;
+ const bg=NightWatchArt.arena(),ready=bg.complete&&bg.naturalWidth>0;
  if(!staticBoardLayer||ready!==staticBoardReady){
   staticBoardLayer=document.createElement('canvas');staticBoardLayer.width=staticBoardLayer.height=600;
-  const base=staticBoardLayer.getContext('2d');if(ready){base.drawImage(bg,0,0,600,600);base.fillStyle='#211b3538';base.fillRect(0,0,600,600)}
-  base.lineJoin='round';base.lineCap='round';base.beginPath();path.forEach((p,i)=>i?base.lineTo(p.x,p.y):base.moveTo(p.x,p.y));base.lineWidth=2;base.strokeStyle='#d9bbec40';base.stroke();
+  const base=staticBoardLayer.getContext('2d');if(ready){base.drawImage(bg,0,0,600,600);base.fillStyle='#0d1e2410';base.fillRect(0,0,600,600)}
+  base.lineJoin='round';base.lineCap='round';base.beginPath();path.forEach((p,i)=>i?base.lineTo(p.x,p.y):base.moveTo(p.x,p.y));base.lineWidth=2;base.strokeStyle='#e2c58930';base.stroke();
   base.textAlign='center';base.font='12px system-ui';base.fillStyle='#e6c9a0';base.font='bold 14px system-ui';
   staticBoardReady=ready;GamePerformance.stats.backgroundBuilds++;
  }
  ctx.drawImage(staticBoardLayer,0,0);
 }
 function draw(){ctx.clearRect(0,0,600,600);drawBoardBase();drawAmbient();ctx.lineJoin="round";ctx.lineCap="round";ctx.textAlign="center";
- cells.forEach((c,i)=>{const u=board[i],source=drag?board[drag.from]:board[selected];const match=source&&i!==(drag?drag.from:selected)&&compatible(source,u);ctx.fillStyle=match?'#46655ccc':u?'#293d4bee':'#25323edc';round(c.x-38,c.y-43,76,88,10);ctx.fill();ctx.strokeStyle=match?'#b4f4c9':selected===i?'#bfe2d5':u?'#708c99':'#5b7481';ctx.lineWidth=match?3:selected===i?3:1;ctx.stroke();if(typeof LiveUIAssets!=='undefined'){LiveUIAssets.cell(ctx,c.x-38,c.y-43,76,88,selected===i,match)}else if((selected===i||match)&&typeof GameSkin!=='undefined')GameSkin.frame(ctx,selected===i||match?'tab-active':'slot-square',c.x-38,c.y-43,76,88,10);if(!u){ctx.font='22px system-ui';ctx.fillStyle='#68556f';ctx.fillText('·',c.x,c.y)}else if(!(drag?.moved&&drag.from===i))drawUnit(u,i)});
+ cells.forEach((c,i)=>{
+  const u=board[i],source=drag?board[drag.from]:board[selected];
+  const match=source&&i!==(drag?drag.from:selected)&&compatible(source,u);
+  if(!NightWatchArt.cell(ctx,c.x-38,c.y-43,selected===i,match)){
+   ctx.fillStyle=match?'#294840':'#26383b';round(c.x-38,c.y-43,76,88,4);ctx.fill();
+   ctx.strokeStyle=match?'#8bd9c0':selected===i?'#e7c788':'#586a67';ctx.lineWidth=2;ctx.stroke();
+  }
+  if(!u){ctx.font='22px system-ui';ctx.fillStyle='#71877f';ctx.fillText('·',c.x,c.y)}
+  else if(!(drag?.moved&&drag.from===i))drawUnit(u,i);
+ });
  if(document.activeElement===canvas){const c=cells[boardFocus];ctx.strokeStyle='#ffffff';ctx.lineWidth=4;ctx.strokeRect(c.x-36,c.y-41,72,84);}
  window.TacticalDuty?.draw(ctx);drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle=enemyDefinition(e).color;ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
  for(const f of fx)drawEffect(f);ctx.globalAlpha=1;if(drag?.moved)drawUnit(board[drag.from],drag.from,drag.x,drag.y,true);
@@ -235,3 +244,4 @@ function frame(now){
  performancePolicy.finish(frame,now,stillActive,!battle&&!performancePolicy.lowPower&&!Motion.reduced?.matches&&Motion.hasAnimated());
 }
 initMetaUI();reset();Motion.mount();GamePerformance.schedule(frame);
+
