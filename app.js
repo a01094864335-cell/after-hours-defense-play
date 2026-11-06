@@ -19,11 +19,16 @@ setScreen('lobby');sync();
 function fitBoard(){
  const area=document.querySelector('.board-stage'),rect=area.getBoundingClientRect();
  if(rect.width<=12||rect.height<=2)return;
- // The game draws and hit-tests in a square 600 × 600 coordinate space.
- // Scale both axes equally rather than stretching into the remaining viewport.
- const size=Math.floor(Math.min(rect.width,rect.height));
+ // Keep the 600 × 600 world square. Only the outer decoration may be clipped:
+ // 12 units at either side, at most 40 above and 12 below the play area.
+ const world=600,trimX=12,trimTop=40,trimBottom=12;
+ const size=Math.floor(Math.min(rect.width*world/(world-trimX*2),rect.height*world/(world-trimTop-trimBottom)));
  canvas.style.setProperty('width',size+'px','important');
  canvas.style.setProperty('height',size+'px','important');
+ const overflow=Math.max(0,size-rect.height),topShare=trimTop/(trimTop+trimBottom);
+ canvas.style.setProperty('transform',`translateY(${-overflow*(topShare-.5)}px)`);
+ // Canvas HUD follows the visible top edge when short screens crop decoration.
+ canvas.boardInsetTop=overflow*topShare*world/size;
 }
 if(typeof ResizeObserver!=='undefined'){const boardObserver=new ResizeObserver(fitBoard);boardObserver.observe(document.querySelector('.board-stage'))}
 if(typeof window.addEventListener==='function')window.addEventListener('resize',fitBoard);

@@ -147,7 +147,7 @@ function drawBossFields(){
 }
 function drawBossHUD(){
  const e=enemies.find(e=>e.type==='boss'&&!e.decoy&&e.hp>0&&!e.escaped);if(!e)return;
- const b=bossDefinition(e);ctx.save();ctx.fillStyle='#171020ed';round(135,16,330,66,10);ctx.fill();ctx.strokeStyle=b.color;ctx.lineWidth=1;ctx.stroke();ctx.textAlign='left';ctx.font='bold 13px system-ui';ctx.fillStyle=b.color;ctx.fillText(b.name,146,34);ctx.font='10px system-ui';ctx.fillStyle='#f9eacc';ctx.fillText(b.trait+' · '+b.skillName+(e.fastForwardLeft>0?' · 빨리 감기!':e.silence>0?' · 봉인 중':e.warning?' · 시전 임박':' · '+Math.ceil(e.skill)+'초'),146,51);
+ const b=bossDefinition(e);ctx.save();ctx.translate(0,canvas.boardInsetTop||0);ctx.fillStyle='#171020ed';round(135,16,330,66,10);ctx.fill();ctx.strokeStyle=b.color;ctx.lineWidth=1;ctx.stroke();ctx.textAlign='left';ctx.font='bold 13px system-ui';ctx.fillStyle=b.color;ctx.fillText(b.name,146,34);ctx.font='10px system-ui';ctx.fillStyle='#f9eacc';ctx.fillText(b.trait+' · '+b.skillName+(e.fastForwardLeft>0?' · 빨리 감기!':e.silence>0?' · 봉인 중':e.warning?' · 시전 임박':' · '+Math.ceil(e.skill)+'초'),146,51);
  ctx.fillStyle='#48344e';ctx.fillRect(146,59,306,5);ctx.fillStyle=b.color;ctx.fillRect(146,59,306*Math.max(0,e.hp/e.max),5);
  if(e.shield>0){ctx.fillStyle='#d5fff5';ctx.fillRect(146,68,306*Math.min(1,e.shield/(e.max*.4)),3)}
  if(e.introLeft>0){ctx.fillStyle='#171020eb';round(135,84,330,33,7);ctx.fill();ctx.fillStyle='#f6e8d1';ctx.font='10px system-ui';ctx.fillText(b.traitText.slice(0,30),146,98);if(b.traitText.length>30)ctx.fillText(b.traitText.slice(30),146,111)}
