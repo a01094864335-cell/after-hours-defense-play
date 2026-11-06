@@ -32,6 +32,12 @@ test("single screen stylesheet and archived B asset gallery are packaged", () =>
     const release = JSON.parse(
       fs.readFileSync(path.join(out, "release-manifest.json")),
     );
+    assert.ok(release.files['assets/night-watch/arena.webp']);
+    assert.match(html, /battle-art\.js\?v=[a-f0-9]{12}/);
+    assert.ok(html.indexOf('src="battle-art.js') < html.indexOf('src="game.js'));
+    for (const name of ['slot', 'slot-selected', 'slot-match', 'panel', 'button-gold', 'button-iron']) {
+      assert.ok(release.files['assets/night-watch/' + name + '.svg'], 'Watch-room art: ' + name);
+    }
     const spec = JSON.parse(
       fs.readFileSync(path.join(root, "assets/ui-b/manifest.json")),
     );
@@ -51,3 +57,4 @@ test("single screen stylesheet and archived B asset gallery are packaged", () =>
     fs.rmSync(out, { recursive: true, force: true });
   }
 });
+

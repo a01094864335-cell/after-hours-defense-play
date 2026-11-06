@@ -10,6 +10,8 @@ files.add('roomy-buttons.css');
 files.add('play-design.css');
 files.add('detail-ui.css');
 files.add('ui.css');
+files.add('battle-art.js');
+for(const name of fs.readdirSync(path.join(root,'assets/night-watch')))if(/\.(svg|webp)$/.test(name))files.add('assets/night-watch/'+name);
 files.add('tutorial-coach.js');
 files.add('tactical-duty.js');
 files.add('battle-presentation.js');
@@ -43,3 +45,4 @@ for(const f of [...files].sort()){
 for(const url of html.matchAll(/(?:src|href)="([^"?#]+)(?:\?[^\"]*)?"/g))if(!url[1].startsWith('#')&&!url[1].includes('://')&&!files.has(url[1]))throw Error('Unpackaged entry resource '+url[1]);
 fs.writeFileSync(path.join(out,'release-manifest.json'),JSON.stringify(manifest,null,2)+'\n');fs.writeFileSync(path.join(out,'.nojekyll'),'');
 console.log(JSON.stringify({revision,files:files.size,storyPanels:[...files].filter(f=>/^assets\/castle-stories\/.*\.webp$/.test(f)).length}));
+
