@@ -31,7 +31,7 @@
     return typeof enemies !== 'undefined' && enemies?.some(e => e.type === 'boss' && e.hp > 0) ? 'boss' : 'battle';
   }
   function update() {
-    const stopped = document.hidden || !unlocked || muted || volume === 0 ||
+    const stopped = document.hidden || document.querySelector('#staff-trial')?.dataset?.practicing === 'true' || !unlocked || muted || volume === 0 ||
       (typeof appScreen !== 'undefined' && appScreen === 'battle' && typeof paused !== 'undefined' && paused);
     active = scene();
     if (stopped) {
