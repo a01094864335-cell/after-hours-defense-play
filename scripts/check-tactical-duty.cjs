@@ -1,0 +1,42 @@
+const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path');
+const audit=require('./ui-layout-audit.cjs'),out=process.env.UI_QA_DIR||path.resolve(__dirname,'../qa/tactical-duty');
+(async()=>{
+ fs.mkdirSync(out,{recursive:true});const browser=await chromium.launch({executablePath:process.env.UI_CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});let report=[];
+ try{for(const [width,height]of[[320,568],[390,844],[430,932]]){
+  const context=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true,reducedMotion:'reduce'}),page=await context.newPage(),errors=[];
+  page.on('pageerror',e=>errors.push(e.message));await page.goto(process.env.UI_BASE_URL||'http://127.0.0.1:8840/');await page.waitForFunction(()=>GameSession.canWrite());
+  await page.evaluate(()=>{saveChange(d=>{d.tutorialComplete=true;d.staff=BASE_STAFF.slice();d.owned=[];d.equipped=null;d.coins=400;d.profile.starterClaim=null});restartTo('lobby')});
+  const shot=async name=>{await page.evaluate(()=>document.activeElement?.blur());const result=await page.evaluate(audit);await page.screenshot({path:`${out}/${width}-${name}.png`});if(result.issues.length)console.log(await page.evaluate(()=>[...document.querySelectorAll('dialog[open],dialog[open] > *')].map(e=>({id:e.id,rect:e.getBoundingClientRect().toJSON(),style:getComputedStyle(e).flex}))));assert.deepEqual(result.issues,[],`${width} ${name}`);};
+  await shot('lobby-gift');await page.locator('#starter-choice-open').tap();await shot('gift');await page.locator('#starter-options button').first().tap();await shot('staff-preview');
+  const before=await page.evaluate(()=>({wallet:GameStorage.getItem(META_KEY),run:GameStorage.getItem(RUN_SAVE)}));
+  await page.locator('#trial-play').tap();const iframe=page.frameLocator('#practice-frame');await iframe.locator('#skill').waitFor();
+  await iframe.locator('#skill:not(:disabled)').waitFor({timeout:5000}).catch(async e=>{console.log(errors);console.log(await iframe.locator('#game').evaluate(()=>({playing,paused,selected,wave,ended,board,tutorialMode})));await page.screenshot({path:out+'/practice-error.png'});throw e});
+  await iframe.locator('#skill').tap();assert.ok(await iframe.locator('#skill').evaluate(e=>e.disabled));await page.waitForTimeout(200);await shot('practice');
+  await page.locator('#trial-close').tap();await page.locator('#practice-frame').waitFor({state:'detached'});
+  assert.deepEqual(await page.evaluate(()=>({wallet:GameStorage.getItem(META_KEY),run:GameStorage.getItem(RUN_SAVE)})),before,'practice touched parent progress');
+  const chosen=await page.evaluate(()=>TacticalDuty.starterCandidates()[0]);await page.locator('#starter-options button').nth(1).tap();assert.equal(await page.evaluate(()=>meta.profile.starterClaim),await page.evaluate(type=>kinds[type].file,chosen));
+  assert.ok(await page.locator('#starter-choice-open').isHidden());
+  await page.locator('#enter-battle').tap();await page.locator('#promo-skip').tap();await page.locator('#summon').tap();
+  let cell=await page.evaluate(()=>board.findIndex(Boolean)),dest=cell===0?14:0;
+  const points=await page.evaluate(([a,b])=>{const r=canvas.getBoundingClientRect();return[a,b].map(i=>({x:r.x+cells[i].x*r.width/600,y:r.y+cells[i].y*r.height/600}))},[cell,dest]);
+  await page.touchscreen.tap(points[0].x,points[0].y);await page.touchscreen.tap(points[1].x,points[1].y);assert.ok(await page.evaluate(i=>!!board[i],dest));await shot('preparation-moved');
+  await page.evaluate(()=>{board[0]={type:0,pip:1,cool:0,attack:0,income:5};board[1]={type:0,pip:1,cool:0,attack:0,income:5};sync()});
+  const box=await page.locator('#game').boundingBox(),c=await page.evaluate(()=>cells.slice(0,2));
+  await page.mouse.move(box.x+c[0].x*box.width/600,box.y+c[0].y*box.height/600);await page.mouse.down();await page.mouse.move(box.x+c[1].x*box.width/600,box.y+c[1].y*box.height/600,{steps:5});assert.ok(await page.locator('#tactical-preview').isVisible());await shot('merge-preview');await page.mouse.up();
+  await page.evaluate(()=>{playing=true;wave=5;bonusPending=true;paused=true;enemies=[];queue=[];renderPerkChoices();document.querySelector('#perk').showModal();sync()});await shot('boss-choice');
+  await page.locator('#perk-reposition').tap();await shot('reposition');assert.ok(await page.locator('#ref-pause').isHidden());
+  await page.locator('#reposition-done').tap();await page.locator('#build-choices summary').tap();await shot('strategies');await page.locator('#build-chain').tap();assert.equal(await page.evaluate(()=>TacticalDuty.snapshot().build),'chain');
+  await page.evaluate(()=>{wave=10;bonusPending=true;paused=true;enemies=[];queue=[];renderPerkChoices();document.querySelector('#perk').showModal();sync()});
+  await page.locator('#perk-keep').tap();
+  await page.evaluate(()=>{board[0]={type:0,pip:3,cool:0,attack:0,income:5};board[1]={type:0,pip:3,cool:0,attack:0,income:5};sync()});
+  const keptBox=await page.locator('#game').boundingBox();
+  await page.mouse.move(keptBox.x+c[0].x*keptBox.width/600,keptBox.y+c[0].y*keptBox.height/600);await page.mouse.down();await page.mouse.move(keptBox.x+c[1].x*keptBox.width/600,keptBox.y+c[1].y*keptBox.height/600,{steps:5});
+  assert.match(await page.locator('#tactical-preview').innerText(),/100%.*종류 유지/);await shot('protected-merge');await page.mouse.up();
+  assert.equal(await page.evaluate(()=>board[1].type),0);assert.equal(await page.evaluate(()=>board[1].pip),4);assert.equal(await page.evaluate(()=>TacticalDuty.snapshot().keep),0);
+  await page.evaluate(()=>{playing=true;wave=15;bonusPending=true;paused=true;enemies=[];queue=[];runNormal=100;runBoss=3;kills=103;renderPerkChoices();document.querySelector('#perk').showModal();sync()});
+  await page.locator('#perk-cashout').scrollIntoViewIfNeeded();await shot('cashout-choice');const coins=await page.evaluate(()=>meta.coins);await page.locator('#perk-cashout').tap();
+  assert.equal(await page.evaluate(()=>meta.coins),coins+25);assert.equal(await page.evaluate(()=>meta.profile.records[0].cleared),15);await shot('cashout-result');
+  await page.reload();await page.waitForFunction(()=>GameSession.canWrite());assert.equal(await page.evaluate(()=>meta.coins),coins+25);assert.ok(await page.evaluate(()=>!!meta.profile.starterClaim));
+  assert.deepEqual(errors,[]);report.push({size:[width,height],gift:'once',practice:'isolated real skill',reposition:'passed',preview:'passed',strategy:'passed',settlement:'paid once',errors});await context.close();
+ }fs.writeFileSync(`${out}/checks.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report));}finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

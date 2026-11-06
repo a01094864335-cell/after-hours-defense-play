@@ -51,7 +51,7 @@ function resultHint(){if(!board.some(u=>u&&kinds[u.type].damage>0))return '이�
  if(last.name.includes('군단장')||last.damage===2)return '마지막 돌파 적은 '+last.name+' · 체력 '+Math.ceil(last.hp/Math.max(1,last.max)*100)+'%가 남았어요. 다음 판은 군단장 등장에 맞춰 스킬과 집중 공격을 준비해보세요.';
  if(runInsights.failed>=3)return '합성 실패 '+runInsights.failed+'회가 있었어요. 전투 중에는 공격 직원을 남기고, 반값 소환과 합성 보장을 활용해보세요.';
  return '마지막 돌파 적은 '+last.name+' · 체력 '+Math.ceil(last.hp/Math.max(1,last.max)*100)+'%가 남았어요. 선두 적 제어와 범위 공격 장비를 함께 점검해보세요.';}
-function runRecord(){return {id:runId,wave,cleared:tutorialWon?10:Math.max(0,wave-1),coins:runReward?.total||0,seconds:Math.round(runInsights.seconds),rule:tutorialMode?'신입 연수':dailyEnabled?DAILY_RULES[dailyRule].name:'기본 규칙',deck:runDeck.map(i=>kinds[i].file),support:activeMerc,training:{...runTraining},king:{...runInsights.king},bosses:runInsights.bosses.map(b=>({...b})),tutorial:tutorialMode};}
+function runRecord(){return {id:runId,wave,cleared:window.TacticalDuty?.completedWave()??(tutorialWon?10:Math.max(0,wave-1)),coins:runReward?.total||0,seconds:Math.round(runInsights.seconds),rule:tutorialMode?'신입 연수':dailyEnabled?DAILY_RULES[dailyRule].name:'기본 규칙',deck:runDeck.map(i=>kinds[i].file),support:activeMerc,training:{...runTraining},king:{...runInsights.king},bosses:runInsights.bosses.map(b=>({...b})),tutorial:tutorialMode};}
 const insightSettle=settleRun;settleRun=function(){insightSettle();if(!ended||!runReward?.paid||tutorialMode&&!tutorialWon)return;const record=runRecord();if(profile().records.some(r=>r.id===runId))return;
  if(saveChange(d=>{d.profile.records=[record,...d.profile.records].slice(0,20);if(!tutorialMode)d.profile.best=Math.max(d.profile.best,record.cleared);})){renderJourney();renderAnalysis();}
 };

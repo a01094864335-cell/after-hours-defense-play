@@ -1,0 +1,773 @@
+{
+  "conditions": "3 decks × 4 strategy choices × 4 seeds; Lv.1, no king/items/daily modifiers; one fixed bot policy, not human outcomes",
+  "rows": [
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "baseline",
+      "seed": 1201,
+      "wave": 29,
+      "chosenBuild": null,
+      "seconds": 838,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "baseline",
+      "seed": 1202,
+      "wave": 35,
+      "chosenBuild": null,
+      "seconds": 978,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "baseline",
+      "seed": 1203,
+      "wave": 25,
+      "chosenBuild": null,
+      "seconds": 657,
+      "ended": true,
+      "failures": 4
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "baseline",
+      "seed": 1204,
+      "wave": 30,
+      "chosenBuild": null,
+      "seconds": 887,
+      "ended": true,
+      "failures": 4
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "chain",
+      "seed": 1201,
+      "wave": 32,
+      "chosenBuild": "chain",
+      "seconds": 894,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "chain",
+      "seed": 1202,
+      "wave": 31,
+      "chosenBuild": "chain",
+      "seconds": 852,
+      "ended": true,
+      "failures": 4
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "chain",
+      "seed": 1203,
+      "wave": 30,
+      "chosenBuild": "chain",
+      "seconds": 783,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "chain",
+      "seed": 1204,
+      "wave": 28,
+      "chosenBuild": "chain",
+      "seconds": 757,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "economy",
+      "seed": 1201,
+      "wave": 30,
+      "chosenBuild": "economy",
+      "seconds": 918,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "economy",
+      "seed": 1202,
+      "wave": 28,
+      "chosenBuild": "economy",
+      "seconds": 700,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "economy",
+      "seed": 1203,
+      "wave": 34,
+      "chosenBuild": "economy",
+      "seconds": 980,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "economy",
+      "seed": 1204,
+      "wave": 29,
+      "chosenBuild": "economy",
+      "seconds": 765,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "guard",
+      "seed": 1201,
+      "wave": 27,
+      "chosenBuild": "guard",
+      "seconds": 664,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "guard",
+      "seed": 1202,
+      "wave": 28,
+      "chosenBuild": "guard",
+      "seconds": 730,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "guard",
+      "seed": 1203,
+      "wave": 32,
+      "chosenBuild": "guard",
+      "seconds": 893,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "build": "guard",
+      "seed": 1204,
+      "wave": 33,
+      "chosenBuild": "guard",
+      "seconds": 975,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "baseline",
+      "seed": 1201,
+      "wave": 26,
+      "chosenBuild": null,
+      "seconds": 686,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "baseline",
+      "seed": 1202,
+      "wave": 10,
+      "chosenBuild": null,
+      "seconds": 219,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "baseline",
+      "seed": 1203,
+      "wave": 20,
+      "chosenBuild": null,
+      "seconds": 483,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "baseline",
+      "seed": 1204,
+      "wave": 25,
+      "chosenBuild": null,
+      "seconds": 747,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "chain",
+      "seed": 1201,
+      "wave": 23,
+      "chosenBuild": "chain",
+      "seconds": 700,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "chain",
+      "seed": 1202,
+      "wave": 10,
+      "chosenBuild": "chain",
+      "seconds": 241,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "chain",
+      "seed": 1203,
+      "wave": 24,
+      "chosenBuild": "chain",
+      "seconds": 659,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "chain",
+      "seed": 1204,
+      "wave": 23,
+      "chosenBuild": "chain",
+      "seconds": 664,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "economy",
+      "seed": 1201,
+      "wave": 20,
+      "chosenBuild": "economy",
+      "seconds": 567,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "economy",
+      "seed": 1202,
+      "wave": 8,
+      "chosenBuild": "economy",
+      "seconds": 152,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "economy",
+      "seed": 1203,
+      "wave": 17,
+      "chosenBuild": "economy",
+      "seconds": 398,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "economy",
+      "seed": 1204,
+      "wave": 10,
+      "chosenBuild": "economy",
+      "seconds": 192,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "guard",
+      "seed": 1201,
+      "wave": 26,
+      "chosenBuild": "guard",
+      "seconds": 713,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "guard",
+      "seed": 1202,
+      "wave": 9,
+      "chosenBuild": "guard",
+      "seconds": 189,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "guard",
+      "seed": 1203,
+      "wave": 28,
+      "chosenBuild": "guard",
+      "seconds": 859,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "build": "guard",
+      "seed": 1204,
+      "wave": 21,
+      "chosenBuild": "guard",
+      "seconds": 575,
+      "ended": true,
+      "failures": 4
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "baseline",
+      "seed": 1201,
+      "wave": 2,
+      "chosenBuild": null,
+      "seconds": 62,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "baseline",
+      "seed": 1202,
+      "wave": 28,
+      "chosenBuild": null,
+      "seconds": 777,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "baseline",
+      "seed": 1203,
+      "wave": 21,
+      "chosenBuild": null,
+      "seconds": 585,
+      "ended": true,
+      "failures": 1
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "baseline",
+      "seed": 1204,
+      "wave": 33,
+      "chosenBuild": null,
+      "seconds": 1049,
+      "ended": true,
+      "failures": 10
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "chain",
+      "seed": 1201,
+      "wave": 2,
+      "chosenBuild": null,
+      "seconds": 62,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "chain",
+      "seed": 1202,
+      "wave": 25,
+      "chosenBuild": "chain",
+      "seconds": 670,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "chain",
+      "seed": 1203,
+      "wave": 28,
+      "chosenBuild": "chain",
+      "seconds": 849,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "chain",
+      "seed": 1204,
+      "wave": 32,
+      "chosenBuild": "chain",
+      "seconds": 1072,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "economy",
+      "seed": 1201,
+      "wave": 2,
+      "chosenBuild": null,
+      "seconds": 62,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "economy",
+      "seed": 1202,
+      "wave": 25,
+      "chosenBuild": "economy",
+      "seconds": 706,
+      "ended": true,
+      "failures": 2
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "economy",
+      "seed": 1203,
+      "wave": 32,
+      "chosenBuild": "economy",
+      "seconds": 980,
+      "ended": true,
+      "failures": 6
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "economy",
+      "seed": 1204,
+      "wave": 33,
+      "chosenBuild": "economy",
+      "seconds": 1036,
+      "ended": true,
+      "failures": 9
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "guard",
+      "seed": 1201,
+      "wave": 2,
+      "chosenBuild": null,
+      "seconds": 62,
+      "ended": true,
+      "failures": 0
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "guard",
+      "seed": 1202,
+      "wave": 31,
+      "chosenBuild": "guard",
+      "seconds": 931,
+      "ended": true,
+      "failures": 3
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "guard",
+      "seed": 1203,
+      "wave": 28,
+      "chosenBuild": "guard",
+      "seconds": 841,
+      "ended": true,
+      "failures": 4
+    },
+    {
+      "deck": [
+        1,
+        2,
+        3,
+        14,
+        16
+      ],
+      "build": "guard",
+      "seed": 1204,
+      "wave": 34,
+      "chosenBuild": "guard",
+      "seconds": 1020,
+      "ended": true,
+      "failures": 3
+    }
+  ]
+}

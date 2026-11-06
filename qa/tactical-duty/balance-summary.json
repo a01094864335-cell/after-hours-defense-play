@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "runs": 12,
+    "adopted": 0,
+    "meanWave": 23.67,
+    "minWave": 2,
+    "maxWave": 35
+  },
+  "chain": {
+    "runs": 12,
+    "adopted": 11,
+    "meanWave": 24.0,
+    "minWave": 2,
+    "maxWave": 32
+  },
+  "economy": {
+    "runs": 12,
+    "adopted": 11,
+    "meanWave": 22.33,
+    "minWave": 2,
+    "maxWave": 34
+  },
+  "guard": {
+    "runs": 12,
+    "adopted": 11,
+    "meanWave": 24.92,
+    "minWave": 2,
+    "maxWave": 34
+  }
+}
