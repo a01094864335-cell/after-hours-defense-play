@@ -305,6 +305,7 @@ legend {
   font-size: 15px;
   font-weight: 800;
 }
+#daily-current[hidden] { display: none; }
 .brand small {
   display: block;
   font-size: 10px;
@@ -538,7 +539,7 @@ legend {
   font-weight: 400;
 }
 #deck-label::before {
-  content: "오늘의 근무 직원";
+  content: "근무 직원";
   display: block;
   white-space: nowrap;
   color: #f1e4d1;
@@ -841,16 +842,17 @@ legend {
 }
 .battle-notice {
   display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 16px;
   align-items: center;
   gap: 8px;
+  min-height: 26px;
 }
-.battle-notice :is(img, canvas) {
-  width: 28px;
-  height: 32px;
-  object-fit: contain;
-}
+.battle-notice::after { content: "ⓘ"; color: var(--muted); font-size: 13px; }
 #message {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
   font-size: 11px;
   line-height: 1.5;
   color: #ddcce4;
@@ -1251,10 +1253,12 @@ dialog p {
   font-size: 10px;
   white-space: nowrap;
 }
+#deck-status:empty { display: none; }
 #deck-status {
   font-size: 10px;
   line-height: 1.6;
 }
+#roster-note:empty { display: none; }
 #roster-note {
   font-size: 11px;
   line-height: 1.6;
@@ -1267,13 +1271,13 @@ dialog p {
 .staff-pass {
   display: grid;
   grid-template-columns: 56px minmax(0, 1fr) auto;
-  grid-template-areas: "portrait name badge" "portrait job badge" "portrait role badge";
+  grid-template-areas: "portrait name badge" "portrait role badge";
   gap: 2px 12px;
   width: 100%;
   padding: 14px;
   text-align: left;
   align-items: center;
-  min-height: 104px;
+  min-height: 84px;
   border-color: var(--line-soft);
   background: linear-gradient(120deg, #443442, #2b2334);
   border-left:3px solid var(--staff-accent);
@@ -1501,13 +1505,13 @@ dialog p {
   display: none;
 }
 #training-summary {
-  padding: 16px;
+  padding: 12px;
   border: 1px solid var(--line-soft);
   border-radius: 13px;
   background: #382a42;
 }
 #training-summary > * + * {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .training-level {
   display: flex;
@@ -1562,11 +1566,14 @@ dialog p {
   background: #36283f;
 }
 .training-character-title {
+  list-style: none;
+  padding: 0;
   display: grid;
   grid-template-columns: 42px minmax(0, 1fr) 48px;
   align-items: center;
   gap: 10px;
 }
+.training-character-title::-webkit-details-marker { display: none; }
 .training-character-title > :is(img, canvas) {
   width: 42px;
   height: 46px;
@@ -2553,12 +2560,7 @@ dialog p {
     padding-block: 8px;
   }
   .battle-notice {
-    grid-template-columns: 22px minmax(0, 1fr);
     gap: 6px;
-  }
-  .battle-notice :is(img, canvas) {
-    width: 22px;
-    height: 26px;
   }
   #message {
     font-size: 10px;
@@ -2641,10 +2643,10 @@ dialog p {
   }
 }
 
-/* Approved direction: shared surface treatment without changing game rules. */
+/* Support details belong in the help sheet; the board already shows the hero. */
 #approved-battle-support {
   display: flex; flex: 0 0 auto; align-items: center; gap: 10px;
-  margin: 0 12px 4px; padding: 4px 8px; min-height: 42px;
+  margin: 8px 0 0; padding: 8px; min-height: 42px;
   border: 1px solid var(--line-soft); border-radius: 5px;
   background: #2c2433; font-size: 12px;
 }
@@ -2733,3 +2735,8 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 
 /* Dialogue uses full-resolution portraits, never the 64px board animation canvas. */
 #tutorial-gobi>#coach-portrait { image-rendering:auto; }
+
+/* Secondary copy stays available on demand, with a full-size disclosure target. */
+.ui-copy-details { font-size: 12px; }
+.ui-copy-details > summary { font-size: 12px; }
+.ui-copy-details p { padding-bottom: 8px; line-height: 1.7; }

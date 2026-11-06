@@ -30,7 +30,7 @@ function toggleStaff(id){
  renderStaffArchive();showStaffRecord(id);sync();return true;
 }
 function renderStaffDeck(){
- document.querySelector('#staff-deck').innerHTML='<b>오늘의 근무 명단 <em>'+meta.deck.length+' / 5</em></b><div class="deck-slots">'+Array.from({length:5},(_,i)=>{const id=meta.deck[i],r=staffRecords.find(v=>v.id===id);return r?'<button data-deck="'+id+'" aria-label="'+r.name+' 편성 관리"><img src="'+r.image+'" alt=""><small>'+r.name+'</small></button>':'<span class="empty-deck">＋<small>빈 자리</small></span>'}).join('')+'</div><p id="deck-status" role="status">'+(meta.deck.length===5?'선택한 5명만 각 20% 확률로 소환돼요.':'당직 시작 전에 정확히 5명을 골라주세요.')+'</p>';
+ document.querySelector('#staff-deck').innerHTML='<b>오늘의 근무 명단 <em>'+meta.deck.length+' / 5</em></b><div class="deck-slots">'+Array.from({length:5},(_,i)=>{const id=meta.deck[i],r=staffRecords.find(v=>v.id===id);return r?'<button data-deck="'+id+'" aria-label="'+r.name+' 편성 관리"><img src="'+r.image+'" alt=""><small>'+r.name+'</small></button>':'<span class="empty-deck">＋<small>빈 자리</small></span>'}).join('')+'</div><p id="deck-status" role="status">'+(meta.deck.length===5?'':'당직 시작 전에 정확히 5명을 골라주세요.')+'</p>';
  for(const id of meta.deck)document.querySelector('[data-deck="'+id+'"]').onclick=()=>showStaffRecord(id);
 }
 document.querySelector('#buy-staff-pack').onclick=buyStaffPack;

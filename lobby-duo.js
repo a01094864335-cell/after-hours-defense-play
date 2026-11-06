@@ -8,7 +8,7 @@
  heading.className='duo-sr';const floating=document.createElement('div');floating.className='duo-logo-float';
  const logo=new Image();logo.src='assets/reference-ui/title-logo.svg';logo.alt='';floating.append(logo);
  const tagline=document.createElement('p');tagline.textContent='마왕은 퇴근, 우리의 밤은 시작!';
- const shadow=document.createElement('span');shadow.className='duo-logo-shadow';shadow.setAttribute('aria-hidden','true');title.replaceChildren(heading,floating,shadow,tagline);
+ const shadow=document.createElement('span');shadow.className='duo-logo-shadow';shadow.setAttribute('aria-hidden','true');title.replaceChildren(heading,floating,shadow);
  const tools=document.createElement('div');tools.className='duo-shortcuts';
  for(const id of ['lobby-story-collection','training-entry']){const b=q('#'+id);if(b)tools.append(b)}art.append(tools);
  const companion=document.createElement('button');companion.type='button';companion.className='duo-companion';companion.onclick=()=>q('.ref-merc-plus')?.click();
