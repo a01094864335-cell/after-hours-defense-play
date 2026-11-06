@@ -23,6 +23,8 @@ for(const dir of fs.readdirSync(path.join(root,'assets/hiring-stories'))){const 
 for(const name of fs.readdirSync(path.join(root,'previews/ui-directions-20261102')))if(/\.(html|css|js|png)$/.test(name))files.add('previews/ui-directions-20261102/'+name);
 for(const name of fs.readdirSync(path.join(root,'previews/lobby-direction')))if(/\.(html|css|png)$/.test(name))files.add('previews/lobby-direction/'+name);
 files.add('assets/ui-approved/lobby-background.webp');
+files.add('assets/ui-approved/shop-rush.webp');
+files.add('assets/ui-approved/shop-stage.webp');
 for(const f of ['approved-ui.css','approved-ui.js','assets/ui-approved/lobby-scene.webp'])files.add(f);
 files.add('assets/ui-b/gallery.html');
 files.add('assets/ui-b/manifest.json');

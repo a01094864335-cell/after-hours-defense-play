@@ -54,6 +54,45 @@
     details.append(summary, rules);
   }
 
+
+  // A concept: compose the existing shop; purchase and save logic keep ownership.
+  const shop = q("#shop"), wallet = q(".shop-wallet");
+  shop.classList.add("summon-stage-shop");
+  wallet.classList.add("stage-wallet");
+  shop.querySelector(".sheet-head").insertBefore(wallet, q("#shop-close"));
+  const renderPack = renderRecruitShop;
+  let packLedgerSignature = "";
+  renderRecruitShop = function (...args) {
+    const result = renderPack.apply(this, args);
+    if (!shop.open) return result;
+    const balance = q("#recruit-balance");
+    const signature = balance.textContent;
+    if (signature === packLedgerSignature && balance.querySelector(".pack-points")) return result;
+    packLedgerSignature = signature;
+    const parts = signature.split(" · ");
+    if (parts.length < 3) return result;
+    const coins = document.createElement("span"), points = document.createElement("span"), pity = document.createElement("span");
+    coins.className = "sr-only";
+    coins.textContent = parts[0];
+    points.className = "pack-points";
+    points.textContent = parts[1];
+    pity.className = "pack-pity";
+    const label = document.createElement("span");
+    label.textContent = parts.slice(2).join(" · ");
+    const track = document.createElement("span");
+    track.className = "pack-pity-track";
+    track.setAttribute("aria-hidden", "true");
+    const count = missingSupports().length ? profile().pity : SUPPORT_PITY;
+    for (let i = 0; i < SUPPORT_PITY; i++) {
+      const pip = document.createElement("i");
+      pip.classList.toggle("lit", i < count);
+      track.append(pip);
+    }
+    pity.append(label, track);
+    balance.replaceChildren(coins, points, pity);
+    return result;
+  };
+
   const board = q(".board-stage");
   if (board && typeof renderMeta === "function") {
     const support = document.createElement("div");
