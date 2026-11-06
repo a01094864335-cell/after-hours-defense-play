@@ -17,6 +17,7 @@ document.querySelector('#leave-cancel').onclick=()=>document.querySelector('#lea
 document.querySelector('#leave-confirm').onclick=()=>{document.querySelector('#leave').close();restartTo('lobby')};
 setScreen('lobby');sync();
 function fitBoard(){
+ if(window.BattlePresentation?.enabled)return window.BattlePresentation.resize();
  const area=document.querySelector('.board-stage'),rect=area.getBoundingClientRect();
  if(rect.width<=12||rect.height<=2)return;
  // Keep the 600 × 600 world square. Only the outer decoration may be clipped:

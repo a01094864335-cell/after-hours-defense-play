@@ -26,7 +26,7 @@ const out=process.env.UI_QA_DIR||path.resolve(__dirname,'../qa/board-space');
    data.controls=[...document.querySelectorAll('.battle-controls button')].map(e=>{const r=e.getBoundingClientRect();return{id:e.id,x:r.x,y:r.y,w:r.width,h:r.height,overflow:e.scrollWidth>e.clientWidth+1}});
    return data;
   });
-  assert.ok(Math.abs(metrics['#game'].w-metrics['#game'].h)<.01);
+  if(!await page.evaluate(()=>window.BattlePresentation?.enabled))assert.ok(Math.abs(metrics['#game'].w-metrics['#game'].h)<.01);
   const visible=metrics.visibleWorld;
   assert.ok(visible.left<=12.01&&visible.right>=587.99);
   // Boss badge at y=51, HP bar at 56; bottom entrance/throne labels at 562.
@@ -36,7 +36,8 @@ const out=process.env.UI_QA_DIR||path.resolve(__dirname,'../qa/board-space');
   await page.evaluate(()=>{board=Array.from({length:15},()=>({type:0,pip:1,cool:0,attack:0,arrival:0,income:5,skillCD:0}));sync()});
   const box=await page.locator('#game').boundingBox();
   const cells=await page.evaluate(()=>globalThis.eval('cells'));
-  const screenPoint=i=>({x:box.x+cells[i].x*box.width/600,y:box.y+cells[i].y*box.height/600});
+  const mapped=await page.evaluate(()=>cells.map(c=>window.BattlePresentation?.enabled?BattlePresentation.screenPoint(c):null));
+  const screenPoint=i=>mapped[i]||({x:box.x+cells[i].x*box.width/600,y:box.y+cells[i].y*box.height/600});
   for(let i=0;i<15;i++){
    await page.evaluate(()=>{selected=-1;syncSkill()});const p=screenPoint(i);await page.touchscreen.tap(p.x,p.y);
    assert.equal(await page.evaluate(()=>selected),i,`touch cell ${i} at ${width}×${height}`);

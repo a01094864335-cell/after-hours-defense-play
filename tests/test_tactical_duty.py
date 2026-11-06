@@ -1,6 +1,7 @@
 """Release checks for planning, voluntary settlement and isolated staff practice."""
 import unittest
 import test_usability as ui
+from browser_helpers import board_point
 
 
 class TacticalDutyTests(unittest.TestCase):
@@ -43,8 +44,8 @@ class TacticalDutyTests(unittest.TestCase):
         cell = page.evaluate('cells')
         box = page.locator('#game').bounding_box()
         for i in [source, target]:
-            page.mouse.click(box['x'] + cell[i]['x'] * box['width'] / 600,
-                             box['y'] + cell[i]['y'] * box['height'] / 600)
+            pos = board_point(page, cell[i])
+            page.mouse.click(pos['x'], pos['y'])
         self.assertTrue(page.evaluate(f'!!board[{target}] && !board[{source}]'))
         page.locator('#reposition-done').click()
         page.locator('#build-choices summary').click()

@@ -2795,3 +2795,62 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 .staff-practice :is(.summon-row,.item-buttons,.battle-notice,#next-boss,#tactical-prep,#item-hint) { display: none; }
 #result-threat:not([hidden]) { display: flex; align-items: center; justify-content: center; gap: 8px; }
 #result-threat img { width: 32px; height: 36px; object-fit: contain; }
+
+/* Approved D battle surface: selected skill → summon → items. */
+.battle-d { background:#232b38; }
+.battle-d .battle-top { height:58px; padding:8px 12px; background:linear-gradient(#33404c,#222a36);border-bottom:1px solid #60747f; }
+.battle-d .battle-notice { position:relative;flex:none;grid-template-columns:34px minmax(0,1fr) 22px;gap:9px;height:62px;margin:0;padding:8px 12px;background:linear-gradient(100deg,#454747,#283140);border-bottom:1px solid #a37b47;box-shadow:inset 3px 0 #d9b673; }
+.battle-d .battle-alert-icon {display:grid;place-items:center;width:32px;height:34px;border:1px solid #a48657;background:#23232c;border-radius:7px;color:#f2cf86;font-size:23px;}
+.battle-d #message {font-size:12px;line-height:1.55;white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;color:#e8decf;}
+.battle-d #boss-warning {position:absolute;inset:0;left:0;right:0;top:0;gap:10px;padding:8px 12px;margin:0;border:0;border-left:3px solid #ec8e94;border-radius:0;background:linear-gradient(100deg,#613041,#342538);box-shadow:none;animation:none!important;}
+.battle-d #boss-warning-label {display:none;}.battle-d #boss-warning strong{font-size:13px;line-height:1.5}.battle-d #boss-warning p{font-size:11px;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:calc(100vw - 80px)}
+.battle-d #boss-warning[hidden] {display:none!important}
+.battle-d #next-boss {display:none;}
+.battle-d .board-stage {align-items:stretch;justify-content:stretch;isolation:isolate;}
+.battle-d #game {position:absolute;inset:0;opacity:0;z-index:2;aspect-ratio:auto;}
+#battle-paint {position:absolute;inset:0;width:100%;height:100%;z-index:1;}
+.battle-stage-meta {position:absolute;left:42px;right:42px;top:9px;display:flex;justify-content:space-between;z-index:3;pointer-events:none;}
+.battle-stage-meta>span {display:flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid #7c648177;border-radius:20px;background:#221a30df;color:#dfd6dd;font-size:10px;}
+.battle-stage-meta img{width:13px;height:13px;}
+.battle-d .battle-controls {margin:0;padding:10px 12px max(14px,env(safe-area-inset-bottom));gap:8px;border:0;border-top:1px solid #8aaba8;border-radius:0;background:linear-gradient(#36464d,#232b38);}
+.battle-d .skill-row {grid-template-columns:58px minmax(0,1fr) 86px;gap:8px;min-height:76px;padding:6px 9px;border:1px solid #819f9d;border-radius:8px;background:linear-gradient(100deg,#40585a,#27333f);overflow:hidden;}
+#battle-selected-portrait {width:56px;height:60px;object-fit:contain;}
+.battle-selected-copy {position:relative;align-self:center;min-width:0;padding-right:23px;}
+#battle-selected-name {display:block;font-size:14px;line-height:1.45;color:#e6eee0;word-break:keep-all;}
+#battle-selected-grade {display:block;font-size:10px;line-height:1.6;letter-spacing:1px;color:#e8d08d;}
+.battle-d #skill-help {position:absolute;right:0;top:50%;transform:translateY(-50%);width:22px;min-height:36px;padding:0;font-size:12px;background:none;color:#b7c8c5;}
+.battle-d #skill {width:100%;min-height:58px;padding:8px 4px;background:linear-gradient(#d1e5d4,#90b3a5);border:1px solid #e1edc4;border-radius:7px;color:#233c3c;font-size:17px;font-weight:800;}
+.battle-d #skill:disabled {background:#33434d;border-color:#6b858e;color:#aebfc3;}
+.battle-d .summon-row {grid-template-columns:76px minmax(0,1fr) 50px;gap:8px;min-height:54px;}
+.battle-d .summon-row>span {font-size:11px;border-radius:8px;}
+.battle-d #summon {min-height:54px;font-size:17px;background:linear-gradient(#e1e6bd,#b8c78f);border-color:#e9efc3;color:#34432d;}
+.battle-d #upgrade-open {min-height:54px;border-radius:8px;background:#283441;border-color:#607887;}
+.battle-d #upgrade-open span {display:none;}.battle-d #upgrade-open img {width:25px;height:25px;}
+.battle-d .item-buttons {gap:8px;min-height:48px;}
+.battle-d .item-buttons button {position:relative;min-height:48px;background:#283441;border-color:#607887;border-radius:7px;padding:6px;}
+.battle-d .item-buttons button>span {position:absolute;width:1px;height:1px;padding:0;clip:rect(0,0,0,0);overflow:hidden;white-space:nowrap;}
+.battle-d .item-buttons img {width:31px;height:31px;}
+.battle-d .item-buttons b {position:absolute;right:7px;bottom:5px;min-width:17px;padding:0 3px;border:1px solid #95758977;border-radius:4px;background:#221a2ce8;color:#f1dfc6;font-size:10px;line-height:16px;}
+.battle-d #tactical-prep {display:none;}
+.battle-d #item-hint {padding:2px 4px;font-size:11px;}
+.battle-d #reposition-done {order:-1;min-height:76px;}
+.battle-d .battle-controls:has(#reposition-done:not([hidden])) .skill-row {display:none;}
+.staff-practice .battle-d .battle-stage-meta{display:none;}
+@media(max-height:700px){
+ .battle-d .battle-top {height:50px;padding:6px 10px;gap:6px;grid-template-columns:32px auto minmax(0,1fr) 36px 36px;}
+ .battle-d .battle-notice {height:54px;padding:6px 10px;gap:7px;grid-template-columns:30px minmax(0,1fr) 20px;}
+ .battle-d #message {font-size:11px;}.battle-d .battle-alert-icon{width:28px;height:30px;font-size:20px;}
+ .battle-d .battle-controls {padding:8px 10px max(10px,env(safe-area-inset-bottom));gap:7px;}
+ .battle-d .skill-row {min-height:62px;grid-template-columns:44px minmax(0,1fr) 72px;padding:4px 7px;gap:7px;}
+ #battle-selected-portrait {width:43px;height:49px;}#battle-selected-name{font-size:12px}#battle-selected-grade{font-size:8px;}
+ .battle-d #skill {min-height:48px;font-size:15px;}.battle-d #skill-help{min-height:32px;}
+ .battle-d .summon-row {min-height:48px;grid-template-columns:66px minmax(0,1fr) 44px;gap:7px;}
+ .battle-d #summon,.battle-d #upgrade-open {min-height:48px;}.battle-d #summon{font-size:15px;}
+ .battle-d .item-buttons,.battle-d .item-buttons button {min-height:44px;}.battle-d .item-buttons img{width:28px;height:28px;}
+ .battle-d #reposition-done {min-height:62px;}.battle-stage-meta{top:6px;left:40px;right:40px;}
+}
+.battle-d #boss-warning>div { min-width:0; }
+#battle-selected-name { display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere; }
+.battle-d .battle-notice #item-hint { position:absolute;left:55px;right:32px;top:8px;margin:0;padding:0;max-height:45px;overflow:hidden;font-size:11px;line-height:1.6;z-index:1; }
+.battle-d .battle-notice:has(#item-hint:not([hidden])) #message { visibility:hidden; }
+.battle-d #boss-warning {z-index:2;}

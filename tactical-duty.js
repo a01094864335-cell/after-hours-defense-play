@@ -28,8 +28,9 @@ window.TacticalDuty=(()=>{
   previewNode.textContent=moving?'↪ 무료 재배치':`★${Math.max(board[a].pip,board[b].pip)+1} · ${chance}% · ${keep?'종류 유지':'종류 랜덤'}`;
   previewNode.hidden=false;
   const stage=q('.board-stage').getBoundingClientRect(),r=canvas.getBoundingClientRect(),c=cells[b];
-  previewNode.style.left=Math.max(8,Math.min(stage.width-224,r.left-stage.left+c.x*r.width/600-108))+'px';
-  previewNode.style.top=Math.max(8,Math.min(stage.height-42,r.top-stage.top+c.y*r.height/600-72))+'px';
+  const p=window.BattlePresentation?.enabled?window.BattlePresentation.project(c,stage.width,stage.height):{x:r.left-stage.left+c.x*r.width/600,y:r.top-stage.top+c.y*r.height/600};
+  previewNode.style.left=Math.max(8,Math.min(stage.width-224,p.x-108))+'px';
+  previewNode.style.top=Math.max(8,Math.min(stage.height-42,p.y-65))+'px';
  }
  function selectedPreview(){
   if(selected<0||!board[selected]||drag){hidePreview();return}

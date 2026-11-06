@@ -66,7 +66,7 @@ function drawMercenary() {
     const im=images[key];
     if(im?.complete&&im.naturalWidth&&im.naturalHeight){const scale=Math.min(120/im.naturalWidth,72/im.naturalHeight),w=im.naturalWidth*scale,h=im.naturalHeight*scale;ctx.drawImage(im,300-w/2,568-h,w,h);}
   }
-  ctx.font='bold 11px system-ui';ctx.fillStyle='#e9c898';ctx.fillText('지원 영웅',300,581);
+  ctx.font='bold 11px system-ui';ctx.fillStyle='#e9c898';
   if(mercGesture.motionState&&!reduce?.matches)spark(352,523,5,'#ffe7b4');ctx.restore();
 }
 function drawMotionEffect(f,t) {

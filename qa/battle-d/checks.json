@@ -1,0 +1,174 @@
+[
+  {
+    "size": [
+      320,
+      568
+    ],
+    "normal": {
+      ".battle-notice": {
+        "x": 0,
+        "y": 50,
+        "w": 320,
+        "h": 54
+      },
+      ".board-stage": {
+        "x": 0,
+        "y": 104,
+        "w": 320,
+        "h": 277
+      },
+      ".skill-row": {
+        "x": 10,
+        "y": 390,
+        "w": 300,
+        "h": 62
+      },
+      ".summon-row": {
+        "x": 10,
+        "y": 459,
+        "w": 300,
+        "h": 48
+      },
+      ".item-buttons": {
+        "x": 10,
+        "y": 514,
+        "w": 300,
+        "h": 44
+      }
+    },
+    "order": "skill,summon,items",
+    "stableAlert": true,
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "errors": []
+  },
+  {
+    "size": [
+      375,
+      667
+    ],
+    "normal": {
+      ".battle-notice": {
+        "x": 0,
+        "y": 50,
+        "w": 375,
+        "h": 54
+      },
+      ".board-stage": {
+        "x": 0,
+        "y": 104,
+        "w": 375,
+        "h": 376
+      },
+      ".skill-row": {
+        "x": 10,
+        "y": 489,
+        "w": 355,
+        "h": 62
+      },
+      ".summon-row": {
+        "x": 10,
+        "y": 558,
+        "w": 355,
+        "h": 48
+      },
+      ".item-buttons": {
+        "x": 10,
+        "y": 613,
+        "w": 355,
+        "h": 44
+      }
+    },
+    "order": "skill,summon,items",
+    "stableAlert": true,
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "errors": []
+  },
+  {
+    "size": [
+      390,
+      844
+    ],
+    "normal": {
+      ".battle-notice": {
+        "x": 0,
+        "y": 58,
+        "w": 390,
+        "h": 62
+      },
+      ".board-stage": {
+        "x": 0,
+        "y": 120,
+        "w": 390,
+        "h": 505
+      },
+      ".skill-row": {
+        "x": 12,
+        "y": 636,
+        "w": 366,
+        "h": 76
+      },
+      ".summon-row": {
+        "x": 12,
+        "y": 720,
+        "w": 366,
+        "h": 54
+      },
+      ".item-buttons": {
+        "x": 12,
+        "y": 782,
+        "w": 366,
+        "h": 48
+      }
+    },
+    "order": "skill,summon,items",
+    "stableAlert": true,
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "errors": []
+  },
+  {
+    "size": [
+      430,
+      932
+    ],
+    "normal": {
+      ".battle-notice": {
+        "x": 0,
+        "y": 58,
+        "w": 430,
+        "h": 62
+      },
+      ".board-stage": {
+        "x": 0,
+        "y": 120,
+        "w": 430,
+        "h": 593
+      },
+      ".skill-row": {
+        "x": 12,
+        "y": 724,
+        "w": 406,
+        "h": 76
+      },
+      ".summon-row": {
+        "x": 12,
+        "y": 808,
+        "w": 406,
+        "h": 54
+      },
+      ".item-buttons": {
+        "x": 12,
+        "y": 870,
+        "w": 406,
+        "h": 48
+      }
+    },
+    "order": "skill,summon,items",
+    "stableAlert": true,
+    "touchedCells": 15,
+    "touchDrag": "passed",
+    "errors": []
+  }
+]
