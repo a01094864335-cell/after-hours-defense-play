@@ -17,7 +17,7 @@ buyStaffPack=function(){
 };
 revealRecruit=function(id,duplicate){
  const r=staffRecords.find(r=>r.id===id),support=r.group==='merc';
- document.querySelector('#recruit-result').innerHTML='<div class="recruit-reveal"><img src="'+r.image+'" alt="'+r.name+'"><b>'+(duplicate?'다시 만난 동료':support?'희귀 지원 영웅 도착!':'새 동료 도착!')+'</b><strong>'+r.name+' · '+r.job+'</strong><p>'+(duplicate?'중복 채용 → 채용 포인트 +1<br>'+RECRUIT_POINTS+'포인트로 미채용 일반 직원 1명을 지정 채용해요.<br>현재 '+meta.recruitPoints+'포인트':'“'+r.quote+'”<br>'+(support?'직원 도감 → 지원 영웅에서 선택해주세요.':'직원 도감에서 근무 명단에 넣어주세요.'))+'</p></div>';
+ document.querySelector('#recruit-result').innerHTML='<div class="recruit-reveal" data-recruit-kind="'+(duplicate?'duplicate':support?'support':'staff')+'"><img src="'+r.image+'" alt="'+r.name+'"><b>'+(duplicate?'다시 만난 동료':support?'희귀 지원 영웅 도착!':'새 동료 도착!')+'</b><strong>'+r.name+' · '+r.job+'</strong><p>'+(duplicate?'중복 채용 → 채용 포인트 +1<br>'+RECRUIT_POINTS+'포인트로 미채용 일반 직원 1명을 지정 채용해요.<br>현재 '+meta.recruitPoints+'포인트':'“'+r.quote+'”<br>'+(support?'직원 도감 → 지원 영웅에서 선택해주세요.':'직원 도감에서 근무 명단에 넣어주세요.'))+'</p></div>';
  renderStaffArchive();renderMeta();document.querySelector('#recruit-dialog')?.showModal();
 };
 // Keep the legacy entry point selection-only, including callers outside the archive.
@@ -37,6 +37,7 @@ showStaffRecord=function(id){
  button.onclick=()=>{if(buyMerc(id.slice(5))){renderStaffArchive();showStaffRecord(id)}};detail.append(button);
 };
 shopTab=function(tab){
+ document.querySelector('#shop').dataset.shopTab=tab==='items'?'items':'pack';
  const items=tab==='items';document.querySelector('#shop-items').hidden=!items;document.querySelector('.recruit-shop').hidden=items;document.querySelector('#shop-mercs').hidden=true;
  document.querySelector('#shop-tab-items').classList.toggle('active',items);document.querySelector('#shop-tab-mercs').classList.toggle('active',!items);
  document.querySelector('#shop-tab-items').setAttribute('aria-pressed',String(items));document.querySelector('#shop-tab-mercs').setAttribute('aria-pressed',String(!items));

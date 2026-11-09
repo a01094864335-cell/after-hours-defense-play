@@ -10,6 +10,7 @@ window.BattlePresentation=(()=>{
  function screenPoint(p){const r=canvas.getBoundingClientRect(),v=project(p,r.width,r.height);return{x:r.left+v.x,y:r.top+v.y}}
  if(!enabled)return {enabled,axes,project,unproject,point,screenPoint};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
+ const staffKeys=new Set(kinds.map(kind=>kind.file));
  const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0;
  const oldMotion=Motion.draw;
  Motion.draw=function(target,key,x,y,size,pose=0,options={}){
@@ -28,7 +29,7 @@ window.BattlePresentation=(()=>{
   }
   const row=(a.y[1][3]-a.y[1][2])/3,cell=(a.x[1][3]-a.x[1][2])/5;
   for(const actor of actors){const p=project(actor,width,height),data=Motion.sheets[actor.key];let size=actor.size*width/600*1.12;
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(data.group==='staff')size=Math.min(size,row*.73,(cell-4)*data.height/f.w);else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key))size=Math.min(size,row*.73,Math.max(12,row-22),(cell-4)*data.height/f.w);else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=project(t,width,height);paint.save();paint.font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}

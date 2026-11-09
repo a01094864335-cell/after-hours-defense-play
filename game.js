@@ -143,7 +143,17 @@ if(u.type!==4)fx.push({x:cells[i].x,y:cells[i].y-25,tx:u.type===5?endX:target.x,
  if(typeof runStats!=='undefined')attackOwner=null;enemies=enemies.filter(e=>{if(e.hp<=0){recordKill(e);return false}return true});if(!queue.length&&!enemies.length){intermission+=dt;if(intermission>=3){sp+=30;intermission=0;if(typeof advanceProgress==='function')advanceProgress();else nextWave()}}requestSync()}
 function image(file,x,y,h,angle=0,sx=1,sy=1){const im=images[file];if(!im?.complete||!im.naturalWidth)return;const w=h*im.naturalWidth/im.naturalHeight;ctx.save();ctx.translate(x,y);ctx.rotate(angle);ctx.scale(sx,sy);ctx.drawImage(im,-w/2,-h,w,h);ctx.restore()}
 function round(x,y,w,h,r){ctx.beginPath();ctx.roundRect(x,y,w,h,r)}
-function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;ctx.fillStyle='#ffffffc9';round(x-29,y+20,58,15,3);ctx.fill();ctx.fillStyle=k.color;for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(x+(n-(u.pip-1)/2)*7,y+27,2.2,0,Math.PI*2);ctx.fill()}if(u.pip>=5){ctx.fillStyle='#ffdd93';ctx.font='bold 10px system-ui';ctx.fillText((u.skillCD||0)>0?'스킬 '+Math.ceil(u.skillCD)+'s':'★ 스킬',x,y-64)}if(u.stun>0){spark(x,y-68,7,'#d6b4ff');ctx.font='bold 10px system-ui';ctx.fillStyle='#e8d1ff';ctx.fillText('기절',x,y-80)}ctx.restore()}
+function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){
+ const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;
+ // Keep rank and cooldown in the same reserved footplate. Labels above units
+ // cross into the previous row when the board is projected onto a short phone.
+ ctx.fillStyle='#fffffff0';round(x-34,y+21,68,15,5);ctx.fill();
+ const status=u.stun>0?'기절':u.pip>=5&&(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':'';
+ ctx.fillStyle=k.color;
+ for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(status?x-25+n*3.3:x+(n-(u.pip-1)/2)*5.3,y+28,1.8,0,Math.PI*2);ctx.fill()}
+ if(status){ctx.fillStyle=u.stun>0?'#805b9f':'#344e77';ctx.textAlign='center';ctx.font='bold 9px system-ui';ctx.fillText(status,x+15,y+33)}
+ ctx.restore();
+}
 // Pixel-sized primitives keep effects in the same style as the sprites.
 function pixel(x,y,w,h,color){ctx.fillStyle=color;ctx.fillRect(Math.round(x),Math.round(y),w,h)}
 function spark(x,y,r,color){pixel(x-2,y-r,4,r*2,color);pixel(x-r,y-2,r*2,4,color)}
@@ -202,8 +212,8 @@ function drawBoardBase(){
  const bg=NightWatchArt.arena(),ready=bg.complete&&bg.naturalWidth>0;
  if(!staticBoardLayer||ready!==staticBoardReady){
   staticBoardLayer=document.createElement('canvas');staticBoardLayer.width=staticBoardLayer.height=600;
-  const base=staticBoardLayer.getContext('2d');if(ready){base.drawImage(bg,0,0,600,600);base.fillStyle='#d9e9ff08';base.fillRect(0,0,600,600)}
-  base.lineJoin='round';base.lineCap='round';base.beginPath();path.forEach((p,i)=>i?base.lineTo(p.x,p.y):base.moveTo(p.x,p.y));base.lineWidth=17;base.strokeStyle='#ffdc7b';base.stroke();
+  const base=staticBoardLayer.getContext('2d');base.clearRect(0,0,600,600);base.fillStyle='#e9f2fa55';base.fillRect(0,0,600,600);
+  base.lineJoin='round';base.lineCap='round';base.beginPath();path.forEach((p,i)=>i?base.lineTo(p.x,p.y):base.moveTo(p.x,p.y));base.lineWidth=14;base.strokeStyle='#efd184';base.stroke();
   base.textAlign='center';base.font='12px system-ui';base.fillStyle='#e6c9a0';base.font='bold 14px system-ui';
   staticBoardReady=ready;GamePerformance.stats.backgroundBuilds++;
  }
