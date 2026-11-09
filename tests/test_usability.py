@@ -31,7 +31,7 @@ class UsabilityTests(unittest.TestCase):
         self.assertGreaterEqual(b['x'],0,selector);self.assertLessEqual(b['x']+b['width'],page.viewport_size['width']+1,selector)
     def test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible(self):
         for w,h in [(320,568),(360,640),(390,844)]:
-            a=self.open(w,h);a.evaluate('saveChange(d=>d.coins=120);renderMeta()');a.locator('#asset-lobby-host [data-proxy="#shop-open"]').click();a.locator('#buy-staff-pack').click()
+            a=self.open(w,h);a.evaluate('saveChange(d=>d.coins=120);renderMeta()');a.locator('#asset-lobby-host [data-proxy="#shop-open"]').click();a.locator('#asset-shop-host .purchase').click()
             if a.locator('#hiring-story[open]').count():
                 self.assertTrue(a.locator('#hiring-story').evaluate('e=>e.contains(document.activeElement)'))
                 a.locator('[data-hire-close]').click()

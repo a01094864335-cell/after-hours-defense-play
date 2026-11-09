@@ -46,3 +46,27 @@ class AssetScreenTests(unittest.TestCase):
         self.assertEqual(page.evaluate('meta.equipped'), 'ward')
         page.locator('#support-equip').click()
         self.assertNotEqual(page.evaluate('meta.equipped'), 'ward')
+
+    def test_shop_live_wallet_guarantee_and_navigation(self):
+        for width, height in [(390, 844), (320, 568)]:
+            page = self.open(width, height)
+            page.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+            self.assertTrue(page.locator('#asset-shop-host .purchase').is_disabled())
+            page.evaluate('saveChange(d=>{d.coins=240;d.profile.pity=9});renderMeta()')
+            page.locator('#asset-shop-host .purchase').click()
+            self.assertEqual(page.evaluate('meta.coins'), 120)
+            self.assertEqual(page.evaluate('meta.owned.length'), 1)
+            self.assertEqual(page.locator('#asset-shop-host #pity').inner_text(), '0/10')
+            if page.locator('#hiring-story[open]').count():
+                page.locator('[data-hire-close]').click()
+            page.locator('#recruit-dialog').get_by_role('button', name='확인', exact=True).click()
+            page.locator('#asset-shop-host .tabs [data-tab="items"]').click()
+            page.locator('#asset-shop-host [data-item="grade"]').click()
+            self.assertEqual(page.evaluate('meta.items.grade'), 1)
+            self.assertEqual(page.locator('#asset-shop-host #coins').inner_text(), '100')
+            page.locator('#asset-shop-host footer [data-action="roster"]').click()
+            self.assertTrue(page.locator('#roster').evaluate('d=>d.open'))
+            page.locator('#asset-roster-host [data-action="shop"]').click()
+            self.assertTrue(page.locator('#asset-shop-host #pack').is_visible())
+            page.locator('#asset-shop-host .close').click()
+            self.assertFalse(page.locator('#shop').evaluate('d=>d.open'))
