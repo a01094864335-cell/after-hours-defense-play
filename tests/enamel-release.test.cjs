@@ -5,7 +5,7 @@ const test = require("node:test"),
   path = require("node:path"),
   os = require("node:os"),
   { execFileSync } = require("node:child_process");
-test("single screen stylesheet and archived B asset gallery are packaged", () => {
+test("open-scene surface, wordless asset family and archived galleries are packaged", () => {
   const root = path.resolve(__dirname, ".."),
     out = fs.mkdtempSync(path.join(os.tmpdir(), "enamel-pages-"));
   try {
@@ -14,6 +14,9 @@ test("single screen stylesheet and archived B asset gallery are packaged", () =>
     });
     const html = fs.readFileSync(path.join(out, "index.html"), "utf8");
     assert.match(html, /ui\.css\?v=[a-f0-9]{12}/);
+    assert.match(html, /open-scene\.css\?v=[a-f0-9]{12}/);
+    assert.match(html, /open-scene\.js\?v=[a-f0-9]{12}/);
+    assert.ok(!html.includes('href="gameworld.css'), "Retired framed surface is not loaded");
     for (const retired of [
       "game-ui.bundle.css",
       "enamel-ui.css",
@@ -38,6 +41,15 @@ test("single screen stylesheet and archived B asset gallery are packaged", () =>
     for (const name of ['slot', 'slot-selected', 'slot-match', 'panel', 'button-gold', 'button-iron']) {
       assert.ok(release.files['assets/night-watch/' + name + '.svg'], 'Watch-room art: ' + name);
     }
+    const openScene = JSON.parse(fs.readFileSync(path.join(out, 'assets/open-scene/manifest.json')));
+    assert.equal(openScene.textBakedIn, false);
+    for (const asset of openScene.assets) {
+      assert.equal(asset.text, false);
+      assert.ok(release.files['assets/open-scene/' + asset.file], asset.file);
+    }
+    const surface = fs.readFileSync(path.join(out, 'open-scene.css'), 'utf8');
+    for (const match of surface.matchAll(/url\(['"]?([^'"\)]+)['"]?\)/g))
+      assert.ok(release.files[match[1]], 'Open-scene reference: ' + match[1]);
     const spec = JSON.parse(
       fs.readFileSync(path.join(root, "assets/ui-b/manifest.json")),
     );

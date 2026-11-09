@@ -1,0 +1,186 @@
+/* NIGHT DUTY · shared game surface. Layout and game rules remain owned by ui.css/JS. */
+.gameworld {
+  --world-gold:#dfb974; --world-light:#ffebbb; --world-line:#ba916c88;
+  --world-panel:#302138; --world-muted:#c2afca; --world-mint:#b4dbcc;
+  --line:#ae8a7566; --line-soft:#ad8b733d; --radius:10px;
+}
+.gameworld body { background:radial-gradient(ellipse at 50% 10%,#36213b,#100c19 75%); }
+.gameworld #app-shell { box-shadow:0 0 0 1px #a6826555,0 0 100px #05020c; }
+/* Tactile brass corners, enamel surfaces, and a consistent hierarchy. */
+.gameworld button { border-color:#a8806c77; border-radius:8px; background:linear-gradient(165deg,#59405a,#34233f 75%); box-shadow:inset 0 1px #ffe3b515,0 2px 0 #0e091a66; color:#eddddf; }
+.gameworld button:hover:not(:disabled) { filter:brightness(1.08); }
+.gameworld button:active:not(:disabled) { box-shadow:inset 0 2px 5px #0d071866; }
+.gameworld button:disabled { color:#bbaabd; background:linear-gradient(#39303f,#2c2334); border-color:#77617d88; box-shadow:inset 0 1px #ffffff05; }
+.gameworld :is(button,summary,input,textarea,select):focus-visible { outline:2px solid #c2efdf; outline-offset:3px; }
+.gameworld :is(.ui-primary,#enter-battle,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next) {
+  border-color:#f0d096; color:#392421; background:linear-gradient(#ffe2a0,#dfb264 78%,#bb8649);
+  box-shadow:inset 0 0 0 2px #fff2c436,inset 0 -3px #91562b33,0 3px 0 #100a1d80;
+  text-shadow:0 1px #fff1c255;
+}
+.gameworld :is(.ui-primary,#enter-battle,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next):disabled {
+  color:#cbb8a3; border-color:#9c8062; background:linear-gradient(#625047,#46363f); text-shadow:none;
+}
+.gameworld :is(#reset,#leave-confirm) { background:linear-gradient(#6c3e4e,#42273e); border-color:#ba7b83; color:#ffe0d9; }
+.gameworld :is(input,textarea,select) { background:#211629; border-color:#91748c; border-radius:7px; }
+.gameworld input[type=range] { accent-color:var(--world-gold); }
+/* Each modal is a room in the castle, with a fixed readable header and scroll body. */
+.gameworld dialog:not(#promo):not(#hiring-story) {
+  border:1px solid #c39a6e; border-radius:13px;
+  background:radial-gradient(ellipse at 10% 0,#7b4c6250,transparent 65%),linear-gradient(140deg,#37253e,#21182e 75%);
+  box-shadow:inset 0 0 0 3px #d6b07b12,0 18px 80px #080410b3;
+}
+.gameworld dialog::backdrop { background:#10091cd6; backdrop-filter:blur(5px); }
+.gameworld :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) {
+  border-bottom:1px solid #d7ad6d66; padding-bottom:12px;
+  background:linear-gradient(90deg,#e7bd6b09,transparent 70%);
+}
+.gameworld :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) h2 { color:var(--world-light); letter-spacing:-.7px; }
+.gameworld dialog[data-world-icon] :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) h2::before {
+  content:''; display:inline-block; width:21px; height:21px; margin-right:8px; vertical-align:-3px;
+  background:var(--world-icon) center/contain no-repeat; opacity:.9;
+}
+.gameworld :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header)>button {
+  border-color:#c19b6c; border-radius:8px; background:linear-gradient(#5a3e56,#32223c); box-shadow:inset 0 0 0 2px #eac68e12;
+}
+.gameworld :is(.archive-tabs,.training-tabs,.shop-tabs) { gap:6px; border:0; padding:0 0 2px; background:#21172b; border-radius:8px; }
+.gameworld :is(.archive-tabs,.training-tabs,.shop-tabs) button {
+  border:1px solid #96718a88; border-radius:7px 7px 3px 3px; background:linear-gradient(#49334f,#2f223a); color:#c6b3cc;
+}
+.gameworld :is(.archive-tabs,.training-tabs,.shop-tabs) button:is(.active,[aria-pressed=true],[aria-selected=true]) {
+  background:linear-gradient(#735164,#463146); color:#ffe5a8; border-color:#e0b978;
+  box-shadow:inset 0 -3px #e6b762,inset 0 1px #ffe5aa22;
+}
+/* Lobby: a castle entrance above a staffed command console. */
+.gameworld .app-header { padding-top:max(12px,env(safe-area-inset-top)); background:linear-gradient(#180d24e6,#24132e33,transparent); }
+.gameworld .brand { color:#ffe7bb; text-shadow:0 2px 3px #110820; }
+.gameworld .wallet { border-color:#c09a65; background:linear-gradient(#49304b,#271c32); border-radius:8px; box-shadow:inset 0 0 0 2px #e6c78612; }
+.gameworld #menu-open { border-color:#ac875d; background:linear-gradient(#5b3b54,#31223b); }
+.gameworld .lobby-title { filter:drop-shadow(0 4px 6px #160a2499); }
+.gameworld .duo-shortcuts button { border-color:#cfaa756f; background:linear-gradient(#5a3b59eb,#2a1c35eb); box-shadow:inset 0 0 0 2px #e7c58515,0 4px 7px #12091b66; border-radius:10px 3px; }
+.gameworld .duo-companion { border-color:#aa9166; background:linear-gradient(#3e3843e8,#211c2be8); border-radius:8px; box-shadow:0 3px 12px #120b2266; }
+.gameworld .approved-lobby-dock {
+  border:1px solid #cfa969; border-bottom:0; border-radius:17px 17px 0 0;
+  background:linear-gradient(#493046ed,#281c34f5); box-shadow:inset 0 3px #f9dc9c18,0 -8px 30px #130a2388;
+}
+.gameworld #daily-option { border-bottom-color:#d8b07933; }
+.gameworld #daily-label { color:#ffe2a5; }
+.gameworld #deck-label::before { color:#f5ddb2; }
+.gameworld .live-staff-token :is(img,canvas) { border-color:#b38e7477; background:radial-gradient(at 50% 100%,#92734c55,#2a2033 80%); border-radius:7px; box-shadow:inset 0 0 0 2px #ffe3a00a; }
+.gameworld .live-staff-token small { color:#dfc9d8; }
+.gameworld #enter-battle { border-radius:9px; font-weight:850; letter-spacing:-.5px; }
+.gameworld .mode-card { color:#d8c1d6; }
+.gameworld .lobby-links { border-top-color:#d9ad704d; background:#1c1427aa; }
+.gameworld .lobby-links button { background:none; border-color:transparent; box-shadow:none; color:#c6afc8; }
+.gameworld .lobby-links button[aria-current=page] { color:#ffe4ac; border-color:#cfa96b; border-radius:8px; background:linear-gradient(#624354,#38283c); box-shadow:inset 0 0 0 2px #e2b97612; }
+/* Combat uses the latest approved night-watch art and D layout from main.
+   Its authored iron/brass surfaces, arena and mint selection remain authoritative. */
+/* Collection: portrait-led staff cards, selected uniforms, and a dossier identity panel. */
+.gameworld #staff-deck { border-color:#c39b704d; background:linear-gradient(120deg,#59405266,#2b2137); box-shadow:inset 0 0 0 2px #e7bc7710; border-radius:10px; }
+.gameworld .deck-slots button { background:radial-gradient(at 50% 100%,#75544344,#2d2137); border-color:#ad8f6c; border-radius:8px; }
+.gameworld .staff-pass { border-color:#a982725e; border-left-color:var(--staff-accent); border-radius:10px 3px 10px 3px; background:radial-gradient(ellipse at 15% 10%,#78506a44,transparent 65%),linear-gradient(130deg,#443147,#271d32); box-shadow:inset 0 0 0 2px #e4bd7810,0 3px 6px #100b1c44; }
+.gameworld .staff-pass[data-equipped=true] { border-color:#bda36d; border-left-color:var(--staff-accent); background:linear-gradient(130deg,#5e454a,#302639); box-shadow:inset 0 0 0 2px #e7c27a1a,0 0 12px #c3ad5a08; }
+.gameworld .pass-portrait { background:radial-gradient(ellipse at 50% 70%,#a5855966,#39293e 78%); border-color:#b698715c; box-shadow:inset 0 0 0 2px #e4c28a11; border-radius:10px; }
+.gameworld .pass-meta b { border-color:#bad4ac77; background:#3d57474d; color:#c7edce; }
+.gameworld .staff-pass[data-employment=sealed] { background:linear-gradient(130deg,#352b3e,#241c30); border-color:#76628177; }
+.gameworld .dossier-hero { border-color:#c19a6b77; border-radius:12px; background:radial-gradient(ellipse at 10% 50%,#98684355,transparent 70%),linear-gradient(140deg,#4e354b,#292136); box-shadow:inset 0 0 0 3px #d6b17b0c; }
+.gameworld .dossier-hero>h3 { color:#ffe4ae; }
+.gameworld .dossier-stamp { background:#574133; border-color:#c5a374; color:#ffe5b3; }
+.gameworld :is(.dossier-section,.live-biography,.live-training-details) { background:linear-gradient(135deg,#49314a55,#2b2035); border-color:#a4846a55; border-radius:9px; }
+.gameworld .dossier-section h4 { color:#f3d9a3; }
+.gameworld .dossier-foot { color:#c4aebf; }
+@media(min-width:360px) {
+  .gameworld #roster-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .gameworld .staff-pass { grid-template-columns:minmax(0,1fr) auto; grid-template-areas:'portrait badge' 'name name' 'role role'; align-content:start; align-items:start; gap:7px; padding:12px; min-height:150px; }
+  .gameworld .pass-portrait { width:58px; height:66px; }
+  .gameworld .pass-meta { align-self:start; max-width:65px; }
+  .gameworld .pass-meta b { font-size:9px; }
+  .gameworld .pass-open { font-size:17px; }
+  .gameworld .pass-role { font-size:10px; flex-wrap:wrap; }
+}
+/* Training is a progression ledger: levels, unlock tracks and the retained upgrade action. */
+.gameworld #training-summary { border-color:#cfac7277; border-radius:12px; padding:16px; background:radial-gradient(ellipse at 100% 0,#c1a4601a,transparent 60%),linear-gradient(130deg,#4b334a,#2b2137); box-shadow:inset 0 0 0 3px #d4af7710; }
+.gameworld .training-level strong { color:#ffe1a0; text-shadow:0 0 20px #edbf6b15; }
+.gameworld .training-meter { background:#1b1427; border-color:#a6866255; }
+.gameworld .training-meter>span { background:linear-gradient(90deg,#b28c62,#f0d598); box-shadow:0 0 8px #f1cb7a33; }
+.gameworld .training-character { background:linear-gradient(130deg,#453148,#2b2136); border-color:#ad8b6c55; border-radius:10px; box-shadow:inset 3px 0 #d6b17b24; }
+.gameworld .training-character-title :is(img,canvas) { background:radial-gradient(ellipse,#bc9b5733,transparent 70%); }
+.gameworld .training-character ol { border-left:1px solid #bb98594d; margin-left:6px; padding-left:10px; }
+.gameworld .training-character li { position:relative; }
+.gameworld .training-character li::before { content:''; position:absolute; left:-14px; top:15px; width:7px; height:7px; border:1px solid #aa8b6b; border-radius:50%; background:#33253d; }
+.gameworld .training-character li.unlocked::before { background:#ead199; border-color:#f5e5b7; box-shadow:0 0 5px #e2c47c44; }
+.gameworld .training-character .unlocked { color:#c5e8c7; }
+.gameworld .training-footer { border-color:#c9a07066; background:linear-gradient(transparent,#241a2d); }
+.gameworld #training-upgrade { min-height:48px; }
+/* Items and equipment are inventory slots, not plain web rows. */
+.gameworld .shop-row,.gameworld #cards .card { border-color:#b38b6f77; border-radius:10px; background:radial-gradient(ellipse at 0 0,#8a685a2b,transparent 60%),linear-gradient(135deg,#473148,#2b2035); box-shadow:inset 0 0 0 2px #d4ae750e; }
+.gameworld .shop-row>:is(img,canvas),.gameworld #cards .card>:is(img,canvas) { border:1px solid #c59d6266; border-radius:9px; background:radial-gradient(ellipse at 50% 70%,#a97a3b4d,#2b2135); }
+.gameworld #equipment-balance { border-color:#81aa9a77; background:linear-gradient(100deg,#264c48,#272b38); }
+.gameworld #cards .card:disabled { border-color:#7e6e7a77; background:linear-gradient(#38303f,#2b2334); }
+.gameworld #deck-options button { border-color:#aa876e77; background:radial-gradient(at 50% 20%,#78543f55,#2e2239 65%); border-radius:9px; }
+.gameworld #deck-options b { background:#3b5e4980; color:#d5efcc; }
+/* Story collection and daily records: illustrated files in the castle library. */
+.gameworld .story-card { border-color:#ad886b66; border-radius:10px 3px 10px 3px; background:linear-gradient(130deg,#4e374b,#2b2136); box-shadow:inset 0 0 0 2px #ddb8780c; }
+.gameworld .story-cover { border:1px solid #b9976877; box-shadow:0 3px 5px #12091c55; border-radius:5px; }
+.gameworld .story-card>b { color:#f5dfbb; }
+.gameworld .story-card:disabled { background:linear-gradient(130deg,#35283b,#21192c); color:#a796b3; }
+.gameworld #story-progress { background:linear-gradient(110deg,#5a3b51,#2b2035); border-color:#b6937066; color:#f0d3a7; }
+.gameworld #daily-events-list>article { border-color:#a8866b66; border-radius:9px; background:linear-gradient(130deg,#48314b,#2b2036); }
+.gameworld #daily-events-list article[data-current=true] { border-color:#dbc17c; background:linear-gradient(120deg,#685041,#382c3b); }
+.gameworld #run-history-list li,.gameworld #deck-presets>div { border-color:#b08c6a66; border-radius:9px; background:linear-gradient(130deg,#49324b,#2b2137); }
+.gameworld #run-history-list li::marker { color:#e3bb78; font-weight:800; }
+/* Results: a report seal, a prominent actual reward and bounded bottom actions. */
+.gameworld #result {
+  background:linear-gradient(#20152cba,#24192ff5 55%,#1b1325),url('assets/ui-approved/lobby-background.webp') center top/cover;
+  padding-top:max(18px,env(safe-area-inset-top)); gap:12px;
+}
+.gameworld .result-icon { width:104px; height:104px; margin:0 auto; border:1px solid #c29d68; border-radius:50%; background:radial-gradient(ellipse,#976d4830,#39263d 70%); box-shadow:0 0 0 6px #c6a1660b,inset 0 0 0 4px #e7bb7512,0 0 35px #d7b16412; }
+.gameworld .result-icon>:is(img,canvas) { width:94px; height:94px; filter:drop-shadow(0 4px 3px #150b2355); }
+.gameworld #result-title { font-size:27px; color:#ffe4b4; letter-spacing:-1px; text-shadow:0 2px 5px #11091b; }
+.gameworld #result-title-badge { border-color:#b28e66; border-radius:4px; background:linear-gradient(90deg,#3c293c,#715044,#3c293c); color:#f3d7a5; }
+.gameworld #live-result-reward { border:1px solid #ccaa70; border-radius:12px; background:radial-gradient(ellipse at 50% 100%,#a87d342b,transparent 75%),linear-gradient(#513548,#2c2135); box-shadow:inset 0 0 0 3px #e8c07812; padding:20px 16px; }
+.gameworld #live-result-reward strong { font-size:38px; color:#ffdd8f; letter-spacing:-1px; text-shadow:0 0 20px #f3c86a22; }
+.gameworld #result-stats,.gameworld #run-analysis,.gameworld #result-text { border-color:#a5856b66; border-radius:10px; background:linear-gradient(135deg,#473249,#2b2036); }
+.gameworld #result-stats>div { border-color:#d0ae7833; }
+.gameworld #result-stats>div b { color:#ffe0a1; }
+.gameworld .live-result-actions { padding-top:10px; border-top:1px solid #be986844; }
+.gameworld #result-again { min-height:52px; border-radius:9px; }
+/* Choices, confirmations, settings and assistance share the same accessible panel language. */
+.gameworld #perk-options>button,.gameworld #perk-targets>button,.gameworld #starter-options>article { border-color:#bc966e88; border-radius:10px; background:linear-gradient(135deg,#594052,#2d2237); box-shadow:inset 0 0 0 2px #e2bd7b0c; }
+.gameworld .ref-guide-step,.gameworld .boss-guide,.gameworld .board-access-list { border-color:#ae8b6b66; border-radius:9px; background:linear-gradient(130deg,#48324b,#2b2036); }
+.gameworld .ref-guide-step h3,.gameworld .boss-guide h3 { color:#f5dcb0; }
+.gameworld #menu fieldset { border-color:#ac896e66; border-radius:9px; background:#281d3288; }
+.gameworld #menu legend { color:#edcd98; }
+.gameworld #menu .panel-scroll-body>button { background:linear-gradient(100deg,#54384e,#30223a); border-color:#a9866a77; text-align:left; justify-content:flex-start; }
+.gameworld #menu .panel-scroll-body>button img { opacity:.9; }
+.gameworld #leave h2 { color:#ffd6bf; }
+.gameworld .recruit-reveal { border-radius:12px; background:radial-gradient(ellipse at 50% 15%,#e2b65a2b,transparent 55%); }
+.gameworld .recruit-reveal>img { filter:drop-shadow(0 8px 14px #ebc77520); }
+.gameworld .recruit-reveal>strong { color:#ffe1a2; }
+.gameworld .ref-recruit-actions { border-top:1px solid #bd956955; padding-top:12px; }
+.gameworld #trial-arena { border-color:#a78a6b; background:radial-gradient(ellipse,#70506d55,#24192e); }
+/* Authored story art remains unobscured; controls are the common gold/violet console. */
+.gameworld #promo .comic-head,.gameworld #hiring-story>header { background:linear-gradient(#39243eea,#23172df5); border-bottom-color:#bb925f88; }
+.gameworld #promo .comic-bottom,.gameworld #hiring-story>footer { background:linear-gradient(#281a30ee,#17101ffb); border-top:1px solid #b48e6055; }
+.gameworld .comic-copy { background:linear-gradient(120deg,#4d354a99,#251b30db); border-color:#b7916580; border-radius:10px; }
+.gameworld #tutorial-gobi>div { border-top-color:#d9b06f; background:linear-gradient(#382339f5,#1b1325fc); }
+.gameworld #tutorial-gobi small { background:linear-gradient(#6d484e,#3d2b40); border-color:#bf995f; color:#ffe2ac; }
+.gameworld #coach-title { color:#f2d5a3; }
+.gameworld #rotation-notice>div,.gameworld #session-notice>div { border-color:#c9a773; background:linear-gradient(#47304b,#261b30); border-radius:12px; }
+/* Keep A shop's larger stage, fixed tabs, and live guarantee meter. */
+.gameworld #shop.summon-stage-shop { border-radius:0; border:0; }
+.gameworld #shop.summon-stage-shop h2::before { display:none; }
+.gameworld #shop.summon-stage-shop .recruit-shop { border-color:#d0a66d; box-shadow:inset 0 0 0 3px #e7bd7b12,0 -6px 24px #170f2480; }
+@media(max-width:350px) {
+  .gameworld dialog[data-world-icon] :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) h2::before { width:17px; height:17px; margin-right:6px; }
+  .gameworld #training-summary { padding:12px; }
+  .gameworld #result-title { font-size:24px; }
+}
+@media(max-height:650px) {
+  .gameworld .result-icon { width:76px; height:76px; }
+  .gameworld .result-icon>:is(img,canvas) { width:72px; height:72px; }
+  .gameworld #live-result-reward { padding:14px; }
+  .gameworld #live-result-reward strong { font-size:32px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .gameworld *, .gameworld *::before,.gameworld *::after { animation:none!important; transition:none!important; }
+}

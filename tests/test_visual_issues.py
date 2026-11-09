@@ -26,7 +26,7 @@ class VisualIssueTests(unittest.TestCase):
         a.locator('#perk-back').click();self.assertTrue(a.locator('#perk-options').is_visible());self.assertTrue(a.locator('#perk-back').is_hidden())
     def test_final_list_items_scroll_clear_of_fixed_footers(self):
         a=self.open(320,568)
-        for opener,scroller,last in [('#roster-open','#roster-overview','#roster-list .staff-pass:last-child'),('#training-entry','.live-training-body','#training-effects>article:last-of-type')]:
+        for opener,scroller,last in [('#roster-open','#roster-overview','#roster-list .staff-pass:last-child'),('#training-entry','.live-training-body','#training-effects>.training-character:last-child')]:
             a.locator(opener).click();a.locator(scroller).evaluate('e=>e.scrollTop=e.scrollHeight')
             self.assertGreater(a.locator(last).count(),0)
             item=a.locator(last).bounding_box();body=a.locator(scroller).bounding_box()

@@ -1,0 +1,242 @@
+{
+  "style": "C / Open Scene",
+  "textBakedIn": false,
+  "assets": [
+    {
+      "file": "lobby-cast.webp",
+      "kind": "character-scene",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 197674,
+      "source": "art-sheet.png",
+      "quadrant": 1,
+      "text": false
+    },
+    {
+      "file": "result-cast.webp",
+      "kind": "character-scene",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 134030,
+      "source": "art-sheet.png",
+      "quadrant": 2,
+      "text": false
+    },
+    {
+      "file": "training-cast.webp",
+      "kind": "character-scene",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 167188,
+      "source": "art-sheet.png",
+      "quadrant": 3,
+      "text": false
+    },
+    {
+      "file": "shop-cast.webp",
+      "kind": "character-scene",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 175304,
+      "source": "art-sheet.png",
+      "quadrant": 4,
+      "text": false
+    },
+    {
+      "file": "lobby-room.webp",
+      "kind": "environment",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 90668,
+      "source": "exec-9c7bc31b-cb45-4e1a-9df6-a606ec0c6592.png",
+      "quadrant": 1,
+      "text": false
+    },
+    {
+      "file": "battle-room.webp",
+      "kind": "environment",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 85808,
+      "source": "exec-9c7bc31b-cb45-4e1a-9df6-a606ec0c6592.png",
+      "quadrant": 2,
+      "text": false
+    },
+    {
+      "file": "training-room.webp",
+      "kind": "environment",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 83250,
+      "source": "exec-9c7bc31b-cb45-4e1a-9df6-a606ec0c6592.png",
+      "quadrant": 3,
+      "text": false
+    },
+    {
+      "file": "shop-room.webp",
+      "kind": "environment",
+      "size": [
+        768,
+        512
+      ],
+      "bytes": 82534,
+      "source": "exec-9c7bc31b-cb45-4e1a-9df6-a606ec0c6592.png",
+      "quadrant": 4,
+      "text": false
+    },
+    {
+      "file": "icons/close.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/back.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/arrow.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/book.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/home.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/staff.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/gear.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/shop.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/scroll.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/sword.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/shield.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/moon.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/lightning.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/help.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/pause.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/play.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/menu.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/coin.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/heart.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/plus.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/check.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/lock.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/spark.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/volume.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "icons/retry.svg",
+      "kind": "interface-icon",
+      "text": false
+    },
+    {
+      "file": "slot.svg",
+      "kind": "board-pad",
+      "text": false
+    },
+    {
+      "file": "slot-selected.svg",
+      "kind": "board-pad",
+      "text": false
+    },
+    {
+      "file": "slot-match.svg",
+      "kind": "board-pad",
+      "text": false
+    }
+  ]
+}
