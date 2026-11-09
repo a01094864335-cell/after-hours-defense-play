@@ -7,7 +7,7 @@ const NightWatchArt = (() => {
       const image = new Image();
       image.decoding = 'async';
       image.addEventListener?.('load', () => GamePerformance.invalidate());
-      image.src = 'assets/night-watch/' + name + (name === 'arena' ? '.webp' : '.svg');
+      image.src = 'assets/open-scene/' + name + (name === 'battle-room' ? '.webp' : '.svg');
       art.set(name, image);
     }
     return art.get(name);
@@ -19,7 +19,7 @@ const NightWatchArt = (() => {
     return true;
   }
   return Object.freeze({
-    arena: () => get('arena'),
+    arena: () => get('battle-room'),
     cell(context, x, y, selected, match) {
       return paint(context, match ? 'slot-match' : selected ? 'slot-selected' : 'slot', x, y, 76, 88);
     },

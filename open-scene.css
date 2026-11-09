@@ -1,0 +1,365 @@
+/* C · OPEN SCENE
+   Layout remains in ui.css. This surface replaces the framed night-watch skin.
+   No words are painted into assets; labels can grow and wrap for localization. */
+:root.open-scene {
+  color-scheme:light;
+  --ink:#28394c; --muted:#647b93; --dim:#7f91a5;
+  --base:#f4f7ff; --panel:#ffffffa8; --card:#e9effa;
+  --line:transparent; --line-soft:transparent;
+  --gold:#b28a34; --mint:#3e947a; --radius:18px;
+  --scene-blue:#3467ed; --scene-yellow:#ffd14e;
+  color:var(--ink); background:#e8edf3;
+}
+.open-scene body {background:radial-gradient(ellipse at 30% 0,#fff3c7,#e8edf3 60%);color:var(--ink)}
+.open-scene #app-shell {background:var(--base);box-shadow:0 0 80px #29466f16}
+.open-scene :is(button,fieldset,details,article,dialog,input,textarea,select) {border-color:transparent;box-shadow:none;text-shadow:none}
+.open-scene button {border:0;border-radius:16px;background:#e5ecf8;color:#506a8c;min-height:44px;line-height:1.45;white-space:normal;overflow-wrap:anywhere;box-shadow:none;font-weight:700}
+.open-scene button:hover:not(:disabled) {filter:brightness(1.035)}
+.open-scene button:active:not(:disabled) {transform:translateY(1px);filter:brightness(.97)}
+.open-scene button:disabled {background:#e3e7ed;color:#8994a5;opacity:.75;box-shadow:none}
+.open-scene :is(button,summary,input,textarea,select):focus-visible {outline:3px solid #6493f5;outline-offset:3px}
+.open-scene :is(input,textarea,select) {background:#fff;color:var(--ink);border:0;border-radius:12px;padding:10px;min-width:0;max-width:100%}
+.open-scene :is(input[type=range],progress) {accent-color:var(--scene-blue)}
+.open-scene :is(h1,h2,h3,h4,b,strong) {text-shadow:none}
+.open-scene :is(.ui-primary,#enter-battle,#summon,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next,#trial-play) {
+  background:linear-gradient(120deg,#3978ff,#315ce2);color:#fff;border:0;border-radius:18px;box-shadow:0 7px 20px #3266ed20;text-shadow:none;font-weight:800;
+}
+.open-scene :is(.ui-primary,#enter-battle,#summon,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next):disabled {background:#dfe5ed;color:#8b99ac;box-shadow:none}
+.open-scene :is(#reset,#leave-confirm) {background:#f9e0e3;color:#b36373}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) {background:none;border:0;padding-bottom:6px;gap:10px}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) h2 {color:#30445e;font-size:23px;letter-spacing:-1px;line-height:1.3;overflow-wrap:anywhere}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header)>button {background:#ffffffa6;border:0;border-radius:50%;box-shadow:none;width:44px;height:44px;padding:12px}
+.open-scene dialog {color:var(--ink);border:0;border-radius:25px;background:linear-gradient(155deg,#edf3ff,#fffdf7);box-shadow:0 25px 80px #18335d25;padding:20px;--dialog-pad:20px}
+.open-scene dialog::backdrop {background:#243c6255;backdrop-filter:blur(9px)}
+.open-scene dialog :is(.panel-scroll-body,.live-training-body,#roster-overview) {scrollbar-color:#bfceed transparent;scrollbar-width:thin}
+.open-scene dialog :is(p,small) {color:var(--muted)}
+.open-scene .ui-dialog-actions {border:0;padding-top:10px}
+.open-scene :is(.archive-tabs,.shop-tabs,.training-tabs) {background:transparent;border:0;border-radius:0;gap:18px;padding:0 0 8px}
+.open-scene :is(.archive-tabs,.shop-tabs,.training-tabs) button {position:relative;border:0;border-radius:0;background:transparent;color:#7f91a7;box-shadow:none;min-width:0;font-size:12px;padding:10px 3px;min-height:44px}
+.open-scene :is(.archive-tabs,.shop-tabs,.training-tabs) button:is(.active,[aria-pressed=true],[aria-selected=true]) {background:transparent;color:#3266ed;border:0;box-shadow:none}
+.open-scene :is(.archive-tabs,.shop-tabs,.training-tabs) button:is(.active,[aria-pressed=true],[aria-selected=true])::after {content:'';position:absolute;left:24%;right:24%;bottom:0;height:4px;border-radius:8px;background:#4274f4}
+.open-scene :is(.ui-copy-details,.dossier-section,.live-biography,.live-training-details,.grade-guide,.boss-guide,.shop-note,.shop-row,.item-product,.merc-product,.story-card,.journey-card,.journey-stat,.development-card,.save-warning,.deck-presets,.training-character,.tactical-owned,.notice-card) {border:0;background:#ffffff85;border-radius:18px;box-shadow:none;color:var(--ink)}
+.open-scene :is(details summary,.ui-copy-details summary) {color:#617c9a}
+.open-scene :is(.ui-copy-details,.grade-guide,.boss-guide) {background:transparent}
+.open-scene :is(.sheet-head small,.training-header small,.ui-dialog-header small) {color:#7f92af}
+.open-scene .coin-mark {background-image:url('assets/open-scene/icons/coin.svg')}
+.scene-art {display:block;object-fit:contain;pointer-events:none;max-width:100%}
+/* Lobby — one open scene and a floating, readable lower console. */
+.open-scene #lobby {grid-template-rows:minmax(180px,1fr) auto;background:linear-gradient(168deg,#fff2b9 0,#fff9dd 25%,#c8e2ff 67%,#eef4ff 90%);overflow:auto}
+.open-scene .app-header {background:transparent;padding: max(14px,env(safe-area-inset-top)) 20px 8px;grid-template-columns:minmax(0,1fr) auto 38px}
+.open-scene .brand {font-size:12px;color:#3e5475;text-shadow:none;gap:7px}
+.open-scene .scene-profile {width:29px;height:34px;object-fit:cover;object-position:50% 30%}
+.open-scene .wallet {background:#ffffffb0;border:0;border-radius:25px;box-shadow:none;padding:7px 10px;gap:5px}
+.open-scene .wallet b {color:#455772;font-size:16px}
+.open-scene #menu-open {border:0;background:#ffffff9c;border-radius:50%;padding:10px;width:38px;height:38px;min-height:38px}
+.open-scene .lobby-art {isolation:isolate;min-height:200px;overflow:hidden}
+.open-scene .lobby-art::before {content:'';position:absolute;width:90%;aspect-ratio:1;left:-20%;top:25%;border-radius:50%;background:radial-gradient(#ffdf6c,#ffdf6c44);z-index:-1}
+.open-scene .lobby-art>.lobby-gobi {visibility:hidden}
+.open-scene .scene-lobby-cast {position:absolute;width:112%;max-width:none;left:-8%;bottom:-3px;height:auto;filter:drop-shadow(0 12px 15px #4f7ab321);z-index:0}
+.open-scene .lobby-title {top:76px;left:24px;width:70%;filter:none;z-index:2}
+.open-scene .scene-wordmark {position:static!important;clip:auto!important;clip-path:none!important;width:auto!important;height:auto!important;overflow:visible!important;white-space:normal!important;margin:0!important;padding:0!important;font-size:34px;line-height:1;letter-spacing:-2px;transform:rotate(-5deg);font-weight:950;color:#2c53ad;filter:none;text-shadow:none}
+.open-scene .scene-wordmark em {font-style:normal;color:inherit}
+.open-scene :is(.duo-logo-float,.duo-logo-shadow) {display:none}
+.open-scene .duo-shortcuts {top:85px;right:13px;width:54px;gap:12px;z-index:3}
+.open-scene .duo-shortcuts button {border:0;background:#ffffffa8;box-shadow:none;border-radius:18px;width:54px;min-height:53px;padding:7px 3px}
+.open-scene .approved-shortcut-face {color:#607c9e;font-size:9px;gap:3px}
+.open-scene .approved-shortcut-face img {width:22px;height:22px}
+.open-scene .duo-companion {bottom:12px;right:13px;background:#ffffffb8;border:0;border-radius:16px;box-shadow:none;padding:6px;z-index:3;min-height:52px;gap:3px;width:63px}
+.open-scene .duo-companion b {font-size:9px;color:#577394}
+.open-scene .duo-companion img {width:26px;height:28px}
+.open-scene .approved-lobby-dock {position:relative;grid-row:2;margin:0;padding:0 22px;gap:9px;background:linear-gradient(transparent,#eff5ff 36%);border:0;border-radius:0;box-shadow:none;z-index:2}
+.open-scene #daily-option {border:0;background:#ffffffa0;border-radius:17px;padding:9px 12px;gap:8px;min-height:48px}
+.open-scene #daily-label {color:#4c6584;font-size:12px}
+.open-scene #daily-effect {font-size:10px;color:#6f83a0;line-height:1.5;margin-top:2px}
+.open-scene #daily-option::before {color:#d6a735}
+.open-scene #daily-option:has(#daily-kind[data-kind]) #daily-effect {color:#6f83a0}
+.open-scene #daily-events-open {background:none;border:0;box-shadow:none;min-height:36px}
+.open-scene #daily-events-open::after {color:#7c96bc}
+.open-scene #deck-open {background:none;border:0;padding:0;gap:4px;border-radius:0}
+.open-scene #deck-label,.open-scene #deck-label::before {color:#6d84a2;font-size:10px}
+.open-scene #deck-label::before {content:none}
+.open-scene .scene-party-label {color:#6d84a2;font-size:10px}
+.open-scene #deck-label {justify-content:space-between}
+.open-scene #deck-summary {gap:9px}
+.open-scene .live-staff-token :is(img,canvas) {background:#ffffffb0;border:0;border-radius:50%;box-shadow:none;height:39px;padding:2px}
+.open-scene .live-staff-token small {font-size:9px;color:#576f91;white-space:normal;text-align:center}
+.open-scene .mode-card {justify-content:center;padding:0;gap:5px;color:#6f85a0;font-size:10px}
+.open-scene .mode-card b {color:#617da0;font-size:10px}
+.open-scene .mode-card small {display:none}
+.open-scene #enter-battle {min-height:58px;margin:0;font-size:21px;border-radius:19px}
+.open-scene #enter-battle::after {content:none}
+.open-scene #resume-run {min-height:35px;margin:0;padding:6px 12px;font-size:11px;background:#ffffffa0}
+.open-scene .lobby-links {background:none;border:0;margin:0 -8px;padding:0 0 max(12px,env(safe-area-inset-bottom));gap:15px}
+.open-scene .lobby-links button {background:transparent;color:#8095b2;border:0;box-shadow:none;border-radius:17px;display:flex;flex-direction:column;gap:3px;min-height:48px;padding:6px 3px;font-size:9px}
+.open-scene .lobby-links button[aria-current=page] {background:#dce8ff;color:#3266ed;border:0;box-shadow:none}
+.open-scene .lobby-links img {width:21px;height:21px}
+/* Battle retains its canvas projection, board indices and input hit targets. */
+.open-scene #battle {background:#eef4ff}
+.open-scene .battle-top {background:none;border:0;padding:12px 14px 8px;box-shadow:none}
+.open-scene .battle-top button {background:#ffffffb0;border:0;border-radius:50%;box-shadow:none;color:#597193}
+.open-scene .wave-pill {background:none;border:0;color:#627a9d}
+.open-scene #wave {color:#3266ed}
+.open-scene #life {color:#ef5d89;text-shadow:none}
+.open-scene .battle-notice {background:none;border:0;box-shadow:none;color:#6680a3;margin:0 16px;padding:1px 0;min-height:28px}
+.open-scene .battle-alert-icon {color:#b28d35}
+.open-scene #message {color:#5d7697}
+.open-scene .board-stage {background:#c8dff5;border:0;box-shadow:none}
+.open-scene .battle-stage-meta span {border:0;border-radius:20px;background:#ffffffe0;color:#5c779a;box-shadow:none}
+.open-scene .battle-controls {background:#f0f5ff;border:0;padding:11px 16px max(12px,env(safe-area-inset-bottom));gap:10px;box-shadow:none}
+.open-scene .skill-row {background:#dfeeea;border:0;border-radius:18px;padding:8px 10px;box-shadow:none}
+.open-scene #battle-selected-name {color:#456f66}
+.open-scene #battle-selected-grade {color:#ad943e}
+.open-scene #skill {background:#8fe0c8;color:#285f53;border:0;box-shadow:none;border-radius:13px}
+.open-scene #skill:disabled {background:#c7dfd5;color:#72978b}
+.open-scene #skill-help {background:none;color:#759288;border:0;box-shadow:none}
+.open-scene .summon-row>span {color:#5c7698;background:none}
+.open-scene #sp {color:#314f79}
+.open-scene #summon {border-radius:18px;min-height:53px;box-shadow:0 6px 16px #3266ed21}
+.open-scene #upgrade-open {background:#e1eafa;border:0;border-radius:15px;box-shadow:none;color:#627fa7}
+.open-scene .item-buttons {gap:10px}
+.open-scene .item-buttons button {border:0;border-radius:14px;background:#e3ebf8;color:#5d7697;box-shadow:none;min-height:52px}
+.open-scene .item-buttons button:disabled {background:#e7edf6;color:#9aa8bc}
+.open-scene .item-buttons button b {background:#fff0bb;color:#a18234;border:0;border-radius:7px;box-shadow:none}
+.open-scene #ref-pause {background:#e9f0fded;color:#4c6893;backdrop-filter:blur(7px)}
+/* Main list screens use open character stages, not bordered cards. */
+.open-scene :is(#roster,#training-dialog,#story-archive,#journey-dialog,#shop) {width:min(480px,100%);max-width:100%;height:100dvh;max-height:100dvh;margin:0 auto;border:0;border-radius:0;padding:max(20px,env(safe-area-inset-top)) 20px max(16px,env(safe-area-inset-bottom));gap:13px}
+.open-scene #roster {background:linear-gradient(155deg,#e6efff,#f8faff 60%,#eff0ff)}
+.open-scene #staff-deck {background:#ffffff9c;border:0;border-radius:20px;padding:12px;box-shadow:none}
+.open-scene #staff-deck>b {color:#6d84a5;font-size:11px}
+.open-scene #staff-deck em {color:#668ab4}
+.open-scene .deck-slots {gap:9px;margin:8px 0 0}
+.open-scene .deck-slots button {background:#e8eefb;border:0;border-radius:50%;box-shadow:none;min-height:51px;padding:5px 2px;gap:1px}
+.open-scene .deck-slots small {color:#6d82a2;font-size:8px;white-space:normal}
+.open-scene #roster-list {grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 8px;padding-top:8px}
+.open-scene .staff-pass {display:grid;grid-template-columns:minmax(0,1fr);grid-template-areas:'portrait' 'name' 'role' 'badge';justify-items:center;align-content:start;gap:3px;background:none;border:0;border-radius:0;box-shadow:none;padding:0 2px;min-height:149px;text-align:center}
+.open-scene .staff-pass[data-equipped=true],.open-scene .staff-pass[data-employment=sealed] {background:none;border:0;box-shadow:none}
+.open-scene .pass-portrait {width:100%;height:88px;background:radial-gradient(ellipse,color-mix(in srgb,var(--staff-accent,#90b9ed) 38%,transparent),transparent 68%);border:0;box-shadow:none;border-radius:0}
+.open-scene .pass-portrait :is(img,canvas) {width:84px;height:83px;filter:drop-shadow(0 7px 5px #32548b20)}
+.open-scene .staff-locked .pass-portrait :is(img,canvas) {filter:brightness(0);opacity:.3}
+.open-scene .pass-number {display:none}
+.open-scene .pass-open {font-size:13px;color:#456182;line-height:1.4}
+.open-scene .pass-role {font-size:9px;justify-content:center;flex-wrap:wrap;color:#7186a5;line-height:1.4}
+.open-scene .pass-job {font-size:9px;color:#7a8da8}
+.open-scene .pass-meta {max-width:100%;font-size:0}
+.open-scene .pass-meta b {background:none;border:0;border-radius:0;color:#7c96b7;padding:1px 0;font-size:8px}
+.open-scene #roster-note {font-size:10px;color:#6d86a7}
+.open-scene .dossier-hero {background:radial-gradient(ellipse at 20% 50%,#c9e1ff88,transparent 70%);border:0;box-shadow:none;border-radius:0}
+.open-scene .dossier-hero h3 {color:#365d92}
+.open-scene .dossier-stamp {background:#e6edfa;border:0;color:#6b87ad;border-radius:20px}
+.open-scene .dossier-section {background:none;padding:12px 0}
+.open-scene .dossier-section h4 {color:#537aa7}
+.open-scene :is(.dossier-section small,.dossier-foot,.dossier-section li) {color:#7388a4}
+.open-scene .live-dossier-actions {background:#eef4ffeb;border:0;padding:10px 0 0}
+.open-scene #deck-options button {background:#ffffffa0;border:0;border-radius:21px;box-shadow:none}
+.open-scene #deck-options button b {background:#dcefe4;color:#538770;border:0;border-radius:20px;font-size:9px}
+.open-scene #deck-options button.selected {background:#d6e8ff}
+/* Training — a mint room scene, permanent progression remains authoritative. */
+.open-scene #training-dialog {background:linear-gradient(155deg,#dff3e6,#f7fcf8 65%,#eaf6f0)}
+.open-scene .training-intro {font-size:11px;line-height:1.6;color:#6b8b79}
+.open-scene .scene-training-cast {width:min(100%,350px);height:180px;object-fit:contain;margin:0 auto -4px}
+.open-scene #training-summary {background:#ffffffa6;border:0;border-radius:23px;padding:17px;box-shadow:none}
+.open-scene .training-level {color:#718c7f;font-size:12px}
+.open-scene .training-level strong {color:#3e9b7b;font-size:30px}
+.open-scene #training-summary>b {color:#4a977d;font-size:12px}
+.open-scene #training-summary>small {color:#7c998b;font-size:10px}
+.open-scene .training-progress {background:#d7e9dd}
+.open-scene .training-progress i {background:#7dc6a7}
+.open-scene .training-effects-heading {color:#6e8c7c;font-size:12px}
+.open-scene #training-effects {gap:0}
+.open-scene .training-character {background:none;padding:12px 0;border:0;border-radius:0;box-shadow:none}
+.open-scene .training-character-title b {color:#567768;font-size:13px}
+.open-scene .training-character-title small,.open-scene .training-character-title>span {color:#79998a}
+.open-scene .training-character li {border:0;color:#719280}
+.open-scene .training-character li>b {color:#599375}
+.open-scene .training-character .unlocked {color:#358869}
+.open-scene .training-character .locked {color:#8caa99}
+.open-scene .training-footer {background:#f0f9f3e8;border:0;padding:12px 0 0;grid-template-columns:minmax(0,1fr) 62%;align-items:center;gap:6px 12px}
+.open-scene #training-wallet {color:#648673;font-size:11px}
+.open-scene #training-upgrade {grid-column:2;grid-row:1/3;min-height:55px;background:linear-gradient(120deg,#49b58c,#29987c);box-shadow:0 6px 16px #30987b20;font-size:14px;padding:12px 8px}
+.open-scene #training-price-hint {font-size:10px;color:#7f9b8c}
+.open-scene #training-status {color:#41876a}
+/* Recruitment — cast first, open typography, one primary purchase. */
+.open-scene #shop.summon-stage-shop {background:linear-gradient(155deg,#fff0bd,#fffae6 48%,#fffdf6 85%);padding-inline:20px;gap:13px}
+.open-scene #shop.summon-stage-shop h2 {color:#6e5838;font-size:22px}
+.open-scene #shop.summon-stage-shop .shop-wallet {background:#ffffffa8;border:0;border-radius:25px;box-shadow:none;padding:7px 10px}
+.open-scene #shop.summon-stage-shop .shop-wallet b {color:#7c6540;font-size:16px}
+.open-scene #shop.summon-stage-shop #shop-close {background:#ffffffa6;border:0;border-radius:50%;box-shadow:none}
+.open-scene #shop.summon-stage-shop .shop-tabs button {background:none;border:0;border-radius:0;color:#a29375;box-shadow:none;font-size:12px;padding:9px 4px;min-height:44px}
+.open-scene #shop.summon-stage-shop .shop-tabs button.active {background:none;border:0;box-shadow:none;color:#3266ed}
+.open-scene #shop.summon-stage-shop .ref-market-scene {height:auto;min-height:0;flex:none;aspect-ratio:3/2;margin:0 -20px;background:none;border:0;border-radius:0;overflow:hidden}
+.open-scene .scene-shop-cast {width:110%;max-width:none;margin:0 0 0 -5%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 12px #d3a73e25)}
+.open-scene #shop.summon-stage-shop:has(#shop-items:not([hidden])) .ref-market-scene {height:130px;min-height:0;aspect-ratio:auto;background:none;margin-bottom:10px}
+.open-scene #shop.summon-stage-shop .recruit-shop {background:none;border:0;border-radius:0;box-shadow:none;padding:0;gap:13px}
+.open-scene #shop.summon-stage-shop .recruit-shop>h3 {margin:0;padding:0;background:none;border:0;border-radius:0;box-shadow:none;color:#70522d;font-size:27px;text-align:center}
+.open-scene #shop.summon-stage-shop .recruit-rules {background:none;border:0;padding:0}
+.open-scene #shop.summon-stage-shop .recruit-rules summary {color:#a28759;font-size:11px;text-align:center;padding:8px 0;min-height:35px}
+.open-scene #shop.summon-stage-shop .recruit-rules p {color:#927d5c;background:#ffffff80;border-radius:18px;padding:12px;font-size:11px}
+.open-scene #shop.summon-stage-shop #recruit-balance {background:#ffffffb0;border:0;border-radius:20px;box-shadow:none;padding:15px 13px;min-height:72px;color:#9c8359;gap:12px}
+.open-scene .pack-points {color:#92713e;font-size:11px}
+.open-scene .pack-pity {color:#9a825d;font-size:9px}
+.open-scene .pack-pity-track {gap:4px}
+.open-scene .pack-pity-track i {background:#e9dfc7;border:0;border-radius:20px;height:7px;box-shadow:none}
+.open-scene .pack-pity-track .lit {background:#edbd45;box-shadow:none}
+.open-scene #shop.summon-stage-shop #buy-staff-pack {background:linear-gradient(120deg,#ffd14f,#f2b834);border:0;border-radius:19px;box-shadow:0 8px 20px #eab43325;color:#70531e;min-height:60px;font-size:17px;padding:13px 10px}
+.open-scene #shop.summon-stage-shop #buy-staff-pack:disabled {background:#e6dfcf;color:#a89c87;border:0;box-shadow:none}
+.open-scene #shop.summon-stage-shop #shop-to-roster {background:none;border:0;box-shadow:none;color:#9c8356;width:100%;font-size:12px}
+.open-scene #shop.summon-stage-shop #shop-status:not(:empty) {background:#f5e6bd;border:0;border-radius:14px;color:#8d7446}
+.open-scene :is(.shop-row,.item-product,.merc-product,.shop-note) {background:#ffffff95;border:0;border-radius:20px;color:#79684e}
+.open-scene :is(.shop-row,.item-product,.merc-product) button {background:#f5e6c2;color:#9a7639;border:0;box-shadow:none}
+.open-scene :is(.shop-row,.item-product,.merc-product) small {color:#9d8b6a}
+.open-scene #recruit-dialog {background:radial-gradient(ellipse at 50% 25%,#ffedab,#fffaf0 65%)}
+.open-scene .recruit-reveal {background:transparent;border:0;box-shadow:none;color:#786140}
+.open-scene .recruit-reveal strong {color:#b0822b}
+.open-scene .recruit-reveal b {color:#65502e}
+/* Result — celebratory cast + unboxed payout and report. */
+.open-scene #result {background:radial-gradient(ellipse at 50% 20%,#ffe9ab,transparent 60%),#fffcf1;padding:12px 22px max(18px,env(safe-area-inset-bottom));gap:9px}
+.open-scene .result-icon {height:auto;max-height:none;width:100%;margin:0 auto -8px}
+.open-scene .result-icon>.scene-result-cast {width:100%;height:auto;max-height:235px;object-fit:contain;filter:drop-shadow(0 10px 15px #e8bc4d24)}
+.open-scene #result-title {font-size:29px;color:#685332;letter-spacing:-1px}
+.open-scene #result-title-badge {border:0;background:none;color:#a38855;padding:0;font-size:11px}
+.open-scene .live-result-body>small {color:#a29273}
+.open-scene :is(#live-result-reward,#result-stats,#result-text,#run-analysis) {border:0;background:transparent;box-shadow:none;padding:10px 0}
+.open-scene #live-result-reward {color:#998660;font-size:11px}
+.open-scene #live-result-reward strong {font-size:45px;color:#3266ed;line-height:1.3;letter-spacing:-1px}
+.open-scene #result-stats>div {border:0;background:none;color:#8d7f62;padding:8px 3px;font-size:11px}
+.open-scene #result-stats>div b {color:#796746;font-size:23px}
+.open-scene #result-stats summary,.open-scene #run-analysis summary {color:#8d7c5d}
+.open-scene #result-text {color:#968565;font-size:11px}
+.open-scene #record-highest {color:#a68d5e}
+.open-scene .live-result-actions {gap:8px}
+.open-scene #result-again {min-height:58px;font-size:19px}
+.open-scene #result-training {background:#f0ead9;color:#927d56;box-shadow:none}
+.open-scene #result-home {background:none;color:#9e8c6b}
+/* Secondary pages and every transient state follow the same borderless surfaces. */
+.open-scene :is(#story-archive,#journey-dialog) {background:linear-gradient(160deg,#e8edff,#fffaf0)}
+.open-scene :is(#equipment-balance,#story-progress,.shop-wallet) {background:#ffffff9c;border:0;border-radius:18px;color:#6480a2}
+.open-scene :is(.story-entry,.story-archive-item,.ref-story-card,.journey-entry,.journey-stats>div,.journey-highlights>div,.journey-stat,.development-stat,.journey-milestone,.achievement-row,.record-row) {border:0;border-radius:18px;background:#ffffff90;box-shadow:none;color:#607a9a}
+.open-scene :is(.story-entry,.story-archive-item,.ref-story-card) b {color:#4e6f9c}
+.open-scene :is(#cards>div,#cards>article,.equipment-card,.equip-card) {border:0;background:#ffffffa0;border-radius:20px;box-shadow:none;color:#5c799b}
+.open-scene :is(#cards b,#cards strong) {color:#4a72ad}
+.open-scene :is(#cards button,.shop-note button) {background:#dce9fc;color:#436db1}
+.open-scene :is(.development-sheet fieldset,.sfx-settings,.bgm-settings,.save-field,.perk-card,#perk-options button,#starter-options article,#trial-arena,.boss-guide-entry) {border:0;background:#ffffff95;border-radius:18px;color:#647e9f;box-shadow:none}
+.open-scene #perk-options button {min-height:56px;text-align:left;padding:15px;color:#466c9c;background:#e4edfd}
+.open-scene #perk-cashout {background:#ffdf8d;color:#96702c}
+.open-scene :is(#tactical-preview,#tactical-prep,#tactical-owned,#tactical-bonuses,#perk-targets) {background:transparent;border:0;color:#6983a4}
+.open-scene #trial-arena {background:linear-gradient(#eff8ee,#e1efdd),url('assets/open-scene/training-room.webp') center/cover}
+.open-scene :is(#trial-result,#result-threat) {color:#a08038}
+.open-scene #starter-options article {padding:16px}
+.open-scene #starter-options article>b {color:#506c93}
+.open-scene #menu fieldset {padding:16px}
+.open-scene #menu legend {color:#506e9b}
+.open-scene :is(#meta-status,#session-warning,#session-notice,.notice-dialog) {border:0;background:#fff0d9;color:#9b7647;border-radius:18px;box-shadow:0 8px 30px #38527b15}
+.open-scene #rotation-notice {background:#e9f0fa;color:#3e5d88}
+.open-scene #rotation-notice>div {background:#fff;border:0;border-radius:25px;color:#3e5d88}
+.open-scene #tutorial-gobi>div {background:#fffaf0f5;border:0;border-radius:23px;box-shadow:0 15px 40px #243e7020}
+.open-scene #coach-title {color:#4a6ca2}
+.open-scene #coach-copy {color:#6c7d94}
+.open-scene #coach-next {border:0;border-radius:16px}
+/* Narrative art remains readable; only the copy tray is replaced. */
+.open-scene :is(#promo,#hiring-story) {background:#f3f6fc;color:#445e85;border:0;border-radius:20px}
+.open-scene :is(.comic-head,.hiring-story-head,.hiring-story-header) {background:#edf2fa;color:#61799b;border:0}
+.open-scene :is(.comic-bottom,.hiring-story-bottom,.hiring-story-copy,.hiring-dialogue) {background:#fffaf1;color:#526c8c;border:0;box-shadow:none}
+.open-scene :is(#promo-speaker,#hiring-story-speaker) {color:#4e73ad}
+.open-scene :is(#promo-line,#promo-aside,.comic-copy p,.hiring-story-copy p) {color:#63768e}
+.open-scene .comic-nav button {background:#e7edfa;color:#54739e;border:0}
+.open-scene #promo-next {background:#3467ed;color:white}
+.open-scene #promo-skip {background:#ffffffbf;color:#5e7698;border:0}
+.open-scene #gm-test-panel {color:#e2eaff}
+@media(min-width:600px) {.open-scene #app-shell {border-radius:25px;height:min(100dvh,1000px)} }
+@media(max-height:720px) {
+  .open-scene #lobby {grid-template-rows:minmax(140px,1fr) auto}
+  .open-scene .lobby-art {min-height:140px}
+  .open-scene .lobby-title {top:68px;left:20px}
+  .open-scene .scene-wordmark {font-size:27px}
+  .open-scene .scene-lobby-cast {width:90%;left:0}
+  .open-scene .duo-shortcuts {top:72px;gap:6px}
+  .open-scene .duo-shortcuts button {min-height:44px}
+  .open-scene .approved-shortcut-face {flex-direction:row;gap:4px;font-size:8px}
+  .open-scene .approved-shortcut-face img {width:17px;height:17px}
+  .open-scene .duo-companion {bottom:7px;right:12px}
+  .open-scene .approved-lobby-dock {gap:6px;padding:0 17px}
+  .open-scene #daily-option {padding:6px 10px;min-height:40px}
+  .open-scene .live-staff-token :is(img,canvas) {height:31px}
+  .open-scene #enter-battle {min-height:49px;font-size:18px}
+  .open-scene .lobby-links {padding-bottom:8px}
+  .open-scene .lobby-links button {min-height:41px;padding:5px}
+  .open-scene .scene-training-cast {height:130px}
+  .open-scene .result-icon>.scene-result-cast {max-height:155px}
+}
+@media(max-width:350px) {
+  .open-scene :is(#roster,#training-dialog,#story-archive,#journey-dialog,#shop.summon-stage-shop) {padding-inline:14px}
+  .open-scene :is(.sheet-head,.training-header,.ui-dialog-header) h2 {font-size:20px}
+  .open-scene #shop.summon-stage-shop h2 {font-size:18px}
+  .open-scene #shop.summon-stage-shop .sheet-head {gap:6px}
+  .open-scene #shop.summon-stage-shop .shop-wallet {padding:6px 8px}
+  .open-scene #shop.summon-stage-shop .shop-wallet b {font-size:14px}
+  .open-scene .tabs button {font-size:10px}
+  .open-scene #shop.summon-stage-shop .recruit-shop>h3 {font-size:24px}
+  .open-scene #roster-list {gap:13px 6px}
+  .open-scene .pass-portrait {height:75px}
+  .open-scene .pass-portrait :is(img,canvas) {height:72px;width:73px}
+  .open-scene .staff-pass {min-height:132px}
+}
+@media(prefers-reduced-motion:reduce) {.open-scene *, .open-scene *::before, .open-scene *::after {scroll-behavior:auto!important}}
+/* Less frequent pages: inventory, saved records, events and narrative shells. */
+.open-scene :is(#deck-presets>div,#run-history-list li,#daily-events-list>article,.ref-guide-step,.board-access-list,#approved-battle-support) {background:#ffffffa0;border:0;border-radius:19px;box-shadow:none;color:#607b9d}
+.open-scene .story-card {background:#ffffff9c;border:0;border-radius:19px;color:#5c779a}
+.open-scene .story-cover {background:#e0e8f5;border:0;border-radius:12px}
+.open-scene .story-cover>span {color:#98abc7}
+.open-scene .story-card>b {color:#4d6c94}
+.open-scene #daily-events-list h3 {color:#5a769b}
+.open-scene .daily-kind {background:#eef2fa;color:#7e94b1;border:0;border-radius:20px;padding:3px 9px}
+.open-scene .daily-kind.benefit {background:#e1f1e7;color:#598d70}
+.open-scene .daily-kind.penalty {background:#f8e7ea;color:#af7883}
+.open-scene .shop-row>:is(img,canvas) {background:#fff5d7;border:0;border-radius:16px}
+.open-scene .dossier-section h4>span {background:#e3eefa;color:#7293bc;border:0;border-radius:20px}
+.open-scene input::file-selector-button {background:#e5edfa;color:#5c7ca8;border:0;border-radius:12px;padding:9px}
+.open-scene .battle-d .battle-notice {background:none;border:0;box-shadow:none}
+.open-scene .battle-d .battle-alert-icon {background:none;border:0;color:#d6b64c;box-shadow:none}
+.open-scene .battle-d #boss-warning {background:#fff0d6;color:#9f7a46;border:0;border-radius:15px;box-shadow:none}
+.open-scene :is(#boss-warning-name,#boss-warning-label,#boss-warning-detail) {color:#9a7541}
+.open-scene #skill[data-state=ready] {background:#88dfc3;color:#285d50}
+.open-scene #battle[data-tutorial=true] #tutorial-strip {background:#fff1c9;color:#9e8142;border:0;border-radius:0}
+.open-scene #battle[data-tutorial=true] #tutorial-practice-skip {background:#e1eafa;color:#6681a9;border:0;border-radius:15px}
+.open-scene #next-boss {background:#e3edfb;color:#708db3;border:0}
+.open-scene #tutorial-gobi {background:#273d602e}
+.open-scene #tutorial-gobi small {background:none;color:#8a9db6}
+.open-scene #tutorial-gobi[data-compact=true]>div {background:#fffaf1f5;border:0;box-shadow:none}
+.open-scene #hiring-story {border-radius:0}
+html.open-scene body dialog#hiring-story {background:#f5f7fc!important}
+.open-scene #hiring-story :is(header,footer) {background:#f7f9fd;border:0;color:#5d779b}
+.open-scene #hiring-story h2 {color:#4c6a94}
+.open-scene #hiring-story :is(.hire-name,header small) {color:#8a9ab0}
+.open-scene #hiring-story .hire-dialogue {color:#647a96}
+.open-scene #hiring-story .hire-page {color:#8d9db3}
+.open-scene #hiring-story .hire-art {background:#e9eff8}
+.open-scene #hiring-story button {border:0;background:#e6edfa;color:#5c7aa6;border-radius:15px}
+.open-scene #hiring-story [data-hire-next] {background:#3467ed;color:white}
+/* Room assets are quiet scenery behind the cast, never text containers. */
+.open-scene .scene-training-cast {background:linear-gradient(#eaf7eeeb,#eaf7eee3),url('assets/open-scene/training-room.webp') center/cover;border-radius:22px}
+.open-scene #shop.summon-stage-shop .ref-market-scene {background:linear-gradient(#fff4cbe8,#fff9e1ed),url('assets/open-scene/shop-room.webp') center/cover}
+.open-scene #story-archive {background:linear-gradient(#edf2fff2,#fffaf3f5),url('assets/open-scene/lobby-room.webp') center/cover}
+.open-scene .scene-profile {display:none}
+/* Retired nine-slice artwork must not fill otherwise borderless controls. */
+.open-scene :is(button,.battle-controls,#pause-window) {border-image:none}
+.open-scene #pause-window {background:#fffdf4;border:0;border-radius:25px;box-shadow:0 20px 60px #2f4e7a22;padding:24px}
+.open-scene #pause-window h2 {color:#59769e}
+.open-scene .dossier-hero>span:not(.dossier-stamp) {color:#7c93b0}
+.open-scene .battle-d #message {color:#627da3}
+.open-scene .scene-party-label {grid-row:1;grid-column:1;justify-self:start;font-weight:600}
+.open-scene #deck-label {grid-row:1;grid-column:1;justify-self:end}
+.open-scene .battle-d .item-buttons button {display:grid;grid-template-columns:31px minmax(0,1fr);gap:3px;align-items:center;padding:7px 6px 9px}
+.open-scene .battle-d .item-buttons button>span {position:static;width:auto;height:auto;clip:auto;overflow:visible;white-space:normal;font-size:9px;text-align:left;line-height:1.25;padding-right:0}
+.open-scene .battle-d .item-buttons b {right:5px;bottom:1px;min-width:12px;font-size:8px;line-height:12px}
+@media(max-width:350px) {.open-scene .battle-d .item-buttons button {grid-template-columns:25px minmax(0,1fr);padding-inline:4px}.open-scene .battle-d .item-buttons img {width:25px;height:27px}.open-scene .battle-d .item-buttons button>span {font-size:8px}}
+.open-scene #skill-cutin .cutin-dim {background:radial-gradient(ellipse at 50% 45%,#dfeeffbf,#edf3fff0 80%)}
+.open-scene #skill-cutin .cutin-band {border:0;background:linear-gradient(100deg,transparent,#cbdcfe88,transparent);box-shadow:none}
+.open-scene #skill-cutin .cutin-badge {background:#ffffffb5;border:0;border-radius:24px;color:#6686b4}
+.open-scene #skill-cutin .cutin-caster {background:#ffffffb8;border:0;border-radius:22px;color:#426da9}
+.open-scene #skill-cutin .cutin-shout {color:#315fbc;text-shadow:none}
+.open-scene #skill-cutin .cutin-chain {color:#6f8aae}
+.open-scene #skill-cutin[data-side=enemy] .cutin-badge {background:#f8e0e7;color:#bc697e}
+.open-scene #skill-cutin[data-side=enemy] .cutin-shout {color:#b75b78}
+.open-scene #cards .card {background:#ffffffa0;border:0;border-radius:20px;color:#5779a6}
+.open-scene #cards .card:disabled {background:#e0eafd;color:#7694bc}
+.open-scene #cards .card>b {color:#6889b5}

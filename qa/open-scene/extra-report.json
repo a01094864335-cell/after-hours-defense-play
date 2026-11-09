@@ -1,0 +1,50 @@
+{
+  "errors": [],
+  "reports": [
+    {
+      "name": "21-save-transfer",
+      "issues": [],
+      "checkedButtons": 3
+    },
+    {
+      "name": "22-unhired",
+      "issues": [],
+      "checkedButtons": 17
+    },
+    {
+      "name": "23-unhired-detail",
+      "issues": [],
+      "checkedButtons": 4
+    },
+    {
+      "name": "24-supports",
+      "issues": [],
+      "checkedButtons": 16
+    },
+    {
+      "name": "25-support-detail",
+      "issues": [],
+      "checkedButtons": 4
+    },
+    {
+      "name": "26-starter",
+      "issues": [],
+      "checkedButtons": 7
+    },
+    {
+      "name": "27-trial",
+      "issues": [],
+      "checkedButtons": 7
+    },
+    {
+      "name": "28-recruit-result",
+      "issues": [],
+      "checkedButtons": 5
+    },
+    {
+      "name": "29-bonus",
+      "issues": [],
+      "checkedButtons": 6
+    }
+  ]
+}
