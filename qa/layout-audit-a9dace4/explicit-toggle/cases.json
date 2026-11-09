@@ -1,0 +1,3775 @@
+[
+  {
+    "id": "lobby-returning",
+    "family": "lobby",
+    "script": "renderProgress();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "lobby-fresh",
+    "family": "lobby",
+    "script": "meta.tutorialComplete=false;reset();setScreen(\"lobby\");sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "lobby-partial-support",
+    "family": "lobby",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "lobby-large-wallet",
+    "family": "lobby",
+    "script": "meta.coins=999999999;renderMeta();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "lobby-daily-0-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 0,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-0-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 0,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-1-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 1,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-1-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 1,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-2-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 2,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-2-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 2,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-3-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 3,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-3-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 3,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-4-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 4,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-4-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 4,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-5-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 5,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-5-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 5,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-6-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 6,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-6-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 6,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-7-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 7,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-7-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 7,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-8-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 8,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-8-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 8,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-9-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 9,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-9-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 9,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-10-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 10,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-10-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 10,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-11-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 11,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-11-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 11,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-12-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 12,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-12-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 12,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-13-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 13,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-13-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 13,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-14-new",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 14,
+      "resume": false
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-daily-14-resume",
+    "family": "lobby",
+    "script": "dailyEnabled=true;tutorialMode=false;dailyRule=arg.i;renderProgress();document.querySelector('#resume-run').hidden=!arg.resume;",
+    "arg": {
+      "i": 14,
+      "resume": true
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-0",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 0,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-1",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 1,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-2",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 2,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-3",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 3,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-4",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 4,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-5",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 5,
+    "fullOnly": true
+  },
+  {
+    "id": "lobby-support-6",
+    "family": "lobby",
+    "script": "meta.equipped=MERC_IDS[arg];renderMeta();",
+    "arg": 6,
+    "fullOnly": true
+  },
+  {
+    "id": "daily-list",
+    "family": "daily",
+    "script": "document.querySelector('#daily-events-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "deck-all",
+    "family": "deck",
+    "script": "document.querySelector('#deck-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "deck-partial",
+    "family": "deck",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();document.querySelector('#deck-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "roster-hired",
+    "family": "roster",
+    "script": "document.querySelector('#roster-open').click();document.querySelector('#roster-tab-staff').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "roster-incoming",
+    "family": "roster",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();document.querySelector('#roster-open').click();document.querySelector('#roster-tab-incoming').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "roster-supports",
+    "family": "roster",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();document.querySelector('#roster-open').click();document.querySelector('#roster-tab-merc').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "shop-pack",
+    "family": "shop",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();document.querySelector('#shop-open').click();shopTab('pack');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "shop-items",
+    "family": "shop",
+    "script": "document.querySelector('#shop-open').click();shopTab('items');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "shop-no-money",
+    "family": "shop",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();meta.coins=11;document.querySelector('#shop-open').click();renderMeta();renderRecruitShop();shopTab('pack');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "shop-guarantee",
+    "family": "shop",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();meta.profile.pity=9;meta.recruitPoints=10;document.querySelector('#shop-open').click();renderRecruitShop();shopTab('pack');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "shop-complete",
+    "family": "shop",
+    "script": "document.querySelector('#shop-open').click();shopTab('pack');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "settings",
+    "family": "settings",
+    "script": "document.querySelector('#menu-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "save-transfer",
+    "family": "backup",
+    "script": "document.querySelector('#menu-open').click();document.querySelector('#save-transfer-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "records-empty",
+    "family": "records",
+    "script": "document.querySelector('#journey-summary').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "records-full",
+    "family": "records",
+    "script": "meta.profile.records=Array.from({length:20},(_,i)=>({wave:40+i,coins:123+i,rule:'마왕성 장기 당직 · 복합 변주',training:{staff:30,merc:30},king:{appearances:3}}));document.querySelector('#journey-summary').click();renderJourney();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "story-archive-owned",
+    "family": "stories",
+    "script": "document.querySelector('#lobby-story-collection').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "story-archive-locked",
+    "family": "stories",
+    "script": "meta.stories=[];document.querySelector('#lobby-story-collection').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "starter-selection",
+    "family": "starter",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();TacticalDuty.refresh();document.querySelector('#starter-choice-open').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "trial-preview",
+    "family": "trial",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();TacticalDuty.refresh();document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "recruit-duplicate",
+    "family": "recruit",
+    "script": "revealRecruit('goblin-guard',true);",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "recruit-new-staff",
+    "family": "recruit",
+    "script": "revealRecruit('ghost-courier',false);HiringStories.close();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "recruit-new-support",
+    "family": "recruit",
+    "script": "revealRecruit('merc-'+MERC_IDS[0],false);HiringStories.close();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-idle",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-selected",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();board[7]={type:4,pip:5,cool:100,attack:0,arrival:0,income:5};selected=7;sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-full",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();board=Array.from({length:15},(_,i)=>({type:i%kinds.length,pip:i%7+1,cool:100,attack:0,arrival:0,income:5}));selected=7;sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-skill-cooldown",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();board[7]={type:4,pip:5,cool:100,attack:0,arrival:0,income:5,skillCD:20};selected=7;sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-item-target",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();itemMode='grade';document.querySelector('#item-hint').textContent='같은 등급 직원을 차례로 선택하세요. 종류가 달라도 합성할 수 있어요.';sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-pause",
+    "family": "pause",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();paused=true;sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-leave",
+    "family": "leave",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();document.querySelector('#battle-back').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "battle-info",
+    "family": "help",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();document.querySelector('#skill-help').click();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "equipment-0",
+    "family": "equipment",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();meta.deck=Array.from({length:5},(_,n)=>kinds[(arg*5+n)%kinds.length].file);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));sync();document.querySelector('#upgrade-open').click();",
+    "arg": 0,
+    "fullOnly": false
+  },
+  {
+    "id": "equipment-1",
+    "family": "equipment",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();meta.deck=Array.from({length:5},(_,n)=>kinds[(arg*5+n)%kinds.length].file);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));sync();document.querySelector('#upgrade-open').click();",
+    "arg": 1,
+    "fullOnly": true
+  },
+  {
+    "id": "equipment-2",
+    "family": "equipment",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();meta.deck=Array.from({length:5},(_,n)=>kinds[(arg*5+n)%kinds.length].file);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));sync();document.querySelector('#upgrade-open').click();",
+    "arg": 2,
+    "fullOnly": true
+  },
+  {
+    "id": "equipment-3",
+    "family": "equipment",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();meta.deck=Array.from({length:5},(_,n)=>kinds[(arg*5+n)%kinds.length].file);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));sync();document.querySelector('#upgrade-open').click();",
+    "arg": 3,
+    "fullOnly": true
+  },
+  {
+    "id": "bonus-wave-5",
+    "family": "bonus",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=arg;life=1;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();sync();",
+    "arg": 5,
+    "fullOnly": false
+  },
+  {
+    "id": "bonus-wave-15",
+    "family": "bonus",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=arg;life=1;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();sync();",
+    "arg": 15,
+    "fullOnly": false
+  },
+  {
+    "id": "bonus-wave-20",
+    "family": "bonus",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=arg;life=1;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();sync();",
+    "arg": 20,
+    "fullOnly": false
+  },
+  {
+    "id": "bonus-target-equipment",
+    "family": "bonus",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=20;life=1;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();showPerkTargets(arg);sync();",
+    "arg": "equipment",
+    "fullOnly": false
+  },
+  {
+    "id": "bonus-target-staff",
+    "family": "bonus",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=20;life=1;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();showPerkTargets(arg);sync();",
+    "arg": "staff",
+    "fullOnly": false
+  },
+  {
+    "id": "battle-reposition",
+    "family": "battle",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=5;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();TacticalDuty.startReposition();sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "guide-long-copy",
+    "family": "guide",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();showGuide('신입 연수 · 근무 안내','직원 소환 후 같은 종류와 등급을 선택해 합성하세요. 합성 실패 시에는 이동한 직원이 사라지고 다음 유료 소환에 할인이 적용됩니다. 5등급부터 고유 스킬을 사용할 수 있어요. 보드의 빈자리와 근무 명단을 확인하세요.');",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "coach-intro",
+    "family": "tutorial",
+    "script": "meta.tutorialComplete=false;reset();setScreen('battle');TutorialCoach.speak('첫 전투를 앞두고','마왕님, 첫 전투인데… 제가 어떻게 해야 할까요?','마왕의 대답 듣기',()=>{},'gobi');sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "coach-long-copy",
+    "family": "tutorial",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();TutorialCoach.speak('같은 종류·등급을 합성하거라','직원 소환을 완료했구나. 같은 종류와 같은 등급의 직원 두 명을 선택하면 더 높은 등급의 직원으로 합성할 수 있다. 실패하면 이동한 직원만 사라지고 대상은 유지된다.','알겠습니다 · 계속하기',()=>{},'king');sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "result-paid",
+    "family": "result",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=18;kills=126;runNormal=125;runBoss=1;ended=true;settleRun();sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "result-pending",
+    "family": "result",
+    "script": "reset();tutorialMode=false;meta.tutorialComplete=true;setScreen('battle');board=Array.from({length:15},(_,i)=>i<5?{type:i,pip:1,cool:100,attack:0,arrival:0,income:5}:null);runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));playing=true;paused=false;wave=8;life=3;sp=240;enemies=[];queue=[];timer=999;intermission=0;sync();wave=18;kills=126;runNormal=125;runBoss=1;ended=true;settleRun();runReward.paid=false;describeStats();sync();document.querySelector('#retry-reward').hidden=false;",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "result-training-failed",
+    "family": "result",
+    "script": "meta.tutorialComplete=false;reset();setScreen('battle');tutorialMode=true;tutorialWon=false;wave=6;ended=true;settleRun();sync();",
+    "arg": null,
+    "fullOnly": false
+  },
+  {
+    "id": "training-staff-1",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "staff",
+      "level": 1
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "training-staff-5",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "staff",
+      "level": 5
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-staff-10",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "staff",
+      "level": 10
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-staff-20",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "staff",
+      "level": 20
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-staff-30",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "staff",
+      "level": 30
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "training-merc-1",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "merc",
+      "level": 1
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "training-merc-5",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "merc",
+      "level": 5
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-merc-10",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "merc",
+      "level": 10
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-merc-20",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "merc",
+      "level": 20
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-merc-30",
+    "family": "training",
+    "script": "meta.training[arg.group]=arg.level;trainingGroup=arg.group;trainingRenderKey='';openTraining();",
+    "arg": {
+      "group": "merc",
+      "level": 30
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-goblin-guard",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "goblin-guard",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-orc-technician",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "orc-technician",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-slime-cleaner",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "slime-cleaner",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-gobi",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "gobi",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-electric-technician",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "electric-technician",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-ghost-courier",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "ghost-courier",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-bat-nurse",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "bat-nurse",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-bat-nurse",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "bat-nurse",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-skeleton-chef",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "skeleton-chef",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-skeleton-chef",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "skeleton-chef",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-mimic-storekeeper",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "mimic-storekeeper",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-mimic-storekeeper",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "mimic-storekeeper",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-spider-tailor",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "spider-tailor",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-spider-tailor",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "spider-tailor",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-nightmare-counselor",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "nightmare-counselor",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-nightmare-counselor",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "nightmare-counselor",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-kobold-recruiter",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "kobold-recruiter",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-kobold-recruiter",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "kobold-recruiter",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-ward",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-ward",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-ward",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-ward",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-accountant",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-accountant",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-accountant",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-accountant",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-rescue",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-rescue",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-rescue",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-rescue",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-duru-archivist",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "duru-archivist",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-duru-archivist",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "duru-archivist",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-kkangtong-engineer",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "kkangtong-engineer",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-kkangtong-engineer",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "kkangtong-engineer",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-ddangkong-miner",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "ddangkong-miner",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-ddangkong-miner",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "ddangkong-miner",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-chalkak-photographer",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "chalkak-photographer",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-chalkak-photographer",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "chalkak-photographer",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-bongtu-postmaster",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "bongtu-postmaster",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-bongtu-postmaster",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "bongtu-postmaster",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-chikchik",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-chikchik",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-chikchik",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-chikchik",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-banchang",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-banchang",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-banchang",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-banchang",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-coco",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-coco",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-coco",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-coco",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-owned-merc-q",
+    "family": "staff-detail",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-q",
+    "fullOnly": false
+  },
+  {
+    "id": "staff-locked-merc-q",
+    "family": "staff-detail",
+    "script": "meta.staff=[...BASE_STAFF,...RECRUIT_STAFF.slice(0,3)];meta.owned=MERC_IDS.slice(0,3);meta.equipped=MERC_IDS[0];renderMeta();if(arg.startsWith('merc-'))meta.owned=meta.owned.filter(id=>id!==arg.slice(5));else meta.staff=meta.staff.filter(id=>id!==arg);document.querySelector('#roster-open').click();showStaffRecord(arg);",
+    "arg": "merc-q",
+    "fullOnly": false
+  },
+  {
+    "id": "story-first-shift-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-first-shift-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-first-shift-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-first-shift-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-midnight-soup-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-midnight-soup-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-midnight-soup-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-midnight-soup-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-clean-floor-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "clean-floor",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-clean-floor-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "clean-floor",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-clean-floor-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "clean-floor",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-clean-floor-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "clean-floor",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-payday-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "payday",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-payday-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "payday",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-payday-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "payday",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-payday-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "payday",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-parcel-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "parcel",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-parcel-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "parcel",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-parcel-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "parcel",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-parcel-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "parcel",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-blackout-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "blackout",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-blackout-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "blackout",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-blackout-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "blackout",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-blackout-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "blackout",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-attendance-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "attendance",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-attendance-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "attendance",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-attendance-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "attendance",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-attendance-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "attendance",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-cape-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "cape",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-cape-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "cape",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-cape-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "cape",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-cape-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "cape",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-counseling-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "counseling",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-counseling-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "counseling",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-counseling-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "counseling",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-counseling-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "counseling",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inventory-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inventory",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inventory-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inventory",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inventory-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inventory",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inventory-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inventory",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inspection-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inspection",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inspection-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inspection",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inspection-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inspection",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-inspection-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "inspection",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-coffee-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "coffee",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-coffee-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "coffee",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-coffee-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "coffee",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-coffee-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "coffee",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-birthday-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "birthday",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-birthday-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "birthday",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-birthday-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "birthday",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-birthday-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "birthday",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-rain-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "rain",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-rain-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "rain",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-rain-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "rain",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-rain-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "rain",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-photo-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "photo",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-photo-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "photo",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-photo-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "photo",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-photo-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "photo",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-lost-key-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "lost-key",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-lost-key-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "lost-key",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-lost-key-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "lost-key",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-lost-key-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "lost-key",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-quiet-night-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "quiet-night",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-quiet-night-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "quiet-night",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-quiet-night-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "quiet-night",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-quiet-night-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "quiet-night",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-suggestion-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "suggestion",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-suggestion-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "suggestion",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-suggestion-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "suggestion",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-suggestion-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "suggestion",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-gate-cat-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "gate-cat",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-gate-cat-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "gate-cat",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-gate-cat-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "gate-cat",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-gate-cat-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "gate-cat",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shift-handoff-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shift-handoff",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shift-handoff-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shift-handoff",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shift-handoff-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shift-handoff",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shift-handoff-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shift-handoff",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-empty-throne-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "empty-throne",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-empty-throne-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "empty-throne",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-empty-throne-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "empty-throne",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-empty-throne-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "empty-throne",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fridge-label-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fridge-label",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fridge-label-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fridge-label",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fridge-label-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fridge-label",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fridge-label-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fridge-label",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shortcut-trap-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shortcut-trap",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shortcut-trap-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shortcut-trap",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shortcut-trap-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shortcut-trap",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shortcut-trap-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shortcut-trap",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-praise-approval-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "praise-approval",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-praise-approval-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "praise-approval",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-praise-approval-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "praise-approval",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-praise-approval-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "praise-approval",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-chair-project-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "chair-project",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-chair-project-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "chair-project",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-chair-project-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "chair-project",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-chair-project-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "chair-project",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-laundry-weather-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "laundry-weather",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-laundry-weather-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "laundry-weather",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-laundry-weather-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "laundry-weather",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-laundry-weather-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "laundry-weather",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-guard-dog-holiday-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "guard-dog-holiday",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-guard-dog-holiday-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "guard-dog-holiday",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-guard-dog-holiday-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "guard-dog-holiday",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-guard-dog-holiday-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "guard-dog-holiday",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-sports-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-sports",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-sports-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-sports",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-sports-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-sports",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-sports-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-sports",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-one-note-band-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "one-note-band",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-one-note-band-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "one-note-band",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-one-note-band-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "one-note-band",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-one-note-band-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "one-note-band",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shield-bandage-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shield-bandage",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shield-bandage-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shield-bandage",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shield-bandage-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shield-bandage",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-shield-bandage-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "shield-bandage",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-slow-reply-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "slow-reply",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-slow-reply-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "slow-reply",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-slow-reply-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "slow-reply",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-slow-reply-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "slow-reply",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-flea-market-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-flea-market",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-flea-market-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-flea-market",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-flea-market-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-flea-market",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-castle-flea-market-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "castle-flea-market",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-vacation-form-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "vacation-form",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-vacation-form-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "vacation-form",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-vacation-form-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "vacation-form",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-vacation-form-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "vacation-form",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-overtime-shadow-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "overtime-shadow",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-overtime-shadow-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "overtime-shadow",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-overtime-shadow-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "overtime-shadow",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-overtime-shadow-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "overtime-shadow",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-ghost-scary-story-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "ghost-scary-story",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-ghost-scary-story-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "ghost-scary-story",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-ghost-scary-story-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "ghost-scary-story",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-ghost-scary-story-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "ghost-scary-story",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-plant-duty-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "plant-duty",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-plant-duty-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "plant-duty",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-plant-duty-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "plant-duty",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-plant-duty-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "plant-duty",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-emergency-cookie-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "emergency-cookie",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-emergency-cookie-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "emergency-cookie",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-emergency-cookie-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "emergency-cookie",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-emergency-cookie-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "emergency-cookie",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fallen-star-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fallen-star",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fallen-star-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fallen-star",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fallen-star-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fallen-star",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-fallen-star-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "fallen-star",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-call-by-name-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "call-by-name",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-call-by-name-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "call-by-name",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-call-by-name-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "call-by-name",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-call-by-name-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "call-by-name",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-same-place-tomorrow-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "same-place-tomorrow",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-same-place-tomorrow-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "same-place-tomorrow",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-same-place-tomorrow-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "same-place-tomorrow",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "story-same-place-tomorrow-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "same-place-tomorrow",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ghost-courier-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ghost-courier",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ghost-courier-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ghost-courier",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ghost-courier-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ghost-courier",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ghost-courier-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ghost-courier",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bat-nurse-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bat-nurse",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bat-nurse-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bat-nurse",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bat-nurse-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bat-nurse",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bat-nurse-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bat-nurse",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-skeleton-chef-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "skeleton-chef",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-skeleton-chef-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "skeleton-chef",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-skeleton-chef-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "skeleton-chef",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-skeleton-chef-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "skeleton-chef",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-mimic-storekeeper-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "mimic-storekeeper",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-mimic-storekeeper-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "mimic-storekeeper",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-mimic-storekeeper-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "mimic-storekeeper",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-mimic-storekeeper-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "mimic-storekeeper",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-spider-tailor-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "spider-tailor",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-spider-tailor-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "spider-tailor",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-spider-tailor-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "spider-tailor",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-spider-tailor-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "spider-tailor",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-nightmare-counselor-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "nightmare-counselor",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-nightmare-counselor-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "nightmare-counselor",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-nightmare-counselor-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "nightmare-counselor",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-nightmare-counselor-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "nightmare-counselor",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kobold-recruiter-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kobold-recruiter",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kobold-recruiter-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kobold-recruiter",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kobold-recruiter-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kobold-recruiter",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kobold-recruiter-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kobold-recruiter",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-duru-archivist-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "duru-archivist",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-duru-archivist-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "duru-archivist",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-duru-archivist-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "duru-archivist",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-duru-archivist-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "duru-archivist",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kkangtong-engineer-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kkangtong-engineer",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kkangtong-engineer-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kkangtong-engineer",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kkangtong-engineer-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kkangtong-engineer",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-kkangtong-engineer-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "kkangtong-engineer",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ddangkong-miner-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ddangkong-miner",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ddangkong-miner-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ddangkong-miner",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ddangkong-miner-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ddangkong-miner",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-ddangkong-miner-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "ddangkong-miner",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-chalkak-photographer-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "chalkak-photographer",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-chalkak-photographer-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "chalkak-photographer",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-chalkak-photographer-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "chalkak-photographer",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-chalkak-photographer-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "chalkak-photographer",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bongtu-postmaster-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bongtu-postmaster",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bongtu-postmaster-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bongtu-postmaster",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bongtu-postmaster-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bongtu-postmaster",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-bongtu-postmaster-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "bongtu-postmaster",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-ward-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-ward",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-ward-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-ward",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-ward-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-ward",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-ward-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-ward",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-accountant-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-accountant",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-accountant-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-accountant",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-accountant-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-accountant",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-accountant-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-accountant",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-rescue-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-rescue",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-rescue-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-rescue",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-rescue-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-rescue",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-rescue-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-rescue",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-chikchik-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-chikchik",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-chikchik-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-chikchik",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-chikchik-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-chikchik",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-chikchik-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-chikchik",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-banchang-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-banchang",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-banchang-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-banchang",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-banchang-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-banchang",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-banchang-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-banchang",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-coco-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-coco",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-coco-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-coco",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-coco-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-coco",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-coco-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-coco",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-q-0",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-q",
+      "panel": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-q-1",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-q",
+      "panel": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-q-2",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-q",
+      "panel": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "hiring-merc-q-3",
+    "family": "hiring-reader",
+    "script": "HiringStories.open(arg.id);for(let i=0;i<arg.panel;i++)document.querySelector('[data-hire-next]').click();",
+    "arg": {
+      "id": "merc-q",
+      "panel": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "stress-story-first-shift-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 0
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-first-shift-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 1
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-first-shift-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 2
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-first-shift-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "first-shift",
+      "panel": 3
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-midnight-soup-0",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 0
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-midnight-soup-1",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 1
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-midnight-soup-2",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 2
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "stress-story-midnight-soup-3",
+    "family": "story-reader",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===arg.id);promoIndex=arg.panel;renderCastleStory();",
+    "arg": {
+      "id": "midnight-soup",
+      "panel": 3
+    },
+    "fullOnly": false
+  },
+  {
+    "id": "training-single-staff-0",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-1",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-2",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-3",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-4",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 4
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-5",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 5
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-6",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 6
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-7",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 7
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-8",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 8
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-9",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 9
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-10",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 10
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-11",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 11
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-12",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 12
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-13",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 13
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-14",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 14
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-15",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 15
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-staff-16",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "staff",
+      "index": 16
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-0",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 0
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-1",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 1
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-2",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 2
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-3",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 3
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-4",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 4
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-5",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 5
+    },
+    "fullOnly": true
+  },
+  {
+    "id": "training-single-merc-6",
+    "family": "training-detail",
+    "script": "trainingGroup=arg.group;trainingRenderKey='';openTraining();document.querySelectorAll('.training-character')[arg.index].open=true;document.querySelectorAll('.training-character')[arg.index].scrollIntoView({block:'start'});",
+    "arg": {
+      "group": "merc",
+      "index": 6
+    },
+    "fullOnly": true
+  }
+]

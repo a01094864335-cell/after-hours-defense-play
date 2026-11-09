@@ -1,0 +1,3481 @@
+{
+  "results": [
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-344",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "button",
+          "box": {
+            "x": 16,
+            "y": 446.265625,
+            "left": 16,
+            "top": 446.265625,
+            "right": 304,
+            "bottom": 490.265625,
+            "width": 288,
+            "height": 44
+          },
+          "clip": {
+            "left": 14,
+            "top": 81,
+            "right": 306,
+            "bottom": 486,
+            "width": 292,
+            "height": 405
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-344",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#recruit-specific",
+          "box": {
+            "x": 16,
+            "y": 465.78125,
+            "left": 16,
+            "top": 465.78125,
+            "right": 304,
+            "bottom": 509.78125,
+            "width": 288,
+            "height": 44
+          },
+          "clip": {
+            "left": 14,
+            "top": 81,
+            "right": 306,
+            "bottom": 486,
+            "width": 292,
+            "height": 405
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "hiring-kobold-recruiter-0",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "hiring-kobold-recruiter-1",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "hiring-kobold-recruiter-2",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "hiring-kobold-recruiter-3",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 18,
+        "textRanges": 9,
+        "images": 3,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-342",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 10,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 10,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-342",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-683",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 11,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-284",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-568",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-284",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-568",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-852",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-1136",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 16,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 16,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-405",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "hiring-kobold-recruiter-0",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "hiring-kobold-recruiter-1",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 8,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "hiring-kobold-recruiter-2",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "hiring-kobold-recruiter-3",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 18,
+        "textRanges": 9,
+        "images": 3,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-403",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-403",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#recruit-specific",
+          "box": {
+            "x": 22,
+            "y": 530.78125,
+            "left": 22,
+            "top": 530.78125,
+            "right": 368,
+            "bottom": 578.265625,
+            "width": 346,
+            "height": 47.484375
+          },
+          "clip": {
+            "left": 20,
+            "top": 81,
+            "right": 370,
+            "bottom": 554.515625,
+            "width": 350,
+            "height": 473.515625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "scroll-0-345",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 13,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-345",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-690",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 16,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-1035",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-staff-owned-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-staff-locked-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "hiring-kobold-recruiter-0",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "hiring-kobold-recruiter-1",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 8,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "hiring-kobold-recruiter-2",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "hiring-kobold-recruiter-3",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 18,
+        "textRanges": 9,
+        "images": 3,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 17,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-staff-owned-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 17,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-576",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "button",
+          "box": {
+            "x": 22,
+            "y": 719.9375,
+            "left": 22,
+            "top": 719.9375,
+            "right": 368,
+            "bottom": 765.421875,
+            "width": 346,
+            "height": 45.484375
+          },
+          "clip": {
+            "left": 20,
+            "top": 81,
+            "right": 370,
+            "bottom": 758.515625,
+            "width": 350,
+            "height": 677.515625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 18,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 14,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-staff-locked-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-staff-owned-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 17,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-519",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 18,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 16,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-staff-locked-kobold-recruiter-closed-top.png"
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 24,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 11,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "hiring-kobold-recruiter-0",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 9,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "hiring-kobold-recruiter-1",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 8,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "hiring-kobold-recruiter-2",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 8,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "hiring-kobold-recruiter-3",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 18,
+        "textRanges": 9,
+        "images": 3,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "영구 훈련 Lv.1 / 30",
+        "동료 이야기"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 12,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 20,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 36,
+        "textRanges": 19,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "scroll-0-625",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-owned-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "View Additional Staff Information"
+      ],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 48,
+        "textRanges": 22,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "staff-locked-kobold-recruiter",
+      "family": "staff-detail",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#roster",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 24,
+        "textRanges": 15,
+        "images": 4,
+        "buttons": 4
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    }
+  ],
+  "failures": [],
+  "candidates": []
+}

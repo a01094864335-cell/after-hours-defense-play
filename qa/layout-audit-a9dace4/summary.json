@@ -1,0 +1,96 @@
+{
+  "commit": "a9dace4928b3894b1ebd4168d9b38830a0923470",
+  "runtime": "배포된 main과 동일한 소스의 릴리스 빌드",
+  "productionChanged": false,
+  "liveDirectAccess": false,
+  "browser": "Chromium / Linux",
+  "viewports": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      640
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "normalCasesPerViewport": 407,
+  "normalCaseRuns": 1628,
+  "staffRecords": 24,
+  "staff": 17,
+  "supports": 7,
+  "stories": 40,
+  "storyPanels": 160,
+  "hiringStories": 19,
+  "hiringPanels": 76,
+  "spritePoses": 6,
+  "stages": [
+    {
+      "stage": "normal",
+      "scenarios": 1628,
+      "measurements": 3987,
+      "failures": 0,
+      "gridGroups": 2176
+    },
+    {
+      "stage": "stress",
+      "scenarios": 808,
+      "measurements": 3717,
+      "failures": 0,
+      "gridGroups": 1307
+    },
+    {
+      "stage": "explicit-toggle",
+      "scenarios": 180,
+      "measurements": 999,
+      "failures": 0,
+      "gridGroups": 242
+    },
+    {
+      "stage": "realistic-en",
+      "scenarios": 404,
+      "measurements": 2108,
+      "failures": 0,
+      "gridGroups": 832
+    },
+    {
+      "stage": "supplement",
+      "scenarios": 416,
+      "measurements": 416,
+      "failures": 0
+    },
+    {
+      "stage": "canvas-assets",
+      "scenarios": 428,
+      "measurements": 428,
+      "failures": 0
+    }
+  ],
+  "scenarioRuns": 3864,
+  "measurements": 11655,
+  "executionFailures": 0,
+  "measuredGridGroups": 4557,
+  "cssGridAlignmentIssues": 0,
+  "canvasGridMeasurements": 656,
+  "canvasGridAlignmentIssues": 0,
+  "backlogTotal": 20,
+  "previousFindings": 16,
+  "newFindings": 4,
+  "inspectionScope": "탭·보유/미보유 상세·전체 펼침·개별 훈련 펼침·모든 세로 스크롤 구간·고정 헤더/하단·40×4 이야기·19×4 입사 이야기·전투 15칸·17×6 포즈·직원/보스 컷인·실제 연습 iframe·가로 회전·실제 다중 탭 저장 연결",
+  "limitations": [
+    "배포 주소 직접 접속은 작업 환경 네트워크 제한으로 불가. 동일 커밋 릴리스 빌드를 로컬에서 사용.",
+    "iOS Safari 실기기는 미포함. Chromium의 모바일 화면 크기와 DOM·Canvas 좌표 검사 기준.",
+    "영문은 실제 번역 완료판이 아니라 짧은 UI 영문과 장문 대체 문구의 130% 확대 검사.",
+    "자동 검출은 후보이며 원인별 대표 캡처와 좌표를 대조해 실제 결함과 의도된 레이어를 분류."
+  ],
+  "gridRowMeasurements": 5854,
+  "gridRowAlignmentIssues": 0
+}

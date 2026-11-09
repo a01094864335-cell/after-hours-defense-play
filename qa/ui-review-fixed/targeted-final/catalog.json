@@ -1,0 +1,400 @@
+{
+  "staff": [
+    {
+      "id": "goblin-guard",
+      "locked": false
+    },
+    {
+      "id": "orc-technician",
+      "locked": false
+    },
+    {
+      "id": "slime-cleaner",
+      "locked": false
+    },
+    {
+      "id": "gobi",
+      "locked": false
+    },
+    {
+      "id": "electric-technician",
+      "locked": false
+    },
+    {
+      "id": "ghost-courier",
+      "locked": false
+    },
+    {
+      "id": "bat-nurse",
+      "locked": true
+    },
+    {
+      "id": "skeleton-chef",
+      "locked": true
+    },
+    {
+      "id": "mimic-storekeeper",
+      "locked": true
+    },
+    {
+      "id": "spider-tailor",
+      "locked": true
+    },
+    {
+      "id": "nightmare-counselor",
+      "locked": true
+    },
+    {
+      "id": "kobold-recruiter",
+      "locked": true
+    },
+    {
+      "id": "merc-ward",
+      "locked": true
+    },
+    {
+      "id": "merc-accountant",
+      "locked": true
+    },
+    {
+      "id": "merc-rescue",
+      "locked": true
+    },
+    {
+      "id": "duru-archivist",
+      "locked": true
+    },
+    {
+      "id": "kkangtong-engineer",
+      "locked": true
+    },
+    {
+      "id": "ddangkong-miner",
+      "locked": true
+    },
+    {
+      "id": "chalkak-photographer",
+      "locked": true
+    },
+    {
+      "id": "bongtu-postmaster",
+      "locked": true
+    },
+    {
+      "id": "merc-chikchik",
+      "locked": true
+    },
+    {
+      "id": "merc-banchang",
+      "locked": true
+    },
+    {
+      "id": "merc-coco",
+      "locked": true
+    },
+    {
+      "id": "merc-q",
+      "locked": true
+    }
+  ],
+  "stories": [
+    {
+      "id": "first-shift",
+      "original": true,
+      "panels": 4
+    },
+    {
+      "id": "midnight-soup",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "clean-floor",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "payday",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "parcel",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "blackout",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "attendance",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "cape",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "counseling",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "inventory",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "inspection",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "coffee",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "birthday",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "rain",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "photo",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "lost-key",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "quiet-night",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "suggestion",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "gate-cat",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "shift-handoff",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "empty-throne",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "fridge-label",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "shortcut-trap",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "praise-approval",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "chair-project",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "laundry-weather",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "guard-dog-holiday",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "castle-sports",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "one-note-band",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "shield-bandage",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "slow-reply",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "castle-flea-market",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "vacation-form",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "overtime-shadow",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "ghost-scary-story",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "plant-duty",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "emergency-cookie",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "fallen-star",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "call-by-name",
+      "original": false,
+      "panels": 4
+    },
+    {
+      "id": "same-place-tomorrow",
+      "original": false,
+      "panels": 4
+    }
+  ],
+  "hiring": [
+    {
+      "id": "ghost-courier",
+      "panels": 4
+    },
+    {
+      "id": "bat-nurse",
+      "panels": 4
+    },
+    {
+      "id": "skeleton-chef",
+      "panels": 4
+    },
+    {
+      "id": "mimic-storekeeper",
+      "panels": 4
+    },
+    {
+      "id": "spider-tailor",
+      "panels": 4
+    },
+    {
+      "id": "nightmare-counselor",
+      "panels": 4
+    },
+    {
+      "id": "kobold-recruiter",
+      "panels": 4
+    },
+    {
+      "id": "duru-archivist",
+      "panels": 4
+    },
+    {
+      "id": "kkangtong-engineer",
+      "panels": 4
+    },
+    {
+      "id": "ddangkong-miner",
+      "panels": 4
+    },
+    {
+      "id": "chalkak-photographer",
+      "panels": 4
+    },
+    {
+      "id": "bongtu-postmaster",
+      "panels": 4
+    },
+    {
+      "id": "merc-ward",
+      "panels": 4
+    },
+    {
+      "id": "merc-accountant",
+      "panels": 4
+    },
+    {
+      "id": "merc-rescue",
+      "panels": 4
+    },
+    {
+      "id": "merc-chikchik",
+      "panels": 4
+    },
+    {
+      "id": "merc-banchang",
+      "panels": 4
+    },
+    {
+      "id": "merc-coco",
+      "panels": 4
+    },
+    {
+      "id": "merc-q",
+      "panels": 4
+    }
+  ],
+  "dialogs": [
+    "daily-events-dialog",
+    "training-dialog",
+    "equipment",
+    "info",
+    "menu",
+    "leave",
+    "roster",
+    "shop",
+    "story-archive",
+    "promo",
+    "guide",
+    "perk",
+    "deck",
+    "recruit-dialog",
+    "journey-dialog",
+    "save-transfer-dialog",
+    "starter-choice",
+    "staff-trial"
+  ]
+}

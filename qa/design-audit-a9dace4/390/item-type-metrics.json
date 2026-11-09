@@ -1,0 +1,306 @@
+[
+  {
+    "tag": "BUTTON",
+    "id": "shop-close",
+    "class": "",
+    "text": "",
+    "size": "0px",
+    "color": "rgb(80, 106, 140)",
+    "background": "rgba(255, 255, 255, 0.65)",
+    "disabled": false,
+    "rect": [
+      326,
+      20,
+      44,
+      44
+    ]
+  },
+  {
+    "tag": "IMG",
+    "id": "",
+    "class": "live-direction-icon",
+    "text": "",
+    "size": "0px",
+    "color": "rgb(80, 106, 140)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      338,
+      31.5,
+      20,
+      21
+    ]
+  },
+  {
+    "tag": "BUTTON",
+    "id": "shop-tab-mercs",
+    "class": "",
+    "text": "채용팩",
+    "size": "12px",
+    "color": "rgb(162, 147, 117)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      20,
+      77,
+      171,
+      44
+    ]
+  },
+  {
+    "tag": "BUTTON",
+    "id": "shop-tab-items",
+    "class": "active",
+    "text": "개별 아이템",
+    "size": "12px",
+    "color": "rgb(50, 102, 237)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      199,
+      77,
+      171,
+      44
+    ]
+  },
+  {
+    "tag": "BUTTON",
+    "id": "buy-grade",
+    "class": "",
+    "text": "20 코인1개",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgb(245, 230, 194)",
+    "disabled": false,
+    "rect": [
+      36,
+      386,
+      318,
+      46.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "price-line",
+    "text": "20 코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      397,
+      49.21875,
+      24.640625
+    ]
+  },
+  {
+    "tag": "STRONG",
+    "id": "",
+    "class": "",
+    "text": "20",
+    "size": "17px",
+    "color": "rgb(255, 226, 168)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      397,
+      19.453125,
+      24.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "",
+    "text": "코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      180.890625,
+      399.171875,
+      25.765625,
+      20.296875
+    ]
+  },
+  {
+    "tag": "SMALL",
+    "id": "",
+    "class": "",
+    "text": "1개",
+    "size": "12px",
+    "color": "rgb(157, 139, 106)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      214.65625,
+      400.3125,
+      17.90625,
+      18
+    ]
+  },
+  {
+    "tag": "BUTTON",
+    "id": "buy-kind",
+    "class": "",
+    "text": "30 코인1개",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgb(245, 230, 194)",
+    "disabled": false,
+    "rect": [
+      36,
+      564.640625,
+      318,
+      46.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "price-line",
+    "text": "30 코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      575.640625,
+      49.21875,
+      24.640625
+    ]
+  },
+  {
+    "tag": "STRONG",
+    "id": "",
+    "class": "",
+    "text": "30",
+    "size": "17px",
+    "color": "rgb(255, 226, 168)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      575.640625,
+      19.453125,
+      24.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "",
+    "text": "코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      180.890625,
+      577.8125,
+      25.765625,
+      20.296875
+    ]
+  },
+  {
+    "tag": "SMALL",
+    "id": "",
+    "class": "",
+    "text": "1개",
+    "size": "12px",
+    "color": "rgb(157, 139, 106)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      214.65625,
+      578.953125,
+      17.90625,
+      18
+    ]
+  },
+  {
+    "tag": "BUTTON",
+    "id": "buy-king",
+    "class": "",
+    "text": "50 코인1개",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgb(245, 230, 194)",
+    "disabled": false,
+    "rect": [
+      36,
+      743.28125,
+      318,
+      46.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "price-line",
+    "text": "50 코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      754.28125,
+      49.21875,
+      24.640625
+    ]
+  },
+  {
+    "tag": "STRONG",
+    "id": "",
+    "class": "",
+    "text": "50",
+    "size": "17px",
+    "color": "rgb(255, 226, 168)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      157.4375,
+      754.28125,
+      19.453125,
+      24.640625
+    ]
+  },
+  {
+    "tag": "SPAN",
+    "id": "",
+    "class": "",
+    "text": "코인",
+    "size": "14px",
+    "color": "rgb(154, 118, 57)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      180.890625,
+      756.453125,
+      25.765625,
+      20.296875
+    ]
+  },
+  {
+    "tag": "SMALL",
+    "id": "",
+    "class": "",
+    "text": "1개",
+    "size": "12px",
+    "color": "rgb(157, 139, 106)",
+    "background": "rgba(0, 0, 0, 0)",
+    "disabled": false,
+    "rect": [
+      214.65625,
+      757.59375,
+      17.90625,
+      18
+    ]
+  }
+]
