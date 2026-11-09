@@ -47,6 +47,9 @@ for(const [dir,name] of [['asset-lobby-20261109','lobby'],['asset-roster-2026110
 const shopPath='previews/asset-shop-20261109';
 for(const file of ['shop.css','shop.js'])files.add(shopPath+'/'+file);
 for(const file of fs.readdirSync(path.join(root,shopPath,'assets')))if(/\.webp$/.test(file))files.add(shopPath+'/assets/'+file);
+const trainingPath='previews/asset-training-20261109';
+for(const file of ['training.css','training.js'])files.add(trainingPath+'/'+file);
+for(const file of fs.readdirSync(path.join(root,trainingPath,'assets')))if(/\.webp$/.test(file))files.add(trainingPath+'/assets/'+file);
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const revision=process.env.GITHUB_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 fs.mkdirSync(out,{recursive:true});let html=fs.readFileSync(path.join(root,'index.html'),'utf8');
