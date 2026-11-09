@@ -13,6 +13,7 @@
     shop: {
       header: ".sheet-head",
       context: ".shop-wallet:not(.stage-wallet),#shop-status,.shop-tabs",
+      actions: "#buy-staff-pack,#shop-to-roster",
     },
     "story-archive": { header: ".sheet-head", context: "#story-progress" },
     guide: {

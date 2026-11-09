@@ -1,0 +1,202 @@
+{
+  "baseline": "a9dace4928b3894b1ebd4168d9b38830a0923470",
+  "reviewItemsFixed": 20,
+  "layout": {
+    "stateExecutions": 2436,
+    "geometryEvaluations": 7209,
+    "viewports": [
+      [
+        320,
+        568
+      ],
+      [
+        390,
+        640
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        430,
+        932
+      ]
+    ],
+    "modes": [
+      "ko100",
+      "ko130",
+      "en-real130"
+    ],
+    "executionFailures": [],
+    "gridGroupsMeasured": 3152,
+    "unresolvedOverlapOrGridPatterns": 0,
+    "classifiedCandidates": [
+      {
+        "type": "control-asset-outside",
+        "matrix": "320x568-ko100",
+        "occurrences": 13,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "320x568-ko130",
+        "occurrences": 14,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "320x568-en-real130",
+        "occurrences": 16,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x640-ko100",
+        "occurrences": 11,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x640-ko130",
+        "occurrences": 12,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x640-en-real130",
+        "occurrences": 12,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x844-ko100",
+        "occurrences": 8,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x844-ko130",
+        "occurrences": 8,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "390x844-en-real130",
+        "occurrences": 9,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "430x932-ko100",
+        "occurrences": 7,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "430x932-ko130",
+        "occurrences": 7,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      },
+      {
+        "type": "control-asset-outside",
+        "matrix": "430x932-en-real130",
+        "occurrences": 8,
+        "reason": "Story thumbnail source image extends beyond its cover; the cover clips it with overflow:hidden. Visible pixels remain inside the control."
+      }
+    ]
+  },
+  "canvas": {
+    "stateExecutions": 428,
+    "staffPoseCombinations": 408,
+    "staffPixelTextCollisions": 0,
+    "staffLabelOrGridIssues": 0,
+    "intentionalKingSceneOverlapStates": 8,
+    "intentionalKingSceneReason": "The full king entrance illustration deliberately covers the board. This is distinct from adjacent-row staff label collisions."
+  },
+  "acceptance": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "checks": [
+        "#menu-open visible",
+        "#enter-battle visible",
+        "#roster-open visible",
+        "#shop-open visible",
+        "#buy-staff-pack visible",
+        "shop no horizontal scroll",
+        "price contrast 6.39",
+        "roster tabs outside scroller",
+        "#training-upgrade visible",
+        "first training row visible",
+        "support training context"
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        640
+      ],
+      "checks": [
+        "#menu-open visible",
+        "#enter-battle visible",
+        "#roster-open visible",
+        "#shop-open visible",
+        "#buy-staff-pack visible",
+        "shop no horizontal scroll",
+        "price contrast 6.39",
+        "roster tabs outside scroller",
+        "#training-upgrade visible",
+        "first training row visible",
+        "support training context"
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "checks": [
+        "#menu-open visible",
+        "#enter-battle visible",
+        "#roster-open visible",
+        "#shop-open visible",
+        "#buy-staff-pack visible",
+        "shop no horizontal scroll",
+        "price contrast 6.39",
+        "roster tabs outside scroller",
+        "#training-upgrade visible",
+        "first training row visible",
+        "support training context"
+      ]
+    },
+    {
+      "viewport": [
+        430,
+        932
+      ],
+      "checks": [
+        "#menu-open visible",
+        "#enter-battle visible",
+        "#roster-open visible",
+        "#shop-open visible",
+        "#buy-staff-pack visible",
+        "shop no horizontal scroll",
+        "price contrast 6.39",
+        "roster tabs outside scroller",
+        "#training-upgrade visible",
+        "first training row visible",
+        "support training context"
+      ]
+    }
+  ],
+  "functionalTests": {
+    "nodePassed": 76,
+    "browserPackagedPassed": 11
+  },
+  "limitations": [
+    "English copy is a CSS stress fixture, not a shipped translation.",
+    "Live github.io navigation blocked by environment proxy; screenshots and runtime checks use the same source locally and the packaged deployment build."
+  ]
+}

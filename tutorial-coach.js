@@ -33,7 +33,7 @@ window.TutorialCoach=(()=>{
   if(task?.kind==='item')return '연습 중 · 등급 합성 버튼 → 표시한 두 직원을 차례로 터치하세요.';
   if(task?.kind==='king')return '연습 중 · 마왕 깨우기를 눌러 용사를 정리하세요. 연습용 1개를 사용해요.';
   if(window.DiscountTutorial?.waitingForSummon?.())return '연습 중 · 반값으로 표시된 직원 소환 버튼을 누르세요.';
-  if(wave===0)return '준비 '+preparationCount()+'/5 · 아래 노란 직원 소환 버튼을 '+(5-preparationCount())+'번 누르면 전투가 시작돼요.';
+  if(wave===0)return '준비 '+preparationCount()+'/5 · 아래 직원 소환 버튼을 '+(5-preparationCount())+'번 누르면 전투가 시작돼요.';
   if(wave<3)return sp<summonPrice()?'자동 공격 중 · 처치 보상으로 SP를 모으세요. 다음 소환 '+summonPrice()+' SP':'SP가 모였어요 · 직원 소환으로 방어선을 보강하세요.';
   return wave>=9?'실전 연습 · 소환·합성·장비·스킬로 10웨이브까지 막으세요.':'자동 공격 중 · 빈자리에는 소환, 같은 종류·등급은 합성하세요.';
  }
@@ -41,7 +41,7 @@ window.TutorialCoach=(()=>{
   const preparing=tutorialMode&&appScreen==='battle'&&preparingDuty();
   uiAttr(q('#battle'),'data-tutorial-preparing',preparing?'true':'false');
   if(dialogue){
-   if(preparing&&!paused){compact=true;dialogue.hidden=false;const count=preparationCount();uiText(q('#coach-title'),'첫 동료 부르기 · '+count+'/5');uiText(q('#coach-copy'),count===0?'아래 노란 직원 소환 버튼을 눌러보세요. 빈 보드에 동료가 한 명씩 들어와요.':'좋아요! '+count+'명이 왔어요. '+(5-count)+'번 더 소환하면 자동으로 전투가 시작돼요.');}
+   if(preparing&&!paused){compact=true;dialogue.hidden=false;const count=preparationCount();uiText(q('#coach-title'),'첫 동료 부르기 · '+count+'/5');uiText(q('#coach-copy'),count===0?'아래 직원 소환 버튼을 눌러보세요. 빈 보드에 동료가 한 명씩 들어와요.':'좋아요! '+count+'명이 왔어요. '+(5-count)+'번 더 소환하면 자동으로 전투가 시작돼요.');}
    else if(compact){compact=false;dialogue.hidden=true;}
    uiAttr(dialogue,'data-compact',compact?'true':'false');uiProp(q('#coach-next'),'hidden',compact);
   }

@@ -363,3 +363,341 @@ html.open-scene body dialog#hiring-story {background:#f5f7fc!important}
 .open-scene #cards .card {background:#ffffffa0;border:0;border-radius:20px;color:#5779a6}
 .open-scene #cards .card:disabled {background:#e0eafd;color:#7694bc}
 .open-scene #cards .card>b {color:#6889b5}
+
+/* Full review correction: D01–D16 / L01–L04.
+   Foreground layout is intrinsic; room art cannot determine text or hit boxes. */
+.open-scene {
+  --muted:#536b85; --dim:#637992; --gold:#7b5a24;
+  --scene-copy:#415d7c; --scene-secondary:#5b718b;
+}
+.open-scene button {height:auto;max-width:100%;min-width:0;line-height:1.4}
+.open-scene :is(button,summary,p,small,span,strong,b,h1,h2,h3,h4) {overflow-wrap:anywhere}
+.open-scene dialog :is(p,small) {color:var(--scene-secondary)}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) {align-items:center;min-height:44px;padding-bottom:4px}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header) h2 {font-size:22px;line-height:1.3;min-width:0}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header)>button {flex:0 0 44px;align-self:center;min-height:44px}
+.open-scene :is(.sheet-head,.training-header,.ui-dialog-header,.development-sheet>header)>button img {width:20px;height:20px;object-fit:contain}
+.open-scene dialog :is(.panel-scroll-body,.live-training-body,#roster-overview) {overflow-x:hidden;min-width:0}
+.open-scene dialog :is(p,.ui-copy-details,details) {font-size:13px;line-height:1.6}
+.open-scene :is(details summary,.ui-copy-details summary) {font-size:13px;color:#4c678b;min-height:40px}
+.open-scene :is(.archive-tabs,.training-tabs,.shop-tabs) {gap:10px;padding:0 0 8px;min-width:0}
+.open-scene :is(.archive-tabs,.training-tabs,.shop-tabs) button {font-size:13px;line-height:1.4;min-height:44px;color:#5c7291;padding:8px 4px}
+/* D01/D08: title, shortcut rail and cast have separate grid areas. */
+.open-scene #lobby {display:flex;flex-direction:column;justify-content:space-between;gap:8px;padding-top:max(58px,calc(env(safe-area-inset-top) + 50px));overflow-y:auto;overflow-x:hidden}
+.open-scene .lobby-art {display:grid;grid-template-columns:minmax(0,1fr) 132px;grid-template-rows:auto minmax(80px,1fr);gap:6px 10px;flex:1 1 auto;min-height:158px;max-height:420px;container-type:normal;padding:4px 20px 0;overflow:hidden}
+.open-scene .lobby-art::before {inset:20% auto 0 -10%;width:80%;max-height:90%;opacity:.6}
+.open-scene .lobby-title {position:relative;grid-column:1;grid-row:1;inset:auto;align-self:center;width:auto;min-width:0}
+.open-scene .scene-wordmark {font-size:28px;line-height:1.08;letter-spacing:-1.1px;transform:none;color:#2f54a7;text-wrap:balance}
+.open-scene .duo-shortcuts {position:static;inset:auto;grid-column:2;grid-row:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;width:auto;align-self:center;z-index:1}
+.open-scene .duo-shortcuts button {width:auto;min-height:46px;padding:5px 2px;border-radius:12px;background:#fffdf2;color:#405e87;box-shadow:none}
+.open-scene .approved-shortcut-face {display:flex;flex-direction:column;justify-content:center;gap:3px;color:#405e87;font-size:11px;line-height:1.25}
+.open-scene .approved-shortcut-face img {width:19px;height:19px}
+.open-scene .scene-lobby-cast {position:relative;inset:auto;grid-column:1/-1;grid-row:2;width:100%;max-width:100%;height:100%;max-height:320px;min-height:0;align-self:center;object-fit:contain;object-position:center;filter:drop-shadow(0 9px 12px #4b79ac18)}
+.open-scene .approved-lobby-dock {display:grid;grid-template-columns:minmax(0,1fr) 68px;gap:7px 9px;flex:none;width:100%;margin:0;padding:0 20px;background:linear-gradient(transparent,#eff5ff 30%)}
+.open-scene .approved-lobby-dock>* {grid-column:1/-1;min-width:0}
+.open-scene #deck-open {grid-column:1;align-self:center;gap:4px}
+.open-scene .duo-companion {position:static;inset:auto!important;grid-column:2;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:100%;min-height:66px;padding:6px 4px;gap:4px;background:#dceaf8;border-radius:15px;box-shadow:none}
+.open-scene .duo-companion img {width:29px;height:30px;object-fit:contain}
+.open-scene .duo-companion b {font-size:11px;line-height:1.3;color:#3d5f89;word-break:normal}
+.open-scene .scene-party-label,.open-scene #deck-label {font-size:11px;color:#4f6b8d;line-height:1.4}
+.open-scene #deck-summary {gap:4px}
+.open-scene .live-staff-token :is(img,canvas) {height:35px;max-width:100%;background:#ffffffb0}
+.open-scene .live-staff-token small {font-size:11px;line-height:1.25;color:#3e5d83}
+.open-scene #daily-option {min-height:43px;padding:7px 10px;gap:6px;background:#ffffffc0}
+.open-scene #daily-label {font-size:13px;line-height:1.35;color:#3c5a82}
+.open-scene #daily-effect,.open-scene #daily-option:has(#daily-kind[data-kind]) #daily-effect {font-size:12px;line-height:1.4;color:#536e8d}
+.open-scene .mode-card {min-height:17px;padding:0}
+.open-scene .mode-card b {font-size:11px;line-height:1.4;color:#4c6b92}
+.open-scene #starter-choice-open {min-height:36px;margin:0;padding:7px 9px;font-size:12px;background:#e1eaf9;color:#70572b}
+.open-scene #resume-run {min-height:36px;margin:0;font-size:12px;line-height:1.4}
+.open-scene #enter-battle {min-height:53px;font-size:20px;padding:11px 18px}
+.open-scene .lobby-links {margin:0;gap:10px;padding:0 0 max(9px,env(safe-area-inset-bottom))}
+.open-scene .lobby-links button {min-height:48px;padding:6px 3px;font-size:12px;color:#4e6c94;line-height:1.3}
+.open-scene .lobby-links img {width:20px;height:20px}
+/* L01: a fixed, opaque tab strip above the scrollable collection. */
+.open-scene #roster>.archive-tabs {position:relative;top:auto;flex:none;background:#e9f1ff;z-index:3;margin:0;padding:0 0 9px}
+.open-scene #roster-overview {scroll-padding-top:8px}
+.open-scene #staff-deck {padding:10px;background:#ffffff9c;border-radius:16px}
+.open-scene #staff-deck>b,.open-scene #roster-note {font-size:12px;color:#506d92}
+.open-scene .deck-slots {gap:6px;margin-top:7px}
+.open-scene .deck-slots button {border-radius:13px;min-height:59px;background:#e0eafa}
+.open-scene .deck-slots small {font-size:11px;line-height:1.3;color:#49678e}
+.open-scene #roster-list {gap:19px 9px;padding:10px 0}
+.open-scene .staff-pass {gap:5px;min-height:164px}
+.open-scene .pass-portrait {position:relative;height:88px}
+.open-scene .pass-open {font-size:15px;line-height:1.3;color:#36557d}
+.open-scene .pass-role,.open-scene .pass-job {font-size:12px;line-height:1.35;color:#526f93}
+.open-scene .pass-meta b {font-size:11px;line-height:1.4;color:#536e8f;padding:3px 7px;border-radius:20px;background:#e2eaf6}
+.open-scene .staff-pass[data-scene-equipped=true] .pass-portrait {background:radial-gradient(ellipse,#b7e7d6 0%,#ceebdc70 45%,transparent 70%)}
+.open-scene .staff-pass[data-scene-equipped=true] .pass-portrait::after {content:'✓';position:absolute;right:5px;bottom:2px;width:21px;height:21px;display:grid;place-items:center;background:#298366;border-radius:50%;color:white;font-size:13px;font-weight:800}
+.open-scene .staff-pass[data-scene-equipped=true] .pass-meta b {background:#d3ecdf;color:#2e7057}
+.open-scene #deck-options {gap:15px 12px}
+.open-scene #deck-options button {background:transparent;box-shadow:none;padding:13px 5px;gap:6px;border-radius:17px;min-height:134px}
+.open-scene #deck-options button.picked {background:#dceee5}
+.open-scene #deck-options button.swap-target {background:#cddfff}
+.open-scene #deck-options button>span,.open-scene #deck-options button>small {font-size:12px;line-height:1.4;color:#506f8d}
+.open-scene #deck-options button.picked>small {color:#267555;font-weight:800}
+.open-scene .dossier-hero {padding:10px 0 15px;gap:6px 15px}
+.open-scene .dossier-section h4 {font-size:15px;color:#3e6595}
+.open-scene .dossier-section :is(p,small),.open-scene .dossier-foot {font-size:13px;line-height:1.6;color:#536d8c}
+.open-scene .dossier-stamp {font-size:12px;background:#dce9fa;color:#46678e}
+.open-scene .dossier-hero>span:not(.dossier-stamp) {font-size:13px;color:#526e90}
+/* D03/D09/L04: compact, group-specific training with flexible status columns. */
+.open-scene .scene-training-cast {height:108px;width:100%;max-width:100%;background:none;border-radius:0;margin:0 auto;object-fit:contain}
+.open-scene .scene-support-cast {display:none;justify-content:center;align-items:center;gap:6px;height:108px;flex:none;background:radial-gradient(ellipse,#bce9d252,transparent 70%)}
+.open-scene .scene-support-cast img {height:84px;width:16%;object-fit:contain;filter:drop-shadow(0 6px 5px #3d806b1c)}
+.open-scene #training-dialog[data-training-group=merc] .scene-training-cast {display:none}
+.open-scene #training-dialog[data-training-group=merc] .scene-support-cast {display:flex}
+.open-scene #training-summary {padding:12px 13px;background:#ffffffa0;border-radius:18px}
+.open-scene #training-summary>*+* {margin-top:5px}
+.open-scene .training-level {font-size:13px;color:#466a59;gap:8px}
+.open-scene .training-level strong {font-size:28px;color:#28846b;line-height:1.2}
+.open-scene #training-summary>b {font-size:14px;color:#27765e;line-height:1.45}
+.open-scene #training-summary>small {font-size:12px;color:#547e6b}
+.open-scene .scene-milestones {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+.open-scene .scene-milestones span {text-align:center;font-size:11px;line-height:1.4;color:#607c6c;background:#e0ece5;padding:4px 1px;border-radius:9px}
+.open-scene .scene-milestones .reached {background:#bfe3cf;color:#2b6b51;font-weight:800}
+.open-scene #training-summary .ui-copy-details summary {font-size:12px;min-height:32px;padding:6px 0;line-height:1.5}
+.open-scene .training-effects-heading {gap:3px;color:#446c59}
+.open-scene .training-effects-heading h3 {font-size:14px}
+.open-scene .training-effects-heading small {font-size:12px;color:#577b67}
+.open-scene .training-character {padding:11px 0}
+.open-scene .training-character-title {grid-template-columns:42px minmax(0,1fr) minmax(0,28%);gap:9px;min-width:0}
+.open-scene .training-character-title>div,.open-scene .training-character-title>span {min-width:0;max-width:100%;overflow-wrap:anywhere}
+.open-scene .training-character-title b {font-size:14px;color:#365d4d;line-height:1.4}
+.open-scene .training-character-title small {font-size:12px;color:#52745f;line-height:1.4}
+.open-scene .training-character-title>span {font-size:12px;line-height:1.45;color:#4a705d;text-align:right}
+.open-scene .training-character li {grid-template-columns:43px minmax(0,1fr) minmax(0,40px);gap:8px;font-size:13px;color:#4f705e}
+.open-scene .training-character li>small {font-size:11px;color:#587a68}
+.open-scene .training-character li>b {font-size:12px;color:#33765b}
+.open-scene .training-character .locked {color:#647c6e}
+.open-scene .training-footer {grid-template-columns:minmax(0,1fr) minmax(0,58%);gap:5px 11px;padding-top:10px;background:#f0f9f3;align-items:center}
+.open-scene #training-wallet,.open-scene #training-price-hint {font-size:12px;color:#4c725d;line-height:1.4;min-width:0}
+.open-scene #training-upgrade {font-size:15px;line-height:1.4;min-height:54px;padding:10px 9px}
+/* D02/D03/D10/L03: one contained shop body and a separate purchase footer. */
+.open-scene #shop.summon-stage-shop {gap:9px;background:linear-gradient(160deg,#fff1be,#fffaf0 65%)}
+.open-scene #shop.summon-stage-shop>.panel-scroll-body {overflow-x:hidden;overscroll-behavior-x:none;padding:0;min-width:0;scroll-padding:10px}
+.open-scene #shop.summon-stage-shop .ref-market-scene {margin:0;width:100%;max-width:100%;height:clamp(130px,28dvh,240px);min-height:0;aspect-ratio:auto;background:none;overflow:hidden}
+.open-scene .scene-shop-cast {width:100%;height:100%;max-width:100%;margin:0;object-fit:contain;object-position:center;filter:drop-shadow(0 9px 12px #cba94118)}
+.open-scene #shop.summon-stage-shop:has(#shop-items:not([hidden])) .ref-market-scene {height:78px;min-height:0;margin:0;background:none}
+.open-scene #shop.summon-stage-shop .recruit-shop {gap:9px;padding:0 0 5px}
+.open-scene #shop.summon-stage-shop .recruit-shop>h3 {font-size:26px;line-height:1.2;color:#705126;margin:0}
+.open-scene #shop.summon-stage-shop .recruit-rules summary {font-size:13px;color:#735c33;min-height:40px;padding:9px 0}
+.open-scene #shop.summon-stage-shop .recruit-rules p {font-size:13px;color:#705b3b;background:none;padding:5px 0 10px}
+.open-scene #shop.summon-stage-shop #recruit-balance {font-size:13px;color:#715b34;padding:12px;min-height:68px;border-radius:15px;background:#fffdf6;gap:12px}
+.open-scene .pack-points {font-size:13px;color:#715020;line-height:1.5}
+.open-scene .pack-pity {font-size:12px;color:#745c35;line-height:1.4}
+.open-scene .pack-pity-track {gap:3px}
+.open-scene .pack-pity-track i {height:9px;background:#e0d4b5}
+.open-scene #shop>.ui-dialog-actions {display:grid;gap:6px;flex:none;background:#fffaf0;border:0;padding-top:9px;margin:0}
+.open-scene #shop.summon-stage-shop #buy-staff-pack {order:0;min-height:58px;margin:0;font-size:17px;line-height:1.4;padding:12px 14px;color:#614515}
+.open-scene #shop[data-shop-tab=items] #buy-staff-pack {display:none}
+.open-scene #shop.summon-stage-shop #shop-to-roster {order:1;font-size:13px;min-height:36px;margin:0;padding:6px 8px;color:#70552d}
+.open-scene #shop.summon-stage-shop .shop-row {background:none;border-radius:0;padding:13px 0;gap:9px 13px}
+.open-scene #shop.summon-stage-shop .shop-row>span {font-size:16px;color:#624a28}
+.open-scene #shop.summon-stage-shop .shop-row small {font-size:13px;line-height:1.5;color:#7b6543}
+.open-scene #shop.summon-stage-shop .shop-row>button {min-height:48px;background:#f4d98d;color:#614515;padding:10px 12px;border-radius:14px}
+.open-scene #shop .price-line,.open-scene #shop .price-line strong {color:#614515}
+.open-scene #shop .price-line strong {font-size:21px;font-weight:850}
+.open-scene #shop .shop-row>button:disabled {background:#e4dfd4;color:#746e61}
+.open-scene #shop .shop-row>button:disabled .price-line,.open-scene #shop .shop-row>button:disabled .price-line strong {color:#746e61}
+/* D06/L02: correctly proportioned scenery, with the play area in front. */
+.open-scene .board-stage {background:#dce9f5;isolation:isolate}
+.open-scene .board-stage::before {content:'';position:absolute;inset:-14%;z-index:0;background:url('assets/open-scene/battle-room.webp') center/cover no-repeat;opacity:.28;pointer-events:none}
+.open-scene .battle-stage-meta span {color:#3c5d87;font-size:12px;background:#fffffff0;padding:4px 8px}
+.open-scene .battle-top {min-height:50px;height:auto}
+.open-scene .battle-d .battle-notice {height:auto;min-height:44px;padding:6px 12px}
+.open-scene .battle-d #message {font-size:13px;line-height:1.45;color:#44678f}
+.open-scene .battle-d .skill-row {min-height:68px;padding:7px 9px;grid-template-columns:46px minmax(0,1fr) minmax(58px,23%);gap:8px;border-radius:16px}
+.open-scene #battle-selected-portrait {width:44px;height:49px;object-fit:contain}
+.open-scene #battle-selected-name {font-size:14px;line-height:1.35;overflow-wrap:anywhere;color:#365f54}
+.open-scene #battle-selected-grade {font-size:11px;line-height:1.3;color:#866b22;letter-spacing:.4px}
+.open-scene .battle-selected-copy {padding-right:21px}
+.open-scene .battle-d #skill {font-size:15px;min-height:48px;line-height:1.35;height:auto;overflow-wrap:anywhere}
+.open-scene .battle-d .summon-row {grid-template-columns:64px minmax(0,1fr) 44px;gap:8px;min-height:50px}
+.open-scene .battle-d #summon {font-size:17px;min-height:50px;padding:10px 7px;line-height:1.35}
+.open-scene .battle-d #upgrade-open {min-height:50px;border-radius:14px}
+.open-scene .battle-d .item-buttons {gap:8px}
+.open-scene .battle-d .item-buttons button {display:grid;grid-template-columns:25px minmax(0,1fr);gap:4px;min-height:50px;padding:7px 5px 12px;border-radius:13px}
+.open-scene .battle-d .item-buttons img {width:25px;height:29px}
+.open-scene .battle-d .item-buttons button>span {font-size:11px;line-height:1.35;word-break:normal}
+.open-scene .battle-d .item-buttons b {font-size:11px;line-height:14px;min-width:15px;padding:0 3px;bottom:1px;right:4px;color:#705321}
+/* D11: distinct recruitment results, a large character and one primary action. */
+.open-scene #recruit-dialog {height:min(620px,calc(100dvh - 20px));background:radial-gradient(ellipse at 50% 20%,#fff0b8,#fffaf0 70%)}
+.open-scene #recruit-result .panel-scroll-body {background:none;border-radius:0;padding:0 5px;text-align:center}
+.open-scene .recruit-reveal {gap:8px}
+.open-scene .recruit-reveal .panel-scroll-body>:is(img,canvas) {width:200px;height:210px;max-width:95%;margin:7px auto 15px;filter:drop-shadow(0 10px 9px #586b9426)}
+.open-scene .recruit-reveal b {font-size:15px;color:#467aaf}
+.open-scene .recruit-reveal strong {font-size:25px;color:#3a5b8f;line-height:1.35;margin-top:7px}
+.open-scene .recruit-reveal p {font-size:14px;line-height:1.65;color:#5b7290;margin-top:12px}
+.open-scene .recruit-reveal[data-recruit-kind=duplicate] .panel-scroll-body>:is(img,canvas) {width:170px;height:180px}
+.open-scene .recruit-reveal[data-recruit-kind=duplicate] b {color:#806634}
+.open-scene .ref-recruit-actions {grid-template-columns:1fr;gap:6px;padding-top:10px;border:0}
+.open-scene .ref-recruit-actions>button:last-child {order:-1;background:#3567e9;color:white;min-height:50px;font-size:16px}
+.open-scene .ref-recruit-actions>button:first-child {background:none;min-height:36px;color:#4e6c96;font-size:13px}
+/* D13/D14: open rows, icon-led choices and consistent secondary surfaces. */
+.open-scene #perk-options {gap:8px}
+.open-scene #perk-options button {display:flex;align-items:center;gap:13px;min-height:60px;padding:10px 5px;background:none;color:#3e608b;text-align:left;font-size:14px}
+.open-scene #perk-options button::before {content:'';flex:none;width:38px;height:38px;border-radius:13px;background:#dfe9fc url('assets/open-scene/icons/spark.svg') center/23px no-repeat}
+.open-scene #perk-options #perk-sp::before {background-image:url('assets/open-scene/icons/lightning.svg')}
+.open-scene #perk-options #perk-life::before {background-image:url('assets/open-scene/icons/heart.svg')}
+.open-scene #perk-options #perk-merge::before {background-image:url('assets/open-scene/icons/staff.svg')}
+.open-scene #perk-options #perk-equipment::before {background-image:url('assets/open-scene/icons/gear.svg')}
+.open-scene #perk-options #perk-staff::before {background-image:url('assets/open-scene/icons/plus.svg')}
+.open-scene #tactical-bonuses {padding-top:14px;margin-top:10px;gap:8px}
+.open-scene #tactical-bonuses button,.open-scene #build-choices button {min-height:48px;font-size:14px;padding:11px 13px;line-height:1.45;background:#e2ebfa}
+.open-scene #build-choices button small {font-size:12px;line-height:1.45;color:#506c93}
+.open-scene #daily-events-list>article {padding:13px 0;border:0;background:none;border-radius:0}
+.open-scene #daily-events-list h3 {font-size:16px;color:#3b5f8f;margin:6px 0}
+.open-scene #daily-events-list p {font-size:13px;line-height:1.6}
+.open-scene #menu fieldset {background:none;padding:12px 0;gap:9px}
+.open-scene #menu legend {font-size:14px;font-weight:750;color:#46648d}
+.open-scene #menu .panel-scroll-body>button {background:none;min-height:44px;font-size:14px;line-height:1.5;padding:11px 5px;text-align:left;border-radius:10px}
+.open-scene #menu .panel-scroll-body>#reset {color:#a34f64;background:#fae9eb;padding-inline:12px}
+.open-scene #menu input[type=range] {accent-color:#668fdb!important}
+.open-scene #run-history-list li,.open-scene #deck-presets>div {background:none;border:0;border-radius:0;padding:13px 0}
+.open-scene #deck-presets button {font-size:13px;min-height:44px;padding:9px;line-height:1.4}
+.open-scene #cards .card {background:none;border:0;border-radius:0;box-shadow:none;padding:14px 2px;grid-template-columns:58px minmax(0,1fr);min-height:105px;gap:6px 12px}
+.open-scene #cards .card>:is(img,canvas) {width:56px;height:61px}
+.open-scene #cards .card>span {font-size:15px;color:#3d5f8c}
+.open-scene #cards .card>small {font-size:12px;line-height:1.5;color:#526e91}
+.open-scene #cards .card>b {font-size:13px;color:#315d99}
+.open-scene #cards .card:disabled {background:none;color:#7587a0;opacity:.8}
+.open-scene #starter-options article {background:none;padding:13px 0;gap:7px 12px}
+.open-scene #starter-options article>small {font-size:13px;color:#5c7392}
+.open-scene #starter-options article>div {gap:9px}
+.open-scene #starter-options article>div>button {font-size:13px;padding:10px 7px;line-height:1.4}
+.open-scene #starter-options article>div>button:last-child {background:#3467e9;color:white}
+/* D07/D16: one reading surface and type scale across narrative and utility views. */
+.open-scene .story-card {background:none;border:0;border-radius:0;padding:12px 0;gap:5px 13px}
+.open-scene .story-card>b {font-size:15px;color:#3d5e8c;line-height:1.4}
+.open-scene .story-card>small,.open-scene .story-card>em {font-size:12px;color:#536e91;line-height:1.4}
+.open-scene .story-cover {border-radius:12px;background:#e2eaf6}
+.open-scene :is(#promo,#hiring-story) {--narrative-paper:#fffaf0;background:var(--narrative-paper);color:#415c80}
+.open-scene .comic-head,.open-scene #hiring-story header {background:#fffaf0;color:#45638c;padding:12px 16px}
+.open-scene .comic-head>span,.open-scene #hiring-story h2 {font-size:18px;color:#3d5d8e;font-weight:800;line-height:1.35}
+.open-scene .comic-bottom,.open-scene #hiring-story footer {background:#fffaf0;padding:13px 18px max(13px,env(safe-area-inset-bottom));border:0}
+.open-scene :is(#promo-speaker,.hire-name) {font-size:13px;color:#3f6191;font-weight:800}
+.open-scene #promo-line,.open-scene #hiring-story .hire-dialogue {font-size:15px;line-height:1.65;color:#465f80}
+.open-scene #promo-aside {font-size:13px;line-height:1.6;color:#536c8b}
+.open-scene #promo-count,.open-scene #hiring-story .hire-page {font-size:12px;color:#597393}
+.open-scene .live-speaker-portrait {width:31px;height:34px;object-fit:contain;background:#e2eafa;border-radius:50%;padding:3px}
+.open-scene #info p,.open-scene .ref-guide-step p {font-size:13px;line-height:1.65;color:#506b8f}
+.open-scene .ref-guide-step {background:none;padding:12px 0;border:0;border-radius:0}
+.open-scene .ref-guide-step h3 {font-size:15px;color:#3d6092}
+.open-scene .boss-guide,.open-scene .board-access-list {background:none;padding:10px 0;border:0}
+.open-scene .board-access-grid button {min-height:44px;font-size:12px;line-height:1.4;padding:8px 5px}
+.open-scene #save-transfer-dialog label {font-size:13px;line-height:1.5;color:#4c6789}
+.open-scene #save-transfer-dialog button {font-size:14px;min-height:46px;line-height:1.45}
+.open-scene #coach-copy {font-size:15px;line-height:1.6;color:#405e83}
+.open-scene #coach-title {font-size:17px;color:#315c9b;line-height:1.4}
+.open-scene #coach-next {min-height:46px;font-size:14px;line-height:1.45}
+.open-scene #battle[data-tutorial=true] #summon:not(:disabled) {box-shadow:0 0 0 4px #a8c6ff,0 8px 20px #3366dd22}
+/* D15: concise payout, paired metrics and a single detailed ledger. */
+.open-scene .result-icon>.scene-result-cast {max-height:200px}
+.open-scene #result-title {font-size:28px;line-height:1.2}
+.open-scene #result-title-badge {font-size:12px;color:#7c653c}
+.open-scene #live-result-reward {padding:12px 0 8px;color:#796236}
+.open-scene #live-result-reward small {font-size:13px;color:#796236}
+.open-scene #live-result-reward strong {font-size:43px;line-height:1.25}
+.open-scene #result-stats {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding:10px 0}
+.open-scene #result-stats>div {display:flex;flex-direction:column;gap:4px;text-align:center;align-items:center;padding:5px 0;color:#795e32;font-size:13px}
+.open-scene #result-stats>div b {font-size:28px;color:#684d27}
+.open-scene #result-stats .grid-stat-icon {display:none}
+.open-scene .scene-report-ledger {display:grid;gap:2px;margin:10px 0;background:none;text-align:left}
+.open-scene .scene-report-ledger details {font-size:13px;color:#6e5b3a}
+.open-scene .scene-report-ledger summary {font-size:13px;color:#78633e;min-height:40px;padding:8px 0}
+.open-scene #run-analysis {padding:0}
+.open-scene .live-result-actions {gap:7px}
+.open-scene #result-home {font-size:13px;color:#705d3a}
+@media(max-height:720px) {
+ .open-scene #lobby {padding-top:max(53px,calc(env(safe-area-inset-top) + 47px));gap:5px}
+ .open-scene .lobby-art {grid-template-columns:minmax(0,1fr) 122px;min-height:146px;max-height:240px;padding:2px 17px 0;gap:4px 8px}
+ .open-scene .scene-wordmark {font-size:25px;line-height:1.05}
+ .open-scene .duo-shortcuts {gap:4px;width:auto}
+ .open-scene .duo-shortcuts button {min-height:43px;padding:5px 1px}
+ .open-scene .approved-shortcut-face {flex-direction:column;font-size:11px;gap:2px}
+ .open-scene .approved-shortcut-face img {width:17px;height:17px}
+ .open-scene .approved-lobby-dock {padding-inline:17px;gap:5px 7px;grid-template-columns:minmax(0,1fr) 63px}
+ .open-scene .duo-companion {min-height:59px;padding:4px 3px;gap:2px}
+ .open-scene .duo-companion img {width:25px;height:26px}
+ .open-scene .duo-companion b {font-size:11px}
+ .open-scene .live-staff-token :is(img,canvas) {height:30px}
+ .open-scene .live-staff-token small {font-size:11px}
+ .open-scene #daily-option {padding:6px 8px;min-height:40px}
+ .open-scene #enter-battle {min-height:49px;padding:10px 14px;font-size:19px}
+ .open-scene .lobby-links {padding-bottom:7px;gap:7px}
+ .open-scene .lobby-links button {min-height:45px;padding:5px 2px;font-size:11px}
+ .open-scene .scene-training-cast,.open-scene #training-dialog[data-training-group=merc] .scene-support-cast {display:none}
+ .open-scene #training-dialog {gap:8px;padding-top:12px;padding-bottom:12px}
+ .open-scene #training-summary {padding:9px 11px}
+ .open-scene #training-summary>small {display:none}
+ .open-scene #training-summary>*+* {margin-top:4px}
+ .open-scene .training-level strong {font-size:25px}
+ .open-scene .training-effects-heading {margin-top:10px}
+ .open-scene .training-character {padding:9px 0}
+ .open-scene .training-footer {padding-top:8px}
+ .open-scene #shop.summon-stage-shop .ref-market-scene {height:118px}
+ .open-scene #shop.summon-stage-shop:has(#shop-items:not([hidden])) .ref-market-scene {height:52px}
+ .open-scene #shop.summon-stage-shop .recruit-shop>h3 {font-size:23px}
+ .open-scene #shop.summon-stage-shop #recruit-balance {padding:9px 10px;min-height:60px}
+ .open-scene #shop.summon-stage-shop #buy-staff-pack {min-height:52px;font-size:16px}
+ .open-scene .battle-d .battle-top {min-height:45px;height:auto;padding:6px 10px}
+ .open-scene .battle-d .battle-notice {min-height:36px;padding:4px 10px}
+ .open-scene .battle-d .battle-controls {padding:8px 10px max(9px,env(safe-area-inset-bottom));gap:7px}
+ .open-scene .battle-d .skill-row {min-height:58px;grid-template-columns:36px minmax(0,1fr) minmax(55px,23%);padding:5px 7px;gap:7px}
+ .open-scene #battle-selected-portrait {width:35px;height:41px}
+ .open-scene .battle-d #skill {min-height:44px;font-size:14px}
+ .open-scene .battle-d .summon-row {min-height:46px}
+ .open-scene .battle-d #summon,.open-scene .battle-d #upgrade-open {min-height:46px}
+ .open-scene .battle-d .item-buttons button {min-height:47px}
+ .open-scene .result-icon>.scene-result-cast {max-height:135px}
+ .open-scene #result-title {font-size:24px}
+ .open-scene #live-result-reward strong {font-size:36px}
+ .open-scene #result-stats>div b {font-size:24px}
+ .open-scene .recruit-reveal .panel-scroll-body>:is(img,canvas) {height:150px;width:150px}
+ .open-scene .recruit-reveal[data-recruit-kind=duplicate] .panel-scroll-body>:is(img,canvas) {height:125px;width:125px}
+}
+@media(max-width:350px) {
+ .open-scene .lobby-art {padding-inline:16px;grid-template-columns:minmax(0,1fr) 117px;gap:4px 7px}
+ .open-scene .scene-wordmark {font-size:24px}
+ .open-scene .approved-lobby-dock {padding-inline:16px}
+ .open-scene .pass-open {font-size:14px}
+ .open-scene .pass-role,.open-scene .pass-job,.open-scene .pass-meta b {font-size:11px}
+ .open-scene .staff-pass {min-height:151px}
+ .open-scene .training-character-title {grid-template-columns:36px minmax(0,1fr) minmax(0,28%);gap:8px}
+ .open-scene .training-character-title>:is(img,canvas) {width:35px;height:39px}
+ .open-scene .battle-d .item-buttons button {grid-template-columns:23px minmax(0,1fr);padding-inline:4px;gap:3px}
+ .open-scene .battle-d .item-buttons img {width:23px;height:26px}
+ .open-scene .battle-d .item-buttons button>span {font-size:11px}
+ .open-scene #shop.summon-stage-shop .sheet-head {gap:6px}
+ .open-scene #shop.summon-stage-shop h2 {font-size:19px}
+}
+
+.open-scene #hiring-story [data-hire-close] {width:44px;min-width:44px;height:44px;min-height:44px;padding:12px;border:0;border-radius:50%;background:#ffffffc9;display:grid;place-items:center;flex-shrink:0}
+.open-scene .scene-close-icon {width:20px;height:20px;object-fit:contain}
+
+/* Expanded reports must keep wide data tables inside their own scroller. */
+.open-scene .scene-report-ledger,.open-scene .scene-report-ledger :is(details,#run-analysis,.analysis-scroll) {min-width:0;max-width:100%}
+.open-scene .analysis-scroll {overflow-x:auto;overscroll-behavior-x:contain}
+.open-scene .scene-report-ledger p {overflow-wrap:anywhere}
+/* Translation and large type can add rows without colliding with fixed copy. */
+.open-scene .brand {min-width:0;max-width:100%;overflow:hidden}
+.open-scene .brand>span:last-child {display:block;min-width:0;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;overflow-wrap:anywhere;line-height:1.35}
+.open-scene .brand>.profile-mark {display:none}
+.open-scene .app-header {min-height:52px;background:linear-gradient(#fff4c3 75%,#fff4c300)}
+.open-scene .wallet {white-space:nowrap;min-width:0}
+.open-scene #lobby {height:calc(100% - 52px);margin-top:52px;padding-top:6px;scroll-padding-top:60px}
+.open-scene .lobby-art {height:auto;flex:1 0 230px}
+@media(max-height:720px) {.open-scene .lobby-art {flex-basis:146px}}
+.open-scene #tutorial-gobi>div {max-height:calc(100dvh - 28px);overflow-y:auto;min-height:0}
+.open-scene #tutorial-gobi #coach-next {flex-shrink:0}
+.open-scene .battle-d .item-buttons button {grid-template-columns:25px minmax(0,1fr) auto;padding-bottom:8px}
+.open-scene .battle-d .item-buttons b {position:static;align-self:end;white-space:nowrap}
+.open-scene .battle-d .battle-notice:has(#item-hint:not(:empty)) {min-height:56px;flex-shrink:0}
+.open-scene .battle-d #item-hint {position:static;min-width:0;max-width:100%;font-size:12px;line-height:1.4}
+.open-scene .battle-d #item-hint:not(:empty) {grid-column:1 / -1;grid-row:2;width:100%;height:auto;max-height:none;min-height:0;overflow:visible;white-space:normal;word-break:normal;text-align:left;color:#5e6e8d;margin:0;padding:4px 8px 6px}
+.open-scene #recruit-dialog {height:min(580px,calc(100dvh - 32px));max-height:calc(100dvh - 32px);min-height:0;outline:0}
+.open-scene #recruit-dialog #recruit-result {flex:1 1 auto}
+.open-scene #recruit-dialog .recruit-reveal {gap:8px;max-height:calc(100dvh - 72px)}
+.open-scene #recruit-dialog .ref-recruit-actions {margin-top:12px}
