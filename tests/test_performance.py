@@ -12,7 +12,7 @@ class PerformanceTests(unittest.TestCase):
         a.wait_for_timeout(400);return a
     def test_mobile_default_mode_toggle_persists(self):
         a=self.open(390,844);self.assertEqual(a.evaluate('GamePerformance.fps'),30)
-        a.locator('#menu-open').click();a.locator('#power-save-toggle').click();self.assertEqual(a.evaluate('GamePerformance.fps'),60)
+        a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#power-save-toggle').click();self.assertEqual(a.evaluate('GamePerformance.fps'),60)
         a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');self.assertEqual(a.evaluate('GamePerformance.fps'),60)
         a.context.close();a=self.open(1280,900);self.assertEqual(a.evaluate('GamePerformance.fps'),60)
     def test_static_lobby_and_pause_do_not_keep_drawing(self):

@@ -8,7 +8,7 @@ class DiscountTutorialTests(unittest.TestCase):
     open=ui.UsabilityTests.open
     inside=ui.UsabilityTests.inside
     def lesson(self,a):
-        a.locator('#enter-battle').click();a.locator('#promo-skip').click()
+        a.locator('#asset-lobby-host [data-proxy="#enter-battle"]').click();a.locator('#promo-skip').click()
         a.evaluate("TutorialCoach.dismiss();paused=false;for(let i=0;i<5;i++)summon();TutorialCoach.dismiss();wave=3;afterWaveStart();TutorialCoach.dismiss();paused=false;const pair=TutorialCoach.task.pair;merge(pair[0],pair[1]);update(6);TutorialCoach.dismiss();TutorialCoach.dismiss();const failPair=TutorialCoach.task.pair;merge(...failPair);update(6);TutorialCoach.dismiss()")
         self.assertEqual(a.evaluate('DiscountTutorial.snapshot().stage'),'intro')
     def test_real_merge_then_real_discounted_summon(self):
@@ -22,7 +22,7 @@ class DiscountTutorialTests(unittest.TestCase):
         self.assertEqual(a.evaluate('TutorialCoach.task.lesson'),'discount');a.locator('#coach-next').wait_for(state='visible');a.locator('#coach-next').click();self.assertFalse(a.evaluate('TutorialCoach.held()'));self.assertFalse(a.evaluate('summonDiscount'))
     def test_reload_restores_pending_discount_without_duplicate_grant(self):
         a=self.open(390,844);self.lesson(a);a.locator('#coach-next').click();before=a.evaluate('sp')
-        a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.locator('#resume-run').click();a.locator('#coach-next').click()
+        a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.locator('#asset-lobby-host [data-proxy="#resume-run"]').click();a.locator('#coach-next').click()
         self.assertEqual(a.evaluate('sp'),before)
         self.assertEqual(a.evaluate('DiscountTutorial.snapshot().stage'),'summon')
         a.locator('#summon').click();self.assertEqual(a.evaluate('DiscountTutorial.snapshot().stage'),'done')

@@ -3,6 +3,7 @@ import unittest
 import test_usability as ui
 import test_release_smoke as safety
 import test_tactical_duty as tactics
+import test_asset_screens as screens
 from browser_helpers import start_battle, board_point
 
 
@@ -57,4 +58,5 @@ def load_tests(loader, tests, pattern):
     ]:
         suite.addTest(safety.ReleaseSafetyTests(name))
     suite.addTests(loader.loadTestsFromTestCase(tactics.TacticalDutyTests))
+    suite.addTests(loader.loadTestsFromTestCase(screens.AssetScreenTests))
     return suite

@@ -13,7 +13,7 @@ class VisualIssueTests(unittest.TestCase):
         self.assertTrue(a.locator('#tutorial-strip').evaluate('e=>e.scrollHeight<=e.clientHeight+1&&e.scrollWidth<=e.clientWidth+1'))
         self.inside(a,'#summon')
     def test_short_help_keeps_heading_and_close_visible_while_scrolling(self):
-        a=self.open(320,568);a.locator('#menu-open').click();a.locator('#ref-menu-help').click()
+        a=self.open(320,568);a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#ref-menu-help').click()
         self.inside(a,'#info .ui-dialog-header h2');self.inside(a,'#info-close')
         self.assertGreaterEqual(a.locator('#skill-info').evaluate('e=>parseFloat(getComputedStyle(e).fontSize)'),14)
         before=a.locator('#info .ui-dialog-header h2').bounding_box();a.locator('#info > .panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
