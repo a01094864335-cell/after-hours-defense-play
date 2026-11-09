@@ -64,7 +64,7 @@ class ReleaseSafetyTests(unittest.TestCase):
         data = self.page.evaluate('''()=>{
           wave=10;tutorialWon=true;ended=true;runNormal=20;runBoss=1;
           settleRun();const first=meta.coins;settleRun();
-          return {first,second:meta.coins,total:runReward.total,completed:meta.tutorialComplete,pending:!!localStorage.getItem(PENDING_REWARD_SAVE),text:document.querySelector('#result-stats').textContent};
+          return {first,second:meta.coins,total:runReward.total,completed:meta.tutorialComplete,pending:!!localStorage.getItem(PENDING_REWARD_SAVE),text:document.querySelector('#live-result-reward').textContent};
         }''')
         self.assertEqual((data['first'], data['second'], data['total']), (37, 37, 37))
         self.assertTrue(data['completed'])

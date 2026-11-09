@@ -1,0 +1,142 @@
+[
+  {
+    "file": "01-lobby.webp",
+    "label": "로비"
+  },
+  {
+    "file": "02-menu.webp",
+    "label": "메뉴·설정"
+  },
+  {
+    "file": "03-records.webp",
+    "label": "근무 기록"
+  },
+  {
+    "file": "04-training-staff.webp",
+    "label": "직원 훈련"
+  },
+  {
+    "file": "05-roster-staff.webp",
+    "label": "직원 도감"
+  },
+  {
+    "file": "06-shop-pack.webp",
+    "label": "채용팩 상점"
+  },
+  {
+    "file": "07-story-archive.webp",
+    "label": "이야기 목록"
+  },
+  {
+    "file": "08-daily-events.webp",
+    "label": "오늘의 변주"
+  },
+  {
+    "file": "09-help.webp",
+    "label": "도움말"
+  },
+  {
+    "file": "10-training-merc.webp",
+    "label": "지원 훈련"
+  },
+  {
+    "file": "11-roster-merc.webp",
+    "label": "지원 도감"
+  },
+  {
+    "file": "12-staff-detail.webp",
+    "label": "직원 상세"
+  },
+  {
+    "file": "13-merc-detail.webp",
+    "label": "지원 상세"
+  },
+  {
+    "file": "14-roster-locked.webp",
+    "label": "미채용 도감"
+  },
+  {
+    "file": "15-locked-detail.webp",
+    "label": "미채용 상세"
+  },
+  {
+    "file": "16-shop-items.webp",
+    "label": "아이템 상점"
+  },
+  {
+    "file": "17-recruit-reveal.webp",
+    "label": "채용 결과"
+  },
+  {
+    "file": "18-deck.webp",
+    "label": "편성"
+  },
+  {
+    "file": "19-save-transfer.webp",
+    "label": "저장 백업"
+  },
+  {
+    "file": "20-story-opening.webp",
+    "label": "이야기 시작"
+  },
+  {
+    "file": "21-battle-preparation.webp",
+    "label": "전투 준비"
+  },
+  {
+    "file": "22-equipment.webp",
+    "label": "장비"
+  },
+  {
+    "file": "23-battle-running.webp",
+    "label": "전투 진행"
+  },
+  {
+    "file": "24-pause.webp",
+    "label": "일시정지"
+  },
+  {
+    "file": "25-leave.webp",
+    "label": "중도 종료"
+  },
+  {
+    "file": "26-guide.webp",
+    "label": "연수 안내"
+  },
+  {
+    "file": "27-bonus.webp",
+    "label": "정비 보너스"
+  },
+  {
+    "file": "28-bonus-target.webp",
+    "label": "보너스 대상"
+  },
+  {
+    "file": "29-boss-warning.webp",
+    "label": "군단장 예고"
+  },
+  {
+    "file": "30-story-daily.webp",
+    "label": "성 이야기"
+  },
+  {
+    "file": "31-story-opening-last.webp",
+    "label": "이야기 마지막"
+  },
+  {
+    "file": "32-result.webp",
+    "label": "게임 종료"
+  },
+  {
+    "file": "33-starter-choice.webp",
+    "label": "수료 선물 · 직원 선택"
+  },
+  {
+    "file": "34-staff-trial.webp",
+    "label": "직원 능력 체험"
+  },
+  {
+    "file": "35-hiring-story.webp",
+    "label": "입사 이야기"
+  }
+]

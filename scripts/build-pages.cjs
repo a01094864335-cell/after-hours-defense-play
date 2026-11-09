@@ -10,6 +10,8 @@ files.add('roomy-buttons.css');
 files.add('play-design.css');
 files.add('detail-ui.css');
 files.add('ui.css');
+files.add('gameworld.css');
+files.add('gameworld-ui.js');
 files.add('tutorial-coach.js');
 files.add('tactical-duty.js');
 files.add('battle-presentation.js');
