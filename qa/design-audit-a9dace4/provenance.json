@@ -1,0 +1,10 @@
+{
+  "capturedAt": "2026-11-09T07:27:48.441544+00:00",
+  "deployedCommit": "a9dace4928b3894b1ebd4168d9b38830a0923470",
+  "runtimeFiles": 755,
+  "trackedTreeMatchesDeployedMain": true,
+  "directLiveCapture": false,
+  "localRuntimePort": 8016,
+  "liveNetworkResult": "ERR_TUNNEL_CONNECTION_FAILED",
+  "productionCodeChanged": false
+}

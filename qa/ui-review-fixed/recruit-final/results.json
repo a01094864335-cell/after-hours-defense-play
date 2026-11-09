@@ -1,0 +1,1156 @@
+{
+  "results": [
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 11,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "320x568-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x640-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        640
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-duplicate-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-new-staff-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-recruit-new-support-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko100",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-ko130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 6,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 8,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-duplicate",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-staff",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "430x932-en-real130",
+      "case": "recruit-new-support",
+      "family": "recruit",
+      "variant": "closed",
+      "position": "bottom-0",
+      "openDetails": [],
+      "scope": "#recruit-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 11,
+        "textRanges": 7,
+        "images": 1,
+        "buttons": 2
+      },
+      "viewport": [
+        430,
+        932
+      ],
+      "screenshot": null
+    }
+  ],
+  "failures": [],
+  "candidates": []
+}

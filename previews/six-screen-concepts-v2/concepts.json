@@ -1,0 +1,44 @@
+{
+  "type": "image-design-proposals",
+  "implemented": false,
+  "runtimeReference": "qa/gameworld/after/390",
+  "boards": [
+    {
+      "file": "01-02-lobby-battle.png",
+      "source": "/workspace/generated_images/exec-3a4239f3-bcc3-43b3-99d9-be1c5a65b52b.png",
+      "title": "01 로비 · 02 전투",
+      "direction": "직원들이 생활하는 성 내부와 명확한 당직 시작 동선 / 5×3 보드와 스킬·소환·아이템 순서"
+    },
+    {
+      "file": "03-04-result-roster.png",
+      "source": "/workspace/generated_images/exec-8e6a0d3f-a76a-4949-8aff-7e8dbff27b11.png",
+      "title": "03 게임 종료 · 04 직원 도감",
+      "direction": "봉급 보고서로 실제 보상을 강조 / 인사기록부의 초상 카드와 5명 편성"
+    },
+    {
+      "file": "05-06-training-shop.png",
+      "source": "/workspace/generated_images/exec-6227e269-a62d-463a-b8da-7471bf71a794.png",
+      "title": "05 훈련소 · 06 상점",
+      "direction": "직원 전체 성장과 해금 단계 / 대소동 채용 무대와 실제 확률·보장·구매"
+    }
+  ],
+  "referencePatterns": [
+    "명확한 시작 동선",
+    "북적이는 거점",
+    "캐릭터 중심 구성",
+    "편성 가시성",
+    "수집과 그룹 성장"
+  ],
+  "sampleValues": {
+    "coins": 240,
+    "staffTrainingLevel": 1,
+    "nextTrainingCost": 8,
+    "packCost": 120,
+    "packOrdinaryRate": 90,
+    "packSupportRate": 10,
+    "recruitPoints": 2,
+    "supportGuarantee": "1/10",
+    "battleGrid": "5x3",
+    "partySize": 5
+  }
+}

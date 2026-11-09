@@ -1,0 +1,1069 @@
+{
+  "results": [
+    {
+      "matrix": "390x844-ko100",
+      "case": "save-transfer",
+      "family": "backup",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#save-transfer-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 16,
+        "textRanges": 9,
+        "images": 1,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-save-transfer-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 5
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-bonus-wave-5-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 29,
+        "textRanges": 18,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 22,
+        "textRanges": 13,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-bonus-wave-15-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-guard",
+          "box": {
+            "x": 30,
+            "y": 778.53125,
+            "left": 30,
+            "top": 778.53125,
+            "right": 360,
+            "bottom": 842.21875,
+            "width": 330,
+            "height": 63.6875
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 18,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-life",
+          "box": {
+            "x": 30,
+            "y": 80.359375,
+            "left": 30,
+            "top": 80.359375,
+            "right": 360,
+            "bottom": 140.359375,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 16,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 21,
+        "textRanges": 12,
+        "images": 1,
+        "buttons": 7
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-bonus-wave-20-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-guard",
+          "box": {
+            "x": 30,
+            "y": 778.53125,
+            "left": 30,
+            "top": 778.53125,
+            "right": 360,
+            "bottom": 842.21875,
+            "width": 330,
+            "height": 63.6875
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 18,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-sp",
+          "box": {
+            "x": 30,
+            "y": 68.359375,
+            "left": 30,
+            "top": 68.359375,
+            "right": 360,
+            "bottom": 128.359375,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 16,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko100",
+      "case": "hiring-ghost-courier-0",
+      "family": "hiring-reader",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#hiring-story",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 18,
+        "textRanges": 8,
+        "images": 4,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko100-hiring-ghost-courier-0-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "save-transfer",
+      "family": "backup",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#save-transfer-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 16,
+        "textRanges": 11,
+        "images": 1,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-save-transfer-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 10,
+        "images": 1,
+        "buttons": 5
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-bonus-wave-5-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-reposition",
+          "box": {
+            "x": 30,
+            "y": 786.296875,
+            "left": 30,
+            "top": 786.296875,
+            "right": 360,
+            "bottom": 834.6875,
+            "width": 330,
+            "height": 48.390625
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 29,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 29,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 22,
+        "textRanges": 13,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-bonus-wave-15-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-economy",
+          "box": {
+            "x": 30,
+            "y": 748.296875,
+            "left": 30,
+            "top": 748.296875,
+            "right": 360,
+            "bottom": 823.296875,
+            "width": 330,
+            "height": 75
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-life",
+          "box": {
+            "x": 30,
+            "y": 38.859375,
+            "left": 30,
+            "top": 38.859375,
+            "right": 360,
+            "bottom": 98.859375,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 14,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 21,
+        "textRanges": 12,
+        "images": 1,
+        "buttons": 7
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-ko130-bonus-wave-20-closed-top.png"
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-economy",
+          "box": {
+            "x": 30,
+            "y": 748.296875,
+            "left": 30,
+            "top": 748.296875,
+            "right": 360,
+            "bottom": 823.296875,
+            "width": 330,
+            "height": 75
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-ko130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "보상 규칙",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-sp",
+          "box": {
+            "x": 30,
+            "y": 26.859375,
+            "left": 30,
+            "top": 26.859375,
+            "right": 360,
+            "bottom": 86.859375,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 84,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 710
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 15,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "save-transfer",
+      "family": "backup",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#save-transfer-dialog",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 16,
+        "textRanges": 13,
+        "images": 1,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-save-transfer-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 19,
+        "textRanges": 12,
+        "images": 1,
+        "buttons": 5
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-bonus-wave-5-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-guard",
+          "box": {
+            "x": 30,
+            "y": 754.578125,
+            "left": 30,
+            "top": 754.578125,
+            "right": 360,
+            "bottom": 829.578125,
+            "width": 330,
+            "height": 75
+          },
+          "clip": {
+            "left": 28,
+            "top": 118.34375,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 675.65625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 29,
+        "textRanges": 18,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-5",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 29,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 22,
+        "textRanges": 15,
+        "images": 1,
+        "buttons": 8
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-bonus-wave-15-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-chain",
+          "box": {
+            "x": 30,
+            "y": 724.578125,
+            "left": 30,
+            "top": 724.578125,
+            "right": 360,
+            "bottom": 799.578125,
+            "width": 330,
+            "height": 75
+          },
+          "clip": {
+            "left": 28,
+            "top": 118.34375,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 675.65625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-15",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-merge",
+          "box": {
+            "x": 30,
+            "y": 107.140625,
+            "left": 30,
+            "top": 107.140625,
+            "right": 360,
+            "bottom": 167.140625,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 118.34375,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 675.65625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 32,
+        "textRanges": 15,
+        "images": 1,
+        "buttons": 11
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "closed",
+      "position": "top",
+      "openDetails": [],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 21,
+        "textRanges": 14,
+        "images": 1,
+        "buttons": 7
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": "screens/390x844-en-real130-bonus-wave-20-closed-top.png"
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "top",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#build-chain",
+          "box": {
+            "x": 30,
+            "y": 724.578125,
+            "left": 30,
+            "top": 724.578125,
+            "right": 360,
+            "bottom": 799.578125,
+            "width": 330,
+            "height": 75
+          },
+          "clip": {
+            "left": 28,
+            "top": 118.34375,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 675.65625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 17,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    },
+    {
+      "matrix": "390x844-en-real130",
+      "case": "bonus-wave-20",
+      "family": "bonus",
+      "variant": "expanded",
+      "position": "bottom-0",
+      "openDetails": [
+        "View Additional Staff Information",
+        "build-choices"
+      ],
+      "scope": "#perk",
+      "issues": [],
+      "expected": [
+        {
+          "type": "scroll-boundary-partial",
+          "a": "#perk-life",
+          "box": {
+            "x": 30,
+            "y": 95.140625,
+            "left": 30,
+            "top": 95.140625,
+            "right": 360,
+            "bottom": 155.140625,
+            "width": 330,
+            "height": 60
+          },
+          "clip": {
+            "left": 28,
+            "top": 118.34375,
+            "right": 362,
+            "bottom": 794,
+            "width": 334,
+            "height": 675.65625
+          }
+        }
+      ],
+      "grids": [],
+      "checked": {
+        "elements": 31,
+        "textRanges": 16,
+        "images": 1,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "screenshot": null
+    }
+  ],
+  "failures": [],
+  "candidates": []
+}

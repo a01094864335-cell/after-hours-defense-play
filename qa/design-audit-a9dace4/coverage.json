@@ -1,0 +1,524 @@
+{
+  "meta": {
+    "commit": "a9dace4928b3894b1ebd4168d9b38830a0923470",
+    "source": "배포된 main 커밋과 소스가 동일함을 git diff로 확인한 뒤 릴리스 빌더로 재현한 로컬 캡처",
+    "liveDirectCapture": false,
+    "liveAccessError": "ERR_TUNNEL_CONNECTION_FAILED / 작업 환경 네트워크 제한",
+    "screens": 38,
+    "captures": 102,
+    "viewports": {
+      "320": [
+        320,
+        568
+      ],
+      "390": [
+        390,
+        844
+      ],
+      "390-short": [
+        390,
+        640
+      ],
+      "430": [
+        430,
+        932
+      ]
+    },
+    "scope": "디자인 검토만 수행. 게임 코드와 배포는 변경하지 않음."
+  },
+  "states": [
+    {
+      "id": 0,
+      "title": "신규 유저 로비",
+      "path": "390/00-fresh-lobby.png",
+      "findings": [
+        7,
+        8
+      ],
+      "variants": {
+        "390": "390/00-fresh-lobby.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 1,
+      "title": "로비·수료 선물",
+      "path": "390/01-lobby.png",
+      "findings": [
+        1
+      ],
+      "variants": {
+        "320": "320/01-lobby.png",
+        "390": "390/01-lobby.png",
+        "390-short": "390-short/01-lobby.png",
+        "430": "430/01-lobby.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 2,
+      "title": "전투 기본",
+      "path": "390/02-battle.png",
+      "findings": [],
+      "variants": {
+        "320": "320/02-battle.png",
+        "390": "390/02-battle.png",
+        "390-short": "390-short/02-battle.png",
+        "430": "430/02-battle.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 3,
+      "title": "게임 종료",
+      "path": "390/03-result.png",
+      "findings": [
+        15
+      ],
+      "variants": {
+        "320": "320/03-result.png",
+        "390": "390/03-result.png",
+        "390-short": "390-short/03-result.png",
+        "430": "430/03-result.png"
+      },
+      "scrolls": [
+        "390/03-result-scroll-0-1.png"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "채용 직원 도감",
+      "path": "390/04-roster.png",
+      "findings": [
+        4,
+        7,
+        12
+      ],
+      "variants": {
+        "320": "320/04-roster.png",
+        "390": "390/04-roster.png",
+        "390-short": "390-short/04-roster.png",
+        "430": "430/04-roster.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 5,
+      "title": "직원 훈련",
+      "path": "390/05-training.png",
+      "findings": [
+        3,
+        9
+      ],
+      "variants": {
+        "320": "320/05-training.png",
+        "390": "390/05-training.png",
+        "390-short": "390-short/05-training.png",
+        "430": "430/05-training.png"
+      },
+      "scrolls": [
+        "390/05-training-scroll-0-1.png",
+        "390/05-training-scroll-0-2.png",
+        "390/05-training-scroll-0-3.png"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "채용팩 상점",
+      "path": "390/06-shop.png",
+      "findings": [
+        3,
+        10
+      ],
+      "variants": {
+        "320": "320/06-shop.png",
+        "390": "390/06-shop.png",
+        "390-short": "390-short/06-shop.png",
+        "430": "430/06-shop.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 7,
+      "title": "직원 상세",
+      "path": "390/07-staff-detail.png",
+      "findings": [],
+      "variants": {
+        "390": "390/07-staff-detail.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 8,
+      "title": "근무 명단 편성",
+      "path": "390/08-deck.png",
+      "findings": [
+        12
+      ],
+      "variants": {
+        "390": "390/08-deck.png"
+      },
+      "scrolls": [
+        "390/08-deck-scroll-0-1.png"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "지원 훈련",
+      "path": "390/09-support-training.png",
+      "findings": [
+        9
+      ],
+      "variants": {
+        "390": "390/09-support-training.png"
+      },
+      "scrolls": [
+        "390/09-support-training-scroll-0-1.png"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "개별 아이템 상점",
+      "path": "390/10-items.png",
+      "findings": [
+        2
+      ],
+      "variants": {
+        "320": "320/10-items.png",
+        "390": "390/10-items.png",
+        "390-short": "390-short/10-items.png",
+        "430": "430/10-items.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 11,
+      "title": "채용 결과",
+      "path": "390/11-recruit.png",
+      "findings": [
+        11
+      ],
+      "variants": {
+        "390": "390/11-recruit.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 12,
+      "title": "오늘의 변주",
+      "path": "390/12-daily.png",
+      "findings": [
+        14
+      ],
+      "variants": {
+        "390": "390/12-daily.png"
+      },
+      "scrolls": [
+        "390/12-daily-scroll-0-1.png",
+        "390/12-daily-scroll-0-2.png"
+      ]
+    },
+    {
+      "id": 13,
+      "title": "설정 메뉴",
+      "path": "390/13-menu.png",
+      "findings": [
+        14
+      ],
+      "variants": {
+        "390": "390/13-menu.png"
+      },
+      "scrolls": [
+        "390/13-menu-scroll-0-1.png"
+      ]
+    },
+    {
+      "id": 14,
+      "title": "기록·편성 보관함",
+      "path": "390/14-records.png",
+      "findings": [],
+      "variants": {
+        "390": "390/14-records.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 15,
+      "title": "이야기 도감",
+      "path": "390/15-stories.png",
+      "findings": [],
+      "variants": {
+        "390": "390/15-stories.png"
+      },
+      "scrolls": [
+        "390/15-stories-scroll-0-1.png",
+        "390/15-stories-scroll-0-2.png",
+        "390/15-stories-scroll-0-3.png",
+        "390/15-stories-scroll-0-4.png",
+        "390/15-stories-scroll-0-5.png",
+        "390/15-stories-scroll-0-6.png"
+      ]
+    },
+    {
+      "id": 16,
+      "title": "프롤로그",
+      "path": "390/16-prologue.png",
+      "findings": [
+        16
+      ],
+      "variants": {
+        "390": "390/16-prologue.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 17,
+      "title": "직원 장비",
+      "path": "390/17-equipment.png",
+      "findings": [
+        14
+      ],
+      "variants": {
+        "390": "390/17-equipment.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 18,
+      "title": "근무 안내",
+      "path": "390/18-info.png",
+      "findings": [
+        16
+      ],
+      "variants": {
+        "390": "390/18-info.png"
+      },
+      "scrolls": [
+        "390/18-info-scroll-0-1.png"
+      ]
+    },
+    {
+      "id": 19,
+      "title": "당직 종료 확인",
+      "path": "390/19-leave.png",
+      "findings": [],
+      "variants": {
+        "390": "390/19-leave.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 20,
+      "title": "일시정지",
+      "path": "390/20-pause.png",
+      "findings": [],
+      "variants": {
+        "390": "390/20-pause.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 21,
+      "title": "저장 백업·복원",
+      "path": "390/21-save-transfer.png",
+      "findings": [
+        16
+      ],
+      "variants": {
+        "390": "390/21-save-transfer.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 22,
+      "title": "미채용 목록",
+      "path": "390/22-unhired.png",
+      "findings": [
+        12
+      ],
+      "variants": {
+        "390": "390/22-unhired.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 23,
+      "title": "미채용 상세",
+      "path": "390/23-unhired-detail.png",
+      "findings": [],
+      "variants": {
+        "390": "390/23-unhired-detail.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 24,
+      "title": "지원 목록·미보유",
+      "path": "390/24-supports.png",
+      "findings": [],
+      "variants": {
+        "390": "390/24-supports.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 25,
+      "title": "미보유 지원 상세",
+      "path": "390/25-support-detail.png",
+      "findings": [],
+      "variants": {
+        "390": "390/25-support-detail.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 26,
+      "title": "수료 선물",
+      "path": "390/26-starter.png",
+      "findings": [
+        14
+      ],
+      "variants": {
+        "390": "390/26-starter.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 27,
+      "title": "직원 능력·연습",
+      "path": "390/27-trial.png",
+      "findings": [],
+      "variants": {
+        "390": "390/27-trial.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 28,
+      "title": "중복 채용 결과",
+      "path": "390/28-recruit-result.png",
+      "findings": [
+        11
+      ],
+      "variants": {
+        "390": "390/28-recruit-result.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 29,
+      "title": "당직 보너스",
+      "path": "390/29-bonus.png",
+      "findings": [
+        13
+      ],
+      "variants": {
+        "390": "390/29-bonus.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 30,
+      "title": "전투·스킬 선택",
+      "path": "390/30-battle-selected.png",
+      "findings": [
+        4,
+        5,
+        6
+      ],
+      "variants": {
+        "320": "320/30-battle-selected.png",
+        "390": "390/30-battle-selected.png",
+        "390-short": "390-short/30-battle-selected.png",
+        "430": "430/30-battle-selected.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 31,
+      "title": "전투·15칸 가득 참",
+      "path": "390/31-battle-dense.png",
+      "findings": [
+        6
+      ],
+      "variants": {
+        "320": "320/31-battle-dense.png",
+        "390": "390/31-battle-dense.png",
+        "390-short": "390-short/31-battle-dense.png",
+        "430": "430/31-battle-dense.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 32,
+      "title": "첫 전투 튜토리얼",
+      "path": "390/32-first-tutorial.png",
+      "findings": [
+        5
+      ],
+      "variants": {
+        "390": "390/32-first-tutorial.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 33,
+      "title": "로비·지원 보유",
+      "path": "390/33-lobby-support.png",
+      "findings": [
+        8
+      ],
+      "variants": {
+        "390": "390/33-lobby-support.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 34,
+      "title": "지원 목록·일부 보유",
+      "path": "390/34-supports-owned.png",
+      "findings": [
+        12
+      ],
+      "variants": {
+        "390": "390/34-supports-owned.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 35,
+      "title": "보유 지원 상세",
+      "path": "390/35-support-owned-detail.png",
+      "findings": [],
+      "variants": {
+        "390": "390/35-support-owned-detail.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 36,
+      "title": "입사 이야기",
+      "path": "390/36-hiring-story.png",
+      "findings": [
+        7,
+        16
+      ],
+      "variants": {
+        "390": "390/36-hiring-story.png"
+      },
+      "scrolls": []
+    },
+    {
+      "id": 37,
+      "title": "훈련 효과 펼침",
+      "path": "390/37-training-expanded.png",
+      "findings": [
+        9
+      ],
+      "variants": {
+        "390": "390/37-training-expanded.png"
+      },
+      "scrolls": []
+    }
+  ]
+}

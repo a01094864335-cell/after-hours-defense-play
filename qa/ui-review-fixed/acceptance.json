@@ -1,0 +1,78 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "checks": [
+      "#menu-open visible",
+      "#enter-battle visible",
+      "#roster-open visible",
+      "#shop-open visible",
+      "#buy-staff-pack visible",
+      "shop no horizontal scroll",
+      "price contrast 6.39",
+      "roster tabs outside scroller",
+      "#training-upgrade visible",
+      "first training row visible",
+      "support training context"
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      640
+    ],
+    "checks": [
+      "#menu-open visible",
+      "#enter-battle visible",
+      "#roster-open visible",
+      "#shop-open visible",
+      "#buy-staff-pack visible",
+      "shop no horizontal scroll",
+      "price contrast 6.39",
+      "roster tabs outside scroller",
+      "#training-upgrade visible",
+      "first training row visible",
+      "support training context"
+    ]
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "checks": [
+      "#menu-open visible",
+      "#enter-battle visible",
+      "#roster-open visible",
+      "#shop-open visible",
+      "#buy-staff-pack visible",
+      "shop no horizontal scroll",
+      "price contrast 6.39",
+      "roster tabs outside scroller",
+      "#training-upgrade visible",
+      "first training row visible",
+      "support training context"
+    ]
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "checks": [
+      "#menu-open visible",
+      "#enter-battle visible",
+      "#roster-open visible",
+      "#shop-open visible",
+      "#buy-staff-pack visible",
+      "shop no horizontal scroll",
+      "price contrast 6.39",
+      "roster tabs outside scroller",
+      "#training-upgrade visible",
+      "first training row visible",
+      "support training context"
+    ]
+  }
+]

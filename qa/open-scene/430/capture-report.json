@@ -1,0 +1,122 @@
+{
+  "errors": [],
+  "missing": [],
+  "report": [
+    {
+      "name": "01-lobby",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "04-roster",
+      "dialog": "roster",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "07-staff-detail",
+      "dialog": "roster",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "08-deck",
+      "dialog": "deck",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "05-training",
+      "dialog": "training-dialog",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "09-support-training",
+      "dialog": "training-dialog",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "06-shop",
+      "dialog": "shop",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "10-items",
+      "dialog": "shop",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "11-recruit",
+      "dialog": "hiring-story",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "12-daily",
+      "dialog": "daily-events-dialog",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "13-menu",
+      "dialog": "menu",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "14-records",
+      "dialog": "journey-dialog",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "15-stories",
+      "dialog": "story-archive",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "16-prologue",
+      "dialog": "promo",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "02-battle",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "20-pause",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "17-equipment",
+      "dialog": "equipment",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "18-info",
+      "dialog": "info",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "19-leave",
+      "dialog": "leave",
+      "overflow": false,
+      "buttons": []
+    },
+    {
+      "name": "03-result",
+      "overflow": false,
+      "buttons": []
+    }
+  ]
+}

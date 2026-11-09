@@ -1,0 +1,32 @@
+[
+  {
+    "type": "story-cover-crop",
+    "decision": "의도된 썸네일 크롭",
+    "reason": "원본 img 사각형은 카드보다 길지만 .story-cover의 overflow:hidden 안에서 표시되어 실제 픽셀은 카드 안에 있음."
+  },
+  {
+    "type": "boss-warning-over-message",
+    "decision": "의도된 안내 교체",
+    "reason": "불투명 보스 안내 배경이 원래 메시지를 가린다. 7종의 캡처에서 두 문구가 동시에 보이지 않음을 확인."
+  },
+  {
+    "type": "skill-cutin-rays",
+    "decision": "의도된 컷인 광선 크롭",
+    "reason": "광선이 컨테이너보다 크지만 overflow:hidden으로 가려지는 비상호작용 연출. 상점의 실제 가로 스크롤과 다름."
+  },
+  {
+    "type": "scroll-boundary-partial",
+    "decision": "정상적인 스크롤 경계",
+    "reason": "목록 행이나 선물 버튼 일부가 스크롤 창 경계에 걸리는 것은 잘림으로 단정하지 않음. 스크롤 끝에서 도달 가능 여부를 별도 검사."
+  },
+  {
+    "type": "scene-backplate",
+    "decision": "의도된 장면 위 메뉴",
+    "reason": "배경 그림 위에 메뉴 색 면을 얹는 구성 자체는 결함이 아님. 읽힘·얼굴 가림 문제는 기존 D08에 유지."
+  },
+  {
+    "type": "king-full-screen",
+    "decision": "의도된 마왕 전체 화면 연출",
+    "reason": "뒤 보드와 마왕의 화면 연출은 의도된 중첩으로 분리. 평상시 직원 대기 문구가 다른 행 캐릭터에 겹치는 L02와 구분."
+  }
+]
