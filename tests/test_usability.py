@@ -31,7 +31,7 @@ class UsabilityTests(unittest.TestCase):
         self.assertGreaterEqual(b['x'],0,selector);self.assertLessEqual(b['x']+b['width'],page.viewport_size['width']+1,selector)
     def test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible(self):
         for w,h in [(320,568),(360,640),(390,844)]:
-            a=self.open(w,h);a.evaluate('saveChange(d=>d.coins=120);renderMeta()');a.locator('#shop-open').click();a.locator('#buy-staff-pack').click()
+            a=self.open(w,h);a.evaluate('saveChange(d=>d.coins=120);renderMeta()');a.locator('#asset-lobby-host [data-proxy="#shop-open"]').click();a.locator('#buy-staff-pack').click()
             if a.locator('#hiring-story[open]').count():
                 self.assertTrue(a.locator('#hiring-story').evaluate('e=>e.contains(document.activeElement)'))
                 a.locator('[data-hire-close]').click()
@@ -47,8 +47,8 @@ class UsabilityTests(unittest.TestCase):
             size=a.locator('#sp').evaluate('(e)=>({w:e.scrollWidth,c:e.clientWidth,h:e.getBoundingClientRect().height,line:parseFloat(getComputedStyle(e).lineHeight)})')
             self.assertLessEqual(size['h'],size['line']+1);self.inside(a,'#summon');self.inside(a,'#upgrade-open');a.context.close()
     def test_short_roster_shows_three_complete_cards(self):
-        a=self.open(320,568);a.locator('#roster-open').click()
-        count=a.locator('#roster-list').evaluate('(e)=>{const r=e.getBoundingClientRect();return [...e.children].filter(c=>{const b=c.getBoundingClientRect();return b.top>=r.top&&b.bottom<=r.bottom}).length}')
+        a=self.open(320,568);a.locator('#asset-lobby-host [data-proxy="#roster-open"]').click()
+        count=a.locator('#asset-roster-host .r-scroll').evaluate('(e)=>{const r=e.getBoundingClientRect();return [...e.querySelectorAll(".r-card")].filter(c=>{const b=c.getBoundingClientRect();return b.top>=r.top&&b.bottom<=r.bottom}).length}')
         self.assertGreaterEqual(count,3)
     def test_equipment_context_and_training_context_survive_scrolling(self):
         a=self.open(320,568);enter_preparation(a);a.locator('#upgrade-open').click()
@@ -73,7 +73,7 @@ class UsabilityTests(unittest.TestCase):
         }""")
         self.assertTrue(any('루비' in text for text in labels))
         self.assertTrue(any('화염 돌파' in text for text in labels))
-        a.locator('#battle-back').click();a.locator('#menu-open').click();a.locator('#ref-menu-help').click()
+        a.locator('#battle-back').click();a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#ref-menu-help').click()
         a.locator('.boss-guide summary').click()
         self.assertIn('루비',a.locator('#boss-guide-list').inner_text())
         self.assertEqual(a.locator('#boss-guide-list .boss-counter').count(),7)

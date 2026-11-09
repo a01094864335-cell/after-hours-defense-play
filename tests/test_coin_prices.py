@@ -14,6 +14,6 @@ class CoinPriceTests(unittest.TestCase):
         self.assertEqual(a.evaluate('({coins:meta.coins,items:meta.items,owned:meta.owned})'),expected)
         a.evaluate("buyMerc('ward');buyMerc('ward')");self.assertEqual(a.evaluate('meta.coins'),780)
     def test_insufficient_pack_balance_and_displayed_price_agree(self):
-        a=self.open(320,568);a.evaluate('saveChange(d=>d.coins=119);renderMeta()');a.locator('#shop-open').click()
+        a=self.open(320,568);a.evaluate('saveChange(d=>d.coins=119);renderMeta()');a.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
         self.assertIn('120 코인',a.locator('#buy-staff-pack').inner_text());self.assertTrue(a.locator('#buy-staff-pack').is_disabled())
         a.evaluate('buyStaffPack()');self.assertEqual(a.evaluate('meta.coins'),119)

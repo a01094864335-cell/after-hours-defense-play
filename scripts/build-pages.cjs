@@ -38,6 +38,12 @@ files.add('assets/ui-b/gallery.html');
 files.add('assets/ui-b/manifest.json');
 for(const name of fs.readdirSync(path.join(root,'assets/ui-b')))if(name.endsWith('.png')||name.endsWith('.svg'))files.add('assets/ui-b/'+name);
 for(const dir of fs.readdirSync(path.join(root,'assets/castle-stories'))){const p=path.join(root,'assets/castle-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/castle-stories/'+dir+'/'+name);}
+// Ship only the two approved screen runtimes; keep source galleries and QA out.
+for(const [dir,name] of [['asset-lobby-20261109','lobby'],['asset-roster-20261109','roster']]){
+ const base='previews/'+dir;
+ for(const ext of ['css','js'])files.add(base+'/'+name+'.'+ext);
+ for(const file of fs.readdirSync(path.join(root,base,'assets')))if(/\.(webp|ttf|txt)$/.test(file))files.add(base+'/assets/'+file);
+}
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const revision=process.env.GITHUB_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 fs.mkdirSync(out,{recursive:true});let html=fs.readFileSync(path.join(root,'index.html'),'utf8');

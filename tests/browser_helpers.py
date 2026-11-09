@@ -22,7 +22,7 @@ def dismiss_coach(page, touch=False):
 
 def enter_preparation(page, touch=False):
     action = 'tap' if touch else 'click'
-    getattr(page.locator('#enter-battle'), action)()
+    getattr(page.locator('#asset-lobby-host [data-proxy="#enter-battle"]'), action)()
     getattr(page.locator('#promo-skip'), action)()
     dismiss_coach(page, touch)
 

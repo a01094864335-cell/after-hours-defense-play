@@ -18,7 +18,7 @@ class TacticalDutyTests(unittest.TestCase):
         page = self.normal()
         errors = []
         page.on('pageerror', lambda error: errors.append(str(error)))
-        page.locator('#starter-choice-open').click()
+        page.locator('#asset-lobby-host [data-proxy="#starter-choice-open"]').click()
         page.locator('#starter-options button').first.click()
         before = page.evaluate('({wallet:GameStorage.getItem(META_KEY),run:GameStorage.getItem(RUN_SAVE)})')
         page.locator('#trial-play').click()
@@ -33,7 +33,7 @@ class TacticalDutyTests(unittest.TestCase):
 
     def test_planning_move_and_strategy_survive_resume(self):
         page = self.normal()
-        page.locator('#enter-battle').click()
+        page.locator('#asset-lobby-host [data-proxy="#enter-battle"]').click()
         page.locator('#promo-skip').click()
         for _ in range(5):
             page.locator('#summon').click()
@@ -52,7 +52,7 @@ class TacticalDutyTests(unittest.TestCase):
         page.locator('#build-chain').click()
         page.reload()
         page.wait_for_function('GameSession.canWrite()')
-        page.locator('#resume-run').click()
+        page.locator('#asset-lobby-host [data-proxy="#resume-run"]').click()
         self.assertEqual(page.evaluate('TacticalDuty.snapshot().build'), 'chain')
 
     def test_cashout_keeps_completed_wave_and_pays_once_after_reload(self):
