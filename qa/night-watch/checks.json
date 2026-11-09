@@ -1,0 +1,68 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      360,
+      640
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      375,
+      667
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      740
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "touch_targets": 15,
+    "merge": "passed",
+    "controls": "inside viewport",
+    "reduced_motion": true,
+    "errors": []
+  }
+]
