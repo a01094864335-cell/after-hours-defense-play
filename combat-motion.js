@@ -20,7 +20,7 @@ function drawAmbient() {
   for(let n=0;n<10;n++) {
     const x=30+(n*137)%540, y=20+((n*71-time*5)%520+520)%520;
     ctx.globalAlpha=.15+.14*Math.sin(time+n);
-    pixel(x+Math.sin(time*.6+n)*5,y,2,2,n%2?'#e0c6ff':'#ffe4a0');
+    pixel(x+Math.sin(time*.6+n)*5,y,2,2,n%2?'#9bd7bf':'#ffe4a0');
   }
   ctx.restore();
 }
@@ -70,6 +70,25 @@ function drawMercenary() {
   if(mercGesture.motionState&&!reduce?.matches)spark(352,523,5,'#ffe7b4');ctx.restore();
 }
 function drawMotionEffect(f,t) {
+  if(f.effect==='arrival'||f.effect==='promotion'){
+    const promotion=f.effect==='promotion',calm=reduce?.matches;
+    ctx.save();
+    ctx.globalAlpha=calm ? .55 : (1-t)*.8;
+    ctx.strokeStyle=f.color;ctx.lineWidth=promotion?3:2;
+    const radius=calm?24:14+t*(promotion?35:21);
+    ctx.beginPath();ctx.ellipse(f.x,f.y+15,radius,radius*.32,0,0,Math.PI*2);ctx.stroke();
+    if(!calm){
+      for(let n=0;n<(promotion?8:4);n++){
+        const angle=n*Math.PI*2/(promotion?8:4);
+        spark(f.x+Math.cos(angle)*radius,f.y-10+Math.sin(angle)*radius*.65-t*22,promotion?3:2,f.color);
+      }
+    }
+    if(promotion){
+      ctx.globalAlpha=1-t;ctx.font='bold 16px system-ui';ctx.textAlign='center';ctx.fillStyle='#ffe2a0';
+      ctx.fillText(f.pip+'등급',f.x,f.y-64-(calm?0:t*14));
+    }
+    ctx.restore();return true;
+  }
   if(f.effect==='defeat'){
     const calm=reduce?.matches;
     Motion.draw(ctx,f.sprite,f.x,f.y+12-(calm?0:t*12),f.size*(calm?1:1-t*.15),5,{alpha:1-t});
@@ -85,3 +104,4 @@ function drawMotionEffect(f,t) {
   }
   return false;
 }
+

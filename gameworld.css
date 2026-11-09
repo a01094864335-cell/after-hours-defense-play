@@ -12,12 +12,12 @@
 .gameworld button:active:not(:disabled) { box-shadow:inset 0 2px 5px #0d071866; }
 .gameworld button:disabled { color:#bbaabd; background:linear-gradient(#39303f,#2c2334); border-color:#77617d88; box-shadow:inset 0 1px #ffffff05; }
 .gameworld :is(button,summary,input,textarea,select):focus-visible { outline:2px solid #c2efdf; outline-offset:3px; }
-.gameworld :is(.ui-primary,#enter-battle,#summon,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next) {
+.gameworld :is(.ui-primary,#enter-battle,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next) {
   border-color:#f0d096; color:#392421; background:linear-gradient(#ffe2a0,#dfb264 78%,#bb8649);
   box-shadow:inset 0 0 0 2px #fff2c436,inset 0 -3px #91562b33,0 3px 0 #100a1d80;
   text-shadow:0 1px #fff1c255;
 }
-.gameworld :is(.ui-primary,#enter-battle,#summon,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next):disabled {
+.gameworld :is(.ui-primary,#enter-battle,#result-again,#training-upgrade,#buy-staff-pack,.staff-action,#guide-next,#info-close,#promo-next,#leave-cancel,#save-restore,#pause-continue,#coach-next):disabled {
   color:#cbb8a3; border-color:#9c8062; background:linear-gradient(#625047,#46363f); text-shadow:none;
 }
 .gameworld :is(#reset,#leave-confirm) { background:linear-gradient(#6c3e4e,#42273e); border-color:#ba7b83; color:#ffe0d9; }
@@ -72,29 +72,8 @@
 .gameworld .lobby-links { border-top-color:#d9ad704d; background:#1c1427aa; }
 .gameworld .lobby-links button { background:none; border-color:transparent; box-shadow:none; color:#c6afc8; }
 .gameworld .lobby-links button[aria-current=page] { color:#ffe4ac; border-color:#cfa96b; border-radius:8px; background:linear-gradient(#624354,#38283c); box-shadow:inset 0 0 0 2px #e2b97612; }
-/* Combat: retain D layout/canvas coordinates; make the HUD a jeweled command desk. */
-.gameworld .battle-d { background:#221a30; }
-.gameworld .battle-d .battle-top { background:linear-gradient(#453046,#241b32); border-bottom-color:#c59b66; box-shadow:inset 0 1px #f5d69f15; }
-.gameworld .wave-pill { border-color:#a2816b; background:linear-gradient(#35213e,#1d1728); border-radius:7px; box-shadow:inset 0 0 0 2px #d5ab7112; }
-.gameworld .battle-d .battle-top button { border-color:#9c7a7188; background:linear-gradient(#50384f,#2a2036); border-radius:7px; }
-.gameworld #life { color:#ff9cad; text-shadow:0 0 12px #fa7b9d33; }
-.gameworld .battle-d .battle-notice { background:linear-gradient(100deg,#58434b,#2c2238); border-bottom-color:#bd965f; box-shadow:inset 3px 0 #dcb276; }
-.gameworld .battle-d .battle-alert-icon { border-color:#c5a06f; background:#281d31; }
-.gameworld .battle-d .board-stage::after { content:''; position:absolute; inset:0; pointer-events:none; z-index:4; border:1px solid #caa56d66; box-shadow:inset 0 0 16px #180a2655; }
-.gameworld .battle-stage-meta>span { border-color:#b08c6a88; background:#22172cde; color:#f5dfbd; }
-.gameworld .battle-d .battle-controls { background:linear-gradient(#49364e,#271e33); border-top-color:#d2ac79; box-shadow:inset 0 3px #ffdda010,0 -5px 18px #10091d66; }
-.gameworld .battle-d .skill-row { border-color:#afbd9c; background:linear-gradient(100deg,#425153,#2c2b3b); box-shadow:inset 0 0 0 2px #d4e1b90a; }
-.gameworld #battle-selected-portrait { background:radial-gradient(ellipse,#d5c68d28,transparent 70%); filter:drop-shadow(0 3px 2px #0c091c66); }
-.gameworld #battle-selected-name { color:#fff1d1; }
-.gameworld .battle-d #skill { background:linear-gradient(#d2edcf,#8ab6a2); border-color:#c7daba; color:#243c37; box-shadow:inset 0 0 0 2px #f5ffdc2b; }
-.gameworld .battle-d #skill:disabled { background:#343342; color:#ada8b6; border-color:#727b80; }
-.gameworld .battle-d #summon { background:linear-gradient(#ffe2a0,#d9ae65); color:#382821; border-color:#f2d497; }
-.gameworld .battle-d .summon-row>span { background:linear-gradient(#2b605b,#1c3d43); border-color:#7bb5a6; box-shadow:inset 0 0 0 2px #c4f1cf0a; }
-.gameworld .battle-d #upgrade-open,.gameworld .battle-d .item-buttons button { background:linear-gradient(#49324f,#2b2139); border-color:#9c827a; box-shadow:inset 0 0 0 2px #d5ab770c; }
-.gameworld .battle-d .item-buttons button.active { border-color:#f5d695; outline-color:#ffe1a5; }
-.gameworld .battle-d #boss-warning { border-left-color:#ffb3a9; background:linear-gradient(100deg,#743949,#3c253e); }
-.gameworld #pause-window { border-color:#d4af75; background:radial-gradient(at 50% 0,#79557444,transparent 75%),linear-gradient(#49304f,#261b32); box-shadow:inset 0 0 0 3px #e8c17c12,0 12px 50px #07041088; border-radius:13px; }
-.gameworld #pause-window h2 { color:#ffe3a8; }
+/* Combat uses the latest approved night-watch art and D layout from main.
+   Its authored iron/brass surfaces, arena and mint selection remain authoritative. */
 /* Collection: portrait-led staff cards, selected uniforms, and a dossier identity panel. */
 .gameworld #staff-deck { border-color:#c39b704d; background:linear-gradient(120deg,#59405266,#2b2137); box-shadow:inset 0 0 0 2px #e7bc7710; border-radius:10px; }
 .gameworld .deck-slots button { background:radial-gradient(at 50% 100%,#75544344,#2d2137); border-color:#ad8f6c; border-radius:8px; }
