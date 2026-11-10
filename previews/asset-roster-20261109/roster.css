@@ -1,4 +1,4 @@
-@font-face{font-family:RosterTitle;src:url('../asset-lobby-20261109/assets/BlackHanSans-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:RosterTitle;src:url('../asset-lobby-20261109/assets/BlackHanSans-Regular.woff2') format('woff2');font-display:swap}
 /* The native modal keeps focus, Escape, and existing dossier actions intact. */
 #roster.asset-roster-dialog{position:fixed!important;inset:0!important;margin:auto!important;width:100%!important;max-width:480px!important;height:100dvh!important;max-height:100dvh!important;padding:0!important;border:0!important;border-radius:0!important;background:#f6d6ad!important;box-shadow:0 0 60px #0008;overflow:hidden!important;color:#061b4c}
 #roster.asset-roster-dialog:not(.asset-roster-detail)>.sheet-head,#roster.asset-roster-dialog:not(.asset-roster-detail)>#roster-back,#roster.asset-roster-dialog>#roster-overview{display:none!important}

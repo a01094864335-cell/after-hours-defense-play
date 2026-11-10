@@ -1,4 +1,4 @@
-@font-face{font-family:ShopTitle;src:url('../asset-lobby-20261109/assets/BlackHanSans-Regular.ttf') format('truetype');font-display:swap}
+@font-face{font-family:ShopTitle;src:url('../asset-lobby-20261109/assets/BlackHanSans-Regular.woff2') format('woff2');font-display:swap}
 html body dialog#shop.asset-shop-dialog[open]:is(#shop){display:block!important;position:fixed!important;inset:0!important;margin:auto!important;width:100%!important;max-width:480px!important;height:100dvh!important;max-height:100dvh!important;min-height:0!important;padding:0!important;border:0!important;border-radius:0!important;box-sizing:border-box!important;transform:none!important;overflow:hidden!important;background:#171d3e!important}
 html body dialog#shop.asset-shop-dialog>:not(#asset-shop-host){display:none!important}html body dialog#shop.asset-shop-dialog::before,html body dialog#shop.asset-shop-dialog::after{display:none!important}
 #asset-shop{height:100dvh;display:flex;flex-direction:column;background:#26223e url('assets/shop-reference.webp') center/100% 100%;color:#101b3d;font-family:'Apple SD Gothic Neo',sans-serif;container-type:inline-size}

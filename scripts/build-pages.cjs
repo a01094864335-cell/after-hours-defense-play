@@ -48,7 +48,7 @@ for(const dir of fs.readdirSync(path.join(root,'assets/castle-stories'))){const 
 for(const [dir,name] of [['asset-lobby-20261109','lobby'],['asset-roster-20261109','roster']]){
  const base='previews/'+dir;
  for(const ext of ['css','js'])files.add(base+'/'+name+'.'+ext);
- for(const file of fs.readdirSync(path.join(root,base,'assets')))if(/\.(webp|ttf|txt)$/.test(file))files.add(base+'/assets/'+file);
+ for(const file of fs.readdirSync(path.join(root,base,'assets')))if(/\.(webp|woff2|txt)$/.test(file))files.add(base+'/assets/'+file);
 }
 const shopPath='previews/asset-shop-20261109';
 for(const file of ['shop.css','shop.js'])files.add(shopPath+'/'+file);
@@ -56,6 +56,7 @@ for(const file of fs.readdirSync(path.join(root,shopPath,'assets')))if(/\.webp$/
 const trainingPath='previews/asset-training-20261109';
 for(const file of ['training.css','training.js'])files.add(trainingPath+'/'+file);
 for(const file of fs.readdirSync(path.join(root,trainingPath,'assets')))if(/\.webp$/.test(file))files.add(trainingPath+'/assets/'+file);
+files.delete('previews/asset-lobby-20261109/assets/BlackHanSans-Regular.ttf');
 const hash=b=>crypto.createHash('sha256').update(b).digest('hex');
 const revision=process.env.GITHUB_SHA||execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 fs.mkdirSync(out,{recursive:true});let html=fs.readFileSync(path.join(root,'index.html'),'utf8');

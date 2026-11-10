@@ -1,5 +1,11 @@
 {
-  "version": 1,
+  "version": 2,
+  "export": {
+    "scale": 0.75,
+    "gutter": 2,
+    "quality": 90,
+    "layout": "tight-columns"
+  },
   "poses": [
     "idle",
     "blink",
@@ -16,60 +22,60 @@
       "file": "assets/character-motion/goblin-guard.webp",
       "fallback": "assets/character-motion/goblin-guard-idle.webp",
       "faceReference": "assets/character-portraits/goblin-guard.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 465,
+      "width": 869,
+      "sheetHeight": 703,
+      "height": 348.75,
       "frames": [
         {
-          "x": 108,
-          "y": 11,
-          "w": 322,
-          "h": 465,
-          "pivotX": 148,
-          "pivotY": 464
+          "x": 2,
+          "y": 2,
+          "w": 242,
+          "h": 349,
+          "pivotX": 111.0,
+          "pivotY": 348.0
         },
         {
-          "x": 620,
-          "y": 11,
+          "x": 327,
+          "y": 2,
+          "w": 241,
+          "h": 349,
+          "pivotX": 111.0,
+          "pivotY": 348.0
+        },
+        {
+          "x": 613,
+          "y": 2,
+          "w": 246,
+          "h": 334,
+          "pivotX": 114.0,
+          "pivotY": 333.0
+        },
+        {
+          "x": 2,
+          "y": 355,
           "w": 321,
-          "h": 465,
-          "pivotX": 148,
-          "pivotY": 464
+          "h": 332,
+          "pivotX": 144.75,
+          "pivotY": 330.75
         },
         {
-          "x": 1128,
-          "y": 31,
-          "w": 328,
-          "h": 445,
-          "pivotX": 152,
-          "pivotY": 444
+          "x": 327,
+          "y": 355,
+          "w": 282,
+          "h": 346,
+          "pivotX": 136.5,
+          "pivotY": 345.0
         },
         {
-          "x": 63,
-          "y": 545,
-          "w": 427,
-          "h": 442,
-          "pivotX": 193,
-          "pivotY": 441
-        },
-        {
-          "x": 586,
-          "y": 530,
-          "w": 376,
-          "h": 461,
-          "pivotX": 182,
-          "pivotY": 460
-        },
-        {
-          "x": 1106,
-          "y": 527,
-          "w": 338,
-          "h": 461,
-          "pivotX": 174,
-          "pivotY": 460
+          "x": 613,
+          "y": 355,
+          "w": 254,
+          "h": 346,
+          "pivotX": 130.5,
+          "pivotY": 345.0
         }
       ],
-      "sha256": "630e3549d1372b2d97bb939b9ae47d40dec6ae3a1f318bf8369f5bc4650198b0"
+      "sha256": "c3855fad276f7d4df56515073061a9212cbad08dc1005e9dbe31316028c5459e"
     },
     "orc-technician": {
       "name": "토르크",
@@ -78,60 +84,60 @@
       "file": "assets/character-motion/orc-technician.webp",
       "fallback": "assets/character-motion/orc-technician-idle.webp",
       "faceReference": "assets/character-portraits/orc-technician.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 472,
+      "width": 1001,
+      "sheetHeight": 718,
+      "height": 354.0,
       "frames": [
         {
-          "x": 88,
-          "y": 18,
-          "w": 379,
-          "h": 472,
-          "pivotX": 168,
-          "pivotY": 471
+          "x": 2,
+          "y": 2,
+          "w": 285,
+          "h": 354,
+          "pivotX": 126.0,
+          "pivotY": 353.25
         },
         {
-          "x": 600,
-          "y": 18,
-          "w": 379,
-          "h": 472,
-          "pivotX": 168,
-          "pivotY": 471
+          "x": 362,
+          "y": 2,
+          "w": 285,
+          "h": 354,
+          "pivotX": 126.0,
+          "pivotY": 353.25
         },
         {
-          "x": 1073,
-          "y": 40,
-          "w": 439,
-          "h": 449,
-          "pivotX": 207,
-          "pivotY": 448
+          "x": 669,
+          "y": 2,
+          "w": 330,
+          "h": 337,
+          "pivotX": 155.25,
+          "pivotY": 336.0
         },
         {
-          "x": 35,
-          "y": 547,
-          "w": 474,
-          "h": 453,
-          "pivotX": 221,
-          "pivotY": 452
+          "x": 2,
+          "y": 360,
+          "w": 356,
+          "h": 340,
+          "pivotX": 165.75,
+          "pivotY": 339.0
         },
         {
-          "x": 574,
-          "y": 531,
-          "w": 404,
-          "h": 472,
-          "pivotX": 194,
-          "pivotY": 471
+          "x": 362,
+          "y": 360,
+          "w": 303,
+          "h": 354,
+          "pivotX": 145.5,
+          "pivotY": 353.25
         },
         {
-          "x": 1088,
-          "y": 529,
-          "w": 380,
-          "h": 474,
-          "pivotX": 192,
-          "pivotY": 473
+          "x": 669,
+          "y": 360,
+          "w": 285,
+          "h": 356,
+          "pivotX": 144.0,
+          "pivotY": 354.75
         }
       ],
-      "sha256": "e41ffa4074779c7cd636320392a20b44c19ed583a1dfe5152982dd29280b5197"
+      "sha256": "5ae0ac0f76f195e2a0096e8a12bf690aab85bd1ce153a3367b0e5978d4860ef3"
     },
     "slime-cleaner": {
       "name": "뽀득",
@@ -140,60 +146,60 @@
       "file": "assets/character-motion/slime-cleaner.webp",
       "fallback": "assets/character-motion/slime-cleaner-idle.webp",
       "faceReference": "assets/character-portraits/slime-cleaner.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 457,
+      "width": 964,
+      "sheetHeight": 681,
+      "height": 342.75,
       "frames": [
         {
-          "x": 93,
-          "y": 37,
-          "w": 331,
-          "h": 457,
-          "pivotX": 163,
-          "pivotY": 456
+          "x": 2,
+          "y": 2,
+          "w": 249,
+          "h": 343,
+          "pivotX": 122.25,
+          "pivotY": 342.0
         },
         {
-          "x": 605,
-          "y": 37,
-          "w": 345,
-          "h": 457,
-          "pivotX": 163,
-          "pivotY": 456
+          "x": 346,
+          "y": 2,
+          "w": 259,
+          "h": 343,
+          "pivotX": 122.25,
+          "pivotY": 342.0
         },
         {
-          "x": 1070,
-          "y": 42,
-          "w": 417,
-          "h": 437,
-          "pivotX": 210,
-          "pivotY": 436
+          "x": 632,
+          "y": 2,
+          "w": 313,
+          "h": 328,
+          "pivotX": 157.5,
+          "pivotY": 327.0
         },
         {
-          "x": 29,
-          "y": 556,
-          "w": 453,
-          "h": 434,
-          "pivotX": 227,
-          "pivotY": 433
+          "x": 2,
+          "y": 349,
+          "w": 340,
+          "h": 326,
+          "pivotX": 170.25,
+          "pivotY": 324.75
         },
         {
-          "x": 592,
-          "y": 551,
-          "w": 376,
-          "h": 440,
-          "pivotX": 176,
-          "pivotY": 439
+          "x": 346,
+          "y": 349,
+          "w": 282,
+          "h": 330,
+          "pivotX": 132.0,
+          "pivotY": 329.25
         },
         {
-          "x": 1064,
-          "y": 562,
-          "w": 439,
-          "h": 418,
-          "pivotX": 216,
-          "pivotY": 417
+          "x": 632,
+          "y": 349,
+          "w": 330,
+          "h": 314,
+          "pivotX": 162.0,
+          "pivotY": 312.75
         }
       ],
-      "sha256": "0a752448c2364fe6718bfee584b7a3a0872ae4719858c70a872320f1d8105af8"
+      "sha256": "453b7a79dfffed21815b33164606f491c11bfb494dc73a64f2cdc35cf64c95e8"
     },
     "gobi": {
       "name": "고비",
@@ -202,60 +208,60 @@
       "file": "assets/character-motion/gobi.webp",
       "fallback": "assets/character-motion/gobi-idle.webp",
       "faceReference": "assets/character-portraits/gobi.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 472,
+      "width": 828,
+      "sheetHeight": 721,
+      "height": 354.0,
       "frames": [
         {
-          "x": 97,
-          "y": 17,
-          "w": 312,
-          "h": 472,
-          "pivotX": 159,
-          "pivotY": 471
+          "x": 2,
+          "y": 2,
+          "w": 234,
+          "h": 354,
+          "pivotX": 119.25,
+          "pivotY": 353.25
         },
         {
-          "x": 609,
-          "y": 17,
-          "w": 311,
-          "h": 472,
-          "pivotX": 159,
-          "pivotY": 471
+          "x": 264,
+          "y": 2,
+          "w": 234,
+          "h": 354,
+          "pivotX": 119.25,
+          "pivotY": 353.25
         },
         {
-          "x": 1119,
-          "y": 32,
-          "w": 329,
-          "h": 457,
-          "pivotX": 161,
-          "pivotY": 456
+          "x": 550,
+          "y": 2,
+          "w": 247,
+          "h": 343,
+          "pivotX": 120.75,
+          "pivotY": 342.0
         },
         {
-          "x": 97,
-          "y": 528,
-          "w": 344,
-          "h": 473,
-          "pivotX": 159,
-          "pivotY": 472
+          "x": 2,
+          "y": 360,
+          "w": 258,
+          "h": 355,
+          "pivotX": 119.25,
+          "pivotY": 354.0
         },
         {
-          "x": 578,
-          "y": 523,
-          "w": 376,
-          "h": 478,
-          "pivotX": 190,
-          "pivotY": 477
+          "x": 264,
+          "y": 360,
+          "w": 282,
+          "h": 359,
+          "pivotX": 142.5,
+          "pivotY": 357.75
         },
         {
-          "x": 1090,
-          "y": 535,
-          "w": 367,
-          "h": 466,
-          "pivotX": 190,
-          "pivotY": 465
+          "x": 550,
+          "y": 360,
+          "w": 276,
+          "h": 350,
+          "pivotX": 142.5,
+          "pivotY": 348.75
         }
       ],
-      "sha256": "1addddf6ead7ec914f69601e7f079617ab5f7636435e252355f3cabd65b818db"
+      "sha256": "c1aa612a3a2889bc93947413894235c20ad7f7dc747e1eb215e40126199dd8f9"
     },
     "electric-technician": {
       "name": "찌릿",
@@ -264,60 +270,60 @@
       "file": "assets/character-motion/electric-technician.webp",
       "fallback": "assets/character-motion/electric-technician-idle.webp",
       "faceReference": "assets/character-portraits/electric-technician.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 378,
+      "width": 791,
+      "sheetHeight": 574,
+      "height": 283.5,
       "frames": [
         {
-          "x": 94,
-          "y": 49,
-          "w": 325,
-          "h": 378,
-          "pivotX": 162,
-          "pivotY": 377
+          "x": 2,
+          "y": 2,
+          "w": 244,
+          "h": 284,
+          "pivotX": 121.5,
+          "pivotY": 282.75
         },
         {
-          "x": 606,
-          "y": 49,
-          "w": 326,
-          "h": 378,
-          "pivotX": 162,
-          "pivotY": 377
+          "x": 284,
+          "y": 2,
+          "w": 245,
+          "h": 284,
+          "pivotX": 121.5,
+          "pivotY": 282.75
         },
         {
-          "x": 1107,
-          "y": 82,
-          "w": 341,
-          "h": 342,
-          "pivotX": 173,
-          "pivotY": 341
+          "x": 533,
+          "y": 2,
+          "w": 256,
+          "h": 257,
+          "pivotX": 129.75,
+          "pivotY": 255.75
         },
         {
-          "x": 62,
-          "y": 589,
-          "w": 370,
-          "h": 361,
-          "pivotX": 194,
-          "pivotY": 360
+          "x": 2,
+          "y": 290,
+          "w": 278,
+          "h": 271,
+          "pivotX": 145.5,
+          "pivotY": 270.0
         },
         {
-          "x": 601,
-          "y": 575,
-          "w": 310,
-          "h": 375,
-          "pivotX": 167,
-          "pivotY": 374
+          "x": 284,
+          "y": 290,
+          "w": 233,
+          "h": 282,
+          "pivotX": 125.25,
+          "pivotY": 280.5
         },
         {
-          "x": 1112,
-          "y": 583,
-          "w": 335,
-          "h": 368,
-          "pivotX": 168,
-          "pivotY": 367
+          "x": 533,
+          "y": 290,
+          "w": 252,
+          "h": 276,
+          "pivotX": 126.0,
+          "pivotY": 275.25
         }
       ],
-      "sha256": "0c11f755a0cf8193f3e78c7384a754c94f43d741d58f0367126f9323ab6b5914"
+      "sha256": "3e08fc0f56000e465043191116f49226e1c613f5ef7fdeeba3760927e60d4a0e"
     },
     "ghost-courier": {
       "name": "루프",
@@ -326,60 +332,60 @@
       "file": "assets/character-motion/ghost-courier.webp",
       "fallback": "assets/character-motion/ghost-courier-idle.webp",
       "faceReference": "assets/character-portraits/ghost-courier.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 465,
+      "width": 1058,
+      "sheetHeight": 704,
+      "height": 348.75,
       "frames": [
         {
-          "x": 47,
-          "y": 25,
-          "w": 405,
-          "h": 465,
-          "pivotX": 209,
-          "pivotY": 464
+          "x": 2,
+          "y": 2,
+          "w": 304,
+          "h": 349,
+          "pivotX": 156.75,
+          "pivotY": 348.0
         },
         {
-          "x": 559,
-          "y": 25,
-          "w": 418,
-          "h": 465,
-          "pivotX": 209,
-          "pivotY": 464
+          "x": 368,
+          "y": 2,
+          "w": 314,
+          "h": 349,
+          "pivotX": 156.75,
+          "pivotY": 348.0
         },
         {
-          "x": 1071,
-          "y": 25,
-          "w": 425,
-          "h": 465,
-          "pivotX": 209,
-          "pivotY": 464
+          "x": 726,
+          "y": 2,
+          "w": 319,
+          "h": 349,
+          "pivotX": 156.75,
+          "pivotY": 348.0
         },
         {
-          "x": 15,
-          "y": 538,
-          "w": 482,
-          "h": 447,
-          "pivotX": 241,
-          "pivotY": 446
+          "x": 2,
+          "y": 355,
+          "w": 362,
+          "h": 336,
+          "pivotX": 180.75,
+          "pivotY": 334.5
         },
         {
-          "x": 530,
-          "y": 534,
-          "w": 471,
-          "h": 462,
-          "pivotX": 238,
-          "pivotY": 461
+          "x": 368,
+          "y": 355,
+          "w": 354,
+          "h": 347,
+          "pivotX": 178.5,
+          "pivotY": 345.75
         },
         {
-          "x": 1069,
-          "y": 537,
-          "w": 439,
-          "h": 459,
-          "pivotX": 211,
-          "pivotY": 458
+          "x": 726,
+          "y": 355,
+          "w": 330,
+          "h": 345,
+          "pivotX": 158.25,
+          "pivotY": 343.5
         }
       ],
-      "sha256": "2126215d216eb2717b5318c0b018d7138c4ec667c69fb89f5816b7c8c11a6f1f"
+      "sha256": "8b2e60d912d711f133e6b9d0259dbe60f0a07f10f002ed7eeec75c9cdd3622b1"
     },
     "bat-nurse": {
       "name": "나비",
@@ -388,60 +394,60 @@
       "file": "assets/character-motion/bat-nurse.webp",
       "fallback": "assets/character-motion/bat-nurse-idle.webp",
       "faceReference": "assets/character-portraits/bat-nurse.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 482,
+      "width": 993,
+      "sheetHeight": 721,
+      "height": 361.5,
       "frames": [
         {
-          "x": 82,
-          "y": 15,
-          "w": 367,
-          "h": 482,
-          "pivotX": 174,
-          "pivotY": 481
+          "x": 2,
+          "y": 2,
+          "w": 276,
+          "h": 362,
+          "pivotX": 130.5,
+          "pivotY": 360.75
         },
         {
-          "x": 588,
-          "y": 14,
-          "w": 390,
-          "h": 483,
-          "pivotX": 180,
-          "pivotY": 482
+          "x": 371,
+          "y": 2,
+          "w": 293,
+          "h": 363,
+          "pivotX": 135.0,
+          "pivotY": 361.5
         },
         {
-          "x": 1098,
-          "y": 14,
-          "w": 390,
-          "h": 484,
-          "pivotX": 182,
-          "pivotY": 483
+          "x": 698,
+          "y": 2,
+          "w": 293,
+          "h": 363,
+          "pivotX": 136.5,
+          "pivotY": 362.25
         },
         {
-          "x": 19,
-          "y": 543,
-          "w": 486,
-          "h": 450,
-          "pivotX": 237,
-          "pivotY": 449
+          "x": 2,
+          "y": 369,
+          "w": 365,
+          "h": 338,
+          "pivotX": 177.75,
+          "pivotY": 336.75
         },
         {
-          "x": 563,
-          "y": 531,
-          "w": 430,
-          "h": 462,
-          "pivotX": 205,
-          "pivotY": 461
+          "x": 371,
+          "y": 369,
+          "w": 323,
+          "h": 347,
+          "pivotX": 153.75,
+          "pivotY": 345.75
         },
         {
-          "x": 1095,
-          "y": 527,
-          "w": 362,
-          "h": 466,
-          "pivotX": 185,
-          "pivotY": 465
+          "x": 698,
+          "y": 369,
+          "w": 272,
+          "h": 350,
+          "pivotX": 138.75,
+          "pivotY": 348.75
         }
       ],
-      "sha256": "4eeeb1613cb0ac7a8812f525f761f5e36041cb104e274cc3752e68abdf3b2f93"
+      "sha256": "711764c8ee282e8b534d6957b69073103640413c1129ea5062356d31596bd04e"
     },
     "skeleton-chef": {
       "name": "보니",
@@ -450,60 +456,60 @@
       "file": "assets/character-motion/skeleton-chef.webp",
       "fallback": "assets/character-motion/skeleton-chef-idle.webp",
       "faceReference": "assets/character-portraits/skeleton-chef.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 481,
+      "width": 916,
+      "sheetHeight": 734,
+      "height": 360.75,
       "frames": [
         {
-          "x": 105,
-          "y": 14,
-          "w": 310,
-          "h": 481,
-          "pivotX": 151,
-          "pivotY": 480
+          "x": 2,
+          "y": 2,
+          "w": 233,
+          "h": 361,
+          "pivotX": 113.25,
+          "pivotY": 360.0
         },
         {
-          "x": 586,
-          "y": 14,
-          "w": 325,
-          "h": 481,
-          "pivotX": 182,
-          "pivotY": 480
+          "x": 342,
+          "y": 2,
+          "w": 244,
+          "h": 361,
+          "pivotX": 136.5,
+          "pivotY": 360.0
         },
         {
-          "x": 1097,
-          "y": 14,
-          "w": 339,
-          "h": 482,
-          "pivotX": 183,
-          "pivotY": 481
+          "x": 635,
+          "y": 2,
+          "w": 255,
+          "h": 362,
+          "pivotX": 137.25,
+          "pivotY": 360.75
         },
         {
-          "x": 34,
-          "y": 530,
-          "w": 448,
-          "h": 476,
-          "pivotX": 222,
-          "pivotY": 475
+          "x": 2,
+          "y": 368,
+          "w": 336,
+          "h": 357,
+          "pivotX": 166.5,
+          "pivotY": 356.25
         },
         {
-          "x": 571,
-          "y": 524,
-          "w": 385,
-          "h": 483,
-          "pivotX": 197,
-          "pivotY": 482
+          "x": 342,
+          "y": 368,
+          "w": 289,
+          "h": 363,
+          "pivotX": 147.75,
+          "pivotY": 361.5
         },
         {
-          "x": 1086,
-          "y": 523,
-          "w": 372,
-          "h": 485,
-          "pivotX": 194,
-          "pivotY": 484
+          "x": 635,
+          "y": 368,
+          "w": 279,
+          "h": 364,
+          "pivotX": 145.5,
+          "pivotY": 363.0
         }
       ],
-      "sha256": "dacdc9fbdc92b2316659f795b6e411497975de7460aa5200cbe69e39bb737637"
+      "sha256": "d55ddb53bbc4c76d3e739f29c08a238b3b708760c4703032cb173b93ef75f9bc"
     },
     "mimic-storekeeper": {
       "name": "덥석",
@@ -512,60 +518,60 @@
       "file": "assets/character-motion/mimic-storekeeper.webp",
       "fallback": "assets/character-motion/mimic-storekeeper-idle.webp",
       "faceReference": "assets/character-portraits/mimic-storekeeper.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 361,
+      "width": 766,
+      "sheetHeight": 549,
+      "height": 270.75,
       "frames": [
         {
-          "x": 106,
-          "y": 58,
-          "w": 322,
-          "h": 361,
-          "pivotX": 150,
-          "pivotY": 360
+          "x": 2,
+          "y": 2,
+          "w": 242,
+          "h": 271,
+          "pivotX": 112.5,
+          "pivotY": 270.0
         },
         {
-          "x": 617,
-          "y": 58,
-          "w": 322,
-          "h": 361,
-          "pivotX": 151,
-          "pivotY": 360
+          "x": 276,
+          "y": 2,
+          "w": 242,
+          "h": 271,
+          "pivotX": 113.25,
+          "pivotY": 270.0
         },
         {
-          "x": 1143,
-          "y": 59,
-          "w": 305,
-          "h": 360,
-          "pivotX": 137,
-          "pivotY": 359
+          "x": 522,
+          "y": 2,
+          "w": 229,
+          "h": 270,
+          "pivotX": 102.75,
+          "pivotY": 269.25
         },
         {
-          "x": 80,
-          "y": 572,
-          "w": 360,
-          "h": 358,
-          "pivotX": 176,
-          "pivotY": 357
+          "x": 2,
+          "y": 277,
+          "w": 270,
+          "h": 269,
+          "pivotX": 132.0,
+          "pivotY": 267.75
         },
         {
-          "x": 631,
-          "y": 571,
-          "w": 278,
-          "h": 359,
-          "pivotX": 137,
-          "pivotY": 358
+          "x": 276,
+          "y": 277,
+          "w": 209,
+          "h": 270,
+          "pivotX": 102.75,
+          "pivotY": 268.5
         },
         {
-          "x": 1138,
-          "y": 572,
-          "w": 322,
-          "h": 358,
-          "pivotX": 142,
-          "pivotY": 357
+          "x": 522,
+          "y": 277,
+          "w": 242,
+          "h": 269,
+          "pivotX": 106.5,
+          "pivotY": 267.75
         }
       ],
-      "sha256": "9dcd54bc4793f2288333bd6f43633fb79a982f057916d350d8e38a23961d35b7"
+      "sha256": "45d49a96fde1f054aaa371eae80a8bd6628b22be0242f8af4ebed2aebabdb00b"
     },
     "spider-tailor": {
       "name": "실비",
@@ -574,60 +580,60 @@
       "file": "assets/character-motion/spider-tailor.webp",
       "fallback": "assets/character-motion/spider-tailor-idle.webp",
       "faceReference": "assets/character-portraits/spider-tailor.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 474,
+      "width": 1001,
+      "sheetHeight": 721,
+      "height": 355.5,
       "frames": [
         {
-          "x": 58,
-          "y": 10,
-          "w": 390,
-          "h": 474,
-          "pivotX": 198,
-          "pivotY": 473
+          "x": 2,
+          "y": 2,
+          "w": 293,
+          "h": 356,
+          "pivotX": 148.5,
+          "pivotY": 354.75
         },
         {
-          "x": 571,
-          "y": 10,
-          "w": 389,
-          "h": 474,
-          "pivotX": 197,
-          "pivotY": 473
+          "x": 360,
+          "y": 2,
+          "w": 292,
+          "h": 356,
+          "pivotX": 147.75,
+          "pivotY": 354.75
         },
         {
-          "x": 1086,
-          "y": 10,
-          "w": 391,
-          "h": 474,
-          "pivotX": 194,
-          "pivotY": 473
+          "x": 681,
+          "y": 2,
+          "w": 294,
+          "h": 356,
+          "pivotX": 145.5,
+          "pivotY": 354.75
         },
         {
-          "x": 35,
-          "y": 522,
-          "w": 472,
-          "h": 475,
-          "pivotX": 221,
-          "pivotY": 474
+          "x": 2,
+          "y": 362,
+          "w": 354,
+          "h": 357,
+          "pivotX": 165.75,
+          "pivotY": 355.5
         },
         {
-          "x": 568,
-          "y": 523,
-          "w": 422,
-          "h": 474,
-          "pivotX": 200,
-          "pivotY": 473
+          "x": 360,
+          "y": 362,
+          "w": 317,
+          "h": 356,
+          "pivotX": 150.0,
+          "pivotY": 354.75
         },
         {
-          "x": 1085,
-          "y": 524,
-          "w": 424,
-          "h": 473,
-          "pivotX": 195,
-          "pivotY": 472
+          "x": 681,
+          "y": 362,
+          "w": 318,
+          "h": 355,
+          "pivotX": 146.25,
+          "pivotY": 354.0
         }
       ],
-      "sha256": "68daacb3cb7e807e5806b2a8f251ec85a56b76ef27e64c854a0c6e7a1f8b5e1b"
+      "sha256": "bd5a89a56a18b820fec925a1b72c5aa93bf481cf396d51f4448968974d9a5219"
     },
     "nightmare-counselor": {
       "name": "몽실",
@@ -636,60 +642,60 @@
       "file": "assets/character-motion/nightmare-counselor.webp",
       "fallback": "assets/character-motion/nightmare-counselor-idle.webp",
       "faceReference": "assets/character-portraits/nightmare-counselor.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 446,
+      "width": 999,
+      "sheetHeight": 671,
+      "height": 334.5,
       "frames": [
         {
-          "x": 84,
-          "y": 33,
-          "w": 382,
-          "h": 446,
-          "pivotX": 172,
-          "pivotY": 445
+          "x": 2,
+          "y": 2,
+          "w": 287,
+          "h": 335,
+          "pivotX": 129.0,
+          "pivotY": 333.75
         },
         {
-          "x": 564,
-          "y": 33,
-          "w": 384,
-          "h": 446,
-          "pivotX": 204,
-          "pivotY": 445
+          "x": 350,
+          "y": 2,
+          "w": 288,
+          "h": 335,
+          "pivotX": 153.0,
+          "pivotY": 333.75
         },
         {
-          "x": 1078,
-          "y": 31,
-          "w": 395,
-          "h": 434,
-          "pivotX": 202,
-          "pivotY": 433
+          "x": 686,
+          "y": 2,
+          "w": 297,
+          "h": 326,
+          "pivotX": 151.5,
+          "pivotY": 324.75
         },
         {
-          "x": 40,
-          "y": 544,
-          "w": 458,
-          "h": 434,
-          "pivotX": 216,
-          "pivotY": 433
+          "x": 2,
+          "y": 341,
+          "w": 344,
+          "h": 326,
+          "pivotX": 162.0,
+          "pivotY": 324.75
         },
         {
-          "x": 554,
-          "y": 544,
-          "w": 442,
-          "h": 434,
-          "pivotX": 214,
-          "pivotY": 433
+          "x": 350,
+          "y": 341,
+          "w": 332,
+          "h": 326,
+          "pivotX": 160.5,
+          "pivotY": 324.75
         },
         {
-          "x": 1072,
-          "y": 546,
-          "w": 414,
-          "h": 437,
-          "pivotX": 208,
-          "pivotY": 436
+          "x": 686,
+          "y": 341,
+          "w": 311,
+          "h": 328,
+          "pivotX": 156.0,
+          "pivotY": 327.0
         }
       ],
-      "sha256": "483f763ef2a61d3359274780b185945688ab501053c3193ce6c539daed4d891d"
+      "sha256": "7699330b0f812431c02ca3adee97cb60fe90d975fd8ed02f816c16adcb536285"
     },
     "kobold-recruiter": {
       "name": "도기",
@@ -698,60 +704,60 @@
       "file": "assets/character-motion/kobold-recruiter.webp",
       "fallback": "assets/character-motion/kobold-recruiter-idle.webp",
       "faceReference": "assets/character-portraits/kobold-recruiter.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 466,
+      "width": 918,
+      "sheetHeight": 706,
+      "height": 349.5,
       "frames": [
         {
-          "x": 88,
-          "y": 12,
-          "w": 387,
-          "h": 466,
-          "pivotX": 168,
-          "pivotY": 465
+          "x": 2,
+          "y": 2,
+          "w": 291,
+          "h": 350,
+          "pivotX": 126.0,
+          "pivotY": 348.75
         },
         {
-          "x": 568,
-          "y": 12,
-          "w": 387,
-          "h": 466,
-          "pivotX": 200,
-          "pivotY": 465
+          "x": 312,
+          "y": 2,
+          "w": 291,
+          "h": 350,
+          "pivotX": 150.0,
+          "pivotY": 348.75
         },
         {
-          "x": 1073,
-          "y": 20,
-          "w": 404,
-          "h": 459,
-          "pivotX": 207,
-          "pivotY": 458
+          "x": 613,
+          "y": 2,
+          "w": 303,
+          "h": 345,
+          "pivotX": 155.25,
+          "pivotY": 343.5
         },
         {
-          "x": 67,
-          "y": 537,
-          "w": 408,
-          "h": 453,
-          "pivotX": 189,
-          "pivotY": 452
+          "x": 2,
+          "y": 356,
+          "w": 306,
+          "h": 340,
+          "pivotX": 141.75,
+          "pivotY": 339.0
         },
         {
-          "x": 563,
-          "y": 528,
-          "w": 395,
-          "h": 462,
-          "pivotX": 205,
-          "pivotY": 461
+          "x": 312,
+          "y": 356,
+          "w": 297,
+          "h": 347,
+          "pivotX": 153.75,
+          "pivotY": 345.75
         },
         {
-          "x": 1060,
-          "y": 526,
-          "w": 397,
-          "h": 464,
-          "pivotX": 220,
-          "pivotY": 463
+          "x": 613,
+          "y": 356,
+          "w": 298,
+          "h": 348,
+          "pivotX": 165.0,
+          "pivotY": 347.25
         }
       ],
-      "sha256": "73b461a7b5ff30f00c40f6bbaa883bf2353014c51ec9f92264412b1ac1c0045a"
+      "sha256": "2e909f75c367096f7817a7bec8a18e70d6c8d3a0b986a638ae25a9a4d7a4f8f5"
     },
     "duru-archivist": {
       "name": "두루",
@@ -760,60 +766,60 @@
       "file": "assets/character-motion/duru-archivist.webp",
       "fallback": "assets/character-motion/duru-archivist-idle.webp",
       "faceReference": "assets/character-portraits/duru-archivist.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 476,
+      "width": 923,
+      "sheetHeight": 724,
+      "height": 357.0,
       "frames": [
         {
-          "x": 82,
-          "y": 13,
-          "w": 342,
-          "h": 476,
-          "pivotX": 174,
-          "pivotY": 475
+          "x": 2,
+          "y": 2,
+          "w": 257,
+          "h": 357,
+          "pivotX": 130.5,
+          "pivotY": 356.25
         },
         {
-          "x": 585,
-          "y": 13,
-          "w": 358,
-          "h": 476,
-          "pivotX": 183,
-          "pivotY": 475
+          "x": 335,
+          "y": 2,
+          "w": 269,
+          "h": 357,
+          "pivotX": 137.25,
+          "pivotY": 356.25
         },
         {
-          "x": 1082,
-          "y": 14,
-          "w": 383,
-          "h": 475,
-          "pivotX": 198,
-          "pivotY": 474
+          "x": 633,
+          "y": 2,
+          "w": 288,
+          "h": 357,
+          "pivotX": 148.5,
+          "pivotY": 355.5
         },
         {
-          "x": 50,
-          "y": 528,
-          "w": 438,
-          "h": 471,
-          "pivotX": 206,
-          "pivotY": 470
+          "x": 2,
+          "y": 363,
+          "w": 329,
+          "h": 354,
+          "pivotX": 154.5,
+          "pivotY": 352.5
         },
         {
-          "x": 576,
-          "y": 521,
-          "w": 391,
-          "h": 478,
-          "pivotX": 192,
-          "pivotY": 477
+          "x": 335,
+          "y": 363,
+          "w": 294,
+          "h": 359,
+          "pivotX": 144.0,
+          "pivotY": 357.75
         },
         {
-          "x": 1099,
-          "y": 523,
-          "w": 358,
-          "h": 476,
-          "pivotX": 181,
-          "pivotY": 475
+          "x": 633,
+          "y": 363,
+          "w": 269,
+          "h": 357,
+          "pivotX": 135.75,
+          "pivotY": 356.25
         }
       ],
-      "sha256": "33001bb3d04293e350ecb051f117e28ff923a46df7a4f13816ec923bbb9a029d"
+      "sha256": "1b280349b28629d09c110ae16281f0eb65f412b7896707e5c0e124aa86135f72"
     },
     "kkangtong-engineer": {
       "name": "깡통",
@@ -822,60 +828,60 @@
       "file": "assets/character-motion/kkangtong-engineer.webp",
       "fallback": "assets/character-motion/kkangtong-engineer-idle.webp",
       "faceReference": "assets/character-portraits/kkangtong-engineer.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 467,
+      "width": 916,
+      "sheetHeight": 710,
+      "height": 350.25,
       "frames": [
         {
-          "x": 78,
-          "y": 21,
-          "w": 359,
-          "h": 467,
-          "pivotX": 178,
-          "pivotY": 466
+          "x": 2,
+          "y": 2,
+          "w": 270,
+          "h": 351,
+          "pivotX": 133.5,
+          "pivotY": 349.5
         },
         {
-          "x": 591,
-          "y": 22,
-          "w": 352,
-          "h": 465,
-          "pivotX": 177,
-          "pivotY": 464
+          "x": 327,
+          "y": 2,
+          "w": 264,
+          "h": 349,
+          "pivotX": 132.75,
+          "pivotY": 348.0
         },
         {
-          "x": 1105,
-          "y": 47,
-          "w": 368,
-          "h": 436,
-          "pivotX": 175,
-          "pivotY": 435
+          "x": 638,
+          "y": 2,
+          "w": 276,
+          "h": 327,
+          "pivotX": 131.25,
+          "pivotY": 326.25
         },
         {
-          "x": 60,
-          "y": 544,
-          "w": 427,
-          "h": 449,
-          "pivotX": 196,
-          "pivotY": 448
+          "x": 2,
+          "y": 357,
+          "w": 321,
+          "h": 337,
+          "pivotX": 147.0,
+          "pivotY": 336.0
         },
         {
-          "x": 578,
-          "y": 528,
-          "w": 409,
-          "h": 467,
-          "pivotX": 190,
-          "pivotY": 466
+          "x": 327,
+          "y": 357,
+          "w": 307,
+          "h": 351,
+          "pivotX": 142.5,
+          "pivotY": 349.5
         },
         {
-          "x": 1087,
-          "y": 530,
-          "w": 366,
-          "h": 466,
-          "pivotX": 193,
-          "pivotY": 465
+          "x": 638,
+          "y": 357,
+          "w": 275,
+          "h": 350,
+          "pivotX": 144.75,
+          "pivotY": 348.75
         }
       ],
-      "sha256": "b9383cf5d3169ee01bf029d5f3995df141c104b62f987086c9f5db29d7cda5ca"
+      "sha256": "61eba16647cf0879568cb514870b0762b5ed104cb991332c201606967efc5f59"
     },
     "ddangkong-miner": {
       "name": "땅콩",
@@ -884,60 +890,60 @@
       "file": "assets/character-motion/ddangkong-miner.webp",
       "fallback": "assets/character-motion/ddangkong-miner-idle.webp",
       "faceReference": "assets/character-portraits/ddangkong-miner.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 460,
+      "width": 937,
+      "sheetHeight": 702,
+      "height": 345.0,
       "frames": [
         {
-          "x": 72,
-          "y": 23,
-          "w": 365,
-          "h": 460,
-          "pivotX": 184,
-          "pivotY": 459
+          "x": 2,
+          "y": 2,
+          "w": 274,
+          "h": 345,
+          "pivotX": 138.0,
+          "pivotY": 344.25
         },
         {
-          "x": 584,
-          "y": 22,
-          "w": 365,
-          "h": 461,
-          "pivotX": 184,
-          "pivotY": 460
+          "x": 337,
+          "y": 2,
+          "w": 274,
+          "h": 346,
+          "pivotX": 138.0,
+          "pivotY": 345.0
         },
         {
-          "x": 1122,
-          "y": 22,
-          "w": 360,
-          "h": 461,
-          "pivotX": 158,
-          "pivotY": 460
+          "x": 639,
+          "y": 2,
+          "w": 270,
+          "h": 346,
+          "pivotX": 118.5,
+          "pivotY": 345.0
         },
         {
-          "x": 41,
-          "y": 547,
-          "w": 441,
-          "h": 450,
-          "pivotX": 215,
-          "pivotY": 449
+          "x": 2,
+          "y": 352,
+          "w": 331,
+          "h": 338,
+          "pivotX": 161.25,
+          "pivotY": 336.75
         },
         {
-          "x": 581,
-          "y": 532,
-          "w": 397,
-          "h": 462,
-          "pivotX": 187,
-          "pivotY": 461
+          "x": 337,
+          "y": 352,
+          "w": 298,
+          "h": 347,
+          "pivotX": 140.25,
+          "pivotY": 345.75
         },
         {
-          "x": 1093,
-          "y": 531,
-          "w": 394,
-          "h": 463,
-          "pivotX": 187,
-          "pivotY": 462
+          "x": 639,
+          "y": 352,
+          "w": 296,
+          "h": 348,
+          "pivotX": 140.25,
+          "pivotY": 346.5
         }
       ],
-      "sha256": "5363ea473b3db421460b092f9385e10d2b0cc913c3531703e27638333e63fd12"
+      "sha256": "5431833d17cdfb7fa5f7d4e6834ec9ef8ffea9c5a4fc2d6b46d122764ab3ab0f"
     },
     "chalkak-photographer": {
       "name": "찰칵",
@@ -946,60 +952,60 @@
       "file": "assets/character-motion/chalkak-photographer.webp",
       "fallback": "assets/character-motion/chalkak-photographer-idle.webp",
       "faceReference": "assets/character-portraits/chalkak-photographer.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 416,
+      "width": 926,
+      "sheetHeight": 633,
+      "height": 312.0,
       "frames": [
         {
-          "x": 84,
-          "y": 45,
-          "w": 364,
-          "h": 416,
-          "pivotX": 172,
-          "pivotY": 415
+          "x": 2,
+          "y": 2,
+          "w": 273,
+          "h": 312,
+          "pivotX": 129.0,
+          "pivotY": 311.25
         },
         {
-          "x": 584,
-          "y": 44,
-          "w": 363,
-          "h": 417,
-          "pivotX": 184,
-          "pivotY": 416
+          "x": 322,
+          "y": 2,
+          "w": 273,
+          "h": 313,
+          "pivotX": 138.0,
+          "pivotY": 312.0
         },
         {
-          "x": 1090,
-          "y": 46,
-          "w": 366,
-          "h": 413,
-          "pivotX": 190,
-          "pivotY": 412
+          "x": 637,
+          "y": 2,
+          "w": 275,
+          "h": 310,
+          "pivotX": 142.5,
+          "pivotY": 309.0
         },
         {
-          "x": 65,
-          "y": 564,
-          "w": 421,
-          "h": 406,
-          "pivotX": 191,
-          "pivotY": 405
+          "x": 2,
+          "y": 319,
+          "w": 316,
+          "h": 305,
+          "pivotX": 143.25,
+          "pivotY": 303.75
         },
         {
-          "x": 582,
-          "y": 557,
-          "w": 414,
-          "h": 416,
-          "pivotX": 186,
-          "pivotY": 415
+          "x": 322,
+          "y": 319,
+          "w": 311,
+          "h": 312,
+          "pivotX": 139.5,
+          "pivotY": 311.25
         },
         {
-          "x": 1085,
-          "y": 557,
-          "w": 382,
-          "h": 416,
-          "pivotX": 195,
-          "pivotY": 415
+          "x": 637,
+          "y": 319,
+          "w": 287,
+          "h": 312,
+          "pivotX": 146.25,
+          "pivotY": 311.25
         }
       ],
-      "sha256": "39def5d1980d16895d87871612152f8b2b05bc7c9af99f56e3346a5bf60a811f"
+      "sha256": "446d7f8bcd150023b85343c4629d786be7c756e00104fb9846bfddd536704f25"
     },
     "bongtu-postmaster": {
       "name": "봉투",
@@ -1008,60 +1014,60 @@
       "file": "assets/character-motion/bongtu-postmaster.webp",
       "fallback": "assets/character-motion/bongtu-postmaster-idle.webp",
       "faceReference": "assets/character-portraits/bongtu-postmaster.webp",
-      "width": 1536,
-      "sheetHeight": 1024,
-      "height": 476,
+      "width": 868,
+      "sheetHeight": 720,
+      "height": 357.0,
       "frames": [
         {
-          "x": 101,
-          "y": 15,
-          "w": 316,
-          "h": 476,
-          "pivotX": 155,
-          "pivotY": 475
+          "x": 2,
+          "y": 2,
+          "w": 237,
+          "h": 357,
+          "pivotX": 116.25,
+          "pivotY": 356.25
         },
         {
-          "x": 603,
-          "y": 15,
-          "w": 317,
-          "h": 476,
-          "pivotX": 165,
-          "pivotY": 475
+          "x": 348,
+          "y": 2,
+          "w": 238,
+          "h": 357,
+          "pivotX": 123.75,
+          "pivotY": 356.25
         },
         {
-          "x": 1121,
-          "y": 14,
-          "w": 347,
-          "h": 477,
-          "pivotX": 159,
-          "pivotY": 476
+          "x": 605,
+          "y": 2,
+          "w": 261,
+          "h": 358,
+          "pivotX": 119.25,
+          "pivotY": 357.0
         },
         {
-          "x": 49,
-          "y": 529,
-          "w": 455,
-          "h": 468,
-          "pivotX": 207,
-          "pivotY": 467
+          "x": 2,
+          "y": 364,
+          "w": 342,
+          "h": 351,
+          "pivotX": 155.25,
+          "pivotY": 350.25
         },
         {
-          "x": 598,
-          "y": 529,
-          "w": 337,
-          "h": 472,
-          "pivotX": 170,
-          "pivotY": 471
+          "x": 348,
+          "y": 364,
+          "w": 253,
+          "h": 354,
+          "pivotX": 127.5,
+          "pivotY": 353.25
         },
         {
-          "x": 1116,
-          "y": 529,
-          "w": 346,
-          "h": 472,
-          "pivotX": 164,
-          "pivotY": 471
+          "x": 605,
+          "y": 364,
+          "w": 260,
+          "h": 354,
+          "pivotX": 123.0,
+          "pivotY": 353.25
         }
       ],
-      "sha256": "1d95c59ec710e51026e30d33d5497e14761e439ddf6c9cf5dc3bda334f761a30"
+      "sha256": "df149f514c31b3db9c8707efe128530285a250823c71ed19c412fdc540dea589"
     }
   }
 }

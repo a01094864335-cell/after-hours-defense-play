@@ -13,7 +13,7 @@ const Motion = (() => {
     if (!sheets[key]) return null;
     if (!cache.has(key)) {
       const im = new Image();
-      im.addEventListener('load',()=>{invalidate();window.GamePerformance?.invalidate()});im.src = scriptBase + sheets[key].file;
+      im.addEventListener('load',()=>{invalidate();window.GamePerformance?.invalidate()});im.src = scriptBase + sheets[key].file + (sheets[key].sha256 ? '?v='+sheets[key].sha256.slice(0,12) : '');
       cache.set(key, im);
     }
     return cache.get(key);
