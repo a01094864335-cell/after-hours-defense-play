@@ -77,6 +77,12 @@ class SharedChromeTests(unittest.TestCase):
                 self.assertEqual(tones['reset']['border'],'rgb(16, 37, 75)')
                 self.assertIn('rgb(255, 227, 74)',tones['shared-menu-confirm']['image'])
                 self.assertIn('linear-gradient',tones['shared-menu-confirm']['image'])
+                for selector in ['#power-save-toggle','#compact-fx-toggle']:
+                    toggle=page.locator(selector)
+                    if toggle.count():
+                        style=toggle.evaluate('e=>({fg:getComputedStyle(e).color,bg:getComputedStyle(e).backgroundColor})')
+                        self.assertNotEqual(style['fg'],style['bg'])
+                        self.assertIn(style['fg'],['rgb(16, 37, 75)','rgb(255, 253, 247)'])
                 for selector in ['#menu .ui-dialog-header','#menu-close','#shared-menu-confirm']:
                     b=page.locator(selector).bounding_box()
                     self.assertIsNotNone(b)
@@ -228,4 +234,25 @@ class SharedChromeTests(unittest.TestCase):
             for box in page.locator('#result summary').evaluate_all('xs=>xs.filter(e=>e.getClientRects().length).map(e=>{const r=e.getBoundingClientRect();return {w:r.width,h:r.height}})'):
                 self.assertGreaterEqual(box['w'],44)
                 self.assertGreaterEqual(box['h'],44)
+            page.context.close()
+
+    def test_approved_equipment_and_deck_card_geometry(self):
+        for width,height in [(320,568),(390,844),(430,932)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta();openSheet('equipment')")
+            cards=page.locator('#equipment #cards>.card:visible')
+            self.assertGreater(cards.count(),0)
+            for card in cards.all():
+                box=card.bounding_box()
+                self.assertLessEqual(box['height'],180,'Upgrade should remain a compact horizontal row')
+                for arrow in card.locator('.live-direction-icon').all():
+                    self.assertLessEqual(arrow.bounding_box()['height'],16)
+            page.locator('#equipment-close').click()
+            page.evaluate('openDeck()')
+            for card in page.locator('#deck-options .deck-choice:visible').all():
+                self.assertEqual(card.evaluate('e=>getComputedStyle(e).flexDirection'),'column')
+                name=card.locator('strong')
+                if name.count():
+                    self.assertGreater(name.bounding_box()['width'],40)
+            page.locator('#deck-close').click()
             page.context.close()

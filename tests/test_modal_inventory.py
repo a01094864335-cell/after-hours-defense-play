@@ -20,6 +20,7 @@ PERK = BATTLE + "wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices
 
 # name, rendered surface, actual entry point. Separate states share an inventory ID.
 CASES = [
+    ('lobby', '#lobby', 'renderMeta()'),
     ('settings', '#menu', "openSheet('menu')"),
     ('info', '#info', "openSheet('info')"),
     ('leave', '#leave', BATTLE + 'askLeave()'),
@@ -136,7 +137,7 @@ def write_approved_review(out, report):
             'coverageStatus': 'missing-captures' if missing else 'captured',
             'visualFidelityStatus': 'unreviewed-requires-human-pixel-comparison',
             'knownScenarioDeviation': CONCEPT_NOTES.get(concept_id, 'Live game content and controlled QA state replace illustrative concept values; visual fidelity has not been certified.'),
-            'captures': [{key: c[key] for key in ('name', 'engine', 'viewport', 'screenshots', 'errors', 'actualViewport', 'imageFailures', 'touchClassifications') if key in c} for c in captures],
+            'captures': [{key: c[key] for key in ('name', 'engine', 'viewport', 'screenshots', 'errors', 'actualViewport', 'imageFailures', 'touchClassifications', 'scrollRegions', 'actionCheck') if key in c} for c in captures],
         })
     audit = {'schemaVersion': 1, 'designInventory': 'approved26-render_concepts.py-SCREENS',
              'conceptCount': len(APPROVED26), 'requestedViewports': SIZES,
@@ -294,8 +295,10 @@ class ModalInventoryTests(unittest.TestCase):
                         entry['screenshots'].append(path.name)
                         covered.add(selector)
                         # Scroll every real scroll region, including shadow-root bodies.
-                        scrolled = surface.evaluate("""root=>{let count=0;function walk(n){for(const e of n.children||[]){if(/auto|scroll/.test(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+2){e.scrollTop=e.scrollHeight;count++}walk(e);if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);return count}""")
-                        if scrolled:
+                        # Include the surface itself: #result is the actual scroll
+                        # container, so a descendant-only walk missed every footer.
+                        entry['scrollRegions'] = surface.evaluate("""root=>{const regions=[];function walk(e){if(e.nodeType===1&&/auto|scroll/.test(getComputedStyle(e).overflowY)&&e.scrollHeight>e.clientHeight+2){const before=e.scrollTop;e.scrollTop=e.scrollHeight;regions.push({id:e.id||e.className,before,after:e.scrollTop,scrollHeight:e.scrollHeight,clientHeight:e.clientHeight})}for(const child of e.children||[])walk(child);if(e.shadowRoot)walk(e.shadowRoot)}walk(root);return regions}""")
+                        if entry['scrollRegions'] or name == 'result':
                             page.wait_for_timeout(150)
                             path = out / (stem+'-bottom.png')
                             page.screenshot(path=str(path), animations='disabled')
@@ -340,6 +343,20 @@ class ModalInventoryTests(unittest.TestCase):
                             page.locator('#pause-continue').click()
                             self.assertFalse(page.evaluate('paused'))
                             self.assertTrue(page.locator('#ref-pause').is_hidden())
+                        if name == 'result':
+                            # Prove reachability with real user input, not just a
+                            # bounding box on an offscreen or covered control.
+                            for action in ('result-home', 'result-again', 'result-training'):
+                                control = page.locator('#'+action)
+                                control.scroll_into_view_if_needed()
+                                control.tap(trial=True)
+                            page.locator('#result-home').tap()
+                            page.wait_for_function("appScreen==='lobby' && document.querySelector('#result').hidden")
+                            self.assertTrue(page.locator('#asset-lobby-host').is_visible())
+                            entry['actionCheck'] = {'action': 'result-home', 'input': 'touch', 'outcome': 'lobby-visible-result-hidden', 'otherActions': 'Playwright touch actionability checks passed'}
+                            path = out / (stem+'-returned-lobby.png')
+                            page.screenshot(path=str(path), animations='disabled')
+                            entry['screenshots'].append(path.name)
                     except Exception as exc:
                         entry['errors'].append(str(exc))
                         try:

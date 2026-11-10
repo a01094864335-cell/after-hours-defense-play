@@ -1,108 +1,145 @@
 /* 01 Clipboard: metal clip, sound mascot, blue tracks and yellow knobs. */
-html body #menu.concept-modal{padding-top:35px!important}
-html body #menu.concept-modal header h2{text-align:center!important}
-html body #menu.concept-modal .concept-clip{position:absolute;top:-54px;left:calc(50% - 48px);width:96px;height:32px;background:#b8c9d5;border:3px solid #10254b;border-radius:8px;box-shadow:inset 0 8px #e7eff0}
-html body #menu.concept-modal .concept-sound-mascot{width:65px;height:65px}
-html body #menu.concept-modal :is(.sfx-settings,.bgm-settings){background:transparent!important;border:0!important;border-radius:0!important;padding:8px 0 14px!important;margin:0!important}
-html body #menu.concept-modal :is(.sfx-settings,.bgm-settings) legend{font:400 18px ConceptHead,sans-serif!important;color:#10254b!important}
-html body #menu.concept-modal input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(to right,#2258bb 0 var(--chrome-volume),#dce4e7 var(--chrome-volume) 100%);height:12px;border:2px solid #10254b}
-html body #menu.concept-modal input[type=range]::-webkit-slider-thumb{background:#ffe34a;border:2px solid #10254b;width:28px;height:28px;margin-top:-10px;box-shadow:0 2px #10254b}
-html body #menu.concept-modal .shared-detail-group{padding:10px 0!important;background:none!important;border:0!important}
-html body #menu.concept-modal #reset{background:#f1806f!important;border-color:#10254b!important;color:#10254b!important}
-html body #menu.concept-modal #shared-menu-confirm{background:linear-gradient(#ffe34a 0 86%,#e9a728 86%)!important;border-radius:12px!important;min-height:48px!important;font-size:21px!important}
+html body #menu#menu.concept-modal{padding-top:35px!important}
+html body #menu#menu.concept-modal header h2{text-align:center!important}
+html body #menu#menu.concept-modal .concept-clip{position:absolute;top:-54px;left:calc(50% - 48px);width:96px;height:32px;background:#b8c9d5;border:3px solid #10254b;border-radius:8px;box-shadow:inset 0 8px #e7eff0}
+html body #menu#menu.concept-modal .concept-sound-mascot{width:65px;height:65px}
+html body #menu#menu.concept-modal :is(.sfx-settings,.bgm-settings){background:transparent!important;border:0!important;border-radius:0!important;padding:8px 0 14px!important;margin:0!important}
+html body #menu#menu.concept-modal :is(.sfx-settings,.bgm-settings) legend{font:400 18px ConceptHead,sans-serif!important;color:#10254b!important}
+html body #menu#menu.concept-modal input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(to right,#2258bb 0 var(--chrome-volume),#dce4e7 var(--chrome-volume) 100%);height:12px;border:2px solid #10254b}
+html body #menu#menu.concept-modal input[type=range]::-webkit-slider-thumb{background:#ffe34a;border:2px solid #10254b;width:28px;height:28px;margin-top:-10px;box-shadow:0 2px #10254b}
+html body #menu#menu.concept-modal .shared-detail-group{padding:10px 0!important;background:none!important;border:0!important}
+html body #menu#menu.concept-modal #reset{background:#f1806f!important;border-color:#10254b!important;color:#10254b!important}
+html body #menu#menu.concept-modal #shared-menu-confirm{background:linear-gradient(#ffe34a 0 86%,#e9a728 86%)!important;border-radius:12px!important;min-height:48px!important;font-size:21px!important}
 /* 02 Illustrated manual, retained expanded rules below the three lessons. */
-html body #info.concept-modal::before,html body #leave.concept-modal::before,html body .concept-notice.concept-modal::before{display:block!important;content:''!important;position:absolute!important;top:-12px!important;left:30px!important;width:76px!important;height:22px!important;background:#ffe082cc!important;transform:rotate(-7deg)!important;border:none!important;pointer-events:none!important}
-html body #info.concept-modal .concept-help-card{display:grid!important;grid-template-columns:78px minmax(0,1fr)!important;gap:8px!important;background:#fffdf7!important;border:2px solid #10254b!important;border-radius:9px!important;padding:13px!important;margin:12px 0!important;box-shadow:3px 4px #10254b!important}
-html body #info.concept-modal .concept-help-card .concept-hero{grid-column:1;grid-row:1/5;width:76px;height:85px;align-self:center}
-html body #info.concept-modal .concept-help-card>:not(img){grid-column:2}
+html body #info#info.concept-modal::before,html body #leave#leave.concept-modal::before,html body .concept-notice.concept-modal::before{display:block!important;content:''!important;position:absolute!important;top:-12px!important;left:30px!important;width:76px!important;height:22px!important;background:#ffe082cc!important;transform:rotate(-7deg)!important;border:none!important;pointer-events:none!important}
+html body #info#info.concept-modal .concept-help-card{display:grid!important;grid-template-columns:78px minmax(0,1fr)!important;gap:8px!important;background:#fffdf7!important;border:2px solid #10254b!important;border-radius:9px!important;padding:13px!important;margin:12px 0!important;box-shadow:3px 4px #10254b!important}
+html body #info#info.concept-modal .concept-help-card .concept-hero{grid-column:1;grid-row:1/5;width:76px;height:85px;align-self:center}
+html body #info#info.concept-modal .concept-help-card>:not(img){grid-column:2}
 /* 03/04 compact warnings and courier memo. */
-html body #leave.concept-modal{max-width:340px!important}
-html body #leave.concept-modal header{padding-top:55px!important}
-html body #leave.concept-modal header:before{content:'!';position:absolute;left:calc(50% - 27px);top:-6px;width:50px;height:50px;border:3px solid #10254b;border-radius:50%;background:#f1806f;color:#10254b;font:40px ConceptHead,sans-serif;text-align:center}
-html body #leave.concept-modal .ui-dialog-actions{flex-direction:column!important}
-html body #leave.concept-modal #leave-cancel{order:-1!important}
-html body #leave.concept-modal #leave-confirm{background:linear-gradient(#f1806f 0 86%,#c65852 86%)!important}
-html body #guide.concept-modal header{flex-wrap:wrap!important}
-html body #guide.concept-modal .concept-courier{width:110px;height:110px;margin:-45px 0 0 auto}
-html body #guide.concept-modal header h2{flex-basis:100%!important}
-html body #guide.concept-modal #guide-text{font-size:16px!important;line-height:1.65!important;white-space:pre-line}
+html body #leave#leave.concept-modal{max-width:340px!important}
+html body #leave#leave.concept-modal header{padding-top:55px!important}
+html body #leave#leave.concept-modal header:before{content:'!';position:absolute;left:calc(50% - 27px);top:-6px;width:50px;height:50px;border:3px solid #10254b;border-radius:50%;background:#f1806f;color:#10254b;font:40px ConceptHead,sans-serif;text-align:center}
+html body #leave#leave.concept-modal .ui-dialog-actions{flex-direction:column!important}
+html body #leave#leave.concept-modal #leave-cancel{order:-1!important}
+html body #leave#leave.concept-modal #leave-confirm{background:linear-gradient(#f1806f 0 86%,#c65852 86%)!important}
+html body #guide#guide.concept-modal header{flex-wrap:wrap!important}
+html body #guide#guide.concept-modal .concept-courier{width:110px;height:110px;margin:-45px 0 0 auto}
+html body #guide#guide.concept-modal header h2{flex-basis:100%!important}
+html body #guide#guide.concept-modal #guide-text{font-size:16px!important;line-height:1.65!important;white-space:pre-line}
 /* 05 Reward tickets are independent objects on the dimmed live battle. */
 html body dialog#perk.concept-modal.concept-modal{background:transparent!important;border:0!important;box-shadow:none!important;padding:0 2px 8px!important;width:calc(100vw - 48px)!important;max-height:calc(100dvh - 32px)!important}
-html body #perk.concept-modal header{display:flex!important;flex-direction:column!important;gap:0!important}
-html body #perk.concept-modal header h2{color:#fffdf7!important;text-align:center!important;font-size:27px!important}
-html body #perk.concept-modal .concept-bonus-mascot{height:130px;width:130px;background:#ffe34a;clip-path:polygon(50% 0,59% 12%,75% 4%,78% 21%,96% 25%,88% 40%,100% 50%,88% 60%,96% 75%,78% 79%,75% 96%,59% 88%,50% 100%,41% 88%,25% 96%,22% 79%,4% 75%,12% 60%,0 50%,12% 40%,4% 25%,22% 21%,25% 4%,41% 12%);object-fit:contain}
-html body #perk.concept-modal :is(#perk-intro,#perk-note){color:#fffdf7!important;text-align:center!important;font-size:13px!important;margin:8px 0!important}
-html body #perk.concept-modal #perk-options{display:grid!important;grid-template-columns:1fr!important;gap:18px!important;padding:7px 5px!important}
-html body #perk.concept-modal #perk-options>button{position:relative!important;display:flex!important;align-items:center!important;text-align:left!important;min-height:108px!important;padding:18px 14px 18px 108px!important;border:2.5px solid #10254b!important;border-radius:9px!important;background:#c9e5ff!important;box-shadow:5px 6px #10254b!important;font-size:20px!important;overflow:visible!important}
-html body #perk.concept-modal #perk-options>button:before{content:''!important;position:absolute!important;left:13px!important;top:16px!important;width:72px!important;height:74px!important;background:url('assets/character-portraits/goblin-guard.webp') center/contain no-repeat!important;border:0!important;transform:none!important}
-html body #perk.concept-modal #perk-options>button:after{content:''!important;position:absolute!important;left:94px!important;top:12px!important;bottom:12px!important;width:0!important;border-left:1px dashed #10254b!important;background:none!important}
-html body #perk.concept-modal #perk-options>#perk-sp{background:#ffe34a!important}
-html body #perk.concept-modal #perk-options>#perk-sp:before{background-image:url('assets/character-portraits/gobi.webp')!important}
-html body #perk.concept-modal #perk-options>#perk-life:before{background-image:url('assets/character-portraits/slime-cleaner.webp')!important}
-html body #perk.concept-modal #perk-options>button:disabled{background:#dde1d8!important;color:#657476!important}
-html body #perk.concept-modal :is(#tactical-bonuses,#perk-targets,#build-choices){background:#fff6df!important;border:2px solid #10254b!important;border-radius:9px!important;padding:12px!important;margin:16px 4px!important}
-html body #perk.concept-modal #perk-options>button[hidden],html body #perk.concept-modal [hidden]{display:none!important}
+html body #perk#perk.concept-modal header{display:flex!important;flex-direction:column!important;gap:0!important}
+html body #perk#perk.concept-modal header h2{color:#fffdf7!important;text-align:center!important;font-size:27px!important}
+html body #perk#perk.concept-modal .concept-bonus-mascot{height:130px;width:130px;background:#ffe34a;clip-path:polygon(50% 0,59% 12%,75% 4%,78% 21%,96% 25%,88% 40%,100% 50%,88% 60%,96% 75%,78% 79%,75% 96%,59% 88%,50% 100%,41% 88%,25% 96%,22% 79%,4% 75%,12% 60%,0 50%,12% 40%,4% 25%,22% 21%,25% 4%,41% 12%);object-fit:contain}
+html body #perk#perk.concept-modal :is(#perk-intro,#perk-note){color:#fffdf7!important;text-align:center!important;font-size:13px!important;margin:8px 0!important}
+html body #perk#perk.concept-modal #perk-options{display:grid!important;grid-template-columns:1fr!important;gap:18px!important;padding:7px 5px!important}
+html body #perk#perk.concept-modal #perk-options>button{position:relative!important;display:flex!important;align-items:center!important;text-align:left!important;min-height:108px!important;padding:18px 14px 18px 108px!important;border:2.5px solid #10254b!important;border-radius:9px!important;background:#c9e5ff!important;box-shadow:5px 6px #10254b!important;font-size:20px!important;overflow:visible!important}
+html body #perk#perk.concept-modal #perk-options>button:before{content:''!important;position:absolute!important;left:13px!important;top:16px!important;width:72px!important;height:74px!important;background:url('assets/character-portraits/goblin-guard.webp') center/contain no-repeat!important;border:0!important;transform:none!important}
+html body #perk#perk.concept-modal #perk-options>button:after{content:''!important;position:absolute!important;left:94px!important;top:12px!important;bottom:12px!important;width:0!important;border-left:1px dashed #10254b!important;background:none!important}
+html body #perk#perk.concept-modal #perk-options>#perk-sp{background:#ffe34a!important}
+html body #perk#perk.concept-modal #perk-options>#perk-sp:before{background-image:url('assets/character-portraits/gobi.webp')!important}
+html body #perk#perk.concept-modal #perk-options>#perk-life:before{background-image:url('assets/character-portraits/slime-cleaner.webp')!important}
+html body #perk#perk.concept-modal #perk-options>button:disabled{background:#dde1d8!important;color:#657476!important}
+html body #perk#perk.concept-modal :is(#tactical-bonuses,#perk-targets,#build-choices){background:#fff6df!important;border:2px solid #10254b!important;border-radius:9px!important;padding:12px!important;margin:16px 4px!important}
+html body #perk#perk.concept-modal #perk-options>button[hidden],html body #perk#perk.concept-modal [hidden]{display:none!important}
 /* 06 Wood workbench, live cost cards. */
 html body dialog#equipment.concept-modal.concept-modal{background:repeating-linear-gradient(0deg,#d4a96d 0 105px,#b47e44 106px 108px)!important;border:9px solid #b47e44!important;outline:3px solid #10254b;box-shadow:6px 7px #10254b!important;border-radius:10px!important;padding:12px!important}
-html body #equipment.concept-modal .sheet-head{background:#fff6df!important;border:2px solid #10254b!important;padding:10px 7px 10px 80px!important;min-height:75px!important}
-html body #equipment.concept-modal .concept-mechanic{position:absolute;left:-14px;bottom:0;width:94px;height:106px}
-html body #equipment.concept-modal .sheet-head h2{font-size:25px!important}
-html body #equipment.concept-modal #equipment-balance{align-self:flex-end;background:#ffe34a!important;border:2px solid #10254b!important;border-radius:10px!important;padding:6px 10px!important;font-size:13px!important}
-html body #equipment.concept-modal #cards{display:grid!important;grid-template-columns:1fr!important;gap:14px!important}
-html body #equipment.concept-modal #cards>button{display:grid!important;grid-template-columns:64px minmax(0,1fr) 80px!important;align-items:center!important;gap:10px!important;background:#fffdf7!important;padding:12px 8px!important;min-height:98px!important;text-align:left!important}
-html body #equipment.concept-modal #cards>button img{width:64px!important;height:72px!important;object-fit:contain!important}
-html body #equipment.concept-modal #cards>button b{background:#ffe34a!important;border:2px solid #10254b!important;border-radius:10px!important;padding:10px 4px!important;text-align:center!important;font-size:14px!important}
-html body #equipment.concept-modal #cards>button:disabled b{background:#dde1d8!important}
-html body #equipment.concept-modal #concept-equipment-done{background:#fffdf7!important}
+html body #equipment#equipment.concept-modal .sheet-head{background:#fff6df!important;border:2px solid #10254b!important;padding:10px 7px 10px 80px!important;min-height:75px!important}
+html body #equipment#equipment.concept-modal .concept-mechanic{position:absolute;left:-14px;bottom:0;width:94px;height:106px}
+html body #equipment#equipment.concept-modal .sheet-head h2{font-size:25px!important}
+html body #equipment#equipment.concept-modal #equipment-balance{align-self:flex-end;background:#ffe34a!important;border:2px solid #10254b!important;border-radius:10px!important;padding:6px 10px!important;font-size:13px!important}
+html body #equipment#equipment.concept-modal #cards{display:grid!important;grid-template-columns:1fr!important;gap:14px!important}
+html body #equipment#equipment.concept-modal #cards>button{display:grid!important;grid-template-columns:64px minmax(0,1fr) 80px!important;align-items:center!important;gap:10px!important;background:#fffdf7!important;padding:12px 8px!important;min-height:98px!important;text-align:left!important}
+html body #equipment#equipment.concept-modal #cards>button img{width:64px!important;height:72px!important;object-fit:contain!important}
+html body #equipment#equipment.concept-modal #cards>button b{background:#ffe34a!important;border:2px solid #10254b!important;border-radius:10px!important;padding:10px 4px!important;text-align:center!important;font-size:14px!important}
+html body #equipment#equipment.concept-modal #cards>button:disabled b{background:#dde1d8!important}
+html body #equipment#equipment.concept-modal #concept-equipment-done{background:#fffdf7!important}
 /* 07 Open personnel folder. */
 html body dialog#deck.concept-modal.concept-modal{border:10px solid #dea95d!important;outline:3px solid #10254b;background:linear-gradient(90deg,#fffdf7 49.7%,#d4c6a4 50%,#fffdf7 50.3%)!important;border-radius:5px!important}
-html body #deck.concept-modal #deck-options{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
-html body #deck.concept-modal .deck-choice{display:flex!important;flex-direction:column!important;align-items:center!important;gap:3px!important;padding:7px 3px!important;background:#fff6df!important;min-width:0!important;border-radius:5px!important;font-size:14px!important}
-html body #deck.concept-modal .deck-choice img{width:70px!important;height:76px!important;object-fit:contain!important}
-html body #deck.concept-modal .deck-choice.picked{background:#fff0c4!important;border-color:#2258bb!important}
-html body #deck.concept-modal #deck-tip{font-size:13px!important;background:#fff0c4;padding:10px;border:1px solid #bda575}
+html body #deck#deck.concept-modal #deck-options{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px!important}
+html body #deck#deck.concept-modal .deck-choice{display:flex!important;flex-direction:column!important;align-items:center!important;gap:3px!important;padding:7px 3px!important;background:#fff6df!important;min-width:0!important;border-radius:5px!important;font-size:14px!important}
+html body #deck#deck.concept-modal .deck-choice img{width:70px!important;height:76px!important;object-fit:contain!important}
+html body #deck#deck.concept-modal .deck-choice.picked{background:#fff0c4!important;border-color:#2258bb!important}
+html body #deck#deck.concept-modal #deck-tip{font-size:13px!important;background:#fff0c4;padding:10px;border:1px solid #bda575}
 /* 08 Cork board with pinned notices. */
 html body dialog#daily-events-dialog.concept-modal.concept-modal{background:#d2ac73!important;border:11px solid #b47e44!important;outline:3px solid #10254b;border-radius:10px!important;padding:13px!important}
-html body #daily-events-dialog.concept-modal .sheet-head{padding:14px!important;background:#fff6df!important;border:2px solid #10254b!important;box-shadow:3px 4px #10254b!important}
-html body #daily-events-dialog.concept-modal #daily-events-list{display:grid!important;gap:15px!important}
-html body #daily-events-dialog.concept-modal #daily-events-list article{position:relative!important;background:#fffdf7!important;border:2px solid #10254b!important;border-radius:2px!important;padding:15px 13px!important;box-shadow:3px 4px #10254b!important}
-html body #daily-events-dialog.concept-modal #daily-events-list article:after{content:'';position:absolute;right:12px;top:-6px;width:12px;height:12px;border:2px solid #10254b;border-radius:50%;background:#2258bb;box-shadow:1px 3px #10254b}
-html body #daily-events-dialog.concept-modal .daily-kind{background:#ffe34a!important;color:#10254b!important;border:1px solid #10254b!important}
-html body #daily-events-dialog.concept-modal article p{color:#2258bb!important;font-weight:700!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal .sheet-head{padding:14px!important;background:#fff6df!important;border:2px solid #10254b!important;box-shadow:3px 4px #10254b!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list{display:grid!important;gap:15px!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article{position:relative!important;background:#fffdf7!important;border:2px solid #10254b!important;border-radius:2px!important;padding:15px 13px!important;box-shadow:3px 4px #10254b!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article:after{content:'';position:absolute;right:12px;top:-6px;width:12px;height:12px;border:2px solid #10254b;border-radius:50%;background:#2258bb;box-shadow:1px 3px #10254b}
+html body #daily-events-dialog#daily-events-dialog.concept-modal .daily-kind{background:#ffe34a!important;color:#10254b!important;border:1px solid #10254b!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal article p{color:#2258bb!important;font-weight:700!important}
 /* 09 Ledger, with envelope preset slots and ruled records. */
 html body dialog#journey-dialog.concept-modal.concept-modal{background:linear-gradient(90deg,#d7b87e 0 15px,#fff6df 15px)!important;border:9px solid #2258bb!important;border-radius:10px!important;padding-left:29px!important}
-html body #journey-dialog.concept-modal #deck-presets>div{background:linear-gradient(155deg,transparent 48%,#cfb887 49%,#fff0c7 50%)!important;border:2px solid #10254b!important;border-radius:4px!important;padding:12px!important;margin:12px 0!important}
-html body #journey-dialog.concept-modal #deck-presets button{padding:8px!important;box-shadow:1px 2px #10254b!important;background:#fffdf7!important;border-color:#10254b!important}
-html body #journey-dialog.concept-modal #run-history-list li{border:0!important;border-bottom:1px solid #cfc4ab!important;border-radius:0!important;background:transparent!important;padding:12px 0!important}
+html body #journey-dialog#journey-dialog.concept-modal #deck-presets>div{background:linear-gradient(155deg,transparent 48%,#cfb887 49%,#fff0c7 50%)!important;border:2px solid #10254b!important;border-radius:4px!important;padding:12px!important;margin:12px 0!important}
+html body #journey-dialog#journey-dialog.concept-modal #deck-presets button{padding:8px!important;box-shadow:1px 2px #10254b!important;background:#fffdf7!important;border-color:#10254b!important}
+html body #journey-dialog#journey-dialog.concept-modal #run-history-list li{border:0!important;border-bottom:1px solid #cfc4ab!important;border-radius:0!important;background:transparent!important;padding:12px 0!important}
 /* 10 Numbered archive cabinet, semantic validation colors. */
 html body dialog#save-transfer-dialog.concept-modal.concept-modal{background:#d6e5e9!important;border-radius:12px!important}
-html body #save-transfer-dialog.concept-modal .shared-detail-group{background:#fffdf7!important;border:2px solid #10254b!important;border-radius:7px!important;padding:15px!important;margin:15px 0!important;box-shadow:3px 4px #10254b!important}
-html body #save-transfer-dialog.concept-modal .shared-detail-group h3{color:#10254b!important;font-size:20px!important}
-html body #save-transfer-dialog.concept-modal #save-download{background:linear-gradient(#ffe34a 0 86%,#e9a728 86%)!important;border-color:#10254b!important}
-html body #save-transfer-dialog.concept-modal #save-preview{background:#fffdf7!important;border-color:#10254b!important}
-html body #save-transfer-dialog.concept-modal #save-text{background:#eef4f5!important;border:1.5px solid #10254b!important;color:#334b68!important;border-radius:6px!important;overflow-wrap:anywhere!important}
-html body #save-transfer-dialog.concept-modal #save-restore{background:linear-gradient(#f1806f 0 86%,#c65852 86%)!important}
-html body #save-transfer-dialog.concept-modal #save-transfer-status[data-phase=preview]{background:#b7e8d6!important;color:#10254b!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal .shared-detail-group{background:#fffdf7!important;border:2px solid #10254b!important;border-radius:7px!important;padding:15px!important;margin:15px 0!important;box-shadow:3px 4px #10254b!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal .shared-detail-group h3{color:#10254b!important;font-size:20px!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal #save-download{background:linear-gradient(#ffe34a 0 86%,#e9a728 86%)!important;border-color:#10254b!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal #save-preview{background:#fffdf7!important;border-color:#10254b!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal #save-text{background:#eef4f5!important;border:1.5px solid #10254b!important;color:#334b68!important;border-radius:6px!important;overflow-wrap:anywhere!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal #save-restore{background:linear-gradient(#f1806f 0 86%,#c65852 86%)!important}
+html body #save-transfer-dialog#save-transfer-dialog.concept-modal #save-transfer-status[data-phase=preview]{background:#b7e8d6!important;color:#10254b!important}
 /* 11 Blue storybook covers retain actual art, titles and unlock gates. */
-html body #story-archive.concept-modal #story-archive-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px 14px!important}
-html body #story-archive.concept-modal .story-card{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:7px!important;background:linear-gradient(90deg,#a8bcd2 0 5px,#2258bb 5px)!important;color:#fffdf7!important;border:2px solid #10254b!important;border-radius:5px!important;padding:12px 10px 12px 16px!important;box-shadow:5px 5px #10254b!important;min-height:185px!important;text-align:center!important}
-html body #story-archive.concept-modal .story-card.locked{background:linear-gradient(90deg,#a8bcd2 0 5px,#7a8d9a 5px)!important}
-html body #story-archive.concept-modal .story-card :is(b,small){color:#fffdf7!important;word-break:keep-all!important}
-html body #story-archive.concept-modal .story-cover{height:100px!important;width:100%!important;background:transparent!important}
-html body #story-archive.concept-modal .story-cover img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:3px!important}
-html body #story-archive.concept-modal .story-card em{background:#ffe34a!important;color:#10254b!important;padding:4px 8px!important;border:1px solid #10254b!important;border-radius:7px!important;font-size:11px!important}
-html body #story-archive.concept-modal .story-card.locked em{background:#dbe0df!important}
+html body #story-archive#story-archive.concept-modal #story-archive-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:20px 14px!important}
+html body #story-archive#story-archive.concept-modal .story-card{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;gap:7px!important;background:linear-gradient(90deg,#a8bcd2 0 5px,#2258bb 5px)!important;color:#fffdf7!important;border:2px solid #10254b!important;border-radius:5px!important;padding:12px 10px 12px 16px!important;box-shadow:5px 5px #10254b!important;min-height:185px!important;text-align:center!important}
+html body #story-archive#story-archive.concept-modal .story-card.locked{background:linear-gradient(90deg,#a8bcd2 0 5px,#7a8d9a 5px)!important}
+html body #story-archive#story-archive.concept-modal .story-card :is(b,small){color:#fffdf7!important;word-break:keep-all!important}
+html body #story-archive#story-archive.concept-modal .story-cover{height:100px!important;width:100%!important;background:transparent!important}
+html body #story-archive#story-archive.concept-modal .story-cover img{width:100%!important;height:100%!important;object-fit:cover!important;border-radius:3px!important}
+html body #story-archive#story-archive.concept-modal .story-card em{background:#ffe34a!important;color:#10254b!important;padding:4px 8px!important;border:1px solid #10254b!important;border-radius:7px!important;font-size:11px!important}
+html body #story-archive#story-archive.concept-modal .story-card.locked em{background:#dbe0df!important}
 /* 12 Battle note, courier sticker kept outside the copy. */
 html body dialog.concept-notice.concept-modal{max-width:345px!important}
 html body .concept-notice.concept-modal .concept-note-mascot{width:73px;height:73px;margin-top:-36px;order:2}
-@media(max-height:650px){html body #perk.concept-modal .concept-bonus-mascot{width:76px;height:76px}html body #perk.concept-modal #perk-options>button{min-height:94px!important}html body #guide.concept-modal .concept-courier{height:75px;width:75px;margin-top:-20px}}
-@media(max-width:350px){html body #equipment.concept-modal #cards>button{grid-template-columns:49px minmax(0,1fr) 68px!important;gap:6px!important}html body #equipment.concept-modal #cards>button img{width:49px!important}html body #deck.concept-modal .deck-choice img{width:55px!important;height:65px!important}html body #story-archive.concept-modal .story-card{padding-left:12px!important;padding-right:6px!important}}
+@media(max-height:650px){html body #perk#perk.concept-modal .concept-bonus-mascot{width:76px;height:76px}html body #perk#perk.concept-modal #perk-options>button{min-height:94px!important}html body #guide#guide.concept-modal .concept-courier{height:75px;width:75px;margin-top:-20px}}
+@media(max-width:350px){html body #equipment#equipment.concept-modal #cards>button{grid-template-columns:49px minmax(0,1fr) 68px!important;gap:6px!important}html body #equipment#equipment.concept-modal #cards>button img{width:49px!important}html body #deck#deck.concept-modal .deck-choice img{width:55px!important;height:65px!important}html body #story-archive#story-archive.concept-modal .story-card{padding-left:12px!important;padding-right:6px!important}}
 html body dialog:is(#menu,#info,#leave,#guide,#story-archive).concept-modal.concept-modal{background-image:url('assets/concept-tools/paper-grain.svg')!important;background-size:160px 160px!important}
-html body #info.concept-modal .concept-help-card>b{justify-self:start!important;grid-column:2!important;border:1.5px solid #10254b;border-radius:7px;background:#ffe34a;padding:2px 8px;color:#10254b!important;font-size:16px!important}
-html body #info.concept-modal .concept-help-card>div{grid-column:2!important;min-width:0!important}
-html body #info.concept-modal .concept-help-card h3{font-size:19px!important;margin:0 0 7px!important;color:#10254b!important}
-html body #info.concept-modal .concept-help-card p{font-size:13px!important;margin:0!important}
-html body #perk.concept-modal #perk-options>button{background-image:radial-gradient(circle at 0 50%,#263a65 0 7px,transparent 8px),radial-gradient(circle at 100% 50%,#263a65 0 7px,transparent 8px)!important}
-html body #perk.concept-modal #perk-options>#perk-sp{background-color:#ffe34a!important}
-html body #perk.concept-modal #perk-options>button:disabled{background-color:#dde1d8!important}
-html body #menu.concept-modal #menu-story,html body #menu.concept-modal #save-transfer-open,html body #menu.concept-modal #menu-training,html body #menu.concept-modal #ref-menu-help{background:#fffdf7!important;border:2px solid #10254b!important;box-shadow:2px 4px #10254b!important}
+html body #info#info.concept-modal .concept-help-card>b{justify-self:start!important;grid-column:2!important;border:1.5px solid #10254b;border-radius:7px;background:#ffe34a;padding:2px 8px;color:#10254b!important;font-size:16px!important}
+html body #info#info.concept-modal .concept-help-card>div{grid-column:2!important;min-width:0!important}
+html body #info#info.concept-modal .concept-help-card h3{font-size:19px!important;margin:0 0 7px!important;color:#10254b!important}
+html body #info#info.concept-modal .concept-help-card p{font-size:13px!important;margin:0!important}
+html body #perk#perk.concept-modal #perk-options>button{background-image:radial-gradient(circle at 0 50%,#263a65 0 7px,transparent 8px),radial-gradient(circle at 100% 50%,#263a65 0 7px,transparent 8px)!important}
+html body #perk#perk.concept-modal #perk-options>#perk-sp{background-color:#ffe34a!important}
+html body #perk#perk.concept-modal #perk-options>button:disabled{background-color:#dde1d8!important}
+html body #menu#menu.concept-modal #menu-story,html body #menu#menu.concept-modal #save-transfer-open,html body #menu#menu.concept-modal #menu-training,html body #menu#menu.concept-modal #ref-menu-help{background:#fffdf7!important;border:2px solid #10254b!important;box-shadow:2px 4px #10254b!important}
+/* Clear legacy grid areas, animated replacement canvases and inherited card ornaments. */
+html body #equipment#equipment.concept-modal #cards>.card{grid-template-areas:'art label cost'!important;grid-template-columns:64px minmax(0,1fr) 80px!important;min-height:98px!important}
+html body #equipment#equipment.concept-modal #cards>.card>:is(img,canvas){grid-area:art!important;width:64px!important;height:72px!important;object-fit:contain!important;position:static!important}
+html body #equipment#equipment.concept-modal #cards>.card>span{grid-area:label!important;font:400 17px/1.4 ConceptHead,sans-serif!important}
+html body #equipment#equipment.concept-modal #cards>.card>span small{font:12px/1.5 'Apple SD Gothic Neo',sans-serif!important;color:#334b68!important}
+html body #equipment#equipment.concept-modal #cards>.card>b{grid-area:cost!important;padding:10px 3px!important;text-align:center!important}
+html body #equipment#equipment.concept-modal #cards>.card:before,html body #equipment#equipment.concept-modal #cards>.card:after{display:none!important}
+html body #info#info.concept-modal .concept-help-card>canvas{display:none!important}
+html body #info#info.concept-modal .concept-help-card>img.concept-hero{display:block!important;grid-column:1!important;grid-row:1/4!important}
+html body #deck#deck.concept-modal #deck-options .deck-choice{display:flex!important;grid-template-areas:none!important}
+html body #deck#deck.concept-modal #deck-options .deck-choice>:is(img,canvas){width:70px!important;height:76px!important;position:static!important}
+html body #perk#perk.concept-modal .panel-scroll-body{border:0!important;outline:none!important;box-shadow:none!important;background:none!important;padding:2px 5px 8px!important}
+html body dialog.concept-modal .panel-scroll-body:focus-visible{outline:2px solid #e9a728!important;outline-offset:-2px!important}
+@media(max-width:350px){html body #equipment#equipment.concept-modal #cards>.card{grid-template-columns:49px minmax(0,1fr) 68px!important}html body #equipment#equipment.concept-modal #cards>.card>:is(img,canvas){width:49px!important;height:62px!important}}
+html body #equipment#equipment.concept-modal #cards .card .live-direction-icon{display:inline-block!important;width:14px!important;height:14px!important;margin:0 3px!important;vertical-align:middle!important;object-fit:contain!important}
+html body #equipment#equipment.concept-modal #cards .card>span{min-width:0!important}
+html body #deck#deck.concept-modal #deck-options .deck-choice>:is(strong,span,small){width:100%!important;min-width:0!important;text-align:center!important;white-space:normal!important;word-break:keep-all!important;grid-area:auto!important}
+html body #guide#guide.concept-modal header{padding-top:68px!important;position:relative!important;display:flex!important;align-items:flex-start!important;gap:20px!important}
+html body #guide#guide.concept-modal .concept-courier{position:absolute!important;right:0!important;top:-75px!important;width:145px!important;height:145px!important;margin:0!important}
+html body #guide#guide.concept-modal .concept-eyebrow{align-self:flex-start;flex:none;position:relative;margin-top:0}
+html body #guide#guide.concept-modal #guide-text{background:none!important;border:0!important;padding:8px 0 18px!important;border-bottom:1px dashed #bca773!important;border-radius:0!important}
+html body #guide#guide.concept-modal .concept-resume-team{display:flex;flex-wrap:wrap;gap:7px;padding:8px 0 15px}
+html body #guide#guide.concept-modal .concept-resume-team p{flex-basis:100%;padding:7px;background:#b7e8d6;border:1px solid #10254b;border-radius:8px;font-size:13px}
+html body #guide#guide.concept-modal .concept-resume-team img{width:calc((100% - 28px)/5);height:auto;aspect-ratio:1;object-fit:contain}
+html body #guide#guide.concept-modal .concept-resume-team[hidden]{display:none!important}
+@media(max-height:650px){html body #guide#guide.concept-modal header{padding-top:25px!important}html body #guide#guide.concept-modal .concept-courier{width:90px!important;height:90px!important;top:-50px!important}}
+html body dialog.notice-dialog.concept-notice.concept-modal{height:fit-content!important;min-height:0!important;max-height:calc(100dvh - 70px)!important;align-self:center!important}
+html body dialog.notice-dialog.concept-notice.concept-modal>.panel-scroll-body{flex:0 1 auto!important;min-height:0!important;max-height:calc(100dvh - 270px)!important;padding:12px 0!important}
+html body dialog.notice-dialog.concept-notice.concept-modal>.ui-dialog-actions{flex:0 0 auto!important}
+html body #menu#menu.concept-modal :is(#power-save-toggle,#compact-fx-toggle){background:#fffdf7!important;color:#10254b!important;border:2px solid #10254b!important;box-shadow:2px 4px #10254b!important}
+html body #menu#menu.concept-modal :is(#power-save-toggle,#compact-fx-toggle)[aria-pressed=true]{background:#2258bb!important;color:#fffdf7!important;box-shadow:inset 0 0 0 2px #c9e5ff,2px 4px #10254b!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article{display:grid!important;grid-template-columns:48px minmax(0,1fr)!important;grid-template-rows:auto auto!important;align-items:center!important;column-gap:12px!important;row-gap:6px!important;min-height:86px!important;padding:14px 12px!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article .daily-kind{grid-column:1!important;grid-row:1/3!important;align-self:center!important;justify-self:start!important;margin:0!important;padding:7px 6px!important;font-size:11px!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article h3{grid-column:2!important;margin:0!important;font-size:19px!important;color:#10254b!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article p{grid-column:2!important;margin:0!important;font-size:14px!important}
+html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list{gap:18px!important}
+html body #leave#leave.concept-modal #leave-confirm{color:#10254b!important}

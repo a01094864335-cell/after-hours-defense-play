@@ -126,3 +126,28 @@ html body #session-notice,html body #rotation-notice{border-radius:0!important;b
 html body :is(#session-notice,#rotation-notice)[hidden]{display:none!important}
 html body #promo#promo#promo .comic-head>span{max-width:calc(100% - 72px)!important}
 html body #promo#promo#promo .comic-head #promo-count{flex:0 0 auto!important;color:#fffdf7!important;margin-left:auto!important;white-space:nowrap!important;font:400 15px/1.3 sans-serif!important}
+/* First real-device capture corrections: reset inherited column metrics and
+   put the primary result action before optional expanded report sections. */
+html body #app-shell #result.result-screen{gap:12px!important;padding:24px 20px!important}
+html body #app-shell #result .result-icon{width:180px!important;height:180px!important;min-height:180px!important;margin:0 auto!important}
+html body #app-shell #result .result-icon img.concept-result-portrait{width:140px!important;height:140px!important}
+html body #app-shell #result>#result-title{min-height:62px!important;padding:15px 14px!important}
+html body #app-shell #result .live-result-body{gap:10px!important;padding:20px!important}
+html body #app-shell #result #result-stats{gap:4px!important;margin:0!important}
+html body #app-shell #result #result-stats>div{flex-direction:row!important;justify-content:space-between!important;align-items:center!important;height:auto!important;min-height:0!important;margin:0!important;padding:6px 0!important;text-align:left!important}
+html body #app-shell #result #result-stats>div:first-child{justify-content:center!important;gap:12px!important;padding:10px 0 18px!important}
+html body #app-shell #result #result-stats>div>b{width:auto!important;flex:0 0 auto!important;line-height:1.25!important;margin:0!important}
+html body #app-shell #result #result-stats>div:not(:first-child)>b{margin-left:auto!important;font-size:22px!important}
+html body #result #live-result-reward{order:-3!important;gap:5px!important;margin:0!important;padding:6px 0!important;text-align:left!important}
+html body #result #live-result-reward small:last-child{font-size:11px!important}
+html body #app-shell #result #result-title-badge{order:-2!important;min-height:0!important;line-height:1.4!important;padding:6px 8px!important;margin:0!important}
+html body #result .live-result-actions{order:-1!important;margin:6px 0 0!important}
+html body #result .scene-report-ledger{margin:8px 0 0!important}
+html body #result #result-text:empty{display:none!important}
+/* The compact card scrolls, so keep the full pause medallion inside its bounds. */
+@media(max-height:650px){html body #ref-pause #pause-window{padding-top:104px!important}html body #ref-pause .concept-pause-sign{top:8px!important}html body #app-shell #result .result-icon{width:140px!important;height:140px!important;min-height:140px!important}html body #app-shell #result .result-icon img.concept-result-portrait{width:106px!important;height:106px!important}}
+/* Fill the photo mat with a live scene label rather than an empty flex gap. */
+html body #viewer .concept-gallery-frame{display:flex;flex-direction:column;min-height:0;gap:14px;padding-bottom:16px;flex:1 1 0;overflow:visible}
+html body #viewer #large{flex:1 1 0;min-height:0;height:0;max-height:none;aspect-ratio:auto;object-fit:cover}
+html body #viewer .concept-gallery-scene{flex:0 0 auto;margin:0;padding:4px 6px;color:#10254b;font:400 clamp(16px,4.7vw,22px)/1.4 ConceptStory,sans-serif;text-align:center}
+html body #promo#promo#promo #promo-next{background:#fffdf7!important;color:#2258bb!important;box-shadow:none!important;border-color:transparent!important}

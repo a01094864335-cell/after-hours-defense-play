@@ -91,6 +91,17 @@
         frame.className = 'concept-gallery-frame';
         art.before(frame);
         frame.append(art);
+        const caption = document.createElement('p');
+        caption.className = 'concept-gallery-scene';
+        frame.append(caption);
+        // Read the current real scene label. Navigation continues to own image,
+        // count and selection; only this presentation caption is synchronized.
+        const syncCaption = () => {
+          const label = art.alt || '';
+          if (caption.textContent !== label) caption.textContent = label;
+        };
+        syncCaption();
+        new MutationObserver(syncCaption).observe(art, {attributes:true, attributeFilter:['alt']});
       }
     }
   }

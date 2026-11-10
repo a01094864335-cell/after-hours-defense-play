@@ -2,10 +2,11 @@
 // Approved personnel, mail and training art. Native controls remain the authority.
 (() => {
  if(typeof URL!=='function'||typeof MutationObserver!=='function'||typeof document.createElement!=='function'||!document.body)return;
- const sheet=new URL('concept-people.css',document.baseURI).href;
+ const sheet=new URL('concept-people.css?v=approved-2',document.baseURI).href;
  const image=(id,cls)=>{const img=document.createElement('img');img.src=new URL('assets/character-portraits/'+id+'.webp',document.baseURI).href;img.alt='';img.className=cls;return img};
  const watched=new WeakSet();let queued=false;
  function refresh(){
+  for(const id of ['starter-choice','staff-trial'])document.getElementById(id)?.classList.add('concept-modal');
   for(const id of ['roster','shop','training']){
    const shadow=document.getElementById('asset-'+id+'-host')?.shadowRoot;if(!shadow)continue;
    if(!shadow.querySelector('link[data-concept-people]')){const link=document.createElement('link');link.rel='stylesheet';link.href=sheet;link.dataset.conceptPeople='';shadow.append(link)}
