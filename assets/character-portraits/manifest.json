@@ -81,17 +81,17 @@
       "job": "전기기사",
       "group": "staff",
       "path": "assets/character-portraits/electric-technician.webp",
-      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
-      "master": "designs/character-identity-20261110/master-1.png",
+      "identityReference": "assets/castle-stories/blackout/02.webp",
+      "master": "designs/character-identity-20261110/electric-technician-story-master.png",
       "cell": [
-        512,
-        512,
-        512,
-        512
+        0,
+        0,
+        1254,
+        1254
       ],
-      "sha256": "3196459c15208649c96db26306c5a0c258b343c6a5d2ad499840c37f61ccee24",
+      "sha256": "7d5280171ecab638cfafd3e802edeeb089be09446324c294cc554659e907916e",
       "legacyReference": "assets/pixel/electric-technician.webp",
-      "identifyingFeatures": "노란 작업모·파란 렌즈 고글·금발·밝은 얼굴·활짝 웃는 표정"
+      "identifyingFeatures": "주황색 점박이 도마뱀·크림색 주둥이·작은 송곳니·주황 등가시·은색 번개 표식 노란 작업모·보라 작업복·꼬리"
     },
     {
       "id": "ghost-courier",
