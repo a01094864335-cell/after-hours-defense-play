@@ -32,7 +32,7 @@ body.asset-lobby-active{margin:0!important;overflow:hidden!important;background:
 #asset-lobby .a-top{display:flex;gap:0;justify-content:space-between}
 #asset-lobby .a-profile{width:40%}
 #asset-lobby .a-wallet{width:30%;margin-left:auto;margin-right:8px}
-#asset-lobby .a-settings{flex:0 0 40px}
+#asset-lobby .a-settings{flex:0 0 44px;min-width:44px;width:44px;height:44px;padding:7px!important}
 #asset-lobby .a-logo{width:49%;left:8px;top:52px}
 #asset-lobby .a-shortcuts{top:58px}
 #asset-lobby .a-daily span{font-size:19px}

@@ -22,6 +22,15 @@ class SharedChromeTests(unittest.TestCase):
                 ('asset-training-host','[data-proxy="#training-entry"]','.close'),
             ]:
                 if entry: page.locator('#asset-lobby-host '+entry).click()
+                if host=='asset-lobby-host':
+                    settings=page.locator('#asset-lobby-host .a-settings')
+                    box=settings.bounding_box()
+                    self.assertGreaterEqual(box['width'],44)
+                    self.assertGreaterEqual(box['height'],44)
+                    # Expand the hitbox while retaining the original 30px gear artwork.
+                    art=settings.locator('img').bounding_box()
+                    self.assertAlmostEqual(art['width'],30,delta=1)
+                    self.assertAlmostEqual(art['height'],30,delta=1)
                 dock=page.locator('#'+host+' .shared-gnb')
                 self.assertTrue(dock.is_visible())
                 boxes=dock.locator('button').evaluate_all('(xs)=>xs.map(x=>{const r=x.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height}})')
