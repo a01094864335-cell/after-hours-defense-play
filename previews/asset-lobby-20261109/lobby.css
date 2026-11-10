@@ -46,3 +46,7 @@ body.asset-lobby-active{margin:0!important;overflow:hidden!important;background:
 @media(max-height:720px){#asset-lobby .a-logo{width:49%;top:48px}#asset-lobby .a-shortcuts{top:51px}#asset-lobby .a-daily span{font-size:15px}#asset-lobby .a-gobi{height:175px}#asset-lobby .a-start span{font-size:32px;padding-left:17px;gap:4px}#asset-lobby .a-moon{width:30px;height:36px}#asset-lobby .a-mode{top:3px;font-size:11px;padding:6px 2px}#asset-lobby .a-support .a-plus{width:42px;height:42px;font-size:35px}}
 
 #asset-lobby #a-starter[hidden]{display:none!important}
+
+/* Keep the profile and party heads on the same character master. */
+#asset-lobby .a-profile{height:35px;background:linear-gradient(#fff8df,#f9e4b9);border:2px solid #061439;border-radius:24px}
+#asset-lobby .a-profile>img{position:absolute;left:-7px;top:-11px;width:55px;height:55px;object-fit:contain}

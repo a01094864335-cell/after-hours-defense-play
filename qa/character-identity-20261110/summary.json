@@ -1,0 +1,46 @@
+{
+  "baseline": "a8e66d73e169c21eb204f05b6a94b807864d6e53",
+  "characters": 24,
+  "staff": 17,
+  "supports": 7,
+  "portraitsBytes": 1103422,
+  "functionalTests": {
+    "nodePassed": 76,
+    "packagedBrowserPassed": 18
+  },
+  "canvas": {
+    "staffPoseViewportCombinations": 408,
+    "staffPixelTextCollisions": 0,
+    "staffLabelOrGridIssues": 0,
+    "totalStates": 428,
+    "kingOverlaps": "Existing intentional king entrance composition; not a staff identity collision."
+  },
+  "screenCaptures": [
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "errors": [],
+      "missing": []
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "errors": [],
+      "missing": []
+    },
+    {
+      "viewport": [
+        430,
+        932
+      ],
+      "errors": [],
+      "missing": []
+    }
+  ],
+  "canonicalManifest": "../../assets/character-portraits/manifest.json",
+  "scope": "Character portraits across active menus, battle and ally cutins. Approved large scene art, enemy/boss art, historical previews and story panels retain their compositions."
+}

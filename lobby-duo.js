@@ -24,7 +24,7 @@
   const identity=merc&&staffRecords.find(r=>r.id==='merc-'+key);
   const displayName=identity?.name||merc?.name;
   portrait.hidden=false;
-  portrait.src=merc?'assets/pixel/'+merc.file+'.webp':'assets/ui-v2/icons/scroll.svg';
+  portrait.src=merc?mercPortraitPath(key):'assets/ui-v2/icons/scroll.svg';
   tag.textContent=merc?'오늘의 동료':'함께 출근할 동료';
   name.textContent=merc?displayName:'지원 영웅 선택 +';
   companion.setAttribute('aria-label',merc?displayName+' · '+merc.name+' · 지원 영웅 변경':'지원 영웅 선택');

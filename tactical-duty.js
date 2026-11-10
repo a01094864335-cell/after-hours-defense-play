@@ -69,13 +69,13 @@ window.TacticalDuty=(()=>{
   q('#starter-options').replaceChildren();
   for(const type of choices){
    const r=staffRecords.find(r=>r.id===kinds[type].file),card=document.createElement('article'),face=document.createElement('img'),name=document.createElement('b'),role=document.createElement('small'),actions=document.createElement('div'),demo=document.createElement('button'),claim=document.createElement('button');
-   face.src=staffImagePath(kinds[type].file);face.alt='';name.textContent=r?.name||kinds[type].name;role.textContent=r?.role||kinds[type].name;
+   face.src=staffPortraitPath(kinds[type].file);face.alt='';name.textContent=r?.name||kinds[type].name;role.textContent=r?.role||kinds[type].name;
    demo.textContent='능력 보기';demo.onclick=()=>showTrial(type);claim.textContent='무료 채용';claim.onclick=()=>claimStarter(type);actions.append(demo,claim);card.append(face,name,role,actions);q('#starter-options').append(card);
   }
  }
  function showTrial(type){
   trialIndex=type;const r=staffRecords.find(r=>r.id===kinds[type].file);q('#staff-trial-title').textContent=r?.name||kinds[type].name;
-  q('#trial-face').src=staffImagePath(kinds[type].file);q('#trial-ability').textContent=r?.ability||'';q('#trial-skill').textContent=r?.skillText||'';
+  q('#trial-face').src=staffPortraitPath(kinds[type].file);q('#trial-ability').textContent=r?.ability||'';q('#trial-skill').textContent=r?.skillText||'';
   closeTrial();q('#trial-arena').dataset.active='false';q('#trial-result').textContent='';q('#staff-trial').showModal();
  }
  function playTrial(){
