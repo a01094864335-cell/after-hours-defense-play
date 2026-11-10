@@ -27,7 +27,7 @@
   const equipment=document.getElementById('equipment');if(equipment){decorate(equipment,'orc-technician','concept-mechanic');footer(equipment,'concept-equipment-done','공방 나가기','#equipment-close');}
   const deck=document.getElementById('deck');if(deck)footer(deck,'concept-deck-done','편성 완료','#deck-close');
   const daily=document.getElementById('daily-events-dialog');if(daily)footer(daily,'concept-daily-done','확인했어요','#daily-events-close');
-  for(const notice of document.querySelectorAll('dialog.notice-dialog')){notice.classList.add('concept-modal','concept-notice');decorate(notice,'gobi','concept-note-mascot');}
+  for(const notice of document.querySelectorAll('dialog.notice-dialog')){notice.classList.add('concept-modal','concept-notice');decorate(notice,'gobi','concept-note-mascot');const h=notice.querySelector('header');if(h&&!h.querySelector('.concept-eyebrow')){const badge=document.createElement('span');badge.className='concept-eyebrow';badge.textContent='전투 메모';h.prepend(badge);}}
   // Existing help cards are populated by reference-ui; decorations never duplicate their copy.
   const steps=document.querySelectorAll('#info .ref-guide-step');
   const manual=document.querySelector('#info .help-content')||document.querySelector('#info .panel-scroll-body');if(manual&&steps.length&&!manual.dataset.conceptOrdered){manual.dataset.conceptOrdered='true';manual.prepend(...steps);}

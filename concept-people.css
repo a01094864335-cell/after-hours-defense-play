@@ -218,3 +218,18 @@ html body #staff-trial#staff-trial #trial-play{display:block!important;width:100
 #asset-training#asset-training #status:empty{display:none!important}
 #asset-training#asset-training #upgrade{min-height:46px!important;font-size:18px!important}
 }
+/* The whole starter card is the selection target; preview remains an independent action. */
+html body #starter-choice#starter-choice#starter-choice #starter-options{padding:2px 6px 10px 0!important;gap:17px!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article{flex:0 0 auto!important;height:auto!important;min-height:145px!important;grid-template-rows:auto auto minmax(44px,auto)!important;align-content:center!important;overflow:visible!important;position:relative!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article .concept-starter-select{position:absolute!important;inset:0!important;grid-column:auto!important;grid-row:auto!important;width:100%!important;height:100%!important;min-height:44px!important;margin:0!important;padding:0!important;border:0!important;border-radius:8px!important;box-shadow:none!important;background:transparent!important;color:transparent!important;font-size:0!important;z-index:1!important;cursor:pointer!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article .concept-starter-select:focus-visible{outline:3px solid #2258bb!important;outline-offset:-5px!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article>div{position:relative!important;z-index:2!important;min-height:44px!important;justify-self:start!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article>div button:not(.concept-native-claim){position:relative!important;z-index:2!important;padding:0 3px!important;min-height:44px!important}
+html body #starter-choice#starter-choice#starter-choice #starter-options article :is(img,b,small){pointer-events:none!important}
+/* Keep the real pack purchase visible; the existing handler still owns this button. */
+#asset-shop#asset-shop .concept-purchase-dock{box-sizing:border-box!important;flex:0 0 auto!important;position:static!important;background:#fff6df!important;border:2px solid #10254b!important;border-top:0!important;border-radius:0 0 7px 7px!important;padding:9px 12px 5px!important;color:#10254b!important}
+#asset-shop#asset-shop .concept-purchase-dock[hidden]{display:none!important}
+#asset-shop#asset-shop .concept-purchase-dock .purchase{display:block!important;width:100%!important;margin:0 0 6px!important;min-height:49px!important;font-size:clamp(17px,4.8cqw,22px)!important}
+#asset-shop#asset-shop .concept-purchase-dock .balance{display:block!important;background:none!important;border:0!important;box-shadow:none!important;text-align:center!important;padding:0!important;margin:0!important;font:11px/1.5 system-ui!important;min-height:17px!important;color:#365576!important}
+#asset-shop#asset-shop .scroll:has(#pack:not([hidden])){border-bottom:0!important;border-radius:0!important}
+@media(max-height:700px){#asset-shop#asset-shop .concept-purchase-dock{padding:7px 10px 4px!important}#asset-shop#asset-shop .concept-purchase-dock .purchase{min-height:46px!important}}

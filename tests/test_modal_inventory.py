@@ -20,7 +20,9 @@ PERK = BATTLE + "wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices
 
 # name, rendered surface, actual entry point. Separate states share an inventory ID.
 CASES = [
-    ('lobby', '#lobby', 'renderMeta()'),
+    # The legacy #lobby is intentionally CSS-hidden. The host has no own box:
+    # the visible fixed-position presentation lives inside its open shadow root.
+    ('lobby', '#asset-lobby-host #asset-lobby', 'renderMeta()'),
     ('settings', '#menu', "openSheet('menu')"),
     ('info', '#info', "openSheet('info')"),
     ('leave', '#leave', BATTLE + 'askLeave()'),
@@ -282,6 +284,34 @@ class ModalInventoryTests(unittest.TestCase):
                         inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         surface.evaluate("""async root=>{await document.fonts.ready;const images=[];function walk(n){for(const e of n.querySelectorAll('*')){if(e.tagName==='IMG'&&e.getBoundingClientRect().width){e.loading='eager';images.push(e)}if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);await Promise.all(images.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,5000)})));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}""")
                         entry['geometry'] = surface.evaluate(GEOMETRY)
+                        if name == 'starter':
+                            entry['starterCardContainment'] = page.locator('#starter-options .concept-starter-select').evaluate_all("""xs=>xs.map(e=>{
+                                const r=e.getBoundingClientRect(),p=e.closest('article').getBoundingClientRect();
+                                return {label:e.getAttribute('aria-label'),button:{left:r.left,top:r.top,right:r.right,bottom:r.bottom},card:{left:p.left,top:p.top,right:p.right,bottom:p.bottom},
+                                    inside:r.left>=p.left-1&&r.top>=p.top-1&&r.right<=p.right+1&&r.bottom<=p.bottom+1};
+                            })""")
+                            if not entry['starterCardContainment']:
+                                entry['errors'].append('Starter selection controls missing')
+                            for card in entry['starterCardContainment']:
+                                if not card['inside']:
+                                    entry['errors'].append('Starter selection control extends beyond its card: '+str(card['label']))
+                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned') and width in (390, 430):
+                            # Read the real button directly: price and label are live,
+                            # and disabled low-balance state must remain inspectable.
+                            purchase = page.locator('#asset-shop-host .purchase')
+                            entry['initialPurchaseVisibility'] = purchase.evaluate("""e=>{
+                                const r=e.getBoundingClientRect();let inside=r.left>=-1&&r.top>=-1&&r.right<=innerWidth+1&&r.bottom<=innerHeight+1;
+                                for(let p=e.parentElement;p;p=p.parentElement){const s=getComputedStyle(p),b=p.getBoundingClientRect();
+                                    if(/hidden|auto|scroll|clip/.test(s.overflowY)&&(r.top<b.top-1||r.bottom>b.bottom+1))inside=false;
+                                    if(/hidden|auto|scroll|clip/.test(s.overflowX)&&(r.left<b.left-1||r.right>b.right+1))inside=false;}
+                                return {x:r.x,y:r.y,width:r.width,height:r.height,disabled:e.disabled,fullyVisible:inside};
+                            }""")
+                            if not entry['initialPurchaseVisibility']['fullyVisible']:
+                                entry['errors'].append('Pack purchase is not fully reachable in initial viewport')
+                        if name == 'shop-items':
+                            entry['packPurchaseHiddenOnItems'] = page.locator('#asset-shop-host .purchase').is_hidden()
+                            if not entry['packPurchaseHiddenOnItems']:
+                                entry['errors'].append('Pack purchase should be hidden on the items tab')
                         entry['livePresentation'] = surface.evaluate("""root=>{
                             const s=getComputedStyle(root),texts=[];
                             function read(n){if(n.innerText)texts.push(n.innerText.trim());for(const e of n.querySelectorAll('*'))if(e.shadowRoot)read(e.shadowRoot)}read(root);
@@ -294,6 +324,10 @@ class ModalInventoryTests(unittest.TestCase):
                         page.screenshot(path=str(path), animations='disabled')
                         entry['screenshots'].append(path.name)
                         covered.add(selector)
+                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned') and width in (390, 430):
+                            if not entry['initialPurchaseVisibility']['disabled']:
+                                page.locator('#asset-shop-host .purchase').tap(trial=True)
+                                entry['initialPurchaseVisibility']['touchActionability'] = 'passed-without-purchase'
                         # Scroll every real scroll region, including shadow-root bodies.
                         # Include the surface itself: #result is the actual scroll
                         # container, so a descendant-only walk missed every footer.
@@ -352,7 +386,12 @@ class ModalInventoryTests(unittest.TestCase):
                                 control.tap(trial=True)
                             page.locator('#result-home').tap()
                             page.wait_for_function("appScreen==='lobby' && document.querySelector('#result').hidden")
-                            self.assertTrue(page.locator('#asset-lobby-host').is_visible())
+                            lobby = page.locator('#asset-lobby-host #asset-lobby')
+                            lobby.wait_for(state='visible')
+                            self.assertTrue(lobby.is_visible())
+                            # Check a real enabled destination control as well as
+                            # state; do not confuse the zero-box host with its UI.
+                            page.locator('#asset-lobby-host .a-start').tap(trial=True)
                             entry['actionCheck'] = {'action': 'result-home', 'input': 'touch', 'outcome': 'lobby-visible-result-hidden', 'otherActions': 'Playwright touch actionability checks passed'}
                             path = out / (stem+'-returned-lobby.png')
                             page.screenshot(path=str(path), animations='disabled')

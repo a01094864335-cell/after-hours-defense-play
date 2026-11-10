@@ -143,3 +143,8 @@ html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-l
 html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list article p{grid-column:2!important;margin:0!important;font-size:14px!important}
 html body #daily-events-dialog#daily-events-dialog.concept-modal #daily-events-list{gap:18px!important}
 html body #leave#leave.concept-modal #leave-confirm{color:#10254b!important}
+/* The short notice uses the approved taped memo rather than a plain alert box. */
+html body dialog.notice-dialog.concept-notice.concept-modal::before{display:block!important;content:''!important;position:absolute!important;top:-12px!important;left:40px!important;width:80px!important;height:22px!important;background:#ffe082cc!important;transform:rotate(7deg)!important;border:0!important;pointer-events:none!important}
+html body dialog.notice-dialog.concept-notice.concept-modal>header{display:flex!important;flex-wrap:wrap!important;padding-top:5px!important;gap:15px!important}
+html body dialog.notice-dialog.concept-notice.concept-modal>header h2{flex-basis:100%!important}
+html body dialog.notice-dialog.concept-notice.concept-modal .concept-note-mascot{position:absolute!important;right:0!important;top:-48px!important;width:85px!important;height:85px!important;margin:0!important}
