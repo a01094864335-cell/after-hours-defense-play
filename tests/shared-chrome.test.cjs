@@ -4,7 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 test('shared comic artwork is local, text-free and included in the Pages build',()=>{
  const css=fs.readFileSync('shared-chrome.css','utf8');
- for(const [,file] of css.matchAll(/url\(['"]?(assets\/shared-chrome\/[^)'" ]+)/g))assert(fs.existsSync(file),file);
+ for(const [,file] of css.matchAll(/url\(['"]?(assets\/shared-chrome\/[^)'" ]+)/g))assert(fs.existsSync(file.split(/[?#]/)[0]),file);
  for(const name of fs.readdirSync('assets/shared-chrome').filter(n=>n.endsWith('.svg'))){
   const svg=fs.readFileSync('assets/shared-chrome/'+name,'utf8');
   assert(svg.includes('viewBox='),name);assert(!/<text[\s>]/.test(svg),name+' contains baked text');
