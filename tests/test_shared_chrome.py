@@ -70,13 +70,13 @@ class SharedChromeTests(unittest.TestCase):
                     const style=getComputedStyle(document.getElementById(id));
                     return [id,{color:style.backgroundColor,image:style.backgroundImage,border:style.borderTopColor}];
                 }))""")
-                self.assertEqual(tones['menu-story']['color'],'rgb(255, 248, 229)')
+                self.assertEqual(tones['menu-story']['color'],'rgb(255, 253, 247)')
                 self.assertEqual(tones['menu-story']['image'],'none')
-                self.assertEqual(tones['reset']['color'],'rgb(255, 240, 230)')
+                self.assertEqual(tones['reset']['color'],'rgb(241, 128, 111)')
                 self.assertEqual(tones['reset']['image'],'none')
-                self.assertEqual(tones['reset']['border'],'rgb(170, 73, 68)')
-                self.assertEqual(tones['shared-menu-confirm']['color'],'rgb(255, 218, 50)')
-                self.assertIn('/shared-chrome/confirm.webp',tones['shared-menu-confirm']['image'])
+                self.assertEqual(tones['reset']['border'],'rgb(16, 37, 75)')
+                self.assertIn('rgb(255, 227, 74)',tones['shared-menu-confirm']['image'])
+                self.assertIn('linear-gradient',tones['shared-menu-confirm']['image'])
                 for selector in ['#menu .ui-dialog-header','#menu-close','#shared-menu-confirm']:
                     b=page.locator(selector).bounding_box()
                     self.assertIsNotNone(b)
@@ -119,7 +119,7 @@ class SharedChromeTests(unittest.TestCase):
                 self.assertTrue(panel.evaluate('e=>e.open'))
                 header=panel.locator(':scope > header.shared-modal-header')
                 self.assertEqual(header.count(),1)
-                self.assertIn('/shared-chrome/plaque.svg',header.locator('h2').evaluate('e=>getComputedStyle(e).backgroundImage'))
+                self.assertEqual(header.locator('h2').evaluate('e=>getComputedStyle(e).backgroundImage'),'none')
                 # Long real headings wrap inside the decorated title's own box.
                 title_bounds=header.locator('h2').evaluate("""e=>{
                     const r=e.getBoundingClientRect(),range=document.createRange();range.selectNodeContents(e);
@@ -130,7 +130,7 @@ class SharedChromeTests(unittest.TestCase):
                 self.assertGreaterEqual(title_bounds['textTop'],title_bounds['top'])
                 self.assertLessEqual(title_bounds['textBottom'],title_bounds['bottom'])
                 action=panel.locator('#deck-presets button' if dialog=='journey-dialog' else '#save-preview').first
-                self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundColor'),'rgb(255, 248, 229)')
+                self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundColor'),'rgb(255, 253, 247)')
                 self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundImage'),'none')
                 if dialog=='journey-dialog':
                     self.assertTrue(panel.locator('#deck-presets button').nth(1).is_disabled())
@@ -152,7 +152,7 @@ class SharedChromeTests(unittest.TestCase):
             title.wait_for(state='visible')
             self.assertEqual(title.inner_text(),'다시 만난 동료')
             self.assertEqual(title.get_attribute('role'),'heading')
-            self.assertIn('/shared-chrome/plaque.svg',title.evaluate('e=>getComputedStyle(e).backgroundImage'))
+            self.assertEqual(title.evaluate('e=>getComputedStyle(e).backgroundImage'),'none')
             page.locator('#recruit-dialog .ref-recruit-actions button').last.click()
             self.assertFalse(page.locator('#recruit-dialog').evaluate('e=>e.open'))
             page.context.close()
@@ -203,3 +203,29 @@ class SharedChromeTests(unittest.TestCase):
         page.wait_for_function('meta.coins===0')
         self.assertTrue(page.locator('#recruit-dialog').evaluate('e=>e.open'))
         page.context.close()
+
+    def test_roster_touch_targets_and_real_content_fit(self):
+        for width,height in [(320,568),(390,684),(390,844),(430,932)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
+            page.locator('#asset-lobby-host [data-proxy="#roster-open"]').click()
+            buttons=page.locator('#asset-roster-host #r-team button')
+            self.assertEqual(buttons.count(),5)
+            for box in buttons.evaluate_all('xs=>xs.map(e=>{const r=e.getBoundingClientRect();return {w:r.width,h:r.height}})'):
+                self.assertGreaterEqual(box['w'],44)
+                self.assertGreaterEqual(box['h'],44)
+            for selector in ['.r-duty-heading','.r-card-copy','.r-record']:
+                sizes=page.locator('#asset-roster-host '+selector).evaluate_all('xs=>xs.map(e=>({client:e.clientWidth,scroll:e.scrollWidth}))')
+                self.assertTrue(all(x['scroll']<=x['client']+2 for x in sizes),selector)
+            page.context.close()
+
+    def test_result_accordion_targets_are_at_least_44px(self):
+        for width,height in [(320,568),(390,684),(390,844),(430,932)]:
+            page=self.open(width,height)
+            page.evaluate('wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()')
+            # Include controls in collapsed nested accordions only after opening them.
+            page.locator('#result details').evaluate_all('xs=>xs.forEach(e=>e.open=true)')
+            for box in page.locator('#result summary').evaluate_all('xs=>xs.filter(e=>e.getClientRects().length).map(e=>{const r=e.getBoundingClientRect();return {w:r.width,h:r.height}})'):
+                self.assertGreaterEqual(box['w'],44)
+                self.assertGreaterEqual(box['h'],44)
+            page.context.close()

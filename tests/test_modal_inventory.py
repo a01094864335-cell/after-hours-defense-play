@@ -5,6 +5,7 @@ historical baseline non-gating. No screenshots are synthesized or blank dialogs
 opened: each fixture invokes the game's renderer/entry point with real state.
 """
 import json
+from html import escape
 import os
 from pathlib import Path
 import unittest
@@ -71,12 +72,113 @@ CASES = [
     ('gallery-viewer', '#viewer', None),
 ]
 
+# Approved render_concepts.py SCREENS order. Keep names stable for review links;
+# these map design intent to live game surfaces, not to recreated concept images.
+APPROVED26 = [
+    ('01-settings', '설정 · 당직 클립보드', 'settings'),
+    ('02-help', '안내 · 그림 사용설명서', 'info'),
+    ('03-leave', '종료 · 경고 쪽지', 'leave'),
+    ('04-guide', '이어하기 · 전달 메모', 'guide'),
+    ('05-perk', '보너스 · 보상 티켓', 'perk-wave5'),
+    ('06-equipment', '장비 · 정비 작업대', 'equipment'),
+    ('07-deck', '편성 · 열린 인사철', 'deck'),
+    ('08-daily', '변주 · 고정 게시판', 'daily'),
+    ('09-journey', '기록 · 근무 장부', 'journey'),
+    ('10-backup', '백업 · 보관 서류함', 'backup'),
+    ('11-storyarchive', '이야기 · 책 표지 서가', 'story-archive'),
+    ('12-notice', '알림 · 전투 메모', 'notice'),
+    ('13-roster', '도감 · 직원 인사카드', 'roster-detail'),
+    ('14-shop', '상점 · 우편 모집 창구', 'shop-pack'),
+    ('15-training', '훈련 · 성장 훈련장', 'training-staff'),
+    ('16-recruit', '채용 · 도착한 입사봉투', 'recruitment'),
+    ('17-starter', '첫 동료 · 추천 카드', 'starter'),
+    ('18-trial', '체험 · 실습 무대', 'staff-trial'),
+    ('19-prologue', '프롤로그 · 전체 화면 만화', 'cinematic'),
+    ('20-hiring', '채용 이야기 · 개인 만화', 'hiring'),
+    ('21-pause', '일시정지 · 휴식 표지', 'pause'),
+    ('22-results', '결과 · 당직 성적표', 'result'),
+    ('23-tutorial-speech', '튜토리얼 · 말풍선 안내', 'tutorial'),
+    ('24-session-warning', '세션 · 상태 확인 쪽지', 'session-notice'),
+    ('25-orientation', '화면 회전 · 세로 모드 안내', 'rotation-notice'),
+    ('26-gallery-viewer', '갤러리 · 장면 액자', 'gallery-viewer'),
+]
+CONCEPT_NOTES = {
+    '04-guide': 'Uses the real guide renderer and resume copy, not an actual saved-run restore. A saved timestamp/party shown in the concept is not fabricated.',
+    '05-perk': 'Uses wave5 full-life state and actual computed rewards. Later-wave tactics/targets remain captured as variants.',
+    '09-journey': 'Primary capture is fresh real history. journey-populated is explicitly synthetic QA stress data, not a claim about user records.',
+    '13-roster': 'Primary is the actual owned starter dossier; identity and abilities differ from the concept example. Overview remains a variant.',
+    '14-shop': 'Actual PACK_PRICE, probabilities, wallet and pity govern the UI; concept example price and balances are not substituted.',
+    '16-recruit': 'Primary fixture is the real duplicate-recruit result, not a new hire or a charged purchase.',
+    '22-results': 'Controlled tutorial-complete run is settled through the real game renderer; this is not a previously played user run.',
+    '25-orientation': 'Real orientation media query requires landscape. Captures use swapped dimensions, not the portrait concept orientation.',
+}
+
+
+def write_approved_review(out, report):
+    """Write an honest audit index even when some scenarios fail mid-run."""
+    scenarios = {name: selector for name, selector, _ in CASES}
+    concepts = []
+    for concept_id, title, primary in APPROVED26:
+        selector = scenarios[primary]
+        captures = [c for c in report['cases'] if c['selector'] == selector]
+        primary_captures = [c for c in captures if c['name'] == primary]
+        missing = []
+        for width, height in SIZES:
+            if not any(c['engine'] == 'chromium' and c['viewport'] == [width, height]
+                       and c.get('geometry') and any(not p.endswith('-FAILED.png') for p in c['screenshots'])
+                       for c in primary_captures):
+                missing.append([width, height])
+        concepts.append({
+            'conceptId': concept_id, 'title': title, 'primaryScenario': primary,
+            'actualSelector': selector,
+            'variants': [name for name, sel, _ in CASES if sel == selector and name != primary],
+            'missingPrimaryChromiumViewports': missing,
+            'coverageStatus': 'missing-captures' if missing else 'captured',
+            'visualFidelityStatus': 'unreviewed-requires-human-pixel-comparison',
+            'knownScenarioDeviation': CONCEPT_NOTES.get(concept_id, 'Live game content and controlled QA state replace illustrative concept values; visual fidelity has not been certified.'),
+            'captures': [{key: c[key] for key in ('name', 'engine', 'viewport', 'screenshots', 'errors', 'actualViewport', 'imageFailures', 'touchClassifications') if key in c} for c in captures],
+        })
+    audit = {'schemaVersion': 1, 'designInventory': 'approved26-render_concepts.py-SCREENS',
+             'conceptCount': len(APPROVED26), 'requestedViewports': SIZES,
+             'comparisonPolicy': 'Coverage and geometry are machine-checked. No pixel comparison or visual approval is implied. PNGs are browser captures of real game renderers, never concept replacements.',
+             'fixturePolicy': 'Isolated browser storage with controlled test state; prices, labels and actions come from game code. Stress fixtures are not user history.',
+             'concepts': concepts}
+    (out/'approved26-report.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding='utf-8')
+    html = ['<!doctype html><meta charset="utf-8"><title>Approved26 capture review</title>',
+            '<style>body{font:16px system-ui;background:#eee;color:#172641;margin:24px}section{border-top:2px solid #234;margin-top:32px}figure{display:inline-block;vertical-align:top;margin:10px;width:260px}img{max-width:260px;height:auto}pre{white-space:pre-wrap}a{color:#234}</style>',
+            '<h1>Approved26 live game captures</h1><p>Visual fidelity is UNREVIEWED. Compare these actual browser PNGs with the approved concepts. Fixture or geometry failures remain visible below. No concept artwork is substituted.</p>',
+            '<p><a href="report.json">Full geometry report</a> · <a href="approved26-report.json">Concept coverage and deviations</a></p>']
+    for concept in concepts:
+        html.append('<section id="'+concept['conceptId']+'"><h2>'+escape(concept['conceptId']+' · '+concept['title'])+'</h2>')
+        html.append('<p>'+escape(concept['knownScenarioDeviation'])+'</p><p>Coverage: '+concept['coverageStatus']+'</p>')
+        for c in concept['captures']:
+            html.append('<details'+(' open' if c['name'] == concept['primaryScenario'] else '')+'><summary>'+escape(c['engine']+' '+str(c['viewport'])+' '+c['name'])+'</summary>')
+            for p in c['screenshots']:
+                html.append('<figure><a href="'+escape(p, quote=True)+'"><img loading="lazy" src="'+escape(p, quote=True)+'"></a><figcaption>'+escape(p)+'</figcaption></figure>')
+            if c['errors']:
+                html.append('<pre>'+escape('\n'.join(c['errors']))+'</pre>')
+            html.append('</details>')
+        html.append('</section>')
+    (out/'approved26-review.html').write_text('\n'.join(html), encoding='utf-8')
+
 # Recurses into the actual shadow-root UIs, not their hidden legacy controls.
 GEOMETRY = r"""root => {
  const all=[];function walk(n){for(const e of n.children||[]){all.push(e);walk(e);if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);
  const rect=e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height}};
  const parent=e=>e.parentElement||e.getRootNode().host;
- const visible=e=>{for(let a=e;a;a=parent(a)){const s=getComputedStyle(a);if(a.hidden||s.display==='none'||s.visibility==='hidden')return false}return e.getClientRects().length>0};
+ const hiddenReason=e=>{
+   for(let a=e;a;a=parent(a)){
+     const s=getComputedStyle(a);
+     if(a.hidden||s.display==='none'||s.visibility==='hidden')return 'hidden-style';
+     if(a.tagName==='DETAILS'&&!a.open&&a!==e){
+       const summary=a.querySelector(':scope > summary');
+       if(!summary||!summary.contains(e))return 'closed-details';
+     }
+     if(a.clientWidth<=2&&a.clientHeight<=2&&s.overflow==='hidden'&&(s.clipPath!=='none'||s.clip!=='auto'))return 'screen-reader-only';
+   }
+   return e.getClientRects().length ? null : 'no-layout-box';
+ };
+ const visible=e=>!hiddenReason(e);
  const label=e=>e.id||e.getAttribute('aria-label')||e.textContent.trim().slice(0,70)||e.tagName;
  const controls=all.filter(e=>e.matches('button,input,select,textarea,summary,[role="button"]')&&visible(e)).map(e=>{
    const r=rect(e);let clip={x:0,y:0,right:innerWidth,bottom:innerHeight},scrollable=false;
@@ -86,10 +188,12 @@ GEOMETRY = r"""root => {
      if(/hidden|auto|scroll|clip/.test(s.overflowY)){clip.y=Math.max(clip.y,b.top);clip.bottom=Math.min(clip.bottom,b.bottom)}}
    const intersection=Math.max(0,Math.min(r.x+r.w,clip.right)-Math.max(r.x,clip.x))*Math.max(0,Math.min(r.y+r.h,clip.bottom)-Math.max(r.y,clip.y));
    return {label:label(e),...r,disabled:!!e.disabled,scrollable,visibleArea:intersection,
-     undersized:r.w<43.5||r.h<43.5,clipped:intersection+1<r.w*r.h};
+     undersized:r.w<43.5||r.h<43.5,clipped:intersection+1<r.w*r.h,
+     clippingClass:intersection+1>=r.w*r.h?'none':scrollable?'scroll-boundary-review':'non-scroll-clipping'};
  });
  const overflow=all.filter(e=>visible(e)&&e.clientWidth>0&&e.scrollWidth>e.clientWidth+2&&!/auto|scroll/.test(getComputedStyle(e).overflowX)).map(e=>({label:label(e),client:e.clientWidth,scroll:e.scrollWidth}));
- return {bounds:rect(root),text:root.innerText?.trim().slice(0,200),controls,overflow,
+ const excluded=all.filter(e=>e.matches('button,input,select,textarea,summary,[role="button"],#r-note')&&['closed-details','screen-reader-only'].includes(hiddenReason(e))).map(e=>({label:label(e),reason:hiddenReason(e)}));
+ return {bounds:rect(root),text:root.innerText?.trim().slice(0,200),controls,overflow,excluded,
    documentOverflow:document.documentElement.scrollWidth>innerWidth+2};
 }"""
 
@@ -102,7 +206,8 @@ class ModalInventoryTests(unittest.TestCase):
         out = Path(os.getenv('MODAL_QA_DIR', '/tmp/modal-qa'))
         out.mkdir(parents=True, exist_ok=True)
         report = {'root': game_root(), 'sizes': SIZES, 'cases': [], 'discovered': [],
-                  'method': 'Real game renderers; isolated storage per case; viewport screenshots plus scrolled captures. Touch warnings exclude disabled/offscreen controls from hard failures.'}
+                  'method': 'Real game renderers; isolated storage per case; viewport screenshots plus scrolled captures. Visible enabled hit targets below44px gate. Closed details/SR-only content are explicitly excluded; scroll-boundary clipping remains review information, not proof of reachability.'}
+        write_approved_review(out, report)
         failures = []
         inventory = set()
         covered = set()
@@ -118,6 +223,8 @@ class ModalInventoryTests(unittest.TestCase):
             for width, height in sizes:
                 for name, selector, script in cases:
                     entry = {'engine': engine, 'name': name, 'selector': selector, 'viewport': [width, height], 'screenshots': [], 'errors': []}
+                    entry['approvedConceptIds'] = [cid for cid, _, primary in APPROVED26
+                                                   if next(sel for n, sel, _ in CASES if n == primary) == selector]
                     report['cases'].append(entry)
                     context = browser.new_context(viewport={'width': width, 'height': height}, device_scale_factor=1, has_touch=True)
                     page = context.new_page()
@@ -174,6 +281,13 @@ class ModalInventoryTests(unittest.TestCase):
                         inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         surface.evaluate("""async root=>{await document.fonts.ready;const images=[];function walk(n){for(const e of n.querySelectorAll('*')){if(e.tagName==='IMG'&&e.getBoundingClientRect().width){e.loading='eager';images.push(e)}if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);await Promise.all(images.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,5000)})));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}""")
                         entry['geometry'] = surface.evaluate(GEOMETRY)
+                        entry['livePresentation'] = surface.evaluate("""root=>{
+                            const s=getComputedStyle(root),texts=[];
+                            function read(n){if(n.innerText)texts.push(n.innerText.trim());for(const e of n.querySelectorAll('*'))if(e.shadowRoot)read(e.shadowRoot)}read(root);
+                            return {tag:root.tagName,classes:root.className,text:texts.join('\\n').slice(0,12000),
+                                background:s.backgroundColor,backgroundImage:s.backgroundImage,font:s.fontFamily,
+                                stylesheetURLs:[...document.querySelectorAll('link[rel="stylesheet"]')].map(e=>e.href)};
+                        }""")
                         entry['imageFailures'] = page.locator(selector+' img').evaluate_all('xs=>xs.filter(i=>i.getBoundingClientRect().width&&(!i.complete||!i.naturalWidth)).map(i=>i.currentSrc||i.src)')
                         path = out / (stem+'.png')
                         page.screenshot(path=str(path), animations='disabled')
@@ -194,7 +308,24 @@ class ModalInventoryTests(unittest.TestCase):
                             entry['errors'].append('Document horizontal overflow')
                         # Tiny controls are findings, not blanket failures: sliders,
                         # scrollable cards and disabled options need manual context.
+                        # Keep all raw geometry. A scroll boundary is informational,
+                        # not a claim that every control is reachable; non-scroll clips
+                        # remain explicit findings. Closed details and SR-only content
+                        # are separately recorded as exclusions, never failed hit targets.
+                        snapshots = [g] + ([entry['bottomGeometry']] if 'bottomGeometry' in entry else [])
                         entry['touchFindings'] = [c for c in g['controls'] if not c['disabled'] and c['visibleArea'] and (c['undersized'] or c['clipped'])]
+                        entry['touchClassifications'] = {
+                            'undersized': [c for c in g['controls'] if not c['disabled'] and c['visibleArea'] and c['undersized']],
+                            'scrollBoundaryReview': [c for c in g['controls'] if not c['disabled'] and c['visibleArea'] and c['clippingClass']=='scroll-boundary-review'],
+                            'nonScrollClipping': [c for c in g['controls'] if not c['disabled'] and c['visibleArea'] and c['clippingClass']=='non-scroll-clipping'],
+                            'excluded': g['excluded'],
+                        }
+                        for snapshot in snapshots:
+                            for c in snapshot['controls']:
+                                if not c['disabled'] and c['visibleArea'] and c['undersized']:
+                                    entry['errors'].append('Visible enabled target below 44px: '+c['label'])
+                        if name == 'roster' and g['overflow']:
+                            entry['errors'].append('Visible roster content has horizontal overflow: '+str(g['overflow']))
                         for c in g['controls']:
                             primary = (c['label'].endswith('-close') or '닫기' in c['label'] or
                                        c['label'] in ('shared-menu-confirm', 'info-close', 'leave-confirm', 'leave-cancel', 'guide-next', 'pause-continue', 'pause-guide', 'pause-home'))
@@ -226,10 +357,12 @@ class ModalInventoryTests(unittest.TestCase):
                         report['uncovered'] = sorted(inventory-covered)
                         report['failures'] = failures
                         (out/'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+                        write_approved_review(out, report)
         if inventory-covered:
             failures.append('Uncovered dialog inventory: '+', '.join(sorted(inventory-covered)))
         report['failures'] = failures
         report['complete'] = not failures
         (out/'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+        write_approved_review(out, report)
         if os.getenv('MODAL_QA_REPORT_ONLY') != '1':
             self.assertEqual(failures, [], '\n'.join(failures))

@@ -56,3 +56,12 @@ test('shop opening refreshes canonical purchase availability after wallet change
  assert(js.includes("if(dialog.open){window.renderRecruitShop();refresh();select('pack');}"));
  assert(js.includes("q('#buy-staff-pack').disabled,q('#buy-staff-pack').textContent"));
 });
+
+test('local touch audit keeps real roster and result controls at least 44px',()=>{
+ const css=fs.readFileSync('shared-chrome.css','utf8'),qa=fs.readFileSync('tests/test_modal_inventory.py','utf8');
+ assert(css.includes('grid-template-columns:repeat(5,minmax(44px,1fr))!important'));
+ assert(css.includes('html body #result summary{box-sizing:border-box!important;min-height:44px!important'));
+ assert(qa.includes("return 'closed-details'"));
+ assert(qa.includes("return 'screen-reader-only'"));
+ assert(qa.includes("scroll-boundary-review"));
+});

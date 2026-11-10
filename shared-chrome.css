@@ -266,3 +266,15 @@ html body #save-transfer-dialog.shared-paper-modal #save-text{word-break:break-a
 html body dialog#roster.asset-roster-detail.shared-paper-modal #roster-detail .dossier-stamp{color:#2b563b!important;-webkit-text-fill-color:#2b563b!important}
 html body #ref-pause #pause-window>button#pause-continue{background:#ffde58!important;border-color:#253659!important;color:#25395b!important;font-weight:900!important}
 html body #staff-trial.shared-paper-modal #trial-body>button#trial-play{background:#ffdb39!important;color:#172349!important;border:2px solid #26365a!important;box-shadow:0 2px #26365a!important;font-weight:900!important}
+
+/* Local accessibility audit: real hit areas, without hiding overflow evidence. */
+#asset-roster .r-duty{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(230px,72%)!important;column-gap:4px!important;padding-left:8px!important;padding-right:8px!important}
+#asset-roster .r-duty-heading{width:100%!important;min-width:0!important;gap:3px!important}
+#asset-roster .r-duty-heading strong{min-width:0!important;flex:1 1 auto!important;white-space:normal!important;word-break:keep-all!important;overflow-wrap:break-word!important}
+#asset-roster .r-duty-heading b{white-space:nowrap}
+#asset-roster #r-team{width:100%!important;min-width:0!important;grid-template-columns:repeat(5,minmax(44px,1fr))!important;gap:2px!important}
+#asset-roster #r-team button{min-width:44px!important;min-height:44px!important}
+#asset-roster .r-card-copy{min-width:0!important}
+#asset-roster .r-record{box-sizing:border-box!important;max-width:100%!important;white-space:normal!important;word-break:keep-all!important;overflow-wrap:break-word!important;line-height:1.35!important}
+@media(max-width:350px){#asset-roster .r-duty-heading>span{display:none!important}}
+html body #result summary{box-sizing:border-box!important;min-height:44px!important;cursor:pointer}

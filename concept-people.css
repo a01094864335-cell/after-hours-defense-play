@@ -1,0 +1,164 @@
+/* Screens 13–18: personnel file, postal shop, training room, recruitment letter. */
+@font-face{font-family:ConceptPeopleHead;src:url('previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2') format('woff2');font-display:swap}
+:is(#asset-roster#asset-roster,#asset-shop#asset-shop,#asset-training#asset-training){--cp-navy:#10254b;--cp-blue:#2258bb;--cp-paper:#fff6df;--cp-white:#fffdf7;color:#10254b!important;font-family:system-ui,-apple-system,'Apple SD Gothic Neo',sans-serif!important}
+:is(#asset-roster#asset-roster,#asset-shop#asset-shop,#asset-training#asset-training) :is(h1,h2,h3,strong,button){font-family:ConceptPeopleHead,system-ui,sans-serif!important;font-weight:400!important;text-shadow:none!important}
+:is(#asset-roster#asset-roster,#asset-shop#asset-shop,#asset-training#asset-training) :is(header .close,.r-close){background:#fffdf7!important;color:#10254b!important;border:2.5px solid #10254b!important;border-radius:50%!important;box-shadow:none!important}
+:is(#asset-roster#asset-roster,#asset-shop#asset-shop,#asset-training#asset-training) button:disabled{opacity:.55!important}
+/* Retain the overview and live party, remove old brown raster framing. */
+#asset-roster#asset-roster{background:#e7bc76!important;padding:12px!important}
+#asset-roster#asset-roster .r-wood,#asset-roster#asset-roster .r-paper-texture,#asset-roster#asset-roster .r-book-foot{display:none!important}
+#asset-roster#asset-roster .r-header{background:#fffdf7!important;border:3px solid #10254b!important;border-bottom:0!important}
+#asset-roster#asset-roster .r-tabs{background:#fffdf7!important;padding:12px 8px!important;margin:0!important}
+#asset-roster#asset-roster .r-tabs button{background:#fffdf7!important;color:#10254b!important;border:2px solid #10254b!important;border-radius:10px!important;box-shadow:none!important}
+#asset-roster#asset-roster .r-tabs [aria-pressed=true]{background:#2258bb!important;color:#fffdf7!important}
+#asset-roster#asset-roster .r-duty,#asset-roster#asset-roster .r-book{background:#fff6df!important;border:2px solid #10254b!important;border-radius:8px!important;color:#10254b!important}
+#asset-roster#asset-roster .r-card{background:#c9e5ff!important;border:2px solid #10254b!important;border-radius:10px!important;box-shadow:3px 4px #10254b!important}
+#asset-roster#asset-roster .r-card:nth-child(3n+2){background:#b7e8d6!important}#asset-roster#asset-roster .r-card:nth-child(3n+3){background:#fff6df!important}
+#asset-roster#asset-roster .r-card-copy :is(strong,.r-job){color:#10254b!important;text-shadow:none!important}
+/* Native dossier is deliberately a large portrait personnel file, not the overview grid. */
+html body dialog#roster.asset-roster-detail[open]{background:#e7bc76!important;border:3px solid #10254b!important;padding:14px!important;border-radius:6px!important;color:#10254b!important}
+html body #roster.asset-roster-detail #roster-detail{padding:16px!important;background:#fffdf7!important;border:3px solid #10254b!important;border-radius:6px!important;color:#10254b!important}
+html body #roster #roster-detail .dossier-hero{display:flex!important;position:relative!important;flex-direction:column!important;align-items:center!important;background:radial-gradient(#e3f5ff 1px,transparent 1px) 0 0/12px 12px,#c9e5ff!important;border:2px solid #10254b!important;border-radius:8px!important;padding:18px 12px 14px!important;gap:4px!important;min-height:230px!important}
+html body #roster #roster-detail .dossier-hero>:is(img,canvas[data-motion]){position:static!important;width:min(100%,230px)!important;height:200px!important;object-fit:contain!important;order:0!important;transform:none!important}
+html body #roster #roster-detail .dossier-hero>h3{font:400 32px/1.1 ConceptPeopleHead,system-ui!important;color:#10254b!important;order:1!important;margin:3px 0!important}
+html body #roster #roster-detail .dossier-hero>span:not(.dossier-stamp){order:-1!important;background:#ffe34a!important;border:1.5px solid #10254b!important;border-radius:9px!important;padding:6px 12px!important;color:#10254b!important;font-size:12px!important;align-self:flex-start!important}
+html body #roster #roster-detail .dossier-hero>.dossier-stamp{display:none!important}
+html body #roster #roster-detail .dossier-hero>p{order:2!important;color:#365576!important;font-size:12px!important}
+html body #roster #roster-detail :is(p,blockquote,small){color:#365576!important}
+html body #roster #roster-detail .dossier-section{background:none!important;border:0!important;box-shadow:none!important;padding:14px 0!important;margin:0!important}
+html body #roster #roster-detail .dossier-section h4{font:400 21px/1.3 ConceptPeopleHead,system-ui!important;color:#10254b!important}
+html body #roster #roster-detail .dossier-section p{font:14px/1.7 system-ui,sans-serif!important}
+html body #roster #roster-detail .skill-file{background:#eef4ff!important;border:1.5px solid #10254b!important;border-radius:8px!important;padding:14px!important}
+html body #roster #roster-detail .staff-action{position:static!important;background:#ffe34a!important;border:2.5px solid #10254b!important;border-radius:14px!important;box-shadow:inset 0 -5px #e9a824,2px 5px #10254b!important;color:#10254b!important;font:400 20px/1.3 ConceptPeopleHead,system-ui!important;min-height:49px!important}
+/* Postal counter: seven scalloped stripes, courier and folded parcel. */
+#asset-shop#asset-shop{background:#c08b52!important;padding:0 14px 12px!important;position:relative!important;overflow:hidden!important}
+#asset-shop#asset-shop .backdrop{display:none!important}
+#asset-shop#asset-shop .concept-awning{display:flex;height:19cqw;min-height:58px;flex-shrink:0;margin:0 -12px -1px;z-index:2;filter:drop-shadow(0 2px #10254b)}
+#asset-shop#asset-shop .concept-awning i{flex:1;background:#2258bb;border:2px solid #10254b;clip-path:polygon(0 0,100% 0,100% 80%,86% 100%,15% 100%,0 80%)}
+#asset-shop#asset-shop .concept-awning i:nth-child(even){background:#fff6df}
+#asset-shop#asset-shop header.shared-art-header{height:17cqw!important;min-height:64px!important;max-height:none!important;padding:7cqw 8px 3cqw!important;background:#fff6df!important;border:2px solid #10254b!important;border-bottom:0!important;border-radius:7px 7px 0 0!important}
+#asset-shop#asset-shop header h1.shared-title{font:400 6.2cqw/1.15 ConceptPeopleHead,system-ui!important;color:#10254b!important;background:none!important;padding:0!important;margin:0!important;height:auto!important;text-shadow:none!important}
+#asset-shop#asset-shop header .close{top:2px!important;right:0!important;width:38px!important;height:38px!important;min-width:38px!important;min-height:38px!important;z-index:5!important}
+#asset-shop#asset-shop header .wallet{position:absolute!important;top:-15cqw!important;right:9px!important;background:#ffe34a!important;color:#10254b!important;border:2px solid #10254b!important;border-radius:11px!important;z-index:4!important}
+#asset-shop#asset-shop .tabs{margin:0!important;background:#fff6df!important;border:0!important;border-left:2px solid #10254b!important;border-right:2px solid #10254b!important;border-radius:0!important;padding:3px 16px!important;box-shadow:none!important}
+#asset-shop#asset-shop .tabs button{background:#fffdf7!important;border:1.5px solid #10254b!important;border-radius:8px!important;min-height:32px!important;font-size:14px!important}
+#asset-shop#asset-shop .tabs [aria-pressed=true]{background:#2258bb!important;color:white!important;box-shadow:none!important}
+#asset-shop#asset-shop .scroll{background:#fff6df!important;border:2px solid #10254b!important;border-top:0!important;border-radius:0 0 7px 7px!important}
+#asset-shop#asset-shop .hero-stage{height:auto!important;padding:0 0 12px!important;position:relative!important;min-height:0!important}
+#asset-shop#asset-shop .hero-stage>:not(.concept-mail-portrait):not(.concept-parcel){display:none!important}
+#asset-shop#asset-shop .concept-mail-portrait{width:44cqw;height:39cqw;object-fit:contain;display:block;margin:0 auto}
+#asset-shop#asset-shop .concept-parcel{position:relative;margin:0 10%;height:39cqw;min-height:130px;border:3px solid #10254b;border-radius:9px;background:linear-gradient(90deg,transparent 43%,#10254b 43%,#10254b 43.5%,#f1806f 43.5%,#f1806f 56.5%,#10254b 56.5%,#10254b 57%,transparent 57%),#d6a76b;display:grid;place-items:center}
+#asset-shop#asset-shop .concept-parcel:before{content:'';position:absolute;inset:0 0 auto;height:40%;background:#f6d395;clip-path:polygon(0 0,100% 0,50% 100%)}
+#asset-shop#asset-shop .concept-parcel>div{z-index:1;background:#fffdf7;border:3px solid #10254b;border-radius:5px;box-shadow:4px 5px #10254b;padding:14px 8px;text-align:center;width:80%}
+#asset-shop#asset-shop .concept-parcel strong{font-size:5cqw;display:block}#asset-shop#asset-shop .concept-parcel span{display:block;font-size:3.3cqw;margin-top:9px}
+#asset-shop#asset-shop .paper{background:none!important;margin:0!important;padding:4px 7% 16px!important;color:#10254b!important}
+#asset-shop#asset-shop .rate-banner{background:none!important;border:0!important;box-shadow:none!important;font-size:14px!important;color:#10254b!important}
+#asset-shop#asset-shop .stats{background:none!important}.stats .stat-icon{display:none!important}
+#asset-shop#asset-shop .stats>div{background:none!important;border:0!important;box-shadow:none!important;padding:2px!important}
+#asset-shop#asset-shop .stats b{font-size:22px!important}#asset-shop#asset-shop .stats small{font-size:11px!important}
+#asset-shop#asset-shop .guarantee{border:0!important;background:none!important;box-shadow:none!important;color:#365576!important}
+#asset-shop#asset-shop #pips{display:flex!important;gap:0!important;height:10px!important;border:1px solid #10254b!important;border-radius:9px!important;overflow:hidden!important}
+#asset-shop#asset-shop #pips i{flex:1!important;border:0!important;border-radius:0!important;height:100%!important;background:#d1d6cf!important;font-size:0!important;margin:0!important}
+#asset-shop#asset-shop #pips i.filled{background:#2258bb!important}
+#asset-shop#asset-shop .purchase,#asset-training#asset-training #upgrade{background:#ffe34a!important;border:2.5px solid #10254b!important;border-radius:14px!important;box-shadow:inset 0 -5px #e9a824,2px 5px #10254b!important;min-height:49px!important;font-size:5cqw!important;color:#10254b!important}
+#asset-shop#asset-shop .button-coin,#asset-shop#asset-shop .button-arrow{display:none!important}#asset-shop#asset-shop footer{margin:8px -14px -12px!important}
+/* Room art and real GROUP progression. */
+#asset-training#asset-training{background:transparent!important;padding:18px 12px 0!important}
+#asset-training#asset-training header.shared-art-header{margin:0 12px 14px!important;background:#fff6df!important;border:3px solid #10254b!important;border-radius:4px!important;box-shadow:4px 5px #10254b!important;padding:20px 8px 12px!important;height:auto!important;min-height:96px!important}
+#asset-training#asset-training header .shared-title{font:400 7cqw/1.2 ConceptPeopleHead,system-ui!important;color:#10254b!important;margin:0!important;padding:0!important}
+#asset-training#asset-training header .back{display:none!important}#asset-training#asset-training header .close{top:-12px!important;right:-12px!important}
+#asset-training#asset-training .concept-training-subtitle{text-align:center;font-size:3.4cqw;margin:12px 0 0;color:#365576}
+#asset-training#asset-training .tabs{margin:0 10px 10px!important;gap:8px!important}
+#asset-training#asset-training .tabs button{background:#fffdf7!important;border:2px solid #10254b!important;border-radius:9px!important;box-shadow:none!important;min-height:35px!important;font-size:14px!important;color:#10254b!important}
+#asset-training#asset-training .tabs [aria-pressed=true]{background:#2258bb!important;color:#fffdf7!important}
+#asset-training#asset-training .tabs button:after{display:none!important}
+#asset-training#asset-training .stage{height:60cqw!important;margin:0 0 22px!important;border:3px solid #10254b!important;border-radius:12px!important;background:url('assets/open-scene/training-room.webp') center/cover!important;overflow:hidden!important}
+#asset-training#asset-training .stage>:not(.concept-training-portrait):not(.concept-training-label){display:none!important}
+#asset-training#asset-training .concept-training-portrait{position:absolute;width:38cqw;height:38cqw;object-fit:contain;left:8%;bottom:10%}
+#asset-training#asset-training .concept-training-label{position:absolute;bottom:4%;left:6%;padding:7px 14px;background:#2258bb;border:2px solid #10254b;border-radius:12px;color:#fffdf7;font:400 13px ConceptPeopleHead,system-ui}
+#asset-training#asset-training .paper{background:#fffdf7!important;border:3px solid #10254b!important;border-radius:5px!important;box-shadow:4px 5px #10254b!important;margin:0 6px 12px!important;padding:22px 16px!important}
+#asset-training#asset-training #level{font:400 6.2cqw/1.5 ConceptPeopleHead,system-ui!important;background:none!important;border:0!important;outline:0!important;color:#10254b!important;border-radius:0!important;text-shadow:none!important;white-space:normal!important}
+#asset-training#asset-training #level em{color:#2258bb!important}#asset-training#asset-training .power{background:none!important;border:0!important;box-shadow:none!important}#asset-training#asset-training .power .sword{display:none!important}
+#asset-training#asset-training .effects-title{background:#c9e5ff!important;color:#10254b!important;border:2px solid #10254b!important;box-shadow:none!important}
+#asset-training#asset-training .medal b{background:#fff6df!important;border:2px solid #10254b!important;box-shadow:none!important;color:#10254b!important}
+#asset-training#asset-training .medal.unlocked b{background:#ffe34a!important}#asset-training#asset-training .medal.next b{background:#c9e5ff!important}
+#asset-training#asset-training .upgrade-bar{background:#fffdf7!important;border:2px solid #10254b!important;border-radius:6px!important;padding:12px!important;box-shadow:none!important;margin:0 6px 10px!important}
+#asset-training#asset-training footer{margin:0 -12px!important}
+/* Starter selection stays tied to the actual eligible cards. */
+html body #starter-choice #starter-options{display:flex!important;flex-direction:column!important;gap:17px!important;margin:22px 0 30px!important}
+html body #starter-choice #starter-options article{position:relative!important;display:grid!important;grid-template-columns:86px 1fr!important;grid-template-rows:auto auto auto!important;gap:6px 10px!important;background:#c9e5ff!important;border:2.5px solid #10254b!important;border-radius:10px!important;box-shadow:4px 5px #10254b!important;padding:14px 12px!important;color:#10254b!important;min-height:125px!important}
+html body #starter-choice #starter-options article:nth-child(3n){background:#b7e8d6!important}
+html body #starter-choice #starter-options article[data-concept-selected=true]{background:#ffe34a!important}
+html body #starter-choice #starter-options article>img{grid-column:1!important;grid-row:1/4!important;width:86px!important;height:100px!important;object-fit:contain!important}
+html body #starter-choice #starter-options article>b{font:400 25px/1.2 ConceptPeopleHead,system-ui!important;color:#10254b!important}
+html body #starter-choice #starter-options article>small{font:14px/1.4 system-ui!important;color:#365576!important}
+html body #starter-choice #starter-options article>div{grid-column:2!important;display:block!important}
+html body #starter-choice #starter-options article>div button:not(.concept-native-claim){background:none!important;border:0!important;box-shadow:none!important;color:#2258bb!important;font-size:13px!important;padding:0!important;min-height:30px!important}
+html body #starter-choice .concept-native-claim{display:none!important}
+html body #starter-choice .concept-starter-select{grid-column:1/-1!important;font:12px/1 system-ui!important;background:#fffdf7!important;border:1px solid #10254b!important;border-radius:7px!important;min-height:28px!important;color:#10254b!important}
+html body #starter-choice .concept-training-intro,html body #starter-choice .concept-starter-intro{font:14px/1.5 system-ui!important;color:#365576!important}
+html body #starter-choice #concept-starter-claim{width:100%!important;min-height:50px!important;font:400 23px/1.2 ConceptPeopleHead,system-ui!important;background:#ffe34a!important;color:#10254b!important;border:2.5px solid #10254b!important;border-radius:14px!important;box-shadow:inset 0 -5px #e9a824,2px 5px #10254b!important}
+/* Trial room is only the preview. The original live iframe remains the playable arena. */
+html body #staff-trial #trial-arena{height:320px!important;border:3px solid #10254b!important;border-radius:10px!important;background:url('assets/open-scene/training-room.webp') center/cover!important;position:relative!important;overflow:hidden!important}
+html body #staff-trial #trial-face{position:absolute!important;width:145px!important;height:145px!important;object-fit:contain!important;left:8%!important;bottom:12%!important;top:auto!important;transform:none!important}
+html body #staff-trial :is(.trial-target,.trial-ray){display:none!important}
+html body #staff-trial #trial-arena:after{content:'능력 테스트';position:absolute;right:14px;top:14px;background:#ffe34a;border:2px solid #10254b;border-radius:12px;padding:8px 20px;font:400 14px ConceptPeopleHead,system-ui;color:#10254b}
+html body #staff-trial #trial-ability{background:#fffdf7!important;padding:18px!important;color:#10254b!important;line-height:1.7!important}
+html body #staff-trial[data-practicing=true] #trial-arena{display:none!important}
+html body #staff-trial #practice-frame{width:100%!important;height:min(75dvh,720px)!important;min-height:360px!important;border:2px solid #10254b!important;border-radius:8px!important;display:block!important}
+/* Recruitment: blue halftone burst and unfolded postal envelope around live result. */
+html body dialog#recruit-dialog#recruit-dialog[open]{background:radial-gradient(#6088d0 1px,transparent 1px) 0 0/12px 12px,#2258bb!important;color:#10254b!important;border:0!important;border-radius:12px!important;padding:24px 18px!important;max-height:94dvh!important}
+html body #recruit-dialog#recruit-dialog #recruit-result{background:none!important;border:0!important;padding:0!important;overflow:visible!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal{position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;background:none!important;border:0!important;padding:0 10px 24px!important;box-shadow:none!important;isolation:isolate!important;gap:0!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal:before{content:'';position:absolute;z-index:-1;top:80px;left:0;right:0;height:270px;background:#ffe34a;clip-path:polygon(50% 0,60% 14%,78% 5%,80% 25%,98% 27%,88% 46%,100% 56%,86% 68%,97% 86%,76% 88%,74% 100%,50% 89%,26% 100%,23% 88%,3% 86%,14% 67%,0 56%,14% 45%,4% 28%,23% 25%,26% 5%,40% 14%)}
+html body #recruit-dialog#recruit-dialog .recruit-reveal>.shared-recruit-title,html body #recruit-dialog#recruit-dialog .recruit-reveal>b{order:-2!important;background:none!important;color:#fffdf7!important;font:400 27px/1.3 ConceptPeopleHead,system-ui!important;position:static!important;transform:none!important;margin:12px 0 22px!important;text-align:center!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal>img{order:-1!important;width:210px!important;height:220px!important;object-fit:contain!important;margin:12px 0 4px!important;background:none!important;border:0!important;box-shadow:none!important;filter:none!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal>strong{align-self:stretch!important;text-align:center!important;display:block!important;font:400 30px/1.4 ConceptPeopleHead,system-ui!important;color:#10254b!important;background:#fffdf7!important;border:3px solid #10254b!important;border-bottom:0!important;border-radius:5px 5px 0 0!important;padding:24px 12px 10px!important;margin:0!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal>p{align-self:stretch!important;display:block!important;background:#fffdf7!important;color:#365576!important;border:3px solid #10254b!important;border-top:0!important;border-bottom:20px solid #f4c572!important;padding:12px 18px 38px!important;margin:0!important;font:14px/1.9 system-ui!important;text-align:center!important;box-shadow:5px 5px #10254b!important}
+html body #recruit-dialog#recruit-dialog :is(#recruit-close,.recruit-actions button){background:#ffe34a!important;color:#10254b!important;border:2.5px solid #10254b!important;border-radius:14px!important;box-shadow:inset 0 -5px #e9a824,2px 5px #10254b!important;min-height:48px!important;font:400 20px/1.2 ConceptPeopleHead,system-ui!important}
+@media(max-width:360px){html body #starter-choice #starter-options article{grid-template-columns:68px 1fr!important;padding:10px!important}html body #starter-choice #starter-options article>img{width:68px!important}html body #roster #roster-detail .dossier-hero>:is(img,canvas[data-motion]){height:175px!important}}
+
+/* Composed reveal body retains the original live children and actions. */
+html body #recruit-dialog#recruit-dialog .recruit-reveal .panel-scroll-body>.shared-recruit-title,html body #recruit-dialog#recruit-dialog .recruit-reveal .panel-scroll-body>b{order:-2!important;background:none!important;color:#fffdf7!important;font:400 27px/1.3 ConceptPeopleHead,system-ui!important;position:static!important;transform:none!important;margin:12px 0 22px!important;text-align:center!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal .panel-scroll-body>img{order:-1!important;width:210px!important;height:220px!important;object-fit:contain!important;margin:12px 0 4px!important;background:none!important;border:0!important;box-shadow:none!important;filter:none!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal .panel-scroll-body>strong{align-self:stretch!important;text-align:center!important;display:block!important;font:400 30px/1.4 ConceptPeopleHead,system-ui!important;color:#10254b!important;background:#fffdf7!important;border:3px solid #10254b!important;border-bottom:0!important;border-radius:5px 5px 0 0!important;padding:24px 12px 10px!important;margin:0!important}
+html body #recruit-dialog#recruit-dialog .recruit-reveal .panel-scroll-body>p{align-self:stretch!important;display:block!important;background:#fffdf7!important;color:#365576!important;border:3px solid #10254b!important;border-top:0!important;border-bottom:20px solid #f4c572!important;padding:12px 18px 38px!important;margin:0!important;font:14px/1.9 system-ui!important;text-align:center!important;box-shadow:5px 5px #10254b!important}
+
+html body dialog#recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog.shared-paper-modal[open]{border-image:none!important;background:radial-gradient(#6088d0 1px,transparent 1px) 0 0/12px 12px,#2258bb!important;border:0!important}
+html body #recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog.shared-paper-modal .recruit-reveal .panel-scroll-body{display:flex!important;flex-direction:column!important;align-items:center!important;width:100%!important;background:none!important;padding:0!important;overflow:visible!important;max-height:none!important}
+html body #recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog.shared-paper-modal .ref-recruit-actions{background:#f4c572!important;padding:20px 15px!important;border:2px solid #10254b!important;border-top:0!important;width:100%!important;box-sizing:border-box!important}
+html body #recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog.shared-paper-modal .ref-recruit-actions>button{background:#ffe34a!important;color:#10254b!important;border:2.5px solid #10254b!important;border-radius:14px!important;box-shadow:inset 0 -5px #e9a824,2px 5px #10254b!important;font:400 18px/1.3 ConceptPeopleHead,system-ui!important}
+html body dialog#roster#roster.asset-roster-detail.shared-paper-modal{border-image:none!important;background:#e7bc76!important;border:3px solid #10254b!important}
+html body dialog#roster#roster.asset-roster-detail.shared-paper-modal #roster-title{background:none!important;color:#10254b!important;-webkit-text-fill-color:#10254b!important;text-shadow:none!important;font:400 27px/1.2 ConceptPeopleHead,system-ui!important}
+#asset-training#asset-training header.shared-art-header{display:block!important}
+#asset-shop#asset-shop header.shared-art-header .wallet{left:auto!important;right:9px!important}
+#asset-training#asset-training{background:linear-gradient(#10254b1f,#10254b1f),url('previews/asset-lobby-20261109/assets/background.webp') center/cover!important}
+/* Dossier stays scrollable at small viewport heights; actions retain their native footer. */
+html body #roster#roster.asset-roster-detail #roster-detail>.panel-scroll-body{overflow:auto!important;min-height:0!important;padding-right:3px!important}
+html body #roster#roster.asset-roster-detail #roster-detail .live-dossier-actions{background:#fffdf7!important;border:0!important;padding:8px 0 0!important}
+/* Final header audit: no inherited blue plaque or ornamental pseudo layer. */
+#asset-roster#asset-roster .shared-art-header .shared-title,
+#asset-training#asset-training .shared-art-header .shared-title,
+#asset-shop#asset-shop .shared-art-header .shared-title{background:none!important;background-image:none!important;border:0!important;box-shadow:none!important;color:#10254b!important;-webkit-text-fill-color:#10254b!important;text-shadow:none!important;-webkit-text-stroke:0 transparent!important;min-width:0!important;min-height:0!important;height:auto!important;padding:0!important;margin:0!important;white-space:normal!important;overflow-wrap:break-word!important;word-break:keep-all!important;font-family:ConceptPeopleHead,system-ui,sans-serif!important;font-weight:400!important}
+#asset-roster#asset-roster .shared-art-header .shared-title{font-size:clamp(22px,6cqw,29px)!important;line-height:1.25!important}
+:is(#asset-roster#asset-roster,#asset-training#asset-training,#asset-shop#asset-shop) .shared-art-header::before,
+:is(#asset-roster#asset-roster,#asset-training#asset-training,#asset-shop#asset-shop) .shared-art-header::after,
+:is(#asset-roster#asset-roster,#asset-training#asset-training,#asset-shop#asset-shop) .shared-title::before,
+:is(#asset-roster#asset-roster,#asset-training#asset-training,#asset-shop#asset-shop) .shared-title::after{display:none!important;content:none!important}
+#asset-roster#asset-roster .r-tabs{gap:5px!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+#asset-roster#asset-roster .r-tabs button{white-space:normal!important;font-size:clamp(11px,3.7cqw,17px)!important;min-height:44px!important;height:auto!important;padding:5px 3px!important}
+#asset-roster#asset-roster .r-tabs b{padding:0 2px!important;background:transparent!important}
+:is(#asset-training#asset-training,#asset-shop#asset-shop) .tabs button{min-height:44px!important;min-width:0!important}
+#asset-shop#asset-shop header .close{width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important}
+html body #starter-choice#starter-choice .concept-starter-select,
+html body #starter-choice#starter-choice #starter-options article>div button:not(.concept-native-claim){min-height:44px!important}
+html body #starter-choice#starter-choice #starter-options article{min-width:0!important;box-sizing:border-box!important}
+html body #starter-choice#starter-choice #starter-options article :is(b,small,div){min-width:0!important;overflow-wrap:break-word!important}
+@media(max-width:350px){
+#asset-roster#asset-roster .shared-art-header{padding-left:48px!important;padding-right:48px!important}
+#asset-shop#asset-shop .shared-art-header .shared-title{font-size:20px!important;padding-right:22px!important}
+#asset-training#asset-training .shared-art-header .shared-title{font-size:23px!important}
+html body #starter-choice#starter-choice #starter-options article{grid-template-columns:60px minmax(0,1fr)!important;gap:5px 8px!important;padding:10px 8px!important}
+html body #starter-choice#starter-choice #starter-options article>img{width:60px!important;height:90px!important}
+html body #starter-choice#starter-choice #starter-options article>b{font-size:22px!important}
+}
