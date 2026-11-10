@@ -41,15 +41,23 @@ class PerformanceTests(unittest.TestCase):
         a.context.close();a=self.battle()
         self.assertTrue(a.evaluate('()=>{const layer=staticBoardLayer;selected=0;draw();selected=-1;draw();return layer===staticBoardLayer}'))
     def test_portraits_appear_after_opening_static_dialogs(self):
-        a=self.open(390,844);a.wait_for_timeout(500)
-        for button,dialog in [('#training-entry','#training-dialog'),('#roster-open','#roster')]:
-            a.locator(button).click();a.wait_for_timeout(300)
-            painted=a.evaluate("""selector=>[...document.querySelectorAll(selector+' canvas[data-motion]')].filter(c=>{const r=c.getBoundingClientRect();return c.motionVisible&&r.width&&r.height&&r.bottom>0&&r.top<innerHeight}).map(c=>{const p=c.getContext('2d').getImageData(0,0,c.width,c.height).data;let n=0;for(let i=3;i<p.length;i+=4)if(p[i]>100)n++;return n>30})""",dialog)
-            self.assertTrue(painted);self.assertTrue(all(painted))
-            a.evaluate("document.querySelectorAll('dialog[open]').forEach(d=>d.close())")
+        a=self.open(390,844)
+        for button,host in [('#training-entry','#asset-training-host'),('#roster-open','#asset-roster-host')]:
+            a.locator('#asset-lobby-host [data-proxy="'+button+'"]').click()
+            # The approved interfaces display original portrait images in shadow DOM,
+            # not the hidden legacy animated canvases. Verify the visible asset loads.
+            portrait=a.locator(host+' img[data-character-id]').first
+            portrait.scroll_into_view_if_needed()
+            a.wait_for_function("""selector=>{
+                const img=document.querySelector(selector).shadowRoot.querySelector('img[data-character-id]');
+                return img.complete && img.naturalWidth>0;
+            }""",arg=host)
+            self.assertTrue(portrait.is_visible())
+            self.assertGreater(portrait.evaluate('e=>e.naturalHeight'),0)
+            a.locator(host+' [data-action="close"]').first.click()
     def test_closed_shop_is_not_rebuilt_and_refreshes_on_open(self):
-        a=self.battle();a.evaluate("window.shopMutations=0;window.shopObserver=new MutationObserver(rs=>shopMutations+=rs.length);shopObserver.observe(document.querySelector('#shop'),{subtree:true,childList:true,attributes:true});meta.coins=100;sync()")
-        a.wait_for_timeout(150);self.assertEqual(a.evaluate('shopMutations'),0)
+        a=self.battle();a.evaluate("window.shopMutations=0;window.shopMutationDetails=[];window.shopObserver=new MutationObserver(rs=>{shopMutations+=rs.length;shopMutationDetails.push(...rs.map(r=>({type:r.type,id:r.target.id,attribute:r.attributeName})))});shopObserver.observe(document.querySelector('#shop'),{subtree:true,childList:true,attributes:true});meta.coins=100;sync()")
+        a.wait_for_timeout(150);self.assertEqual(a.evaluate('shopMutations'),0,a.evaluate('shopMutationDetails'))
         a.evaluate('paused=true;sync()');a.locator('#pause-guide').count() # No interaction behind the pause overlay.
         a.evaluate("document.querySelector('#shop').showModal()")
         self.assertEqual(a.locator('#shop-coins').inner_text(),'100');self.assertFalse(a.locator('#buy-grade').is_disabled())

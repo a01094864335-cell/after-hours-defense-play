@@ -72,7 +72,7 @@ class BalanceTests(unittest.TestCase):
         a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset()');start_battle(a)
         for expected in [2,3,1,2,3]:
             a.locator('#speed').click();self.assertEqual(a.evaluate('speed'),expected);self.assertFalse(a.evaluate('paused'))
-            self.assertIn(str(expected)+'배속',a.locator('#speed').get_attribute('aria-label'))
+            self.assertEqual(a.locator('#speed').get_attribute('aria-label'),'전투 속도 '+str(expected)+'배 · 변경')
         a.evaluate("paused=true;speed=2;sync();document.querySelector('#speed').click()");self.assertTrue(a.evaluate('paused'));a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.evaluate('resumeRun()');self.assertEqual(a.evaluate('speed'),3)
         self.assertTrue(a.evaluate('paused'))
         dt=a.evaluate("()=>{let observed;GamePerformance.resetSimulation();GamePerformance.advance(1/60,speed,d=>{observed=d});return observed}")

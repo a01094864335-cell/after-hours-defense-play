@@ -21,15 +21,21 @@ class VisualIssueTests(unittest.TestCase):
     def test_reward_return_remains_visible_and_last_target_is_reachable(self):
         a=self.open(320,568);a.evaluate("saveChange(d=>{d.tutorialComplete=true});reset();setScreen('battle');wave=20;playing=true;paused=true;bonusPending=true;renderPerkChoices();document.querySelector('#perk').showModal()")
         a.locator('#perk-equipment').click();self.inside(a,'#perk-back')
-        a.locator('.perk-content').evaluate('e=>e.scrollTop=e.scrollHeight')
-        self.inside(a,'#perk-targets button:last-child');self.inside(a,'#perk-back')
+        ui.assert_reachable(self,a,'#perk-targets button:last-child');self.inside(a,'#perk-back')
         a.locator('#perk-back').click();self.assertTrue(a.locator('#perk-options').is_visible());self.assertTrue(a.locator('#perk-back').is_hidden())
     def test_final_list_items_scroll_clear_of_fixed_footers(self):
         a=self.open(320,568)
-        for opener,scroller,last in [('#roster-open','#roster-overview','#roster-list .staff-pass:last-child'),('#training-entry','.live-training-body','#training-effects>.training-character:last-child')]:
-            a.locator(opener).click();a.locator(scroller).evaluate('e=>e.scrollTop=e.scrollHeight')
+        surfaces=[
+            ('#roster-open','#asset-roster-host .r-scroll','#asset-roster-host .r-card:last-child','#asset-roster-host .r-nav [data-action="close"]'),
+            ('#training-entry','#asset-training-host .scroll','#asset-training-host #effects details:last-child summary','#asset-training-host .close'),
+        ]
+        for opener,scroller,last,close in surfaces:
+            a.locator('#asset-lobby-host [data-proxy="'+opener+'"]').click()
+            a.locator(scroller).evaluate('e=>e.scrollTop=e.scrollHeight')
             self.assertGreater(a.locator(last).count(),0)
+            ui.assert_reachable(self,a,last)
             item=a.locator(last).bounding_box();body=a.locator(scroller).bounding_box()
             self.assertGreaterEqual(item['y'],body['y'])
             self.assertLessEqual(item['y']+item['height'],body['y']+body['height']+1)
-            a.evaluate("document.querySelectorAll('dialog[open]').forEach(d=>d.close())")
+            a.locator(close).click()
+            self.assertTrue(a.locator('#asset-lobby-host #asset-lobby').is_visible())

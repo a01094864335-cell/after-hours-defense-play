@@ -40,3 +40,24 @@ test('hiring story styles and scripts are linked and included in the Pages build
  for(const file of ['hiring-stories.css','hiring-stories.js','assets/hiring-stories/game-data.js']){assert(html.includes('"'+file+'"'));assert(build.includes(file));}
  assert(html.indexOf('src="hiring-stories.js"')>html.indexOf('src="development.js"'));
 });
+
+for(let attempt=1;attempt<=10;attempt++)test(`queued hiring close cannot clear a reopened story / attempt ${attempt}`,()=>{
+ const b=boot('');b.run(`
+ var parts={},listeners={},queued=[],focusReturns=0;
+ document.activeElement={isConnected:true,focus(){focusReturns++}};
+ document.body={append(){}};
+ document.createElement=()=>({open:false,setAttribute(){},querySelector(key){return parts[key]||(parts[key]={textContent:'',focus(){},addEventListener(n,fn){this[n]=fn}})},addEventListener(n,fn){listeners[n]=fn},showModal(){this.open=true},close(){this.open=false;queued.push(listeners.close)}});
+ meta.staff=[...BASE_STAFF,...RECRUIT_STAFF];
+ if(!HiringStories.open('ghost-courier'))throw Error('initial open');
+ HiringStories.close();
+ if(!HiringStories.open('bat-nurse'))throw Error('rapid reopen');
+ queued.shift()();
+ parts['[data-hire-next]'].onclick();
+ if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+ if(focusReturns!==0)throw Error('stale close stole reopened dialog focus');
+ parts['[data-hire-prev]'].onclick();
+ if(parts['.hire-page'].textContent!=='1 / 4')throw Error('back navigation');
+ HiringStories.close();queued.shift()();
+ if(focusReturns!==1)throw Error('final close must restore focus');
+ `);
+});

@@ -13,7 +13,8 @@ const HiringStories=(()=>{
   dialog.querySelector('[data-hire-close]').onclick=close;
   dialog.querySelector('[data-hire-prev]').onclick=()=>move(-1);
   dialog.querySelector('[data-hire-next]').onclick=()=>page===3?close():move(1);
-  dialog.addEventListener('close',()=>{current=null;if(returnFocus?.isConnected)returnFocus.focus()});
+  // Native close events are queued: an earlier close may arrive after a reopen.
+  dialog.addEventListener('close',()=>{if(dialog.open)return;current=null;if(returnFocus?.isConnected)returnFocus.focus()});
   dialog.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1)}});
   const art=dialog.querySelector('.hire-art');
   art.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX},{passive:true});
