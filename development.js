@@ -68,12 +68,9 @@ function renderAnalysis(){
 }
 function deckWarning(){const helpers=meta.deck.filter(id=>[2,3,9,10,11,16].includes(kinds.findIndex(k=>k.file===id))).length;return helpers>=3?'보조 직원 '+helpers+'명 편성 · 초반 공격이 부족할 수 있어요. 장비 강화와 공격 직원 수를 점검하세요.':'';}
 function renderJourney(){
- const host=document.querySelector('#journey-summary');if(!host)return;
+ // Records and presets stay in saved profiles, but have no navigation or editor.
  const entry=document.querySelector('#training-entry-summary');if(entry)uiText(entry,'직원 '+meta.training.staff+' · 용병 '+meta.training.merc+' →');
- const best=profile().best,target=(Math.floor(best/5)+1)*5,last=profile().records.find(r=>!r.tutorial);
- const text='최고 '+best+'웨이브 돌파 · 다음 목표 '+target+'웨이브'+(last?'\n최근 '+last.wave+'차 · '+last.rule+' · 직원 Lv.'+last.training.staff+' / 지원 Lv.'+last.training.merc:'');
- const summary=text+(deckWarning()?'\n'+deckWarning():'');const goal=document.querySelector('#journey-goal');if(goal)uiText(goal,summary);const tip=document.querySelector('#deck-tip');if(tip){tip.dataset.originalTip??=tip.textContent;uiText(tip,tip.dataset.originalTip+(deckWarning()?' '+deckWarning():''));}if(document.documentElement.classList.contains('duo-live')){if(host.dataset.summary!==summary){host.dataset.summary=summary;const copy=document.createElement('span');copy.textContent=summary;host.replaceChildren(copy);host.setAttribute('aria-label',summary+' · 기록과 편성 보관함 열기');}}else if(host.textContent!==summary)host.textContent=summary;
- const list=document.querySelector('#run-history-list');if(list&&document.querySelector('#journey-dialog')?.open)list.innerHTML=profile().records.map(r=>'<li><b>'+r.wave+'차 · '+r.coins+'코인</b><span>'+safeText(r.rule)+' · 직원 '+r.training.staff+' / 지원 '+r.training.merc+' · 마왕 '+r.king.appearances+'회</span></li>').join('')||'<li>당직을 마치면 최근 20판을 기록해요.</li>';
+ const tip=document.querySelector('#deck-tip');if(tip){tip.dataset.originalTip??=tip.textContent;uiText(tip,tip.dataset.originalTip+(deckWarning()?' '+deckWarning():''));}
 }
 function savePreset(index){if(!Number.isInteger(index)||index<0||index>2||meta.deck.length!==5||playing&&!ended||!meta.tutorialComplete)return false;return saveChange(d=>{d.profile.presets[index]={staff:d.deck.slice(),support:d.equipped};});}
 function loadPreset(index){const preset=profile().presets[index];if(!preset||!meta.tutorialComplete||playing&&!ended||board.some(Boolean)&&!ended||preset.staff.some(id=>!meta.staff.includes(id))||preset.support&&!meta.owned.includes(preset.support))return false;const saved=saveChange(d=>{d.deck=preset.staff.slice();d.equipped=preset.support;});if(saved){runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));sync();renderStaffArchive();}return saved;}
@@ -86,10 +83,6 @@ if(typeof document.createElement==='function'){
  const facts=q('.recruit-facts');if(facts)facts.innerHTML='<div><dt>일반</dt><dd>90% · '+kinds.length+'종 균등</dd></div><div><dt>지원</dt><dd>10% · '+MERC_IDS.length+'종 균등</dd></div><div><dt>보장</dt><dd>10팩 내 미보유 지원 1명</dd></div><div><dt>지정</dt><dd>일반 3 / 지원 10 포인트</dd></div>';
  q('.recruit-shop>p').textContent='일반 90% / 지원 10%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 확정! 미보유 지원을 채용하면 보장 횟수 초기화. 중복은 1포인트, 일반 3포인트·지원 10포인트로 도감에서 지정 채용해요. 보장 팩은 미보유 지원끼리 균등 확률이에요.';
  const analysis=document.createElement('section');analysis.id='run-analysis';q('#result-stats').after(analysis);
- const journey=document.createElement('button');journey.id='journey-summary';journey.type='button';journey.setAttribute('aria-label','개인 최고 기록과 최근 당직 보기');q('#training-entry').before(journey);
- const dialog=document.createElement('dialog');dialog.id='journey-dialog';dialog.className='development-sheet';dialog.innerHTML='<header><h2>당직 기록 · 편성 보관함</h2><button id="journey-close">닫기</button></header><p id="journey-goal" role="status"></p><h3>편성 3개 저장</h3><p>직원 5 + 지원 1 · 연수 수료 후 사용</p><div id="deck-presets"></div><h3>최근 20판</h3><ol id="run-history-list"></ol>';
- document.body.append(dialog);journey.onclick=()=>{dialog.showModal();renderPresets();renderJourney();};q('#journey-close').onclick=()=>dialog.close();
- const deckButton=document.createElement('button');deckButton.textContent='편성 저장 · 기록 보기';deckButton.onclick=()=>{q('#deck').close();journey.click();};q('#deck').append(deckButton);
  const fxButton=document.createElement('button');fxButton.id='compact-fx-toggle';q('#menu').insertBefore(fxButton,q('#menu-close'));
  const fxLabel=()=>{fxButton.textContent=profile().compactFX?'스킬 연출 · 간결하게':'스킬 연출 · 크게 보기';fxButton.setAttribute('aria-pressed',String(profile().compactFX));document.documentElement.classList.toggle('compact-skill-fx',profile().compactFX);};
  fxButton.onclick=()=>{if(saveChange(d=>{d.profile.compactFX=!d.profile.compactFX;}))fxLabel();};

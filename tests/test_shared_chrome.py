@@ -19,7 +19,7 @@ class SharedChromeTests(unittest.TestCase):
                 ('asset-lobby-host',None,None),
                 ('asset-roster-host','[data-proxy="#roster-open"]','.r-close'),
                 ('asset-shop-host','[data-proxy="#shop-open"]','.close'),
-                ('asset-training-host','[data-proxy="#training-entry"]','.close'),
+                ('asset-training-host','[data-proxy="#training-entry"]','.back'),
             ]:
                 if entry: page.locator('#asset-lobby-host '+entry).click()
                 if host=='asset-lobby-host':
@@ -47,7 +47,8 @@ class SharedChromeTests(unittest.TestCase):
                     b=button.bounding_box()
                     self.assertEqual(round(b['width']),44)
                     self.assertEqual(round(b['height']),44)
-                    self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
+                    if host!='asset-training-host':
+                        self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
                 out=os.getenv('CHROME_QA_DIR')
                 if out:
                     Path(out).mkdir(parents=True,exist_ok=True)
@@ -121,12 +122,11 @@ class SharedChromeTests(unittest.TestCase):
             self.assertFalse(page.locator('#info').evaluate('e=>e.open'))
             page.context.close()
 
-    def test_record_backup_and_recruitment_title_chrome(self):
+    def test_backup_and_recruitment_title_chrome(self):
         for width,height in [(320,568),(390,684),(390,844),(430,932)]:
             page=self.open(width,height)
             page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
             for dialog,entry,close in [
-                ('journey-dialog','journey-summary','journey-close'),
                 ('save-transfer-dialog','save-transfer-open','save-transfer-close'),
             ]:
                 page.evaluate("id=>document.getElementById(id).click()",entry)
@@ -144,13 +144,10 @@ class SharedChromeTests(unittest.TestCase):
                 self.assertLessEqual(title_bounds['textRight'],title_bounds['right'])
                 self.assertGreaterEqual(title_bounds['textTop'],title_bounds['top'])
                 self.assertLessEqual(title_bounds['textBottom'],title_bounds['bottom'])
-                action=panel.locator('#deck-presets button' if dialog=='journey-dialog' else '#save-preview').first
+                action=panel.locator('#save-preview').first
                 self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundColor'),'rgb(255, 253, 247)')
                 self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundImage'),'none')
-                if dialog=='journey-dialog':
-                    self.assertTrue(panel.locator('#deck-presets button').nth(1).is_disabled())
-                else:
-                    self.assertTrue(page.locator('#save-restore').is_hidden())
+                self.assertTrue(page.locator('#save-restore').is_hidden())
                 button=page.locator('#'+close)
                 self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
                 for control in [header,button]:

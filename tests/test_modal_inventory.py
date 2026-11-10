@@ -54,8 +54,6 @@ CASES = [
     ('deck', '#deck', 'openDeck()'),
     ('deck-swap', '#deck', 'openDeck();swapDeckStaff(meta.staff.find(id=>!meta.deck.includes(id)))'),
     ('daily', '#daily-events-dialog', "document.querySelector('#daily-events-open').click()"),
-    ('journey', '#journey-dialog', "document.querySelector('#journey-summary').click()"),
-    ('journey-populated', '#journey-dialog', "meta.profile.records=Array.from({length:20},(_,i)=>{wave=20+i;const record=runRecord();return {...record,id:'modal-qa-'+i,coins:250+i,seconds:600+i}});meta.profile.best=38;meta.profile.presets[0]={staff:meta.deck.slice(),support:meta.equipped};readProfile(meta.profile);document.querySelector('#journey-summary').click()"),
     ('backup', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click()"),
     ('backup-invalid', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value='{invalid';document.querySelector('#save-preview').click()"),
     ('backup-preview', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value=JSON.stringify(SaveTransfer.exportData());document.querySelector('#save-preview').click()"),
@@ -86,7 +84,6 @@ APPROVED26 = [
     ('06-equipment', '장비 · 정비 작업대', 'equipment'),
     ('07-deck', '편성 · 열린 인사철', 'deck'),
     ('08-daily', '변주 · 고정 게시판', 'daily'),
-    ('09-journey', '기록 · 근무 장부', 'journey'),
     ('10-backup', '백업 · 보관 서류함', 'backup'),
     ('11-storyarchive', '이야기 · 책 표지 서가', 'story-archive'),
     ('12-notice', '알림 · 전투 메모', 'notice'),
@@ -108,7 +105,6 @@ APPROVED26 = [
 CONCEPT_NOTES = {
     '04-guide': 'Uses the real guide renderer and resume copy, not an actual saved-run restore. A saved timestamp/party shown in the concept is not fabricated.',
     '05-perk': 'Uses wave5 full-life state and actual computed rewards. Later-wave tactics/targets remain captured as variants.',
-    '09-journey': 'Primary capture is fresh real history. journey-populated is explicitly synthetic QA stress data, not a claim about user records.',
     '13-roster': 'Primary is the actual owned starter dossier; identity and abilities differ from the concept example. Overview remains a variant.',
     '14-shop': 'Actual PACK_PRICE, probabilities, wallet and pity govern the UI; concept example price and balances are not substituted.',
     '16-recruit': 'Primary fixture is the real duplicate-recruit result, not a new hire or a charged purchase.',
@@ -141,7 +137,7 @@ def write_approved_review(out, report):
             'knownScenarioDeviation': CONCEPT_NOTES.get(concept_id, 'Live game content and controlled QA state replace illustrative concept values; visual fidelity has not been certified.'),
             'captures': [{key: c[key] for key in ('name', 'engine', 'viewport', 'screenshots', 'errors', 'actualViewport', 'imageFailures', 'touchClassifications', 'scrollRegions', 'actionCheck') if key in c} for c in captures],
         })
-    audit = {'schemaVersion': 1, 'designInventory': 'approved26-render_concepts.py-SCREENS',
+    audit = {'schemaVersion': 1, 'designInventory': 'approved26 with user-requested shop restoration, retired records, and standalone training',
              'conceptCount': len(APPROVED26), 'requestedViewports': SIZES,
              'comparisonPolicy': 'Coverage and geometry are machine-checked. No pixel comparison or visual approval is implied. PNGs are browser captures of real game renderers, never concept replacements.',
              'fixturePolicy': 'Isolated browser storage with controlled test state; prices, labels and actions come from game code. Stress fixtures are not user history.',
@@ -149,7 +145,7 @@ def write_approved_review(out, report):
     (out/'approved26-report.json').write_text(json.dumps(audit, ensure_ascii=False, indent=2), encoding='utf-8')
     html = ['<!doctype html><meta charset="utf-8"><title>Approved26 capture review</title>',
             '<style>body{font:16px system-ui;background:#eee;color:#172641;margin:24px}section{border-top:2px solid #234;margin-top:32px}figure{display:inline-block;vertical-align:top;margin:10px;width:260px}img{max-width:260px;height:auto}pre{white-space:pre-wrap}a{color:#234}</style>',
-            '<h1>Approved26 live game captures</h1><p>Visual fidelity is UNREVIEWED. Compare these actual browser PNGs with the approved concepts. Fixture or geometry failures remain visible below. No concept artwork is substituted.</p>',
+            '<h1>Current game surfaces: approved art plus requested revisions</h1><p>Visual fidelity is UNREVIEWED. Compare these actual browser PNGs with the approved concepts. Fixture or geometry failures remain visible below. No concept artwork is substituted.</p>',
             '<p><a href="report.json">Full geometry report</a> · <a href="approved26-report.json">Concept coverage and deviations</a></p>']
     for concept in concepts:
         html.append('<section id="'+concept['conceptId']+'"><h2>'+escape(concept['conceptId']+' · '+concept['title'])+'</h2>')
@@ -209,7 +205,8 @@ class ModalInventoryTests(unittest.TestCase):
         out = Path(os.getenv('MODAL_QA_DIR', '/tmp/modal-qa'))
         out.mkdir(parents=True, exist_ok=True)
         report = {'root': game_root(), 'sizes': SIZES, 'cases': [], 'discovered': [],
-                  'method': 'Real game renderers; isolated storage per case; viewport screenshots plus scrolled captures. Visible enabled hit targets below44px gate. Closed details/SR-only content are explicitly excluded; scroll-boundary clipping remains review information, not proof of reachability.'}
+                  'retiredScreens': ['Records/preset page removed at user request; stored data retained'],
+                  'method': 'Real game renderers; standalone training page included; isolated storage per case; viewport screenshots plus scrolled captures. Visible enabled hit targets below44px gate. Closed details/SR-only content are explicitly excluded; scroll-boundary clipping remains review information, not proof of reachability.'}
         write_approved_review(out, report)
         failures = []
         inventory = set()
@@ -279,8 +276,6 @@ class ModalInventoryTests(unittest.TestCase):
                             self.assertEqual(page.locator('#cards button:visible:enabled').count(), 0)
                         if name == 'deck-swap':
                             self.assertEqual(page.locator('#deck-options .swap-target').count(), 1)
-                        if name == 'journey-populated':
-                            self.assertEqual(page.locator('#run-history-list li').count(), 20)
                         inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         surface.evaluate("""async root=>{await document.fonts.ready;const images=[];function walk(n){for(const e of n.querySelectorAll('*')){if(e.tagName==='IMG'&&e.getBoundingClientRect().width){e.loading='eager';images.push(e)}if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);await Promise.all(images.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,5000)})));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}""")
                         entry['geometry'] = surface.evaluate(GEOMETRY)
