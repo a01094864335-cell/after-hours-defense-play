@@ -80,58 +80,58 @@
       "faceReference": "assets/character-portraits/electric-technician.webp",
       "width": 1536,
       "sheetHeight": 1024,
-      "height": 456,
+      "height": 378,
       "frames": [
         {
-          "x": 99,
-          "y": 27,
-          "w": 309,
-          "h": 456,
-          "pivotX": 157,
-          "pivotY": 455
+          "x": 94,
+          "y": 49,
+          "w": 325,
+          "h": 378,
+          "pivotX": 162,
+          "pivotY": 377
         },
         {
-          "x": 611,
-          "y": 27,
-          "w": 309,
-          "h": 456,
-          "pivotX": 157,
-          "pivotY": 455
+          "x": 606,
+          "y": 49,
+          "w": 326,
+          "h": 378,
+          "pivotX": 162,
+          "pivotY": 377
         },
         {
-          "x": 1120,
-          "y": 57,
-          "w": 371,
-          "h": 427,
-          "pivotX": 160,
-          "pivotY": 426
+          "x": 1107,
+          "y": 82,
+          "w": 341,
+          "h": 342,
+          "pivotX": 173,
+          "pivotY": 341
         },
         {
           "x": 62,
-          "y": 568,
-          "w": 437,
-          "h": 416,
+          "y": 589,
+          "w": 370,
+          "h": 361,
           "pivotX": 194,
-          "pivotY": 415
+          "pivotY": 360
         },
         {
-          "x": 590,
-          "y": 546,
-          "w": 387,
-          "h": 438,
-          "pivotX": 178,
-          "pivotY": 437
+          "x": 601,
+          "y": 575,
+          "w": 310,
+          "h": 375,
+          "pivotX": 167,
+          "pivotY": 374
         },
         {
-          "x": 1095,
-          "y": 545,
-          "w": 352,
-          "h": 439,
-          "pivotX": 185,
-          "pivotY": 438
+          "x": 1112,
+          "y": 583,
+          "w": 335,
+          "h": 368,
+          "pivotX": 168,
+          "pivotY": 367
         }
       ],
-      "sha256": "a6858396c4d3f5c88a23bcc698da2f6c612116e92df888393a3256e23e338d3a"
+      "sha256": "0c11f755a0cf8193f3e78c7384a754c94f43d741d58f0367126f9323ab6b5914"
     }
   }
 }
