@@ -290,7 +290,7 @@ class ModalInventoryTests(unittest.TestCase):
                             for card in entry['starterCardContainment']:
                                 if not card['inside']:
                                     entry['errors'].append('Starter selection control extends beyond its card: '+str(card['label']))
-                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned') and width in (390, 430):
+                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned'):
                             # Read the real button directly: price and label are live,
                             # and disabled low-balance state must remain inspectable.
                             purchase = page.locator('#asset-shop-host .purchase')
@@ -301,8 +301,7 @@ class ModalInventoryTests(unittest.TestCase):
                                     if(/hidden|auto|scroll|clip/.test(s.overflowX)&&(r.left<b.left-1||r.right>b.right+1))inside=false;}
                                 return {x:r.x,y:r.y,width:r.width,height:r.height,disabled:e.disabled,fullyVisible:inside};
                             }""")
-                            if not entry['initialPurchaseVisibility']['fullyVisible']:
-                                entry['errors'].append('Pack purchase is not fully reachable in initial viewport')
+                            entry['purchaseLayoutPolicy'] = 'Restored original shop scrolls its purchase content on short screens; initial visibility remains reported, actual scroll reachability is required below.'
                         if name == 'shop-items':
                             entry['packPurchaseHiddenOnItems'] = page.locator('#asset-shop-host .purchase').is_hidden()
                             if not entry['packPurchaseHiddenOnItems']:
@@ -319,10 +318,24 @@ class ModalInventoryTests(unittest.TestCase):
                         page.screenshot(path=str(path), animations='disabled')
                         entry['screenshots'].append(path.name)
                         covered.add(selector)
-                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned') and width in (390, 430):
+                        if name in ('shop-pack', 'shop-poor', 'shop-affordable', 'shop-earned'):
+                            purchase = page.locator('#asset-shop-host .purchase')
+                            purchase.scroll_into_view_if_needed()
+                            entry['scrolledPurchaseVisibility'] = purchase.evaluate("""e=>{
+                                const r=e.getBoundingClientRect();let left=0,top=0,right=innerWidth,bottom=innerHeight;
+                                for(let p=e.parentElement||e.getRootNode().host;p;p=p.parentElement||p.getRootNode().host){
+                                    const s=getComputedStyle(p),b=p.getBoundingClientRect();if(s.display==='contents')continue;
+                                    if(/hidden|auto|scroll|clip/.test(s.overflowX)){left=Math.max(left,b.left+p.clientLeft);right=Math.min(right,b.left+p.clientLeft+p.clientWidth)}
+                                    if(/hidden|auto|scroll|clip/.test(s.overflowY)){top=Math.max(top,b.top+p.clientTop);bottom=Math.min(bottom,b.top+p.clientTop+p.clientHeight)}}
+                                return {fullyVisible:r.left>=left-1&&r.top>=top-1&&r.right<=right+1&&r.bottom<=bottom+1};
+                            }""")
+                            self.assertTrue(entry['scrolledPurchaseVisibility']['fullyVisible'], 'Original shop purchase must be fully scroll reachable')
                             if not entry['initialPurchaseVisibility']['disabled']:
-                                page.locator('#asset-shop-host .purchase').tap(trial=True)
-                                entry['initialPurchaseVisibility']['touchActionability'] = 'passed-without-purchase'
+                                purchase.tap(trial=True)
+                                entry['scrolledPurchaseVisibility']['touchActionability'] = 'passed-without-purchase'
+                            purchase_path = out / (stem+'-purchase.png')
+                            page.screenshot(path=str(purchase_path), animations='disabled')
+                            entry['screenshots'].append(purchase_path.name)
                         # Scroll every real scroll region, including shadow-root bodies.
                         # Include the surface itself: #result is the actual scroll
                         # container, so a descendant-only walk missed every footer.
