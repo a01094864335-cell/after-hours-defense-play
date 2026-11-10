@@ -41,7 +41,7 @@ const Motion = (() => {
     const f = data.frames[Math.max(0, Math.min(5, pose))];
     const scale = height / data.height;
     ctx.save();
-    ctx.imageSmoothingEnabled = data.group === 'king';
+    ctx.imageSmoothingEnabled = data.group === 'king' || data.artStyle === 'main-comic';
     ctx.translate(Math.round(x), Math.round(y));
     ctx.scale(options.flip ? -1 : 1, 1);
     if (options.angle) ctx.rotate(options.angle);
