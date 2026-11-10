@@ -1,0 +1,33 @@
+/* The same geometry and icon sources in light DOM and all four art adapters. */
+html body .shared-gnb,#asset-lobby .shared-gnb,#asset-roster .shared-gnb,#asset-shop .shared-gnb,#asset-training .shared-gnb{
+ box-sizing:border-box!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
+ height:78px!important;min-height:78px!important;flex-shrink:0!important;gap:6px!important;margin:0!important;
+ padding:6px 8px!important;background:linear-gradient(#fff8e7,#f5dfb6)!important;border:0!important;border-radius:20px 20px 0 0!important;
+ box-shadow:0 -3px 12px #071b4d26!important;isolation:isolate;
+}
+html body .shared-gnb>button,#asset-lobby .shared-gnb>button,#asset-roster .shared-gnb>button,#asset-shop .shared-gnb>button,#asset-training .shared-gnb>button{
+ box-sizing:border-box!important;position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
+ gap:3px!important;width:auto!important;height:66px!important;min-height:44px!important;min-width:0!important;margin:0!important;padding:5px 3px!important;
+ border:0!important;border-radius:16px!important;background:transparent!important;color:#16294f!important;box-shadow:none!important;
+ font:900 13px/1.2 'Apple SD Gothic Neo',sans-serif!important;transform:none!important;touch-action:manipulation;
+}
+html body .shared-gnb>button[aria-current=page],#asset-lobby .shared-gnb>button[aria-current=page],#asset-roster .shared-gnb>button[aria-current=page],#asset-shop .shared-gnb>button[aria-current=page],#asset-training .shared-gnb>button[aria-current=page]{background:linear-gradient(135deg,#245fe9,#1641b0)!important;color:#fff5d9!important;box-shadow:inset 0 2px #ffffff38,0 2px 0 #071c5a!important}
+html body .shared-gnb>button>img,#asset-lobby .shared-gnb>button>img,#asset-roster .shared-gnb>button>img,#asset-shop .shared-gnb>button>img,#asset-training .shared-gnb>button>img{
+ position:static!important;inset:auto!important;display:block!important;flex:0 0 30px!important;width:30px!important;height:30px!important;max-width:none!important;object-fit:contain!important;filter:brightness(.4) saturate(1.3);pointer-events:none;
+}
+.shared-gnb>button[aria-current=page]>img{filter:brightness(0) invert(94%) sepia(42%) saturate(750%) hue-rotate(327deg)!important}
+.shared-gnb>button>span{position:static!important;inset:auto!important;transform:none!important;white-space:normal!important;text-align:center!important;overflow-wrap:anywhere;line-height:1.2!important}
+html body button.shared-icon-button,#asset-roster button.shared-icon-button,#asset-shop button.shared-icon-button,#asset-training button.shared-icon-button{
+ box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;
+ padding:10px!important;border:0!important;border-radius:50%!important;background:linear-gradient(#fffbed,#ffe7b8)!important;color:#142750!important;box-shadow:0 3px 0 #15346140!important;
+ font-size:0!important;line-height:1!important;transform:none!important;text-shadow:none!important;overflow:hidden!important;
+}
+html body button.shared-icon-button>img,#asset-roster button.shared-icon-button>img,#asset-shop button.shared-icon-button>img,#asset-training button.shared-icon-button>img{
+ display:block!important;position:static!important;inset:auto!important;width:24px!important;height:24px!important;max-width:none!important;object-fit:contain!important;filter:brightness(.3) saturate(1.4);pointer-events:none;
+}
+.shared-icon-button:before,.shared-icon-button:after{display:none!important}
+.shared-gnb>button:active,.shared-icon-button:active{filter:brightness(.9)!important}
+.shared-gnb>button:focus-visible,.shared-icon-button:focus-visible{outline:3px solid #11b9e5!important;outline-offset:-3px!important}
+/* Keep the safe-area outside the identical 78px dock. */
+#asset-roster footer,#asset-shop footer,#asset-training footer{padding:0 0 env(safe-area-inset-bottom,0px)!important;background:#f5dfb6!important}
+@media(max-width:350px){.shared-gnb>button>span{font-size:12px!important}}

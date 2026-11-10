@@ -22,6 +22,8 @@ files.add('gameworld-ui.js');
 files.add('battle-art.js');
 files.add('battle-comic.css');
 files.add('battle-exact.css');
+files.add('shared-chrome.css');
+files.add('shared-chrome.js');
 for(const name of fs.readdirSync(path.join(root,'assets/battle-exact')))if(/\.(webp|json|html)$/.test(name))files.add('assets/battle-exact/'+name);
 files.add('battle-comic.js');
 for(const name of fs.readdirSync(path.join(root,'assets/battle-comic')))if(/\.(webp|svg|json|html)$/.test(name))files.add('assets/battle-comic/'+name);
