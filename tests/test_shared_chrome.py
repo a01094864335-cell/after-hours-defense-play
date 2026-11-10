@@ -38,7 +38,7 @@ class SharedChromeTests(unittest.TestCase):
                     b=button.bounding_box()
                     self.assertEqual(round(b['width']),44)
                     self.assertEqual(round(b['height']),44)
-                    self.assertTrue(button.locator('img').get_attribute('src').endswith('/open-scene/icons/close.svg'))
+                    self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
                 out=os.getenv('CHROME_QA_DIR')
                 if out:
                     Path(out).mkdir(parents=True,exist_ok=True)
@@ -54,4 +54,41 @@ class SharedChromeTests(unittest.TestCase):
             page.locator('#menu-close').click()
             self.assertFalse(page.locator('#menu').evaluate('x=>x.open'))
             self.assertEqual(errors,[])
+            page.context.close()
+
+    def test_paper_settings_keeps_live_sliders_and_pinned_confirmation(self):
+        for width,height in [(320,568),(390,684),(390,844),(430,932)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
+            for attempt in range(2):
+                page.locator('#asset-lobby-host .a-settings').click()
+                page.wait_for_selector('#menu[open] #shared-menu-confirm')
+                self.assertEqual(page.locator('#shared-menu-confirm').count(),1)
+                self.assertEqual(page.locator('#menu-close').count(),1)
+                for selector in ['#menu .ui-dialog-header','#menu-close','#shared-menu-confirm']:
+                    b=page.locator(selector).bounding_box()
+                    self.assertIsNotNone(b)
+                    self.assertGreaterEqual(b['y'],0)
+                    self.assertLessEqual(b['y']+b['height'],height+1)
+                page.locator('#sfx-volume').fill('27')
+                self.assertIn('27',page.locator('#sfx-value').inner_text())
+                page.locator('#bgm-volume').fill('42')
+                self.assertIn('42',page.locator('#bgm-value').inner_text())
+                page.locator('#menu .panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
+                self.assertTrue(page.locator('#shared-menu-confirm').is_visible())
+                self.assertTrue(page.locator('#menu').evaluate('e=>e.contains(document.activeElement)'))
+                out=os.getenv('CHROME_QA_DIR')
+                if out:
+                    Path(out).mkdir(parents=True,exist_ok=True)
+                    page.screenshot(path=str(Path(out)/f'{width}x{height}-settings-{attempt}.png'))
+                page.locator('#shared-menu-confirm').click()
+                self.assertFalse(page.locator('#menu').evaluate('e=>e.open'))
+            page.locator('#asset-lobby-host .a-settings').click()
+            page.keyboard.press('Escape')
+            self.assertFalse(page.locator('#menu').evaluate('e=>e.open'))
+            # The acknowledgement remains a labeled primary action, not an X icon.
+            page.evaluate("document.querySelector('#info').showModal()")
+            self.assertEqual(page.locator('#info-close').inner_text(),'알겠어요')
+            page.locator('#info-close').click()
+            self.assertFalse(page.locator('#info').evaluate('e=>e.open'))
             page.context.close()

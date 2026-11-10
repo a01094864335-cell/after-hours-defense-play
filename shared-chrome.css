@@ -1,33 +1,85 @@
-/* The same geometry and icon sources in light DOM and all four art adapters. */
-html body .shared-gnb,#asset-lobby .shared-gnb,#asset-roster .shared-gnb,#asset-shop .shared-gnb,#asset-training .shared-gnb{
- box-sizing:border-box!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
- height:78px!important;min-height:78px!important;flex-shrink:0!important;gap:6px!important;margin:0!important;
- padding:6px 8px!important;background:linear-gradient(#fff8e7,#f5dfb6)!important;border:0!important;border-radius:20px 20px 0 0!important;
- box-shadow:0 -3px 12px #071b4d26!important;isolation:isolate;
-}
-html body .shared-gnb>button,#asset-lobby .shared-gnb>button,#asset-roster .shared-gnb>button,#asset-shop .shared-gnb>button,#asset-training .shared-gnb>button{
- box-sizing:border-box!important;position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;
- gap:3px!important;width:auto!important;height:66px!important;min-height:44px!important;min-width:0!important;margin:0!important;padding:5px 3px!important;
- border:0!important;border-radius:16px!important;background:transparent!important;color:#16294f!important;box-shadow:none!important;
- font:900 13px/1.2 'Apple SD Gothic Neo',sans-serif!important;transform:none!important;touch-action:manipulation;
-}
-html body .shared-gnb>button[aria-current=page],#asset-lobby .shared-gnb>button[aria-current=page],#asset-roster .shared-gnb>button[aria-current=page],#asset-shop .shared-gnb>button[aria-current=page],#asset-training .shared-gnb>button[aria-current=page]{background:linear-gradient(135deg,#245fe9,#1641b0)!important;color:#fff5d9!important;box-shadow:inset 0 2px #ffffff38,0 2px 0 #071c5a!important}
-html body .shared-gnb>button>img,#asset-lobby .shared-gnb>button>img,#asset-roster .shared-gnb>button>img,#asset-shop .shared-gnb>button>img,#asset-training .shared-gnb>button>img{
- position:static!important;inset:auto!important;display:block!important;flex:0 0 30px!important;width:30px!important;height:30px!important;max-width:none!important;object-fit:contain!important;filter:brightness(.4) saturate(1.3);pointer-events:none;
-}
-.shared-gnb>button[aria-current=page]>img{filter:brightness(0) invert(94%) sepia(42%) saturate(750%) hue-rotate(327deg)!important}
-.shared-gnb>button>span{position:static!important;inset:auto!important;transform:none!important;white-space:normal!important;text-align:center!important;overflow-wrap:anywhere;line-height:1.2!important}
-html body button.shared-icon-button,#asset-roster button.shared-icon-button,#asset-shop button.shared-icon-button,#asset-training button.shared-icon-button{
- box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;
- padding:10px!important;border:0!important;border-radius:50%!important;background:linear-gradient(#fffbed,#ffe7b8)!important;color:#142750!important;box-shadow:0 3px 0 #15346140!important;
- font-size:0!important;line-height:1!important;transform:none!important;text-shadow:none!important;overflow:hidden!important;
-}
-html body button.shared-icon-button>img,#asset-roster button.shared-icon-button>img,#asset-shop button.shared-icon-button>img,#asset-training button.shared-icon-button>img{
- display:block!important;position:static!important;inset:auto!important;width:24px!important;height:24px!important;max-width:none!important;object-fit:contain!important;filter:brightness(.3) saturate(1.4);pointer-events:none;
-}
+/* Comic chrome: original text-free lobby paper + reusable inked vector props.
+   Loaded last in the document and each shadow root. Never changes game layout/state. */
+@font-face{font-family:SharedComic;src:url('previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2') format('woff2');font-display:swap}
+html body .shared-gnb,
+#asset-lobby .shared-gnb,
+#asset-roster .shared-gnb,
+#asset-shop .shared-gnb,
+#asset-training .shared-gnb{box-sizing:border-box!important;position:relative!important;display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;height:92px!important;min-height:92px!important;flex-shrink:0!important;gap:0!important;margin:0!important;padding:10px 4px 2px!important;background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;isolation:isolate;overflow:visible!important}
+html body .shared-gnb>button,
+#asset-lobby .shared-gnb>button,
+#asset-roster .shared-gnb>button,
+#asset-shop .shared-gnb>button,
+#asset-training .shared-gnb>button{box-sizing:border-box!important;position:relative!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:0!important;width:auto!important;height:80px!important;min-height:44px!important;min-width:0!important;margin:0!important;padding:5px 2px 7px!important;border:0!important;border-radius:0!important;background:transparent url("assets/shared-chrome/paper.webp") center/100% 100% no-repeat!important;color:#101d49!important;box-shadow:none!important;font:16px/1.2 SharedComic,"Apple SD Gothic Neo",sans-serif!important;transform:none!important;touch-action:manipulation;overflow:visible!important;text-shadow:none!important}
+html body .shared-gnb>button[aria-current=page],
+#asset-lobby .shared-gnb>button[aria-current=page],
+#asset-roster .shared-gnb>button[aria-current=page],
+#asset-shop .shared-gnb>button[aria-current=page],
+#asset-training .shared-gnb>button[aria-current=page]{height:90px!important;margin-top:-10px!important;padding-top:9px!important;background-image:url("assets/shared-chrome/active-tile.svg")!important;color:#fff7dc!important;text-shadow:1px 2px 0 #101d49,-1px -1px 0 #101d49!important;z-index:2}
+html body .shared-gnb>button>img,
+#asset-lobby .shared-gnb>button>img,
+#asset-roster .shared-gnb>button>img,
+#asset-shop .shared-gnb>button>img,
+#asset-training .shared-gnb>button>img{position:static!important;inset:auto!important;display:block!important;flex:0 0 44px!important;width:44px!important;height:44px!important;max-width:none!important;object-fit:contain!important;filter:none!important;pointer-events:none}
+html body .shared-gnb>button>span,
+#asset-lobby .shared-gnb>button>span,
+#asset-roster .shared-gnb>button>span,
+#asset-shop .shared-gnb>button>span,
+#asset-training .shared-gnb>button>span{position:static!important;inset:auto!important;transform:none!important;white-space:normal!important;text-align:center!important;overflow-wrap:anywhere;line-height:1.2!important}
+html body button.shared-icon-button:not([hidden]),
+#asset-lobby button.shared-icon-button:not([hidden]),
+#asset-roster button.shared-icon-button:not([hidden]),
+#asset-shop button.shared-icon-button:not([hidden]),
+#asset-training button.shared-icon-button:not([hidden]){box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:8px!important;border:3px solid #101d49!important;border-radius:10px 8px 11px 6px!important;background:linear-gradient(145deg,#fff28a,#ffce22 65%,#ffac16)!important;color:#101d49!important;box-shadow:inset 0 0 0 2px #fff6a5,0 3px 0 #101d49!important;font-size:0!important;line-height:1!important;transform:none!important;text-shadow:none!important;overflow:hidden!important}
+html body button.shared-icon-button>img,
+#asset-lobby button.shared-icon-button>img,
+#asset-roster button.shared-icon-button>img,
+#asset-shop button.shared-icon-button>img,
+#asset-training button.shared-icon-button>img{display:block!important;position:static!important;inset:auto!important;width:24px!important;height:24px!important;max-width:none!important;object-fit:contain!important;filter:none!important;pointer-events:none}
 .shared-icon-button:before,.shared-icon-button:after{display:none!important}
 .shared-gnb>button:active,.shared-icon-button:active{filter:brightness(.9)!important}
-.shared-gnb>button:focus-visible,.shared-icon-button:focus-visible{outline:3px solid #11b9e5!important;outline-offset:-3px!important}
-/* Keep the safe-area outside the identical 78px dock. */
-#asset-roster footer,#asset-shop footer,#asset-training footer{padding:0 0 env(safe-area-inset-bottom,0px)!important;background:#f5dfb6!important}
-@media(max-width:350px){.shared-gnb>button>span{font-size:12px!important}}
+.shared-gnb>button:focus-visible,.shared-icon-button:focus-visible{outline:3px solid #00bce8!important;outline-offset:-5px!important}
+#asset-roster footer,#asset-shop footer,#asset-training footer{padding:0 0 env(safe-area-inset-bottom,0px)!important;background:transparent!important}
+/* The decorated header stays out of each screen's independent scrolling body. */
+#asset-roster .shared-art-header,#asset-shop .shared-art-header,#asset-training .shared-art-header{box-sizing:border-box!important;position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;flex-shrink:0!important;min-height:82px!important;height:auto!important;padding:12px 54px 14px!important;background:url('assets/shared-chrome/paper.webp') center/100% 100% no-repeat!important;isolation:isolate}
+#asset-roster .shared-art-header .shared-title,#asset-shop .shared-art-header .shared-title,#asset-training .shared-art-header .shared-title{position:relative!important;inset:auto!important;clip-path:none!important;overflow:visible!important;width:100%!important;height:auto!important;min-height:54px!important;display:grid!important;place-items:center!important;margin:0!important;padding:10px 8px!important;background:url('assets/shared-chrome/plaque.svg') center/100% 100% no-repeat!important;color:#fff8e9!important;font:clamp(18px,5cqw,24px)/1.25 SharedComic,sans-serif!important;text-shadow:2px 2px #101d49,-1px -1px #101d49!important;transform:none!important;text-align:center!important;letter-spacing:0!important;white-space:normal!important}
+#asset-roster .shared-art-header .r-back,#asset-training .shared-art-header .back{position:absolute!important;left:7px!important;top:20px!important}
+#asset-roster .shared-art-header .r-close,#asset-shop .shared-art-header .close,#asset-training .shared-art-header .close{position:absolute!important;right:7px!important;top:20px!important}
+#asset-shop .shared-art-header{padding-top:36px!important}
+#asset-shop .shared-art-header .wallet{position:absolute!important;top:3px!important;left:12px!important;right:auto!important;max-width:calc(100% - 70px)!important;height:28px!important;min-height:0!important;margin:0!important;font-size:14px!important}
+/* Full-screen illustrated adapters retain their frame. Ordinary dialogs use paper. */
+html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog),html body dialog#roster.shared-paper-modal.asset-roster-detail{border:12px solid transparent!important;border-image:url('assets/shared-chrome/paper.webp') 90 fill / 12px / 0 stretch!important;border-radius:0!important;background:transparent!important;color:#101d49!important;padding:8px 10px 12px!important;box-shadow:0 9px 0 #0a133c80,0 18px 60px #030d3a80!important;text-shadow:none!important}
+html body dialog.shared-paper-modal::backdrop{background:#08143ca8!important;backdrop-filter:blur(2px)}
+html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog)::before,html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog)::after{display:none!important}
+html body dialog.shared-paper-modal :is(.ui-dialog-header,.sheet-head,.shared-modal-header){display:flex!important;align-items:center!important;gap:8px!important;min-height:60px!important;margin:0 0 12px!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
+html body dialog.shared-paper-modal :is(.ui-dialog-header,.sheet-head,.shared-modal-header)>div{min-width:0;flex:1}
+html body dialog.shared-paper-modal :is(.ui-dialog-header,.sheet-head,.shared-modal-header) h2{box-sizing:border-box!important;flex:1!important;min-width:0!important;min-height:56px!important;margin:0!important;padding:13px 14px!important;background:url('assets/shared-chrome/plaque.svg') center/100% 100% no-repeat!important;color:#fff9e9!important;font:clamp(19px,5vw,25px)/1.25 SharedComic,sans-serif!important;text-align:center!important;text-shadow:2px 2px #101d49,-1px -1px #101d49!important;border:0!important;white-space:normal!important;letter-spacing:0!important}
+html body dialog.shared-paper-modal .ui-dialog-actions{order:2!important;display:flex!important;flex-wrap:wrap!important;gap:8px!important;padding-top:12px!important;background:none!important;border:0!important}
+html body dialog.shared-paper-modal .panel-scroll-body{color:#101d49!important;text-shadow:none!important}
+html body dialog.shared-paper-modal .panel-scroll-body :is(p,legend,label,summary){color:#192951!important;text-shadow:none!important;line-height:1.55!important}
+html body dialog.shared-paper-modal .panel-scroll-body :is(fieldset,.grade-guide,.boss-guide,.ui-copy-details){background:#fff9e8!important;border:1px solid #d6b981!important;border-radius:12px!important;padding:12px!important;min-width:0!important}
+html body dialog.shared-paper-modal .panel-scroll-body button:not(.shared-icon-button){min-height:44px;touch-action:manipulation}
+html body dialog.shared-paper-modal :is(.ui-dialog-actions>button,#menu .panel-scroll-body>button){box-sizing:border-box!important;min-height:52px!important;padding:12px 18px!important;background:#ffda32 url('assets/shared-chrome/confirm.webp') center/100% 100% no-repeat!important;color:#101d49!important;border:2px solid #101d49!important;border-radius:24px!important;box-shadow:0 3px #101d49!important;text-shadow:none!important;font:18px/1.35 SharedComic,sans-serif!important;white-space:normal!important}
+html body dialog.shared-paper-modal button:disabled{filter:grayscale(.65)!important;opacity:.65!important}
+html body dialog.shared-paper-modal :is(button,input,summary):focus-visible{outline:3px solid #1267e8!important;outline-offset:2px!important}
+html body #menu.shared-paper-modal :is(.sfx-settings,.bgm-settings){margin:0 0 14px!important}
+html body #menu.shared-paper-modal legend{font:21px SharedComic,sans-serif!important;padding:0 6px!important}
+html body #menu.shared-paper-modal label{display:flex!important;justify-content:space-between!important;gap:8px!important;font-weight:800!important}
+html body #menu.shared-paper-modal input[type=range]{width:100%!important;height:44px!important;accent-color:#1e60e8!important;margin:0!important;cursor:pointer}
+html body #menu.shared-paper-modal :is(#sfx-toggle,#bgm-toggle){background:#fff2c9!important;color:#183667!important;border:2px solid #c0a26d!important;border-radius:12px!important;padding:8px 12px!important}
+html body #roster.asset-roster-detail.shared-paper-modal>.sheet-head{padding-left:50px!important;min-height:60px!important}
+html body #roster.asset-roster-detail.shared-paper-modal #roster-back{top:8px!important;left:0!important}
+@media(max-width:350px){.shared-gnb>button>span{font-size:14px!important}html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog){padding-left:14px!important;padding-right:14px!important}}
+@media(max-height:620px){html body .shared-gnb,#asset-lobby .shared-gnb,#asset-roster .shared-gnb,#asset-shop .shared-gnb,#asset-training .shared-gnb{height:78px!important;min-height:78px!important}html body .shared-gnb>button,#asset-lobby .shared-gnb>button,#asset-roster .shared-gnb>button,#asset-shop .shared-gnb>button,#asset-training .shared-gnb>button{height:66px!important;font-size:14px!important}html body .shared-gnb>button[aria-current=page],#asset-lobby .shared-gnb>button[aria-current=page],#asset-roster .shared-gnb>button[aria-current=page],#asset-shop .shared-gnb>button[aria-current=page],#asset-training .shared-gnb>button[aria-current=page]{height:76px!important}html body .shared-gnb>button>img,#asset-lobby .shared-gnb>button>img,#asset-roster .shared-gnb>button>img,#asset-shop .shared-gnb>button>img,#asset-training .shared-gnb>button>img{width:34px!important;height:34px!important;flex-basis:34px!important}}
+
+html body #menu.shared-paper-modal .panel-scroll-body>button{background:#fff8e5!important;border:2px solid #c8ac77!important;border-radius:12px!important;box-shadow:0 2px #ceb383!important;font:800 15px/1.4 'Apple SD Gothic Neo',sans-serif!important;min-height:44px!important;padding:9px 12px!important}
+html body #menu.shared-paper-modal #shared-menu-confirm{width:100%!important;min-height:56px!important;font-size:24px!important}
+html body #menu.shared-paper-modal .ui-dialog-actions{flex:0 0 auto!important}
+
+html body #menu.shared-paper-modal #reset{background:#fff0e6!important;border-color:#aa4944!important;color:#872e2b!important;box-shadow:0 2px #bc7870!important}
+html body #menu.shared-paper-modal input[type=range]{appearance:none!important;-webkit-appearance:none!important;background:transparent!important;border:0!important;padding:0!important;box-shadow:none!important;overflow:visible!important}
+html body #menu.shared-paper-modal input[type=range]::-webkit-slider-runnable-track{height:14px;border:2px solid #101d49;border-radius:12px;background:linear-gradient(to right,#ffda2a 0 var(--chrome-volume,50%),#c8c4f8 var(--chrome-volume,50%) 100%);box-shadow:inset 0 2px #fff8d3}
+html body #menu.shared-paper-modal input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:38px;height:38px;margin-top:-14px;border:0;border-radius:50%;background:url('assets/shared-chrome/moon-knob.svg') center/contain no-repeat}
+html body #menu.shared-paper-modal input[type=range]::-moz-range-track{height:10px;border:2px solid #101d49;border-radius:12px;background:#c8c4f8}
+html body #menu.shared-paper-modal input[type=range]::-moz-range-progress{height:10px;border-radius:12px;background:#ffda2a}
+html body #menu.shared-paper-modal input[type=range]::-moz-range-thumb{width:38px;height:38px;border:0;background:url('assets/shared-chrome/moon-knob.svg') center/contain no-repeat}
