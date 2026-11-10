@@ -11,6 +11,7 @@ const extraKinds=[
  {name:'코볼트 인사담당',file:'kobold-recruiter',color:'#dfbe87',damage:0,interval:1,desc:'인접 공속 +12~38% · 등급·장비로 성장'}
 ];kinds.push(...extraKinds,...NightExpansion.staff.map(k=>({...k,file:k.id,name:k.name+' · '+k.job})));
 function staffImagePath(file){if(NightExpansion.staff.some(k=>k.id===file))return 'assets/expansion-v2/'+file+'-portrait.webp';return 'assets/'+(RECRUIT_STAFF.includes(file)?'staff-expansion/':'pixel/')+file+'.webp'}
+function staffPortraitPath(file){return typeof CharacterPortraits==='undefined'?staffImagePath(file):CharacterPortraits.src(file,staffImagePath(file))}
 ctx.imageSmoothingEnabled=false;
 const images={};function lazyImage(key,path){let image;Object.defineProperty(images,key,{enumerable:true,get(){if(!image){image=new Image();image.decoding='async';image.addEventListener?.('load',()=>GamePerformance.invalidate());image.src=path}return image}})}for(const file of [...kinds.map(k=>k.file),'novice-adventurer','rogue-scout','hero-leon','shield-knight','healing-priest','lightning-mage','lobby-background']){lazyImage(file,staffImagePath(file))}
 for(const key of MERC_IDS){lazyImage('merc-'+key,mercImagePath(key))}
@@ -79,7 +80,7 @@ function sync(){
  uiText($('#speed'),'×'+speed);uiAttr($('#speed'),'aria-label','현재 '+speed+'배속 · 누르면 '+(speed%3+1)+'배속');
  kinds.forEach((k,i)=>{const button=$('#up'+i);uiProp(button,'hidden',!meta.deck.includes(k.file));uiProp(button,'disabled',preparingDuty()||ended||levels[i]>=5||sp<equipmentCost(i));const label=preparingDuty()?'당직 시작 후 강화':levels[i]>=5?'최대 레벨':'강화 · '+equipmentCost(i)+' SP'+(sp<equipmentCost(i)?' · '+Math.ceil(equipmentCost(i)-sp)+' 부족':'');uiText(button.querySelector('b'),label);const preview=equipmentPreview(i);uiText(button.querySelector('small'),preview);uiAttr(button,'aria-label',k.name+' '+preview+' '+label)})
 }
-$('#cards').innerHTML=kinds.map((k,i)=>'<button class="card" id="up'+i+'"><img src="'+staffImagePath(k.file)+'" alt=""><span>'+k.name+'<br><small></small></span><b></b></button>').join('');kinds.forEach((_,i)=>$('#up'+i).onclick=()=>upgrade(i));$('#summon').onclick=summon;$('#reset').onclick=reset;$('#pause').onclick=()=>{paused=!paused;sync()};$('#speed').onclick=()=>{speed=speed===1?2:1;sync()};
+$('#cards').innerHTML=kinds.map((k,i)=>'<button class="card" id="up'+i+'"><img src="'+staffPortraitPath(k.file)+'" alt=""><span>'+k.name+'<br><small></small></span><b></b></button>').join('');kinds.forEach((_,i)=>$('#up'+i).onclick=()=>upgrade(i));$('#summon').onclick=summon;$('#reset').onclick=reset;$('#pause').onclick=()=>{paused=!paused;sync()};$('#speed').onclick=()=>{speed=speed===1?2:1;sync()};
 function startDuty(){if(playing||ended||(wave===0&&preparationCount()<5))return;if(meta.deck.length!==5){say('근무 명단은 정확히 5명이 필요해요.');return}if(!board.some(Boolean)){say('먼저 직원을 소환해주세요.');return}activeMerc=meta.equipped;runTraining={...meta.training};mercTimer=mercInterval();playing=true;nextWave();sync()}
 function point(e){if(window.BattlePresentation?.enabled)return window.BattlePresentation.point(e);const r=canvas.getBoundingClientRect();return{x:(e.clientX-r.left)*600/r.width,y:(e.clientY-r.top)*600/r.height}}
 function cellAt(p){return cells.findIndex(c=>Math.abs(c.x-p.x)<39&&Math.abs(c.y-p.y)<43)}

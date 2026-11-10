@@ -7,9 +7,10 @@ const out=process.env.UI_QA_DIR||path.join(__dirname,'../../qa/ui-review-canvas-
 for(const [w,h]of [[320,568],[390,640],[390,844],[430,932]]){
  const p=await b.newPage({viewport:{width:w,height:h},isMobile:true,hasTouch:true,reducedMotion:'reduce'});await p.goto(BASE+'?gm=1&coins=400');await p.waitForTimeout(100);
  await p.evaluate(async()=>{
-  document.querySelector('#gm-test-panel').style.display='none';document.body.classList.remove('gm-test-active');meta.tutorialComplete=true;reset();tutorialMode=false;setScreen('battle');playing=true;paused=false;wave=8;sp=240;enemies=[];queue=[];timer=999;intermission=0;
+  document.querySelector('#gm-test-panel').style.display='none';document.body.classList.remove('gm-test-active');meta.tutorialComplete=true;reset();tutorialMode=false;setScreen('battle');playing=true;paused=true;wave=8;sp=240;enemies=[];queue=[];timer=999;intermission=0;
   board=Array.from({length:15},(_,i)=>({type:i%kinds.length,pip:5,cool:100,attack:0,arrival:0,income:5,skillCD:12}));selected=7;sync();
   await Promise.all(Object.keys(Motion.sheets).map(k=>{const im=Motion.preload(k);return im?.decode?.().catch(()=>{})}));
+  if(typeof CharacterPortraits!=='undefined')await Promise.all(CharacterPortraits.ids.map(id=>CharacterPortraits.image(id).decode()));
   window.__oldUnitFrame=Motion.unitFrame;Motion.unitFrame=()=>window.__forcedPose||0;
  });
  await p.evaluate(canvasGeometry);
@@ -17,8 +18,8 @@ for(const [w,h]of [[320,568],[390,640],[390,844],[430,932]]){
   const original=CanvasRenderingContext2D.prototype.drawImage;
   window.__spriteDraws=[];
   CanvasRenderingContext2D.prototype.drawImage=function(image,...args){
-   if(this.canvas.id==='battle-paint'&&image.tagName==='IMG'&&args.length===8){
-    const [sourceX,sourceY,sourceW,sourceH,x,y,width,height]=args,m=this.getTransform(),r=this.canvas.getBoundingClientRect(),scaleX=r.width/this.canvas.width,scaleY=r.height/this.canvas.height;
+   if(this.canvas.id==='battle-paint'&&image.tagName==='IMG'&&[4,8].includes(args.length)){
+    const [sourceX,sourceY,sourceW,sourceH,x,y,width,height]=args.length===8?args:[0,0,image.naturalWidth,image.naturalHeight,...args],m=this.getTransform(),r=this.canvas.getBoundingClientRect(),scaleX=r.width/this.canvas.width,scaleY=r.height/this.canvas.height;
     const point=(x,y)=>({x:r.left+(m.a*x+m.c*y+m.e)*scaleX,y:r.top+(m.b*x+m.d*y+m.f)*scaleY});
     const corners=[point(x,y),point(x+width,y),point(x,y+height),point(x+width,y+height)];
     window.__spriteDraws.push({image,src:image.src,sourceX,sourceY,sourceW,sourceH,x,y,width,height,m,canvas:{left:r.left,top:r.top,scaleX,scaleY},box:{left:Math.min(...corners.map(p=>p.x)),top:Math.min(...corners.map(p=>p.y)),right:Math.max(...corners.map(p=>p.x)),bottom:Math.max(...corners.map(p=>p.y))}});

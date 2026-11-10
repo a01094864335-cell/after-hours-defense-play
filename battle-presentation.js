@@ -10,12 +10,12 @@ window.BattlePresentation=(()=>{
  function screenPoint(p){const r=canvas.getBoundingClientRect(),v=project(p,r.width,r.height);return{x:r.left+v.x,y:r.top+v.y}}
  if(!enabled)return {enabled,axes,project,unproject,point,screenPoint};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
- const staffKeys=new Set(kinds.map(kind=>kind.file));
+ const staffKeys=new Set(kinds.map(kind=>kind.file)),portraitReduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
  const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0;
  const oldMotion=Motion.draw;
  Motion.draw=function(target,key,x,y,size,pose=0,options={}){
   if(!collecting||target!==ctx)return oldMotion(target,key,x,y,size,pose,options);
-  const m=ctx.getTransform();actors.push({key,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,size,pose,options:{...options,alpha:(options.alpha??1)*ctx.globalAlpha}});Motion.preload(key);return true;
+  const m=ctx.getTransform();actors.push({key,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,size,pose,options:{...options,alpha:(options.alpha??1)*ctx.globalAlpha}});if(typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(key))CharacterPortraits.preload(key);else Motion.preload(key);return true;
  };
  const oldText=ctx.fillText.bind(ctx);
  ctx.fillText=function(text,x,y,maxWidth){if(!collecting)return maxWidth===undefined?oldText(text,x,y):oldText(text,x,y,maxWidth);if(text==='·'||String(text).startsWith('★ 스킬'))return;const m=ctx.getTransform();texts.push({text,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,font:ctx.font,fill:ctx.fillStyle,align:ctx.textAlign,alpha:ctx.globalAlpha});};
@@ -29,7 +29,8 @@ window.BattlePresentation=(()=>{
   }
   const row=(a.y[1][3]-a.y[1][2])/3,cell=(a.x[1][3]-a.x[1][2])/5;
   for(const actor of actors){const p=project(actor,width,height),data=Motion.sheets[actor.key];let size=actor.size*width/600*1.12;
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key))size=Math.min(size,row*.73,Math.max(12,row-22),(cell-4)*data.height/f.w);else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key))size=Math.min(size,row*.73,Math.max(12,row-22),cell-4);else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
+   if(typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(actor.key)){CharacterPortraits.draw(paint,actor.key,p.x,p.y,size,{...actor.options,angle:actor.options.angle||((actor.pose>=3&&!portraitReduced?.matches)?(actor.pose%2?.05:-.05):0)});continue;}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=project(t,width,height);paint.save();paint.font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
@@ -45,7 +46,7 @@ window.BattlePresentation=(()=>{
  const energy=q('.summon-row > span');for(const n of [...energy.childNodes])if(n.nodeType===3)n.textContent=n.textContent.replace('SP','');
  const mini=document.createElement('div');mini.className='battle-stage-meta';mini.innerHTML='<span><img src="assets/ui-v2/icons/sword.svg" alt=""><b id="battle-remaining"></b></span><span><img src="assets/ui-v2/icons/shield.svg" alt=""><b id="battle-next-boss"></b></span>';stage.append(mini);
  for(const key of Object.keys(itemCatalog))q('#item-'+key).setAttribute('aria-label',itemCatalog[key].name);
- function selection(){const u=board[selected];const source=u?staffImagePath(kinds[u.type].file):'assets/ui-v2/icons/staff.svg';if(portrait.getAttribute('src')!==source)portrait.src=source;
+ function selection(){const u=board[selected];const source=u?staffPortraitPath(kinds[u.type].file):'assets/ui-v2/icons/staff.svg';if(portrait.getAttribute('src')!==source)portrait.src=source;
   uiText(name,u?skillNames[u.type]:'고유 스킬');uiText(grade,u?'✦'.repeat(u.pip):'★5 이상');
   const original=!u?'직원 선택 후 스킬 사용':skillNames[u.type]+' · '+(u.pip<5?'5등급 해금':u.stun>0?'기절 중':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'초 후 사용':!playing?'당직 시작 후 사용':paused?'일시정지 중':'사용');uiAttr(q('#skill'),'aria-label',original);uiText(q('#skill'),!u?'선택':u.stun>0?'기절':u.pip<5?'★5':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':!playing?'대기':paused?'일시정지':'사용');
   uiAttr(skillRow,'data-selected',u?'true':'false');

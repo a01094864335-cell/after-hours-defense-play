@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "styleReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+  "usage": "One identity master per character. Transparent floating heads for UI; combat atlases and story panels retain their separate composition.",
+  "characters": [
+    {
+      "id": "goblin-guard",
+      "name": "브릭",
+      "job": "경비원",
+      "group": "staff",
+      "path": "assets/character-portraits/goblin-guard.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "58bf9ccea633f211454fd25b3a67e1b82e24e1453f53729f84f94dfc987e0082",
+      "legacyReference": "assets/pixel/goblin-guard.webp",
+      "identifyingFeatures": "초록 얼굴·뾰족한 귀·남색/금색 초승달 투구·금색 볏·이를 보이는 웃음"
+    },
+    {
+      "id": "orc-technician",
+      "name": "토르크",
+      "job": "시설기사",
+      "group": "staff",
+      "path": "assets/character-portraits/orc-technician.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sha256": "5fa14283ff44fe9eb6bfc7c4c2b6afc638e5afe30886df3dd72cae6e69da1b12",
+      "legacyReference": "assets/pixel/orc-technician.webp",
+      "identifyingFeatures": "초록 오크 얼굴·짙은 곱슬머리·호탕한 큰 웃음·고글 없음"
+    },
+    {
+      "id": "slime-cleaner",
+      "name": "뽀득",
+      "job": "청소부",
+      "group": "staff",
+      "path": "assets/character-portraits/slime-cleaner.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sha256": "03963fb63e514be2a5c6ebba033e9dd427a58b54ca04f6dafc1232eab98ed99c",
+      "legacyReference": "assets/pixel/slime-cleaner.webp",
+      "identifyingFeatures": "밝은 하늘색 물방울 머리·물방울 볏·검은 타원 눈·분홍 볼·모자 없음"
+    },
+    {
+      "id": "gobi",
+      "name": "고비",
+      "job": "당직 서기",
+      "group": "staff",
+      "path": "assets/character-portraits/gobi.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sha256": "32dfa2c9c4bd093d0be28bc2bef85de5070368176827e914b6ce6302657d3ffb",
+      "legacyReference": "assets/pixel/gobi.webp",
+      "identifyingFeatures": "연두색 얼굴·풍성한 갈색 머리·황금색 큰 눈·뾰족한 귀"
+    },
+    {
+      "id": "electric-technician",
+      "name": "찌릿",
+      "job": "전기기사",
+      "group": "staff",
+      "path": "assets/character-portraits/electric-technician.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sha256": "3196459c15208649c96db26306c5a0c258b343c6a5d2ad499840c37f61ccee24",
+      "legacyReference": "assets/pixel/electric-technician.webp",
+      "identifyingFeatures": "노란 작업모·파란 렌즈 고글·금발·밝은 얼굴·활짝 웃는 표정"
+    },
+    {
+      "id": "ghost-courier",
+      "name": "루프",
+      "job": "유령 배달부",
+      "group": "staff",
+      "path": "assets/character-portraits/ghost-courier.webp",
+      "identityReference": "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "master": "designs/character-identity-20261110/master-1.png",
+      "cell": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sha256": "f3e4bcb57e56199bdfe0e011859fdc4751fb491bc2abd437b6a73032e25c22c0",
+      "legacyReference": "assets/pixel/ghost-courier.webp",
+      "identifyingFeatures": "흰 유령 얼굴·남색 금테 우편 모자·초승달·분홍 볼"
+    },
+    {
+      "id": "bat-nurse",
+      "name": "나비",
+      "job": "박쥐 간호사",
+      "group": "incoming",
+      "path": "assets/character-portraits/bat-nurse.webp",
+      "identityReference": "assets/staff-expansion/bat-nurse.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "44b0fd2b6b2f188e3f6c2a196d1aa41d204dc5bbc16602165aa409accde7155e",
+      "legacyReference": "assets/staff-expansion/bat-nurse.webp",
+      "identifyingFeatures": "보라 박쥐 얼굴·큰 분홍 귀·간호 모자·초록 십자·자주색 눈"
+    },
+    {
+      "id": "skeleton-chef",
+      "name": "보니",
+      "job": "해골 요리사",
+      "group": "incoming",
+      "path": "assets/character-portraits/skeleton-chef.webp",
+      "identityReference": "assets/staff-expansion/skeleton-chef.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sha256": "e797267e37edc888b4206a7dc7764732575682f4de17b35916bf588f3cc53a1d",
+      "legacyReference": "assets/staff-expansion/skeleton-chef.webp",
+      "identifyingFeatures": "아이보리 해골 얼굴·크림색 높은 요리사 모자·검은 눈구멍·분홍 볼"
+    },
+    {
+      "id": "mimic-storekeeper",
+      "name": "덥석",
+      "job": "미믹 창고지기",
+      "group": "incoming",
+      "path": "assets/character-portraits/mimic-storekeeper.webp",
+      "identityReference": "assets/staff-expansion/mimic-storekeeper.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sha256": "128a19c9133b321537c080943c2fcba519775272438875c5f0a23a4fbddc3b84",
+      "legacyReference": "assets/staff-expansion/mimic-storekeeper.webp",
+      "identifyingFeatures": "갈색/금색 상자 머리·검은 얼굴·주황색 눈·작은 송곳니·자주색 모자"
+    },
+    {
+      "id": "spider-tailor",
+      "name": "실비",
+      "job": "거미 재봉사",
+      "group": "incoming",
+      "path": "assets/character-portraits/spider-tailor.webp",
+      "identityReference": "assets/staff-expansion/spider-tailor.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sha256": "6304752d1c919601f25da510f323966cca5e7d9c1f0e52e8c55683978176c476",
+      "legacyReference": "assets/staff-expansion/spider-tailor.webp",
+      "identifyingFeatures": "연보라 거미 얼굴·이마의 세 작은 눈·둥근 금테 안경·자주색 리본 모자"
+    },
+    {
+      "id": "nightmare-counselor",
+      "name": "몽실",
+      "job": "악몽 상담사",
+      "group": "incoming",
+      "path": "assets/character-portraits/nightmare-counselor.webp",
+      "identityReference": "assets/staff-expansion/nightmare-counselor.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sha256": "d05033b3453939c120802d034e9f1b780a8674d27629c91ca2422ad19a089e55",
+      "legacyReference": "assets/staff-expansion/nightmare-counselor.webp",
+      "identifyingFeatures": "연보라 유령 얼굴·졸린 보라 눈·별/달 무늬 남색 수면 모자"
+    },
+    {
+      "id": "kobold-recruiter",
+      "name": "도기",
+      "job": "코볼트 인사담당",
+      "group": "incoming",
+      "path": "assets/character-portraits/kobold-recruiter.webp",
+      "identityReference": "assets/staff-expansion/kobold-recruiter.webp",
+      "master": "designs/character-identity-20261110/master-2.png",
+      "cell": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sha256": "87848009d67fdaf1cbe427f51f6bfc70304a2d9a2e211b4e9a53b7bc993e5b16",
+      "legacyReference": "assets/staff-expansion/kobold-recruiter.webp",
+      "identifyingFeatures": "황갈색 강아지 얼굴·늘어진 귀·금테 안경·주황색 머리털"
+    },
+    {
+      "id": "merc-ward",
+      "name": "본가드",
+      "job": "결계 계약직",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-ward.webp",
+      "identityReference": "assets/mobile/merc-ward.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "c7487639183da699e63f4e8a07a60d5d69d7a9415ca4d26d5fa6543fc141ad51",
+      "legacyReference": "assets/mobile/merc-ward.webp",
+      "identifyingFeatures": "아이보리 해골·민트색 웃는 눈·보라/금색 투구·자주색 깃털"
+    },
+    {
+      "id": "merc-accountant",
+      "name": "오울리",
+      "job": "야간 회계사",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-accountant.webp",
+      "identityReference": "assets/mobile/merc-accountant.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sha256": "5511e152ac003491018396c943d1e8065240530fc50f9edb6929e419e41c4250",
+      "legacyReference": "assets/mobile/merc-accountant.webp",
+      "identifyingFeatures": "갈색 부엉이·크림색 얼굴 무늬·큰 금테 안경·금색 부리·작은 뿔 모양 귀"
+    },
+    {
+      "id": "merc-rescue",
+      "name": "플레어",
+      "job": "비상 대응반",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-rescue.webp",
+      "identityReference": "assets/mobile/merc-rescue.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sha256": "e6f7d0d0cc60cce7c6ebe09735373458d9d10be0ac7b39a51a8b0726670799da",
+      "legacyReference": "assets/mobile/merc-rescue.webp",
+      "identifyingFeatures": "붉은 임프·주황색 뿔·남색 비행 모자·금색 고글·뾰족한 귀"
+    },
+    {
+      "id": "duru-archivist",
+      "name": "두루",
+      "job": "미라 기록관",
+      "group": "incoming",
+      "path": "assets/character-portraits/duru-archivist.webp",
+      "identityReference": "assets/expansion-v2/duru-archivist-portrait.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sha256": "21de99aa93992c89faa7647f9b3ff3ba93d4f2423731437719324ecd11a182d4",
+      "legacyReference": "assets/expansion-v2/duru-archivist-portrait.webp",
+      "identifyingFeatures": "크림색 미라 붕대·말린 붕대 끝·짙은 얼굴 틈·황금 눈·금테 안경"
+    },
+    {
+      "id": "kkangtong-engineer",
+      "name": "깡통",
+      "job": "자석 정비공",
+      "group": "incoming",
+      "path": "assets/character-portraits/kkangtong-engineer.webp",
+      "identityReference": "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sha256": "60cacac81b4c2d11e1af3ecf51d1eec6ce02bdda6420b071bb52d2733d09eec7",
+      "legacyReference": "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+      "identifyingFeatures": "회보라 얼굴·갈색 머리의 흰 번개 무늬·작업 고글·볼의 반창고"
+    },
+    {
+      "id": "ddangkong-miner",
+      "name": "땅콩",
+      "job": "두더지 지뢰공",
+      "group": "incoming",
+      "path": "assets/character-portraits/ddangkong-miner.webp",
+      "identityReference": "assets/expansion-v2/ddangkong-miner-portrait.webp",
+      "master": "designs/character-identity-20261110/master-3.png",
+      "cell": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sha256": "1de975e7cfbd1eeccf8746060ab2825f8787e2d4b7d6dae2833871863336b4cc",
+      "legacyReference": "assets/expansion-v2/ddangkong-miner-portrait.webp",
+      "identifyingFeatures": "갈색 두더지·크림색 주둥이·분홍 코·노란 안전모·원형 헤드램프"
+    },
+    {
+      "id": "chalkak-photographer",
+      "name": "찰칵",
+      "job": "꼬마 유령 사진사",
+      "group": "incoming",
+      "path": "assets/character-portraits/chalkak-photographer.webp",
+      "identityReference": "assets/expansion-v2/chalkak-photographer-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sha256": "068cbbfe2e8b1dfcc213a6b1e8b05e559a509f9974bff2c79bf2ae6df0614fa0",
+      "legacyReference": "assets/expansion-v2/chalkak-photographer-portrait.webp",
+      "identifyingFeatures": "남색 후드·짙은 얼굴·금색 타원 눈·초승달 장식·입 없음"
+    },
+    {
+      "id": "bongtu-postmaster",
+      "name": "봉투",
+      "job": "마력 우편원",
+      "group": "incoming",
+      "path": "assets/character-portraits/bongtu-postmaster.webp",
+      "identityReference": "assets/expansion-v2/bongtu-postmaster-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "sha256": "c3baff0180cb3315406ef0df4c4fff893dd844674c2bd36b5b25db4ecf2a774c",
+      "legacyReference": "assets/expansion-v2/bongtu-postmaster-portrait.webp",
+      "identifyingFeatures": "분홍 임프·이마의 흰 뿔 하나·자주색 우편 모자·금색 봉투 장식"
+    },
+    {
+      "id": "merc-chikchik",
+      "name": "칙칙",
+      "job": "유령 보급 기관사",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-chikchik.webp",
+      "identityReference": "assets/expansion-v2/merc-chikchik-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "sha256": "831f4ef5cba7072bc184db4b474325a1d19f5afd1a60885daa5c4705df776822",
+      "legacyReference": "assets/expansion-v2/merc-chikchik-portrait.webp",
+      "identifyingFeatures": "하늘색 유령·황금 눈·남색 기관사 모자·붉은 띠·옆의 증기"
+    },
+    {
+      "id": "merc-banchang",
+      "name": "반창",
+      "job": "아홀로틀 의무관",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-banchang.webp",
+      "identityReference": "assets/expansion-v2/merc-banchang-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "sha256": "5eaf8270f53ea13628656f377164f92a7fb2fec480cf9b0fc3c15fc9ca8a6599",
+      "legacyReference": "assets/expansion-v2/merc-banchang-portrait.webp",
+      "identifyingFeatures": "분홍 아홀로틀·깃털 모양 아가미·크림색 의무 모자·초록 하트"
+    },
+    {
+      "id": "merc-coco",
+      "name": "코코",
+      "job": "박쥐 강아지 파수꾼",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-coco.webp",
+      "identityReference": "assets/expansion-v2/merc-coco-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "sha256": "eaf700598a826a18f27373d5b28c445feddeca6f5d0d0b17f6248824b373c607",
+      "legacyReference": "assets/expansion-v2/merc-coco-portrait.webp",
+      "identifyingFeatures": "짙은 갈색 박쥐 강아지·높은 뾰족 귀·금색 비행 모자·호박색 눈"
+    },
+    {
+      "id": "merc-q",
+      "name": "큐",
+      "job": "까마귀 전술관",
+      "group": "merc",
+      "path": "assets/character-portraits/merc-q.webp",
+      "identityReference": "assets/expansion-v2/merc-q-portrait.webp",
+      "master": "designs/character-identity-20261110/master-4.png",
+      "cell": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "sha256": "14c648f8b6b0573bda494240fdedd6243bce9264a9309b9ea81f22cdb51f5542",
+      "legacyReference": "assets/expansion-v2/merc-q-portrait.webp",
+      "identifyingFeatures": "남색 까마귀·뾰족한 깃털 머리·황금 눈·짧은 금색 부리·모자 없음"
+    }
+  ]
+}

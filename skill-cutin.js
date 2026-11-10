@@ -38,7 +38,7 @@ const SkillCutin = (() => {
   // At most one waiting entry per identity (17 staff + 7 commanders).
   if(pending.length>=24)return false;
   if(item.side==='enemy'){const firstStaff=pending.findIndex(e=>e.side==='ally');pending.splice(firstStaff<0?pending.length:firstStaff,0,item);}else pending.push(item);
-  Motion.preload(item.file);GamePerformance.invalidate();return true;
+  if(item.side==='ally'&&typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(item.file))CharacterPortraits.preload(item.file);else Motion.preload(item.file);GamePerformance.invalidate();return true;
  }
  function staff(unit){
   const k=kinds[unit.type],record=typeof staffRecords==='undefined'?null:staffRecords.find(r=>r.id===k.file);
@@ -108,6 +108,7 @@ const SkillCutin = (() => {
    c.restore();
   }
   const pose=Motion.frame('skill',age,duration),fit=portraitLayout(current.file);
+  if(current.side==='ally'&&typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(current.file)){CharacterPortraits.draw(c,current.file,260,410,360);return;}
   if(!Motion.draw(c,current.file,fit.x,fit.y,fit.height,pose)){
    const im=fallback(current.file);
    if(im.complete&&im.naturalWidth&&im.naturalHeight){const s=Math.min(360/im.naturalWidth,335/im.naturalHeight);c.drawImage(im,260-im.naturalWidth*s/2,410-im.naturalHeight*s,im.naturalWidth*s,im.naturalHeight*s);}

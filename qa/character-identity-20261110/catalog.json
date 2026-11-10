@@ -1,0 +1,194 @@
+[
+  {
+    "id": "goblin-guard",
+    "name": "브릭",
+    "job": "경비원",
+    "image": "assets/pixel/goblin-guard.webp",
+    "group": "staff",
+    "quote": "제 근무 시간엔, 무단입장 안 됩니다!"
+  },
+  {
+    "id": "orc-technician",
+    "name": "토르크",
+    "job": "시설기사",
+    "image": "assets/pixel/orc-technician.webp",
+    "group": "staff",
+    "quote": "고장 났어요? 일단 한 대 쳐볼게요."
+  },
+  {
+    "id": "slime-cleaner",
+    "name": "뽀득",
+    "job": "청소부",
+    "image": "assets/pixel/slime-cleaner.webp",
+    "group": "staff",
+    "quote": "용사님, 방금 닦았거든요?"
+  },
+  {
+    "id": "gobi",
+    "name": "고비",
+    "job": "당직 서기",
+    "image": "assets/pixel/gobi.webp",
+    "group": "staff",
+    "quote": "일단… 오늘 밤만 무사히 넘겨봐요!"
+  },
+  {
+    "id": "electric-technician",
+    "name": "찌릿",
+    "job": "전기기사",
+    "image": "assets/pixel/electric-technician.webp",
+    "group": "staff",
+    "quote": "전기세는 제가 낼 테니, 쭉 연결해요!"
+  },
+  {
+    "id": "ghost-courier",
+    "name": "루프",
+    "job": "유령 배달부",
+    "image": "assets/pixel/ghost-courier.webp",
+    "group": "staff",
+    "quote": "특급 배송이요! 방패 너머까지 갑니다~"
+  },
+  {
+    "id": "bat-nurse",
+    "name": "나비",
+    "job": "박쥐 간호사",
+    "image": "assets/staff-expansion/bat-nurse.webp",
+    "group": "incoming",
+    "quote": "따끔해요~ 엄살은 접수 안 돼요."
+  },
+  {
+    "id": "skeleton-chef",
+    "name": "보니",
+    "job": "해골 요리사",
+    "image": "assets/staff-expansion/skeleton-chef.webp",
+    "group": "incoming",
+    "quote": "뜨거우니까 천천히… 아니, 용사는 빨리!"
+  },
+  {
+    "id": "mimic-storekeeper",
+    "name": "덥석",
+    "job": "미믹 창고지기",
+    "image": "assets/staff-expansion/mimic-storekeeper.webp",
+    "group": "incoming",
+    "quote": "반품은 안 됩니다. 꿀꺽!"
+  },
+  {
+    "id": "spider-tailor",
+    "name": "실비",
+    "job": "거미 재봉사",
+    "image": "assets/staff-expansion/spider-tailor.webp",
+    "group": "incoming",
+    "quote": "도망가도 소용없어요. 실밥 잡았거든요."
+  },
+  {
+    "id": "nightmare-counselor",
+    "name": "몽실",
+    "job": "악몽 상담사",
+    "image": "assets/staff-expansion/nightmare-counselor.webp",
+    "group": "incoming",
+    "quote": "그 스킬, 내일 이야기해도 괜찮아요."
+  },
+  {
+    "id": "kobold-recruiter",
+    "name": "도기",
+    "job": "코볼트 인사담당",
+    "image": "assets/staff-expansion/kobold-recruiter.webp",
+    "group": "incoming",
+    "quote": "복지는… 생존입니다! 함께해요!"
+  },
+  {
+    "id": "merc-ward",
+    "name": "본가드",
+    "job": "결계 계약직",
+    "image": "assets/mobile/merc-ward.webp",
+    "group": "merc",
+    "quote": "한 번은, 제가 막겠습니다."
+  },
+  {
+    "id": "merc-accountant",
+    "name": "오울리",
+    "job": "야간 회계사",
+    "image": "assets/mobile/merc-accountant.webp",
+    "group": "merc",
+    "quote": "야근 수당, 제가 챙겨드릴게요."
+  },
+  {
+    "id": "merc-rescue",
+    "name": "플레어",
+    "job": "비상 대응반",
+    "image": "assets/mobile/merc-rescue.webp",
+    "group": "merc",
+    "quote": "불렀어요? 이미 출동했어요!"
+  },
+  {
+    "id": "duru-archivist",
+    "name": "두루",
+    "job": "미라 기록관",
+    "image": "assets/expansion-v2/duru-archivist-portrait.webp",
+    "group": "incoming",
+    "quote": "허가서가 없네요. 반려입니다!"
+  },
+  {
+    "id": "kkangtong-engineer",
+    "name": "깡통",
+    "job": "자석 정비공",
+    "image": "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+    "group": "incoming",
+    "quote": "붙어라! 아니, 이번엔 떨어져!"
+  },
+  {
+    "id": "ddangkong-miner",
+    "name": "땅콩",
+    "job": "두더지 지뢰공",
+    "image": "assets/expansion-v2/ddangkong-miner-portrait.webp",
+    "group": "incoming",
+    "quote": "공사 중입니다! 발밑 조심!"
+  },
+  {
+    "id": "chalkak-photographer",
+    "name": "찰칵",
+    "job": "꼬마 유령 사진사",
+    "image": "assets/expansion-v2/chalkak-photographer-portrait.webp",
+    "group": "incoming",
+    "quote": "움직이지 마세요. 찰칵!"
+  },
+  {
+    "id": "bongtu-postmaster",
+    "name": "봉투",
+    "job": "마력 우편원",
+    "image": "assets/expansion-v2/bongtu-postmaster-portrait.webp",
+    "group": "incoming",
+    "quote": "긴급 결재입니다! 지금 열어주세요!"
+  },
+  {
+    "id": "merc-chikchik",
+    "name": "칙칙",
+    "job": "유령 보급 기관사",
+    "image": "assets/expansion-v2/merc-chikchik-portrait.webp",
+    "group": "merc",
+    "quote": "다음 역은, 야간 근무 보드입니다!"
+  },
+  {
+    "id": "merc-banchang",
+    "name": "반창",
+    "job": "아홀로틀 의무관",
+    "image": "assets/expansion-v2/merc-banchang-portrait.webp",
+    "group": "merc",
+    "quote": "괜찮아요, 제가 옆에 있어요!"
+  },
+  {
+    "id": "merc-coco",
+    "name": "코코",
+    "job": "박쥐 강아지 파수꾼",
+    "image": "assets/expansion-v2/merc-coco-portrait.webp",
+    "group": "merc",
+    "quote": "멍! 여기부터는 직원 전용!"
+  },
+  {
+    "id": "merc-q",
+    "name": "큐",
+    "job": "까마귀 전술관",
+    "image": "assets/expansion-v2/merc-q-portrait.webp",
+    "group": "merc",
+    "quote": "지금이야. 모두 저쪽을 봐!"
+  }
+]

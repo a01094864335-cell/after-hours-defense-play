@@ -33,6 +33,8 @@ for(const [id,name,job,dept,role,story,quote,traits,color,skill,ability,ultimate
 for(const k of NightExpansion.staff)staffRecords.push({id:k.id,name:k.name,job:k.job,dept:k.dept,role:k.role,story:k.story,quote:k.quote,traits:k.traits,color:k.color,group:'incoming',image:staffImagePath(k.id),ability:k.desc,skill:k.skill,skillText:k.skillText+' · 재사용 20초',status:'입사 예정'});
 for(const k of NightExpansion.mercs)staffRecords.push({id:'merc-'+k.id,name:k.name,job:k.job,dept:k.dept,role:k.role,story:k.story,quote:k.quote,traits:k.traits,color:k.color,group:'merc',image:mercImagePath(k.id),ability:k.desc,skill:k.skill,skillText:'보드 밖 자동 지원 · 당직 전 1명 장착',status:'지원 영웅',price:k.price});
 for(let i=0;i<RECRUIT_STAFF.length;i++){const r=staffRecords.find(v=>v.id===RECRUIT_STAFF[i]);r.ability=kinds[i+6].desc;r.skill=skillNames[i+6];r.skillText=skillDescriptions[i+6]+' · 재사용 20초';}
+// Keep catalog IDs, ownership and gameplay data intact; only the UI portrait changes.
+if(typeof CharacterPortraits!=='undefined')for(const r of staffRecords){r.originalImage=r.image;r.image=CharacterPortraits.src(r.id,r.image)}
 function staffOwned(r){return r.group==='merc'?meta.owned.includes(r.id.slice(5)):meta.staff.includes(r.id)}
 // Numeric support rules stay visible in the employee dossier.
 staffRecords.find(r=>r.id==='kobold-recruiter').ability='상하좌우 직원 공속 +[12 + (등급-1)×3 + (장비 Lv.-1)×2]%, 최대 38%. 여러 명이면 가장 높은 효과만 적용합니다. 기절 중에는 지원이 멈춥니다.';

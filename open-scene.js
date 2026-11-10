@@ -33,7 +33,7 @@
   supportCast.setAttribute('aria-hidden', 'true');
   for (const id of Object.keys(mercCatalog).slice(0, 5)) {
     const portrait = new Image();
-    portrait.src = mercImagePath(id);
+    portrait.src = mercPortraitPath(id);
     portrait.alt = '';
     portrait.dataset.motion = 'static-support-training';
     supportCast.append(portrait);

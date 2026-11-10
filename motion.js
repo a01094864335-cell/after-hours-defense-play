@@ -78,6 +78,7 @@ const Motion = (() => {
     const candidates = [...root.querySelectorAll('img')];
     if (root.tagName === 'IMG') candidates.push(root);
     for (const img of candidates) {
+      if (img.dataset.characterId || /(?:^|\/)assets\/character-portraits\//.test(img.getAttribute('src') || '')) continue; // Shared identity heads must not turn back into legacy full-body sprites.
       if (img.id === 'promo-face' || img.id === 'coach-portrait' || img.closest?.('.staff-locked')) continue; // Keep unrecruited silhouettes anonymous.
       const key = img.dataset.motion || img.getAttribute('src')?.split('/').pop()?.replace(/\.(?:png|webp)$/, '').replace(/-portrait$/, '');
       if (!sheets[key]) continue;
