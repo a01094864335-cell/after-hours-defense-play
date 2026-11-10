@@ -89,9 +89,41 @@ jobs:
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:
           path: /tmp/game-pages
+  feature-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node scripts/build-pages.cjs /tmp/feature-game-pages
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r tests/requirements-browser.txt
+      - run: python -m playwright install --with-deps chromium
+      - name: Repeat every browser regression independently
+        env:
+          UI_GAME_ROOT: /tmp/feature-game-pages
+          UI_CHROMIUM_PATH: ''
+          FEATURE_QA_DIR: /tmp/feature-qa
+          FEATURE_QA_SHARD: ${{ matrix.shard }}
+        run: python tests/run_feature_qa.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: feature-qa-${{ github.run_id }}-${{ matrix.shard }}
+          path: /tmp/feature-qa
+          if-no-files-found: warn
+          retention-days: 14
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: runtime
+    needs: [runtime, feature-qa]
     runs-on: ubuntu-latest
     permissions:
       pages: write
