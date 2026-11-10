@@ -1,0 +1,440 @@
+TAP version 13
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 1/10 | seed 1 | VM
+not ok 1 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 4.409531
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 2/10 | seed 2 | VM
+not ok 2 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 1.072726
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 3/10 | seed 3 | VM
+not ok 3 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.737193
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 4/10 | seed 4 | VM
+not ok 4 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 0.824131
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 5/10 | seed 5 | VM
+not ok 5 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 0.624117
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 6/10 | seed 6 | VM
+not ok 6 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.781558
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 7/10 | seed 7 | VM
+not ok 7 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 0.895376
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 8/10 | seed 8 | VM
+not ok 8 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 0.601595
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 9/10 | seed 9 | VM
+not ok 9 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 1.067108
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 10/10 | seed 10 | VM
+not ok 10 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 2.015201
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: |-
+    new file must invalidate any intervening old preview
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:76:83
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 1/10 | seed 1 | VM
+not ok 11 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 0.946451
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 2/10 | seed 2 | VM
+not ok 12 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 0.796651
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 3/10 | seed 3 | VM
+not ok 13 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.652049
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 4/10 | seed 4 | VM
+not ok 14 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 0.508907
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 5/10 | seed 5 | VM
+not ok 15 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 0.644497
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 6/10 | seed 6 | VM
+not ok 16 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.497541
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 7/10 | seed 7 | VM
+not ok 17 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 0.51765
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 8/10 | seed 8 | VM
+not ok 18 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 0.75551
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 9/10 | seed 9 | VM
+not ok 19 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 0.599792
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 10/10 | seed 10 | VM
+not ok 20 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 0.506545
+  type: 'test'
+  location: '/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:59'
+  failureType: 'testCodeFailure'
+  error: 'file unavailable'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    Object.text (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:92)
+    q.onchange (evalmachine.<anonymous>:15:195)
+    /workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:82:149
+    TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/feature-storage-audio.test.cjs:6:135)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 0
+# fail 20
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 127.930723
