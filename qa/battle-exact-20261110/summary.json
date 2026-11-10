@@ -1,0 +1,39 @@
+{
+  "reference": [
+    948,
+    1659
+  ],
+  "maximumRegionDriftPx": 0.01499999999999957,
+  "viewports": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      640
+    ],
+    [
+      390,
+      684
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "measuredRegions": 30,
+  "playErrors": [],
+  "missingAssets": [],
+  "playGeometryIssues": 0,
+  "staffPoseCases": 408,
+  "staffPixelTextCollisions": 0,
+  "staffLabelGridIssues": 0,
+  "nodeTests": 81,
+  "browserTests": 22,
+  "verification": "Local packaged Chromium. GitHub Actions deployment is checked separately; direct public browser access is proxy-restricted."
+}

@@ -5,6 +5,7 @@ import test_release_smoke as safety
 import test_tactical_duty as tactics
 import test_asset_screens as screens
 import test_character_portraits as identities
+import test_exact_battle as exact
 from browser_helpers import start_battle, board_point
 
 
@@ -61,4 +62,5 @@ def load_tests(loader, tests, pattern):
     suite.addTests(loader.loadTestsFromTestCase(tactics.TacticalDutyTests))
     suite.addTests(loader.loadTestsFromTestCase(screens.AssetScreenTests))
     suite.addTests(loader.loadTestsFromTestCase(identities.CharacterPortraitTests))
+    suite.addTests(loader.loadTestsFromTestCase(exact.ExactBattleTests))
     return suite

@@ -1,0 +1,902 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            98.9844,
+            98.9844,
+            98.9844
+          ],
+          "rows": "44px",
+          "gap": "6.72px",
+          "box": {
+            "x": 4.796875,
+            "y": 515.734375,
+            "left": 4.796875,
+            "top": 515.734375,
+            "right": 315.1875,
+            "bottom": 549.8125,
+            "width": 310.390625,
+            "height": 34.078125
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 4.796875,
+                "y": 515.734375,
+                "left": 4.796875,
+                "top": 515.734375,
+                "right": 103.78125,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 110.5,
+                "y": 515.734375,
+                "left": 110.5,
+                "top": 515.734375,
+                "right": 209.484375,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 216.203125,
+                "y": 515.734375,
+                "left": 216.203125,
+                "top": 515.734375,
+                "right": 315.1875,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 54,
+        "textRanges": 17,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            98.9844,
+            98.9844,
+            98.9844
+          ],
+          "rows": "44px",
+          "gap": "6.72px",
+          "box": {
+            "x": 4.796875,
+            "y": 515.734375,
+            "left": 4.796875,
+            "top": 515.734375,
+            "right": 315.1875,
+            "bottom": 549.8125,
+            "width": 310.390625,
+            "height": 34.078125
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 4.796875,
+                "y": 515.734375,
+                "left": 4.796875,
+                "top": 515.734375,
+                "right": 103.78125,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 110.5,
+                "y": 515.734375,
+                "left": 110.5,
+                "top": 515.734375,
+                "right": 209.484375,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 216.203125,
+                "y": 515.734375,
+                "left": 216.203125,
+                "top": 515.734375,
+                "right": 315.1875,
+                "bottom": 559.734375,
+                "width": 98.984375,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 55,
+        "textRanges": 19,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    }
+  },
+  {
+    "viewport": [
+      390,
+      640
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "44px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 581.109375,
+            "left": 5.84375,
+            "top": 581.109375,
+            "right": 384.140625,
+            "bottom": 619.5,
+            "width": 378.296875,
+            "height": 38.390625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 581.109375,
+                "left": 5.84375,
+                "top": 581.109375,
+                "right": 126.484375,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 581.109375,
+                "left": 134.671875,
+                "top": 581.109375,
+                "right": 255.3125,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 581.109375,
+                "left": 263.5,
+                "top": 581.109375,
+                "right": 384.140625,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 54,
+        "textRanges": 17,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "44px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 581.109375,
+            "left": 5.84375,
+            "top": 581.109375,
+            "right": 384.140625,
+            "bottom": 619.5,
+            "width": 378.296875,
+            "height": 38.390625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 581.109375,
+                "left": 5.84375,
+                "top": 581.109375,
+                "right": 126.484375,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 581.109375,
+                "left": 134.671875,
+                "top": 581.109375,
+                "right": 255.3125,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 581.109375,
+                "left": 263.5,
+                "top": 581.109375,
+                "right": 384.140625,
+                "bottom": 625.109375,
+                "width": 120.640625,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 55,
+        "textRanges": 19,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    }
+  },
+  {
+    "viewport": [
+      390,
+      684
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "44px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 621.0625,
+            "left": 5.84375,
+            "top": 621.0625,
+            "right": 384.140625,
+            "bottom": 662.09375,
+            "width": 378.296875,
+            "height": 41.03125
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 621.0625,
+                "left": 5.84375,
+                "top": 621.0625,
+                "right": 126.484375,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 621.0625,
+                "left": 134.671875,
+                "top": 621.0625,
+                "right": 255.3125,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 621.0625,
+                "left": 263.5,
+                "top": 621.0625,
+                "right": 384.140625,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 54,
+        "textRanges": 17,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        684
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "44px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 621.0625,
+            "left": 5.84375,
+            "top": 621.0625,
+            "right": 384.140625,
+            "bottom": 662.09375,
+            "width": 378.296875,
+            "height": 41.03125
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 621.0625,
+                "left": 5.84375,
+                "top": 621.0625,
+                "right": 126.484375,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 621.0625,
+                "left": 134.671875,
+                "top": 621.0625,
+                "right": 255.3125,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 621.0625,
+                "left": 263.5,
+                "top": 621.0625,
+                "right": 384.140625,
+                "bottom": 665.0625,
+                "width": 120.640625,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 55,
+        "textRanges": 19,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        684
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        684
+      ]
+    }
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "50.625px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 766.34375,
+            "left": 5.84375,
+            "top": 766.34375,
+            "right": 384.140625,
+            "bottom": 816.96875,
+            "width": 378.296875,
+            "height": 50.625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 766.34375,
+                "left": 5.84375,
+                "top": 766.34375,
+                "right": 126.484375,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 766.34375,
+                "left": 134.671875,
+                "top": 766.34375,
+                "right": 255.3125,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 766.34375,
+                "left": 263.5,
+                "top": 766.34375,
+                "right": 384.140625,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 54,
+        "textRanges": 17,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            120.641,
+            120.641,
+            120.641
+          ],
+          "rows": "50.625px",
+          "gap": "8.19px",
+          "box": {
+            "x": 5.84375,
+            "y": 766.34375,
+            "left": 5.84375,
+            "top": 766.34375,
+            "right": 384.140625,
+            "bottom": 816.96875,
+            "width": 378.296875,
+            "height": 50.625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 5.84375,
+                "y": 766.34375,
+                "left": 5.84375,
+                "top": 766.34375,
+                "right": 126.484375,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 134.671875,
+                "y": 766.34375,
+                "left": 134.671875,
+                "top": 766.34375,
+                "right": 255.3125,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 263.5,
+                "y": 766.34375,
+                "left": 263.5,
+                "top": 766.34375,
+                "right": 384.140625,
+                "bottom": 816.96875,
+                "width": 120.640625,
+                "height": 50.625
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 55,
+        "textRanges": 19,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            133.016,
+            133.016,
+            133.016
+          ],
+          "rows": "55.9062px",
+          "gap": "9.03px",
+          "box": {
+            "x": 6.4375,
+            "y": 846.25,
+            "left": 6.4375,
+            "top": 846.25,
+            "right": 423.53125,
+            "bottom": 902.15625,
+            "width": 417.09375,
+            "height": 55.90625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 6.4375,
+                "y": 846.25,
+                "left": 6.4375,
+                "top": 846.25,
+                "right": 139.453125,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 148.46875,
+                "y": 846.25,
+                "left": 148.46875,
+                "top": 846.25,
+                "right": 281.484375,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 290.5,
+                "y": 846.25,
+                "left": 290.5,
+                "top": 846.25,
+                "right": 423.515625,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 54,
+        "textRanges": 17,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            133.016,
+            133.016,
+            133.016
+          ],
+          "rows": "55.9062px",
+          "gap": "9.03px",
+          "box": {
+            "x": 6.4375,
+            "y": 846.25,
+            "left": 6.4375,
+            "top": 846.25,
+            "right": 423.53125,
+            "bottom": 902.15625,
+            "width": 417.09375,
+            "height": 55.90625
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 6.4375,
+                "y": 846.25,
+                "left": 6.4375,
+                "top": 846.25,
+                "right": 139.453125,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 148.46875,
+                "y": 846.25,
+                "left": 148.46875,
+                "top": 846.25,
+                "right": 281.484375,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 290.5,
+                "y": 846.25,
+                "left": 290.5,
+                "top": 846.25,
+                "right": 423.515625,
+                "bottom": 902.15625,
+                "width": 133.015625,
+                "height": 55.90625
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 55,
+        "textRanges": 19,
+        "images": 5,
+        "buttons": 10
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  }
+]

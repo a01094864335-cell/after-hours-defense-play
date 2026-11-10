@@ -1,0 +1,93 @@
+/* Approved 948 × 1659 composition. The wordless plate owns every surface;
+   existing DOM controls and a transparent projected battlefield own behavior. */
+html.open-scene body #battle.battle-comic.battle-exact{height:100dvh;max-height:100dvh;position:relative;display:block;overflow:hidden;background:#173cba url('assets/battle-exact/arena-ui.webp') center/100% 100% no-repeat;container-type:inline-size}
+html.open-scene body #battle.battle-comic.battle-exact :is(.battle-top,.battle-notice,.board-stage,.battle-controls,.skill-row,.summon-row,.item-buttons){margin:0;padding:0;border:0;border-image:none!important;box-shadow:none;background:none;border-radius:0;min-height:0}
+html.open-scene body #battle.battle-comic.battle-exact :is(.battle-top button,#summon,#upgrade-open,.item-buttons button,#skill,#skill-help){padding:0;border:0;border-image:none!important;box-shadow:none;background:none;text-shadow:none;min-width:0;min-height:0;max-height:none;filter:none;opacity:1;letter-spacing:0}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top{position:absolute;inset:0 0 auto;height:6%;display:block;z-index:5}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top button{position:absolute;top:50%;transform:translateY(-50%);height:80%;display:flex;align-items:center;justify-content:center;color:#102350;font:800 5.8cqw/1 Arial,sans-serif;overflow:visible}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top button::after{content:'';position:absolute;left:50%;top:50%;width:max(100%,44px);height:max(100%,44px);transform:translate(-50%,-50%)}
+html.open-scene body #battle.battle-comic.battle-exact #battle-back{left:2.5%;width:9.5%}
+html.open-scene body #battle.battle-comic.battle-exact #battle-back img{width:6cqw;height:6cqw;filter:brightness(.35) sepia(1) saturate(4) hue-rotate(175deg)}
+html.open-scene body #battle.battle-comic.battle-exact #battle-back span{display:none}
+html.open-scene body #battle.battle-comic.battle-exact .wave-pill{position:absolute;left:17.2%;top:50%;width:22%;height:90%;transform:translateY(-50%);display:flex;align-items:center;justify-content:space-between;padding:0;border:0;gap:4%;font-family:Arial,sans-serif}
+html.open-scene body #battle.battle-comic.battle-exact .wave-pill small{font:850 4.5cqw/1 Arial,sans-serif;color:#fff5dc;letter-spacing:0}
+html.open-scene body #battle.battle-comic.battle-exact #wave{font:950 italic 7.8cqw/.95 Arial,sans-serif;color:#ffde47;font-variant-numeric:tabular-nums}
+html.open-scene body #battle.battle-comic.battle-exact #life{position:absolute;left:46.4%;width:18%;top:50%;transform:translateY(-50%);font:8cqw/1 Arial,sans-serif;letter-spacing:.3cqw;color:#ff5c8a;text-align:center;text-shadow:none}
+html.open-scene body #battle.battle-comic.battle-exact #speed{left:73.3%;width:11.2%}
+html.open-scene body #battle.battle-comic.battle-exact #pause{left:88%;width:9.5%;font-size:6.6cqw}
+html.open-scene body #battle.battle-comic.battle-exact .battle-notice{position:absolute;left:16.7%;top:6.65%;width:67%;height:3.75%;min-height:0!important;display:block;z-index:5;overflow:visible}
+html.open-scene body #battle.battle-comic.battle-exact .battle-alert-icon{display:none}
+html.open-scene body #battle.battle-comic.battle-exact .comic-wave-status{position:absolute;inset:0;display:block;padding:0}
+html.open-scene body #battle.battle-comic.battle-exact #comic-wave-phase{position:absolute;left:0;top:0;width:34%;height:100%;min-width:0;display:flex;align-items:center;justify-content:center;padding:0;background:none;clip-path:none;color:#0c2251;font:3.8cqw/1.1 BattleTitle,sans-serif;white-space:nowrap}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-readout{min-width:0;clip-path:none;position:absolute;left:36%;top:0;width:24%;height:100%;display:flex;align-items:center;justify-content:center;gap:1cqw;color:#fff4d6;background:none;padding:0}
+html.open-scene body #battle.battle-comic.battle-exact #exact-wave-value{font:800 4.6cqw/1 Arial,sans-serif;white-space:nowrap}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon{font:4.6cqw/1 Arial,sans-serif;color:#fff1d4;min-width:0;padding:0;background:none;clip-path:none}
+html.open-scene body #battle.battle-comic.battle-exact .comic-wave-track{position:absolute;left:62%;right:8%;top:0;max-width:none;height:100%;display:flex;align-items:center;justify-content:space-between;gap:.4cqw;background:none;border-radius:0;overflow:visible}
+html.open-scene body #battle.battle-comic.battle-exact .comic-wave-track i{display:block;flex:0 0 2.55cqw;width:2.55cqw;height:2.55cqw;background:#5481ed;border:1px solid #112967;border-radius:50%;box-shadow:inset 0 1px #a3c3ff;transition:none}
+html.open-scene body #battle.battle-comic.battle-exact .comic-wave-track i[data-filled=true]{background:#ffe44e;box-shadow:inset 0 1px #fff7bb}
+html.open-scene body #battle.battle-comic.battle-exact #message{position:absolute;left:0;right:0;top:calc(100% + 5px);display:block;grid-area:auto;max-width:none;min-height:0;max-height:48px;margin:0;padding:4px 8px;border-radius:10px;background:#102555eb;color:#fff1c6;font:11px/1.35 system-ui,sans-serif;white-space:normal;opacity:0;pointer-events:none;transition:opacity .15s;-webkit-line-clamp:unset}
+html.open-scene body #battle.battle-comic.battle-exact:is(.exact-toast-visible,[data-phase=prepare]) #message{opacity:1;pointer-events:auto}
+html.open-scene body #battle.battle-comic.battle-exact .battle-notice:has(#item-hint:not([hidden]):not(:empty)){min-height:0!important}
+html.open-scene body #battle.battle-comic.battle-exact #item-hint:not([hidden]){position:absolute;left:0;right:0;top:calc(100% + 5px);display:block;grid-area:auto;max-width:none;max-height:70px;padding:6px 8px;margin:0;border-radius:10px;background:#142963f2;color:#fff4c7;font:11px/1.35 system-ui,sans-serif;z-index:3}
+html.open-scene body #battle.battle-comic.battle-exact #boss-warning:not([hidden]){position:absolute;inset:0 -20%;height:auto;min-height:64px;padding:8px 12px;background:#73254feF;color:#fff3d3;border-radius:12px;z-index:8}
+html.open-scene body #battle.battle-comic.battle-exact .board-stage{position:absolute;left:0;top:10.67%;width:100%;height:57.2%;display:block;min-height:0;z-index:1;overflow:hidden;background:transparent}
+html.open-scene body #battle.battle-comic.battle-exact .board-stage::before{content:none!important}
+html.open-scene body #battle.battle-comic.battle-exact .battle-stage-meta{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden;pointer-events:none}
+html.open-scene body #battle.battle-comic.battle-exact .battle-controls{display:contents}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row{position:absolute;left:2%;top:68.2%;width:96%;height:9.6%;display:block;min-height:0;overflow:visible;z-index:3}
+html.open-scene body #battle.battle-comic.battle-exact #battle-selected-portrait{position:absolute;left:1.8%;top:50%;transform:translateY(-50%);width:22cqw;height:22cqw;max-height:140%;object-fit:contain;filter:none;align-self:auto}
+html.open-scene body #battle.battle-comic.battle-exact .battle-selected-copy{display:contents}
+html.open-scene body #battle.battle-comic.battle-exact #battle-selected-name{position:absolute;left:29%;top:23%;width:39%;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#10234c;font:5.8cqw/1.1 BattleTitle,sans-serif;-webkit-line-clamp:unset}
+html.open-scene body #battle.battle-comic.battle-exact #battle-selected-grade{position:absolute;left:29%;top:60%;width:38%;font:5.1cqw/1 Arial,sans-serif;color:#a47e1b;letter-spacing:.25cqw}
+html.open-scene body #battle.battle-comic.battle-exact #skill-help{position:absolute;left:67%;top:35%;width:6%;height:35%;min-height:24px;font:4.5cqw/1 Arial,sans-serif;color:#23385c;display:flex;align-items:center;justify-content:center}
+html.open-scene body #battle.battle-comic.battle-exact #skill{position:absolute;left:75%;right:5%;top:20%;width:20%;height:60%;min-height:0;max-height:none;display:flex;align-items:center;justify-content:center;gap:1cqw;border-radius:3cqw;background:none;color:#07515a;font:5cqw/1 BattleTitle,sans-serif;padding:0;overflow:visible}
+html.open-scene body #battle.battle-comic.battle-exact #skill[data-state=cooldown]::before{width:4.6cqw;height:4.6cqw;background:conic-gradient(#07515a calc(var(--skill-progress,0)*1turn),#63af9c 0)}
+html.open-scene body #battle.battle-comic.battle-exact #skill:disabled{background:#fff1b42b;color:#577e71;box-shadow:none}
+html.open-scene body #battle.battle-comic.battle-exact .summon-row{position:absolute;left:0;top:79.3%;width:100%;height:9.3%;min-height:0;display:block;z-index:3}
+html.open-scene body #battle.battle-comic.battle-exact .summon-row>span{position:absolute;left:3%;top:18%;width:28%;height:65%;min-height:0;display:flex;align-items:center;justify-content:flex-start;gap:.7cqw;padding:0 1.3cqw 0 2.5cqw;border:0;background:none;color:#ffe240;font:6.4cqw/1 Arial,sans-serif;border-radius:0}
+html.open-scene body #battle.battle-comic.battle-exact #sp{font:850 italic var(--exact-sp-font,6cqw)/1 Arial,sans-serif;color:#fff6d9;font-variant-numeric:tabular-nums}
+html.open-scene body #battle.battle-comic.battle-exact .comic-sp-unit{font:800 3.1cqw/1 Arial,sans-serif;color:#fff5d7;align-self:center}
+html.open-scene body #battle.battle-comic.battle-exact #summon{position:absolute;left:30.3%;top:0;width:54%;height:100%;min-height:0;max-height:none;display:flex;align-items:center;justify-content:center;padding:0 1cqw;background:none;border-radius:9cqw;color:#0c204d;font:var(--exact-summon-font,7.8cqw)/1.1 BattleTitle,sans-serif;letter-spacing:-.1cqw;white-space:nowrap;overflow:visible;box-shadow:none}
+html.open-scene body #battle.battle-comic.battle-exact #summon:disabled{background:#9d8a504f;color:#6a5b34;opacity:1;filter:none}
+html.open-scene body #battle.battle-comic.battle-exact #upgrade-open{position:absolute;right:2.7%;top:18%;width:11%;height:65%;min-height:0;display:flex;align-items:center;justify-content:center;padding:0;border-radius:3cqw;background:none;color:#11224d}
+html.open-scene body #battle.battle-comic.battle-exact #upgrade-open svg{width:7cqw;height:7cqw;display:block}
+html.open-scene body #battle.battle-comic.battle-exact #upgrade-open span{display:none}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons{position:absolute;left:1.5%;top:90.8%;width:97%;height:6%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.1cqw;margin:0;min-height:0;z-index:3}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons :is(#item-grade,#item-kind,#item-king){position:relative;display:flex;align-items:center;justify-content:center;min-height:44px;height:100%;padding:0 4cqw 0 0;background:none;border:0;border-radius:3cqw;box-shadow:none;filter:none;opacity:1}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons :is(#item-grade,#item-kind,#item-king):disabled{background:#34386228;opacity:1;filter:none}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons img{width:9cqw;height:9cqw;max-height:90%;object-fit:contain;filter:none;opacity:1}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons button:disabled img{filter:grayscale(.45);opacity:.6}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons b{position:absolute;right:5%;bottom:18%;width:4cqw;min-width:0;height:4cqw;padding:0;border:0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:none;color:#8b6724;font:800 3cqw/1 Arial,sans-serif;box-shadow:none}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons button.active{background:#ffe96c24;outline:3px solid #ffe05b;outline-offset:0}
+html.open-scene body #battle.battle-comic.battle-exact button:focus-visible{outline:3px solid #fff1a2;outline-offset:2px}
+html.open-scene body.staff-practice #battle.battle-comic.battle-exact::after{content:'';position:absolute;inset:79% 0 0;background:#254eb5 url('assets/battle-comic/controls-floor.webp') center/cover;z-index:2;pointer-events:none}
+html.open-scene body.staff-practice #battle.battle-comic.battle-exact :is(.summon-row,.item-buttons,.battle-notice){display:none!important}
+
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon svg{display:block;width:4.7cqw;height:4.7cqw;stroke:currentColor}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon [data-symbol=clock]{display:none}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon[data-clock=true] [data-symbol=clock]{display:block}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon[data-clock=true] [data-symbol=count]{display:none}
+
+html.open-scene body #battle.battle-comic.battle-exact .battle-top :is(#pause,#speed,#battle-back):active{transform:translateY(-50%);filter:brightness(.96)}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top{pointer-events:none}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top button{pointer-events:auto}
+/* Keep 44px hit regions without shifting art on short viewports. */
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons img{position:absolute;left:50%;top:3dvh;transform:translate(-50%,-50%);width:9cqw;height:min(9cqw,5.4dvh);max-height:none}
+html.open-scene body #battle.battle-comic.battle-exact .item-buttons b{top:calc(4.92dvh - 4cqw);bottom:auto}
+/* Transparent hit boxes follow the illustrated circles without pseudo overflow. */
+html.open-scene body #battle.battle-comic.battle-exact .battle-top :is(#battle-back,#speed,#pause){width:44px;height:44px;top:max(0px,calc(50% - 22px));transform:none;box-sizing:border-box;padding:0 0 max(0px,calc(44px - 6dvh))}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top :is(#battle-back,#speed,#pause):active{transform:none}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top button::after{content:none;display:none}
+html.open-scene body #battle.battle-comic.battle-exact #battle-back{left:calc(7.25% - 22px)}
+html.open-scene body #battle.battle-comic.battle-exact #speed{left:calc(78.9% - 22px)}
+html.open-scene body #battle.battle-comic.battle-exact #pause{left:calc(92.75% - 22px)}
+html.open-scene body #battle.battle-comic.battle-exact .summon-row>span{width:27%}
+html.open-scene body #battle.battle-comic.battle-exact #battle-selected-name{font-size:min(5.8cqw,3.2dvh)}
+html.open-scene body #battle.battle-comic.battle-exact .battle-top{background:#0d2259 url('assets/battle-exact/hud.webp') center/100% auto no-repeat}
+
+html.open-scene body #battle.battle-comic.battle-exact #battle-back svg{display:block;width:6cqw;height:6cqw}
+html.open-scene body #battle.battle-comic.battle-exact .exact-energy-bolt{display:block;flex-shrink:0;width:5.2cqw;height:7cqw}
+html.open-scene body #battle.battle-comic.battle-exact .exact-wave-icon{position:absolute;left:6%;top:50%;transform:translateY(-50%)}
+html.open-scene body #battle.battle-comic.battle-exact #exact-wave-value{position:absolute;left:32%;top:0;width:68%;height:100%;display:flex;align-items:center;justify-content:center}
+
+html.open-scene body #battle.battle-comic.battle-exact .exact-energy-bolt{margin-right:1.3cqw}

@@ -17,7 +17,7 @@ for(const [width,height]of [[320,568],[390,640],[390,684],[390,844],[430,932]]){
   positions.forEach(([x,y],i)=>{spawn(['normal','fast','knight','priest','mage','normal','fast','normal'][i]);Object.assign(enemies.at(-1),{x,y,progress:i*90,hp:enemies.at(-1).max*.7})});
   fx=[{type:0,x:148,y:220,tx:82,ty:210,life:.4,max:.8,color:'#ffdf66'},{type:2,x:300,y:225,tx:82,ty:345,life:.4,max:.8,color:'#71eeea'},{effect:'lightning',x:452,y:222,tx:518,ty:210,life:.2,max:.5,color:'#fff197'}];
   say('공격 8 · 마왕성 안뜰 방어 중');sync();draw();
- });await p.waitForTimeout(150);await p.screenshot({path:out+`/${width}x${height}-playing.png`});
+ });await p.waitForTimeout(await p.locator('#battle').evaluate(e=>e.classList.contains('battle-exact'))?2550:150);await p.screenshot({path:out+`/${width}x${height}-playing.png`});
  const running=await p.evaluate(geometry);await p.locator('#item-grade').click();await p.screenshot({path:out+`/${width}x${height}-item-selected.png`});const item=await p.evaluate(geometry);await p.locator('#item-grade').click();
  await p.locator('#pause').click();await p.screenshot({path:out+`/${width}x${height}-paused.png`});const paused=await p.evaluate(geometry);await p.locator('#pause-continue').click();
  await p.evaluate(()=>{enemies=[];fx=[];board=Array.from({length:15},(_,i)=>({type:i,pip:5,skillCD:12,cool:10,arrival:0,income:5}));sync();draw()});await p.screenshot({path:out+`/${width}x${height}-dense.png`});
