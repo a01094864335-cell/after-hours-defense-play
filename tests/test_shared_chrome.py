@@ -70,9 +70,10 @@ class SharedChromeTests(unittest.TestCase):
                     self.assertIsNotNone(b)
                     self.assertGreaterEqual(b['y'],0)
                     self.assertLessEqual(b['y']+b['height'],height+1)
-                page.locator('#sfx-volume').fill('27')
+                page.locator('#sfx-volume').focus()
+                page.locator('#sfx-volume').evaluate("e=>{e.value='27';e.dispatchEvent(new Event('input',{bubbles:true}))}")
                 self.assertIn('27',page.locator('#sfx-value').inner_text())
-                page.locator('#bgm-volume').fill('42')
+                page.locator('#bgm-volume').evaluate("e=>{e.value='42';e.dispatchEvent(new Event('input',{bubbles:true}))}")
                 self.assertIn('42',page.locator('#bgm-value').inner_text())
                 page.locator('#menu .panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
                 self.assertTrue(page.locator('#shared-menu-confirm').is_visible())
@@ -91,4 +92,39 @@ class SharedChromeTests(unittest.TestCase):
             self.assertEqual(page.locator('#info-close').inner_text(),'알겠어요')
             page.locator('#info-close').click()
             self.assertFalse(page.locator('#info').evaluate('e=>e.open'))
+            page.context.close()
+
+    def test_record_backup_and_recruitment_title_chrome(self):
+        for width,height in [(320,568),(390,684),(390,844),(430,932)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
+            for dialog,entry,close in [
+                ('journey-dialog','journey-summary','journey-close'),
+                ('save-transfer-dialog','save-transfer-open','save-transfer-close'),
+            ]:
+                page.evaluate("id=>document.getElementById(id).click()",entry)
+                panel=page.locator('#'+dialog)
+                self.assertTrue(panel.evaluate('e=>e.open'))
+                header=panel.locator(':scope > header.shared-modal-header')
+                self.assertEqual(header.count(),1)
+                self.assertIn('/shared-chrome/plaque.svg',header.locator('h2').evaluate('e=>getComputedStyle(e).backgroundImage'))
+                button=page.locator('#'+close)
+                self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
+                for control in [header,button]:
+                    b=control.bounding_box()
+                    self.assertGreaterEqual(b['y'],0)
+                    self.assertLessEqual(b['y']+b['height'],height+1)
+                before=button.bounding_box()
+                panel.locator('.panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
+                self.assertEqual(before,button.bounding_box())
+                button.click()
+                self.assertFalse(panel.evaluate('e=>e.open'))
+            page.evaluate("revealRecruit(RECRUIT_STAFF[0],true)")
+            title=page.locator('#recruit-result .shared-recruit-title')
+            title.wait_for(state='visible')
+            self.assertEqual(title.inner_text(),'다시 만난 동료')
+            self.assertEqual(title.get_attribute('role'),'heading')
+            self.assertIn('/shared-chrome/plaque.svg',title.evaluate('e=>getComputedStyle(e).backgroundImage'))
+            page.locator('#recruit-dialog .ref-recruit-actions button').last.click()
+            self.assertFalse(page.locator('#recruit-dialog').evaluate('e=>e.open'))
             page.context.close()

@@ -83,3 +83,6 @@ html body #menu.shared-paper-modal input[type=range]::-webkit-slider-thumb{-webk
 html body #menu.shared-paper-modal input[type=range]::-moz-range-track{height:10px;border:2px solid #101d49;border-radius:12px;background:#c8c4f8}
 html body #menu.shared-paper-modal input[type=range]::-moz-range-progress{height:10px;border-radius:12px;background:#ffda2a}
 html body #menu.shared-paper-modal input[type=range]::-moz-range-thumb{width:38px;height:38px;border:0;background:url('assets/shared-chrome/moon-knob.svg') center/contain no-repeat}
+
+/* Recruitment keeps its live result heading and portrait; only the title gets a plaque. */
+html body #recruit-dialog.shared-paper-modal .shared-recruit-title{box-sizing:border-box!important;display:block!important;width:100%!important;min-height:54px!important;margin:8px 0!important;padding:13px 14px!important;background:url('assets/shared-chrome/plaque.svg') center/100% 100% no-repeat!important;color:#fff9e9!important;font:22px/1.3 SharedComic,sans-serif!important;text-align:center!important;text-shadow:2px 2px #101d49,-1px -1px #101d49!important;white-space:normal!important}

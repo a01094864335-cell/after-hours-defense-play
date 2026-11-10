@@ -18,3 +18,11 @@ test('shared presentation preserves words on acknowledgement and forwards settin
  assert(js.includes("button.replaceChildren(image, text)"));
  assert(!/localStorage|saveChange|meta\./.test(js));
 });
+
+test('plain modal headers are normalized before close enhancement; recruitment retains its actual heading',()=>{
+ const js=fs.readFileSync('shared-chrome.js','utf8');
+ assert(js.indexOf("header.classList.add('shared-modal-header')")<js.indexOf('const closeSelector'));
+ assert(js.includes("title.classList.add('shared-recruit-title')"));
+ const css=fs.readFileSync('shared-chrome.css','utf8');
+ assert(css.includes('.shared-modal-header) h2'));
+});

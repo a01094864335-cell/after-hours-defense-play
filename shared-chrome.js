@@ -27,17 +27,21 @@
     button.replaceChildren(image, text);
    });
   }
+  for (const panel of scope.querySelectorAll('dialog.contained-panel,dialog#roster,dialog#recruit-dialog,dialog#training-dialog')) {
+   panel.classList.add('shared-paper-modal');
+   const header = panel.querySelector(':scope > header');
+   if (header) header.classList.add('shared-modal-header');
+  }
+  for (const title of scope.querySelectorAll('#recruit-result .recruit-reveal > b,#recruit-result .recruit-reveal > .panel-scroll-body > b')) {
+   title.classList.add('shared-recruit-title');
+   title.setAttribute('role', 'heading'); title.setAttribute('aria-level', '2');
+  }
   // Only dismissal controls become icon buttons. Acknowledgement actions keep words.
   const closeSelector = 'dialog.shared-paper-modal header [id$="-close"],dialog .sheet-head [id$="-close"],dialog .ui-dialog-header [id$="-close"],#recruit-close,[data-hire-close],.r-close,header .close';
   for (const button of scope.querySelectorAll(closeSelector)) {
    if (button.tagName === 'BUTTON') icon(button, 'close');
   }
   for (const button of scope.querySelectorAll('#roster-back,.r-back,header .back')) icon(button, 'back');
-  for (const panel of scope.querySelectorAll('dialog.contained-panel,dialog#roster,dialog#recruit-dialog,dialog#training-dialog')) {
-   panel.classList.add('shared-paper-modal');
-   const header = panel.querySelector(':scope > header');
-   if (header) header.classList.add('shared-modal-header');
-  }
   const menu = scope.querySelector('dialog#menu');
   if (menu && !menu.querySelector('#shared-menu-confirm')) {
    let footer = menu.querySelector(':scope > .ui-dialog-actions');
