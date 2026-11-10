@@ -38,13 +38,14 @@ function openTraining(pushRoute=true){
  if(pushRoute&&window.history?.pushState){window.history.pushState({...window.history.state,afterHoursPage:'training'},'','#training');trainingHistory=true;}
  if(typeof queueMicrotask==='function')queueMicrotask(trainingFocus);else trainingFocus();return true;
 }
-function closeTraining(target=trainingReturnScreen,fromHistory=false){
+function closeTraining(target=trainingReturnScreen,fromHistory=false,resetDuty=false){
  if(appScreen!=='training')return false;
+ // Leaving a completed duty uses the existing settlement/reset transaction.
+ if(target==='lobby'&&(ended||resetDuty)){restartTo('lobby');if(appScreen!=='lobby')return false;}
  const resume=trainingResume&&target==='battle'&&!ended&&GameSession.canWrite();
  trainingResume=false;
  // A browser Back can arrive while a roster/shop dialog is above this page.
  if(typeof document.querySelectorAll==='function')document.querySelectorAll('dialog[open]').forEach(dialog=>dialog.close());
- if(target==='lobby'&&playing&&!ended&&typeof saveActiveRun==='function')saveActiveRun();
  setScreen(target);if(resume)paused=false;
  if(window.AssetTraining?.reset)window.AssetTraining.reset();sync();if(window.GameOrientation)window.GameOrientation.refresh();
  if(target===trainingReturnScreen&&trainingReturnFocus?.isConnected)trainingReturnFocus.focus({preventScroll:true});
@@ -55,7 +56,7 @@ function closeTraining(target=trainingReturnScreen,fromHistory=false){
 function trainingNavigate(target){
  if(appScreen!=='training')return false;
  if(target==='back')return closeTraining();
- if(target==='home')return closeTraining('lobby');
+ if(target==='home'){if(playing&&!ended){askLeave();return true;}return closeTraining('lobby');}
  // These existing dialogs sit above the training page, never a running battle.
  if(target==='roster'||target==='shop'){document.querySelector('#'+target+'-open').click();return true;}
  return false;

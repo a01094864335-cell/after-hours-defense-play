@@ -54,6 +54,38 @@ class TrainingPageTests(unittest.TestCase):
         p.locator('#asset-training-host .back').click()
         self.assertEqual(p.evaluate('appScreen'), 'result')
 
+    def test_active_training_home_cancel_and_confirm(self):
+        p = self.open(390, 844)
+        p.evaluate("saveChange(d=>d.tutorialComplete=true);playing=true;ended=false;paused=false;wave=7;setScreen('battle');openTraining()")
+        p.locator('#asset-training-host [data-action="home"]').click()
+        self.assertTrue(p.locator('#leave').evaluate('e=>e.open'))
+        self.assertEqual(p.evaluate('appScreen'), 'training')
+        p.locator('#leave-cancel').click()
+        self.assertTrue(p.evaluate('paused'))
+        self.assertEqual(p.evaluate('wave'), 7)
+        self.assertEqual(p.evaluate('appScreen'), 'training')
+        p.locator('#asset-training-host [data-action="home"]').click()
+        p.locator('#leave-confirm').click()
+        p.wait_for_function("appScreen==='lobby' && !trainingHistoryPending")
+        self.assertFalse(p.evaluate('playing'))
+        self.assertEqual(p.evaluate('wave'), 0)
+        self.assertEqual(p.locator('dialog:modal').count(), 0)
+        p.locator('#asset-lobby-host .a-start').click()
+        p.wait_for_function("appScreen==='battle'")
+        self.assertEqual(p.evaluate('wave'), 0)
+
+    def test_result_training_home_starts_fresh_duty(self):
+        p = self.open(390, 844)
+        p.evaluate("saveChange(d=>d.tutorialComplete=true);playing=false;ended=true;wave=12;runReward={paid:true,total:0};setScreen('result');openTraining()")
+        p.locator('#asset-training-host [data-action="home"]').click()
+        p.wait_for_function("appScreen==='lobby' && !trainingHistoryPending")
+        self.assertFalse(p.evaluate('ended'))
+        self.assertIsNone(p.evaluate('runReward'))
+        p.locator('#asset-lobby-host .a-start').click()
+        p.wait_for_function("appScreen==='battle'")
+        self.assertEqual(p.evaluate('wave'), 0)
+        self.assertFalse(p.evaluate('ended'))
+
     def test_landscape_keeps_page_inside_inert_guard(self):
         p = self.open(390, 844)
         p.evaluate('openTraining()')
