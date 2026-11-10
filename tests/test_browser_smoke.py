@@ -6,6 +6,7 @@ import test_tactical_duty as tactics
 import test_asset_screens as screens
 import test_character_portraits as identities
 import test_exact_battle as exact
+import test_shared_chrome as chrome
 from browser_helpers import start_battle, board_point
 
 
@@ -63,4 +64,5 @@ def load_tests(loader, tests, pattern):
     suite.addTests(loader.loadTestsFromTestCase(screens.AssetScreenTests))
     suite.addTests(loader.loadTestsFromTestCase(identities.CharacterPortraitTests))
     suite.addTests(loader.loadTestsFromTestCase(exact.ExactBattleTests))
+    suite.addTests(loader.loadTestsFromTestCase(chrome.SharedChromeTests))
     return suite
