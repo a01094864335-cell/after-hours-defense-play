@@ -2,7 +2,7 @@
 // D layout is a view projection. Combat, range checks and saved cells stay 600×600.
 window.BattlePresentation=(()=>{
  const q=s=>document.querySelector(s),enabled=typeof document.createElement==='function';
- function axes(w,h){const small=h<360,pad=Math.min(44,w*.132),edge=Math.min(28,w*.088);return {x:[[0,82,110,490,518,600],[0,edge,pad,w-pad,w-edge,w]],y:[[0,123,202,479,567,600],[0,small?Math.min(42,h*.15):68,small?Math.min(64,h*.24):100,h-(small?Math.min(78,h*.28):108),h-(small?Math.min(14,h*.05):30),h]]}}
+ function axes(w,h){const pad=Math.min(44,w*.132),edge=Math.min(28,w*.088),road=Math.min(68,h*.14),top=road+Math.min(32,h*.065),end=h-Math.min(108,h*.21),foot=h-Math.min(30,h*.06);return {x:[[0,82,110,490,518,600],[0,edge,pad,w-pad,w-edge,w]],y:[[0,123,202,479,567,600],[0,road,top,end,foot,h]]}}
  function map(v,from,to){let i=0;while(i<from.length-2&&v>from[i+1])i++;return to[i]+(v-from[i])/(from[i+1]-from[i])*(to[i+1]-to[i])}
  function project(p,w,h){const a=axes(w,h);return{x:map(p.x,...a.x),y:map(p.y,...a.y)}}
  function unproject(p,w,h){const a=axes(w,h);return{x:map(p.x,a.x[1],a.x[0]),y:map(p.y,a.y[1],a.y[0])}}
@@ -11,7 +11,11 @@ window.BattlePresentation=(()=>{
  if(!enabled)return {enabled,axes,project,unproject,point,screenPoint};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
  const staffKeys=new Set(kinds.map(kind=>kind.file));
- const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0;
+ const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0,projection=null;
+ const extents=new WeakMap(),fonts=new Map();
+ function layout(){if(projection&&projection.width===width&&projection.height===height)return projection;const a=axes(width,height),patches=[];for(let y=0;y<a.y[0].length-1;y++)for(let x=0;x<a.x[0].length-1;x++){const sx=a.x[0][x],sy=a.y[0][y];patches.push([sx,sy,a.x[0][x+1]-sx,a.y[0][y+1]-sy,a.x[1][x],a.y[1][y],a.x[1][x+1]-a.x[1][x],a.y[1][y+1]-a.y[1][y]])}fonts.clear();return projection={width,height,a,patches,row:(a.y[1][3]-a.y[1][2])/3,cell:(a.x[1][3]-a.x[1][2])/5}}
+ function bodyBounds(data){let value=extents.get(data);if(!value){value={height:Math.max(...data.frames.map(f=>f.h)),width:Math.max(...data.frames.map(f=>f.w))};extents.set(data,value)}return value}
+ function viewPoint(p,a){return{x:map(p.x,...a.x),y:map(p.y,...a.y)}}
  const oldMotion=Motion.draw;
  // Every battle actor uses a full-body motion sheet; menu portraits remain independent.
  const hasBody=key=>!!Motion.sheets[key];
@@ -24,19 +28,19 @@ window.BattlePresentation=(()=>{
  // The native D frames replace the previous illustrated cell skins.
  if(typeof LiveUIAssets!=='undefined'){const oldCell=LiveUIAssets.cell;LiveUIAssets.cell=function(target,...args){if(target!==ctx)oldCell(target,...args)}}
  function render(){
-  if(width<1||height<1)return;const a=axes(width,height),dpr=Math.min(devicePixelRatio||1,2);paint.setTransform(dpr,0,0,dpr,0,0);paint.imageSmoothingEnabled=false;paint.clearRect(0,0,width,height);
-  for(let y=0;y<a.y[0].length-1;y++)for(let x=0;x<a.x[0].length-1;x++){
-   const sx=a.x[0][x],sy=a.y[0][y],sw=a.x[0][x+1]-sx,sh=a.y[0][y+1]-sy,dx=a.x[1][x],dy=a.y[1][y],dw=a.x[1][x+1]-dx,dh=a.y[1][y+1]-dy;
-   paint.drawImage(canvas,sx,sy,sw,sh,dx,dy,dw,dh);
-  }
-  const row=(a.y[1][3]-a.y[1][2])/3,cell=(a.x[1][3]-a.x[1][2])/5;
-  for(const actor of actors){const p=project(actor,width,height),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.5:1.12);
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){if(hasBody(actor.key)){const maxH=Math.max(...data.frames.map(f=>f.h)),maxW=Math.max(...data.frames.map(f=>f.w));size=Math.min(size,row*.82,Math.max(12,row-20)*data.height/maxH,(cell-4)*data.height/maxW)}else size=Math.min(size,row*.82,Math.max(12,row-20),cell-4);}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
+  if(width<1||height<1)return;const geometry=layout(),a=geometry.a,dpr=Math.min(devicePixelRatio||1,2);paint.setTransform(dpr,0,0,dpr,0,0);paint.imageSmoothingEnabled=false;paint.clearRect(0,0,width,height);
+  for(const patch of geometry.patches)paint.drawImage(canvas,...patch);
+  const {row,cell}=geometry,enemyHUD=[];
+  for(const actor of actors){const p=viewPoint(actor,a),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.5:1.12);
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){if(hasBody(actor.key)){const bounds=bodyBounds(data),maxH=bounds.height,maxW=bounds.width;size=Math.min(size,row*.82,Math.max(12,row-20)*data.height/maxH,(cell-4)*data.height/maxW)}else size=Math.min(size,row*.82,Math.max(12,row-20),cell-4);}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
-  for(const t of texts){const p=project(t,width,height);paint.save();paint.font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
+  for(const t of texts){const p=viewPoint(t,a);let font=fonts.get(t.font);if(!font){font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');fonts.set(t.font,font)}paint.save();paint.font=font;paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
+
+  // Health follows the displayed full-body bounds, rather than the old source height.
+  for(const hud of enemyHUD){const e=hud.e;if(e.escaped||e.hp<=0)continue;const w=Math.min(28,width*.075),x=Math.max(1,Math.min(width-w-1,hud.x-w/2)),y=Math.max(13,hud.top-7);paint.save();paint.fillStyle='#0c174e';paint.beginPath();paint.roundRect(x-1,y-1,w+2,5,2);paint.fill();paint.fillStyle=e.slow||e.freeze>0?'#87e6ef':'#ff628b';paint.fillRect(x,y,w*Math.max(0,e.hp/e.max),3);if(e.shield>0){paint.fillStyle='#9edbff';paint.fillRect(x,y+5,w*Math.min(1,e.shield/(e.max*.4)),2)}if(e.type!=='normal'){paint.font='bold 8px system-ui';paint.textAlign='center';paint.lineWidth=2.5;paint.strokeStyle='#112356';const label=e.decoy?'분신':enemyDefinition(e).badge;paint.strokeText(label,hud.x,y-3);paint.fillStyle='#fff0c7';paint.fillText(label,hud.x,y-3)}paint.restore()}
  }
- const oldDraw=draw;draw=function(){actors=[];texts=[];collecting=true;try{oldDraw()}finally{collecting=false}render()};
+ const oldDraw=draw;draw=function(){actors.length=0;texts.length=0;collecting=true;try{oldDraw()}finally{collecting=false}render()};
  fitBoard=function(){const r=stage.getBoundingClientRect();if(r.width<2||r.height<2)return;width=r.width;height=r.height;const dpr=Math.min(devicePixelRatio||1,2),w=Math.round(width*dpr),h=Math.round(height*dpr);if(view.width!==w||view.height!==h){view.width=w;view.height=h}canvas.style.setProperty('width',width+'px','important');canvas.style.setProperty('height',height+'px','important');canvas.style.setProperty('transform','none');canvas.boardInsetTop=0;GamePerformance.invalidate()};
  new ResizeObserver(fitBoard).observe(stage);window.addEventListener('resize',fitBoard);
  // Move the existing live notification node; its full-text dialog keeps working.

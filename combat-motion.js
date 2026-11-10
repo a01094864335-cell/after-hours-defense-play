@@ -50,7 +50,7 @@ function drawEnemyMotion(e,h) {
   ctx.fillStyle='#100b243d';ctx.beginPath();ctx.ellipse(e.x,e.y+10,h*.22,4,0,0,Math.PI*2);ctx.fill();
   const recoil=reduce?.matches?0:e.hurt/0.15*2;
   if(e.rush>0&&!reduce?.matches){Motion.draw(ctx,enemyDefinition(e).file,e.x-6,e.y+12,h*.91,pose,{alpha:.18})}
-  if(!Motion.draw(ctx,enemyDefinition(e).file,e.x-recoil,e.y+12-Math.abs(step),h*.91,pose))image(e.type==='boss'?'hero-leon':enemyDefinition(e).file,e.x,e.y+13,h);
+  if(!Motion.draw(ctx,enemyDefinition(e).file,e.x-recoil,e.y+12-Math.abs(step),h*.91,pose,{enemy:e}))image(e.type==='boss'?'hero-leon':enemyDefinition(e).file,e.x,e.y+13,h);
   ctx.restore();
 }
 function drawMercenary() {

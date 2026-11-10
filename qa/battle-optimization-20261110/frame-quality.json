@@ -1,0 +1,1241 @@
+{
+  "metric": "SSIM on blue composite; 120px board at DPR2 and 335px cutin",
+  "summary": {
+    "120": {
+      "frames": 102,
+      "minimum": 0.995783,
+      "mean": 0.9981620098039216
+    },
+    "335": {
+      "frames": 102,
+      "minimum": 0.970246,
+      "mean": 0.9861878529411765
+    }
+  },
+  "frames": [
+    {
+      "id": "goblin-guard",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.99831
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.987384
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998159
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.986913
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998016
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.985032
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998456
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.988618
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998482
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.988166
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998514
+    },
+    {
+      "id": "goblin-guard",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.987806
+    },
+    {
+      "id": "orc-technician",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998592
+    },
+    {
+      "id": "orc-technician",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.989106
+    },
+    {
+      "id": "orc-technician",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998601
+    },
+    {
+      "id": "orc-technician",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.988832
+    },
+    {
+      "id": "orc-technician",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998455
+    },
+    {
+      "id": "orc-technician",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.987771
+    },
+    {
+      "id": "orc-technician",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998387
+    },
+    {
+      "id": "orc-technician",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.988905
+    },
+    {
+      "id": "orc-technician",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998569
+    },
+    {
+      "id": "orc-technician",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.988693
+    },
+    {
+      "id": "orc-technician",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998421
+    },
+    {
+      "id": "orc-technician",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.988177
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998028
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.984801
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.99802
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.985381
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.99786
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.984237
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.997882
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.985656
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.997795
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.983568
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.997391
+    },
+    {
+      "id": "slime-cleaner",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.983242
+    },
+    {
+      "id": "gobi",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998481
+    },
+    {
+      "id": "gobi",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.987738
+    },
+    {
+      "id": "gobi",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998584
+    },
+    {
+      "id": "gobi",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.987892
+    },
+    {
+      "id": "gobi",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998341
+    },
+    {
+      "id": "gobi",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.986463
+    },
+    {
+      "id": "gobi",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998468
+    },
+    {
+      "id": "gobi",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.987667
+    },
+    {
+      "id": "gobi",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998532
+    },
+    {
+      "id": "gobi",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.988355
+    },
+    {
+      "id": "gobi",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.9983
+    },
+    {
+      "id": "gobi",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.988233
+    },
+    {
+      "id": "electric-technician",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.997226
+    },
+    {
+      "id": "electric-technician",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.978179
+    },
+    {
+      "id": "electric-technician",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.997193
+    },
+    {
+      "id": "electric-technician",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.978043
+    },
+    {
+      "id": "electric-technician",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.996149
+    },
+    {
+      "id": "electric-technician",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.972393
+    },
+    {
+      "id": "electric-technician",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.997198
+    },
+    {
+      "id": "electric-technician",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.978602
+    },
+    {
+      "id": "electric-technician",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.997259
+    },
+    {
+      "id": "electric-technician",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.976896
+    },
+    {
+      "id": "electric-technician",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.997119
+    },
+    {
+      "id": "electric-technician",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.977117
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.999104
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.991787
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.999115
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.991817
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.999191
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.992188
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998865
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.991229
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.999191
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.992002
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.999003
+    },
+    {
+      "id": "ghost-courier",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.991927
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998938
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.990756
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998804
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.99105
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.999027
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.991605
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998824
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.991158
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998887
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.990789
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998838
+    },
+    {
+      "id": "bat-nurse",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.990652
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.999195
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.992058
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.999106
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.99143
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.999355
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.993233
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.999228
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.992735
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.999187
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.992083
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.999239
+    },
+    {
+      "id": "skeleton-chef",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.992761
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.995783
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.971286
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.99597
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.971356
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.995867
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.971746
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.996411
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.974234
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.99605
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.970246
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.995886
+    },
+    {
+      "id": "mimic-storekeeper",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.971286
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998123
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.985902
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.997924
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.986019
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998078
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.985893
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998261
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.98777
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998139
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.986903
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998073
+    },
+    {
+      "id": "spider-tailor",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.987126
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998331
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.988515
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998159
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.988646
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998269
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.984231
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.997954
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.983752
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998221
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.985413
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998249
+    },
+    {
+      "id": "nightmare-counselor",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.98514
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998496
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.989179
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998371
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.988897
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.998504
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.989105
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998504
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.988478
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998441
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.989007
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998494
+    },
+    {
+      "id": "kobold-recruiter",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.989376
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.999171
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.990167
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.999196
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.990541
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.999144
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.990542
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.999224
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.991076
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.999218
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.990661
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.999217
+    },
+    {
+      "id": "duru-archivist",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.990832
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.997744
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.98548
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.997741
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.984779
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.996856
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.980783
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.997564
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.984649
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.997853
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.98627
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.997827
+    },
+    {
+      "id": "kkangtong-engineer",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.985457
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998228
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.984106
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998196
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.984142
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.9982
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.984411
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998198
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.984942
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998407
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.985432
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998465
+    },
+    {
+      "id": "ddangkong-miner",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.986368
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.996621
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.981027
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.996365
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.980785
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.996694
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.980217
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.996673
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.980544
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.997208
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.982586
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.996264
+    },
+    {
+      "id": "chalkak-photographer",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.981459
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 0,
+      "displayHeight": 120,
+      "ssim": 0.998956
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 0,
+      "displayHeight": 335,
+      "ssim": 0.989972
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 1,
+      "displayHeight": 120,
+      "ssim": 0.998921
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 1,
+      "displayHeight": 335,
+      "ssim": 0.989874
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 2,
+      "displayHeight": 120,
+      "ssim": 0.999022
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 2,
+      "displayHeight": 335,
+      "ssim": 0.990635
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 3,
+      "displayHeight": 120,
+      "ssim": 0.998971
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 3,
+      "displayHeight": 335,
+      "ssim": 0.991618
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 4,
+      "displayHeight": 120,
+      "ssim": 0.998989
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 4,
+      "displayHeight": 335,
+      "ssim": 0.990572
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 5,
+      "displayHeight": 120,
+      "ssim": 0.998949
+    },
+    {
+      "id": "bongtu-postmaster",
+      "pose": 5,
+      "displayHeight": 335,
+      "ssim": 0.990602
+    }
+  ]
+}

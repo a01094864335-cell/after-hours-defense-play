@@ -61,7 +61,7 @@ class CharacterPortraitTests(unittest.TestCase):
           reset();tutorialMode=false;setScreen('battle');board[7]=unit;board[8]={...unit,type:4};selected=7;playing=true;paused=false;sync();
           await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
           const drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
-          CanvasRenderingContext2D.prototype.drawImage=function(img,...args){if(this.canvas.id==='battle-paint'&&img.src)drawn.push(img.src);return original.call(this,img,...args)};
+          CanvasRenderingContext2D.prototype.drawImage=function(img,...args){if(this.canvas.id==='battle-paint'&&img.src)drawn.push(img.src.split('?')[0]);return original.call(this,img,...args)};
           try{draw()}finally{CanvasRenderingContext2D.prototype.drawImage=original}
           return {sameCells:JSON.stringify(cells)===before,gobi:drawn.some(x=>x.endsWith('/character-motion/gobi.webp')),jjit:drawn.some(x=>x.endsWith('/character-motion/electric-technician.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
         }''')
@@ -78,7 +78,7 @@ class CharacterPortraitTests(unittest.TestCase):
           reset();tutorialMode=false;setScreen('battle');playing=true;paused=true;wave=8;
           await Promise.all([...kinds.map(k=>k.file),'novice-adventurer'].map(id=>Motion.preload(id).decode()));
           const before=JSON.stringify(cells),drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
-          CanvasRenderingContext2D.prototype.drawImage=function(im,...args){if(this.canvas.id==='battle-paint'&&im.src)drawn.push(im.src);return original.call(this,im,...args)};
+          CanvasRenderingContext2D.prototype.drawImage=function(im,...args){if(this.canvas.id==='battle-paint'&&im.src)drawn.push(im.src.split('?')[0]);return original.call(this,im,...args)};
           try{for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw()}
           finally{CanvasRenderingContext2D.prototype.drawImage=original}
           return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/motion/novice-adventurer.webp'))};

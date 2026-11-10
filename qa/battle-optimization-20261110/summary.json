@@ -1,0 +1,79 @@
+{
+  "battleAssetBundle": {
+    "before": 9656438,
+    "after": 4792992,
+    "reductionPercent": 50.36
+  },
+  "atlases": {
+    "before": 7074028,
+    "after": 3915698,
+    "reductionPercent": 44.65
+  },
+  "atlasRgbaEstimate": {
+    "before": 106954752,
+    "after": 43273824,
+    "reductionPercent": 59.54,
+    "note": "Atlas pixels ×4; not total browser memory"
+  },
+  "font": {
+    "fontBefore": 998424,
+    "fontAfter": 190600,
+    "unicodeCharacters": 2733,
+    "glyphs": 2734,
+    "allGlyphsAndMetricsPreserved": true
+  },
+  "icons": [
+    {
+      "id": "grade",
+      "before": 145164,
+      "after": 21426
+    },
+    {
+      "id": "kind",
+      "before": 146526,
+      "after": 22714
+    },
+    {
+      "id": "king",
+      "before": 278758,
+      "after": 28868
+    }
+  ],
+  "quality": {
+    "120": {
+      "frames": 102,
+      "minimum": 0.995783,
+      "mean": 0.9981620098039216
+    },
+    "335": {
+      "frames": 102,
+      "minimum": 0.970246,
+      "mean": 0.9861878529411765
+    }
+  },
+  "nodeTests": 81,
+  "browserTests": 20,
+  "viewports": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      640
+    ],
+    [
+      390,
+      684
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "cpuNote": "Warm headless CPU draw-submission samples only; small differences are not claimed as device FPS improvement."
+}

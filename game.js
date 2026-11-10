@@ -72,7 +72,7 @@ function equipmentPreview(i){
 function sync(){
  if(typeof appRender==='function')appRender();renderMeta();syncSkill();
  SkillCutin.syncVisibility();
- uiText($('#sp'),Math.floor(sp));uiText($('#life'),'♥'.repeat(life)+'♡'.repeat(3-life));uiText($('#wave'),wave);
+ uiText($('#sp'),Math.floor(sp));uiText($('#life'),'♥'.repeat(life)+'♡'.repeat(3-life));uiText($('#wave'),String(wave).padStart(2,'0'));
  uiText($('#summon'),(summonPrice()===0?'무료 소환 · ':summonDiscount?'반값 소환 · ':'소환 · ')+summonPrice()+' SP');uiAttr($('#summon'),'data-discount',summonDiscount);
  uiAttr($('#summon'),'aria-label',summonDiscount?'다음 직원 소환 50% 할인 · 기본 '+cost+' SP에서 '+summonPrice()+' SP':'직원 소환 '+cost+' SP');
  uiProp($('#summon'),'disabled',ended||sp<summonPrice()||board.every(Boolean));
@@ -148,11 +148,11 @@ function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){
  const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;
  // Keep rank and cooldown in the same reserved footplate. Labels above units
  // cross into the previous row when the board is projected onto a short phone.
- ctx.fillStyle='#10245bc9';round(x-34,y+21,68,15,5);ctx.fill();
  const status=u.stun>0?'기절':u.pip>=5&&(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':'';
+ if(status){ctx.fillStyle='#14295dbd';round(x+10,y+21,25,14,7);ctx.fill()}
  ctx.fillStyle='#ffda42';
- for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(status?x-25+n*3.3:x+(n-(u.pip-1)/2)*5.3,y+28,1.8,0,Math.PI*2);ctx.fill()}
- if(status){ctx.fillStyle=u.stun>0?'#ffc1ec':'#fff3ca';ctx.textAlign='center';ctx.font='bold 9px system-ui';ctx.fillText(status,x+15,y+33)}
+ for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(status?x-25+n*4.5:x+(n-(u.pip-1)/2)*6.7,y+28,2.7,0,Math.PI*2);ctx.fill()}
+ if(status){ctx.fillStyle=u.stun>0?'#ffc1ec':'#fff3ca';ctx.textAlign='center';ctx.font='bold 9px system-ui';ctx.fillText(status,x+22,y+32)}
  ctx.restore();
 }
 // Pixel-sized primitives keep effects in the same style as the sprites.
@@ -231,7 +231,7 @@ function draw(){ctx.clearRect(0,0,600,600);drawBoardBase();drawAmbient();ctx.lin
   else if(!(drag?.moved&&drag.from===i))drawUnit(u,i);
  });
  if(document.activeElement===canvas){const c=cells[boardFocus];ctx.strokeStyle='#ffffff';ctx.lineWidth=4;ctx.strokeRect(c.x-36,c.y-41,72,84);}
- window.TacticalDuty?.draw(ctx);drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle='#11245d';ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
+ window.TacticalDuty?.draw(ctx);drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);if(!window.BattlePresentation?.enabled){ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle='#11245d';ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
  for(const f of fx)drawEffect(f);ctx.globalAlpha=1;if(drag?.moved)drawUnit(board[drag.from],drag.from,drag.x,drag.y,true);
  drawMercenary();drawBossHUD();drawKing();
  if(!window.BattlePresentation&&((paused&&!window.TutorialCoach?.speaking?.()&&!window.TacticalDuty?.repositioning())||ended)){ctx.fillStyle='#100b18dc';ctx.fillRect(0,0,600,600);ctx.font='bold 28px system-ui';ctx.fillStyle='#ffdaa0';ctx.fillText(ended?'왕좌가 무너졌습니다':'잠깐 휴식 중',300,270);ctx.font='16px system-ui';ctx.fillText(ended?wave+'차 공격 · '+kills+'명 저지':'계속하기 버튼을 눌러주세요',300,309)}}

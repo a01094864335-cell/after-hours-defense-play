@@ -20,3 +20,25 @@ test('matching battle manifest replaces legacy sheets and supplies matching load
  }
  assert.equal(sandbox.window.CharacterMotion.has('unknown'),false);
 });
+
+test('packed battle art stays within mobile memory and transfer budgets without frame bleed',()=>{
+ const m=JSON.parse(fs.readFileSync('assets/character-motion/manifest.json'));
+ assert.equal(m.export.gutter,2);
+ let bytes=0,pixels=0;
+ for(const r of Object.values(m.characters)){
+  bytes+=fs.statSync(r.file).size+fs.statSync(r.fallback).size;pixels+=r.width*r.sheetHeight;
+  for(let i=0;i<r.frames.length;i++){
+   const a=r.frames[i];assert(a.x>=2&&a.y>=2);assert(a.x+a.w<=r.width-2);assert(a.y+a.h<=r.sheetHeight-2);
+   for(const b of r.frames.slice(i+1))assert(a.x+a.w+2<=b.x||b.x+b.w+2<=a.x||a.y+a.h+2<=b.y||b.y+b.h+2<=a.y,'overlapping atlas samples');
+  }
+ }
+ assert(bytes<5*1024*1024);assert(pixels*4<45*1024*1024);
+ const font=fs.readFileSync('previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2');assert.equal(font.subarray(0,4).toString(),'wOF2');assert(font.length<220000);
+ for(const id of ['grade','kind','king'])assert(fs.statSync('assets/mobile/item-'+id+'.webp').size<30000);
+});
+
+test('changed atlas layouts request a checksum version so cached old frames cannot mix',()=>{
+ const b=require('./runtime-boot.cjs')('');
+ const hash=b.run("Motion.sheets.gobi.sha256.slice(0,12)");
+ assert.equal(b.run("Motion.preload('gobi').path"),'assets/character-motion/gobi.webp?v='+hash);
+});
