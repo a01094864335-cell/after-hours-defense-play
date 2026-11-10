@@ -4,6 +4,12 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      capture_baseline:
+        description: 'Recapture the pinned reference baseline (normally reuse the first audit artifact)'
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: read
 concurrency:
@@ -31,23 +37,25 @@ jobs:
       - run: python -m playwright install --with-deps chromium webkit
         if: always()
       - name: Capture baseline modal inventory
-        if: always()
+        if: always() && ((github.event_name == 'pull_request' && github.event.action == 'opened') || (github.event_name == 'workflow_dispatch' && inputs.capture_baseline))
         continue-on-error: true
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          # Keep comparisons stable across subsequent PR revisions.
+          BASE_SHA: '019694d6e5bc7fa2789e12a635f4416189586b11'
           UI_GAME_ROOT: /tmp/modal-baseline-pages
           UI_CHROMIUM_PATH: ''
           MODAL_QA_DIR: /tmp/modal-qa/baseline
           MODAL_QA_REPORT_ONLY: '1'
         run: |
           mkdir -p /tmp/modal-qa/baseline
+          printf '%s\n' "$BASE_SHA" > /tmp/modal-qa/baseline/source-commit.txt
           trap 'echo "Baseline capture failed; inspect job logs." > /tmp/modal-qa/baseline/FAILED.txt' ERR
           if [ -z "$BASE_SHA" ] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
             echo 'No verified baseline commit available for this event.' > /tmp/modal-qa/baseline/UNAVAILABLE.txt
             exit 0
           fi
           git worktree add --detach /tmp/modal-baseline-source "$BASE_SHA"
-          (cd /tmp/modal-baseline-source && node scripts/build-pages.cjs /tmp/modal-baseline-pages)
+          (cd /tmp/modal-baseline-source && GITHUB_SHA="$BASE_SHA" node scripts/build-pages.cjs /tmp/modal-baseline-pages)
           python -m unittest discover -s tests -p 'test_modal_inventory.py' -v
       - name: Capture candidate modal inventory
         if: always()
@@ -56,7 +64,11 @@ jobs:
           UI_CHROMIUM_PATH: ''
           MODAL_QA_DIR: /tmp/modal-qa/candidate
           MODAL_QA_WEBKIT: '1'
-        run: python -m unittest discover -s tests -p 'test_modal_inventory.py' -v
+        run: |
+          mkdir -p "$MODAL_QA_DIR"
+          git rev-parse HEAD > "$MODAL_QA_DIR/source-commit.txt"
+          printf '%s\n' '019694d6e5bc7fa2789e12a635f4416189586b11' > "$MODAL_QA_DIR/reference-baseline-commit.txt"
+          python -m unittest discover -s tests -p 'test_modal_inventory.py' -v
       - name: Upload modal screenshots and coverage reports
         if: always()
         uses: actions/upload-artifact@v4

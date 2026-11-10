@@ -22,16 +22,24 @@ CASES = [
     ('settings', '#menu', "openSheet('menu')"),
     ('info', '#info', "openSheet('info')"),
     ('leave', '#leave', BATTLE + 'askLeave()'),
+    ('pause', '#ref-pause', BATTLE + 'playing=true;wave=1;paused=true;sync()'),
     ('roster', '#roster', "document.querySelector('#roster-open').click()"),
     ('roster-detail', '#roster', "document.querySelector('#roster-open').click();showStaffRecord(meta.staff[0])"),
     ('shop-pack', '#shop', "document.querySelector('#shop-open').click()"),
     ('shop-items', '#shop', "document.querySelector('#shop-open').click()"),
+    ('shop-poor', '#shop', "meta.coins=0;renderMeta();document.querySelector('#shop-open').click()"),
+    ('shop-affordable', '#shop', "meta.coins=120;renderMeta();document.querySelector('#shop-open').click()"),
     ('training-staff', '#training-dialog', "document.querySelector('#training-entry').click()"),
     ('training-merc', '#training-dialog', "document.querySelector('#training-entry').click();document.querySelector('#training-tab-merc').click()"),
-    ('equipment', '#equipment', BATTLE + "sp=9999;sync();openSheet('equipment')"),
+    ('equipment', '#equipment', BATTLE + "playing=true;wave=1;sp=9999;sync();openSheet('equipment')"),
+    ('equipment-poor', '#equipment', BATTLE + "playing=true;wave=1;sp=0;sync();openSheet('equipment')"),
+    ('equipment-max', '#equipment', BATTLE + "playing=true;wave=1;sp=9999;levels.fill(5);sync();openSheet('equipment')"),
     ('story-archive', '#story-archive', "meta.stories=[CastleStories[0].id];openStoryArchive()"),
+    ('story-empty', '#story-archive', "meta.stories=[];openStoryArchive()"),
+    ('story-owned', '#story-archive', "meta.stories=CastleStories.map(s=>s.id);openStoryArchive()"),
     ('cinematic', '#promo', "document.querySelector('#enter-battle').click()"),
     ('guide', '#guide', BATTLE + "showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.')"),
+    ('guide-long', '#guide', BATTLE + "showGuide('당직 안내 · 전투 규칙',document.querySelector('#info').textContent.trim())"),
     ('perk-reward', '#perk', PERK),
     ('perk-wave5', '#perk', PERK + 'wave=5;life=3;renderPerkChoices();sync()'),
     ('perk-wave15-expanded', '#perk', PERK + "wave=15;renderPerkChoices();sync();document.querySelectorAll('#perk details').forEach(e=>e.open=true)"),
@@ -39,8 +47,10 @@ CASES = [
     ('perk-equipment-targets', '#perk', PERK + "showPerkTargets('equipment')"),
     ('perk-staff-targets', '#perk', PERK + "showPerkTargets('staff')"),
     ('deck', '#deck', 'openDeck()'),
+    ('deck-swap', '#deck', 'openDeck();swapDeckStaff(meta.staff.find(id=>!meta.deck.includes(id)))'),
     ('daily', '#daily-events-dialog', "document.querySelector('#daily-events-open').click()"),
     ('journey', '#journey-dialog', "document.querySelector('#journey-summary').click()"),
+    ('journey-populated', '#journey-dialog', "meta.profile.records=Array.from({length:20},(_,i)=>{wave=20+i;const record=runRecord();return {...record,id:'modal-qa-'+i,coins:250+i,seconds:600+i}});meta.profile.best=38;meta.profile.presets[0]={staff:meta.deck.slice(),support:meta.equipped};readProfile(meta.profile);document.querySelector('#journey-summary').click()"),
     ('backup', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click()"),
     ('backup-invalid', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value='{invalid';document.querySelector('#save-preview').click()"),
     ('backup-preview', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value=JSON.stringify(SaveTransfer.exportData());document.querySelector('#save-preview').click()"),
@@ -50,6 +60,7 @@ CASES = [
     ('staff-trial', '#staff-trial', "document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click()"),
     ('staff-trial-practice', '#staff-trial', "document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click();document.querySelector('#trial-play').click()"),
     ('notice', '.notice-dialog', BATTLE + "document.querySelector('.battle-notice').click()"),
+    ('notice-long', '.notice-dialog', BATTLE + "say(document.querySelector('#board-keyboard-help').textContent+' '+document.querySelector('#info .grade-guide').textContent);document.querySelector('.battle-notice').click()"),
     ('tutorial', '#tutorial-gobi', "meta.tutorialComplete=false;restartTo('battle');document.querySelector('#promo-skip').click()"),
     ('result', '#result', 'wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()'),
     ('session-notice', '#session-notice', None),
@@ -99,7 +110,7 @@ class ModalInventoryTests(unittest.TestCase):
             try:
                 webkit = self.pw.webkit.launch()
                 self.addCleanup(webkit.close)
-                browsers.append(('webkit', webkit, SIZES[1:3], [c for c in CASES if c[0] in ('settings', 'leave', 'notice', 'perk-reward', 'perk-full-life', 'perk-equipment-targets')]))
+                browsers.append(('webkit', webkit, SIZES[1:3], [c for c in CASES if c[0] in ('settings', 'leave', 'notice', 'pause', 'perk-reward', 'perk-full-life', 'perk-equipment-targets')]))
             except Exception as exc:
                 failures.append('WebKit launch: '+str(exc))
         for engine, browser, sizes, cases in browsers:
@@ -139,6 +150,16 @@ class ModalInventoryTests(unittest.TestCase):
                         surface.wait_for(state='visible')
                         if name == 'perk-full-life':
                             self.assertTrue(page.locator('#perk-life').is_disabled())
+                        if name in ('shop-poor', 'shop-affordable'):
+                            self.assertEqual(page.locator('#asset-shop-host .purchase').is_disabled(), name == 'shop-poor')
+                        if name == 'equipment':
+                            self.assertGreater(page.locator('#cards button:visible:enabled').count(), 0)
+                        if name in ('equipment-poor', 'equipment-max'):
+                            self.assertEqual(page.locator('#cards button:visible:enabled').count(), 0)
+                        if name == 'deck-swap':
+                            self.assertEqual(page.locator('#deck-options .swap-target').count(), 1)
+                        if name == 'journey-populated':
+                            self.assertEqual(page.locator('#run-history-list li').count(), 20)
                         inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         surface.evaluate("""async root=>{await document.fonts.ready;const images=[];function walk(n){for(const e of n.querySelectorAll('*')){if(e.tagName==='IMG'&&e.getBoundingClientRect().width){e.loading='eager';images.push(e)}if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);await Promise.all(images.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,5000)})));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}""")
                         entry['geometry'] = surface.evaluate(GEOMETRY)
@@ -165,11 +186,18 @@ class ModalInventoryTests(unittest.TestCase):
                         entry['touchFindings'] = [c for c in g['controls'] if not c['disabled'] and c['visibleArea'] and (c['undersized'] or c['clipped'])]
                         for c in g['controls']:
                             primary = (c['label'].endswith('-close') or '닫기' in c['label'] or
-                                       c['label'] in ('shared-menu-confirm', 'info-close', 'leave-confirm', 'leave-cancel', 'guide-next'))
+                                       c['label'] in ('shared-menu-confirm', 'info-close', 'leave-confirm', 'leave-cancel', 'guide-next', 'pause-continue', 'pause-guide', 'pause-home'))
                             if primary and not c['disabled'] and c['visibleArea'] and c['undersized']:
                                 entry['errors'].append('Primary/close touch target below 44px: '+c['label'])
                         if selector != '#game' and not g['text'] and not g['controls']:
                             entry['errors'].append('Empty fixture')
+                        if name == 'pause':
+                            for c in g['controls']:
+                                if c['label'].startswith('pause-') and (c['clipped'] or not c['visibleArea']):
+                                    entry['errors'].append('Pause action is clipped or unreachable: '+c['label'])
+                            page.locator('#pause-continue').click()
+                            self.assertFalse(page.evaluate('paused'))
+                            self.assertTrue(page.locator('#ref-pause').is_hidden())
                     except Exception as exc:
                         entry['errors'].append(str(exc))
                         try:

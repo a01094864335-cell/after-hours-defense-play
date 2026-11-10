@@ -176,3 +176,15 @@ class SharedChromeTests(unittest.TestCase):
             self.assertEqual(page.locator('#asset-shop-host .shared-title').evaluate('e=>getComputedStyle(e).webkitTextStrokeWidth'),'0px')
             page.locator('#asset-shop-host .close').click()
             page.context.close()
+
+    def test_backup_edit_invalidates_preview_presentation(self):
+        page=self.open(320,568)
+        page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta();document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value=JSON.stringify(SaveTransfer.exportData());document.querySelector('#save-preview').click()")
+        page.wait_for_function("document.querySelector('#save-transfer-status').dataset.phase==='preview'")
+        self.assertFalse(page.locator('#save-restore').is_hidden())
+        page.locator('#save-text').fill('{edited')
+        page.wait_for_function("document.querySelector('#save-transfer-status').dataset.phase==='info'")
+        self.assertTrue(page.locator('#save-restore').is_hidden())
+        page.locator('#save-preview').click()
+        page.wait_for_function("document.querySelector('#save-transfer-status').dataset.phase==='error'")
+        page.context.close()
