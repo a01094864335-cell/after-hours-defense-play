@@ -48,7 +48,7 @@ html body button.shared-icon-button>img,
 #asset-shop .shared-art-header{padding-top:36px!important}
 #asset-shop .shared-art-header .wallet{position:absolute!important;top:3px!important;left:12px!important;right:auto!important;max-width:calc(100% - 70px)!important;height:28px!important;min-height:0!important;margin:0!important;box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:6px!important;padding:2px 10px!important;line-height:20px!important;font-size:14px!important;white-space:nowrap!important}
 /* Full-screen illustrated adapters retain their frame. Ordinary dialogs use paper. */
-html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog),html body dialog#roster.shared-paper-modal.asset-roster-detail{border:12px solid transparent!important;border-image:url('assets/shared-chrome/paper.webp') 90 fill / 12px / 0 stretch!important;border-radius:0!important;background:transparent!important;color:#101d49!important;padding:8px 10px 12px!important;box-shadow:0 9px 0 #0a133c80,0 18px 60px #030d3a80!important;text-shadow:none!important}
+html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog),html body dialog#roster.shared-paper-modal.asset-roster-detail{border:12px solid transparent!important;border-image:url('assets/shared-chrome/modal-paper.svg?v=2') 24 fill / 16px / 0 stretch!important;border-radius:0!important;background:transparent!important;color:#101d49!important;padding:8px 10px 12px!important;box-shadow:0 9px 0 #0a133c80,0 18px 60px #030d3a80!important;text-shadow:none!important}
 html body dialog.shared-paper-modal::backdrop{background:#08143ca8!important;backdrop-filter:blur(2px)}
 html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog)::before,html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog)::after{display:none!important}
 html body dialog.shared-paper-modal :is(.ui-dialog-header,.sheet-head,.shared-modal-header){display:flex!important;align-items:center!important;gap:8px!important;min-height:60px!important;margin:0 0 12px!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important}
@@ -93,3 +93,188 @@ html body #recruit-dialog.shared-paper-modal .shared-recruit-title{box-sizing:bo
 
 /* Routine record/backup actions are paper; restore keeps its separate confirmation styling. */
 html body #journey-dialog.shared-paper-modal #deck-presets button,html body #save-transfer-dialog.shared-paper-modal :is(#save-download,#save-preview){box-sizing:border-box!important;min-height:44px!important;background:#fff8e5!important;color:#192951!important;border:2px solid #c8ac77!important;border-radius:12px!important;box-shadow:0 2px #ceb383!important;font:800 14px/1.4 'Apple SD Gothic Neo',sans-serif!important;padding:9px 12px!important;text-shadow:none!important;white-space:normal!important}
+
+/* Modal audit: one compact hierarchy, fixed-size paper corners and explicit states.
+   Scope excludes story cinematics and the full-screen illustrated adapters. */
+html body dialog.shared-paper-modal:not(.asset-shop-dialog):not(.asset-training-dialog):not(.asset-roster-dialog){--ink:#172349;--muted:#526078;--line:#d0b88e;--line-soft:#decba9;box-sizing:border-box!important;gap:8px!important;max-height:calc(100dvh - 20px)!important;max-width:calc(100vw - 20px)!important;padding:10px 12px 14px!important;color:#172349!important;scrollbar-color:#c49e61 #fff2d7}
+html body dialog.shared-paper-modal :is(.ui-dialog-header,.sheet-head,.shared-modal-header){margin-bottom:4px!important}
+html body dialog.shared-paper-modal .panel-scroll-body{padding:2px 3px 8px!important;scrollbar-gutter:auto!important}
+html body dialog.shared-paper-modal .panel-scroll-body>*+*{margin-top:10px!important}
+html body dialog.shared-paper-modal :is(.perk-content,.equipment-content,.help-content){padding:0!important;margin:0!important;gap:8px!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body) :is(h3,h4,b,strong,small){color:inherit}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#trial-body) details{border:1px solid #d6bb8a!important;border-radius:10px!important;background:#fff8e8!important;padding:0 10px!important;box-shadow:none!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#trial-body) summary{box-sizing:border-box;min-height:44px!important;padding:10px 0!important;color:#253859!important;font-size:14px!important;line-height:1.5!important;font-weight:800!important;cursor:pointer}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#trial-body) details[open]{padding-bottom:10px!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#trial-body) input:not([type=range]),html body dialog.shared-paper-modal textarea{box-sizing:border-box!important;max-width:100%!important;background:#fffdf5!important;border:1px solid #b59b71!important;color:#172349!important;min-height:44px!important}
+/* Reward cards use their own visible boundaries; blue hairline dividers are gone. */
+html body #perk.shared-paper-modal :is(#perk-intro,#perk-note){border:0!important;border-image:none!important;background:none!important;box-shadow:none!important;padding:0!important;margin:0 0 8px!important;color:#34405a!important;font-size:13px!important;line-height:1.55!important}
+html body #perk.shared-paper-modal :is(#perk-options,#perk-targets,#tactical-bonuses){box-sizing:border-box!important;display:grid;gap:8px!important;padding:0!important;margin:10px 0 0!important;border:0!important;background:none!important;box-shadow:none!important;min-width:0!important}
+html body #perk.shared-paper-modal :is(#perk-options,#perk-targets,#tactical-bonuses) button{box-sizing:border-box!important;width:100%!important;min-width:0!important;min-height:52px!important;height:auto!important;margin:0!important;padding:11px 12px!important;border:2px solid #25345a!important;border-image:none!important;border-radius:12px!important;background:linear-gradient(135deg,#fffbec,#f9e5bb)!important;color:#172349!important;box-shadow:0 2px #c5a577!important;font:800 14px/1.5 'Apple SD Gothic Neo',sans-serif!important;text-shadow:none!important;white-space:normal!important;overflow-wrap:anywhere!important;text-align:left!important;align-items:center!important;gap:10px!important}
+html body #perk.shared-paper-modal #perk-options button::before{width:32px!important;height:32px!important;border:1px solid #d4ac60!important;border-radius:9px!important;background-color:#ffe6a3!important;background-size:22px!important;filter:contrast(1.4)!important}
+html body #perk.shared-paper-modal :is(#perk-options,#perk-targets,#tactical-bonuses) button:disabled{background:#ede4d4!important;color:#746f67!important;border-color:#c2b59e!important;box-shadow:none!important;opacity:1!important;filter:none!important;cursor:not-allowed!important}
+html body #perk.shared-paper-modal #perk-options button:disabled::before{filter:grayscale(1)!important;opacity:.55!important;background-color:#e0d6c4!important;border-color:#c2b59e!important}
+html body #perk.shared-paper-modal :is(#perk-keep,#perk-reposition){background:#fff9e9!important;border-color:#b8a47e!important;box-shadow:0 2px #d4c1a0!important}
+html body #perk.shared-paper-modal #perk-cashout{background:#fff0e2!important;border-color:#b67a45!important;color:#774324!important}
+html body #perk.shared-paper-modal #build-choices{margin:0!important}
+html body #perk.shared-paper-modal #build-choices button{align-items:flex-start!important;margin-top:8px!important}
+html body #perk.shared-paper-modal #build-choices button small{font-size:12px!important;color:#536079!important;line-height:1.5!important}
+html body #perk.shared-paper-modal #tactical-owned:empty{display:none!important}
+html body #perk.shared-paper-modal #tactical-owned:not(:empty){font-size:12px!important;line-height:1.5!important;padding:8px!important;background:#f7e9cb!important;border-radius:8px!important;color:#4e493e!important}
+html body #perk.shared-paper-modal .ui-dialog-actions:has(>button[hidden]:only-child){display:none!important}
+/* Consistent paper surfaces for non-cinematic content and real action buttons. */
+html body :is(#equipment,#deck,#starter-choice,#staff-trial,#daily-events-dialog,#story-archive,#journey-dialog,#save-transfer-dialog).shared-paper-modal:not(.concept-modal) :is(.card,.story-card,#starter-options article,.dossier-section){background:#fff9e9!important;color:#172349!important;border:1px solid #d4ba8b!important;border-radius:12px!important;box-shadow:none!important}
+html body :is(#equipment,#deck,#starter-choice,#staff-trial,#story-archive,#journey-dialog,#save-transfer-dialog).shared-paper-modal:not(.concept-modal) :is(.panel-scroll-body,#starter-options,#trial-body) button:not(.shared-icon-button){box-sizing:border-box!important;min-height:44px!important;background:#fff8e5!important;color:#192951!important;border:2px solid #c8ac77!important;border-radius:12px!important;box-shadow:0 2px #ceb383!important;text-shadow:none!important;white-space:normal!important;line-height:1.45!important;padding:10px!important}
+html body :is(#equipment,#deck,#starter-choice,#staff-trial,#story-archive,#journey-dialog,#save-transfer-dialog).shared-paper-modal:not(.concept-modal) button:disabled{background:#eae4d7!important;color:#77736b!important;border-color:#c4baa6!important;box-shadow:none!important;opacity:1!important;filter:none!important}
+html body #deck.shared-paper-modal #deck-options button.selected,html body dialog.shared-paper-modal button[aria-pressed=true]:not(.shared-icon-button){background:#235ed0!important;color:#fff7df!important;border-color:#122852!important;box-shadow:inset 0 0 0 2px #6097ed!important}
+html body #equipment.shared-paper-modal #equipment-balance,html body #story-archive.shared-paper-modal #story-progress{background:#f4e4bf!important;color:#403c36!important;border:1px solid #c9ad79!important;border-radius:10px!important;padding:10px!important;margin:0!important}
+html body #daily-events-dialog.shared-paper-modal #daily-events-list>article{padding:12px!important;margin:8px 0!important;background:#fff9e8!important;border:1px solid #d7bf97!important;border-radius:12px!important}
+html body #recruit-dialog.shared-paper-modal .ref-recruit-actions>button{min-height:44px!important;border:2px solid #baa179!important;background:#fff9e8!important;color:#172349!important;border-radius:12px!important;padding:10px!important}
+html body #recruit-dialog.shared-paper-modal .ref-recruit-actions>button:last-child,html body #staff-trial.shared-paper-modal #trial-play{background:#ffdb39!important;color:#172349!important;border:2px solid #26365a!important;box-shadow:0 2px #26365a!important}
+html body #leave.shared-paper-modal #leave-confirm,html body #save-transfer-dialog.shared-paper-modal #save-restore{background:#ffe4d8!important;color:#85362c!important;border:2px solid #aa5c4e!important;box-shadow:0 2px #aa5c4e!important}
+html body #starter-choice.shared-paper-modal #starter-options,html body #staff-trial.shared-paper-modal #trial-body{min-height:0!important;flex:1 1 auto!important;overflow:auto!important;overscroll-behavior:contain}
+html body #staff-trial.shared-paper-modal[data-practicing=true]{height:100dvh!important;max-height:100dvh!important;max-width:100vw!important;border:0!important;border-image:none!important;background:#fff3d9!important;padding:8px!important}
+html body #staff-trial.shared-paper-modal[data-practicing=true] #trial-body{overflow:hidden!important}
+html body dialog.shared-paper-modal [hidden]{display:none!important}
+
+/* Individual modal content pass. Each screen keeps its own useful hierarchy. */
+html body dialog.shared-paper-modal .shared-detail-group{display:grid;gap:8px;margin:12px 0 0!important;padding:12px!important;border:1px solid #d5bd95;border-radius:12px;background:#fff9eb}
+html body dialog.shared-paper-modal .shared-detail-group>h3{font:800 14px/1.45 'Apple SD Gothic Neo',sans-serif;margin:0 0 2px;color:#46516b!important;letter-spacing:0}
+html body #menu.shared-paper-modal .shared-detail-group>button{background:#fff8e5!important;border:2px solid #c8ac77!important;border-radius:12px!important;box-shadow:0 2px #ceb383!important;font:800 15px/1.4 'Apple SD Gothic Neo',sans-serif!important;min-height:44px!important;padding:9px 12px!important;width:100%;text-align:left}
+html body #menu.shared-paper-modal #shared-menu-reset{border-color:#d7a18e;background:#fff1e8}
+html body #menu.shared-paper-modal #shared-menu-reset>h3{color:#8c4d3e!important}
+html body #menu.shared-paper-modal :is(.sfx-settings,.bgm-settings){padding:12px!important;gap:6px!important}
+html body #menu.shared-paper-modal :is(.sfx-settings,.bgm-settings) output{font-variant-numeric:tabular-nums;font-weight:900;color:#194b9d}
+/* Guide: one readable instruction and one clear next step. */
+html body #guide.shared-paper-modal #guide-text{font-size:16px!important;line-height:1.75!important;padding:12px!important;margin:0!important;border-left:4px solid #efbf39!important;background:#fff9e9!important;border-radius:8px!important;white-space:pre-line}
+html body #guide.shared-paper-modal #discount-tutorial-skip{background:#fff8e5!important;border-color:#c8ac77!important;box-shadow:none!important;font-size:14px!important}
+/* Help: numbered learning steps and a separate reference accordion. */
+html body #info.shared-paper-modal .ref-guide-step{grid-template-columns:28px minmax(0,1fr) 36px!important;padding:12px!important;gap:10px!important;background:#fffbef!important;border:1px solid #d3b990!important;border-radius:12px!important;align-items:start!important}
+html body #info.shared-paper-modal .ref-guide-step>b{display:grid;place-items:center;min-height:28px;background:#235ed0;color:#fff6dc!important;border-radius:8px;font-size:17px}
+html body #info.shared-paper-modal .ref-guide-step h3{color:#172349!important;margin:0 0 4px!important;font-size:15px!important}
+html body #info.shared-paper-modal .ref-guide-step p{font-size:13px!important;margin:0!important;line-height:1.6!important}
+html body #info.shared-paper-modal .boss-guide article{grid-template-columns:48px minmax(0,1fr)!important;gap:10px!important;border-top:1px solid #dfcbaa!important;padding:12px 0!important}
+html body #info.shared-paper-modal .boss-counter{color:#276344!important;font-weight:800}
+/* Leaving/resetting: consequence copy precedes the two differently weighted choices. */
+html body #leave.shared-paper-modal .panel-scroll-body p{padding:14px!important;border:1px solid #dca38d!important;border-left:4px solid #b4614e!important;border-radius:10px!important;background:#fff1e7!important;font-size:14px!important;line-height:1.7!important;margin:0!important}
+/* Equipment: portrait and live level on the left, actual SP price in its own band. */
+html body #equipment.shared-paper-modal #cards{gap:10px!important}
+html body #equipment.shared-paper-modal #cards .card{display:grid!important;grid-template-columns:52px minmax(0,1fr)!important;grid-template-areas:'art label' 'cost cost'!important;align-items:center!important;gap:8px 12px!important;min-height:112px!important;padding:12px!important;text-align:left!important}
+html body #equipment.shared-paper-modal #cards .card>img{grid-area:art!important;width:52px!important;height:58px!important;object-fit:contain!important}
+html body #equipment.shared-paper-modal #cards .card>span{grid-area:label!important;font-weight:900;font-size:16px!important;line-height:1.4!important}
+html body #equipment.shared-paper-modal #cards .card>span small{display:block;color:#596278!important;font-size:12px!important;margin-top:4px}
+html body #equipment.shared-paper-modal #cards .card>b{grid-area:cost!important;justify-self:stretch!important;padding:6px 10px!important;border-radius:7px;background:#ffe5a1;color:#624a16!important;text-align:right;font-size:13px!important}
+html body #equipment.shared-paper-modal #cards .card:disabled>b{background:#dfd7c9!important;color:#777165!important}
+/* Deck: stable portrait tiles with explicit deployed/next-swap labels, not color alone. */
+html body #deck.shared-paper-modal #deck-tip{font-size:13px!important;line-height:1.6!important;background:#f4e6c9!important;padding:10px!important;border-radius:10px!important;border:1px solid #d5bb90!important}
+html body #deck.shared-paper-modal #deck-options{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+html body #deck.shared-paper-modal #deck-options .deck-choice{display:grid!important;grid-template-columns:44px minmax(0,1fr)!important;grid-template-areas:'face name' 'role role' 'state state'!important;gap:5px 8px!important;text-align:left!important;padding:10px!important;min-width:0!important}
+html body #deck.shared-paper-modal .deck-choice>img{grid-area:face;width:44px!important;height:48px!important;object-fit:contain}
+html body #deck.shared-paper-modal .deck-choice>strong{grid-area:name;align-self:center;font-size:14px!important;overflow-wrap:anywhere}
+html body #deck.shared-paper-modal .deck-choice>span{grid-area:role;font-size:12px!important;line-height:1.45!important}
+html body #deck.shared-paper-modal .deck-choice>small{grid-area:state;padding:4px 6px;border-radius:6px;background:#eee1c7;color:#5e584a!important;font-size:11px!important}
+html body #deck.shared-paper-modal .deck-choice.picked>small{background:#deedd9!important;color:#315c3b!important}
+html body #deck.shared-paper-modal .deck-choice.swap-target>small{background:#ffe380!important;color:#382f17!important}
+/* Daily modifiers are readable rule cards; the category label stays separate. */
+html body #daily-events-dialog.shared-paper-modal .daily-kind{display:inline-block;padding:3px 8px;border-radius:6px;background:#e2ebff;color:#285298!important;font-size:11px;font-weight:800}
+html body #daily-events-dialog.shared-paper-modal #daily-events-list h3{margin:7px 0 4px!important;color:#1b2d51!important;font-size:16px!important}
+html body #daily-events-dialog.shared-paper-modal #daily-events-list p{margin:0!important;font-size:13px!important;line-height:1.65!important}
+/* Record book: goal summary, three persistent save slots, then a compact history. */
+html body #journey-dialog.shared-paper-modal #journey-goal{white-space:pre-line;padding:12px!important;margin:0!important;background:#eaf0ff!important;border:1px solid #aebfdf!important;border-radius:10px!important;line-height:1.65!important;font-weight:800}
+html body #journey-dialog.shared-paper-modal #deck-presets{display:grid;gap:10px}
+html body #journey-dialog.shared-paper-modal #deck-presets>div{padding:12px!important;border:1px solid #d4ba90!important;border-radius:12px!important;background:#fff9eb!important;gap:8px!important}
+html body #journey-dialog.shared-paper-modal #deck-presets>div>span{font-weight:900;color:#253857!important;padding-bottom:4px}
+html body #journey-dialog.shared-paper-modal #run-history-list{list-style:none;padding:0!important;display:grid;gap:8px}
+html body #journey-dialog.shared-paper-modal #run-history-list li{display:grid;gap:5px;padding:12px!important;background:#fff9eb!important;border:1px solid #dec9a6!important;border-radius:10px!important;font-size:13px;line-height:1.5}
+html body #journey-dialog.shared-paper-modal #run-history-list li b{color:#2c4d88!important;font-size:15px}
+html body #journey-dialog.shared-paper-modal #run-history-list li span{color:#66614f!important;font-size:12px}
+/* Backup: exported safety copy before import fields; a validated preview is distinct. */
+html body #save-transfer-dialog.shared-paper-modal .save-transfer-actions>p:first-child{border-left:4px solid #b57935;background:#fff0d0;padding:12px!important;margin:0!important;border-radius:8px;line-height:1.65!important}
+html body #save-transfer-dialog.shared-paper-modal .shared-detail-group label{display:grid!important;gap:7px!important;font-size:13px!important;font-weight:800;margin:0!important}
+html body #save-transfer-dialog.shared-paper-modal #save-text{min-height:112px!important;max-height:210px;resize:vertical;font:12px/1.6 ui-monospace,monospace!important;padding:10px!important}
+html body #save-transfer-dialog.shared-paper-modal #save-file{width:100%;padding:8px!important;font-size:12px}
+html body #save-transfer-dialog.shared-paper-modal #save-file::file-selector-button{min-height:36px;margin-right:8px;border:1px solid #ba9f72;border-radius:7px;padding:6px 9px;background:#f6e5bf;color:#25334b;font-weight:800}
+html body #save-transfer-dialog.shared-paper-modal #save-transfer-status:not(:empty){padding:12px!important;background:#ecf0f9;border:1px solid #b7c2d6;border-radius:10px;font-size:13px!important;line-height:1.65!important;overflow-wrap:anywhere}
+html body #save-transfer-dialog.shared-paper-modal #save-transfer-status[data-phase=error]{background:#fff0e9!important;border-color:#d3a091!important;color:#8b4338!important}
+html body #save-transfer-dialog.shared-paper-modal #save-transfer-status[data-phase=preview]{background:#edf5e6!important;border-color:#a9bf96!important;color:#355936!important}
+/* Story library keeps its book-cover identity and does not impersonate a store. */
+html body #story-archive.shared-paper-modal #story-archive-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+html body #story-archive.shared-paper-modal .story-card{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:6px!important;padding:10px!important;text-align:left!important;min-width:0!important}
+html body #story-archive.shared-paper-modal .story-cover{display:grid!important;place-items:center!important;width:100%!important;height:auto!important;aspect-ratio:4/3!important;overflow:hidden;border-radius:8px;background:#dcd6cd!important}
+html body #story-archive.shared-paper-modal .story-cover img{width:100%!important;height:100%!important;object-fit:cover!important}
+html body #story-archive.shared-paper-modal .story-card b{font-size:14px!important;line-height:1.4!important}
+html body #story-archive.shared-paper-modal .story-card small,html body #story-archive.shared-paper-modal .story-card em{font-size:11px!important;line-height:1.45!important;font-style:normal}
+html body #story-archive.shared-paper-modal .story-card.collected em{color:#316347!important;font-weight:800}
+/* Recruitment is a reveal: heading, character, identity, then duplicate/quote explanation. */
+html body #recruit-dialog.shared-paper-modal .recruit-reveal .panel-scroll-body>img{display:block!important;width:156px!important;height:clamp(110px,22dvh,180px)!important;object-fit:contain!important;margin:8px auto!important}
+html body #recruit-dialog.shared-paper-modal .recruit-reveal .panel-scroll-body>strong{font-size:20px!important;line-height:1.35!important;color:#1b3158!important;margin:8px 0!important}
+html body #recruit-dialog.shared-paper-modal .recruit-reveal .panel-scroll-body>p{padding:12px!important;margin:8px 0!important;border:1px solid #dfcaa4!important;border-radius:10px;background:#fff9ea!important;font-size:13px!important;line-height:1.65!important}
+html body #recruit-dialog.shared-paper-modal .recruit-point-guide{border-left:4px solid #d3a337!important;text-align:left!important}
+/* Starter choice and trial: compare roles, try safely, then choose intentionally. */
+html body #starter-choice.shared-paper-modal #starter-options article{padding:12px!important;gap:8px 12px!important;grid-template-columns:60px minmax(0,1fr)!important}
+html body #starter-choice.shared-paper-modal #starter-options article>b{font-size:18px!important;color:#20365b!important}
+html body #starter-choice.shared-paper-modal #starter-options article>small{font-size:13px!important;line-height:1.5!important;color:#5a6070!important}
+html body #starter-choice.shared-paper-modal #starter-options article>div>button:last-child{background:#ffdf65!important;border-color:#bd8f24!important;color:#443614!important;font-weight:900}
+html body #starter-choice.shared-paper-modal>small{font-size:12px!important;line-height:1.5!important;color:#655841!important;text-align:center}
+html body #staff-trial.shared-paper-modal #trial-arena{height:142px!important;background:radial-gradient(ellipse at center,#f8f2d9,#d9e6fb)!important;border:1px solid #adbcd6!important;border-radius:12px!important}
+html body #staff-trial.shared-paper-modal #trial-ability{padding:12px!important;background:#fff9e9!important;border:1px solid #d7c09a!important;border-radius:10px!important;font-size:14px!important;line-height:1.65!important;margin:0!important}
+html body #staff-trial.shared-paper-modal #trial-body>small{color:#62695e!important;font-size:12px!important;line-height:1.5!important}
+/* Notices stay short; the pause overlay is a decision card, not another full screen. */
+html body dialog.notice-dialog.shared-paper-modal{width:min(400px,calc(100vw - 24px))!important;height:auto!important}
+html body dialog.notice-dialog.shared-paper-modal .panel-scroll-body p{font-size:15px!important;line-height:1.7!important;margin:0!important;padding:8px!important}
+html body #ref-pause #pause-window{box-sizing:border-box!important;width:min(380px,calc(100vw - 28px))!important;max-height:calc(100dvh - 28px)!important;overflow:auto!important;padding:18px!important;background:#fff3d9!important;border:3px solid #253659!important;border-radius:18px!important;box-shadow:0 7px #15234680!important;color:#203457!important}
+html body #ref-pause #pause-window>h2{font:24px/1.4 SharedComic,sans-serif!important;color:#203457!important;text-align:center;margin:0 0 10px!important}
+html body #ref-pause #pause-window>button{display:block!important;width:100%!important;min-height:46px!important;margin:8px 0 0!important;padding:10px!important;border:2px solid #baa47a!important;border-radius:12px!important;background:#fff9e9!important;color:#25395b!important;white-space:normal!important}
+html body #ref-pause #pause-continue{background:#ffde58!important;border-color:#253659!important;font-weight:900!important}
+/* Illustrated adapters keep their own art; only their task-specific information is refined. */
+#asset-shop .paper .stats b{font-variant-numeric:tabular-nums;line-height:1.2}
+#asset-shop .paper details summary{min-height:44px;display:flex;align-items:center;line-height:1.45}
+#asset-shop #products article{display:grid;grid-template-columns:56px minmax(0,1fr);gap:6px 10px;align-items:center}
+#asset-shop #products article>img{grid-column:1;grid-row:1/4;width:52px;height:58px;object-fit:contain}
+#asset-shop #products article>:is(h3,p,span){grid-column:2;min-width:0;margin:0;line-height:1.45}
+#asset-shop #products article>button{grid-column:1/-1;min-height:46px;margin-top:4px}
+#asset-shop .purchase:disabled{background:#eadfc7!important;color:#74664c!important;border-color:#ae9973!important;box-shadow:none!important}
+#asset-shop .purchase:disabled .button-coin{filter:grayscale(.6);opacity:.7}
+#asset-shop .roster-link{min-height:44px!important;border:1px solid #c6a87b!important;border-radius:10px!important;background:#fff8e7!important;padding:8px 10px!important}
+#asset-training .upgrade-bar .balance{flex-wrap:wrap;gap:4px 10px;line-height:1.4}
+#asset-training .upgrade-bar #upgrade:disabled{background:#e7dcc7!important;color:#776849!important;border-color:#b39d77!important;box-shadow:none!important;filter:none!important}
+#asset-training #effects details>summary small{font-size:clamp(11px,2.9cqw,14px);line-height:1.4}
+#asset-training #effects details ol{margin-top:8px}
+#asset-training #effects details li{grid-template-columns:38px minmax(0,1fr) 22px;line-height:1.5}
+#asset-roster .r-tabs button{min-height:44px!important}
+#asset-roster .r-card:focus-visible{outline:3px solid #195dd7!important;outline-offset:-4px!important}
+#asset-roster .r-stamp{background:#edf6da80}
+
+/* Pixel review corrections: compact Korean wrapping, quiet focus and readable dossier state. */
+html body dialog.shared-paper-modal :is(h2,h3,button,summary){word-break:keep-all!important;overflow-wrap:break-word!important}
+html body #journey-dialog.shared-paper-modal .shared-modal-header h2{font-size:clamp(17px,4.6vw,23px)!important;line-height:1.35!important;padding:12px 10px!important}
+html body #save-transfer-dialog.shared-paper-modal #save-restore{font-size:clamp(15px,4.3vw,18px)!important;line-height:1.5!important;padding:11px 14px!important;word-break:keep-all!important}
+html body dialog.shared-paper-modal :is(button,input,summary,textarea):focus-visible{outline:2px solid #8d6318!important;outline-offset:2px!important;box-shadow:0 0 0 4px #ffe7a2!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body):focus{outline:none!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body):focus-visible{outline:2px solid #b38a3c!important;outline-offset:-2px!important;box-shadow:inset 0 0 0 3px #fff1c8!important}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body){scrollbar-width:thin;scrollbar-color:#aa8240 #f0dfbd}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body)::-webkit-scrollbar{width:6px;height:6px}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body)::-webkit-scrollbar-thumb{background:#aa8240;border-radius:6px;border:1px solid #f0dfbd}
+html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#trial-body)::-webkit-scrollbar-track{background:#f0dfbd;border-radius:6px}
+html body #daily-events-dialog.shared-paper-modal .daily-kind{color:#263d65!important;background:#e5ebf4!important;border:1px solid #b8c3d5!important;opacity:1!important;font-size:11px!important;font-weight:900!important}
+html body dialog#roster.asset-roster-detail.shared-paper-modal #roster-title{color:#fff8e4!important;-webkit-text-fill-color:#fff8e4!important;-webkit-text-stroke:0 transparent!important;text-shadow:1px 2px #101d49!important;font-size:clamp(18px,4.8vw,24px)!important}
+html body dialog#roster.asset-roster-detail.shared-paper-modal .dossier-stamp{color:#2b563b!important;background:#dfecd3!important;border:1px solid #8fa67b!important;border-radius:7px!important;padding:4px 8px!important;opacity:1!important;font-weight:900!important;text-shadow:none!important}
+
+/* Keep Korean phrase endings together without constraining backup JSON fields. */
+html body dialog.shared-paper-modal :is(p,label,legend,small){word-break:keep-all;overflow-wrap:break-word}
+html body #save-transfer-dialog.shared-paper-modal #save-text{word-break:break-all!important;overflow-wrap:anywhere!important}
+
+html body dialog#roster.asset-roster-detail.shared-paper-modal #roster-detail .dossier-stamp{color:#2b563b!important;-webkit-text-fill-color:#2b563b!important}
+html body #ref-pause #pause-window>button#pause-continue{background:#ffde58!important;border-color:#253659!important;color:#25395b!important;font-weight:900!important}
+html body #staff-trial.shared-paper-modal #trial-body>button#trial-play{background:#ffdb39!important;color:#172349!important;border:2px solid #26365a!important;box-shadow:0 2px #26365a!important;font-weight:900!important}
+
+/* Local accessibility audit: real hit areas, without hiding overflow evidence. */
+#asset-roster .r-duty{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(230px,72%)!important;column-gap:4px!important;padding-left:8px!important;padding-right:8px!important}
+#asset-roster .r-duty-heading{width:100%!important;min-width:0!important;gap:3px!important}
+#asset-roster .r-duty-heading strong{min-width:0!important;flex:1 1 auto!important;white-space:normal!important;word-break:keep-all!important;overflow-wrap:break-word!important}
+#asset-roster .r-duty-heading b{white-space:nowrap}
+#asset-roster #r-team{width:100%!important;min-width:0!important;grid-template-columns:repeat(5,minmax(44px,1fr))!important;gap:2px!important}
+#asset-roster #r-team button{min-width:44px!important;min-height:44px!important}
+#asset-roster .r-card-copy{min-width:0!important}
+#asset-roster .r-record{box-sizing:border-box!important;max-width:100%!important;white-space:normal!important;word-break:keep-all!important;overflow-wrap:break-word!important;line-height:1.35!important}
+@media(max-width:350px){#asset-roster .r-duty-heading>span{display:none!important}}
+html body #result summary{box-sizing:border-box!important;min-height:44px!important;cursor:pointer}

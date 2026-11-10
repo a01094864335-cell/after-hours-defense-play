@@ -31,5 +31,37 @@ test('the text-free plaque stretches to long DOM headings without letter scaling
  const svg=fs.readFileSync('assets/shared-chrome/plaque.svg','utf8');
  assert(svg.includes('preserveAspectRatio="none"'));
  assert(!/<text[\s>]/.test(svg));
- assert(fs.readFileSync('shared-chrome.js','utf8').includes('shared-chrome.css?v=paper-comic-2'));
+ assert(fs.readFileSync('shared-chrome.js','utf8').includes('shared-chrome.css?v=paper-comic-4'));
+});
+
+test('modal frames use a square scalable source and perk cards have explicit active and disabled surfaces',()=>{
+ const css=fs.readFileSync('shared-chrome.css','utf8'),svg=fs.readFileSync('assets/shared-chrome/modal-paper.svg','utf8');
+ assert(svg.includes('viewBox="0 0 120 120"'));
+ assert(css.includes("modal-paper.svg?v=2') 24 fill / 16px"));
+ assert(!css.includes("paper.webp') 90 fill"));
+ assert(css.includes('#perk.shared-paper-modal :is(#perk-options,#perk-targets,#tactical-bonuses) button:disabled'));
+});
+
+test('modal details group original controls and distinguish selection from destructive actions',()=>{
+ const js=fs.readFileSync('shared-chrome.js','utf8'),css=fs.readFileSync('shared-chrome.css','utf8');
+ assert(js.includes("section.append(node)"));
+ assert(js.includes("'shared-backup-export', '1. 현재 기록 보관'"));
+ assert(css.includes('.deck-choice.swap-target>small'));
+ assert(css.includes('#save-transfer-status[data-phase=preview]'));
+ assert(css.includes('#starter-options article>div>button:last-child'));
+});
+
+test('shop opening refreshes canonical purchase availability after wallet changes',()=>{
+ const js=fs.readFileSync('previews/asset-shop-20261109/shop.js','utf8');
+ assert(js.includes("if(dialog.open){window.renderRecruitShop();refresh();select('pack');}"));
+ assert(js.includes("q('#buy-staff-pack').disabled,q('#buy-staff-pack').textContent"));
+});
+
+test('local touch audit keeps real roster and result controls at least 44px',()=>{
+ const css=fs.readFileSync('shared-chrome.css','utf8'),qa=fs.readFileSync('tests/test_modal_inventory.py','utf8');
+ assert(css.includes('grid-template-columns:repeat(5,minmax(44px,1fr))!important'));
+ assert(css.includes('html body #result summary{box-sizing:border-box!important;min-height:44px!important'));
+ assert(qa.includes("return 'closed-details'"));
+ assert(qa.includes("return 'screen-reader-only'"));
+ assert(qa.includes("scroll-boundary-review"));
 });
