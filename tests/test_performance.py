@@ -42,7 +42,7 @@ class PerformanceTests(unittest.TestCase):
         self.assertTrue(a.evaluate('()=>{const layer=staticBoardLayer;selected=0;draw();selected=-1;draw();return layer===staticBoardLayer}'))
     def test_portraits_appear_after_opening_static_dialogs(self):
         a=self.open(390,844)
-        for button,host in [('#training-entry','#asset-training-host'),('#roster-open','#asset-roster-host')]:
+        for button,host,close in [('#training-entry','#asset-training-host','.close'),('#roster-open','#asset-roster-host','.r-close')]:
             a.locator('#asset-lobby-host [data-proxy="'+button+'"]').click()
             # The approved interfaces display original portrait images in shadow DOM,
             # not the hidden legacy animated canvases. Verify the visible asset loads.
@@ -54,7 +54,7 @@ class PerformanceTests(unittest.TestCase):
             }""",arg=host)
             self.assertTrue(portrait.is_visible())
             self.assertGreater(portrait.evaluate('e=>e.naturalHeight'),0)
-            a.locator(host+' [data-action="close"]').first.click()
+            a.locator(host+' '+close).click()
     def test_closed_shop_is_not_rebuilt_and_refreshes_on_open(self):
         a=self.battle();a.evaluate("window.shopMutations=0;window.shopMutationDetails=[];window.shopObserver=new MutationObserver(rs=>{shopMutations+=rs.length;shopMutationDetails.push(...rs.map(r=>({type:r.type,id:r.target.id,attribute:r.attributeName})))});shopObserver.observe(document.querySelector('#shop'),{subtree:true,childList:true,attributes:true});meta.coins=100;sync()")
         a.wait_for_timeout(150);self.assertEqual(a.evaluate('shopMutations'),0,a.evaluate('shopMutationDetails'))

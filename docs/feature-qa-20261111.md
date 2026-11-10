@@ -44,3 +44,10 @@ Run `42859535167`, shard 4, attempts 9–10: 130 passed, 16 failed, 8 errors, no
 - **Approved scrolling versus old fixed-height assumptions:** recruitment and results use whole-sheet scrolling on short phones. Tests now require the action to be reachable by real scrolling, within viewport and every clipping ancestor, and actually clickable, while retaining focus/dismissal/data assertions. Perk targets use the actual scrolling behavior. No forced clicks, skipped cases, reduced bounds or shrunken artwork hide failures.
 
 All changed browser tests must pass ten fresh attempts on a new candidate before these findings are closed. Earlier failures remain evidence, not counted as passing retries.
+
+
+## Second browser pass (head 6cdf3d8)
+
+Run `42862362664`, merge candidate `97a7dbe0fa504833aa57f928ce0cb755342ca777`: all 800 attempts ran, 780 passed, 10 failed and 10 errored; no skipped/unrun attempts. Each of five reports recorded 156 pass, 2 fail, 2 error. Existing runtime, modal inventory and smoke checks passed.
+
+All previous functional fixes passed their ten browser repetitions. Remaining failures were confined to training: the portrait test selected an intentionally hidden Back control instead of visible Close, and the visible Close's 44px hitbox extended 1px above a short phone viewport. The test now selects each screen's actual visible close button. Moving the training Close down 4px preserves artwork and its 44px target while bringing it fully into bounds; the strict viewport assertion is unchanged. Another complete ten-repeat run is required before release.
