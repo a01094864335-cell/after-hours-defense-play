@@ -66,7 +66,7 @@ html body #roster #roster-detail .staff-action{position:static!important;backgro
 #asset-training#asset-training{background:transparent!important;padding:18px 12px 0!important}
 #asset-training#asset-training header.shared-art-header{margin:0 12px 14px!important;background:#fff6df!important;border:3px solid #10254b!important;border-radius:4px!important;box-shadow:4px 5px #10254b!important;padding:20px 8px 12px!important;height:auto!important;min-height:96px!important}
 #asset-training#asset-training header .shared-title{font:400 7cqw/1.2 ConceptPeopleHead,system-ui!important;color:#10254b!important;margin:0!important;padding:0!important}
-#asset-training#asset-training header .back{display:none!important}#asset-training#asset-training header .close{top:-12px!important;right:-12px!important}
+#asset-training#asset-training header .back{display:none!important}#asset-training#asset-training header .close{top:-8px!important;right:-12px!important}
 #asset-training#asset-training .concept-training-subtitle{text-align:center;font-size:3.4cqw;margin:12px 0 0;color:#365576}
 #asset-training#asset-training .tabs{margin:0 10px 10px!important;gap:8px!important}
 #asset-training#asset-training .tabs button{background:#fffdf7!important;border:2px solid #10254b!important;border-radius:9px!important;box-shadow:none!important;min-height:35px!important;font-size:14px!important;color:#10254b!important}

@@ -1,0 +1,206 @@
+✔ 19 hiring episodes map to real staff and 76 packaged WebP panels (89.294141ms)
+✔ pack plays new hire once; duplicate does not replay or change existing points behavior (19.494942ms)
+✔ staff and support targeted recruitment show stories after successful save only (20.169099ms)
+✔ support pack also triggers its own story and preserves first-purchase price (20.464274ms)
+✔ comic navigation stays within four panels and returns to underlying dialog (15.783291ms)
+✔ hiring story styles and scripts are linked and included in the Pages build (0.285211ms)
+✖ queued hiring close cannot clear a reopened story / attempt 1 (17.021719ms)
+✖ queued hiring close cannot clear a reopened story / attempt 2 (14.276976ms)
+✖ queued hiring close cannot clear a reopened story / attempt 3 (16.233836ms)
+✖ queued hiring close cannot clear a reopened story / attempt 4 (15.548719ms)
+✖ queued hiring close cannot clear a reopened story / attempt 5 (15.361517ms)
+✖ queued hiring close cannot clear a reopened story / attempt 6 (17.616174ms)
+✖ queued hiring close cannot clear a reopened story / attempt 7 (18.15935ms)
+✖ queued hiring close cannot clear a reopened story / attempt 8 (18.794768ms)
+✖ queued hiring close cannot clear a reopened story / attempt 9 (17.017223ms)
+✖ queued hiring close cannot clear a reopened story / attempt 10 (14.954037ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 6
+ℹ fail 10
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 481.526746
+
+✖ failing tests:
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 1 (17.021719ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 2 (14.276976ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 3 (16.233836ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 4 (15.548719ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 5 (15.361517ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 6 (17.616174ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 7 (18.15935ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 8 (18.794768ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 9 (17.017223ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+
+test at tests/hiring-stories.test.cjs:44:41
+✖ queued hiring close cannot clear a reopened story / attempt 10 (14.954037ms)
+  evalmachine.<anonymous>:12
+   if(parts['.hire-page'].textContent!=='2 / 4')throw Error('stale close cleared new story');
+                                                ^
+  
+  Error: stale close cleared new story
+      at evalmachine.<anonymous>:12:53
+      at Script.runInContext (node:vm:149:12)
+      at Object.runInContext (node:vm:301:6)
+      at Object.run (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/runtime-boot.cjs:9:89)
+      at TestContext.<anonymous> (/workspace/scratch/b9a0b3e19b25/game-feature-qa/tests/hiring-stories.test.cjs:45:21)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)

@@ -148,3 +148,6 @@ html body dialog.notice-dialog.concept-notice.concept-modal::before{display:bloc
 html body dialog.notice-dialog.concept-notice.concept-modal>header{display:flex!important;flex-wrap:wrap!important;padding-top:5px!important;gap:15px!important}
 html body dialog.notice-dialog.concept-notice.concept-modal>header h2{flex-basis:100%!important}
 html body dialog.notice-dialog.concept-notice.concept-modal .concept-note-mascot{position:absolute!important;right:0!important;top:-48px!important;width:85px!important;height:85px!important;margin:0!important}
+
+/* Keep long help instructions readable on short phones. */
+html body #info#info.concept-modal #skill-info{font-size:14px!important;line-height:1.5!important}

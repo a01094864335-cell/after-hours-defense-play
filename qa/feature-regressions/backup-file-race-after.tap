@@ -1,0 +1,250 @@
+TAP version 13
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 1/10 | seed 1 | VM
+ok 1 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 5.091799
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 2/10 | seed 2 | VM
+ok 2 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 1.452294
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 3/10 | seed 3 | VM
+ok 3 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.875773
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 4/10 | seed 4 | VM
+ok 4 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 1.039244
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 5/10 | seed 5 | VM
+ok 5 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 1.183207
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 6/10 | seed 6 | VM
+ok 6 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.642328
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 7/10 | seed 7 | VM
+ok 7 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 0.635999
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 8/10 | seed 8 | VM
+ok 8 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 0.630291
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 9/10 | seed 9 | VM
+ok 9 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 1.051322
+  type: 'test'
+  ...
+# Subtest: [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 10/10 | seed 10 | VM
+ok 10 - [storage-audio] backup file read invalidates stale preview and latest selection wins | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 0.751359
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 1/10 | seed 1 | VM
+ok 11 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 1.412906
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 2/10 | seed 2 | VM
+ok 12 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 0.83282
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 3/10 | seed 3 | VM
+ok 13 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.6569
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 4/10 | seed 4 | VM
+ok 14 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 0.532066
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 5/10 | seed 5 | VM
+ok 15 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 0.53494
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 6/10 | seed 6 | VM
+ok 16 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.766432
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 7/10 | seed 7 | VM
+ok 17 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 1.038018
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 8/10 | seed 8 | VM
+ok 18 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 1.331787
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 9/10 | seed 9 | VM
+ok 19 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 1.350444
+  type: 'test'
+  ...
+# Subtest: [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 10/10 | seed 10 | VM
+ok 20 - [storage-audio] unreadable backup file reports failure without an unhandled rejection | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 0.758851
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 1/10 | seed 1 | VM
+ok 21 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 1.088097
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 2/10 | seed 2 | VM
+ok 22 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 0.801704
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 3/10 | seed 3 | VM
+ok 23 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.92798
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 4/10 | seed 4 | VM
+ok 24 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 1.060626
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 5/10 | seed 5 | VM
+ok 25 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 0.613446
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 6/10 | seed 6 | VM
+ok 26 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.577293
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 7/10 | seed 7 | VM
+ok 27 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 0.645894
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 8/10 | seed 8 | VM
+ok 28 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 0.593796
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 9/10 | seed 9 | VM
+ok 29 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 2.380074
+  type: 'test'
+  ...
+# Subtest: [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 10/10 | seed 10 | VM
+ok 30 - [storage-audio] typing during a backup read preserves manual text and invalidates preview | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 0.529682
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 1/10 | seed 1 | VM
+ok 31 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 1/10 | seed 1 | VM
+  ---
+  duration_ms: 0.71055
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 2/10 | seed 2 | VM
+ok 32 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 2/10 | seed 2 | VM
+  ---
+  duration_ms: 0.761785
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 3/10 | seed 3 | VM
+ok 33 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 3/10 | seed 3 | VM
+  ---
+  duration_ms: 0.499748
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 4/10 | seed 4 | VM
+ok 34 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 4/10 | seed 4 | VM
+  ---
+  duration_ms: 0.530864
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 5/10 | seed 5 | VM
+ok 35 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 5/10 | seed 5 | VM
+  ---
+  duration_ms: 0.535721
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 6/10 | seed 6 | VM
+ok 36 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 6/10 | seed 6 | VM
+  ---
+  duration_ms: 0.630801
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 7/10 | seed 7 | VM
+ok 37 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 7/10 | seed 7 | VM
+  ---
+  duration_ms: 0.839189
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 8/10 | seed 8 | VM
+ok 38 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 8/10 | seed 8 | VM
+  ---
+  duration_ms: 0.678472
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 9/10 | seed 9 | VM
+ok 39 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 9/10 | seed 9 | VM
+  ---
+  duration_ms: 0.646484
+  type: 'test'
+  ...
+# Subtest: [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 10/10 | seed 10 | VM
+ok 40 - [storage-audio] closing backup dialog cancels pending file read without altering text | attempt 10/10 | seed 10 | VM
+  ---
+  duration_ms: 0.942883
+  type: 'test'
+  ...
+1..40
+# tests 40
+# suites 0
+# pass 40
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 167.447679

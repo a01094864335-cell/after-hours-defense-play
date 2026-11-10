@@ -1,0 +1,24 @@
+✔ 19 hiring episodes map to real staff and 76 packaged WebP panels (84.443315ms)
+✔ pack plays new hire once; duplicate does not replay or change existing points behavior (25.636421ms)
+✔ staff and support targeted recruitment show stories after successful save only (19.766544ms)
+✔ support pack also triggers its own story and preserves first-purchase price (22.365099ms)
+✔ comic navigation stays within four panels and returns to underlying dialog (17.564093ms)
+✔ hiring story styles and scripts are linked and included in the Pages build (0.278901ms)
+✔ queued hiring close cannot clear a reopened story / attempt 1 (16.486858ms)
+✔ queued hiring close cannot clear a reopened story / attempt 2 (16.020279ms)
+✔ queued hiring close cannot clear a reopened story / attempt 3 (16.880944ms)
+✔ queued hiring close cannot clear a reopened story / attempt 4 (16.466293ms)
+✔ queued hiring close cannot clear a reopened story / attempt 5 (19.934881ms)
+✔ queued hiring close cannot clear a reopened story / attempt 6 (16.296882ms)
+✔ queued hiring close cannot clear a reopened story / attempt 7 (18.140243ms)
+✔ queued hiring close cannot clear a reopened story / attempt 8 (19.074051ms)
+✔ queued hiring close cannot clear a reopened story / attempt 9 (18.561695ms)
+✔ queued hiring close cannot clear a reopened story / attempt 10 (13.75095ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 470.563948

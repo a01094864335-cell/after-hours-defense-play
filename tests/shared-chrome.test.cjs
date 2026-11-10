@@ -65,3 +65,18 @@ test('local touch audit keeps real roster and result controls at least 44px',()=
  assert(qa.includes("return 'screen-reader-only'"));
  assert(qa.includes("scroll-boundary-review"));
 });
+
+test('repeated presentation refresh does not rewrite unchanged closed-dialog classes',()=>{
+ const vm=require('node:vm');
+ for(let attempt=1;attempt<=10;attempt++){
+  let writes=0,refresh;
+  const classList=()=>{const names=new Set();return {contains:n=>names.has(n),add(n){writes++;names.add(n)}}};
+  const header={classList:classList()},panel={classList:classList(),querySelector:()=>header};
+  const document={currentScript:{src:'https://example.test/shared-chrome.js'},createElement(){},body:{},getElementById:()=>null,querySelector:()=>null,querySelectorAll:s=>s.startsWith('dialog.contained-panel')?[panel]:[]};
+  const sandbox={document,URL,WeakSet,queueMicrotask:fn=>fn(),MutationObserver:class{constructor(fn){refresh=fn}observe(){}}};
+  vm.runInNewContext(fs.readFileSync('shared-chrome.js','utf8'),sandbox);
+  assert.equal(writes,2,`initial decoration ${attempt}`);
+  for(let n=0;n<10;n++)refresh();
+  assert.equal(writes,2,`unchanged closed dialog ${attempt}`);
+ }
+});

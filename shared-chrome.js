@@ -64,9 +64,9 @@
    });
   }
   for (const panel of scope.querySelectorAll('dialog.contained-panel,dialog#roster,dialog#recruit-dialog,dialog#training-dialog,dialog#starter-choice,dialog#staff-trial')) {
-   panel.classList.add('shared-paper-modal');
+   if (!panel.classList.contains('shared-paper-modal')) panel.classList.add('shared-paper-modal');
    const header = panel.querySelector(':scope > header');
-   if (header) header.classList.add('shared-modal-header');
+   if (header && !header.classList.contains('shared-modal-header')) header.classList.add('shared-modal-header');
   }
   for (const title of scope.querySelectorAll('#recruit-result .recruit-reveal > b,#recruit-result .recruit-reveal > .panel-scroll-body > b')) {
    title.classList.add('shared-recruit-title');
