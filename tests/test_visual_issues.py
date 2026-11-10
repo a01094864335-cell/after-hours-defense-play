@@ -27,7 +27,7 @@ class VisualIssueTests(unittest.TestCase):
         a=self.open(320,568)
         surfaces=[
             ('#roster-open','#asset-roster-host .r-scroll','#asset-roster-host .r-card:last-child','#asset-roster-host .r-nav [data-action="close"]'),
-            ('#training-entry','#asset-training-host .scroll','#asset-training-host #effects details:last-child summary','#asset-training-host .close'),
+            ('#training-entry','#asset-training-host .scroll','#asset-training-host #effects details:last-child summary','#asset-training-host .back'),
         ]
         for opener,scroller,last,close in surfaces:
             a.locator('#asset-lobby-host [data-proxy="'+opener+'"]').click()

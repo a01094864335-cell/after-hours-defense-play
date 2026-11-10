@@ -35,7 +35,9 @@ function openTraining(pushRoute=true){
  if(playing&&!ended)paused=true;
  trainingRenderKey='';document.querySelector('#training-status').textContent='';
  setScreen('training');renderTraining();sync();
- if(pushRoute&&window.history?.pushState){window.history.pushState({...window.history.state,afterHoursPage:'training'},'','#training');trainingHistory=true;}
+ // Reload keeps the browser's training entry while app boot returns to lobby.
+ // Reuse that entry when reopening instead of stacking a duplicate Back target.
+ if(pushRoute&&window.history?.pushState){if(window.history.state?.afterHoursPage!=='training')window.history.pushState({...window.history.state,afterHoursPage:'training'},'','#training');trainingHistory=true;}
  if(typeof queueMicrotask==='function')queueMicrotask(trainingFocus);else trainingFocus();return true;
 }
 function closeTraining(target=trainingReturnScreen,fromHistory=false,resetDuty=false){

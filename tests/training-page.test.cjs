@@ -38,3 +38,9 @@ for(let attempt=1;attempt<=10;attempt++)test(`training page / independent ${atte
  b.run("trainingNavigate('home');document.querySelector('#leave-confirm').onclick()");assert.equal(b.run('appScreen'),'lobby');assert.equal(b.run('playing'),false);assert.equal(b.run('wave'),0);assert.equal(b.nodes['#training-dialog'].hidden,true);assert.equal(b.nodes['#leave'].open,false);
  b.run("document.querySelector('#enter-battle').onclick();sync()");assert.equal(b.run('appScreen'),'battle');assert.equal(b.run('wave'),0);
 });
+
+test('reopening after reload reuses the existing training history entry',()=>{
+ const b=boot();b.run("var routePushes=0;window.history={state:{afterHoursPage:'training'},pushState(){routePushes++},back(){}};setScreen('lobby');openTraining();");
+ assert.equal(b.run('appScreen'),'training');assert.equal(b.run('routePushes'),0);assert.equal(b.run('trainingHistory'),true);
+ b.run('closeTraining()');assert.equal(b.run('appScreen'),'lobby');assert.equal(b.run('trainingHistoryPending'),true);
+});

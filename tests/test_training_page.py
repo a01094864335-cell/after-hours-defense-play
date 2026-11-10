@@ -38,6 +38,25 @@ class TrainingPageTests(unittest.TestCase):
                 p.locator('#asset-training-host .back').click()
                 p.wait_for_function("appScreen==='lobby'")
 
+    def test_reload_reopen_back_stays_in_lobby(self):
+        p = self.open(390, 844)
+        p.evaluate('openTraining()')
+        original_length = p.evaluate('history.length')
+        p.reload(wait_until='networkidle')
+        p.wait_for_function("GameSession.canWrite() && appScreen==='lobby'")
+        p.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
+        p.wait_for_function("appScreen==='training'")
+        self.assertEqual(p.evaluate('history.length'), original_length)
+        p.locator('#asset-training-host .back').click()
+        p.wait_for_function("appScreen==='lobby' && !trainingHistoryPending")
+        self.assertTrue(p.locator('#training-dialog').evaluate('e=>e.hidden'))
+        self.assertNotEqual(p.evaluate("history.state?.afterHoursPage"), 'training')
+        p.go_forward()
+        p.wait_for_function("appScreen==='training'")
+        p.go_back()
+        p.wait_for_function("appScreen==='lobby'")
+        self.assertTrue(p.locator('#training-dialog').evaluate('e=>e.hidden'))
+
     def test_battle_pause_and_result_page(self):
         p = self.open(390, 844)
         p.evaluate("playing=true;ended=false;paused=true;panelResume=true;setScreen('battle');openTraining()")
