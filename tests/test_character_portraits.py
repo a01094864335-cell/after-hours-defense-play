@@ -70,3 +70,42 @@ class CharacterPortraitTests(unittest.TestCase):
         self.assertTrue(result['jjit'])
         self.assertTrue(result['selected'].endswith('/character-portraits/gobi.webp'))
         self.assertEqual(result['staffCount'], 2)
+
+    def test_all_staff_render_full_bodies_and_enemies_keep_existing_motion(self):
+        page = self.open(390, 844)
+        self.seed(page)
+        result = page.evaluate('''async()=>{
+          reset();tutorialMode=false;setScreen('battle');playing=true;paused=true;wave=8;
+          await Promise.all([...kinds.map(k=>k.file),'novice-adventurer'].map(id=>Motion.preload(id).decode()));
+          const before=JSON.stringify(cells),drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
+          CanvasRenderingContext2D.prototype.drawImage=function(im,...args){if(this.canvas.id==='battle-paint'&&im.src)drawn.push(im.src);return original.call(this,im,...args)};
+          try{for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw()}
+          finally{CanvasRenderingContext2D.prototype.drawImage=original}
+          return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/motion/novice-adventurer.webp'))};
+        }''')
+        self.assertTrue(result['sameCells'])
+        self.assertEqual(len(result['staff']), 17)
+        self.assertTrue(all(row['body'] for row in result['staff']), result['staff'])
+        self.assertEqual(result['heads'], [])
+        self.assertTrue(result['enemy'])
+
+    def test_icon_only_consumables_keep_accessible_names_and_toggle_actions(self):
+        page = self.open(320, 568)
+        self.seed(page)
+        page.evaluate('''()=>{reset();tutorialMode=false;setScreen('battle');playing=true;paused=false;wave=3;meta.items.grade=2;meta.items.kind=2;meta.items.king=1;board[0]={type:0,pip:1,cool:0};sync()}''')
+        for key in ['grade', 'kind', 'king']:
+            button = page.locator('#item-' + key)
+            self.assertTrue(button.get_attribute('aria-label'))
+            box = button.bounding_box()
+            self.assertGreaterEqual(box['width'], 44)
+            self.assertGreaterEqual(box['height'], 44)
+            label = button.locator('span').bounding_box()
+            self.assertLessEqual(label['width'], 1)
+            self.assertLessEqual(label['height'], 1)
+        before = page.evaluate("itemCount('grade')")
+        page.locator('#item-grade').click()
+        self.assertEqual(page.evaluate('itemMode'), 'grade')
+        self.assertTrue(page.locator('#item-hint').is_visible())
+        page.locator('#item-grade').click()
+        self.assertIsNone(page.evaluate('itemMode'))
+        self.assertEqual(page.evaluate("itemCount('grade')"), before)

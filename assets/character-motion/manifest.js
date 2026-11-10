@@ -1,6 +1,192 @@
 'use strict';
 // Full-body motion sheets derived from the current menu faces.
 Object.assign(MotionSheets, {
+  "goblin-guard": {
+    "name": "브릭",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/goblin-guard.webp",
+    "fallback": "assets/character-motion/goblin-guard-idle.webp",
+    "faceReference": "assets/character-portraits/goblin-guard.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 465,
+    "frames": [
+      {
+        "x": 108,
+        "y": 11,
+        "w": 322,
+        "h": 465,
+        "pivotX": 148,
+        "pivotY": 464
+      },
+      {
+        "x": 620,
+        "y": 11,
+        "w": 321,
+        "h": 465,
+        "pivotX": 148,
+        "pivotY": 464
+      },
+      {
+        "x": 1128,
+        "y": 31,
+        "w": 328,
+        "h": 445,
+        "pivotX": 152,
+        "pivotY": 444
+      },
+      {
+        "x": 63,
+        "y": 545,
+        "w": 427,
+        "h": 442,
+        "pivotX": 193,
+        "pivotY": 441
+      },
+      {
+        "x": 586,
+        "y": 530,
+        "w": 376,
+        "h": 461,
+        "pivotX": 182,
+        "pivotY": 460
+      },
+      {
+        "x": 1106,
+        "y": 527,
+        "w": 338,
+        "h": 461,
+        "pivotX": 174,
+        "pivotY": 460
+      }
+    ],
+    "sha256": "630e3549d1372b2d97bb939b9ae47d40dec6ae3a1f318bf8369f5bc4650198b0"
+  },
+  "orc-technician": {
+    "name": "토르크",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/orc-technician.webp",
+    "fallback": "assets/character-motion/orc-technician-idle.webp",
+    "faceReference": "assets/character-portraits/orc-technician.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 472,
+    "frames": [
+      {
+        "x": 88,
+        "y": 18,
+        "w": 379,
+        "h": 472,
+        "pivotX": 168,
+        "pivotY": 471
+      },
+      {
+        "x": 600,
+        "y": 18,
+        "w": 379,
+        "h": 472,
+        "pivotX": 168,
+        "pivotY": 471
+      },
+      {
+        "x": 1073,
+        "y": 40,
+        "w": 439,
+        "h": 449,
+        "pivotX": 207,
+        "pivotY": 448
+      },
+      {
+        "x": 35,
+        "y": 547,
+        "w": 474,
+        "h": 453,
+        "pivotX": 221,
+        "pivotY": 452
+      },
+      {
+        "x": 574,
+        "y": 531,
+        "w": 404,
+        "h": 472,
+        "pivotX": 194,
+        "pivotY": 471
+      },
+      {
+        "x": 1088,
+        "y": 529,
+        "w": 380,
+        "h": 474,
+        "pivotX": 192,
+        "pivotY": 473
+      }
+    ],
+    "sha256": "e41ffa4074779c7cd636320392a20b44c19ed583a1dfe5152982dd29280b5197"
+  },
+  "slime-cleaner": {
+    "name": "뽀득",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/slime-cleaner.webp",
+    "fallback": "assets/character-motion/slime-cleaner-idle.webp",
+    "faceReference": "assets/character-portraits/slime-cleaner.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 457,
+    "frames": [
+      {
+        "x": 93,
+        "y": 37,
+        "w": 331,
+        "h": 457,
+        "pivotX": 163,
+        "pivotY": 456
+      },
+      {
+        "x": 605,
+        "y": 37,
+        "w": 345,
+        "h": 457,
+        "pivotX": 163,
+        "pivotY": 456
+      },
+      {
+        "x": 1070,
+        "y": 42,
+        "w": 417,
+        "h": 437,
+        "pivotX": 210,
+        "pivotY": 436
+      },
+      {
+        "x": 29,
+        "y": 556,
+        "w": 453,
+        "h": 434,
+        "pivotX": 227,
+        "pivotY": 433
+      },
+      {
+        "x": 592,
+        "y": 551,
+        "w": 376,
+        "h": 440,
+        "pivotX": 176,
+        "pivotY": 439
+      },
+      {
+        "x": 1064,
+        "y": 562,
+        "w": 439,
+        "h": 418,
+        "pivotX": 216,
+        "pivotY": 417
+      }
+    ],
+    "sha256": "0a752448c2364fe6718bfee584b7a3a0872ae4719858c70a872320f1d8105af8"
+  },
   "gobi": {
     "name": "고비",
     "group": "staff",
@@ -124,6 +310,750 @@ Object.assign(MotionSheets, {
       }
     ],
     "sha256": "0c11f755a0cf8193f3e78c7384a754c94f43d741d58f0367126f9323ab6b5914"
+  },
+  "ghost-courier": {
+    "name": "루프",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/ghost-courier.webp",
+    "fallback": "assets/character-motion/ghost-courier-idle.webp",
+    "faceReference": "assets/character-portraits/ghost-courier.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 465,
+    "frames": [
+      {
+        "x": 47,
+        "y": 25,
+        "w": 405,
+        "h": 465,
+        "pivotX": 209,
+        "pivotY": 464
+      },
+      {
+        "x": 559,
+        "y": 25,
+        "w": 418,
+        "h": 465,
+        "pivotX": 209,
+        "pivotY": 464
+      },
+      {
+        "x": 1071,
+        "y": 25,
+        "w": 425,
+        "h": 465,
+        "pivotX": 209,
+        "pivotY": 464
+      },
+      {
+        "x": 15,
+        "y": 538,
+        "w": 482,
+        "h": 447,
+        "pivotX": 241,
+        "pivotY": 446
+      },
+      {
+        "x": 530,
+        "y": 534,
+        "w": 471,
+        "h": 462,
+        "pivotX": 238,
+        "pivotY": 461
+      },
+      {
+        "x": 1069,
+        "y": 537,
+        "w": 439,
+        "h": 459,
+        "pivotX": 211,
+        "pivotY": 458
+      }
+    ],
+    "sha256": "2126215d216eb2717b5318c0b018d7138c4ec667c69fb89f5816b7c8c11a6f1f"
+  },
+  "bat-nurse": {
+    "name": "나비",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/bat-nurse.webp",
+    "fallback": "assets/character-motion/bat-nurse-idle.webp",
+    "faceReference": "assets/character-portraits/bat-nurse.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 482,
+    "frames": [
+      {
+        "x": 82,
+        "y": 15,
+        "w": 367,
+        "h": 482,
+        "pivotX": 174,
+        "pivotY": 481
+      },
+      {
+        "x": 588,
+        "y": 14,
+        "w": 390,
+        "h": 483,
+        "pivotX": 180,
+        "pivotY": 482
+      },
+      {
+        "x": 1098,
+        "y": 14,
+        "w": 390,
+        "h": 484,
+        "pivotX": 182,
+        "pivotY": 483
+      },
+      {
+        "x": 19,
+        "y": 543,
+        "w": 486,
+        "h": 450,
+        "pivotX": 237,
+        "pivotY": 449
+      },
+      {
+        "x": 563,
+        "y": 531,
+        "w": 430,
+        "h": 462,
+        "pivotX": 205,
+        "pivotY": 461
+      },
+      {
+        "x": 1095,
+        "y": 527,
+        "w": 362,
+        "h": 466,
+        "pivotX": 185,
+        "pivotY": 465
+      }
+    ],
+    "sha256": "4eeeb1613cb0ac7a8812f525f761f5e36041cb104e274cc3752e68abdf3b2f93"
+  },
+  "skeleton-chef": {
+    "name": "보니",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/skeleton-chef.webp",
+    "fallback": "assets/character-motion/skeleton-chef-idle.webp",
+    "faceReference": "assets/character-portraits/skeleton-chef.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 481,
+    "frames": [
+      {
+        "x": 105,
+        "y": 14,
+        "w": 310,
+        "h": 481,
+        "pivotX": 151,
+        "pivotY": 480
+      },
+      {
+        "x": 586,
+        "y": 14,
+        "w": 325,
+        "h": 481,
+        "pivotX": 182,
+        "pivotY": 480
+      },
+      {
+        "x": 1097,
+        "y": 14,
+        "w": 339,
+        "h": 482,
+        "pivotX": 183,
+        "pivotY": 481
+      },
+      {
+        "x": 34,
+        "y": 530,
+        "w": 448,
+        "h": 476,
+        "pivotX": 222,
+        "pivotY": 475
+      },
+      {
+        "x": 571,
+        "y": 524,
+        "w": 385,
+        "h": 483,
+        "pivotX": 197,
+        "pivotY": 482
+      },
+      {
+        "x": 1086,
+        "y": 523,
+        "w": 372,
+        "h": 485,
+        "pivotX": 194,
+        "pivotY": 484
+      }
+    ],
+    "sha256": "dacdc9fbdc92b2316659f795b6e411497975de7460aa5200cbe69e39bb737637"
+  },
+  "mimic-storekeeper": {
+    "name": "덥석",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/mimic-storekeeper.webp",
+    "fallback": "assets/character-motion/mimic-storekeeper-idle.webp",
+    "faceReference": "assets/character-portraits/mimic-storekeeper.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 361,
+    "frames": [
+      {
+        "x": 106,
+        "y": 58,
+        "w": 322,
+        "h": 361,
+        "pivotX": 150,
+        "pivotY": 360
+      },
+      {
+        "x": 617,
+        "y": 58,
+        "w": 322,
+        "h": 361,
+        "pivotX": 151,
+        "pivotY": 360
+      },
+      {
+        "x": 1143,
+        "y": 59,
+        "w": 305,
+        "h": 360,
+        "pivotX": 137,
+        "pivotY": 359
+      },
+      {
+        "x": 80,
+        "y": 572,
+        "w": 360,
+        "h": 358,
+        "pivotX": 176,
+        "pivotY": 357
+      },
+      {
+        "x": 631,
+        "y": 571,
+        "w": 278,
+        "h": 359,
+        "pivotX": 137,
+        "pivotY": 358
+      },
+      {
+        "x": 1138,
+        "y": 572,
+        "w": 322,
+        "h": 358,
+        "pivotX": 142,
+        "pivotY": 357
+      }
+    ],
+    "sha256": "9dcd54bc4793f2288333bd6f43633fb79a982f057916d350d8e38a23961d35b7"
+  },
+  "spider-tailor": {
+    "name": "실비",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/spider-tailor.webp",
+    "fallback": "assets/character-motion/spider-tailor-idle.webp",
+    "faceReference": "assets/character-portraits/spider-tailor.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 474,
+    "frames": [
+      {
+        "x": 58,
+        "y": 10,
+        "w": 390,
+        "h": 474,
+        "pivotX": 198,
+        "pivotY": 473
+      },
+      {
+        "x": 571,
+        "y": 10,
+        "w": 389,
+        "h": 474,
+        "pivotX": 197,
+        "pivotY": 473
+      },
+      {
+        "x": 1086,
+        "y": 10,
+        "w": 391,
+        "h": 474,
+        "pivotX": 194,
+        "pivotY": 473
+      },
+      {
+        "x": 35,
+        "y": 522,
+        "w": 472,
+        "h": 475,
+        "pivotX": 221,
+        "pivotY": 474
+      },
+      {
+        "x": 568,
+        "y": 523,
+        "w": 422,
+        "h": 474,
+        "pivotX": 200,
+        "pivotY": 473
+      },
+      {
+        "x": 1085,
+        "y": 524,
+        "w": 424,
+        "h": 473,
+        "pivotX": 195,
+        "pivotY": 472
+      }
+    ],
+    "sha256": "68daacb3cb7e807e5806b2a8f251ec85a56b76ef27e64c854a0c6e7a1f8b5e1b"
+  },
+  "nightmare-counselor": {
+    "name": "몽실",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/nightmare-counselor.webp",
+    "fallback": "assets/character-motion/nightmare-counselor-idle.webp",
+    "faceReference": "assets/character-portraits/nightmare-counselor.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 446,
+    "frames": [
+      {
+        "x": 84,
+        "y": 33,
+        "w": 382,
+        "h": 446,
+        "pivotX": 172,
+        "pivotY": 445
+      },
+      {
+        "x": 564,
+        "y": 33,
+        "w": 384,
+        "h": 446,
+        "pivotX": 204,
+        "pivotY": 445
+      },
+      {
+        "x": 1078,
+        "y": 31,
+        "w": 395,
+        "h": 434,
+        "pivotX": 202,
+        "pivotY": 433
+      },
+      {
+        "x": 40,
+        "y": 544,
+        "w": 458,
+        "h": 434,
+        "pivotX": 216,
+        "pivotY": 433
+      },
+      {
+        "x": 554,
+        "y": 544,
+        "w": 442,
+        "h": 434,
+        "pivotX": 214,
+        "pivotY": 433
+      },
+      {
+        "x": 1072,
+        "y": 546,
+        "w": 414,
+        "h": 437,
+        "pivotX": 208,
+        "pivotY": 436
+      }
+    ],
+    "sha256": "483f763ef2a61d3359274780b185945688ab501053c3193ce6c539daed4d891d"
+  },
+  "kobold-recruiter": {
+    "name": "도기",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/kobold-recruiter.webp",
+    "fallback": "assets/character-motion/kobold-recruiter-idle.webp",
+    "faceReference": "assets/character-portraits/kobold-recruiter.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 466,
+    "frames": [
+      {
+        "x": 88,
+        "y": 12,
+        "w": 387,
+        "h": 466,
+        "pivotX": 168,
+        "pivotY": 465
+      },
+      {
+        "x": 568,
+        "y": 12,
+        "w": 387,
+        "h": 466,
+        "pivotX": 200,
+        "pivotY": 465
+      },
+      {
+        "x": 1073,
+        "y": 20,
+        "w": 404,
+        "h": 459,
+        "pivotX": 207,
+        "pivotY": 458
+      },
+      {
+        "x": 67,
+        "y": 537,
+        "w": 408,
+        "h": 453,
+        "pivotX": 189,
+        "pivotY": 452
+      },
+      {
+        "x": 563,
+        "y": 528,
+        "w": 395,
+        "h": 462,
+        "pivotX": 205,
+        "pivotY": 461
+      },
+      {
+        "x": 1060,
+        "y": 526,
+        "w": 397,
+        "h": 464,
+        "pivotX": 220,
+        "pivotY": 463
+      }
+    ],
+    "sha256": "73b461a7b5ff30f00c40f6bbaa883bf2353014c51ec9f92264412b1ac1c0045a"
+  },
+  "duru-archivist": {
+    "name": "두루",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/duru-archivist.webp",
+    "fallback": "assets/character-motion/duru-archivist-idle.webp",
+    "faceReference": "assets/character-portraits/duru-archivist.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 476,
+    "frames": [
+      {
+        "x": 82,
+        "y": 13,
+        "w": 342,
+        "h": 476,
+        "pivotX": 174,
+        "pivotY": 475
+      },
+      {
+        "x": 585,
+        "y": 13,
+        "w": 358,
+        "h": 476,
+        "pivotX": 183,
+        "pivotY": 475
+      },
+      {
+        "x": 1082,
+        "y": 14,
+        "w": 383,
+        "h": 475,
+        "pivotX": 198,
+        "pivotY": 474
+      },
+      {
+        "x": 50,
+        "y": 528,
+        "w": 438,
+        "h": 471,
+        "pivotX": 206,
+        "pivotY": 470
+      },
+      {
+        "x": 576,
+        "y": 521,
+        "w": 391,
+        "h": 478,
+        "pivotX": 192,
+        "pivotY": 477
+      },
+      {
+        "x": 1099,
+        "y": 523,
+        "w": 358,
+        "h": 476,
+        "pivotX": 181,
+        "pivotY": 475
+      }
+    ],
+    "sha256": "33001bb3d04293e350ecb051f117e28ff923a46df7a4f13816ec923bbb9a029d"
+  },
+  "kkangtong-engineer": {
+    "name": "깡통",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/kkangtong-engineer.webp",
+    "fallback": "assets/character-motion/kkangtong-engineer-idle.webp",
+    "faceReference": "assets/character-portraits/kkangtong-engineer.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 467,
+    "frames": [
+      {
+        "x": 78,
+        "y": 21,
+        "w": 359,
+        "h": 467,
+        "pivotX": 178,
+        "pivotY": 466
+      },
+      {
+        "x": 591,
+        "y": 22,
+        "w": 352,
+        "h": 465,
+        "pivotX": 177,
+        "pivotY": 464
+      },
+      {
+        "x": 1105,
+        "y": 47,
+        "w": 368,
+        "h": 436,
+        "pivotX": 175,
+        "pivotY": 435
+      },
+      {
+        "x": 60,
+        "y": 544,
+        "w": 427,
+        "h": 449,
+        "pivotX": 196,
+        "pivotY": 448
+      },
+      {
+        "x": 578,
+        "y": 528,
+        "w": 409,
+        "h": 467,
+        "pivotX": 190,
+        "pivotY": 466
+      },
+      {
+        "x": 1087,
+        "y": 530,
+        "w": 366,
+        "h": 466,
+        "pivotX": 193,
+        "pivotY": 465
+      }
+    ],
+    "sha256": "b9383cf5d3169ee01bf029d5f3995df141c104b62f987086c9f5db29d7cda5ca"
+  },
+  "ddangkong-miner": {
+    "name": "땅콩",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/ddangkong-miner.webp",
+    "fallback": "assets/character-motion/ddangkong-miner-idle.webp",
+    "faceReference": "assets/character-portraits/ddangkong-miner.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 460,
+    "frames": [
+      {
+        "x": 72,
+        "y": 23,
+        "w": 365,
+        "h": 460,
+        "pivotX": 184,
+        "pivotY": 459
+      },
+      {
+        "x": 584,
+        "y": 22,
+        "w": 365,
+        "h": 461,
+        "pivotX": 184,
+        "pivotY": 460
+      },
+      {
+        "x": 1122,
+        "y": 22,
+        "w": 360,
+        "h": 461,
+        "pivotX": 158,
+        "pivotY": 460
+      },
+      {
+        "x": 41,
+        "y": 547,
+        "w": 441,
+        "h": 450,
+        "pivotX": 215,
+        "pivotY": 449
+      },
+      {
+        "x": 581,
+        "y": 532,
+        "w": 397,
+        "h": 462,
+        "pivotX": 187,
+        "pivotY": 461
+      },
+      {
+        "x": 1093,
+        "y": 531,
+        "w": 394,
+        "h": 463,
+        "pivotX": 187,
+        "pivotY": 462
+      }
+    ],
+    "sha256": "5363ea473b3db421460b092f9385e10d2b0cc913c3531703e27638333e63fd12"
+  },
+  "chalkak-photographer": {
+    "name": "찰칵",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/chalkak-photographer.webp",
+    "fallback": "assets/character-motion/chalkak-photographer-idle.webp",
+    "faceReference": "assets/character-portraits/chalkak-photographer.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 416,
+    "frames": [
+      {
+        "x": 84,
+        "y": 45,
+        "w": 364,
+        "h": 416,
+        "pivotX": 172,
+        "pivotY": 415
+      },
+      {
+        "x": 584,
+        "y": 44,
+        "w": 363,
+        "h": 417,
+        "pivotX": 184,
+        "pivotY": 416
+      },
+      {
+        "x": 1090,
+        "y": 46,
+        "w": 366,
+        "h": 413,
+        "pivotX": 190,
+        "pivotY": 412
+      },
+      {
+        "x": 65,
+        "y": 564,
+        "w": 421,
+        "h": 406,
+        "pivotX": 191,
+        "pivotY": 405
+      },
+      {
+        "x": 582,
+        "y": 557,
+        "w": 414,
+        "h": 416,
+        "pivotX": 186,
+        "pivotY": 415
+      },
+      {
+        "x": 1085,
+        "y": 557,
+        "w": 382,
+        "h": 416,
+        "pivotX": 195,
+        "pivotY": 415
+      }
+    ],
+    "sha256": "39def5d1980d16895d87871612152f8b2b05bc7c9af99f56e3346a5bf60a811f"
+  },
+  "bongtu-postmaster": {
+    "name": "봉투",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "file": "assets/character-motion/bongtu-postmaster.webp",
+    "fallback": "assets/character-motion/bongtu-postmaster-idle.webp",
+    "faceReference": "assets/character-portraits/bongtu-postmaster.webp",
+    "width": 1536,
+    "sheetHeight": 1024,
+    "height": 476,
+    "frames": [
+      {
+        "x": 101,
+        "y": 15,
+        "w": 316,
+        "h": 476,
+        "pivotX": 155,
+        "pivotY": 475
+      },
+      {
+        "x": 603,
+        "y": 15,
+        "w": 317,
+        "h": 476,
+        "pivotX": 165,
+        "pivotY": 475
+      },
+      {
+        "x": 1121,
+        "y": 14,
+        "w": 347,
+        "h": 477,
+        "pivotX": 159,
+        "pivotY": 476
+      },
+      {
+        "x": 49,
+        "y": 529,
+        "w": 455,
+        "h": 468,
+        "pivotX": 207,
+        "pivotY": 467
+      },
+      {
+        "x": 598,
+        "y": 529,
+        "w": 337,
+        "h": 472,
+        "pivotX": 170,
+        "pivotY": 471
+      },
+      {
+        "x": 1116,
+        "y": 529,
+        "w": 346,
+        "h": 472,
+        "pivotX": 164,
+        "pivotY": 471
+      }
+    ],
+    "sha256": "1d95c59ec710e51026e30d33d5497e14761e439ddf6c9cf5dc3bda334f761a30"
   }
 });
-window.CharacterMotion=(()=>{const ids=Object.freeze(["gobi", "electric-technician"]);const known=new Set(ids);return Object.freeze({ids,has:id=>known.has(id),imagePath:id=>known.has(id)?'assets/character-motion/'+id+'-idle.webp':''})})();
+window.CharacterMotion=(()=>{const ids=Object.freeze(["goblin-guard", "orc-technician", "slime-cleaner", "gobi", "electric-technician", "ghost-courier", "bat-nurse", "skeleton-chef", "mimic-storekeeper", "spider-tailor", "nightmare-counselor", "kobold-recruiter", "duru-archivist", "kkangtong-engineer", "ddangkong-miner", "chalkak-photographer", "bongtu-postmaster"]);const known=new Set(ids);return Object.freeze({ids,has:id=>known.has(id),imagePath:id=>known.has(id)?'assets/character-motion/'+id+'-idle.webp':''})})();

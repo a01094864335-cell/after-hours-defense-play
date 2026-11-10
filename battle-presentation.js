@@ -10,13 +10,14 @@ window.BattlePresentation=(()=>{
  function screenPoint(p){const r=canvas.getBoundingClientRect(),v=project(p,r.width,r.height);return{x:r.left+v.x,y:r.top+v.y}}
  if(!enabled)return {enabled,axes,project,unproject,point,screenPoint};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
- const staffKeys=new Set(kinds.map(kind=>kind.file)),portraitReduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
+ const staffKeys=new Set(kinds.map(kind=>kind.file));
  const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0;
  const oldMotion=Motion.draw;
- const hasBody=key=>typeof CharacterMotion!=='undefined'&&CharacterMotion.has(key);
+ // Every battle actor uses a full-body motion sheet; menu portraits remain independent.
+ const hasBody=key=>!!Motion.sheets[key];
  Motion.draw=function(target,key,x,y,size,pose=0,options={}){
   if(!collecting||target!==ctx)return oldMotion(target,key,x,y,size,pose,options);
-  const m=ctx.getTransform();actors.push({key,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,size,pose,options:{...options,alpha:(options.alpha??1)*ctx.globalAlpha}});if(hasBody(key))Motion.preload(key);else if(typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(key))CharacterPortraits.preload(key);else Motion.preload(key);return true;
+  const m=ctx.getTransform();actors.push({key,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,size,pose,options:{...options,alpha:(options.alpha??1)*ctx.globalAlpha}});Motion.preload(key);return true;
  };
  const oldText=ctx.fillText.bind(ctx);
  ctx.fillText=function(text,x,y,maxWidth){if(!collecting)return maxWidth===undefined?oldText(text,x,y):oldText(text,x,y,maxWidth);if(text==='·'||String(text).startsWith('★ 스킬'))return;const m=ctx.getTransform();texts.push({text,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,font:ctx.font,fill:ctx.fillStyle,align:ctx.textAlign,alpha:ctx.globalAlpha});};
@@ -29,9 +30,8 @@ window.BattlePresentation=(()=>{
    paint.drawImage(canvas,sx,sy,sw,sh,dx,dy,dw,dh);
   }
   const row=(a.y[1][3]-a.y[1][2])/3,cell=(a.x[1][3]-a.x[1][2])/5;
-  for(const actor of actors){const p=project(actor,width,height),data=Motion.sheets[actor.key];let size=actor.size*width/600*1.12;
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){if(hasBody(actor.key)){const maxH=Math.max(...data.frames.map(f=>f.h)),maxW=Math.max(...data.frames.map(f=>f.w));size=Math.min(size,row*.73,Math.max(12,row-22)*data.height/maxH,(cell-4)*data.height/maxW)}else size=Math.min(size,row*.73,Math.max(12,row-22),cell-4);}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
-   if(!hasBody(actor.key)&&typeof CharacterPortraits!=='undefined'&&CharacterPortraits.src(actor.key)){CharacterPortraits.draw(paint,actor.key,p.x,p.y,size,{...actor.options,angle:actor.options.angle||((actor.pose>=3&&!portraitReduced?.matches)?(actor.pose%2?.05:-.05):0)});continue;}
+  for(const actor of actors){const p=project(actor,width,height),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.5:1.12);
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){if(hasBody(actor.key)){const maxH=Math.max(...data.frames.map(f=>f.h)),maxW=Math.max(...data.frames.map(f=>f.w));size=Math.min(size,row*.82,Math.max(12,row-20)*data.height/maxH,(cell-4)*data.height/maxW)}else size=Math.min(size,row*.82,Math.max(12,row-20),cell-4);}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=project(t,width,height);paint.save();paint.font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
