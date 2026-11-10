@@ -14,6 +14,7 @@ files.add('gameworld.css');
 files.add('open-scene.css');
 files.add('open-scene.js');
 files.add('character-portraits.js');
+for(const name of fs.readdirSync(path.join(root,'assets/character-motion')))if(/\.(webp|json|js)$/.test(name))files.add('assets/character-motion/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/character-portraits')))if(/\.(webp|json)$/.test(name))files.add('assets/character-portraits/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/open-scene')))if(/\.(svg|webp|json|html)$/.test(name))files.add('assets/open-scene/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/open-scene/icons')))if(name.endsWith('.svg'))files.add('assets/open-scene/icons/'+name);

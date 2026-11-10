@@ -14,7 +14,7 @@
 
 ## 캐릭터 얼굴 통일 · 2026-11-10
 
-[캐릭터별 기준·적용 범위](docs/character-identity-20261110.md) · [24종 얼굴과 실제 화면 비교](qa/character-identity-20261110/index.html). 메인·편성·도감·훈련·채용·전투·직원 컷인은 `character-portraits.js`의 공통 초상을 사용합니다. 새 화면에서 별도 시안의 얼굴을 다시 잘라 쓰지 마세요.
+[캐릭터별 기준·적용 범위](docs/character-identity-20261110.md) · [24종 얼굴과 실제 화면 비교](qa/character-identity-20261110/index.html). 메인·편성·도감·훈련·채용·전투·직원 컷인은 `character-portraits.js`의 공통 초상을 사용합니다. 고비·찌릿의 전투 전신 6포즈도 현재 얼굴에 맞췄습니다. [전투 외형 변경·검증](docs/character-battle-identity-20261110.md). 새 화면에서 별도 시안의 얼굴을 다시 잘라 쓰지 마세요.
 
 ## 최신 디자인 작업 인계 · 2026-11-09
 

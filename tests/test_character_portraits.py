@@ -51,20 +51,22 @@ class CharacterPortraitTests(unittest.TestCase):
         page.evaluate("revealRecruit('merc-ward',false);HiringStories.close()")
         self.assertEqual(page.locator('#recruit-dialog .recruit-reveal img').get_attribute('src'), expected[0])
 
-    def test_battle_draws_canonical_heads_without_changing_cell_coordinates(self):
+    def test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates(self):
         page = self.open(390, 844)
         self.seed(page)
         result = page.evaluate('''async()=>{
           const before=JSON.stringify(cells),unit={type:3,pip:5,cool:1,attack:0,arrival:0,income:5,skillCD:12};
           await Promise.all(CharacterPortraits.ids.map(id=>{const img=CharacterPortraits.image(id);return img.decode()}));
-          reset();tutorialMode=false;setScreen('battle');board[7]=unit;selected=7;playing=true;paused=false;sync();
+          await Promise.all(CharacterMotion.ids.map(id=>Motion.preload(id).decode()));
+          reset();tutorialMode=false;setScreen('battle');board[7]=unit;board[8]={...unit,type:4};selected=7;playing=true;paused=false;sync();
           await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
           const drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
           CanvasRenderingContext2D.prototype.drawImage=function(img,...args){if(this.canvas.id==='battle-paint'&&img.src)drawn.push(img.src);return original.call(this,img,...args)};
           try{draw()}finally{CanvasRenderingContext2D.prototype.drawImage=original}
-          return {sameCells:JSON.stringify(cells)===before,head:drawn.some(x=>x.endsWith('/character-portraits/gobi.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
+          return {sameCells:JSON.stringify(cells)===before,gobi:drawn.some(x=>x.endsWith('/character-motion/gobi.webp')),jjit:drawn.some(x=>x.endsWith('/character-motion/electric-technician.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
         }''')
         self.assertTrue(result['sameCells'])
-        self.assertTrue(result['head'])
+        self.assertTrue(result['gobi'])
+        self.assertTrue(result['jjit'])
         self.assertTrue(result['selected'].endswith('/character-portraits/gobi.webp'))
-        self.assertEqual(result['staffCount'], 1)
+        self.assertEqual(result['staffCount'], 2)
