@@ -258,3 +258,11 @@ html body dialog.shared-paper-modal :is(.panel-scroll-body,#starter-options,#tri
 html body #daily-events-dialog.shared-paper-modal .daily-kind{color:#263d65!important;background:#e5ebf4!important;border:1px solid #b8c3d5!important;opacity:1!important;font-size:11px!important;font-weight:900!important}
 html body dialog#roster.asset-roster-detail.shared-paper-modal #roster-title{color:#fff8e4!important;-webkit-text-fill-color:#fff8e4!important;-webkit-text-stroke:0 transparent!important;text-shadow:1px 2px #101d49!important;font-size:clamp(18px,4.8vw,24px)!important}
 html body dialog#roster.asset-roster-detail.shared-paper-modal .dossier-stamp{color:#2b563b!important;background:#dfecd3!important;border:1px solid #8fa67b!important;border-radius:7px!important;padding:4px 8px!important;opacity:1!important;font-weight:900!important;text-shadow:none!important}
+
+/* Keep Korean phrase endings together without constraining backup JSON fields. */
+html body dialog.shared-paper-modal :is(p,label,legend,small){word-break:keep-all;overflow-wrap:break-word}
+html body #save-transfer-dialog.shared-paper-modal #save-text{word-break:break-all!important;overflow-wrap:anywhere!important}
+
+html body dialog#roster.asset-roster-detail.shared-paper-modal #roster-detail .dossier-stamp{color:#2b563b!important;-webkit-text-fill-color:#2b563b!important}
+html body #ref-pause #pause-window>button#pause-continue{background:#ffde58!important;border-color:#253659!important;color:#25395b!important;font-weight:900!important}
+html body #staff-trial.shared-paper-modal #trial-body>button#trial-play{background:#ffdb39!important;color:#172349!important;border:2px solid #26365a!important;box-shadow:0 2px #26365a!important;font-weight:900!important}

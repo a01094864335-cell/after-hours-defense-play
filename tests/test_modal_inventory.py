@@ -28,7 +28,8 @@ CASES = [
     ('shop-pack', '#shop', "document.querySelector('#shop-open').click()"),
     ('shop-items', '#shop', "document.querySelector('#shop-open').click()"),
     ('shop-poor', '#shop', "meta.coins=0;renderMeta();document.querySelector('#shop-open').click()"),
-    ('shop-affordable', '#shop', "meta.coins=120;renderMeta();document.querySelector('#shop-open').click()"),
+    ('shop-affordable', '#shop', "document.querySelector('#shop-open').click()"),
+    ('shop-earned', '#shop', "saveChange(d=>d.coins=PACK_PRICE);renderMeta();document.querySelector('#shop-open').click()"),
     ('training-staff', '#training-dialog', "document.querySelector('#training-entry').click()"),
     ('training-merc', '#training-dialog', "document.querySelector('#training-entry').click();document.querySelector('#training-tab-merc').click()"),
     ('equipment', '#equipment', BATTLE + "playing=true;wave=1;sp=9999;sync();openSheet('equipment')"),
@@ -60,7 +61,7 @@ CASES = [
     ('staff-trial', '#staff-trial', "document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click()"),
     ('staff-trial-practice', '#staff-trial', "document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click();document.querySelector('#trial-play').click()"),
     ('notice', '.notice-dialog', BATTLE + "document.querySelector('.battle-notice').click()"),
-    ('notice-long', '.notice-dialog', BATTLE + "say(document.querySelector('#board-keyboard-help').textContent+' '+document.querySelector('#info .grade-guide').textContent);document.querySelector('.battle-notice').click()"),
+    ('notice-long', '.notice-dialog', BATTLE + "say([...document.querySelectorAll('#info .ref-guide-step,#info .grade-guide')].map(e=>e.textContent.trim()).join(' · '));document.querySelector('.battle-notice').click()"),
     ('tutorial', '#tutorial-gobi', "meta.tutorialComplete=false;restartTo('battle');document.querySelector('#promo-skip').click()"),
     ('result', '#result', 'wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()'),
     ('session-notice', '#session-notice', None),
@@ -127,6 +128,13 @@ class ModalInventoryTests(unittest.TestCase):
                         page.goto(f'http://127.0.0.1:{self.server.server_port}/', wait_until='networkidle')
                         page.wait_for_function('GameSession.canWrite()')
                         inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
+                        if name == 'shop-affordable':
+                            # Seed the real persisted wallet before boot, like a returning
+                            # player. Changing only meta after initialization leaves the
+                            # canonical hidden purchase button's render cache stale.
+                            self.assertTrue(page.evaluate("saveChange(d=>{d.coins=PACK_PRICE;d.tutorialComplete=true})"))
+                            page.reload(wait_until='networkidle')
+                            page.wait_for_function('GameSession.canWrite()')
                         page.evaluate(BASE)
                         if name == 'gallery-viewer':
                             page.goto(f'http://127.0.0.1:{self.server.server_port}/story-gallery.html', wait_until='networkidle')
@@ -148,9 +156,12 @@ class ModalInventoryTests(unittest.TestCase):
                             page.locator('#asset-shop-host .tabs [data-tab="items"]').click()
                         surface = page.locator(selector)
                         surface.wait_for(state='visible')
+                        if name == 'notice-long':
+                            self.assertGreater(len(surface.inner_text()), 150)
+                            self.assertIn('직원 소환', surface.inner_text())
                         if name == 'perk-full-life':
                             self.assertTrue(page.locator('#perk-life').is_disabled())
-                        if name in ('shop-poor', 'shop-affordable'):
+                        if name in ('shop-poor', 'shop-affordable', 'shop-earned'):
                             self.assertEqual(page.locator('#asset-shop-host .purchase').is_disabled(), name == 'shop-poor')
                         if name == 'equipment':
                             self.assertGreater(page.locator('#cards button:visible:enabled').count(), 0)

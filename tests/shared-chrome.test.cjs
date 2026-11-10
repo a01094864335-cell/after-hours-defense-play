@@ -50,3 +50,9 @@ test('modal details group original controls and distinguish selection from destr
  assert(css.includes('#save-transfer-status[data-phase=preview]'));
  assert(css.includes('#starter-options article>div>button:last-child'));
 });
+
+test('shop opening refreshes canonical purchase availability after wallet changes',()=>{
+ const js=fs.readFileSync('previews/asset-shop-20261109/shop.js','utf8');
+ assert(js.includes("if(dialog.open){window.renderRecruitShop();refresh();select('pack');}"));
+ assert(js.includes("q('#buy-staff-pack').disabled,q('#buy-staff-pack').textContent"));
+});

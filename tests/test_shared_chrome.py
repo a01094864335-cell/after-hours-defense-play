@@ -188,3 +188,18 @@ class SharedChromeTests(unittest.TestCase):
         page.locator('#save-preview').click()
         page.wait_for_function("document.querySelector('#save-transfer-status').dataset.phase==='error'")
         page.context.close()
+
+    def test_shop_refreshes_earned_balance_without_reload(self):
+        page=self.open(390,684)
+        page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
+        page.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+        self.assertTrue(page.locator('#asset-shop-host .purchase').is_disabled())
+        page.locator('#asset-shop-host .close').click()
+        self.assertTrue(page.evaluate("saveChange(d=>d.coins=PACK_PRICE)"))
+        page.evaluate('renderMeta()')
+        page.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+        page.wait_for_function("!document.querySelector('#buy-staff-pack').disabled && !document.querySelector('#asset-shop-host').shadowRoot.querySelector('.purchase').disabled")
+        page.locator('#asset-shop-host .purchase').click()
+        page.wait_for_function('meta.coins===0')
+        self.assertTrue(page.locator('#recruit-dialog').evaluate('e=>e.open'))
+        page.context.close()
