@@ -148,11 +148,11 @@ function drawUnit(u,i,x=cells[i].x,y=cells[i].y,ghost=false){
  const k=kinds[u.type];drawStaffMotion(u,i,x,y,ghost);ctx.save();if(ghost)ctx.globalAlpha=.8;
  // Keep rank and cooldown in the same reserved footplate. Labels above units
  // cross into the previous row when the board is projected onto a short phone.
- ctx.fillStyle='#fffffff0';round(x-34,y+21,68,15,5);ctx.fill();
+ ctx.fillStyle='#10245bc9';round(x-34,y+21,68,15,5);ctx.fill();
  const status=u.stun>0?'기절':u.pip>=5&&(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':'';
- ctx.fillStyle=k.color;
+ ctx.fillStyle='#ffda42';
  for(let n=0;n<u.pip;n++){ctx.beginPath();ctx.arc(status?x-25+n*3.3:x+(n-(u.pip-1)/2)*5.3,y+28,1.8,0,Math.PI*2);ctx.fill()}
- if(status){ctx.fillStyle=u.stun>0?'#805b9f':'#344e77';ctx.textAlign='center';ctx.font='bold 9px system-ui';ctx.fillText(status,x+15,y+33)}
+ if(status){ctx.fillStyle=u.stun>0?'#ffc1ec':'#fff3ca';ctx.textAlign='center';ctx.font='bold 9px system-ui';ctx.fillText(status,x+15,y+33)}
  ctx.restore();
 }
 // Pixel-sized primitives keep effects in the same style as the sprites.
@@ -213,9 +213,8 @@ function drawBoardBase(){
  const bg=NightWatchArt.arena(),ready=bg.complete&&bg.naturalWidth>0;
  if(!staticBoardLayer||ready!==staticBoardReady){
   staticBoardLayer=document.createElement('canvas');staticBoardLayer.width=staticBoardLayer.height=600;
-  const base=staticBoardLayer.getContext('2d');base.clearRect(0,0,600,600);base.fillStyle='#e9f2fa55';base.fillRect(0,0,600,600);
-  base.lineJoin='round';base.lineCap='round';base.beginPath();path.forEach((p,i)=>i?base.lineTo(p.x,p.y):base.moveTo(p.x,p.y));base.lineWidth=14;base.strokeStyle='#efd184';base.stroke();
-  base.textAlign='center';base.font='12px system-ui';base.fillStyle='#e6c9a0';base.font='bold 14px system-ui';
+  const base=staticBoardLayer.getContext('2d');base.clearRect(0,0,600,600);
+  NightWatchArt.field(base);
   staticBoardReady=ready;GamePerformance.stats.backgroundBuilds++;
  }
  ctx.drawImage(staticBoardLayer,0,0);
@@ -228,11 +227,11 @@ function draw(){ctx.clearRect(0,0,600,600);drawBoardBase();drawAmbient();ctx.lin
    ctx.fillStyle=match?'#294840':'#26383b';round(c.x-38,c.y-43,76,88,4);ctx.fill();
    ctx.strokeStyle=match?'#8bd9c0':selected===i?'#e7c788':'#586a67';ctx.lineWidth=2;ctx.stroke();
   }
-  if(!u){ctx.font='22px system-ui';ctx.fillStyle='#71877f';ctx.fillText('·',c.x,c.y)}
+  if(!u){ctx.font='22px system-ui';ctx.fillStyle='#a5bdff88';ctx.fillText('+',c.x,c.y)}
   else if(!(drag?.moved&&drag.from===i))drawUnit(u,i);
  });
  if(document.activeElement===canvas){const c=cells[boardFocus];ctx.strokeStyle='#ffffff';ctx.lineWidth=4;ctx.strokeRect(c.x-36,c.y-41,72,84);}
- window.TacticalDuty?.draw(ctx);drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle=enemyDefinition(e).color;ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
+ window.TacticalDuty?.draw(ctx);drawBossFields();drawExpansionFields();for(const e of enemies){const h=e.type==='boss'?75:43;drawEnemyMotion(e,h);ctx.fillStyle='#110c17';ctx.fillRect(e.x-18,e.y-h+8,36,4);ctx.fillStyle=e.slow||e.freeze>0?'#7ee0f2':'#ffb187';ctx.fillRect(e.x-18,e.y-h+8,36*Math.max(0,e.hp/e.max),4);if(e.type!=='normal'){ctx.font='bold 9px system-ui';ctx.fillStyle='#11245d';ctx.fillText(e.decoy?'분신':enemyDefinition(e).badge,e.x,e.y-h+3)}if(e.shield>0){ctx.strokeStyle='#a9c9f0';ctx.lineWidth=2;ctx.strokeRect(e.x-20,e.y-h+15,40,h-7);ctx.fillStyle='#a9c9f0';ctx.fillRect(e.x-18,e.y-h+13,36*Math.min(1,e.shield/(e.max*.4)),3)}if(e.rush>0){pixel(e.x-24,e.y+5,8,3,'#ffb3b3');pixel(e.x-30,e.y+10,10,3,'#ffd09f')}if(e.type==='priest')spark(e.x,e.y-h+22,5,'#9febbc');if(e.warning&&e.target!==undefined){const c=cells[e.target];ctx.strokeStyle='#d6b4ff';ctx.lineWidth=3;ctx.strokeRect(c.x-35,c.y-42,70,85);spark(c.x,c.y-55,6,'#d6b4ff')}}
  for(const f of fx)drawEffect(f);ctx.globalAlpha=1;if(drag?.moved)drawUnit(board[drag.from],drag.from,drag.x,drag.y,true);
  drawMercenary();drawBossHUD();drawKing();
  if(!window.BattlePresentation&&((paused&&!window.TutorialCoach?.speaking?.()&&!window.TacticalDuty?.repositioning())||ended)){ctx.fillStyle='#100b18dc';ctx.fillRect(0,0,600,600);ctx.font='bold 28px system-ui';ctx.fillStyle='#ffdaa0';ctx.fillText(ended?'왕좌가 무너졌습니다':'잠깐 휴식 중',300,270);ctx.font='16px system-ui';ctx.fillText(ended?wave+'차 공격 · '+kills+'명 저지':'계속하기 버튼을 눌러주세요',300,309)}}

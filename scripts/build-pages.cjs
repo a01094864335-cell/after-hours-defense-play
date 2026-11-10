@@ -20,6 +20,9 @@ for(const name of fs.readdirSync(path.join(root,'assets/open-scene')))if(/\.(svg
 for(const name of fs.readdirSync(path.join(root,'assets/open-scene/icons')))if(name.endsWith('.svg'))files.add('assets/open-scene/icons/'+name);
 files.add('gameworld-ui.js');
 files.add('battle-art.js');
+files.add('battle-comic.css');
+files.add('battle-comic.js');
+for(const name of fs.readdirSync(path.join(root,'assets/battle-comic')))if(/\.(webp|svg|json|html)$/.test(name))files.add('assets/battle-comic/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/night-watch')))if(/\.(svg|webp)$/.test(name))files.add('assets/night-watch/'+name);
 files.add('tutorial-coach.js');
 files.add('tactical-duty.js');

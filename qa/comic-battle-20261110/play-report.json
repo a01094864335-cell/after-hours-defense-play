@@ -1,0 +1,722 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            94,
+            94,
+            94
+          ],
+          "rows": "44px",
+          "gap": "9px",
+          "box": {
+            "x": 10,
+            "y": 516,
+            "left": 10,
+            "top": 516,
+            "right": 310,
+            "bottom": 560,
+            "width": 300,
+            "height": 44
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 10,
+                "y": 516,
+                "left": 10,
+                "top": 516,
+                "right": 104,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 113,
+                "y": 516,
+                "left": 113,
+                "top": 516,
+                "right": 207,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 216,
+                "y": 516,
+                "left": 216,
+                "top": 516,
+                "right": 310,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            94,
+            94,
+            94
+          ],
+          "rows": "44px",
+          "gap": "9px",
+          "box": {
+            "x": 10,
+            "y": 516,
+            "left": 10,
+            "top": 516,
+            "right": 310,
+            "bottom": 560,
+            "width": 300,
+            "height": 44
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 10,
+                "y": 516,
+                "left": 10,
+                "top": 516,
+                "right": 104,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 113,
+                "y": 516,
+                "left": 113,
+                "top": 516,
+                "right": 207,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 216,
+                "y": 516,
+                "left": 216,
+                "top": 516,
+                "right": 310,
+                "bottom": 560,
+                "width": 94,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 22,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        320,
+        568
+      ]
+    }
+  },
+  {
+    "viewport": [
+      390,
+      640
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            115.328,
+            115.328,
+            115.344
+          ],
+          "rows": "44px",
+          "gap": "12px",
+          "box": {
+            "x": 10,
+            "y": 588,
+            "left": 10,
+            "top": 588,
+            "right": 380,
+            "bottom": 632,
+            "width": 370,
+            "height": 44
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 10,
+                "y": 588,
+                "left": 10,
+                "top": 588,
+                "right": 125.328125,
+                "bottom": 632,
+                "width": 115.328125,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 137.328125,
+                "y": 588,
+                "left": 137.328125,
+                "top": 588,
+                "right": 252.65625,
+                "bottom": 632,
+                "width": 115.328125,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 264.65625,
+                "y": 588,
+                "left": 264.65625,
+                "top": 588,
+                "right": 380,
+                "bottom": 632,
+                "width": 115.34375,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            115.328,
+            115.328,
+            115.344
+          ],
+          "rows": "44px",
+          "gap": "12px",
+          "box": {
+            "x": 10,
+            "y": 588,
+            "left": 10,
+            "top": 588,
+            "right": 380,
+            "bottom": 632,
+            "width": 370,
+            "height": 44
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 10,
+                "y": 588,
+                "left": 10,
+                "top": 588,
+                "right": 125.328125,
+                "bottom": 632,
+                "width": 115.328125,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 137.328125,
+                "y": 588,
+                "left": 137.328125,
+                "top": 588,
+                "right": 252.65625,
+                "bottom": 632,
+                "width": 115.328125,
+                "height": 44
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 264.65625,
+                "y": 588,
+                "left": 264.65625,
+                "top": 588,
+                "right": 380,
+                "bottom": 632,
+                "width": 115.34375,
+                "height": 44
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        640
+      ]
+    }
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            114,
+            114,
+            114
+          ],
+          "rows": "52px",
+          "gap": "12px",
+          "box": {
+            "x": 12,
+            "y": 782,
+            "left": 12,
+            "top": 782,
+            "right": 378,
+            "bottom": 834,
+            "width": 366,
+            "height": 52
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 12,
+                "y": 782,
+                "left": 12,
+                "top": 782,
+                "right": 126,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 138,
+                "y": 782,
+                "left": 138,
+                "top": 782,
+                "right": 252,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 264,
+                "y": 782,
+                "left": 264,
+                "top": 782,
+                "right": 378,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            114,
+            114,
+            114
+          ],
+          "rows": "52px",
+          "gap": "12px",
+          "box": {
+            "x": 12,
+            "y": 782,
+            "left": 12,
+            "top": 782,
+            "right": 378,
+            "bottom": 834,
+            "width": 366,
+            "height": 52
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 12,
+                "y": 782,
+                "left": 12,
+                "top": 782,
+                "right": 126,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 138,
+                "y": 782,
+                "left": 138,
+                "top": 782,
+                "right": 252,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 264,
+                "y": 782,
+                "left": 264,
+                "top": 782,
+                "right": 378,
+                "bottom": 834,
+                "width": 114,
+                "height": 52
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "errors": [],
+    "missing": [],
+    "running": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            127.328,
+            127.328,
+            127.344
+          ],
+          "rows": "52px",
+          "gap": "12px",
+          "box": {
+            "x": 12,
+            "y": 870,
+            "left": 12,
+            "top": 870,
+            "right": 418,
+            "bottom": 922,
+            "width": 406,
+            "height": 52
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 12,
+                "y": 870,
+                "left": 12,
+                "top": 870,
+                "right": 139.328125,
+                "bottom": 922,
+                "width": 127.328125,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 151.328125,
+                "y": 870,
+                "left": 151.328125,
+                "top": 870,
+                "right": 278.65625,
+                "bottom": 922,
+                "width": 127.328125,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 290.65625,
+                "y": 870,
+                "left": 290.65625,
+                "top": 870,
+                "right": 418,
+                "bottom": 922,
+                "width": 127.34375,
+                "height": 52
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "item": {
+      "scope": "#app-shell",
+      "issues": [],
+      "expected": [],
+      "grids": [
+        {
+          "element": "div.item-buttons",
+          "columns": [
+            127.328,
+            127.328,
+            127.344
+          ],
+          "rows": "52px",
+          "gap": "12px",
+          "box": {
+            "x": 12,
+            "y": 870,
+            "left": 12,
+            "top": 870,
+            "right": 418,
+            "bottom": 922,
+            "width": 406,
+            "height": 52
+          },
+          "items": [
+            {
+              "name": "#item-grade",
+              "box": {
+                "x": 12,
+                "y": 870,
+                "left": 12,
+                "top": 870,
+                "right": 139.328125,
+                "bottom": 922,
+                "width": 127.328125,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-kind",
+              "box": {
+                "x": 151.328125,
+                "y": 870,
+                "left": 151.328125,
+                "top": 870,
+                "right": 278.65625,
+                "bottom": 922,
+                "width": 127.328125,
+                "height": 52
+              }
+            },
+            {
+              "name": "#item-king",
+              "box": {
+                "x": 290.65625,
+                "y": 870,
+                "left": 290.65625,
+                "top": 870,
+                "right": 418,
+                "bottom": 922,
+                "width": 127.34375,
+                "height": 52
+              }
+            }
+          ]
+        }
+      ],
+      "checked": {
+        "elements": 51,
+        "textRanges": 21,
+        "images": 9,
+        "buttons": 10
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    },
+    "paused": {
+      "scope": "#ref-pause",
+      "issues": [],
+      "expected": [],
+      "grids": [],
+      "checked": {
+        "elements": 6,
+        "textRanges": 4,
+        "images": 0,
+        "buttons": 3
+      },
+      "viewport": [
+        430,
+        932
+      ]
+    }
+  }
+]

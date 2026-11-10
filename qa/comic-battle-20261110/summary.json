@@ -1,0 +1,15 @@
+{
+  "staff": 17,
+  "posesPerStaff": 6,
+  "staffPoseViewportCases": 408,
+  "staffPixelTextCollisions": 0,
+  "staffCanvasIssues": 0,
+  "geometryFailures": [],
+  "playViewports": 4,
+  "playErrors": [],
+  "missingAssets": [],
+  "playStateGeometryIssues": 0,
+  "nodeTests": 78,
+  "browserTests": 20,
+  "publicVerification": "GitHub Actions deployment; public URL browser access is blocked by execution proxy"
+}

@@ -3,7 +3,7 @@
 const SkillCutin = (() => {
  const pending=[],fallbacks=new Map(),layouts=new Map(),seen=new Set();
  let current=null,age=0,duration=1.15,root=null,art=null,artContext=null,caption=null,shout=null,badge=null,chain=null,live=null;
- const hasBody=key=>typeof CharacterMotion!=='undefined'&&CharacterMotion.has(key);
+ const hasBody=key=>!!Motion.sheets[key];
  const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)');
  function context(){
   if(typeof playing==='undefined'||!playing||ended||(typeof appScreen!=='undefined'&&appScreen!=='battle'))return 'clear';

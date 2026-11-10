@@ -1,8 +1,8 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto');
-test('Gobi and Jjit battle sheets preserve six bounded poses and current face references',()=>{
+test('All 17 staff battle sheets preserve six bounded poses and current face references',()=>{
  const m=JSON.parse(fs.readFileSync('assets/character-motion/manifest.json'));
- assert.deepEqual(Object.keys(m.characters),['gobi','electric-technician']);
+ const staff=JSON.parse(fs.readFileSync('assets/character-portraits/manifest.json')).characters.filter(r=>r.group!=='merc').map(r=>r.id);assert.equal(staff.length,17);assert.deepEqual(Object.keys(m.characters),staff);
  assert.deepEqual(m.poses,['idle','blink','anticipation','attack','skill','recovery']);
  for(const[id,r]of Object.entries(m.characters)){
   assert.equal(r.artStyle,'main-comic');assert.equal(r.frames.length,6);assert.equal(r.faceReference,'assets/character-portraits/'+id+'.webp');
@@ -14,7 +14,7 @@ test('Gobi and Jjit battle sheets preserve six bounded poses and current face re
 test('matching battle manifest replaces legacy sheets and supplies matching load fallbacks',()=>{
  const sandbox={window:{},MotionSheets:{gobi:{file:'legacy-bald-gobi'},'electric-technician':{file:'legacy-lizard'}}};vm.createContext(sandbox);
  vm.runInContext(fs.readFileSync('assets/character-motion/manifest.js','utf8'),sandbox);
- for(const id of ['gobi','electric-technician']){
+ for(const id of sandbox.window.CharacterMotion.ids){
   assert(sandbox.window.CharacterMotion.has(id));assert.equal(sandbox.MotionSheets[id].file,'assets/character-motion/'+id+'.webp');
   assert.equal(sandbox.window.CharacterMotion.imagePath(id),'assets/character-motion/'+id+'-idle.webp');
  }
