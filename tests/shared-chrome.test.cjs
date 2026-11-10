@@ -31,5 +31,13 @@ test('the text-free plaque stretches to long DOM headings without letter scaling
  const svg=fs.readFileSync('assets/shared-chrome/plaque.svg','utf8');
  assert(svg.includes('preserveAspectRatio="none"'));
  assert(!/<text[\s>]/.test(svg));
- assert(fs.readFileSync('shared-chrome.js','utf8').includes('shared-chrome.css?v=paper-comic-2'));
+ assert(fs.readFileSync('shared-chrome.js','utf8').includes('shared-chrome.css?v=paper-comic-3'));
+});
+
+test('modal frames use a square scalable source and perk cards have explicit active and disabled surfaces',()=>{
+ const css=fs.readFileSync('shared-chrome.css','utf8'),svg=fs.readFileSync('assets/shared-chrome/modal-paper.svg','utf8');
+ assert(svg.includes('viewBox="0 0 120 120"'));
+ assert(css.includes("modal-paper.svg') 24 fill / 16px"));
+ assert(!css.includes("paper.webp') 90 fill"));
+ assert(css.includes('#perk.shared-paper-modal :is(#perk-options,#perk-targets,#tactical-bonuses) button:disabled'));
 });

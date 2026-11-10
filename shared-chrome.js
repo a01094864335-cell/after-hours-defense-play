@@ -27,7 +27,7 @@
     button.replaceChildren(image, text);
    });
   }
-  for (const panel of scope.querySelectorAll('dialog.contained-panel,dialog#roster,dialog#recruit-dialog,dialog#training-dialog')) {
+  for (const panel of scope.querySelectorAll('dialog.contained-panel,dialog#roster,dialog#recruit-dialog,dialog#training-dialog,dialog#starter-choice,dialog#staff-trial')) {
    panel.classList.add('shared-paper-modal');
    const header = panel.querySelector(':scope > header');
    if (header) header.classList.add('shared-modal-header');
@@ -74,7 +74,7 @@
    if (!shadow) continue;
    if (!sheets.has(shadow)) {
     sheets.add(shadow);
-    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = new URL('shared-chrome.css?v=paper-comic-2', base).href;
+    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = new URL('shared-chrome.css?v=paper-comic-3', base).href;
     shadow.append(link);
     observer.observe(shadow, {childList:true,subtree:true});
    }

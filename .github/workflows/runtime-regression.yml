@@ -14,16 +14,57 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
       - run: node --test tests/*.test.cjs
       - run: node scripts/build-pages.cjs /tmp/game-pages
+        if: always()
       - uses: actions/setup-python@v5
+        if: always()
         with:
           python-version: '3.12'
       - run: python -m pip install -r tests/requirements-browser.txt
-      - run: python -m playwright install --with-deps chromium
+        if: always()
+      - run: python -m playwright install --with-deps chromium webkit
+        if: always()
+      - name: Capture baseline modal inventory
+        if: always()
+        continue-on-error: true
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          UI_GAME_ROOT: /tmp/modal-baseline-pages
+          UI_CHROMIUM_PATH: ''
+          MODAL_QA_DIR: /tmp/modal-qa/baseline
+          MODAL_QA_REPORT_ONLY: '1'
+        run: |
+          mkdir -p /tmp/modal-qa/baseline
+          trap 'echo "Baseline capture failed; inspect job logs." > /tmp/modal-qa/baseline/FAILED.txt' ERR
+          if [ -z "$BASE_SHA" ] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            echo 'No verified baseline commit available for this event.' > /tmp/modal-qa/baseline/UNAVAILABLE.txt
+            exit 0
+          fi
+          git worktree add --detach /tmp/modal-baseline-source "$BASE_SHA"
+          (cd /tmp/modal-baseline-source && node scripts/build-pages.cjs /tmp/modal-baseline-pages)
+          python -m unittest discover -s tests -p 'test_modal_inventory.py' -v
+      - name: Capture candidate modal inventory
+        if: always()
+        env:
+          UI_GAME_ROOT: /tmp/game-pages
+          UI_CHROMIUM_PATH: ''
+          MODAL_QA_DIR: /tmp/modal-qa/candidate
+          MODAL_QA_WEBKIT: '1'
+        run: python -m unittest discover -s tests -p 'test_modal_inventory.py' -v
+      - name: Upload modal screenshots and coverage reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: modal-inventory-${{ github.run_id }}
+          path: /tmp/modal-qa
+          if-no-files-found: warn
+          retention-days: 14
       - name: Browser smoke on the packaged game
         run: |
           python -m unittest discover -s tests -p 'test_browser_smoke.py' -v
