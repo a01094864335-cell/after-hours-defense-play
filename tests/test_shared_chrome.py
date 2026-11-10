@@ -65,6 +65,18 @@ class SharedChromeTests(unittest.TestCase):
                 page.wait_for_selector('#menu[open] #shared-menu-confirm')
                 self.assertEqual(page.locator('#shared-menu-confirm').count(),1)
                 self.assertEqual(page.locator('#menu-close').count(),1)
+                # Assert the computed cascade, not only class names or stylesheet text.
+                tones=page.evaluate("""()=>Object.fromEntries(['menu-story','reset','shared-menu-confirm'].map(id=>{
+                    const style=getComputedStyle(document.getElementById(id));
+                    return [id,{color:style.backgroundColor,image:style.backgroundImage,border:style.borderTopColor}];
+                }))""")
+                self.assertEqual(tones['menu-story']['color'],'rgb(255, 248, 229)')
+                self.assertEqual(tones['menu-story']['image'],'none')
+                self.assertEqual(tones['reset']['color'],'rgb(255, 240, 230)')
+                self.assertEqual(tones['reset']['image'],'none')
+                self.assertEqual(tones['reset']['border'],'rgb(170, 73, 68)')
+                self.assertEqual(tones['shared-menu-confirm']['color'],'rgb(255, 218, 50)')
+                self.assertIn('/shared-chrome/confirm.webp',tones['shared-menu-confirm']['image'])
                 for selector in ['#menu .ui-dialog-header','#menu-close','#shared-menu-confirm']:
                     b=page.locator(selector).bounding_box()
                     self.assertIsNotNone(b)
@@ -108,6 +120,22 @@ class SharedChromeTests(unittest.TestCase):
                 header=panel.locator(':scope > header.shared-modal-header')
                 self.assertEqual(header.count(),1)
                 self.assertIn('/shared-chrome/plaque.svg',header.locator('h2').evaluate('e=>getComputedStyle(e).backgroundImage'))
+                # Long real headings wrap inside the decorated title's own box.
+                title_bounds=header.locator('h2').evaluate("""e=>{
+                    const r=e.getBoundingClientRect(),range=document.createRange();range.selectNodeContents(e);
+                    const t=range.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom,textLeft:t.left,textRight:t.right,textTop:t.top,textBottom:t.bottom};
+                }""")
+                self.assertGreaterEqual(title_bounds['textLeft'],title_bounds['left'])
+                self.assertLessEqual(title_bounds['textRight'],title_bounds['right'])
+                self.assertGreaterEqual(title_bounds['textTop'],title_bounds['top'])
+                self.assertLessEqual(title_bounds['textBottom'],title_bounds['bottom'])
+                action=panel.locator('#deck-presets button' if dialog=='journey-dialog' else '#save-preview').first
+                self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundColor'),'rgb(255, 248, 229)')
+                self.assertEqual(action.evaluate('e=>getComputedStyle(e).backgroundImage'),'none')
+                if dialog=='journey-dialog':
+                    self.assertTrue(panel.locator('#deck-presets button').nth(1).is_disabled())
+                else:
+                    self.assertTrue(page.locator('#save-restore').is_hidden())
                 button=page.locator('#'+close)
                 self.assertTrue(button.locator('img').get_attribute('src').endswith('/shared-chrome/close.svg'))
                 for control in [header,button]:
@@ -127,4 +155,24 @@ class SharedChromeTests(unittest.TestCase):
             self.assertIn('/shared-chrome/plaque.svg',title.evaluate('e=>getComputedStyle(e).backgroundImage'))
             page.locator('#recruit-dialog .ref-recruit-actions button').last.click()
             self.assertFalse(page.locator('#recruit-dialog').evaluate('e=>e.open'))
+            page.context.close()
+
+    def test_shop_wallet_contents_stay_inside_pill(self):
+        for width,height in [(320,568),(390,844),(480,900)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');meta.coins=1000000;renderMeta()")
+            page.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+            wallet=page.locator('#asset-shop-host .shared-art-header .wallet')
+            bounds=wallet.evaluate("""e=>{
+                const rect=n=>{const r=n.getBoundingClientRect();return {left:r.left,right:r.right,top:r.top,bottom:r.bottom}};
+                return {parent:rect(e),children:[...e.children].map(rect)};
+            }""")
+            for child in bounds['children']:
+                self.assertGreaterEqual(child['left'],bounds['parent']['left'])
+                self.assertLessEqual(child['right'],bounds['parent']['right'])
+                self.assertGreaterEqual(child['top'],bounds['parent']['top'])
+                self.assertLessEqual(child['bottom'],bounds['parent']['bottom'])
+            self.assertEqual(wallet.locator('b').inner_text(),'1,000,000')
+            self.assertEqual(page.locator('#asset-shop-host .shared-title').evaluate('e=>getComputedStyle(e).webkitTextStrokeWidth'),'0px')
+            page.locator('#asset-shop-host .close').click()
             page.context.close()

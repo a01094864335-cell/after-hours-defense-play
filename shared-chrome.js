@@ -74,7 +74,7 @@
    if (!shadow) continue;
    if (!sheets.has(shadow)) {
     sheets.add(shadow);
-    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = new URL('shared-chrome.css?v=paper-comic-1', base).href;
+    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = new URL('shared-chrome.css?v=paper-comic-2', base).href;
     shadow.append(link);
     observer.observe(shadow, {childList:true,subtree:true});
    }

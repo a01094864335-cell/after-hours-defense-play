@@ -26,3 +26,10 @@ test('plain modal headers are normalized before close enhancement; recruitment r
  const css=fs.readFileSync('shared-chrome.css','utf8');
  assert(css.includes('.shared-modal-header) h2'));
 });
+
+test('the text-free plaque stretches to long DOM headings without letter scaling',()=>{
+ const svg=fs.readFileSync('assets/shared-chrome/plaque.svg','utf8');
+ assert(svg.includes('preserveAspectRatio="none"'));
+ assert(!/<text[\s>]/.test(svg));
+ assert(fs.readFileSync('shared-chrome.js','utf8').includes('shared-chrome.css?v=paper-comic-2'));
+});
