@@ -6,14 +6,14 @@ window.CharacterPortraits = (() => {
  const known = new Set(ids), cache = new Map();
  function src(id, fallback='') { return known.has(id) ? 'assets/character-portraits/' + id + '.webp' : fallback; }
  function image(id, className='', alt='') {
-  const img = new Image(); img.src = src(id); img.alt = alt; img.className = className;
+  const img = new Image(); img.addEventListener('load',()=>window.GamePerformance?.invalidate()); img.src = src(id); img.alt = alt; img.className = className;
   img.dataset.characterId = id; img.dataset.motion = 'static-character-identity'; img.decoding = 'async';
   if(!cache.has(id))cache.set(id,img);
   return img;
  }
  function preload(id) {
   if(!known.has(id))return null;
-  if(!cache.has(id)){const img=image(id);img.addEventListener('load',()=>window.GamePerformance?.invalidate());}
+  if(!cache.has(id))image(id);
   return cache.get(id);
  }
  function draw(ctx,id,x,y,size,options={}) {
