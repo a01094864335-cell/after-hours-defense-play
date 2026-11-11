@@ -1,0 +1,26 @@
+/* Shared portrait stickers and paper UI; combat geometry stays unchanged. */
+html.open-scene body #battle #battle-support{position:absolute;left:50%;bottom:1.4%;transform:translateX(-50%);display:flex;align-items:center;gap:5px;width:43%;height:clamp(42px,11cqw,54px);padding:5px 10px 5px 48px;background:#fff4d7;border:2px solid #142852;border-radius:12px 16px 14px 10px;box-shadow:2px 3px 0 #142852;z-index:3;pointer-events:none;isolation:isolate;color:#142852}
+html.open-scene body #battle #battle-support[hidden]{display:none}
+#battle-support>img{position:absolute;left:-8px;bottom:-2px;width:clamp(49px,16cqw,65px);height:clamp(49px,16cqw,65px);object-fit:contain;filter:none}
+#battle-support>span{display:flex;flex-direction:column;gap:2px;min-width:0;width:100%}
+#battle-support b{font:400 clamp(13px,4cqw,17px)/1.1 BattleTitle,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#battle-support small{font:800 clamp(9px,2.6cqw,11px)/1.2 system-ui;color:#2258bb;white-space:nowrap}
+#battle-support[data-active=true]{background:#ffed94;box-shadow:2px 3px 0 #142852,0 0 0 4px #ffe54a55}
+#battle-support[data-active=true] small{color:#895000}
+html.open-scene body #battle :is(#battle-support>img,#battle-selected-portrait){image-rendering:auto!important}
+html.open-scene body #battle.battle-comic.battle-exact .battle-pick-grid{display:none}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false] .battle-pick-grid{position:absolute;left:5%;top:50%;transform:translateY(-50%) rotate(-5deg);display:grid;grid-template-columns:repeat(3,1fr);gap:3px;width:10cqw;height:10cqw;padding:4px;border-radius:7px;background:#1f59b4;box-shadow:2px 2px #12284e}
+.battle-pick-grid i{display:block;background:#8fc8fb;border-radius:1px}.battle-pick-grid i:nth-child(5){background:#ffe140;box-shadow:0 0 0 1px #fff1a2}
+/* Cover the mint action slot baked into the arena when no staff is selected. */
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false]{background:url('assets/shared-chrome/paper.webp') center/100% 100% no-repeat}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false] :is(#battle-selected-portrait,#skill){display:none!important}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false] #battle-selected-name{left:20%;top:25%;width:66%;font:400 clamp(13px,4.5cqw,19px)/1.2 BattleTitle,sans-serif;white-space:normal;overflow:visible}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false] #battle-selected-grade{left:20%;top:61%;width:66%;font:500 clamp(9px,2.75cqw,12px)/1.3 system-ui;color:#53637c;letter-spacing:0;white-space:normal}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row #skill-help{top:50%!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;transform:translateY(-50%)!important;padding:0}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=false] #skill-help{left:auto;right:2%;color:#2258bb}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=true] #skill-help{left:64%}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-selected=true] #battle-selected-name{width:35%;font-size:min(5.8cqw,23px)}
+html.open-scene body #battle.battle-comic.battle-exact #skill{font-size:clamp(11px,4.3cqw,18px)}
+html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-skill-state=locked] #battle-selected-grade{font:700 clamp(10px,3.5cqw,14px)/1.2 system-ui;letter-spacing:0}
+@media(max-height:700px){html.open-scene body #battle #battle-support{height:40px;bottom:.6%;padding-left:40px}#battle-support>img{width:44px;height:44px;left:-4px;bottom:0}}
+@media(prefers-reduced-motion:no-preference){#battle-support[data-active=true]>img{animation:support-cheer .35s ease-out}@keyframes support-cheer{50%{transform:translateY(-5px) rotate(-5deg)}}}

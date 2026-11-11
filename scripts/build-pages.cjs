@@ -22,6 +22,7 @@ files.add('gameworld-ui.js');
 files.add('battle-art.js');
 files.add('battle-comic.css');
 files.add('battle-exact.css');
+files.add('battle-cohesion.css');
 files.add('shared-chrome.css');
 files.add('shared-chrome.js');
 files.add('text-grid.js');
