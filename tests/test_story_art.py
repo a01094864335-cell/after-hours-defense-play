@@ -26,6 +26,15 @@ class StoryArtTests(unittest.TestCase):
             self.assertEqual(p.evaluate('JSON.stringify({coins:meta.coins,stories:meta.stories,page:promoIndex})'),before)
             p.locator('#promo-next').click()
             self.assertEqual(p.evaluate('promoIndex'),1)
+            p.evaluate("replayCastleStory('chair-project');promoIndex=2;renderCastleStory()")
+            p.wait_for_timeout(30)
+            self.assertEqual(p.locator('#promo-face').evaluate('e=>getComputedStyle(e).objectPosition'),'50% 0%')
+            p.evaluate("document.documentElement.lang='en'")
+            self.assertEqual(p.locator('#promo .story-art-toggle').inner_text(),'Full art')
+            self.assertEqual(p.locator('#promo .story-art-toggle').get_attribute('aria-label'),'Hide dialogue and view full artwork')
+            p.locator('#promo .story-art-toggle').click()
+            self.assertEqual(p.locator('#promo-face').evaluate('e=>getComputedStyle(e).objectPosition'),'50% 50%')
+            p.locator('#promo .story-art-toggle').click()
             p.evaluate("document.querySelector('#promo').close();meta.staff=[...BASE_STAFF,...RECRUIT_STAFF];meta.owned=[...MERC_IDS];HiringStories.open('spider-tailor')")
             p.locator('#hiring-story .story-art-toggle').click()
             self.assertFalse(p.locator('#hiring-story footer').is_visible())
@@ -41,4 +50,19 @@ class StoryArtTests(unittest.TestCase):
         p.locator('#asset-shop-host [data-tab="items"]').click()
         for key in ['grade','kind','king']:
             self.assertEqual(p.locator('#item-'+key+' img').get_attribute('src'),'assets/battle-exact/item-'+key+'.webp')
+            self.assertEqual(p.locator('#buy-'+key).evaluate("e=>e.parentElement.querySelector('img').getAttribute('src')"),'assets/battle-exact/item-'+key+'.webp')
             self.assertEqual(p.locator('#asset-shop-host article').filter(has=p.locator('[data-item="'+key+'"]')).locator('img').get_attribute('src'),'assets/battle-exact/item-'+key+'.webp')
+
+    def test_every_hiring_panel_updates_the_art_not_the_shared_close_icon(self):
+        p=self.open(320,568)
+        p.evaluate("meta.tutorialComplete=true;restartTo('lobby');meta.staff=[...BASE_STAFF,...RECRUIT_STAFF];meta.owned=[...MERC_IDS]")
+        for story in p.evaluate('HIRING_STORIES.map(s=>({id:s.id,panels:s.panels.map(p=>p.file)}))'):
+            p.evaluate('(id)=>HiringStories.open(id)',story['id'])
+            for i,file in enumerate(story['panels']):
+                if i:p.locator('[data-hire-next]').click()
+                art=p.locator('#hiring-story .hire-art img')
+                self.assertEqual(art.get_attribute('src'),'assets/hiring-stories/'+file)
+                art.evaluate('(e)=>e.decode()')
+                close=p.locator('#hiring-story [data-hire-close] img')
+                self.assertTrue(close.get_attribute('src').endswith('/shared-chrome/close.svg'))
+            p.locator('[data-hire-close]').click()
