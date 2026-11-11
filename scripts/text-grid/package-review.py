@@ -6,8 +6,10 @@ from pathlib import Path
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[2]
 QA=ROOT/'qa/text-grid-20261111'
-SOURCES=['final','extended','readers-final','scrolls','scrolls-roster-final','recheck','roster-final','lobby-final','narrative-final','stress-final','system','narrative-nav-final','extended-stress','all-stress','shop-final','shop-all-final','nav-all-final','shop-availability-final']
+SOURCES=['final','extended','readers-final','scrolls','scrolls-roster-final','recheck','roster-final','lobby-final','narrative-final','stress-final','system','narrative-nav-final','extended-stress','all-stress','shop-final','shop-all-final','nav-all-final','shop-availability-final','stamp-final','stamp-shop-final']
 accepted={};superseded=[]
+if (QA/'accepted.json').exists():
+    for row in json.loads((QA/'accepted.json').read_text()):accepted[(row['id'],row.get('size'),row['lang'])]=row
 for source in SOURCES:
     file=QA/source/'report.json'
     if not file.exists():continue
@@ -23,6 +25,8 @@ DEST=QA/'reviewed';DEST.mkdir(exist_ok=True)
 jobs={}
 def add_image(source,name,prefix):
     if not name:return None
+    if name.startswith('reviewed/'):
+        file=QA/name;jobs[file]=file;return name
     dest=prefix+'-'+Path(name).stem+'.webp'
     jobs[DEST/dest]=QA/source/name
     return 'reviewed/'+dest
@@ -34,10 +38,11 @@ for key,row in sorted(accepted.items()):
     trans=row.get('translation')
     if trans:
         text=[t['text'] for phase in ['top','bottom','geometry'] for t in row.get(phase,{}).get('texts',[])]+[t['text'] for s in row.get('scrolls',[]) for t in s.get('texts',[])]
-        row['translation']={'mode':row['lang'],'translatedNodeCount':len(trans.get('translated',[])), 'untranslatedVisible':sorted({t for t in text if any('가'<=c<='힣' for c in t)}),'meaning':'Copy proposals, not production localization. en-stress contains synthetic English prose.'}
+        row['translation']={'mode':row['lang'],'translatedNodeCount':trans.get('translatedNodeCount',len(trans.get('translated',[]))), 'untranslatedVisible':sorted({t for t in text if any('가'<=c<='힣' for c in t)}),'meaning':'Copy proposals, not production localization. en-stress contains synthetic English prose.'}
     rows.append(row)
 baseline=[]
-for row in json.loads((QA/'baseline/report.json').read_text()):
+baseline_source=QA/'baseline/report.json' if (QA/'baseline/report.json').exists() else QA/'baseline.json'
+for row in json.loads(baseline_source.read_text()):
     if row.get('error'):continue
     for f in ['screenshot','bottomScreenshot']:row[f]=add_image('baseline',row.get(f),'baseline')
     baseline.append(row)

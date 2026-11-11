@@ -228,7 +228,9 @@ class SharedChromeTests(unittest.TestCase):
                 self.assertGreaterEqual(box['h'],44)
             for selector in ['.r-duty-heading','.r-card-copy','.r-record']:
                 sizes=page.locator('#asset-roster-host '+selector).evaluate_all('xs=>xs.map(e=>({client:e.clientWidth,scroll:e.scrollWidth}))')
-                self.assertTrue(all(x['scroll']<=x['client']+2 for x in sizes),selector)
+                self.assertTrue(all(x['scroll']<=x['client']+2 for x in sizes),(selector,sizes))
+            stamps=page.locator('#asset-roster-host .r-stamp').evaluate_all('xs=>xs.map(e=>{const r=e.getBoundingClientRect(),p=e.closest(".r-card-copy").getBoundingClientRect();return {left:r.left-p.left,right:p.right-r.right}})')
+            self.assertTrue(all(x['left']>=1 and x['right']>=1 for x in stamps),stamps)
             page.context.close()
 
     def test_result_accordion_targets_are_at_least_44px(self):

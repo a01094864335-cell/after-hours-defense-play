@@ -1,6 +1,6 @@
 # 전체 캡처 인덱스
 
-영문은 출시 번역이 아닌 문구 후보이며 en-stress는 긴 영문 샘플·130% 검사입니다. [발견·수정 문서](../../docs/text-grid-audit-20261111.md) · [필터 갤러리(로컬에서 열기)](index.html)
+영문은 출시 번역이 아닌 문구 후보이며 en-stress는 긴 영문 샘플·130% 검사입니다. [검수 문서](../../docs/text-grid-audit-20261111.md) · [필터 갤러리](index.html)
 
 | 화면 | 언어 | 크기 | 캡처 |
 | --- | --- | --- | --- |
@@ -379,16 +379,16 @@
 | result-normal | ko | 390x844 | [상단](reviewed/final-390x844-ko-result-normal.webp) · [하단](reviewed/final-390x844-ko-result-normal-bottom.webp) |
 | result-normal | en | 430x932 | [상단](reviewed/final-430x932-en-result-normal.webp) · [하단](reviewed/final-430x932-en-result-normal-bottom.webp) |
 | result-normal | ko | 430x932 | [상단](reviewed/final-430x932-ko-result-normal.webp) · [하단](reviewed/final-430x932-ko-result-normal-bottom.webp) |
-| roster | en | 320x568 | [상단](reviewed/roster-final-320x568-en-roster.webp) · [하단](reviewed/roster-final-320x568-en-roster-bottom.webp) |
+| roster | en | 320x568 | [상단](reviewed/stamp-final-320x568-en-roster.webp) · [하단](reviewed/stamp-final-320x568-en-roster-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-en-roster-scroll-0-201.webp) · [중간 2](reviewed/stamp-final-320x568-en-roster-scroll-0-402.webp) · [중간 3](reviewed/stamp-final-320x568-en-roster-scroll-0-603.webp) · [중간 4](reviewed/stamp-final-320x568-en-roster-scroll-0-804.webp) · [중간 5](reviewed/stamp-final-320x568-en-roster-scroll-0-1005.webp) · [중간 6](reviewed/stamp-final-320x568-en-roster-scroll-0-1206.webp) · [중간 7](reviewed/stamp-final-320x568-en-roster-scroll-0-1407.webp) · [중간 8](reviewed/stamp-final-320x568-en-roster-scroll-0-1608.webp) |
 | roster | en-stress | 320x568 | [상단](reviewed/all-stress-320x568-en-stress-roster.webp) · [하단](reviewed/all-stress-320x568-en-stress-roster-bottom.webp) |
-| roster | ko | 320x568 | [상단](reviewed/recheck-320x568-ko-roster.webp) · [하단](reviewed/recheck-320x568-ko-roster-bottom.webp) |
-| roster | en | 390x684 | [상단](reviewed/roster-final-390x684-en-roster.webp) · [하단](reviewed/roster-final-390x684-en-roster-bottom.webp) |
-| roster | ko | 390x684 | [상단](reviewed/final-390x684-ko-roster.webp) · [하단](reviewed/final-390x684-ko-roster-bottom.webp) |
-| roster | en | 390x844 | [상단](reviewed/roster-final-390x844-en-roster.webp) · [하단](reviewed/roster-final-390x844-en-roster-bottom.webp) |
+| roster | ko | 320x568 | [상단](reviewed/stamp-final-320x568-ko-roster.webp) · [하단](reviewed/stamp-final-320x568-ko-roster-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-ko-roster-scroll-0-201.webp) · [중간 2](reviewed/stamp-final-320x568-ko-roster-scroll-0-402.webp) · [중간 3](reviewed/stamp-final-320x568-ko-roster-scroll-0-603.webp) |
+| roster | en | 390x684 | [상단](reviewed/stamp-final-390x684-en-roster.webp) · [하단](reviewed/stamp-final-390x684-en-roster-bottom.webp) · [중간 1](reviewed/stamp-final-390x684-en-roster-scroll-0-261.webp) · [중간 2](reviewed/stamp-final-390x684-en-roster-scroll-0-522.webp) · [중간 3](reviewed/stamp-final-390x684-en-roster-scroll-0-783.webp) · [중간 4](reviewed/stamp-final-390x684-en-roster-scroll-0-1044.webp) · [중간 5](reviewed/stamp-final-390x684-en-roster-scroll-0-1305.webp) · [중간 6](reviewed/stamp-final-390x684-en-roster-scroll-0-1566.webp) |
+| roster | ko | 390x684 | [상단](reviewed/stamp-final-390x684-ko-roster.webp) · [하단](reviewed/stamp-final-390x684-ko-roster-bottom.webp) · [중간 1](reviewed/stamp-final-390x684-ko-roster-scroll-0-259.webp) · [중간 2](reviewed/stamp-final-390x684-ko-roster-scroll-0-518.webp) · [중간 3](reviewed/stamp-final-390x684-ko-roster-scroll-0-777.webp) |
+| roster | en | 390x844 | [상단](reviewed/stamp-final-390x844-en-roster.webp) · [하단](reviewed/stamp-final-390x844-en-roster-bottom.webp) · [중간 1](reviewed/stamp-final-390x844-en-roster-scroll-0-389.webp) · [중간 2](reviewed/stamp-final-390x844-en-roster-scroll-0-778.webp) · [중간 3](reviewed/stamp-final-390x844-en-roster-scroll-0-1167.webp) |
 | roster | en-stress | 390x844 | [상단](reviewed/stress-final-390x844-en-stress-roster.webp) · [하단](reviewed/stress-final-390x844-en-stress-roster-bottom.webp) |
-| roster | ko | 390x844 | [상단](reviewed/recheck-390x844-ko-roster.webp) · [하단](reviewed/recheck-390x844-ko-roster-bottom.webp) |
-| roster | en | 430x932 | [상단](reviewed/roster-final-430x932-en-roster.webp) · [하단](reviewed/roster-final-430x932-en-roster-bottom.webp) |
-| roster | ko | 430x932 | [상단](reviewed/recheck-430x932-ko-roster.webp) · [하단](reviewed/recheck-430x932-ko-roster-bottom.webp) |
+| roster | ko | 390x844 | [상단](reviewed/stamp-final-390x844-ko-roster.webp) · [하단](reviewed/stamp-final-390x844-ko-roster-bottom.webp) · [중간 1](reviewed/stamp-final-390x844-ko-roster-scroll-0-387.webp) |
+| roster | en | 430x932 | [상단](reviewed/stamp-final-430x932-en-roster.webp) · [하단](reviewed/stamp-final-430x932-en-roster-bottom.webp) · [중간 1](reviewed/stamp-final-430x932-en-roster-scroll-0-452.webp) · [중간 2](reviewed/stamp-final-430x932-en-roster-scroll-0-904.webp) · [중간 3](reviewed/stamp-final-430x932-en-roster-scroll-0-1356.webp) |
+| roster | ko | 430x932 | [상단](reviewed/stamp-final-430x932-ko-roster.webp) · [하단](reviewed/stamp-final-430x932-ko-roster-bottom.webp) · [중간 1](reviewed/stamp-final-430x932-ko-roster-scroll-0-449.webp) |
 | roster-detail | en | 320x568 | [상단](reviewed/final-320x568-en-roster-detail.webp) · [하단](reviewed/final-320x568-en-roster-detail-bottom.webp) |
 | roster-detail | en-stress | 320x568 | [상단](reviewed/all-stress-320x568-en-stress-roster-detail.webp) · [하단](reviewed/all-stress-320x568-en-stress-roster-detail-bottom.webp) |
 | roster-detail | ko | 320x568 | [상단](reviewed/final-320x568-ko-roster-detail.webp) · [하단](reviewed/final-320x568-ko-roster-detail-bottom.webp) |
@@ -398,24 +398,24 @@
 | roster-detail | ko | 390x844 | [상단](reviewed/final-390x844-ko-roster-detail.webp) · [하단](reviewed/final-390x844-ko-roster-detail-bottom.webp) |
 | roster-detail | en | 430x932 | [상단](reviewed/final-430x932-en-roster-detail.webp) · [하단](reviewed/final-430x932-en-roster-detail-bottom.webp) |
 | roster-detail | ko | 430x932 | [상단](reviewed/final-430x932-ko-roster-detail.webp) · [하단](reviewed/final-430x932-ko-roster-detail-bottom.webp) |
-| roster-incoming | en | 320x568 | [상단](reviewed/roster-final-320x568-en-roster-incoming.webp) · [하단](reviewed/roster-final-320x568-en-roster-incoming-bottom.webp) |
+| roster-incoming | en | 320x568 | [상단](reviewed/stamp-final-320x568-en-roster-incoming.webp) · [하단](reviewed/stamp-final-320x568-en-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-en-roster-incoming-scroll-0-201.webp) · [중간 2](reviewed/stamp-final-320x568-en-roster-incoming-scroll-0-402.webp) · [중간 3](reviewed/stamp-final-320x568-en-roster-incoming-scroll-0-603.webp) · [중간 4](reviewed/stamp-final-320x568-en-roster-incoming-scroll-0-804.webp) · [중간 5](reviewed/stamp-final-320x568-en-roster-incoming-scroll-0-1005.webp) |
 | roster-incoming | en-stress | 320x568 | [상단](reviewed/all-stress-320x568-en-stress-roster-incoming.webp) · [하단](reviewed/all-stress-320x568-en-stress-roster-incoming-bottom.webp) |
-| roster-incoming | ko | 320x568 | [상단](reviewed/scrolls-320x568-ko-roster-incoming.webp) · [하단](reviewed/scrolls-320x568-ko-roster-incoming-bottom.webp) · [중간 1](reviewed/scrolls-320x568-ko-roster-incoming-scroll-0-201.webp) · [중간 2](reviewed/scrolls-320x568-ko-roster-incoming-scroll-0-402.webp) |
-| roster-incoming | en | 390x684 | [상단](reviewed/roster-final-390x684-en-roster-incoming.webp) · [하단](reviewed/roster-final-390x684-en-roster-incoming-bottom.webp) |
-| roster-incoming | ko | 390x684 | [상단](reviewed/final-390x684-ko-roster-incoming.webp) · [하단](reviewed/final-390x684-ko-roster-incoming-bottom.webp) |
-| roster-incoming | en | 390x844 | [상단](reviewed/roster-final-390x844-en-roster-incoming.webp) · [하단](reviewed/roster-final-390x844-en-roster-incoming-bottom.webp) |
-| roster-incoming | ko | 390x844 | [상단](reviewed/final-390x844-ko-roster-incoming.webp) · [하단](reviewed/final-390x844-ko-roster-incoming-bottom.webp) |
-| roster-incoming | en | 430x932 | [상단](reviewed/roster-final-430x932-en-roster-incoming.webp) · [하단](reviewed/roster-final-430x932-en-roster-incoming-bottom.webp) |
-| roster-incoming | ko | 430x932 | [상단](reviewed/final-430x932-ko-roster-incoming.webp) · [하단](reviewed/final-430x932-ko-roster-incoming-bottom.webp) |
-| roster-support | en | 320x568 | [상단](reviewed/roster-final-320x568-en-roster-support.webp) · [하단](reviewed/roster-final-320x568-en-roster-support-bottom.webp) |
+| roster-incoming | ko | 320x568 | [상단](reviewed/stamp-final-320x568-ko-roster-incoming.webp) · [하단](reviewed/stamp-final-320x568-ko-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-ko-roster-incoming-scroll-0-201.webp) · [중간 2](reviewed/stamp-final-320x568-ko-roster-incoming-scroll-0-402.webp) |
+| roster-incoming | en | 390x684 | [상단](reviewed/stamp-final-390x684-en-roster-incoming.webp) · [하단](reviewed/stamp-final-390x684-en-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-390x684-en-roster-incoming-scroll-0-261.webp) · [중간 2](reviewed/stamp-final-390x684-en-roster-incoming-scroll-0-522.webp) · [중간 3](reviewed/stamp-final-390x684-en-roster-incoming-scroll-0-783.webp) |
+| roster-incoming | ko | 390x684 | [상단](reviewed/stamp-final-390x684-ko-roster-incoming.webp) · [하단](reviewed/stamp-final-390x684-ko-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-390x684-ko-roster-incoming-scroll-0-259.webp) |
+| roster-incoming | en | 390x844 | [상단](reviewed/stamp-final-390x844-en-roster-incoming.webp) · [하단](reviewed/stamp-final-390x844-en-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-390x844-en-roster-incoming-scroll-0-389.webp) · [중간 2](reviewed/stamp-final-390x844-en-roster-incoming-scroll-0-778.webp) |
+| roster-incoming | ko | 390x844 | [상단](reviewed/stamp-final-390x844-ko-roster-incoming.webp) · [하단](reviewed/stamp-final-390x844-ko-roster-incoming-bottom.webp) |
+| roster-incoming | en | 430x932 | [상단](reviewed/stamp-final-430x932-en-roster-incoming.webp) · [하단](reviewed/stamp-final-430x932-en-roster-incoming-bottom.webp) · [중간 1](reviewed/stamp-final-430x932-en-roster-incoming-scroll-0-452.webp) |
+| roster-incoming | ko | 430x932 | [상단](reviewed/stamp-final-430x932-ko-roster-incoming.webp) · [하단](reviewed/stamp-final-430x932-ko-roster-incoming-bottom.webp) |
+| roster-support | en | 320x568 | [상단](reviewed/stamp-final-320x568-en-roster-support.webp) · [하단](reviewed/stamp-final-320x568-en-roster-support-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-en-roster-support-scroll-0-201.webp) · [중간 2](reviewed/stamp-final-320x568-en-roster-support-scroll-0-402.webp) · [중간 3](reviewed/stamp-final-320x568-en-roster-support-scroll-0-603.webp) |
 | roster-support | en-stress | 320x568 | [상단](reviewed/all-stress-320x568-en-stress-roster-support.webp) · [하단](reviewed/all-stress-320x568-en-stress-roster-support-bottom.webp) |
-| roster-support | ko | 320x568 | [상단](reviewed/scrolls-320x568-ko-roster-support.webp) · [하단](reviewed/scrolls-320x568-ko-roster-support-bottom.webp) · [중간 1](reviewed/scrolls-320x568-ko-roster-support-scroll-0-201.webp) |
-| roster-support | en | 390x684 | [상단](reviewed/roster-final-390x684-en-roster-support.webp) · [하단](reviewed/roster-final-390x684-en-roster-support-bottom.webp) |
-| roster-support | ko | 390x684 | [상단](reviewed/final-390x684-ko-roster-support.webp) · [하단](reviewed/final-390x684-ko-roster-support-bottom.webp) |
-| roster-support | en | 390x844 | [상단](reviewed/roster-final-390x844-en-roster-support.webp) · [하단](reviewed/roster-final-390x844-en-roster-support-bottom.webp) |
-| roster-support | ko | 390x844 | [상단](reviewed/final-390x844-ko-roster-support.webp) · [하단](reviewed/final-390x844-ko-roster-support-bottom.webp) |
-| roster-support | en | 430x932 | [상단](reviewed/roster-final-430x932-en-roster-support.webp) · [하단](reviewed/roster-final-430x932-en-roster-support-bottom.webp) |
-| roster-support | ko | 430x932 | [상단](reviewed/final-430x932-ko-roster-support.webp) |
+| roster-support | ko | 320x568 | [상단](reviewed/stamp-final-320x568-ko-roster-support.webp) · [하단](reviewed/stamp-final-320x568-ko-roster-support-bottom.webp) · [중간 1](reviewed/stamp-final-320x568-ko-roster-support-scroll-0-201.webp) |
+| roster-support | en | 390x684 | [상단](reviewed/stamp-final-390x684-en-roster-support.webp) · [하단](reviewed/stamp-final-390x684-en-roster-support-bottom.webp) · [중간 1](reviewed/stamp-final-390x684-en-roster-support-scroll-0-261.webp) · [중간 2](reviewed/stamp-final-390x684-en-roster-support-scroll-0-522.webp) |
+| roster-support | ko | 390x684 | [상단](reviewed/stamp-final-390x684-ko-roster-support.webp) · [하단](reviewed/stamp-final-390x684-ko-roster-support-bottom.webp) |
+| roster-support | en | 390x844 | [상단](reviewed/stamp-final-390x844-en-roster-support.webp) · [하단](reviewed/stamp-final-390x844-en-roster-support-bottom.webp) · [중간 1](reviewed/stamp-final-390x844-en-roster-support-scroll-0-389.webp) |
+| roster-support | ko | 390x844 | [상단](reviewed/stamp-final-390x844-ko-roster-support.webp) · [하단](reviewed/stamp-final-390x844-ko-roster-support-bottom.webp) |
+| roster-support | en | 430x932 | [상단](reviewed/stamp-final-430x932-en-roster-support.webp) · [하단](reviewed/stamp-final-430x932-en-roster-support-bottom.webp) |
+| roster-support | ko | 430x932 | [상단](reviewed/stamp-final-430x932-ko-roster-support.webp) |
 | rotation | en-stress | 684x390 | [상단](reviewed/system-rotation-en-stress.webp) |
 | rotation | ko | 684x390 | [상단](reviewed/system-rotation-ko.webp) |
 | session | en-stress | 390x684 | [상단](reviewed/system-session-en-stress.webp) |
@@ -440,22 +440,22 @@
 | shop-affordable | ko | 390x844 | [상단](reviewed/shop-all-final-390x844-ko-shop-affordable.webp) · [하단](reviewed/shop-all-final-390x844-ko-shop-affordable-bottom.webp) |
 | shop-affordable | en | 430x932 | [상단](reviewed/shop-all-final-430x932-en-shop-affordable.webp) · [하단](reviewed/shop-all-final-430x932-en-shop-affordable-bottom.webp) |
 | shop-affordable | ko | 430x932 | [상단](reviewed/shop-all-final-430x932-ko-shop-affordable.webp) · [하단](reviewed/shop-all-final-430x932-ko-shop-affordable-bottom.webp) |
-| shop-available | en | 320x568 | [상단](reviewed/shop-availability-final-320x568-en-shop-available.webp) · [하단](reviewed/shop-availability-final-320x568-en-shop-available-bottom.webp) |
-| shop-available | ko | 320x568 | [상단](reviewed/shop-availability-final-320x568-ko-shop-available.webp) · [하단](reviewed/shop-availability-final-320x568-ko-shop-available-bottom.webp) |
-| shop-available | en | 390x684 | [상단](reviewed/shop-availability-final-390x684-en-shop-available.webp) · [하단](reviewed/shop-availability-final-390x684-en-shop-available-bottom.webp) |
-| shop-available | ko | 390x684 | [상단](reviewed/shop-availability-final-390x684-ko-shop-available.webp) · [하단](reviewed/shop-availability-final-390x684-ko-shop-available-bottom.webp) |
-| shop-available | en | 390x844 | [상단](reviewed/shop-availability-final-390x844-en-shop-available.webp) · [하단](reviewed/shop-availability-final-390x844-en-shop-available-bottom.webp) |
-| shop-available | ko | 390x844 | [상단](reviewed/shop-availability-final-390x844-ko-shop-available.webp) · [하단](reviewed/shop-availability-final-390x844-ko-shop-available-bottom.webp) |
-| shop-available | en | 430x932 | [상단](reviewed/shop-availability-final-430x932-en-shop-available.webp) · [하단](reviewed/shop-availability-final-430x932-en-shop-available-bottom.webp) |
-| shop-available | ko | 430x932 | [상단](reviewed/shop-availability-final-430x932-ko-shop-available.webp) · [하단](reviewed/shop-availability-final-430x932-ko-shop-available-bottom.webp) |
-| shop-available-poor | en | 320x568 | [상단](reviewed/shop-availability-final-320x568-en-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-320x568-en-shop-available-poor-bottom.webp) |
-| shop-available-poor | ko | 320x568 | [상단](reviewed/shop-availability-final-320x568-ko-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-320x568-ko-shop-available-poor-bottom.webp) |
-| shop-available-poor | en | 390x684 | [상단](reviewed/shop-availability-final-390x684-en-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-390x684-en-shop-available-poor-bottom.webp) |
-| shop-available-poor | ko | 390x684 | [상단](reviewed/shop-availability-final-390x684-ko-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-390x684-ko-shop-available-poor-bottom.webp) |
-| shop-available-poor | en | 390x844 | [상단](reviewed/shop-availability-final-390x844-en-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-390x844-en-shop-available-poor-bottom.webp) |
-| shop-available-poor | ko | 390x844 | [상단](reviewed/shop-availability-final-390x844-ko-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-390x844-ko-shop-available-poor-bottom.webp) |
-| shop-available-poor | en | 430x932 | [상단](reviewed/shop-availability-final-430x932-en-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-430x932-en-shop-available-poor-bottom.webp) |
-| shop-available-poor | ko | 430x932 | [상단](reviewed/shop-availability-final-430x932-ko-shop-available-poor.webp) · [하단](reviewed/shop-availability-final-430x932-ko-shop-available-poor-bottom.webp) |
+| shop-available | en | 320x568 | [상단](reviewed/stamp-shop-final-320x568-en-shop-available.webp) · [하단](reviewed/stamp-shop-final-320x568-en-shop-available-bottom.webp) |
+| shop-available | ko | 320x568 | [상단](reviewed/stamp-shop-final-320x568-ko-shop-available.webp) · [하단](reviewed/stamp-shop-final-320x568-ko-shop-available-bottom.webp) |
+| shop-available | en | 390x684 | [상단](reviewed/stamp-shop-final-390x684-en-shop-available.webp) · [하단](reviewed/stamp-shop-final-390x684-en-shop-available-bottom.webp) |
+| shop-available | ko | 390x684 | [상단](reviewed/stamp-shop-final-390x684-ko-shop-available.webp) · [하단](reviewed/stamp-shop-final-390x684-ko-shop-available-bottom.webp) |
+| shop-available | en | 390x844 | [상단](reviewed/stamp-shop-final-390x844-en-shop-available.webp) · [하단](reviewed/stamp-shop-final-390x844-en-shop-available-bottom.webp) |
+| shop-available | ko | 390x844 | [상단](reviewed/stamp-shop-final-390x844-ko-shop-available.webp) · [하단](reviewed/stamp-shop-final-390x844-ko-shop-available-bottom.webp) |
+| shop-available | en | 430x932 | [상단](reviewed/stamp-shop-final-430x932-en-shop-available.webp) · [하단](reviewed/stamp-shop-final-430x932-en-shop-available-bottom.webp) |
+| shop-available | ko | 430x932 | [상단](reviewed/stamp-shop-final-430x932-ko-shop-available.webp) · [하단](reviewed/stamp-shop-final-430x932-ko-shop-available-bottom.webp) |
+| shop-available-poor | en | 320x568 | [상단](reviewed/stamp-shop-final-320x568-en-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-320x568-en-shop-available-poor-bottom.webp) |
+| shop-available-poor | ko | 320x568 | [상단](reviewed/stamp-shop-final-320x568-ko-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-320x568-ko-shop-available-poor-bottom.webp) |
+| shop-available-poor | en | 390x684 | [상단](reviewed/stamp-shop-final-390x684-en-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-390x684-en-shop-available-poor-bottom.webp) |
+| shop-available-poor | ko | 390x684 | [상단](reviewed/stamp-shop-final-390x684-ko-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-390x684-ko-shop-available-poor-bottom.webp) |
+| shop-available-poor | en | 390x844 | [상단](reviewed/stamp-shop-final-390x844-en-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-390x844-en-shop-available-poor-bottom.webp) |
+| shop-available-poor | ko | 390x844 | [상단](reviewed/stamp-shop-final-390x844-ko-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-390x844-ko-shop-available-poor-bottom.webp) |
+| shop-available-poor | en | 430x932 | [상단](reviewed/stamp-shop-final-430x932-en-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-430x932-en-shop-available-poor-bottom.webp) |
+| shop-available-poor | ko | 430x932 | [상단](reviewed/stamp-shop-final-430x932-ko-shop-available-poor.webp) · [하단](reviewed/stamp-shop-final-430x932-ko-shop-available-poor-bottom.webp) |
 | shop-earned | en | 320x568 | [상단](reviewed/shop-all-final-320x568-en-shop-earned.webp) · [하단](reviewed/shop-all-final-320x568-en-shop-earned-bottom.webp) |
 | shop-earned | en-stress | 320x568 | [상단](reviewed/shop-final-320x568-en-stress-shop-earned.webp) · [하단](reviewed/shop-final-320x568-en-stress-shop-earned-bottom.webp) · [중간 1](reviewed/shop-final-320x568-en-stress-shop-earned-scroll-0-240.webp) · [중간 2](reviewed/shop-final-320x568-en-stress-shop-earned-scroll-0-480.webp) |
 | shop-earned | ko | 320x568 | [상단](reviewed/shop-all-final-320x568-ko-shop-earned.webp) · [하단](reviewed/shop-all-final-320x568-ko-shop-earned-bottom.webp) |
@@ -484,26 +484,26 @@
 | shop-items | ko | 390x844 | [상단](reviewed/shop-all-final-390x844-ko-shop-items.webp) · [하단](reviewed/shop-all-final-390x844-ko-shop-items-bottom.webp) |
 | shop-items | en | 430x932 | [상단](reviewed/shop-all-final-430x932-en-shop-items.webp) |
 | shop-items | ko | 430x932 | [상단](reviewed/shop-all-final-430x932-ko-shop-items.webp) |
-| shop-pack | en | 320x568 | [상단](reviewed/shop-all-final-320x568-en-shop-pack.webp) · [하단](reviewed/shop-all-final-320x568-en-shop-pack-bottom.webp) |
+| shop-pack | en | 320x568 | [상단](reviewed/stamp-shop-final-320x568-en-shop-pack.webp) · [하단](reviewed/stamp-shop-final-320x568-en-shop-pack-bottom.webp) |
 | shop-pack | en-stress | 320x568 | [상단](reviewed/shop-final-320x568-en-stress-shop-pack.webp) · [하단](reviewed/shop-final-320x568-en-stress-shop-pack-bottom.webp) · [중간 1](reviewed/shop-final-320x568-en-stress-shop-pack-scroll-0-240.webp) · [중간 2](reviewed/shop-final-320x568-en-stress-shop-pack-scroll-0-480.webp) |
-| shop-pack | ko | 320x568 | [상단](reviewed/shop-all-final-320x568-ko-shop-pack.webp) · [하단](reviewed/shop-all-final-320x568-ko-shop-pack-bottom.webp) |
-| shop-pack | en | 390x684 | [상단](reviewed/shop-all-final-390x684-en-shop-pack.webp) · [하단](reviewed/shop-all-final-390x684-en-shop-pack-bottom.webp) |
-| shop-pack | ko | 390x684 | [상단](reviewed/shop-all-final-390x684-ko-shop-pack.webp) · [하단](reviewed/shop-all-final-390x684-ko-shop-pack-bottom.webp) |
-| shop-pack | en | 390x844 | [상단](reviewed/shop-all-final-390x844-en-shop-pack.webp) · [하단](reviewed/shop-all-final-390x844-en-shop-pack-bottom.webp) |
+| shop-pack | ko | 320x568 | [상단](reviewed/stamp-shop-final-320x568-ko-shop-pack.webp) · [하단](reviewed/stamp-shop-final-320x568-ko-shop-pack-bottom.webp) |
+| shop-pack | en | 390x684 | [상단](reviewed/stamp-shop-final-390x684-en-shop-pack.webp) · [하단](reviewed/stamp-shop-final-390x684-en-shop-pack-bottom.webp) |
+| shop-pack | ko | 390x684 | [상단](reviewed/stamp-shop-final-390x684-ko-shop-pack.webp) · [하단](reviewed/stamp-shop-final-390x684-ko-shop-pack-bottom.webp) |
+| shop-pack | en | 390x844 | [상단](reviewed/stamp-shop-final-390x844-en-shop-pack.webp) · [하단](reviewed/stamp-shop-final-390x844-en-shop-pack-bottom.webp) |
 | shop-pack | en-stress | 390x844 | [상단](reviewed/shop-final-390x844-en-stress-shop-pack.webp) · [하단](reviewed/shop-final-390x844-en-stress-shop-pack-bottom.webp) |
-| shop-pack | ko | 390x844 | [상단](reviewed/shop-all-final-390x844-ko-shop-pack.webp) · [하단](reviewed/shop-all-final-390x844-ko-shop-pack-bottom.webp) |
-| shop-pack | en | 430x932 | [상단](reviewed/shop-all-final-430x932-en-shop-pack.webp) · [하단](reviewed/shop-all-final-430x932-en-shop-pack-bottom.webp) |
-| shop-pack | ko | 430x932 | [상단](reviewed/shop-all-final-430x932-ko-shop-pack.webp) · [하단](reviewed/shop-all-final-430x932-ko-shop-pack-bottom.webp) |
-| shop-poor | en | 320x568 | [상단](reviewed/shop-all-final-320x568-en-shop-poor.webp) · [하단](reviewed/shop-all-final-320x568-en-shop-poor-bottom.webp) |
+| shop-pack | ko | 390x844 | [상단](reviewed/stamp-shop-final-390x844-ko-shop-pack.webp) · [하단](reviewed/stamp-shop-final-390x844-ko-shop-pack-bottom.webp) |
+| shop-pack | en | 430x932 | [상단](reviewed/stamp-shop-final-430x932-en-shop-pack.webp) · [하단](reviewed/stamp-shop-final-430x932-en-shop-pack-bottom.webp) |
+| shop-pack | ko | 430x932 | [상단](reviewed/stamp-shop-final-430x932-ko-shop-pack.webp) · [하단](reviewed/stamp-shop-final-430x932-ko-shop-pack-bottom.webp) |
+| shop-poor | en | 320x568 | [상단](reviewed/stamp-shop-final-320x568-en-shop-poor.webp) · [하단](reviewed/stamp-shop-final-320x568-en-shop-poor-bottom.webp) |
 | shop-poor | en-stress | 320x568 | [상단](reviewed/shop-final-320x568-en-stress-shop-poor.webp) · [하단](reviewed/shop-final-320x568-en-stress-shop-poor-bottom.webp) · [중간 1](reviewed/shop-final-320x568-en-stress-shop-poor-scroll-0-240.webp) · [중간 2](reviewed/shop-final-320x568-en-stress-shop-poor-scroll-0-480.webp) |
-| shop-poor | ko | 320x568 | [상단](reviewed/shop-all-final-320x568-ko-shop-poor.webp) · [하단](reviewed/shop-all-final-320x568-ko-shop-poor-bottom.webp) |
-| shop-poor | en | 390x684 | [상단](reviewed/shop-all-final-390x684-en-shop-poor.webp) · [하단](reviewed/shop-all-final-390x684-en-shop-poor-bottom.webp) |
-| shop-poor | ko | 390x684 | [상단](reviewed/shop-all-final-390x684-ko-shop-poor.webp) · [하단](reviewed/shop-all-final-390x684-ko-shop-poor-bottom.webp) |
-| shop-poor | en | 390x844 | [상단](reviewed/shop-all-final-390x844-en-shop-poor.webp) · [하단](reviewed/shop-all-final-390x844-en-shop-poor-bottom.webp) |
+| shop-poor | ko | 320x568 | [상단](reviewed/stamp-shop-final-320x568-ko-shop-poor.webp) · [하단](reviewed/stamp-shop-final-320x568-ko-shop-poor-bottom.webp) |
+| shop-poor | en | 390x684 | [상단](reviewed/stamp-shop-final-390x684-en-shop-poor.webp) · [하단](reviewed/stamp-shop-final-390x684-en-shop-poor-bottom.webp) |
+| shop-poor | ko | 390x684 | [상단](reviewed/stamp-shop-final-390x684-ko-shop-poor.webp) · [하단](reviewed/stamp-shop-final-390x684-ko-shop-poor-bottom.webp) |
+| shop-poor | en | 390x844 | [상단](reviewed/stamp-shop-final-390x844-en-shop-poor.webp) · [하단](reviewed/stamp-shop-final-390x844-en-shop-poor-bottom.webp) |
 | shop-poor | en-stress | 390x844 | [상단](reviewed/shop-final-390x844-en-stress-shop-poor.webp) · [하단](reviewed/shop-final-390x844-en-stress-shop-poor-bottom.webp) |
-| shop-poor | ko | 390x844 | [상단](reviewed/shop-all-final-390x844-ko-shop-poor.webp) · [하단](reviewed/shop-all-final-390x844-ko-shop-poor-bottom.webp) |
-| shop-poor | en | 430x932 | [상단](reviewed/shop-all-final-430x932-en-shop-poor.webp) · [하단](reviewed/shop-all-final-430x932-en-shop-poor-bottom.webp) |
-| shop-poor | ko | 430x932 | [상단](reviewed/shop-all-final-430x932-ko-shop-poor.webp) · [하단](reviewed/shop-all-final-430x932-ko-shop-poor-bottom.webp) |
+| shop-poor | ko | 390x844 | [상단](reviewed/stamp-shop-final-390x844-ko-shop-poor.webp) · [하단](reviewed/stamp-shop-final-390x844-ko-shop-poor-bottom.webp) |
+| shop-poor | en | 430x932 | [상단](reviewed/stamp-shop-final-430x932-en-shop-poor.webp) · [하단](reviewed/stamp-shop-final-430x932-en-shop-poor-bottom.webp) |
+| shop-poor | ko | 430x932 | [상단](reviewed/stamp-shop-final-430x932-ko-shop-poor.webp) · [하단](reviewed/stamp-shop-final-430x932-ko-shop-poor-bottom.webp) |
 | shop-rates-expanded | en | 320x568 | [상단](reviewed/shop-all-final-320x568-en-shop-rates-expanded.webp) · [하단](reviewed/shop-all-final-320x568-en-shop-rates-expanded-bottom.webp) |
 | shop-rates-expanded | en-stress | 320x568 | [상단](reviewed/shop-final-320x568-en-stress-shop-rates-expanded.webp) · [하단](reviewed/shop-final-320x568-en-stress-shop-rates-expanded-bottom.webp) · [중간 1](reviewed/shop-final-320x568-en-stress-shop-rates-expanded-scroll-0-240.webp) · [중간 2](reviewed/shop-final-320x568-en-stress-shop-rates-expanded-scroll-0-480.webp) · [중간 3](reviewed/shop-final-320x568-en-stress-shop-rates-expanded-scroll-0-720.webp) · [중간 4](reviewed/shop-final-320x568-en-stress-shop-rates-expanded-scroll-0-960.webp) |
 | shop-rates-expanded | ko | 320x568 | [상단](reviewed/shop-all-final-320x568-ko-shop-rates-expanded.webp) · [하단](reviewed/shop-all-final-320x568-ko-shop-rates-expanded-bottom.webp) |
