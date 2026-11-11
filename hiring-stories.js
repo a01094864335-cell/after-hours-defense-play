@@ -19,11 +19,11 @@ const HiringStories=(()=>{
   const art=dialog.querySelector('.hire-art');
   art.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].clientX},{passive:true});
   art.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-touchX;if(Math.abs(dx)>60)move(dx<0?1:-1)},{passive:true});
-  const img=dialog.querySelector('img');img.onload=()=>dialog.querySelector('.hire-image-status').textContent='';img.onerror=()=>dialog.querySelector('.hire-image-status').textContent='그림을 불러오지 못했어요. 대사를 읽거나 다음 장으로 넘길 수 있어요.';
+  const img=dialog.querySelector('.hire-art img');img.onload=()=>dialog.querySelector('.hire-image-status').textContent='';img.onerror=()=>dialog.querySelector('.hire-image-status').textContent='그림을 불러오지 못했어요. 대사를 읽거나 다음 장으로 넘길 수 있어요.';
   return true;
  }
  function render(){
-  const p=current.panels[page],img=dialog.querySelector('img');
+  const p=current.panels[page],img=dialog.querySelector('.hire-art img');
   dialog.querySelector('#hiring-story-title').textContent=current.title;
   dialog.querySelector('.hire-name').textContent=current.name+' · '+current.job;
   dialog.querySelector('.hire-dialogue').textContent=p.dialogue;
