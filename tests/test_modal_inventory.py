@@ -49,8 +49,8 @@ CASES = [
     ('perk-wave5', '#perk', PERK + 'wave=5;life=3;renderPerkChoices();sync()'),
     ('perk-wave15-expanded', '#perk', PERK + "wave=15;renderPerkChoices();sync();document.querySelectorAll('#perk details').forEach(e=>e.open=true)"),
     ('perk-full-life', '#perk', PERK + 'life=3;renderPerkChoices()'),
-    ('perk-equipment-targets', '#perk', PERK + "showPerkTargets('equipment')"),
-    ('perk-staff-targets', '#perk', PERK + "showPerkTargets('staff')"),
+    ('perk-equipment-bound', '#perk', PERK + "wave=10;rewardBundle=null;renderPerkChoices()"),
+    ('perk-staff-bound', '#perk', PERK + "wave=25;rewardBundle=null;renderPerkChoices()"),
     ('deck', '#deck', 'openDeck()'),
     ('deck-swap', '#deck', 'openDeck();swapDeckStaff(meta.staff.find(id=>!meta.deck.includes(id)))'),
     ('daily', '#daily-events-dialog', "document.querySelector('#daily-events-open').click()"),
@@ -216,7 +216,7 @@ class ModalInventoryTests(unittest.TestCase):
             try:
                 webkit = self.pw.webkit.launch()
                 self.addCleanup(webkit.close)
-                browsers.append(('webkit', webkit, SIZES[1:3], [c for c in CASES if c[0] in ('settings', 'leave', 'notice', 'pause', 'perk-reward', 'perk-full-life', 'perk-equipment-targets')]))
+                browsers.append(('webkit', webkit, SIZES[1:3], [c for c in CASES if c[0] in ('settings', 'leave', 'notice', 'pause', 'perk-reward', 'perk-full-life', 'perk-equipment-bound')]))
             except Exception as exc:
                 failures.append('WebKit launch: '+str(exc))
         for engine, browser, sizes, cases in browsers:
@@ -267,7 +267,8 @@ class ModalInventoryTests(unittest.TestCase):
                             self.assertGreater(len(surface.inner_text()), 150)
                             self.assertIn('직원 소환', surface.inner_text())
                         if name == 'perk-full-life':
-                            self.assertTrue(page.locator('#perk-life').is_disabled())
+                            self.assertFalse(page.locator('#perk-life').is_visible())
+                            self.assertEqual(page.locator('#perk-options>button:visible:enabled').count(),3)
                         if name in ('shop-poor', 'shop-affordable', 'shop-earned'):
                             self.assertEqual(page.locator('#asset-shop-host .purchase').is_disabled(), name == 'shop-poor')
                         if name == 'equipment':

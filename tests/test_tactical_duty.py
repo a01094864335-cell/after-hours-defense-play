@@ -48,12 +48,12 @@ class TacticalDutyTests(unittest.TestCase):
             page.mouse.click(pos['x'], pos['y'])
         self.assertTrue(page.evaluate(f'!!board[{target}] && !board[{source}]'))
         page.locator('#reposition-done').click()
-        page.locator('#build-choices summary').click()
-        page.locator('#build-chain').click()
+        page.evaluate('wave=10;rewardBundle=null;renderPerkChoices()')
+        page.locator('#perk-build').click()
         page.reload()
         page.wait_for_function('GameSession.canWrite()')
         page.locator('#asset-lobby-host [data-proxy="#resume-run"]').click()
-        self.assertEqual(page.evaluate('TacticalDuty.snapshot().build'), 'chain')
+        self.assertEqual(page.evaluate('TacticalDuty.snapshot().build'), 'economy')
 
     def test_cashout_keeps_completed_wave_and_pays_once_after_reload(self):
         page = self.normal()
