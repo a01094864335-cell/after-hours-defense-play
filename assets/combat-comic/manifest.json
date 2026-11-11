@@ -1,0 +1,1266 @@
+{
+  "version": 1,
+  "styleReference": "designs/battle-comic-20261110/goblin-guard-master.png",
+  "characters": {
+    "demon-king": {
+      "name": "마왕 벨모어",
+      "group": "king",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/demon-king.webp",
+      "fallback": "assets/combat-comic/demon-king-idle.webp",
+      "width": 948,
+      "sheetHeight": 751,
+      "height": 371,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 298,
+          "h": 371,
+          "pivotX": 142.5,
+          "pivotY": 370
+        },
+        {
+          "x": 330,
+          "y": 2,
+          "w": 295,
+          "h": 371,
+          "pivotX": 138.75,
+          "pivotY": 370
+        },
+        {
+          "x": 646,
+          "y": 2,
+          "w": 298,
+          "h": 369,
+          "pivotX": 148.5,
+          "pivotY": 368
+        },
+        {
+          "x": 2,
+          "y": 377,
+          "w": 324,
+          "h": 370,
+          "pivotX": 153.75,
+          "pivotY": 369
+        },
+        {
+          "x": 330,
+          "y": 377,
+          "w": 312,
+          "h": 372,
+          "pivotX": 155.25,
+          "pivotY": 371
+        },
+        {
+          "x": 646,
+          "y": 377,
+          "w": 300,
+          "h": 371,
+          "pivotX": 150.0,
+          "pivotY": 370
+        }
+      ],
+      "sha256": "189edb8cbb759b7ccd49ae2d478574988444051a70d29ccd6169828a67a9170c",
+      "sourceMaster": "designs/combat-style-20261111/demon-king-master.webp",
+      "whiteOutline": "baked"
+    },
+    "novice-adventurer": {
+      "name": "견습 용사",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/novice-adventurer.webp",
+      "fallback": "assets/combat-comic/novice-adventurer-idle.webp",
+      "width": 421,
+      "sheetHeight": 313,
+      "height": 155,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 109,
+          "h": 155,
+          "pivotX": 52.5,
+          "pivotY": 154
+        },
+        {
+          "x": 132,
+          "y": 2,
+          "w": 114,
+          "h": 155,
+          "pivotX": 57.5,
+          "pivotY": 154
+        },
+        {
+          "x": 294,
+          "y": 2,
+          "w": 109,
+          "h": 155,
+          "pivotX": 59.5,
+          "pivotY": 154
+        },
+        {
+          "x": 2,
+          "y": 161,
+          "w": 126,
+          "h": 150,
+          "pivotX": 56.0,
+          "pivotY": 149
+        },
+        {
+          "x": 132,
+          "y": 161,
+          "w": 158,
+          "h": 142,
+          "pivotX": 78.5,
+          "pivotY": 141
+        },
+        {
+          "x": 294,
+          "y": 161,
+          "w": 125,
+          "h": 149,
+          "pivotX": 65.0,
+          "pivotY": 148
+        }
+      ],
+      "sha256": "e57e796f3516698beccfc2ec64a0cd4b7b5a1c9b750f20b80af4467df9e54962",
+      "sourceMaster": "designs/combat-style-20261111/novice-adventurer-master.webp",
+      "whiteOutline": "baked"
+    },
+    "rogue-scout": {
+      "name": "도적 정찰병",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/rogue-scout.webp",
+      "fallback": "assets/combat-comic/rogue-scout-idle.webp",
+      "width": 442,
+      "sheetHeight": 283,
+      "height": 143,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 127,
+          "h": 143,
+          "pivotX": 65.5,
+          "pivotY": 142
+        },
+        {
+          "x": 137,
+          "y": 2,
+          "w": 127,
+          "h": 144,
+          "pivotX": 66.5,
+          "pivotY": 143
+        },
+        {
+          "x": 306,
+          "y": 2,
+          "w": 127,
+          "h": 143,
+          "pivotX": 67.0,
+          "pivotY": 142
+        },
+        {
+          "x": 2,
+          "y": 150,
+          "w": 131,
+          "h": 127,
+          "pivotX": 65.5,
+          "pivotY": 126
+        },
+        {
+          "x": 137,
+          "y": 150,
+          "w": 165,
+          "h": 122,
+          "pivotX": 81.0,
+          "pivotY": 121
+        },
+        {
+          "x": 306,
+          "y": 150,
+          "w": 134,
+          "h": 131,
+          "pivotX": 70.0,
+          "pivotY": 130
+        }
+      ],
+      "sha256": "5393f79104040581d9337df5c6f7fafd74b927a8959b43d2c25e483175c53628",
+      "sourceMaster": "designs/combat-style-20261111/rogue-scout-master.webp",
+      "whiteOutline": "baked"
+    },
+    "shield-knight": {
+      "name": "방패 기사",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/shield-knight.webp",
+      "fallback": "assets/combat-comic/shield-knight-idle.webp",
+      "width": 676,
+      "sheetHeight": 447,
+      "height": 224,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 207,
+          "h": 224,
+          "pivotX": 95.0,
+          "pivotY": 223
+        },
+        {
+          "x": 216,
+          "y": 2,
+          "w": 201,
+          "h": 223,
+          "pivotX": 102.5,
+          "pivotY": 222
+        },
+        {
+          "x": 452,
+          "y": 2,
+          "w": 209,
+          "h": 223,
+          "pivotX": 116.0,
+          "pivotY": 222
+        },
+        {
+          "x": 2,
+          "y": 230,
+          "w": 210,
+          "h": 211,
+          "pivotX": 101.0,
+          "pivotY": 210
+        },
+        {
+          "x": 216,
+          "y": 230,
+          "w": 232,
+          "h": 211,
+          "pivotX": 121.0,
+          "pivotY": 210
+        },
+        {
+          "x": 452,
+          "y": 230,
+          "w": 222,
+          "h": 215,
+          "pivotX": 122.5,
+          "pivotY": 214
+        }
+      ],
+      "sha256": "51df065aab4e114fdde2fba8edea42c46a013f16ed4217b4e7d922eea68b7dc2",
+      "sourceMaster": "designs/combat-style-20261111/shield-knight-master.webp",
+      "whiteOutline": "baked"
+    },
+    "lightning-mage": {
+      "name": "번개 마법사",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/lightning-mage.webp",
+      "fallback": "assets/combat-comic/lightning-mage-idle.webp",
+      "width": 680,
+      "sheetHeight": 470,
+      "height": 231,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 189,
+          "h": 231,
+          "pivotX": 95.5,
+          "pivotY": 230
+        },
+        {
+          "x": 210,
+          "y": 2,
+          "w": 202,
+          "h": 229,
+          "pivotX": 97.5,
+          "pivotY": 228
+        },
+        {
+          "x": 462,
+          "y": 2,
+          "w": 190,
+          "h": 231,
+          "pivotX": 97.5,
+          "pivotY": 230
+        },
+        {
+          "x": 2,
+          "y": 237,
+          "w": 204,
+          "h": 231,
+          "pivotX": 99.0,
+          "pivotY": 230
+        },
+        {
+          "x": 210,
+          "y": 237,
+          "w": 248,
+          "h": 229,
+          "pivotX": 122.0,
+          "pivotY": 228
+        },
+        {
+          "x": 462,
+          "y": 237,
+          "w": 216,
+          "h": 231,
+          "pivotX": 109.5,
+          "pivotY": 230
+        }
+      ],
+      "sha256": "43a620747067e2b1b365066e47055c7d77c9a834f7e11e16c593067711dfb034",
+      "sourceMaster": "designs/combat-style-20261111/lightning-mage-master.webp",
+      "whiteOutline": "baked"
+    },
+    "healing-priest": {
+      "name": "치유 사제",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/healing-priest.webp",
+      "fallback": "assets/combat-comic/healing-priest-idle.webp",
+      "width": 691,
+      "sheetHeight": 456,
+      "height": 220,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 214,
+          "h": 220,
+          "pivotX": 108.0,
+          "pivotY": 219
+        },
+        {
+          "x": 220,
+          "y": 2,
+          "w": 211,
+          "h": 219,
+          "pivotX": 105.5,
+          "pivotY": 218
+        },
+        {
+          "x": 458,
+          "y": 2,
+          "w": 212,
+          "h": 220,
+          "pivotX": 105.5,
+          "pivotY": 219
+        },
+        {
+          "x": 2,
+          "y": 226,
+          "w": 210,
+          "h": 216,
+          "pivotX": 111.5,
+          "pivotY": 215
+        },
+        {
+          "x": 220,
+          "y": 226,
+          "w": 234,
+          "h": 228,
+          "pivotX": 121.5,
+          "pivotY": 227
+        },
+        {
+          "x": 458,
+          "y": 226,
+          "w": 231,
+          "h": 218,
+          "pivotX": 120.5,
+          "pivotY": 217
+        }
+      ],
+      "sha256": "51a5d779615db372aa90e9c9687e9245f779bb5568a01ab1f2a82be8bec7e706",
+      "sourceMaster": "designs/combat-style-20261111/healing-priest-master.webp",
+      "whiteOutline": "baked"
+    },
+    "hero-leon": {
+      "name": "군단장 레온",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/hero-leon.webp",
+      "fallback": "assets/combat-comic/hero-leon-idle.webp",
+      "width": 652,
+      "sheetHeight": 456,
+      "height": 226,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 189,
+          "h": 226,
+          "pivotX": 94.5,
+          "pivotY": 225
+        },
+        {
+          "x": 209,
+          "y": 2,
+          "w": 189,
+          "h": 226,
+          "pivotX": 95.0,
+          "pivotY": 225
+        },
+        {
+          "x": 461,
+          "y": 2,
+          "w": 181,
+          "h": 226,
+          "pivotX": 94.0,
+          "pivotY": 225
+        },
+        {
+          "x": 2,
+          "y": 232,
+          "w": 203,
+          "h": 222,
+          "pivotX": 101.5,
+          "pivotY": 221
+        },
+        {
+          "x": 209,
+          "y": 232,
+          "w": 248,
+          "h": 221,
+          "pivotX": 121.5,
+          "pivotY": 220
+        },
+        {
+          "x": 461,
+          "y": 232,
+          "w": 189,
+          "h": 222,
+          "pivotX": 96.5,
+          "pivotY": 221
+        }
+      ],
+      "sha256": "9410abbfc212599876e46782b4e11519e06ef03dabfd22403f0d31252772cbf9",
+      "sourceMaster": "designs/combat-style-20261111/hero-leon-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-aegis": {
+      "name": "철벽 단장 아이기스",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-aegis.webp",
+      "fallback": "assets/combat-comic/commander-aegis-idle.webp",
+      "width": 444,
+      "sheetHeight": 292,
+      "height": 147,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 131,
+          "h": 147,
+          "pivotX": 55.5,
+          "pivotY": 146
+        },
+        {
+          "x": 140,
+          "y": 2,
+          "w": 131,
+          "h": 147,
+          "pivotX": 66.0,
+          "pivotY": 146
+        },
+        {
+          "x": 298,
+          "y": 2,
+          "w": 134,
+          "h": 146,
+          "pivotX": 73.0,
+          "pivotY": 145
+        },
+        {
+          "x": 2,
+          "y": 153,
+          "w": 134,
+          "h": 137,
+          "pivotX": 56.5,
+          "pivotY": 136
+        },
+        {
+          "x": 140,
+          "y": 153,
+          "w": 154,
+          "h": 134,
+          "pivotX": 77.0,
+          "pivotY": 133
+        },
+        {
+          "x": 298,
+          "y": 153,
+          "w": 144,
+          "h": 133,
+          "pivotX": 76.5,
+          "pivotY": 132
+        }
+      ],
+      "sha256": "9f96c5d6a4a8abad6d30fd0bf3855b2a9217299effb16487bfa43e93539ed723",
+      "sourceMaster": "designs/combat-style-20261111/commander-aegis-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-ruby": {
+      "name": "홍련 창기사 루비",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-ruby.webp",
+      "fallback": "assets/combat-comic/commander-ruby-idle.webp",
+      "width": 675,
+      "sheetHeight": 469,
+      "height": 231,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 211,
+          "h": 231,
+          "pivotX": 104.5,
+          "pivotY": 230
+        },
+        {
+          "x": 226,
+          "y": 2,
+          "w": 210,
+          "h": 230,
+          "pivotX": 108.0,
+          "pivotY": 229
+        },
+        {
+          "x": 455,
+          "y": 2,
+          "w": 211,
+          "h": 229,
+          "pivotX": 106.5,
+          "pivotY": 228
+        },
+        {
+          "x": 2,
+          "y": 237,
+          "w": 220,
+          "h": 230,
+          "pivotX": 110.5,
+          "pivotY": 229
+        },
+        {
+          "x": 226,
+          "y": 237,
+          "w": 225,
+          "h": 230,
+          "pivotX": 115.0,
+          "pivotY": 229
+        },
+        {
+          "x": 455,
+          "y": 237,
+          "w": 218,
+          "h": 230,
+          "pivotX": 111.0,
+          "pivotY": 229
+        }
+      ],
+      "sha256": "f1281a46900d2c05b44e0849e208467504233cf7ede73f34cf57a7ca14f88cca",
+      "sourceMaster": "designs/combat-style-20261111/commander-ruby-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-neve": {
+      "name": "서리 마녀 네베",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-neve.webp",
+      "fallback": "assets/combat-comic/commander-neve-idle.webp",
+      "width": 414,
+      "sheetHeight": 291,
+      "height": 144,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 122,
+          "h": 144,
+          "pivotX": 51.5,
+          "pivotY": 143
+        },
+        {
+          "x": 128,
+          "y": 2,
+          "w": 123,
+          "h": 141,
+          "pivotX": 54.0,
+          "pivotY": 140
+        },
+        {
+          "x": 287,
+          "y": 2,
+          "w": 125,
+          "h": 142,
+          "pivotX": 58.0,
+          "pivotY": 141
+        },
+        {
+          "x": 2,
+          "y": 150,
+          "w": 119,
+          "h": 139,
+          "pivotX": 52.0,
+          "pivotY": 138
+        },
+        {
+          "x": 128,
+          "y": 150,
+          "w": 155,
+          "h": 135,
+          "pivotX": 69.0,
+          "pivotY": 134
+        },
+        {
+          "x": 287,
+          "y": 150,
+          "w": 123,
+          "h": 137,
+          "pivotX": 57.5,
+          "pivotY": 136
+        }
+      ],
+      "sha256": "4adced0d3556dedb205f44238259481d02c567d87cbc9112cac7c4b91d529ec8",
+      "sourceMaster": "designs/combat-style-20261111/commander-neve-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-lumen": {
+      "name": "성가대장 루멘",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-lumen.webp",
+      "fallback": "assets/combat-comic/commander-lumen-idle.webp",
+      "width": 622,
+      "sheetHeight": 489,
+      "height": 238,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 178,
+          "h": 238,
+          "pivotX": 94.0,
+          "pivotY": 237
+        },
+        {
+          "x": 206,
+          "y": 2,
+          "w": 179,
+          "h": 241,
+          "pivotX": 94.0,
+          "pivotY": 240
+        },
+        {
+          "x": 413,
+          "y": 2,
+          "w": 179,
+          "h": 241,
+          "pivotX": 94.0,
+          "pivotY": 240
+        },
+        {
+          "x": 2,
+          "y": 247,
+          "w": 200,
+          "h": 240,
+          "pivotX": 102.5,
+          "pivotY": 239
+        },
+        {
+          "x": 206,
+          "y": 247,
+          "w": 203,
+          "h": 240,
+          "pivotX": 101.5,
+          "pivotY": 239
+        },
+        {
+          "x": 413,
+          "y": 247,
+          "w": 207,
+          "h": 237,
+          "pivotX": 106.5,
+          "pivotY": 236
+        }
+      ],
+      "sha256": "5c56edf2549358535519e0aea021d1d2654f8f1fd48b0551ef296c21305aaba9",
+      "sourceMaster": "designs/combat-style-20261111/commander-lumen-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-mira": {
+      "name": "환영 단장 미라",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-mira.webp",
+      "fallback": "assets/combat-comic/commander-mira-idle.webp",
+      "width": 699,
+      "sheetHeight": 471,
+      "height": 229,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 197,
+          "h": 229,
+          "pivotX": 105.5,
+          "pivotY": 228
+        },
+        {
+          "x": 225,
+          "y": 2,
+          "w": 197,
+          "h": 230,
+          "pivotX": 112.0,
+          "pivotY": 229
+        },
+        {
+          "x": 479,
+          "y": 2,
+          "w": 197,
+          "h": 230,
+          "pivotX": 105.0,
+          "pivotY": 229
+        },
+        {
+          "x": 2,
+          "y": 236,
+          "w": 219,
+          "h": 233,
+          "pivotX": 114.5,
+          "pivotY": 232
+        },
+        {
+          "x": 225,
+          "y": 236,
+          "w": 250,
+          "h": 229,
+          "pivotX": 127.0,
+          "pivotY": 228
+        },
+        {
+          "x": 479,
+          "y": 236,
+          "w": 218,
+          "h": 225,
+          "pivotX": 112.0,
+          "pivotY": 224
+        }
+      ],
+      "sha256": "2c6fd2365d6827565518bbeb976aa7effdd649bf5adb5e816546a30937f0f254",
+      "sourceMaster": "designs/combat-style-20261111/commander-mira-master.webp",
+      "whiteOutline": "baked"
+    },
+    "commander-chrono": {
+      "name": "시계기사 크로노",
+      "group": "enemy",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/commander-chrono.webp",
+      "fallback": "assets/combat-comic/commander-chrono-idle.webp",
+      "width": 426,
+      "sheetHeight": 318,
+      "height": 157,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 128,
+          "h": 157,
+          "pivotX": 56.0,
+          "pivotY": 156
+        },
+        {
+          "x": 134,
+          "y": 2,
+          "w": 130,
+          "h": 157,
+          "pivotX": 60.0,
+          "pivotY": 156
+        },
+        {
+          "x": 292,
+          "y": 2,
+          "w": 126,
+          "h": 157,
+          "pivotX": 57.5,
+          "pivotY": 156
+        },
+        {
+          "x": 2,
+          "y": 163,
+          "w": 107,
+          "h": 150,
+          "pivotX": 56.0,
+          "pivotY": 149
+        },
+        {
+          "x": 134,
+          "y": 163,
+          "w": 154,
+          "h": 150,
+          "pivotX": 74.5,
+          "pivotY": 149
+        },
+        {
+          "x": 292,
+          "y": 163,
+          "w": 132,
+          "h": 153,
+          "pivotX": 63.5,
+          "pivotY": 152
+        }
+      ],
+      "sha256": "6d5ef124f1634b06288cf5af119a0b9d800015f64ea69b3e6b7eb5cac4e506e3",
+      "sourceMaster": "designs/combat-style-20261111/commander-chrono-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-accountant": {
+      "name": "야간 회계사",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-accountant.webp",
+      "fallback": "assets/combat-comic/merc-accountant-idle.webp",
+      "width": 685,
+      "sheetHeight": 497,
+      "height": 241,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 210,
+          "h": 241,
+          "pivotX": 104.0,
+          "pivotY": 240
+        },
+        {
+          "x": 238,
+          "y": 2,
+          "w": 212,
+          "h": 242,
+          "pivotX": 113.0,
+          "pivotY": 241
+        },
+        {
+          "x": 467,
+          "y": 2,
+          "w": 216,
+          "h": 240,
+          "pivotX": 124.0,
+          "pivotY": 239
+        },
+        {
+          "x": 2,
+          "y": 248,
+          "w": 232,
+          "h": 247,
+          "pivotX": 108.5,
+          "pivotY": 246
+        },
+        {
+          "x": 238,
+          "y": 248,
+          "w": 225,
+          "h": 238,
+          "pivotX": 119.0,
+          "pivotY": 237
+        },
+        {
+          "x": 467,
+          "y": 248,
+          "w": 215,
+          "h": 239,
+          "pivotX": 123.5,
+          "pivotY": 238
+        }
+      ],
+      "sha256": "bf9f6d3f07fed5f86a603aa6b7d7c79b9b291a3866694822653294a220eebf7f",
+      "sourceMaster": "designs/combat-style-20261111/merc-accountant-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-banchang": {
+      "name": "반창",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-banchang.webp",
+      "fallback": "assets/combat-comic/merc-banchang-idle.webp",
+      "width": 665,
+      "sheetHeight": 442,
+      "height": 217,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 200,
+          "h": 217,
+          "pivotX": 97.5,
+          "pivotY": 216
+        },
+        {
+          "x": 218,
+          "y": 2,
+          "w": 215,
+          "h": 217,
+          "pivotX": 107.5,
+          "pivotY": 216
+        },
+        {
+          "x": 457,
+          "y": 2,
+          "w": 202,
+          "h": 215,
+          "pivotX": 110.0,
+          "pivotY": 214
+        },
+        {
+          "x": 2,
+          "y": 223,
+          "w": 212,
+          "h": 216,
+          "pivotX": 104.0,
+          "pivotY": 215
+        },
+        {
+          "x": 218,
+          "y": 223,
+          "w": 235,
+          "h": 217,
+          "pivotX": 116.5,
+          "pivotY": 216
+        },
+        {
+          "x": 457,
+          "y": 223,
+          "w": 206,
+          "h": 215,
+          "pivotX": 105.0,
+          "pivotY": 214
+        }
+      ],
+      "sha256": "b19edd8642b96a303d8a6f02b2375c56bde327ca34a76ac9fe6d5ab25be7ae31",
+      "sourceMaster": "designs/combat-style-20261111/merc-banchang-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-ward": {
+      "name": "결계 계약직",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-ward.webp",
+      "fallback": "assets/combat-comic/merc-ward-idle.webp",
+      "width": 702,
+      "sheetHeight": 473,
+      "height": 233,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 212,
+          "h": 233,
+          "pivotX": 107.5,
+          "pivotY": 232
+        },
+        {
+          "x": 235,
+          "y": 2,
+          "w": 210,
+          "h": 235,
+          "pivotX": 107.5,
+          "pivotY": 234
+        },
+        {
+          "x": 477,
+          "y": 2,
+          "w": 219,
+          "h": 226,
+          "pivotX": 112.0,
+          "pivotY": 225
+        },
+        {
+          "x": 2,
+          "y": 241,
+          "w": 229,
+          "h": 228,
+          "pivotX": 112.5,
+          "pivotY": 227
+        },
+        {
+          "x": 235,
+          "y": 241,
+          "w": 238,
+          "h": 230,
+          "pivotX": 115.5,
+          "pivotY": 229
+        },
+        {
+          "x": 477,
+          "y": 241,
+          "w": 223,
+          "h": 229,
+          "pivotX": 109.0,
+          "pivotY": 228
+        }
+      ],
+      "sha256": "c899c1bb9de8ad79000327af5d549b983bcc469864b016733ebad0429561cb25",
+      "sourceMaster": "designs/combat-style-20261111/merc-ward-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-chikchik": {
+      "name": "칙칙",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-chikchik.webp",
+      "fallback": "assets/combat-comic/merc-chikchik-idle.webp",
+      "width": 675,
+      "sheetHeight": 470,
+      "height": 223,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 202,
+          "h": 223,
+          "pivotX": 99.0,
+          "pivotY": 222
+        },
+        {
+          "x": 230,
+          "y": 2,
+          "w": 207,
+          "h": 223,
+          "pivotX": 112.0,
+          "pivotY": 222
+        },
+        {
+          "x": 458,
+          "y": 2,
+          "w": 211,
+          "h": 223,
+          "pivotX": 112.0,
+          "pivotY": 222
+        },
+        {
+          "x": 2,
+          "y": 229,
+          "w": 224,
+          "h": 239,
+          "pivotX": 116.0,
+          "pivotY": 238
+        },
+        {
+          "x": 230,
+          "y": 229,
+          "w": 224,
+          "h": 239,
+          "pivotX": 112.0,
+          "pivotY": 238
+        },
+        {
+          "x": 458,
+          "y": 229,
+          "w": 215,
+          "h": 238,
+          "pivotX": 115.5,
+          "pivotY": 237
+        }
+      ],
+      "sha256": "8ffbc1b48d9036b4d336a3e4b7dcd8124faa32409f55f774d0c80e69da9a81a0",
+      "sourceMaster": "designs/combat-style-20261111/merc-chikchik-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-rescue": {
+      "name": "비상 대응반",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-rescue.webp",
+      "fallback": "assets/combat-comic/merc-rescue-idle.webp",
+      "width": 653,
+      "sheetHeight": 471,
+      "height": 228,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 187,
+          "h": 228,
+          "pivotX": 91.5,
+          "pivotY": 227
+        },
+        {
+          "x": 193,
+          "y": 2,
+          "w": 187,
+          "h": 228,
+          "pivotX": 106.0,
+          "pivotY": 227
+        },
+        {
+          "x": 438,
+          "y": 2,
+          "w": 188,
+          "h": 218,
+          "pivotX": 110.0,
+          "pivotY": 217
+        },
+        {
+          "x": 2,
+          "y": 234,
+          "w": 179,
+          "h": 235,
+          "pivotX": 95.0,
+          "pivotY": 234
+        },
+        {
+          "x": 193,
+          "y": 234,
+          "w": 241,
+          "h": 226,
+          "pivotX": 120.0,
+          "pivotY": 225
+        },
+        {
+          "x": 438,
+          "y": 234,
+          "w": 213,
+          "h": 227,
+          "pivotX": 107.0,
+          "pivotY": 226
+        }
+      ],
+      "sha256": "d4da4bfa52211f9ffe16251386e14d590da35be8ffce12de118acdbd237af763",
+      "sourceMaster": "designs/combat-style-20261111/merc-rescue-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-q": {
+      "name": "큐",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-q.webp",
+      "fallback": "assets/combat-comic/merc-q-idle.webp",
+      "width": 669,
+      "sheetHeight": 456,
+      "height": 224,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 193,
+          "h": 224,
+          "pivotX": 97.5,
+          "pivotY": 223
+        },
+        {
+          "x": 215,
+          "y": 2,
+          "w": 193,
+          "h": 224,
+          "pivotX": 97.5,
+          "pivotY": 223
+        },
+        {
+          "x": 462,
+          "y": 2,
+          "w": 205,
+          "h": 222,
+          "pivotX": 106.5,
+          "pivotY": 221
+        },
+        {
+          "x": 2,
+          "y": 230,
+          "w": 209,
+          "h": 224,
+          "pivotX": 107.5,
+          "pivotY": 223
+        },
+        {
+          "x": 215,
+          "y": 230,
+          "w": 243,
+          "h": 223,
+          "pivotX": 116.5,
+          "pivotY": 222
+        },
+        {
+          "x": 462,
+          "y": 230,
+          "w": 189,
+          "h": 224,
+          "pivotX": 96.0,
+          "pivotY": 223
+        }
+      ],
+      "sha256": "ebab49fdda16c4b9904f4a89be8d5ababf3ed6d2ffc0455371d95261e8534184",
+      "sourceMaster": "designs/combat-style-20261111/merc-q-master.webp",
+      "whiteOutline": "baked"
+    },
+    "merc-coco": {
+      "name": "코코",
+      "group": "merc",
+      "artStyle": "main-comic",
+      "file": "assets/combat-comic/merc-coco.webp",
+      "fallback": "assets/combat-comic/merc-coco-idle.webp",
+      "width": 696,
+      "sheetHeight": 446,
+      "height": 224,
+      "frames": [
+        {
+          "x": 2,
+          "y": 2,
+          "w": 193,
+          "h": 224,
+          "pivotX": 96.5,
+          "pivotY": 223
+        },
+        {
+          "x": 235,
+          "y": 2,
+          "w": 206,
+          "h": 220,
+          "pivotX": 100.0,
+          "pivotY": 219
+        },
+        {
+          "x": 479,
+          "y": 2,
+          "w": 206,
+          "h": 212,
+          "pivotX": 113.5,
+          "pivotY": 211
+        },
+        {
+          "x": 2,
+          "y": 230,
+          "w": 229,
+          "h": 213,
+          "pivotX": 112.0,
+          "pivotY": 212
+        },
+        {
+          "x": 235,
+          "y": 230,
+          "w": 240,
+          "h": 214,
+          "pivotX": 117.0,
+          "pivotY": 213
+        },
+        {
+          "x": 479,
+          "y": 230,
+          "w": 215,
+          "h": 208,
+          "pivotX": 103.0,
+          "pivotY": 207
+        }
+      ],
+      "sha256": "48e6c8a5e987d167da55982afbed6eb266f9be6836f26b6e4892b5f65656f018",
+      "sourceMaster": "designs/combat-style-20261111/merc-coco-master.webp",
+      "whiteOutline": "baked"
+    }
+  }
+}

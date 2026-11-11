@@ -10,7 +10,7 @@ const extraKinds=[
  {name:'악몽 상담사',file:'nightmare-counselor',color:'#baaceb',damage:10,interval:1.6,desc:'2초마다 스킬 지연 · 보스 효과 감소'},
  {name:'코볼트 인사담당',file:'kobold-recruiter',color:'#dfbe87',damage:0,interval:1,desc:'인접 공속 +12~38% · 등급·장비로 성장'}
 ];kinds.push(...extraKinds,...NightExpansion.staff.map(k=>({...k,file:k.id,name:k.name+' · '+k.job})));
-function staffImagePath(file){if(typeof CharacterMotion!=='undefined'&&CharacterMotion.has(file))return CharacterMotion.imagePath(file);if(NightExpansion.staff.some(k=>k.id===file))return 'assets/expansion-v2/'+file+'-portrait.webp';return 'assets/'+(RECRUIT_STAFF.includes(file)?'staff-expansion/':'pixel/')+file+'.webp'}
+function staffImagePath(file){if(typeof CombatComic!=='undefined'&&CombatComic.has(file))return CombatComic.imagePath(file);if(typeof CharacterMotion!=='undefined'&&CharacterMotion.has(file))return CharacterMotion.imagePath(file);if(NightExpansion.staff.some(k=>k.id===file))return 'assets/expansion-v2/'+file+'-portrait.webp';return 'assets/'+(RECRUIT_STAFF.includes(file)?'staff-expansion/':'pixel/')+file+'.webp'}
 function staffPortraitPath(file){return typeof CharacterPortraits==='undefined'?staffImagePath(file):CharacterPortraits.src(file,staffImagePath(file))}
 ctx.imageSmoothingEnabled=false;
 const images={};function lazyImage(key,path){let image;Object.defineProperty(images,key,{enumerable:true,get(){if(!image){image=new Image();image.decoding='async';image.addEventListener?.('load',()=>GamePerformance.invalidate());image.src=path}return image}})}for(const file of [...kinds.map(k=>k.file),'novice-adventurer','rogue-scout','hero-leon','shield-knight','healing-priest','lightning-mage','lobby-background']){lazyImage(file,staffImagePath(file))}

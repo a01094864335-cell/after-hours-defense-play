@@ -1,0 +1,82 @@
+[
+  {
+    "id": "demon-king",
+    "generationArtifact": "exec-755b96a7-44c7-4926-97ab-59a843d7b857.png"
+  },
+  {
+    "id": "novice-adventurer",
+    "generationArtifact": "exec-31308ec4-7040-4fd6-b515-5be1224a2731.png"
+  },
+  {
+    "id": "rogue-scout",
+    "generationArtifact": "exec-c3f852dd-ca17-4851-ad42-6ac8b90885c8.png"
+  },
+  {
+    "id": "shield-knight",
+    "generationArtifact": "exec-f3838f6d-e040-4ea3-bf5f-d2c4cb2f0d1e.png"
+  },
+  {
+    "id": "lightning-mage",
+    "generationArtifact": "exec-507e2752-81d3-49ea-b67d-49a756a4a3cf.png"
+  },
+  {
+    "id": "healing-priest",
+    "generationArtifact": "exec-9a6d641a-c2ff-4e9c-8c1d-74d3884c39cc.png"
+  },
+  {
+    "id": "hero-leon",
+    "generationArtifact": "exec-ddb849a6-2a62-4385-ad88-7451f1211cd0.png"
+  },
+  {
+    "id": "commander-aegis",
+    "generationArtifact": "exec-4974e8ee-08bf-41c2-a3ab-22c5ef9aebda.png"
+  },
+  {
+    "id": "commander-ruby",
+    "generationArtifact": "exec-e5d293c1-307a-40e0-8673-9c3c441ce7e5.png"
+  },
+  {
+    "id": "commander-neve",
+    "generationArtifact": "exec-4e8cabc7-0084-47b0-8006-edccfbca9b5b.png"
+  },
+  {
+    "id": "commander-lumen",
+    "generationArtifact": "exec-b9020496-e20b-48be-bbbd-6c4ba8838ab2.png"
+  },
+  {
+    "id": "commander-mira",
+    "generationArtifact": "exec-e1068052-be82-4c23-ab23-d600c20ebc6e.png"
+  },
+  {
+    "id": "commander-chrono",
+    "generationArtifact": "exec-14023227-b0c9-4968-8dba-4179187a8444.png"
+  },
+  {
+    "id": "merc-accountant",
+    "generationArtifact": "exec-fc068884-1e6d-4cdb-97b2-7e2ce0cb9fa3.png"
+  },
+  {
+    "id": "merc-banchang",
+    "generationArtifact": "exec-294d34fb-22f9-4ad3-8f42-c45a2dfbfe44.png"
+  },
+  {
+    "id": "merc-ward",
+    "generationArtifact": "exec-2489d8b4-6755-44f6-ae43-114e3a4a0f72.png"
+  },
+  {
+    "id": "merc-chikchik",
+    "generationArtifact": "exec-15d3b7a6-68fd-4099-815b-659b794a93b2.png"
+  },
+  {
+    "id": "merc-rescue",
+    "generationArtifact": "exec-92241bff-6aaf-4c0d-a12a-17f88b48eb69.png"
+  },
+  {
+    "id": "merc-q",
+    "generationArtifact": "exec-f81159e4-b2fc-4008-8cd5-b6b168c18682.png"
+  },
+  {
+    "id": "merc-coco",
+    "generationArtifact": "exec-4804342b-f611-4835-9fd4-fb1ba05d2bfd.png"
+  }
+]

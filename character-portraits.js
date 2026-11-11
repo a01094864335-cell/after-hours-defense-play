@@ -4,7 +4,8 @@
 window.CharacterPortraits = (() => {
  const ids = Object.freeze(['goblin-guard','orc-technician','slime-cleaner','gobi','electric-technician','ghost-courier','bat-nurse','skeleton-chef','mimic-storekeeper','spider-tailor','nightmare-counselor','kobold-recruiter','merc-ward','merc-accountant','merc-rescue','duru-archivist','kkangtong-engineer','ddangkong-miner','chalkak-photographer','bongtu-postmaster','merc-chikchik','merc-banchang','merc-coco','merc-q']);
  const known = new Set(ids), cache = new Map();
- function src(id, fallback='') { return known.has(id) ? 'assets/character-portraits/' + id + '.webp' : fallback; }
+ const revisions={"merc-ward": "342e55ab2455", "merc-accountant": "b880599e09e8", "merc-rescue": "4528a3818baa", "merc-chikchik": "5371c39fab5f", "merc-banchang": "698ad81f3380", "merc-coco": "bd7227033b27", "merc-q": "1e9426d1fafc"};
+ function src(id, fallback='') { return known.has(id) ? 'assets/character-portraits/' + id + '.webp' + (revisions[id]?'?v='+revisions[id]:'') : fallback; }
  function image(id, className='', alt='') {
   const img = new Image(); img.addEventListener('load',()=>window.GamePerformance?.invalidate()); img.src = src(id); img.alt = alt; img.className = className;
   img.dataset.characterId = id; img.dataset.motion = 'static-character-identity'; img.decoding = 'async';

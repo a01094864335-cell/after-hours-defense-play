@@ -15,7 +15,7 @@ class BattleCohesionTests(unittest.TestCase):
             for id in p.evaluate('Object.keys(mercCatalog)'):
                 p.evaluate('(id)=>{activeMerc=id;mercGesture.motionState=null;sync();draw()}',id)
                 face=p.locator('#battle-support img')
-                self.assertEqual(face.get_attribute('src'),'assets/character-portraits/merc-'+id+'.webp')
+                self.assertEqual(face.get_attribute('src'),p.evaluate('id=>CharacterPortraits.src("merc-"+id)',id))
                 face.evaluate('(e)=>e.decode()')
                 self.assertTrue(p.locator('#battle-support').is_visible())
                 self.assertEqual(p.locator('#battle-support small').inner_text(),'자동 지원')

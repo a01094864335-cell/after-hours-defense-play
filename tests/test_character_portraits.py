@@ -40,7 +40,7 @@ class CharacterPortraitTests(unittest.TestCase):
         for key in page.evaluate('Object.keys(mercCatalog)'):
             page.evaluate('key=>{meta.equipped=key;renderMeta()}', key)
             path = page.locator('#asset-lobby-host #a-support-art img').get_attribute('src')
-            self.assertTrue(path.endswith('/merc-' + key + '.webp'))
+            self.assertTrue(path.split('?')[0].endswith('/merc-' + key + '.webp'))
         page.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
         page.locator('#asset-training-host [data-group="merc"]').click()
         self.assertEqual(page.locator('#asset-training-host #effects summary img').count(), 7)
@@ -71,7 +71,7 @@ class CharacterPortraitTests(unittest.TestCase):
         self.assertTrue(result['selected'].endswith('/character-portraits/gobi.webp'))
         self.assertEqual(result['staffCount'], 2)
 
-    def test_all_staff_render_full_bodies_and_enemies_keep_existing_motion(self):
+    def test_staff_and_enemies_render_matching_full_bodies(self):
         page = self.open(390, 844)
         self.seed(page)
         result = page.evaluate('''async()=>{
@@ -81,7 +81,7 @@ class CharacterPortraitTests(unittest.TestCase):
           CanvasRenderingContext2D.prototype.drawImage=function(im,...args){if(this.canvas.id==='battle-paint'&&im.src)drawn.push(im.src.split('?')[0]);return original.call(this,im,...args)};
           try{for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw()}
           finally{CanvasRenderingContext2D.prototype.drawImage=original}
-          return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/motion/novice-adventurer.webp'))};
+          return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/combat-comic/novice-adventurer.webp'))};
         }''')
         self.assertTrue(result['sameCells'])
         self.assertEqual(len(result['staff']), 17)

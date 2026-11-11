@@ -47,7 +47,7 @@ window.BattlePresentation=(()=>{
   NightWatchArt.selection(paint,width,height);
   const {row,cell}=geometry,enemyHUD=[];
   for(const actor of actors){const p=viewPoint(actor,a),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.05:1.12);
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key))actor.options.outline=1.25;}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key))actor.options.outline=1.25;}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/Math.max(...data.frames.map(frame=>frame.w))); if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=viewPoint(t,a);let font=fonts.get(t.font);if(!font){font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');fonts.set(t.font,font)}paint.save();paint.font=font;paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
@@ -61,7 +61,8 @@ window.BattlePresentation=(()=>{
  drawMercenary=function(){}; // Remove the legacy pixel actor and dark plinth only.
  function supportPresentation(){
   const id=playing?activeMerc:meta.equipped,record=id&&staffRecords.find(r=>r.id==='merc-'+id);
-  uiProp(support,'hidden',!record);if(!record)return;
+  const kingCutin=kingEvent.state==='entrance'||kingEvent.state==='afterglow';
+  uiProp(support,'hidden',!record||kingCutin);if(!record||kingCutin)return;
   const source=CharacterPortraits.src(record.id);if(supportFace.getAttribute('src')!==source)supportFace.src=source;
   const casting=!!mercGesture.motionState&&!paused&&!ended;
   uiText(supportName,record.name);uiText(supportState,document.documentElement.lang.startsWith('en')?(casting?'Supporting!':'Auto support'):(casting?'지원 중!':'자동 지원'));
