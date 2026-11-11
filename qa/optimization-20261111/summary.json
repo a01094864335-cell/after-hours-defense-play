@@ -1,0 +1,11 @@
+{
+  "imageBefore": 7547113,
+  "imageAfter": 3763692,
+  "imageReductionPercent": 50.1,
+  "requestsBefore": 191,
+  "requestsAfter": 175,
+  "reencoded": 189,
+  "reencodedBytesSaved": 4671418,
+  "drawSubmitBeforeMs": 0.9758333330353101,
+  "drawSubmitAfterMs": 0.9391666665673256
+}

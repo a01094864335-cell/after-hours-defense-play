@@ -1,0 +1,1064 @@
+{
+  "resources": [
+    {
+      "path": "/previews/asset-lobby-20261109/assets/background.webp",
+      "bytes": 468708,
+      "duration": 14.199999988079071,
+      "type": "link"
+    },
+    {
+      "path": "/skill-cutin.css",
+      "bytes": 3236,
+      "duration": 14.300000011920929,
+      "type": "link"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/title-logo.webp",
+      "bytes": 193130,
+      "duration": 17.5,
+      "type": "link"
+    },
+    {
+      "path": "/gm-mode.css",
+      "bytes": 1583,
+      "duration": 10.399999976158142,
+      "type": "link"
+    },
+    {
+      "path": "/hiring-stories.css",
+      "bytes": 2668,
+      "duration": 10.200000047683716,
+      "type": "link"
+    },
+    {
+      "path": "/ui.css",
+      "bytes": 73963,
+      "duration": 11.700000047683716,
+      "type": "link"
+    },
+    {
+      "path": "/open-scene.css",
+      "bytes": 64271,
+      "duration": 13.900000035762787,
+      "type": "link"
+    },
+    {
+      "path": "/assets/mobile/item-grade.webp",
+      "bytes": 21426,
+      "duration": 16.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/assets/mobile/lobby-gobi.webp",
+      "bytes": 112026,
+      "duration": 16.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/assets/mobile/item-kind.webp",
+      "bytes": 22714,
+      "duration": 17.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/assets/mobile/item-king.webp",
+      "bytes": 28868,
+      "duration": 29.400000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/gm-mode.js",
+      "bytes": 2104,
+      "duration": 42.5,
+      "type": "script"
+    },
+    {
+      "path": "/performance.js",
+      "bytes": 3088,
+      "duration": 42.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/session-guard.js",
+      "bytes": 4060,
+      "duration": 46.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/expansion-catalog.js",
+      "bytes": 4872,
+      "duration": 47.09999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/assets/bosses/manifest.js",
+      "bytes": 6578,
+      "duration": 48.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/assets/character-motion/manifest.js",
+      "bytes": 22598,
+      "duration": 47.59999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/assets/motion/manifest.js",
+      "bytes": 24890,
+      "duration": 49,
+      "type": "script"
+    },
+    {
+      "path": "/assets/expansion-v2/manifest.js",
+      "bytes": 9884,
+      "duration": 48.59999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/battle-art.js",
+      "bytes": 1383,
+      "duration": 51.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/motion.js",
+      "bytes": 8797,
+      "duration": 53,
+      "type": "script"
+    },
+    {
+      "path": "/combat-motion.js",
+      "bytes": 5757,
+      "duration": 55.40000003576279,
+      "type": "script"
+    },
+    {
+      "path": "/skill-cutin.js",
+      "bytes": 8866,
+      "duration": 55,
+      "type": "script"
+    },
+    {
+      "path": "/bosses.js",
+      "bytes": 15099,
+      "duration": 54.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/save-transfer.js",
+      "bytes": 4372,
+      "duration": 56.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/player-profile.js",
+      "bytes": 3314,
+      "duration": 57.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/training.js",
+      "bytes": 7627,
+      "duration": 58.09999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/character-portraits.js",
+      "bytes": 1742,
+      "duration": 59.700000047683716,
+      "type": "script"
+    },
+    {
+      "path": "/meta.js",
+      "bytes": 17316,
+      "duration": 60.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/staff-combat.js",
+      "bytes": 5339,
+      "duration": 60.90000003576279,
+      "type": "script"
+    },
+    {
+      "path": "/castle-stories.js",
+      "bytes": 38320,
+      "duration": 61.200000047683716,
+      "type": "script"
+    },
+    {
+      "path": "/expansion-combat.js",
+      "bytes": 16463,
+      "duration": 62.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/app.js",
+      "bytes": 5170,
+      "duration": 64.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/game.js",
+      "bytes": 40388,
+      "duration": 64.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/staff-codex.js",
+      "bytes": 15078,
+      "duration": 64.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/progression.js",
+      "bytes": 29955,
+      "duration": 64.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/recruitment.js",
+      "bytes": 4173,
+      "duration": 66.5,
+      "type": "script"
+    },
+    {
+      "path": "/training-ui.js",
+      "bytes": 10077,
+      "duration": 68.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/reference-ui.js",
+      "bytes": 7541,
+      "duration": 68.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/castle-story-player.js",
+      "bytes": 6568,
+      "duration": 69.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/shop-system.js",
+      "bytes": 5555,
+      "duration": 69.40000003576279,
+      "type": "script"
+    },
+    {
+      "path": "/recruitment-dialog.js",
+      "bytes": 808,
+      "duration": 71.09999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/gm-ui.js",
+      "bytes": 2521,
+      "duration": 72.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/usability.js",
+      "bytes": 3573,
+      "duration": 72.5,
+      "type": "script"
+    },
+    {
+      "path": "/new-hire-trial.js",
+      "bytes": 3502,
+      "duration": 74,
+      "type": "script"
+    },
+    {
+      "path": "/discount-tutorial.js",
+      "bytes": 3314,
+      "duration": 74.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/performance-ui.js",
+      "bytes": 1734,
+      "duration": 74.09999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/live-proposal-skin.js",
+      "bytes": 1113,
+      "duration": 75.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/orientation.js",
+      "bytes": 753,
+      "duration": 76.70000004768372,
+      "type": "script"
+    },
+    {
+      "path": "/lobby-duo.js",
+      "bytes": 3016,
+      "duration": 78.20000004768372,
+      "type": "script"
+    },
+    {
+      "path": "/live-ui-audit-fixes.js",
+      "bytes": 9155,
+      "duration": 79.90000003576279,
+      "type": "script"
+    },
+    {
+      "path": "/development.js",
+      "bytes": 16230,
+      "duration": 78,
+      "type": "script"
+    },
+    {
+      "path": "/story-loading.js",
+      "bytes": 1290,
+      "duration": 78.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/save-transfer-ui.js",
+      "bytes": 4424,
+      "duration": 80.39999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/dialog-layout.js",
+      "bytes": 5548,
+      "duration": 80.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/game-sfx.js",
+      "bytes": 10680,
+      "duration": 83,
+      "type": "script"
+    },
+    {
+      "path": "/game-audio.js",
+      "bytes": 3765,
+      "duration": 82.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/approved-ui.js",
+      "bytes": 6408,
+      "duration": 83.5,
+      "type": "script"
+    },
+    {
+      "path": "/assets/hiring-stories/game-data.js",
+      "bytes": 26495,
+      "duration": 84.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/hiring-stories.js",
+      "bytes": 5153,
+      "duration": 85.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/tutorial-coach.js",
+      "bytes": 19878,
+      "duration": 86.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/tactical-duty.js",
+      "bytes": 17132,
+      "duration": 87.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/battle-presentation.js",
+      "bytes": 9599,
+      "duration": 88.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/lobby.css",
+      "bytes": 10990,
+      "duration": 28.099999964237213,
+      "type": "link"
+    },
+    {
+      "path": "/gameworld-ui.js",
+      "bytes": 1649,
+      "duration": 89.59999996423721,
+      "type": "script"
+    },
+    {
+      "path": "/open-scene.js",
+      "bytes": 5412,
+      "duration": 89.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/lobby.js",
+      "bytes": 8574,
+      "duration": 91.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/previews/asset-roster-20261109/roster.css",
+      "bytes": 12345,
+      "duration": 28.200000047683716,
+      "type": "link"
+    },
+    {
+      "path": "/previews/asset-shop-20261109/shop.css",
+      "bytes": 13459,
+      "duration": 28.30000001192093,
+      "type": "link"
+    },
+    {
+      "path": "/previews/asset-training-20261109/training.css",
+      "bytes": 9189,
+      "duration": 28.400000035762787,
+      "type": "link"
+    },
+    {
+      "path": "/previews/asset-roster-20261109/roster.js",
+      "bytes": 6930,
+      "duration": 92,
+      "type": "script"
+    },
+    {
+      "path": "/previews/asset-shop-20261109/shop.js",
+      "bytes": 7718,
+      "duration": 95.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/previews/asset-training-20261109/training.js",
+      "bytes": 6921,
+      "duration": 95.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/battle-comic.css",
+      "bytes": 13586,
+      "duration": 28.399999976158142,
+      "type": "link"
+    },
+    {
+      "path": "/battle-exact.css",
+      "bytes": 15226,
+      "duration": 32.10000002384186,
+      "type": "link"
+    },
+    {
+      "path": "/battle-comic.js",
+      "bytes": 4859,
+      "duration": 95.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/concept-tools.css",
+      "bytes": 25053,
+      "duration": 32.19999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/shared-chrome.css",
+      "bytes": 45792,
+      "duration": 35.89999997615814,
+      "type": "link"
+    },
+    {
+      "path": "/concept-base.css",
+      "bytes": 4984,
+      "duration": 36.5,
+      "type": "link"
+    },
+    {
+      "path": "/shared-chrome.js",
+      "bytes": 7804,
+      "duration": 95.39999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/concept-stories.css",
+      "bytes": 28906,
+      "duration": 34.60000002384186,
+      "type": "link"
+    },
+    {
+      "path": "/concept-people.css",
+      "bytes": 41343,
+      "duration": 31.69999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/concept-tools.js",
+      "bytes": 4777,
+      "duration": 96.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/concept-people.js",
+      "bytes": 4107,
+      "duration": 96.60000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/concept-stories.js",
+      "bytes": 5388,
+      "duration": 99.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/text-grid.css",
+      "bytes": 16080,
+      "duration": 40.80000001192093,
+      "type": "link"
+    },
+    {
+      "path": "/text-grid.js",
+      "bytes": 3080,
+      "duration": 99,
+      "type": "script"
+    },
+    {
+      "path": "/story-art.css",
+      "bytes": 3000,
+      "duration": 40.10000002384186,
+      "type": "link"
+    },
+    {
+      "path": "/story-art.js",
+      "bytes": 4676,
+      "duration": 99.70000004768372,
+      "type": "script"
+    },
+    {
+      "path": "/assets/ui-v2/icons/coin.svg",
+      "bytes": 462,
+      "duration": 62.69999998807907,
+      "type": "css"
+    },
+    {
+      "path": "/assets/ui-approved/lobby-background.webp",
+      "bytes": 124818,
+      "duration": 63,
+      "type": "css"
+    },
+    {
+      "path": "/assets/ui-v2/icons/shield.svg",
+      "bytes": 380,
+      "duration": 1.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/goblin-guard.webp",
+      "bytes": 42952,
+      "duration": 7.100000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/orc-technician.webp",
+      "bytes": 35654,
+      "duration": 5.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/slime-cleaner.webp",
+      "bytes": 34192,
+      "duration": 6.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/electric-technician.webp",
+      "bytes": 48756,
+      "duration": 6.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/gobi.webp",
+      "bytes": 51344,
+      "duration": 7.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/ghost-courier.webp",
+      "bytes": 37386,
+      "duration": 7.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/bat-nurse.webp",
+      "bytes": 45344,
+      "duration": 7.899999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/skeleton-chef.webp",
+      "bytes": 41664,
+      "duration": 13.299999952316284,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/mimic-storekeeper.webp",
+      "bytes": 51684,
+      "duration": 9.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/nightmare-counselor.webp",
+      "bytes": 49670,
+      "duration": 12.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/spider-tailor.webp",
+      "bytes": 48218,
+      "duration": 12.899999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/kobold-recruiter.webp",
+      "bytes": 49932,
+      "duration": 13.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/duru-archivist.webp",
+      "bytes": 47894,
+      "duration": 13.699999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/kkangtong-engineer.webp",
+      "bytes": 54354,
+      "duration": 16.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/chalkak-photographer.webp",
+      "bytes": 38546,
+      "duration": 16.700000047683716,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/ddangkong-miner.webp",
+      "bytes": 44536,
+      "duration": 18.700000047683716,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/bongtu-postmaster.webp",
+      "bytes": 50716,
+      "duration": 18.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/staff.svg",
+      "bytes": 347,
+      "duration": 2.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-motion/orc-technician-idle.webp",
+      "bytes": 34576,
+      "duration": 3.399999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-motion/goblin-guard-idle.webp",
+      "bytes": 32062,
+      "duration": 4.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-motion/electric-technician-idle.webp",
+      "bytes": 30266,
+      "duration": 4,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-motion/gobi-idle.webp",
+      "bytes": 36758,
+      "duration": 4.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-motion/slime-cleaner-idle.webp",
+      "bytes": 30942,
+      "duration": 4.900000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/book.svg",
+      "bytes": 374,
+      "duration": 2.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/help.svg",
+      "bytes": 398,
+      "duration": 2.400000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/scroll.svg",
+      "bytes": 420,
+      "duration": 3.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/home.svg",
+      "bytes": 364,
+      "duration": 3.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/shop.svg",
+      "bytes": 392,
+      "duration": 3.900000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/gear.svg",
+      "bytes": 418,
+      "duration": 4.899999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/moon.svg",
+      "bytes": 360,
+      "duration": 5.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-live/board-cell-selected.svg",
+      "bytes": 425,
+      "duration": 4.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-live/board-cell.svg",
+      "bytes": 429,
+      "duration": 4.700000047683716,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-live/board-cell-merge.svg",
+      "bytes": 429,
+      "duration": 3.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/arrow-left.svg",
+      "bytes": 390,
+      "duration": 3.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/arrow-right.svg",
+      "bytes": 399,
+      "duration": 2.599999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/close.svg",
+      "bytes": 355,
+      "duration": 3.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/reference-ui/title-logo.svg",
+      "bytes": 214047,
+      "duration": 4.599999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/ui-v2/icons/sword.svg",
+      "bytes": 393,
+      "duration": 1.100000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/merc-ward.webp",
+      "bytes": 49244,
+      "duration": 3.399999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/merc-accountant.webp",
+      "bytes": 52384,
+      "duration": 4,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/merc-rescue.webp",
+      "bytes": 45510,
+      "duration": 3.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/merc-chikchik.webp",
+      "bytes": 46192,
+      "duration": 4.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/character-portraits/merc-banchang.webp",
+      "bytes": 49462,
+      "duration": 3.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/lobby-cast.webp",
+      "bytes": 197674,
+      "duration": 4,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/result-cast.webp",
+      "bytes": 134030,
+      "duration": 8.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/shop-cast.webp",
+      "bytes": 175304,
+      "duration": 9.899999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/training-cast.webp",
+      "bytes": 167188,
+      "duration": 10.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/gear.svg",
+      "bytes": 302,
+      "duration": 6.900000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/book.svg",
+      "bytes": 227,
+      "duration": 6.899999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/help.svg",
+      "bytes": 247,
+      "duration": 9,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/arrow.svg",
+      "bytes": 194,
+      "duration": 10.100000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/sword.svg",
+      "bytes": 217,
+      "duration": 11.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/scroll.svg",
+      "bytes": 251,
+      "duration": 12.099999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/home.svg",
+      "bytes": 217,
+      "duration": 13,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/moon.svg",
+      "bytes": 215,
+      "duration": 13.799999952316284,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/shop.svg",
+      "bytes": 212,
+      "duration": 13.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/back.svg",
+      "bytes": 194,
+      "duration": 14.199999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/shield.svg",
+      "bytes": 235,
+      "duration": 14.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/staff.svg",
+      "bytes": 230,
+      "duration": 16.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/assets/open-scene/icons/close.svg",
+      "bytes": 193,
+      "duration": 17.400000035762787,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/wallet.webp",
+      "bytes": 34658,
+      "duration": 14.599999964237213,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/settings.webp",
+      "bytes": 12052,
+      "duration": 14.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/story.webp",
+      "bytes": 31500,
+      "duration": 14.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/training.webp",
+      "bytes": 28970,
+      "duration": 14.699999988079071,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/records.webp",
+      "bytes": 21502,
+      "duration": 15.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/shared-chrome/paper.webp",
+      "bytes": 170446,
+      "duration": 17.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/gobi.webp",
+      "bytes": 134872,
+      "duration": 17.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/button-primary.webp",
+      "bytes": 76854,
+      "duration": 17.399999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/battle-exact/item-grade.webp",
+      "bytes": 14884,
+      "duration": 2.5,
+      "type": "img"
+    },
+    {
+      "path": "/assets/battle-exact/item-kind.webp",
+      "bytes": 11914,
+      "duration": 2.300000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/battle-exact/item-king.webp",
+      "bytes": 11502,
+      "duration": 1.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+      "bytes": 190600,
+      "duration": 15.199999988079071,
+      "type": "css"
+    },
+    {
+      "path": "/shared-chrome.css",
+      "bytes": 45792,
+      "duration": 1.199999988079071,
+      "type": "link"
+    },
+    {
+      "path": "/assets/shared-chrome/book.svg",
+      "bytes": 596,
+      "duration": 1.399999976158142,
+      "type": "img"
+    },
+    {
+      "path": "/assets/shared-chrome/home.svg",
+      "bytes": 606,
+      "duration": 1.800000011920929,
+      "type": "img"
+    },
+    {
+      "path": "/assets/shared-chrome/shop.svg",
+      "bytes": 716,
+      "duration": 5.200000047683716,
+      "type": "img"
+    },
+    {
+      "path": "/assets/shared-chrome/close.svg",
+      "bytes": 222,
+      "duration": 6.600000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/assets/shared-chrome/back.svg",
+      "bytes": 224,
+      "duration": 6.100000023841858,
+      "type": "img"
+    },
+    {
+      "path": "/concept-people.css",
+      "bytes": 41343,
+      "duration": 1.600000023841858,
+      "type": "link"
+    },
+    {
+      "path": "/assets/text-grid/shop-hero-wordless.webp",
+      "bytes": 160886,
+      "duration": 1.7999999523162842,
+      "type": "img"
+    },
+    {
+      "path": "/assets/concept-stories/torn-paper.svg",
+      "bytes": 661,
+      "duration": 1.5,
+      "type": "css"
+    },
+    {
+      "path": "/assets/shared-chrome/active-tile.svg",
+      "bytes": 787,
+      "duration": 1.5999999642372131,
+      "type": "css"
+    },
+    {
+      "path": "/favicon.ico",
+      "bytes": 335,
+      "duration": 2.399999976158142,
+      "type": "other"
+    }
+  ],
+  "stats": {
+    "draws": 0,
+    "updates": 0,
+    "uiFlushes": 1,
+    "backgroundBuilds": 0,
+    "portraitDraws": 0
+  },
+  "total": 4992396,
+  "imageBytes": 3763692,
+  "requests": 175
+}

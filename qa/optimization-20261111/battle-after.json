@@ -1,0 +1,62 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "samples": [
+    0.8949999998013178,
+    0.8974999999006589,
+    0.9,
+    0.9008333335320154,
+    0.9208333333333333,
+    0.9383333330353101,
+    0.9391666665673256,
+    0.9416666666666667,
+    0.9958333333333333,
+    1.0091666668653487,
+    1.0241666669646898,
+    1.027500000099341
+  ],
+  "medianDrawSubmitMs": 0.9391666665673256,
+  "p95DrawSubmitMs": 1.027500000099341,
+  "staff": 17,
+  "units": 15,
+  "styles": [
+    {
+      "selector": "#wave",
+      "font": "",
+      "box": {
+        "width": 33.828125,
+        "height": 28.890625
+      }
+    },
+    {
+      "selector": ".wave-pill small",
+      "font": "850 17.55px / 17.55px Arial, sans-serif",
+      "box": {
+        "width": 50.328125,
+        "height": 17.546875
+      }
+    },
+    {
+      "selector": ".battle-top",
+      "font": "14px / 21px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "box": {
+        "width": 390,
+        "height": 50.625
+      }
+    },
+    {
+      "selector": ".board-stage",
+      "font": "14px / 21px system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+      "box": {
+        "width": 390,
+        "height": 482.765625
+      }
+    }
+  ],
+  "atlasBytes": 3915698,
+  "idleBytes": 613686,
+  "rgbaDecodedBytes": 43273824,
+  "measurement": "Warm headless Chromium CPU draw submission time; not device FPS. RGBA is atlas pixel estimate, not total browser memory."
+}
