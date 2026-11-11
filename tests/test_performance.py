@@ -44,6 +44,8 @@ class PerformanceTests(unittest.TestCase):
         a=self.open(390,844)
         for button,host,close in [('#training-entry','#asset-training-host','.back'),('#roster-open','#asset-roster-host','.r-close')]:
             a.locator('#asset-lobby-host [data-proxy="'+button+'"]').click()
+            if button=='#training-entry':
+                a.locator(host+' [data-ss-label="effects"]').click()
             # The approved interfaces display original portrait images in shadow DOM,
             # not the hidden legacy animated canvases. Verify the visible asset loads.
             portrait=a.locator(host+' img[data-character-id]').first
