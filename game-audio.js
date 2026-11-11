@@ -2,6 +2,7 @@
 // Original, pre-rendered music: no audio synthesis work in the combat loop.
 (() => {
   if (typeof Audio !== 'function') return;
+  const language=window.GameLanguage||{t:value=>value,subscribe(){}};
   const tracks = {lobby:'lobby-night',battle:'night-shift',boss:'commander'};
   const players = new Map(), pending = new Set();
   let unlocked = false, volume = .35, muted = false, active = '';
@@ -18,7 +19,7 @@
     if (slider) slider.value = Math.round(volume * 100);
     if (value) value.textContent = Math.round(volume * 100) + '%';
     if (toggle) {
-      toggle.textContent = muted ? 'BGM 켜기' : 'BGM 끄기';
+      toggle.textContent = language.t(muted ? 'BGM 켜기' : 'BGM 끄기');
       toggle.setAttribute('aria-pressed', String(muted));
     }
   }
@@ -43,7 +44,7 @@
     if (!player) {
       player = new Audio('assets/audio/' + tracks[active] + '.wav');
       player.loop = true; player.preload = 'none'; player.volume = 0;
-      player.addEventListener('error', () => { if(status) status.textContent = '음악을 불러오지 못했어요. 잠시 후 BGM을 다시 켜주세요.'; });
+      player.addEventListener('error', () => { if(status) status.textContent = language.t('음악을 불러오지 못했어요. 잠시 후 BGM을 다시 켜주세요.'); });
       players.set(active, player);
     }
     for (const [key, audio] of players) {
@@ -57,7 +58,7 @@
           if (document.hidden || staffTrialOpen() || muted || !unlocked || volume === 0) audio.pause();
         }).catch(() => {
           unlocked = false;
-          if (status) status.textContent = '화면을 한 번 누르면 음악이 시작돼요.';
+          if (status) status.textContent = language.t('화면을 한 번 누르면 음악이 시작돼요.');
         }).finally(() => pending.delete(audio));
       }
     }
@@ -70,6 +71,7 @@
   window.addEventListener('pageshow', update);
   if (slider) slider.addEventListener('input', () => {volume = Number(slider.value)/100; unlocked = true; save();});
   if (toggle) toggle.addEventListener('click', () => {muted = !muted; unlocked = true; save();});
+  language.subscribe(controls);
   controls();
   window.setInterval(update, 100);
 })();

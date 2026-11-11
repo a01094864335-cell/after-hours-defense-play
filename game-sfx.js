@@ -1,6 +1,7 @@
 'use strict';
 // Original short synthesizer cues. Buffers are cached; combat never allocates oscillators.
 const GameSFX = (() => {
+  const language=window.GameLanguage||{t:value=>value,subscribe(){}};
   const AudioEngine = window.AudioContext || window.webkitAudioContext;
   const volumeInput = document.querySelector('#sfx-volume');
   const toggle = document.querySelector('#sfx-toggle');
@@ -16,7 +17,7 @@ const GameSFX = (() => {
   function controls() {
     if (volumeInput) volumeInput.value = Math.round(volume * 100);
     if (output) output.textContent = Math.round(volume * 100) + '%';
-    if (toggle) {toggle.textContent = muted ? '효과음 켜기' : '효과음 끄기'; toggle.setAttribute('aria-pressed', String(muted));}
+    if (toggle) {toggle.textContent = language.t(muted ? '효과음 켜기' : '효과음 끄기'); toggle.setAttribute('aria-pressed', String(muted));}
     if (master) master.gain.setTargetAtTime(muted ? 0 : volume * .65, context.currentTime, .015);
   }
   function save() {
@@ -105,10 +106,11 @@ const GameSFX = (() => {
       source.start();last.set(name,now);if(isCombat)last.set('combat',now);return true;
     } catch (_) {return false;}
   }
+  if(AudioEngine)language.subscribe(controls);
   controls();
   if (!AudioEngine) {
     if (volumeInput) volumeInput.disabled=true;
-    if (toggle) {toggle.disabled=true;toggle.textContent='이 브라우저는 효과음을 지원하지 않아요';}
+    if (toggle) {toggle.disabled=true;toggle.textContent=language.t('이 브라우저는 효과음을 지원하지 않아요');}
     return Object.freeze({play:()=>false});
   }
   document.addEventListener('pointerdown',unlock,{passive:true});

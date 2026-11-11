@@ -49,7 +49,7 @@
   }
  }
  function enhance(scope) {
-  for (const nav of scope.querySelectorAll('nav[aria-label="주 메뉴"],.lobby-links')) {
+  for (const nav of scope.querySelectorAll('nav[aria-label="주 메뉴"],nav.shared-gnb,.lobby-links')) {
    if (nav.classList.contains('shared-gnb')) continue;
    nav.classList.add('shared-gnb');
    for (const art of nav.querySelectorAll(':scope > img,:scope > svg')) art.remove();
