@@ -6,7 +6,7 @@
  const oldHero=q('.lobby-gobi'),largeHero=new Image();largeHero.className='lobby-gobi';largeHero.dataset.motion='static-duo-gobi';largeHero.src='assets/mobile/lobby-gobi.webp';largeHero.alt='신입 고비';oldHero.replaceWith(largeHero);
  const title=q('.lobby-title'),heading=title.querySelector('h1');
  heading.className='duo-sr';const floating=document.createElement('div');floating.className='duo-logo-float';
- const logo=new Image();logo.src='assets/reference-ui/title-logo.svg';logo.alt='';floating.append(logo);
+ const logo=new Image();logo.loading='lazy';logo.decoding='async';logo.src='assets/reference-ui/title-logo.svg';logo.alt='';floating.append(logo);
  const tagline=document.createElement('p');tagline.textContent='마왕은 퇴근, 우리의 밤은 시작!';
  const shadow=document.createElement('span');shadow.className='duo-logo-shadow';shadow.setAttribute('aria-hidden','true');title.replaceChildren(heading,floating,shadow);
  const tools=document.createElement('div');tools.className='duo-shortcuts';

@@ -1,0 +1,2653 @@
+{
+  "files": [
+    {
+      "path": "assets/battle-exact/hud.webp",
+      "before": 12474,
+      "after": 7860,
+      "quality": 85,
+      "psnr": 40.41,
+      "size": [
+        948,
+        100
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d266877c5ea7c571f464ca0d8eaa296fe16ee2261dd7f0c925e7ae886cec084e",
+      "sha256": "7e49c409a40f329c44247da054074de90fc2cf03e165fe6f94f26e393d7a9345"
+    },
+    {
+      "path": "assets/castle-stories/attendance/01.webp",
+      "before": 130612,
+      "after": 117348,
+      "quality": 80,
+      "psnr": 38.87,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6efc7a049eea23088443b3d7de0f323cec4998f00281ce20faf3f3f340b9f496",
+      "sha256": "51f679b6cd54030a09616d3562a1ecfdea2fa96d609a383b3117263edaa0bf84"
+    },
+    {
+      "path": "assets/castle-stories/attendance/02.webp",
+      "before": 111000,
+      "after": 100244,
+      "quality": 80,
+      "psnr": 39.65,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0d3fe25bc37e229cf890d48110d4b73f012c5881f9fc19c0d28662b3cca8d35c",
+      "sha256": "5b368cb77f95b8c06d7ea00659f31e6923a6b016d68b61b78cc60f082ebd3ef0"
+    },
+    {
+      "path": "assets/castle-stories/attendance/03.webp",
+      "before": 133618,
+      "after": 122300,
+      "quality": 80,
+      "psnr": 39.0,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "bf974d0d5ef744f3170d43247e647e7af392344187fad4bdfc1fce2be5bfc00e",
+      "sha256": "e5d0bbe55984ce692e8a4b01abb2bb64eb764f2e2295c587ab86eeb583468000"
+    },
+    {
+      "path": "assets/castle-stories/attendance/04.webp",
+      "before": 143518,
+      "after": 131966,
+      "quality": 80,
+      "psnr": 38.91,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "69e748eb5f3c7bf25857ef18448c4993aba242c4b9040f677373bf8a1d61ab1d",
+      "sha256": "03adf9cb05c29f5aae883a722b3cda3e0e57b29ed65fc24a34ee572644046e80"
+    },
+    {
+      "path": "assets/castle-stories/birthday/01.webp",
+      "before": 136886,
+      "after": 123150,
+      "quality": 80,
+      "psnr": 38.65,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "4cb849b4c412850ac4b1a714088ef376599705b3b33a4d67b21e9c7b7ca63bcf",
+      "sha256": "f59c29d51f2b2c654ad6bd6668baa61103be614ece7a0064652e0b801daac8fb"
+    },
+    {
+      "path": "assets/castle-stories/birthday/04.webp",
+      "before": 152342,
+      "after": 137828,
+      "quality": 80,
+      "psnr": 38.46,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8ca822ae983a3947f1c2bf98931c75f394e70aa78ff91593c9e2b99ce2dcd38c",
+      "sha256": "23e59206084e76ae83215b7278fc822023426867427b27bb22a174bb6fb74543"
+    },
+    {
+      "path": "assets/castle-stories/blackout/01.webp",
+      "before": 124610,
+      "after": 112862,
+      "quality": 80,
+      "psnr": 39.24,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f2aca54f07852ccddb91ddca7696b225517aa031db76f59c4aeac9df2e44c5b3",
+      "sha256": "141cfba584c09ce0b1ef466dec98f2e7691e4832ec21f370f422f121ad0b6378"
+    },
+    {
+      "path": "assets/castle-stories/blackout/02.webp",
+      "before": 127520,
+      "after": 115274,
+      "quality": 80,
+      "psnr": 39.14,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "cbc65fa30371f895c209d213e2c7873884a78ca9793b075af275d105c198ad49",
+      "sha256": "0c41d5c3e0f61e88bb1e80896b10cdc278d4b3a3dea78234ddbddfe9ad914d8a"
+    },
+    {
+      "path": "assets/castle-stories/blackout/04.webp",
+      "before": 144674,
+      "after": 130562,
+      "quality": 80,
+      "psnr": 38.63,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "29a0d1158d3feb7edfb62164135b8f757c13b7a0f2a4f375f0fbeb2f9bd81153",
+      "sha256": "4c476e4ce334db37c52fb025ee08b0a0f8ed01001d74ad65798157a6ea95eebe"
+    },
+    {
+      "path": "assets/castle-stories/call-by-name/03.webp",
+      "before": 172654,
+      "after": 138220,
+      "quality": 85,
+      "psnr": 38.25,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "eb07fdb9d1dd270ea252b36bca7366737c0ea4a6aeef397eabc64aac861d6227",
+      "sha256": "08eb55eac5b02fc964c070070f78e4dbd2a83e6f710aa10a8fc199c0b0ead041"
+    },
+    {
+      "path": "assets/castle-stories/call-by-name/04.webp",
+      "before": 192934,
+      "after": 160662,
+      "quality": 85,
+      "psnr": 38.18,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "33cfac56261fd57d99d2fb6b24e25dea86a33b5a0fdac474bf075c13ead3d138",
+      "sha256": "225b5bc59a9d2f38fbd2b1c3c6de79dcc4b995a5c2981d4d96a3de79312147ea"
+    },
+    {
+      "path": "assets/castle-stories/cape/01.webp",
+      "before": 136028,
+      "after": 123928,
+      "quality": 80,
+      "psnr": 38.65,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "04906c7e0fbcbb2bf4c1bd21ff946f2929be5c584cc714e356957af63bafe943",
+      "sha256": "e396047c8fb7aa6f2ea2727b9d1c514d8898ada6c3abfa855f1fa48d4c66489c"
+    },
+    {
+      "path": "assets/castle-stories/cape/02.webp",
+      "before": 131396,
+      "after": 120582,
+      "quality": 80,
+      "psnr": 39.31,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e00752c82f2c51dff8eb1b139a25c8967f6a5fa56a8db0a7b9d8a0c7311300ed",
+      "sha256": "56c71920dc235034d371821a79b4d9ae0bd44683f477f7b7e12ad9ef631441cd"
+    },
+    {
+      "path": "assets/castle-stories/cape/03.webp",
+      "before": 154602,
+      "after": 140704,
+      "quality": 80,
+      "psnr": 38.03,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "1d1087ecc4d2293e23ff641825f7bee44be6f36e486e8aede42fa8a39423cf4e",
+      "sha256": "410b9d2d38da29536e4cb7000665d291ac1cd535abe3f3dd678dc444b8c22916"
+    },
+    {
+      "path": "assets/castle-stories/cape/04.webp",
+      "before": 131666,
+      "after": 117650,
+      "quality": 80,
+      "psnr": 38.73,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b1e7990ce8fe493d887920a25c83ccfd8ae79c9cd7346901eae71a9044d37ce6",
+      "sha256": "27813724738193250e81eff56d7202223bd56734c9b55b7a2397cc9838529821"
+    },
+    {
+      "path": "assets/castle-stories/castle-sports/01.webp",
+      "before": 191432,
+      "after": 158970,
+      "quality": 85,
+      "psnr": 38.7,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8c464c1f6d5cd5c1137d25c6487402655d1a388034f448fb34605baa52c14892",
+      "sha256": "c6435a64bc45474cca1e2537bef81c729c5f72804d4a5b1b3673f4bc56f201fa"
+    },
+    {
+      "path": "assets/castle-stories/castle-sports/02.webp",
+      "before": 180148,
+      "after": 148648,
+      "quality": 85,
+      "psnr": 38.5,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c95288be04266bc9b154eb9070123d0f0dc5eaeef8776d84dd5a0a941de15432",
+      "sha256": "68c2698b718d14574c47a84e92077a3fee8b8909ebedba96331adf1b70fb4a7d"
+    },
+    {
+      "path": "assets/castle-stories/castle-sports/03.webp",
+      "before": 169798,
+      "after": 140300,
+      "quality": 85,
+      "psnr": 39.02,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e9f58efa6d1aadfd4d6123f38f38d840f4ad502ad49cb8dc7146d5e6d43b04f8",
+      "sha256": "93a476a99cd7bca9024450787121d8a1c3ca82ff29c2bf7e419963b117cb6cbb"
+    },
+    {
+      "path": "assets/castle-stories/chair-project/01.webp",
+      "before": 183290,
+      "after": 150472,
+      "quality": 85,
+      "psnr": 38.77,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e1ac3f2f7dcd6c376c26419d62cdccc1e1cbe5e86fec89238d615f4572e16aad",
+      "sha256": "faf9d0fdfc3c9bea701dd715e0c0fed56b9eb0904d1fa3dadb73c21c5ddb6441"
+    },
+    {
+      "path": "assets/castle-stories/clean-floor/01.webp",
+      "before": 161570,
+      "after": 148286,
+      "quality": 80,
+      "psnr": 38.23,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f7e246c6fb82a1086501527a4e265ba9fadab32e114d25965abc511f6f69f5f1",
+      "sha256": "672a13cd87fc9dc1f5d901ad2ff6204f7783cff6a2304849cb91c3d9dc524c2f"
+    },
+    {
+      "path": "assets/castle-stories/clean-floor/02.webp",
+      "before": 156860,
+      "after": 143704,
+      "quality": 80,
+      "psnr": 38.55,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "09895d82f93ab9e9e12c5b900da8781ec1af86330cf8943f641838c9fbab28a9",
+      "sha256": "4fb4df123a2db83a9ecc588acea40aa1fab816938b8fe614266dbe6075a21a91"
+    },
+    {
+      "path": "assets/castle-stories/clean-floor/03.webp",
+      "before": 148890,
+      "after": 136432,
+      "quality": 80,
+      "psnr": 38.78,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "cae60077051310f07e148219a8b20f1db0700f6f8d2a9e8a10c009c23d0a66be",
+      "sha256": "7449415f35c169cf6230e32e5e4e67b11eaec9b56edc5b64d9c02c86350adf34"
+    },
+    {
+      "path": "assets/castle-stories/clean-floor/04.webp",
+      "before": 143950,
+      "after": 130230,
+      "quality": 80,
+      "psnr": 38.38,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b25555524a1b9515a26c64928568a6d620d8137aca57975fed1125d2ee98d228",
+      "sha256": "9f1eda6625b934410d58d0abcc4b66e3eda447fe78b05b034b612b9039900966"
+    },
+    {
+      "path": "assets/castle-stories/coffee/02.webp",
+      "before": 174540,
+      "after": 147596,
+      "quality": 85,
+      "psnr": 38.74,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "417f2f20d0fce8bee4a6e575b75b7e17da3ad3a95ef568f6b6d05eac47c4041c",
+      "sha256": "265a33b7ee7bced961da3c53b7cd13b42897377e1e7095fdfa78dfabe870f097"
+    },
+    {
+      "path": "assets/castle-stories/coffee/04.webp",
+      "before": 188422,
+      "after": 158374,
+      "quality": 85,
+      "psnr": 38.3,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "964070b82034829b4fc55ee905717a16c20c883dbb7a181e50c474558d62a718",
+      "sha256": "1368388cb088e1c7c70991bee26db96aaa8e0fe4287fc2e39a1fa2d9f37d7445"
+    },
+    {
+      "path": "assets/castle-stories/counseling/01.webp",
+      "before": 152112,
+      "after": 137262,
+      "quality": 80,
+      "psnr": 38.2,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8c3c851882a28dfefaf7c446bf677da78d6cbdf44ffce5e9eb4b345de9398fcd",
+      "sha256": "85689c33569608b9ee6ce34d54f11be7d23ea12f54900fce94610eea42c4b673"
+    },
+    {
+      "path": "assets/castle-stories/counseling/02.webp",
+      "before": 152594,
+      "after": 137854,
+      "quality": 80,
+      "psnr": 38.33,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "49632efbb1a2a6d65e365575fa067f06601f653e46c4724acb55b37c3cc70e3c",
+      "sha256": "dcdf3988d450cbc3e773330d6a814aa60c4adae3c84522d425ea5acfaf05e80d"
+    },
+    {
+      "path": "assets/castle-stories/counseling/03.webp",
+      "before": 133310,
+      "after": 121824,
+      "quality": 80,
+      "psnr": 38.97,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "859251e4503be8e0ab3e91d61a228890988ab1c1984cb1a06af00adc7db041b0",
+      "sha256": "253994dcad2011fdd74e2d7cfae9b05a6776414b67720239a812d7c28e89904a"
+    },
+    {
+      "path": "assets/castle-stories/counseling/04.webp",
+      "before": 130778,
+      "after": 116982,
+      "quality": 80,
+      "psnr": 38.55,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a4ec521a276b011ce2bc87040078717cd837d7c12333e44d930fb756a8a48931",
+      "sha256": "deb8b38d98dcb306733ba51f05516d3417a0cfd1f25cda40fe392132c3e71b19"
+    },
+    {
+      "path": "assets/castle-stories/emergency-cookie/02.webp",
+      "before": 141290,
+      "after": 129494,
+      "quality": 80,
+      "psnr": 38.64,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "28ca2327631ea9ca5cb4acdcfef3527b1d87a8a41930558d9177922706f4ed43",
+      "sha256": "4898c8efd806ca3b23e72f2170acd3d3981f8a48e89c8b9d5561fb8c50573463"
+    },
+    {
+      "path": "assets/castle-stories/empty-throne/01.webp",
+      "before": 135962,
+      "after": 121646,
+      "quality": 80,
+      "psnr": 38.63,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "cc1e6ebe3199694e6be5eb6021f79a7a6ae3508773cee4b117171ab7f1a18918",
+      "sha256": "490585172d5f5a04146a39f1b28c33d41a30e517c2743990357e6b33db88861c"
+    },
+    {
+      "path": "assets/castle-stories/empty-throne/02.webp",
+      "before": 125162,
+      "after": 112006,
+      "quality": 80,
+      "psnr": 38.76,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "871d2d2a6f227872ea5f29bd37ee827a78d02071ebf442f02e94891a4ea14312",
+      "sha256": "2bffe2f1b1bc0a18e8d4c79a3523cf2afdccf2dcb31da540ecdda6f4c36e32c8"
+    },
+    {
+      "path": "assets/castle-stories/empty-throne/03.webp",
+      "before": 132072,
+      "after": 120624,
+      "quality": 80,
+      "psnr": 38.9,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "06d1035cbed5005869dbb1afc417566b75f4de938de04d8a6b41ab0fd30c5722",
+      "sha256": "1e29a5feefd78b90854e43a91baab8c43b194e2d999323a9194af0dce9f82d40"
+    },
+    {
+      "path": "assets/castle-stories/empty-throne/04.webp",
+      "before": 135750,
+      "after": 119702,
+      "quality": 80,
+      "psnr": 38.47,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "4fb7f9b2e31cd8c8bf01a80eb3dedf22a3b1cf197ae69f548181f42923e9d92f",
+      "sha256": "3040eb3b4e38e838be4dfd01e17ff0e5eb03d0a95696ba73a564fcde9fb69c6c"
+    },
+    {
+      "path": "assets/castle-stories/fallen-star/01.webp",
+      "before": 150902,
+      "after": 137140,
+      "quality": 80,
+      "psnr": 38.3,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f5aec38ceee34aec07bda79c5974f1112049960fe926fb17f4c0ecf7c3eb3c20",
+      "sha256": "61c9ee8f41a22cea92860cd391a0caa9732150a474d226e98c5502d67daac926"
+    },
+    {
+      "path": "assets/castle-stories/fallen-star/03.webp",
+      "before": 130442,
+      "after": 117444,
+      "quality": 80,
+      "psnr": 38.72,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0b07b0fbef89eecc03751c2b5bb00f371c6ea9c9f32bace59ef66201f4c2578f",
+      "sha256": "c86fe0cb0515ae89d9e6af100bf8be2ba7047aca1ee11aed25c9d2cd038ef35a"
+    },
+    {
+      "path": "assets/castle-stories/fridge-label/01.webp",
+      "before": 143876,
+      "after": 131220,
+      "quality": 80,
+      "psnr": 38.71,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ad32ff2cd427433be7f4ae4e066c319e0af71ba98c18ee3e13c57414609ce408",
+      "sha256": "3a86a48d07552d5594e660694bf6f0bf50984ab3a139506294fab3cb843220bd"
+    },
+    {
+      "path": "assets/castle-stories/fridge-label/03.webp",
+      "before": 138380,
+      "after": 125566,
+      "quality": 80,
+      "psnr": 38.71,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "1b49ff931013575b829c85262f7b42312e4034c9cc606f7e4389cf65593dd490",
+      "sha256": "f3be4e2060297aab4de176ea33a18a0ae2f09b664916a3fb90f1356a37218009"
+    },
+    {
+      "path": "assets/castle-stories/gate-cat/01.webp",
+      "before": 138964,
+      "after": 126910,
+      "quality": 80,
+      "psnr": 38.85,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c1746dc5f2c6ee31c5e1319f789bd4d092f03e8864bf23a540fb0e0cf025d2cd",
+      "sha256": "e9958e545ed35c5ab4f38904f660a553dbd233e970b2c64c3bd25362cbff82ec"
+    },
+    {
+      "path": "assets/castle-stories/gate-cat/02.webp",
+      "before": 138302,
+      "after": 127206,
+      "quality": 80,
+      "psnr": 38.73,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "097b72cdcd96fa8399e70daf071514b5720d7eaf1815435a5236620f5888b83b",
+      "sha256": "a793fbf0c375e735b77f3a826f29f1c038e84245440d1afa4e59a42f91df5fe2"
+    },
+    {
+      "path": "assets/castle-stories/gate-cat/03.webp",
+      "before": 141536,
+      "after": 129918,
+      "quality": 80,
+      "psnr": 38.9,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e433e8c5940c169cb6a52d0026cbc750ad27dfc8672e963cafc427cdfd17a307",
+      "sha256": "23dab2fb0067b3b385729820c60ebc6a7152465d35574fc8d8b7345f54ef0553"
+    },
+    {
+      "path": "assets/castle-stories/ghost-scary-story/01.webp",
+      "before": 128116,
+      "after": 115526,
+      "quality": 80,
+      "psnr": 38.85,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "52b6ce16e7b048ae4b76d171c3219ee3a5d4be2da4f5b4e83b8ce39e38558516",
+      "sha256": "658993c0e6268896ddb85faabfb2c3bddc3ea2e3ecfdbed87b6c6b3c627465fa"
+    },
+    {
+      "path": "assets/castle-stories/ghost-scary-story/02.webp",
+      "before": 126486,
+      "after": 110902,
+      "quality": 80,
+      "psnr": 38.55,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6f8683839eb0e2318482ae5dd0ab8af720b6d3792856424bf82a824c86b17a67",
+      "sha256": "4da3c43d184a53600f29415009bf080277d2a09f1cd6230b5b7a423359bb47a2"
+    },
+    {
+      "path": "assets/castle-stories/ghost-scary-story/03.webp",
+      "before": 125952,
+      "after": 113766,
+      "quality": 80,
+      "psnr": 39.04,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f19481ce1fb2c738b25d8b868bba37320690e772c1b139e80c9989f59a1aae60",
+      "sha256": "1216023d36857c2bcabe21dbc7fb15dbedfa6f61066eae1c81c198441353941e"
+    },
+    {
+      "path": "assets/castle-stories/ghost-scary-story/04.webp",
+      "before": 122928,
+      "after": 111264,
+      "quality": 80,
+      "psnr": 38.84,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "27fa035a69acf366204777f54c7365616a442b1a23e7b15eaebe2e8d812fe20c",
+      "sha256": "2468bdfacff0d8bc3f9b817c861ec3db557c4021ae390bb4adc37efecec260ba"
+    },
+    {
+      "path": "assets/castle-stories/guard-dog-holiday/01.webp",
+      "before": 140928,
+      "after": 127488,
+      "quality": 80,
+      "psnr": 38.58,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2d492ed497db257a8930cae4c768a080e81b1bd05e48c870db1672700048375e",
+      "sha256": "8440bcc94aead206c43378c39eea53852c5f1a7b23c8ceb28cb727686d7dc759"
+    },
+    {
+      "path": "assets/castle-stories/guard-dog-holiday/02.webp",
+      "before": 114852,
+      "after": 102026,
+      "quality": 80,
+      "psnr": 38.6,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f658b8b762ee2a27fd6823c62f91442d3630c455cb8760bcce56be2599bc1f65",
+      "sha256": "a344ed9a6f000f1244d82e3f354eb9d0f1a9b2ef2319cce2e11ac43ffe1f9416"
+    },
+    {
+      "path": "assets/castle-stories/guard-dog-holiday/04.webp",
+      "before": 128656,
+      "after": 116812,
+      "quality": 80,
+      "psnr": 38.48,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2112e90fc3f1701ab1fc8bcfe3a6e57c8635c0d1241dd7f5f8b35169d4c60315",
+      "sha256": "5c5dc03b71f7db91f3ac4a74c032b6f4d59a8f9cacfbf9b0c0d1e08d8a08d6ee"
+    },
+    {
+      "path": "assets/castle-stories/inspection/02.webp",
+      "before": 124974,
+      "after": 111618,
+      "quality": 80,
+      "psnr": 39.0,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "93ebdb20e381d5cd28d1cbc9176f9fa27193917c87a7b3db0f559e6bf1c202f7",
+      "sha256": "3769aeb160af23144af50010a2c3ddfa71fbdd7107ae5b3e099e6f5ad3a7fe50"
+    },
+    {
+      "path": "assets/castle-stories/inspection/03.webp",
+      "before": 129070,
+      "after": 117036,
+      "quality": 80,
+      "psnr": 39.34,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "dcb857708d97932e024f11fd90c2523590947171516d1f65b3c873c1ed068f2d",
+      "sha256": "bab48d800f363a454a1af465e9beda2c425d731506a89ca54926f7c7943f35ff"
+    },
+    {
+      "path": "assets/castle-stories/inspection/04.webp",
+      "before": 132516,
+      "after": 119522,
+      "quality": 80,
+      "psnr": 39.0,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ec89a76b6b03e6bb41b91f2aee71139de661b02242df33972a66153050d79d0f",
+      "sha256": "9c17eb033b6a9fe1e35d4edb68dc9fc7e0ce2b6f58608bbd40e2e020c4a7a5fd"
+    },
+    {
+      "path": "assets/castle-stories/inventory/01.webp",
+      "before": 150630,
+      "after": 137418,
+      "quality": 80,
+      "psnr": 38.46,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "65657c0b38e252e4eec50c776637443caece897f1c1895aa9320bae3016cccc4",
+      "sha256": "048631468af5a459338545d02ae98a307163a34b2b863bedd79a838d90eaa1d5"
+    },
+    {
+      "path": "assets/castle-stories/inventory/02.webp",
+      "before": 140748,
+      "after": 126198,
+      "quality": 80,
+      "psnr": 38.57,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "475066eb3bd163da003ec5897ec396885fce1e35106054c9bf364b37f719a425",
+      "sha256": "a2ef9ea00064b9f885296b14d5e93b1e9a44bfe57c508dce56954a41ba4fa90f"
+    },
+    {
+      "path": "assets/castle-stories/inventory/03.webp",
+      "before": 182382,
+      "after": 150982,
+      "quality": 85,
+      "psnr": 38.89,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b55887052c632c1d6d66e76be471bafac4a93ecfd6f79bd1a4c415f61f953b2b",
+      "sha256": "9bcb0fc06a05e47cab0676f2ec5c16d1c9093a215a64dce386ca249f976ba627"
+    },
+    {
+      "path": "assets/castle-stories/inventory/04.webp",
+      "before": 140466,
+      "after": 129072,
+      "quality": 80,
+      "psnr": 39.24,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2f57bdd343ebfad41bcbc8ed432c11c10956000039c1304e82d693de86fc975f",
+      "sha256": "b54ee963ed0fe49f1f541716f9bffee62b3af1b73ba91967eb9f04795c1ad911"
+    },
+    {
+      "path": "assets/castle-stories/laundry-weather/02.webp",
+      "before": 189366,
+      "after": 155516,
+      "quality": 85,
+      "psnr": 38.73,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "1abf79582c5444467d67e41eeb5ab5e49530561d7c8ee41e43356a001df938d7",
+      "sha256": "42f57bf6c652309c21cc28dd1a905859ee1925fbcb1489c7df37be3ec3d0c107"
+    },
+    {
+      "path": "assets/castle-stories/laundry-weather/04.webp",
+      "before": 181494,
+      "after": 147398,
+      "quality": 85,
+      "psnr": 38.77,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c95bb85605bd67275f3e5d36e3730d8b7ce89bdea7fd0013bf4755e9507562e4",
+      "sha256": "4e215ef2d9805f94de6d0f11e3932cf233fcd7cf1bfc49d6cadf46c9ff72a0b9"
+    },
+    {
+      "path": "assets/castle-stories/lost-key/01.webp",
+      "before": 137988,
+      "after": 126296,
+      "quality": 80,
+      "psnr": 38.96,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "52bc7b19636b3c454a504a1aa6941e5764c8d9a512950de6df0b035d21d8bd9e",
+      "sha256": "4dfdfbccef7cb0ccc116f5cd8376fbb059d85d3a75b5bbae571f95216bb6267f"
+    },
+    {
+      "path": "assets/castle-stories/lost-key/03.webp",
+      "before": 134454,
+      "after": 122798,
+      "quality": 80,
+      "psnr": 38.92,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "7f05b27c15d36f61ca8427ccfcbbb2835ca87ffc566691019c153c39797c403a",
+      "sha256": "a700b53745864cf4afb8beceec7d75c0624abe18684a26a999992c77c5ff13c2"
+    },
+    {
+      "path": "assets/castle-stories/lost-key/04.webp",
+      "before": 123738,
+      "after": 112476,
+      "quality": 80,
+      "psnr": 39.29,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "fd467c7d9373d56206a13ff96cecc143df3221ccd03255d269a18fba679b29db",
+      "sha256": "ff4b83a8f953b4cdf49c5a91525b1ac4752514f9578ba4b578e5ed9506d623b4"
+    },
+    {
+      "path": "assets/castle-stories/midnight-soup/01.webp",
+      "before": 137508,
+      "after": 125290,
+      "quality": 80,
+      "psnr": 38.86,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0705ca7609f130d9ee38afdea4184dc0a358ad85d15686074321b64486c40dbf",
+      "sha256": "2b83d8430b2090b2e63ebc55317f21b1c47314fecc7c12353a1facd2a66cd9ef"
+    },
+    {
+      "path": "assets/castle-stories/midnight-soup/02.webp",
+      "before": 128774,
+      "after": 117636,
+      "quality": 80,
+      "psnr": 39.41,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b97a75a466d787ce33d6ca89bc726964bb9a9d5b9e68ccfe5867a2b69c401504",
+      "sha256": "196c6f1e581c8cba99aa54835d64ca98fe73be71cfd277f27726ddcbd64ce853"
+    },
+    {
+      "path": "assets/castle-stories/midnight-soup/03.webp",
+      "before": 99788,
+      "after": 90120,
+      "quality": 80,
+      "psnr": 39.56,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "5f97b41d25361fb74c25be2cbba7688769dfb0b7dd5f532b5fcf867238e4f279",
+      "sha256": "f066f3289a9e99131e80db910b2ee6b67306f196b9b5bf9749c324eb09347fc8"
+    },
+    {
+      "path": "assets/castle-stories/midnight-soup/04.webp",
+      "before": 134808,
+      "after": 121020,
+      "quality": 80,
+      "psnr": 38.89,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b4a47fa0cf40b8cd8f72255c93cdc39cea26b8626ca7c6c312c1998fba191761",
+      "sha256": "5b9291247f445850cbef4815c05fab465e0f6364accf3da0079dd9c4a1cec6db"
+    },
+    {
+      "path": "assets/castle-stories/one-note-band/01.webp",
+      "before": 128542,
+      "after": 115792,
+      "quality": 80,
+      "psnr": 38.33,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0aa7105fe5b19960be842bb8604f8ac458834a0522866f724012d594a54b71ff",
+      "sha256": "cb1c695831d3d3dc76f8d731cc0aaded127fddf84433ba4a781b13f0f7ab2528"
+    },
+    {
+      "path": "assets/castle-stories/one-note-band/02.webp",
+      "before": 158282,
+      "after": 145602,
+      "quality": 80,
+      "psnr": 38.27,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "09b893d9e91967ca7d741aeb781a684dad4a6986d41c4813b8dd5ffe2f4489f7",
+      "sha256": "057b776683060f5ff76a9e20c525d110b936e9a58072c663abbd5d9d33948d2f"
+    },
+    {
+      "path": "assets/castle-stories/overtime-shadow/01.webp",
+      "before": 128840,
+      "after": 115278,
+      "quality": 80,
+      "psnr": 39.3,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ffe74fddfb31ac9cdbf9ee1dc10cf84d7b8432c07ed5e56ba96042594fa03fcd",
+      "sha256": "dc5d012e3f93abb0a9f3ba20aa3cde8bf78f4566be16406317668182bc47d3a8"
+    },
+    {
+      "path": "assets/castle-stories/overtime-shadow/02.webp",
+      "before": 128024,
+      "after": 112584,
+      "quality": 80,
+      "psnr": 38.77,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "4773020be6d6dafd6956b5646405d12772260f643ede9b9b1314e6fdddb150e1",
+      "sha256": "ed48db638630bce9f71f761ec019fdefd55f3ab9cf5a09d52db6db69a29eaad7"
+    },
+    {
+      "path": "assets/castle-stories/overtime-shadow/03.webp",
+      "before": 114924,
+      "after": 102670,
+      "quality": 80,
+      "psnr": 39.58,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "4df1513d8575228602209b50a448935f88718b37e440bc44a08bdfb820faef53",
+      "sha256": "8252e2b796245acb922901e8ee356b6fc1410dd8807aaf15a7f7471ded428738"
+    },
+    {
+      "path": "assets/castle-stories/overtime-shadow/04.webp",
+      "before": 128880,
+      "after": 114242,
+      "quality": 80,
+      "psnr": 38.73,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c67ee27e11123be35cc1da853e2a3cdb9ff35be22bb50cb50e63120d48698179",
+      "sha256": "38b3434feeb6e58c8da48a242eefda99489d6f0e3a7825104ce28288e0d450c2"
+    },
+    {
+      "path": "assets/castle-stories/parcel/01.webp",
+      "before": 129938,
+      "after": 117062,
+      "quality": 80,
+      "psnr": 38.85,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "44af986ca45723708f4908aaa50619a69ceab3cb3ee92a67cef36e0397ced052",
+      "sha256": "dbf0105c7f1fde031b8c59e2c83f10c968ccbcc80f5c7a355372b5ce5d814fd4"
+    },
+    {
+      "path": "assets/castle-stories/parcel/02.webp",
+      "before": 135810,
+      "after": 122834,
+      "quality": 80,
+      "psnr": 38.26,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0c15f9a15537c019697d7c9465ee1e147a2d9226af6e4e87c85e23c6dea2ab8e",
+      "sha256": "90c76d7b6060ac4c350bf453baf98869c5cd9a550eae91ac152dc9a088b7061d"
+    },
+    {
+      "path": "assets/castle-stories/parcel/03.webp",
+      "before": 153096,
+      "after": 139432,
+      "quality": 80,
+      "psnr": 38.59,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b7d5c89b81c0da1967a091b2169b66aecb7ca2e76f8e6aa2a514b6447cf3cc8f",
+      "sha256": "8af5ed35cfb26513c62dfa74662a46f01f07b899824208405f9e0e2db12a41f0"
+    },
+    {
+      "path": "assets/castle-stories/parcel/04.webp",
+      "before": 139702,
+      "after": 128052,
+      "quality": 80,
+      "psnr": 39.07,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "64192a3ea405e695787b24a000fa70ffe4a9821eea5040323e122adc5cec2fc0",
+      "sha256": "f218328095f626a831b03c373ca11c4b4b74bfbaa119ce83e8e761b90fe092c7"
+    },
+    {
+      "path": "assets/castle-stories/payday/01.webp",
+      "before": 136112,
+      "after": 124954,
+      "quality": 80,
+      "psnr": 39.06,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "177896ee0afe6eaf6ac958e5c000a002ddff636b49d7f4643ffb054af9aa2c0c",
+      "sha256": "88bbec428ba47b21970f173213c41d0229f24a44e2ac0e54e239127a3605dec3"
+    },
+    {
+      "path": "assets/castle-stories/payday/02.webp",
+      "before": 134496,
+      "after": 123420,
+      "quality": 80,
+      "psnr": 39.16,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "348cec5c4489958d4990ad6551e0ae767a0f0104be702e206e833435cc20c951",
+      "sha256": "ba365ad847d54c87eff1d0acc0eb4cba53317c2d421ff053b574737feab67afc"
+    },
+    {
+      "path": "assets/castle-stories/payday/03.webp",
+      "before": 161208,
+      "after": 146204,
+      "quality": 80,
+      "psnr": 38.65,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f9cf41e74af7d65570b4c5c53a210272701edc8330c098f93abd244993acb444",
+      "sha256": "9fc0d8bbbbf2559e6231c0da55bdc6b3ca97efb3e8d07372823978a4f6bcf07c"
+    },
+    {
+      "path": "assets/castle-stories/photo/03.webp",
+      "before": 155296,
+      "after": 142508,
+      "quality": 80,
+      "psnr": 38.7,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "43378555c72b73544ad3a8ad6c36c532bab628ecdd623eba5ad0565bf85e6993",
+      "sha256": "d4a73fa60dd40a6f787138b9735295794b01836a6e774783ac4585a102f183bd"
+    },
+    {
+      "path": "assets/castle-stories/plant-duty/01.webp",
+      "before": 142026,
+      "after": 129026,
+      "quality": 80,
+      "psnr": 38.39,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "713d9ac9ee108350d2879cbd8f277722136067fa85db612d027044a1ca2bd20e",
+      "sha256": "f1db8f11b996b036b5a43dacab21d00dca80972ab4e5b928d5c6aa0a7ffa9feb"
+    },
+    {
+      "path": "assets/castle-stories/plant-duty/02.webp",
+      "before": 140680,
+      "after": 129214,
+      "quality": 80,
+      "psnr": 38.54,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8810c3c7659bc7cdae873053d49282eb7aedeba1a17f192c4acd9fe5994f4021",
+      "sha256": "b7e2a17faa5f5d36f35702f624b7b8ab1af21eb15a251086c2f8461bcc75f575"
+    },
+    {
+      "path": "assets/castle-stories/praise-approval/01.webp",
+      "before": 127924,
+      "after": 116194,
+      "quality": 80,
+      "psnr": 38.98,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b888f234f9d1d71417d9cae35b391a16fd572799952a252d9af5df37a6f1785d",
+      "sha256": "2ca09cb2dcd607f851b41d91b94cfb50fa15fc0fb400502b3d73ad1f3ba91f80"
+    },
+    {
+      "path": "assets/castle-stories/praise-approval/02.webp",
+      "before": 134954,
+      "after": 121072,
+      "quality": 80,
+      "psnr": 38.76,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6e4e66db550ab6fffd2267a50d50f6a57d7760dc516877cec05da78222157ce5",
+      "sha256": "1528da22a4ed23d053f84eccf61d9a58b49f22882b5836cc1720eb9be39f0aa9"
+    },
+    {
+      "path": "assets/castle-stories/praise-approval/03.webp",
+      "before": 126692,
+      "after": 111672,
+      "quality": 80,
+      "psnr": 38.34,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "336c70fc5ef5c5ac31ea4c7175b776685212bcf22638f5d797af106dcf0dfb98",
+      "sha256": "5de7e283e42c1175c038ee2e03e32eb9159cd1fc317ba881836bf373c8c7f801"
+    },
+    {
+      "path": "assets/castle-stories/quiet-night/01.webp",
+      "before": 128166,
+      "after": 117322,
+      "quality": 80,
+      "psnr": 39.09,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6769e216e14c9a1ca87add80dc1d3d18d0789384b2288144b6f0fed30b0e7c65",
+      "sha256": "ee492805186a4cd820428024fa1778eae9543213586c937326d894ae25edecf4"
+    },
+    {
+      "path": "assets/castle-stories/quiet-night/04.webp",
+      "before": 151480,
+      "after": 135696,
+      "quality": 80,
+      "psnr": 38.14,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "12416145364f23f2a664b1295a38b07b7f7ec2de2d152029b3ff3e7f41095339",
+      "sha256": "d336b27a93efbb594310fa443c50d2ffec2ad29a4781b66270ccd8a3695145a9"
+    },
+    {
+      "path": "assets/castle-stories/rain/01.webp",
+      "before": 149338,
+      "after": 134852,
+      "quality": 80,
+      "psnr": 38.65,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "9e7ef0932b02d35d7389168785749e5e1ace862cd2a14976b783d01717f074f4",
+      "sha256": "3d3d623a3c8b550b80aeea1dc0d98d6e595137910187e948c5eb08abc99b10cf"
+    },
+    {
+      "path": "assets/castle-stories/rain/03.webp",
+      "before": 158542,
+      "after": 145214,
+      "quality": 80,
+      "psnr": 38.26,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f26c2373fd3240f3930bf691189fcb2f164075e0673eeb3b23ad728cca257c23",
+      "sha256": "866040a2f87e3dcd5d16c08adc3fe4a5c64eec34008450c6e2ddb3c2d1fba1c3"
+    },
+    {
+      "path": "assets/castle-stories/rain/04.webp",
+      "before": 126770,
+      "after": 115624,
+      "quality": 80,
+      "psnr": 39.24,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "075470aa85a7482f80836ff8fccbde8ea1359ec8a3b6ad943841752367c9a8ef",
+      "sha256": "b6315178f94b1a67c72771e2b35bb170c89fbbf440eb83e8a826de79c41fb8a9"
+    },
+    {
+      "path": "assets/castle-stories/same-place-tomorrow/01.webp",
+      "before": 128686,
+      "after": 112944,
+      "quality": 80,
+      "psnr": 38.48,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "66849dcb0376726e4358e19b6a7f8f0340dce7ada2e40b126c5eafad7ea78023",
+      "sha256": "4175bf7fa5dc7bc2277cf55eb7518ff52d20f36efb0044710e56c7dce7de558d"
+    },
+    {
+      "path": "assets/castle-stories/same-place-tomorrow/02.webp",
+      "before": 137650,
+      "after": 122390,
+      "quality": 80,
+      "psnr": 38.68,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "35baac7d4951ff8f1342838ec99e176227b6b99523eef544193668bbc28aaf55",
+      "sha256": "6e8b5b03812b4d3bd60282ae1f64e83a1428dca2c7088a0f08dc602dcd19b149"
+    },
+    {
+      "path": "assets/castle-stories/same-place-tomorrow/03.webp",
+      "before": 122724,
+      "after": 109310,
+      "quality": 80,
+      "psnr": 38.95,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e42714cdab3ab4b97788c310ac6d1a0f2087274024ad21f54e02f1b9885aaf57",
+      "sha256": "5bb8612fb64fa910e9486d84f8e281bf1c92c3455debbedca4051bec02358285"
+    },
+    {
+      "path": "assets/castle-stories/same-place-tomorrow/04.webp",
+      "before": 132864,
+      "after": 118802,
+      "quality": 80,
+      "psnr": 38.32,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e4d79d75a43c24c8edce5edfc9e397e13b793956973798ad8ab4b5b7ee80efd6",
+      "sha256": "6ccfde53f791d48c44fb67bde681303dc3fa95470ffa5b5cccd9ed1a50937e1a"
+    },
+    {
+      "path": "assets/castle-stories/shield-bandage/01.webp",
+      "before": 133384,
+      "after": 122610,
+      "quality": 80,
+      "psnr": 38.79,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "3937dfea995dd1e2bf0629185b1a9d23b8ba42922ec10638a6bc8f1ebcd4c895",
+      "sha256": "7d13ebce5d95b4df53f16dddb0ecf23c47d98fd419618307128a679e8c68533e"
+    },
+    {
+      "path": "assets/castle-stories/shield-bandage/02.webp",
+      "before": 122816,
+      "after": 111414,
+      "quality": 80,
+      "psnr": 39.18,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6d04e84d6c505dc7579da0e1631f438aeb698703333916c7eabfed9c258a606a",
+      "sha256": "603bbbea89a88bececf2548049c76067195ddb3e55312a9c3cc5b27251a1fb47"
+    },
+    {
+      "path": "assets/castle-stories/shield-bandage/03.webp",
+      "before": 121308,
+      "after": 108574,
+      "quality": 80,
+      "psnr": 39.12,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "202b129093b52d4fb2781ce4fed940900830dce3097aade1ca709acd51be6bc6",
+      "sha256": "d665217e6881b11423b2fe0a06ea1bde6ea831abaf13e5d80a5a05831ce7bb43"
+    },
+    {
+      "path": "assets/castle-stories/shift-handoff/01.webp",
+      "before": 124830,
+      "after": 113692,
+      "quality": 80,
+      "psnr": 39.22,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b411085b686b0f5db0b6ac49f78c27d65a6cefa6e3686528e78af2f91d174359",
+      "sha256": "c4cca07d0f365d252c10c4528313c0f89102875411eea6a74df176641f12511c"
+    },
+    {
+      "path": "assets/castle-stories/shift-handoff/03.webp",
+      "before": 124634,
+      "after": 112986,
+      "quality": 80,
+      "psnr": 39.44,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a3c59fd3223a68e5d5ff07345dc42d9a56ba6c1f280993a06a6f77da457f8766",
+      "sha256": "daa271421024c75e1be9abf126339f2cc0b090e201bffa45f50ecbcd636134e5"
+    },
+    {
+      "path": "assets/castle-stories/shift-handoff/04.webp",
+      "before": 133342,
+      "after": 122164,
+      "quality": 80,
+      "psnr": 39.29,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2fcee2598d13b7099f77c43c1b65cf61ab8b7c1eaf811a6ae8fdc25709054f13",
+      "sha256": "605f7e87d0577b122c8d11ebb1e7c75f61d67cf253121f33cb7c2c2e50859adf"
+    },
+    {
+      "path": "assets/castle-stories/shortcut-trap/03.webp",
+      "before": 124076,
+      "after": 110046,
+      "quality": 80,
+      "psnr": 39.06,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e440879f1924d68e2447fd0bd61b06cb65cfc0d33d612be243372ad0b9df1668",
+      "sha256": "24e6304fba05bf75bb6de2a060220b08e2047ba5a1f593acdd431294514f8011"
+    },
+    {
+      "path": "assets/castle-stories/shortcut-trap/04.webp",
+      "before": 115802,
+      "after": 102042,
+      "quality": 80,
+      "psnr": 39.03,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c143cb80398e64e69bcc138a415d4e76839cf488dd7a62a607809e2eab053c6f",
+      "sha256": "1138d9f440cf4515543a50ab364371bdbdb7dd96136527f8251b60119e0a69c8"
+    },
+    {
+      "path": "assets/castle-stories/slow-reply/01.webp",
+      "before": 124360,
+      "after": 108940,
+      "quality": 80,
+      "psnr": 38.86,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8cac0d0d6fea587a196193be66123916b861a2e5546b9c5fdef5ab094423c659",
+      "sha256": "a0c8105a89597c5bc03fdde2c146cdcfdb7e854686a01050ecab75b10b455a9e"
+    },
+    {
+      "path": "assets/castle-stories/slow-reply/02.webp",
+      "before": 120484,
+      "after": 108228,
+      "quality": 80,
+      "psnr": 39.17,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "cb12ffef300fc5df7cf6f9563b00b4942b70cd74c55c7cc393a94f3d89dacfe6",
+      "sha256": "6ac62e21ecbc509279b7cc26b309995935d93b739dbe8522855268da561650bf"
+    },
+    {
+      "path": "assets/castle-stories/slow-reply/03.webp",
+      "before": 117568,
+      "after": 105668,
+      "quality": 80,
+      "psnr": 39.2,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6942eacdd1dff62251aae5a35060bc31485301e13a6f190bbf10d27d549be4c7",
+      "sha256": "020ad5da53e4072904e0ea88e510f6dfb7cd8ea26a7d9a51763d71bef8705a73"
+    },
+    {
+      "path": "assets/castle-stories/slow-reply/04.webp",
+      "before": 129902,
+      "after": 117806,
+      "quality": 80,
+      "psnr": 38.81,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "95aa2a8e3d8e3f0a56b8ba55488db6bd9cb1243a77befb436e08888698232eae",
+      "sha256": "271ed2c6b2ce05f87f74c257b869ff847003ea604373edbe62c70bdb7467022d"
+    },
+    {
+      "path": "assets/castle-stories/suggestion/01.webp",
+      "before": 137468,
+      "after": 125332,
+      "quality": 80,
+      "psnr": 38.64,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "9956869fee3ede184743816f4c9a193d5031aead3e0e882043bc9fe271f8f7e2",
+      "sha256": "34d2d68b1ffb279c6b0dfe96b282226894ce35414a42079cffc289ff3f6f0be0"
+    },
+    {
+      "path": "assets/castle-stories/suggestion/02.webp",
+      "before": 141014,
+      "after": 127088,
+      "quality": 80,
+      "psnr": 38.43,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "da893c36d8a2da450d9701aa201619af97cf770c56e604ee3932e8244e6574a7",
+      "sha256": "6d7221f25e3307c66724fd5b86623af9035c8c11894287b8c3e89cd3385f33d5"
+    },
+    {
+      "path": "assets/castle-stories/suggestion/03.webp",
+      "before": 133332,
+      "after": 121602,
+      "quality": 80,
+      "psnr": 39.25,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "9d68300e235ee66ef556a266027051640ecdb6de741c4f9d69b6eb3d45fd3c8a",
+      "sha256": "1843b3a5c73f77d0f2a9c2f017df451345dafa0bc3d7e270e39a5db8b928a499"
+    },
+    {
+      "path": "assets/castle-stories/suggestion/04.webp",
+      "before": 139230,
+      "after": 126516,
+      "quality": 80,
+      "psnr": 38.73,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "0e145987236dd3ec09ac817d2ce5a4a8daa48befb390981697a48ef477708a73",
+      "sha256": "c38668149c05e46219a6e9f7ce92e9e55151756d654c86d08c40f43517026b8d"
+    },
+    {
+      "path": "assets/castle-stories/vacation-form/01.webp",
+      "before": 147478,
+      "after": 133948,
+      "quality": 80,
+      "psnr": 38.45,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "506966b1635dfef58dee00288fbee460b3992acb3e325759c4c433aea9e05834",
+      "sha256": "27dbd781d80bb9bd1069e785bd7415058370f98c30a4c18e4f69df729346997f"
+    },
+    {
+      "path": "assets/castle-stories/vacation-form/02.webp",
+      "before": 147984,
+      "after": 133626,
+      "quality": 80,
+      "psnr": 38.44,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b51ea44530124c263265ac218d54cbe8929075aabf1f32a79f6e69b11dc00815",
+      "sha256": "87d00cd53d9e324f4dd4e7df10deea7cc9656b039f5566f0b9d4e7ff62225efb"
+    },
+    {
+      "path": "assets/castle-stories/vacation-form/03.webp",
+      "before": 128880,
+      "after": 116858,
+      "quality": 80,
+      "psnr": 38.97,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b9346047175b7fede553389aaf23b5c81177bf6b5bc907f5540f6c6e72d07682",
+      "sha256": "263179888711c730c5f45ce22e7a5a39675c0afc0185c90376bdb1ea4a2be9c3"
+    },
+    {
+      "path": "assets/castle-stories/vacation-form/04.webp",
+      "before": 141134,
+      "after": 129042,
+      "quality": 80,
+      "psnr": 38.93,
+      "size": [
+        675,
+        1200
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6276221f2c1fa72eac763d158855fd6e0ebf3c11ae71e6e0c35075935e5ac21a",
+      "sha256": "39e3126671a2d5e01374ef50020527d9751effedf87148f723fd241d6b5c7fa7"
+    },
+    {
+      "path": "assets/comic/01-first-shift-sd.webp",
+      "before": 245302,
+      "after": 209688,
+      "quality": 85,
+      "psnr": 40.18,
+      "size": [
+        941,
+        1672
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "425a636390ea91f939fbd87a976c34157cc79c89762f364e1ac2c3b523752000",
+      "sha256": "604a13926d16475836c54447da126a9038935724adcb098180fa05476f206e22"
+    },
+    {
+      "path": "assets/comic/01-first-shift.webp",
+      "before": 209158,
+      "after": 162604,
+      "quality": 80,
+      "psnr": 39.27,
+      "size": [
+        941,
+        1672
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "5941c1a4156f5b73ba2b9a60b7a882830a3c1cff2f7636b73a8803d21f042bd9",
+      "sha256": "6e9d4c36f08753165cb2f3885d828bafda136626ac8d273aff1abbd0512373e0"
+    },
+    {
+      "path": "assets/comic/02-invasion.webp",
+      "before": 228050,
+      "after": 179656,
+      "quality": 80,
+      "psnr": 38.69,
+      "size": [
+        941,
+        1672
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "67531302c6f5c9fb6909d96a258f3d2ecfa5be9ee14709af1e348ce983ab8018",
+      "sha256": "b463a9cb0a1e1a7bbe19586216a10d17d541da1cf1cc7ad513f68c54096085ba"
+    },
+    {
+      "path": "assets/comic/03-emergency-staff.webp",
+      "before": 235328,
+      "after": 183540,
+      "quality": 80,
+      "psnr": 38.3,
+      "size": [
+        941,
+        1672
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "9588cdf84bcad99bfbfc1995e82bedfe3eced3685edbbf9d5c50bd56ed8031fb",
+      "sha256": "a35cea8e2363b4902dd15e5b12b360ee9489e68b26fa3a09d86dc2718299fcbb"
+    },
+    {
+      "path": "assets/hiring-stories/bat-nurse/01.webp",
+      "before": 141126,
+      "after": 113914,
+      "quality": 80,
+      "psnr": 38.85,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "67249c31ca5d08f02bb1306c7d7fd1cbe0d26a51032a29e7725b9cd161ebd2fe",
+      "sha256": "624ff565c8e4902146bcabada8f7a6b563ec74e69f55a69066f7f6e539d047aa"
+    },
+    {
+      "path": "assets/hiring-stories/bat-nurse/02.webp",
+      "before": 145018,
+      "after": 121842,
+      "quality": 80,
+      "psnr": 39.1,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "127fa885ef7f70421d20c59aeb285f9fc7ceff17aa5aa8981f81edc9ed395bda",
+      "sha256": "aa77163b6bb2769c2e0b2fe129f20815c167d22abd4674c44d73816906543456"
+    },
+    {
+      "path": "assets/hiring-stories/bat-nurse/03.webp",
+      "before": 159260,
+      "after": 131610,
+      "quality": 80,
+      "psnr": 38.09,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "6c8b474422ef18505da79c1c8df1cac0c463688c017b445e296fa70d8310d8e4",
+      "sha256": "dfff1424449131d06c88bf57c5441221accc32b51d1c11a5e5aa242134bcae34"
+    },
+    {
+      "path": "assets/hiring-stories/bat-nurse/04.webp",
+      "before": 146090,
+      "after": 122248,
+      "quality": 80,
+      "psnr": 38.72,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "93c252a88b9478a087f22b91fcaf58ec81b40a1704e9043e3f8dde0e66b0cf3f",
+      "sha256": "cd687edb79e9d9f5d8bac32c484836f101937a2d719c47d8b5f9d115eb7dd759"
+    },
+    {
+      "path": "assets/hiring-stories/bongtu-postmaster/02.webp",
+      "before": 156162,
+      "after": 131978,
+      "quality": 80,
+      "psnr": 38.88,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a5e5b02bb98f209e815a61a5b3567122a56dadc979a85d4c6d382ce992d06627",
+      "sha256": "dde5875398ad0dc2b6e53c8d9e7e5477c66a3bf46a43f068149b30d79fb597fa"
+    },
+    {
+      "path": "assets/hiring-stories/bongtu-postmaster/03.webp",
+      "before": 176478,
+      "after": 149346,
+      "quality": 80,
+      "psnr": 38.11,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ad3f42031f1ccc0cc062a0293a20d1fe59422608067e96c7128131f57d3ea535",
+      "sha256": "01424235a1f7ffebd393376db6ed5ffba736f4db2f5da2360aee40b8078a5acf"
+    },
+    {
+      "path": "assets/hiring-stories/bongtu-postmaster/04.webp",
+      "before": 145090,
+      "after": 119488,
+      "quality": 80,
+      "psnr": 38.5,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a2e2ac728cdd725a182d3bbebc2b508783cb146b5a19e56e2d3346476ca55a7a",
+      "sha256": "611d22560cd115f22ae6fc70d2bd18d6e8284a21b0e4e551da53493fdde64a37"
+    },
+    {
+      "path": "assets/hiring-stories/chalkak-photographer/01.webp",
+      "before": 141482,
+      "after": 117378,
+      "quality": 80,
+      "psnr": 38.79,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "df8b3c4e86e4d87523cdf27d8c5a1093c3317fc641f2c30875ac1b0215a30e42",
+      "sha256": "22586a4d220830266b366388a8f4e1bc4ba942e9da6d403ea27ef594fdbcc5b4"
+    },
+    {
+      "path": "assets/hiring-stories/chalkak-photographer/02.webp",
+      "before": 162382,
+      "after": 133984,
+      "quality": 80,
+      "psnr": 38.58,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "3075d78ff7e3b57f3a2b89ba8e3b0d25a41b3c16fd161b5df2862ae2837b93f5",
+      "sha256": "7ce4c307581465c9a78a89962a3d4462731f5ee5140775f24c4a87da1310d604"
+    },
+    {
+      "path": "assets/hiring-stories/chalkak-photographer/03.webp",
+      "before": 161956,
+      "after": 135178,
+      "quality": 80,
+      "psnr": 38.34,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a2a35e5e70d924d00316feab9f1ff0cf37397ca88a9d258d0341903468715bb2",
+      "sha256": "d82dd66f42b28e9c5d526f18558ba062c9a9f2e4fc5999195c37471d838b8615"
+    },
+    {
+      "path": "assets/hiring-stories/chalkak-photographer/04.webp",
+      "before": 160490,
+      "after": 132810,
+      "quality": 80,
+      "psnr": 38.19,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "bb63aa9f1cfcb5c3aeee4e167b1d95c4100e997fc6d5789a21bcf3de298ec15b",
+      "sha256": "d78fd737de6889841ef72f9f13375ea7112429c1b87ca70de4d6c2fb0a46cd59"
+    },
+    {
+      "path": "assets/hiring-stories/ddangkong-miner/01.webp",
+      "before": 161070,
+      "after": 130938,
+      "quality": 80,
+      "psnr": 38.16,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b8833ea215e724cdd87c25a17975e254887ecab09322f4cf78721a32a017457b",
+      "sha256": "445a548a3b180a00a2d0a9e65ec8c94b57292e835bc89912e3f1f83da833480c"
+    },
+    {
+      "path": "assets/hiring-stories/ddangkong-miner/04.webp",
+      "before": 181642,
+      "after": 153130,
+      "quality": 80,
+      "psnr": 38.22,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "92f5c648bd6f3536cb8d6c698703ea1a589e61ea6e5a5012ce2d00a1c17e216e",
+      "sha256": "5e10c2bb8c91a50d40c6ce712ae1cfd705ee758371e60735c61a6b0401efb222"
+    },
+    {
+      "path": "assets/hiring-stories/duru-archivist/01.webp",
+      "before": 165492,
+      "after": 137654,
+      "quality": 80,
+      "psnr": 38.53,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "87e5372d98c302a6af24e73fa6656ca183c88406f36f69d476d8f538397aed7d",
+      "sha256": "56deb67d8256dc56d7bc73f2334a942cc39dc18238d27fdb45c90bf45a125a0a"
+    },
+    {
+      "path": "assets/hiring-stories/duru-archivist/04.webp",
+      "before": 133722,
+      "after": 108546,
+      "quality": 80,
+      "psnr": 38.93,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8e565b028eab021d55721e4847424b0a7bb67bc2adb39a4d59e890266be67046",
+      "sha256": "c4be74314dde6d53ba96b1d3a978d82a19b38d2e98dca0a8a740408ec26f2d27"
+    },
+    {
+      "path": "assets/hiring-stories/ghost-courier/02.webp",
+      "before": 143154,
+      "after": 117782,
+      "quality": 80,
+      "psnr": 38.67,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "97f04dce98c35c09d912515282e1b877d7ed34ee451f9851531f168e1db87b33",
+      "sha256": "c1d25c40446c60b62d55139995c52aa962e76693dffa243003d262f17086a1ab"
+    },
+    {
+      "path": "assets/hiring-stories/ghost-courier/03.webp",
+      "before": 174026,
+      "after": 146544,
+      "quality": 80,
+      "psnr": 38.14,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "15348b0e21da0e05467f64c71d8b7be8b4a76fec453f369d3f49c0562b7c8b5a",
+      "sha256": "6a461c6a6bafd7db7c7e2c06ca3c56ea49b708ec79e70bb15133885f13721e8e"
+    },
+    {
+      "path": "assets/hiring-stories/ghost-courier/04.webp",
+      "before": 152642,
+      "after": 126760,
+      "quality": 80,
+      "psnr": 38.5,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "da1f212a78282a93a99dfaf5251c614a66e871c60b8cea04580a23aaf8d53849",
+      "sha256": "33cf961be54331c9f3fd6cf035ef1d488454ec1c87d7bc2481a5e5a58c7400c3"
+    },
+    {
+      "path": "assets/hiring-stories/kkangtong-engineer/01.webp",
+      "before": 168470,
+      "after": 140104,
+      "quality": 80,
+      "psnr": 38.06,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "5bdd71ede81793f431a933b7c7acb7c420c6e15959c1f5d04220bf53d5cb0ddd",
+      "sha256": "e859363ce09866c128f2a06e10fafc28aa4451bca24ca00fe0377005ecd41f72"
+    },
+    {
+      "path": "assets/hiring-stories/kobold-recruiter/01.webp",
+      "before": 171936,
+      "after": 141838,
+      "quality": 80,
+      "psnr": 38.14,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "246599090897860c52eb747cfc9c38f383932fb8839a94924ef2f91bcbf164b7",
+      "sha256": "63913d48d8570b3280d5c4540ba0ff0402152877032419146f45edc63f25a950"
+    },
+    {
+      "path": "assets/hiring-stories/kobold-recruiter/02.webp",
+      "before": 165356,
+      "after": 139070,
+      "quality": 80,
+      "psnr": 38.32,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "95e97206419ecb0991e6d1d4a24d781821d3ecbd764c12b1f7c3820bcc397488",
+      "sha256": "3c82de0464381eec4e700af6d9ca1ddbf107f171c84d503e1671fce9c160f850"
+    },
+    {
+      "path": "assets/hiring-stories/kobold-recruiter/04.webp",
+      "before": 164680,
+      "after": 136294,
+      "quality": 80,
+      "psnr": 38.2,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "43349c2b68d40fee4471a92d7d99136ac1ac0f1178448c02e52bbb93eeaf71f7",
+      "sha256": "a89d50ec82a886c3555485100714128357b66ad84172bf1e9aa2cf378d523199"
+    },
+    {
+      "path": "assets/hiring-stories/merc-accountant/01.webp",
+      "before": 157458,
+      "after": 130974,
+      "quality": 80,
+      "psnr": 39.01,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "427e1d08e05300663c55bad1eb576ce290e09fb03473716e5bc1264df0682de3",
+      "sha256": "c066cc75af03449b2653fdee8abc9f2ded345906e6c525b0192932ddc48ee027"
+    },
+    {
+      "path": "assets/hiring-stories/merc-accountant/02.webp",
+      "before": 150560,
+      "after": 126324,
+      "quality": 80,
+      "psnr": 38.97,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "852baabd87b01e7073d1e170c6186da4f8d01ed186dd4d7b5d67c2581c5aff98",
+      "sha256": "d1e34a5600aac9e8793206217c8c2232ab23335754176c427e7a9e0e396a94ae"
+    },
+    {
+      "path": "assets/hiring-stories/merc-accountant/04.webp",
+      "before": 147564,
+      "after": 122672,
+      "quality": 80,
+      "psnr": 38.76,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "1ef9f063e167c941d7765dbcfcf252445cb97a5da1819d78d972a94aa958104b",
+      "sha256": "e8e0907422bfdba8a505e540415f7aee5485a3d2eaf4319df33abdb0af97027d"
+    },
+    {
+      "path": "assets/hiring-stories/merc-banchang/01.webp",
+      "before": 161994,
+      "after": 131810,
+      "quality": 80,
+      "psnr": 38.59,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8cbfc70691b8ef5f5e80f7e5fb38e3852ac7284695d28b82221e0c08ff86456b",
+      "sha256": "01ba87128da9aa73dc47be3770712bff0cc9353860e9d728d9b2b83d054569f6"
+    },
+    {
+      "path": "assets/hiring-stories/merc-banchang/02.webp",
+      "before": 159788,
+      "after": 132260,
+      "quality": 80,
+      "psnr": 38.42,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "4ab26d6f459136dfac8172537fde5a256fd924de053b715aef1f125886d05c65",
+      "sha256": "0dba2a98079c7dc77c80c9605199583ab6f7c1a5979753240e2148176a513853"
+    },
+    {
+      "path": "assets/hiring-stories/merc-banchang/03.webp",
+      "before": 149168,
+      "after": 124376,
+      "quality": 80,
+      "psnr": 38.79,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "975d4a83083945f4859e155282a5dcd7de1e38cf9c219dbd9f71cd1353197346",
+      "sha256": "cd6b5f6d4613ddc04de9aeef0f25698ad12a77d5b926150b114dc5266495e208"
+    },
+    {
+      "path": "assets/hiring-stories/merc-banchang/04.webp",
+      "before": 165692,
+      "after": 137158,
+      "quality": 80,
+      "psnr": 38.33,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a55a8da47897a1e3cd1f370825ec097beb3edf5742ddf7aa8a9f8626d9d0d9c2",
+      "sha256": "719cb57894a5577a28e774a82cbcf17010677e84ba60748564ee65fae11a7510"
+    },
+    {
+      "path": "assets/hiring-stories/merc-coco/01.webp",
+      "before": 149686,
+      "after": 124116,
+      "quality": 80,
+      "psnr": 38.7,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "bf8c5c19a57f945cd7813f32ca4b682550d8633f92c31a63aa08870d83907516",
+      "sha256": "d637b28d1902b45728cdb36f926b978fd400ac6394c7022a3d58e76076b7725d"
+    },
+    {
+      "path": "assets/hiring-stories/merc-coco/02.webp",
+      "before": 130800,
+      "after": 107212,
+      "quality": 80,
+      "psnr": 39.06,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "9f32d2aff1e6eb099062291a79bac13384de2ddb91dc167bd53b6c497778d564",
+      "sha256": "9f31ab650f7a2e00f1c371794296fc9e6e25f5e1401d8167ecafe3d3381602f0"
+    },
+    {
+      "path": "assets/hiring-stories/merc-coco/03.webp",
+      "before": 170430,
+      "after": 144502,
+      "quality": 80,
+      "psnr": 38.4,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2d757ba74e97a92b9ec278b2b63f7a34368a7ad2c43c39faa9d2ce7488a9f4a6",
+      "sha256": "188c9f44fea710e68fd89d3ba464bb8184b0c51b8bed3ef47e23a8eeeb0c0a0f"
+    },
+    {
+      "path": "assets/hiring-stories/merc-coco/04.webp",
+      "before": 139748,
+      "after": 113582,
+      "quality": 80,
+      "psnr": 39.0,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e25b07dbacd35f9785a1ead120e9fc2ba96ad479a057bfa6862a4efc4cb064b8",
+      "sha256": "60271a91683598afdbb5d01170a1372c3ecb053c66f1f36d7fc1bd6fe0b16cd3"
+    },
+    {
+      "path": "assets/hiring-stories/merc-q/01.webp",
+      "before": 158768,
+      "after": 130586,
+      "quality": 80,
+      "psnr": 38.39,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "19baee50c5096e506841736a020718e1eff49c4cc255fd7b211d7c9152410252",
+      "sha256": "67ddb75542d239aedb297d3ce017ccb355c402eedc7d96e81326aa2fcf746b79"
+    },
+    {
+      "path": "assets/hiring-stories/merc-rescue/04.webp",
+      "before": 161560,
+      "after": 130810,
+      "quality": 80,
+      "psnr": 38.16,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d6c802ee3fa5d4f0827eecc40162a6fda8928979c0682f8db8c7e141cfed6177",
+      "sha256": "59f6eb445a01afa7fb5d5dd02b24f5a1e4839ff8839efae8e00269a87aa83632"
+    },
+    {
+      "path": "assets/hiring-stories/merc-ward/01.webp",
+      "before": 170496,
+      "after": 141248,
+      "quality": 80,
+      "psnr": 38.1,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "37de2b6499c0f88edb1663ee65d04927691054c975e3d5a236522583104b9f06",
+      "sha256": "796a00046cc408411cc6ae39050a5f19d5b418f8fd70ca04922b0993e49cbc29"
+    },
+    {
+      "path": "assets/hiring-stories/merc-ward/03.webp",
+      "before": 180834,
+      "after": 151432,
+      "quality": 80,
+      "psnr": 38.09,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d725079fab3855bdf48c135890b6915bcb64466c87082d1a2bcc935b3036f8ea",
+      "sha256": "97fb7c16e76be4a8027bfe53a711f664320b58a9da55e064a2d494bdf8fac045"
+    },
+    {
+      "path": "assets/hiring-stories/merc-ward/04.webp",
+      "before": 157956,
+      "after": 131064,
+      "quality": 80,
+      "psnr": 38.51,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "05f48b3cacaa5e143af1b350dfb32d29e70822a9baf939132b87734029bc2bb4",
+      "sha256": "600f74b3049e81a0da05731f1df82083c11a6115e25d7cd24c7a1143d31cff4d"
+    },
+    {
+      "path": "assets/hiring-stories/mimic-storekeeper/01.webp",
+      "before": 144586,
+      "after": 116330,
+      "quality": 80,
+      "psnr": 38.61,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ec6828c73df0bc902bf2a4f2418664a84f24de05af8750026d37098968b12fed",
+      "sha256": "c6a81dc702602dfef1b852eefe3e17b42bd77f43e354eb752fe4f4ba1fb7143c"
+    },
+    {
+      "path": "assets/hiring-stories/mimic-storekeeper/04.webp",
+      "before": 160720,
+      "after": 132870,
+      "quality": 80,
+      "psnr": 38.29,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "88013ec9fa2eb530a0d4c7e79c90bcd6249552e6a096998bbf653f5d40d26e9e",
+      "sha256": "77a04348fd2ef38a954aa53a2822833fc57c9c144eef99e3833c7ffd40559bc0"
+    },
+    {
+      "path": "assets/hiring-stories/nightmare-counselor/02.webp",
+      "before": 159818,
+      "after": 129320,
+      "quality": 80,
+      "psnr": 38.16,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "ae1439eaab66fae357cfd0565ff33b45ae0c23cb9325c6d3af69f0ae316cfc40",
+      "sha256": "de1376e912a10cfbee5414286361d0e62a6bfec8df39900a904f7a743fa80425"
+    },
+    {
+      "path": "assets/hiring-stories/nightmare-counselor/03.webp",
+      "before": 169618,
+      "after": 140854,
+      "quality": 80,
+      "psnr": 38.34,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "b1477317bc4bed43029a819638bd0fac962bc0476b0c8f9b1e1d3aec65ee2d12",
+      "sha256": "2196d264a38d51978569c37193d7b4aa29ca516c7c7100e345676e1f372db0e2"
+    },
+    {
+      "path": "assets/hiring-stories/nightmare-counselor/04.webp",
+      "before": 167630,
+      "after": 138396,
+      "quality": 80,
+      "psnr": 38.06,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "f4d3919b84e8e3571dbcb77ce3d89cd07c569ff24d0cb4cb89bf657d5dc71a6a",
+      "sha256": "c8a0cc4d313d2ee2c29043c692388e15c5e9468a808630408ebee5b44b9ee1f3"
+    },
+    {
+      "path": "assets/hiring-stories/skeleton-chef/01.webp",
+      "before": 160994,
+      "after": 132876,
+      "quality": 80,
+      "psnr": 38.32,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d9b58df1e8c0e865632d31a0e331cfdb6cf7e954bc2ded6ae391a98e13161f4e",
+      "sha256": "283274ccbb73d5202fb2a995fe1eee68baced9d5c76ac4b6f7564df510c8e391"
+    },
+    {
+      "path": "assets/hiring-stories/skeleton-chef/02.webp",
+      "before": 152394,
+      "after": 122350,
+      "quality": 80,
+      "psnr": 38.12,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "dcdef987b83b15e94bf3bd3e6b3560b7a81dbcd63850739b619e23fa312e11f4",
+      "sha256": "fb9cb452414da03c02bd6704a49e5e4c9c8853113dda35e9d93674a2c2ce7e23"
+    },
+    {
+      "path": "assets/hiring-stories/skeleton-chef/03.webp",
+      "before": 174354,
+      "after": 147940,
+      "quality": 80,
+      "psnr": 38.31,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "bc3c940831d2f629476ed7b789ee851d0390c8615c24f1c6d5ebf2a335bc2d13",
+      "sha256": "006a57229c0d5be30fd9f360e509d1a7628ffa2d95f76f0e6a99eba393ff44b5"
+    },
+    {
+      "path": "assets/hiring-stories/skeleton-chef/04.webp",
+      "before": 148646,
+      "after": 125566,
+      "quality": 80,
+      "psnr": 38.82,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "fb1e208dec764281d45895032677ebe5a8efd3c6b6072646c52e368ead01312a",
+      "sha256": "244e13e65615dbac542e88a053bfbd5b81d1f16fa4b3ca9803628277c31aeaa5"
+    },
+    {
+      "path": "assets/hiring-stories/spider-tailor/01.webp",
+      "before": 161462,
+      "after": 131732,
+      "quality": 80,
+      "psnr": 38.26,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "7a4022cccbef89f7f14eed994b48c898a1a8f20c103e8171c30228f745681533",
+      "sha256": "9dea0ee4e98fb6149e6470f89a36442501cbcaccfd1d97fa7c2c545ab87e3727"
+    },
+    {
+      "path": "assets/hiring-stories/spider-tailor/02.webp",
+      "before": 158920,
+      "after": 130908,
+      "quality": 80,
+      "psnr": 38.22,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "963a9f3f38e8e600ed7dc541c8df2053ee4b927ad6d8c133505096307a82b601",
+      "sha256": "ebb3e86b93b1072a0fe2f06efafd2ec3e19450981b991a7b085f5d6e5e1a198c"
+    },
+    {
+      "path": "assets/hiring-stories/spider-tailor/03.webp",
+      "before": 178108,
+      "after": 149768,
+      "quality": 80,
+      "psnr": 38.16,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "32fba7e167e14df09a5b5872302180454a909d3d6b038a75db09685be9518bcc",
+      "sha256": "92f0ffde2c3b5e62cb5e2aa2423e5546ab62e4fa306dbef5f1968364fda4ced7"
+    },
+    {
+      "path": "assets/hiring-stories/spider-tailor/04.webp",
+      "before": 174572,
+      "after": 148502,
+      "quality": 80,
+      "psnr": 38.16,
+      "size": [
+        768,
+        1365
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "a37039e5fbb858ca6ed57a96a0a9fc5931f643ece67f42f9bef271f06d67588b",
+      "sha256": "0ebb55fa15874a443240f052d19473e87c467123507e5969fce78125af784c70"
+    },
+    {
+      "path": "assets/shared-chrome/confirm.webp",
+      "before": 162684,
+      "after": 76854,
+      "quality": 80,
+      "psnr": 41.2,
+      "size": [
+        2014,
+        586
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e5af471405743ca245660da73056c08baf8ce663bc8e613af5b4684137cb4167",
+      "sha256": "fd4cd0ad8209d496e45f1abc58a7c3e1973dc8a792007712acd67224c97564e3"
+    },
+    {
+      "path": "assets/shared-chrome/paper.webp",
+      "before": 315666,
+      "after": 170446,
+      "quality": 80,
+      "psnr": 40.99,
+      "size": [
+        2147,
+        644
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d578d00ae5788f57a0ffd82b0050717b55bcb75b97bb359821b6d42f2d04e5f7",
+      "sha256": "136ae35822d64738c49e5fe2c87f4c42733bb1c8300f8d2a36840f1192638c21"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/button-primary.webp",
+      "before": 162684,
+      "after": 76854,
+      "quality": 80,
+      "psnr": 41.2,
+      "size": [
+        2014,
+        586
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e5af471405743ca245660da73056c08baf8ce663bc8e613af5b4684137cb4167",
+      "sha256": "fd4cd0ad8209d496e45f1abc58a7c3e1973dc8a792007712acd67224c97564e3"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/gnb-lobby.webp",
+      "before": 239364,
+      "after": 192694,
+      "quality": 90,
+      "psnr": 41.58,
+      "size": [
+        2163,
+        518
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c243a46cf180c5174e23f7156ee62c40a9a09676de1907208941d3aa24c39858",
+      "sha256": "a2377ea56c3b9bc8df92d7a06e6a1e6f4d9589269067419865a1e0111efd1924"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/panel-paper.webp",
+      "before": 315666,
+      "after": 170446,
+      "quality": 80,
+      "psnr": 40.99,
+      "size": [
+        2147,
+        644
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d578d00ae5788f57a0ffd82b0050717b55bcb75b97bb359821b6d42f2d04e5f7",
+      "sha256": "136ae35822d64738c49e5fe2c87f4c42733bb1c8300f8d2a36840f1192638c21"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/profile.webp",
+      "before": 50880,
+      "after": 41542,
+      "quality": 90,
+      "psnr": 40.2,
+      "size": [
+        728,
+        254
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "82b12acf9d2f42c43fd5041923a84df8b3129b1d8c3df7bf30e2ccec2d6679f4",
+      "sha256": "f3d8fc0d36f7e8ce528f03cb2c7005fa5b0fc88ab50965d63f14d6dbce818bb4"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/records.webp",
+      "before": 35278,
+      "after": 21502,
+      "quality": 85,
+      "psnr": 40.35,
+      "size": [
+        671,
+        248
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "774a015ae7ab657c42d793826f6721c1b8cb8192b6d05b7aa022a0d1129b95c5",
+      "sha256": "7561b491a6016c474c88676cfa2c7c63dad5ab019de1311137ee9c799da9c4b3"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/resume.webp",
+      "before": 315666,
+      "after": 170446,
+      "quality": 80,
+      "psnr": 40.99,
+      "size": [
+        2147,
+        644
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d578d00ae5788f57a0ffd82b0050717b55bcb75b97bb359821b6d42f2d04e5f7",
+      "sha256": "136ae35822d64738c49e5fe2c87f4c42733bb1c8300f8d2a36840f1192638c21"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/settings.webp",
+      "before": 17892,
+      "after": 12052,
+      "quality": 85,
+      "psnr": 40.46,
+      "size": [
+        259,
+        268
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "1186e6573b352be4aef32efdf042873b5df45078395de9faaa29c6285868a987",
+      "sha256": "bb69a81573995517eae6814755512b19897e4253c8f83406773f399d2d59a338"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/story.webp",
+      "before": 40670,
+      "after": 31500,
+      "quality": 90,
+      "psnr": 41.53,
+      "size": [
+        670,
+        272
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "650f40af56da8618ea6ec587fef897cc2e061fc9fff2c2d6fd2f720d5a4a24ec",
+      "sha256": "3ec1d80b56c0e70261c0c185eb374def80ccfe6a8e060c80fa34504acb707972"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/title-logo.webp",
+      "before": 251422,
+      "after": 193130,
+      "quality": 90,
+      "psnr": 40.08,
+      "size": [
+        1356,
+        976
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "5a17abee07fb2c559bead4765db910e40610e228b8569eec238d04204dbfbedf",
+      "sha256": "30ea7ebe033aab689613f6938789d795a13a7bec4a0f728233fa3b2af83da21f"
+    },
+    {
+      "path": "previews/asset-lobby-20261109/assets/training.webp",
+      "before": 37016,
+      "after": 28970,
+      "quality": 90,
+      "psnr": 41.21,
+      "size": [
+        671,
+        256
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "2326d0b0c9724d071428cea77303444c35c2ea2a55356ce44bb36597896861bd",
+      "sha256": "c74522879853c1efaf27b0eeb8ac186def6d1c596266b49c25d6ef153795726b"
+    },
+    {
+      "path": "previews/asset-roster-20261109/assets/card-paper.webp",
+      "before": 394796,
+      "after": 281328,
+      "quality": 90,
+      "psnr": 41.79,
+      "size": [
+        1443,
+        908
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c56065777874c5405899bf5a21610c63ccc614fd6248909755c77150e22c36c5",
+      "sha256": "689de5a3c0e4fe84a1bf4ef6be505d7e3136bc7a7768be253ed7e9dd42a5b4c1"
+    },
+    {
+      "path": "previews/asset-roster-20261109/assets/gnb-roster.webp",
+      "before": 190804,
+      "after": 150254,
+      "quality": 90,
+      "psnr": 41.75,
+      "size": [
+        2120,
+        449
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "47ee24ed22823e17365fa91a73a42fed62ef0a3ed7f86aea0233bec7fc60af3f",
+      "sha256": "314e031cafe0ea1b26ed0d0bdd87034180d3ea11bc5536a8f74ae6f04c7e5a9e"
+    },
+    {
+      "path": "previews/asset-roster-20261109/assets/panel-paper.webp",
+      "before": 315666,
+      "after": 170446,
+      "quality": 80,
+      "psnr": 40.99,
+      "size": [
+        2147,
+        644
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "d578d00ae5788f57a0ffd82b0050717b55bcb75b97bb359821b6d42f2d04e5f7",
+      "sha256": "136ae35822d64738c49e5fe2c87f4c42733bb1c8300f8d2a36840f1192638c21"
+    },
+    {
+      "path": "previews/asset-shop-20261109/assets/button-primary.webp",
+      "before": 162684,
+      "after": 76854,
+      "quality": 80,
+      "psnr": 41.2,
+      "size": [
+        2014,
+        586
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e5af471405743ca245660da73056c08baf8ce663bc8e613af5b4684137cb4167",
+      "sha256": "fd4cd0ad8209d496e45f1abc58a7c3e1973dc8a792007712acd67224c97564e3"
+    },
+    {
+      "path": "previews/asset-shop-20261109/assets/gnb-shop.webp",
+      "before": 184410,
+      "after": 142690,
+      "quality": 90,
+      "psnr": 42.02,
+      "size": [
+        2138,
+        475
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "bacd79e4bb673ffb2a6f3e66615ae7121661ce94a9dce59b83b8bc77d1664ff2",
+      "sha256": "baa90ad81cc3b9d428a94f83e49f0c9b609495f5e39e6efd68d5a3383de8f7fe"
+    },
+    {
+      "path": "previews/asset-shop-20261109/assets/header-shop.webp",
+      "before": 231460,
+      "after": 182624,
+      "quality": 90,
+      "psnr": 41.04,
+      "size": [
+        2096,
+        712
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "e44a4ada431112ee08f18cbfe0c44da6e1a3f14fa9c3c7219de00aa08d31c685",
+      "sha256": "bc9f73442c9b69beed4d2a869a4e4528fcae0988ebc5b40c71f8a6021e213d39"
+    },
+    {
+      "path": "previews/asset-shop-20261109/assets/panel-shop.webp",
+      "before": 235400,
+      "after": 103284,
+      "quality": 80,
+      "psnr": 42.13,
+      "size": [
+        1137,
+        1296
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "8ce930209afd345baf7f36184682fcd3baebe8fabc880c252d13eaeb991fc01f",
+      "sha256": "29c3efa01ae2d62d83d497efc820077f1c34fc2d46ffa5684a446efde7c17c53"
+    },
+    {
+      "path": "previews/asset-training-20261109/assets/gnb-lobby.webp",
+      "before": 239364,
+      "after": 192694,
+      "quality": 90,
+      "psnr": 41.58,
+      "size": [
+        2163,
+        518
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "c243a46cf180c5174e23f7156ee62c40a9a09676de1907208941d3aa24c39858",
+      "sha256": "a2377ea56c3b9bc8df92d7a06e6a1e6f4d9589269067419865a1e0111efd1924"
+    },
+    {
+      "path": "previews/asset-training-20261109/assets/training-reference.webp",
+      "before": 305796,
+      "after": 266546,
+      "quality": 90,
+      "psnr": 40.39,
+      "size": [
+        898,
+        1752
+      ],
+      "alphaUnchanged": true,
+      "beforeSha256": "fb6df08e5137b20a1cdc1a8d3c057e6f52fb08c79e53ae6f2af2e9a16abc6684",
+      "sha256": "921986cb5cb6a9bd674e08bd7832535e29bad976433cc95c118abdb4d0bd80f1"
+    }
+  ],
+  "before": 28889314,
+  "after": 24217896,
+  "note": "PSNR is an objective re-encoding guard, not a substitute for visual inspection. Same dimensions and exact alpha. Story >=38dB, UI >=40dB; saves at least8%."
+}
