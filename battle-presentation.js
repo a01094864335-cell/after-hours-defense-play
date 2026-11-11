@@ -13,7 +13,7 @@ window.BattlePresentation=(()=>{
  const extents=new WeakMap();
  function bodyBounds(data){
   let value=extents.get(data);
-  if(!value){const idle=data.frames[0];value={presence:Math.sqrt(idle.w*idle.h),top:Math.max(...data.frames.map(f=>f.pivotY)),bottom:Math.max(...data.frames.map(f=>f.h-f.pivotY)),side:Math.max(...data.frames.map(f=>Math.max(f.pivotX,f.w-f.pivotX)))};extents.set(data,value)}
+  if(!value){const idle=data.frames[0];value={presence:Math.sqrt(idle.w*idle.h),left:Math.max(...data.frames.map(f=>f.pivotX)),right:Math.max(...data.frames.map(f=>f.w-f.pivotX)),top:Math.max(...data.frames.map(f=>f.pivotY)),bottom:Math.max(...data.frames.map(f=>f.h-f.pivotY)),side:Math.max(...data.frames.map(f=>Math.max(f.pivotX,f.w-f.pivotX)))};extents.set(data,value)}
   return value;
  }
  function staffSize(data,row,cell){
@@ -23,8 +23,15 @@ window.BattlePresentation=(()=>{
   // per-character art corrections board-only, without rescaling source pixels.
   return Math.min(presence/b.presence,space/(2*b.side),vertical/(b.top+b.bottom))*data.height*(data.boardScale??1);
  }
+ // Size is presentation-only; fit the full six-pose envelope at the path anchor.
+ function enemySize(data,nominal,width,anchor,boss=false){
+  const bounds=bodyBounds(data),{left,right}=bounds;
+  const desired=nominal*width/600*1.05*(boss?1.12:1.35);
+  const scale=Math.min(desired/data.height,Math.min(60,width*.15)/(left+right),Math.max(1,anchor.x-2)/left,Math.max(1,width-anchor.x-2)/right,Math.max(1,anchor.y-20)/bounds.top);
+  return Math.max(0,scale)*data.height;
+ }
  const missingBorders=new Set(['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']);
- if(!enabled)return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds};
+ if(!enabled)return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds,enemySize};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
  const staffKeys=new Set(kinds.map(kind=>kind.file));
  const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0,projection=null;
@@ -47,7 +54,7 @@ window.BattlePresentation=(()=>{
   NightWatchArt.selection(paint,width,height);
   const {row,cell}=geometry,enemyHUD=[];
   for(const actor of actors){const p=viewPoint(actor,a),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.05:1.12);
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key))actor.options.outline=1.25;}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/Math.max(...data.frames.map(frame=>frame.w))); if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key))actor.options.outline=1.25;}else if(data.group==='enemy')size=enemySize(data,actor.size,width,p,actor.options.enemy?.type==='boss'||actor.key==='hero-leon'||actor.key.startsWith('commander-')); if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=viewPoint(t,a);let font=fonts.get(t.font);if(!font){font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');fonts.set(t.font,font)}paint.save();paint.font=font;paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
@@ -90,5 +97,5 @@ window.BattlePresentation=(()=>{
  const oldSkill=syncSkill;syncSkill=function(){oldSkill();selection()};
  const oldSync=sync;sync=function(){oldSync();selection();uiText(q('#battle-remaining'),Math.max(0,enemies.filter(e=>e.hp>0&&!e.escaped).length+queue.length));uiText(q('#battle-next-boss'),(Math.floor(wave/5)+1)*5);for(const key of Object.keys(itemCatalog)){uiAttr(q('#item-'+key),'aria-label',itemCatalog[key].name+' · 보유 '+itemCount(key)+'개');uiAttr(q('#item-'+key),'aria-pressed',itemMode===key)}};
  selection();fitBoard();
- return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds,resize:fitBoard};
+ return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds,enemySize,resize:fitBoard};
 })();
