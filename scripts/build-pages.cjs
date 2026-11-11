@@ -20,6 +20,7 @@ for(const name of fs.readdirSync(path.join(root,'assets/open-scene')))if(/\.(svg
 for(const name of fs.readdirSync(path.join(root,'assets/open-scene/icons')))if(name.endsWith('.svg'))files.add('assets/open-scene/icons/'+name);
 files.add('gameworld-ui.js');
 files.add('battle-art.js');
+for(const name of fs.readdirSync(path.join(root,'assets/combat-comic')))if(/\.(webp|json|js)$/.test(name))files.add('assets/combat-comic/'+name);
 files.add('battle-comic.css');
 files.add('battle-exact.css');
 files.add('battle-cohesion.css');

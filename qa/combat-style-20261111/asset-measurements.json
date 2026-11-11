@@ -1,0 +1,162 @@
+[
+  {
+    "id": "demon-king",
+    "group": "king",
+    "oldAtlasBytes": 257056,
+    "atlasBytes": 293156,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 2847792
+  },
+  {
+    "id": "novice-adventurer",
+    "group": "enemy",
+    "oldAtlasBytes": 203636,
+    "atlasBytes": 72698,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 527092
+  },
+  {
+    "id": "rogue-scout",
+    "group": "enemy",
+    "oldAtlasBytes": 212752,
+    "atlasBytes": 74148,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 500344
+  },
+  {
+    "id": "shield-knight",
+    "group": "enemy",
+    "oldAtlasBytes": 275058,
+    "atlasBytes": 151930,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1208688
+  },
+  {
+    "id": "lightning-mage",
+    "group": "enemy",
+    "oldAtlasBytes": 303860,
+    "atlasBytes": 155434,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1278400
+  },
+  {
+    "id": "healing-priest",
+    "group": "enemy",
+    "oldAtlasBytes": 430840,
+    "atlasBytes": 161524,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1260384
+  },
+  {
+    "id": "hero-leon",
+    "group": "enemy",
+    "oldAtlasBytes": 300972,
+    "atlasBytes": 144490,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1189248
+  },
+  {
+    "id": "commander-aegis",
+    "group": "enemy",
+    "oldAtlasBytes": 381886,
+    "atlasBytes": 86012,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 518592
+  },
+  {
+    "id": "commander-ruby",
+    "group": "enemy",
+    "oldAtlasBytes": 394844,
+    "atlasBytes": 170890,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1266300
+  },
+  {
+    "id": "commander-neve",
+    "group": "enemy",
+    "oldAtlasBytes": 483700,
+    "atlasBytes": 83364,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 481896
+  },
+  {
+    "id": "commander-lumen",
+    "group": "enemy",
+    "oldAtlasBytes": 391294,
+    "atlasBytes": 156240,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1216632
+  },
+  {
+    "id": "commander-mira",
+    "group": "enemy",
+    "oldAtlasBytes": 426030,
+    "atlasBytes": 195218,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1316916
+  },
+  {
+    "id": "commander-chrono",
+    "group": "enemy",
+    "oldAtlasBytes": 440172,
+    "atlasBytes": 88594,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 541872
+  },
+  {
+    "id": "merc-accountant",
+    "group": "merc",
+    "oldAtlasBytes": 330612,
+    "atlasBytes": 170642,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1361780
+  },
+  {
+    "id": "merc-banchang",
+    "group": "merc",
+    "oldAtlasBytes": 367992,
+    "atlasBytes": 188858,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1175720
+  },
+  {
+    "id": "merc-ward",
+    "group": "merc",
+    "oldAtlasBytes": 401012,
+    "atlasBytes": 170152,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1328184
+  },
+  {
+    "id": "merc-chikchik",
+    "group": "merc",
+    "oldAtlasBytes": 362268,
+    "atlasBytes": 152920,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1269000
+  },
+  {
+    "id": "merc-rescue",
+    "group": "merc",
+    "oldAtlasBytes": 330370,
+    "atlasBytes": 161026,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1230252
+  },
+  {
+    "id": "merc-q",
+    "group": "merc",
+    "oldAtlasBytes": 280494,
+    "atlasBytes": 140010,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1220256
+  },
+  {
+    "id": "merc-coco",
+    "group": "merc",
+    "oldAtlasBytes": 240274,
+    "atlasBytes": 131594,
+    "oldDecodedBytes": 6291456,
+    "decodedBytes": 1241664
+  }
+]

@@ -225,15 +225,15 @@
       "job": "결계 계약직",
       "group": "merc",
       "path": "assets/character-portraits/merc-ward.webp",
-      "identityReference": "assets/mobile/merc-ward.webp",
-      "master": "designs/character-identity-20261110/master-3.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
         0,
         0,
-        512,
+        384,
         512
       ],
-      "sha256": "c7487639183da699e63f4e8a07a60d5d69d7a9415ca4d26d5fa6543fc141ad51",
+      "sha256": "342e55ab2455dc49a99dfa7a2bd5ead3f6315485e966aa490cfa1efe53254293",
       "legacyReference": "assets/mobile/merc-ward.webp",
       "identifyingFeatures": "아이보리 해골·민트색 웃는 눈·보라/금색 투구·자주색 깃털"
     },
@@ -243,15 +243,15 @@
       "job": "야간 회계사",
       "group": "merc",
       "path": "assets/character-portraits/merc-accountant.webp",
-      "identityReference": "assets/mobile/merc-accountant.webp",
-      "master": "designs/character-identity-20261110/master-3.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
-        512,
+        384,
         0,
-        512,
+        384,
         512
       ],
-      "sha256": "5511e152ac003491018396c943d1e8065240530fc50f9edb6929e419e41c4250",
+      "sha256": "b880599e09e86f63454ea476fb04e83aece5986110f24fb4edb0d4a2125ae44d",
       "legacyReference": "assets/mobile/merc-accountant.webp",
       "identifyingFeatures": "갈색 부엉이·크림색 얼굴 무늬·큰 금테 안경·금색 부리·작은 뿔 모양 귀"
     },
@@ -261,15 +261,15 @@
       "job": "비상 대응반",
       "group": "merc",
       "path": "assets/character-portraits/merc-rescue.webp",
-      "identityReference": "assets/mobile/merc-rescue.webp",
-      "master": "designs/character-identity-20261110/master-3.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
-        1024,
+        768,
         0,
-        512,
+        384,
         512
       ],
-      "sha256": "e6f7d0d0cc60cce7c6ebe09735373458d9d10be0ac7b39a51a8b0726670799da",
+      "sha256": "4528a3818baac2d4841a74d050dd5edf3f3ca75cf4175a547c6d62466fbe2c61",
       "legacyReference": "assets/mobile/merc-rescue.webp",
       "identifyingFeatures": "붉은 임프·주황색 뿔·남색 비행 모자·금색 고글·뾰족한 귀"
     },
@@ -369,15 +369,15 @@
       "job": "유령 보급 기관사",
       "group": "merc",
       "path": "assets/character-portraits/merc-chikchik.webp",
-      "identityReference": "assets/expansion-v2/merc-chikchik-portrait.webp",
-      "master": "designs/character-identity-20261110/master-4.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
-        1024,
+        1152,
         0,
-        512,
+        384,
         512
       ],
-      "sha256": "831f4ef5cba7072bc184db4b474325a1d19f5afd1a60885daa5c4705df776822",
+      "sha256": "5371c39fab5fc1746053082e11361d700142fd286520d68383761beac2da372e",
       "legacyReference": "assets/expansion-v2/merc-chikchik-portrait.webp",
       "identifyingFeatures": "하늘색 유령·황금 눈·남색 기관사 모자·붉은 띠·옆의 증기"
     },
@@ -387,15 +387,15 @@
       "job": "아홀로틀 의무관",
       "group": "merc",
       "path": "assets/character-portraits/merc-banchang.webp",
-      "identityReference": "assets/expansion-v2/merc-banchang-portrait.webp",
-      "master": "designs/character-identity-20261110/master-4.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
         0,
         512,
-        512,
+        384,
         512
       ],
-      "sha256": "5eaf8270f53ea13628656f377164f92a7fb2fec480cf9b0fc3c15fc9ca8a6599",
+      "sha256": "698ad81f33801f0ab1fd49ab4c2fc9ae0af3b1808d5c41faab67ac79892efc49",
       "legacyReference": "assets/expansion-v2/merc-banchang-portrait.webp",
       "identifyingFeatures": "분홍 아홀로틀·깃털 모양 아가미·크림색 의무 모자·초록 하트"
     },
@@ -405,15 +405,15 @@
       "job": "박쥐 강아지 파수꾼",
       "group": "merc",
       "path": "assets/character-portraits/merc-coco.webp",
-      "identityReference": "assets/expansion-v2/merc-coco-portrait.webp",
-      "master": "designs/character-identity-20261110/master-4.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
+        384,
         512,
-        512,
-        512,
+        384,
         512
       ],
-      "sha256": "eaf700598a826a18f27373d5b28c445feddeca6f5d0d0b17f6248824b373c607",
+      "sha256": "bd7227033b275ea3c8611391ecaeaf33f513814beb37167d46154f9be623600c",
       "legacyReference": "assets/expansion-v2/merc-coco-portrait.webp",
       "identifyingFeatures": "짙은 갈색 박쥐 강아지·높은 뾰족 귀·금색 비행 모자·호박색 눈"
     },
@@ -423,15 +423,15 @@
       "job": "까마귀 전술관",
       "group": "merc",
       "path": "assets/character-portraits/merc-q.webp",
-      "identityReference": "assets/expansion-v2/merc-q-portrait.webp",
-      "master": "designs/character-identity-20261110/master-4.png",
+      "identityReference": "designs/combat-style-20261111/heads-master.webp",
+      "master": "designs/combat-style-20261111/heads-master.webp",
       "cell": [
-        1024,
+        768,
         512,
-        512,
+        384,
         512
       ],
-      "sha256": "14c648f8b6b0573bda494240fdedd6243bce9264a9309b9ea81f22cdb51f5542",
+      "sha256": "1e9426d1fafc0a9fd99d2c0f3c16b3f5915abe72ca71b3816069d7f996ab1211",
       "legacyReference": "assets/expansion-v2/merc-q-portrait.webp",
       "identifyingFeatures": "남색 까마귀·뾰족한 깃털 머리·황금 눈·짧은 금색 부리·모자 없음"
     }
