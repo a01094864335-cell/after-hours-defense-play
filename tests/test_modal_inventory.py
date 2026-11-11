@@ -30,6 +30,7 @@ CASES = [
     ('roster', '#roster', "document.querySelector('#roster-open').click()"),
     ('roster-detail', '#roster', "document.querySelector('#roster-open').click();showStaffRecord(meta.staff[0])"),
     ('shop-pack', '#shop', "document.querySelector('#shop-open').click()"),
+    ('recruit-rules', '#recruit-rules', "document.querySelector('#shop-open').click();document.querySelector('#asset-shop-host').shadowRoot.querySelector('.paper > details > summary').click()"),
     ('shop-items', '#shop', "document.querySelector('#shop-open').click()"),
     ('shop-poor', '#shop', "meta.coins=0;renderMeta();document.querySelector('#shop-open').click()"),
     ('shop-affordable', '#shop', "document.querySelector('#shop-open').click()"),

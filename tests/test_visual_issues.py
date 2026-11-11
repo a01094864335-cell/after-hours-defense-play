@@ -13,9 +13,13 @@ class VisualIssueTests(unittest.TestCase):
         self.assertTrue(a.locator('#tutorial-strip').evaluate('e=>e.scrollHeight<=e.clientHeight+1&&e.scrollWidth<=e.clientWidth+1'))
         self.inside(a,'#summon')
     def test_short_help_keeps_heading_and_close_visible_while_scrolling(self):
-        a=self.open(320,568);a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#ref-menu-help').click()
+        a=self.open(320,568);a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#menu-tab-manage').click();a.locator('#ref-menu-help').click()
         self.inside(a,'#info .ui-dialog-header h2');self.inside(a,'#info-close')
+        self.assertTrue(a.locator('#info > .panel-scroll-body').evaluate('e=>e.scrollHeight<=e.clientHeight+1'))
+        a.locator('#info-tab-support').click()
         self.assertGreaterEqual(a.locator('#skill-info').evaluate('e=>parseFloat(getComputedStyle(e).fontSize)'),14)
+        a.locator('#info-tab-boss').click()
+        self.assertGreater(a.locator('#info > .panel-scroll-body').evaluate('e=>e.scrollHeight-e.clientHeight'),0)
         before=a.locator('#info .ui-dialog-header h2').bounding_box();a.locator('#info > .panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
         self.assertEqual(before,a.locator('#info .ui-dialog-header h2').bounding_box());self.inside(a,'#info-close');a.locator('#info-close').click();self.assertFalse(a.locator('#info').is_visible())
     def test_reward_cards_and_footer_are_reachable_on_short_phone(self):
@@ -31,6 +35,8 @@ class VisualIssueTests(unittest.TestCase):
         ]
         for opener,scroller,last,close in surfaces:
             a.locator('#asset-lobby-host [data-proxy="'+opener+'"]').click()
+            if opener=='#training-entry':
+                a.locator('#asset-training-host [data-ss-label="effects"]').click()
             a.locator(scroller).evaluate('e=>e.scrollTop=e.scrollHeight')
             self.assertGreater(a.locator(last).count(),0)
             ui.assert_reachable(self,a,last)

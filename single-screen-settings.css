@@ -1,0 +1,43 @@
+/* One-screen primary settings/manual; overflow remains available for zoom and long topics. */
+html body :is(#menu#menu,#info#info).single-screen-settings.concept-modal {width:calc(100vw - 24px)!important;max-width:390px!important;max-height:calc(100dvh - 24px)!important;padding:12px!important;gap:8px!important;overflow:hidden!important}
+html body :is(#menu#menu,#info#info).single-screen-settings > header {min-height:44px!important}
+html body #menu#menu.single-screen-settings .concept-clip,html body #menu#menu.single-screen-settings .concept-sound-mascot {display:none!important}
+html body :is(#menu#menu,#info#info).single-screen-settings > .panel-scroll-body {padding:0 3px 4px 0!important;display:block!important;overflow:auto!important}
+html body :is(#menu#menu,#info#info).single-screen-settings .single-screen-tabs {display:flex!important;gap:6px!important;margin:0 0 8px!important;position:sticky;top:0;background:#fff6df;z-index:2;padding-bottom:4px}
+html body :is(#menu#menu,#info#info).single-screen-settings .single-screen-tabs button {flex:1;min-width:0!important;min-height:44px!important;padding:8px 3px!important;font-size:16px!important;margin:0!important}
+html body :is(#menu#menu,#info#info).single-screen-settings .single-screen-tabs button[aria-selected=true] {background:#2258bb!important;color:#fffdf7!important;box-shadow:0 3px #10254b!important}
+html body :is(#menu#menu,#info#info).single-screen-settings .single-screen-page[hidden] {display:none!important}
+html body :is(#menu#menu,#info#info).single-screen-settings .single-screen-page {min-width:0;outline-offset:-3px}
+html body :is(#menu#menu,#info#info).single-screen-settings .ui-dialog-actions {padding-top:4px!important}
+html body #menu#menu.single-screen-settings #shared-menu-confirm {min-height:44px!important;font-size:18px!important}
+html body #menu#menu.single-screen-settings #language-settings {margin:0 0 6px!important;padding:2px 8px 6px!important}
+html body #menu#menu.single-screen-settings #language-coverage {font-size:12px!important;line-height:1.35!important;margin-top:5px!important}
+html body #menu#menu.single-screen-settings :is(.sfx-settings,.bgm-settings) {display:grid!important;grid-template-columns:minmax(0,1fr) 128px!important;column-gap:10px!important;row-gap:0!important;padding:0!important;margin:0 0 6px!important;min-width:0}
+html body #menu#menu.single-screen-settings :is(.sfx-settings,.bgm-settings) legend {width:100%;font-size:16px!important;line-height:1.4!important;padding:0!important}
+html body #menu#menu.single-screen-settings :is(.sfx-settings,.bgm-settings) output {float:right;font-size:14px!important}
+html body #menu#menu.single-screen-settings :is(.sfx-settings,.bgm-settings) label {position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)}
+html body #menu#menu.single-screen-settings :is(#sfx-toggle,#bgm-toggle) {padding:5px!important;min-height:44px!important;font-size:14px!important;margin:0!important}
+html body #menu#menu.single-screen-settings #bgm-status {grid-column:1/-1;font-size:12px!important;line-height:1.3!important;margin:3px 0!important}
+html body #menu#menu.single-screen-settings #bgm-status:empty {display:none!important}
+html body #menu#menu.single-screen-settings .single-screen-display {display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+html body #menu#menu.single-screen-settings .single-screen-display button {font-size:14px!important;line-height:1.3!important;min-height:44px!important;margin:0!important;padding:6px!important}
+html body #menu#menu.single-screen-settings #menu-page-manage {display:grid;grid-template-columns:1fr 1fr;gap:8px}
+html body #menu#menu.single-screen-settings #menu-page-manage .shared-detail-group {padding:0!important;margin:0!important;display:grid;gap:8px;align-content:start}
+html body #menu#menu.single-screen-settings #menu-page-manage h3 {font-size:17px!important;margin:0!important}
+html body #menu#menu.single-screen-settings #menu-page-manage button {font-size:15px!important;min-height:44px!important;padding:8px!important;margin:0!important}
+html body #menu#menu.single-screen-settings #shared-menu-reset {grid-column:1/-1}
+html body #menu#menu.single-screen-settings #single-screen-reset-warning {font-size:14px!important;line-height:1.5!important;margin:5px 0!important}
+html body #info#info.single-screen-settings .concept-help-card {grid-template-columns:48px minmax(0,1fr)!important;padding:10px!important;margin:0 0 10px!important;gap:8px!important}
+html body #info#info.single-screen-settings .concept-help-card > img.concept-hero {width:48px!important;height:64px!important;grid-row:1/4!important}
+html body #info#info.single-screen-settings .concept-help-card > b {display:none!important}
+html body #info#info.single-screen-settings .concept-help-card h3 {font-size:17px!important;line-height:1.4!important}
+html body #info#info.single-screen-settings .concept-help-card p,html body #info#info.single-screen-settings .single-screen-page > p,html body #info#info.single-screen-settings details p {font-size:14px!important;line-height:1.55!important}
+html body #info#info.single-screen-settings summary {min-height:44px!important;box-sizing:border-box;padding:10px 6px!important;font-size:15px!important;cursor:pointer}
+html body #info#info.single-screen-settings .single-screen-merge-warning {padding:10px!important;background:#ffe9bd!important;border:2px solid #10254b;border-radius:8px}
+@media (prefers-reduced-motion:reduce) {html body :is(#menu,#info).single-screen-settings * {scroll-behavior:auto!important}}
+/* The reset button already names this section; keep the full consequence copy. */
+html body #menu#menu.single-screen-settings #shared-menu-reset > h3 {position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)}
+html body #menu#menu.single-screen-settings #menu-page-manage #shared-menu-reset {gap:4px!important}
+/* Compact cards have one content row, not the legacy three-row illustration span. */
+html body #info#info.single-screen-settings .concept-help-card > img.concept-hero {grid-row:1!important}
+html body #info#info.single-screen-settings .concept-help-card > div {grid-row:1!important}
