@@ -1,0 +1,434 @@
+[
+  {
+    "path": "assets/castle-stories/castle-sports/01.webp",
+    "master": "designs/art-polish-20261111/masters/castle-sports-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 191432,
+    "beforeSha256": "bf7b5d98582c3631418beaeea8c07c87222fb4b177db462b4c006abbe27e9a10",
+    "sha256": "8c464c1f6d5cd5c1137d25c6487402655d1a388034f448fb34605baa52c14892"
+  },
+  {
+    "path": "assets/castle-stories/castle-sports/02.webp",
+    "master": "designs/art-polish-20261111/masters/castle-sports-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 180148,
+    "beforeSha256": "803b2b9421aa9929781f581a502c9c82283d3cbf1ae3a1c5507caa4eeaa6e37c",
+    "sha256": "c95288be04266bc9b154eb9070123d0f0dc5eaeef8776d84dd5a0a941de15432"
+  },
+  {
+    "path": "assets/castle-stories/castle-sports/03.webp",
+    "master": "designs/art-polish-20261111/masters/castle-sports-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 169798,
+    "beforeSha256": "7476552b9a02a97436e2309b0e55354fa0ca7d7e1109906d8305979cfdeab39d",
+    "sha256": "e9f58efa6d1aadfd4d6123f38f38d840f4ad502ad49cb8dc7146d5e6d43b04f8"
+  },
+  {
+    "path": "assets/castle-stories/castle-sports/04.webp",
+    "master": "designs/art-polish-20261111/masters/castle-sports-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 180428,
+    "beforeSha256": "e7428f9d79b81ac54fc65efd6e587daa633ae0745d97beb783eb1cedfb96624e",
+    "sha256": "795d4e5aa3fabd7b2678357045bef64209b040e369459af56c7c4f341e6587fb"
+  },
+  {
+    "path": "assets/castle-stories/laundry-weather/01.webp",
+    "master": "designs/art-polish-20261111/masters/laundry-weather-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 180266,
+    "beforeSha256": "5504f22d54d5484d81542bb8b57630262d0a478a33b5e94bd581ca81e19cc00e",
+    "sha256": "b29847141e780d8f9c63fd0cea557df2043ab62947f455e6fb724d3d5ea484ec"
+  },
+  {
+    "path": "assets/castle-stories/laundry-weather/02.webp",
+    "master": "designs/art-polish-20261111/masters/laundry-weather-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 189366,
+    "beforeSha256": "7739282f07d7eb678f0d372342ebfad273a469fb8fb850c9743fff59f7597113",
+    "sha256": "1abf79582c5444467d67e41eeb5ab5e49530561d7c8ee41e43356a001df938d7"
+  },
+  {
+    "path": "assets/castle-stories/laundry-weather/03.webp",
+    "master": "designs/art-polish-20261111/masters/laundry-weather-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 176052,
+    "beforeSha256": "79ed9be9c2bfea3843096fd01f1068b63adddb977c1715f42bfb1835457da5dc",
+    "sha256": "2c16a06e5612086e4a369b0ee64435dc12af4357f03bc77ab8bad76af671790d"
+  },
+  {
+    "path": "assets/castle-stories/laundry-weather/04.webp",
+    "master": "designs/art-polish-20261111/masters/laundry-weather-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 181494,
+    "beforeSha256": "0207f4544cdd1c7970d3f8539176f0f397be6ab4d66cf5c7576ee99735280c50",
+    "sha256": "c95bb85605bd67275f3e5d36e3730d8b7ce89bdea7fd0013bf4755e9507562e4"
+  },
+  {
+    "path": "assets/castle-stories/call-by-name/01.webp",
+    "master": "designs/art-polish-20261111/masters/call-by-name-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 171926,
+    "beforeSha256": "9c7e916227ead2e960712a14646a2490bf47219e378a06f0a8afb8c5b60970d5",
+    "sha256": "6a5dc4968ce70310a5a0455107658616dc4b4ad7c7867c48c41cef2e7365a141"
+  },
+  {
+    "path": "assets/castle-stories/call-by-name/02.webp",
+    "master": "designs/art-polish-20261111/masters/call-by-name-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 184206,
+    "beforeSha256": "674a20d8ffd1335971287b695705accc7039bcdf94eed293048ca8db50d17604",
+    "sha256": "a17ad229749063b5d97b32f2206a6119cc768ac34ed2c9e9b7456f9365f0aa20"
+  },
+  {
+    "path": "assets/castle-stories/castle-flea-market/01.webp",
+    "master": "designs/art-polish-20261111/masters/castle-flea-market-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 191266,
+    "beforeSha256": "2c4e7ad4794285cec33a442dd44614418b9475c23a1f0f63acc192464a3cc31d",
+    "sha256": "6607af2997272d0226d7be253e4394eb6200606ae71dc8c647d0d6b0075af962"
+  },
+  {
+    "path": "assets/castle-stories/castle-flea-market/02.webp",
+    "master": "designs/art-polish-20261111/masters/castle-flea-market-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 192390,
+    "beforeSha256": "3fc086a71772af19abf6b01f0447ed6525935a086e10ed22da3d299fd24c7999",
+    "sha256": "4c33fba5df6ba4221692ca4fa46e58ae7a23b0f44f14326a3527035326747d54"
+  },
+  {
+    "path": "assets/castle-stories/call-by-name/03.webp",
+    "master": "designs/art-polish-20261111/masters/call-by-name-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 172654,
+    "beforeSha256": "1bfd8b3531c8c70af7643fb1a43cf002415427fde900c0ccde035da6a31d4782",
+    "sha256": "eb07fdb9d1dd270ea252b36bca7366737c0ea4a6aeef397eabc64aac861d6227"
+  },
+  {
+    "path": "assets/castle-stories/call-by-name/04.webp",
+    "master": "designs/art-polish-20261111/masters/call-by-name-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 192934,
+    "beforeSha256": "072595b4048c91d19f246a28f837e78fa322e66a83496815a1430ba6950a7f11",
+    "sha256": "33cfac56261fd57d99d2fb6b24e25dea86a33b5a0fdac474bf075c13ead3d138"
+  },
+  {
+    "path": "assets/castle-stories/castle-flea-market/03.webp",
+    "master": "designs/art-polish-20261111/masters/castle-flea-market-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 175010,
+    "beforeSha256": "40e0481d8cf746bbc0ca0217c5a7567ecbda1783089e2f46a3e31f54e7f922b1",
+    "sha256": "3bd3b5a79af6f3dda784852d678b62d281c986a72212ebb3de0c67f2b649a699"
+  },
+  {
+    "path": "assets/castle-stories/castle-flea-market/04.webp",
+    "master": "designs/art-polish-20261111/masters/flea04retry.webp",
+    "sourceSize": [
+      941,
+      1672
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 181966,
+    "beforeSha256": "0758cf6fd85ef17c4041cedd383cd72f5af82b1cda40d2a6ce21cf146012f64e",
+    "sha256": "33bcba3f60437f910ae8730f995eaf207be702ef2ef1d686b04a6ce56a46bc02"
+  },
+  {
+    "path": "assets/castle-stories/chair-project/01.webp",
+    "master": "designs/art-polish-20261111/masters/chair-project-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 183290,
+    "beforeSha256": "21d749a042d41b184fc988ce611c721727106ffffd508741a0c51f25b6e1bc2e",
+    "sha256": "e1ac3f2f7dcd6c376c26419d62cdccc1e1cbe5e86fec89238d615f4572e16aad"
+  },
+  {
+    "path": "assets/castle-stories/chair-project/02.webp",
+    "master": "designs/art-polish-20261111/masters/chair-project-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 187694,
+    "beforeSha256": "a409f9967356ed70965149df2d1b288bdf4bb198ff119f2f13eed3ba574329a2",
+    "sha256": "6cba28472911b2476a5aa1f5d5c0eb587dab1103adc935c0af558e730f1f0f0f"
+  },
+  {
+    "path": "assets/castle-stories/chair-project/03.webp",
+    "master": "designs/art-polish-20261111/masters/chair-project-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 175796,
+    "beforeSha256": "91356f0aea2ed405b6797bc23aef516b3b84f32a5c604b1ba4b294be8dfd81b1",
+    "sha256": "33eadc2bcbd48fc59ad8e07c05950adf80508285235857198996556fe3a78125"
+  },
+  {
+    "path": "assets/castle-stories/chair-project/04.webp",
+    "master": "designs/art-polish-20261111/masters/chair-project-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 172272,
+    "beforeSha256": "18535a19305c4f9fdc341ca0f23ed915e6a4243faf9221d7fc0c388fa5fd225c",
+    "sha256": "dd0f3a5592f7f9c68b7ee274a938eb12235286eba91c36369f0d70ed74fd772a"
+  },
+  {
+    "path": "assets/castle-stories/inventory/03.webp",
+    "master": "designs/art-polish-20261111/masters/inventory-rain.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 182382,
+    "beforeSha256": "7f50bba426eed0d8ed05b9fba655988d2f9193eda46e1661d5fb544971a4b34f",
+    "sha256": "b55887052c632c1d6d66e76be471bafac4a93ecfd6f79bd1a4c415f61f953b2b"
+  },
+  {
+    "path": "assets/castle-stories/rain/02.webp",
+    "master": "designs/art-polish-20261111/masters/rain02retry.webp",
+    "sourceSize": [
+      941,
+      1672
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 189546,
+    "beforeSha256": "6a6219d8665b03ca2553bf2aed784c9671e30b4055ba451eeb5b713b8e032265",
+    "sha256": "e72ea924fa666b82332ef93f8e0cf31a91825fea0c07adbcbc4894715a407e71"
+  },
+  {
+    "path": "assets/comic/04-night-duty.webp",
+    "master": "designs/art-polish-20261111/masters/intro04.webp",
+    "sourceSize": [
+      941,
+      1672
+    ],
+    "size": [
+      941,
+      1672
+    ],
+    "quality": 80,
+    "bytes": 181922,
+    "beforeSha256": "dbd676c15ab93c76af9bbd5ad89772413907c87fb27ab683a5fb2b1d71232eb4",
+    "sha256": "7239a2119cd74fda577827216dc15ec5da13b7a6f1425b5437f8d1cea36e49d8"
+  },
+  {
+    "path": "assets/castle-stories/coffee/01.webp",
+    "master": "designs/art-polish-20261111/masters/coffee-12.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 180564,
+    "beforeSha256": "6df3d27a49904aff9dfc1d8f1a7f349a9766328b0a0d0510e864b105f149d4b3",
+    "sha256": "760048f94f99e28178afd6cc10c05e6b56e7ff7723d3dcdd4db0c332c48faecf"
+  },
+  {
+    "path": "assets/castle-stories/coffee/02.webp",
+    "master": "designs/art-polish-20261111/masters/coffee02retry.webp",
+    "sourceSize": [
+      941,
+      1672
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 174540,
+    "beforeSha256": "8a392cbc7f165d216d036e72e3d7bb7adfd4d647567c526f6c9f0c053d80bfad",
+    "sha256": "417f2f20d0fce8bee4a6e575b75b7e17da3ad3a95ef568f6b6d05eac47c4041c"
+  },
+  {
+    "path": "assets/castle-stories/coffee/03.webp",
+    "master": "designs/art-polish-20261111/masters/coffee-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 86,
+    "bytes": 174460,
+    "beforeSha256": "dad3e709c1bb6d71f8b18cd9761e424c3084f9a93f6f39c5f3fe2cc5c0d6e6a5",
+    "sha256": "a2bba02bfd9eac6f3bf96ccdb4748854f2b82f7e842e26d57e925abff24b70ec"
+  },
+  {
+    "path": "assets/castle-stories/coffee/04.webp",
+    "master": "designs/art-polish-20261111/masters/coffee-34.webp",
+    "sourceSize": [
+      1330,
+      1182
+    ],
+    "size": [
+      675,
+      1200
+    ],
+    "quality": 89,
+    "bytes": 188422,
+    "beforeSha256": "cb65dcbbad87b720f336f0630acbaec57b276089c52e29787e9fa207143db5e7",
+    "sha256": "964070b82034829b4fc55ee905717a16c20c883dbb7a181e50c474558d62a718"
+  }
+]

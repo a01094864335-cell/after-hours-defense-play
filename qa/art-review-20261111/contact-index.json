@@ -1,0 +1,1345 @@
+[
+  {
+    "group": "assets/battle-comic",
+    "sheet": "contacts/assets-battle-comic-00.jpg",
+    "paths": [
+      "assets/battle-comic/after-alignment.webp",
+      "assets/battle-comic/before-alignment.webp",
+      "assets/battle-comic/concept-alignment.webp",
+      "assets/battle-comic/controls-floor.webp",
+      "assets/battle-comic/courtyard.webp",
+      "assets/battle-comic/play-preview.webp"
+    ]
+  },
+  {
+    "group": "assets/battle-exact",
+    "sheet": "contacts/assets-battle-exact-00.jpg",
+    "paths": [
+      "assets/battle-exact/arena-ui.webp",
+      "assets/battle-exact/hud.webp",
+      "assets/battle-exact/item-grade.webp",
+      "assets/battle-exact/item-kind.webp",
+      "assets/battle-exact/item-king.webp",
+      "assets/battle-exact/play-preview.webp"
+    ]
+  },
+  {
+    "group": "assets/bosses",
+    "sheet": "contacts/assets-bosses-00.jpg",
+    "paths": [
+      "assets/bosses/commander-aegis.webp",
+      "assets/bosses/commander-chrono.webp",
+      "assets/bosses/commander-lumen.webp",
+      "assets/bosses/commander-mira.webp",
+      "assets/bosses/commander-neve.webp",
+      "assets/bosses/commander-ruby.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-00.jpg",
+    "paths": [
+      "assets/castle-stories/attendance/01.png",
+      "assets/castle-stories/attendance/01.webp",
+      "assets/castle-stories/attendance/02.png",
+      "assets/castle-stories/attendance/02.webp",
+      "assets/castle-stories/attendance/03.png",
+      "assets/castle-stories/attendance/03.webp",
+      "assets/castle-stories/attendance/04.png",
+      "assets/castle-stories/attendance/04.webp",
+      "assets/castle-stories/birthday/01.png",
+      "assets/castle-stories/birthday/01.webp",
+      "assets/castle-stories/birthday/02.png",
+      "assets/castle-stories/birthday/02.webp",
+      "assets/castle-stories/birthday/03.png",
+      "assets/castle-stories/birthday/03.webp",
+      "assets/castle-stories/birthday/04.png",
+      "assets/castle-stories/birthday/04.webp",
+      "assets/castle-stories/blackout/01.png",
+      "assets/castle-stories/blackout/01.webp",
+      "assets/castle-stories/blackout/02.png",
+      "assets/castle-stories/blackout/02.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-01.jpg",
+    "paths": [
+      "assets/castle-stories/blackout/03.png",
+      "assets/castle-stories/blackout/03.webp",
+      "assets/castle-stories/blackout/04.png",
+      "assets/castle-stories/blackout/04.webp",
+      "assets/castle-stories/call-by-name/01.webp",
+      "assets/castle-stories/call-by-name/02.webp",
+      "assets/castle-stories/call-by-name/03.webp",
+      "assets/castle-stories/call-by-name/04.webp",
+      "assets/castle-stories/cape/01.png",
+      "assets/castle-stories/cape/01.webp",
+      "assets/castle-stories/cape/02.png",
+      "assets/castle-stories/cape/02.webp",
+      "assets/castle-stories/cape/03.png",
+      "assets/castle-stories/cape/03.webp",
+      "assets/castle-stories/cape/04.png",
+      "assets/castle-stories/cape/04.webp",
+      "assets/castle-stories/castle-flea-market/01.webp",
+      "assets/castle-stories/castle-flea-market/02.webp",
+      "assets/castle-stories/castle-flea-market/03.webp",
+      "assets/castle-stories/castle-flea-market/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-02.jpg",
+    "paths": [
+      "assets/castle-stories/castle-sports/01.webp",
+      "assets/castle-stories/castle-sports/02.webp",
+      "assets/castle-stories/castle-sports/03.webp",
+      "assets/castle-stories/castle-sports/04.webp",
+      "assets/castle-stories/chair-project/01.webp",
+      "assets/castle-stories/chair-project/02.webp",
+      "assets/castle-stories/chair-project/03.webp",
+      "assets/castle-stories/chair-project/04.webp",
+      "assets/castle-stories/clean-floor/01.png",
+      "assets/castle-stories/clean-floor/01.webp",
+      "assets/castle-stories/clean-floor/02.png",
+      "assets/castle-stories/clean-floor/02.webp",
+      "assets/castle-stories/clean-floor/03.png",
+      "assets/castle-stories/clean-floor/03.webp",
+      "assets/castle-stories/clean-floor/04.png",
+      "assets/castle-stories/clean-floor/04.webp",
+      "assets/castle-stories/coffee/01.png",
+      "assets/castle-stories/coffee/01.webp",
+      "assets/castle-stories/coffee/02.png",
+      "assets/castle-stories/coffee/02.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-03.jpg",
+    "paths": [
+      "assets/castle-stories/coffee/03.png",
+      "assets/castle-stories/coffee/03.webp",
+      "assets/castle-stories/coffee/04.png",
+      "assets/castle-stories/coffee/04.webp",
+      "assets/castle-stories/counseling/01.png",
+      "assets/castle-stories/counseling/01.webp",
+      "assets/castle-stories/counseling/02.png",
+      "assets/castle-stories/counseling/02.webp",
+      "assets/castle-stories/counseling/03.png",
+      "assets/castle-stories/counseling/03.webp",
+      "assets/castle-stories/counseling/04.png",
+      "assets/castle-stories/counseling/04.webp",
+      "assets/castle-stories/emergency-cookie/01.webp",
+      "assets/castle-stories/emergency-cookie/02.webp",
+      "assets/castle-stories/emergency-cookie/03.webp",
+      "assets/castle-stories/emergency-cookie/04.webp",
+      "assets/castle-stories/empty-throne/01.webp",
+      "assets/castle-stories/empty-throne/02.webp",
+      "assets/castle-stories/empty-throne/03.webp",
+      "assets/castle-stories/empty-throne/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-04.jpg",
+    "paths": [
+      "assets/castle-stories/fallen-star/01.webp",
+      "assets/castle-stories/fallen-star/02.webp",
+      "assets/castle-stories/fallen-star/03.webp",
+      "assets/castle-stories/fallen-star/04.webp",
+      "assets/castle-stories/fridge-label/01.webp",
+      "assets/castle-stories/fridge-label/02.webp",
+      "assets/castle-stories/fridge-label/03.webp",
+      "assets/castle-stories/fridge-label/04.webp",
+      "assets/castle-stories/gate-cat/01.png",
+      "assets/castle-stories/gate-cat/01.webp",
+      "assets/castle-stories/gate-cat/02.png",
+      "assets/castle-stories/gate-cat/02.webp",
+      "assets/castle-stories/gate-cat/03.png",
+      "assets/castle-stories/gate-cat/03.webp",
+      "assets/castle-stories/gate-cat/04.png",
+      "assets/castle-stories/gate-cat/04.webp",
+      "assets/castle-stories/ghost-scary-story/01.webp",
+      "assets/castle-stories/ghost-scary-story/02.webp",
+      "assets/castle-stories/ghost-scary-story/03.webp",
+      "assets/castle-stories/ghost-scary-story/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-05.jpg",
+    "paths": [
+      "assets/castle-stories/guard-dog-holiday/01.webp",
+      "assets/castle-stories/guard-dog-holiday/02.webp",
+      "assets/castle-stories/guard-dog-holiday/03.webp",
+      "assets/castle-stories/guard-dog-holiday/04.webp",
+      "assets/castle-stories/inspection/01.png",
+      "assets/castle-stories/inspection/01.webp",
+      "assets/castle-stories/inspection/02.png",
+      "assets/castle-stories/inspection/02.webp",
+      "assets/castle-stories/inspection/03.png",
+      "assets/castle-stories/inspection/03.webp",
+      "assets/castle-stories/inspection/04.png",
+      "assets/castle-stories/inspection/04.webp",
+      "assets/castle-stories/inventory/01.png",
+      "assets/castle-stories/inventory/01.webp",
+      "assets/castle-stories/inventory/02.png",
+      "assets/castle-stories/inventory/02.webp",
+      "assets/castle-stories/inventory/03.png",
+      "assets/castle-stories/inventory/03.webp",
+      "assets/castle-stories/inventory/04.png",
+      "assets/castle-stories/inventory/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-06.jpg",
+    "paths": [
+      "assets/castle-stories/laundry-weather/01.webp",
+      "assets/castle-stories/laundry-weather/02.webp",
+      "assets/castle-stories/laundry-weather/03.webp",
+      "assets/castle-stories/laundry-weather/04.webp",
+      "assets/castle-stories/lost-key/01.png",
+      "assets/castle-stories/lost-key/01.webp",
+      "assets/castle-stories/lost-key/02.png",
+      "assets/castle-stories/lost-key/02.webp",
+      "assets/castle-stories/lost-key/03.png",
+      "assets/castle-stories/lost-key/03.webp",
+      "assets/castle-stories/lost-key/04.png",
+      "assets/castle-stories/lost-key/04.webp",
+      "assets/castle-stories/midnight-soup/01.png",
+      "assets/castle-stories/midnight-soup/01.webp",
+      "assets/castle-stories/midnight-soup/02.png",
+      "assets/castle-stories/midnight-soup/02.webp",
+      "assets/castle-stories/midnight-soup/03.png",
+      "assets/castle-stories/midnight-soup/03.webp",
+      "assets/castle-stories/midnight-soup/04.png",
+      "assets/castle-stories/midnight-soup/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-07.jpg",
+    "paths": [
+      "assets/castle-stories/one-note-band/01.webp",
+      "assets/castle-stories/one-note-band/02.webp",
+      "assets/castle-stories/one-note-band/03.webp",
+      "assets/castle-stories/one-note-band/04.webp",
+      "assets/castle-stories/overtime-shadow/01.webp",
+      "assets/castle-stories/overtime-shadow/02.webp",
+      "assets/castle-stories/overtime-shadow/03.webp",
+      "assets/castle-stories/overtime-shadow/04.webp",
+      "assets/castle-stories/parcel/01.png",
+      "assets/castle-stories/parcel/01.webp",
+      "assets/castle-stories/parcel/02.png",
+      "assets/castle-stories/parcel/02.webp",
+      "assets/castle-stories/parcel/03.png",
+      "assets/castle-stories/parcel/03.webp",
+      "assets/castle-stories/parcel/04.png",
+      "assets/castle-stories/parcel/04.webp",
+      "assets/castle-stories/payday/01.png",
+      "assets/castle-stories/payday/01.webp",
+      "assets/castle-stories/payday/02.png",
+      "assets/castle-stories/payday/02.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-08.jpg",
+    "paths": [
+      "assets/castle-stories/payday/03.png",
+      "assets/castle-stories/payday/03.webp",
+      "assets/castle-stories/payday/04.png",
+      "assets/castle-stories/payday/04.webp",
+      "assets/castle-stories/photo/01.png",
+      "assets/castle-stories/photo/01.webp",
+      "assets/castle-stories/photo/02.png",
+      "assets/castle-stories/photo/02.webp",
+      "assets/castle-stories/photo/03.png",
+      "assets/castle-stories/photo/03.webp",
+      "assets/castle-stories/photo/04.png",
+      "assets/castle-stories/photo/04.webp",
+      "assets/castle-stories/plant-duty/01.webp",
+      "assets/castle-stories/plant-duty/02.webp",
+      "assets/castle-stories/plant-duty/03.webp",
+      "assets/castle-stories/plant-duty/04.webp",
+      "assets/castle-stories/praise-approval/01.webp",
+      "assets/castle-stories/praise-approval/02.webp",
+      "assets/castle-stories/praise-approval/03.webp",
+      "assets/castle-stories/praise-approval/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-09.jpg",
+    "paths": [
+      "assets/castle-stories/quiet-night/01.png",
+      "assets/castle-stories/quiet-night/01.webp",
+      "assets/castle-stories/quiet-night/02.png",
+      "assets/castle-stories/quiet-night/02.webp",
+      "assets/castle-stories/quiet-night/03.png",
+      "assets/castle-stories/quiet-night/03.webp",
+      "assets/castle-stories/quiet-night/04.png",
+      "assets/castle-stories/quiet-night/04.webp",
+      "assets/castle-stories/rain/01.png",
+      "assets/castle-stories/rain/01.webp",
+      "assets/castle-stories/rain/02.png",
+      "assets/castle-stories/rain/02.webp",
+      "assets/castle-stories/rain/03.png",
+      "assets/castle-stories/rain/03.webp",
+      "assets/castle-stories/rain/04.png",
+      "assets/castle-stories/rain/04.webp",
+      "assets/castle-stories/same-place-tomorrow/01.webp",
+      "assets/castle-stories/same-place-tomorrow/02.webp",
+      "assets/castle-stories/same-place-tomorrow/03.webp",
+      "assets/castle-stories/same-place-tomorrow/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-10.jpg",
+    "paths": [
+      "assets/castle-stories/shield-bandage/01.webp",
+      "assets/castle-stories/shield-bandage/02.webp",
+      "assets/castle-stories/shield-bandage/03.webp",
+      "assets/castle-stories/shield-bandage/04.webp",
+      "assets/castle-stories/shift-handoff/01.png",
+      "assets/castle-stories/shift-handoff/01.webp",
+      "assets/castle-stories/shift-handoff/02.png",
+      "assets/castle-stories/shift-handoff/02.webp",
+      "assets/castle-stories/shift-handoff/03.png",
+      "assets/castle-stories/shift-handoff/03.webp",
+      "assets/castle-stories/shift-handoff/04.png",
+      "assets/castle-stories/shift-handoff/04.webp",
+      "assets/castle-stories/shortcut-trap/01.webp",
+      "assets/castle-stories/shortcut-trap/02.webp",
+      "assets/castle-stories/shortcut-trap/03.webp",
+      "assets/castle-stories/shortcut-trap/04.webp",
+      "assets/castle-stories/slow-reply/01.webp",
+      "assets/castle-stories/slow-reply/02.webp",
+      "assets/castle-stories/slow-reply/03.webp",
+      "assets/castle-stories/slow-reply/04.webp"
+    ]
+  },
+  {
+    "group": "assets/castle-stories",
+    "sheet": "contacts/assets-castle-stories-11.jpg",
+    "paths": [
+      "assets/castle-stories/suggestion/01.png",
+      "assets/castle-stories/suggestion/01.webp",
+      "assets/castle-stories/suggestion/02.png",
+      "assets/castle-stories/suggestion/02.webp",
+      "assets/castle-stories/suggestion/03.png",
+      "assets/castle-stories/suggestion/03.webp",
+      "assets/castle-stories/suggestion/04.png",
+      "assets/castle-stories/suggestion/04.webp",
+      "assets/castle-stories/vacation-form/01.webp",
+      "assets/castle-stories/vacation-form/02.webp",
+      "assets/castle-stories/vacation-form/03.webp",
+      "assets/castle-stories/vacation-form/04.webp"
+    ]
+  },
+  {
+    "group": "assets/character-motion",
+    "sheet": "contacts/assets-character-motion-00.jpg",
+    "paths": [
+      "assets/character-motion/bat-nurse-idle.webp",
+      "assets/character-motion/bat-nurse.webp",
+      "assets/character-motion/bongtu-postmaster-idle.webp",
+      "assets/character-motion/bongtu-postmaster.webp",
+      "assets/character-motion/chalkak-photographer-idle.webp",
+      "assets/character-motion/chalkak-photographer.webp",
+      "assets/character-motion/ddangkong-miner-idle.webp",
+      "assets/character-motion/ddangkong-miner.webp",
+      "assets/character-motion/duru-archivist-idle.webp",
+      "assets/character-motion/duru-archivist.webp",
+      "assets/character-motion/electric-technician-idle.webp",
+      "assets/character-motion/electric-technician.webp",
+      "assets/character-motion/ghost-courier-idle.webp",
+      "assets/character-motion/ghost-courier.webp",
+      "assets/character-motion/gobi-idle.webp",
+      "assets/character-motion/gobi.webp",
+      "assets/character-motion/goblin-guard-idle.webp",
+      "assets/character-motion/goblin-guard.webp",
+      "assets/character-motion/kkangtong-engineer-idle.webp",
+      "assets/character-motion/kkangtong-engineer.webp"
+    ]
+  },
+  {
+    "group": "assets/character-motion",
+    "sheet": "contacts/assets-character-motion-01.jpg",
+    "paths": [
+      "assets/character-motion/kobold-recruiter-idle.webp",
+      "assets/character-motion/kobold-recruiter.webp",
+      "assets/character-motion/mimic-storekeeper-idle.webp",
+      "assets/character-motion/mimic-storekeeper.webp",
+      "assets/character-motion/nightmare-counselor-idle.webp",
+      "assets/character-motion/nightmare-counselor.webp",
+      "assets/character-motion/orc-technician-idle.webp",
+      "assets/character-motion/orc-technician.webp",
+      "assets/character-motion/skeleton-chef-idle.webp",
+      "assets/character-motion/skeleton-chef.webp",
+      "assets/character-motion/slime-cleaner-idle.webp",
+      "assets/character-motion/slime-cleaner.webp",
+      "assets/character-motion/spider-tailor-idle.webp",
+      "assets/character-motion/spider-tailor.webp"
+    ]
+  },
+  {
+    "group": "assets/character-portraits",
+    "sheet": "contacts/assets-character-portraits-00.jpg",
+    "paths": [
+      "assets/character-portraits/bat-nurse.webp",
+      "assets/character-portraits/bongtu-postmaster.webp",
+      "assets/character-portraits/chalkak-photographer.webp",
+      "assets/character-portraits/ddangkong-miner.webp",
+      "assets/character-portraits/duru-archivist.webp",
+      "assets/character-portraits/electric-technician.webp",
+      "assets/character-portraits/ghost-courier.webp",
+      "assets/character-portraits/gobi.webp",
+      "assets/character-portraits/goblin-guard.webp",
+      "assets/character-portraits/kkangtong-engineer.webp",
+      "assets/character-portraits/kobold-recruiter.webp",
+      "assets/character-portraits/merc-accountant.webp",
+      "assets/character-portraits/merc-banchang.webp",
+      "assets/character-portraits/merc-chikchik.webp",
+      "assets/character-portraits/merc-coco.webp",
+      "assets/character-portraits/merc-q.webp",
+      "assets/character-portraits/merc-rescue.webp",
+      "assets/character-portraits/merc-ward.webp",
+      "assets/character-portraits/mimic-storekeeper.webp",
+      "assets/character-portraits/nightmare-counselor.webp"
+    ]
+  },
+  {
+    "group": "assets/character-portraits",
+    "sheet": "contacts/assets-character-portraits-01.jpg",
+    "paths": [
+      "assets/character-portraits/orc-technician.webp",
+      "assets/character-portraits/skeleton-chef.webp",
+      "assets/character-portraits/slime-cleaner.webp",
+      "assets/character-portraits/spider-tailor.webp"
+    ]
+  },
+  {
+    "group": "assets/comic",
+    "sheet": "contacts/assets-comic-00.jpg",
+    "paths": [
+      "assets/comic/01-first-shift-sd.webp",
+      "assets/comic/01-first-shift.webp",
+      "assets/comic/02-invasion.webp",
+      "assets/comic/03-emergency-staff.webp",
+      "assets/comic/04-night-duty.webp"
+    ]
+  },
+  {
+    "group": "assets/concept-stories",
+    "sheet": "contacts/assets-concept-stories-00.jpg",
+    "paths": [
+      "assets/concept-stories/torn-paper.svg"
+    ]
+  },
+  {
+    "group": "assets/concept-tools",
+    "sheet": "contacts/assets-concept-tools-00.jpg",
+    "paths": [
+      "assets/concept-tools/paper-grain.svg"
+    ]
+  },
+  {
+    "group": "assets/demon-king-slim-v2.webp",
+    "sheet": "contacts/assets-demon-king-slim-v2.webp-00.jpg",
+    "paths": [
+      "assets/demon-king-slim-v2.webp"
+    ]
+  },
+  {
+    "group": "assets/demon-king.webp",
+    "sheet": "contacts/assets-demon-king.webp-00.jpg",
+    "paths": [
+      "assets/demon-king.webp"
+    ]
+  },
+  {
+    "group": "assets/expansion-v2",
+    "sheet": "contacts/assets-expansion-v2-00.jpg",
+    "paths": [
+      "assets/expansion-v2/bongtu-postmaster-portrait.webp",
+      "assets/expansion-v2/bongtu-postmaster.webp",
+      "assets/expansion-v2/chalkak-photographer-portrait.webp",
+      "assets/expansion-v2/chalkak-photographer.webp",
+      "assets/expansion-v2/ddangkong-miner-portrait.webp",
+      "assets/expansion-v2/ddangkong-miner.webp",
+      "assets/expansion-v2/duru-archivist-portrait.webp",
+      "assets/expansion-v2/duru-archivist.webp",
+      "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+      "assets/expansion-v2/kkangtong-engineer.webp",
+      "assets/expansion-v2/merc-banchang-portrait.webp",
+      "assets/expansion-v2/merc-banchang.webp",
+      "assets/expansion-v2/merc-chikchik-portrait.webp",
+      "assets/expansion-v2/merc-chikchik.webp",
+      "assets/expansion-v2/merc-coco-portrait.webp",
+      "assets/expansion-v2/merc-coco.webp",
+      "assets/expansion-v2/merc-q-portrait.webp",
+      "assets/expansion-v2/merc-q.webp"
+    ]
+  },
+  {
+    "group": "assets/gobi.webp",
+    "sheet": "contacts/assets-gobi.webp-00.jpg",
+    "paths": [
+      "assets/gobi.webp"
+    ]
+  },
+  {
+    "group": "assets/goblin-guard.webp",
+    "sheet": "contacts/assets-goblin-guard.webp-00.jpg",
+    "paths": [
+      "assets/goblin-guard.webp"
+    ]
+  },
+  {
+    "group": "assets/hero-leon.webp",
+    "sheet": "contacts/assets-hero-leon.webp-00.jpg",
+    "paths": [
+      "assets/hero-leon.webp"
+    ]
+  },
+  {
+    "group": "assets/hiring-stories",
+    "sheet": "contacts/assets-hiring-stories-00.jpg",
+    "paths": [
+      "assets/hiring-stories/bat-nurse/01.webp",
+      "assets/hiring-stories/bat-nurse/02.webp",
+      "assets/hiring-stories/bat-nurse/03.webp",
+      "assets/hiring-stories/bat-nurse/04.webp",
+      "assets/hiring-stories/bongtu-postmaster/01.webp",
+      "assets/hiring-stories/bongtu-postmaster/02.webp",
+      "assets/hiring-stories/bongtu-postmaster/03.webp",
+      "assets/hiring-stories/bongtu-postmaster/04.webp",
+      "assets/hiring-stories/chalkak-photographer/01.webp",
+      "assets/hiring-stories/chalkak-photographer/02.webp",
+      "assets/hiring-stories/chalkak-photographer/03.webp",
+      "assets/hiring-stories/chalkak-photographer/04.webp",
+      "assets/hiring-stories/ddangkong-miner/01.webp",
+      "assets/hiring-stories/ddangkong-miner/02.webp",
+      "assets/hiring-stories/ddangkong-miner/03.webp",
+      "assets/hiring-stories/ddangkong-miner/04.webp",
+      "assets/hiring-stories/duru-archivist/01.webp",
+      "assets/hiring-stories/duru-archivist/02.webp",
+      "assets/hiring-stories/duru-archivist/03.webp",
+      "assets/hiring-stories/duru-archivist/04.webp"
+    ]
+  },
+  {
+    "group": "assets/hiring-stories",
+    "sheet": "contacts/assets-hiring-stories-01.jpg",
+    "paths": [
+      "assets/hiring-stories/ghost-courier/01.webp",
+      "assets/hiring-stories/ghost-courier/02.webp",
+      "assets/hiring-stories/ghost-courier/03.webp",
+      "assets/hiring-stories/ghost-courier/04.webp",
+      "assets/hiring-stories/kkangtong-engineer/01.webp",
+      "assets/hiring-stories/kkangtong-engineer/02.webp",
+      "assets/hiring-stories/kkangtong-engineer/03.webp",
+      "assets/hiring-stories/kkangtong-engineer/04.webp",
+      "assets/hiring-stories/kobold-recruiter/01.webp",
+      "assets/hiring-stories/kobold-recruiter/02.webp",
+      "assets/hiring-stories/kobold-recruiter/03.webp",
+      "assets/hiring-stories/kobold-recruiter/04.webp",
+      "assets/hiring-stories/merc-accountant/01.webp",
+      "assets/hiring-stories/merc-accountant/02.webp",
+      "assets/hiring-stories/merc-accountant/03.webp",
+      "assets/hiring-stories/merc-accountant/04.webp",
+      "assets/hiring-stories/merc-banchang/01.webp",
+      "assets/hiring-stories/merc-banchang/02.webp",
+      "assets/hiring-stories/merc-banchang/03.webp",
+      "assets/hiring-stories/merc-banchang/04.webp"
+    ]
+  },
+  {
+    "group": "assets/hiring-stories",
+    "sheet": "contacts/assets-hiring-stories-02.jpg",
+    "paths": [
+      "assets/hiring-stories/merc-chikchik/01.webp",
+      "assets/hiring-stories/merc-chikchik/02.webp",
+      "assets/hiring-stories/merc-chikchik/03.webp",
+      "assets/hiring-stories/merc-chikchik/04.webp",
+      "assets/hiring-stories/merc-coco/01.webp",
+      "assets/hiring-stories/merc-coco/02.webp",
+      "assets/hiring-stories/merc-coco/03.webp",
+      "assets/hiring-stories/merc-coco/04.webp",
+      "assets/hiring-stories/merc-q/01.webp",
+      "assets/hiring-stories/merc-q/02.webp",
+      "assets/hiring-stories/merc-q/03.webp",
+      "assets/hiring-stories/merc-q/04.webp",
+      "assets/hiring-stories/merc-rescue/01.webp",
+      "assets/hiring-stories/merc-rescue/02.webp",
+      "assets/hiring-stories/merc-rescue/03.webp",
+      "assets/hiring-stories/merc-rescue/04.webp",
+      "assets/hiring-stories/merc-ward/01.webp",
+      "assets/hiring-stories/merc-ward/02.webp",
+      "assets/hiring-stories/merc-ward/03.webp",
+      "assets/hiring-stories/merc-ward/04.webp"
+    ]
+  },
+  {
+    "group": "assets/hiring-stories",
+    "sheet": "contacts/assets-hiring-stories-03.jpg",
+    "paths": [
+      "assets/hiring-stories/mimic-storekeeper/01.webp",
+      "assets/hiring-stories/mimic-storekeeper/02.webp",
+      "assets/hiring-stories/mimic-storekeeper/03.webp",
+      "assets/hiring-stories/mimic-storekeeper/04.webp",
+      "assets/hiring-stories/nightmare-counselor/01.webp",
+      "assets/hiring-stories/nightmare-counselor/02.webp",
+      "assets/hiring-stories/nightmare-counselor/03.webp",
+      "assets/hiring-stories/nightmare-counselor/04.webp",
+      "assets/hiring-stories/skeleton-chef/01.webp",
+      "assets/hiring-stories/skeleton-chef/02.webp",
+      "assets/hiring-stories/skeleton-chef/03.webp",
+      "assets/hiring-stories/skeleton-chef/04.webp",
+      "assets/hiring-stories/spider-tailor/01.webp",
+      "assets/hiring-stories/spider-tailor/02.webp",
+      "assets/hiring-stories/spider-tailor/03.webp",
+      "assets/hiring-stories/spider-tailor/04.webp"
+    ]
+  },
+  {
+    "group": "assets/lobby-background.webp",
+    "sheet": "contacts/assets-lobby-background.webp-00.jpg",
+    "paths": [
+      "assets/lobby-background.webp"
+    ]
+  },
+  {
+    "group": "assets/mobile",
+    "sheet": "contacts/assets-mobile-00.jpg",
+    "paths": [
+      "assets/mobile/item-grade.webp",
+      "assets/mobile/item-kind.webp",
+      "assets/mobile/item-king.webp",
+      "assets/mobile/lobby-gobi.webp",
+      "assets/mobile/lobby-night.webp",
+      "assets/mobile/merc-accountant.webp",
+      "assets/mobile/merc-rescue.webp",
+      "assets/mobile/merc-ward.webp"
+    ]
+  },
+  {
+    "group": "assets/motion",
+    "sheet": "contacts/assets-motion-00.jpg",
+    "paths": [
+      "assets/motion/bat-nurse.webp",
+      "assets/motion/demon-king-slim-v2.webp",
+      "assets/motion/demon-king.webp",
+      "assets/motion/electric-technician.webp",
+      "assets/motion/ghost-courier.webp",
+      "assets/motion/gobi.webp",
+      "assets/motion/goblin-guard.webp",
+      "assets/motion/healing-priest.webp",
+      "assets/motion/hero-leon.webp",
+      "assets/motion/kobold-recruiter.webp",
+      "assets/motion/lightning-mage.webp",
+      "assets/motion/lobby-gobi.webp",
+      "assets/motion/merc-accountant.webp",
+      "assets/motion/merc-rescue.webp",
+      "assets/motion/merc-ward.webp",
+      "assets/motion/mimic-storekeeper.webp",
+      "assets/motion/nightmare-counselor.webp",
+      "assets/motion/novice-adventurer.webp",
+      "assets/motion/orc-technician.webp",
+      "assets/motion/rogue-scout.webp"
+    ]
+  },
+  {
+    "group": "assets/motion",
+    "sheet": "contacts/assets-motion-01.jpg",
+    "paths": [
+      "assets/motion/shield-knight.webp",
+      "assets/motion/skeleton-chef.webp",
+      "assets/motion/slime-cleaner.webp",
+      "assets/motion/spider-tailor.webp"
+    ]
+  },
+  {
+    "group": "assets/night-watch",
+    "sheet": "contacts/assets-night-watch-00.jpg",
+    "paths": [
+      "assets/night-watch/arena.webp",
+      "assets/night-watch/button-gold.svg",
+      "assets/night-watch/button-iron.svg",
+      "assets/night-watch/panel.svg",
+      "assets/night-watch/slot-match.svg",
+      "assets/night-watch/slot-selected.svg",
+      "assets/night-watch/slot.svg"
+    ]
+  },
+  {
+    "group": "assets/novice-adventurer.webp",
+    "sheet": "contacts/assets-novice-adventurer.webp-00.jpg",
+    "paths": [
+      "assets/novice-adventurer.webp"
+    ]
+  },
+  {
+    "group": "assets/open-scene",
+    "sheet": "contacts/assets-open-scene-00.jpg",
+    "paths": [
+      "assets/open-scene/battle-room.webp",
+      "assets/open-scene/icons/arrow.svg",
+      "assets/open-scene/icons/back.svg",
+      "assets/open-scene/icons/book.svg",
+      "assets/open-scene/icons/check.svg",
+      "assets/open-scene/icons/close.svg",
+      "assets/open-scene/icons/coin.svg",
+      "assets/open-scene/icons/gear.svg",
+      "assets/open-scene/icons/heart.svg",
+      "assets/open-scene/icons/help.svg",
+      "assets/open-scene/icons/home.svg",
+      "assets/open-scene/icons/lightning.svg",
+      "assets/open-scene/icons/lock.svg",
+      "assets/open-scene/icons/menu.svg",
+      "assets/open-scene/icons/moon.svg",
+      "assets/open-scene/icons/pause.svg",
+      "assets/open-scene/icons/play.svg",
+      "assets/open-scene/icons/plus.svg",
+      "assets/open-scene/icons/retry.svg",
+      "assets/open-scene/icons/scroll.svg"
+    ]
+  },
+  {
+    "group": "assets/open-scene",
+    "sheet": "contacts/assets-open-scene-01.jpg",
+    "paths": [
+      "assets/open-scene/icons/shield.svg",
+      "assets/open-scene/icons/shop.svg",
+      "assets/open-scene/icons/spark.svg",
+      "assets/open-scene/icons/staff.svg",
+      "assets/open-scene/icons/sword.svg",
+      "assets/open-scene/icons/volume.svg",
+      "assets/open-scene/lobby-cast.webp",
+      "assets/open-scene/lobby-room.webp",
+      "assets/open-scene/result-cast.webp",
+      "assets/open-scene/shop-cast.webp",
+      "assets/open-scene/shop-room.webp",
+      "assets/open-scene/slot-match.svg",
+      "assets/open-scene/slot-selected.svg",
+      "assets/open-scene/slot.svg",
+      "assets/open-scene/training-cast.webp",
+      "assets/open-scene/training-room.webp"
+    ]
+  },
+  {
+    "group": "assets/orc-technician.webp",
+    "sheet": "contacts/assets-orc-technician.webp-00.jpg",
+    "paths": [
+      "assets/orc-technician.webp"
+    ]
+  },
+  {
+    "group": "assets/pixel",
+    "sheet": "contacts/assets-pixel-00.jpg",
+    "paths": [
+      "assets/pixel/archive/orc-technician-v1.webp",
+      "assets/pixel/demon-king.webp",
+      "assets/pixel/electric-technician.webp",
+      "assets/pixel/ghost-courier.webp",
+      "assets/pixel/gobi.webp",
+      "assets/pixel/goblin-guard.webp",
+      "assets/pixel/healing-priest.webp",
+      "assets/pixel/hero-leon.webp",
+      "assets/pixel/lightning-mage.webp",
+      "assets/pixel/lobby-background.webp",
+      "assets/pixel/novice-adventurer.webp",
+      "assets/pixel/orc-technician.webp",
+      "assets/pixel/rogue-scout.webp",
+      "assets/pixel/shield-knight.webp",
+      "assets/pixel/slime-cleaner.webp"
+    ]
+  },
+  {
+    "group": "assets/reference-ui",
+    "sheet": "contacts/assets-reference-ui-00.jpg",
+    "paths": [
+      "assets/reference-ui/archive-card-frame.lite.svg",
+      "assets/reference-ui/archive-card-frame.svg",
+      "assets/reference-ui/archive-deck-frame.lite.svg",
+      "assets/reference-ui/archive-deck-frame.svg",
+      "assets/reference-ui/archive-header.lite.svg",
+      "assets/reference-ui/archive-header.svg",
+      "assets/reference-ui/archive-slot-frame.lite.svg",
+      "assets/reference-ui/archive-slot-frame.svg",
+      "assets/reference-ui/button-danger.svg",
+      "assets/reference-ui/button-gold.svg",
+      "assets/reference-ui/button-violet.svg",
+      "assets/reference-ui/dialogue-panel.svg",
+      "assets/reference-ui/dossier-scene.svg",
+      "assets/reference-ui/grid-button-gold.lite.svg",
+      "assets/reference-ui/grid-button-gold.svg",
+      "assets/reference-ui/grid-button-violet.lite.svg",
+      "assets/reference-ui/grid-button-violet.svg",
+      "assets/reference-ui/grid-market-mercs.svg",
+      "assets/reference-ui/grid-story-first.lite.svg",
+      "assets/reference-ui/grid-story-first.svg"
+    ]
+  },
+  {
+    "group": "assets/reference-ui",
+    "sheet": "contacts/assets-reference-ui-01.jpg",
+    "paths": [
+      "assets/reference-ui/grid-story-invasion.lite.svg",
+      "assets/reference-ui/grid-story-invasion.svg",
+      "assets/reference-ui/grid-story-night.lite.svg",
+      "assets/reference-ui/grid-story-night.svg",
+      "assets/reference-ui/grid-story-recruitment.lite.svg",
+      "assets/reference-ui/grid-story-recruitment.svg",
+      "assets/reference-ui/hud-capsule.svg",
+      "assets/reference-ui/item-grade-art.webp",
+      "assets/reference-ui/item-kind-art.webp",
+      "assets/reference-ui/item-king-art.webp",
+      "assets/reference-ui/lobby-scene.svg",
+      "assets/reference-ui/market-scene.svg",
+      "assets/reference-ui/panel-card.svg",
+      "assets/reference-ui/panel-modal.svg",
+      "assets/reference-ui/panel-wide.svg",
+      "assets/reference-ui/pause-hero.lite.svg",
+      "assets/reference-ui/pause-hero.svg",
+      "assets/reference-ui/recruit-envelope-art.webp",
+      "assets/reference-ui/report-hero.svg",
+      "assets/reference-ui/ribbon-result.svg"
+    ]
+  },
+  {
+    "group": "assets/reference-ui",
+    "sheet": "contacts/assets-reference-ui-02.jpg",
+    "paths": [
+      "assets/reference-ui/slot-square.svg",
+      "assets/reference-ui/story-first.svg",
+      "assets/reference-ui/story-invasion.svg",
+      "assets/reference-ui/story-night.svg",
+      "assets/reference-ui/story-recruitment.svg",
+      "assets/reference-ui/tab-active.svg",
+      "assets/reference-ui/tab-inactive.svg",
+      "assets/reference-ui/title-logo.svg"
+    ]
+  },
+  {
+    "group": "assets/rogue-scout.webp",
+    "sheet": "contacts/assets-rogue-scout.webp-00.jpg",
+    "paths": [
+      "assets/rogue-scout.webp"
+    ]
+  },
+  {
+    "group": "assets/shared-chrome",
+    "sheet": "contacts/assets-shared-chrome-00.jpg",
+    "paths": [
+      "assets/shared-chrome/active-tile.svg",
+      "assets/shared-chrome/back.svg",
+      "assets/shared-chrome/book.svg",
+      "assets/shared-chrome/close.svg",
+      "assets/shared-chrome/confirm.webp",
+      "assets/shared-chrome/home.svg",
+      "assets/shared-chrome/modal-paper.svg",
+      "assets/shared-chrome/moon-knob.svg",
+      "assets/shared-chrome/paper.webp",
+      "assets/shared-chrome/plaque.svg",
+      "assets/shared-chrome/shop.svg"
+    ]
+  },
+  {
+    "group": "assets/slime-cleaner.webp",
+    "sheet": "contacts/assets-slime-cleaner.webp-00.jpg",
+    "paths": [
+      "assets/slime-cleaner.webp"
+    ]
+  },
+  {
+    "group": "assets/staff-expansion",
+    "sheet": "contacts/assets-staff-expansion-00.jpg",
+    "paths": [
+      "assets/staff-expansion/bat-nurse.webp",
+      "assets/staff-expansion/kobold-recruiter.webp",
+      "assets/staff-expansion/mimic-storekeeper.webp",
+      "assets/staff-expansion/nightmare-counselor.webp",
+      "assets/staff-expansion/skeleton-chef.webp",
+      "assets/staff-expansion/spider-tailor.webp"
+    ]
+  },
+  {
+    "group": "assets/text-grid",
+    "sheet": "contacts/assets-text-grid-00.jpg",
+    "paths": [
+      "assets/text-grid/preview-battle-selected-en.webp",
+      "assets/text-grid/preview-battle-selected-ko.webp",
+      "assets/text-grid/preview-lobby-en.webp",
+      "assets/text-grid/preview-lobby-ko.webp",
+      "assets/text-grid/preview-result-normal-en-bottom.webp",
+      "assets/text-grid/preview-result-normal-en.webp",
+      "assets/text-grid/preview-result-normal-ko-bottom.webp",
+      "assets/text-grid/preview-result-normal-ko.webp",
+      "assets/text-grid/preview-roster-en-bottom.webp",
+      "assets/text-grid/preview-roster-en.webp",
+      "assets/text-grid/preview-roster-ko-bottom.webp",
+      "assets/text-grid/preview-roster-ko.webp",
+      "assets/text-grid/preview-shop-pack-en-bottom.webp",
+      "assets/text-grid/preview-shop-pack-en.webp",
+      "assets/text-grid/preview-shop-pack-ko-bottom.webp",
+      "assets/text-grid/preview-shop-pack-ko.webp",
+      "assets/text-grid/preview-training-staff-en-bottom.webp",
+      "assets/text-grid/preview-training-staff-en.webp",
+      "assets/text-grid/preview-training-staff-ko-bottom.webp",
+      "assets/text-grid/preview-training-staff-ko.webp"
+    ]
+  },
+  {
+    "group": "assets/text-grid",
+    "sheet": "contacts/assets-text-grid-01.jpg",
+    "paths": [
+      "assets/text-grid/shop-hero-wordless.webp"
+    ]
+  },
+  {
+    "group": "assets/tutorial",
+    "sheet": "contacts/assets-tutorial-00.jpg",
+    "paths": [
+      "assets/tutorial/demon-king-night-mentor.webp"
+    ]
+  },
+  {
+    "group": "assets/ui-approved",
+    "sheet": "contacts/assets-ui-approved-00.jpg",
+    "paths": [
+      "assets/ui-approved/lobby-background.webp",
+      "assets/ui-approved/lobby-scene.webp",
+      "assets/ui-approved/shop-rush.webp",
+      "assets/ui-approved/shop-stage.webp"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-00.jpg",
+    "paths": [
+      "assets/ui-b/applied-lobby.png",
+      "assets/ui-b/badge-mode--default.png",
+      "assets/ui-b/badge-mode--default.svg",
+      "assets/ui-b/badge-status--default.png",
+      "assets/ui-b/badge-status--default.svg",
+      "assets/ui-b/button-danger--default.png",
+      "assets/ui-b/button-danger--default.svg",
+      "assets/ui-b/button-danger--disabled.png",
+      "assets/ui-b/button-danger--disabled.svg",
+      "assets/ui-b/button-danger--pressed.png",
+      "assets/ui-b/button-danger--pressed.svg",
+      "assets/ui-b/button-danger--selected.png",
+      "assets/ui-b/button-danger--selected.svg",
+      "assets/ui-b/button-icon--default.png",
+      "assets/ui-b/button-icon--default.svg",
+      "assets/ui-b/button-icon--disabled.png",
+      "assets/ui-b/button-icon--disabled.svg",
+      "assets/ui-b/button-icon--pressed.png",
+      "assets/ui-b/button-icon--pressed.svg",
+      "assets/ui-b/button-icon--selected.png"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-01.jpg",
+    "paths": [
+      "assets/ui-b/button-icon--selected.svg",
+      "assets/ui-b/button-neutral--default.png",
+      "assets/ui-b/button-neutral--default.svg",
+      "assets/ui-b/button-neutral--disabled.png",
+      "assets/ui-b/button-neutral--disabled.svg",
+      "assets/ui-b/button-neutral--pressed.png",
+      "assets/ui-b/button-neutral--pressed.svg",
+      "assets/ui-b/button-neutral--selected.png",
+      "assets/ui-b/button-neutral--selected.svg",
+      "assets/ui-b/button-primary--default.png",
+      "assets/ui-b/button-primary--default.svg",
+      "assets/ui-b/button-primary--disabled.png",
+      "assets/ui-b/button-primary--disabled.svg",
+      "assets/ui-b/button-primary--pressed.png",
+      "assets/ui-b/button-primary--pressed.svg",
+      "assets/ui-b/button-primary--selected.png",
+      "assets/ui-b/button-primary--selected.svg",
+      "assets/ui-b/button-primary-stacked--default.png",
+      "assets/ui-b/button-primary-stacked--default.svg",
+      "assets/ui-b/button-primary-stacked--disabled.png"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-02.jpg",
+    "paths": [
+      "assets/ui-b/button-primary-stacked--disabled.svg",
+      "assets/ui-b/button-primary-stacked--pressed.png",
+      "assets/ui-b/button-primary-stacked--pressed.svg",
+      "assets/ui-b/button-primary-stacked--selected.png",
+      "assets/ui-b/button-primary-stacked--selected.svg",
+      "assets/ui-b/button-purchase--default.png",
+      "assets/ui-b/button-purchase--default.svg",
+      "assets/ui-b/button-purchase--disabled.png",
+      "assets/ui-b/button-purchase--disabled.svg",
+      "assets/ui-b/button-purchase--pressed.png",
+      "assets/ui-b/button-purchase--pressed.svg",
+      "assets/ui-b/button-purchase--selected.png",
+      "assets/ui-b/button-purchase--selected.svg",
+      "assets/ui-b/button-purchase-stacked--default.png",
+      "assets/ui-b/button-purchase-stacked--default.svg",
+      "assets/ui-b/button-purchase-stacked--disabled.png",
+      "assets/ui-b/button-purchase-stacked--disabled.svg",
+      "assets/ui-b/button-purchase-stacked--pressed.png",
+      "assets/ui-b/button-purchase-stacked--pressed.svg",
+      "assets/ui-b/button-purchase-stacked--selected.png"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-03.jpg",
+    "paths": [
+      "assets/ui-b/button-purchase-stacked--selected.svg",
+      "assets/ui-b/button-secondary--default.png",
+      "assets/ui-b/button-secondary--default.svg",
+      "assets/ui-b/button-secondary--disabled.png",
+      "assets/ui-b/button-secondary--disabled.svg",
+      "assets/ui-b/button-secondary--pressed.png",
+      "assets/ui-b/button-secondary--pressed.svg",
+      "assets/ui-b/button-secondary--selected.png",
+      "assets/ui-b/button-secondary--selected.svg",
+      "assets/ui-b/button-shortcut--default.png",
+      "assets/ui-b/button-shortcut--default.svg",
+      "assets/ui-b/button-shortcut--disabled.png",
+      "assets/ui-b/button-shortcut--disabled.svg",
+      "assets/ui-b/button-shortcut--pressed.png",
+      "assets/ui-b/button-shortcut--pressed.svg",
+      "assets/ui-b/button-shortcut--selected.png",
+      "assets/ui-b/button-shortcut--selected.svg",
+      "assets/ui-b/button-skill--default.png",
+      "assets/ui-b/button-skill--default.svg",
+      "assets/ui-b/button-skill--disabled.png"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-04.jpg",
+    "paths": [
+      "assets/ui-b/button-skill--disabled.svg",
+      "assets/ui-b/button-skill--pressed.png",
+      "assets/ui-b/button-skill--pressed.svg",
+      "assets/ui-b/button-skill--selected.png",
+      "assets/ui-b/button-skill--selected.svg",
+      "assets/ui-b/hud-currency--default.png",
+      "assets/ui-b/hud-currency--default.svg",
+      "assets/ui-b/hud-life--default.png",
+      "assets/ui-b/hud-life--default.svg",
+      "assets/ui-b/hud-profile--default.png",
+      "assets/ui-b/hud-profile--default.svg",
+      "assets/ui-b/hud-wave--default.png",
+      "assets/ui-b/hud-wave--default.svg",
+      "assets/ui-b/icons/menu.svg",
+      "assets/ui-b/panel-card--default.png",
+      "assets/ui-b/panel-card--default.svg",
+      "assets/ui-b/panel-dialog--default.png",
+      "assets/ui-b/panel-dialog--default.svg",
+      "assets/ui-b/panel-dialogue--default.png",
+      "assets/ui-b/panel-dialogue--default.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-05.jpg",
+    "paths": [
+      "assets/ui-b/panel-mode--default.png",
+      "assets/ui-b/panel-mode--default.svg",
+      "assets/ui-b/panel-result--default.png",
+      "assets/ui-b/panel-result--default.svg",
+      "assets/ui-b/panel-sheet--default.png",
+      "assets/ui-b/panel-sheet--default.svg",
+      "assets/ui-b/panel-support--default.png",
+      "assets/ui-b/panel-support--default.svg",
+      "assets/ui-b/progress-track--default.png",
+      "assets/ui-b/progress-track--default.svg",
+      "assets/ui-b/ribbon-result--default.png",
+      "assets/ui-b/ribbon-result--default.svg",
+      "assets/ui-b/slot-item--default.png",
+      "assets/ui-b/slot-item--default.svg",
+      "assets/ui-b/slot-item--disabled.png",
+      "assets/ui-b/slot-item--disabled.svg",
+      "assets/ui-b/slot-item--pressed.png",
+      "assets/ui-b/slot-item--pressed.svg",
+      "assets/ui-b/slot-item--selected.png",
+      "assets/ui-b/slot-item--selected.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-06.jpg",
+    "paths": [
+      "assets/ui-b/slot-staff--default.png",
+      "assets/ui-b/slot-staff--default.svg",
+      "assets/ui-b/slot-staff--disabled.png",
+      "assets/ui-b/slot-staff--disabled.svg",
+      "assets/ui-b/slot-staff--pressed.png",
+      "assets/ui-b/slot-staff--pressed.svg",
+      "assets/ui-b/slot-staff--selected.png",
+      "assets/ui-b/slot-staff--selected.svg",
+      "assets/ui-b/tab-category--default.png",
+      "assets/ui-b/tab-category--default.svg",
+      "assets/ui-b/tab-category--disabled.png",
+      "assets/ui-b/tab-category--disabled.svg",
+      "assets/ui-b/tab-category--pressed.png",
+      "assets/ui-b/tab-category--pressed.svg",
+      "assets/ui-b/tab-category--selected.png",
+      "assets/ui-b/tab-category--selected.svg",
+      "assets/ui-b/tab-nav--default.png",
+      "assets/ui-b/tab-nav--default.svg",
+      "assets/ui-b/tab-nav--disabled.png",
+      "assets/ui-b/tab-nav--disabled.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-b",
+    "sheet": "contacts/assets-ui-b-07.jpg",
+    "paths": [
+      "assets/ui-b/tab-nav--pressed.png",
+      "assets/ui-b/tab-nav--pressed.svg",
+      "assets/ui-b/tab-nav--selected.png",
+      "assets/ui-b/tab-nav--selected.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-live",
+    "sheet": "contacts/assets-ui-live-00.jpg",
+    "paths": [
+      "assets/ui-live/badge-danger.svg",
+      "assets/ui-live/badge-gold.svg",
+      "assets/ui-live/badge-neutral.svg",
+      "assets/ui-live/badge-selected.svg",
+      "assets/ui-live/battle-warning-danger.svg",
+      "assets/ui-live/battle-warning.svg",
+      "assets/ui-live/board-cell-hazard.svg",
+      "assets/ui-live/board-cell-merge.svg",
+      "assets/ui-live/board-cell-selected.svg",
+      "assets/ui-live/board-cell.svg",
+      "assets/ui-live/bottom-dock.svg",
+      "assets/ui-live/button-danger.svg",
+      "assets/ui-live/button-disabled.svg",
+      "assets/ui-live/button-violet.svg",
+      "assets/ui-live/corner-diamond.svg",
+      "assets/ui-live/dialogue-panel.svg",
+      "assets/ui-live/divider-line.svg",
+      "assets/ui-live/feedback-error.svg",
+      "assets/ui-live/feedback-neutral.svg",
+      "assets/ui-live/feedback-success.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-live",
+    "sheet": "contacts/assets-ui-live-01.jpg",
+    "paths": [
+      "assets/ui-live/heading-marker.svg",
+      "assets/ui-live/heart-life.svg",
+      "assets/ui-live/item-button-selected.svg",
+      "assets/ui-live/item-button.svg",
+      "assets/ui-live/milestone-done.svg",
+      "assets/ui-live/milestone-pending.svg",
+      "assets/ui-live/modal-frame.svg",
+      "assets/ui-live/nav-active.svg",
+      "assets/ui-live/nav-dock.svg",
+      "assets/ui-live/notice-error.svg",
+      "assets/ui-live/notice-info.svg",
+      "assets/ui-live/notice-success.svg",
+      "assets/ui-live/option-card.svg",
+      "assets/ui-live/panel-muted.svg",
+      "assets/ui-live/panel-skill.svg",
+      "assets/ui-live/panel-standard.svg",
+      "assets/ui-live/pip-gold.svg",
+      "assets/ui-live/progress-fill.svg",
+      "assets/ui-live/progress-track.svg",
+      "assets/ui-live/reward-panel.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-live",
+    "sheet": "contacts/assets-ui-live-02.jpg",
+    "paths": [
+      "assets/ui-live/selected-skill.svg",
+      "assets/ui-live/staff-card-selected.svg",
+      "assets/ui-live/staff-card.svg",
+      "assets/ui-live/tab-active.svg",
+      "assets/ui-live/tabs-track.svg",
+      "assets/ui-live/toast-panel.svg",
+      "assets/ui-live/topbar-surface.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-v2",
+    "sheet": "contacts/assets-ui-v2-00.jpg",
+    "paths": [
+      "assets/ui-v2/background-archive.webp",
+      "assets/ui-v2/background-lobby.webp",
+      "assets/ui-v2/background-market.webp",
+      "assets/ui-v2/background-result.webp",
+      "assets/ui-v2/button-danger.webp",
+      "assets/ui-v2/button-gold.webp",
+      "assets/ui-v2/button-violet.webp",
+      "assets/ui-v2/dialogue-panel.webp",
+      "assets/ui-v2/hud-capsule.webp",
+      "assets/ui-v2/icons/arrow-left.svg",
+      "assets/ui-v2/icons/arrow-right.svg",
+      "assets/ui-v2/icons/book.svg",
+      "assets/ui-v2/icons/check.svg",
+      "assets/ui-v2/icons/close.svg",
+      "assets/ui-v2/icons/coin.svg",
+      "assets/ui-v2/icons/gear.svg",
+      "assets/ui-v2/icons/heart.svg",
+      "assets/ui-v2/icons/help.svg",
+      "assets/ui-v2/icons/home.svg",
+      "assets/ui-v2/icons/lightning.svg"
+    ]
+  },
+  {
+    "group": "assets/ui-v2",
+    "sheet": "contacts/assets-ui-v2-01.jpg",
+    "paths": [
+      "assets/ui-v2/icons/lock.svg",
+      "assets/ui-v2/icons/moon.svg",
+      "assets/ui-v2/icons/pause.svg",
+      "assets/ui-v2/icons/play.svg",
+      "assets/ui-v2/icons/plus.svg",
+      "assets/ui-v2/icons/scroll.svg",
+      "assets/ui-v2/icons/shield.svg",
+      "assets/ui-v2/icons/shop.svg",
+      "assets/ui-v2/icons/staff.svg",
+      "assets/ui-v2/icons/sword.svg",
+      "assets/ui-v2/panel-card.webp",
+      "assets/ui-v2/panel-modal.webp",
+      "assets/ui-v2/panel-wide.webp",
+      "assets/ui-v2/ribbon-result.webp",
+      "assets/ui-v2/slot-square.webp",
+      "assets/ui-v2/tab-active.webp",
+      "assets/ui-v2/tab-inactive.webp",
+      "assets/ui-v2/title-logo.webp"
+    ]
+  },
+  {
+    "group": "previews/asset-lobby-20261109",
+    "sheet": "contacts/previews-asset-lobby-20261109-00.jpg",
+    "paths": [
+      "previews/asset-lobby-20261109/assets/background.webp",
+      "previews/asset-lobby-20261109/assets/button-primary.webp",
+      "previews/asset-lobby-20261109/assets/gnb-lobby.webp",
+      "previews/asset-lobby-20261109/assets/gobi.webp",
+      "previews/asset-lobby-20261109/assets/lobby-reference.webp",
+      "previews/asset-lobby-20261109/assets/panel-paper.webp",
+      "previews/asset-lobby-20261109/assets/profile.webp",
+      "previews/asset-lobby-20261109/assets/records.webp",
+      "previews/asset-lobby-20261109/assets/resume.webp",
+      "previews/asset-lobby-20261109/assets/settings.webp",
+      "previews/asset-lobby-20261109/assets/story.webp",
+      "previews/asset-lobby-20261109/assets/title-logo.webp",
+      "previews/asset-lobby-20261109/assets/training.webp",
+      "previews/asset-lobby-20261109/assets/wallet.webp"
+    ]
+  },
+  {
+    "group": "previews/asset-roster-20261109",
+    "sheet": "contacts/previews-asset-roster-20261109-00.jpg",
+    "paths": [
+      "previews/asset-roster-20261109/assets/card-paper.webp",
+      "previews/asset-roster-20261109/assets/gnb-roster.webp",
+      "previews/asset-roster-20261109/assets/panel-paper.webp",
+      "previews/asset-roster-20261109/assets/roster-reference.webp"
+    ]
+  },
+  {
+    "group": "previews/asset-shop-20261109",
+    "sheet": "contacts/previews-asset-shop-20261109-00.jpg",
+    "paths": [
+      "previews/asset-shop-20261109/assets/button-primary.webp",
+      "previews/asset-shop-20261109/assets/gnb-shop.webp",
+      "previews/asset-shop-20261109/assets/header-shop.webp",
+      "previews/asset-shop-20261109/assets/panel-shop.webp",
+      "previews/asset-shop-20261109/assets/shop-reference.webp"
+    ]
+  },
+  {
+    "group": "previews/asset-training-20261109",
+    "sheet": "contacts/previews-asset-training-20261109-00.jpg",
+    "paths": [
+      "previews/asset-training-20261109/assets/gnb-lobby.webp",
+      "previews/asset-training-20261109/assets/training-reference.webp"
+    ]
+  },
+  {
+    "group": "previews/comic-c-open-layout",
+    "sheet": "contacts/previews-comic-c-open-layout-00.jpg",
+    "paths": [
+      "previews/comic-c-open-layout/art-sheet.png",
+      "previews/comic-c-open-layout/renders/en/01.png",
+      "previews/comic-c-open-layout/renders/en/02.png",
+      "previews/comic-c-open-layout/renders/en/03.png",
+      "previews/comic-c-open-layout/renders/en/04.png",
+      "previews/comic-c-open-layout/renders/en/05.png",
+      "previews/comic-c-open-layout/renders/en/06.png",
+      "previews/comic-c-open-layout/renders/en-overview.png",
+      "previews/comic-c-open-layout/renders/ko/01.png",
+      "previews/comic-c-open-layout/renders/ko/02.png",
+      "previews/comic-c-open-layout/renders/ko/03.png",
+      "previews/comic-c-open-layout/renders/ko/04.png",
+      "previews/comic-c-open-layout/renders/ko/05.png",
+      "previews/comic-c-open-layout/renders/ko/06.png",
+      "previews/comic-c-open-layout/renders/ko-overview.png"
+    ]
+  },
+  {
+    "group": "previews/comic-c-six-screens",
+    "sheet": "contacts/previews-comic-c-six-screens-00.jpg",
+    "paths": [
+      "previews/comic-c-six-screens/art-sheet.png",
+      "previews/comic-c-six-screens/renders/en/01.png",
+      "previews/comic-c-six-screens/renders/en/02.png",
+      "previews/comic-c-six-screens/renders/en/03.png",
+      "previews/comic-c-six-screens/renders/en/04.png",
+      "previews/comic-c-six-screens/renders/en/05.png",
+      "previews/comic-c-six-screens/renders/en/06.png",
+      "previews/comic-c-six-screens/renders/en-overview.png",
+      "previews/comic-c-six-screens/renders/ko/01.png",
+      "previews/comic-c-six-screens/renders/ko/02.png",
+      "previews/comic-c-six-screens/renders/ko/03.png",
+      "previews/comic-c-six-screens/renders/ko/04.png",
+      "previews/comic-c-six-screens/renders/ko/05.png",
+      "previews/comic-c-six-screens/renders/ko/06.png",
+      "previews/comic-c-six-screens/renders/ko-overview.png"
+    ]
+  },
+  {
+    "group": "previews/lobby-direction",
+    "sheet": "contacts/previews-lobby-direction-00.jpg",
+    "paths": [
+      "previews/lobby-direction/lobby-320.png",
+      "previews/lobby-direction/lobby-375x667.png",
+      "previews/lobby-direction/lobby-390.png",
+      "previews/lobby-direction/lobby-390x568.png",
+      "previews/lobby-direction/lobby-430.png"
+    ]
+  },
+  {
+    "group": "previews/lobby-five-directions",
+    "sheet": "contacts/previews-lobby-five-directions-00.jpg",
+    "paths": [
+      "previews/lobby-five-directions/five-lobby-concepts.png"
+    ]
+  },
+  {
+    "group": "previews/six-screen-concepts-v2",
+    "sheet": "contacts/previews-six-screen-concepts-v2-00.jpg",
+    "paths": [
+      "previews/six-screen-concepts-v2/01-02-lobby-battle.png",
+      "previews/six-screen-concepts-v2/03-04-result-roster.png",
+      "previews/six-screen-concepts-v2/05-06-training-shop.png"
+    ]
+  }
+]

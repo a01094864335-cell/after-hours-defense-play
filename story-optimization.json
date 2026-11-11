@@ -1,7 +1,7 @@
 {
   "panels": 156,
   "before": 368836187,
-  "after": 22064220,
+  "after": 22794102,
   "files": [
     {
       "file": "assets/castle-stories/attendance/01.webp",
@@ -146,28 +146,28 @@
     {
       "file": "assets/castle-stories/coffee/01.webp",
       "before": 2467856,
-      "after": 158472,
+      "after": 180564,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/coffee/02.webp",
       "before": 2331674,
-      "after": 138638,
+      "after": 174540,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/coffee/03.webp",
       "before": 2438856,
-      "after": 158360,
+      "after": 174460,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/coffee/04.webp",
       "before": 2384270,
-      "after": 149038,
+      "after": 188422,
       "width": 675,
       "height": 1200
     },
@@ -272,7 +272,7 @@
     {
       "file": "assets/castle-stories/inventory/03.webp",
       "before": 2394013,
-      "after": 147012,
+      "after": 182382,
       "width": 675,
       "height": 1200
     },
@@ -461,7 +461,7 @@
     {
       "file": "assets/castle-stories/rain/02.webp",
       "before": 2544235,
-      "after": 167154,
+      "after": 189546,
       "width": 675,
       "height": 1200
     },
@@ -538,112 +538,112 @@
     {
       "file": "assets/castle-stories/call-by-name/01.webp",
       "before": 2459022,
-      "after": 153096,
+      "after": 171926,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/call-by-name/02.webp",
       "before": 2300721,
-      "after": 138504,
+      "after": 184206,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/call-by-name/03.webp",
       "before": 2342023,
-      "after": 137118,
+      "after": 172654,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/call-by-name/04.webp",
       "before": 2517984,
-      "after": 160042,
+      "after": 192934,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-flea-market/01.webp",
       "before": 2595682,
-      "after": 169496,
+      "after": 191266,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-flea-market/02.webp",
       "before": 2621792,
-      "after": 173580,
+      "after": 192390,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-flea-market/03.webp",
       "before": 2592326,
-      "after": 160940,
+      "after": 175010,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-flea-market/04.webp",
       "before": 2453443,
-      "after": 158014,
+      "after": 181966,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-sports/01.webp",
       "before": 2437909,
-      "after": 150948,
+      "after": 191432,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-sports/02.webp",
       "before": 2340097,
-      "after": 141246,
+      "after": 180148,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-sports/03.webp",
       "before": 2354854,
-      "after": 131832,
+      "after": 169798,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/castle-sports/04.webp",
       "before": 2530028,
-      "after": 160460,
+      "after": 180428,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/chair-project/01.webp",
       "before": 2290682,
-      "after": 132688,
+      "after": 183290,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/chair-project/02.webp",
       "before": 2545235,
-      "after": 166296,
+      "after": 187694,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/chair-project/03.webp",
       "before": 2427933,
-      "after": 160530,
+      "after": 175796,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/chair-project/04.webp",
       "before": 2421219,
-      "after": 153046,
+      "after": 172272,
       "width": 675,
       "height": 1200
     },
@@ -818,28 +818,28 @@
     {
       "file": "assets/castle-stories/laundry-weather/01.webp",
       "before": 2628286,
-      "after": 164560,
+      "after": 180266,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/laundry-weather/02.webp",
       "before": 2505945,
-      "after": 152968,
+      "after": 189366,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/laundry-weather/03.webp",
       "before": 2500880,
-      "after": 161434,
+      "after": 176052,
       "width": 675,
       "height": 1200
     },
     {
       "file": "assets/castle-stories/laundry-weather/04.webp",
       "before": 2467993,
-      "after": 144948,
+      "after": 181494,
       "width": 675,
       "height": 1200
     },

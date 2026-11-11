@@ -1,0 +1,8029 @@
+{
+  "panels": [
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-first-shift-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/comic/01-first-shift-sd.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-first-shift-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/comic/02-invasion.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-first-shift-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 240,
+        "width": 320,
+        "height": 164
+      },
+      "captionTop": 229.5625,
+      "image": "assets/comic/03-emergency-staff.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-first-shift-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 225,
+        "width": 320,
+        "height": 149
+      },
+      "captionTop": 214.5625,
+      "image": "assets/comic/04-night-duty.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-midnight-soup-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/midnight-soup/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-midnight-soup-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/midnight-soup/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-midnight-soup-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/midnight-soup/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-midnight-soup-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 270,
+        "width": 320,
+        "height": 194
+      },
+      "captionTop": 259.90625,
+      "image": "assets/castle-stories/midnight-soup/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-clean-floor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/clean-floor/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-clean-floor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 290,
+        "width": 320,
+        "height": 214
+      },
+      "captionTop": 279.5,
+      "image": "assets/castle-stories/clean-floor/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-clean-floor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/clean-floor/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-clean-floor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 319,
+        "width": 320,
+        "height": 243
+      },
+      "captionTop": 309.40625,
+      "image": "assets/castle-stories/clean-floor/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-payday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/payday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-payday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/payday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-payday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/payday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-payday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/payday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-parcel-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/parcel/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-parcel-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/parcel/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-parcel-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/parcel/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-parcel-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/parcel/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-blackout-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/blackout/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-blackout-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/blackout/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-blackout-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/blackout/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-blackout-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/blackout/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-attendance-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/attendance/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-attendance-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/attendance/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-attendance-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 290,
+        "width": 320,
+        "height": 214
+      },
+      "captionTop": 279.5,
+      "image": "assets/castle-stories/attendance/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-attendance-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 270,
+        "width": 320,
+        "height": 194
+      },
+      "captionTop": 259.90625,
+      "image": "assets/castle-stories/attendance/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-cape-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/cape/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-cape-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/cape/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-cape-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/cape/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-cape-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 319,
+        "width": 320,
+        "height": 243
+      },
+      "captionTop": 309.40625,
+      "image": "assets/castle-stories/cape/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-counseling-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/counseling/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-counseling-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/counseling/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-counseling-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/counseling/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-counseling-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/counseling/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inventory-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/inventory/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inventory-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/inventory/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inventory-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/inventory/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inventory-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 264,
+        "width": 320,
+        "height": 188
+      },
+      "captionTop": 254.3125,
+      "image": "assets/castle-stories/inventory/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inspection-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/inspection/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inspection-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/inspection/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inspection-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/inspection/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-inspection-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/inspection/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-coffee-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/coffee/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-coffee-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/coffee/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-coffee-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/coffee/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-coffee-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 295,
+        "width": 320,
+        "height": 219
+      },
+      "captionTop": 284.65625,
+      "image": "assets/castle-stories/coffee/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-birthday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 264,
+        "width": 320,
+        "height": 188
+      },
+      "captionTop": 254.3125,
+      "image": "assets/castle-stories/birthday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-birthday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/birthday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-birthday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 290,
+        "width": 320,
+        "height": 214
+      },
+      "captionTop": 279.5,
+      "image": "assets/castle-stories/birthday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-birthday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 295,
+        "width": 320,
+        "height": 219
+      },
+      "captionTop": 284.65625,
+      "image": "assets/castle-stories/birthday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-rain-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/rain/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-rain-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/rain/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-rain-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/rain/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-rain-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 270,
+        "width": 320,
+        "height": 194
+      },
+      "captionTop": 259.90625,
+      "image": "assets/castle-stories/rain/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-photo-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/photo/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-photo-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/photo/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-photo-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/photo/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-photo-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 264,
+        "width": 320,
+        "height": 188
+      },
+      "captionTop": 254.3125,
+      "image": "assets/castle-stories/photo/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-lost-key-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 264,
+        "width": 320,
+        "height": 188
+      },
+      "captionTop": 254.3125,
+      "image": "assets/castle-stories/lost-key/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-lost-key-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 290,
+        "width": 320,
+        "height": 214
+      },
+      "captionTop": 279.5,
+      "image": "assets/castle-stories/lost-key/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-lost-key-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/lost-key/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-lost-key-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 270,
+        "width": 320,
+        "height": 194
+      },
+      "captionTop": 259.90625,
+      "image": "assets/castle-stories/lost-key/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-quiet-night-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/quiet-night/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-quiet-night-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/quiet-night/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-quiet-night-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/quiet-night/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-quiet-night-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 295,
+        "width": 320,
+        "height": 219
+      },
+      "captionTop": 284.65625,
+      "image": "assets/castle-stories/quiet-night/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-suggestion-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/suggestion/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-suggestion-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/suggestion/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-suggestion-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/suggestion/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-suggestion-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/suggestion/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-gate-cat-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/gate-cat/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-gate-cat-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/gate-cat/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-gate-cat-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/gate-cat/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-gate-cat-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 264,
+        "width": 320,
+        "height": 188
+      },
+      "captionTop": 254.3125,
+      "image": "assets/castle-stories/gate-cat/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shift-handoff-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/shift-handoff/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shift-handoff-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/shift-handoff/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shift-handoff-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shift-handoff/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shift-handoff-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/shift-handoff/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-empty-throne-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/empty-throne/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-empty-throne-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/empty-throne/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-empty-throne-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/empty-throne/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-empty-throne-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/empty-throne/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fridge-label-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/fridge-label/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fridge-label-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/fridge-label/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fridge-label-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/fridge-label/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fridge-label-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/fridge-label/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shortcut-trap-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shortcut-trap/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shortcut-trap-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shortcut-trap/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shortcut-trap-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shortcut-trap/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shortcut-trap-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/shortcut-trap/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-praise-approval-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/praise-approval/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-praise-approval-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/praise-approval/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-praise-approval-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/praise-approval/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-praise-approval-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/praise-approval/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-chair-project-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/chair-project/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-chair-project-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/chair-project/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-chair-project-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/chair-project/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-chair-project-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/chair-project/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-laundry-weather-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/laundry-weather/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-laundry-weather-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/laundry-weather/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-laundry-weather-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/laundry-weather/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-laundry-weather-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/laundry-weather/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-guard-dog-holiday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/guard-dog-holiday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-guard-dog-holiday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/guard-dog-holiday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-guard-dog-holiday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/guard-dog-holiday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-guard-dog-holiday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/guard-dog-holiday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-sports-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-sports/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-sports-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-sports/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-sports-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-sports/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-sports-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/castle-sports/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-one-note-band-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/one-note-band/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-one-note-band-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/one-note-band/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-one-note-band-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/one-note-band/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-one-note-band-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/one-note-band/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shield-bandage-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shield-bandage/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shield-bandage-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shield-bandage/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shield-bandage-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shield-bandage/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-shield-bandage-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/shield-bandage/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-slow-reply-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/slow-reply/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-slow-reply-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/slow-reply/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-slow-reply-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/slow-reply/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-slow-reply-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/slow-reply/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-flea-market-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-flea-market/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-flea-market-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-flea-market/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-flea-market-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/castle-flea-market/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-castle-flea-market-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/castle-flea-market/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-vacation-form-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/vacation-form/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-vacation-form-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/vacation-form/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-vacation-form-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/vacation-form/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-vacation-form-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 319,
+        "width": 320,
+        "height": 243
+      },
+      "captionTop": 309.40625,
+      "image": "assets/castle-stories/vacation-form/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-overtime-shadow-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/overtime-shadow/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-overtime-shadow-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/overtime-shadow/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-overtime-shadow-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/overtime-shadow/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-overtime-shadow-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 319,
+        "width": 320,
+        "height": 243
+      },
+      "captionTop": 309.40625,
+      "image": "assets/castle-stories/overtime-shadow/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-ghost-scary-story-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/ghost-scary-story/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-ghost-scary-story-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/ghost-scary-story/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-ghost-scary-story-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/ghost-scary-story/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-ghost-scary-story-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/ghost-scary-story/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-plant-duty-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/plant-duty/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-plant-duty-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/plant-duty/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-plant-duty-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/plant-duty/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-plant-duty-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/plant-duty/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-emergency-cookie-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/emergency-cookie/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-emergency-cookie-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/emergency-cookie/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-emergency-cookie-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/emergency-cookie/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-emergency-cookie-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/emergency-cookie/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fallen-star-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/fallen-star/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fallen-star-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 339,
+        "width": 320,
+        "height": 263
+      },
+      "captionTop": 329,
+      "image": "assets/castle-stories/fallen-star/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fallen-star-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 304.25,
+      "image": "assets/castle-stories/fallen-star/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-fallen-star-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 319,
+        "width": 320,
+        "height": 243
+      },
+      "captionTop": 309.40625,
+      "image": "assets/castle-stories/fallen-star/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-call-by-name-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/call-by-name/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-call-by-name-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/call-by-name/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-call-by-name-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/call-by-name/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-call-by-name-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/call-by-name/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-same-place-tomorrow-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 314,
+        "width": 320,
+        "height": 238
+      },
+      "captionTop": 303.8125,
+      "image": "assets/castle-stories/same-place-tomorrow/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-same-place-tomorrow-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/same-place-tomorrow/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-same-place-tomorrow-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/same-place-tomorrow/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-castle-same-place-tomorrow-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 289,
+        "width": 320,
+        "height": 213
+      },
+      "captionTop": 279.0625,
+      "image": "assets/castle-stories/same-place-tomorrow/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ghost-courier-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ghost-courier-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ghost-courier-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ghost-courier-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 305,
+        "width": 320,
+        "height": 229
+      },
+      "captionTop": 294.65625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bat-nurse-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bat-nurse-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bat-nurse-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bat-nurse-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-skeleton-chef-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-skeleton-chef-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-skeleton-chef-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-skeleton-chef-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-mimic-storekeeper-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-mimic-storekeeper-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-mimic-storekeeper-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-mimic-storekeeper-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-spider-tailor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-spider-tailor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-spider-tailor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-spider-tailor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 305,
+        "width": 320,
+        "height": 229
+      },
+      "captionTop": 294.65625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-nightmare-counselor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-nightmare-counselor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-nightmare-counselor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 324,
+        "width": 320,
+        "height": 248
+      },
+      "captionTop": 314.25,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-nightmare-counselor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kobold-recruiter-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kobold-recruiter-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kobold-recruiter-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kobold-recruiter-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-duru-archivist-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-duru-archivist-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-duru-archivist-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-duru-archivist-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 305,
+        "width": 320,
+        "height": 229
+      },
+      "captionTop": 294.65625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kkangtong-engineer-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kkangtong-engineer-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kkangtong-engineer-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-kkangtong-engineer-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ddangkong-miner-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ddangkong-miner-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ddangkong-miner-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-ddangkong-miner-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-chalkak-photographer-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-chalkak-photographer-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 324,
+        "width": 320,
+        "height": 248
+      },
+      "captionTop": 314.25,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-chalkak-photographer-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-chalkak-photographer-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bongtu-postmaster-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bongtu-postmaster-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bongtu-postmaster-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-bongtu-postmaster-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-ward-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 324,
+        "width": 320,
+        "height": 248
+      },
+      "captionTop": 314.25,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-ward-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-ward-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-ward-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-accountant-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 324,
+        "width": 320,
+        "height": 248
+      },
+      "captionTop": 314.25,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-accountant-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-accountant-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-accountant-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-rescue-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-rescue-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-rescue-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-rescue-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-chikchik-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-chikchik-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-chikchik-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-chikchik-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 354,
+        "width": 320,
+        "height": 278
+      },
+      "captionTop": 344.15625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-banchang-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-banchang-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-banchang-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-banchang-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-coco-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-coco-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-coco-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-coco-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 305,
+        "width": 320,
+        "height": 229
+      },
+      "captionTop": 294.65625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 1,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-q-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 349,
+        "width": 320,
+        "height": 273
+      },
+      "captionTop": 339,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 2,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-q-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 3,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-q-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 374,
+        "width": 320,
+        "height": 298
+      },
+      "captionTop": 363.75,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 4,
+      "width": 320,
+      "height": 568,
+      "file": "320-hiring-merc-q-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 329,
+        "width": 320,
+        "height": 253
+      },
+      "captionTop": 319.40625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-first-shift-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/comic/01-first-shift-sd.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-first-shift-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/comic/02-invasion.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-first-shift-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 498,
+        "width": 390,
+        "height": 422
+      },
+      "captionTop": 487.828125,
+      "image": "assets/comic/03-emergency-staff.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-first-shift-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 470,
+        "width": 390,
+        "height": 394
+      },
+      "captionTop": 459.53125,
+      "image": "assets/comic/04-night-duty.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-midnight-soup-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/midnight-soup/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-midnight-soup-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/midnight-soup/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-midnight-soup-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/midnight-soup/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-midnight-soup-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/midnight-soup/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-clean-floor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/clean-floor/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-clean-floor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/clean-floor/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-clean-floor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/clean-floor/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-clean-floor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/clean-floor/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-payday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/payday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-payday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/payday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-payday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/payday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-payday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/payday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-parcel-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/parcel/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-parcel-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/parcel/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-parcel-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/parcel/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-parcel-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/parcel/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-blackout-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/blackout/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-blackout-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/blackout/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-blackout-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/blackout/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-blackout-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/blackout/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-attendance-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/attendance/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-attendance-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/attendance/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-attendance-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/attendance/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-attendance-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 526,
+        "width": 390,
+        "height": 450
+      },
+      "captionTop": 516.125,
+      "image": "assets/castle-stories/attendance/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-cape-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/cape/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-cape-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/cape/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-cape-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/cape/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-cape-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/cape/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-counseling-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/counseling/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-counseling-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/counseling/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-counseling-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/counseling/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-counseling-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/counseling/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inventory-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/inventory/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inventory-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/inventory/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inventory-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/inventory/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inventory-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/inventory/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inspection-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/inspection/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inspection-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/inspection/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inspection-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/inspection/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-inspection-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/inspection/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-coffee-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/coffee/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-coffee-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/coffee/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-coffee-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/coffee/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-coffee-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/coffee/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-birthday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 526,
+        "width": 390,
+        "height": 450
+      },
+      "captionTop": 516.125,
+      "image": "assets/castle-stories/birthday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-birthday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/birthday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-birthday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/birthday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-birthday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/birthday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-rain-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/rain/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-rain-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/rain/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-rain-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/rain/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-rain-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/rain/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-photo-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/photo/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-photo-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/photo/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-photo-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/photo/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-photo-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 526,
+        "width": 390,
+        "height": 450
+      },
+      "captionTop": 516.125,
+      "image": "assets/castle-stories/photo/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-lost-key-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/lost-key/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-lost-key-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 526,
+        "width": 390,
+        "height": 450
+      },
+      "captionTop": 516.125,
+      "image": "assets/castle-stories/lost-key/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-lost-key-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/lost-key/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-lost-key-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 526,
+        "width": 390,
+        "height": 450
+      },
+      "captionTop": 516.125,
+      "image": "assets/castle-stories/lost-key/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-quiet-night-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/quiet-night/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-quiet-night-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/quiet-night/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-quiet-night-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/quiet-night/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-quiet-night-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/quiet-night/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-suggestion-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/suggestion/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-suggestion-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/suggestion/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-suggestion-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/suggestion/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-suggestion-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/suggestion/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-gate-cat-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/gate-cat/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-gate-cat-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/gate-cat/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-gate-cat-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/gate-cat/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-gate-cat-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 551,
+        "width": 390,
+        "height": 475
+      },
+      "captionTop": 541.3125,
+      "image": "assets/castle-stories/gate-cat/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shift-handoff-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 554,
+        "width": 390,
+        "height": 478
+      },
+      "captionTop": 544.421875,
+      "image": "assets/castle-stories/shift-handoff/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shift-handoff-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/shift-handoff/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shift-handoff-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/shift-handoff/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shift-handoff-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/shift-handoff/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-empty-throne-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/empty-throne/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-empty-throne-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/empty-throne/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-empty-throne-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/empty-throne/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-empty-throne-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/empty-throne/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fridge-label-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/fridge-label/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fridge-label-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/fridge-label/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fridge-label-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/fridge-label/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fridge-label-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/fridge-label/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shortcut-trap-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/shortcut-trap/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shortcut-trap-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/shortcut-trap/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shortcut-trap-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/shortcut-trap/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shortcut-trap-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/shortcut-trap/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-praise-approval-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/praise-approval/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-praise-approval-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/praise-approval/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-praise-approval-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/praise-approval/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-praise-approval-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/praise-approval/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-chair-project-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/chair-project/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-chair-project-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/chair-project/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-chair-project-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/chair-project/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-chair-project-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/chair-project/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-laundry-weather-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/laundry-weather/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-laundry-weather-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/laundry-weather/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-laundry-weather-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/laundry-weather/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-laundry-weather-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/laundry-weather/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-guard-dog-holiday-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/guard-dog-holiday/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-guard-dog-holiday-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/guard-dog-holiday/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-guard-dog-holiday-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/guard-dog-holiday/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-guard-dog-holiday-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/guard-dog-holiday/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-sports-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/castle-sports/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-sports-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/castle-sports/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-sports-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/castle-sports/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-sports-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/castle-sports/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-one-note-band-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/one-note-band/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-one-note-band-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/one-note-band/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-one-note-band-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/one-note-band/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-one-note-band-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/one-note-band/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shield-bandage-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/shield-bandage/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shield-bandage-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/shield-bandage/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shield-bandage-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/shield-bandage/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-shield-bandage-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/shield-bandage/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-slow-reply-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/slow-reply/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-slow-reply-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/slow-reply/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-slow-reply-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/slow-reply/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-slow-reply-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/slow-reply/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-flea-market-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/castle-flea-market/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-flea-market-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/castle-flea-market/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-flea-market-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/castle-flea-market/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-castle-flea-market-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/castle-flea-market/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-vacation-form-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/vacation-form/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-vacation-form-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/vacation-form/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-vacation-form-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/vacation-form/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-vacation-form-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/vacation-form/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-overtime-shadow-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/overtime-shadow/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-overtime-shadow-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/overtime-shadow/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-overtime-shadow-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/overtime-shadow/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-overtime-shadow-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/overtime-shadow/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-ghost-scary-story-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/ghost-scary-story/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-ghost-scary-story-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/ghost-scary-story/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-ghost-scary-story-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/ghost-scary-story/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-ghost-scary-story-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/ghost-scary-story/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-plant-duty-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/plant-duty/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-plant-duty-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/plant-duty/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-plant-duty-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/plant-duty/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-plant-duty-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/plant-duty/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-emergency-cookie-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/emergency-cookie/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-emergency-cookie-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/emergency-cookie/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-emergency-cookie-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/emergency-cookie/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-emergency-cookie-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/emergency-cookie/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fallen-star-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/fallen-star/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fallen-star-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/fallen-star/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fallen-star-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/fallen-star/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-fallen-star-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/fallen-star/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-call-by-name-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/call-by-name/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-call-by-name-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/call-by-name/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-call-by-name-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/call-by-name/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-call-by-name-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/call-by-name/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-same-place-tomorrow-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 583,
+        "width": 390,
+        "height": 507
+      },
+      "captionTop": 572.71875,
+      "image": "assets/castle-stories/same-place-tomorrow/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-same-place-tomorrow-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/same-place-tomorrow/02.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-same-place-tomorrow-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 608,
+        "width": 390,
+        "height": 532
+      },
+      "captionTop": 597.90625,
+      "image": "assets/castle-stories/same-place-tomorrow/03.webp",
+      "decoded": true
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-castle-same-place-tomorrow-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 580,
+        "width": 390,
+        "height": 504
+      },
+      "captionTop": 569.609375,
+      "image": "assets/castle-stories/same-place-tomorrow/04.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ghost-courier-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ghost-courier-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ghost-courier-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ghost-courier-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 590,
+        "width": 390,
+        "height": 514
+      },
+      "captionTop": 579.609375,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bat-nurse-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bat-nurse-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bat-nurse-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bat-nurse-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-skeleton-chef-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-skeleton-chef-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-skeleton-chef-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-skeleton-chef-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-mimic-storekeeper-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-mimic-storekeeper-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-mimic-storekeeper-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-mimic-storekeeper-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-spider-tailor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-spider-tailor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-spider-tailor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-spider-tailor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 590,
+        "width": 390,
+        "height": 514
+      },
+      "captionTop": 579.609375,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-nightmare-counselor-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-nightmare-counselor-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-nightmare-counselor-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 590,
+        "width": 390,
+        "height": 514
+      },
+      "captionTop": 579.609375,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-nightmare-counselor-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kobold-recruiter-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kobold-recruiter-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kobold-recruiter-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kobold-recruiter-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-duru-archivist-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-duru-archivist-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-duru-archivist-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-duru-archivist-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 590,
+        "width": 390,
+        "height": 514
+      },
+      "captionTop": 579.609375,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kkangtong-engineer-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kkangtong-engineer-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kkangtong-engineer-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-kkangtong-engineer-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ddangkong-miner-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ddangkong-miner-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ddangkong-miner-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-ddangkong-miner-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-chalkak-photographer-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-chalkak-photographer-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-chalkak-photographer-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-chalkak-photographer-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bongtu-postmaster-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bongtu-postmaster-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bongtu-postmaster-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-bongtu-postmaster-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-ward-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-ward-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-ward-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-ward-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-accountant-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-accountant-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-accountant-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-accountant-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-rescue-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-rescue-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-rescue-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-rescue-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-chikchik-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-chikchik-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-chikchik-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-chikchik-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-banchang-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-banchang-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-banchang-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-banchang-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-coco-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-coco-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-coco-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-coco-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 590,
+        "width": 390,
+        "height": 514
+      },
+      "captionTop": 579.609375,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 1,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-q-1.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 2,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-q-2.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 3,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-q-3.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 646,
+        "width": 390,
+        "height": 570
+      },
+      "captionTop": 636.203125,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    },
+    {
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 4,
+      "width": 390,
+      "height": 844,
+      "file": "390-hiring-merc-q-4.jpg",
+      "art": {
+        "top": 76,
+        "bottom": 618,
+        "width": 390,
+        "height": 542
+      },
+      "captionTop": 607.90625,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true
+    }
+  ],
+  "errors": []
+}
