@@ -13,8 +13,8 @@
  };
  const previousSync=sync;sync=function(){previousSync();GamePerformance.invalidate()};
  const button=document.createElement('button');button.id='power-save-toggle';button.type='button';q('#menu').insertBefore(button,q('#menu-close'));
- const label=()=>{uiText(button,GamePerformance.lowPower?'절전 모드 켜짐 · 30 FPS':'부드러운 화면 · 60 FPS');uiAttr(button,'aria-pressed',GamePerformance.lowPower)};
- button.onclick=()=>GamePerformance.setMode(!GamePerformance.lowPower);document.addEventListener('power-mode-change',label);label();
+ const label=()=>{uiText(button,GameLanguage.t(GamePerformance.lowPower?'절전 모드 켜짐 · 30 FPS':'부드러운 화면 · 60 FPS'));uiAttr(button,'aria-pressed',GamePerformance.lowPower)};
+ button.onclick=()=>GamePerformance.setMode(!GamePerformance.lowPower);document.addEventListener('power-mode-change',label);GameLanguage.subscribe(label);label();
  new MutationObserver(records=>{
   if(records.some(r=>r.type==='attributes'&&r.target.tagName==='DIALOG'))sync();
   GamePerformance.invalidate();

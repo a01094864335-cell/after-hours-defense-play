@@ -84,7 +84,7 @@ if(typeof document.createElement==='function'){
  q('.recruit-shop>p').textContent='일반 90% / 지원 10%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 확정! 미보유 지원을 채용하면 보장 횟수 초기화. 중복은 1포인트, 일반 3포인트·지원 10포인트로 도감에서 지정 채용해요. 보장 팩은 미보유 지원끼리 균등 확률이에요.';
  const analysis=document.createElement('section');analysis.id='run-analysis';q('#result-stats').after(analysis);
  const fxButton=document.createElement('button');fxButton.id='compact-fx-toggle';q('#menu').insertBefore(fxButton,q('#menu-close'));
- const fxLabel=()=>{fxButton.textContent=profile().compactFX?'스킬 연출 · 간결하게':'스킬 연출 · 크게 보기';fxButton.setAttribute('aria-pressed',String(profile().compactFX));document.documentElement.classList.toggle('compact-skill-fx',profile().compactFX);};
+ const fxLabel=()=>{fxButton.textContent=GameLanguage.t(profile().compactFX?'스킬 연출 · 간결하게':'스킬 연출 · 크게 보기');fxButton.setAttribute('aria-pressed',String(profile().compactFX));document.documentElement.classList.toggle('compact-skill-fx',profile().compactFX);};
  fxButton.onclick=()=>{if(saveChange(d=>{d.profile.compactFX=!d.profile.compactFX;}))fxLabel();};
- const oldReset=reset;reset=function(){oldReset();SkillCutin.clear(true);fxLabel();renderJourney();};fxLabel();renderJourney();renderRecruitShop();
+ const oldReset=reset;reset=function(){oldReset();SkillCutin.clear(true);fxLabel();renderJourney();};GameLanguage.subscribe(fxLabel);fxLabel();renderJourney();renderRecruitShop();
 }

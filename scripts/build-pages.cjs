@@ -24,6 +24,7 @@ for(const name of fs.readdirSync(path.join(root,'assets/combat-comic')))if(/\.(w
 files.add('battle-comic.css');
 files.add('battle-exact.css');
 files.add('battle-cohesion.css');
+for(const file of ['game-language.js','language-settings.js','language-settings.css'])files.add(file);
 files.add('wave-rewards.css');
 files.add('shared-chrome.css');
 files.add('shared-chrome.js');
