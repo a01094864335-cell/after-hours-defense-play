@@ -1,6 +1,6 @@
 {
-  "baseRevision": "3edfd726393392a7843b7d53a50be041c2cc9d11",
-  "note": "Candidate working tree over base; final deployment tracked by PR and Actions.",
+  "baseRevision": "7df4a82c68809f5595530f9771a910b4d34448eb",
+  "note": "Candidate working tree over main; CI followup reserves rotated stamp and purchase scroll edges.",
   "files": {
     "assets/text-grid/preview-battle-selected-en.webp": "88bbf2d1eb3d31fe1a356b8f8a93270ad2e7dc2d3c7fb8201038f442a69e8156",
     "assets/text-grid/preview-battle-selected-ko.webp": "cbccc645fed5a4f9c18a825f3ca5cd38d384870d05fc666a25bfe1897f77bbee",
@@ -10,13 +10,13 @@
     "assets/text-grid/preview-result-normal-en.webp": "a9fb0678f4af95739b626b37dc02d3945e0b1d18b847c906c3af30d7bcfb2d18",
     "assets/text-grid/preview-result-normal-ko-bottom.webp": "e642bb78a6dce1273f7b33a4194b69ba95cfd2d3a9d4e92dd053f9e69c87af48",
     "assets/text-grid/preview-result-normal-ko.webp": "e664d7dca908558c939663b59b755c0e3334700fbce5c43429c5554f770772da",
-    "assets/text-grid/preview-roster-en-bottom.webp": "f4f66dabe763ff662b57a04da7243af5598f8f0a8cec2918c09910f353af0e01",
-    "assets/text-grid/preview-roster-en.webp": "5b7fdf9461ab435f32bbe5f13fe7df4979d6c6ac4d3aff7cf6a0b5f0dba227dc",
+    "assets/text-grid/preview-roster-en-bottom.webp": "750d5fa388dea1d0c020dfacca2b830ec87a62e932b73ce2cc63ef8655366dd9",
+    "assets/text-grid/preview-roster-en.webp": "cd711f7024093f9b3b3a354eae4cb639e42ef5f6e63d69ae4db069ef8d064ceb",
     "assets/text-grid/preview-roster-ko-bottom.webp": "e70281df69ae8bff7edbfd1817172993e3bee2b9c77b004e5563aa8bde80f9a4",
-    "assets/text-grid/preview-roster-ko.webp": "872a7be1a50fc5e16bbb50b64733487fe5e0607a363f103f8383e9dde8b1e305",
-    "assets/text-grid/preview-shop-pack-en-bottom.webp": "1ea4cce3b6c26653429ad8c36d6e93c76b98fdba422a2ec7031e88bdad9e7537",
+    "assets/text-grid/preview-roster-ko.webp": "99e5cd61dfd924c9792b4d28b8c574e8a390277dafcf157c043664be4def938e",
+    "assets/text-grid/preview-shop-pack-en-bottom.webp": "8fb29f30b08595d6490fccf7ef492cae7ca25c79950a765858ac588719144e5f",
     "assets/text-grid/preview-shop-pack-en.webp": "6b25a4f8828b7c50f56e9785111b24db291592e435d74beb8c57058e29a58447",
-    "assets/text-grid/preview-shop-pack-ko-bottom.webp": "92d69506358ef66d764a7c25e6cb429ca6d1ee3982c961981bbf658b7a1c0016",
+    "assets/text-grid/preview-shop-pack-ko-bottom.webp": "25c3024299989438ff7a62c3c100d4aae0019f78b0f997c405d3207f7b67806c",
     "assets/text-grid/preview-shop-pack-ko.webp": "284be49c7756468682f04e0dbf606c63c7757bfe807685579c0d4571b2a6c66e",
     "assets/text-grid/preview-training-staff-en-bottom.webp": "02eec3b65e2e92cdc5674768d8a4433addf174bd37d44bab7a033ed0cfca912d",
     "assets/text-grid/preview-training-staff-en.webp": "8feb1945da0de0b717a2550299a8d50c932c1d122db94b398e8bd2e562cac494",
@@ -24,8 +24,8 @@
     "assets/text-grid/preview-training-staff-ko.webp": "b96bbb8ac901d152e77224b87ff8be3cda5930f347b583fa514c6ed922d488c1",
     "assets/text-grid/review.html": "14208ef4127227351df5824a71de472055cae83c80bac19f4a48a992a89e9b7f",
     "assets/text-grid/shop-hero-wordless.webp": "2836dffe73e25c9e5df9d7463bd747dc0e7670525096ad17e9290fe34ab63610",
-    "index.html": "2389aafab13817d9be73d57f405a74c92602e83c69021e03d0e25180add4a2b9",
-    "text-grid.css": "21c30ea9c778e4ee1e8e414423c55c0e94fb8125611274f8125091dbd4f09406",
+    "index.html": "71085a4f09cf314d29e98a303207bdde5a906c5ca207e741d3948453b21fd74c",
+    "text-grid.css": "9bf6443a07b0fdb00d98daa3f9a1215e1a979bb17865db9810f2e1a928c7e4de",
     "text-grid.js": "f9592e874c270ab19a36c96b0d24bdbca5b38ccb0b673d1b9e36c4c76cbc96a0"
   }
 }

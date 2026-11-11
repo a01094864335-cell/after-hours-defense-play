@@ -17,99 +17,13 @@
     "en-stress": 162
   },
   "baselineStates": 54,
-  "images": 1513,
+  "images": 1559,
   "acceptedPageErrors": [],
-  "supersededHarnessFailures": [
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "320x568",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "320x568",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "320x568",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "320x568",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "390x844",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "390x844",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "390x844",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "390x844",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "430x932",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "430x932",
-      "lang": "ko",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-fresh",
-      "size": "430x932",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    },
-    {
-      "source": "recheck",
-      "id": "lobby-rich",
-      "size": "430x932",
-      "lang": "en",
-      "error": "locator.waitFor: Timeout 3500ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-lobby-host') to be visible\u001b[22m\n\u001b[2m    11 × locator resolved to hidden <div id=\"asset-lobby-host\"></div>\u001b[22m\n"
-    }
-  ],
+  "supersededHarnessFailures": [],
   "validation": {
     "nodeTests": 3257,
     "browserTests": 36,
-    "targetedBrowserTests": 5,
-    "status": "passed"
+    "targetedBrowserTests": 5
   },
   "geometryNote": "Raw rectangle and padding findings remain candidates. Layered/rotated/scroll-clipped content is visually classified; not all candidates are defects.",
   "matrixFinal": {
@@ -118,5 +32,10 @@
     "languages": 2,
     "completed": 472,
     "missing": 0
+  },
+  "ciFollowup": {
+    "reason": "Rotated duty stamp overflow under CI Chromium and purchase scroll edge clipping",
+    "localSharedChromeTests": 9,
+    "thresholdsUnchanged": true
   }
 }

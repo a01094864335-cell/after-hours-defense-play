@@ -26,3 +26,11 @@ for id,label in screens.items():
   previews.append({'id':id,'label':label,'lang':lang,'src':dest,'bottom':bottom})
 (PUBLIC/'review.html').write_text('<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>한글·영문 후보 UI 여백 검수</title><style>'+style+'</style><header><h1>한글·영문 후보 UI 여백 검수</h1><p>주요 6화면 실제 캡처. 영문은 UI 번역 후보·레이아웃 검수이며 출시된 영문판이 아닙니다. 일부 본문과 원화의 한글은 정식 번역/애셋 교체 후 재검수가 필요합니다.</p><p><a href="../../">게임 열기</a> · <a href="https://github.com/a01094864335-cell/after-hours-defense-play/blob/main/docs/text-grid-audit-20261111.md">전체 화면 발견·수정 문서</a></p><label>언어 <select id="lang"><option value="ko">한국어</option><option value="en">English copy proposals</option></select></label><label>위치 <select id="position"><option value="top">상단</option><option value="bottom">하단</option></select></label></header><main></main><script>const data='+json.dumps(previews,ensure_ascii=False)+';function render(){document.querySelector("main").replaceChildren(...data.filter(x=>x.lang===lang.value).map(x=>{const f=document.createElement("figure"),i=document.createElement("img"),c=document.createElement("figcaption");i.src=position.value==="bottom"&&x.bottom?x.bottom:x.src;i.loading="lazy";i.alt=x.label;c.textContent=x.label;f.append(i,c);return f}));}lang.onchange=position.onchange=render;render();</script></html>')
 print(len(items),'gallery images;',len(previews),'public previews')
+
+lines=['# 전체 캡처 인덱스','','영문은 출시 번역이 아닌 문구 후보이며 en-stress는 긴 영문 샘플·130% 검사입니다. [검수 문서](../../docs/text-grid-audit-20261111.md) · [필터 갤러리](index.html)','','| 화면 | 언어 | 크기 | 캡처 |','| --- | --- | --- | --- |']
+for r in rows:
+ links=[f"[상단]({r['screenshot']})"] if r.get('screenshot') else []
+ if r.get('bottomScreenshot'):links.append(f"[하단]({r['bottomScreenshot']})")
+ links += [f"[중간 {i+1}]({x['screenshot']})" for i,x in enumerate(r.get('scrolls',[]))]
+ lines.append(f"| {r['id']} | {r['lang']} | {r['size']} | {' · '.join(links)} |")
+(QA/'INDEX.md').write_text('\n'.join(lines)+'\n')
