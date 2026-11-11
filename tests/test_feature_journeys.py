@@ -29,6 +29,7 @@ class FeatureJourneyTests(unittest.TestCase):
         page = self.open(390, 844)
         page.evaluate('saveChange(d=>{d.coins=321;d.tutorialComplete=true});renderMeta()')
         page.locator('#asset-lobby-host [data-proxy="#menu-open"]').click()
+        page.locator('#menu-tab-manage').click()
         page.locator('#save-transfer-open').click()
         with page.expect_download() as download:
             page.locator('#save-download').click()

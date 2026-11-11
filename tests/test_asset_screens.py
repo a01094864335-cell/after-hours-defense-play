@@ -79,6 +79,8 @@ class AssetScreenTests(unittest.TestCase):
             page.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
             ui = page.locator('#asset-training-host')
             self.assertTrue(ui.locator('#upgrade').is_disabled())
+            self.assertTrue(ui.locator('.scroll').evaluate('e=>e.scrollHeight<=e.clientHeight+2'))
+            ui.locator('[data-ss-label="effects"]').click()
             self.assertTrue(ui.locator('.scroll').evaluate('e=>e.scrollHeight>e.clientHeight'))
             ui.locator('summary').first.click()
             self.assertTrue(ui.locator('details').first.evaluate('e=>e.open'))

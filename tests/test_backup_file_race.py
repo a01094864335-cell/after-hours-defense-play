@@ -14,6 +14,7 @@ class BackupFileRaceTests(unittest.TestCase):
     def prepare(self):
         page = self.open(390, 844)
         page.locator('#asset-lobby-host [data-proxy="#menu-open"]').click()
+        page.locator('#menu-tab-manage').click()
         page.locator('#save-transfer-open').click()
         data = page.evaluate('SaveTransfer.exportData()')
         page.evaluate('''() => {
