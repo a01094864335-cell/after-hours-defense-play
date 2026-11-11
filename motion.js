@@ -35,6 +35,28 @@ const Motion = (() => {
     return ((age + phase * .731) % 3.7) > 3.49 ? 1 : 0;
   }
 
+  // Four source sheets lack baked sticker edges. Also cover larger skill cutins.
+  // Cache small display-sized masks, never the full-resolution atlas or each tick.
+  const outlineCache=new Map(),missingBorders=new Set(['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']);
+  let outlinePixels=0;
+  function outline(im,key,f,pose,w,h,radius){
+    if(typeof document.createElement!=='function')return null;
+    const id=[key,sheets[key].sha256,pose,w,h,radius].join('|');
+    if(outlineCache.has(id))return outlineCache.get(id);
+    const pad=Math.ceil(radius)+1,n=2,c=document.createElement('canvas');
+    c.width=(w+2*pad)*n;c.height=(h+2*pad)*n;
+    const mask=c.getContext('2d');mask.scale(n,n);mask.imageSmoothingEnabled=true;
+    for(let i=0;i<16;i++){const a=i*Math.PI/8;mask.drawImage(im,f.x,f.y,f.w,f.h,pad+Math.cos(a)*radius,pad+Math.sin(a)*radius,w,h)}
+    mask.globalCompositeOperation='source-in';mask.fillStyle='#fff';mask.fillRect(0,0,c.width/n,c.height/n);
+    const pixels=c.width*c.height,value={canvas:c,pad,pixels};
+    // Limit both entry count and backing-store memory (16 MiB of RGBA pixels).
+    while(outlineCache.size&&(outlineCache.size>=48||outlinePixels+pixels>4*1024*1024)){
+      const oldest=outlineCache.keys().next().value;outlinePixels-=outlineCache.get(oldest).pixels;outlineCache.delete(oldest);
+    }
+    if(pixels<=4*1024*1024){outlineCache.set(id,value);outlinePixels+=pixels}
+    return value;
+  }
+
   function draw(ctx, key, x, y, height, pose = 0, options = {}) {
     const data = sheets[key], im = asset(key);
     if (!data || !im?.complete || !im.naturalWidth) return false;
@@ -46,9 +68,13 @@ const Motion = (() => {
     ctx.scale(options.flip ? -1 : 1, 1);
     if (options.angle) ctx.rotate(options.angle);
     if (options.alpha !== undefined) ctx.globalAlpha *= options.alpha;
-    ctx.drawImage(im, f.x, f.y, f.w, f.h,
-      Math.round(-f.pivotX * scale), Math.round(-f.pivotY * scale),
-      Math.round(f.w * scale), Math.round(f.h * scale));
+    const dx=Math.round(-f.pivotX*scale),dy=Math.round(-f.pivotY*scale),w=Math.round(f.w*scale),h=Math.round(f.h*scale);
+    const radius=options.outline??(missingBorders.has(key)?Math.max(1,Math.min(8,height*.02)):0);
+    if(radius>0&&w>0&&h>0){
+      const edge=outline(im,key,f,pose,w,h,radius);
+      if(edge)ctx.drawImage(edge.canvas,dx-edge.pad,dy-edge.pad,w+2*edge.pad,h+2*edge.pad);
+    }
+    ctx.drawImage(im, f.x, f.y, f.w, f.h,dx,dy,w,h);
     ctx.restore();
     return true;
   }

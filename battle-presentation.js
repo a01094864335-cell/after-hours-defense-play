@@ -8,17 +8,31 @@ window.BattlePresentation=(()=>{
  function unproject(p,w,h){const a=axes(w,h);return{x:map(p.x,a.x[1],a.x[0]),y:map(p.y,a.y[1],a.y[0])}}
  function point(e){const r=canvas.getBoundingClientRect();return unproject({x:e.clientX-r.left,y:e.clientY-r.top},r.width,r.height)}
  function screenPoint(p){const r=canvas.getBoundingClientRect(),v=project(p,r.width,r.height);return{x:r.left+v.x,y:r.top+v.y}}
- if(!enabled)return {enabled,axes,project,unproject,point,screenPoint};
+ // Compare the idle silhouette's footprint, not atlas height or the widest attack.
+ // One scale covers all six poses so gesturing never makes a character shrink.
+ const extents=new WeakMap();
+ function bodyBounds(data){
+  let value=extents.get(data);
+  if(!value){const idle=data.frames[0];value={presence:Math.sqrt(idle.w*idle.h),top:Math.max(...data.frames.map(f=>f.pivotY)),bottom:Math.max(...data.frames.map(f=>f.h-f.pivotY)),side:Math.max(...data.frames.map(f=>Math.max(f.pivotX,f.w-f.pivotX)))};extents.set(data,value)}
+  return value;
+ }
+ function staffSize(data,row,cell){
+  const b=bodyBounds(data),space=Math.max(1,cell-7),vertical=Math.max(1,row-13);
+  const presence=Math.min(cell*.80,row*.70);
+  // Narrow silhouettes can read taller despite equal footprint; keep reviewed
+  // per-character art corrections board-only, without rescaling source pixels.
+  return Math.min(presence/b.presence,space/(2*b.side),vertical/(b.top+b.bottom))*data.height*(data.boardScale??1);
+ }
+ const missingBorders=new Set(['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']);
+ if(!enabled)return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds};
  const stage=q('.board-stage'),view=document.createElement('canvas');view.id='battle-paint';view.setAttribute('aria-hidden','true');view.style.pointerEvents='none';stage.prepend(view);q('#battle').classList.add('battle-d');
  const staffKeys=new Set(kinds.map(kind=>kind.file));
  const paint=view.getContext('2d');let collecting=false,actors=[],texts=[],width=0,height=0,projection=null;
- const extents=new WeakMap(),fonts=new Map();
+ const fonts=new Map();
  function layout(){if(projection&&projection.width===width&&projection.height===height)return projection;const a=axes(width,height),patches=[];for(let y=0;y<a.y[0].length-1;y++)for(let x=0;x<a.x[0].length-1;x++){const sx=a.x[0][x],sy=a.y[0][y];patches.push([sx,sy,a.x[0][x+1]-sx,a.y[0][y+1]-sy,a.x[1][x],a.y[1][y],a.x[1][x+1]-a.x[1][x],a.y[1][y+1]-a.y[1][y]])}fonts.clear();return projection={width,height,a,patches,row:(a.y[1][3]-a.y[1][2])/3,cell:(map(490,...a.x)-map(110,...a.x))/5}}
- function bodyBounds(data){let value=extents.get(data);if(!value){value={height:Math.max(...data.frames.map(f=>f.h)),width:Math.max(...data.frames.map(f=>f.w))};extents.set(data,value)}return value}
  function viewPoint(p,a){return{x:map(p.x,...a.x),y:map(p.y,...a.y)}}
  const oldMotion=Motion.draw;
  // Every battle actor uses a full-body motion sheet; menu portraits remain independent.
- const hasBody=key=>!!Motion.sheets[key];
  Motion.draw=function(target,key,x,y,size,pose=0,options={}){
   if(!collecting||target!==ctx)return oldMotion(target,key,x,y,size,pose,options);
   const m=ctx.getTransform();actors.push({key,x:m.a*x+m.c*y+m.e,y:m.b*x+m.d*y+m.f,size,pose,options:{...options,alpha:(options.alpha??1)*ctx.globalAlpha}});Motion.preload(key);return true;
@@ -33,7 +47,7 @@ window.BattlePresentation=(()=>{
   NightWatchArt.selection(paint,width,height);
   const {row,cell}=geometry,enemyHUD=[];
   for(const actor of actors){const p=viewPoint(actor,a),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.05:1.12);
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){if(hasBody(actor.key)){const bounds=bodyBounds(data),maxH=bounds.height,maxW=bounds.width;size=Math.min(size,row*.82,Math.max(12,row-13)*data.height/maxH,(cell-4)*data.height/maxW)}else size=Math.min(size,row*.82,Math.max(12,row-13),cell-4);}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key))actor.options.outline=1.25;}else if(data.group==='enemy')size=Math.min(size,Math.min(52,width*.13)*data.height/f.w);if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=viewPoint(t,a);let font=fonts.get(t.font);if(!font){font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');fonts.set(t.font,font)}paint.save();paint.font=font;paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
@@ -60,5 +74,5 @@ window.BattlePresentation=(()=>{
  const oldSkill=syncSkill;syncSkill=function(){oldSkill();selection()};
  const oldSync=sync;sync=function(){oldSync();selection();uiText(q('#battle-remaining'),Math.max(0,enemies.filter(e=>e.hp>0&&!e.escaped).length+queue.length));uiText(q('#battle-next-boss'),(Math.floor(wave/5)+1)*5);for(const key of Object.keys(itemCatalog)){uiAttr(q('#item-'+key),'aria-label',itemCatalog[key].name+' · 보유 '+itemCount(key)+'개');uiAttr(q('#item-'+key),'aria-pressed',itemMode===key)}};
  selection();fitBoard();
- return {enabled,axes,project,unproject,point,screenPoint,resize:fitBoard};
+ return {enabled,axes,project,unproject,point,screenPoint,staffSize,bodyBounds,resize:fitBoard};
 })();

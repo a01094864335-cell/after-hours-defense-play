@@ -146,60 +146,62 @@
       "file": "assets/character-motion/slime-cleaner.webp",
       "fallback": "assets/character-motion/slime-cleaner-idle.webp",
       "faceReference": "assets/character-portraits/slime-cleaner.webp",
-      "width": 964,
-      "sheetHeight": 681,
-      "height": 342.75,
+      "width": 944,
+      "sheetHeight": 578,
+      "height": 282.0,
       "frames": [
         {
           "x": 2,
           "y": 2,
-          "w": 249,
-          "h": 343,
-          "pivotX": 122.25,
-          "pivotY": 342.0
+          "w": 261,
+          "h": 282,
+          "pivotX": 126.75,
+          "pivotY": 281.25
         },
         {
-          "x": 346,
+          "x": 334,
           "y": 2,
-          "w": 259,
-          "h": 343,
-          "pivotX": 122.25,
-          "pivotY": 342.0
+          "w": 264,
+          "h": 282,
+          "pivotX": 139.5,
+          "pivotY": 280.5
         },
         {
-          "x": 632,
+          "x": 630,
           "y": 2,
-          "w": 313,
-          "h": 328,
-          "pivotX": 157.5,
-          "pivotY": 327.0
+          "w": 312,
+          "h": 277,
+          "pivotX": 156.0,
+          "pivotY": 276.0
         },
         {
           "x": 2,
-          "y": 349,
-          "w": 340,
-          "h": 326,
-          "pivotX": 170.25,
-          "pivotY": 324.75
-        },
-        {
-          "x": 346,
-          "y": 349,
-          "w": 282,
-          "h": 330,
-          "pivotX": 132.0,
-          "pivotY": 329.25
-        },
-        {
-          "x": 632,
-          "y": 349,
-          "w": 330,
-          "h": 314,
+          "y": 288,
+          "w": 328,
+          "h": 288,
           "pivotX": 162.0,
-          "pivotY": 312.75
+          "pivotY": 286.5
+        },
+        {
+          "x": 334,
+          "y": 288,
+          "w": 292,
+          "h": 282,
+          "pivotX": 142.5,
+          "pivotY": 281.25
+        },
+        {
+          "x": 630,
+          "y": 288,
+          "w": 308,
+          "h": 276,
+          "pivotX": 153.75,
+          "pivotY": 275.25
         }
       ],
-      "sha256": "453b7a79dfffed21815b33164606f491c11bfb494dc73a64f2cdc35cf64c95e8"
+      "sha256": "6bbc10637bde14ec8bc97425205e3a0221e7b5c06a732549eafb66be0e9d579a",
+      "bodyForm": "legless-slime",
+      "sourceMaster": "designs/character-form-20261111/slime-cleaner-master.png"
     },
     "gobi": {
       "name": "고비",
@@ -261,7 +263,8 @@
           "pivotY": 348.75
         }
       ],
-      "sha256": "c1aa612a3a2889bc93947413894235c20ad7f7dc747e1eb215e40126199dd8f9"
+      "sha256": "c1aa612a3a2889bc93947413894235c20ad7f7dc747e1eb215e40126199dd8f9",
+      "boardScale": 0.88
     },
     "electric-technician": {
       "name": "찌릿",
@@ -332,60 +335,62 @@
       "file": "assets/character-motion/ghost-courier.webp",
       "fallback": "assets/character-motion/ghost-courier-idle.webp",
       "faceReference": "assets/character-portraits/ghost-courier.webp",
-      "width": 1058,
-      "sheetHeight": 704,
-      "height": 348.75,
+      "width": 986,
+      "sheetHeight": 623,
+      "height": 308.25,
       "frames": [
         {
           "x": 2,
           "y": 2,
-          "w": 304,
-          "h": 349,
-          "pivotX": 156.75,
-          "pivotY": 348.0
+          "w": 278,
+          "h": 309,
+          "pivotX": 142.5,
+          "pivotY": 307.5
         },
         {
-          "x": 368,
+          "x": 329,
           "y": 2,
-          "w": 314,
-          "h": 349,
-          "pivotX": 156.75,
-          "pivotY": 348.0
+          "w": 291,
+          "h": 309,
+          "pivotX": 142.5,
+          "pivotY": 307.5
         },
         {
-          "x": 726,
+          "x": 666,
           "y": 2,
-          "w": 319,
-          "h": 349,
-          "pivotX": 156.75,
-          "pivotY": 348.0
+          "w": 296,
+          "h": 309,
+          "pivotX": 142.5,
+          "pivotY": 307.5
         },
         {
           "x": 2,
-          "y": 355,
-          "w": 362,
-          "h": 336,
-          "pivotX": 180.75,
-          "pivotY": 334.5
+          "y": 315,
+          "w": 323,
+          "h": 294,
+          "pivotX": 151.5,
+          "pivotY": 292.5
         },
         {
-          "x": 368,
-          "y": 355,
-          "w": 354,
-          "h": 347,
-          "pivotX": 178.5,
-          "pivotY": 345.75
+          "x": 329,
+          "y": 315,
+          "w": 333,
+          "h": 306,
+          "pivotX": 168.75,
+          "pivotY": 305.25
         },
         {
-          "x": 726,
-          "y": 355,
-          "w": 330,
-          "h": 345,
-          "pivotX": 158.25,
-          "pivotY": 343.5
+          "x": 666,
+          "y": 315,
+          "w": 318,
+          "h": 303,
+          "pivotX": 156.0,
+          "pivotY": 301.5
         }
       ],
-      "sha256": "8b2e60d912d711f133e6b9d0259dbe60f0a07f10f002ed7eeec75c9cdd3622b1"
+      "sha256": "6beda5b30fa25d196956a377bc5514b662083b6fcd2ee1102ba07e0e284fe689",
+      "bodyForm": "floating-ghost",
+      "sourceMaster": "designs/character-form-20261111/ghost-courier-master.png"
     },
     "bat-nurse": {
       "name": "나비",
