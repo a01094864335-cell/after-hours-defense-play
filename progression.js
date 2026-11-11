@@ -35,7 +35,7 @@ function readDailySnapshot(s){
 }
 function ensureProgress(){if(!Array.isArray(meta.deck)||meta.deck.length>5||new Set(meta.deck).size!==meta.deck.length||meta.deck.some(id=>!kinds.some(k=>k.file===id)))meta.deck=starterDeck.map(i=>kinds[i].file);if(typeof meta.tutorialComplete!=='boolean')meta.tutorialComplete=false;if(!meta.tutorialComplete)meta.deck=starterDeck.map(i=>kinds[i].file)}
 ensureProgress();
-function initRunProgress(){ensureProgress();tutorialMode=!meta.tutorialComplete;window.DiscountTutorial?.reset(tutorialMode);tutorialWon=false;tutorialCheckpoint=null;bonusPending=false;guaranteedMerge=false;runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));trainingItems={grade:0,kind:0,king:0};seenStaff=new Set();runStats=kinds.map(()=>({damage:0,kills:0,income:0,highest:0}));savedElapsed=0;window.TacticalDuty?.reset();configureDailyRun();renderProgress()}
+function initRunProgress(){rewardBundle=null;rewardSupport=null;ensureProgress();tutorialMode=!meta.tutorialComplete;window.DiscountTutorial?.reset(tutorialMode);tutorialWon=false;tutorialCheckpoint=null;bonusPending=false;guaranteedMerge=false;runDeck=meta.deck.map(id=>kinds.findIndex(k=>k.file===id));trainingItems={grade:0,kind:0,king:0};seenStaff=new Set();runStats=kinds.map(()=>({damage:0,kills:0,income:0,highest:0}));savedElapsed=0;window.TacticalDuty?.reset();configureDailyRun();renderProgress()}
 function renderProgress(){uiText(document.querySelector('#mode-name'),!meta.tutorialComplete?'신입 연수 · 10웨이브':'마왕성 야간 방어');uiText(document.querySelector('#mode-desc'),!meta.tutorialComplete?'처음 한 번 배우고 무한 모드로':'무한 웨이브 · 싱글 플레이');const deckMarkup=meta.deck.map(id=>{const k=kinds.find(k=>k.file===id);return '<img src="'+staffImagePath(id)+'" alt="'+k.name+'">'}).join('');const deckPortraits=document.querySelector('#deck-summary');if(deckPortraits.motionMarkup!==deckMarkup){deckPortraits.motionMarkup=deckMarkup;deckPortraits.innerHTML=deckMarkup;Motion.mount(deckPortraits)}const attackers=meta.deck.filter(id=>![2,3,9,10,11,16].includes(kinds.findIndex(k=>k.file===id))).length;uiText(document.querySelector('#deck-label'),meta.deck.length+' / 5');uiAttr(document.querySelector('#deck-open'),'aria-label','근무 편성 '+meta.deck.length+'명 · 공격 '+attackers+' · 지원 '+(meta.deck.length-attackers));uiProp(document.querySelector('#deck-open'),'disabled',playing&&!ended);uiProp(document.querySelector('#daily-option'),'hidden',false);const daily=DAILY_RULES[dailyRule];uiText(document.querySelector('#daily-label'),dailyEnabled?daily.name:tutorialMode?'신입 연수 · 기본 규칙':'이전 당직 · 기본 규칙');uiText(document.querySelector('#daily-effect'),dailyEnabled?daily.effect:tutorialMode?'10웨이브 기본 규칙':'시작 시 규칙 유지');uiText(document.querySelector('#daily-kind'),dailyEnabled?daily.kind:tutorialMode?'연수':'기존 당직');uiAttr(document.querySelector('#daily-kind'),'data-kind',dailyEnabled?daily.kind:'기존');uiText(document.querySelector('#daily-current'),dailyEnabled?'변주 · '+daily.name:tutorialMode?'신입 연수 · 기본 규칙':'이전 당직 · 기본 규칙');uiAttr(document.querySelector('#daily-current'),'data-enabled',dailyEnabled);uiText(document.querySelector('#daily-date'),tutorialMode?'연수 수료 후 오늘의 변주 적용':(dailyDate||'기존 당직')+' · 자동 적용');uiProp(document.querySelector('#tutorial-strip'),'hidden',!tutorialMode);uiText(document.querySelector('#tutorial-strip'),'신입 연수 '+Math.max(1,wave)+' / 10 · '+tutorialHint());uiText(document.querySelector('#next-boss'),'다음 군단장: '+nextBossText());}
 function tutorialHint(){return wave===0?'직원을 5회 소환하면 자동으로 당직이 시작돼요':wave<3?'소환 버튼으로 방어선을 채워보세요':wave<5?'같은 직원·같은 등급을 합치고 장비를 지급하세요':wave===5?bossForWave(wave).short+' 등장! '+bossForWave(wave).counter:wave<9?'체험 직원 스킬과 연습용 아이템을 사용해보세요':'마지막 두 공격은 직접 지휘해보세요'}
 function itemCount(key){return meta.items[key]+(tutorialMode?trainingItems[key]:0)}
@@ -43,57 +43,102 @@ function consumeItem(key){if(tutorialMode&&trainingItems[key]>0){trainingItems[k
 function showGuide(title,text){document.querySelector('#guide-title').textContent=title;document.querySelector('#guide-text').textContent=text;paused=true;sync();document.querySelector('#guide').showModal()}
 function afterWaveStart(){if(tutorialMode){if(wave===3){const empty=board.map((u,i)=>u?-1:i).filter(i=>i>=0);for(const i of empty.slice(0,2))board[i]={type:0,pip:1,cool:0,attack:0,arrival:.4,income:5};sp=Math.max(sp,150)}if(wave===6){let i=board.findIndex(u=>!u);if(i<0)i=0;board[i]={type:0,pip:5,cool:0,attack:0,arrival:.5,income:5};trainingItems={grade:2,kind:2,king:1};selected=i}noteRoster();tutorialCheckpoint=runSnapshot();if([1,3,5,6,9].includes(wave))showGuide('신입 연수 · '+wave+'번째 공격',tutorialHint()+(wave===6?' 5등급 경비원과 연습 아이템을 지급했어요. 연수 종료 시 회수됩니다.':''))}if(wave===3&&window.DiscountTutorial?.start())tutorialCheckpoint=runSnapshot();renderProgress();saveActiveRun()}
 function advanceProgress(){if(tutorialMode&&wave>=10){tutorialWon=true;ended=true;settleRun();sync();clearActiveRun();return}if(wave>0&&wave%5===0){bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal();saveActiveRun();sync();return}nextWave()}
+// Three stable, atomic offers. Targets and quantities are saved before displaying them.
+let rewardBundle=null,rewardSupport=null;
 function perkReward(){
- const tier=Math.max(1,Math.floor(wave/5)),summons=Math.min(tier,4)+1;
- return {tier,sp:Math.max(150*tier,Array.from({length:summons},(_,i)=>summonBasePrice(cost+i*10)).reduce((a,b)=>a+b,0)),life:Math.min(3,tier),merges:Math.min(3,1+Math.floor(tier/2)),equipment:Math.min(3,Math.max(1,tier-2)),pip:Math.min(5,3+Math.floor((tier-2)/2))};
+ const tier=Math.max(1,Math.floor(wave/5)),summons=Math.min(5,tier+1);
+ return {tier,summons,sp:Array.from({length:summons},(_,i)=>summonBasePrice(cost+i*10)).reduce((a,b)=>a+b,0),life:1,merges:wave===15?2:1,equipment:wave>=30?2:1,pip:wave>=30?5:wave>=25?4:3};
+}
+function rewardSupportMultiplier(kind,e){
+ if(tutorialMode||!rewardSupport||wave>rewardSupport.until)return 1;
+ return kind==='speed'?(rewardSupport.id==='slow'?.9:1):rewardSupport.id==='power'?1.1:rewardSupport.id==='boss'&&e?.type==='boss'&&!e.decoy?1.2:1;
+}
+function readRewards(s){
+ const bundle=s.rewardBundle??null,support=s.rewardSupport??null;
+ if(support&&(!['power','boss','slow'].includes(support.id)||!Number.isSafeInteger(support.until)||support.until<5||support.until%5||support.until>s.wave+5))throw Error('invalid reward support');
+ if(bundle){
+  if(!s.bonusPending||bundle.wave!==s.wave||bundle.wave%5||!Array.isArray(bundle.offers)||bundle.offers.length!==3||new Set(bundle.offers.map(o=>o.id)).size!==3)throw Error('invalid reward offers');
+  for(const o of bundle.offers){
+   if(!o||!['sp','life','merge','equipment','staff','keep','build','power','boss','slow'].includes(o.id)||!Number.isSafeInteger(o.amount)||o.amount<1||o.amount>(o.id==='sp'?100000000:5))throw Error('invalid reward offer');
+   if(['equipment','staff'].includes(o.id)&&(!Number.isInteger(o.type)||!s.runDeck.includes(o.type)))throw Error('invalid reward target');
+   if(o.id==='build'&&!['chain','economy','guard'].includes(o.build))throw Error('invalid reward strategy');
+   if(o.id==='life'&&o.amount!==1||o.id==='merge'&&o.amount>2||o.id==='equipment'&&o.amount>2||o.id==='staff'&&![3,4,5].includes(o.amount))throw Error('invalid reward quantity');
+  }
+ }
+ return {bundle:bundle&&JSON.parse(JSON.stringify(bundle)),support:support&&{...support}};
+}
+function rewardEligible(o){
+ const t=window.TacticalDuty?.snapshot();
+ if(o.id==='sp')return !(board.every(u=>u&&u.pip===7)&&runDeck.every(type=>levels[type]>=5));
+ if(o.id==='life')return life<3;
+ if(o.id==='merge')return Number(guaranteedMerge)<3&&board.some(u=>!u||u.pip<7);
+ if(o.id==='equipment')return runDeck.includes(o.type)&&levels[o.type]<5;
+ if(o.id==='staff')return runDeck.includes(o.type)&&board.some(u=>!u);
+ if(o.id==='keep')return !tutorialMode&&!t?.keep&&board.some(u=>!u||u.pip<7);
+ if(o.id==='build')return !tutorialMode&&!t?.build&&(o.build!=='economy'||runDeck.includes(3)||activeMerc==='accountant');
+ return true;
+}
+function makeRewardOffers(){
+ const r=perkReward(),deployed=runDeck.filter(type=>board.some(u=>u?.type===type));
+ const equipmentType=[...runDeck].sort((a,b)=>Number(deployed.includes(b))-Number(deployed.includes(a))||levels[a]-levels[b]||a-b).find(type=>levels[type]<5);
+ const staffType=[...runDeck].sort((a,b)=>Math.max(0,...board.filter(u=>u?.type===a).map(u=>u.pip))-Math.max(0,...board.filter(u=>u?.type===b).map(u=>u.pip))||a-b)[0];
+ const o=id=>({id,amount:id==='sp'?r.sp:id==='merge'?r.merges:id==='equipment'?r.equipment:id==='staff'?r.pip:1,...(id==='equipment'?{type:equipmentType}:id==='staff'?{type:staffType}:id==='build'?{build:runDeck.includes(3)||activeMerc==='accountant'?'economy':'chain'}:{})});
+ const tier=r.tier,growth=tier===1?'merge':tier===2?'equipment':tier===3?'staff':tier===4?'keep':tier===5?'staff':tier===6?'equipment':['equipment','staff','keep'][(tier-7)%3];
+ const situation=life<3?'life':tier===1?'equipment':tier===2||tier===5?'build':tier===3?'merge':tier===4?'equipment':tier===6?'staff':'power';
+ const picked=[];
+ for(const preferred of ['sp',growth,situation]){
+  const candidates=[preferred,'equipment','merge','staff','build','keep','power','boss','slow'];
+  const found=candidates.map(o).find(x=>!picked.some(p=>p.id===x.id)&&rewardEligible(x)&&(!tutorialMode||!['keep','build'].includes(x.id)));
+  picked.push(found);
+ }
+ return {wave,offers:picked};
+}
+function rewardCopy(o){
+ const en=document.documentElement?.lang?.startsWith('en'),name=o.type===undefined?'':kinds[o.type].name;
+ const text={sp:en?['Summon supply','+'+o.amount+' SP',perkReward().summons+' summons · before discounts']:['소환 보급','+'+o.amount+' SP','기본 소환 '+perkReward().summons+'회분 · 할인 전'],life:en?['Throne repair',life+' → '+Math.min(3,life+1)+' / 3','Restore 1 life']:['왕좌 수리',life+' → '+Math.min(3,life+1)+' / 3','생명력 1 회복'],merge:en?['Merge insurance',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount),'Guaranteed merges · max 3']:['합성 보험',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount)+'회','성공 보장 누적 · 최대 3회'],equipment:en?['Equipment delivery','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' · all matching staff']:['장비 배송','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' 전체 · 무료 강화'],staff:en?['Extra staff','★'+o.amount+' · +1',name+' · this shift only']:['추가 출근','★'+o.amount+' · 1명',name+' · 이번 당직만'],keep:en?['Keep their kind','100% · 1 merge','Target kind stays · next merge']:['종류 유지 합성','100% · 1회','도착 직원 종류 유지 · 다음 합성'],power:en?['Fire support','Damage +10%','Next 5 waves · no stacking']:['화력 지원','피해 +10%','다음 5웨이브 · 중첩 없음'],boss:en?['Boss pursuit','Boss damage +20%','Next 5 waves · no stacking']:['군단장 추격','보스 피해 +20%','다음 5웨이브 · 중첩 없음'],slow:en?['Slow their march','Enemy speed −10%','Next 5 waves · no stacking']:['진군 지연','적 속도 −10%','다음 5웨이브 · 중첩 없음']};
+ if(o.id==='build'){const builds={chain:en?['Chain lightning','Extra hit · 25%']:['연쇄 잔광','추가 피해 25%'],economy:en?['Overtime accounting','Income +25%']:['정산 특근','수입 +25%'],guard:en?['Emergency ward','Block 1 breach']:['비상 방벽','첫 돌파 1회 방어']};return [...builds[o.build],en?'One strategy per shift':'이번 당직 전략 · 1종만 선택'];}
+ return text[o.id];
 }
 function renderPerkChoices(){
- const r=perkReward();
- document.querySelector('#perk-intro').textContent=wave+'단계 돌파 · 보상 '+r.tier+'단계 · 하나만 선택하세요.';
- document.querySelector('#perk-targets').hidden=true;document.querySelector('#perk-options').hidden=false;document.querySelector('#perk-back').hidden=true;
- document.querySelector('#perk-sp').textContent='운영비 +'+r.sp+' SP';
- document.querySelector('#perk-life').textContent=life>=3?'왕좌 생명 3 / 3 · 최대치':'왕좌 생명 '+life+' → '+Math.min(3,life+r.life)+' / 3';
- document.querySelector('#perk-life').disabled=life>=3;
- document.querySelector('#perk-merge').textContent='다음 합성 '+r.merges+'회 성공 보장'+(guaranteedMerge?' · 이미 '+Number(guaranteedMerge)+'회 보유':'');
- document.querySelector('#perk-merge').disabled=Number(guaranteedMerge)>=r.merges;
- document.querySelector('#perk-equipment').hidden=wave<15;
- document.querySelector('#perk-equipment').disabled=runDeck.every(i=>levels[i]>=5);
- document.querySelector('#perk-equipment').textContent='원하는 직군 장비 +'+r.equipment+'레벨 · 무료'+(runDeck.every(i=>levels[i]>=5)?' · 모두 최대치':'');
- document.querySelector('#perk-staff').hidden=wave<15;
- document.querySelector('#perk-staff').disabled=board.every(Boolean);
- document.querySelector('#perk-staff').textContent=r.pip+'등급 직원 1명 '+(wave>=20?'직접 선택':'무작위 지급')+(board.every(Boolean)?' · 빈자리 필요':'');
- document.querySelector('#perk-note').textContent=wave<15?'합성 보장은 표시된 횟수까지 충전돼요. 유효한 합성에만 사용되며, 7등급은 합성할 수 없어요.':wave<20?'무료 강화는 선택 직군 전체에 적용돼요. 직원 지급은 빈자리가 필요해요.':'원하는 직군·직원을 고르세요. 합성 보장은 표시된 횟수까지 충전돼요.';
+ if(!rewardBundle||rewardBundle.wave!==wave)rewardBundle=makeRewardOffers();
+ const used=new Set(rewardBundle.offers.filter(rewardEligible).map(o=>o.id));
+ rewardBundle.offers=rewardBundle.offers.map(o=>{if(rewardEligible(o))return o;const replacement=[...makeRewardOffers().offers,...['power','boss','slow'].map(id=>({id,amount:1}))].find(x=>!used.has(x.id)&&rewardEligible(x));used.add(replacement.id);return replacement});
+ const en=document.documentElement?.lang?.startsWith('en'),ids=['sp','life','merge','equipment','staff','keep','build','power','boss','slow'],root=document.querySelector('#perk-options');
+ const heading=document.querySelector('#perk h2');if(heading)heading.textContent=en?'Shift bonus!':'잠깐, 당직 보너스!';
+ document.querySelector('#perk-intro').textContent=en?'Wave '+wave+' cleared · Choose one':wave+'웨이브 돌파! · 하나만 선택하세요';
+ document.querySelector('#perk-targets').hidden=true;root.hidden=false;document.querySelector('#perk-back').hidden=true;
+ for(const id of ids){let b=document.querySelector('#perk-'+id);if(!b&&typeof document.createElement==='function'){b=document.createElement('button');b.id='perk-'+id;root.append(b)}if(b)b.hidden=true;}
+ rewardBundle.offers.forEach((o,i)=>{
+  const b=document.querySelector('#perk-'+o.id),copy=rewardCopy(o);b.hidden=false;b.disabled=!rewardEligible(o);b.onclick=()=>choosePerk(o.id);b.dataset&&(b.dataset.slot=String(i));
+  if(typeof document.createElement==='function'){
+   if(o.type!==undefined)b.style.setProperty('--reward-face','url("'+window.CharacterPortraits.src(kinds[o.type].file)+'")');
+   b.replaceChildren();['small','strong','span','small'].forEach((tag,j)=>{const e=document.createElement(tag);e.textContent=j===0?(en?['OPERATE','GROW','ADAPT']:['운영','성장','상황'])[i]:copy[j-1];b.append(e)});root.append(b);
+  }else b.textContent=copy.join(' · ');
+ });
+ document.querySelector('#perk-note').textContent=en?'Targets are fixed. Merge insurance adds up to 3 charges. Temporary support expires after the next 5 waves.':'대상 고정 · 합성 보장 최대 3회 누적 · 전투 지원은 다음 5웨이브까지 적용';
 }
-function showPerkTargets(id){
- const field=document.querySelector('#perk-targets');field.replaceChildren();
- const legend=document.createElement('legend');legend.textContent=id==='equipment'?'강화할 직군을 골라주세요':'받을 직원을 골라주세요';field.append(legend);
- for(const type of runDeck){const button=document.createElement('button');button.textContent=kinds[type].name+(id==='equipment'?' · Lv.'+levels[type]+' → '+Math.min(5,levels[type]+perkReward().equipment):' · '+perkReward().pip+'등급');button.disabled=id==='equipment'&&levels[type]>=5;button.onclick=()=>choosePerk(id,type);field.append(button)}
- const back=document.querySelector('#perk-back');back.hidden=false;back.onclick=renderPerkChoices;
- document.querySelector('#perk-options').hidden=true;field.hidden=false;field.querySelector('button:not(:disabled)').focus();
-}
+// Retained entry point for older callers: targets now live directly on the card.
+function showPerkTargets(){renderPerkChoices()}
 function choosePerk(id,type){
- if(!bonusPending||!['sp','life','merge','equipment','staff'].includes(id))return false;
- const r=perkReward();
- if(id==='life'&&life>=3||id==='merge'&&Number(guaranteedMerge)>=r.merges)return false;
- if(id==='equipment'||id==='staff'){
-  if(wave<15||id==='staff'&&board.every(Boolean)||id==='equipment'&&runDeck.every(i=>levels[i]>=5))return false;
-  if(type===undefined&&(id==='equipment'||wave>=20)){showPerkTargets(id);return false}
-  if(type!==undefined&&!runDeck.includes(type))return false;
- }
- if(id==='sp')sp+=r.sp;
- else if(id==='life')life=Math.min(3,life+r.life);
- else if(id==='merge')guaranteedMerge=r.merges;
- else if(id==='equipment'){if(levels[type]>=5)return false;levels[type]=Math.min(5,levels[type]+r.equipment)}
- else {const slot=board.findIndex(u=>!u);const chosen=type??runDeck[Math.floor(Math.random()*runDeck.length)];board[slot]={type:chosen,pip:r.pip,cool:0,attack:0,arrival:.5,income:5,skillCD:0};noteRoster()}
- bonusPending=false;document.querySelector('#perk').close();paused=false;nextWave();sync();saveActiveRun();return true;
+ if(!bonusPending||!playing||ended||!paused||!GameSession.canWrite())return false;
+ if(!rewardBundle||rewardBundle.wave!==wave)rewardBundle=makeRewardOffers();
+ const o=rewardBundle.offers.find(o=>o.id===id);if(!o||!rewardEligible(o)||type!==undefined&&type!==o.type)return false;
+ if(id==='keep'||id==='build'){const saved=rewardBundle;rewardBundle=null;if(window.TacticalDuty.choose(id==='keep'?'keep':o.build))return true;rewardBundle=saved;return false;}
+ if(id==='sp')sp+=o.amount;
+ else if(id==='life')life=Math.min(3,life+1);
+ else if(id==='merge')guaranteedMerge=Math.min(3,Number(guaranteedMerge)+o.amount);
+ else if(id==='equipment')levels[o.type]=Math.min(5,levels[o.type]+o.amount);
+ else if(id==='staff'){board[board.findIndex(u=>!u)]={type:o.type,pip:o.amount,cool:0,attack:0,arrival:.5,income:5,skillCD:0};noteRoster();}
+ else {rewardSupport={id,until:wave+5};say(rewardCopy(o).slice(0,2).join(' · ')+' · '+(wave+1)+'–'+(wave+5)+'W');}
+ rewardBundle=null;bonusPending=false;document.querySelector('#perk').close();paused=false;nextWave();sync();saveActiveRun();return true;
 }
 function onProgressUpdate(dt){if(playing&&!ended&&!paused){savedElapsed+=dt/Math.max(1,speed);if(savedElapsed>=5){savedElapsed=0;saveActiveRun()}}}
 function noteRoster(){for(const u of board)if(u){runStats[u.type].highest=Math.max(runStats[u.type].highest,u.pip);if(!seenStaff.has(u.type)){seenStaff.add(u.type);say(kinds[u.type].name+': “'+(staffRecords.find(r=>r.id===kinds[u.type].file)?.quote||'당직 준비 완료!')+'”')}}}
 function describeStats(){const names=['damage','kills','income'];document.querySelector('#result-stats').innerHTML=names.map((key,j)=>{const top=runStats.map((s,i)=>({value:s[key],i})).sort((a,b)=>b.value-a.value)[0];return '<div><small>'+['최다 피해','최다 처치','최다 SP 생산'][j]+'</small><b>'+(top?.value>0?kinds[top.i].name:'기록 없음')+'</b><span>'+Math.floor(top?.value||0)+'</span></div>'}).join('');document.querySelector('#result-title').textContent=tutorialMode?(tutorialWon?'신입 연수 수료!':'여기서 다시 배워봐요'):'수고했어요, 고비!';document.querySelector('#result-title-badge').textContent=tutorialMode?(tutorialWon?'정식 당직자 임명':'연수 재도전'):runStats[3].income>=300?'오늘의 알뜰 당직':kills>=300?'오늘의 야근왕':'무사히 근무 종료';document.querySelector('#result-again').textContent=tutorialMode&&!tutorialWon?'실패한 공격부터 다시':'다시 당직 서기';document.querySelector('#record-highest').textContent='최고 등급 '+Math.max(0,...runStats.map(s=>s.highest));}
-function runSnapshot(){return JSON.parse(JSON.stringify({version:1,tactics:window.TacticalDuty?.snapshot(),insights:runInsights,dailyEventVersion:2,dailyEventId:DAILY_RULES[dailyRule].id,dailyEventDate:dailyDate,expansionState,discountTutorial:window.DiscountTutorial?.snapshot()??null,bossPlans,runTraining,wardChargesUsed,runId,board,levels,sp,life,wave,cost,summonDiscount,enemies:enemies.map(e=>({...e,links:null,linkIds:(e.links||[]).map(n=>enemies.indexOf(n)).filter(i=>i>=0)})),queue,timer,intermission,playing,ended,selected:-1,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,seenStaff:[...seenStaff]}))}
+function runSnapshot(){return JSON.parse(JSON.stringify({version:1,rewardBundle,rewardSupport,tactics:window.TacticalDuty?.snapshot(),insights:runInsights,dailyEventVersion:2,dailyEventId:DAILY_RULES[dailyRule].id,dailyEventDate:dailyDate,expansionState,discountTutorial:window.DiscountTutorial?.snapshot()??null,bossPlans,runTraining,wardChargesUsed,runId,board,levels,sp,life,wave,cost,summonDiscount,enemies:enemies.map(e=>({...e,links:null,linkIds:(e.links||[]).map(n=>enemies.indexOf(n)).filter(i=>i>=0)})),queue,timer,intermission,playing,ended,selected:-1,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,seenStaff:[...seenStaff]}))}
 function saveActiveRun(){if(!GameSession.canWrite()||!playing||ended)return;try{GameStorage.setItem(RUN_SAVE,JSON.stringify({snapshot:runSnapshot(),checkpoint:tutorialCheckpoint}));document.querySelector('#resume-run').hidden=false}catch(e){showMetaStatus('전투 자동 저장에 실패했어요. 코인 저장과 별도로 브라우저 공간을 확인해주세요.')}}
 function clearActiveRun(){if(!GameSession.canWrite()||(ended&&runReward&&!runReward.paid))return;try{GameStorage.removeItem(RUN_SAVE)}catch(e){}document.querySelector('#resume-run').hidden=true}
-function applySnapshot(s,allowSettled=false,validateOnly=false){if(s&&Array.isArray(s.levels)&&s.levels.length===12&&Array.isArray(s.runStats)&&s.runStats.length===12){s=JSON.parse(JSON.stringify(s));while(s.levels.length<kinds.length)s.levels.push(1);while(s.runStats.length<kinds.length)s.runStats.push({damage:0,kills:0,income:0,highest:0});}if(!s||s.version!==1||!Array.isArray(s.board)||s.board.length!==15||!Array.isArray(s.levels)||s.levels.length!==kinds.length||!Array.isArray(s.enemies)||!Array.isArray(s.queue)||!Array.isArray(s.runDeck)||s.runDeck.length!==5||s.runDeck.some(i=>!Number.isInteger(i)||!kinds[i])||s.board.some(u=>u&&(!kinds[u.type]||!Number.isInteger(u.pip)||u.pip<1||u.pip>7))||s.enemies.some(e=>!legion[e.type]||(e.bossId&&!bossCatalog.some(b=>b.id===e.bossId)))||!Number.isFinite(s.sp)||s.sp<0||!Number.isInteger(s.life)||s.life<1||s.life>3||!Number.isInteger(s.wave)||s.wave<1||!Array.isArray(s.runStats)||s.runStats.length!==kinds.length||s.runStats.some(r=>!r||['damage','kills','income','highest'].some(k=>!Number.isFinite(r[k])||r[k]<0))||!s.trainingItems||['grade','kind','king'].some(k=>!Number.isSafeInteger(s.trainingItems[k])||s.trainingItems[k]<0)||s.levels.some(l=>!Number.isInteger(l)||l<1||l>5)||!s.kingEvent||!['idle','question','refuse','entrance','afterglow'].includes(s.kingEvent.state)||(s.activeMerc!==null&&!mercCatalog[s.activeMerc])||typeof s.runId!=='string'||(!allowSettled&&meta.settled.includes(s.runId)))throw Error('invalid saved run');if((s.runTraining!==undefined&&!validTraining(s.runTraining))||(s.wardChargesUsed!==undefined&&(!Number.isInteger(s.wardChargesUsed)||s.wardChargesUsed<0||s.wardChargesUsed>2)))throw Error('invalid training snapshot');if(s.guaranteedMerge!==undefined&&typeof s.guaranteedMerge!=='boolean'&&(!Number.isInteger(s.guaranteedMerge)||s.guaranteedMerge<0||s.guaranteedMerge>3))throw Error('invalid merge guarantees');if(s.summonDiscount!==undefined&&typeof s.summonDiscount!=='boolean')throw Error('invalid summon discount');if(s.speed!==undefined&&![1,2,3].includes(s.speed))throw Error('invalid speed');const restoredTactics=window.TacticalDuty?.read(s.tactics,s);const restoredInsights=readInsights(s.insights),restoredDaily=readDailySnapshot(s);window.DiscountTutorial?.validate(s.discountTutorial);const restoredBossPlans=readBossPlans(s),restoredExpansion=restoreExpansionState(s.expansionState);if(validateOnly)return s;SkillCutin.clear();runTraining=s.runTraining?{...s.runTraining}:{staff:1,merc:1};wardChargesUsed=s.wardChargesUsed??(s.wardUsed?1:0);({board,levels,sp,life,wave,cost,enemies,queue,timer,intermission,playing,selected,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,runId}=s);runInsights=restoredInsights;dailyEnabled=!tutorialMode&&!!s.dailyEnabled;dailyRule=restoredDaily.rule;dailyDate=restoredDaily.date;window.DiscountTutorial?.restore(s.discountTutorial);speed=s.speed??1;summonDiscount=s.summonDiscount??false;guaranteedMerge=Number(s.guaranteedMerge||0);bossPlans=restoredBossPlans;expansionState=restoredExpansion;window.TacticalDuty?.restore(restoredTactics);clearBossWarning();for(const e of enemies){e.links=e.linkIds?.length?e.linkIds.map(i=>enemies[i]).filter(Boolean):null;restoreBoss(e)}ended=false;runReward=null;fx=[];drag=null;itemMode=null;seenStaff=new Set(s.seenStaff);paused=true;setScreen('battle');if(wave%5===4||wave%5===0&&queue.includes('boss'))announceBossWave();sync()}
+function applySnapshot(s,allowSettled=false,validateOnly=false){if(s&&Array.isArray(s.levels)&&s.levels.length===12&&Array.isArray(s.runStats)&&s.runStats.length===12){s=JSON.parse(JSON.stringify(s));while(s.levels.length<kinds.length)s.levels.push(1);while(s.runStats.length<kinds.length)s.runStats.push({damage:0,kills:0,income:0,highest:0});}if(!s||s.version!==1||!Array.isArray(s.board)||s.board.length!==15||!Array.isArray(s.levels)||s.levels.length!==kinds.length||!Array.isArray(s.enemies)||!Array.isArray(s.queue)||!Array.isArray(s.runDeck)||s.runDeck.length!==5||s.runDeck.some(i=>!Number.isInteger(i)||!kinds[i])||s.board.some(u=>u&&(!kinds[u.type]||!Number.isInteger(u.pip)||u.pip<1||u.pip>7))||s.enemies.some(e=>!legion[e.type]||(e.bossId&&!bossCatalog.some(b=>b.id===e.bossId)))||!Number.isFinite(s.sp)||s.sp<0||!Number.isInteger(s.life)||s.life<1||s.life>3||!Number.isInteger(s.wave)||s.wave<1||!Array.isArray(s.runStats)||s.runStats.length!==kinds.length||s.runStats.some(r=>!r||['damage','kills','income','highest'].some(k=>!Number.isFinite(r[k])||r[k]<0))||!s.trainingItems||['grade','kind','king'].some(k=>!Number.isSafeInteger(s.trainingItems[k])||s.trainingItems[k]<0)||s.levels.some(l=>!Number.isInteger(l)||l<1||l>5)||!s.kingEvent||!['idle','question','refuse','entrance','afterglow'].includes(s.kingEvent.state)||(s.activeMerc!==null&&!mercCatalog[s.activeMerc])||typeof s.runId!=='string'||(!allowSettled&&meta.settled.includes(s.runId)))throw Error('invalid saved run');if((s.runTraining!==undefined&&!validTraining(s.runTraining))||(s.wardChargesUsed!==undefined&&(!Number.isInteger(s.wardChargesUsed)||s.wardChargesUsed<0||s.wardChargesUsed>2)))throw Error('invalid training snapshot');if(s.guaranteedMerge!==undefined&&typeof s.guaranteedMerge!=='boolean'&&(!Number.isInteger(s.guaranteedMerge)||s.guaranteedMerge<0||s.guaranteedMerge>3))throw Error('invalid merge guarantees');if(s.summonDiscount!==undefined&&typeof s.summonDiscount!=='boolean')throw Error('invalid summon discount');if(s.speed!==undefined&&![1,2,3].includes(s.speed))throw Error('invalid speed');const restoredRewards=readRewards(s);const restoredTactics=window.TacticalDuty?.read(s.tactics,s);const restoredInsights=readInsights(s.insights),restoredDaily=readDailySnapshot(s);window.DiscountTutorial?.validate(s.discountTutorial);const restoredBossPlans=readBossPlans(s),restoredExpansion=restoreExpansionState(s.expansionState);if(validateOnly)return s;SkillCutin.clear();runTraining=s.runTraining?{...s.runTraining}:{staff:1,merc:1};wardChargesUsed=s.wardChargesUsed??(s.wardUsed?1:0);({board,levels,sp,life,wave,cost,enemies,queue,timer,intermission,playing,selected,speed,kills,time,kingEvent,runNormal,runBoss,activeMerc,wardUsed,mercTimer,runDeck,tutorialMode,tutorialWon,trainingItems,runStats,guaranteedMerge,bonusPending,dailyEnabled,dailyRule,runId}=s);rewardBundle=restoredRewards.bundle;rewardSupport=restoredRewards.support;runInsights=restoredInsights;dailyEnabled=!tutorialMode&&!!s.dailyEnabled;dailyRule=restoredDaily.rule;dailyDate=restoredDaily.date;window.DiscountTutorial?.restore(s.discountTutorial);speed=s.speed??1;summonDiscount=s.summonDiscount??false;guaranteedMerge=Number(s.guaranteedMerge||0);bossPlans=restoredBossPlans;expansionState=restoredExpansion;window.TacticalDuty?.restore(restoredTactics);clearBossWarning();for(const e of enemies){e.links=e.linkIds?.length?e.linkIds.map(i=>enemies[i]).filter(Boolean):null;restoreBoss(e)}ended=false;runReward=null;fx=[];drag=null;itemMode=null;seenStaff=new Set(s.seenStaff);paused=true;setScreen('battle');if(wave%5===4||wave%5===0&&queue.includes('boss'))announceBossWave();sync()}
 function resumeRun(){try{const data=JSON.parse(GameStorage.getItem(RUN_SAVE));applySnapshot(data.snapshot);tutorialCheckpoint=data.checkpoint;if(bonusPending){renderPerkChoices();document.querySelector('#perk').showModal();}else{showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.');window.DiscountTutorial?.resume()}return true}catch(e){showMetaStatus('저장된 전투를 불러오지 못했어요. 새 당직을 시작할 수 있습니다.');return false}}
 function renderDeckOptions(){
  const available=staffRecords.filter(r=>r.group!=='merc'&&staffOwned(r));

@@ -15,16 +15,16 @@ class BalanceTests(unittest.TestCase):
     def test_rewards_increase_and_sp_keeps_up_with_summon_cost(self):
         a=self.normal()
         tiers=a.evaluate('()=>[5,10,15,20,30].map(w=>{wave=w;return perkReward()})')
-        self.assertEqual([r['merges'] for r in tiers],[1,2,2,3,3])
-        self.assertEqual([r['pip'] for r in tiers[2:]],[3,4,5])
-        self.assertTrue(all(x['sp']<y['sp'] for x,y in zip(tiers,tiers[1:])))
+        self.assertEqual([r['merges'] for r in tiers],[1,1,2,1,1])
+        self.assertEqual([r['pip'] for r in tiers[2:]],[3,3,5])
+        self.assertEqual([r['summons'] for r in tiers],[2,3,4,5,5])
         a.evaluate('cost=500;sp=0');self.reward(a,20);amount=a.evaluate('perkReward().sp');a.locator('#perk-sp').click()
         self.assertEqual(a.evaluate('sp'),amount);self.assertFalse(a.evaluate('bonusPending'))
         self.assertFalse(a.evaluate("choosePerk('sp')"));self.assertEqual(a.evaluate('sp'),amount)
         self.assertEqual(amount,2600)
         a.evaluate('for(let i=0;i<5;i++)summon()');self.assertEqual(a.evaluate('[sp,cost]'),[0,550])
     def test_guarantees_are_counted_and_survive_reload(self):
-        a=self.normal();self.reward(a,10);a.locator('#perk-merge').click()
+        a=self.normal();a.evaluate('guaranteedMerge=1');self.reward(a,5);a.locator('#perk-merge').click()
         self.assertEqual(a.evaluate('guaranteedMerge'),2)
         a.evaluate('board[0]={type:0,pip:1};board[1]={type:0,pip:1};paused=false;merge(0,1);saveActiveRun()')
         self.assertEqual(a.evaluate('guaranteedMerge'),1)
@@ -32,21 +32,26 @@ class BalanceTests(unittest.TestCase):
         self.assertEqual(a.evaluate('guaranteedMerge'),1)
         a.evaluate("document.querySelector('#guide').close();paused=false;board[2]={type:0,pip:1};board[3]={type:0,pip:1};merge(2,3)")
         self.assertEqual(a.evaluate('guaranteedMerge'),0)
-    def test_late_rewards_choose_staff_or_free_equipment_without_spend(self):
-        a=self.normal();self.reward(a,20);a.locator('#perk-equipment').click();self.assertTrue(a.evaluate('bonusPending'))
-        a.locator('#perk-targets button').first.click();self.assertEqual(a.evaluate('levels[runDeck[0]]'),3);self.assertEqual(a.evaluate('sp'),150)
-        self.reward(a,20);a.locator('#perk-staff').click();a.locator('#perk-targets button').nth(1).click()
-        self.assertTrue(a.evaluate('board.some(u=>u&&u.type===runDeck[1]&&u.pip===4)'))
-        a.context.close();a=self.normal();self.reward(a,15);a.locator('#perk-staff').click();self.assertTrue(a.evaluate('board.some(u=>u&&u.pip===3&&runDeck.includes(u.type))'))
+    def test_late_rewards_bind_staff_and_equipment_without_spend(self):
+        a=self.normal();self.reward(a,10)
+        target=a.evaluate("rewardBundle.offers.find(o=>o.id==='equipment').type")
+        a.locator('#perk-equipment').click();self.assertFalse(a.evaluate('bonusPending'))
+        self.assertEqual(a.evaluate(f'levels[{target}]'),2);self.assertEqual(a.evaluate('sp'),150)
+        self.reward(a,25);a.locator('#perk-staff').click()
+        self.assertTrue(a.evaluate('board.some(u=>u&&u.pip===4&&runDeck.includes(u.type))'))
     def test_unavailable_rewards_and_invalid_targets_do_not_consume_choice(self):
-        a=self.normal();a.evaluate('life=1');self.reward(a,10);a.locator('#perk-life').click();self.assertEqual(a.evaluate('life'),3)
+        a=self.normal();a.evaluate('life=1');self.reward(a,10);a.locator('#perk-life').click();self.assertEqual(a.evaluate('life'),2)
         self.reward(a,5);self.assertFalse(a.evaluate("choosePerk('equipment',runDeck[0])"));self.assertFalse(a.evaluate("choosePerk('unknown')"))
-        a.locator('#perk-sp').click();self.reward(a,20);self.assertFalse(a.evaluate("choosePerk('staff',999)"))
-        a.evaluate('board=Array.from({length:15},()=>({type:0,pip:1}));levels.fill(5);renderPerkChoices()')
-        self.assertTrue(a.locator('#perk-staff').is_disabled());self.assertTrue(a.locator('#perk-equipment').is_disabled());self.assertTrue(a.evaluate('bonusPending'))
+        a.locator('#perk-sp').click();self.reward(a,25);self.assertFalse(a.evaluate("choosePerk('staff',999)"))
+        a.locator('#perk-sp').click();a.evaluate('board=Array.from({length:15},()=>({type:0,pip:7}));levels.fill(5);guaranteedMerge=3;life=3');self.reward(a,30)
+        self.assertEqual(a.locator('#perk-options > button:visible:enabled').count(),3)
+        self.assertFalse(a.locator('#perk-staff').is_visible());self.assertFalse(a.locator('#perk-equipment').is_visible());self.assertTrue(a.evaluate('bonusPending'))
     def test_late_reward_choices_fit_short_phone(self):
         a=self.open(320,568);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset();playing=true;wave=20;sync()');self.reward(a,20)
-        self.inside(a,'#perk');a.locator('#perk-staff').click();a.locator('#perk-back').click();self.assertFalse(a.locator('#perk-options').is_hidden())
+        self.inside(a,'#perk');self.assertEqual(a.locator('#perk-options > button:visible').count(),3)
+        for card in a.locator('#perk-options > button:visible').all():
+            card.scroll_into_view_if_needed();self.assertTrue(card.is_enabled())
+        self.assertTrue(a.locator('#perk-targets').is_hidden())
     def fail_merge(self,a):
         a.evaluate('''()=>{paused=false;guaranteedMerge=0;board[0]={type:0,pip:1};board[1]={type:0,pip:1};const original=Math.random;try{Math.random=()=>0;merge(0,1)}finally{Math.random=original}}''')
     def test_failure_discounts_only_next_successful_summon_and_preserves_base_growth(self):

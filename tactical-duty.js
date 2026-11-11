@@ -39,7 +39,7 @@ window.TacticalDuty=(()=>{
   preview(selected,targets[0]);
  }
  function hidePreview(){if(previewNode)previewNode.hidden=true}
- function finishBonus(){bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
+ function finishBonus(){rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
  function choose(id){
   if(tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite())return false;
   if(id==='keep'){if(state.keep)return false;state.keep=1;}
@@ -50,7 +50,7 @@ window.TacticalDuty=(()=>{
  function endReposition(){if(!rearranging)return false;rearranging=false;selected=-1;hidePreview();renderPerkChoices();q('#perk').showModal();sync();saveActiveRun();return true}
  function cashOut(){
   if(tutorialMode||!playing||ended||!bonusPending||wave<15||wave%15||enemies.some(e=>e.hp>0&&!e.escaped)||queue.length||!GameSession.canWrite())return false;
-  state.completed=wave;bonusPending=false;rearranging=false;ended=true;paused=false;drag=null;selected=-1;hidePreview();q('#perk').close();settleRun();sync();return !!runReward?.paid;
+  state.completed=wave;rewardBundle=null;bonusPending=false;rearranging=false;ended=true;paused=false;drag=null;selected=-1;hidePreview();q('#perk').close();settleRun();sync();return !!runReward?.paid;
  }
  function money(n){return state.build==='economy'&&!tutorialMode?n*1.25:n}
  function eligibleStarter(){return meta.tutorialComplete&&!meta.profile.starterClaim&&!playing&&!saveWarning}
@@ -107,11 +107,14 @@ window.TacticalDuty=(()=>{
   q('#reposition-done').hidden=!rearranging;
   q('#tactical-prep').hidden=!(appScreen==='battle'&&!tutorialMode&&preparingDuty());
   const pane=q('#tactical-bonuses');pane.hidden=tutorialMode;
-  q('#perk-keep').disabled=!!state.keep;
-  q('#build-choices').hidden=!!state.build;
+  q('#legacy-perk-keep').disabled=!!state.keep;q('#legacy-perk-keep').hidden=true;
+  q('#build-choices').hidden=true;
   for(const id of Object.keys(builds))q('#build-'+id).disabled=id==='economy'&&!runDeck.includes(3)&&activeMerc!=='accountant';
   q('#perk-cashout').hidden=tutorialMode||wave<15||wave%15!==0;
-  uiText(q('#perk-cashout'),'퇴근 · '+(Math.floor(runNormal/10)+runBoss*5)+' 코인 정산');
+  const en=document.documentElement?.lang?.startsWith('en');
+  uiText(q('#perk-reposition'),en?'Reposition':'전열 정비');
+  uiText(q('#perk-cashout'),en?'Clock out · '+(Math.floor(runNormal/10)+runBoss*5)+' coins':'퇴근 · '+(Math.floor(runNormal/10)+runBoss*5)+' 코인 정산');
+  if(typeof document.createElement==='function')uiText(q('#perk-note').closest('details')?.querySelector('summary'),en?'Reward rules':'보상 규칙');
   q('#tactical-owned').hidden=!state.build&&!state.keep;
   uiText(q('#tactical-owned'),[state.build&&builds[state.build][0],state.keep&&'종류 유지 1회'].filter(Boolean).join(' · '));
   renderStarter();
@@ -139,7 +142,7 @@ window.TacticalDuty=(()=>{
   oldHit(e,damage,slow,shared,bypass);
   if(tutorialMode||state.build!=='chain'||shared||state.chainCD>0||typeof attackOwner!=='number')return;
   const next=enemies.filter(n=>n!==e&&n.hp>0&&Math.hypot(n.x-e.x,n.y-e.y)<=140).sort((a,b)=>a.progress-b.progress)[0];
-  if(next){state.chainCD=.8;oldHit(next,damage*.25,false,true);objectFlight('lightning',{x:e.x,y:e.y-15},{x:next.x,y:next.y-15},'#e6c889');}
+  if(next){state.chainCD=.8;oldHit(next,damage*.25*rewardSupportMultiplier('damage',next),false,true);objectFlight('lightning',{x:e.x,y:e.y-15},{x:next.x,y:next.y-15},'#e6c889');}
  };
  const oldUpdate=update;update=function(dt){if(playing&&!paused&&!ended)state.chainCD=Math.max(0,state.chainCD-dt);return oldUpdate(dt)};
  // Browser UI is optional in the headless runtime harness.
@@ -149,12 +152,12 @@ window.TacticalDuty=(()=>{
   previewNode=node('div','tactical-preview');previewNode.hidden=true;previewNode.setAttribute('role','status');q('.board-stage').append(previewNode);
   const done=node('button','reposition-done','배치 완료');done.hidden=true;done.onclick=endReposition;q('.battle-controls').prepend(done);
   const prep=node('small','tactical-prep','빈 칸으로 드래그 · 무료 재배치');prep.hidden=true;q('.battle-controls').append(prep);
-  const pane=node('section','tactical-bonuses'),keep=node('button','perk-keep','종류 유지 · 다음 합성 1회 성공 보장'),reposition=node('button','perk-reposition','전열 정비'),cash=node('button','perk-cashout'),owned=node('small','tactical-owned');
+  const pane=node('section','tactical-bonuses'),keep=node('button','legacy-perk-keep','종류 유지 · 다음 합성 1회 성공 보장'),reposition=node('button','perk-reposition','전열 정비'),cash=node('button','perk-cashout'),owned=node('small','tactical-owned');
   keep.onclick=()=>choose('keep');reposition.onclick=startReposition;cash.onclick=cashOut;
   const choices=node('details','build-choices'),summary=node('summary',null,'이번 당직 전략');choices.append(summary);
   for(const[id,[title,description]]of Object.entries(builds)){const b=node('button','build-'+id);b.append(node('b',null,title),node('small',null,description));b.onclick=()=>choose(id);choices.append(b)}
   const rules=node('details'),rulesTitle=node('summary',null,'보상 규칙'),note=q('#perk-note');note.before(rules);rules.append(rulesTitle,note);
-  pane.append(owned,keep,choices,reposition,cash);q('#perk-content-placeholder')?.remove();q('#perk .perk-content').append(pane);
+  pane.append(owned,keep,choices,reposition,cash);q('#perk-content-placeholder')?.remove();q('#perk .perk-content').append(pane);pane.after(rules);
   const entry=node('button','starter-choice-open');entry.onclick=()=>{if(!eligibleStarter())return;if(!starterCandidates().length){markStarterComplete();sync();return}renderStarter();q('#starter-choice').showModal()};q('#enter-battle').before(entry);
   const starter=node('dialog','starter-choice');starter.innerHTML='<header class="sheet-head"><h2>수료 선물 · 직원 1명</h2><button id="starter-close" aria-label="직원 선택 닫기">×</button></header><div id="starter-options"></div><small>한 번만 무료 채용 · 선택 전 능력 확인</small>';document.body.append(starter);q('#starter-close').onclick=()=>starter.close();
   const trial=node('dialog','staff-trial');trial.innerHTML='<header class="sheet-head"><h2 id="staff-trial-title"></h2><button id="trial-close" aria-label="능력 미리보기 닫기">×</button></header><div id="trial-body"><div id="trial-arena"><img id="trial-face" alt=""><span class="trial-target">♟</span><i class="trial-ray"></i></div><p id="trial-ability"></p><details><summary>고유 스킬</summary><p id="trial-skill"></p></details><button id="trial-play">전투 체험</button><small id="trial-result" role="status"></small><small>능력 미리보기 · 재화와 전투 기록에 영향 없음</small></div>';document.body.append(trial);for(const id of ['starter-close','trial-close']){const image=document.createElement('img');image.src='assets/ui-v2/icons/close.svg';image.alt='';q('#'+id).replaceChildren(image)}

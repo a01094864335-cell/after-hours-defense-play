@@ -18,11 +18,11 @@ class VisualIssueTests(unittest.TestCase):
         self.assertGreaterEqual(a.locator('#skill-info').evaluate('e=>parseFloat(getComputedStyle(e).fontSize)'),14)
         before=a.locator('#info .ui-dialog-header h2').bounding_box();a.locator('#info > .panel-scroll-body').evaluate('e=>e.scrollTop=e.scrollHeight')
         self.assertEqual(before,a.locator('#info .ui-dialog-header h2').bounding_box());self.inside(a,'#info-close');a.locator('#info-close').click();self.assertFalse(a.locator('#info').is_visible())
-    def test_reward_return_remains_visible_and_last_target_is_reachable(self):
+    def test_reward_cards_and_footer_are_reachable_on_short_phone(self):
         a=self.open(320,568);a.evaluate("saveChange(d=>{d.tutorialComplete=true});reset();setScreen('battle');wave=20;playing=true;paused=true;bonusPending=true;renderPerkChoices();document.querySelector('#perk').showModal()")
-        a.locator('#perk-equipment').click();self.inside(a,'#perk-back')
-        ui.assert_reachable(self,a,'#perk-targets button:last-child');self.inside(a,'#perk-back')
-        a.locator('#perk-back').click();self.assertTrue(a.locator('#perk-options').is_visible());self.assertTrue(a.locator('#perk-back').is_hidden())
+        self.assertEqual(a.locator('#perk-options>button:visible:enabled').count(),3)
+        ui.assert_reachable(self,a,'#perk-options>button:visible:last-child')
+        ui.assert_reachable(self,a,'#perk-reposition');self.assertTrue(a.locator('#perk-back').is_hidden())
     def test_final_list_items_scroll_clear_of_fixed_footers(self):
         a=self.open(320,568)
         surfaces=[
