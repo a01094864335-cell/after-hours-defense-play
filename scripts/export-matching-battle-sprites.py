@@ -5,11 +5,13 @@ import json, subprocess, hashlib, math
 from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 SCALE, GUTTER, QUALITY = .75, 2, 90
+FORM_OVERRIDES = {'slime-cleaner': 'legless-slime', 'ghost-courier': 'floating-ghost'}
 records = [r for r in json.loads((ROOT/'assets/character-portraits/manifest.json').read_text())['characters'] if r['group'] != 'merc']
 entries = {}
 for record in records:
     id = record['id']
-    master = ROOT/('designs/battle-identity-20261110' if id in ['gobi', 'electric-technician'] else 'designs/battle-comic-20261110')/f'{id}-master.png'
+    source = 'designs/character-form-20261111' if id in FORM_OVERRIDES else ('designs/battle-identity-20261110' if id in ['gobi', 'electric-technician'] else 'designs/battle-comic-20261110')
+    master = ROOT/source/f'{id}-master.png'
     image = Image.open(master).convert('RGBA')
     assert image.size == (1536, 1024)
     alpha = image.getchannel('A')
@@ -40,6 +42,10 @@ for record in records:
         # The fallback uses the same resized idle pixels, not a second decode of a full sheet.
         subprocess.run(['magick', str(Path(tmp)/'0.png'), '-quality', str(QUALITY), str(target.with_name(id+'-idle.webp'))], check=True)
     entries[id] = dict(name=record['name'], group='staff', artStyle='main-comic', file=f'assets/character-motion/{id}.webp', fallback=f'assets/character-motion/{id}-idle.webp', faceReference=f'assets/character-portraits/{id}.webp', width=width, sheetHeight=height, height=originals[0]['h']*SCALE, frames=frames, sha256=hashlib.sha256(target.read_bytes()).hexdigest())
+    if id in FORM_OVERRIDES:
+        entries[id].update(bodyForm=FORM_OVERRIDES[id], sourceMaster=str(master.relative_to(ROOT)))
+    if id == 'gobi':
+        entries[id]['boardScale'] = .88
 manifest = dict(version=2, export=dict(scale=SCALE, gutter=GUTTER, quality=QUALITY, layout='tight-columns'), poses=['idle','blink','anticipation','attack','skill','recovery'], characters=entries)
 (ROOT/'assets/character-motion/manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n')
 ids = list(entries)

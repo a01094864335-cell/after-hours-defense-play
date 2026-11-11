@@ -1,0 +1,124 @@
+{
+  "kind": "Native Canvas preview, not browser screenshot",
+  "measurements": [
+    {
+      "id": "goblin-guard",
+      "name": "브릭",
+      "width": 35.69929078014184,
+      "height": 51.48368794326241,
+      "presence": 42.871099196552066
+    },
+    {
+      "id": "orc-technician",
+      "name": "토르크",
+      "width": 38.94875164257555,
+      "height": 48.37844940867279,
+      "presence": 43.408296567261225
+    },
+    {
+      "id": "slime-cleaner",
+      "name": "뽀득",
+      "width": 40.87951807228915,
+      "height": 44.16867469879518,
+      "presence": 42.49228324741397
+    },
+    {
+      "id": "gobi",
+      "name": "고비",
+      "width": 33.769992833875456,
+      "height": 51.0879378768885,
+      "presence": 41.535999999999994
+    },
+    {
+      "id": "electric-technician",
+      "name": "찌릿",
+      "width": 43.60137457044674,
+      "height": 50.74914089347079,
+      "presence": 47.039688574910826
+    },
+    {
+      "id": "ghost-courier",
+      "name": "루프",
+      "width": 42.14577259475219,
+      "height": 46.845481049562686,
+      "presence": 44.433534536503416
+    },
+    {
+      "id": "bat-nurse",
+      "name": "나비",
+      "width": 38.323097463284384,
+      "height": 50.264352469959945,
+      "presence": 43.889471159210316
+    },
+    {
+      "id": "skeleton-chef",
+      "name": "보니",
+      "width": 35.740412979351035,
+      "height": 55.37463126843658,
+      "presence": 44.48721378231287
+    },
+    {
+      "id": "mimic-storekeeper",
+      "name": "덥석",
+      "width": 44.603099192372,
+      "height": 49.948098682367,
+      "presence": 47.2
+    },
+    {
+      "id": "spider-tailor",
+      "name": "실비",
+      "width": 40.46746347941567,
+      "height": 49.16865869853917,
+      "presence": 44.60639976746596
+    },
+    {
+      "id": "nightmare-counselor",
+      "name": "몽실",
+      "width": 41,
+      "height": 47.85714285714286,
+      "presence": 44.29608173577949
+    },
+    {
+      "id": "kobold-recruiter",
+      "name": "도기",
+      "width": 43.038236819965434,
+      "height": 51.76420236078317,
+      "presence": 47.2
+    },
+    {
+      "id": "duru-archivist",
+      "name": "두루",
+      "width": 38.29226361031519,
+      "height": 53.19197707736391,
+      "presence": 45.13137720256564
+    },
+    {
+      "id": "kkangtong-engineer",
+      "name": "깡통",
+      "width": 40.344827586206904,
+      "height": 52.44827586206897,
+      "presence": 46.00018094365488
+    },
+    {
+      "id": "ddangkong-miner",
+      "name": "땅콩",
+      "width": 41.96759941089839,
+      "height": 52.842415316642125,
+      "presence": 47.09213647641353
+    },
+    {
+      "id": "chalkak-photographer",
+      "name": "찰칵",
+      "width": 41.08827785817656,
+      "height": 46.95803183791607,
+      "presence": 43.92521667367615
+    },
+    {
+      "id": "bongtu-postmaster",
+      "name": "봉투",
+      "width": 32.99598393574298,
+      "height": 49.70281124497993,
+      "presence": 40.4968290289576
+    }
+  ]
+}
