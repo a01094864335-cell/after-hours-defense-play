@@ -1,0 +1,1928 @@
+{
+  "castle": [
+    {
+      "id": "first-shift",
+      "title": "첫 당직",
+      "tag": "첫 출근",
+      "original": true
+    },
+    {
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "tag": "야식",
+      "panels": [
+        [
+          "밤 열한 시, 급식실",
+          "보니",
+          "수프 다 됐어요. 식기 전에 한 그릇씩 가져가세요.",
+          "고비: “마왕님 몫도 따로 담아둘까요?”",
+          "skeleton-chef"
+        ],
+        [
+          "하나 남은 식판",
+          "보니",
+          "네. 아까부터 기다리고 계시잖아요.",
+          "고비: “퇴근하셨다길래 안 드시는 줄 알았어요.”",
+          "skeleton-chef"
+        ],
+        [
+          "휴게실 문틈",
+          "마왕",
+          "밥은 먹고 쉬어야지. 더 남았나?",
+          "고비: “네. 보니 씨한테 한 그릇 더 부탁할게요.”",
+          "demon-king"
+        ],
+        [
+          "빈 냄비 옆 쪽지",
+          "고비",
+          "오늘은 남은 게 없네요. 다들 잘 먹었어요.",
+          "보니: “다행이다. 내일은 조금 더 끓여야겠어요.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "tag": "청소",
+      "panels": [
+        [
+          "청소 중인 중앙 복도",
+          "뽀득",
+          "여기 아직 젖었어요. 잠깐만 돌아가 주세요.",
+          "복도 가운데 통행을 막는 줄이 쳐졌다.",
+          "slime-cleaner"
+        ],
+        [
+          "퇴근길의 마왕",
+          "마왕",
+          "내 방도 이쪽인데. 얼마나 기다리면 되지?",
+          "뽀득: “금방 말라요. 미끄러우니까 들어오시면 안 돼요.”",
+          "demon-king"
+        ],
+        [
+          "발을 든 마왕",
+          "마왕",
+          "발만 안 닿으면 되는 것 아닌가?",
+          "뽀득: “그러다 넘어지세요. 그냥 옆에서 기다려 주세요.”",
+          "demon-king"
+        ],
+        [
+          "잠시 뒤",
+          "고비",
+          "아직 못 들어가셨어요?",
+          "마왕: “응. 기다리는 편이 빠르겠더군.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "tag": "월급",
+      "panels": [
+        [
+          "급여 명세서 배부",
+          "오울리",
+          "급여 내역 확인하시고, 빠진 근무가 있으면 알려주세요.",
+          "고비: “네. 제 것도 나왔네요.”",
+          "merc-accountant"
+        ],
+        [
+          "고비의 첫 월급",
+          "고비",
+          "생각했던 것보다 많이 들어왔어요.",
+          "오울리: “지난달 야간 수당이 같이 들어갔어요. 여기 보시면 돼요.”",
+          "gobi"
+        ],
+        [
+          "길어진 추가 주문 내역",
+          "마왕",
+          "잠깐. 내가 이렇게 많이 주문했나?",
+          "오울리: “성 장식 추가하신 내역이에요. 하나씩 확인해 보실래요?”",
+          "demon-king"
+        ],
+        [
+          "작은 위로",
+          "고비",
+          "오늘은 제가 샀어요. 따뜻할 때 드세요.",
+          "마왕: “잘 먹겠다. 너도 앉아서 먹어.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "tag": "택배",
+      "panels": [
+        [
+          "심야 택배 도착",
+          "루프",
+          "이 택배, 받는 분 이름이 없는데요. ‘제일 무서운 분’이라고만 적혀 있어요.",
+          "브릭: “일단 마왕님께 여쭤봐.”",
+          "ghost-courier"
+        ],
+        [
+          "휴게실 앞",
+          "마왕",
+          "나는 주문한 게 없는데. 이건 걸레 아닌가?",
+          "뽀득: “아, 제가 기다리던 거예요!”",
+          "demon-king"
+        ],
+        [
+          "조용해진 복도",
+          "뽀득",
+          "잠깐만요. 거기 방금 닦았어요.",
+          "마왕이 젖은 바닥에서 급히 발을 들었다.",
+          "slime-cleaner"
+        ],
+        [
+          "배송 완료",
+          "루프",
+          "뽀득 씨 물건으로 확인됐어요. 여기 서명 부탁드려요.",
+          "마왕: “다음엔 이름으로 보내 달라고 해.”",
+          "ghost-courier"
+        ]
+      ]
+    },
+    {
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "tag": "시설",
+      "panels": [
+        [
+          "갑자기 꺼진 조명",
+          "고비",
+          "불이 다 꺼졌어요. 어디부터 확인하죠?",
+          "찌릿: “랜턴 좀 비춰주세요. 배전반부터 볼게요.”",
+          "gobi"
+        ],
+        [
+          "전력 배전반",
+          "찌릿",
+          "난방 쪽에 전기가 너무 몰렸네요.",
+          "고비: “마왕님 자리에서 계속 켜두신 것 같아요.”",
+          "electric-technician"
+        ],
+        [
+          "따뜻한 왕좌",
+          "마왕",
+          "여기는 가만히 앉아 있으면 발이 시려.",
+          "찌릿: “담요랑 양말을 더 드릴게요. 난방은 조금만 낮출게요.”",
+          "demon-king"
+        ],
+        [
+          "조명이 돌아온 뒤",
+          "고비",
+          "이제 좀 따뜻하세요?",
+          "마왕: “이걸 진작 줬으면 됐잖아.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "tag": "인사",
+      "panels": [
+        [
+          "야간 출근 시간",
+          "도기",
+          "여기 있던 출근 도장 못 보셨어요?",
+          "고비: “아까까지 있었는데요. 같이 찾아볼게요.”",
+          "kobold-recruiter"
+        ],
+        [
+          "모두의 책상 아래",
+          "브릭",
+          "책상 아래에도 없네요. 창고 쪽은 봤어요?",
+          "도기: “아직요. 그쪽도 확인해 주세요.”",
+          "goblin-guard"
+        ],
+        [
+          "덥석이 보관한 물건",
+          "고비",
+          "덥석 씨, 안에 있는 거 출근 도장 아니에요?",
+          "덥석이 뚜껑을 열자 물건들 사이에서 도장이 보였다.",
+          "gobi"
+        ],
+        [
+          "돌아온 출근 도장",
+          "도기",
+          "찾았네요. 이건 매일 쓰는 거라 제 책상에 둘게요.",
+          "덥석: “잃어버릴까 봐 넣어둔 건데… 다음엔 물어볼게요.”",
+          "kobold-recruiter"
+        ]
+      ]
+    },
+    {
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "tag": "수선",
+      "panels": [
+        [
+          "수선실 접수대",
+          "실비",
+          "어디에 걸리셨어요? 꽤 많이 찢어졌네요.",
+          "마왕: “문에 걸린 줄 모르고 그냥 걸었어.”",
+          "spider-tailor"
+        ],
+        [
+          "찢어진 자락 검사",
+          "실비",
+          "이쪽은 지난번에 고친 자리예요. 길이를 좀 줄일까요?",
+          "마왕: “그러면 덜 걸리나?”",
+          "spider-tailor"
+        ],
+        [
+          "새로운 수선 방향",
+          "실비",
+          "네. 이 정도면 바닥에도 안 끌려요.",
+          "마왕: “좋아. 너무 짧지만 않게 해줘.”",
+          "spider-tailor"
+        ],
+        [
+          "복도를 세 바퀴",
+          "고비",
+          "이번엔 문에 안 걸리네요.",
+          "마왕: “진작 줄일 걸 그랬군.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "tag": "휴식",
+      "panels": [
+        [
+          "마음 휴게실",
+          "몽실",
+          "무슨 일로 오셨어요?",
+          "마왕: “요즘은 내가 이 성의 주인이 맞나 싶을 때가 있어.”",
+          "nightmare-counselor"
+        ],
+        [
+          "조용한 경청",
+          "몽실",
+          "어떤 때 그러세요?",
+          "마왕: “오늘은 복도를 걷다가 혼났어. 방금 닦은 데를 밟았다고.”",
+          "nightmare-counselor"
+        ],
+        [
+          "뜻밖의 배려",
+          "몽실",
+          "뽀득 씨가 챙겨뒀어요. 발도 편하고, 바닥도 덜 더러워진대요.",
+          "마왕: “…나 주려고 준비한 거였나?”",
+          "nightmare-counselor"
+        ],
+        [
+          "잠든 마왕 곁",
+          "뽀득",
+          "편히 주무시네요. 이쪽은 나중에 닦을게요.",
+          "몽실: “네. 조금 쉬시게 두죠.”",
+          "slime-cleaner"
+        ]
+      ]
+    },
+    {
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "tag": "창고",
+      "panels": [
+        [
+          "분기별 재고 조사",
+          "고비",
+          "먹을 것하고 비품은 나눠서 보관해 주세요.",
+          "덥석: “저는 같이 두는 게 찾기 편한데요.”",
+          "gobi"
+        ],
+        [
+          "목록 대조",
+          "고비",
+          "공구도 여기 들어 있었네요.",
+          "덥석: “잃어버리지 않게 모아둔 거예요.”",
+          "gobi"
+        ],
+        [
+          "뒤에서 나타난 토르크",
+          "토르크",
+          "이 렌치, 혹시 물어봤어요? 자국이 남았는데.",
+          "덥석: “…한 번만요. 먹지는 않았어요.”",
+          "orc-technician"
+        ],
+        [
+          "새로 붙은 분류표",
+          "고비",
+          "공구는 이쪽 칸에 둘게요. 입에 넣으면 안 돼요.",
+          "덥석: “알겠어요. 꺼낼 때 손으로 잡을게요.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "tag": "의무실",
+      "panels": [
+        [
+          "정기 건강검진",
+          "나비",
+          "팔에 힘 빼고 편하게 앉아 계세요.",
+          "브릭이 소매를 걷고 혈압을 재는 동안, 마왕은 뒤에서 지켜봤다.",
+          "bat-nurse"
+        ],
+        [
+          "줄에서 사라진 사람",
+          "고비",
+          "방금까지 여기 계셨는데… 어디 가셨지?",
+          "나비: “침대 쪽도 한번 볼까요?”",
+          "gobi"
+        ],
+        [
+          "의무실 침대에서",
+          "마왕",
+          "잠깐 쉬고 있었어. 숨은 건 아니고.",
+          "나비: “그럼 쉬셨으니 혈압부터 잴게요.”",
+          "demon-king"
+        ],
+        [
+          "혈압을 재는 동안",
+          "마왕",
+          "오늘은 주사 안 맞는 거지?",
+          "나비: “네. 혈압만 재면 끝나요. 팔은 움직이지 마세요.”",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "tag": "휴게실",
+      "panels": [
+        [
+          "당직 교대 직전",
+          "고비",
+          "버튼을 눌러도 커피가 안 나와요.",
+          "토르크: “잠깐 비켜봐요. 어디가 막혔나 볼게요.”",
+          "gobi"
+        ],
+        [
+          "공구를 펼친 기사",
+          "토르크",
+          "안쪽은 멀쩡해 보이는데. 전원은요?",
+          "찌릿: “정상이에요. 다른 쪽을 봐야겠어요.”",
+          "orc-technician"
+        ],
+        [
+          "지나가던 청소부",
+          "뽀득",
+          "물통이 비었는데요. 이것부터 채워볼까요?",
+          "토르크: “아… 그걸 먼저 볼 걸.”",
+          "slime-cleaner"
+        ],
+        [
+          "조립 완료 후",
+          "고비",
+          "이제 나오네요. 여기 남은 나사는요?",
+          "토르크: “공구함에 있던 예비 나사예요. 조립은 다 확인했어요.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "tag": "축하",
+      "panels": [
+        [
+          "인사 서류의 작은 표시",
+          "도기",
+          "오늘 마왕님 생신이래요. 작게라도 챙길까요?",
+          "고비: “좋아요. 제가 다른 분들한테도 말할게요.”",
+          "kobold-recruiter"
+        ],
+        [
+          "케이크 준비",
+          "보니",
+          "초를 전부 꽂으면 너무 많겠는데요.",
+          "실비: “몇 개만 꽂아요. 마음만 전하면 되죠.”",
+          "skeleton-chef"
+        ],
+        [
+          "직원들이 모인 방",
+          "마왕",
+          "다들 여기 있었군. 이걸 준비하고 있었나?",
+          "고비: “생신 축하드려요. 잠깐만 같이 계세요.”",
+          "demon-king"
+        ],
+        [
+          "케이크 앞에서",
+          "마왕",
+          "고맙다. 준비하느라 쉬지도 못했겠군.",
+          "직원들이 웃자 마왕이 덧붙였다. “앞으로 생일에는 다들 좀 쉬어.”",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "tag": "장마",
+      "panels": [
+        [
+          "빗소리 깊은 밤",
+          "고비",
+          "여기도 새네요. 양동이 하나 더 가져올까요?",
+          "마왕: “응. 이쪽 것도 곧 차겠어.”",
+          "gobi"
+        ],
+        [
+          "천장 긴급 점검",
+          "토르크",
+          "물이 들어오는 틈은 찾았어요. 지붕은 비가 잦아들면 손볼게요.",
+          "고비: “그동안 마왕님 자리는 옮겨둘게요.”",
+          "orc-technician"
+        ],
+        [
+          "배달부의 해결책",
+          "루프",
+          "자리 옮기실 때까지 이거 쓰세요.",
+          "마왕: “성 안에서 우산을 쓰게 될 줄은 몰랐군.”",
+          "ghost-courier"
+        ],
+        [
+          "물이 새지 않는 자리",
+          "고비",
+          "이쪽은 안 새요. 고칠 때까지 여기 계세요.",
+          "마왕: “그래. 너희도 젖은 옷부터 갈아입어.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "tag": "동료",
+      "panels": [
+        [
+          "새 근무 명단 촬영",
+          "도기",
+          "다들 조금만 붙어주세요. 한 번에 나오게요.",
+          "뽀득이 렌즈를 닦고 자리로 돌아갔다.",
+          "kobold-recruiter"
+        ],
+        [
+          "첫 번째 사진",
+          "고비",
+          "루프 씨가 잘 안 나왔어요. 한 번 더 찍을까요?",
+          "루프: “이번에는 조금 더 앞으로 갈게요.”",
+          "gobi"
+        ],
+        [
+          "다시 찍는 사진",
+          "마왕",
+          "이제 됐나?",
+          "실비: “방금 눈 감으셨어요. 한 장만 더요.”",
+          "demon-king"
+        ],
+        [
+          "사진을 고르는 시간",
+          "고비",
+          "저는 이 사진이 좋아요. 다들 편하게 나왔어요.",
+          "직원들이 책상 위 사진을 함께 들여다보며 웃었다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "tag": "신입",
+      "panels": [
+        [
+          "고비의 빈 주머니",
+          "고비",
+          "열쇠가 안 보여요. 분명 가지고 있었는데…",
+          "브릭: “괜찮아요. 마지막으로 쓴 곳부터 생각해 봐요.”",
+          "gobi"
+        ],
+        [
+          "끝없이 길어지는 동선",
+          "고비",
+          "급식실 갔다가 창고, 수선실, 의무실 순서였어요.",
+          "브릭: “많이도 다녔네요. 천천히 다시 짚어보죠.”",
+          "gobi"
+        ],
+        [
+          "뜻밖의 발견",
+          "나비",
+          "고비 씨, 목에 걸려 있네요. 여기요.",
+          "고비: “아… 아까 잃어버릴까 봐 걸어놨는데.”",
+          "bat-nurse"
+        ],
+        [
+          "수색을 마친 뒤",
+          "브릭",
+          "찾았으니까 이제 좀 쉬어요. 남은 건 제가 볼게요.",
+          "나비가 차를 챙겨오는 사이, 고비는 책상에 기대 잠들었다.",
+          "goblin-guard"
+        ]
+      ]
+    },
+    {
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "tag": "감성",
+      "panels": [
+        [
+          "유난히 한가한 당직실",
+          "고비",
+          "오늘은 벨이 안 울리네요. 오히려 좀 낯설어요.",
+          "몽실: “이럴 때 잠깐 쉬어둬요.”",
+          "gobi"
+        ],
+        [
+          "멀리서 들리는 소리",
+          "고비",
+          "주방에는 아직 불이 켜져 있네요.",
+          "몽실: “보니 씨가 수프 준비 중이에요.”",
+          "gobi"
+        ],
+        [
+          "복도를 채우는 작은 소리",
+          "고비",
+          "다들 아직 일하고 계셨네요.",
+          "몽실: “네. 조용해도 할 일은 있죠.”",
+          "gobi"
+        ],
+        [
+          "다시 쓰는 근무일지",
+          "고비",
+          "오늘은 별일 없었다고 적어도 되겠어요.",
+          "몽실: “그런 날도 있어야죠. 다 적으면 쉬어요.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "tag": "복지",
+      "panels": [
+        [
+          "새 건의함 설치",
+          "도기",
+          "불편한 게 있으면 여기 넣어주세요. 이름은 안 써도 돼요.",
+          "고비: “작은 것도 괜찮아요?”",
+          "kobold-recruiter"
+        ],
+        [
+          "첫 번째 쪽지",
+          "도기",
+          "첫 의견은 베개가 너무 낮다는 거네요.",
+          "고비: “아까도 불편하다고 하신 분이 있었는데…”",
+          "kobold-recruiter"
+        ],
+        [
+          "두 번째 쪽지",
+          "도기",
+          "이번엔 야식을 조금 늘려달라는 의견이에요.",
+          "고비: “아까 쪽지랑 글씨가 비슷하네요.”",
+          "kobold-recruiter"
+        ],
+        [
+          "건의 결과 공지",
+          "고비",
+          "쿠션 도착했어요. 필요한 분은 하나씩 가져가세요.",
+          "마왕: “의견 낸 보람이 있군.”",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "tag": "손님",
+      "panels": [
+        [
+          "성문 아래 작은 울음",
+          "브릭",
+          "어디서 들어왔니? 길을 잃었어?",
+          "고양이는 달아나지 않고 브릭을 올려다봤다.",
+          "goblin-guard"
+        ],
+        [
+          "잠시 머물 자리",
+          "고비",
+          "목걸이는 있는데 이름은 안 적혀 있어요.",
+          "도기: “주인 찾을 때까지만 안에서 돌봐요.”",
+          "gobi"
+        ],
+        [
+          "왕좌 점거 사건",
+          "마왕",
+          "하필 내 자리에 누웠군.",
+          "고비: “비켜주질 않아요. 조금만 옆에 앉으실래요?”",
+          "demon-king"
+        ],
+        [
+          "주인을 기다리는 동안",
+          "도기",
+          "주인 찾는 공지는 올려뒀어요. 조금 기다려야겠어요.",
+          "마왕: “자는 동안은 그냥 둬. 깨면 먹을 것도 주고.”",
+          "kobold-recruiter"
+        ]
+      ]
+    },
+    {
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "tag": "성장",
+      "panels": [
+        [
+          "두 번째 야간 근무표",
+          "고비",
+          "오늘은 성문 점검부터 하면 되죠?",
+          "브릭: “맞아요. 끝나면 같이 안쪽도 돌아봐요.”",
+          "gobi"
+        ],
+        [
+          "직원들이 남긴 쪽지",
+          "고비",
+          "서랍 위치까지 적어주셨네요. 덕분에 덜 헤매겠어요.",
+          "브릭: “찾다가 모르겠으면 바로 물어봐요.”",
+          "gobi"
+        ],
+        [
+          "비어 있는 마지막 줄",
+          "마왕",
+          "한 가지는 더 적어두는 게 좋겠군.",
+          "고비: “어떤 거요?”",
+          "demon-king"
+        ],
+        [
+          "마지막으로 적는 말",
+          "마왕",
+          "혼자 다 하려고 하지 마. 어려우면 사람을 불러.",
+          "고비: “네. 이번엔 바로 말씀드릴게요.”",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "tag": "왕좌",
+      "panels": [
+        [
+          "아무도 없는 왕좌실",
+          "고비",
+          "먼지만 닦고 바로 나가자.",
+          "빈 왕좌가 오늘따라 커 보였다.",
+          "gobi"
+        ],
+        [
+          "잠깐 앉아보는 것뿐",
+          "고비",
+          "팔걸이가 왜 이렇게 높아…",
+          "작은 두 발이 바닥에 닿지 않았다.",
+          "gobi"
+        ],
+        [
+          "신입 마왕의 첫 공약",
+          "고비",
+          "내가 마왕이면… 야근부터 없앤다.",
+          "등 뒤에서 익숙한 헛기침이 들렸다.",
+          "gobi"
+        ],
+        [
+          "발판부터 하나",
+          "마왕",
+          "그건 나도 아직 못 했다.",
+          "마왕이 고비의 발 아래 작은 발판을 놓았다.",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "tag": "간식",
+      "panels": [
+        [
+          "빈 푸딩 용기",
+          "고비",
+          "분명 퇴근하고 먹으려고 뒀는데…",
+          "숟가락까지 깨끗하게 씻겨 있었다.",
+          "gobi"
+        ],
+        [
+          "간식 실명제",
+          "보니",
+          "자기 것은 이름을 붙여두세요.",
+          "보니가 작은 이름표를 나눠줬다.",
+          "skeleton-chef"
+        ],
+        [
+          "너무 큰 이름표",
+          "고비",
+          "덥석 씨… 이건 좀 크지 않아요?",
+          "냉장고 문 전체를 덮는 이름표가 붙어 있었다.",
+          "gobi"
+        ],
+        [
+          "냉장고는 모두의 것",
+          "고비",
+          "공용이에요. 공용.",
+          "덥석은 자기 푸딩에만 작은 이름표를 붙였다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "tag": "지름길",
+      "panels": [
+        [
+          "너무 긴 복도",
+          "고비",
+          "이 서류, 반대편 탑까지요?!",
+          "고비가 서류 더미를 안고 뛰었다.",
+          "gobi"
+        ],
+        [
+          "땅콩의 자신작",
+          "땅콩",
+          "제가 뚫어둔 지름길이 있어요!",
+          "바닥에서 안전모가 쏙 올라왔다.",
+          "ddangkong-miner"
+        ],
+        [
+          "목적지는 침대 아래",
+          "고비",
+          "여기… 마왕님 방 아니에요?",
+          "침대 위에서 이불 뒤척이는 소리가 났다.",
+          "gobi"
+        ],
+        [
+          "벽으로 오면 되는데",
+          "루프",
+          "왜 다들 바닥으로 다녀요?",
+          "벽을 통과해 온 루프는 조금도 당황하지 않았다.",
+          "ghost-courier"
+        ]
+      ]
+    },
+    {
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "tag": "고마움",
+      "panels": [
+        [
+          "말없이 들어준 상자",
+          "고비",
+          "브릭 씨, 그거 무거운데…",
+          "브릭은 서류 상자를 번쩍 들어줬다.",
+          "gobi"
+        ],
+        [
+          "칭찬 신청서",
+          "두루",
+          "칭찬 사유를 여기에 적으시면 됩니다.",
+          "고비가 입을 열기도 전에 종이가 도착했다.",
+          "duru-archivist"
+        ],
+        [
+          "이미 퇴근 시간",
+          "고비",
+          "감사 대상의 소속… 직급… 잠깐, 브릭 씨!",
+          "성문 밖으로 작은 투구가 멀어지고 있었다.",
+          "gobi"
+        ],
+        [
+          "먼저 전하는 한마디",
+          "고비",
+          "브릭 씨! 오늘 진짜 고마웠어요!",
+          "두루는 조용히 구두 승인 도장을 찍었다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "tag": "시설팀",
+      "panels": [
+        [
+          "삐걱이는 당직실",
+          "고비",
+          "앉을 때마다 성이 무너지는 소리가 나요.",
+          "작은 의자가 삐걱 하고 대답했다.",
+          "gobi"
+        ],
+        [
+          "시설팀의 공동 작업",
+          "토르크",
+          "튼튼하게! 아주 튼튼하게 고쳐주지!",
+          "깡통: “높이 조절도 자동으로 달게요!”",
+          "orc-technician"
+        ],
+        [
+          "천장까지 올라갔다",
+          "고비",
+          "저기요! 내려가는 버튼은요?!",
+          "완성된 의자가 천장에 닿았다.",
+          "gobi"
+        ],
+        [
+          "이쪽이 더 편한데요",
+          "고비",
+          "그냥 이 의자 쓸게요.",
+          "두 기술자는 거대한 의자 옆에서 고개를 끄덕였다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "tag": "빨래",
+      "panels": [
+        [
+          "빨래를 널자마자",
+          "실비",
+          "오늘은 금방 마르겠네요.",
+          "하늘에서 우르릉 소리가 났다.",
+          "spider-tailor"
+        ],
+        [
+          "구름도 연결하면",
+          "찌릿",
+          "제가 구름을 살짝 옮겨볼게요!",
+          "찌릿의 꼬리 끝에서 불꽃이 튀었다.",
+          "electric-technician"
+        ],
+        [
+          "비는 그쳤지만",
+          "고비",
+          "제 머리도 같이 말랐네요…",
+          "고비의 머리카락이 사방으로 뻗었다.",
+          "gobi"
+        ],
+        [
+          "빗질 대기 줄",
+          "마왕",
+          "내 뿔은 원래 이렇다.",
+          "실비가 마왕의 머리 위로 빗을 들었다.",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "tag": "휴식",
+      "panels": [
+        [
+          "오늘은 쉬는 날",
+          "브릭",
+          "코코, 오늘은 내가 지킬게.",
+          "코코가 푹신한 방석에 몸을 말았다.",
+          "goblin-guard"
+        ],
+        [
+          "귀만 먼저 출근",
+          "브릭",
+          "그냥 바람 소리야.",
+          "작은 소리에도 코코의 귀가 번쩍 섰다.",
+          "goblin-guard"
+        ],
+        [
+          "옆자리를 지키는 동료",
+          "브릭",
+          "문은 보고 있어. 눈 감아도 돼.",
+          "브릭이 방석 바로 옆에 자리를 잡았다.",
+          "goblin-guard"
+        ],
+        [
+          "오늘 네 근무",
+          "브릭",
+          "오늘 네 근무는 자는 거야.",
+          "코코의 꼬리가 잠결에 한 번 움직였다.",
+          "goblin-guard"
+        ]
+      ]
+    },
+    {
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "tag": "팀워크",
+      "panels": [
+        [
+          "친목을 위한 한 판",
+          "도기",
+          "오늘 종목은 줄다리기입니다!",
+          "직원들이 운동장에 모였다.",
+          "kobold-recruiter"
+        ],
+        [
+          "잡히지 않는 팀워크",
+          "루프",
+          "저는 힘주고 있는데요?",
+          "뽀득은 줄보다 길게 늘어나고 있었다.",
+          "ghost-courier"
+        ],
+        [
+          "실비의 해결책",
+          "실비",
+          "놓치지 않게 묶어드릴게요.",
+          "직원들이 하나의 말랑한 덩어리가 됐다.",
+          "spider-tailor"
+        ],
+        [
+          "종목 변경",
+          "도기",
+          "제1회… 단체 버티기!",
+          "누구도 넘어지지 않았다. 움직이지도 못했지만.",
+          "kobold-recruiter"
+        ]
+      ]
+    },
+    {
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "tag": "합주",
+      "panels": [
+        [
+          "짧은 안내 음악",
+          "큐",
+          "딱 세 음이면 충분합니다.",
+          "큐가 작은 악보를 펼쳤다.",
+          "merc-q"
+        ],
+        [
+          "반주가 하나둘",
+          "보니",
+          "박자 정도는 제가 맞출게요.",
+          "찌릿은 벌써 전기 기타를 꺼내고 있었다.",
+          "skeleton-chef"
+        ],
+        [
+          "안내 방송 대공연",
+          "찌릿",
+          "여기서 한 번 더 크게!",
+          "세 음짜리 신호가 공연이 되어버렸다.",
+          "electric-technician"
+        ],
+        [
+          "뜻밖의 앙코르",
+          "마왕",
+          "아까 그 부분부터 다시.",
+          "잠옷 차림의 마왕이 맨 앞자리에 앉았다.",
+          "demon-king"
+        ]
+      ]
+    },
+    {
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "tag": "다정함",
+      "panels": [
+        [
+          "뒤로 숨긴 방패",
+          "본가드",
+          "문제없습니다.",
+          "방패 가장자리에는 작은 금이 나 있었다.",
+          "merc-ward"
+        ],
+        [
+          "다친 데는 없지만",
+          "반창",
+          "여기, 조금 아파 보이는데요.",
+          "본가드가 자기 몸 대신 방패를 내려다봤다.",
+          "merc-banchang"
+        ],
+        [
+          "작은 하트 하나",
+          "반창",
+          "이건 방패한테 붙여줄게요.",
+          "금 위에 하트 반창고가 붙었다.",
+          "merc-banchang"
+        ],
+        [
+          "떼지 말아주세요",
+          "본가드",
+          "이건… 떼지 마십시오.",
+          "수리가 끝난 방패에도 작은 하트는 남았다.",
+          "merc-ward"
+        ]
+      ]
+    },
+    {
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "tag": "편지",
+      "panels": [
+        [
+          "잘 지낸다는 말 다음",
+          "고비",
+          "잘 지내고 있어… 그다음은 뭐라고 쓰지.",
+          "구겨진 종이만 늘어났다.",
+          "gobi"
+        ],
+        [
+          "서두르지 않는 우편",
+          "봉투",
+          "봉투는 제가 접어둘게요.",
+          "봉투가 빈 의자를 끌어왔다.",
+          "bongtu-postmaster"
+        ],
+        [
+          "조용히 기다리는 동안",
+          "고비",
+          "그냥… 뭐부터 말해야 할지 몰라서요.",
+          "봉투는 고개를 끄덕이고 기다렸다.",
+          "gobi"
+        ],
+        [
+          "처음 적은 진짜 안부",
+          "고비",
+          "같이 일하는 사람들이 생겼어.",
+          "이번 종이는 구기지 않았다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "tag": "장터",
+      "panels": [
+        [
+          "휴게실 기금 모으기",
+          "오울리",
+          "안 쓰는 물건부터 내놓으세요.",
+          "성문 앞에 작은 장터가 열렸다.",
+          "merc-accountant"
+        ],
+        [
+          "고장 난 물건이 좋아",
+          "토르크",
+          "이걸 다 고칠 수 있다고? 전부 주세요!",
+          "토르크의 품에 고장 난 기계가 쌓였다.",
+          "orc-technician"
+        ],
+        [
+          "이건 못 보내겠는데",
+          "덥석",
+          "잠깐, 저것도 다시 살게요!",
+          "덥석이 내놓은 물건을 하나씩 되사고 있었다.",
+          "mimic-storekeeper"
+        ],
+        [
+          "매출과 지출이 똑같다",
+          "오울리",
+          "물건들만 산책했네요.",
+          "처음과 똑같은 물건들이 창고로 돌아왔다.",
+          "merc-accountant"
+        ]
+      ]
+    },
+    {
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "tag": "휴가",
+      "panels": [
+        [
+          "이번 달 휴가 신청",
+          "도기",
+          "쉬고 싶은 날을 적어주세요!",
+          "도기가 빈 신청서 묶음을 들고 다녔다.",
+          "kobold-recruiter"
+        ],
+        [
+          "밀린 신청도 있나요",
+          "두루",
+          "보관 중인 것도 함께 드리지요.",
+          "수백 년 묵은 서류가 쏟아졌다.",
+          "duru-archivist"
+        ],
+        [
+          "가장 오래된 신청인",
+          "도기",
+          "신청인… 마왕님?",
+          "휴가 사유에는 아무것도 안 하기라고 적혀 있었다.",
+          "kobold-recruiter"
+        ],
+        [
+          "반나절부터 연습",
+          "도기",
+          "반나절부터 연습하시죠.",
+          "마왕은 허락받은 아이처럼 작게 웃었다.",
+          "kobold-recruiter"
+        ]
+      ]
+    },
+    {
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "tag": "피로",
+      "panels": [
+        [
+          "한 박자 늦은 그림자",
+          "고비",
+          "어? 나 방금 팔 내렸는데.",
+          "벽의 그림자는 아직 팔을 들고 있었다.",
+          "gobi"
+        ],
+        [
+          "그림자가 먼저 누웠다",
+          "고비",
+          "몽실 씨! 제 그림자가 이상해요!",
+          "바닥의 그림자는 벌써 길게 누워 있었다.",
+          "gobi"
+        ],
+        [
+          "상담보다 먼저 필요한 것",
+          "몽실",
+          "많이 피곤했나 보네.",
+          "몽실은 그림자 곁에 작은 베개를 놓았다.",
+          "nightmare-counselor"
+        ],
+        [
+          "조금만 같이 쉬자",
+          "고비",
+          "본인보다 먼저 퇴근하면 어떡해…",
+          "고비도 그림자 옆에 앉아 눈을 감았다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "tag": "괴담",
+      "panels": [
+        [
+          "하나도 안 무서운데",
+          "루프",
+          "유령 이야기라면 제가 더 잘 알죠!",
+          "루프가 자신 있게 웃었다.",
+          "ghost-courier"
+        ],
+        [
+          "반품도 안 되는 소포",
+          "나비",
+          "주소가 없는데, 반품도 안 된대요.",
+          "루프의 웃음이 멈췄다.",
+          "bat-nurse"
+        ],
+        [
+          "너무 무서운 현실",
+          "루프",
+          "그건… 실화잖아요…",
+          "찰칵이 무심코 셔터를 눌렀다.",
+          "ghost-courier"
+        ],
+        [
+          "사진에 남은 공포",
+          "찰칵",
+          "오늘은 더 하얗게 나왔네요.",
+          "사진 한가운데에는 하얀 얼룩만 남았다.",
+          "chalkak-photographer"
+        ]
+      ]
+    },
+    {
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "tag": "화분",
+      "panels": [
+        [
+          "새로운 당직실 식구",
+          "고비",
+          "물 주는 사람만 정하면 되겠죠?",
+          "책상 위에 작은 화분이 놓였다.",
+          "gobi"
+        ],
+        [
+          "각자 잘하는 방식으로",
+          "보니",
+          "영양은 제가 챙길게요.",
+          "찌릿은 조명을, 뽀득은 잎 청소를 맡았다.",
+          "skeleton-chef"
+        ],
+        [
+          "너무 잘 자랐는데",
+          "고비",
+          "어제는 분명 손바닥만 했는데요!",
+          "덩굴이 당직실을 가득 채웠다.",
+          "gobi"
+        ],
+        [
+          "새로운 담당 업무",
+          "고비",
+          "가지치기 담당도 정해야겠어요.",
+          "직원들은 잎사귀 그늘 아래 모여 앉았다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "tag": "비상벨",
+      "panels": [
+        [
+          "어떤 위기라도",
+          "플레어",
+          "급한 일은 이 벨을 누르세요!",
+          "플레어가 반짝이는 비상벨을 가리켰다.",
+          "merc-rescue"
+        ],
+        [
+          "벨보다 빠른 출동",
+          "고비",
+          "저기, 잠깐만 도와…",
+          "플레어가 벌써 창문으로 뛰어들었다.",
+          "gobi"
+        ],
+        [
+          "최상단 선반의 위기",
+          "플레어",
+          "비상 상황이… 과자 상자예요?",
+          "고비가 손이 닿지 않는 선반을 가리켰다.",
+          "merc-rescue"
+        ],
+        [
+          "사기를 지키는 임무",
+          "플레어",
+          "직원 사기 저하도 비상이긴 하지.",
+          "세 사람은 내려온 과자를 나눠 먹었다.",
+          "merc-rescue"
+        ]
+      ]
+    },
+    {
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "tag": "별똥별",
+      "panels": [
+        [
+          "막차 창밖의 빛",
+          "칙칙",
+          "오른쪽 창문을 봐주세요.",
+          "별똥별이 마왕성 위를 지나갔다.",
+          "merc-chikchik"
+        ],
+        [
+          "별을 찾으러",
+          "땅콩",
+          "떨어진 곳을 본 것 같아요!",
+          "열차가 멈추자 땅콩이 달려갔다.",
+          "ddangkong-miner"
+        ],
+        [
+          "그냥 돌이었네",
+          "땅콩",
+          "빛나길래… 별인 줄 알았어요.",
+          "손바닥 위에는 작은 돌 하나가 놓여 있었다.",
+          "ddangkong-miner"
+        ],
+        [
+          "우리 성 첫 번째 별",
+          "고비",
+          "우리한테는 이게 그 별이죠.",
+          "다음 날, 돌은 당직실 한가운데 놓였다.",
+          "gobi"
+        ]
+      ]
+    },
+    {
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "tag": "동료",
+      "panels": [
+        [
+          "정신없는 호출",
+          "고비",
+          "경비님! 청소 담당님! 시설팀!",
+          "고비의 목소리가 복도에 울렸다.",
+          "gobi"
+        ],
+        [
+          "저요? 이쪽이요?",
+          "토르크",
+          "누구부터 부른 거야?",
+          "직원들이 서로를 가리켰다.",
+          "orc-technician"
+        ],
+        [
+          "숨을 고르고 한 명씩",
+          "고비",
+          "브릭 씨. 뽀득 씨. 토르크 씨.",
+          "고비가 눈을 맞추며 다시 불렀다.",
+          "gobi"
+        ],
+        [
+          "이제 들리는 목소리",
+          "뽀득",
+          "응. 이제 누구 부르는지 알겠다.",
+          "세 동료가 동시에 고개를 끄덕였다.",
+          "slime-cleaner"
+        ]
+      ]
+    },
+    {
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "tag": "내일",
+      "panels": [
+        [
+          "교대가 끝난 당직실",
+          "고비",
+          "오늘도… 끝났네.",
+          "고비가 문 앞에서 한 번 돌아봤다.",
+          "gobi"
+        ],
+        [
+          "동료들이 남긴 것",
+          "고비",
+          "장갑, 고쳐주셨구나.",
+          "책상에는 간식과 수선된 장갑, 접힌 쪽지가 놓여 있었다.",
+          "gobi"
+        ],
+        [
+          "아직도 무섭나",
+          "마왕",
+          "첫날엔 도망갈 표정이더니. 아직도 무섭나?",
+          "마왕이 문틀에 기대어 물었다.",
+          "demon-king"
+        ],
+        [
+          "함께 일할 사람들",
+          "고비",
+          "네. 그래도 내일 누구랑 일하는지는 아니까요.",
+          "불이 꺼진 당직실에 아침빛이 들어왔다.",
+          "gobi"
+        ]
+      ]
+    }
+  ],
+  "hiring": [
+    {
+      "id": "ghost-courier",
+      "name": "루프",
+      "job": "유령 배달부",
+      "title": "수취인: 아직 없는 동료",
+      "reference": "assets/pixel/ghost-courier.webp",
+      "panels": [
+        {
+          "scene": "Mint ghost courier emerges through a stone wall with parcel; startled goblin clerk points at nearby door. Only two characters.",
+          "dialogue": "루프: “특급 배송입니다!”\n고비: “문은 저쪽인데요?!”",
+          "file": "ghost-courier/01.webp"
+        },
+        {
+          "scene": "Courier and Gobi lean over ribbon parcel with blank recipient tag; courier cheerfully offers it while Gobi puzzled, desk close-up.",
+          "dialogue": "고비: “이름도 없는데 어떻게 배달해요?”\n루프: “만날 때까지 배달하면 되죠!”",
+          "file": "ghost-courier/02.webp"
+        },
+        {
+          "scene": "Courier throws a glowing ribbon parcel through three armored intruders and their raised shields in a straight line. Transparent magical trajectory, no wounds, playful action.",
+          "dialogue": "루프: “파손 주의예요. 여러분 쪽이요!”",
+          "file": "ghost-courier/03.webp"
+        },
+        {
+          "scene": "At warm office desk open parcel reveals neatly folded navy uniform and blank photo ID; Gobi writes on ID with quill and gives it to touched mint ghost.",
+          "dialogue": "고비: “배송 완료네요. 앞으로 여기가 근무지예요.”\n루프: “그럼… 내일도 올 수 있겠네요?”",
+          "file": "ghost-courier/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "bat-nurse",
+      "name": "나비",
+      "job": "박쥐 간호사",
+      "title": "무서운 건 바늘이 아니라",
+      "reference": "assets/staff-expansion/bat-nurse.webp",
+      "panels": [
+        {
+          "scene": "Purple bat nurse with cream cap hangs upside down from clinic beam, Gobi turns interview paper upside down to talk to her. Cozy humorous.",
+          "dialogue": "고비: “야간 근무는 괜찮으세요?”\n나비: “낮 근무만 아니면요.”",
+          "file": "bat-nurse/01.webp"
+        },
+        {
+          "scene": "Bat nurse kneels to put small bandage on young armored intruder knee after a fall; bewildered unarmed patient seated safely, compassionate.",
+          "dialogue": "나비: “다쳤으면 먼저 앉아요.”\n용사: “저… 침입자인데요.”",
+          "file": "bat-nurse/02.webp"
+        },
+        {
+          "scene": "Previously bandaged armored intruder raises sword; stern bat nurse points at a glowing pink medical vulnerability sigil attached to chest armor. Clear mark, not injection.",
+          "dialogue": "나비: “치료는 해드렸고요. 난동은 금지예요.”",
+          "file": "bat-nurse/03.webp"
+        },
+        {
+          "scene": "Bat nurse gently places steaming tea cup into exhausted Gobi hands over hiring paperwork; empathetic nurse and relieved goblin, no syringe.",
+          "dialogue": "고비: “직원인데요…”\n나비: “직원도 돌봐야죠.”",
+          "file": "bat-nurse/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "skeleton-chef",
+      "name": "보니",
+      "job": "해골 요리사",
+      "title": "면접은 열두 그릇",
+      "reference": "assets/staff-expansion/skeleton-chef.webp",
+      "panels": [
+        {
+          "scene": "Friendly ivory skeleton chef in tall cream toque and red scarf enters interview office carrying enormous copper soup pot with BOTH hands. Gobi holds blank resume puzzled.",
+          "dialogue": "고비: “이력서는요?”\n보니: “일단 한 그릇 드셔봐요.”",
+          "file": "skeleton-chef/01.webp"
+        },
+        {
+          "scene": "Chef ladles generous soup for Gobi and small mint slime cleaner seated at wooden canteen table; empty bowls waiting, plentiful steam, no demon king.",
+          "dialogue": "고비: “저희 아직 채용 결정을…”\n뽀득: “저는 찬성이요.”",
+          "file": "skeleton-chef/02.webp"
+        },
+        {
+          "scene": "Chef offers red steaming spicy soup with ladle to surprised armored intruder in kitchen doorway; cartoon magical hot steam curls around armor, no harm.",
+          "dialogue": "용사: “맛이 뜨겁다고요?”\n보니: “계속 뜨거울 거예요.”",
+          "file": "skeleton-chef/03.webp"
+        },
+        {
+          "scene": "Quiet kitchen after meal. Chef keeps one full soup bowl warm under candle beside empty chair; Gobi watches tenderly holding hiring stamp.",
+          "dialogue": "고비: “누구 몫이에요?”\n보니: “아직 퇴근 못 한 사람요.”",
+          "file": "skeleton-chef/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "mimic-storekeeper",
+      "name": "덥석",
+      "job": "미믹 창고지기",
+      "title": "분실물 보관함을 채용했습니다",
+      "reference": "assets/staff-expansion/mimic-storekeeper.webp",
+      "panels": [
+        {
+          "scene": "Gobi checks pocket watch beside apparently ordinary closed brass-trim wooden chest wearing burgundy work cap. Chest opens slightly revealing two bright amber eyes, surprising Gobi.",
+          "dialogue": "고비: “또 불참인가…”\n덥석: “참석했습니다.”",
+          "file": "mimic-storekeeper/01.webp"
+        },
+        {
+          "scene": "Friendly mimic chest opens wide revealing neatly partitioned storage of tagged keys and tools; Gobi reaches toward exactly one brass key, chest proud.",
+          "dialogue": "덥석: “열쇠는 오른쪽 두 번째 칸. 영수증 가져오셨죠?”",
+          "file": "mimic-storekeeper/02.webp"
+        },
+        {
+          "scene": "Tired armored thief carrying stolen supplies stumbles toward open mimic chest in storeroom; mimic opens comically enormous mouth ready to catch him, inventory stamp nearby, NO gore.",
+          "dialogue": "덥석: “품목 미등록. 상태 불량. 임시 입고합니다!”",
+          "file": "mimic-storekeeper/03.webp"
+        },
+        {
+          "scene": "Gobi gently clips blank gold-edged employee badge onto burgundy cap of blushing chest mimic; mimic keeps lid shyly half closed, warm personal gift.",
+          "dialogue": "고비: “덥석 씨 거예요.”\n덥석: “그럼… 반납 안 해도 되죠?”",
+          "file": "mimic-storekeeper/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "spider-tailor",
+      "name": "실비",
+      "job": "거미 재봉사",
+      "title": "실밥 하나로 이어진 사이",
+      "reference": "assets/staff-expansion/spider-tailor.webp",
+      "panels": [
+        {
+          "scene": "Cute lavender spider tailor with round spectacles and burgundy headscarf leans toward frayed sleeve of Gobi who freezes during interview; sewing studio.",
+          "dialogue": "실비: “잠깐만요.”\n고비: “제가 뭘 잘못했나요?”",
+          "file": "spider-tailor/01.webp"
+        },
+        {
+          "scene": "Spider tailor uses anatomically organized spider limbs to simultaneously mend Gobi ivory sleeve, leather glove on table, and work apron on dressform. Show coherent limb attachments, no duplicated hands.",
+          "dialogue": "실비: “다들 이렇게 입고 일했어요?”\n직원들: “바빠서요…”",
+          "file": "spider-tailor/02.webp"
+        },
+        {
+          "scene": "Lavender spider tailor links capes of two running armored intruders with luminous teal thread; one stops, both stumble gently together, comic kinetic action.",
+          "dialogue": "실비: “잠깐, 가봉 중에는 움직이지 마세요.”",
+          "file": "spider-tailor/03.webp"
+        },
+        {
+          "scene": "Close affectionate sewing workshop scene, tailor presents Gobi with repaired burgundy vest bearing tiny crescent embroidery; matching crescent on glove and apron nearby.",
+          "dialogue": "고비: “이건 무슨 표시예요?”\n실비: “어디서 찢어져도, 여기로 돌아오라는 표시요.”",
+          "file": "spider-tailor/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "nightmare-counselor",
+      "name": "몽실",
+      "job": "악몽 상담사",
+      "title": "면접관부터 상담합니다",
+      "reference": "assets/staff-expansion/nightmare-counselor.webp",
+      "panels": [
+        {
+          "scene": "Sleepy pale lavender spirit counselor in starry navy sleep cap offers soft cushion to anxious Gobi holding interview questions; cozy counseling room.",
+          "dialogue": "몽실: “요즘 가장 힘든 게 뭔가요?”\n고비: “제가 질문해야 하는데…”",
+          "file": "nightmare-counselor/01.webp"
+        },
+        {
+          "scene": "Gobi spills worries with exaggerated tired gestures while sleepy counselor listens attentively in warm armchair, tea and tissues, NO speech bubble graphics.",
+          "dialogue": "몽실: “응. 그랬구나.”",
+          "file": "nightmare-counselor/02.webp"
+        },
+        {
+          "scene": "Counselor leans from open castle window toward weary wizard intruder outside; fading spell circle above wizard staff dissolves into harmless stars as wizard lowers shoulders.",
+          "dialogue": "몽실: “그렇게까지 해야 한다고, 누가 그랬어요?”\n마법사: “…스승님이요.”",
+          "file": "nightmare-counselor/03.webp"
+        },
+        {
+          "scene": "Counselor hangs crescent-and-pillow pictogram plaque on door, gently guides yawning Gobi toward restful chair; stamped hiring papers on table, peaceful closure.",
+          "dialogue": "고비: “아직 할 말이…”\n몽실: “이제 자야 할 시간이에요.”",
+          "file": "nightmare-counselor/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "kobold-recruiter",
+      "name": "도기",
+      "job": "코볼트 인사담당",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "reference": "assets/staff-expansion/kobold-recruiter.webp",
+      "panels": [
+        {
+          "scene": "Golden doglike kobold recruiter with round glasses navy vest teal tie stares in alarm at nearly empty shift grid on office wall; Gobi nervously offers resume.",
+          "dialogue": "도기: “이 인원으로 밤을 넘긴다고요?”\n고비: “그래서 채용 중이에요…”",
+          "file": "kobold-recruiter/01.webp"
+        },
+        {
+          "scene": "Energetic kobold at busy recruiting desk holding one telephone receiver and stamping paper with other hand; second phone and three stamps rest on table. Exactly two hands.",
+          "dialogue": "도기: “당직 가능하신 분! 유니폼은 입사 후 맞춰드립니다!”",
+          "file": "kobold-recruiter/02.webp"
+        },
+        {
+          "scene": "Kobold directs goblin guard with crossbow and mint slime cleaner toward positions, while small recruit enters back doorway. Clear organized teamwork and urgent pointing.",
+          "dialogue": "도기: “브릭 씨, 정면! 뽀득 씨, 오른쪽! 신입분, 여기 빈자리!”",
+          "file": "kobold-recruiter/03.webp"
+        },
+        {
+          "scene": "Full shift grid of small portrait icons; kobold looks uncertain while Gobi adds kobold portrait in last personnel slot and hands him employee badge, relieved smile.",
+          "dialogue": "도기: “어… 제 면접은요?”\n고비: “방금 끝났어요.”",
+          "file": "kobold-recruiter/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "duru-archivist",
+      "name": "두루",
+      "job": "미라 기록관",
+      "title": "삼백 년 전 지원서",
+      "reference": "assets/expansion-v2/duru-archivist-portrait.webp",
+      "panels": [
+        {
+          "scene": "Gobi finds aged application in dusty archive drawer; small bandaged mummy archivist quietly raises hand behind huge old scroll stack, candlelit ancient room.",
+          "dialogue": "고비: “접수일이… 삼백 년 전?”\n두루: “결과 나왔나요?”",
+          "file": "duru-archivist/01.webp"
+        },
+        {
+          "scene": "Proud tiny mummy guides amazed Gobi through perfectly ordered towering archive shelves with scrolls and colored seals, ancient dust sparkling.",
+          "dialogue": "두루: “기다리면서 조금 정리했습니다.”\n고비: “조금이요?”",
+          "file": "duru-archivist/02.webp"
+        },
+        {
+          "scene": "Mummy archivist slams red rejection stamp against shining blue magical shield of armored intruder; shield develops geometric cracks, no body wounds, dramatic paper magic.",
+          "dialogue": "두루: “이 보호막, 반입 승인 없네요. 반려입니다.”",
+          "file": "duru-archivist/03.webp"
+        },
+        {
+          "scene": "Close desk-level portrait of mummy holding freshly approved application with simple red check-seal, gazing tenderly; Gobi holds stamp nearby, amber light and emotional acceptance.",
+          "dialogue": "두루: “이 도장은… 보관 기간이 얼마나 되나요?”\n고비: “원하시는 만큼요.”",
+          "file": "duru-archivist/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "kkangtong-engineer",
+      "name": "깡통",
+      "job": "자석 정비공",
+      "title": "불량품 아닙니다",
+      "reference": "assets/expansion-v2/kkangtong-engineer-portrait.webp",
+      "panels": [
+        {
+          "scene": "Small scrap-metal robot mechanic waves from box of discarded gears, holding oversized horseshoe magnet; Gobi lifts lid in surprise, workshop.",
+          "dialogue": "깡통: “부품은 폐기해도 저는 면접 봐주세요!”",
+          "file": "kkangtong-engineer/01.webp"
+        },
+        {
+          "scene": "Robot magnet attracts neatly aligned wrenches but also Gobi keyring and metal chair sliding across workshop; funny harmless chaos, visible magnet attraction arcs.",
+          "dialogue": "깡통: “정리 속도는 자신 있습니다!”\n고비: “제 자리도 정리됐네요.”",
+          "file": "kkangtong-engineer/02.webp"
+        },
+        {
+          "scene": "Robot reverses huge magnet and sends three iron-armored intruders sliding backward across castle passage in visible repulsion wave; heroic low camera.",
+          "dialogue": "깡통: “붙는 것만 잘하는 줄 알았죠?”",
+          "file": "kkangtong-engineer/03.webp"
+        },
+        {
+          "scene": "Gobi affixes shiny employee badge to dented robot chest plate; robot cups badge with small metal hands, scrap workshop glows warmly, belonging.",
+          "dialogue": "깡통: “중고도 채용해요?”\n고비: “경력직이라고 하죠.”",
+          "file": "kkangtong-engineer/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "ddangkong-miner",
+      "name": "땅콩",
+      "job": "두더지 지뢰공",
+      "title": "정문으로 오라고 했는데",
+      "reference": "assets/expansion-v2/ddangkong-miner-portrait.webp",
+      "panels": [
+        {
+          "scene": "Cute mole miner with safety helmet and tiny paws lifts one square office floor tile and peeks up at shocked Gobi, tidy interview table nearby.",
+          "dialogue": "땅콩: “지원자 땅콩, 도착했습니다!”\n고비: “정문 안내 못 받으셨어요?”",
+          "file": "ddangkong-miner/01.webp"
+        },
+        {
+          "scene": "Mole presents detailed isometric pictorial map of castle pipes while repaired leaking pipe shines beside them; Gobi impressed, underground warm workshop.",
+          "dialogue": "땅콩: “여기 배관도 새고 있길래요.”\n고비: “면접 오면서 고쳤어요?”",
+          "file": "ddangkong-miner/02.webp"
+        },
+        {
+          "scene": "Mole beside triangular warning pictogram sign; armored intruders ignore barricade and step on concealed magical mine that erupts in harmless golden dirt cloud, playful dust, no injury.",
+          "dialogue": "땅콩: “분명히 돌아가시라고 했는데…”",
+          "file": "ddangkong-miner/03.webp"
+        },
+        {
+          "scene": "Gobi kneels to place small employee crescent sticker on mole safety helmet; mole proudly holds shovel, new tunnel opening behind prompts Gobi worried sideways glance.",
+          "dialogue": "땅콩: “출근길도 뚫어둘게요.”\n고비: “그건 정문으로!”",
+          "file": "ddangkong-miner/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "chalkak-photographer",
+      "name": "찰칵",
+      "job": "꼬마 유령 사진사",
+      "title": "사진에 없는 사진사",
+      "reference": "assets/expansion-v2/chalkak-photographer-portrait.webp",
+      "panels": [
+        {
+          "scene": "Shy little hooded ghost photographer offers Gobi application with photo showing empty room background instead of person; old camera hugged in arms, subdued cyan light.",
+          "dialogue": "고비: “사진이 빠졌네요.”\n찰칵: “저… 찍기는 했어요.”",
+          "file": "chalkak-photographer/01.webp"
+        },
+        {
+          "scene": "Gobi and ghost photographer browse open photo album showing small candid portraits of castle employees at supper; photographer shyly points to empty self portrait frame.",
+          "dialogue": "찰칵: “제 사진만 잘 안 나와요.”\n고비: “브릭 씨 사진은 너무 잘 나왔는데요.”",
+          "file": "chalkak-photographer/02.webp"
+        },
+        {
+          "scene": "Little hooded ghost relentlessly aims antique camera at armored intruder hiding behind shield; successive flash glints concentrated on same target, one camera, no duplicates.",
+          "dialogue": "찰칵: “방금 눈 감으셨어요. 한 장만 더요.”",
+          "file": "chalkak-photographer/03.webp"
+        },
+        {
+          "scene": "Gobi beside hooded ghost wearing new employee badge, both reflected in tall mirror; hood, glowing eyes and badge visible, antique camera on tripod ready to take their first shared portrait.",
+          "dialogue": "고비: “이번엔 같이 찍어요.”\n찰칵의 첫 단체사진.",
+          "file": "chalkak-photographer/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "bongtu-postmaster",
+      "name": "봉투",
+      "job": "마력 우편원",
+      "title": "가장 급한 결재",
+      "reference": "assets/expansion-v2/bongtu-postmaster-portrait.webp",
+      "panels": [
+        {
+          "scene": "Tiny pink-accented imp mail clerk waits outside mailroom holding own sealed application; enormous piles of pending envelopes visible through doorway, nervous hopeful face.",
+          "dialogue": "봉투: “수신 확인은 됐는데…”",
+          "file": "bongtu-postmaster/01.webp"
+        },
+        {
+          "scene": "Imp mail clerk rolls sleeves and sorts urgent envelopes into neatly colored trays, own application patiently placed aside; fluttering quill and warm office lamp.",
+          "dialogue": "봉투: “제 지원서는 나중에요. 급한 것부터!”",
+          "file": "bongtu-postmaster/02.webp"
+        },
+        {
+          "scene": "Pink magical envelopes fly from imp postmaster toward exhausted two castle employees; opening letters releases gentle pink mana restoring fading magical aura, supportive not attack.",
+          "dialogue": "봉투: “긴급 결재, 통과됐어요!”",
+          "file": "bongtu-postmaster/03.webp"
+        },
+        {
+          "scene": "Gobi personally hands small pink envelope to postmaster who points at own chest surprised; letter inside shows simple gold employee badge and welcoming portrait seal, tender mailbox backdrop.",
+          "dialogue": "봉투: “어느 부서로 보낼까요?”\n고비: “받는 사람부터 봐요.”",
+          "file": "bongtu-postmaster/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-ward",
+      "name": "본가드",
+      "job": "결계 계약직",
+      "title": "계약서에 없는 한 줄",
+      "reference": "assets/mobile/merc-ward.webp",
+      "panels": [
+        {
+          "scene": "Stoic small skeleton bodyguard in armor presents rolled contract beside tall shield; Gobi reads carefully at candlelit hiring desk.",
+          "dialogue": "본가드: “방어 범위. 근무 시간. 계약 기간.”\n고비: “철저하시네요.”",
+          "file": "merc-ward/01.webp"
+        },
+        {
+          "scene": "Unsigned contract blows off desk as gate trembles and huge intruder shadow stretches toward Gobi; skeleton guard turns urgently, shield ready.",
+          "dialogue": "고비: “아직 계약이…”",
+          "file": "merc-ward/02.webp"
+        },
+        {
+          "scene": "Skeleton bodyguard plants shield firmly between Gobi and incoming bright attack, curved blue barrier spreads before throne doorway; courageous protection, no gore.",
+          "dialogue": "본가드: “서명은 뒤에서 하십시오.”",
+          "file": "merc-ward/03.webp"
+        },
+        {
+          "scene": "Gobi writes additional blank line on contract while skeleton bodyguard lowers guarded posture and smiles subtly; shield rests beside desk, warm mutual trust.",
+          "dialogue": "고비: “계약직도 우리 동료입니다.”\n본가드: “…그 조항은 마음에 드는군요.”",
+          "file": "merc-ward/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-accountant",
+      "name": "오울리",
+      "job": "야간 회계사",
+      "title": "누락된 야근 수당",
+      "reference": "assets/mobile/merc-accountant.webp",
+      "panels": [
+        {
+          "scene": "Small owl accountant opens huge ledger in front of exhausted Gobi, points at empty payment column with feather; nighttime finance office.",
+          "dialogue": "오울리: “야근은 했는데, 수당은 어디 있죠?”\n고비: “그런 것도 있었어요?”",
+          "file": "merc-accountant/01.webp"
+        },
+        {
+          "scene": "Owl in round spectacles meticulously flattens crumpled receipts under brass desk lamp, neat coin piles and abacus, close focused portrait.",
+          "dialogue": "오울리: “있었죠. 기록이 없었을 뿐.”",
+          "file": "merc-accountant/02.webp"
+        },
+        {
+          "scene": "Owl works at accounting desk safely behind fighting employees; each distant defeated intruder turns into harmless spark and a gold coin rolls into operating fund pouch, abacus clicks.",
+          "dialogue": "오울리: “성과 한 건. 누락 없이 반영.”",
+          "file": "merc-accountant/03.webp"
+        },
+        {
+          "scene": "Owl offers small pay envelope to touched Gobi across hiring contract, Gobi looks surprised then emotional; moon beyond office window, quiet dignity.",
+          "dialogue": "오울리: “당신의 첫 야근 수당.”\n고비: “…저도 직원이었죠.”",
+          "file": "merc-accountant/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-rescue",
+      "name": "플레어",
+      "job": "비상 대응반",
+      "title": "벨을 누르기 전에",
+      "reference": "assets/mobile/merc-rescue.webp",
+      "panels": [
+        {
+          "scene": "Excitable small red imp emergency responder bursts through office doorway just before Gobi finger touches brass call bell; dynamic funny timing.",
+          "dialogue": "플레어: “불렀어요?”\n고비: “아직요!”",
+          "file": "merc-rescue/01.webp"
+        },
+        {
+          "scene": "Imp shows emergency route pictogram map while checking extinguisher and exit lantern, Gobi amazed by tidy prepared equipment in castle corridor.",
+          "dialogue": "플레어: “기다리는 동안 점검했어요!”\n고비: “얼마나 일찍 온 거예요?”",
+          "file": "merc-rescue/02.webp"
+        },
+        {
+          "scene": "Imp in support position on castle balcony signals brilliant red-gold magical barrage across approaching armored intruder formation; allies duck safely behind parapet, spectacular heroic rescue.",
+          "dialogue": "플레어: “다들 고개 숙여요! 지원 갑니다!”",
+          "file": "merc-rescue/03.webp"
+        },
+        {
+          "scene": "Imp pauses mid-stride toward next mission as Gobi warmly thanks them and offers badge; softened surprised smile, ringing bell rests still in foreground.",
+          "dialogue": "고비: “와줘서 고마워요.”\n플레어가 처음으로 가만히 멈춰 웃는다.",
+          "file": "merc-rescue/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-chikchik",
+      "name": "칙칙",
+      "job": "유령 보급 기관사",
+      "title": "막차는 아직 안 떠났어요",
+      "reference": "assets/expansion-v2/merc-chikchik-portrait.webp",
+      "panels": [
+        {
+          "scene": "Small ghost train conductor in blue uniform stops miniature spectral locomotive beside late-running Gobi on moonlit castle road with no station; kind invitation.",
+          "dialogue": "칙칙: “마왕성 가시죠?”\n고비: “여기 역도 없는데요?”",
+          "file": "merc-chikchik/01.webp"
+        },
+        {
+          "scene": "Ghost conductor checks pocket watch but holds train door for tiny distant running coworker; sleepy employee passengers visible through carriage windows, patient compassion.",
+          "dialogue": "고비: “늦었잖아요.”\n칙칙: “아직 한 명이 달려오고 있어요.”",
+          "file": "merc-chikchik/02.webp"
+        },
+        {
+          "scene": "Little spectral train passes through castle wall and stops beside defense post; new uniformed recruit steps from lit carriage onto vacant station, conductor punches glowing ticket.",
+          "dialogue": "칙칙: “이번 승차권은 회사 부담입니다!”",
+          "file": "merc-chikchik/03.webp"
+        },
+        {
+          "scene": "Gobi and ghost conductor stand beside newly erected little station sign with crescent and train pictograms; small locomotive resting warmly behind, conductor moved to have home.",
+          "dialogue": "칙칙: “이제 돌아올 역이 생겼네요.”",
+          "file": "merc-chikchik/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-banchang",
+      "name": "반창",
+      "job": "아홀로틀 의무관",
+      "title": "괜찮다는 말의 반대말",
+      "reference": "assets/expansion-v2/merc-banchang-portrait.webp",
+      "panels": [
+        {
+          "scene": "Pink axolotl medic with frilled gills and mint medicine bag arrives at castle interview; exhausted Gobi and employee lean against wall pretending fine, medic gently skeptical.",
+          "dialogue": "반창: “그런데 왜 다들 벽을 짚고 서 있어요?”",
+          "file": "merc-banchang/01.webp"
+        },
+        {
+          "scene": "Axolotl medic tenderly notices Gobi trembling hands and heavy shoulders, offers chair with open palm, soft clinic light, intimate caring shot.",
+          "dialogue": "반창: “안 괜찮아도 돼요. 그래서 제가 왔잖아요.”",
+          "file": "merc-banchang/02.webp"
+        },
+        {
+          "scene": "Axolotl medic kneels beside stunned goblin guard and opens mint potion; soothing green light clears little dizzy stars as guard eyes refocus, safe no wounds.",
+          "dialogue": "반창: “천천히 숨 쉬어요. 다시 움직일 수 있어요.”",
+          "file": "merc-banchang/03.webp"
+        },
+        {
+          "scene": "Gobi finally sits in clinic patient chair holding blank first appointment card, axolotl medic listens with warm smile; freshly stamped employment contract on desk.",
+          "dialogue": "고비: “저도… 조금 안 괜찮은데요.”\n반창: “첫 환자분, 잘 오셨어요.”",
+          "file": "merc-banchang/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-coco",
+      "name": "코코",
+      "job": "박쥐 강아지 파수꾼",
+      "title": "사원증에 발도장",
+      "reference": "assets/expansion-v2/merc-coco-portrait.webp",
+      "panels": [
+        {
+          "scene": "Small tan bat-eared puppy with gold bell sits politely on interview chair; application on desk bears single muddy paw print, Gobi looks puzzled but charmed.",
+          "dialogue": "고비: “지원자 이름이… 멍?”",
+          "file": "merc-coco/01.webp"
+        },
+        {
+          "scene": "Close puppy portrait with enormous ears suddenly pricked toward closed castle gate, Gobi holding snack behind; faint distant armored footsteps represented by shadows beyond gate.",
+          "dialogue": "고비: “왜 그래? 간식은 아직…”",
+          "file": "merc-coco/02.webp"
+        },
+        {
+          "scene": "Tiny puppy bravely barks at front line of three armored intruders; gold bell emits concentric golden sound waves causing all three to halt startled, puppy remains small and heroic.",
+          "dialogue": "고비: “아, 직원 전용 구역이라고?”\n코코: “멍!”",
+          "file": "merc-coco/03.webp"
+        },
+        {
+          "scene": "Gobi kneels to clip employee photo badge to puppy collar with gold bell; puppy tail wagging in motion blur, cozy gate guard office, affectionate acceptance.",
+          "dialogue": "고비: “잘 부탁해, 코코.”\n사원증 사진에는 꼬리만 흔들려 흐릿하게 찍혀 있다.",
+          "file": "merc-coco/04.webp"
+        }
+      ]
+    },
+    {
+      "id": "merc-q",
+      "name": "큐",
+      "job": "까마귀 전술관",
+      "title": "아무도 듣지 않던 신호",
+      "reference": "assets/expansion-v2/merc-q-portrait.webp",
+      "panels": [
+        {
+          "scene": "Small crow tactician with purple uniform, baton and small horn quietly interviews with Gobi while noisy corridor activity distracts; timid composed expression.",
+          "dialogue": "고비: “다시 말씀해주시겠어요?”\n큐: “전술 관측을…”",
+          "file": "merc-q/01.webp"
+        },
+        {
+          "scene": "Crow tactician watches battlefield from parapet; allies aim scattered shots at lesser intruders while a huge armored commander approaches clearly dangerous in center distance.",
+          "dialogue": "큐: “지금은… 저쪽인데.”",
+          "file": "merc-q/02.webp"
+        },
+        {
+          "scene": "Crow tactician blows one short golden horn signal and points baton toward commander; multiple allied light trajectories converge on same armored boss, visually coherent teamwork.",
+          "dialogue": "큐: “지금. 함께.”",
+          "file": "merc-q/03.webp"
+        },
+        {
+          "scene": "Gobi welcomes crow tactician to dedicated high observation perch overlooking castle defenses; offers employee badge, crow holds horn close and smiles with newfound confidence.",
+          "dialogue": "고비: “다음 신호도 부탁할게요.”\n큐: “이번에는… 다들 들었네요.”",
+          "file": "merc-q/04.webp"
+        }
+      ]
+    }
+  ]
+}

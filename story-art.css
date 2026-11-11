@@ -1,0 +1,23 @@
+/* Keep story artwork above captions; reveal the untouched portrait on demand. */
+html body #promo#promo#promo .comic-stage,html body #hiring-story .hire-art{height:var(--story-art-height,calc(100% - 76px))!important;background:#10254b!important}
+html body #promo#promo#promo #promo-face,html body #hiring-story .hire-art img{object-position:50% 36%!important}
+html body :is(#promo,#hiring-story) .story-art-toggle{position:absolute!important;right:16px!important;top:146px!important;z-index:6!important;min-width:76px!important;min-height:44px!important;padding:8px 12px!important;border:0!important;border-radius:12px!important;background:#fffdf7ed!important;color:#10254b!important;box-shadow:0 3px 12px #10254b33!important;font:700 12px/1.3 sans-serif!important}
+html body #hiring-story .story-art-toggle{top:88px!important}
+html body :is(#promo,#hiring-story).story-art-expanded :is(.comic-bottom,footer){visibility:hidden!important;pointer-events:none!important}
+html body #promo#promo#promo.story-art-expanded .comic-stage,html body #hiring-story.story-art-expanded .hire-art{height:calc(100% - 76px)!important}
+html body #promo#promo#promo.story-art-expanded #promo-face,html body #hiring-story.story-art-expanded .hire-art img{object-fit:contain!important;object-position:center!important}
+html body :is(#promo,#hiring-story).story-art-expanded .story-art-toggle{top:88px!important}
+html body #promo#promo#promo.story-art-expanded #promo-skip{visibility:hidden!important}
+/* Faces are generally in the upper middle of portrait covers. */
+#story-archive .story-cover img{object-position:50% 38%!important}
+/* Episode title and progress have separate baselines on narrow phones. */
+html body #promo#promo#promo .comic-head{flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:4px!important;padding:12px 20px!important}
+html body #promo#promo#promo .comic-head>span{max-width:100%!important;font-size:20px!important;line-height:1.2!important}
+html body #promo#promo#promo .comic-head #promo-count{margin:0!important;font:400 11px/1.4 sans-serif!important;color:#c9e5ff!important;max-width:100%!important}
+html body #promo#promo#promo .comic-head{padding-right:76px!important}
+html body #promo#promo#promo #promo-skip{inset:16px 16px auto auto!important;width:44px!important;min-width:44px!important;height:44px!important;padding:0!important;font-size:0!important;border:0!important;border-radius:50%!important;background:#fffdf7 url('assets/shared-chrome/close.svg') center/22px 22px no-repeat!important;box-shadow:none!important}
+html body #promo#promo#promo .story-art-toggle{top:88px!important}
+html body #promo#promo#promo.story-art-expanded #promo-skip{visibility:visible!important}
+html body #promo#promo#promo .comic-bottom{gap:6px!important;padding:16px 14px 18px!important}
+html body #promo#promo#promo .comic-copy{margin-bottom:8px!important}
+html body #promo#promo#promo .comic-bottom>small{display:none!important}

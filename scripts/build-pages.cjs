@@ -26,6 +26,10 @@ files.add('shared-chrome.css');
 files.add('shared-chrome.js');
 files.add('text-grid.js');
 files.add('text-grid.css');
+files.add('story-art.js');
+files.add('story-art.css');
+for(const name of fs.readdirSync(path.join(root,'assets/art-review')))if(/\.(html|json)$/.test(name))files.add('assets/art-review/'+name);
+for(const name of fs.readdirSync(path.join(root,'assets/art-review/before')))if(name.endsWith('.webp'))files.add('assets/art-review/before/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/text-grid')))if(/\.(webp|html|json)$/.test(name))files.add('assets/text-grid/'+name);
 for(const file of ['concept-base.css','concept-tools.css','concept-tools.js','concept-people.css','concept-people.js','concept-stories.css','concept-stories.js'])files.add(file);
 for(const folder of ['concept-tools','concept-people','concept-stories']){const dir=path.join(root,'assets',folder);if(fs.existsSync(dir))for(const name of fs.readdirSync(dir))if(/\.(svg|webp)$/.test(name))files.add('assets/'+folder+'/'+name);}

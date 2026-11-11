@@ -4,7 +4,7 @@
  if(typeof document.createElement!=='function')return;
  const q=s=>document.querySelector(s),battle=q('#battle');battle.classList.add('battle-comic','battle-exact');
  for(const [id,label]of [['battle-back','로비로 돌아가기'],['speed','전투 속도 변경'],['pause','일시정지 또는 계속하기'],['upgrade-open','직원 장비 강화']])q('#'+id).setAttribute('aria-label',label);
- for(const key of Object.keys(itemCatalog)){const button=q('#item-'+key);button.querySelector('img').src='assets/battle-exact/item-'+key+'.webp';button.dataset.iconOnly='true';button.querySelector('span')?.classList.add('comic-item-name')}
+ for(const key of Object.keys(itemCatalog)){const button=q('#item-'+key);button.querySelector('img').src=itemArtwork(key);button.dataset.iconOnly='true';button.querySelector('span')?.classList.add('comic-item-name')}
  q('#battle-back').innerHTML='<svg viewBox="0 0 32 32" aria-hidden="true"><path d="m18 6-11 10 11 10M8 16h18" fill="none" stroke="#11214a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
  q('.battle-stage-meta').setAttribute('aria-hidden','true');
  q('#upgrade-open').innerHTML='<svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#10224f" fill-rule="evenodd" d="M13 1h6l1 4 3 2 4-1 3 5-3 3v4l3 3-3 5-4-1-3 2-1 4h-6l-1-4-3-2-4 1-3-5 3-3v-4l-3-3 3-5 4 1 3-2zm3 9a6 6 0 1 0 0 12 6 6 0 0 0 0-12"/></svg>';

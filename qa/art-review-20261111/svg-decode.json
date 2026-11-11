@@ -1,0 +1,918 @@
+[
+  {
+    "path": "assets/concept-stories/torn-paper.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/concept-tools/paper-grain.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/button-gold.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/button-iron.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/panel.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/slot-match.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/slot-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/night-watch/slot.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/arrow.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/back.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/book.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/check.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/close.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/coin.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/gear.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/heart.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/help.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/home.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/lightning.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/lock.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/menu.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/moon.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/pause.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/play.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/plus.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/retry.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/scroll.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/shield.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/shop.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/spark.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/staff.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/sword.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/icons/volume.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/slot-match.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/slot-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/open-scene/slot.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-card-frame.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-card-frame.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-deck-frame.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-deck-frame.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-header.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-header.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-slot-frame.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/archive-slot-frame.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/button-danger.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/button-gold.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/button-violet.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/dialogue-panel.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/dossier-scene.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-button-gold.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-button-gold.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-button-violet.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-button-violet.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-market-mercs.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-first.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-first.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-invasion.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-invasion.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-night.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-night.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-recruitment.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/grid-story-recruitment.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/hud-capsule.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/lobby-scene.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/market-scene.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/panel-card.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/panel-modal.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/panel-wide.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/pause-hero.lite.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/pause-hero.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/report-hero.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/ribbon-result.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/slot-square.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/story-first.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/story-invasion.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/story-night.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/story-recruitment.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/tab-active.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/tab-inactive.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/reference-ui/title-logo.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/active-tile.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/back.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/book.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/close.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/home.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/modal-paper.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/moon-knob.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/plaque.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/shared-chrome/shop.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/badge-mode--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/badge-status--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-danger--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-danger--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-danger--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-danger--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-icon--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-icon--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-icon--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-icon--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-neutral--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-neutral--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-neutral--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-neutral--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary-stacked--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary-stacked--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary-stacked--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-primary-stacked--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase-stacked--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase-stacked--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase-stacked--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-purchase-stacked--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-secondary--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-secondary--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-secondary--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-secondary--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-shortcut--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-shortcut--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-shortcut--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-shortcut--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-skill--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-skill--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-skill--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/button-skill--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/hud-currency--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/hud-life--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/hud-profile--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/hud-wave--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/icons/menu.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-card--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-dialog--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-dialogue--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-mode--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-result--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-sheet--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/panel-support--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/progress-track--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/ribbon-result--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-item--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-item--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-item--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-item--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-staff--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-staff--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-staff--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/slot-staff--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-category--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-category--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-category--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-category--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-nav--default.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-nav--disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-nav--pressed.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-b/tab-nav--selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/badge-danger.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/badge-gold.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/badge-neutral.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/badge-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/battle-warning-danger.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/battle-warning.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/board-cell-hazard.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/board-cell-merge.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/board-cell-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/board-cell.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/bottom-dock.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/button-danger.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/button-disabled.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/button-violet.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/corner-diamond.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/dialogue-panel.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/divider-line.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/feedback-error.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/feedback-neutral.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/feedback-success.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/heading-marker.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/heart-life.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/item-button-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/item-button.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/milestone-done.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/milestone-pending.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/modal-frame.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/nav-active.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/nav-dock.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/notice-error.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/notice-info.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/notice-success.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/option-card.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/panel-muted.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/panel-skill.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/panel-standard.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/pip-gold.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/progress-fill.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/progress-track.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/reward-panel.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/selected-skill.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/staff-card-selected.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/staff-card.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/tab-active.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/tabs-track.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/toast-panel.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-live/topbar-surface.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/arrow-left.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/arrow-right.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/book.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/check.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/close.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/coin.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/gear.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/heart.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/help.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/home.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/lightning.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/lock.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/moon.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/pause.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/play.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/plus.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/scroll.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/shield.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/shop.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/staff.svg",
+    "decoded": true
+  },
+  {
+    "path": "assets/ui-v2/icons/sword.svg",
+    "decoded": true
+  }
+]
