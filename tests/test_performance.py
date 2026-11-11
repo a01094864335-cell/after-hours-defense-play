@@ -42,7 +42,7 @@ class PerformanceTests(unittest.TestCase):
         self.assertTrue(a.evaluate('()=>{const layer=staticBoardLayer;selected=0;draw();selected=-1;draw();return layer===staticBoardLayer}'))
     def test_portraits_appear_after_opening_static_dialogs(self):
         a=self.open(390,844)
-        for button,host,close in [('#training-entry','#asset-training-host','.close'),('#roster-open','#asset-roster-host','.r-close')]:
+        for button,host,close in [('#training-entry','#asset-training-host','.back'),('#roster-open','#asset-roster-host','.r-close')]:
             a.locator('#asset-lobby-host [data-proxy="'+button+'"]').click()
             # The approved interfaces display original portrait images in shadow DOM,
             # not the hidden legacy animated canvases. Verify the visible asset loads.

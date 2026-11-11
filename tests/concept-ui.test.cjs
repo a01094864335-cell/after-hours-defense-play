@@ -14,3 +14,9 @@ test('concept artwork references exist and decorative SVG does not bake text',()
  assert(!/<text[\s>]/.test(fs.readFileSync('assets/concept-tools/paper-grain.svg','utf8')));
  const css=fs.readFileSync('concept-tools.css','utf8');assert(css.includes('#perk.concept-modal.concept-modal{background:transparent'));assert(css.includes('#save-transfer-status[data-phase=preview]'));assert(css.includes('#leave-confirm{background:linear-gradient(#f1806f'));
 });
+test('shop uses original native art and records/preset navigation is retired without deleting data',()=>{
+ const people=fs.readFileSync('concept-people.js','utf8');assert(people.includes("['roster','training']"));assert(!people.includes("id==='shop'"));
+ const dev=fs.readFileSync('development.js','utf8'),lobby=fs.readFileSync('previews/asset-lobby-20261109/lobby.js','utf8');
+ assert(!dev.includes("journey.id='journey-summary'"));assert(!dev.includes("dialog.id='journey-dialog'"));assert(!lobby.includes('data-proxy="#journey-summary"'));
+ assert(dev.includes('function savePreset(')&&dev.includes('function loadPreset('));assert(dev.includes('d.profile.records=[record'));assert(dev.includes("document.querySelector('#deck-tip')"));
+});

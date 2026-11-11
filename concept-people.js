@@ -7,22 +7,11 @@
  const watched=new WeakSet();let queued=false;
  function refresh(){
   for(const id of ['starter-choice','staff-trial'])document.getElementById(id)?.classList.add('concept-modal');
-  for(const id of ['roster','shop','training']){
+  for(const id of ['roster','training']){
    const shadow=document.getElementById('asset-'+id+'-host')?.shadowRoot;if(!shadow)continue;
    if(!shadow.querySelector('link[data-concept-people]')){const link=document.createElement('link');link.rel='stylesheet';link.href=sheet;link.dataset.conceptPeople='';shadow.append(link)}
    if(!watched.has(shadow)){watched.add(shadow);observer.observe(shadow,{childList:true,subtree:true,attributes:true,attributeFilter:['hidden']})}
    const root=shadow.querySelector('#asset-'+id);if(!root)continue;
-   if(id==='shop'&&!root.querySelector('.concept-mail-portrait')){
-    root.querySelector('h1').textContent='마왕성 우편 상점';
-    const stage=root.querySelector('.hero-stage');stage.append(image('ghost-courier','concept-mail-portrait'));
-    const parcel=document.createElement('div');parcel.className='concept-parcel';parcel.innerHTML='<div><strong>직원 모집 패키지</strong><span>새 동료가 도착합니다!</span></div>';stage.append(parcel);
-    const awning=document.createElement('div');awning.className='concept-awning';awning.setAttribute('aria-hidden','true');for(let i=0;i<7;i++)awning.append(document.createElement('i'));root.prepend(awning);
-   }
-   if(id==='shop'){
-    let dock=root.querySelector('.concept-purchase-dock');
-    if(!dock){const purchase=root.querySelector('.purchase');if(purchase){dock=document.createElement('section');dock.className='concept-purchase-dock';dock.setAttribute('aria-label','채용팩 구매');dock.append(purchase);const balance=root.querySelector('#balance');if(balance)dock.append(balance);root.querySelector('footer').before(dock)}}
-    if(dock){const hidden=!!root.querySelector('#pack')?.hidden;if(dock.hidden!==hidden)dock.hidden=hidden}
-   }
    if(id==='training'&&!root.querySelector('.concept-training-portrait')){
     root.querySelector('.stage').append(image('goblin-guard','concept-training-portrait'));
     const label=document.createElement('span');label.className='concept-training-label';label.textContent='그룹 전체 성장 · 확정 성공';root.querySelector('.stage').append(label);

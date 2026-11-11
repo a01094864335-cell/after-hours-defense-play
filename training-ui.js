@@ -18,8 +18,57 @@ function renderTraining(){
  q('#training-effects').innerHTML=records.map(r=>{const sealed=group==='staff'&&!r.owned;return '<details class="training-character '+(sealed?'staff-locked':'')+'"><summary class="training-character-title"><img src="'+r.image+'" alt="" loading="lazy"><div><b>'+(sealed?'미채용 직원':r.name)+'</b><small>'+(sealed?'채용 후 적용':r.job)+'</small></div><span>'+(r.owned?'적용 중':'미채용')+' ▾</span></summary><ol>'+trainingEffectText[r.id].map((text,i)=>'<li class="'+(!sealed&&level>=TRAINING_MILESTONES[i]?'unlocked':'locked')+'"><b>Lv.'+TRAINING_MILESTONES[i]+'</b><span>'+(sealed?'채용 후 고유 효과 공개':text)+'</span><small>'+(sealed?'미채용':level>=TRAINING_MILESTONES[i]?'해금':'잠김')+'</small></li>').join('')+'</ol></details>'}).join('');
  q('#training-wallet').textContent='보유 '+meta.coins.toLocaleString()+' 코인';const button=q('#training-upgrade');button.disabled=!!saveWarning||locked||level===30||meta.coins<price;button.textContent=level===30?'MAX · 훈련 완료':'Lv.'+next+' 훈련 · '+price+' 코인';q('#training-price-hint').textContent=saveWarning|| (locked?'전투가 끝난 뒤 훈련할 수 있어요.':level===30?'최대 레벨':meta.coins<price?(price-meta.coins)+' 코인 부족':'훈련 후 '+(meta.coins-price)+' 코인'+(TRAINING_MILESTONES.includes(next)?' · 고유 효과 해금!':''));
 }
-function openTraining(){const inherited=typeof panelResume!=='undefined'&&panelResume;trainingResume=playing&&!ended&&(!paused||inherited);if(typeof panelResume!=='undefined')panelResume=false;document.querySelector('#menu')?.close();if(playing&&!ended)paused=true;trainingRenderKey='';document.querySelector('#training-status').textContent='';renderTraining();document.querySelector('#training-dialog').showModal()}
-document.querySelector('#training-entry').onclick=openTraining;document.querySelector('#menu-training').onclick=openTraining;document.querySelector('#result-training').onclick=openTraining;document.querySelector('#training-close').onclick=()=>document.querySelector('#training-dialog').close();
+// Training is a real app page. Its route is transient; saved game schemas stay unchanged.
+let trainingReturnScreen='lobby',trainingReturnFocus=null,trainingHistory=false,trainingHistoryPending=false;
+function trainingFocus(){
+ const page=document.querySelector('#training-dialog'),host=document.querySelector('#asset-training-host');
+ const heading=host?.shadowRoot?.querySelector('h1');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}else page.focus();
+}
+function openTraining(pushRoute=true){
+ if(!GameSession.canWrite()||trainingHistoryPending)return false;
+ if(appScreen==='training'){renderTraining();return true;}
+ trainingReturnScreen=['lobby','battle','result'].includes(appScreen)?appScreen:'lobby';
+ trainingReturnFocus=document.activeElement;while(trainingReturnFocus?.shadowRoot?.activeElement)trainingReturnFocus=trainingReturnFocus.shadowRoot.activeElement;
+ const inherited=typeof panelResume!=='undefined'&&panelResume;
+ trainingResume=playing&&!ended&&(!paused||inherited);panelResume=false;
+ document.querySelector('#menu')?.close();
+ if(playing&&!ended)paused=true;
+ trainingRenderKey='';document.querySelector('#training-status').textContent='';
+ setScreen('training');renderTraining();sync();
+ // Reload keeps the browser's training entry while app boot returns to lobby.
+ // Reuse that entry when reopening instead of stacking a duplicate Back target.
+ if(pushRoute&&window.history?.pushState){if(window.history.state?.afterHoursPage!=='training')window.history.pushState({...window.history.state,afterHoursPage:'training'},'','#training');trainingHistory=true;}
+ if(typeof queueMicrotask==='function')queueMicrotask(trainingFocus);else trainingFocus();return true;
+}
+function closeTraining(target=trainingReturnScreen,fromHistory=false,resetDuty=false){
+ if(appScreen!=='training')return false;
+ // Leaving a completed duty uses the existing settlement/reset transaction.
+ if(target==='lobby'&&(ended||resetDuty)){restartTo('lobby');if(appScreen!=='lobby')return false;}
+ const resume=trainingResume&&target==='battle'&&!ended&&GameSession.canWrite();
+ trainingResume=false;
+ // A browser Back can arrive while a roster/shop dialog is above this page.
+ if(typeof document.querySelectorAll==='function')document.querySelectorAll('dialog[open]').forEach(dialog=>dialog.close());
+ setScreen(target);if(resume)paused=false;
+ if(window.AssetTraining?.reset)window.AssetTraining.reset();sync();if(window.GameOrientation)window.GameOrientation.refresh();
+ if(target===trainingReturnScreen&&trainingReturnFocus?.isConnected)trainingReturnFocus.focus({preventScroll:true});
+ else if(target==='lobby')document.querySelector('#asset-lobby-host')?.shadowRoot?.querySelector('.a-start')?.focus({preventScroll:true});
+ if(!fromHistory&&trainingHistory&&window.history?.state?.afterHoursPage==='training'){trainingHistory=false;trainingHistoryPending=true;window.history.back();}
+ return true;
+}
+function trainingNavigate(target){
+ if(appScreen!=='training')return false;
+ if(target==='back')return closeTraining();
+ if(target==='home'){if(playing&&!ended){askLeave();return true;}return closeTraining('lobby');}
+ // These existing dialogs sit above the training page, never a running battle.
+ if(target==='roster'||target==='shop'){document.querySelector('#'+target+'-open').click();return true;}
+ return false;
+}
+if(typeof window.addEventListener==='function')window.addEventListener('popstate',()=>{
+ trainingHistoryPending=false;
+ if(window.history?.state?.afterHoursPage==='training'){trainingHistory=true;openTraining(false);}
+ else if(appScreen==='training'){trainingHistory=false;closeTraining(trainingReturnScreen,true);}
+});
+document.querySelector('#training-entry').onclick=()=>openTraining();document.querySelector('#menu-training').onclick=()=>openTraining();document.querySelector('#result-training').onclick=()=>openTraining();document.querySelector('#training-close').onclick=()=>closeTraining();
 for(const group of ['staff','merc'])document.querySelector('#training-tab-'+group).onclick=()=>{trainingGroup=group;renderTraining()};
 document.querySelector('#training-upgrade').onclick=()=>{
  const status=document.querySelector('#training-status'),level=trainingLevel(trainingGroup,false),price=trainingCost(level);
@@ -30,7 +79,7 @@ document.querySelector('#training-upgrade').onclick=()=>{
  if(trainGroup(trainingGroup))status.textContent='훈련 완료! Lv.'+trainingLevel(trainingGroup,false)+' · 다음 당직에도 유지됩니다.';
  else status.textContent='훈련을 저장하지 못했어요. 코인과 레벨은 그대로예요. 브라우저 저장 공간과 저장 연결을 확인한 뒤 다시 시도해주세요.';
 };
-document.querySelector('#training-dialog').addEventListener('close',()=>{if(trainingResume&&!ended)paused=false;trainingResume=false;sync()});
+document.querySelector('#training-dialog').addEventListener('keydown',event=>{if(event.key==='Escape'&&!document.querySelector('dialog[open]')){event.preventDefault();closeTraining();}});
 renderTraining();
 
 // The illustrated lobby has fixed card zones; use its shortcut column instead of covering a card.

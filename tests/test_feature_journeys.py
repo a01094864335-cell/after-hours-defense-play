@@ -11,6 +11,20 @@ class FeatureJourneyTests(unittest.TestCase):
     tearDownClass = classmethod(ui.UsabilityTests.tearDownClass.__func__)
     open = ui.UsabilityTests.open
 
+    def test_retired_records_ui_preserves_profile_and_current_formation(self):
+        page = self.open(390, 844)
+        page.evaluate("saveChange(d=>{d.tutorialComplete=true;d.profile.presets[0]={staff:d.deck.slice(),support:d.equipped};d.profile.best=7});renderMeta()")
+        before = page.evaluate('JSON.stringify({profile:meta.profile,deck:meta.deck,equipped:meta.equipped})')
+        self.assertEqual(page.locator('#journey-summary,#journey-dialog,#deck-presets').count(), 0)
+        self.assertEqual(page.locator('#asset-lobby-host [data-proxy="#journey-summary"]').count(), 0)
+        page.reload(wait_until='networkidle')
+        page.wait_for_function('GameSession.canWrite()')
+        self.assertEqual(page.evaluate('JSON.stringify({profile:meta.profile,deck:meta.deck,equipped:meta.equipped})'), before)
+        page.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+        self.assertEqual(page.locator('#asset-shop-host .concept-mail-portrait,#asset-shop-host .concept-purchase-dock').count(), 0)
+        self.assertTrue(page.locator('#asset-shop-host .hero-stage').is_visible())
+        page.context.close()
+
     def test_backup_download_upload_restore_and_reload(self):
         page = self.open(390, 844)
         page.evaluate('saveChange(d=>{d.coins=321;d.tutorialComplete=true});renderMeta()')

@@ -78,7 +78,7 @@ class UsabilityTests(unittest.TestCase):
         a.locator('#battle-back').click()
         a.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
         host='#asset-training-host '
-        fixed=[host+'header',host+'[data-group="merc"]',host+'#upgrade',host+'.close']
+        fixed=[host+'header',host+'[data-group="merc"]',host+'#upgrade',host+'.back']
         before={selector:a.locator(selector).bounding_box() for selector in fixed}
         a.locator(host+'.scroll').evaluate('e=>e.scrollTop=e.scrollHeight')
         for selector in fixed:
@@ -86,8 +86,8 @@ class UsabilityTests(unittest.TestCase):
             self.assertEqual(before[selector],a.locator(selector).bounding_box())
         a.locator(host+'#level').scroll_into_view_if_needed()
         self.assertIn('Lv.',a.locator(host+'#level').inner_text())
-        a.locator(host+'.close').click()
-        self.assertFalse(a.locator('#training-dialog').evaluate('d=>d.open'))
+        a.locator(host+'.back').click()
+        self.assertTrue(a.locator('#training-dialog').is_hidden())
     def test_short_report_primary_action_is_scroll_reachable(self):
         a=self.open(320,568);a.evaluate('wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()')
         self.inside(a,'#result-title');a.locator('#result-stats').scroll_into_view_if_needed();self.assertTrue(a.locator('#result-stats').is_visible());assert_reachable(self,a,'#result-again');a.locator('#result-again').click()

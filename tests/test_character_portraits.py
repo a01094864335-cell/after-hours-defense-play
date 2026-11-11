@@ -29,7 +29,7 @@ class CharacterPortraitTests(unittest.TestCase):
         faces = page.locator('#asset-training-host #effects summary img').evaluate_all('(xs)=>xs.map(x=>({id:x.dataset.characterId,src:x.getAttribute("src")}))')
         expected = page.evaluate('kinds.map(k=>staffRecords.find(r=>r.id===k.file).image)')
         self.assertEqual([x['src'] for x in faces], expected)
-        page.locator('#asset-training-host .close').click()
+        page.locator('#asset-training-host .back').click()
         page.evaluate("document.querySelector('#roster-open').click();showStaffRecord('gobi')")
         self.assertTrue(page.locator('#roster-detail .dossier-hero img').get_attribute('src').endswith('/gobi.webp'))
         self.assertEqual(page.locator('#roster-detail .dossier-hero canvas').count(), 0)
@@ -47,7 +47,7 @@ class CharacterPortraitTests(unittest.TestCase):
         actual = page.locator('#asset-training-host #effects summary img').evaluate_all('(xs)=>xs.map(x=>x.getAttribute("src"))')
         expected = page.evaluate('Object.keys(mercCatalog).map(id=>staffRecords.find(r=>r.id==="merc-"+id).image)')
         self.assertEqual(actual, expected)
-        page.locator('#asset-training-host .close').click()
+        page.locator('#asset-training-host .back').click()
         page.evaluate("revealRecruit('merc-ward',false);HiringStories.close()")
         self.assertEqual(page.locator('#recruit-dialog .recruit-reveal img').get_attribute('src'), expected[0])
 

@@ -82,6 +82,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_browser_smoke.py' -v
           python -m unittest discover -s tests -p 'test_shared_chrome.py' -v
+          python -m unittest discover -s tests -p 'test_training_page.py' -v
         env:
           UI_GAME_ROOT: /tmp/game-pages
           UI_CHROMIUM_PATH: ''

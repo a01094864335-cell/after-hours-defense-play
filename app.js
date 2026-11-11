@@ -1,7 +1,7 @@
 'use strict';
 let appScreen='lobby',panelResume=false,leaveResume=false;
-function setScreen(screen){appScreen=screen;for(const id of ['lobby','battle','result'])document.querySelector('#'+id).hidden=id!==screen;}
-function appRender(){document.querySelector('#equipment-balance').textContent='보유 '+Math.floor(sp)+' SP · 같은 종류 전체 강화';document.querySelector('#battle-merc').textContent=activeMerc?'지원'+' · '+mercCatalog[activeMerc].name:'';if(ended&&runReward)appScreen='result';setScreen(appScreen);document.querySelector('#pause').textContent=paused?'▶':'Ⅱ';document.querySelector('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');if(typeof GameSkin!=='undefined')GameSkin.refresh();}
+function setScreen(screen){appScreen=screen;for(const id of ['lobby','battle','result','training-dialog']){const node=document.querySelector('#'+id);if(node)node.hidden=(id==='training-dialog'?'training':id)!==screen;}}
+function appRender(){document.querySelector('#equipment-balance').textContent='보유 '+Math.floor(sp)+' SP · 같은 종류 전체 강화';document.querySelector('#battle-merc').textContent=activeMerc?'지원'+' · '+mercCatalog[activeMerc].name:'';if(ended&&runReward&&appScreen!=='training')appScreen='result';setScreen(appScreen);document.querySelector('#pause').textContent=paused?'▶':'Ⅱ';document.querySelector('#pause').setAttribute('aria-label',paused?'계속하기':'일시정지');if(typeof GameSkin!=='undefined')GameSkin.refresh();}
 function openSheet(id){panelResume=playing&&!paused&&!ended;if(panelResume)paused=true;sync();document.querySelector('#'+id).showModal()}
 for(const id of ['equipment','info','menu'])document.querySelector('#'+id).addEventListener('close',()=>{if(panelResume&&!ended)paused=false;panelResume=false;sync()});
 document.querySelector('#equipment-close').onclick=()=>document.querySelector('#equipment').close();document.querySelector('#info-close').onclick=()=>document.querySelector('#info').close();document.querySelector('#menu-close').onclick=()=>document.querySelector('#menu').close();
@@ -14,7 +14,7 @@ document.querySelector('#result-again').onclick=()=>restartTo('battle');document
 function askLeave(){leaveResume=playing&&!paused&&!ended;if(leaveResume)paused=true;sync();document.querySelector('#leave').showModal()}
 document.querySelector('#battle-back').onclick=()=>{if(playing&&!ended)askLeave();else setScreen('lobby')};
 document.querySelector('#leave-cancel').onclick=()=>document.querySelector('#leave').close();document.querySelector('#leave').addEventListener('close',()=>{if(leaveResume&&!ended)paused=false;leaveResume=false;sync()});
-document.querySelector('#leave-confirm').onclick=()=>{document.querySelector('#leave').close();restartTo('lobby')};
+document.querySelector('#leave-confirm').onclick=()=>{document.querySelector('#leave').close();if(appScreen==='training')closeTraining('lobby',false,true);else restartTo('lobby')};
 setScreen('lobby');sync();
 function fitBoard(){
  if(window.BattlePresentation?.enabled)return window.BattlePresentation.resize();
