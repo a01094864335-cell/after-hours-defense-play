@@ -1,0 +1,417 @@
+[
+  {
+    "id": "staff-goblin-guard",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"goblin-guard\")"
+  },
+  {
+    "id": "staff-orc-technician",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"orc-technician\")"
+  },
+  {
+    "id": "staff-slime-cleaner",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"slime-cleaner\")"
+  },
+  {
+    "id": "staff-gobi",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"gobi\")"
+  },
+  {
+    "id": "staff-electric-technician",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"electric-technician\")"
+  },
+  {
+    "id": "staff-ghost-courier",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"ghost-courier\")"
+  },
+  {
+    "id": "staff-bat-nurse",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"bat-nurse\")"
+  },
+  {
+    "id": "staff-skeleton-chef",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"skeleton-chef\")"
+  },
+  {
+    "id": "staff-mimic-storekeeper",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"mimic-storekeeper\")"
+  },
+  {
+    "id": "staff-spider-tailor",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"spider-tailor\")"
+  },
+  {
+    "id": "staff-nightmare-counselor",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"nightmare-counselor\")"
+  },
+  {
+    "id": "staff-kobold-recruiter",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"kobold-recruiter\")"
+  },
+  {
+    "id": "staff-merc-ward",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-ward\")"
+  },
+  {
+    "id": "staff-merc-accountant",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-accountant\")"
+  },
+  {
+    "id": "staff-merc-rescue",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-rescue\")"
+  },
+  {
+    "id": "staff-duru-archivist",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"duru-archivist\")"
+  },
+  {
+    "id": "staff-kkangtong-engineer",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"kkangtong-engineer\")"
+  },
+  {
+    "id": "staff-ddangkong-miner",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"ddangkong-miner\")"
+  },
+  {
+    "id": "staff-chalkak-photographer",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"chalkak-photographer\")"
+  },
+  {
+    "id": "staff-bongtu-postmaster",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"bongtu-postmaster\")"
+  },
+  {
+    "id": "staff-merc-chikchik",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-chikchik\")"
+  },
+  {
+    "id": "staff-merc-banchang",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-banchang\")"
+  },
+  {
+    "id": "staff-merc-coco",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-coco\")"
+  },
+  {
+    "id": "staff-merc-q",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(\"merc-q\")"
+  },
+  {
+    "id": "story-first-shift",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"first-shift\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-midnight-soup",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"midnight-soup\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-clean-floor",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"clean-floor\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-payday",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"payday\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-parcel",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"parcel\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-blackout",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"blackout\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-attendance",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"attendance\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-cape",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"cape\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-counseling",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"counseling\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-inventory",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"inventory\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-inspection",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"inspection\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-coffee",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"coffee\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-birthday",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"birthday\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-rain",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"rain\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-photo",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"photo\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-lost-key",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"lost-key\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-quiet-night",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"quiet-night\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-suggestion",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"suggestion\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-gate-cat",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"gate-cat\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-shift-handoff",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"shift-handoff\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-empty-throne",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"empty-throne\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-fridge-label",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"fridge-label\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-shortcut-trap",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"shortcut-trap\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-praise-approval",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"praise-approval\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-chair-project",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"chair-project\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-laundry-weather",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"laundry-weather\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-guard-dog-holiday",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"guard-dog-holiday\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-castle-sports",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"castle-sports\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-one-note-band",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"one-note-band\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-shield-bandage",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"shield-bandage\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-slow-reply",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"slow-reply\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-castle-flea-market",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"castle-flea-market\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-vacation-form",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"vacation-form\");promoIndex=0;renderCastleStory()"
+  },
+  {
+    "id": "story-overtime-shadow",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"overtime-shadow\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-ghost-scary-story",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"ghost-scary-story\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-plant-duty",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"plant-duty\");promoIndex=1;renderCastleStory()"
+  },
+  {
+    "id": "story-emergency-cookie",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"emergency-cookie\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-fallen-star",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"fallen-star\");promoIndex=2;renderCastleStory()"
+  },
+  {
+    "id": "story-call-by-name",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"call-by-name\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "story-same-place-tomorrow",
+    "selector": "#promo",
+    "script": "castleReplay=true;currentCastleStory=CastleStories.find(s=>s.id===\"same-place-tomorrow\");promoIndex=3;renderCastleStory()"
+  },
+  {
+    "id": "hire-ghost-courier",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"ghost-courier\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-bat-nurse",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"bat-nurse\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-skeleton-chef",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"skeleton-chef\");for(let i=0;i<0;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-mimic-storekeeper",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"mimic-storekeeper\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-spider-tailor",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"spider-tailor\");for(let i=0;i<1;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-nightmare-counselor",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"nightmare-counselor\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-kobold-recruiter",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"kobold-recruiter\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-duru-archivist",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"duru-archivist\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-kkangtong-engineer",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"kkangtong-engineer\");for(let i=0;i<1;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-ddangkong-miner",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"ddangkong-miner\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-chalkak-photographer",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"chalkak-photographer\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-bongtu-postmaster",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"bongtu-postmaster\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-ward",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-ward\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-accountant",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-accountant\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-rescue",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-rescue\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-chikchik",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-chikchik\");for(let i=0;i<1;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-banchang",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-banchang\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-coco",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-coco\");for(let i=0;i<2;i++)document.querySelector('[data-hire-next]').click()"
+  },
+  {
+    "id": "hire-merc-q",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(\"merc-q\");for(let i=0;i<3;i++)document.querySelector('[data-hire-next]').click()"
+  }
+]

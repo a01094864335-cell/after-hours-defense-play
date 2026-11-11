@@ -1,0 +1,297 @@
+[
+  {
+    "id": "lobby",
+    "selector": "#asset-lobby-host #asset-lobby",
+    "script": "renderMeta()"
+  },
+  {
+    "id": "settings",
+    "selector": "#menu",
+    "script": "openSheet('menu')"
+  },
+  {
+    "id": "info",
+    "selector": "#info",
+    "script": "openSheet('info')"
+  },
+  {
+    "id": "leave",
+    "selector": "#leave",
+    "script": "setScreen('battle');paused=true;sync();askLeave()"
+  },
+  {
+    "id": "pause",
+    "selector": "#ref-pause",
+    "script": "setScreen('battle');paused=true;sync();playing=true;wave=1;paused=true;sync()"
+  },
+  {
+    "id": "roster",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click()"
+  },
+  {
+    "id": "roster-detail",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();showStaffRecord(meta.staff[0])"
+  },
+  {
+    "id": "shop-pack",
+    "selector": "#shop",
+    "script": "document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-items",
+    "selector": "#shop",
+    "script": "document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-poor",
+    "selector": "#shop",
+    "script": "meta.coins=0;renderMeta();document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-affordable",
+    "selector": "#shop",
+    "script": "document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-earned",
+    "selector": "#shop",
+    "script": "saveChange(d=>d.coins=PACK_PRICE);renderMeta();document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "training-staff",
+    "selector": "#training-dialog",
+    "script": "document.querySelector('#training-entry').click()"
+  },
+  {
+    "id": "training-merc",
+    "selector": "#training-dialog",
+    "script": "document.querySelector('#training-entry').click();document.querySelector('#training-tab-merc').click()"
+  },
+  {
+    "id": "equipment",
+    "selector": "#equipment",
+    "script": "setScreen('battle');paused=true;sync();playing=true;wave=1;sp=9999;sync();openSheet('equipment')"
+  },
+  {
+    "id": "equipment-poor",
+    "selector": "#equipment",
+    "script": "setScreen('battle');paused=true;sync();playing=true;wave=1;sp=0;sync();openSheet('equipment')"
+  },
+  {
+    "id": "equipment-max",
+    "selector": "#equipment",
+    "script": "setScreen('battle');paused=true;sync();playing=true;wave=1;sp=9999;levels.fill(5);sync();openSheet('equipment')"
+  },
+  {
+    "id": "story-archive",
+    "selector": "#story-archive",
+    "script": "meta.stories=[CastleStories[0].id];openStoryArchive()"
+  },
+  {
+    "id": "story-empty",
+    "selector": "#story-archive",
+    "script": "meta.stories=[];openStoryArchive()"
+  },
+  {
+    "id": "story-owned",
+    "selector": "#story-archive",
+    "script": "meta.stories=CastleStories.map(s=>s.id);openStoryArchive()"
+  },
+  {
+    "id": "cinematic",
+    "selector": "#promo",
+    "script": "document.querySelector('#enter-battle').click()"
+  },
+  {
+    "id": "guide",
+    "selector": "#guide",
+    "script": "setScreen('battle');paused=true;sync();showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.')"
+  },
+  {
+    "id": "perk-reward",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();"
+  },
+  {
+    "id": "perk-wave5",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();wave=5;life=3;renderPerkChoices();sync()"
+  },
+  {
+    "id": "perk-wave15-expanded",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();wave=15;renderPerkChoices();sync();document.querySelectorAll('#perk details').forEach(e=>e.open=true)"
+  },
+  {
+    "id": "perk-full-life",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();life=3;renderPerkChoices()"
+  },
+  {
+    "id": "perk-equipment-targets",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();showPerkTargets('equipment')"
+  },
+  {
+    "id": "perk-staff-targets",
+    "selector": "#perk",
+    "script": "setScreen('battle');paused=true;sync();wave=20;playing=true;bonusPending=true;life=2;renderPerkChoices();sync();document.querySelector('#perk').showModal();showPerkTargets('staff')"
+  },
+  {
+    "id": "deck",
+    "selector": "#deck",
+    "script": "openDeck()"
+  },
+  {
+    "id": "deck-swap",
+    "selector": "#deck",
+    "script": "openDeck();swapDeckStaff(meta.staff.find(id=>!meta.deck.includes(id)))"
+  },
+  {
+    "id": "daily",
+    "selector": "#daily-events-dialog",
+    "script": "document.querySelector('#daily-events-open').click()"
+  },
+  {
+    "id": "backup",
+    "selector": "#save-transfer-dialog",
+    "script": "document.querySelector('#save-transfer-open').click()"
+  },
+  {
+    "id": "backup-invalid",
+    "selector": "#save-transfer-dialog",
+    "script": "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value='{invalid';document.querySelector('#save-preview').click()"
+  },
+  {
+    "id": "backup-preview",
+    "selector": "#save-transfer-dialog",
+    "script": "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value=JSON.stringify(SaveTransfer.exportData());document.querySelector('#save-preview').click()"
+  },
+  {
+    "id": "recruitment",
+    "selector": "#recruit-dialog",
+    "script": "revealRecruit(RECRUIT_STAFF[0],true)"
+  },
+  {
+    "id": "hiring",
+    "selector": "#hiring-story",
+    "script": "HiringStories.open(staffRecords.find(r=>HiringStories.canView(r.id)).id)"
+  },
+  {
+    "id": "starter",
+    "selector": "#starter-choice",
+    "script": "meta.staff=BASE_STAFF.slice();meta.profile.starterClaim=null;playing=false;TacticalDuty.refresh();document.querySelector('#starter-choice-open').click()"
+  },
+  {
+    "id": "staff-trial",
+    "selector": "#staff-trial",
+    "script": "meta.staff=BASE_STAFF.slice();meta.profile.starterClaim=null;playing=false;TacticalDuty.refresh();document.querySelector('#starter-choice-open').click();document.querySelector('#starter-options button').click()"
+  },
+  {
+    "id": "notice",
+    "selector": ".notice-dialog",
+    "script": "setScreen('battle');paused=true;sync();document.querySelector('.battle-notice').click()"
+  },
+  {
+    "id": "tutorial",
+    "selector": "#tutorial-gobi",
+    "script": "meta.tutorialComplete=false;restartTo('battle');document.querySelector('#promo-skip').click()"
+  },
+  {
+    "id": "result",
+    "selector": "#result",
+    "script": "wave=10;tutorialMode=true;tutorialWon=true;ended=true;settleRun();sync()"
+  },
+  {
+    "id": "king-entrance",
+    "selector": "#game",
+    "script": "setScreen('battle');paused=true;sync();kingEvent={state:'entrance',timer:0,elapsed:.8};sync()"
+  },
+  {
+    "id": "king-question",
+    "selector": "#game",
+    "script": "setScreen('battle');paused=true;sync();kingEvent={state:'question',timer:0,elapsed:1};sync()"
+  },
+  {
+    "id": "roster-incoming",
+    "selector": "#roster",
+    "script": "meta.staff=BASE_STAFF.slice();renderMeta();document.querySelector('#roster-open').click();document.querySelector('#roster-tab-incoming').click()"
+  },
+  {
+    "id": "roster-support",
+    "selector": "#roster",
+    "script": "document.querySelector('#roster-open').click();document.querySelector('#roster-tab-merc').click()"
+  },
+  {
+    "id": "training-expanded",
+    "selector": "#training-dialog",
+    "script": "openTraining();document.querySelector('#asset-training-host').shadowRoot.querySelector('#effects details').open=true"
+  },
+  {
+    "id": "training-max",
+    "selector": "#training-dialog",
+    "script": "meta.training.staff=30;openTraining()"
+  },
+  {
+    "id": "battle-selected",
+    "selector": "#battle",
+    "script": "reset();tutorialMode=false;setScreen('battle');board[7]={type:3,pip:5,cool:1,attack:0,arrival:0,income:5,skillCD:12};selected=7;playing=true;wave=8;paused=false;sync()"
+  },
+  {
+    "id": "result-normal",
+    "selector": "#result",
+    "script": "reset();tutorialMode=false;wave=18;kills=126;runNormal=125;runBoss=1;ended=true;settleRun();sync()"
+  },
+  {
+    "id": "result-defeat",
+    "selector": "#result",
+    "script": "reset();tutorialMode=false;wave=8;life=0;ended=true;settleRun();sync()"
+  },
+  {
+    "id": "battle-item",
+    "selector": "#battle",
+    "script": "reset();tutorialMode=false;setScreen('battle');board[0]={type:0,pip:2,cool:1,attack:0,arrival:0,income:5};playing=true;wave=8;sync();meta.items.grade=2;sync();document.querySelector('#item-grade').click()"
+  },
+  {
+    "id": "shop-rates-expanded",
+    "selector": "#shop",
+    "script": "document.querySelector('#shop-open').click();document.querySelector('#asset-shop-host').shadowRoot.querySelector('details').open=true"
+  },
+  {
+    "id": "info-expanded",
+    "selector": "#info",
+    "script": "openSheet('info');document.querySelectorAll('#info details').forEach(d=>d.open=true)"
+  },
+  {
+    "id": "training-all-effects",
+    "selector": "#training-dialog",
+    "script": "openTraining();document.querySelector('#asset-training-host').shadowRoot.querySelectorAll('#effects details').forEach(d=>d.open=true)"
+  },
+  {
+    "id": "lobby-fresh",
+    "selector": "#asset-lobby-host #asset-lobby",
+    "script": "meta.tutorialComplete=false;restartTo('lobby');renderMeta()"
+  },
+  {
+    "id": "lobby-rich",
+    "selector": "#asset-lobby-host #asset-lobby",
+    "script": "meta.coins=99999999;renderMeta()"
+  },
+  {
+    "id": "shop-available",
+    "selector": "#shop",
+    "script": "saveChange(d=>{d.staff=BASE_STAFF.slice();d.owned=MERC_IDS.slice(0,2);d.recruitPoints=3;d.profile.pity=2});renderMeta();document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-guarantee",
+    "selector": "#shop",
+    "script": "saveChange(d=>{d.staff=BASE_STAFF.slice();d.owned=MERC_IDS.slice(0,2);d.recruitPoints=3;d.profile.pity=2});renderMeta();saveChange(d=>d.profile.pity=9);document.querySelector('#shop-open').click()"
+  },
+  {
+    "id": "shop-available-poor",
+    "selector": "#shop",
+    "script": "saveChange(d=>{d.staff=BASE_STAFF.slice();d.owned=MERC_IDS.slice(0,2);d.recruitPoints=3;d.profile.pity=2});renderMeta();saveChange(d=>d.coins=11);renderMeta();document.querySelector('#shop-open').click()"
+  }
+]

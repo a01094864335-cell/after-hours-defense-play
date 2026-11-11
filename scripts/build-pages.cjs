@@ -24,6 +24,9 @@ files.add('battle-comic.css');
 files.add('battle-exact.css');
 files.add('shared-chrome.css');
 files.add('shared-chrome.js');
+files.add('text-grid.js');
+files.add('text-grid.css');
+for(const name of fs.readdirSync(path.join(root,'assets/text-grid')))if(/\.(webp|html|json)$/.test(name))files.add('assets/text-grid/'+name);
 for(const file of ['concept-base.css','concept-tools.css','concept-tools.js','concept-people.css','concept-people.js','concept-stories.css','concept-stories.js'])files.add(file);
 for(const folder of ['concept-tools','concept-people','concept-stories']){const dir=path.join(root,'assets',folder);if(fs.existsSync(dir))for(const name of fs.readdirSync(dir))if(/\.(svg|webp)$/.test(name))files.add('assets/'+folder+'/'+name);}
 for(const name of fs.readdirSync(path.join(root,'assets/shared-chrome')))if(/\.(svg|webp)$/.test(name))files.add('assets/shared-chrome/'+name);
