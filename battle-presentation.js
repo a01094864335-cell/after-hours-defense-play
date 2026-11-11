@@ -41,6 +41,18 @@ window.BattlePresentation=(()=>{
   // Health follows the displayed full-body bounds, rather than the old source height.
   for(const hud of enemyHUD){const e=hud.e;if(e.escaped||e.hp<=0)continue;const w=Math.min(24,width*.064),x=Math.max(1,Math.min(width-w-1,hud.x-w/2)),y=Math.max(13,hud.top-7);paint.save();paint.fillStyle='#0c174e';paint.beginPath();paint.roundRect(x-1,y-1,w+2,5,2);paint.fill();paint.fillStyle=e.slow||e.freeze>0?'#87e6ef':'#ff628b';paint.fillRect(x,y,w*Math.max(0,e.hp/e.max),3);if(e.shield>0){paint.fillStyle='#9edbff';paint.fillRect(x,y+5,w*Math.min(1,e.shield/(e.max*.4)),2)}if(e.type!=='normal'){paint.font='bold 8px system-ui';paint.textAlign='center';paint.lineWidth=2.5;paint.strokeStyle='#112356';const label=e.decoy?'분신':enemyDefinition(e).badge;paint.strokeText(label,hud.x,y-3);paint.fillStyle='#fff0c7';paint.fillText(label,hud.x,y-3)}paint.restore()}
  }
+ // The support is a UI companion, separate from the fifteen playable cells.
+ const support=document.createElement('aside');support.id='battle-support';support.hidden=true;
+ const supportFace=document.createElement('img'),supportCopy=document.createElement('span'),supportName=document.createElement('b'),supportState=document.createElement('small');supportFace.alt='';supportFace.decoding='async';supportCopy.append(supportName,supportState);support.append(supportFace,supportCopy);stage.append(support);
+ drawMercenary=function(){}; // Remove the legacy pixel actor and dark plinth only.
+ function supportPresentation(){
+  const id=playing?activeMerc:meta.equipped,record=id&&staffRecords.find(r=>r.id==='merc-'+id);
+  uiProp(support,'hidden',!record);if(!record)return;
+  const source=CharacterPortraits.src(record.id);if(supportFace.getAttribute('src')!==source)supportFace.src=source;
+  const casting=!!mercGesture.motionState&&!paused&&!ended;
+  uiText(supportName,record.name);uiText(supportState,document.documentElement.lang.startsWith('en')?(casting?'Supporting!':'Auto support'):(casting?'지원 중!':'자동 지원'));
+  uiAttr(support,'data-active',casting?'true':'false');uiAttr(support,'title',trainedMercDescription(id,true));uiAttr(support,'aria-label',record.name+' · '+supportState.textContent+' · '+trainedMercDescription(id,true));
+ }
  const oldDraw=draw;draw=function(){actors.length=0;texts.length=0;collecting=true;try{oldDraw()}finally{collecting=false}render()};
  fitBoard=function(){const r=stage.getBoundingClientRect();if(r.width<2||r.height<2)return;width=r.width;height=r.height;const dpr=Math.min(devicePixelRatio||1,2),w=Math.round(width*dpr),h=Math.round(height*dpr);if(view.width!==w||view.height!==h){view.width=w;view.height=h}canvas.style.setProperty('width',width+'px','important');canvas.style.setProperty('height',height+'px','important');canvas.style.setProperty('transform','none');canvas.boardInsetTop=0;GamePerformance.invalidate()};
  new ResizeObserver(fitBoard).observe(stage);window.addEventListener('resize',fitBoard);
@@ -48,14 +60,17 @@ window.BattlePresentation=(()=>{
  const notice=q('.battle-notice'),badge=document.createElement('span');badge.className='battle-alert-icon';badge.textContent='↘';badge.setAttribute('aria-hidden','true');notice.prepend(badge);q('.battle-top').after(notice);notice.append(q('#item-hint'),q('#boss-warning'));
  const skillRow=q('.skill-row'),portrait=document.createElement('img'),copy=document.createElement('div'),name=document.createElement('b'),grade=document.createElement('small');
  portrait.id='battle-selected-portrait';portrait.alt='';portrait.dataset.motion='static-battle-selection';copy.className='battle-selected-copy';name.id='battle-selected-name';grade.id='battle-selected-grade';copy.append(name,grade,q('#skill-help'));skillRow.prepend(portrait,copy);
+ const pickGrid=document.createElement('span');pickGrid.className='battle-pick-grid';pickGrid.setAttribute('aria-hidden','true');for(let i=0;i<9;i++)pickGrid.append(document.createElement('i'));skillRow.prepend(pickGrid);
  q('.battle-controls').prepend(skillRow,q('.summon-row'),q('.item-buttons'));
  const energy=q('.summon-row > span');for(const n of [...energy.childNodes])if(n.nodeType===3)n.textContent=n.textContent.replace('SP','');
  const mini=document.createElement('div');mini.className='battle-stage-meta';mini.innerHTML='<span><img src="assets/ui-v2/icons/sword.svg" alt=""><b id="battle-remaining"></b></span><span><img src="assets/ui-v2/icons/shield.svg" alt=""><b id="battle-next-boss"></b></span>';stage.append(mini);
  for(const key of Object.keys(itemCatalog))q('#item-'+key).setAttribute('aria-label',itemCatalog[key].name);
- function selection(){const u=board[selected];const source=u?staffPortraitPath(kinds[u.type].file):'assets/ui-v2/icons/staff.svg';if(portrait.getAttribute('src')!==source)portrait.src=source;
-  uiText(name,u?skillNames[u.type]:'고유 스킬');uiText(grade,u?'✦'.repeat(u.pip):'★5 이상');
+ function selection(){const u=board[selected];const source=u?staffPortraitPath(kinds[u.type].file):null;if(source&&portrait.getAttribute('src')!==source)portrait.src=source;
+  const english=document.documentElement.lang.startsWith('en');
+  uiText(name,u?skillNames[u.type]:(english?'Pick a staff member':'보드의 직원을 눌러보세요'));uiText(grade,u?(u.pip<5?'★'+u.pip+' · ★5 해금':'✦'.repeat(u.pip)):(english?'Unique skills unlock at ★5':'★5부터 고유 스킬을 사용할 수 있어요'));
+  uiProp(portrait,'hidden',!u);uiProp(q('#skill'),'hidden',!u);supportPresentation();
   const original=!u?'직원 선택 후 스킬 사용':skillNames[u.type]+' · '+(u.pip<5?'5등급 해금':u.stun>0?'기절 중':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'초 후 사용':!playing?'당직 시작 후 사용':paused?'일시정지 중':'사용');uiAttr(q('#skill'),'aria-label',original);uiText(q('#skill'),!u?'선택':u.stun>0?'기절':u.pip<5?'★5':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':!playing?'대기':paused?'일시정지':'사용');
-  uiAttr(skillRow,'data-selected',u?'true':'false');
+  uiAttr(skillRow,'data-selected',u?'true':'false');uiAttr(skillRow,'data-skill-state',q('#skill').getAttribute('data-state'));
  }
  const oldSkill=syncSkill;syncSkill=function(){oldSkill();selection()};
  const oldSync=sync;sync=function(){oldSync();selection();uiText(q('#battle-remaining'),Math.max(0,enemies.filter(e=>e.hp>0&&!e.escaped).length+queue.length));uiText(q('#battle-next-boss'),(Math.floor(wave/5)+1)*5);for(const key of Object.keys(itemCatalog)){uiAttr(q('#item-'+key),'aria-label',itemCatalog[key].name+' · 보유 '+itemCount(key)+'개');uiAttr(q('#item-'+key),'aria-pressed',itemMode===key)}};
