@@ -1,0 +1,1313 @@
+[
+  {
+    "width": 320,
+    "candidate": "final",
+    "errors": [],
+    "realSnapshot": {
+      "version": 1,
+      "rewardBundle": null,
+      "rewardSupport": null,
+      "tactics": {
+        "version": 1,
+        "keep": 0,
+        "build": null,
+        "guardUsed": false,
+        "chainCD": 0,
+        "completed": 0
+      },
+      "insights": {
+        "version": 1,
+        "seconds": 5.999999999999984,
+        "summons": 5,
+        "merges": 0,
+        "failed": 0,
+        "skills": 0,
+        "items": {
+          "grade": 0,
+          "kind": 0,
+          "king": 0
+        },
+        "king": {
+          "appearances": 0,
+          "kills": 0,
+          "bosses": 0
+        },
+        "support": {
+          "damage": 0,
+          "sp": 0,
+          "prevented": 0,
+          "cleanses": 0,
+          "stops": 0,
+          "boost": 0
+        },
+        "help": [
+          0,
+          0,
+          0.6000000000000003,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "breaches": [],
+        "bosses": []
+      },
+      "dailyEventVersion": 2,
+      "dailyEventId": "blitz",
+      "dailyEventDate": "2026-11-11",
+      "expansionState": {
+        "serial": 1,
+        "mines": [],
+        "supportClock": 0,
+        "lastSupplyWave": 0,
+        "freeSummon": 0,
+        "qWaves": []
+      },
+      "discountTutorial": {
+        "stage": "done"
+      },
+      "bossPlans": {},
+      "runTraining": {
+        "staff": 1,
+        "merc": 1
+      },
+      "wardChargesUsed": 0,
+      "runId": "mwbtg94i-pdnoa6q3jvs",
+      "board": [
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        },
+        null,
+        null,
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 3,
+          "pip": 1,
+          "cool": 0,
+          "attack": 0,
+          "arrival": 0,
+          "income": 4.01666666666667,
+          "skillCD": 0,
+          "stun": 0,
+          "paydays": 1,
+          "motionState": null,
+          "motionAge": 0.6000000000000002,
+          "motionDuration": 0.6
+        },
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        }
+      ],
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sp": 77,
+      "life": 3,
+      "wave": 1,
+      "cost": 60,
+      "summonDiscount": false,
+      "enemies": [
+        {
+          "type": "normal",
+          "hp": 24.499999999999996,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 453.02400000000006,
+          "segment": 0,
+          "progress": 66.97600000000001,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0.05000000000000002,
+          "skill": 1.850000000000004,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        },
+        {
+          "type": "normal",
+          "hp": 40.599999999999994,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 490.87999999999977,
+          "segment": 0,
+          "progress": 29.119999999999994,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0,
+          "skill": 2.5000000000000018,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        }
+      ],
+      "queue": [],
+      "timer": 0.16666666666666635,
+      "intermission": 0,
+      "playing": true,
+      "ended": false,
+      "selected": -1,
+      "speed": 1,
+      "kills": 7,
+      "time": 5.999999999999984,
+      "kingEvent": {
+        "state": "idle",
+        "timer": 29.783253107220276,
+        "elapsed": 0
+      },
+      "runNormal": 7,
+      "runBoss": 0,
+      "activeMerc": null,
+      "wardUsed": false,
+      "mercTimer": 15,
+      "runDeck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tutorialMode": false,
+      "tutorialWon": false,
+      "trainingItems": {
+        "grade": 0,
+        "kind": 0,
+        "king": 0
+      },
+      "runStats": [
+        {
+          "damage": 240.59999999999997,
+          "kills": 4,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 59.699999999999996,
+          "kills": 3,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 7,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        }
+      ],
+      "guaranteedMerge": false,
+      "bonusPending": false,
+      "dailyEnabled": true,
+      "dailyRule": 12,
+      "seenStaff": [
+        3,
+        0,
+        2
+      ],
+      "tutorialLesson": null
+    },
+    "enemies": [
+      {
+        "id": "hero-leon",
+        "height": 38.975395461096355
+      },
+      {
+        "id": "commander-aegis",
+        "height": 40.00230149597238
+      },
+      {
+        "id": "commander-ruby",
+        "height": 42.08937809576224
+      },
+      {
+        "id": "commander-lumen",
+        "height": 42.806400000000004
+      },
+      {
+        "id": "commander-neve",
+        "height": 42.806400000000004
+      },
+      {
+        "id": "commander-mira",
+        "height": 42.806400000000004
+      },
+      {
+        "id": "commander-chrono",
+        "height": 40.713425151925264
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "candidate": "final",
+    "errors": [],
+    "realSnapshot": {
+      "version": 1,
+      "rewardBundle": null,
+      "rewardSupport": null,
+      "tactics": {
+        "version": 1,
+        "keep": 0,
+        "build": null,
+        "guardUsed": false,
+        "chainCD": 0,
+        "completed": 0
+      },
+      "insights": {
+        "version": 1,
+        "seconds": 5.999999999999984,
+        "summons": 5,
+        "merges": 0,
+        "failed": 0,
+        "skills": 0,
+        "items": {
+          "grade": 0,
+          "kind": 0,
+          "king": 0
+        },
+        "king": {
+          "appearances": 0,
+          "kills": 0,
+          "bosses": 0
+        },
+        "support": {
+          "damage": 0,
+          "sp": 0,
+          "prevented": 0,
+          "cleanses": 0,
+          "stops": 0,
+          "boost": 0
+        },
+        "help": [
+          0,
+          0,
+          0.6000000000000003,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "breaches": [],
+        "bosses": []
+      },
+      "dailyEventVersion": 2,
+      "dailyEventId": "blitz",
+      "dailyEventDate": "2026-11-11",
+      "expansionState": {
+        "serial": 1,
+        "mines": [],
+        "supportClock": 0,
+        "lastSupplyWave": 0,
+        "freeSummon": 0,
+        "qWaves": []
+      },
+      "discountTutorial": {
+        "stage": "done"
+      },
+      "bossPlans": {},
+      "runTraining": {
+        "staff": 1,
+        "merc": 1
+      },
+      "wardChargesUsed": 0,
+      "runId": "mwbtgaqp-pdnoa6q3jvs",
+      "board": [
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        },
+        null,
+        null,
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 3,
+          "pip": 1,
+          "cool": 0,
+          "attack": 0,
+          "arrival": 0,
+          "income": 4.01666666666667,
+          "skillCD": 0,
+          "stun": 0,
+          "paydays": 1,
+          "motionState": null,
+          "motionAge": 0.6000000000000002,
+          "motionDuration": 0.6
+        },
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        }
+      ],
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sp": 77,
+      "life": 3,
+      "wave": 1,
+      "cost": 60,
+      "summonDiscount": false,
+      "enemies": [
+        {
+          "type": "normal",
+          "hp": 24.499999999999996,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 453.02400000000006,
+          "segment": 0,
+          "progress": 66.97600000000001,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0.05000000000000002,
+          "skill": 1.850000000000004,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        },
+        {
+          "type": "normal",
+          "hp": 40.599999999999994,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 490.87999999999977,
+          "segment": 0,
+          "progress": 29.119999999999994,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0,
+          "skill": 2.5000000000000018,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        }
+      ],
+      "queue": [],
+      "timer": 0.16666666666666635,
+      "intermission": 0,
+      "playing": true,
+      "ended": false,
+      "selected": -1,
+      "speed": 1,
+      "kills": 7,
+      "time": 5.999999999999984,
+      "kingEvent": {
+        "state": "idle",
+        "timer": 29.783253107220276,
+        "elapsed": 0
+      },
+      "runNormal": 7,
+      "runBoss": 0,
+      "activeMerc": null,
+      "wardUsed": false,
+      "mercTimer": 15,
+      "runDeck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tutorialMode": false,
+      "tutorialWon": false,
+      "trainingItems": {
+        "grade": 0,
+        "kind": 0,
+        "king": 0
+      },
+      "runStats": [
+        {
+          "damage": 240.59999999999997,
+          "kills": 4,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 59.699999999999996,
+          "kills": 3,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 7,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        }
+      ],
+      "guaranteedMerge": false,
+      "bonusPending": false,
+      "dailyEnabled": true,
+      "dailyRule": 12,
+      "seenStaff": [
+        3,
+        0,
+        2
+      ],
+      "tutorialLesson": null
+    },
+    "enemies": [
+      {
+        "id": "hero-leon",
+        "height": 48.31504922644163
+      },
+      {
+        "id": "commander-aegis",
+        "height": 49.58803222094362
+      },
+      {
+        "id": "commander-ruby",
+        "height": 52.170300000000005
+      },
+      {
+        "id": "commander-lumen",
+        "height": 52.170300000000005
+      },
+      {
+        "id": "commander-neve",
+        "height": 52.170300000000005
+      },
+      {
+        "id": "commander-mira",
+        "height": 52.170300000000005
+      },
+      {
+        "id": "commander-chrono",
+        "height": 50.483480614600744
+      }
+    ]
+  },
+  {
+    "width": 430,
+    "candidate": "final",
+    "errors": [],
+    "realSnapshot": {
+      "version": 1,
+      "rewardBundle": null,
+      "rewardSupport": null,
+      "tactics": {
+        "version": 1,
+        "keep": 0,
+        "build": null,
+        "guardUsed": false,
+        "chainCD": 0,
+        "completed": 0
+      },
+      "insights": {
+        "version": 1,
+        "seconds": 5.999999999999984,
+        "summons": 5,
+        "merges": 0,
+        "failed": 0,
+        "skills": 0,
+        "items": {
+          "grade": 0,
+          "kind": 0,
+          "king": 0
+        },
+        "king": {
+          "appearances": 0,
+          "kills": 0,
+          "bosses": 0
+        },
+        "support": {
+          "damage": 0,
+          "sp": 0,
+          "prevented": 0,
+          "cleanses": 0,
+          "stops": 0,
+          "boost": 0
+        },
+        "help": [
+          0,
+          0,
+          0.6000000000000003,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "breaches": [],
+        "bosses": []
+      },
+      "dailyEventVersion": 2,
+      "dailyEventId": "blitz",
+      "dailyEventDate": "2026-11-11",
+      "expansionState": {
+        "serial": 1,
+        "mines": [],
+        "supportClock": 0,
+        "lastSupplyWave": 0,
+        "freeSummon": 0,
+        "qWaves": []
+      },
+      "discountTutorial": {
+        "stage": "done"
+      },
+      "bossPlans": {},
+      "runTraining": {
+        "staff": 1,
+        "merc": 1
+      },
+      "wardChargesUsed": 0,
+      "runId": "mwbtgcg2-pdnoa6q3jvs",
+      "board": [
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        },
+        null,
+        null,
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 3,
+          "pip": 1,
+          "cool": 0,
+          "attack": 0,
+          "arrival": 0,
+          "income": 4.01666666666667,
+          "skillCD": 0,
+          "stun": 0,
+          "paydays": 1,
+          "motionState": null,
+          "motionAge": 0.6000000000000002,
+          "motionDuration": 0.6
+        },
+        {
+          "type": 0,
+          "pip": 1,
+          "cool": 0.6999999999999943,
+          "attack": 0.10000000000000003,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.09999999999999999,
+          "motionDuration": 0.38,
+          "shots": 8
+        },
+        null,
+        null,
+        null,
+        {
+          "type": 2,
+          "pip": 1,
+          "cool": 0.8999999999999947,
+          "attack": 4.85722573273506e-17,
+          "arrival": 0,
+          "income": 5,
+          "skillCD": 0,
+          "stun": 0,
+          "aimX": 82,
+          "motionState": "attack",
+          "motionAge": 0.19999999999999998,
+          "motionDuration": 0.38
+        }
+      ],
+      "levels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "sp": 77,
+      "life": 3,
+      "wave": 1,
+      "cost": 60,
+      "summonDiscount": false,
+      "enemies": [
+        {
+          "type": "normal",
+          "hp": 24.499999999999996,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 453.02400000000006,
+          "segment": 0,
+          "progress": 66.97600000000001,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0.05000000000000002,
+          "skill": 1.850000000000004,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        },
+        {
+          "type": "normal",
+          "hp": 40.599999999999994,
+          "max": 40.599999999999994,
+          "x": 82,
+          "y": 490.87999999999977,
+          "segment": 0,
+          "progress": 29.119999999999994,
+          "speed": 58.24000000000001,
+          "slow": 0,
+          "hurt": 0,
+          "skill": 2.5000000000000018,
+          "shield": 0,
+          "rush": 0,
+          "cast": 0,
+          "warning": 0,
+          "freeze": 0,
+          "markEffects": [],
+          "burnEffects": [],
+          "vulnerable": 0,
+          "vulnerability": 1,
+          "burnTime": 0,
+          "burnDPS": 0,
+          "counselDelayCD": 0,
+          "silence": 0,
+          "linkTime": 0,
+          "linkGroup": null,
+          "pushCooldown": 0,
+          "qMark": 0,
+          "links": null,
+          "linkIds": []
+        }
+      ],
+      "queue": [],
+      "timer": 0.16666666666666635,
+      "intermission": 0,
+      "playing": true,
+      "ended": false,
+      "selected": -1,
+      "speed": 1,
+      "kills": 7,
+      "time": 5.999999999999984,
+      "kingEvent": {
+        "state": "idle",
+        "timer": 29.783253107220276,
+        "elapsed": 0
+      },
+      "runNormal": 7,
+      "runBoss": 0,
+      "activeMerc": null,
+      "wardUsed": false,
+      "mercTimer": 15,
+      "runDeck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tutorialMode": false,
+      "tutorialWon": false,
+      "trainingItems": {
+        "grade": 0,
+        "kind": 0,
+        "king": 0
+      },
+      "runStats": [
+        {
+          "damage": 240.59999999999997,
+          "kills": 4,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 59.699999999999996,
+          "kills": 3,
+          "income": 0,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 7,
+          "highest": 1
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        },
+        {
+          "damage": 0,
+          "kills": 0,
+          "income": 0,
+          "highest": 0
+        }
+      ],
+      "guaranteedMerge": false,
+      "bonusPending": false,
+      "dailyEnabled": true,
+      "dailyRule": 12,
+      "seenStaff": [
+        3,
+        0,
+        2
+      ],
+      "tutorialLesson": null
+    },
+    "enemies": [
+      {
+        "id": "hero-leon",
+        "height": 53.65199423521036
+      },
+      {
+        "id": "commander-aegis",
+        "height": 55.06559263521289
+      },
+      {
+        "id": "commander-ruby",
+        "height": 57.521100000000004
+      },
+      {
+        "id": "commander-lumen",
+        "height": 57.521100000000004
+      },
+      {
+        "id": "commander-neve",
+        "height": 55.74193548387097
+      },
+      {
+        "id": "commander-mira",
+        "height": 54.96
+      },
+      {
+        "id": "commander-chrono",
+        "height": 56.066369450415294
+      }
+    ]
+  }
+]
