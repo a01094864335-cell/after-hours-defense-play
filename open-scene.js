@@ -8,7 +8,7 @@
   const base = 'assets/open-scene/';
   const art = (name, className) => {
     const image = new Image();
-    image.src = base + name + '.webp';
+    GamePerformance.loadOnDisplay(image, base + name + '.webp');
     image.alt = '';
     image.className = 'scene-art ' + className;
     image.decoding = 'async';
@@ -33,7 +33,7 @@
   supportCast.setAttribute('aria-hidden', 'true');
   for (const id of Object.keys(mercCatalog).slice(0, 5)) {
     const portrait = new Image();
-    portrait.src = mercPortraitPath(id);
+    GamePerformance.loadOnDisplay(portrait, mercPortraitPath(id));
     portrait.alt = '';
     portrait.dataset.motion = 'static-support-training';
     supportCast.append(portrait);

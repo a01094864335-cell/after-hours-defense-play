@@ -7,7 +7,7 @@
   const hero=scope.querySelector('#asset-shop .hero-stage');
   if(hero&&!hero.querySelector('.grid-shop-hero')){
    const art=hero.querySelector('svg.hero');if(art)art.style.display='none';
-   const image=document.createElement('img');image.className='grid-shop-hero';image.src=new URL('assets/text-grid/shop-hero-wordless.webp',base).href;image.alt='';
+   const image=document.createElement('img');image.className='grid-shop-hero';GamePerformance.loadOnDisplay(image,new URL('assets/text-grid/shop-hero-wordless.webp',base).href);image.alt='';
    const eyebrow=document.createElement('span');eyebrow.className='grid-shop-eyebrow';eyebrow.textContent='새 동료를 만나보세요!';
    const title=document.createElement('strong');title.className='grid-shop-title';title.textContent='영웅 채용팩';
    hero.append(image,eyebrow,title);

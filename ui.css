@@ -2898,3 +2898,6 @@ body:has(#tutorial-gobi:not([hidden])) #ref-pause { display:none!important; }
 #shop.summon-stage-shop .sheet-head>.shop-wallet { flex:0 0 auto; width:auto; }
 #shop.summon-stage-shop .shop-wallet b { font-variant-numeric:tabular-nums; }
 
+
+/* Invisible tabs must not keep decorative CSS animations on the compositor. */
+html.page-hidden *,html.page-hidden *::before,html.page-hidden *::after{animation-play-state:paused!important}

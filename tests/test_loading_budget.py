@@ -10,8 +10,10 @@ class LoadingBudgetTests(unittest.TestCase):
         urls=p.evaluate("performance.getEntriesByType('resource').map(r=>r.name)")
         image_bytes=p.evaluate("performance.getEntriesByType('resource').filter(r=>/\\.(webp|png|svg)$/.test(new URL(r.name).pathname)).reduce((a,r)=>a+r.decodedBodySize,0)")
         self.assertGreater(image_bytes,1000000)
-        self.assertLess(image_bytes,4200000)
+        self.assertLess(image_bytes,2500000)
         for name in ['roster-reference.webp','training-reference.webp','shop-reference.webp','gnb-lobby.webp','gnb-roster.webp','gnb-shop.webp']:
+            self.assertFalse(any(name in url for url in urls),name)
+        for name in ['open-scene/lobby-cast.webp','open-scene/shop-cast.webp','open-scene/training-cast.webp','open-scene/result-cast.webp','reference-ui/title-logo.svg','text-grid/shop-hero-wordless.webp']:
             self.assertFalse(any(name in url for url in urls),name)
         p.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta()")
         for proxy,host,name,close in [('#roster-open','asset-roster-host','roster-reference.webp','.r-close'),('#shop-open','asset-shop-host','shop-reference.webp','.close'),('#training-entry','asset-training-host','training-reference.webp','.back')]:
@@ -20,3 +22,5 @@ class LoadingBudgetTests(unittest.TestCase):
             self.assertEqual(p.locator('#'+host+' image[data-art-src]').count(),0)
             self.assertEqual(p.locator('#'+host+' .shared-gnb button').count(),3)
             p.locator('#'+host+' '+close).click()
+        p.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
+        p.wait_for_function("()=>{const image=document.querySelector('#asset-shop-host').shadowRoot.querySelector('.grid-shop-hero');return image.complete&&image.naturalWidth>0}")

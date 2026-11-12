@@ -6,7 +6,7 @@ function boot(saved){
  vm.runInNewContext(fs.readFileSync('game-audio.js','utf8'),sb);return {sb,events,nodes,players,storage,tick:()=>tick()};
 }
 test('music waits for a gesture, switches to boss, crossfades and pauses in background',async()=>{
- const b=boot();b.tick();assert.equal(b.players.length,0);b.events.pointerdown();await Promise.resolve();assert.match(b.players[0].src,/lobby-night/);assert.equal(b.players[0].loop,true);
+ const b=boot();b.tick();assert.equal(b.players.length,0);b.events.pointerdown();await Promise.resolve();assert.match(b.players[0].src,/lobby-night\.mp3$/);assert.equal(b.players[0].loop,true);
  b.sb.appScreen='battle';b.tick();await Promise.resolve();assert.match(b.players[1].src,/night-shift/);
  b.sb.enemies=[{type:'boss',hp:100}];b.tick();await Promise.resolve();assert.match(b.players[2].src,/commander/);
  for(let i=0;i<10;i++)b.tick();assert(b.players[0].paused);assert(b.players[1].paused);assert(!b.players[2].paused);
@@ -28,4 +28,11 @@ test('staff practice pauses parent music and closing it resumes the lobby',async
  b.nodes['#staff-trial'].dataset={practicing:'true'};b.tick();assert(b.players.every(a=>a.paused));
  await new Promise(resolve=>setImmediate(resolve));b.tick();assert(b.players.every(a=>a.paused));
  b.nodes['#staff-trial'].dataset.practicing='false';b.tick();await new Promise(resolve=>setImmediate(resolve));assert.equal(b.players[0].paused,false);
+});
+
+test('streamed MP3 tracks retain originals and cut each download by at least 75 percent',()=>{
+ for(const file of ['lobby-night','night-shift','commander']){
+  const mp3=fs.readFileSync('assets/audio/'+file+'.mp3'),pcm=fs.statSync('assets/audio/'+file+'.wav');
+  assert.equal(mp3.toString('ascii',0,3),'ID3');assert(mp3.length>100000);assert(mp3.length<pcm.size*.25);
+ }
 });

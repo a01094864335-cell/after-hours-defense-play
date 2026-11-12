@@ -48,7 +48,7 @@ skillDescriptions.push('최고 체력 적에게 6초간 피해 +60~72% · 평타
 skillNames.push(...NightExpansion.staff.map(k=>k.skill));
 skillDescriptions.push(...NightExpansion.staff.map(k=>k.skillText));
 function useSkill(){const u=board[selected];if(!u||u.pip<5||(u.skillCD||0)>0||u.stun>0||!playing||paused||ended)return;if(u.type===11&&board.every(Boolean)){say('긴급 채용을 위한 빈 칸이 필요해요.');return}const p=cells[selected],power=staffPower(u.type)*gradePower(u.pip);u.skillCD=skillCooldown();u.attack=.2;Motion.start(u,'skill',.7);burst('skillAura',p.x,p.y-15,kinds[u.type].color,.7);
- if(u.type===0){for(let n=0;n<6;n++){const target=enemies.filter(e=>e.hp>0).sort((a,b)=>b.progress-a.progress)[0];if(!target)break;hitEnemy(target,30*u.pip*power,false);fx.push({x:p.x+n*3,y:p.y-30,tx:target.x+n*2,ty:target.y-14,life:.42,max:.42,type:0,color:kinds[0].color})}}
+ if(u.type===0){for(let n=0;n<6;n++){const target=leadingEnemy();if(!target)break;hitEnemy(target,30*u.pip*power,false);fx.push({x:p.x+n*3,y:p.y-30,tx:target.x+n*2,ty:target.y-14,life:.42,max:.42,type:0,color:kinds[0].color})}}
  if(u.type===1){for(const e of enemies){hitEnemy(e,35*u.pip*power,false);fx.push({x:e.x,y:e.y,life:.65,max:.65,ring:true,color:'#ffb17f'})}}
  if(u.type===2){for(const e of enemies){e.freeze=Math.max(e.freeze||0,bossFreezeTime(e,e.type==='boss'?1.5:3));fx.push({x:e.x,y:e.y,life:.65,max:.65,ring:true,color:'#9ef5ec'})}}
  if(u.type===3){const income=Math.round(u.pip*40*(1+(levels[3]-1)*.1)*(1+(trainingLevel('staff')-1)*.4/29));sp+=income;fx.push({x:p.x,y:p.y,life:1,max:1,text:'+'+income+' SP',coin:true,color:'#ffdc89'})}
@@ -104,6 +104,8 @@ function enemySkills(e,dt){e.cast=Math.max(0,e.cast-dt);e.rush=Math.max(0,e.rush
  if(e.type==='priest'){let healed=false;for(const n of enemies){if(n.hp>0&&n.hp<n.max&&Math.hypot(n.x-e.x,n.y-e.y)<130){n.hp=Math.min(n.max,n.hp+n.max*.12);healed=true;burst('heal',n.x,n.y-15,'#9febbc',.8);enemyEffect(n,'+회복','#9febbc')}}e.skill=4;if(healed)enemyEffect(e,'치유','#9febbc')}
  if(e.type==='mage'){if(e.target!==undefined&&board[e.target]){board[e.target].stun=1.8;const p=cells[e.target];burst('lightning',e.x,e.y-20,'#d6b4ff',.55,{tx:p.x,ty:p.y-20});burst('shock',p.x,p.y-20,'#d6b4ff',.7);fx.push({x:e.x,y:e.y-20,tx:p.x,ty:p.y-20,type:4,life:.42,max:.42,color:'#d6b4ff'});enemyEffect(e,'낙뢰!','#d6b4ff')}e.target=undefined;e.warning=0;e.skill=6}
 }
+// Keep stable first-on-tie priority without allocating/sorting on every shot.
+function leadingEnemy(){let target;for(const e of enemies)if(e.hp>0&&(!target||e.progress>target.progress))target=e;return target}
 function hitEnemy(e,damage,slow,shared=false,bypassShield=false){if(e.hp<=0)return;if(!shared&&e.qMark>0&&typeof attackOwner==='number')damage*=1+(e.qBonus||.2);if(!shared)damage*=rewardSupportMultiplier("damage",e);damage=bossDamage(e,damage);if(!shared)damage*=e.vulnerable>0?e.vulnerability||1.25:1;const blocked=bypassShield?0:Math.min(e.shield||0,damage);e.shield=Math.max(0,(e.shield||0)-blocked);if(blocked>0){burst(e.shield===0?'shieldBreak':'shieldHit',e.x,e.y-15,'#a9c9f0',e.shield===0?.65:.25)}e.hp-=damage-blocked;e.hurt=.15;if(slow){e.slowTrainingTier=trainingTier();e.slowTrainingLevel=trainingLevel('staff');e.slow=2+e.slowTrainingTier*.1;}if(!shared&&e.linkTime>0)for(const peer of enemies)if(peer!==e&&peer.hp>0&&peer.linkTime>0&&peer.linkGroup===e.linkGroup)hitEnemy(peer,damage*(.35+trainingTier()*.01),false,true)}
 // The king is outside the summon pool. Each visit rolls an independent decision.
 function updateKing(dt){
@@ -134,7 +136,7 @@ function update(dt){if(paused||ended)return;time+=dt;if(playing)teamBoost=Math.m
  for(const e of enemies){e.slow=Math.max(0,e.slow-dt);e.hurt=Math.max(0,e.hurt-dt);e.freeze=Math.max(0,(e.freeze||0)-dt);extraEnemyUpdate(e,dt);tickBoss(e,dt);if(e.hp<=0||e.escaped)continue;enemySkills(e,dt);let move=(e.freeze>0?0:1)*e.speed*bossSpeed(e)*rewardSupportMultiplier("speed",e)*(e.slow?trainingSlow(e):1)*(e.rush>0?1.65:1)*dt;e.progress+=move;while(move>0&&e.segment<3){const p=path[e.segment+1],d=Math.hypot(p.x-e.x,p.y-e.y);if(move>=d){e.x=p.x;e.y=p.y;e.segment++;move-=d}else{e.x+=(p.x-e.x)/d*move;e.y+=(p.y-e.y)/d*move;move=0}}if(e.segment===3){if(!e.decoy){const oldLife=life;breachDamage(e.type==='boss'?2:1);if(life<oldLife){runInsights.breaches.push({name:e.type==='boss'?bossDefinition(e).name:legion[e.type].name,hp:Math.max(0,e.hp),max:e.max,wave,damage:oldLife-life});runInsights.breaches=runInsights.breaches.slice(-12);}}e.escaped=true}}
 
  enemies=enemies.filter(e=>!e.escaped);if(!life){ended=true;for(const e of enemies)if(e.hp<=0)recordKill(e);settleRun();say('고비: 혹시… 성도 수리해주시나요? '+wave+'차 공격까지 버텼어요.');requestSync();return}
- board.forEach((u,i)=>{if(!u||u.stun>0||u.type===11||u.type===16)return;if(typeof runStats!=='undefined')attackOwner=u.type;const k=kinds[u.type];if(u.type===3){u.income-=dt;if(u.income<=0){const income=trainingIncome(u);sp+=income;if(typeof runStats!=='undefined')runStats[3].income+=income;u.income=5;Motion.start(u,'skill',.6);fx.push({x:cells[i].x,y:cells[i].y,life:1,max:1,text:'+'+income+' SP',coin:true,color:k.color})}return}u.cool-=dt*staffHaste(i)*bossStaffRate(i);if(u.cool>0)return;while(u.cool<=0){const target=enemies.filter(e=>e.hp>0).sort((a,b)=>b.progress-a.progress)[0];if(!target){u.cool=0;return}u.cool+=k.interval/u.pip;u.attack=.2;u.aimX=target.x;Motion.start(u,'attack',Math.min(.38,Math.max(.24,k.interval/u.pip*.8)));const damage=trainingAttack(u,k.damage*staffPower(u.type)*gradePower(u.pip));if(u.type>=6){extraAttack(u,i,target,damage);continue}let victims=[target];
+ board.forEach((u,i)=>{if(!u||u.stun>0||u.type===11||u.type===16)return;if(typeof runStats!=='undefined')attackOwner=u.type;const k=kinds[u.type];if(u.type===3){u.income-=dt;if(u.income<=0){const income=trainingIncome(u);sp+=income;if(typeof runStats!=='undefined')runStats[3].income+=income;u.income=5;Motion.start(u,'skill',.6);fx.push({x:cells[i].x,y:cells[i].y,life:1,max:1,text:'+'+income+' SP',coin:true,color:k.color})}return}u.cool-=dt*staffHaste(i)*bossStaffRate(i);if(u.cool>0)return;while(u.cool<=0){const target=leadingEnemy();if(!target){u.cool=0;return}u.cool+=k.interval/u.pip;u.attack=.2;u.aimX=target.x;Motion.start(u,'attack',Math.min(.38,Math.max(.24,k.interval/u.pip*.8)));const damage=trainingAttack(u,k.damage*staffPower(u.type)*gradePower(u.pip));if(u.type>=6){extraAttack(u,i,target,damage);continue}let victims=[target];
 if(u.type===1)victims=enemies.filter(e=>e.hp>0&&Math.hypot(e.x-target.x,e.y-target.y)<65+trainingTier()*5);
 if(u.type===4){let lastTarget=target;while(victims.length<(trainingLevel('staff')>=20?4:3)){const next=enemies.filter(e=>e.hp>0&&!victims.includes(e)&&Math.hypot(e.x-lastTarget.x,e.y-lastTarget.y)<=130+(trainingTier()?10:0)).sort((a,b)=>Math.hypot(a.x-lastTarget.x,a.y-lastTarget.y)-Math.hypot(b.x-lastTarget.x,b.y-lastTarget.y))[0];if(!next)break;victims.push(next);lastTarget=next}}
 let endX=target.x,endY=target.y;
@@ -236,10 +238,11 @@ function draw(){ctx.clearRect(0,0,600,600);drawBoardBase();drawAmbient();ctx.lin
  drawMercenary();drawBossHUD();drawKing();
  if(!window.BattlePresentation&&((paused&&!window.TutorialCoach?.speaking?.()&&!window.TacticalDuty?.repositioning())||ended)){ctx.fillStyle='#100b18dc';ctx.fillRect(0,0,600,600);ctx.font='bold 28px system-ui';ctx.fillStyle='#ffdaa0';ctx.fillText(ended?'왕좌가 무너졌습니다':'잠깐 휴식 중',300,270);ctx.font='16px system-ui';ctx.fillText(ended?wave+'차 공격 · '+kills+'명 저지':'계속하기 버튼을 눌러주세요',300,309)}}
 let frameWasActive=false;
+function needsBattleTicks(){return playing||!GamePerformance.lowPower&&board.some(Boolean)||fx.length>0||board.some(u=>u&&(u.arrival>0||u.attack>0||u.stun>0||u.motionState))}
 function frame(now){
  const performancePolicy=GamePerformance;performancePolicy.begin();
  const elapsed=last&&frameWasActive?Math.min((now-last)/1000,.1):0;last=now;
- const battle=typeof appScreen==='undefined'||appScreen==='battle',active=battle&&!paused&&!ended;
+ const battle=typeof appScreen==='undefined'||appScreen==='battle',active=battle&&!paused&&!ended&&needsBattleTicks();
  if(!document.hidden){
   if(active)performancePolicy.advance(elapsed,speed,dt=>{update(dt);return !paused&&!ended&&(typeof appScreen==='undefined'||appScreen==='battle')});else performancePolicy.resetSimulation();
   if(battle&&!paused&&!ended)tickBossWarning(elapsed);
@@ -250,7 +253,7 @@ function frame(now){
   Motion.drawUI(now,performancePolicy.lowPower||battle&&(paused||ended));
   const frozen=battle&&(paused||ended);if(document.documentElement.classList.contains('motion-paused')!==frozen)document.documentElement.classList.toggle('motion-paused',frozen);
  }
- const stillActive=battle&&!paused&&!ended;frameWasActive=stillActive;
+ const stillActive=battle&&!paused&&!ended&&needsBattleTicks();frameWasActive=stillActive;
  performancePolicy.finish(frame,now,stillActive,!battle&&!performancePolicy.lowPower&&!Motion.reduced?.matches&&Motion.hasAnimated());
 }
 initMetaUI();reset();Motion.mount();GamePerformance.schedule(frame);

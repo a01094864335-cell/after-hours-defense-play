@@ -33,5 +33,8 @@
  document.addEventListener('close',()=>{refresh();if(!root.hidden&&!document.querySelector('dialog[open]')&&lastTrigger?.isConnected)lastTrigger.focus({preventScroll:true});},true);
  const lobby=game('#lobby');if(lobby)new MutationObserver(refresh).observe(lobby,{attributes:true,attributeFilter:['hidden']});const wallet=game('#global-coins');if(wallet)new MutationObserver(refresh).observe(wallet,{childList:true,characterData:true,subtree:true});
  const starter=game('#starter-choice-open');if(starter)new MutationObserver(refresh).observe(starter,{attributes:true,attributeFilter:['hidden']});
+ // An explicit host attribute also works in Safari, without :host-context().
+ function motionPolicy(){host.toggleAttribute('data-static-motion',GamePerformance.lowPower||document.hidden)}
+ document.addEventListener('power-mode-change',motionPolicy);document.addEventListener('visibilitychange',motionPolicy);motionPolicy();
  refresh();window.AssetLobby={refresh,partyLock};
 })();

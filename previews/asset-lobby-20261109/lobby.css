@@ -50,3 +50,5 @@ body.asset-lobby-active{margin:0!important;overflow:hidden!important;background:
 /* Keep the profile and party heads on the same character master. */
 #asset-lobby .a-profile{height:35px;background:linear-gradient(#fff8df,#f9e4b9);border:2px solid #061439;border-radius:24px}
 #asset-lobby .a-profile>img{position:absolute;left:-7px;top:-11px;width:55px;height:55px;object-fit:contain}
+
+:host([data-static-motion]) .a-logo{animation:none!important}

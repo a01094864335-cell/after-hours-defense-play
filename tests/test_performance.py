@@ -1,6 +1,7 @@
 """Work-count and timing invariants; these do not claim device temperature readings."""
 import unittest
 import test_usability as ui
+from browser_helpers import enter_preparation
 
 class PerformanceTests(unittest.TestCase):
     setUpClass=classmethod(ui.UsabilityTests.setUpClass.__func__)
@@ -15,6 +16,23 @@ class PerformanceTests(unittest.TestCase):
         a.locator('#asset-lobby-host [data-proxy="#menu-open"]').click();a.locator('#power-save-toggle').click();self.assertEqual(a.evaluate('GamePerformance.fps'),60)
         a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');self.assertEqual(a.evaluate('GamePerformance.fps'),60)
         a.context.close();a=self.open(1280,900);self.assertEqual(a.evaluate('GamePerformance.fps'),60)
+    def test_mobile_preparation_sleeps_then_native_summons_start_combat(self):
+        a=self.open(390,844)
+        a.evaluate("saveChange(d=>{d.tutorialComplete=true});restartTo('lobby');renderMeta()")
+        logo=a.locator('#asset-lobby-host .a-logo')
+        self.assertEqual(logo.evaluate('e=>getComputedStyle(e).animationName'),'none')
+        enter_preparation(a);a.wait_for_timeout(900)
+        before=a.evaluate('({...GamePerformance.stats})');a.wait_for_timeout(500)
+        self.assertEqual(before,a.evaluate('({...GamePerformance.stats})'))
+        a.locator('#summon').click();a.wait_for_timeout(1100)
+        self.assertEqual(a.evaluate('board.filter(Boolean).length'),1)
+        self.assertTrue(a.evaluate('board.filter(Boolean).every(u=>!u.arrival)'))
+        before=a.evaluate('({...GamePerformance.stats})');a.wait_for_timeout(400)
+        self.assertEqual(before,a.evaluate('({...GamePerformance.stats})'))
+        for _ in range(4):a.locator('#summon').click()
+        self.assertTrue(a.evaluate('playing'))
+        before=a.evaluate('GamePerformance.stats.updates');a.wait_for_timeout(400)
+        self.assertGreater(a.evaluate('GamePerformance.stats.updates'),before)
     def test_static_lobby_and_pause_do_not_keep_drawing(self):
         a=self.open(390,844);a.wait_for_timeout(600)
         before=a.evaluate('({...GamePerformance.stats})');a.wait_for_timeout(500);after=a.evaluate('({...GamePerformance.stats})')

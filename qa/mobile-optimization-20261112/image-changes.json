@@ -1,0 +1,67 @@
+[
+  {
+    "file": "previews/asset-lobby-20261109/assets/background.webp",
+    "before": 468708,
+    "after": 299350,
+    "sizeBefore": [
+      864,
+      1824
+    ],
+    "sizeAfter": [
+      864,
+      1824
+    ]
+  },
+  {
+    "file": "previews/asset-lobby-20261109/assets/title-logo.webp",
+    "before": 193130,
+    "after": 102592,
+    "sizeBefore": [
+      1356,
+      976
+    ],
+    "sizeAfter": [
+      960,
+      691
+    ]
+  },
+  {
+    "file": "assets/shared-chrome/paper.webp",
+    "before": 170446,
+    "after": 77236,
+    "sizeBefore": [
+      2147,
+      644
+    ],
+    "sizeAfter": [
+      1280,
+      384
+    ]
+  },
+  {
+    "file": "previews/asset-lobby-20261109/assets/gobi.webp",
+    "before": 134872,
+    "after": 86854,
+    "sizeBefore": [
+      680,
+      823
+    ],
+    "sizeAfter": [
+      680,
+      823
+    ]
+  },
+  {
+    "file": "assets/text-grid/shop-hero-wordless.webp",
+    "before": 160886,
+    "after": 118772,
+    "sizeBefore": [
+      900,
+      516
+    ],
+    "sizeAfter": [
+      900,
+      516
+    ]
+  }
+]

@@ -6,6 +6,13 @@ window.GamePerformance=(()=>{
  let lowPower=explicit??mobile.matches,callback=null,timer=null,raf=null,inFrame=false;
  let dirty=true,uiDirty=true,lastUI=-Infinity,lastDraw=-Infinity,accumulator=0;
  const stats={draws:0,updates:0,uiFlushes:0,backgroundBuilds:0,portraitDraws:0};
+ // Legacy presentation layers still own controls, but their hidden artwork must
+ // not compete with the visible screen. Observe after layout, not at creation.
+ const deferredImages=new WeakMap();
+ const imageObserver=typeof IntersectionObserver==='undefined'?null:new IntersectionObserver(entries=>{
+  for(const entry of entries)if(entry.isIntersecting){const image=entry.target,src=deferredImages.get(image);if(src){image.src=src;deferredImages.delete(image)}imageObserver.unobserve(image)}
+ });
+ function loadOnDisplay(image,src){image.decoding='async';image.loading='lazy';if(!imageObserver){image.src=src;return}deferredImages.set(image,src);imageObserver.observe(image)}
  function cancel(){if(timer!==null)clearTimeout(timer);if(raf!==null)cancelAnimationFrame(raf);timer=raf=null}
  function schedule(next,delay=0){callback=next;if(document.hidden||timer!==null||raf!==null||!callback)return;timer=setTimeout(()=>{timer=null;raf=requestAnimationFrame(now=>{raf=null;callback(now)})},Math.max(0,delay))}
  function invalidate(){dirty=true;if(!inFrame)schedule(callback)}
@@ -14,13 +21,13 @@ window.GamePerformance=(()=>{
  function setMode(value){explicit=lowPower=!!value;try{GameStorage.setItem('after-hours-power-save-v1',lowPower?'on':'off')}catch{}applyMode()}
  const onMobileChange=()=>{if(explicit===null){lowPower=mobile.matches;applyMode()}};
  if(mobile.addEventListener)mobile.addEventListener('change',onMobileChange);else if(mobile.addListener)mobile.addListener(onMobileChange);
- document.addEventListener('visibilitychange',()=>{cancel();accumulator=0;if(typeof last!=='undefined')last=0;if(!document.hidden){dirty=uiDirty=true;schedule(callback)}});
+ document.addEventListener('visibilitychange',()=>{document.documentElement.classList.toggle('page-hidden',document.hidden);cancel();accumulator=0;if(typeof last!=='undefined')last=0;if(!document.hidden){dirty=uiDirty=true;schedule(callback)}});
  document.addEventListener('load',invalidate,true);
  for(const event of ['click','change','pointermove','keydown'])document.addEventListener(event,invalidate,{passive:true});
  addEventListener('resize',invalidate);
  document.documentElement.classList.toggle('power-save',lowPower);
  return {stats,get lowPower(){return lowPower},get fps(){return lowPower?30:60},get dirty(){return dirty},boardWidth:600,
-  setMode,invalidate,requestUI,schedule,begin(){inFrame=true},resetSimulation(){accumulator=0},
+  setMode,invalidate,requestUI,schedule,loadOnDisplay,begin(){inFrame=true},resetSimulation(){accumulator=0},
   advance(elapsed,speed,tick){accumulator+=Math.min(.1,Math.max(0,elapsed));let count=0;while(accumulator+1e-9>=1/60&&count<6){accumulator-=1/60;count++;stats.updates++;if(tick(speed/60)===false){accumulator=0;break}}return count},
   flushUI(now,flush){if(uiDirty&&now-lastUI>=100){uiDirty=false;lastUI=now;stats.uiFlushes++;flush()}},
   settled(){dirty=false},
