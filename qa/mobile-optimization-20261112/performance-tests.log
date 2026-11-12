@@ -9,6 +9,6 @@ test_render_limit_and_fixed_simulation_rate (test_performance.PerformanceTests.t
 test_static_lobby_and_pause_do_not_keep_drawing (test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 29.161s
+Ran 9 tests in 28.389s
 
 OK
