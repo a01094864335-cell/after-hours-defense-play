@@ -1,0 +1,150 @@
+{
+  "lobby": {
+    "count": 192,
+    "bytes": 5137407,
+    "decoded": 5079807,
+    "largest": [
+      {
+        "name": "/previews/asset-lobby-20261109/assets/background.webp",
+        "bytes": 469008
+      },
+      {
+        "name": "/assets/reference-ui/title-logo.svg",
+        "bytes": 214347
+      },
+      {
+        "name": "/assets/open-scene/lobby-cast.webp",
+        "bytes": 197974
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/title-logo.webp",
+        "bytes": 193430
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+        "bytes": 190900
+      },
+      {
+        "name": "/assets/open-scene/shop-cast.webp",
+        "bytes": 175604
+      },
+      {
+        "name": "/assets/shared-chrome/paper.webp",
+        "bytes": 170746
+      },
+      {
+        "name": "/assets/open-scene/training-cast.webp",
+        "bytes": 167488
+      },
+      {
+        "name": "/assets/text-grid/shop-hero-wordless.webp",
+        "bytes": 161186
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/gobi.webp",
+        "bytes": 135172
+      },
+      {
+        "name": "/assets/open-scene/result-cast.webp",
+        "bytes": 134330
+      },
+      {
+        "name": "/assets/ui-approved/lobby-background.webp",
+        "bytes": 125118
+      },
+      {
+        "name": "/assets/mobile/lobby-gobi.webp",
+        "bytes": 112326
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/button-primary.webp",
+        "bytes": 77154
+      },
+      {
+        "name": "/ui.css",
+        "bytes": 74263
+      }
+    ],
+    "images": 82,
+    "fonts": [
+      {
+        "name": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+        "bytes": 190900
+      }
+    ]
+  },
+  "story": {
+    "count": 200,
+    "bytes": 6396613,
+    "decoded": 6336613,
+    "largest": [
+      {
+        "name": "/previews/asset-lobby-20261109/assets/background.webp",
+        "bytes": 469008
+      },
+      {
+        "name": "/assets/battle-exact/arena-ui.webp",
+        "bytes": 372904
+      },
+      {
+        "name": "/assets/reference-ui/title-logo.svg",
+        "bytes": 214347
+      },
+      {
+        "name": "/assets/comic/01-first-shift-sd.webp",
+        "bytes": 209988
+      },
+      {
+        "name": "/assets/open-scene/lobby-cast.webp",
+        "bytes": 197974
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/title-logo.webp",
+        "bytes": 193430
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+        "bytes": 190900
+      },
+      {
+        "name": "/assets/comic/03-emergency-staff.webp",
+        "bytes": 183840
+      },
+      {
+        "name": "/assets/comic/04-night-duty.webp",
+        "bytes": 182222
+      },
+      {
+        "name": "/assets/comic/02-invasion.webp",
+        "bytes": 179956
+      },
+      {
+        "name": "/assets/open-scene/shop-cast.webp",
+        "bytes": 175604
+      },
+      {
+        "name": "/assets/shared-chrome/paper.webp",
+        "bytes": 170746
+      },
+      {
+        "name": "/assets/open-scene/training-cast.webp",
+        "bytes": 167488
+      },
+      {
+        "name": "/assets/text-grid/shop-hero-wordless.webp",
+        "bytes": 161186
+      },
+      {
+        "name": "/previews/asset-lobby-20261109/assets/gobi.webp",
+        "bytes": 135172
+      }
+    ],
+    "images": 87,
+    "fonts": [
+      {
+        "name": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+        "bytes": 190900
+      }
+    ]
+  }
+}

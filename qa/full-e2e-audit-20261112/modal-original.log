@@ -1,0 +1,44 @@
+test_capture_inventory (test_modal_inventory.ModalInventoryTests.test_capture_inventory) ... FAIL
+
+======================================================================
+FAIL: test_capture_inventory (test_modal_inventory.ModalInventoryTests.test_capture_inventory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_modal_inventory.py", line 434, in test_capture_inventory
+    self.assertEqual(failures, [], '\n'.join(failures))
+AssertionError: Lists differ: ['chromium-320x568-rotation-notice: Page.g[956 chars]ed.'] != []
+
+First list contains 7 additional elements.
+First extra element 0:
+'chromium-320x568-rotation-notice: Page.goto: Timeout 8000ms exceeded.\nCall log:\n  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"\n'
+
+Diff is 1101 characters long. Set self.maxDiff to None to see it. : chromium-320x568-rotation-notice: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-leave: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-pause: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-roster: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-shop-pack: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-training-merc: Page.goto: Timeout 8000ms exceeded.
+Call log:
+  - navigating to "http://127.0.0.1:34627/", waiting until "networkidle"
+
+chromium-390x684-deck-swap: Page.wait_for_function: Timeout 8000ms exceeded.
+
+----------------------------------------------------------------------
+Ran 1 test in 1914.980s
+
+FAILED (failures=1)

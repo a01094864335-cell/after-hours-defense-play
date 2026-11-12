@@ -1,0 +1,113 @@
+{
+  "policy": "Targeted rerun of original failed capture cases. Raw failures preserved. Partial reports do not claim full inventory coverage. Original 8000ms timeout and all case geometry checks unchanged.",
+  "wrapperSetupCorrection": "Two initial subset wrappers conflicted with full gallery catalog lookups (KeyError(settings), StopIteration). Logs preserved separately. Current wrapper filters only the execution list; catalog lookup and game checks are unchanged.",
+  "cases": [
+    {
+      "name": "rotation-notice",
+      "viewport": [
+        320,
+        568
+      ],
+      "actualViewport": [
+        568,
+        320
+      ],
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-320x568-rotation-notice.png",
+        "chromium-320x568-rotation-notice-bottom.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-320x568/report.json"
+    },
+    {
+      "name": "leave",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-leave.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    },
+    {
+      "name": "pause",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-pause.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    },
+    {
+      "name": "roster",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-roster.png",
+        "chromium-390x684-roster-bottom.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    },
+    {
+      "name": "shop-pack",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-shop-pack.png",
+        "chromium-390x684-shop-pack-purchase.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    },
+    {
+      "name": "training-merc",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-training-merc.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    },
+    {
+      "name": "deck-swap",
+      "viewport": [
+        390,
+        684
+      ],
+      "actualViewport": null,
+      "errors": [],
+      "imageFailures": [],
+      "screenshots": [
+        "chromium-390x684-deck-swap.png",
+        "chromium-390x684-deck-swap-bottom.png"
+      ],
+      "report": "/tmp/full-audit-20261112/modal-recheck-390x684/report.json"
+    }
+  ],
+  "caseCount": 7,
+  "passed": 7
+}

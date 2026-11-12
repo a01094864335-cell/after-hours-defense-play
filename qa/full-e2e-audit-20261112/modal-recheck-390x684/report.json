@@ -1,0 +1,1713 @@
+{
+  "root": "/tmp/full-audit-20261112/game",
+  "sizes": [
+    [
+      390,
+      684
+    ]
+  ],
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "leave",
+      "selector": "#leave",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-leave.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "03-leave"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 25,
+          "y": 108.4375,
+          "w": 340,
+          "h": 467.125
+        },
+        "text": "당직을 그만둘까요?\n\n현재 전투의 웨이브·배치·장비 레벨·SP가 초기화되고 미정산 처치 보상은 지급되지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지되며 사용한 아이템은 반환하지 않아요.\n\n종료하고 로비로\n계속 근무",
+        "controls": [
+          {
+            "label": "leave-confirm",
+            "x": 45.9375,
+            "y": 499.96875,
+            "w": 298.125,
+            "h": 52.59375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 15679.51171875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "leave-cancel",
+            "x": 45.9375,
+            "y": 437.375,
+            "w": 298.125,
+            "h": 52.59375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 15679.51171875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "DIALOG",
+        "classes": "bottom-sheet contained-panel shared-paper-modal concept-modal concept-leave",
+        "text": "당직을 그만둘까요?\n\n현재 전투의 웨이브·배치·장비 레벨·SP가 초기화되고 미정산 처치 보상은 지급되지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지되며 사용한 아이템은 반환하지 않아요.\n\n종료하고 로비로\n계속 근무",
+        "background": "rgb(255, 246, 223)",
+        "backgroundImage": "url(\"http://127.0.0.1:32839/assets/concept-tools/paper-grain.svg\")",
+        "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [],
+      "touchFindings": [],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "pause",
+      "selector": "#ref-pause",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-pause.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "21-pause"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 684
+        },
+        "text": "잠깐 쉬어 갈까요?\n\n전투는 잠시 멈춰 있어요\n\n계속 근무\n근무 안내\n근무 종료",
+        "controls": [
+          {
+            "label": "pause-continue",
+            "x": 58,
+            "y": 345.296875,
+            "w": 274,
+            "h": 48.6875,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 13340.375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "pause-guide",
+            "x": 58,
+            "y": 419.984375,
+            "w": 274,
+            "h": 48.6875,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 13340.375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "pause-home",
+            "x": 58,
+            "y": 502.671875,
+            "w": 274,
+            "h": 46,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 12604,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "DIV",
+        "classes": "",
+        "text": "잠깐 쉬어 갈까요?\n\n전투는 잠시 멈춰 있어요\n\n계속 근무\n근무 안내\n근무 종료",
+        "background": "rgba(16, 37, 75, 0.6)",
+        "backgroundImage": "none",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [],
+      "touchFindings": [],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "roster",
+      "selector": "#roster",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-roster.png",
+        "chromium-390x684-roster-bottom.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "13-roster"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 684
+        },
+        "text": "",
+        "controls": [
+          {
+            "label": "당직실로 돌아가기",
+            "x": 22,
+            "y": 35,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 도감 닫기",
+            "x": 324,
+            "y": 35,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "채용 직원 6",
+            "x": 20,
+            "y": 100,
+            "w": 113.328125,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4986.4375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "미채용 11",
+            "x": 138.328125,
+            "y": 100,
+            "w": 113.328125,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4986.4375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "지원 영웅 7",
+            "x": 256.65625,
+            "y": 100,
+            "w": 113.34375,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4987.125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭 인사기록 보기",
+            "x": 120.5,
+            "y": 168.96875,
+            "w": 47.15625,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3141.04833984375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "토르크 인사기록 보기",
+            "x": 169.65625,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "뽀득 인사기록 보기",
+            "x": 218.828125,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "고비 인사기록 보기",
+            "x": 268,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "찌릿 인사기록 보기",
+            "x": 317.171875,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭 · 경비원 인사기록 보기",
+            "x": 28.578125,
+            "y": 276.828125,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18508.256103515625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "토르크 · 시설기사 인사기록 보기",
+            "x": 196.453125,
+            "y": 276.828125,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18512.5869140625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "뽀득 · 청소부 인사기록 보기",
+            "x": 28.578125,
+            "y": 395.625,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18508.256103515625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "고비 · 당직 서기 인사기록 보기",
+            "x": 196.453125,
+            "y": 395.625,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18512.5869140625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "찌릿 · 전기기사 인사기록 보기",
+            "x": 28.578125,
+            "y": 514.421875,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 10817.316650390625,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "루프 · 유령 배달부 인사기록 보기",
+            "x": 196.453125,
+            "y": 514.421875,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 10818.34130859375,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "직원 도감",
+            "x": 16,
+            "y": 580,
+            "w": 119.328125,
+            "h": 90,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 10739.53125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "당직실",
+            "x": 135.328125,
+            "y": 590,
+            "w": 119.328125,
+            "h": 80,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 9546.25,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "상점",
+            "x": 254.65625,
+            "y": 590,
+            "w": 119.34375,
+            "h": 80,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 9547.5,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [
+          {
+            "label": "r-note",
+            "reason": "screen-reader-only"
+          }
+        ],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "DIALOG",
+        "classes": "asset-roster-dialog shared-paper-modal",
+        "text": "",
+        "background": "rgb(248, 223, 185)",
+        "backgroundImage": "none",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [
+        {
+          "id": "r-scroll",
+          "before": 0,
+          "after": 74,
+          "scrollHeight": 398,
+          "clientHeight": 324
+        }
+      ],
+      "bottomGeometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 684
+        },
+        "text": "",
+        "controls": [
+          {
+            "label": "당직실로 돌아가기",
+            "x": 22,
+            "y": 35,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 도감 닫기",
+            "x": 324,
+            "y": 35,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "채용 직원 6",
+            "x": 20,
+            "y": 100,
+            "w": 113.328125,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4986.4375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "미채용 11",
+            "x": 138.328125,
+            "y": 100,
+            "w": 113.328125,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4986.4375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "지원 영웅 7",
+            "x": 256.65625,
+            "y": 100,
+            "w": 113.34375,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4987.125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭 인사기록 보기",
+            "x": 120.5,
+            "y": 168.96875,
+            "w": 47.15625,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3141.04833984375,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "토르크 인사기록 보기",
+            "x": 169.65625,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "뽀득 인사기록 보기",
+            "x": 218.828125,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "고비 인사기록 보기",
+            "x": 268,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "찌릿 인사기록 보기",
+            "x": 317.171875,
+            "y": 168.96875,
+            "w": 47.171875,
+            "h": 66.609375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 3142.089111328125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭 · 경비원 인사기록 보기",
+            "x": 28.578125,
+            "y": 202.828125,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 9760.585693359375,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "토르크 · 시설기사 인사기록 보기",
+            "x": 196.453125,
+            "y": 202.828125,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 9764.087890625,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "뽀득 · 청소부 인사기록 보기",
+            "x": 28.578125,
+            "y": 321.625,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18508.256103515625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "고비 · 당직 서기 인사기록 보기",
+            "x": 196.453125,
+            "y": 321.625,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18512.5869140625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "찌릿 · 전기기사 인사기록 보기",
+            "x": 28.578125,
+            "y": 440.421875,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18508.256103515625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "루프 · 유령 배달부 인사기록 보기",
+            "x": 196.453125,
+            "y": 440.421875,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 18512.5869140625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 도감",
+            "x": 16,
+            "y": 580,
+            "w": 119.328125,
+            "h": 90,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 10739.53125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "당직실",
+            "x": 135.328125,
+            "y": 590,
+            "w": 119.328125,
+            "h": 80,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 9546.25,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "상점",
+            "x": 254.65625,
+            "y": 590,
+            "w": 119.34375,
+            "h": 80,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 9547.5,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [
+          {
+            "label": "r-note",
+            "reason": "screen-reader-only"
+          }
+        ],
+        "documentOverflow": false
+      },
+      "touchFindings": [
+        {
+          "label": "찌릿 · 전기기사 인사기록 보기",
+          "x": 28.578125,
+          "y": 514.421875,
+          "w": 164.953125,
+          "h": 112.203125,
+          "disabled": false,
+          "scrollable": true,
+          "visibleArea": 10817.316650390625,
+          "undersized": false,
+          "clipped": true,
+          "clippingClass": "scroll-boundary-review"
+        },
+        {
+          "label": "루프 · 유령 배달부 인사기록 보기",
+          "x": 196.453125,
+          "y": 514.421875,
+          "w": 164.96875,
+          "h": 112.21875,
+          "disabled": false,
+          "scrollable": true,
+          "visibleArea": 10818.34130859375,
+          "undersized": false,
+          "clipped": true,
+          "clippingClass": "scroll-boundary-review"
+        }
+      ],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [
+          {
+            "label": "찌릿 · 전기기사 인사기록 보기",
+            "x": 28.578125,
+            "y": 514.421875,
+            "w": 164.953125,
+            "h": 112.203125,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 10817.316650390625,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "루프 · 유령 배달부 인사기록 보기",
+            "x": 196.453125,
+            "y": 514.421875,
+            "w": 164.96875,
+            "h": 112.21875,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 10818.34130859375,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          }
+        ],
+        "nonScrollClipping": [],
+        "excluded": [
+          {
+            "label": "r-note",
+            "reason": "screen-reader-only"
+          }
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "shop-pack",
+      "selector": "#shop",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-shop-pack.png",
+        "chromium-390x684-shop-pack-purchase.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "14-shop"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 684
+        },
+        "text": "",
+        "controls": [
+          {
+            "label": "상점 닫기",
+            "x": 332,
+            "y": 12.125,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "채용팩",
+            "x": 12,
+            "y": 78.25,
+            "w": 179,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 7876,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "개별 아이템",
+            "x": 199,
+            "y": 78.25,
+            "w": 179,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 7876,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "확률 · 보장 규칙",
+            "x": 18,
+            "y": 482.453125,
+            "w": 354,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 15576,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "동료 지정 채용 ›",
+            "x": 267.09375,
+            "y": 437.453125,
+            "w": 104.90625,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 4615.875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "G120 코인 · 채용팩 열기›",
+            "x": 14,
+            "y": 550.453125,
+            "w": 362,
+            "h": 54,
+            "disabled": true,
+            "scrollable": false,
+            "visibleArea": 19548,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 도감",
+            "x": 4,
+            "y": 630,
+            "w": 127.328125,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.0625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "당직실",
+            "x": 131.328125,
+            "y": 630,
+            "w": 127.328125,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.0625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "상점",
+            "x": 258.65625,
+            "y": 630,
+            "w": 127.34375,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "initialPurchaseVisibility": {
+        "x": 14,
+        "y": 550.453125,
+        "width": 362,
+        "height": 54,
+        "disabled": true,
+        "fullyVisible": true
+      },
+      "purchaseLayoutPolicy": "Restored original shop scrolls its purchase content on short screens; initial visibility remains reported, actual scroll reachability is required below.",
+      "livePresentation": {
+        "tag": "DIALOG",
+        "classes": "contained-panel summon-stage-shop asset-shop-dialog shared-paper-modal",
+        "text": "",
+        "background": "rgb(23, 29, 62)",
+        "backgroundImage": "none",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrolledPurchaseVisibility": {
+        "fullyVisible": true
+      },
+      "scrollRegions": [],
+      "touchFindings": [],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "training-merc",
+      "selector": "#training-dialog",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-training-merc.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "15-training"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 684
+        },
+        "text": "",
+        "controls": [
+          {
+            "label": "이전 화면으로 돌아가기",
+            "x": 16,
+            "y": 14,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 훈련",
+            "x": 10,
+            "y": 70,
+            "w": 182,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 8008,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "지원 영웅 훈련",
+            "x": 198,
+            "y": 70,
+            "w": 182,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 8008,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "ss-people-1-tab-train",
+            "x": 10,
+            "y": 120,
+            "w": 182.5,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 8030,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "ss-people-1-tab-effects",
+            "x": 197.5,
+            "y": 120,
+            "w": 182.5,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 8030,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "upgrade",
+            "x": 20,
+            "y": 570,
+            "w": 350,
+            "h": 44,
+            "disabled": true,
+            "scrollable": false,
+            "visibleArea": 15400,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "직원 도감",
+            "x": 4,
+            "y": 631,
+            "w": 127.328125,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.0625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "당직실",
+            "x": 131.328125,
+            "y": 631,
+            "w": 127.328125,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.0625,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "상점",
+            "x": 258.65625,
+            "y": 631,
+            "w": 127.34375,
+            "h": 52,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 6621.875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "SECTION",
+        "classes": "app-screen training-page asset-training-page",
+        "text": "",
+        "background": "rgb(22, 45, 97)",
+        "backgroundImage": "url(\"http://127.0.0.1:32839/assets/open-scene/training-room.webp\")",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [],
+      "touchFindings": [],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    },
+    {
+      "engine": "chromium",
+      "name": "deck-swap",
+      "selector": "#deck",
+      "viewport": [
+        390,
+        684
+      ],
+      "screenshots": [
+        "chromium-390x684-deck-swap.png",
+        "chromium-390x684-deck-swap-bottom.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "07-deck"
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 21,
+          "y": 31,
+          "w": 348,
+          "h": 622
+        },
+        "text": "오늘의 근무 명단\n\n대기 직원 선택 → 제외할 출전 직원 선택. 항상 5명으로 유지해요.\n\n브릭\n단일 공격\n✓ 출전 중\n토르크\n범위 공격\n✓ 출전 중\n뽀득\n이동 방해\n✓ 출전 중\n고비\n운영비 생산\n✓ 출전 중\n찌릿\n연쇄 공격\n✓ 출전 중\n루프\n관통 공격\n◎ 교체 대기\n편성 완료",
+        "controls": [
+          {
+            "label": "deck-close",
+            "x": 297.0625,
+            "y": 70.5,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭단일 공격✓ 출전 중",
+            "x": 53.9375,
+            "y": 219.59375,
+            "w": 86.03125,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15259.79296875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "토르크범위 공격✓ 출전 중",
+            "x": 149.96875,
+            "y": 219.59375,
+            "w": 86.046875,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15262.564453125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "뽀득이동 방해✓ 출전 중",
+            "x": 246.015625,
+            "y": 219.59375,
+            "w": 86.03125,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15259.79296875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "고비운영비 생산✓ 출전 중",
+            "x": 53.9375,
+            "y": 406.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11823.919921875,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "찌릿연쇄 공격✓ 출전 중",
+            "x": 149.96875,
+            "y": 406.96875,
+            "w": 86.046875,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11826.0673828125,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "루프관통 공격◎ 교체 대기",
+            "x": 246.015625,
+            "y": 406.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11823.919921875,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "concept-deck-done",
+            "x": 48.9375,
+            "y": 570.40625,
+            "w": 292.125,
+            "h": 52.59375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 15363.94921875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "DIALOG",
+        "classes": "bottom-sheet contained-panel shared-paper-modal concept-modal concept-deck",
+        "text": "오늘의 근무 명단\n\n대기 직원 선택 → 제외할 출전 직원 선택. 항상 5명으로 유지해요.\n\n브릭\n단일 공격\n✓ 출전 중\n토르크\n범위 공격\n✓ 출전 중\n뽀득\n이동 방해\n✓ 출전 중\n고비\n운영비 생산\n✓ 출전 중\n찌릿\n연쇄 공격\n✓ 출전 중\n루프\n관통 공격\n◎ 교체 대기\n편성 완료",
+        "background": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "linear-gradient(90deg, rgb(255, 253, 247) 49.7%, rgb(212, 198, 164) 50%, rgb(255, 253, 247) 50.3%)",
+        "font": "\"Noto Sans KR\", \"Apple SD Gothic Neo\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:32839/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:32839/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:32839/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:32839/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:32839/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:32839/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:32839/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:32839/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:32839/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:32839/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:32839/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:32839/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:32839/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:32839/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:32839/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:32839/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:32839/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:32839/story-art.css?v=157625313507",
+          "http://127.0.0.1:32839/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:32839/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:32839/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:32839/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:32839/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:32839/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [
+        {
+          "id": "panel-scroll-body",
+          "before": 0,
+          "after": 82,
+          "scrollHeight": 487,
+          "clientHeight": 405
+        }
+      ],
+      "bottomGeometry": {
+        "bounds": {
+          "x": 21,
+          "y": 31,
+          "w": 348,
+          "h": 622
+        },
+        "text": "오늘의 근무 명단\n\n대기 직원 선택 → 제외할 출전 직원 선택. 항상 5명으로 유지해요.\n\n브릭\n단일 공격\n✓ 출전 중\n토르크\n범위 공격\n✓ 출전 중\n뽀득\n이동 방해\n✓ 출전 중\n고비\n운영비 생산\n✓ 출전 중\n찌릿\n연쇄 공격\n✓ 출전 중\n루프\n관통 공격\n◎ 교체 대기\n편성 완료",
+        "controls": [
+          {
+            "label": "deck-close",
+            "x": 297.0625,
+            "y": 70.5,
+            "w": 44,
+            "h": 44,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 1936,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "브릭단일 공격✓ 출전 중",
+            "x": 53.9375,
+            "y": 137.59375,
+            "w": 86.03125,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15138.8115234375,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "토르크범위 공격✓ 출전 중",
+            "x": 149.96875,
+            "y": 137.59375,
+            "w": 86.046875,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15141.56103515625,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "뽀득이동 방해✓ 출전 중",
+            "x": 246.015625,
+            "y": 137.59375,
+            "w": 86.03125,
+            "h": 177.375,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 15138.8115234375,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "고비운영비 생산✓ 출전 중",
+            "x": 53.9375,
+            "y": 324.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 16755.93017578125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "찌릿연쇄 공격✓ 출전 중",
+            "x": 149.96875,
+            "y": 324.96875,
+            "w": 86.046875,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 16758.973388671875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "루프관통 공격◎ 교체 대기",
+            "x": 246.015625,
+            "y": 324.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 16755.93017578125,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          },
+          {
+            "label": "concept-deck-done",
+            "x": 48.9375,
+            "y": 570.40625,
+            "w": 292.125,
+            "h": 52.59375,
+            "disabled": false,
+            "scrollable": false,
+            "visibleArea": 15363.94921875,
+            "undersized": false,
+            "clipped": false,
+            "clippingClass": "none"
+          }
+        ],
+        "overflow": [],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "touchFindings": [
+        {
+          "label": "고비운영비 생산✓ 출전 중",
+          "x": 53.9375,
+          "y": 406.96875,
+          "w": 86.03125,
+          "h": 194.765625,
+          "disabled": false,
+          "scrollable": true,
+          "visibleArea": 11823.919921875,
+          "undersized": false,
+          "clipped": true,
+          "clippingClass": "scroll-boundary-review"
+        },
+        {
+          "label": "찌릿연쇄 공격✓ 출전 중",
+          "x": 149.96875,
+          "y": 406.96875,
+          "w": 86.046875,
+          "h": 194.765625,
+          "disabled": false,
+          "scrollable": true,
+          "visibleArea": 11826.0673828125,
+          "undersized": false,
+          "clipped": true,
+          "clippingClass": "scroll-boundary-review"
+        },
+        {
+          "label": "루프관통 공격◎ 교체 대기",
+          "x": 246.015625,
+          "y": 406.96875,
+          "w": 86.03125,
+          "h": 194.765625,
+          "disabled": false,
+          "scrollable": true,
+          "visibleArea": 11823.919921875,
+          "undersized": false,
+          "clipped": true,
+          "clippingClass": "scroll-boundary-review"
+        }
+      ],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [
+          {
+            "label": "고비운영비 생산✓ 출전 중",
+            "x": 53.9375,
+            "y": 406.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11823.919921875,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "찌릿연쇄 공격✓ 출전 중",
+            "x": 149.96875,
+            "y": 406.96875,
+            "w": 86.046875,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11826.0673828125,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          },
+          {
+            "label": "루프관통 공격◎ 교체 대기",
+            "x": 246.015625,
+            "y": 406.96875,
+            "w": 86.03125,
+            "h": 194.765625,
+            "disabled": false,
+            "scrollable": true,
+            "visibleArea": 11823.919921875,
+            "undersized": false,
+            "clipped": true,
+            "clippingClass": "scroll-boundary-review"
+          }
+        ],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    }
+  ],
+  "discovered": [
+    "#daily-events-dialog",
+    "#deck",
+    "#equipment",
+    "#guide",
+    "#info",
+    "#leave",
+    "#menu",
+    "#perk",
+    "#promo",
+    "#recruit-dialog",
+    "#recruit-rules",
+    "#ref-pause",
+    "#roster",
+    "#rotation-notice",
+    "#save-transfer-dialog",
+    "#session-notice",
+    "#shop",
+    "#staff-trial",
+    "#starter-choice",
+    "#story-archive"
+  ],
+  "retiredScreens": [
+    "Records/preset page removed at user request; stored data retained"
+  ],
+  "method": "Real game renderers; standalone training page included; isolated storage per case; viewport screenshots plus scrolled captures. Visible enabled hit targets below44px gate. Closed details/SR-only content are explicitly excluded; scroll-boundary clipping remains review information, not proof of reachability.",
+  "covered": [
+    "#deck",
+    "#leave",
+    "#ref-pause",
+    "#roster",
+    "#shop",
+    "#training-dialog"
+  ],
+  "uncovered": [
+    "#daily-events-dialog",
+    "#equipment",
+    "#guide",
+    "#info",
+    "#menu",
+    "#perk",
+    "#promo",
+    "#recruit-dialog",
+    "#recruit-rules",
+    "#rotation-notice",
+    "#save-transfer-dialog",
+    "#session-notice",
+    "#staff-trial",
+    "#starter-choice",
+    "#story-archive"
+  ],
+  "failures": [
+    "Uncovered dialog inventory: #daily-events-dialog, #equipment, #guide, #info, #menu, #perk, #promo, #recruit-dialog, #recruit-rules, #rotation-notice, #save-transfer-dialog, #session-notice, #staff-trial, #starter-choice, #story-archive"
+  ],
+  "complete": false
+}

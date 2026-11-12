@@ -1,0 +1,36 @@
+{
+  "states": 50,
+  "sizes": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      684
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "originalExecutions": 200,
+  "originalPassed": 193,
+  "originalTimeouts": 7,
+  "originalOtherErrors": [],
+  "originalSuiteExitCode": 1,
+  "originalDiscoveredDialogCoverageMissing": [],
+  "targetedRecheckExecutions": 7,
+  "targetedRecheckPassed": 7,
+  "finalStatesWithSuccessfulCaptureAndGeometry": 200,
+  "allInitialExecutionsPassed": false,
+  "pageGotoTimeouts": 6,
+  "sessionReadyWaitTimeouts": 1,
+  "executionNotes": "Original screenshot inventory ran alongside five functional workers, then its process tree was paused/resumed to release CPU. Seventh timeout followed pause. Rechecks ran after functional workers completed, retaining the original 8000ms timeout; initial failures are not rewritten.",
+  "originalPngCount": 287,
+  "coveragePolicy": "Union of successful original cases and explicitly matched targeted rechecks. Partial recheck inventory reports are not full-suite passes."
+}

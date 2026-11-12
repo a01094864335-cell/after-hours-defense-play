@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/tmp/full-audit-20261112/recheck-modals.py", line 19, in <module>
+    try:t.test_capture_inventory()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/after-hours-defense-play/tests/test_modal_inventory.py", line 228, in test_capture_inventory
+    if next(sel for n, sel, _ in CASES if n == primary) == selector]
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration

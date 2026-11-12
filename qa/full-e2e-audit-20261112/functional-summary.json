@@ -1,0 +1,124 @@
+{
+  "sourceCommit": "0d10fbf859093baae17b869ba68a281bd311c49a",
+  "engine": "chromium",
+  "scenarioCount": 111,
+  "executionCount": 1110,
+  "counts": {
+    "passed": 1110
+  },
+  "byAttempt": [
+    {
+      "attempt": 1,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 2,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 3,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 4,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 5,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 6,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 7,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 8,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 9,
+      "counts": {
+        "passed": 111
+      }
+    },
+    {
+      "attempt": 10,
+      "counts": {
+        "passed": 111
+      }
+    }
+  ],
+  "fixtureErrors": [],
+  "contextCount": 1850,
+  "touchContextCount": 20,
+  "viewportContexts": [
+    {
+      "width": 320,
+      "height": 568,
+      "contexts": 610
+    },
+    {
+      "width": 360,
+      "height": 640,
+      "contexts": 10
+    },
+    {
+      "width": 390,
+      "height": 640,
+      "contexts": 10
+    },
+    {
+      "width": 390,
+      "height": 684,
+      "contexts": 190
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "contexts": 880
+    },
+    {
+      "width": 393,
+      "height": 727,
+      "contexts": 20
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "contexts": 100
+    },
+    {
+      "width": 480,
+      "height": 900,
+      "contexts": 10
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "contexts": 20
+    }
+  ],
+  "retryPolicy": "No functional retry; every original attempt preserved.",
+  "publicOriginTested": false,
+  "target": "Official Pages build of deployed source commit served locally; no player storage."
+}

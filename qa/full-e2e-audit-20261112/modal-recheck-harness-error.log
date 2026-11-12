@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/tmp/full-audit-20261112/recheck-modals.py", line 10, in <module>
+    try:t.test_capture_inventory()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/after-hours-defense-play/tests/test_modal_inventory.py", line 211, in test_capture_inventory
+    write_approved_review(out, report)
+  File "/workspace/after-hours-defense-play/tests/test_modal_inventory.py", line 122, in write_approved_review
+    selector = scenarios[primary]
+               ~~~~~~~~~^^^^^^^^^
+KeyError: 'settings'

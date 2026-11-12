@@ -1,0 +1,175 @@
+{
+  "root": "/tmp/full-audit-20261112/game",
+  "sizes": [
+    [
+      320,
+      568
+    ]
+  ],
+  "cases": [
+    {
+      "engine": "chromium",
+      "name": "rotation-notice",
+      "selector": "#rotation-notice",
+      "viewport": [
+        320,
+        568
+      ],
+      "screenshots": [
+        "chromium-320x568-rotation-notice.png",
+        "chromium-320x568-rotation-notice-bottom.png"
+      ],
+      "errors": [],
+      "approvedConceptIds": [
+        "25-orientation"
+      ],
+      "actualViewport": [
+        568,
+        320
+      ],
+      "geometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 568,
+          "h": 320
+        },
+        "text": "화면 방향 안내\n세로로 돌려주세요\n\n이 게임은 세로 화면에서 진행할 수 있어요. 진행 중인 전투는 일시정지되며, 세로로 돌아온 뒤 계속할 수 있습니다.\n\n세로로 돌린 뒤 계속 근무를 눌러주세요.",
+        "controls": [],
+        "overflow": [
+          {
+            "label": "SPAN",
+            "client": 95,
+            "scroll": 102
+          }
+        ],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "livePresentation": {
+        "tag": "SECTION",
+        "classes": "",
+        "text": "화면 방향 안내\n세로로 돌려주세요\n\n이 게임은 세로 화면에서 진행할 수 있어요. 진행 중인 전투는 일시정지되며, 세로로 돌아온 뒤 계속할 수 있습니다.\n\n세로로 돌린 뒤 계속 근무를 눌러주세요.",
+        "background": "rgba(16, 37, 75, 0.62)",
+        "backgroundImage": "none",
+        "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "stylesheetURLs": [
+          "http://127.0.0.1:33283/skill-cutin.css?v=4e6821a65f33",
+          "http://127.0.0.1:33283/gm-mode.css?v=5cd1bd087d43",
+          "http://127.0.0.1:33283/ui.css?v=8ee848a59f50",
+          "http://127.0.0.1:33283/hiring-stories.css?v=3644bb88b552",
+          "http://127.0.0.1:33283/open-scene.css?v=6d006a5ef3b2",
+          "http://127.0.0.1:33283/previews/asset-lobby-20261109/lobby.css?v=5b52d59a9bd4",
+          "http://127.0.0.1:33283/previews/asset-roster-20261109/roster.css?v=893871567833",
+          "http://127.0.0.1:33283/previews/asset-shop-20261109/shop.css?v=d8c8a1a9019a",
+          "http://127.0.0.1:33283/previews/asset-training-20261109/training.css?v=66a7aec75cf7",
+          "http://127.0.0.1:33283/battle-comic.css?v=4fecd3d14582",
+          "http://127.0.0.1:33283/battle-exact.css?v=3787d2adc08a",
+          "http://127.0.0.1:33283/shared-chrome.css?v=7ec3cf9a6313",
+          "http://127.0.0.1:33283/concept-base.css?v=f995b6878ccd",
+          "http://127.0.0.1:33283/concept-tools.css?v=485931209b79",
+          "http://127.0.0.1:33283/concept-people.css?v=7c434b1fb06f",
+          "http://127.0.0.1:33283/concept-stories.css?v=2ab292008b8d",
+          "http://127.0.0.1:33283/text-grid.css?v=9bf6443a07b0",
+          "http://127.0.0.1:33283/story-art.css?v=157625313507",
+          "http://127.0.0.1:33283/battle-cohesion.css?v=ae9e97373183",
+          "http://127.0.0.1:33283/wave-rewards.css?v=0026967ac33d",
+          "http://127.0.0.1:33283/language-settings.css?v=c7c406a26042",
+          "http://127.0.0.1:33283/single-screen-settings.css?v=680aaf22dbac",
+          "http://127.0.0.1:33283/single-screen-people.css?v=6e9c8292d586",
+          "http://127.0.0.1:33283/single-screen-shop.css?v=a25f6f6083e8"
+        ]
+      },
+      "imageFailures": [],
+      "scrollRegions": [
+        {
+          "id": "",
+          "before": 0,
+          "after": 36,
+          "scrollHeight": 308,
+          "clientHeight": 272
+        }
+      ],
+      "bottomGeometry": {
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "w": 568,
+          "h": 320
+        },
+        "text": "화면 방향 안내\n세로로 돌려주세요\n\n이 게임은 세로 화면에서 진행할 수 있어요. 진행 중인 전투는 일시정지되며, 세로로 돌아온 뒤 계속할 수 있습니다.\n\n세로로 돌린 뒤 계속 근무를 눌러주세요.",
+        "controls": [],
+        "overflow": [
+          {
+            "label": "SPAN",
+            "client": 95,
+            "scroll": 102
+          }
+        ],
+        "excluded": [],
+        "documentOverflow": false
+      },
+      "touchFindings": [],
+      "touchClassifications": {
+        "undersized": [],
+        "scrollBoundaryReview": [],
+        "nonScrollClipping": [],
+        "excluded": []
+      }
+    }
+  ],
+  "discovered": [
+    "#daily-events-dialog",
+    "#deck",
+    "#equipment",
+    "#guide",
+    "#info",
+    "#leave",
+    "#menu",
+    "#perk",
+    "#promo",
+    "#recruit-dialog",
+    "#recruit-rules",
+    "#ref-pause",
+    "#roster",
+    "#rotation-notice",
+    "#save-transfer-dialog",
+    "#session-notice",
+    "#shop",
+    "#staff-trial",
+    "#starter-choice",
+    "#story-archive"
+  ],
+  "retiredScreens": [
+    "Records/preset page removed at user request; stored data retained"
+  ],
+  "method": "Real game renderers; standalone training page included; isolated storage per case; viewport screenshots plus scrolled captures. Visible enabled hit targets below44px gate. Closed details/SR-only content are explicitly excluded; scroll-boundary clipping remains review information, not proof of reachability.",
+  "covered": [
+    "#rotation-notice"
+  ],
+  "uncovered": [
+    "#daily-events-dialog",
+    "#deck",
+    "#equipment",
+    "#guide",
+    "#info",
+    "#leave",
+    "#menu",
+    "#perk",
+    "#promo",
+    "#recruit-dialog",
+    "#recruit-rules",
+    "#ref-pause",
+    "#roster",
+    "#save-transfer-dialog",
+    "#session-notice",
+    "#shop",
+    "#staff-trial",
+    "#starter-choice",
+    "#story-archive"
+  ],
+  "failures": [
+    "Uncovered dialog inventory: #daily-events-dialog, #deck, #equipment, #guide, #info, #leave, #menu, #perk, #promo, #recruit-dialog, #recruit-rules, #ref-pause, #roster, #save-transfer-dialog, #session-notice, #shop, #staff-trial, #starter-choice, #story-archive"
+  ],
+  "complete": false
+}

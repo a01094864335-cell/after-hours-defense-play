@@ -1,0 +1,5314 @@
+{
+  "sourceCommit": "0d10fbf859093baae17b869ba68a281bd311c49a",
+  "shard": 3,
+  "engine": "chromium",
+  "attemptsPerScenarioTarget": 10,
+  "isolation": "Each test uses new browser contexts; no live user storage. Scenario-controlled fixtures are documented in test source.",
+  "seed": null,
+  "seedPolicy": "Existing browser scenarios use their documented deterministic fixtures; no global RNG override.",
+  "retryPolicy": "No retries. Every failure remains in this report.",
+  "scenarioCount": 111,
+  "inventory": [
+    "test_android_compatibility.AndroidCompatibilityTests.test_android_touch_lobby_and_battle_open",
+    "test_android_compatibility.AndroidCompatibilityTests.test_old_viewport_units_and_media_listeners_still_start",
+    "test_asset_screens.AssetScreenTests.test_main_roster_navigation_and_compact_scroll",
+    "test_asset_screens.AssetScreenTests.test_shop_live_wallet_guarantee_and_navigation",
+    "test_asset_screens.AssetScreenTests.test_staff_and_support_actions_keep_original_state_rules",
+    "test_asset_screens.AssetScreenTests.test_training_live_upgrades_and_mobile_navigation",
+    "test_backup_file_race.BackupFileRaceTests.test_delayed_file_invalidates_preview_and_latest_selection_wins",
+    "test_backup_file_race.BackupFileRaceTests.test_file_read_rejection_has_visible_error_and_no_unhandled_exception",
+    "test_backup_file_race.BackupFileRaceTests.test_typing_and_closing_cancel_delayed_file_reads",
+    "test_balance.BalanceTests.test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount",
+    "test_balance.BalanceTests.test_failure_discounts_only_next_successful_summon_and_preserves_base_growth",
+    "test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload",
+    "test_balance.BalanceTests.test_late_reward_choices_fit_short_phone",
+    "test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend",
+    "test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost",
+    "test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads",
+    "test_balance.BalanceTests.test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack",
+    "test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice",
+    "test_battle_cohesion.BattleCohesionTests.test_idle_panel_select_skill_and_deselect",
+    "test_battle_cohesion.BattleCohesionTests.test_supports_share_approved_faces_and_leave_cells_untouched",
+    "test_browser_smoke.GameplaySmokeTests.test_fresh_player_starts_combat_through_visible_controls",
+    "test_browser_smoke.GameplaySmokeTests.test_wave_six_instruction_requires_one_selection",
+    "test_character_portraits.CharacterPortraitTests.test_all_support_choices_use_the_same_face_in_lobby_and_training",
+    "test_character_portraits.CharacterPortraitTests.test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates",
+    "test_character_portraits.CharacterPortraitTests.test_every_staff_keeps_identity_between_party_roster_and_training",
+    "test_character_portraits.CharacterPortraitTests.test_icon_only_consumables_keep_accessible_names_and_toggle_actions",
+    "test_character_portraits.CharacterPortraitTests.test_staff_and_enemies_render_matching_full_bodies",
+    "test_coin_prices.CoinPriceTests.test_insufficient_pack_balance_and_displayed_price_agree",
+    "test_coin_prices.CoinPriceTests.test_updated_purchases_charge_once_and_persist",
+    "test_combat_comic.CombatComicTests.test_all_twenty_actors_render_all_poses_and_fallbacks_from_comic_family",
+    "test_combat_comic.CombatComicTests.test_battle_supports_and_king_share_new_art_without_changing_game_state",
+    "test_discount_tutorial.DiscountTutorialTests.test_blocked_summon_does_not_complete",
+    "test_discount_tutorial.DiscountTutorialTests.test_real_merge_then_real_discounted_summon",
+    "test_discount_tutorial.DiscountTutorialTests.test_reload_restores_pending_discount_without_duplicate_grant",
+    "test_discount_tutorial.DiscountTutorialTests.test_skip_does_not_graduate",
+    "test_enemy_size.EnemySizeTests.test_native_enemy_render_grows_without_changing_combat_state_or_clipping",
+    "test_exact_battle.ExactBattleTests.test_largest_header_buttons_and_projected_staff_remain_clickable",
+    "test_exact_battle.ExactBattleTests.test_regions_use_approved_composition_at_all_viewport_sizes",
+    "test_feature_journeys.FeatureJourneyTests.test_backup_download_upload_restore_and_reload",
+    "test_feature_journeys.FeatureJourneyTests.test_browser_back_forward_reacquires_storage_and_keeps_wallet",
+    "test_feature_journeys.FeatureJourneyTests.test_every_hiring_story_pages_back_close_and_escape",
+    "test_feature_journeys.FeatureJourneyTests.test_every_story_replays_without_rewards_and_cleans_close_state",
+    "test_feature_journeys.FeatureJourneyTests.test_retired_records_ui_preserves_profile_and_current_formation",
+    "test_game_language.GameLanguageTests.test_controls_and_english_text_fit_short_phone_and_audio_state_stays_native",
+    "test_game_language.GameLanguageTests.test_storage_failure_and_switch_during_paused_battle_preserve_state",
+    "test_game_language.GameLanguageTests.test_switch_reload_and_korean_restore_keep_game_saves",
+    "test_loading_budget.LoadingBudgetTests.test_hidden_art_waits_for_entry_and_uses_live_navigation",
+    "test_performance.PerformanceTests.test_background_and_portrait_bitmaps_are_reused",
+    "test_performance.PerformanceTests.test_boss_warning_drawing_uses_cached_geometry",
+    "test_performance.PerformanceTests.test_closed_shop_is_not_rebuilt_and_refreshes_on_open",
+    "test_performance.PerformanceTests.test_hidden_tab_stops_and_does_not_catch_up",
+    "test_performance.PerformanceTests.test_mobile_default_mode_toggle_persists",
+    "test_performance.PerformanceTests.test_portraits_appear_after_opening_static_dialogs",
+    "test_performance.PerformanceTests.test_render_limit_and_fixed_simulation_rate",
+    "test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing",
+    "test_release_smoke.ReleaseSafetyTests.test_all_seven_bosses_warn_cast_and_settle_once",
+    "test_release_smoke.ReleaseSafetyTests.test_failed_purchase_keeps_wallet_and_inventory",
+    "test_release_smoke.ReleaseSafetyTests.test_graduation_failure_and_navigation_preserve_checkpoint",
+    "test_release_smoke.ReleaseSafetyTests.test_legacy_partially_paid_graduation_does_not_double_base",
+    "test_release_smoke.ReleaseSafetyTests.test_normal_reward_does_not_pay_twice",
+    "test_release_smoke.ReleaseSafetyTests.test_pending_reward_recovers_after_reload",
+    "test_release_smoke.ReleaseSafetyTests.test_reload_resume_keeps_run_and_training",
+    "test_release_smoke.ReleaseSafetyTests.test_retry_in_same_tab_pays_once",
+    "test_release_smoke.ReleaseSafetyTests.test_rotation_pauses_and_requires_explicit_continue",
+    "test_release_smoke.ReleaseSafetyTests.test_second_tab_cannot_write_and_reconnect_reads_latest",
+    "test_release_smoke.ReleaseSafetyTests.test_settlement_and_graduation_are_atomic_and_idempotent",
+    "test_release_smoke.ReleaseSafetyTests.test_short_portrait_has_larger_board_and_visible_controls",
+    "test_release_smoke.ReleaseSafetyTests.test_total_storage_failure_preserves_last_checkpoint",
+    "test_shared_chrome.SharedChromeTests.test_approved_equipment_and_deck_card_geometry",
+    "test_shared_chrome.SharedChromeTests.test_backup_and_recruitment_title_chrome",
+    "test_shared_chrome.SharedChromeTests.test_backup_edit_invalidates_preview_presentation",
+    "test_shared_chrome.SharedChromeTests.test_paper_settings_keeps_live_sliders_and_pinned_confirmation",
+    "test_shared_chrome.SharedChromeTests.test_result_accordion_targets_are_at_least_44px",
+    "test_shared_chrome.SharedChromeTests.test_roster_touch_targets_and_real_content_fit",
+    "test_shared_chrome.SharedChromeTests.test_shared_navigation_and_close_across_mobile_sizes",
+    "test_shared_chrome.SharedChromeTests.test_shop_refreshes_earned_balance_without_reload",
+    "test_shared_chrome.SharedChromeTests.test_shop_wallet_contents_stay_inside_pill",
+    "test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks",
+    "test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes",
+    "test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy",
+    "test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels",
+    "test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation",
+    "test_story_art.StoryArtTests.test_every_hiring_panel_updates_the_art_not_the_shared_close_icon",
+    "test_story_art.StoryArtTests.test_full_art_preserves_story_state_and_returns_to_caption",
+    "test_story_art.StoryArtTests.test_shop_and_battle_share_item_artwork",
+    "test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload",
+    "test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume",
+    "test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes",
+    "test_text_grid.TextGridTests.test_english_roster_title_does_not_cover_close",
+    "test_text_grid.TextGridTests.test_large_lobby_wallet_keeps_exact_amount_accessible",
+    "test_text_grid.TextGridTests.test_long_story_copy_scrolls_without_covering_page_controls",
+    "test_text_grid.TextGridTests.test_shop_wordless_art_and_dom_title_reach_real_purchase",
+    "test_text_grid.TextGridTests.test_short_training_shows_power_comparison_above_purchase_dock",
+    "test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm",
+    "test_training_page.TrainingPageTests.test_battle_pause_and_result_page",
+    "test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times",
+    "test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard",
+    "test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby",
+    "test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty",
+    "test_usability.UsabilityTests.test_boss_canvas_hud_and_help_show_current_identity",
+    "test_usability.UsabilityTests.test_equipment_and_live_training_controls_survive_scrolling",
+    "test_usability.UsabilityTests.test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible",
+    "test_usability.UsabilityTests.test_short_report_primary_action_is_scroll_reachable",
+    "test_usability.UsabilityTests.test_short_roster_shows_three_complete_cards",
+    "test_usability.UsabilityTests.test_sp_four_digits_stay_on_one_line",
+    "test_visual_issues.VisualIssueTests.test_final_list_items_scroll_clear_of_fixed_footers",
+    "test_visual_issues.VisualIssueTests.test_reward_cards_and_footer_are_reachable_on_short_phone",
+    "test_visual_issues.VisualIssueTests.test_short_help_keeps_heading_and_close_visible_while_scrolling",
+    "test_visual_issues.VisualIssueTests.test_sp_unit_and_long_tutorial_fit_on_short_phone",
+    "test_wave_rewards.WaveRewardTests.test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once",
+    "test_wave_rewards.WaveRewardTests.test_three_tickets_targets_and_utilities_fit_phone_in_both_languages"
+  ],
+  "attempts": [
+    {
+      "scenario": "test_android_compatibility.AndroidCompatibilityTests.test_android_touch_lobby_and_battle_open",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 393,
+            "height": 727
+          },
+          "touch": true,
+          "mobile": true
+        }
+      ],
+      "seconds": 6.203
+    },
+    {
+      "scenario": "test_android_compatibility.AndroidCompatibilityTests.test_old_viewport_units_and_media_listeners_still_start",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 393,
+            "height": 727
+          },
+          "touch": true,
+          "mobile": true
+        }
+      ],
+      "seconds": 4.857
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_main_roster_navigation_and_compact_scroll",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.654
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_shop_live_wallet_guarantee_and_navigation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 14.369
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_staff_and_support_actions_keep_original_state_rules",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.359
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_training_live_upgrades_and_mobile_navigation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 22.612
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_delayed_file_invalidates_preview_and_latest_selection_wins",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.327
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_file_read_rejection_has_visible_error_and_no_unhandled_exception",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.69
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_typing_and_closing_cancel_delayed_file_reads",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.636
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.157
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_failure_discounts_only_next_successful_summon_and_preserves_base_growth",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.877
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.459
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_late_reward_choices_fit_short_phone",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.733
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.495
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.501
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.37
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.029
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.236
+    },
+    {
+      "scenario": "test_battle_cohesion.BattleCohesionTests.test_idle_panel_select_skill_and_deselect",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.841
+    },
+    {
+      "scenario": "test_battle_cohesion.BattleCohesionTests.test_supports_share_approved_faces_and_leave_cells_untouched",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.229
+    },
+    {
+      "scenario": "test_browser_smoke.GameplaySmokeTests.test_fresh_player_starts_combat_through_visible_controls",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.927
+    },
+    {
+      "scenario": "test_browser_smoke.GameplaySmokeTests.test_wave_six_instruction_requires_one_selection",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.344
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_all_support_choices_use_the_same_face_in_lobby_and_training",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.854
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.864
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_every_staff_keeps_identity_between_party_roster_and_training",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.477
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_icon_only_consumables_keep_accessible_names_and_toggle_actions",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.709
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_staff_and_enemies_render_matching_full_bodies",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.048
+    },
+    {
+      "scenario": "test_coin_prices.CoinPriceTests.test_insufficient_pack_balance_and_displayed_price_agree",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.128
+    },
+    {
+      "scenario": "test_coin_prices.CoinPriceTests.test_updated_purchases_charge_once_and_persist",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.968
+    },
+    {
+      "scenario": "test_combat_comic.CombatComicTests.test_all_twenty_actors_render_all_poses_and_fallbacks_from_comic_family",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.235
+    },
+    {
+      "scenario": "test_combat_comic.CombatComicTests.test_battle_supports_and_king_share_new_art_without_changing_game_state",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.449
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_blocked_summon_does_not_complete",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.125
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_real_merge_then_real_discounted_summon",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.345
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_reload_restores_pending_discount_without_duplicate_grant",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.678
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_skip_does_not_graduate",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.124
+    },
+    {
+      "scenario": "test_enemy_size.EnemySizeTests.test_native_enemy_render_grows_without_changing_combat_state_or_clipping",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 12.369
+    },
+    {
+      "scenario": "test_exact_battle.ExactBattleTests.test_largest_header_buttons_and_projected_staff_remain_clickable",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.121
+    },
+    {
+      "scenario": "test_exact_battle.ExactBattleTests.test_regions_use_approved_composition_at_all_viewport_sizes",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 640
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.781
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_backup_download_upload_restore_and_reload",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.595
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_browser_back_forward_reacquires_storage_and_keeps_wallet",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.741
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_every_hiring_story_pages_back_close_and_escape",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 24.752
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_every_story_replays_without_rewards_and_cleans_close_state",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 51.694
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_retired_records_ui_preserves_profile_and_current_formation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.711
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_controls_and_english_text_fit_short_phone_and_audio_state_stays_native",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.975
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_storage_failure_and_switch_during_paused_battle_preserve_state",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.067
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_switch_reload_and_korean_restore_keep_game_saves",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.208
+    },
+    {
+      "scenario": "test_loading_budget.LoadingBudgetTests.test_hidden_art_waits_for_entry_and_uses_live_navigation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.35
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_background_and_portrait_bitmaps_are_reused",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.983
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_boss_warning_drawing_uses_cached_geometry",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.039
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_closed_shop_is_not_rebuilt_and_refreshes_on_open",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.01
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_hidden_tab_stops_and_does_not_catch_up",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.94
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_mobile_default_mode_toggle_persists",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.432
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_portraits_appear_after_opening_static_dialogs",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.497
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_render_limit_and_fixed_simulation_rate",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.901
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.109
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_all_seven_bosses_warn_cast_and_settle_once",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.74
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_failed_purchase_keeps_wallet_and_inventory",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.112
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_graduation_failure_and_navigation_preserve_checkpoint",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.967
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_legacy_partially_paid_graduation_does_not_double_base",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.27
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_normal_reward_does_not_pay_twice",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.751
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_pending_reward_recovers_after_reload",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.005
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_reload_resume_keeps_run_and_training",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.017
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_retry_in_same_tab_pays_once",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.984
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_rotation_pauses_and_requires_explicit_continue",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.974
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_second_tab_cannot_write_and_reconnect_reads_latest",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.304
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_settlement_and_graduation_are_atomic_and_idempotent",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.328
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_short_portrait_has_larger_board_and_visible_controls",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.68
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_total_storage_failure_preserves_last_checkpoint",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.675
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_approved_equipment_and_deck_card_geometry",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 18.616
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_backup_and_recruitment_title_chrome",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 18.018
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_backup_edit_invalidates_preview_presentation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.709
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_paper_settings_keeps_live_sliders_and_pinned_confirmation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 22.281
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_result_accordion_targets_are_at_least_44px",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 12.706
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_roster_touch_targets_and_real_content_fit",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.395
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shared_navigation_and_close_across_mobile_sizes",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 24.749
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shop_refreshes_earned_balance_without_reload",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.295
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shop_wallet_contents_stay_inside_pill",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 12.185
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 46.945
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 40.799
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.807
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 20.837
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 8.908
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_every_hiring_panel_updates_the_art_not_the_shared_close_icon",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 24.274
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_full_art_preserves_story_state_and_returns_to_caption",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 12.844
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_shop_and_battle_share_item_artwork",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.044
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.953
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.037
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.531
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_english_roster_title_does_not_cover_close",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 9.837
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_large_lobby_wallet_keeps_exact_amount_accessible",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.883
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_long_story_copy_scrolls_without_covering_page_controls",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.331
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_shop_wordless_art_and_dom_title_reach_real_purchase",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.562
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_short_training_shows_power_comparison_above_purchase_dock",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.194
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.356
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_battle_pause_and_result_page",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.997
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 84.08
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.532
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.407
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.099
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_boss_canvas_hud_and_help_show_current_identity",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.433
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_equipment_and_live_training_controls_survive_scrolling",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.621
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 16.283
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_short_report_primary_action_is_scroll_reachable",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.175
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_short_roster_shows_three_complete_cards",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.638
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_sp_four_digits_stay_on_one_line",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 13.253
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_final_list_items_scroll_clear_of_fixed_footers",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.214
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_reward_cards_and_footer_are_reachable_on_short_phone",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.748
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_short_help_keeps_heading_and_close_visible_while_scrolling",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.685
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_sp_unit_and_long_tutorial_fit_on_short_phone",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.182
+    },
+    {
+      "scenario": "test_wave_rewards.WaveRewardTests.test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.636
+    },
+    {
+      "scenario": "test_wave_rewards.WaveRewardTests.test_three_tickets_targets_and_utilities_fit_phone_in_both_languages",
+      "attempt": 7,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 16.965
+    },
+    {
+      "scenario": "test_android_compatibility.AndroidCompatibilityTests.test_android_touch_lobby_and_battle_open",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 393,
+            "height": 727
+          },
+          "touch": true,
+          "mobile": true
+        }
+      ],
+      "seconds": 4.18
+    },
+    {
+      "scenario": "test_android_compatibility.AndroidCompatibilityTests.test_old_viewport_units_and_media_listeners_still_start",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 393,
+            "height": 727
+          },
+          "touch": true,
+          "mobile": true
+        }
+      ],
+      "seconds": 5.364
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_main_roster_navigation_and_compact_scroll",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 9.095
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_shop_live_wallet_guarantee_and_navigation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.269
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_staff_and_support_actions_keep_original_state_rules",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.693
+    },
+    {
+      "scenario": "test_asset_screens.AssetScreenTests.test_training_live_upgrades_and_mobile_navigation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 17.964
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_delayed_file_invalidates_preview_and_latest_selection_wins",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.193
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_file_read_rejection_has_visible_error_and_no_unhandled_exception",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.838
+    },
+    {
+      "scenario": "test_backup_file_race.BackupFileRaceTests.test_typing_and_closing_cancel_delayed_file_reads",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.062
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.609
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_failure_discounts_only_next_successful_summon_and_preserves_base_growth",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.41
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.746
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_late_reward_choices_fit_short_phone",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.366
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.509
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.201
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.385
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.903
+    },
+    {
+      "scenario": "test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.104
+    },
+    {
+      "scenario": "test_battle_cohesion.BattleCohesionTests.test_idle_panel_select_skill_and_deselect",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.031
+    },
+    {
+      "scenario": "test_battle_cohesion.BattleCohesionTests.test_supports_share_approved_faces_and_leave_cells_untouched",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 14.422
+    },
+    {
+      "scenario": "test_browser_smoke.GameplaySmokeTests.test_fresh_player_starts_combat_through_visible_controls",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.307
+    },
+    {
+      "scenario": "test_browser_smoke.GameplaySmokeTests.test_wave_six_instruction_requires_one_selection",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.138
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_all_support_choices_use_the_same_face_in_lobby_and_training",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.544
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.38
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_every_staff_keeps_identity_between_party_roster_and_training",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.779
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_icon_only_consumables_keep_accessible_names_and_toggle_actions",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.714
+    },
+    {
+      "scenario": "test_character_portraits.CharacterPortraitTests.test_staff_and_enemies_render_matching_full_bodies",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.571
+    },
+    {
+      "scenario": "test_coin_prices.CoinPriceTests.test_insufficient_pack_balance_and_displayed_price_agree",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.876
+    },
+    {
+      "scenario": "test_coin_prices.CoinPriceTests.test_updated_purchases_charge_once_and_persist",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.162
+    },
+    {
+      "scenario": "test_combat_comic.CombatComicTests.test_all_twenty_actors_render_all_poses_and_fallbacks_from_comic_family",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.961
+    },
+    {
+      "scenario": "test_combat_comic.CombatComicTests.test_battle_supports_and_king_share_new_art_without_changing_game_state",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.969
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_blocked_summon_does_not_complete",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.466
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_real_merge_then_real_discounted_summon",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.601
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_reload_restores_pending_discount_without_duplicate_grant",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.03
+    },
+    {
+      "scenario": "test_discount_tutorial.DiscountTutorialTests.test_skip_does_not_graduate",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.139
+    },
+    {
+      "scenario": "test_enemy_size.EnemySizeTests.test_native_enemy_render_grows_without_changing_combat_state_or_clipping",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.718
+    },
+    {
+      "scenario": "test_exact_battle.ExactBattleTests.test_largest_header_buttons_and_projected_staff_remain_clickable",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.959
+    },
+    {
+      "scenario": "test_exact_battle.ExactBattleTests.test_regions_use_approved_composition_at_all_viewport_sizes",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 640
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.138
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_backup_download_upload_restore_and_reload",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.568
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_browser_back_forward_reacquires_storage_and_keeps_wallet",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.796
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_every_hiring_story_pages_back_close_and_escape",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 24.193
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_every_story_replays_without_rewards_and_cleans_close_state",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 45.792
+    },
+    {
+      "scenario": "test_feature_journeys.FeatureJourneyTests.test_retired_records_ui_preserves_profile_and_current_formation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.883
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_controls_and_english_text_fit_short_phone_and_audio_state_stays_native",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 10.568
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_storage_failure_and_switch_during_paused_battle_preserve_state",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.915
+    },
+    {
+      "scenario": "test_game_language.GameLanguageTests.test_switch_reload_and_korean_restore_keep_game_saves",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.749
+    },
+    {
+      "scenario": "test_loading_budget.LoadingBudgetTests.test_hidden_art_waits_for_entry_and_uses_live_navigation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.871
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_background_and_portrait_bitmaps_are_reused",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.138
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_boss_warning_drawing_uses_cached_geometry",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.976
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_closed_shop_is_not_rebuilt_and_refreshes_on_open",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.544
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_hidden_tab_stops_and_does_not_catch_up",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.782
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_mobile_default_mode_toggle_persists",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.459
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_portraits_appear_after_opening_static_dialogs",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.804
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_render_limit_and_fixed_simulation_rate",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.46
+    },
+    {
+      "scenario": "test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.324
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_all_seven_bosses_warn_cast_and_settle_once",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.609
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_failed_purchase_keeps_wallet_and_inventory",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.305
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_graduation_failure_and_navigation_preserve_checkpoint",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.753
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_legacy_partially_paid_graduation_does_not_double_base",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.565
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_normal_reward_does_not_pay_twice",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.187
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_pending_reward_recovers_after_reload",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.159
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_reload_resume_keeps_run_and_training",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.143
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_retry_in_same_tab_pays_once",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.61
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_rotation_pauses_and_requires_explicit_continue",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.779
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_second_tab_cannot_write_and_reconnect_reads_latest",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.222
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_settlement_and_graduation_are_atomic_and_idempotent",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.36
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_short_portrait_has_larger_board_and_visible_controls",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.977
+    },
+    {
+      "scenario": "test_release_smoke.ReleaseSafetyTests.test_total_storage_failure_preserves_last_checkpoint",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.797
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_approved_equipment_and_deck_card_geometry",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.429
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_backup_and_recruitment_title_chrome",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 15.49
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_backup_edit_invalidates_preview_presentation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.229
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_paper_settings_keeps_live_sliders_and_pinned_confirmation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 17.603
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_result_accordion_targets_are_at_least_44px",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.655
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_roster_touch_targets_and_real_content_fit",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 13.238
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shared_navigation_and_close_across_mobile_sizes",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 430,
+            "height": 932
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 20.055
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shop_refreshes_earned_balance_without_reload",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.922
+    },
+    {
+      "scenario": "test_shared_chrome.SharedChromeTests.test_shop_wallet_contents_stay_inside_pill",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 480,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 10.295
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 39.172
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 36.512
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.024
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 18.837
+    },
+    {
+      "scenario": "test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 684
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.288
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_every_hiring_panel_updates_the_art_not_the_shared_close_icon",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 19.391
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_full_art_preserves_story_state_and_returns_to_caption",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 9.835
+    },
+    {
+      "scenario": "test_story_art.StoryArtTests.test_shop_and_battle_share_item_artwork",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.659
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.161
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 6.275
+    },
+    {
+      "scenario": "test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.58
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_english_roster_title_does_not_cover_close",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 8.306
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_large_lobby_wallet_keeps_exact_amount_accessible",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.072
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_long_story_copy_scrolls_without_covering_page_controls",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.533
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_shop_wordless_art_and_dom_title_reach_real_purchase",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.678
+    },
+    {
+      "scenario": "test_text_grid.TextGridTests.test_short_training_shows_power_comparison_above_purchase_dock",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.028
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.0
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_battle_pause_and_result_page",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.909
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 78.494
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.528
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 7.365
+    },
+    {
+      "scenario": "test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.756
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_boss_canvas_hud_and_help_show_current_identity",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.323
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_equipment_and_live_training_controls_survive_scrolling",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 5.721
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 360,
+            "height": 640
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 17.096
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_short_report_primary_action_is_scroll_reachable",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.835
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_short_roster_shows_three_complete_cards",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 2.801
+    },
+    {
+      "scenario": "test_usability.UsabilityTests.test_sp_four_digits_stay_on_one_line",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 1280,
+            "height": 900
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 11.956
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_final_list_items_scroll_clear_of_fixed_footers",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.904
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_reward_cards_and_footer_are_reachable_on_short_phone",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.281
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_short_help_keeps_heading_and_close_visible_while_scrolling",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.678
+    },
+    {
+      "scenario": "test_visual_issues.VisualIssueTests.test_sp_unit_and_long_tutorial_fit_on_short_phone",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 3.831
+    },
+    {
+      "scenario": "test_wave_rewards.WaveRewardTests.test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 4.686
+    },
+    {
+      "scenario": "test_wave_rewards.WaveRewardTests.test_three_tickets_targets_and_utilities_fit_phone_in_both_languages",
+      "attempt": 8,
+      "status": "passed",
+      "failures": [],
+      "screenshots": [],
+      "contexts": [
+        {
+          "viewport": {
+            "width": 320,
+            "height": 568
+          },
+          "touch": false,
+          "mobile": false
+        },
+        {
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "touch": false,
+          "mobile": false
+        }
+      ],
+      "seconds": 13.201
+    }
+  ],
+  "counts": {
+    "passed": 222,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "not-run": 0,
+    "running": 0
+  }
+}
