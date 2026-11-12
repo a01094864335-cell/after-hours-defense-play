@@ -8,6 +8,37 @@ class CharacterPortraitTests(unittest.TestCase):
     tearDownClass = classmethod(ui.UsabilityTests.tearDownClass.__func__)
     open = ui.UsabilityTests.open
 
+    def open_with_sprite_provenance(self, w, h):
+        """Track atlas provenance before Motion creates any derived-canvas caches.
+
+        Source URLs remain the assertion target, not merely Motion.draw calls.
+        Actual opaque output is checked separately by test_staff_outline_masks.
+        """
+        context = self.browser.new_context(viewport={'width': w, 'height': h})
+        self.addCleanup(context.close)
+        context.add_init_script("""(() => {
+          const sources = new WeakMap();
+          const original = CanvasRenderingContext2D.prototype.drawImage;
+          window.__battleSpriteSources = [];
+          CanvasRenderingContext2D.prototype.drawImage = function(image, ...args) {
+            const result = original.call(this, image, ...args);
+            const incoming = image.src ? new Set([image.src.split('?')[0]]) : sources.get(image);
+            if (incoming) {
+              let destination = sources.get(this.canvas);
+              if (!destination) sources.set(this.canvas, destination = new Set());
+              for (const source of incoming) {
+                destination.add(source);
+                if (this.canvas.id === 'battle-paint') window.__battleSpriteSources.push(source);
+              }
+            }
+            return result;
+          };
+        })();""")
+        page = context.new_page()
+        page.goto(f'http://127.0.0.1:{self.server.server_port}/', wait_until='networkidle')
+        page.wait_for_function('GameSession.canWrite()')
+        return page
+
     def seed(self, page):
         page.evaluate('''()=>{meta.tutorialComplete=true;meta.staff=kinds.map(k=>k.file);
           meta.owned=Object.keys(mercCatalog);restartTo('lobby');renderMeta()}''')
@@ -52,7 +83,7 @@ class CharacterPortraitTests(unittest.TestCase):
         self.assertEqual(page.locator('#recruit-dialog .recruit-reveal img').get_attribute('src'), expected[0])
 
     def test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates(self):
-        page = self.open(390, 844)
+        page = self.open_with_sprite_provenance(390, 844)
         self.seed(page)
         result = page.evaluate('''async()=>{
           const before=JSON.stringify(cells),unit={type:3,pip:5,cool:1,attack:0,arrival:0,income:5,skillCD:12};
@@ -60,9 +91,7 @@ class CharacterPortraitTests(unittest.TestCase):
           await Promise.all(CharacterMotion.ids.map(id=>Motion.preload(id).decode()));
           reset();tutorialMode=false;setScreen('battle');board[7]=unit;board[8]={...unit,type:4};selected=7;playing=true;paused=false;sync();
           await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
-          const drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
-          CanvasRenderingContext2D.prototype.drawImage=function(img,...args){if(this.canvas.id==='battle-paint'&&img.src)drawn.push(img.src.split('?')[0]);return original.call(this,img,...args)};
-          try{draw()}finally{CanvasRenderingContext2D.prototype.drawImage=original}
+          const drawn=window.__battleSpriteSources;drawn.length=0;draw();
           return {sameCells:JSON.stringify(cells)===before,gobi:drawn.some(x=>x.endsWith('/character-motion/gobi.webp')),jjit:drawn.some(x=>x.endsWith('/character-motion/electric-technician.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
         }''')
         self.assertTrue(result['sameCells'])
@@ -72,15 +101,13 @@ class CharacterPortraitTests(unittest.TestCase):
         self.assertEqual(result['staffCount'], 2)
 
     def test_staff_and_enemies_render_matching_full_bodies(self):
-        page = self.open(390, 844)
+        page = self.open_with_sprite_provenance(390, 844)
         self.seed(page)
         result = page.evaluate('''async()=>{
           reset();tutorialMode=false;setScreen('battle');playing=true;paused=true;wave=8;
           await Promise.all([...kinds.map(k=>k.file),'novice-adventurer'].map(id=>Motion.preload(id).decode()));
-          const before=JSON.stringify(cells),drawn=[],original=CanvasRenderingContext2D.prototype.drawImage;
-          CanvasRenderingContext2D.prototype.drawImage=function(im,...args){if(this.canvas.id==='battle-paint'&&im.src)drawn.push(im.src.split('?')[0]);return original.call(this,im,...args)};
-          try{for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw()}
-          finally{CanvasRenderingContext2D.prototype.drawImage=original}
+          const before=JSON.stringify(cells),drawn=window.__battleSpriteSources;drawn.length=0;
+          for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw();
           return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/combat-comic/novice-adventurer.webp'))};
         }''')
         self.assertTrue(result['sameCells'])
