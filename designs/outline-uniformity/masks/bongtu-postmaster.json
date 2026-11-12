@@ -2,7 +2,7 @@
   "key": "bongtu-postmaster",
   "sourceSha256": "df149f514c31b3db9c8707efe128530285a250823c71ed19c412fdc540dea589",
   "sourceRevision": "0d10fbf859093baae17b869ba68a281bd311c49a",
-  "status": "draft-manual-review",
+  "status": "reviewed",
   "frames": [
     {
       "pose": 0,

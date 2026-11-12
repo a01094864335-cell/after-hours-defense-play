@@ -2,7 +2,7 @@
   "key": "skeleton-chef",
   "sourceSha256": "d55ddb53bbc4c76d3e739f29c08a238b3b708760c4703032cb173b93ef75f9bc",
   "sourceRevision": "0d10fbf859093baae17b869ba68a281bd311c49a",
-  "status": "draft-unreviewed",
+  "status": "reviewed",
   "frames": [
     {
       "pose": 0,

@@ -2,7 +2,7 @@
   "key": "bat-nurse",
   "sourceSha256": "711764c8ee282e8b534d6957b69073103640413c1129ea5062356d31596bd04e",
   "sourceRevision": "0d10fbf859093baae17b869ba68a281bd311c49a",
-  "status": "draft-unreviewed",
+  "status": "reviewed",
   "frames": [
     {
       "pose": 0,

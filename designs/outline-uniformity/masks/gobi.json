@@ -2,7 +2,7 @@
   "key": "gobi",
   "sourceSha256": "c1aa612a3a2889bc93947413894235c20ad7f7dc747e1eb215e40126199dd8f9",
   "sourceRevision": "0d10fbf859093baae17b869ba68a281bd311c49a",
-  "status": "draft-unreviewed",
+  "status": "reviewed",
   "frames": [
     {
       "pose": 0,

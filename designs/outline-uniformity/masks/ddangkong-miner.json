@@ -2,7 +2,7 @@
   "key": "ddangkong-miner",
   "sourceSha256": "5431833d17cdfb7fa5f7d4e6834ec9ef8ffea9c5a4fc2d6b46d122764ab3ab0f",
   "sourceRevision": "0d10fbf859093baae17b869ba68a281bd311c49a",
-  "status": "draft-manual-review",
+  "status": "reviewed",
   "frames": [
     {
       "pose": 0,
