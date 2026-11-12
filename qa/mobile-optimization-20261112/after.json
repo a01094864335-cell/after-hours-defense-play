@@ -1,0 +1,793 @@
+{
+  "loading": {
+    "requests": 181,
+    "bytes": 3644004,
+    "imageBytes": 2066801,
+    "resources": [
+      {
+        "path": "/previews/asset-lobby-20261109/assets/background.webp",
+        "bytes": 299350
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/title-logo.webp",
+        "bytes": 102592
+      },
+      {
+        "path": "/skill-cutin.css",
+        "bytes": 3236
+      },
+      {
+        "path": "/gm-mode.css",
+        "bytes": 1583
+      },
+      {
+        "path": "/ui.css",
+        "bytes": 74155
+      },
+      {
+        "path": "/hiring-stories.css",
+        "bytes": 2668
+      },
+      {
+        "path": "/open-scene.css",
+        "bytes": 64271
+      },
+      {
+        "path": "/assets/mobile/item-grade.webp",
+        "bytes": 21426
+      },
+      {
+        "path": "/assets/mobile/item-kind.webp",
+        "bytes": 22714
+      },
+      {
+        "path": "/assets/mobile/item-king.webp",
+        "bytes": 28868
+      },
+      {
+        "path": "/gm-mode.js",
+        "bytes": 2104
+      },
+      {
+        "path": "/performance.js",
+        "bytes": 3853
+      },
+      {
+        "path": "/game-language.js",
+        "bytes": 7201
+      },
+      {
+        "path": "/session-guard.js",
+        "bytes": 4060
+      },
+      {
+        "path": "/expansion-catalog.js",
+        "bytes": 4872
+      },
+      {
+        "path": "/assets/bosses/manifest.js",
+        "bytes": 6578
+      },
+      {
+        "path": "/assets/expansion-v2/manifest.js",
+        "bytes": 9884
+      },
+      {
+        "path": "/assets/motion/manifest.js",
+        "bytes": 24890
+      },
+      {
+        "path": "/assets/character-motion/manifest.js",
+        "bytes": 22842
+      },
+      {
+        "path": "/assets/combat-comic/manifest.js",
+        "bytes": 18159
+      },
+      {
+        "path": "/motion.js",
+        "bytes": 13648
+      },
+      {
+        "path": "/assets/character-motion/outlines.js",
+        "bytes": 192455
+      },
+      {
+        "path": "/battle-art.js",
+        "bytes": 1383
+      },
+      {
+        "path": "/combat-motion.js",
+        "bytes": 5757
+      },
+      {
+        "path": "/skill-cutin.js",
+        "bytes": 8866
+      },
+      {
+        "path": "/training.js",
+        "bytes": 7627
+      },
+      {
+        "path": "/bosses.js",
+        "bytes": 15099
+      },
+      {
+        "path": "/save-transfer.js",
+        "bytes": 4372
+      },
+      {
+        "path": "/player-profile.js",
+        "bytes": 3314
+      },
+      {
+        "path": "/character-portraits.js",
+        "bytes": 2018
+      },
+      {
+        "path": "/castle-stories.js",
+        "bytes": 38320
+      },
+      {
+        "path": "/meta.js",
+        "bytes": 17424
+      },
+      {
+        "path": "/staff-combat.js",
+        "bytes": 5339
+      },
+      {
+        "path": "/expansion-combat.js",
+        "bytes": 16463
+      },
+      {
+        "path": "/app.js",
+        "bytes": 5170
+      },
+      {
+        "path": "/game.js",
+        "bytes": 40787
+      },
+      {
+        "path": "/staff-codex.js",
+        "bytes": 15078
+      },
+      {
+        "path": "/progression.js",
+        "bytes": 35553
+      },
+      {
+        "path": "/recruitment.js",
+        "bytes": 4173
+      },
+      {
+        "path": "/training-ui.js",
+        "bytes": 10077
+      },
+      {
+        "path": "/reference-ui.js",
+        "bytes": 7541
+      },
+      {
+        "path": "/castle-story-player.js",
+        "bytes": 6502
+      },
+      {
+        "path": "/shop-system.js",
+        "bytes": 5555
+      },
+      {
+        "path": "/recruitment-dialog.js",
+        "bytes": 808
+      },
+      {
+        "path": "/gm-ui.js",
+        "bytes": 2521
+      },
+      {
+        "path": "/usability.js",
+        "bytes": 3573
+      },
+      {
+        "path": "/new-hire-trial.js",
+        "bytes": 3502
+      },
+      {
+        "path": "/discount-tutorial.js",
+        "bytes": 3314
+      },
+      {
+        "path": "/performance-ui.js",
+        "bytes": 1780
+      },
+      {
+        "path": "/live-proposal-skin.js",
+        "bytes": 1113
+      },
+      {
+        "path": "/orientation.js",
+        "bytes": 753
+      },
+      {
+        "path": "/live-ui-audit-fixes.js",
+        "bytes": 9182
+      },
+      {
+        "path": "/lobby-duo.js",
+        "bytes": 3055
+      },
+      {
+        "path": "/development.js",
+        "bytes": 16278
+      },
+      {
+        "path": "/save-transfer-ui.js",
+        "bytes": 4424
+      },
+      {
+        "path": "/story-loading.js",
+        "bytes": 1290
+      },
+      {
+        "path": "/dialog-layout.js",
+        "bytes": 5548
+      },
+      {
+        "path": "/game-audio.js",
+        "bytes": 3903
+      },
+      {
+        "path": "/game-sfx.js",
+        "bytes": 10821
+      },
+      {
+        "path": "/approved-ui.js",
+        "bytes": 6408
+      },
+      {
+        "path": "/assets/hiring-stories/game-data.js",
+        "bytes": 26495
+      },
+      {
+        "path": "/hiring-stories.js",
+        "bytes": 5153
+      },
+      {
+        "path": "/tutorial-coach.js",
+        "bytes": 19866
+      },
+      {
+        "path": "/tactical-duty.js",
+        "bytes": 17608
+      },
+      {
+        "path": "/battle-presentation.js",
+        "bytes": 13202
+      },
+      {
+        "path": "/gameworld-ui.js",
+        "bytes": 1649
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/lobby.css",
+        "bytes": 11088
+      },
+      {
+        "path": "/open-scene.js",
+        "bytes": 5464
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/lobby.js",
+        "bytes": 9054
+      },
+      {
+        "path": "/previews/asset-shop-20261109/shop.css",
+        "bytes": 13459
+      },
+      {
+        "path": "/previews/asset-roster-20261109/roster.css",
+        "bytes": 12345
+      },
+      {
+        "path": "/previews/asset-roster-20261109/roster.js",
+        "bytes": 6930
+      },
+      {
+        "path": "/previews/asset-training-20261109/training.css",
+        "bytes": 9189
+      },
+      {
+        "path": "/previews/asset-shop-20261109/shop.js",
+        "bytes": 7718
+      },
+      {
+        "path": "/previews/asset-training-20261109/training.js",
+        "bytes": 6953
+      },
+      {
+        "path": "/battle-comic.css",
+        "bytes": 13586
+      },
+      {
+        "path": "/battle-comic.js",
+        "bytes": 4859
+      },
+      {
+        "path": "/battle-exact.css",
+        "bytes": 15226
+      },
+      {
+        "path": "/shared-chrome.css",
+        "bytes": 45792
+      },
+      {
+        "path": "/shared-chrome.js",
+        "bytes": 7819
+      },
+      {
+        "path": "/concept-base.css",
+        "bytes": 4984
+      },
+      {
+        "path": "/concept-tools.css",
+        "bytes": 25053
+      },
+      {
+        "path": "/concept-stories.css",
+        "bytes": 28906
+      },
+      {
+        "path": "/concept-people.css",
+        "bytes": 41343
+      },
+      {
+        "path": "/concept-tools.js",
+        "bytes": 4777
+      },
+      {
+        "path": "/concept-people.js",
+        "bytes": 4107
+      },
+      {
+        "path": "/concept-stories.js",
+        "bytes": 5388
+      },
+      {
+        "path": "/text-grid.css",
+        "bytes": 16080
+      },
+      {
+        "path": "/text-grid.js",
+        "bytes": 3107
+      },
+      {
+        "path": "/story-art.css",
+        "bytes": 3000
+      },
+      {
+        "path": "/battle-cohesion.css",
+        "bytes": 3990
+      },
+      {
+        "path": "/story-art.js",
+        "bytes": 4676
+      },
+      {
+        "path": "/language-settings.css",
+        "bytes": 1373
+      },
+      {
+        "path": "/wave-rewards.css",
+        "bytes": 3525
+      },
+      {
+        "path": "/single-screen-settings.css",
+        "bytes": 6259
+      },
+      {
+        "path": "/language-settings.js",
+        "bytes": 2537
+      },
+      {
+        "path": "/single-screen-settings.js",
+        "bytes": 6767
+      },
+      {
+        "path": "/single-screen-people.css",
+        "bytes": 16751
+      },
+      {
+        "path": "/single-screen-shop.css",
+        "bytes": 12078
+      },
+      {
+        "path": "/single-screen-people.js",
+        "bytes": 7878
+      },
+      {
+        "path": "/single-screen-shop.js",
+        "bytes": 5868
+      },
+      {
+        "path": "/assets/ui-v2/icons/coin.svg",
+        "bytes": 462
+      },
+      {
+        "path": "/assets/ui-approved/lobby-background.webp",
+        "bytes": 124818
+      },
+      {
+        "path": "/assets/mobile/lobby-gobi.webp",
+        "bytes": 112026
+      },
+      {
+        "path": "/assets/ui-v2/icons/shield.svg",
+        "bytes": 380
+      },
+      {
+        "path": "/assets/character-portraits/orc-technician.webp",
+        "bytes": 35654
+      },
+      {
+        "path": "/assets/character-portraits/slime-cleaner.webp",
+        "bytes": 34192
+      },
+      {
+        "path": "/assets/character-portraits/gobi.webp",
+        "bytes": 51344
+      },
+      {
+        "path": "/assets/character-portraits/goblin-guard.webp",
+        "bytes": 42952
+      },
+      {
+        "path": "/assets/character-portraits/electric-technician.webp",
+        "bytes": 48756
+      },
+      {
+        "path": "/assets/character-portraits/ghost-courier.webp",
+        "bytes": 37386
+      },
+      {
+        "path": "/assets/character-portraits/bat-nurse.webp",
+        "bytes": 45344
+      },
+      {
+        "path": "/assets/character-portraits/skeleton-chef.webp",
+        "bytes": 41664
+      },
+      {
+        "path": "/assets/character-portraits/mimic-storekeeper.webp",
+        "bytes": 51684
+      },
+      {
+        "path": "/assets/character-portraits/spider-tailor.webp",
+        "bytes": 48218
+      },
+      {
+        "path": "/assets/character-portraits/nightmare-counselor.webp",
+        "bytes": 49670
+      },
+      {
+        "path": "/assets/character-portraits/kobold-recruiter.webp",
+        "bytes": 49932
+      },
+      {
+        "path": "/assets/character-portraits/duru-archivist.webp",
+        "bytes": 47894
+      },
+      {
+        "path": "/assets/character-portraits/kkangtong-engineer.webp",
+        "bytes": 54354
+      },
+      {
+        "path": "/assets/character-portraits/ddangkong-miner.webp",
+        "bytes": 44536
+      },
+      {
+        "path": "/assets/character-portraits/chalkak-photographer.webp",
+        "bytes": 38546
+      },
+      {
+        "path": "/assets/character-portraits/bongtu-postmaster.webp",
+        "bytes": 50716
+      },
+      {
+        "path": "/assets/ui-v2/icons/staff.svg",
+        "bytes": 347
+      },
+      {
+        "path": "/assets/character-motion/goblin-guard-idle.webp",
+        "bytes": 32062
+      },
+      {
+        "path": "/assets/character-motion/orc-technician-idle.webp",
+        "bytes": 34576
+      },
+      {
+        "path": "/assets/character-motion/slime-cleaner-idle.webp",
+        "bytes": 27096
+      },
+      {
+        "path": "/assets/character-motion/gobi-idle.webp",
+        "bytes": 36758
+      },
+      {
+        "path": "/assets/character-motion/electric-technician-idle.webp",
+        "bytes": 30266
+      },
+      {
+        "path": "/assets/ui-v2/icons/book.svg",
+        "bytes": 374
+      },
+      {
+        "path": "/assets/ui-v2/icons/help.svg",
+        "bytes": 398
+      },
+      {
+        "path": "/assets/ui-v2/icons/scroll.svg",
+        "bytes": 420
+      },
+      {
+        "path": "/assets/ui-v2/icons/shop.svg",
+        "bytes": 392
+      },
+      {
+        "path": "/assets/ui-v2/icons/home.svg",
+        "bytes": 364
+      },
+      {
+        "path": "/assets/ui-v2/icons/gear.svg",
+        "bytes": 418
+      },
+      {
+        "path": "/assets/ui-v2/icons/moon.svg",
+        "bytes": 360
+      },
+      {
+        "path": "/assets/ui-live/board-cell-selected.svg",
+        "bytes": 425
+      },
+      {
+        "path": "/assets/ui-live/board-cell-merge.svg",
+        "bytes": 429
+      },
+      {
+        "path": "/assets/ui-live/board-cell.svg",
+        "bytes": 429
+      },
+      {
+        "path": "/assets/ui-v2/icons/close.svg",
+        "bytes": 355
+      },
+      {
+        "path": "/assets/ui-v2/icons/arrow-left.svg",
+        "bytes": 390
+      },
+      {
+        "path": "/assets/ui-v2/icons/arrow-right.svg",
+        "bytes": 399
+      },
+      {
+        "path": "/assets/ui-v2/icons/sword.svg",
+        "bytes": 393
+      },
+      {
+        "path": "/assets/open-scene/icons/gear.svg",
+        "bytes": 302
+      },
+      {
+        "path": "/assets/open-scene/icons/arrow.svg",
+        "bytes": 194
+      },
+      {
+        "path": "/assets/open-scene/icons/book.svg",
+        "bytes": 227
+      },
+      {
+        "path": "/assets/open-scene/icons/help.svg",
+        "bytes": 247
+      },
+      {
+        "path": "/assets/open-scene/icons/sword.svg",
+        "bytes": 217
+      },
+      {
+        "path": "/assets/open-scene/icons/moon.svg",
+        "bytes": 215
+      },
+      {
+        "path": "/assets/open-scene/icons/scroll.svg",
+        "bytes": 251
+      },
+      {
+        "path": "/assets/open-scene/icons/home.svg",
+        "bytes": 217
+      },
+      {
+        "path": "/assets/open-scene/icons/shop.svg",
+        "bytes": 212
+      },
+      {
+        "path": "/assets/open-scene/icons/back.svg",
+        "bytes": 194
+      },
+      {
+        "path": "/assets/open-scene/icons/shield.svg",
+        "bytes": 235
+      },
+      {
+        "path": "/assets/open-scene/icons/close.svg",
+        "bytes": 193
+      },
+      {
+        "path": "/assets/open-scene/icons/staff.svg",
+        "bytes": 230
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/lobby.css",
+        "bytes": 11088
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/wallet.webp",
+        "bytes": 34658
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/settings.webp",
+        "bytes": 12052
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/story.webp",
+        "bytes": 31500
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/training.webp",
+        "bytes": 28970
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/records.webp",
+        "bytes": 21502
+      },
+      {
+        "path": "/assets/shared-chrome/paper.webp",
+        "bytes": 77236
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/gobi.webp",
+        "bytes": 86854
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/button-primary.webp",
+        "bytes": 76854
+      },
+      {
+        "path": "/previews/asset-roster-20261109/roster.css",
+        "bytes": 12345
+      },
+      {
+        "path": "/previews/asset-shop-20261109/shop.css",
+        "bytes": 13459
+      },
+      {
+        "path": "/assets/battle-exact/item-grade.webp",
+        "bytes": 14884
+      },
+      {
+        "path": "/assets/battle-exact/item-kind.webp",
+        "bytes": 11914
+      },
+      {
+        "path": "/assets/battle-exact/item-king.webp",
+        "bytes": 11502
+      },
+      {
+        "path": "/previews/asset-training-20261109/training.css",
+        "bytes": 9189
+      },
+      {
+        "path": "/shared-chrome.css",
+        "bytes": 45792
+      },
+      {
+        "path": "/assets/shared-chrome/book.svg",
+        "bytes": 596
+      },
+      {
+        "path": "/assets/shared-chrome/home.svg",
+        "bytes": 606
+      },
+      {
+        "path": "/assets/shared-chrome/close.svg",
+        "bytes": 222
+      },
+      {
+        "path": "/assets/shared-chrome/shop.svg",
+        "bytes": 716
+      },
+      {
+        "path": "/assets/shared-chrome/back.svg",
+        "bytes": 224
+      },
+      {
+        "path": "/concept-people.css",
+        "bytes": 41343
+      },
+      {
+        "path": "/assets/shared-chrome/active-tile.svg",
+        "bytes": 787
+      },
+      {
+        "path": "/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+        "bytes": 190600
+      },
+      {
+        "path": "/assets/concept-stories/torn-paper.svg",
+        "bytes": 661
+      },
+      {
+        "path": "/favicon.ico",
+        "bytes": 335
+      }
+    ]
+  },
+  "lobby": {
+    "seconds": 5,
+    "work": {
+      "draws": 0,
+      "updates": 0,
+      "uiFlushes": 0,
+      "backgroundBuilds": 0,
+      "portraitDraws": 0
+    },
+    "cpuSeconds": {
+      "TaskDuration": 0.010026,
+      "ScriptDuration": 0.002124,
+      "LayoutDuration": 0
+    }
+  },
+  "preparation": {
+    "seconds": 5,
+    "work": {
+      "draws": 0,
+      "updates": 0,
+      "uiFlushes": 0,
+      "backgroundBuilds": 0,
+      "portraitDraws": 0
+    },
+    "cpuSeconds": {
+      "TaskDuration": 0.014715999999999951,
+      "ScriptDuration": 0.004614000000000007,
+      "LayoutDuration": 0.0
+    }
+  },
+  "battle": {
+    "seconds": 5,
+    "work": {
+      "draws": 147,
+      "updates": 300,
+      "uiFlushes": 48,
+      "backgroundBuilds": 0,
+      "portraitDraws": 0
+    },
+    "cpuSeconds": {
+      "TaskDuration": 0.7935440000000001,
+      "ScriptDuration": 0.48589,
+      "LayoutDuration": 0.013010999999999998
+    }
+  },
+  "paused": {
+    "seconds": 5,
+    "work": {
+      "draws": 0,
+      "updates": 0,
+      "uiFlushes": 0,
+      "backgroundBuilds": 0,
+      "portraitDraws": 0
+    },
+    "cpuSeconds": {
+      "TaskDuration": 0.013233999999999968,
+      "ScriptDuration": 0.005418999999999952,
+      "LayoutDuration": 0.0
+    }
+  }
+}

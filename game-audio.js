@@ -42,7 +42,7 @@
     }
     let player = players.get(active);
     if (!player) {
-      player = new Audio('assets/audio/' + tracks[active] + '.wav');
+      player = new Audio('assets/audio/' + tracks[active] + '.mp3');
       player.loop = true; player.preload = 'none'; player.volume = 0;
       player.addEventListener('error', () => { if(status) status.textContent = language.t('음악을 불러오지 못했어요. 잠시 후 BGM을 다시 켜주세요.'); });
       players.set(active, player);

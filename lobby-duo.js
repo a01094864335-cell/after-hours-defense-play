@@ -3,10 +3,10 @@
  const q=s=>document.querySelector(s),lobby=q('#lobby'),art=q('.lobby-art');
  if(!lobby||!art||typeof art.append!=='function')return;
  document.documentElement.classList.add('duo-live');
- const oldHero=q('.lobby-gobi'),largeHero=new Image();largeHero.className='lobby-gobi';largeHero.dataset.motion='static-duo-gobi';largeHero.src='assets/mobile/lobby-gobi.webp';largeHero.alt='신입 고비';oldHero.replaceWith(largeHero);
+ const oldHero=q('.lobby-gobi'),largeHero=new Image();largeHero.className='lobby-gobi';largeHero.dataset.motion='static-duo-gobi';GamePerformance.loadOnDisplay(largeHero,'assets/mobile/lobby-gobi.webp');largeHero.alt='신입 고비';oldHero.replaceWith(largeHero);
  const title=q('.lobby-title'),heading=title.querySelector('h1');
  heading.className='duo-sr';const floating=document.createElement('div');floating.className='duo-logo-float';
- const logo=new Image();logo.loading='lazy';logo.decoding='async';logo.src='assets/reference-ui/title-logo.svg';logo.alt='';floating.append(logo);
+ const logo=new Image();GamePerformance.loadOnDisplay(logo,'assets/reference-ui/title-logo.svg');logo.alt='';floating.append(logo);
  const tagline=document.createElement('p');tagline.textContent='마왕은 퇴근, 우리의 밤은 시작!';
  const shadow=document.createElement('span');shadow.className='duo-logo-shadow';shadow.setAttribute('aria-hidden','true');title.replaceChildren(heading,floating,shadow);
  const tools=document.createElement('div');tools.className='duo-shortcuts';
@@ -24,7 +24,7 @@
   const identity=merc&&staffRecords.find(r=>r.id==='merc-'+key);
   const displayName=identity?.name||merc?.name;
   portrait.hidden=false;
-  portrait.src=merc?mercPortraitPath(key):'assets/ui-v2/icons/scroll.svg';
+  GamePerformance.loadOnDisplay(portrait,merc?mercPortraitPath(key):'assets/ui-v2/icons/scroll.svg');
   tag.textContent=merc?'오늘의 동료':'함께 출근할 동료';
   name.textContent=merc?displayName:'지원 영웅 선택 +';
   companion.setAttribute('aria-label',merc?displayName+' · '+merc.name+' · 지원 영웅 변경':'지원 영웅 선택');

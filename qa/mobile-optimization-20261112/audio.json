@@ -1,0 +1,20 @@
+[
+  {
+    "name": "lobby-night",
+    "wavBytes": 1924408,
+    "mp3Bytes": 349874,
+    "mp3Seconds": 43.702857
+  },
+  {
+    "name": "night-shift",
+    "wavBytes": 1411244,
+    "mp3Bytes": 256669,
+    "mp3Seconds": 32.052245
+  },
+  {
+    "name": "commander",
+    "wavBytes": 1245220,
+    "mp3Bytes": 226576,
+    "mp3Seconds": 28.290612
+  }
+]
