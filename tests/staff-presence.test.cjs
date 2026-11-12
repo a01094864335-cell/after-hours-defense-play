@@ -42,7 +42,7 @@ test('missing-border defaults and explicit outlines are cached, padded and bound
  box.motion.draw(target,'test',0,0,50,0,{outline:1.25,flip:true,alpha:.5});assert.equal(creates,1);
  for(let i=0;i<60;i++)box.motion.draw(target,'test',0,0,100+i,0,{outline:1.25});
  box.motion.draw(target,'test',0,0,50,0,{outline:1.25});assert.equal(creates,62,'old sizes are evicted instead of retaining every resize');
- for(const key of ['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']){const before=creates;box.motion.draw(target,key,0,0,240);assert.equal(creates,before+1,key+' gets a default cutin outline');assert.equal(calls.at(-2)[3],204,'240px cutin gets 4.8px radius plus padding');}
+ for(const key of ['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']){const before=creates;box.motion.draw(target,key,0,0,240);assert.equal(creates,before+1,key+' gets a default cutin outline');assert.equal(calls.at(-2)[3],200,'240px cutin gets the shared thin 2.88px radius plus padding');}
  const before=creates;box.motion.draw(target,'electric-technician',0,0,240,0,{outline:0});assert.equal(creates,before,'explicit disable is supported');
  const large=creates;for(let i=0;i<2;i++)box.motion.draw(target,'electric-technician',0,0,1400);assert.equal(creates,large+2,'oversized masks are not retained beyond the 16 MiB backing-store budget');
 });

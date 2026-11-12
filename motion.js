@@ -35,18 +35,44 @@ const Motion = (() => {
     return ((age + phase * .731) % 3.7) > 3.49 ? 1 : 0;
   }
 
+  // Reviewed per-pose vector masks remove only the old baked sticker margin.
+  // Original atlases/face pixels stay unchanged. Match source SHA so future art
+  // (including new rank forms) can never accidentally inherit an old silhouette.
+  const contourCache=new Map();let contourPixels=0;
+  function contourFrame(im,key,pose,f,w,h){
+    const entry=typeof StaffOutlineMasks==='undefined'?null:StaffOutlineMasks.characters[key];
+    const spec=entry?.frames?.[pose];
+    if(!spec||entry.sourceSha256!==sheets[key].sha256||typeof Path2D!=='function'||typeof document.createElement!=='function')return null;
+    const id=key+'|'+pose+'|'+entry.sourceSha256+'|'+StaffOutlineMasks.sha256+'|'+w+'|'+h;
+    if(contourCache.has(id)){const v=contourCache.get(id);contourCache.delete(id);contourCache.set(id,v);return v}
+    function masked(path){const c=document.createElement('canvas');c.width=Math.max(1,w*2);c.height=Math.max(1,h*2);const g=c.getContext('2d');g.scale(c.width/f.w,c.height/f.h);g.fillStyle=g.strokeStyle='#fff';g.lineJoin=g.lineCap='round';g.lineWidth=2*(spec.padding||0);
+      // Fill subpaths separately: detached effects must UNION, never cancel
+      // against the main contour because of opposite path winding.
+      for(const part of path.split(/(?=M\s)/).filter(Boolean)){const p=new Path2D(part);g.fill(p);if(spec.padding)g.stroke(p)}
+      g.globalCompositeOperation='source-in';g.drawImage(im,f.x,f.y,f.w,f.h,0,0,f.w,f.h);return c;
+    }
+    const image=masked(spec.path),edgeImage=spec.outlinePath&&spec.outlinePath!==spec.path?masked(spec.outlinePath):image;
+    const pixels=image.width*image.height*(edgeImage===image?1:2),value={image,edgeImage,frame:{...f,x:0,y:0,w:image.width,h:image.height},pixels};
+    while(contourCache.size&&(contourCache.size>=128||contourPixels+pixels>4*1024*1024)){const oldest=contourCache.keys().next().value;contourPixels-=contourCache.get(oldest).pixels;contourCache.delete(oldest)}
+    if(pixels<=4*1024*1024){contourCache.set(id,value);contourPixels+=pixels}return value;
+  }
+
   // Four source sheets lack baked sticker edges. Also cover larger skill cutins.
   // Cache small display-sized masks, never the full-resolution atlas or each tick.
   const outlineCache=new Map(),missingBorders=new Set(['electric-technician','mimic-storekeeper','spider-tailor','chalkak-photographer']);
   let outlinePixels=0;
   function outline(im,key,f,pose,w,h,radius){
     if(typeof document.createElement!=='function')return null;
-    const id=[key,sheets[key].sha256,pose,w,h,radius].join('|');
+    const id=[key,sheets[key].sha256,typeof StaffOutlineMasks==='undefined'?'raw':StaffOutlineMasks.sha256,pose,w,h,radius].join('|');
     if(outlineCache.has(id))return outlineCache.get(id);
     const pad=Math.ceil(radius)+1,n=2,c=document.createElement('canvas');
     c.width=(w+2*pad)*n;c.height=(h+2*pad)*n;
     const mask=c.getContext('2d');mask.scale(n,n);mask.imageSmoothingEnabled=true;
-    for(let i=0;i<16;i++){const a=i*Math.PI/8;mask.drawImage(im,f.x,f.y,f.w,f.h,pad+Math.cos(a)*radius,pad+Math.sin(a)*radius,w,h)}
+    // Threshold ONLY the derived edge silhouette, not the original artwork.
+    // Otherwise sixteen stamps amplify invisible atlas dust into white specks.
+    let edgeSource=im,edgeFrame=f;
+    if(typeof mask.getImageData==='function'){const base=document.createElement('canvas');base.width=w*n;base.height=h*n;const b=base.getContext('2d');b.drawImage(im,f.x,f.y,f.w,f.h,0,0,base.width,base.height);const pixels=b.getImageData(0,0,base.width,base.height);for(let i=3;i<pixels.data.length;i+=4)pixels.data[i]=pixels.data[i]>=128?255:0;b.putImageData(pixels,0,0);edgeSource=base;edgeFrame={x:0,y:0,w:base.width,h:base.height};}
+    for(let i=0;i<16;i++){const a=i*Math.PI/8;mask.drawImage(edgeSource,edgeFrame.x,edgeFrame.y,edgeFrame.w,edgeFrame.h,pad+Math.cos(a)*radius,pad+Math.sin(a)*radius,w,h)}
     mask.globalCompositeOperation='source-in';mask.fillStyle='#fff';mask.fillRect(0,0,c.width/n,c.height/n);
     const pixels=c.width*c.height,value={canvas:c,pad,pixels};
     // Limit both entry count and backing-store memory (16 MiB of RGBA pixels).
@@ -69,12 +95,14 @@ const Motion = (() => {
     if (options.angle) ctx.rotate(options.angle);
     if (options.alpha !== undefined) ctx.globalAlpha *= options.alpha;
     const dx=Math.round(-f.pivotX*scale),dy=Math.round(-f.pivotY*scale),w=Math.round(f.w*scale),h=Math.round(f.h*scale);
-    const radius=options.outline??(missingBorders.has(key)?Math.max(1,Math.min(8,height*.02)):0);
+    const contour=contourFrame(im,key,Math.max(0,Math.min(5,pose)),f,w,h);
+    const source=contour?.image||im,sourceFrame=contour?.frame||f;
+    const radius=options.outline??(contour||missingBorders.has(key)?Math.max(1.25,Math.min(3,height*.012)):0);
     if(radius>0&&w>0&&h>0){
-      const edge=outline(im,key,f,pose,w,h,radius);
+      const edge=outline(contour?.edgeImage||im,key,sourceFrame,pose,w,h,radius);
       if(edge)ctx.drawImage(edge.canvas,dx-edge.pad,dy-edge.pad,w+2*edge.pad,h+2*edge.pad);
     }
-    ctx.drawImage(im, f.x, f.y, f.w, f.h,dx,dy,w,h);
+    ctx.drawImage(source, sourceFrame.x, sourceFrame.y, sourceFrame.w, sourceFrame.h,dx,dy,w,h);
     ctx.restore();
     return true;
   }
