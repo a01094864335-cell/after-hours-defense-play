@@ -1,0 +1,10 @@
+test_english_roster_title_does_not_cover_close (test_text_grid.TextGridTests.test_english_roster_title_does_not_cover_close) ... ok
+test_large_lobby_wallet_keeps_exact_amount_accessible (test_text_grid.TextGridTests.test_large_lobby_wallet_keeps_exact_amount_accessible) ... ok
+test_long_story_copy_scrolls_without_covering_page_controls (test_text_grid.TextGridTests.test_long_story_copy_scrolls_without_covering_page_controls) ... ok
+test_shop_wordless_art_and_dom_title_reach_real_purchase (test_text_grid.TextGridTests.test_shop_wordless_art_and_dom_title_reach_real_purchase) ... ok
+test_short_training_shows_power_comparison_above_purchase_dock (test_text_grid.TextGridTests.test_short_training_shows_power_comparison_above_purchase_dock) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 10.345s
+
+OK

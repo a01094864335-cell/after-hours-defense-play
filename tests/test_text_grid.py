@@ -40,6 +40,8 @@ class TextGridTests(unittest.TestCase):
         p.evaluate("saveChange(d=>{d.coins=400;d.tutorialComplete=true});renderMeta()")
         p.locator('#asset-lobby-host [data-proxy="#shop-open"]').click()
         art=p.locator('#asset-shop-host .grid-shop-hero')
+        # Off-screen art is intentionally requested on entry, not at boot.
+        p.wait_for_function("()=>{const image=document.querySelector('#asset-shop-host').shadowRoot.querySelector('.grid-shop-hero');return image.complete&&image.naturalWidth>0}")
         self.assertTrue(art.evaluate('e=>e.complete&&e.naturalWidth>0'))
         p.evaluate('('+FIXTURE+')',{'mode':'en','extra':EXTRA})
         self.assertEqual(p.locator('#asset-shop-host .grid-shop-title').inner_text(),'Recruit Pack')
