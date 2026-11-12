@@ -83,9 +83,19 @@ jobs:
           python -m unittest discover -s tests -p 'test_browser_smoke.py' -v
           python -m unittest discover -s tests -p 'test_shared_chrome.py' -v
           python -m unittest discover -s tests -p 'test_training_page.py' -v
+          python -m unittest discover -s tests -p 'test_staff_outline_masks.py' -v
         env:
           UI_GAME_ROOT: /tmp/game-pages
           UI_CHROMIUM_PATH: ''
+          OUTLINE_QA_DIR: /tmp/outline-qa
+      - name: Upload staff outline browser galleries
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: staff-outlines-${{ github.run_id }}
+          path: /tmp/outline-qa
+          if-no-files-found: warn
+          retention-days: 14
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         with:

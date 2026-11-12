@@ -71,7 +71,7 @@ const Motion = (() => {
     // Threshold ONLY the derived edge silhouette, not the original artwork.
     // Otherwise sixteen stamps amplify invisible atlas dust into white specks.
     let edgeSource=im,edgeFrame=f;
-    if(typeof mask.getImageData==='function'){const base=document.createElement('canvas');base.width=w*n;base.height=h*n;const b=base.getContext('2d');b.drawImage(im,f.x,f.y,f.w,f.h,0,0,base.width,base.height);const pixels=b.getImageData(0,0,base.width,base.height);for(let i=3;i<pixels.data.length;i+=4)pixels.data[i]=pixels.data[i]>=128?255:0;b.putImageData(pixels,0,0);edgeSource=base;edgeFrame={x:0,y:0,w:base.width,h:base.height};}
+    if(typeof mask.getImageData==='function')try{const base=document.createElement('canvas');base.width=w*n;base.height=h*n;const b=base.getContext('2d');b.drawImage(im,f.x,f.y,f.w,f.h,0,0,base.width,base.height);const pixels=b.getImageData(0,0,base.width,base.height);for(let i=3;i<pixels.data.length;i+=4)pixels.data[i]=pixels.data[i]>=128?255:0;b.putImageData(pixels,0,0);edgeSource=base;edgeFrame={x:0,y:0,w:base.width,h:base.height};}catch{/* Cross-origin artwork may remain drawable but unreadable; keep rendering. */}
     for(let i=0;i<16;i++){const a=i*Math.PI/8;mask.drawImage(edgeSource,edgeFrame.x,edgeFrame.y,edgeFrame.w,edgeFrame.h,pad+Math.cos(a)*radius,pad+Math.sin(a)*radius,w,h)}
     mask.globalCompositeOperation='source-in';mask.fillStyle='#fff';mask.fillRect(0,0,c.width/n,c.height/n);
     const pixels=c.width*c.height,value={canvas:c,pad,pixels};
