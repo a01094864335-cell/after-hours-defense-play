@@ -1,0 +1,698 @@
+[
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "lobby",
+    "text": "신입 고비\n240\n이야기\n훈련소\n수료 선물\n오늘의 변주\n군단장 특별 훈련\n›\n오늘의 당직\n5/5\n편성 ›\n브릭\n토르크\n뽀득\n고비\n찌릿\n지원 영웅\n+\n선택하기\n\n마왕성 야간 방어 · 싱글 플레이\n\n당직 준비\n저장된 근무 없음\n직원 도감\n당직실\n상점",
+    "hangulCount": 84,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "settings",
+    "text": "당직 메뉴\n기본 설정\n저장 · 관리\n언어 / Language\n한국어\nEnglish\n일부 설명과 스토리는 원문으로 표시됩니다.\n효과음\n55%\n효과음 볼륨\n효과음 끄기\n배경 음악\n35%\nBGM 볼륨\nBGM 끄기\n절전 모드 켜짐 · 30 FPS\n스킬 연출 · 간결하게\n확인",
+    "hangulCount": 72,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "settings-manage",
+    "text": "당직 메뉴\n기본 설정\n저장 · 관리\n당직 도구\n영구 훈련소\n근무 안내\n이야기와 저장\n이야기 도감\n저장 백업 · 기기 옮기기\n\n현재 전투의 웨이브·배치·장비 레벨·SP를 초기화하며 미정산 처치 보상은 지급하지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지돼요. 이미 사용한 아이템은 반환하지 않아요.\n\n현재 당직 초기화\n현재 판 초기화\n확인",
+    "hangulCount": 131,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "help",
+    "text": "근무 안내\n기본\n합성\n전투\n군단장\n직원 소환\n\nSP를 사용해 빈 자리에 랜덤 직원을 파견하세요.\n\n5등급 스킬 해금\n\n5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.\n\n키보드 조작\n알겠어요",
+    "hangulCount": 86,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "help-boss",
+    "text": "근무 안내\n기본\n합성\n전투\n군단장\n군단장 출현 정보 · 7종\n매 5차에 랜덤 등장 · 각 1/7 확률\n군단장 레온\n\n노련한 지휘관 · 이동 감속 효과가 일반 용사보다 약해요.\n\n진격 명령 · 근무 배치를 뒤섞고 모든 용사를 2초간 가속해요. (8초 주기)\n\n공략 · 핵심 직원의 스킬을 준비하고 배치가 바뀌면 인접 지원을 확인하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n철벽 단장 아이기스\n\n중갑 방패 · 최대 체력의 30%만큼 방패를 두르고 등장해요.\n\n방벽 전개 · 자신의 방패 15%, 가까운 용사의 방패 15%를 보충해요. (9초 주기)\n\n공략 · 유령 배달부의 특급 배송은 방패를 무시해요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n홍련 창기사 루비\n\n불굴의 돌진 · 체력이 절반 이하가 되면 이동 속도가 20% 빨라져요.\n\n화염 돌파 · 3초간 돌진하고 예고한 세로줄의 공격 속도를 4초간 30% 낮춰요. (9초 주기)\n\n공략 · 불이 예고된 칸에서 합성해 피하고 청소부로 돌진을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n성가대장 루멘\n\n호위의 축복 · 거리 130 안에 일반 용사가 있으면 받는 피해가 20% 줄어요.\n\n황금 성가 · 자신의 체력 6%, 거리 160 안 용사의 체력 12%를 회복해요. (10초 주기)\n\n공략 · 시설기사의 광역 공격으로 호위를 먼저 정리하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n서리 마녀 네베\n\n얼음 망토 · 청소부·전기기사 스킬의 이동 정지 시간이 절반이에요.\n\n서리 봉인 · 등급이 가장 높은 직원의 두 칸을 예고하고 1.8초간 기절시켜요. (9초 주기)\n\n공략 · 예고된 칸의 직원을 합성해 옮기거나 상담사로 시전을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n환영 단장 미라\n\n가벼운 발걸음 · 레온보다 20% 빠르게 이동하지만 체력이 20% 낮아요.\n\n거울 행진 · 앞쪽에 체력 8%의 분신 둘을 만들어요. 4초 후 사라져요. (10초 주기)\n\n공략 · 분신에는 처치 보상이 없어요. 광역·연쇄 공격으로 빠르게 걷어내세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n시계기사 크로노\n\n감기는 태엽 · 등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.\n\n시간 빨리 감기 · 1.5초 예고 후 2초간 최대 2배속으로 전진해요. 감속과 이동 정지는 적용돼요. (12초 주기)\n\n공략 · 빨리 감기 예고에 맞춰 감속·이동 정지를 쓰거나 상담사로 시전을 늦추세요.\n\n알겠어요",
+    "hangulCount": 693,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "shop",
+    "text": "●\n240\n야간 파견 상점\n채용팩\n개별 아이템\n이번엔 어떤 동료가 올까?\n영웅 채용팩\n★\n미보유 지원 영웅, 10팩 안에 확정\n일반 직원 90%\n지원 영웅 10%\n확률 · 보장 규칙\n채용 포인트\n0\n동료 지정 채용 ›\nG\n120 코인 · 채용팩 열기\n›\n\n구매 후 120 코인\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 87,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "shop-rules",
+    "text": "채용 확률 · 보장 규칙\n×\n\n일반 직원 17종 각 약 5.29%, 지원 영웅 7종 각 약 1.43%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 중 균등 확률로 확정됩니다. 미보유 지원 채용 시 보장 횟수가 초기화됩니다.\n\n중복은 채용 포인트 +1. 일반 직원은 3포인트, 지원 영웅은 10포인트로 도감에서 지정 채용할 수 있습니다.\n\n알겠어요",
+    "hangulCount": 119,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "shop-items",
+    "text": "●\n240\n야간 파견 상점\n채용팩\n개별 아이템\n당직을 위한 작은 준비\n\n글로벌 코인으로 구매 · 아이템은 1회 소비\n\n등급 합성권\n\n종류가 달라도 같은 등급 합성\n\n보유 0개\n20 코인 · 1개 구매\n종류 합성권\n\n등급이 달라도 같은 종류 합성\n\n보유 0개\n30 코인 · 1개 구매\n마왕 깨우기\n\n현재 적이 있을 때 마왕 즉시 출동\n\n보유 0개\n50 코인 · 1개 구매\n직원 도감\n당직실\n상점",
+    "hangulCount": 124,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "roster",
+    "text": "직원 도감\n채용 직원 6\n미채용 11\n지원 영웅 7\n오늘의\n근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n브릭\n경비원\n편성 중\n토르크\n시설기사\n편성 중\n뽀득\n청소부\n편성 중\n고비\n당직 서기\n편성 중\n찌릿\n전기기사\n편성 중\n루프\n유령 배달부\n인사기록 보기\n\n직원을 눌러 인사기록을 확인하세요\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 114,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "support-list",
+    "text": "직원 도감\n채용 직원 6\n미채용 11\n지원 영웅 7\n오늘의\n근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n본가드\n결계 계약직\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n\n지원 영웅 1/7 고용 · 인사기록에서 1명 선택\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 137,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "training",
+    "text": "야간 훈련소\n직원 훈련\n지원 영웅 훈련\n훈련\n캐릭터별 효과\n직원 전체 Lv.1 ➜ Lv.2\n공격 피해\n+0.0% ➜ +2.8%\n5\n다음\n10\n잠김\n20\n잠김\n30\n잠김\n\n같은 그룹 전체 적용 · 신규 채용에도 유지\n\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\n직원 도감\n당직실\n상점",
+    "hangulCount": 77,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "training-effects",
+    "text": "야간 훈련소\n직원 훈련\n지원 영웅 훈련\n훈련\n캐릭터별 효과\n캐릭터별 해금 효과\n다음 Lv.5\n브릭\n직원 공통 레벨 적용\n⌄\n토르크\n직원 공통 레벨 적용\n⌄\n뽀득\n직원 공통 레벨 적용\n⌄\n고비\n직원 공통 레벨 적용\n⌄\n찌릿\n직원 공통 레벨 적용\n⌄\n루프\n직원 공통 레벨 적용\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\n직원 도감\n당직실\n상점",
+    "hangulCount": 248,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "story",
+    "text": "첫 당직\n건너뛰기 ×\n첫 출근 · 1 / 4\n\nNEW · 이야기 해금! 글로벌 코인 +5\n\n마왕\n\n“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”\n\n고비: “네. 쉬시는 동안 잘 보고 있을게요.”\n\n이전\n다음\n그림 전체",
+    "hangulCount": 66,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "battle",
+    "text": "WAVE\n01\n♥♥♥\n×1\nⅡ\n\n공격 1 · 견습 용사\n\n남은 적\n8\n8\n5\n보드의 직원을 눌러보세요\n★5부터 고유 스킬을 사용할 수 있어요\nⓘ\n10\nSP\n소환 · 60 SP\n등급 합성\n0\n종류 합성\n0\n마왕 깨우기\n0",
+    "hangulCount": 49,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "reward",
+    "text": "잠깐, 당직 보너스!\n\n5웨이브 돌파! · 하나만 선택하세요\n\n운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전\n성장\n합성 보험\n0  1회\n성공 보장 누적 · 최대 3회\n상황\n장비 배송\nLv.1  2\n시설기사 전체 · 무료 강화\n전열 정비\n보상 규칙",
+    "hangulCount": 75,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "reward-after-summon",
+    "text": "잠깐, 당직 보너스!\n\n5웨이브 돌파! · 하나만 선택하세요\n\n운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전\n성장\n합성 보험\n0  1회\n성공 보장 누적 · 최대 3회\n상황\n장비 배송\nLv.1  2\n시설기사 전체 · 무료 강화\n전열 정비\n보상 규칙",
+    "hangulCount": 75,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "probe": "reward-reposition-summon",
+    "enabled": true,
+    "before": {
+      "wave": 5,
+      "cost": 60,
+      "sp": 500,
+      "board": 5,
+      "bundle": {
+        "wave": 5,
+        "offers": [
+          {
+            "id": "sp",
+            "amount": 130
+          },
+          {
+            "id": "merge",
+            "amount": 1
+          },
+          {
+            "id": "equipment",
+            "amount": 1,
+            "type": 1
+          }
+        ]
+      }
+    },
+    "after": {
+      "wave": 5,
+      "cost": 70,
+      "sp": 440,
+      "board": 6
+    },
+    "display": "운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전",
+    "expectedCurrentSP": 150
+  },
+  {
+    "lang": "ko",
+    "width": 320,
+    "screen": "result",
+    "text": "수고했어요, 고비!\n근무 결과\n무사히 근무 종료\n이번 당직 수당\n+23 코인\n보유 코인에 반영했어요.\n도달 웨이브\n6\n저지한 용사\n1\n직원별 근무 기록\n당직 분석\n보상 내역·다음 안내\n다시 당직 서기\n보상으로 훈련하기\n로비로 돌아가기",
+    "hangulCount": 86,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "lobby",
+    "text": "신입 고비\n240\n이야기\n훈련소\n수료 선물\n오늘의 변주\n군단장 특별 훈련\n›\n오늘의 당직\n5/5\n편성 ›\n브릭\n토르크\n뽀득\n고비\n찌릿\n지원 영웅\n+\n선택하기\n\n마왕성 야간 방어 · 싱글 플레이\n\n당직 준비\n저장된 근무 없음\n직원 도감\n당직실\n상점",
+    "hangulCount": 84,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "settings",
+    "text": "당직 메뉴\n기본 설정\n저장 · 관리\n언어 / Language\n한국어\nEnglish\n일부 설명과 스토리는 원문으로 표시됩니다.\n효과음\n55%\n효과음 볼륨\n효과음 끄기\n배경 음악\n35%\nBGM 볼륨\nBGM 끄기\n절전 모드 켜짐 · 30 FPS\n스킬 연출 · 간결하게\n확인",
+    "hangulCount": 72,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "settings-manage",
+    "text": "당직 메뉴\n기본 설정\n저장 · 관리\n당직 도구\n영구 훈련소\n근무 안내\n이야기와 저장\n이야기 도감\n저장 백업 · 기기 옮기기\n\n현재 전투의 웨이브·배치·장비 레벨·SP를 초기화하며 미정산 처치 보상은 지급하지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지돼요. 이미 사용한 아이템은 반환하지 않아요.\n\n현재 당직 초기화\n현재 판 초기화\n확인",
+    "hangulCount": 131,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "help",
+    "text": "근무 안내\n기본\n합성\n전투\n군단장\n직원 소환\n\nSP를 사용해 빈 자리에 랜덤 직원을 파견하세요.\n\n5등급 스킬 해금\n\n5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.\n\n키보드 조작\n알겠어요",
+    "hangulCount": 86,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "help-boss",
+    "text": "근무 안내\n기본\n합성\n전투\n군단장\n군단장 출현 정보 · 7종\n매 5차에 랜덤 등장 · 각 1/7 확률\n군단장 레온\n\n노련한 지휘관 · 이동 감속 효과가 일반 용사보다 약해요.\n\n진격 명령 · 근무 배치를 뒤섞고 모든 용사를 2초간 가속해요. (8초 주기)\n\n공략 · 핵심 직원의 스킬을 준비하고 배치가 바뀌면 인접 지원을 확인하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n철벽 단장 아이기스\n\n중갑 방패 · 최대 체력의 30%만큼 방패를 두르고 등장해요.\n\n방벽 전개 · 자신의 방패 15%, 가까운 용사의 방패 15%를 보충해요. (9초 주기)\n\n공략 · 유령 배달부의 특급 배송은 방패를 무시해요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n홍련 창기사 루비\n\n불굴의 돌진 · 체력이 절반 이하가 되면 이동 속도가 20% 빨라져요.\n\n화염 돌파 · 3초간 돌진하고 예고한 세로줄의 공격 속도를 4초간 30% 낮춰요. (9초 주기)\n\n공략 · 불이 예고된 칸에서 합성해 피하고 청소부로 돌진을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n성가대장 루멘\n\n호위의 축복 · 거리 130 안에 일반 용사가 있으면 받는 피해가 20% 줄어요.\n\n황금 성가 · 자신의 체력 6%, 거리 160 안 용사의 체력 12%를 회복해요. (10초 주기)\n\n공략 · 시설기사의 광역 공격으로 호위를 먼저 정리하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n서리 마녀 네베\n\n얼음 망토 · 청소부·전기기사 스킬의 이동 정지 시간이 절반이에요.\n\n서리 봉인 · 등급이 가장 높은 직원의 두 칸을 예고하고 1.8초간 기절시켜요. (9초 주기)\n\n공략 · 예고된 칸의 직원을 합성해 옮기거나 상담사로 시전을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n환영 단장 미라\n\n가벼운 발걸음 · 레온보다 20% 빠르게 이동하지만 체력이 20% 낮아요.\n\n거울 행진 · 앞쪽에 체력 8%의 분신 둘을 만들어요. 4초 후 사라져요. (10초 주기)\n\n공략 · 분신에는 처치 보상이 없어요. 광역·연쇄 공격으로 빠르게 걷어내세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n시계기사 크로노\n\n감기는 태엽 · 등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.\n\n시간 빨리 감기 · 1.5초 예고 후 2초간 최대 2배속으로 전진해요. 감속과 이동 정지는 적용돼요. (12초 주기)\n\n공략 · 빨리 감기 예고에 맞춰 감속·이동 정지를 쓰거나 상담사로 시전을 늦추세요.\n\n알겠어요",
+    "hangulCount": 693,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "shop",
+    "text": "●\n240\n야간 파견 상점\n채용팩\n개별 아이템\n이번엔 어떤 동료가 올까?\n영웅 채용팩\n★\n미보유 지원 영웅, 10팩 안에 확정\n일반 직원 90%\n지원 영웅 10%\n확률 · 보장 규칙\n채용 포인트\n0\n동료 지정 채용 ›\nG\n120 코인 · 채용팩 열기\n›\n\n구매 후 120 코인\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 87,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "shop-rules",
+    "text": "채용 확률 · 보장 규칙\n×\n\n일반 직원 17종 각 약 5.29%, 지원 영웅 7종 각 약 1.43%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 중 균등 확률로 확정됩니다. 미보유 지원 채용 시 보장 횟수가 초기화됩니다.\n\n중복은 채용 포인트 +1. 일반 직원은 3포인트, 지원 영웅은 10포인트로 도감에서 지정 채용할 수 있습니다.\n\n알겠어요",
+    "hangulCount": 119,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "shop-items",
+    "text": "●\n240\n야간 파견 상점\n채용팩\n개별 아이템\n당직을 위한 작은 준비\n\n글로벌 코인으로 구매 · 아이템은 1회 소비\n\n등급 합성권\n\n종류가 달라도 같은 등급 합성\n\n보유 0개\n20 코인 · 1개 구매\n종류 합성권\n\n등급이 달라도 같은 종류 합성\n\n보유 0개\n30 코인 · 1개 구매\n마왕 깨우기\n\n현재 적이 있을 때 마왕 즉시 출동\n\n보유 0개\n50 코인 · 1개 구매\n직원 도감\n당직실\n상점",
+    "hangulCount": 124,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "roster",
+    "text": "직원 도감\n채용 직원 6\n미채용 11\n지원 영웅 7\n▣\n오늘의\n근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n브릭\n경비원\n편성 중\n토르크\n시설기사\n편성 중\n뽀득\n청소부\n편성 중\n고비\n당직 서기\n편성 중\n찌릿\n전기기사\n편성 중\n루프\n유령 배달부\n인사기록 보기\n\n직원을 눌러 인사기록을 확인하세요\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 114,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "support-list",
+    "text": "직원 도감\n채용 직원 6\n미채용 11\n지원 영웅 7\n▣\n오늘의\n근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n본가드\n결계 계약직\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n\n지원 영웅 1/7 고용 · 인사기록에서 1명 선택\n\n직원 도감\n당직실\n상점",
+    "hangulCount": 137,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "training",
+    "text": "야간 훈련소\n직원 훈련\n지원 영웅 훈련\n훈련\n캐릭터별 효과\n직원 전체 Lv.1 ➜ Lv.2\n공격 피해\n+0.0% ➜ +2.8%\n5\n다음\n10\n잠김\n20\n잠김\n30\n잠김\n\n같은 그룹 전체 적용 · 신규 채용에도 유지\n\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\n직원 도감\n당직실\n상점",
+    "hangulCount": 77,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "training-effects",
+    "text": "야간 훈련소\n직원 훈련\n지원 영웅 훈련\n훈련\n캐릭터별 효과\n캐릭터별 해금 효과\n다음 Lv.5\n브릭\n직원 공통 레벨 적용\n⌄\n토르크\n직원 공통 레벨 적용\n⌄\n뽀득\n직원 공통 레벨 적용\n⌄\n고비\n직원 공통 레벨 적용\n⌄\n찌릿\n직원 공통 레벨 적용\n⌄\n루프\n직원 공통 레벨 적용\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\n직원 도감\n당직실\n상점",
+    "hangulCount": 248,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "story",
+    "text": "첫 당직\n건너뛰기 ×\n첫 출근 · 1 / 4\n\nNEW · 이야기 해금! 글로벌 코인 +5\n\n마왕\n\n“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”\n\n고비: “네. 쉬시는 동안 잘 보고 있을게요.”\n\n이전\n다음\n그림 전체",
+    "hangulCount": 66,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "battle",
+    "text": "WAVE\n01\n♥♥♥\n×1\nⅡ\n\n당직 서기: “일단… 오늘 밤만 무사히 넘겨봐요!”\n\n남은 적\n8\n8\n5\n보드의 직원을 눌러보세요\n★5부터 고유 스킬을 사용할 수 있어요\nⓘ\n10\nSP\n소환 · 60 SP\n등급 합성\n0\n종류 합성\n0\n마왕 깨우기\n0",
+    "hangulCount": 60,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "reward",
+    "text": "잠깐, 당직 보너스!\n\n5웨이브 돌파! · 하나만 선택하세요\n\n운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전\n성장\n합성 보험\n0  1회\n성공 보장 누적 · 최대 3회\n상황\n장비 배송\nLv.1  2\n시설기사 전체 · 무료 강화\n전열 정비\n보상 규칙",
+    "hangulCount": 75,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "reward-after-summon",
+    "text": "잠깐, 당직 보너스!\n\n5웨이브 돌파! · 하나만 선택하세요\n\n운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전\n성장\n합성 보험\n0  1회\n성공 보장 누적 · 최대 3회\n상황\n장비 배송\nLv.1  2\n시설기사 전체 · 무료 강화\n전열 정비\n보상 규칙",
+    "hangulCount": 75,
+    "errors": []
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "probe": "reward-reposition-summon",
+    "enabled": true,
+    "before": {
+      "wave": 5,
+      "cost": 60,
+      "sp": 500,
+      "board": 5,
+      "bundle": {
+        "wave": 5,
+        "offers": [
+          {
+            "id": "sp",
+            "amount": 130
+          },
+          {
+            "id": "merge",
+            "amount": 1
+          },
+          {
+            "id": "equipment",
+            "amount": 1,
+            "type": 1
+          }
+        ]
+      }
+    },
+    "after": {
+      "wave": 5,
+      "cost": 70,
+      "sp": 440,
+      "board": 6
+    },
+    "display": "운영\n소환 보급\n+130 SP\n기본 소환 2회분 · 할인 전",
+    "expectedCurrentSP": 150
+  },
+  {
+    "lang": "ko",
+    "width": 390,
+    "screen": "result",
+    "text": "수고했어요, 고비!\n근무 결과\n무사히 근무 종료\n이번 당직 수당\n+23 코인\n보유 코인에 반영했어요.\n도달 웨이브\n6\n저지한 용사\n1\n직원별 근무 기록\n당직 분석\n보상 내역·다음 안내\n다시 당직 서기\n보상으로 훈련하기\n로비로 돌아가기",
+    "hangulCount": 86,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "lobby",
+    "text": "Gobi\n240\nStory\nTrain\nGraduation gift\nDaily twist\nBoss training\n›\nOn duty\n5/5\nEdit ›\n브릭\n토르크\n뽀득\n고비\n찌릿\nSupport\n+\nChoose\n\nCastle night defense · Solo\n\nPrepare shift\nNo saved shift\nStaff\nLobby\nShop\nAFTER HOURS\nDEFENSE",
+    "hangulCount": 11,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "settings",
+    "text": "Settings\nBasic\nManage\n언어 / Language\n한국어\nEnglish\nSome descriptions and stories remain in Korean.\nSound effects\n55%\nEffects volume\nMute effects\nMusic\n35%\nMusic volume\nMute music\nPower saving · 30 FPS\nSkill effects · Compact\nDone",
+    "hangulCount": 5,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "settings-manage",
+    "text": "Settings\nBasic\nManage\nShift tools\nPermanent training\nHow to play\nStories & saves\nStory collection\nBack up / transfer saves\n\nResets this run’s waves, board, equipment and SP. Unsettled kill rewards are lost. Coins, recruited staff and saved teams are kept. Used items are not refunded.\n\nReset this shift\nReset current run\nDone",
+    "hangulCount": 0,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "help",
+    "text": "근무 안내\nBasics\nMerge\nBattle\nBosses\n직원 소환\n\nSP를 사용해 빈 자리에 랜덤 직원을 파견하세요.\n\n5등급 스킬 해금\n\n5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.\n\n키보드 조작\n알겠어요",
+    "hangulCount": 77,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "help-boss",
+    "text": "근무 안내\nBasics\nMerge\nBattle\nBosses\n군단장 출현 정보 · 7종\n매 5차에 랜덤 등장 · 각 1/7 확률\n군단장 레온\n\n노련한 지휘관 · 이동 감속 효과가 일반 용사보다 약해요.\n\n진격 명령 · 근무 배치를 뒤섞고 모든 용사를 2초간 가속해요. (8초 주기)\n\n공략 · 핵심 직원의 스킬을 준비하고 배치가 바뀌면 인접 지원을 확인하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n철벽 단장 아이기스\n\n중갑 방패 · 최대 체력의 30%만큼 방패를 두르고 등장해요.\n\n방벽 전개 · 자신의 방패 15%, 가까운 용사의 방패 15%를 보충해요. (9초 주기)\n\n공략 · 유령 배달부의 특급 배송은 방패를 무시해요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n홍련 창기사 루비\n\n불굴의 돌진 · 체력이 절반 이하가 되면 이동 속도가 20% 빨라져요.\n\n화염 돌파 · 3초간 돌진하고 예고한 세로줄의 공격 속도를 4초간 30% 낮춰요. (9초 주기)\n\n공략 · 불이 예고된 칸에서 합성해 피하고 청소부로 돌진을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n성가대장 루멘\n\n호위의 축복 · 거리 130 안에 일반 용사가 있으면 받는 피해가 20% 줄어요.\n\n황금 성가 · 자신의 체력 6%, 거리 160 안 용사의 체력 12%를 회복해요. (10초 주기)\n\n공략 · 시설기사의 광역 공격으로 호위를 먼저 정리하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n서리 마녀 네베\n\n얼음 망토 · 청소부·전기기사 스킬의 이동 정지 시간이 절반이에요.\n\n서리 봉인 · 등급이 가장 높은 직원의 두 칸을 예고하고 1.8초간 기절시켜요. (9초 주기)\n\n공략 · 예고된 칸의 직원을 합성해 옮기거나 상담사로 시전을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n환영 단장 미라\n\n가벼운 발걸음 · 레온보다 20% 빠르게 이동하지만 체력이 20% 낮아요.\n\n거울 행진 · 앞쪽에 체력 8%의 분신 둘을 만들어요. 4초 후 사라져요. (10초 주기)\n\n공략 · 분신에는 처치 보상이 없어요. 광역·연쇄 공격으로 빠르게 걷어내세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n시계기사 크로노\n\n감기는 태엽 · 등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.\n\n시간 빨리 감기 · 1.5초 예고 후 2초간 최대 2배속으로 전진해요. 감속과 이동 정지는 적용돼요. (12초 주기)\n\n공략 · 빨리 감기 예고에 맞춰 감속·이동 정지를 쓰거나 상담사로 시전을 늦추세요.\n\n알겠어요",
+    "hangulCount": 684,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "shop",
+    "text": "●\n240\nNight shift shop\n채용팩\n개별 아이템\nA new colleague awaits!\nHero Recruit Pack\n★\nUnowned support guaranteed within 10 packs\n일반 직원 90%\n지원 영웅 10%\nRates & guarantee rules\n채용 포인트\n0\nChoose a colleague ›\nG\n120 코인 · 채용팩 열기\n›\n\n구매 후 120 코인\n\nStaff\nLobby\nShop",
+    "hangulCount": 33,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "shop-rules",
+    "text": "Recruitment rules\n×\n\n일반 직원 17종 각 약 5.29%, 지원 영웅 7종 각 약 1.43%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 중 균등 확률로 확정됩니다. 미보유 지원 채용 시 보장 횟수가 초기화됩니다.\n\n중복은 채용 포인트 +1. 일반 직원은 3포인트, 지원 영웅은 10포인트로 도감에서 지정 채용할 수 있습니다.\n\nGot it",
+    "hangulCount": 107,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "shop-items",
+    "text": "●\n240\nNight shift shop\n채용팩\n개별 아이템\n당직을 위한 작은 준비\n\n글로벌 코인으로 구매 · 아이템은 1회 소비\n\n등급 합성권\n\n종류가 달라도 같은 등급 합성\n\n보유 0개\n20 코인 · 1개 구매\n종류 합성권\n\n등급이 달라도 같은 종류 합성\n\n보유 0개\n30 코인 · 1개 구매\n마왕 깨우기\n\n현재 적이 있을 때 마왕 즉시 출동\n\n보유 0개\n50 코인 · 1개 구매\nStaff\nLobby\nShop",
+    "hangulCount": 109,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "roster",
+    "text": "Staff\n채용 직원 6\n미채용 11\n지원 영웅 7\n오늘의근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n브릭\n경비원\n편성 중\n토르크\n시설기사\n편성 중\n뽀득\n청소부\n편성 중\n고비\n당직 서기\n편성 중\n찌릿\n전기기사\n편성 중\n루프\n유령 배달부\n인사기록 보기\n\n직원을 눌러 인사기록을 확인하세요\n\nStaff\nLobby\nShop",
+    "hangulCount": 101,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "support-list",
+    "text": "Staff\n채용 직원 6\n미채용 11\n지원 영웅 7\n오늘의근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n본가드\n결계 계약직\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n\n지원 영웅 1/7 고용 · 인사기록에서 1명 선택\n\nStaff\nLobby\nShop",
+    "hangulCount": 124,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "training",
+    "text": "Training room\n직원 훈련\n지원 영웅 훈련\nTrain\nCharacter effects\n직원 전체 Lv.1 ➜ Lv.2\n공격 피해\n+0.0% ➜ +2.8%\n5\n다음\n10\n잠김\n20\n잠김\n30\n잠김\n\n같은 그룹 전체 적용 · 신규 채용에도 유지\n\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\nStaff\nLobby\nShop",
+    "hangulCount": 55,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "training-effects",
+    "text": "Training room\n직원 훈련\n지원 영웅 훈련\nTrain\nCharacter effects\n캐릭터별 해금 효과\n다음 Lv.5\n브릭\n직원 공통 레벨 적용\n⌄\n토르크\n직원 공통 레벨 적용\n⌄\n뽀득\n직원 공통 레벨 적용\n⌄\n고비\n직원 공통 레벨 적용\n⌄\n찌릿\n직원 공통 레벨 적용\n⌄\n루프\n직원 공통 레벨 적용\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\nStaff\nLobby\nShop",
+    "hangulCount": 226,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "story",
+    "text": "첫 당직\n건너뛰기 ×\n첫 출근 · 1 / 4\n\nNEW · 이야기 해금! 글로벌 코인 +5\n\n마왕\n\n“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”\n\n고비: “네. 쉬시는 동안 잘 보고 있을게요.”\n\n이전\n다음\nFull art",
+    "hangulCount": 62,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "battle",
+    "text": "WAVE\n01\n♥♥♥\n×1\nⅡ\n\n공격 1 · 견습 용사\n\n남은 적\n8\n8\n5\nPick a staff member\nUnique skills unlock at ★5\nⓘ\n10\nSP\n소환 · 60 SP\n등급 합성\n0\n종류 합성\n0\n마왕 깨우기\n0",
+    "hangulCount": 24,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "reward",
+    "text": "Shift bonus!\n\nWave 5 cleared · Choose one\n\nOPERATE\nSummon supply\n+130 SP\n2 summons · before discounts\nGROW\nMerge insurance\n0  1\nGuaranteed merges · max 3\nADAPT\nEquipment delivery\nLv.1  2\n시설기사 · all matching staff\nReposition\nReward rules",
+    "hangulCount": 4,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "reward-after-summon",
+    "text": "Shift bonus!\n\nWave 5 cleared · Choose one\n\nOPERATE\nSummon supply\n+130 SP\n2 summons · before discounts\nGROW\nMerge insurance\n0  1\nGuaranteed merges · max 3\nADAPT\nEquipment delivery\nLv.1  2\n시설기사 · all matching staff\nReposition\nReward rules",
+    "hangulCount": 4,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "probe": "reward-reposition-summon",
+    "enabled": true,
+    "before": {
+      "wave": 5,
+      "cost": 60,
+      "sp": 500,
+      "board": 5,
+      "bundle": {
+        "wave": 5,
+        "offers": [
+          {
+            "id": "sp",
+            "amount": 130
+          },
+          {
+            "id": "merge",
+            "amount": 1
+          },
+          {
+            "id": "equipment",
+            "amount": 1,
+            "type": 1
+          }
+        ]
+      }
+    },
+    "after": {
+      "wave": 5,
+      "cost": 70,
+      "sp": 440,
+      "board": 6
+    },
+    "display": "OPERATE\nSummon supply\n+130 SP\n2 summons · before discounts",
+    "expectedCurrentSP": 150
+  },
+  {
+    "lang": "en",
+    "width": 320,
+    "screen": "result",
+    "text": "수고했어요, 고비!\n근무 결과\n무사히 근무 종료\n이번 당직 수당\n+23 코인\n보유 코인에 반영했어요.\n도달 웨이브\n6\n저지한 용사\n1\n직원별 근무 기록\n당직 분석\n보상 내역·다음 안내\n다시 당직 서기\n보상으로 훈련하기\n로비로 돌아가기",
+    "hangulCount": 86,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "lobby",
+    "text": "Gobi\n240\nStory\nTrain\nGraduation gift\nDaily twist\nBoss training\n›\nOn duty\n5/5\nEdit ›\n브릭\n토르크\n뽀득\n고비\n찌릿\nSupport\n+\nChoose\n\nCastle night defense · Solo\n\nPrepare shift\nNo saved shift\nStaff\nLobby\nShop\nAFTER HOURS\nDEFENSE",
+    "hangulCount": 11,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "settings",
+    "text": "Settings\nBasic\nManage\n언어 / Language\n한국어\nEnglish\nSome descriptions and stories remain in Korean.\nSound effects\n55%\nEffects volume\nMute effects\nMusic\n35%\nMusic volume\nMute music\nPower saving · 30 FPS\nSkill effects · Compact\nDone",
+    "hangulCount": 5,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "settings-manage",
+    "text": "Settings\nBasic\nManage\nShift tools\nPermanent training\nHow to play\nStories & saves\nStory collection\nBack up / transfer saves\n\nResets this run’s waves, board, equipment and SP. Unsettled kill rewards are lost. Coins, recruited staff and saved teams are kept. Used items are not refunded.\n\nReset this shift\nReset current run\nDone",
+    "hangulCount": 0,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "help",
+    "text": "근무 안내\nBasics\nMerge\nBattle\nBosses\n직원 소환\n\nSP를 사용해 빈 자리에 랜덤 직원을 파견하세요.\n\n5등급 스킬 해금\n\n5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.\n\n키보드 조작\n알겠어요",
+    "hangulCount": 77,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "help-boss",
+    "text": "근무 안내\nBasics\nMerge\nBattle\nBosses\n군단장 출현 정보 · 7종\n매 5차에 랜덤 등장 · 각 1/7 확률\n군단장 레온\n\n노련한 지휘관 · 이동 감속 효과가 일반 용사보다 약해요.\n\n진격 명령 · 근무 배치를 뒤섞고 모든 용사를 2초간 가속해요. (8초 주기)\n\n공략 · 핵심 직원의 스킬을 준비하고 배치가 바뀌면 인접 지원을 확인하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n철벽 단장 아이기스\n\n중갑 방패 · 최대 체력의 30%만큼 방패를 두르고 등장해요.\n\n방벽 전개 · 자신의 방패 15%, 가까운 용사의 방패 15%를 보충해요. (9초 주기)\n\n공략 · 유령 배달부의 특급 배송은 방패를 무시해요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n홍련 창기사 루비\n\n불굴의 돌진 · 체력이 절반 이하가 되면 이동 속도가 20% 빨라져요.\n\n화염 돌파 · 3초간 돌진하고 예고한 세로줄의 공격 속도를 4초간 30% 낮춰요. (9초 주기)\n\n공략 · 불이 예고된 칸에서 합성해 피하고 청소부로 돌진을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n성가대장 루멘\n\n호위의 축복 · 거리 130 안에 일반 용사가 있으면 받는 피해가 20% 줄어요.\n\n황금 성가 · 자신의 체력 6%, 거리 160 안 용사의 체력 12%를 회복해요. (10초 주기)\n\n공략 · 시설기사의 광역 공격으로 호위를 먼저 정리하세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n서리 마녀 네베\n\n얼음 망토 · 청소부·전기기사 스킬의 이동 정지 시간이 절반이에요.\n\n서리 봉인 · 등급이 가장 높은 직원의 두 칸을 예고하고 1.8초간 기절시켜요. (9초 주기)\n\n공략 · 예고된 칸의 직원을 합성해 옮기거나 상담사로 시전을 늦추세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n환영 단장 미라\n\n가벼운 발걸음 · 레온보다 20% 빠르게 이동하지만 체력이 20% 낮아요.\n\n거울 행진 · 앞쪽에 체력 8%의 분신 둘을 만들어요. 4초 후 사라져요. (10초 주기)\n\n공략 · 분신에는 처치 보상이 없어요. 광역·연쇄 공격으로 빠르게 걷어내세요.\n\n매 5차에 랜덤 등장 · 각 1/7 확률\n시계기사 크로노\n\n감기는 태엽 · 등장 후 10초마다 이동 속도 +10%, 최대 +30%가 돼요.\n\n시간 빨리 감기 · 1.5초 예고 후 2초간 최대 2배속으로 전진해요. 감속과 이동 정지는 적용돼요. (12초 주기)\n\n공략 · 빨리 감기 예고에 맞춰 감속·이동 정지를 쓰거나 상담사로 시전을 늦추세요.\n\n알겠어요",
+    "hangulCount": 684,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "shop",
+    "text": "●\n240\nNight shift shop\n채용팩\n개별 아이템\nA new colleague awaits!\nHero Recruit Pack\n★\nUnowned support guaranteed within 10 packs\n일반 직원 90%\n지원 영웅 10%\nRates & guarantee rules\n채용 포인트\n0\nChoose a colleague ›\nG\n120 코인 · 채용팩 열기\n›\n\n구매 후 120 코인\n\nStaff\nLobby\nShop",
+    "hangulCount": 33,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "shop-rules",
+    "text": "Recruitment rules\n×\n\n일반 직원 17종 각 약 5.29%, 지원 영웅 7종 각 약 1.43%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 중 균등 확률로 확정됩니다. 미보유 지원 채용 시 보장 횟수가 초기화됩니다.\n\n중복은 채용 포인트 +1. 일반 직원은 3포인트, 지원 영웅은 10포인트로 도감에서 지정 채용할 수 있습니다.\n\nGot it",
+    "hangulCount": 107,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "shop-items",
+    "text": "●\n240\nNight shift shop\n채용팩\n개별 아이템\n당직을 위한 작은 준비\n\n글로벌 코인으로 구매 · 아이템은 1회 소비\n\n등급 합성권\n\n종류가 달라도 같은 등급 합성\n\n보유 0개\n20 코인 · 1개 구매\n종류 합성권\n\n등급이 달라도 같은 종류 합성\n\n보유 0개\n30 코인 · 1개 구매\n마왕 깨우기\n\n현재 적이 있을 때 마왕 즉시 출동\n\n보유 0개\n50 코인 · 1개 구매\nStaff\nLobby\nShop",
+    "hangulCount": 109,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "roster",
+    "text": "Staff\n채용 직원 6\n미채용 11\n지원 영웅 7\n▣\n오늘의근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n브릭\n경비원\n편성 중\n토르크\n시설기사\n편성 중\n뽀득\n청소부\n편성 중\n고비\n당직 서기\n편성 중\n찌릿\n전기기사\n편성 중\n루프\n유령 배달부\n인사기록 보기\n\n직원을 눌러 인사기록을 확인하세요\n\nStaff\nLobby\nShop",
+    "hangulCount": 101,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "support-list",
+    "text": "Staff\n채용 직원 6\n미채용 11\n지원 영웅 7\n▣\n오늘의근무 명단 5/5\n브릭\n토르크\n뽀득\n고비\n찌릿\n본가드\n결계 계약직\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n?\n???\n미채용 직원\n인사기록 보기\n\n지원 영웅 1/7 고용 · 인사기록에서 1명 선택\n\nStaff\nLobby\nShop",
+    "hangulCount": 124,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "training",
+    "text": "Training room\n직원 훈련\n지원 영웅 훈련\nTrain\nCharacter effects\n직원 전체 Lv.1 ➜ Lv.2\n공격 피해\n+0.0% ➜ +2.8%\n5\n다음\n10\n잠김\n20\n잠김\n30\n잠김\n\n같은 그룹 전체 적용 · 신규 채용에도 유지\n\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\nStaff\nLobby\nShop",
+    "hangulCount": 55,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "training-effects",
+    "text": "Training room\n직원 훈련\n지원 영웅 훈련\nTrain\nCharacter effects\n캐릭터별 해금 효과\n다음 Lv.5\n브릭\n직원 공통 레벨 적용\n⌄\n토르크\n직원 공통 레벨 적용\n⌄\n뽀득\n직원 공통 레벨 적용\n⌄\n고비\n직원 공통 레벨 적용\n⌄\n찌릿\n직원 공통 레벨 적용\n⌄\n루프\n직원 공통 레벨 적용\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n미채용 직원\n채용 후 효과 공개\n⌄\n● 보유 240 코인\n훈련 후 232 코인\nLv.2 훈련 · 8 코인\nStaff\nLobby\nShop",
+    "hangulCount": 226,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "story",
+    "text": "첫 당직\n건너뛰기 ×\n첫 출근 · 1 / 4\n\nNEW · 이야기 해금! 글로벌 코인 +5\n\n마왕\n\n“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”\n\n고비: “네. 쉬시는 동안 잘 보고 있을게요.”\n\n이전\n다음\nFull art",
+    "hangulCount": 62,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "battle",
+    "text": "WAVE\n01\n♥♥♥\n×1\nⅡ\n\n공격 1 · 견습 용사\n\n남은 적\n8\n8\n5\nPick a staff member\nUnique skills unlock at ★5\nⓘ\n10\nSP\n소환 · 60 SP\n등급 합성\n0\n종류 합성\n0\n마왕 깨우기\n0",
+    "hangulCount": 24,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "reward",
+    "text": "Shift bonus!\n\nWave 5 cleared · Choose one\n\nOPERATE\nSummon supply\n+130 SP\n2 summons · before discounts\nGROW\nMerge insurance\n0  1\nGuaranteed merges · max 3\nADAPT\nEquipment delivery\nLv.1  2\n경비원 · all matching staff\nReposition\nReward rules",
+    "hangulCount": 3,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "reward-after-summon",
+    "text": "Shift bonus!\n\nWave 5 cleared · Choose one\n\nOPERATE\nSummon supply\n+130 SP\n2 summons · before discounts\nGROW\nMerge insurance\n0  1\nGuaranteed merges · max 3\nADAPT\nEquipment delivery\nLv.1  2\n경비원 · all matching staff\nReposition\nReward rules",
+    "hangulCount": 3,
+    "errors": []
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "probe": "reward-reposition-summon",
+    "enabled": true,
+    "before": {
+      "wave": 5,
+      "cost": 60,
+      "sp": 500,
+      "board": 5,
+      "bundle": {
+        "wave": 5,
+        "offers": [
+          {
+            "id": "sp",
+            "amount": 130
+          },
+          {
+            "id": "merge",
+            "amount": 1
+          },
+          {
+            "id": "equipment",
+            "amount": 1,
+            "type": 0
+          }
+        ]
+      }
+    },
+    "after": {
+      "wave": 5,
+      "cost": 70,
+      "sp": 440,
+      "board": 6
+    },
+    "display": "OPERATE\nSummon supply\n+130 SP\n2 summons · before discounts",
+    "expectedCurrentSP": 150
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "screen": "result",
+    "text": "수고했어요, 고비!\n근무 결과\n무사히 근무 종료\n이번 당직 수당\n+23 코인\n보유 코인에 반영했어요.\n도달 웨이브\n6\n저지한 용사\n1\n직원별 근무 기록\n당직 분석\n보상 내역·다음 안내\n다시 당직 서기\n보상으로 훈련하기\n로비로 돌아가기",
+    "hangulCount": 86,
+    "errors": []
+  }
+]

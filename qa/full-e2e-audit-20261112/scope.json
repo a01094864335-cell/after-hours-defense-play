@@ -1,0 +1,47 @@
+{
+  "sourceCommit": "0d10fbf859093baae17b869ba68a281bd311c49a",
+  "remoteMainRechecked": true,
+  "publicOriginTested": false,
+  "reason": "Public Pages URL denied by environment proxy; official Pages build served on loopback.",
+  "buildFiles": 1003,
+  "dailyStoryPanels": 156,
+  "manualStates": 68,
+  "manualSizes": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "geometrySizes": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      684
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "manualPageErrors": 0,
+  "staffRepresentativePosesReviewed": 17,
+  "otherActorRepresentativePosesReviewed": 20,
+  "productionCodeChanged": false,
+  "humanNaturalFullGamesPlayed": 0,
+  "chromiumVersion": "154.0.8037.57"
+}

@@ -1,0 +1,38 @@
+{
+  "englishHelpTabs": [
+    {
+      "text": "Basics",
+      "width": 61.25,
+      "height": 64.78125,
+      "font": "16px",
+      "break": "keep-all",
+      "wrap": "anywhere"
+    },
+    {
+      "text": "Merge",
+      "width": 61.25,
+      "height": 64.78125,
+      "font": "16px",
+      "break": "keep-all",
+      "wrap": "anywhere"
+    },
+    {
+      "text": "Battle",
+      "width": 61.25,
+      "height": 64.78125,
+      "font": "16px",
+      "break": "keep-all",
+      "wrap": "anywhere"
+    },
+    {
+      "text": "Bosses",
+      "width": 61.25,
+      "height": 64.78125,
+      "font": "16px",
+      "break": "keep-all",
+      "wrap": "anywhere"
+    }
+  ],
+  "supportTraining": "지원 영웅 전체 Lv.1 ➜ Lv.2\n회계사 기본 정산\n2.00 ➜ 2.02 SP\n5\n다음\n10\n잠김\n20\n잠김\n30\n잠김\n\n같은 그룹 전체 적용 · 신규 채용에도 유지",
+  "supportTrainingPortrait": "http://127.0.0.1:41807/assets/character-portraits/goblin-guard.webp"
+}
