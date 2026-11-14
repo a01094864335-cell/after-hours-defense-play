@@ -15,7 +15,9 @@
   if(compactLobby.matches)dock.prepend(shortcuts);
   else root.insertBefore(shortcuts,dock);
  }
- compactLobby.addEventListener('change',placeShortcuts);placeShortcuts();
+ if(compactLobby.addEventListener)compactLobby.addEventListener('change',placeShortcuts);
+ else if(compactLobby.addListener)compactLobby.addListener(placeShortcuts);
+ placeShortcuts();
  let lastTrigger=null,noteTimer=0,deckKey='',supportKey='';
  function notice(text){clearTimeout(noteTimer);const n=local('#a-notice');n.textContent=t(text);n.hidden=!text;if(text)noteTimer=setTimeout(()=>{n.hidden=true},6000);}
  function partyLock(){if(typeof meta==='undefined'||!meta.tutorialComplete)return t('신입 연수를 마친 뒤 근무 직원을 바꿀 수 있어요.');if(typeof playing!=='undefined'&&playing&&!ended)return t('진행 중인 근무를 마친 뒤 편성할 수 있어요.');if(typeof board!=='undefined'&&board.some(Boolean)&&!ended)return t('현재 판을 종료하거나 초기화한 뒤 편성할 수 있어요.');return '';}

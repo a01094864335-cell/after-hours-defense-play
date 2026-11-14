@@ -9,7 +9,8 @@ class BalanceTests(unittest.TestCase):
     open=ui.UsabilityTests.open
     inside=ui.UsabilityTests.inside
     def normal(self):
-        a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset();playing=true;wave=5;sync()');return a
+        # Base-economy assertions must not inherit the calendar's daily modifier.
+        a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset();dailyEnabled=false;playing=true;wave=5;sync()');return a
     def reward(self,a,w):
         a.evaluate("w=>{wave=w;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal()}",w)
     def test_rewards_increase_and_sp_keeps_up_with_summon_cost(self):
