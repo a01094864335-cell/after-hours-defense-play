@@ -66,6 +66,43 @@ class SharedChromeTests(unittest.TestCase):
             self.assertEqual(errors,[])
             page.context.close()
 
+    def test_lobby_gift_and_daily_have_independent_touch_targets(self):
+        for width,height in [(320,568),(360,640),(390,650),(390,684),(390,844)]:
+            page=self.open(width,height)
+            page.evaluate("meta.tutorialComplete=true;meta.profile.starterClaim='';restartTo('lobby');playing=false;renderMeta();TacticalDuty.refresh();AssetLobby.refresh()")
+            gift=page.locator('#asset-lobby-host #a-starter')
+            daily=page.locator('#asset-lobby-host .a-daily')
+            self.assertTrue(gift.is_visible())
+            before=page.evaluate("JSON.stringify({coins:meta.coins,staff:meta.staff,claim:meta.profile.starterClaim})")
+            for attempt in range(10):
+                g,d=gift.bounding_box(),daily.bounding_box()
+                self.assertGreaterEqual(g['height'],44)
+                self.assertGreaterEqual(d['height'],44)
+                self.assertGreaterEqual(d['y']-(g['y']+g['height']),5)
+                # Real pointer dispatch, not DOM .click(): catches covered hitboxes.
+                gift.click()
+                self.assertTrue(page.locator('#starter-choice').evaluate('e=>e.open'))
+                self.assertFalse(page.locator('#daily-events-dialog').evaluate('e=>e.open'))
+                page.locator('#starter-close').click()
+                daily.click()
+                self.assertTrue(page.locator('#daily-events-dialog').evaluate('e=>e.open'))
+                self.assertFalse(page.locator('#starter-choice').evaluate('e=>e.open'))
+                page.locator('#daily-events-close').click()
+            self.assertEqual(before,page.evaluate("JSON.stringify({coins:meta.coins,staff:meta.staff,claim:meta.profile.starterClaim})"))
+            # Claim visibility and orientation/resizing must not duplicate or lose navigation.
+            page.evaluate("meta.profile.starterClaim='complete';TacticalDuty.refresh();AssetLobby.refresh()")
+            self.assertFalse(gift.is_visible())
+            for h in [844,568,height]:
+                page.set_viewport_size({'width':width,'height':h})
+                page.wait_for_timeout(100)
+                self.assertEqual(page.locator('#asset-lobby-host .a-shortcuts').count(),1)
+                self.assertEqual(page.locator('#asset-lobby-host .a-shortcuts').evaluate('e=>e.parentElement.classList.contains("a-bottom")'),h<=650)
+            out=os.getenv('CHROME_QA_DIR')
+            if out:
+                Path(out).mkdir(parents=True,exist_ok=True)
+                page.screenshot(path=str(Path(out)/f'{width}x{height}-lobby-touch.png'))
+            page.context.close()
+
     def test_paper_settings_keeps_live_sliders_and_pinned_confirmation(self):
         for width,height in [(320,568),(390,684),(390,844),(430,932)]:
             page=self.open(width,height)
