@@ -6,6 +6,7 @@
 
 수정 → `node --test tests/*.test.cjs` → `node scripts/build-pages.cjs /tmp/game-pages` → main 반영 순서로 작업합니다. GitHub Actions의 runtime 작업에서 로직 테스트·빌드·배포 산출물의 Chromium smoke 검사가 모두 성공해야 Pages에 배포됩니다. 원본 이야기 PNG는 보관하되 배포 파일에서는 제외합니다.
 
+- [전체 화면 디자인 후속 작업 목록·우선순위](docs/ui-screen-backlog-20261110.md)
 - [개선 사항과 정책](docs/development-20261026.md)
 - [현재 17종·지원 7종 밸런스 검증](docs/balance-validation-20261026.md)
 - 실제 배포 기준 커밋과 파일 해시는 배포된 `release-manifest.json`에서 확인합니다.
