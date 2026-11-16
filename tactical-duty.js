@@ -2,7 +2,7 @@
 // Run-local choices; wallet awards use the existing atomic settlement ledger.
 window.TacticalDuty=(()=>{
  const q=s=>document.querySelector(s),fresh=()=>({version:1,keep:0,build:null,guardUsed:false,chainCD:0,completed:0});
- let state=fresh(),rearranging=false,ui=false,previewNode=null,trialIndex=6,starterSignature="";
+ let state=fresh(),rearranging=false,choosingBuild=false,ui=false,previewNode=null,trialIndex=6,starterSignature="";
  const builds={chain:['연쇄 잔광','0.8초마다 추가 대상에 피해 25%'],economy:['정산 특근','서기·회계 수입 +25%'],guard:['비상 방벽','첫 돌파 1회 방어']};
  function read(value,snapshot){
   if(value===undefined)return fresh();const s=JSON.parse(JSON.stringify(value));
@@ -11,8 +11,8 @@ window.TacticalDuty=(()=>{
   return s;
  }
  function snapshot(){return {...state}}
- function restore(s){state=read(s);rearranging=false;hidePreview();}
- function reset(){state=fresh();rearranging=false;hidePreview();}
+ function restore(s){state=read(s);rearranging=false;choosingBuild=false;hidePreview();}
+ function reset(){state=fresh();rearranging=false;choosingBuild=false;hidePreview();}
  function canMove(){return !tutorialMode&&!ended&&(preparingDuty()||bonusPending&&paused&&rearranging)}
  function move(a,b){
   if(!canMove()||!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0||a>=15||b>=15||a===b||!board[a]||board[b])return false;
@@ -20,31 +20,103 @@ window.TacticalDuty=(()=>{
  }
  function keepType(a,b){return !tutorialMode&&state.keep&&a!==b&&compatible(board[a],board[b])?board[b].type:undefined}
  function consumeKeep(){state.keep=0}
+ function mergeDetails(a,b){
+  if(a===b||!compatible(board[a],board[b]))return null;
+  const pip=Math.max(board[a].pip,board[b].pip)+1,keep=keepType(a,b)!==undefined;
+  const failure=keep?0:Math.round(failChance(pip)*100),en=document.documentElement?.lang?.startsWith('en');
+  const lines=en?[
+   `★${pip} · ${100-failure}% success / ${failure}% failure`,
+   `Success: +1 empty cell · ${keep?'target kind stays':'random kind'}`,
+   pip===5?'★5 unlocks a skill; total basic damage may fall':'Total basic damage is not guaranteed to increase',
+   failure?'Failure: moving staff lost; next paid summon half off':'No failure loss · one protection charge used'
+  ]:[
+   `★${pip} · 성공 ${100-failure}% / 실패 ${failure}%`,
+   `성공: 빈자리 +1 · ${keep?'도착 종류 유지':'종류 랜덤'}`,
+   pip===5?'★5 스킬 해금 · 평타 총화력은 줄 수 있어요':'평타 총화력 증가를 보장하지 않아요',
+   failure?'실패: 이동 직원 소멸 · 다음 유료 소환 반값':'실패 손실 없음 · 보장 1회 사용'
+  ];
+  return {pip,failure,keep,lines};
+ }
  function preview(a,b){
   if(!ui||!board[a]||a===b||b<0){hidePreview();return}
-  const moving=canMove()&&!board[b],valid=compatible(board[a],board[b]);
-  if(!moving&&!valid){hidePreview();return}
-  const keep=keepType(a,b)!==undefined,chance=keep?100:Math.round((1-failChance(Math.max(board[a].pip,board[b]?.pip||0)+1))*100);
-  previewNode.textContent=moving?'↪ 무료 재배치':`★${Math.max(board[a].pip,board[b].pip)+1} · ${chance}% · ${keep?'종류 유지':'종류 랜덤'}`;
-  previewNode.hidden=false;
-  const stage=q('.board-stage').getBoundingClientRect(),r=canvas.getBoundingClientRect(),c=cells[b];
+  const moving=canMove()&&!board[b],details=mergeDetails(a,b);
+  if(!moving&&!details){hidePreview();return}
+  if(!moving&&paused){showPlanning(a);return}
+  uiText(previewNode,moving?'↪ 무료 재배치 · 등급·스킬 대기시간 유지':details.lines.join('\n'));
+  previewNode.hidden=false;canvas.setAttribute('aria-describedby','tactical-preview');
+  positionPreview(b);
+ }
+ function positionPreview(index){
+  const stage=q('.board-stage').getBoundingClientRect(),r=canvas.getBoundingClientRect(),c=cells[index];
   const p=window.BattlePresentation?.enabled?window.BattlePresentation.project(c,stage.width,stage.height):{x:r.left-stage.left+c.x*r.width/600,y:r.top-stage.top+c.y*r.height/600};
-  previewNode.style.left=Math.max(8,Math.min(stage.width-224,p.x-108))+'px';
-  previewNode.style.top=Math.max(8,Math.min(stage.height-42,p.y-65))+'px';
+  const box=previewNode.getBoundingClientRect();
+  previewNode.style.left=Math.max(8,Math.min(stage.width-box.width-8,p.x-box.width/2))+'px';
+  const warning=q('#boss-warning')?.getBoundingClientRect();
+  const floor=warning&&warning.height>0&&warning.bottom>stage.top?Math.max(8,warning.bottom-stage.top+6):8;
+  previewNode.style.top=Math.max(8,Math.min(stage.height-box.height-8,Math.max(floor,p.y-box.height-46)))+'px';
+ }
+ function planningDetails(index){
+  const u=board[index];if(!u)return null;
+  const neighbors=u.stun>0?[]:adjacentCells(index).filter(i=>board[i]&&(u.type===16?board[i].type!==16&&board[i].pip>=5:![3,11,16].includes(board[i].type)));
+  const liveBoss=enemies.find(e=>e.hp>0&&e.type==='boss'&&!e.decoy),boss=liveBoss?bossDefinition(liveBoss):plannedBoss(wave>0&&wave%5===0?wave:(Math.floor(wave/5)+1)*5);
+  const lines=[kinds[u.type].name+' · '+kinds[u.type].desc];
+  if(rearranging)lines.push('전열 정비: 빈 칸으로 이동 · 합성은 전투 재개 후');
+  if(u.type===11)lines.push(u.stun>0?'기절 중 · 인접 공속 지원 중단':'상하좌우 공격 직원 '+neighbors.length+'명 지원 · 가장 강한 공속 지원만 적용');
+  else if(u.type===16)lines.push(u.stun>0?'기절 중 · 스킬 충전 지원 중단':'상하좌우 ★5 이상 '+neighbors.length+'명 충전 · 봉투끼리 지원 불가');
+  else if(u.type===5)lines.push('점선: 선두를 향한 평타 관통 방향 · ★5 스킬은 방패 무시');
+  else if(u.type===14)lines.push('원: 설치된 지뢰 폭발 범위 · 설치 0.45초 뒤 작동');
+  else if(u.type===13)lines.push('밀어내기는 일반 적에게만 적용 · 군단장은 밀기 면역');
+  else if(u.type===2||u.type===4)lines.push('군단장은 일반 적보다 이동 방해에 강해요 · 예고에 맞춰 스킬 사용');
+  else if(u.pip<5)lines.push('★5부터 고유 스킬 · 합성 전 현재 역할을 확인하세요');
+  else lines.push('고유 스킬: '+skillDescriptions[u.type]);
+  lines.push(boss?(liveBoss?'현재 ':'예고 · ')+boss.short+': '+boss.counter:nextBossText()+' · 확인된 예고에 맞춰 준비하세요');
+  const mines=u.type===14&&u.expansionID?expansionState.mines.filter(m=>m.owner===u.expansionID&&m.life>0):[];
+  return {lines,neighbors:[11,16].includes(u.type)?neighbors:[],beam:u.type===5?leadingEnemy():null,mines};
+ }
+ function showPlanning(index){
+  if(!ui)return;const plan=planningDetails(index);if(!plan){hidePreview();return;}
+  uiText(previewNode,plan.lines.join('\n'));previewNode.hidden=false;canvas.setAttribute('aria-describedby','tactical-preview');positionPreview(index);
  }
  function selectedPreview(){
-  if(selected<0||!board[selected]||drag){hidePreview();return}
+  if(selected<0||!board[selected]||drag||ended||appScreen!=='battle'){hidePreview();return}
   const targets=board.map((u,i)=>i!==selected&&compatible(board[selected],u)?i:-1).filter(i=>i>=0);
-  if(!targets.length||new Set(targets.map(i=>Math.max(board[selected].pip,board[i].pip))).size>1){hidePreview();return}
+  if(!targets.length||new Set(targets.map(i=>Math.max(board[selected].pip,board[i].pip))).size>1){showPlanning(selected);return}
   preview(selected,targets[0]);
  }
- function hidePreview(){if(previewNode)previewNode.hidden=true}
- function finishBonus(){rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
+ function hidePreview(){if(previewNode)previewNode.hidden=true;if(canvas.getAttribute?.('aria-describedby')==='tactical-preview')canvas.removeAttribute?.('aria-describedby')}
+ function finishBonus(){choosingBuild=false;rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
  function choose(id){
   if(tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite())return false;
   if(id==='keep'){if(state.keep)return false;state.keep=1;}
   else {if(state.build||!Object.hasOwn(builds,id)||id==='economy'&&!runDeck.includes(3)&&activeMerc!=='accountant')return false;state.build=id;}
   finishBonus();return true;
+ }
+ function buildOptions(){
+  const en=document.documentElement?.lang?.startsWith('en');
+  return [
+   {id:'chain',title:en?'Chain lightning':'연쇄 잔광',effect:en?'Extra hit · 25%':'추가 대상 피해 25%',plan:en?'Group enemies to spread your attacks.':'적이 몰리는 순간 공격 · 밀집 적에게 추가타',eligible:true},
+   {id:'economy',title:en?'Overtime accounting':'정산 특근',effect:en?'Income +25%':'서기·회계 수입 +25%',plan:en?'Invest in income before adding damage.':'서기·회계 수입에 투자 · 화력 투자 시점 판단',eligible:runDeck.includes(3)||activeMerc==='accountant'},
+   {id:'guard',title:en?'Emergency ward':'비상 방벽',effect:en?'Block 1 breach':'첫 돌파 1회 방어',plan:en?'One safety net; prepare for later breaches.':'위험한 성장 선택의 안전망 · 두 번째 돌파는 주의',eligible:true}
+  ];
+ }
+ function chooseBuild(id){
+  if(tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite()||state.build)return false;
+  const option=buildOptions().find(o=>o.id===id&&o.eligible),offer=rewardBundle?.wave===wave&&rewardBundle.offers.find(o=>o.id==='build');
+  if(!option||!offer)return false;
+  const old=offer.build;offer.build=id;const result=choosePerk('build');if(!result)offer.build=old;return result;
+ }
+ function showBuildChoices(){
+  if(!ui||tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite()||state.build||!rewardBundle?.offers.some(o=>o.id==='build'))return false;
+  choosingBuild=true;const targets=q('#perk-targets'),en=document.documentElement?.lang?.startsWith('en');targets.replaceChildren();
+  const legend=document.createElement('legend');legend.textContent=en?'One strategy for this shift':'이번 당직 전략 · 1종만 선택';targets.append(legend);
+  for(const option of buildOptions()){
+   const button=document.createElement('button');button.type='button';button.dataset.strategy=option.id;button.disabled=!option.eligible;
+   for(const[tag,text]of [['strong',option.title],['b',option.effect],['small',option.eligible?option.plan:en?'Requires the clerk in your roster or an equipped accountant.':'근무 명단에 서기 또는 장착한 회계사가 필요해요']]){const node=document.createElement(tag);node.textContent=text;button.append(node)}
+   button.onclick=()=>chooseBuild(option.id);targets.append(button);
+  }
+  q('#perk-options').hidden=true;targets.hidden=false;q('#tactical-bonuses').hidden=true;
+  const back=q('#perk-back');back.hidden=false;back.onclick=()=>{choosingBuild=false;renderPerkChoices();q('#perk-build')?.focus()};
+  targets.querySelector('button:not(:disabled)')?.focus();return true;
  }
  function startReposition(){if(tutorialMode||!playing||ended||!bonusPending||!paused)return false;rearranging=true;q('#perk').close();selected=-1;sync();return true}
  function endReposition(){if(!rearranging)return false;rearranging=false;selected=-1;hidePreview();renderPerkChoices();q('#perk').showModal();sync();saveActiveRun();return true}
@@ -89,9 +161,14 @@ window.TacticalDuty=(()=>{
  function draw(context){
   const selectedUnit=board[drag?.from??selected];
   context.save();
-  if(selectedUnit&&[11,16].includes(selectedUnit.type)&&!selectedUnit.stun){
-   const source=drag?.from??selected;context.strokeStyle='#91efd0';context.lineWidth=3;context.setLineDash([5,4]);
-   for(const i of adjacentCells(source))if(board[i]){const c=cells[i];context.strokeRect(c.x-34,c.y-39,68,80)}
+  if(selectedUnit){
+   const index=drag?.from??selected,plan=planningDetails(index),source=cells[index];
+   context.strokeStyle='#91efd0';context.lineWidth=3;context.setLineDash([5,4]);
+   for(const i of plan.neighbors){const c=cells[i];context.strokeRect(c.x-34,c.y-39,68,80)}
+   if(plan.beam){const dx=plan.beam.x-source.x,dy=plan.beam.y-source.y,len=Math.hypot(dx,dy)||1,nx=dx/len,ny=dy/len,half=24+trainingTier()*2;
+    context.strokeStyle='#fff3a3';for(const side of [-1,1]){context.beginPath();context.moveTo(source.x-ny*half*side,source.y+nx*half*side);context.lineTo(source.x+nx*700-ny*half*side,source.y+ny*700+nx*half*side);context.stroke();}
+   }
+   context.strokeStyle='#ffce7c';for(const m of plan.mines){context.beginPath();context.arc(m.x,m.y,m.radius,0,Math.PI*2);context.stroke();}
    context.setLineDash([]);
   }
   for(const healer of enemies.filter(e=>e.type==='priest'&&e.hp>0&&e.cast>0)){
@@ -106,7 +183,7 @@ window.TacticalDuty=(()=>{
   q('#battle').dataset.repositioning=String(rearranging);
   q('#reposition-done').hidden=!rearranging;
   q('#tactical-prep').hidden=!(appScreen==='battle'&&!tutorialMode&&preparingDuty());
-  const pane=q('#tactical-bonuses');pane.hidden=tutorialMode;
+  const pane=q('#tactical-bonuses');pane.hidden=tutorialMode||choosingBuild;
   q('#legacy-perk-keep').disabled=!!state.keep;q('#legacy-perk-keep').hidden=true;
   q('#build-choices').hidden=true;
   for(const id of Object.keys(builds))q('#build-'+id).disabled=id==='economy'&&!runDeck.includes(3)&&activeMerc!=='accountant';
@@ -117,6 +194,7 @@ window.TacticalDuty=(()=>{
   if(typeof document.createElement==='function')uiText(q('#perk-note').closest('details')?.querySelector('summary'),en?'Reward rules':'보상 규칙');
   q('#tactical-owned').hidden=!state.build&&!state.keep;
   uiText(q('#tactical-owned'),[state.build&&builds[state.build][0],state.keep&&'종류 유지 1회'].filter(Boolean).join(' · '));
+  if(!drag)selectedPreview();
   renderStarter();
   if(ended){
    const last=runInsights.breaches.at(-1),hint=q('#result-threat');hint.hidden=!last&&!state.completed;
@@ -132,7 +210,7 @@ window.TacticalDuty=(()=>{
    if(state.completed)uiText(q('#result-title'),'오늘 당직 완료!');
   }
  }
- const oldPerk=renderPerkChoices;renderPerkChoices=function(){oldPerk();refresh()};
+ const oldPerk=renderPerkChoices;renderPerkChoices=function(){choosingBuild=false;oldPerk();refresh()};
  const oldSync=sync;sync=function(){oldSync();refresh()};
  const oldChance=failChance;failChance=function(pip){return !tutorialMode&&state.keep?0:oldChance(pip)};
  const oldIncome=trainingIncome;trainingIncome=function(u){return money(oldIncome(u))};
@@ -180,5 +258,5 @@ window.TacticalDuty=(()=>{
    advanceProgress=function(){paused=true;showGuide('전투 체험 완료','재화와 근무 기록은 변경되지 않았어요.');q('#guide-next').onclick=finish;};
   }
  }
- return {read,snapshot,restore,reset,move,canMove,keepType,consumeKeep,preview,selectedPreview,hidePreview,choose,startReposition,endReposition,cashOut,money,eligibleStarter,starterCandidates,claimStarter,markStarterComplete,draw,refresh,repositioning:()=>rearranging,completedWave:()=>state.completed||undefined};
+ return {read,snapshot,restore,reset,move,canMove,keepType,consumeKeep,mergeDetails,planningDetails,preview,selectedPreview,hidePreview,choose,buildOptions,chooseBuild,showBuildChoices,startReposition,endReposition,cashOut,money,eligibleStarter,starterCandidates,claimStarter,markStarterComplete,draw,refresh,repositioning:()=>rearranging,completedWave:()=>state.completed||undefined};
 })();

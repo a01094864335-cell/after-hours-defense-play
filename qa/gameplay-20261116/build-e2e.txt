@@ -1,0 +1,4 @@
+PASS stage 3 320x568
+PASS stage 3 390x844
+PASS stage 3 430x932
+PASS stage 3 1440x1000

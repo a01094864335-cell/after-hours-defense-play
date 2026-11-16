@@ -1,0 +1,22 @@
+test_cashout_keeps_completed_wave_and_pays_once_after_reload (test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload) ... ok
+test_planning_move_and_strategy_survive_resume (test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume) ... ok
+test_staff_practice_uses_real_skill_without_parent_save_changes (test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes) ... ok
+test_backup_download_upload_restore_and_reload (test_feature_journeys.FeatureJourneyTests.test_backup_download_upload_restore_and_reload) ... /workspace/public-game-e2e-20261116/tests/test_feature_journeys.py:36: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/playwright-artifacts-CdQ5E8/7ce9b3d9-bcc7-45f1-931c-2da1034bb9fe' mode='r' encoding='utf-8'>
+  data = json.loads(open(download.value.path(), encoding='utf-8').read())
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_browser_back_forward_reacquires_storage_and_keeps_wallet (test_feature_journeys.FeatureJourneyTests.test_browser_back_forward_reacquires_storage_and_keeps_wallet) ... ok
+test_every_hiring_story_pages_back_close_and_escape (test_feature_journeys.FeatureJourneyTests.test_every_hiring_story_pages_back_close_and_escape) ... ok
+test_every_story_replays_without_rewards_and_cleans_close_state (test_feature_journeys.FeatureJourneyTests.test_every_story_replays_without_rewards_and_cleans_close_state) ... ok
+test_retired_records_ui_preserves_profile_and_current_formation (test_feature_journeys.FeatureJourneyTests.test_retired_records_ui_preserves_profile_and_current_formation) ... ok
+test_active_training_home_cancel_and_confirm (test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm) ... ok
+test_battle_pause_and_result_page (test_training_page.TrainingPageTests.test_battle_pause_and_result_page) ... ok
+test_independent_page_history_and_navigation_ten_times (test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times) ... ok
+test_landscape_keeps_page_inside_inert_guard (test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard) ... ok
+test_reload_reopen_back_stays_in_lobby (test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby) ... ok
+test_result_training_home_starts_fresh_duty (test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 93.430s
+
+OK

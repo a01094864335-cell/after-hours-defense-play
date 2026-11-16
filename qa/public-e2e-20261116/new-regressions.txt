@@ -1,0 +1,10 @@
+✔ summon accessible price matches daily surcharge, coupon and free-summon precedence (101.290875ms)
+✔ SP reward describes offer-time basis and keeps fixed amount across cost changes and reload (41.980886ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 221.198961

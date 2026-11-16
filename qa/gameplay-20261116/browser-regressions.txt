@@ -1,0 +1,29 @@
+test_cashout_keeps_completed_wave_and_pays_once_after_reload (test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload) ... ok
+test_planning_move_and_strategy_survive_resume (test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume) ... ok
+test_staff_practice_uses_real_skill_without_parent_save_changes (test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes) ... ok
+test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once (test_wave_rewards.WaveRewardTests.test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once) ... ok
+test_three_tickets_targets_and_utilities_fit_phone_in_both_languages (test_wave_rewards.WaveRewardTests.test_three_tickets_targets_and_utilities_fit_phone_in_both_languages) ... ok
+test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount (test_balance.BalanceTests.test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount) ... ok
+test_failure_discounts_only_next_successful_summon_and_preserves_base_growth (test_balance.BalanceTests.test_failure_discounts_only_next_successful_summon_and_preserves_base_growth) ... ok
+test_guarantees_are_counted_and_survive_reload (test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload) ... ok
+test_late_reward_choices_fit_short_phone (test_balance.BalanceTests.test_late_reward_choices_fit_short_phone) ... ok
+test_late_rewards_bind_staff_and_equipment_without_spend (test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend) ... ok
+test_rewards_increase_and_sp_keeps_up_with_summon_cost (test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost) ... ok
+test_speed_cycles_to_three_preserves_pause_and_reloads (test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads) ... ok
+test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack (test_balance.BalanceTests.test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack) ... ok
+test_unavailable_rewards_and_invalid_targets_do_not_consume_choice (test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice) ... ok
+test_blocked_summon_does_not_complete (test_discount_tutorial.DiscountTutorialTests.test_blocked_summon_does_not_complete) ... ok
+test_real_merge_then_real_discounted_summon (test_discount_tutorial.DiscountTutorialTests.test_real_merge_then_real_discounted_summon) ... ok
+test_reload_restores_pending_discount_without_duplicate_grant (test_discount_tutorial.DiscountTutorialTests.test_reload_restores_pending_discount_without_duplicate_grant) ... ok
+test_skip_does_not_graduate (test_discount_tutorial.DiscountTutorialTests.test_skip_does_not_graduate) ... ok
+test_boss_canvas_hud_and_help_show_current_identity (test_usability.UsabilityTests.test_boss_canvas_hud_and_help_show_current_identity) ... ok
+test_equipment_and_live_training_controls_survive_scrolling (test_usability.UsabilityTests.test_equipment_and_live_training_controls_survive_scrolling) ... ok
+test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible (test_usability.UsabilityTests.test_scrolled_shop_result_is_visible_focus_trapped_and_dismissible) ... ok
+test_short_report_primary_action_is_scroll_reachable (test_usability.UsabilityTests.test_short_report_primary_action_is_scroll_reachable) ... ok
+test_short_roster_shows_three_complete_cards (test_usability.UsabilityTests.test_short_roster_shows_three_complete_cards) ... ok
+test_sp_four_digits_stay_on_one_line (test_usability.UsabilityTests.test_sp_four_digits_stay_on_one_line) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 90.285s
+
+OK

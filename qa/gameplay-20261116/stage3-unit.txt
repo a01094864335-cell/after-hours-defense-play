@@ -1,0 +1,37 @@
+✔ merge preview describes actual risk, slot and random-kind tradeoff without mutating the run (116.179146ms)
+✔ success guarantee and kind protection previews match consumption and failure behavior (52.11778ms)
+✔ planning highlights only eligible orthogonal recipients and never invents an unrevealed boss (43.201009ms)
+✔ planning uses live boss identity, existing mine radius and actual leading target (41.082745ms)
+✔ first boss bonus offers an early strategy without changing SP or merge amounts (42.368582ms)
+✔ strategy eligibility and reward presence are enforced before any state change (31.020256ms)
+✔ all three early strategies retain their existing real combat effects (104.97209ms)
+✔ free reposition preserves the exact unit and is restricted to planning windows (103.21231ms)
+✔ kind protection is one successful merge, uses target kind and survives reload (41.429921ms)
+✔ invalid merge does not consume protection; tutorial has its original odds (40.873393ms)
+✔ strategic income and shield choices have real effects and one-run limits (36.848281ms)
+✔ relay damages a nearby secondary target and respects cooldown (42.656494ms)
+✔ cash out records the completed boss wave and pays once, including retry (34.083169ms)
+✔ cash out cannot skip enemies, early waves, or tutorial (32.75184ms)
+✔ starter gift is one atomic chosen hire and failed saves spend nothing (67.455491ms)
+✔ old tactical saves default; malformed tactical state rejects before mutation (52.919203ms)
+✔ failed voluntary settlement recovers without losing completion or duplicating coins (41.854057ms)
+✔ kind protection does not also spend an existing success guarantee (28.823584ms)
+✔ unfinished or mismatched cashout snapshots cannot claim completion (23.798179ms)
+✔ gift ownership and identifier are validated on backup restore (27.563287ms)
+✔ reload during rearrangement preserves the board and returns to the pending reward (19.129729ms)
+✔ all milestones give three distinct atomic cards with the approved growth cadence (126.660163ms)
+✔ saved cards preserve target, amount and order across restore and reposition, invalid saves are atomic (50.546795ms)
+✔ merge charges add rather than replace, cannot exceed cap, and rewards cannot be claimed twice (49.479914ms)
+✔ full board and max gear substitute useful rewards; strategies are eligible and one per run (42.31074ms)
+✔ temporary support affects real damage and movement only for the next five waves and survives reload (46.335845ms)
+✔ SP equals successive base summons including price growth and daily surcharge, excluding coupon (34.048317ms)
+✔ saturated endgame still has three useful buffs and no SP or unmergeable protection (35.091197ms)
+✔ only invalidated offers are replaced while valid targets, amounts and order stay fixed (33.178715ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 726.477083

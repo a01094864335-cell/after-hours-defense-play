@@ -1,0 +1,1044 @@
+{
+  "base": "http://127.0.0.1:8891/",
+  "started": "2026-11-16T05:35:28.851Z",
+  "rounds": [
+    {
+      "round": 1,
+      "width": 320,
+      "height": 568,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              1,
+              2,
+              3
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 5
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:8891/assets/ui-v2/icons/arrow-right.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "round": 2,
+      "width": 390,
+      "height": 844,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              4,
+              5,
+              6
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 6
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 3,
+      "width": 430,
+      "height": 932,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              7,
+              8,
+              9
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 7
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:8891/assets/audio/night-shift.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ],
+      "pass": true
+    },
+    {
+      "round": 4,
+      "width": 1440,
+      "height": 1000,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              10,
+              11,
+              12
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 5
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 5,
+      "width": 390,
+      "height": 640,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              13,
+              14,
+              15
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 6
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 6,
+      "width": 320,
+      "height": 568,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              16,
+              17,
+              18
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 7
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 7,
+      "width": 390,
+      "height": 844,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              19,
+              20,
+              21
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 5
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 8,
+      "width": 430,
+      "height": 932,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              22,
+              23,
+              24
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 6
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 9,
+      "width": 1440,
+      "height": 1000,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              25,
+              26,
+              27
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 7
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    },
+    {
+      "round": 10,
+      "width": 390,
+      "height": 640,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": true,
+          "details": {
+            "levels": [
+              28,
+              29,
+              30
+            ],
+            "groups": [
+              "staff",
+              "merc"
+            ]
+          }
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 5
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [],
+      "cancelledRequests": [],
+      "pass": true
+    }
+  ],
+  "findings": [],
+  "errors": [],
+  "finished": "2026-11-16T05:41:21.787Z",
+  "pass": true
+}

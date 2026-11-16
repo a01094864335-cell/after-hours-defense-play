@@ -1,0 +1,12 @@
+✔ merge preview describes actual risk, slot and random-kind tradeoff without mutating the run (92.735107ms)
+✔ success guarantee and kind protection previews match consumption and failure behavior (41.596899ms)
+✔ planning highlights only eligible orthogonal recipients and never invents an unrevealed boss (36.432804ms)
+✔ planning uses live boss identity, existing mine radius and actual leading target (36.689082ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 317.504528

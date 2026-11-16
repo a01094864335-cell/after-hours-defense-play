@@ -1,0 +1,22 @@
+{
+  "base": "https://a01094864335-cell.github.io/after-hours-defense-play/",
+  "started": "2026-11-16T05:30:27.289Z",
+  "rounds": [
+    {
+      "round": 1,
+      "width": 320,
+      "height": 568,
+      "checks": [],
+      "errors": [
+        "ReferenceError: GameSession is not defined"
+      ],
+      "requests": []
+    }
+  ],
+  "findings": [],
+  "errors": [
+    "Error: page.waitForFunction: ReferenceError: GameSession is not defined\n    at eval (eval at predicate (eval at evaluate (:311:30)), <anonymous>:1:17)\n    at predicate (eval at evaluate (:311:30), <anonymous>:7:27)\n    at next (eval at evaluate (:311:30), <anonymous>:29:33)\n    at eval (eval at evaluate (:311:30), <anonymous>:42:13)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  ],
+  "finished": "2026-11-16T05:30:28.576Z",
+  "pass": false
+}

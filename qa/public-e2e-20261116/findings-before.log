@@ -1,0 +1,130 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "training": {
+      "portrait": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/character-portraits/goblin-guard.webp",
+      "power": "회계사 기본 정산",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!그룹 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔회계사 기본 정산2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "after": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "다음 직원 소환 50% 할인 · 기본 70 SP에서 0 SP"
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "training": {
+      "portrait": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/character-portraits/goblin-guard.webp",
+      "power": "회계사 기본 정산",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!그룹 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔회계사 기본 정산2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "after": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "다음 직원 소환 50% 할인 · 기본 70 SP에서 0 SP"
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "training": {
+      "portrait": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/character-portraits/goblin-guard.webp",
+      "power": "회계사 기본 정산",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!그룹 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔회계사 기본 정산2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "after": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "다음 직원 소환 50% 할인 · 기본 70 SP에서 0 SP"
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "training": {
+      "portrait": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/character-portraits/goblin-guard.webp",
+      "power": "회계사 기본 정산",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!그룹 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔회계사 기본 정산2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "after": "운영\n소환 보급\n+150 SP\n기본 소환 2회분 · 할인 전",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "다음 직원 소환 50% 할인 · 기본 70 SP에서 0 SP"
+    }
+  }
+]

@@ -1,0 +1,102 @@
+{
+  "baseline": "b4ba6054e62f32f9fd3fcec9ef2497134d42abd8",
+  "phases": {
+    "stage1": {
+      "pass": true,
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1440,
+          1000
+        ]
+      ]
+    },
+    "stage2": {
+      "pass": true,
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1440,
+          1000
+        ]
+      ]
+    },
+    "stage3": {
+      "pass": true,
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1440,
+          1000
+        ]
+      ]
+    },
+    "build-e2e": {
+      "pass": true,
+      "viewports": [
+        [
+          320,
+          568
+        ],
+        [
+          390,
+          844
+        ],
+        [
+          430,
+          932
+        ],
+        [
+          1440,
+          1000
+        ]
+      ]
+    },
+    "final-matrix": {
+      "pass": true,
+      "rounds": 10,
+      "flows": 60
+    }
+  },
+  "runtimePass": 3323,
+  "browserMethodsPass": 24,
+  "targetedFinalPass": 22,
+  "notes": [
+    "Isolated Chromium fixtures; not physical-device or enjoyment validation",
+    "Existing effect values retained; first bonus offer composition/timing intentionally changed",
+    "No merge/deployment"
+  ]
+}

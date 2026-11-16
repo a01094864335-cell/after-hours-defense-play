@@ -29,3 +29,23 @@ html body #perk#perk.concept-modal #tactical-bonuses>button{flex:1 1 90px!import
 }
 
 html body #perk#perk.concept-modal #perk-options>:is(#perk-equipment,#perk-staff):before{background-image:var(--reward-face)!important}
+/* Keep the bonus title readable over changing battle messages and sprites. */
+html body #perk#perk.concept-modal header{background:#10254b!important;border-radius:10px 10px 0 0!important;padding:8px!important;flex-shrink:0!important}
+html body #perk#perk.concept-modal header h2{min-width:0!important;margin:0!important;line-height:1.25!important}
+html body #perk#perk.concept-modal #perk-intro{background:#10254b!important;border-radius:0 0 10px 10px!important;padding:6px 8px 9px!important;margin:0 0 8px!important;flex-shrink:0!important}
+
+html body #perk#perk.concept-modal #perk-targets:not([hidden]){display:grid!important;gap:9px!important;margin:4px!important;padding:10px!important;color:#10254b!important}
+html body #perk#perk.concept-modal #perk-targets legend{font:700 15px/1.4 system-ui;padding:0 4px;background:#fff6df}
+html body #perk#perk.concept-modal #perk-targets button{display:grid;gap:4px;min-height:76px;padding:10px;text-align:left;border:2px solid #10254b;border-radius:8px;background:#c9e5ff;color:#10254b;font:14px/1.4 system-ui;box-shadow:2px 3px #10254b}
+html body #perk#perk.concept-modal #perk-targets button:disabled{background:#e1e5e7;color:#56616c;box-shadow:none}
+html body #perk#perk.concept-modal #perk-targets button:focus-visible{outline:3px solid #f0a500;outline-offset:2px}
+html body #perk#perk.concept-modal #perk-back{min-height:44px!important;background:#fff6df!important;color:#10254b!important;border:2px solid #10254b!important}
+/* Reward-card grid rules must not override the native hidden state in subviews. */
+html body #perk#perk.concept-modal #perk-options[hidden],html body #perk#perk.concept-modal #perk-targets[hidden]{display:none!important}
+/* Three strategies fit the short-phone scroll viewport; shared buttons keep 44px minimum. */
+html body #perk#perk.concept-modal #perk-targets:not([hidden]){gap:6px!important;padding:8px!important;margin:0!important;min-width:0!important}
+html body #perk#perk.concept-modal #perk-targets button{grid-template-columns:minmax(0,1fr)!important;gap:2px!important;min-height:70px!important;padding:7px!important;font:13px/1.25 system-ui!important;text-shadow:none!important}
+html body #perk#perk.concept-modal #perk-targets button :is(strong,b,small){display:block!important;min-height:0!important;margin:0!important;letter-spacing:0!important;line-height:1.3!important}
+html body #perk#perk.concept-modal #perk-targets button strong{font-size:15px!important}
+html body #perk#perk.concept-modal #perk-targets button b{font-size:13px!important}
+html body #perk#perk.concept-modal #perk-targets button small{font-size:12px!important;font-weight:400!important}

@@ -50,6 +50,7 @@ class TacticalDutyTests(unittest.TestCase):
         page.locator('#reposition-done').click()
         page.evaluate('wave=10;rewardBundle=null;renderPerkChoices()')
         page.locator('#perk-build').click()
+        page.locator('[data-strategy="economy"]').click()
         page.reload()
         page.wait_for_function('GameSession.canWrite()')
         page.locator('#asset-lobby-host [data-proxy="#resume-run"]').click()

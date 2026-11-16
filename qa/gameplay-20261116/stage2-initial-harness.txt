@@ -1,0 +1,18 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /★5 이상 1명 충전/. Input:
+
+'★6 · 성공 75% / 실패 25%\n' +
+  '성공: 빈자리 +1 · 종류 랜덤\n' +
+  '평타 총화력 증가를 보장하지 않아요\n' +
+  '실패: 이동 직원 소멸 · 다음 유료 소환 반값'
+
+    at /workspace/public-game-e2e-20261116/scripts/gameplay-e2e.cjs:14:57 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: '★6 · 성공 75% / 실패 25%\n' +
+    '성공: 빈자리 +1 · 종류 랜덤\n' +
+    '평타 총화력 증가를 보장하지 않아요\n' +
+    '실패: 이동 직원 소멸 · 다음 유료 소환 반값',
+  expected: /★5 이상 1명 충전/,
+  operator: 'match',
+  diff: 'simple'
+}

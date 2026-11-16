@@ -84,9 +84,9 @@ function makeRewardOffers(){
  const staffType=[...runDeck].sort((a,b)=>Math.max(0,...board.filter(u=>u?.type===a).map(u=>u.pip))-Math.max(0,...board.filter(u=>u?.type===b).map(u=>u.pip))||a-b)[0];
  const o=id=>({id,amount:id==='sp'?r.sp:id==='merge'?r.merges:id==='equipment'?r.equipment:id==='staff'?r.pip:1,...(id==='equipment'?{type:equipmentType}:id==='staff'?{type:staffType}:id==='build'?{build:runDeck.includes(3)||activeMerc==='accountant'?'economy':'chain'}:{})});
  const tier=r.tier,growth=tier===1?'merge':tier===2?'equipment':tier===3?'staff':tier===4?'keep':tier===5?'staff':tier===6?'equipment':['equipment','staff','keep'][(tier-7)%3];
- const situation=life<3?'life':tier===1?'equipment':tier===2||tier===5?'build':tier===3?'merge':tier===4?'equipment':tier===6?'staff':'power';
+ const situation=life<3?'life':tier===1||tier===2||tier===5?'build':tier===3?'merge':tier===4?'equipment':tier===6?'staff':'power';
  const picked=[];
- for(const preferred of ['sp',growth,situation]){
+ for(const preferred of ['sp',tier===1?'build':growth,tier===1?(life<3?'life':'merge'):situation]){
   const candidates=[preferred,'equipment','merge','staff','build','keep','power','boss','slow'];
   const found=candidates.map(o).find(x=>!picked.some(p=>p.id===x.id)&&rewardEligible(x)&&(!tutorialMode||!['keep','build'].includes(x.id)));
   picked.push(found);
@@ -95,8 +95,8 @@ function makeRewardOffers(){
 }
 function rewardCopy(o){
  const en=document.documentElement?.lang?.startsWith('en'),name=o.type===undefined?'':kinds[o.type].name;
- const text={sp:en?['Summon supply','+'+o.amount+' SP',perkReward().summons+' summons · before discounts']:['소환 보급','+'+o.amount+' SP','기본 소환 '+perkReward().summons+'회분 · 할인 전'],life:en?['Throne repair',life+' → '+Math.min(3,life+1)+' / 3','Restore 1 life']:['왕좌 수리',life+' → '+Math.min(3,life+1)+' / 3','생명력 1 회복'],merge:en?['Merge insurance',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount),'Guaranteed merges · max 3']:['합성 보험',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount)+'회','성공 보장 누적 · 최대 3회'],equipment:en?['Equipment delivery','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' · all matching staff']:['장비 배송','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' 전체 · 무료 강화'],staff:en?['Extra staff','★'+o.amount+' · +1',name+' · this shift only']:['추가 출근','★'+o.amount+' · 1명',name+' · 이번 당직만'],keep:en?['Keep their kind','100% · 1 merge','Target kind stays · next merge']:['종류 유지 합성','100% · 1회','도착 직원 종류 유지 · 다음 합성'],power:en?['Fire support','Damage +10%','Next 5 waves · no stacking']:['화력 지원','피해 +10%','다음 5웨이브 · 중첩 없음'],boss:en?['Boss pursuit','Boss damage +20%','Next 5 waves · no stacking']:['군단장 추격','보스 피해 +20%','다음 5웨이브 · 중첩 없음'],slow:en?['Slow their march','Enemy speed −10%','Next 5 waves · no stacking']:['진군 지연','적 속도 −10%','다음 5웨이브 · 중첩 없음']};
- if(o.id==='build'){const builds={chain:en?['Chain lightning','Extra hit · 25%']:['연쇄 잔광','추가 피해 25%'],economy:en?['Overtime accounting','Income +25%']:['정산 특근','수입 +25%'],guard:en?['Emergency ward','Block 1 breach']:['비상 방벽','첫 돌파 1회 방어']};return [...builds[o.build],en?'One strategy per shift':'이번 당직 전략 · 1종만 선택'];}
+ const text={sp:en?['Summon supply','+'+o.amount+' SP','Based on '+perkReward().summons+' base summons when offered']:['소환 보급','+'+o.amount+' SP','보상 생성 시 기본 소환 '+perkReward().summons+'회 기준'],life:en?['Throne repair',life+' → '+Math.min(3,life+1)+' / 3','Restore 1 life']:['왕좌 수리',life+' → '+Math.min(3,life+1)+' / 3','생명력 1 회복'],merge:en?['Merge insurance',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount),'Guaranteed merges · max 3']:['합성 보험',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount)+'회','성공 보장 누적 · 최대 3회'],equipment:en?['Equipment delivery','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' · all matching staff']:['장비 배송','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' 전체 · 무료 강화'],staff:en?['Extra staff','★'+o.amount+' · +1',name+' · this shift only']:['추가 출근','★'+o.amount+' · 1명',name+' · 이번 당직만'],keep:en?['Keep their kind','100% · 1 merge','Target kind stays · next merge']:['종류 유지 합성','100% · 1회','도착 직원 종류 유지 · 다음 합성'],power:en?['Fire support','Damage +10%','Next 5 waves · no stacking']:['화력 지원','피해 +10%','다음 5웨이브 · 중첩 없음'],boss:en?['Boss pursuit','Boss damage +20%','Next 5 waves · no stacking']:['군단장 추격','보스 피해 +20%','다음 5웨이브 · 중첩 없음'],slow:en?['Slow their march','Enemy speed −10%','Next 5 waves · no stacking']:['진군 지연','적 속도 −10%','다음 5웨이브 · 중첩 없음']};
+ if(o.id==='build'){const count=window.TacticalDuty?.buildOptions().filter(x=>x.eligible).length||2;return en?['Choose a strategy',count+' options · pick one','For this shift · changes how you play']:['근무 전략 선택',count+'종 중 1개','이번 당직만 적용 · 플레이 방향 선택'];}
  return text[o.id];
 }
 function renderPerkChoices(){
@@ -109,7 +109,7 @@ function renderPerkChoices(){
  document.querySelector('#perk-targets').hidden=true;root.hidden=false;document.querySelector('#perk-back').hidden=true;
  for(const id of ids){let b=document.querySelector('#perk-'+id);if(!b&&typeof document.createElement==='function'){b=document.createElement('button');b.id='perk-'+id;root.append(b)}if(b)b.hidden=true;}
  rewardBundle.offers.forEach((o,i)=>{
-  const b=document.querySelector('#perk-'+o.id),copy=rewardCopy(o);b.hidden=false;b.disabled=!rewardEligible(o);b.onclick=()=>choosePerk(o.id);b.dataset&&(b.dataset.slot=String(i));
+  const b=document.querySelector('#perk-'+o.id),copy=rewardCopy(o);b.hidden=false;b.disabled=!rewardEligible(o);b.onclick=()=>o.id==='build'?window.TacticalDuty?.showBuildChoices():choosePerk(o.id);b.dataset&&(b.dataset.slot=String(i));
   if(typeof document.createElement==='function'){
    if(o.type!==undefined)b.style.setProperty('--reward-face','url("'+window.CharacterPortraits.src(kinds[o.type].file)+'")');
    b.replaceChildren();['small','strong','span','small'].forEach((tag,j)=>{const e=document.createElement(tag);e.textContent=j===0?(en?['OPERATE','GROW','ADAPT']:['운영','성장','상황'])[i]:copy[j-1];b.append(e)});root.append(b);

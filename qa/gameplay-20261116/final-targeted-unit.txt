@@ -1,0 +1,30 @@
+✔ merge preview describes actual risk, slot and random-kind tradeoff without mutating the run (83.460505ms)
+✔ success guarantee and kind protection previews match consumption and failure behavior (37.36677ms)
+✔ planning highlights only eligible orthogonal recipients and never invents an unrevealed boss (35.338421ms)
+✔ planning uses live boss identity, existing mine radius and actual leading target (33.358542ms)
+✔ first boss bonus offers an early strategy without changing SP or merge amounts (38.35725ms)
+✔ strategy eligibility and reward presence are enforced before any state change (28.840458ms)
+✔ all three early strategies retain their existing real combat effects (89.631337ms)
+✔ early strategy remains a choice beside repair when hurt and does not reroll legacy saved offers (44.881768ms)
+✔ free reposition preserves the exact unit and is restricted to planning windows (90.718296ms)
+✔ kind protection is one successful merge, uses target kind and survives reload (33.552152ms)
+✔ invalid merge does not consume protection; tutorial has its original odds (30.785975ms)
+✔ strategic income and shield choices have real effects and one-run limits (28.782075ms)
+✔ relay damages a nearby secondary target and respects cooldown (30.886901ms)
+✔ cash out records the completed boss wave and pays once, including retry (30.383691ms)
+✔ cash out cannot skip enemies, early waves, or tutorial (31.820701ms)
+✔ starter gift is one atomic chosen hire and failed saves spend nothing (50.449975ms)
+✔ old tactical saves default; malformed tactical state rejects before mutation (37.728008ms)
+✔ failed voluntary settlement recovers without losing completion or duplicating coins (43.230247ms)
+✔ kind protection does not also spend an existing success guarantee (22.01247ms)
+✔ unfinished or mismatched cashout snapshots cannot claim completion (24.814539ms)
+✔ gift ownership and identifier are validated on backup restore (24.804985ms)
+✔ reload during rearrangement preserves the board and returns to the pending reward (18.089548ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 594.280207

@@ -1,0 +1,31 @@
+{
+  "stage": 2,
+  "base": "http://127.0.0.1:8891/",
+  "checks": [
+    {
+      "width": 320,
+      "height": 568,
+      "merge": "touch failure; reload; guaranteed keyboard success; touch drag success",
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "merge": "touch failure; reload; guaranteed keyboard success; touch drag success",
+      "pageErrors": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "merge": "touch failure; reload; guaranteed keyboard success; touch drag success",
+      "pageErrors": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "merge": "touch failure; reload; guaranteed keyboard success; touch drag success",
+      "pageErrors": []
+    }
+  ],
+  "pass": true
+}
