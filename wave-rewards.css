@@ -29,3 +29,7 @@ html body #perk#perk.concept-modal #tactical-bonuses>button{flex:1 1 90px!import
 }
 
 html body #perk#perk.concept-modal #perk-options>:is(#perk-equipment,#perk-staff):before{background-image:var(--reward-face)!important}
+/* Keep the bonus title readable over changing battle messages and sprites. */
+html body #perk#perk.concept-modal header{background:#10254b!important;border-radius:10px 10px 0 0!important;padding:8px!important;flex-shrink:0!important}
+html body #perk#perk.concept-modal header h2{min-width:0!important;margin:0!important;line-height:1.25!important}
+html body #perk#perk.concept-modal #perk-intro{background:#10254b!important;border-radius:0 0 10px 10px!important;padding:6px 8px 9px!important;margin:0 0 8px!important;flex-shrink:0!important}

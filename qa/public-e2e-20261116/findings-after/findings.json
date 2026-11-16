@@ -1,0 +1,150 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "training": {
+      "portrait": "assets/character-portraits/merc-accountant.webp?v=b880599e09e8",
+      "power": "효과 예시 · 회계사",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!지원 영웅 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔효과 예시 · 회계사2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "after": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "직원 무료 소환 · 0 SP · 다음 유료 소환 50% 할인 유지"
+    },
+    "max": {
+      "power": "2.58 SP",
+      "label": "효과 예시 · 회계사 (미고용)",
+      "disabled": true
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "training": {
+      "portrait": "assets/character-portraits/merc-accountant.webp?v=b880599e09e8",
+      "power": "효과 예시 · 회계사",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!지원 영웅 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔효과 예시 · 회계사2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "after": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "직원 무료 소환 · 0 SP · 다음 유료 소환 50% 할인 유지"
+    },
+    "max": {
+      "power": "2.58 SP",
+      "label": "효과 예시 · 회계사 (미고용)",
+      "disabled": true
+    }
+  },
+  {
+    "width": 430,
+    "height": 932,
+    "training": {
+      "portrait": "assets/character-portraits/merc-accountant.webp?v=b880599e09e8",
+      "power": "효과 예시 · 회계사",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!지원 영웅 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔효과 예시 · 회계사2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "after": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "직원 무료 소환 · 0 SP · 다음 유료 소환 50% 할인 유지"
+    },
+    "max": {
+      "power": "2.58 SP",
+      "label": "효과 예시 · 회계사 (미고용)",
+      "disabled": true
+    }
+  },
+  {
+    "width": 1440,
+    "height": 1000,
+    "training": {
+      "portrait": "assets/character-portraits/merc-accountant.webp?v=b880599e09e8",
+      "power": "효과 예시 · 회계사",
+      "buttons": [
+        {
+          "text": "직원 훈련",
+          "height": 44
+        },
+        {
+          "text": "지원 영웅 훈련",
+          "height": 44
+        }
+      ],
+      "shown": [
+        "전원 성장!확정 성공✦✧한 번 더!지원 영웅 전체 성장 · 확정 성공지원 영웅 전체 Lv.1 ➜ Lv.2⚔효과 예시 · 회계사2.00 ➜ 2.02 SP5다음10잠김20잠김30잠김같은 그룹 전체 적용 · 신규 채용에도 유지"
+      ]
+    },
+    "reward": {
+      "before": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "after": "운영\n소환 보급\n+150 SP\n보상 생성 시 기본 소환 2회 기준",
+      "amount": 150,
+      "cost": 70,
+      "nextTwo": 173
+    },
+    "summon": {
+      "text": "무료 소환 · 0 SP",
+      "label": "직원 무료 소환 · 0 SP · 다음 유료 소환 50% 할인 유지"
+    },
+    "max": {
+      "power": "2.58 SP",
+      "label": "효과 예시 · 회계사 (미고용)",
+      "disabled": true
+    }
+  }
+]

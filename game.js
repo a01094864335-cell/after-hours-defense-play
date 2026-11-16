@@ -74,7 +74,7 @@ function sync(){
  SkillCutin.syncVisibility();
  uiText($('#sp'),Math.floor(sp));uiText($('#life'),'♥'.repeat(life)+'♡'.repeat(3-life));uiText($('#wave'),String(wave).padStart(2,'0'));
  uiText($('#summon'),(summonPrice()===0?'무료 소환 · ':summonDiscount?'반값 소환 · ':'소환 · ')+summonPrice()+' SP');uiAttr($('#summon'),'data-discount',summonDiscount);
- uiAttr($('#summon'),'aria-label',summonDiscount?'다음 직원 소환 50% 할인 · 기본 '+cost+' SP에서 '+summonPrice()+' SP':'직원 소환 '+cost+' SP');
+ uiAttr($('#summon'),'aria-label',summonPrice()===0?'직원 무료 소환 · 0 SP'+(summonDiscount?' · 다음 유료 소환 50% 할인 유지':''):summonDiscount?'다음 직원 소환 50% 할인 · 기본 '+summonBasePrice()+' SP에서 '+summonPrice()+' SP':'직원 소환 '+summonPrice()+' SP');
  uiProp($('#summon'),'disabled',ended||sp<summonPrice()||board.every(Boolean));
  uiProp($('#pause'),'disabled',!playing||ended);uiText($('#pause'),paused?'▶':'Ⅱ');
  uiText($('#speed'),'×'+speed);uiAttr($('#speed'),'aria-label','현재 '+speed+'배속 · 누르면 '+(speed%3+1)+'배속');

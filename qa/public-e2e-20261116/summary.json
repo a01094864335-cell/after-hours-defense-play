@@ -1,0 +1,36 @@
+{
+  "baseline": "9a9729b1cb41e098189ad7f98516a89e1e49f198",
+  "public": {
+    "base": "https://a01094864335-cell.github.io/after-hours-defense-play/",
+    "rounds": 10,
+    "flows": 60,
+    "passed": 60,
+    "pageErrors": [],
+    "networkFailures": [],
+    "started": "2026-11-16T05:31:55.628Z",
+    "finished": "2026-11-16T05:38:05.373Z"
+  },
+  "local": {
+    "base": "http://127.0.0.1:8891/",
+    "rounds": 10,
+    "flows": 60,
+    "passed": 60,
+    "pageErrors": [],
+    "networkFailures": [],
+    "started": "2026-11-16T05:35:28.851Z",
+    "finished": "2026-11-16T05:41:21.787Z"
+  },
+  "runtime": {
+    "passed": 3315,
+    "failed": 0
+  },
+  "browserMethods": {
+    "layout": 5,
+    "tutorial": 4,
+    "journeys": 14
+  },
+  "notes": [
+    "Explicit fixtures; isolated contexts; Chromium touch emulation, not physical device testing",
+    "No merge or deployment"
+  ]
+}

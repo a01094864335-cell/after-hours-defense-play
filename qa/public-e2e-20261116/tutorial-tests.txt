@@ -1,0 +1,9 @@
+test_blocked_summon_does_not_complete (test_discount_tutorial.DiscountTutorialTests.test_blocked_summon_does_not_complete) ... ok
+test_real_merge_then_real_discounted_summon (test_discount_tutorial.DiscountTutorialTests.test_real_merge_then_real_discounted_summon) ... ok
+test_reload_restores_pending_discount_without_duplicate_grant (test_discount_tutorial.DiscountTutorialTests.test_reload_restores_pending_discount_without_duplicate_grant) ... ok
+test_skip_does_not_graduate (test_discount_tutorial.DiscountTutorialTests.test_skip_does_not_graduate) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 11.212s
+
+OK

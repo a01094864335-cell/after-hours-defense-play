@@ -1,0 +1,38 @@
+FAIL 1 six training states and exact purchases across both groups TimeoutError: locator.tap: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for locator('#asset-training-host #effects summary').first()[22m
+[2m    - locator resolved to <summary>…</summary>[22m
+[2m  - attempting tap action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying tap action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying tap action[22m
+[2m      - waiting 100ms[22m
+[2m    23 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying tap action[22m
+[2m       - waiting 500ms[22m
+
+ROUND 1 FAIL 320x568: 5/6
+FAIL 2 six training states and exact purchases across both groups TimeoutError: locator.tap: Timeout 12000ms exceeded.
+Call log:
+[2m  - waiting for locator('#asset-training-host #effects summary').first()[22m
+[2m    - locator resolved to <summary>…</summary>[22m
+[2m  - attempting tap action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying tap action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is not visible[22m
+[2m    - retrying tap action[22m
+[2m      - waiting 100ms[22m
+[2m    23 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is not visible[22m
+[2m     - retrying tap action[22m
+[2m       - waiting 500ms[22m
+
+ROUND 2 FAIL 390x844: 5/6

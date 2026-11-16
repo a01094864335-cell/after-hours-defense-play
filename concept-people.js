@@ -17,6 +17,14 @@
     const label=document.createElement('span');label.className='concept-training-label';label.textContent='그룹 전체 성장 · 확정 성공';root.querySelector('.stage').append(label);
     const subtitle=document.createElement('p');subtitle.className='concept-training-subtitle';subtitle.textContent='작은 연습이 다음 근무를 바꿔요';root.querySelector('header').append(subtitle);
    }
+   if(id==='training'){
+    const support=typeof trainingGroup!=='undefined'&&trainingGroup==='merc';
+    const portrait=root.querySelector('.concept-training-portrait'),label=root.querySelector('.concept-training-label');
+    const src=support?mercPortraitPath('accountant'):staffPortraitPath('goblin-guard');
+    if(portrait&&portrait.getAttribute('src')!==src)portrait.setAttribute('src',src);
+    if(portrait)portrait.alt=support?'지원 훈련 효과 예시 · 야간 회계사':'직원 훈련 대표 · 경비원';
+    const text=(support?'지원 영웅':'직원')+' 전체 성장 · 확정 성공';if(label&&label.textContent!==text)label.textContent=text;
+   }
   }
   const starter=document.getElementById('starter-choice'),options=document.getElementById('starter-options');
   if(starter&&options){

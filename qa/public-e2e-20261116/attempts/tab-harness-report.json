@@ -1,0 +1,380 @@
+{
+  "base": "https://a01094864335-cell.github.io/after-hours-defense-play/",
+  "started": "2026-11-16T05:31:03.839Z",
+  "rounds": [
+    {
+      "round": 1,
+      "width": 320,
+      "height": 568,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": false,
+          "error": "TimeoutError: locator.tap: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-training-host #effects summary').first()\u001b[22m\n\u001b[2m    - locator resolved to <summary>…</summary>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    23 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying tap action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 5
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/help.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/arrow-left.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/book.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/sword.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/moon.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/scroll.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/home.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/shop.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ],
+      "pass": false
+    },
+    {
+      "round": 2,
+      "width": 390,
+      "height": 844,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        },
+        {
+          "name": "all 24 character dossiers reachable",
+          "pass": true,
+          "details": {
+            "staff": 17,
+            "support": 7
+          }
+        },
+        {
+          "name": "six training states and exact purchases across both groups",
+          "pass": false,
+          "error": "TimeoutError: locator.tap: Timeout 12000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#asset-training-host #effects summary').first()\u001b[22m\n\u001b[2m    - locator resolved to <summary>…</summary>\u001b[22m\n\u001b[2m  - attempting tap action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying tap action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    23 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying tap action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+        },
+        {
+          "name": "every staff real skill and board touch at varied ranks",
+          "pass": true,
+          "details": {
+            "characters": [
+              "goblin-guard",
+              "orc-technician",
+              "slime-cleaner",
+              "gobi",
+              "electric-technician",
+              "ghost-courier",
+              "bat-nurse",
+              "skeleton-chef",
+              "mimic-storekeeper",
+              "spider-tailor",
+              "nightmare-counselor",
+              "kobold-recruiter",
+              "duru-archivist",
+              "kkangtong-engineer",
+              "ddangkong-miner",
+              "chalkak-photographer",
+              "bongtu-postmaster"
+            ],
+            "ranks": 6
+          }
+        },
+        {
+          "name": "all seven support abilities and training battle snapshot",
+          "pass": true,
+          "details": [
+            {
+              "id": "ward",
+              "finite": true
+            },
+            {
+              "id": "accountant",
+              "finite": true
+            },
+            {
+              "id": "rescue",
+              "finite": true
+            },
+            {
+              "id": "chikchik",
+              "finite": true
+            },
+            {
+              "id": "banchang",
+              "finite": true
+            },
+            {
+              "id": "coco",
+              "finite": true
+            },
+            {
+              "id": "q",
+              "finite": true
+            }
+          ]
+        },
+        {
+          "name": "reward settlement pays once across reload",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/help.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/arrow-left.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/book.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/sword.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/moon.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/scroll.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/home.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/shop.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ],
+      "pass": false
+    },
+    {
+      "round": 3,
+      "width": 430,
+      "height": 932,
+      "checks": [
+        {
+          "name": "isolated fresh lobby and actual five-summon start",
+          "pass": true
+        }
+      ],
+      "errors": [],
+      "requests": [
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/help.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/arrow-left.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/book.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/sword.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/moon.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/scroll.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/home.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/ui-v2/icons/shop.svg",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        },
+        {
+          "url": "https://a01094864335-cell.github.io/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "errors": []
+}
