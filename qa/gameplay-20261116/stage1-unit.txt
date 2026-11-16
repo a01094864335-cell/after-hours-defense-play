@@ -1,0 +1,24 @@
+✔ merge preview describes actual risk, slot and random-kind tradeoff without mutating the run (110.782418ms)
+✔ success guarantee and kind protection previews match consumption and failure behavior (50.956645ms)
+✔ free reposition preserves the exact unit and is restricted to planning windows (115.207805ms)
+✔ kind protection is one successful merge, uses target kind and survives reload (49.413992ms)
+✔ invalid merge does not consume protection; tutorial has its original odds (45.991914ms)
+✔ strategic income and shield choices have real effects and one-run limits (43.004952ms)
+✔ relay damages a nearby secondary target and respects cooldown (44.268738ms)
+✔ cash out records the completed boss wave and pays once, including retry (29.190238ms)
+✔ cash out cannot skip enemies, early waves, or tutorial (28.19186ms)
+✔ starter gift is one atomic chosen hire and failed saves spend nothing (59.265687ms)
+✔ old tactical saves default; malformed tactical state rejects before mutation (47.055851ms)
+✔ failed voluntary settlement recovers without losing completion or duplicating coins (43.428208ms)
+✔ kind protection does not also spend an existing success guarantee (25.816969ms)
+✔ unfinished or mismatched cashout snapshots cannot claim completion (23.495798ms)
+✔ gift ownership and identifier are validated on backup restore (23.105499ms)
+✔ reload during rearrangement preserves the board and returns to the pending reward (23.403731ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 706.540244

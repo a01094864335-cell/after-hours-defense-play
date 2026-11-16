@@ -1,0 +1,4 @@
+PASS stage 2 320x568
+PASS stage 2 390x844
+PASS stage 2 430x932
+PASS stage 2 1440x1000

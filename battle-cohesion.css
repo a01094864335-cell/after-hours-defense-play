@@ -24,3 +24,6 @@ html.open-scene body #battle.battle-comic.battle-exact #skill{font-size:clamp(11
 html.open-scene body #battle.battle-comic.battle-exact .skill-row[data-skill-state=locked] #battle-selected-grade{font:700 clamp(10px,3.5cqw,14px)/1.2 system-ui;letter-spacing:0}
 @media(max-height:700px){html.open-scene body #battle #battle-support{height:40px;bottom:.6%;padding-left:40px}#battle-support>img{width:44px;height:44px;left:-4px;bottom:0}}
 @media(prefers-reduced-motion:no-preference){#battle-support[data-active=true]>img{animation:support-cheer .35s ease-out}@keyframes support-cheer{50%{transform:translateY(-5px) rotate(-5deg)}}}
+
+/* Read the tradeoff before a tap or drag commits a merge. No extra modal. */
+html.open-scene body #tactical-preview{box-sizing:border-box;white-space:pre-line;width:300px;max-width:calc(100% - 16px);padding:8px 10px;background:#fff6df;border:2px solid #10254b;border-radius:9px;color:#10254b;font:700 12px/1.45 system-ui;text-align:left;box-shadow:2px 3px #10254b;pointer-events:none}
