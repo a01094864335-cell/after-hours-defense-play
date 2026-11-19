@@ -169,3 +169,12 @@ body{background:#081421!important}
  #asset-roster#asset-roster#asset-roster#asset-roster .r-art{height:58px!important}
 }
 #asset-lobby#asset-lobby#asset-lobby .a-support>span:first-child{font:600 10px/1.3 system-ui,sans-serif!important;white-space:nowrap!important;letter-spacing:-.3px!important;padding:0!important;width:auto!important}
+/* Keep the exit reachable while enlarged shop copy scrolls on Linux/Android. */
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>header .close{position:fixed!important;inset:8px 12px auto auto!important;z-index:20!important;transform:none!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy{container-type:normal!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>header .close{right:max(12px,calc((100vw - 480px)/2 + 12px))!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>header{z-index:30!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>header.shared-art-header{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto!important;gap:8px!important;padding-right:64px!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>header .wallet{grid-column:1!important;grid-row:2!important;width:max-content!important;max-width:100%!important;height:auto!important;min-height:44px!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy .button-coin{display:none!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy #price{word-break:keep-all!important;overflow-wrap:normal!important}
