@@ -133,3 +133,38 @@ body{background:#081421!important}
 #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop #products article button:disabled{color:#bbc9d8!important;background:#34485b!important;border-color:#63778b!important}
 #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop #status:empty{display:none!important}
 #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop #items::before,#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop #items::after{display:none!important}
+/* Safe geometry across short phones and enlarged text. */
+#asset-lobby#asset-lobby#asset-lobby .a-roster{grid-template-columns:minmax(0,1fr) 44px;gap:4px;padding:6px}
+#asset-lobby#asset-lobby#asset-lobby .a-members{gap:0;min-width:0}
+#asset-lobby#asset-lobby#asset-lobby .a-member{min-width:44px}
+#asset-lobby#asset-lobby#asset-lobby .a-support{padding-left:0!important}
+#asset-roster#asset-roster#asset-roster#asset-roster .r-duty{grid-template-columns:minmax(0,1fr)!important}
+#asset-roster#asset-roster#asset-roster#asset-roster .shared-title{max-width:calc(100% - 70px)!important;margin-inline:auto!important;font-size:clamp(18px,5.5vw,26px)!important;white-space:normal!important}
+#asset-roster#asset-roster#asset-roster#asset-roster .r-card-copy{padding:0 3px!important;width:100%!important;box-sizing:border-box!important}
+.moon-shop-scene{background:none}
+#asset-shop#asset-shop#asset-shop#asset-shop .moon-counter{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center 63%!important}
+#asset-shop#asset-shop#asset-shop#asset-shop .moon-shop-scene .grid-shop-title{position:absolute!important;inset:4% 0 auto!important;display:block!important;margin:0!important;width:100%!important;color:#fff0ca!important;font:24px/1.3 ConceptPeopleHead,system-ui!important;text-align:center!important;background:none!important;text-shadow:0 2px 8px #000!important;transform:none!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .hero-stage{min-height:80px!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy #pack{min-height:0!important;display:block!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy .paper{height:auto!important;overflow:visible!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy .paper>details>summary{height:auto!important;line-height:1.4!important}
+@media(max-height:650px){
+ #asset-lobby#asset-lobby#asset-lobby .a-bottom .a-shortcuts{position:static!important;width:100%!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;top:auto!important;right:auto!important}
+ #asset-lobby#asset-lobby#asset-lobby>.a-gobi{bottom:310px;height:24dvh}
+ #asset-roster#asset-roster#asset-roster#asset-roster .r-card{min-height:122px!important;gap:2px!important;padding:4px!important}
+ #asset-roster#asset-roster#asset-roster#asset-roster .r-art{height:74px!important}
+ #asset-roster#asset-roster#asset-roster#asset-roster .r-card strong{font-size:16px!important}
+ #asset-roster#asset-roster#asset-roster#asset-roster #r-cards{gap:8px!important}
+ #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .paper{padding:6px 12px!important;gap:2px!important}
+ #asset-shop#asset-shop#asset-shop#asset-shop .moon-shop-scene .grid-shop-title{font-size:19px!important}
+}
+/* At 200% text, allow the whole shop to scroll instead of squeezing its content
+   between an enlarged header and purchase dock. Normal-size actions stay pinned. */
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy{display:block!important;overflow:auto!important;overscroll-behavior:contain}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>.scroll{overflow:visible!important;height:auto!important;max-height:none!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>.recruit-purchase-dock{position:static!important;margin-top:12px!important}
+#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop.large-copy>footer{position:static!important}
+@media(max-height:650px){
+ #asset-roster#asset-roster#asset-roster#asset-roster .r-card{min-height:104px!important;padding:3px!important;gap:0!important}
+ #asset-roster#asset-roster#asset-roster#asset-roster .r-art{height:58px!important}
+}
