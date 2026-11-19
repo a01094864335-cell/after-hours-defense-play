@@ -1,6 +1,7 @@
 'use strict';
 /* Moonlit art direction. Original game modules retain state and event handlers. */
 (()=>{
+ if(typeof URL!=='function'||typeof document==='undefined'||!document.currentScript||!document.body||typeof document.body.attachShadow!=='function')return;
  const base=new URL('.',document.currentScript.src),url=p=>new URL(p,base).href;
  const roots=['asset-lobby-host','asset-roster-host','asset-shop-host','asset-training-host'].map(id=>document.getElementById(id)?.shadowRoot).filter(Boolean);
  for(const root of roots){const link=document.createElement('link');link.rel='stylesheet';link.href=url('moonlight-ui.css?v=20261119-1');root.append(link)}
