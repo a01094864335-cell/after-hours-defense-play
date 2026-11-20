@@ -1,0 +1,6200 @@
+{
+  "errors": [],
+  "rows": [
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "title": "첫 당직",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-first-shift-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/comic/01-first-shift-sd.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“열쇠는 여기 있다. 야간 근무는 브릭에게 물어보면 돼.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "title": "첫 당직",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-first-shift-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/comic/02-invasion.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “성문 앞에 몰려오는 사람들… 용사들 맞죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "title": "첫 당직",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-first-shift-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/comic/03-emergency-staff.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "고비: “성문 쪽에 사람이 필요해요. 잠깐 도와주실 수 있어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "title": "첫 당직",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-first-shift-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/comic/04-night-duty.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “저는 여기서 상황을 볼게요. 성문 쪽 부탁드려요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-midnight-soup-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/midnight-soup/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“수프 다 됐어요. 식기 전에 한 그릇씩 가져가세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-midnight-soup-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/midnight-soup/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“네. 아까부터 기다리고 계시잖아요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-midnight-soup-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/midnight-soup/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“밥은 먹고 쉬어야지. 더 남았나?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-midnight-soup-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/midnight-soup/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘은 남은 게 없네요. 다들 잘 먹었어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-clean-floor-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/clean-floor/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“여기 아직 젖었어요. 잠깐만 돌아가 주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-clean-floor-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/clean-floor/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“내 방도 이쪽인데. 얼마나 기다리면 되지?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-clean-floor-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/clean-floor/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“발만 안 닿으면 되는 것 아닌가?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-clean-floor-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/clean-floor/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“아직 못 들어가셨어요?”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-payday-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/payday/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“급여 내역 확인하시고, 빠진 근무가 있으면 알려주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-payday-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/payday/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“생각했던 것보다 많이 들어왔어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-payday-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/payday/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“잠깐. 내가 이렇게 많이 주문했나?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-payday-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/payday/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘은 제가 샀어요. 따뜻할 때 드세요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-parcel-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/parcel/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“이 택배, 받는 분 이름이 없는데요. ‘제일 무서운 분’이라고만 적혀 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-parcel-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/parcel/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“나는 주문한 게 없는데. 이건 걸레 아닌가?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-parcel-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/parcel/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“잠깐만요. 거기 방금 닦았어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-parcel-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/parcel/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“뽀득 씨 물건으로 확인됐어요. 여기 서명 부탁드려요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-blackout-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/blackout/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“불이 다 꺼졌어요. 어디부터 확인하죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-blackout-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/blackout/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“난방 쪽에 전기가 너무 몰렸네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-blackout-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/blackout/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“여기는 가만히 앉아 있으면 발이 시려.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-blackout-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/blackout/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“이제 좀 따뜻하세요?”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-attendance-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/attendance/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“여기 있던 출근 도장 못 보셨어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-attendance-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/attendance/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“책상 아래에도 없네요. 창고 쪽은 봤어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-attendance-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/attendance/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“덥석 씨, 안에 있는 거 출근 도장 아니에요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-attendance-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/attendance/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“찾았네요. 이건 매일 쓰는 거라 제 책상에 둘게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-cape-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/cape/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“어디에 걸리셨어요? 꽤 많이 찢어졌네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-cape-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/cape/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“이쪽은 지난번에 고친 자리예요. 길이를 좀 줄일까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-cape-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/cape/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“네. 이 정도면 바닥에도 안 끌려요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-cape-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/cape/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“이번엔 문에 안 걸리네요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-counseling-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/counseling/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“무슨 일로 오셨어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-counseling-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/counseling/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“어떤 때 그러세요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-counseling-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/counseling/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“뽀득 씨가 챙겨뒀어요. 발도 편하고, 바닥도 덜 더러워진대요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-counseling-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/counseling/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“편히 주무시네요. 이쪽은 나중에 닦을게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-inventory-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inventory/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“먹을 것하고 비품은 나눠서 보관해 주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-inventory-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inventory/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“공구도 여기 들어 있었네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-inventory-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inventory/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“이 렌치, 혹시 물어봤어요? 자국이 남았는데.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-inventory-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inventory/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“공구는 이쪽 칸에 둘게요. 입에 넣으면 안 돼요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-inspection-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inspection/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“팔에 힘 빼고 편하게 앉아 계세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-inspection-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inspection/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“방금까지 여기 계셨는데… 어디 가셨지?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-inspection-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inspection/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“잠깐 쉬고 있었어. 숨은 건 아니고.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-inspection-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inspection/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘은 주사 안 맞는 거지?”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-coffee-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/coffee/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“버튼을 눌러도 커피가 안 나와요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-coffee-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/coffee/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“안쪽은 멀쩡해 보이는데. 전원은요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-coffee-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/coffee/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“물통이 비었는데요. 이것부터 채워볼까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-coffee-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/coffee/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“이제 나오네요. 여기 남은 나사는요?”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-birthday-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/birthday/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘 마왕님 생신이래요. 작게라도 챙길까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-birthday-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/birthday/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“초를 전부 꽂으면 너무 많겠는데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-birthday-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/birthday/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“다들 여기 있었군. 이걸 준비하고 있었나?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-birthday-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/birthday/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“고맙다. 준비하느라 쉬지도 못했겠군.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-rain-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/rain/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“여기도 새네요. 양동이 하나 더 가져올까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-rain-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/rain/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“물이 들어오는 틈은 찾았어요. 지붕은 비가 잦아들면 손볼게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-rain-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/rain/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“자리 옮기실 때까지 이거 쓰세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-rain-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/rain/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“이쪽은 안 새요. 고칠 때까지 여기 계세요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-photo-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/photo/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“다들 조금만 붙어주세요. 한 번에 나오게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-photo-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/photo/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“루프 씨가 잘 안 나왔어요. 한 번 더 찍을까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-photo-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/photo/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“이제 됐나?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-photo-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/photo/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“저는 이 사진이 좋아요. 다들 편하게 나왔어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-lost-key-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/lost-key/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“열쇠가 안 보여요. 분명 가지고 있었는데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-lost-key-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/lost-key/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“급식실 갔다가 창고, 수선실, 의무실 순서였어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-lost-key-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/lost-key/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“고비 씨, 목에 걸려 있네요. 여기요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-lost-key-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/lost-key/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“찾았으니까 이제 좀 쉬어요. 남은 건 제가 볼게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-quiet-night-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/quiet-night/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘은 벨이 안 울리네요. 오히려 좀 낯설어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-quiet-night-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/quiet-night/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“주방에는 아직 불이 켜져 있네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-quiet-night-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/quiet-night/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“다들 아직 일하고 계셨네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-quiet-night-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/quiet-night/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘은 별일 없었다고 적어도 되겠어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-suggestion-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/suggestion/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“불편한 게 있으면 여기 넣어주세요. 이름은 안 써도 돼요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-suggestion-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/suggestion/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“첫 의견은 베개가 너무 낮다는 거네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-suggestion-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/suggestion/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“이번엔 야식을 조금 늘려달라는 의견이에요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-suggestion-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/suggestion/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“쿠션 도착했어요. 필요한 분은 하나씩 가져가세요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-gate-cat-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/gate-cat/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“어디서 들어왔니? 길을 잃었어?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-gate-cat-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/gate-cat/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“목걸이는 있는데 이름은 안 적혀 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-gate-cat-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/gate-cat/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“하필 내 자리에 누웠군.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-gate-cat-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/gate-cat/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“주인 찾는 공지는 올려뒀어요. 조금 기다려야겠어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-shift-handoff-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shift-handoff/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘은 성문 점검부터 하면 되죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-shift-handoff-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shift-handoff/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“서랍 위치까지 적어주셨네요. 덕분에 덜 헤매겠어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-shift-handoff-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shift-handoff/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“한 가지는 더 적어두는 게 좋겠군.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-shift-handoff-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shift-handoff/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“혼자 다 하려고 하지 마. 어려우면 사람을 불러.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-empty-throne-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/empty-throne/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“먼지만 닦고 바로 나가자.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-empty-throne-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/empty-throne/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“팔걸이가 왜 이렇게 높아…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-empty-throne-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/empty-throne/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“내가 마왕이면… 야근부터 없앤다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-empty-throne-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/empty-throne/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“그건 나도 아직 못 했다.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-fridge-label-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fridge-label/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“분명 퇴근하고 먹으려고 뒀는데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-fridge-label-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fridge-label/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“자기 것은 이름을 붙여두세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-fridge-label-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fridge-label/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“덥석 씨… 이건 좀 크지 않아요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-fridge-label-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fridge-label/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“공용이에요. 공용.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-shortcut-trap-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shortcut-trap/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“이 서류, 반대편 탑까지요?!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-shortcut-trap-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shortcut-trap/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“제가 뚫어둔 지름길이 있어요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-shortcut-trap-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shortcut-trap/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“여기… 마왕님 방 아니에요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-shortcut-trap-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shortcut-trap/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“왜 다들 바닥으로 다녀요?”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-praise-approval-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/praise-approval/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“브릭 씨, 그거 무거운데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-praise-approval-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/praise-approval/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“칭찬 사유를 여기에 적으시면 됩니다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-praise-approval-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/praise-approval/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“감사 대상의 소속… 직급… 잠깐, 브릭 씨!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-praise-approval-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/praise-approval/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“브릭 씨! 오늘 진짜 고마웠어요!”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-chair-project-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/chair-project/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“앉을 때마다 성이 무너지는 소리가 나요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-chair-project-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/chair-project/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“튼튼하게! 아주 튼튼하게 고쳐주지!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-chair-project-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/chair-project/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“저기요! 내려가는 버튼은요?!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-chair-project-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/chair-project/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“그냥 이 의자 쓸게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-laundry-weather-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/laundry-weather/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘은 금방 마르겠네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-laundry-weather-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/laundry-weather/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“제가 구름을 살짝 옮겨볼게요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-laundry-weather-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/laundry-weather/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“제 머리도 같이 말랐네요…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-laundry-weather-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/laundry-weather/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“내 뿔은 원래 이렇다.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-guard-dog-holiday-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/guard-dog-holiday/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“코코, 오늘은 내가 지킬게.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-guard-dog-holiday-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/guard-dog-holiday/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“그냥 바람 소리야.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-guard-dog-holiday-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/guard-dog-holiday/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“문은 보고 있어. 눈 감아도 돼.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-guard-dog-holiday-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/guard-dog-holiday/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘 네 근무는 자는 거야.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-castle-sports-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-sports/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘 종목은 줄다리기입니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-castle-sports-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-sports/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“저는 힘주고 있는데요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-castle-sports-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-sports/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“놓치지 않게 묶어드릴게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-castle-sports-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-sports/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“제1회… 단체 버티기!”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-one-note-band-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/one-note-band/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“딱 세 음이면 충분합니다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-one-note-band-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/one-note-band/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“박자 정도는 제가 맞출게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-one-note-band-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/one-note-band/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“여기서 한 번 더 크게!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-one-note-band-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/one-note-band/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“아까 그 부분부터 다시.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-shield-bandage-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shield-bandage/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“문제없습니다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-shield-bandage-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shield-bandage/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“여기, 조금 아파 보이는데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-shield-bandage-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shield-bandage/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“이건 방패한테 붙여줄게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-shield-bandage-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shield-bandage/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“이건… 떼지 마십시오.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-slow-reply-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/slow-reply/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“잘 지내고 있어… 그다음은 뭐라고 쓰지.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-slow-reply-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/slow-reply/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“봉투는 제가 접어둘게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-slow-reply-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/slow-reply/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“그냥… 뭐부터 말해야 할지 몰라서요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-slow-reply-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/slow-reply/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“같이 일하는 사람들이 생겼어.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-castle-flea-market-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-flea-market/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“안 쓰는 물건부터 내놓으세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-castle-flea-market-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-flea-market/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“이걸 다 고칠 수 있다고? 전부 주세요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-castle-flea-market-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-flea-market/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“잠깐, 저것도 다시 살게요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-castle-flea-market-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-flea-market/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“물건들만 산책했네요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-vacation-form-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/vacation-form/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“쉬고 싶은 날을 적어주세요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-vacation-form-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/vacation-form/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“보관 중인 것도 함께 드리지요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-vacation-form-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/vacation-form/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“신청인… 마왕님?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-vacation-form-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/vacation-form/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“반나절부터 연습하시죠.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-overtime-shadow-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/overtime-shadow/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“어? 나 방금 팔 내렸는데.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-overtime-shadow-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/overtime-shadow/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“몽실 씨! 제 그림자가 이상해요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-overtime-shadow-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/overtime-shadow/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“많이 피곤했나 보네.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-overtime-shadow-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/overtime-shadow/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“본인보다 먼저 퇴근하면 어떡해…”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-ghost-scary-story-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/ghost-scary-story/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“유령 이야기라면 제가 더 잘 알죠!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-ghost-scary-story-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/ghost-scary-story/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“주소가 없는데, 반품도 안 된대요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-ghost-scary-story-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/ghost-scary-story/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“그건… 실화잖아요…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-ghost-scary-story-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/ghost-scary-story/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“오늘은 더 하얗게 나왔네요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-plant-duty-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/plant-duty/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“물 주는 사람만 정하면 되겠죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-plant-duty-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/plant-duty/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“영양은 제가 챙길게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-plant-duty-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/plant-duty/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“어제는 분명 손바닥만 했는데요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-plant-duty-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/plant-duty/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“가지치기 담당도 정해야겠어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-emergency-cookie-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/emergency-cookie/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“급한 일은 이 벨을 누르세요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-emergency-cookie-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/emergency-cookie/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“저기, 잠깐만 도와…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-emergency-cookie-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/emergency-cookie/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“비상 상황이… 과자 상자예요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-emergency-cookie-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/emergency-cookie/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“직원 사기 저하도 비상이긴 하지.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-fallen-star-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fallen-star/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오른쪽 창문을 봐주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-fallen-star-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fallen-star/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“떨어진 곳을 본 것 같아요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-fallen-star-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fallen-star/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“빛나길래… 별인 줄 알았어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-fallen-star-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fallen-star/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“우리한테는 이게 그 별이죠.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-call-by-name-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/call-by-name/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“경비님! 청소 담당님! 시설팀!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-call-by-name-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/call-by-name/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“누구부터 부른 거야?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-call-by-name-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/call-by-name/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“브릭 씨. 뽀득 씨. 토르크 씨.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-call-by-name-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/call-by-name/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“응. 이제 누구 부르는지 알겠다.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "page": 1,
+      "width": 390,
+      "file": "390-castle-same-place-tomorrow-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/same-place-tomorrow/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘도… 끝났네.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "page": 2,
+      "width": 390,
+      "file": "390-castle-same-place-tomorrow-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/same-place-tomorrow/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“장갑, 고쳐주셨구나.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "page": 3,
+      "width": 390,
+      "file": "390-castle-same-place-tomorrow-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/same-place-tomorrow/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“첫날엔 도망갈 표정이더니. 아직도 무섭나?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "page": 4,
+      "width": 390,
+      "file": "390-castle-same-place-tomorrow-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/same-place-tomorrow/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“네. 그래도 내일 누구랑 일하는지는 아니까요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ghost-courier",
+      "title": "수취인: 아직 없는 동료",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-ghost-courier-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ghost-courier/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "루프: “특급 배송입니다!”\n고비: “문은 저쪽인데요?!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ghost-courier",
+      "title": "수취인: 아직 없는 동료",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-ghost-courier-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ghost-courier/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “이름도 없는데 어떻게 배달해요?”\n루프: “만날 때까지 배달하면 되죠!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ghost-courier",
+      "title": "수취인: 아직 없는 동료",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-ghost-courier-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ghost-courier/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "루프: “파손 주의예요. 여러분 쪽이요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ghost-courier",
+      "title": "수취인: 아직 없는 동료",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-ghost-courier-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ghost-courier/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “배송 완료네요. 앞으로 여기가 근무지예요.”\n루프: “그럼… 내일도 올 수 있겠네요?”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bat-nurse",
+      "title": "무서운 건 바늘이 아니라",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-bat-nurse-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bat-nurse/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “야간 근무는 괜찮으세요?”\n나비: “낮 근무만 아니면요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bat-nurse",
+      "title": "무서운 건 바늘이 아니라",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-bat-nurse-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bat-nurse/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "나비: “다쳤으면 먼저 앉아요.”\n용사: “저… 침입자인데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bat-nurse",
+      "title": "무서운 건 바늘이 아니라",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-bat-nurse-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bat-nurse/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "나비: “치료는 해드렸고요. 난동은 금지예요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bat-nurse",
+      "title": "무서운 건 바늘이 아니라",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-bat-nurse-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bat-nurse/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “직원인데요…”\n나비: “직원도 돌봐야죠.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "skeleton-chef",
+      "title": "면접은 열두 그릇",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-skeleton-chef-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/skeleton-chef/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “이력서는요?”\n보니: “일단 한 그릇 드셔봐요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "skeleton-chef",
+      "title": "면접은 열두 그릇",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-skeleton-chef-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/skeleton-chef/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “저희 아직 채용 결정을…”\n뽀득: “저는 찬성이요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "skeleton-chef",
+      "title": "면접은 열두 그릇",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-skeleton-chef-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/skeleton-chef/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "용사: “맛이 뜨겁다고요?”\n보니: “계속 뜨거울 거예요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "skeleton-chef",
+      "title": "면접은 열두 그릇",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-skeleton-chef-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/skeleton-chef/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “누구 몫이에요?”\n보니: “아직 퇴근 못 한 사람요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "mimic-storekeeper",
+      "title": "분실물 보관함을 채용했습니다",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-mimic-storekeeper-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/mimic-storekeeper/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “또 불참인가…”\n덥석: “참석했습니다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "mimic-storekeeper",
+      "title": "분실물 보관함을 채용했습니다",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-mimic-storekeeper-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/mimic-storekeeper/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "덥석: “열쇠는 오른쪽 두 번째 칸. 영수증 가져오셨죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "mimic-storekeeper",
+      "title": "분실물 보관함을 채용했습니다",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-mimic-storekeeper-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/mimic-storekeeper/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "덥석: “품목 미등록. 상태 불량. 임시 입고합니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "mimic-storekeeper",
+      "title": "분실물 보관함을 채용했습니다",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-mimic-storekeeper-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/mimic-storekeeper/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “덥석 씨 거예요.”\n덥석: “그럼… 반납 안 해도 되죠?”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "spider-tailor",
+      "title": "실밥 하나로 이어진 사이",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-spider-tailor-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/spider-tailor/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "실비: “잠깐만요.”\n고비: “제가 뭘 잘못했나요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "spider-tailor",
+      "title": "실밥 하나로 이어진 사이",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-spider-tailor-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/spider-tailor/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "실비: “다들 이렇게 입고 일했어요?”\n직원들: “바빠서요…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "spider-tailor",
+      "title": "실밥 하나로 이어진 사이",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-spider-tailor-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/spider-tailor/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "실비: “잠깐, 가봉 중에는 움직이지 마세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "spider-tailor",
+      "title": "실밥 하나로 이어진 사이",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-spider-tailor-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/spider-tailor/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “이건 무슨 표시예요?”\n실비: “어디서 찢어져도, 여기로 돌아오라는 표시요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "nightmare-counselor",
+      "title": "면접관부터 상담합니다",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-nightmare-counselor-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/nightmare-counselor/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "몽실: “요즘 가장 힘든 게 뭔가요?”\n고비: “제가 질문해야 하는데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "nightmare-counselor",
+      "title": "면접관부터 상담합니다",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-nightmare-counselor-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/nightmare-counselor/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "몽실: “응. 그랬구나.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "nightmare-counselor",
+      "title": "면접관부터 상담합니다",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-nightmare-counselor-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/nightmare-counselor/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "몽실: “그렇게까지 해야 한다고, 누가 그랬어요?”\n마법사: “…스승님이요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "nightmare-counselor",
+      "title": "면접관부터 상담합니다",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-nightmare-counselor-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/nightmare-counselor/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “아직 할 말이…”\n몽실: “이제 자야 할 시간이에요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kobold-recruiter",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-kobold-recruiter-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kobold-recruiter/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "도기: “이 인원으로 밤을 넘긴다고요?”\n고비: “그래서 채용 중이에요…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kobold-recruiter",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-kobold-recruiter-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kobold-recruiter/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "도기: “당직 가능하신 분! 유니폼은 입사 후 맞춰드립니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kobold-recruiter",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-kobold-recruiter-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kobold-recruiter/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "도기: “브릭 씨, 정면! 뽀득 씨, 오른쪽! 신입분, 여기 빈자리!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kobold-recruiter",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-kobold-recruiter-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kobold-recruiter/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "도기: “어… 제 면접은요?”\n고비: “방금 끝났어요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "duru-archivist",
+      "title": "삼백 년 전 지원서",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-duru-archivist-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/duru-archivist/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “접수일이… 삼백 년 전?”\n두루: “결과 나왔나요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "duru-archivist",
+      "title": "삼백 년 전 지원서",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-duru-archivist-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/duru-archivist/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "두루: “기다리면서 조금 정리했습니다.”\n고비: “조금이요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "duru-archivist",
+      "title": "삼백 년 전 지원서",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-duru-archivist-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/duru-archivist/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "두루: “이 보호막, 반입 승인 없네요. 반려입니다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "duru-archivist",
+      "title": "삼백 년 전 지원서",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-duru-archivist-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/duru-archivist/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "두루: “이 도장은… 보관 기간이 얼마나 되나요?”\n고비: “원하시는 만큼요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kkangtong-engineer",
+      "title": "불량품 아닙니다",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-kkangtong-engineer-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kkangtong-engineer/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "깡통: “부품은 폐기해도 저는 면접 봐주세요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kkangtong-engineer",
+      "title": "불량품 아닙니다",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-kkangtong-engineer-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kkangtong-engineer/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "깡통: “정리 속도는 자신 있습니다!”\n고비: “제 자리도 정리됐네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kkangtong-engineer",
+      "title": "불량품 아닙니다",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-kkangtong-engineer-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kkangtong-engineer/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "깡통: “붙는 것만 잘하는 줄 알았죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kkangtong-engineer",
+      "title": "불량품 아닙니다",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-kkangtong-engineer-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kkangtong-engineer/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "깡통: “중고도 채용해요?”\n고비: “경력직이라고 하죠.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ddangkong-miner",
+      "title": "정문으로 오라고 했는데",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-ddangkong-miner-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ddangkong-miner/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "땅콩: “지원자 땅콩, 도착했습니다!”\n고비: “정문 안내 못 받으셨어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ddangkong-miner",
+      "title": "정문으로 오라고 했는데",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-ddangkong-miner-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ddangkong-miner/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "땅콩: “여기 배관도 새고 있길래요.”\n고비: “면접 오면서 고쳤어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ddangkong-miner",
+      "title": "정문으로 오라고 했는데",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-ddangkong-miner-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ddangkong-miner/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "땅콩: “분명히 돌아가시라고 했는데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ddangkong-miner",
+      "title": "정문으로 오라고 했는데",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-ddangkong-miner-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ddangkong-miner/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "땅콩: “출근길도 뚫어둘게요.”\n고비: “그건 정문으로!”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "chalkak-photographer",
+      "title": "사진에 없는 사진사",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-chalkak-photographer-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/chalkak-photographer/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “사진이 빠졌네요.”\n찰칵: “저… 찍기는 했어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "chalkak-photographer",
+      "title": "사진에 없는 사진사",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-chalkak-photographer-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/chalkak-photographer/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "찰칵: “제 사진만 잘 안 나와요.”\n고비: “브릭 씨 사진은 너무 잘 나왔는데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "chalkak-photographer",
+      "title": "사진에 없는 사진사",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-chalkak-photographer-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/chalkak-photographer/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "찰칵: “방금 눈 감으셨어요. 한 장만 더요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "chalkak-photographer",
+      "title": "사진에 없는 사진사",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-chalkak-photographer-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/chalkak-photographer/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “이번엔 같이 찍어요.”\n찰칵의 첫 단체사진.",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bongtu-postmaster",
+      "title": "가장 급한 결재",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-bongtu-postmaster-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bongtu-postmaster/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "봉투: “수신 확인은 됐는데…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bongtu-postmaster",
+      "title": "가장 급한 결재",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-bongtu-postmaster-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bongtu-postmaster/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "봉투: “제 지원서는 나중에요. 급한 것부터!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bongtu-postmaster",
+      "title": "가장 급한 결재",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-bongtu-postmaster-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bongtu-postmaster/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "봉투: “긴급 결재, 통과됐어요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bongtu-postmaster",
+      "title": "가장 급한 결재",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-bongtu-postmaster-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bongtu-postmaster/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "봉투: “어느 부서로 보낼까요?”\n고비: “받는 사람부터 봐요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-ward",
+      "title": "계약서에 없는 한 줄",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-ward-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-ward/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "본가드: “방어 범위. 근무 시간. 계약 기간.”\n고비: “철저하시네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-ward",
+      "title": "계약서에 없는 한 줄",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-ward-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-ward/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “아직 계약이…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-ward",
+      "title": "계약서에 없는 한 줄",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-ward-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-ward/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "본가드: “서명은 뒤에서 하십시오.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-ward",
+      "title": "계약서에 없는 한 줄",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-ward-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-ward/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “계약직도 우리 동료입니다.”\n본가드: “…그 조항은 마음에 드는군요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-accountant",
+      "title": "누락된 야근 수당",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-accountant-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-accountant/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "오울리: “야근은 했는데, 수당은 어디 있죠?”\n고비: “그런 것도 있었어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-accountant",
+      "title": "누락된 야근 수당",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-accountant-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-accountant/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "오울리: “있었죠. 기록이 없었을 뿐.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-accountant",
+      "title": "누락된 야근 수당",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-accountant-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-accountant/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "오울리: “성과 한 건. 누락 없이 반영.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-accountant",
+      "title": "누락된 야근 수당",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-accountant-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-accountant/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "오울리: “당신의 첫 야근 수당.”\n고비: “…저도 직원이었죠.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-rescue",
+      "title": "벨을 누르기 전에",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-rescue-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-rescue/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "플레어: “불렀어요?”\n고비: “아직요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-rescue",
+      "title": "벨을 누르기 전에",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-rescue-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-rescue/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "플레어: “기다리는 동안 점검했어요!”\n고비: “얼마나 일찍 온 거예요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-rescue",
+      "title": "벨을 누르기 전에",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-rescue-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-rescue/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "플레어: “다들 고개 숙여요! 지원 갑니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-rescue",
+      "title": "벨을 누르기 전에",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-rescue-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-rescue/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “와줘서 고마워요.”\n플레어가 처음으로 가만히 멈춰 웃는다.",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-chikchik",
+      "title": "막차는 아직 안 떠났어요",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-chikchik-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-chikchik/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "칙칙: “마왕성 가시죠?”\n고비: “여기 역도 없는데요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-chikchik",
+      "title": "막차는 아직 안 떠났어요",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-chikchik-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-chikchik/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “늦었잖아요.”\n칙칙: “아직 한 명이 달려오고 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-chikchik",
+      "title": "막차는 아직 안 떠났어요",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-chikchik-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-chikchik/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "칙칙: “이번 승차권은 회사 부담입니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-chikchik",
+      "title": "막차는 아직 안 떠났어요",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-chikchik-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-chikchik/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "칙칙: “이제 돌아올 역이 생겼네요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-banchang",
+      "title": "괜찮다는 말의 반대말",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-banchang-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-banchang/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "반창: “그런데 왜 다들 벽을 짚고 서 있어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-banchang",
+      "title": "괜찮다는 말의 반대말",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-banchang-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-banchang/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "반창: “안 괜찮아도 돼요. 그래서 제가 왔잖아요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-banchang",
+      "title": "괜찮다는 말의 반대말",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-banchang-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-banchang/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "반창: “천천히 숨 쉬어요. 다시 움직일 수 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-banchang",
+      "title": "괜찮다는 말의 반대말",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-banchang-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-banchang/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “저도… 조금 안 괜찮은데요.”\n반창: “첫 환자분, 잘 오셨어요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-coco",
+      "title": "사원증에 발도장",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-coco-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-coco/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “지원자 이름이… 멍?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-coco",
+      "title": "사원증에 발도장",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-coco-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-coco/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “왜 그래? 간식은 아직…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-coco",
+      "title": "사원증에 발도장",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-coco-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-coco/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "고비: “아, 직원 전용 구역이라고?”\n코코: “멍!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-coco",
+      "title": "사원증에 발도장",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-coco-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-coco/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “잘 부탁해, 코코.”\n사원증 사진에는 꼬리만 흔들려 흐릿하게 찍혀 있다.",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-q",
+      "title": "아무도 듣지 않던 신호",
+      "page": 1,
+      "width": 390,
+      "file": "390-hire-merc-q-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-q/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “다시 말씀해주시겠어요?”\n큐: “전술 관측을…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-q",
+      "title": "아무도 듣지 않던 신호",
+      "page": 2,
+      "width": 390,
+      "file": "390-hire-merc-q-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-q/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "큐: “지금은… 저쪽인데.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-q",
+      "title": "아무도 듣지 않던 신호",
+      "page": 3,
+      "width": 390,
+      "file": "390-hire-merc-q-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-q/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "큐: “지금. 함께.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-q",
+      "title": "아무도 듣지 않던 신호",
+      "page": 4,
+      "width": 390,
+      "file": "390-hire-merc-q-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-q/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “다음 신호도 부탁할게요.”\n큐: “이번에는… 다들 들었네요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "first-shift",
+      "title": "첫 당직",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-first-shift-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/comic/03-emergency-staff.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "고비: “성문 쪽에 사람이 필요해요. 잠깐 도와주실 수 있어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "midnight-soup",
+      "title": "야식은 인원수대로",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-midnight-soup-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/midnight-soup/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“수프 다 됐어요. 식기 전에 한 그릇씩 가져가세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "clean-floor",
+      "title": "방금 닦았거든요",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-clean-floor-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/clean-floor/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“여기 아직 젖었어요. 잠깐만 돌아가 주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "payday",
+      "title": "월급날의 마왕성",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-payday-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/payday/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“급여 내역 확인하시고, 빠진 근무가 있으면 알려주세요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "parcel",
+      "title": "수취인: 무서운 분",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-parcel-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/parcel/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“이 택배, 받는 분 이름이 없는데요. ‘제일 무서운 분’이라고만 적혀 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "blackout",
+      "title": "정전보다 무서운 것",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-blackout-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/blackout/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“불이 다 꺼졌어요. 어디부터 확인하죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "attendance",
+      "title": "출근 도장 실종 사건",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-attendance-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/attendance/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“찾았네요. 이건 매일 쓰는 거라 제 책상에 둘게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "cape",
+      "title": "망토에도 휴가가 필요해",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-cape-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/cape/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“이쪽은 지난번에 고친 자리예요. 길이를 좀 줄일까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "counseling",
+      "title": "상담실 예약자",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-counseling-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/counseling/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“뽀득 씨가 챙겨뒀어요. 발도 편하고, 바닥도 덜 더러워진대요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inventory",
+      "title": "창고 정리의 기준",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-inventory-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inventory/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“공구는 이쪽 칸에 둘게요. 입에 넣으면 안 돼요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "inspection",
+      "title": "건강검진의 최종 보스",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-inspection-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/inspection/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“방금까지 여기 계셨는데… 어디 가셨지?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "coffee",
+      "title": "커피 머신의 반란",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-coffee-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/coffee/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“물통이 비었는데요. 이것부터 채워볼까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "birthday",
+      "title": "생일은 대외비",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-birthday-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/birthday/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘 마왕님 생신이래요. 작게라도 챙길까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "rain",
+      "title": "성에도 비가 샌다",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-rain-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/rain/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“물이 들어오는 틈은 찾았어요. 지붕은 비가 잦아들면 손볼게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "photo",
+      "title": "단체 사진 한 장",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-photo-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/photo/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“루프 씨가 잘 안 나왔어요. 한 번 더 찍을까요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "lost-key",
+      "title": "열쇠를 찾습니다",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-lost-key-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/lost-key/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“찾았으니까 이제 좀 쉬어요. 남은 건 제가 볼게요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "quiet-night",
+      "title": "조용한 밤의 소리",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-quiet-night-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/quiet-night/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘은 벨이 안 울리네요. 오히려 좀 낯설어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "suggestion",
+      "title": "익명 건의함",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-suggestion-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/suggestion/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“불편한 게 있으면 여기 넣어주세요. 이름은 안 써도 돼요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "gate-cat",
+      "title": "출입증 없는 방문객",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-gate-cat-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/gate-cat/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“주인 찾는 공지는 올려뒀어요. 조금 기다려야겠어요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shift-handoff",
+      "title": "인수인계의 마지막 줄",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-shift-handoff-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shift-handoff/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“서랍 위치까지 적어주셨네요. 덕분에 덜 헤매겠어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "empty-throne",
+      "title": "마왕님 자리 비움",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-empty-throne-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/empty-throne/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“내가 마왕이면… 야근부터 없앤다.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fridge-label",
+      "title": "냉장고의 이름표",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-fridge-label-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fridge-label/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“덥석 씨… 이건 좀 크지 않아요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "title": "최단 거리의 함정",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-shortcut-trap-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shortcut-trap/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“이 서류, 반대편 탑까지요?!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "praise-approval",
+      "title": "칭찬도 결재가 필요한가요",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-praise-approval-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/praise-approval/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“감사 대상의 소속… 직급… 잠깐, 브릭 씨!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "chair-project",
+      "title": "의자 하나의 전쟁",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-chair-project-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/chair-project/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“앉을 때마다 성이 무너지는 소리가 나요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "laundry-weather",
+      "title": "오늘의 기상 담당",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-laundry-weather-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/laundry-weather/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“제가 구름을 살짝 옮겨볼게요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "title": "경비견의 휴무일",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-guard-dog-holiday-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/guard-dog-holiday/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“문은 보고 있어. 눈 감아도 돼.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-sports",
+      "title": "마왕성 체육대회",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-castle-sports-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-sports/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“오늘 종목은 줄다리기입니다!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "one-note-band",
+      "title": "한 음만 맞추면 되는데",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-one-note-band-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/one-note-band/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“박자 정도는 제가 맞출게요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "shield-bandage",
+      "title": "반창고는 마음에도",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-shield-bandage-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/shield-bandage/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“여기, 조금 아파 보이는데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "slow-reply",
+      "title": "답장은 천천히",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-slow-reply-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/slow-reply/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“잘 지내고 있어… 그다음은 뭐라고 쓰지.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "title": "성문 앞 중고 장터",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-castle-flea-market-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/castle-flea-market/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“이걸 다 고칠 수 있다고? 전부 주세요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "vacation-form",
+      "title": "휴가 신청서의 행방",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-vacation-form-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/vacation-form/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“보관 중인 것도 함께 드리지요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "title": "그림자도 야근 중",
+      "page": 2,
+      "width": 320,
+      "file": "320-castle-overtime-shadow-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/overtime-shadow/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "“몽실 씨! 제 그림자가 이상해요!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "title": "유령도 무서운 게 있다",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-ghost-scary-story-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/ghost-scary-story/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“유령 이야기라면 제가 더 잘 알죠!”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "plant-duty",
+      "title": "작은 화분의 당직표",
+      "page": 1,
+      "width": 320,
+      "file": "320-castle-plant-duty-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/plant-duty/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "“물 주는 사람만 정하면 되겠죠?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "title": "비상벨 사용 설명서",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-emergency-cookie-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/emergency-cookie/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“직원 사기 저하도 비상이긴 하지.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "fallen-star",
+      "title": "출근길에 내린 별",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-fallen-star-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/fallen-star/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“빛나길래… 별인 줄 알았어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "call-by-name",
+      "title": "오늘은 이름으로",
+      "page": 3,
+      "width": 320,
+      "file": "320-castle-call-by-name-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/call-by-name/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "“브릭 씨. 뽀득 씨. 토르크 씨.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "title": "내일도 같은 자리",
+      "page": 4,
+      "width": 320,
+      "file": "320-castle-same-place-tomorrow-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/castle-stories/same-place-tomorrow/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "“네. 그래도 내일 누구랑 일하는지는 아니까요.”",
+        "nextLabel": "도감으로 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ghost-courier",
+      "title": "수취인: 아직 없는 동료",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-ghost-courier-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ghost-courier/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “배송 완료네요. 앞으로 여기가 근무지예요.”\n루프: “그럼… 내일도 올 수 있겠네요?”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bat-nurse",
+      "title": "무서운 건 바늘이 아니라",
+      "page": 1,
+      "width": 320,
+      "file": "320-hire-bat-nurse-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bat-nurse/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "고비: “야간 근무는 괜찮으세요?”\n나비: “낮 근무만 아니면요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "skeleton-chef",
+      "title": "면접은 열두 그릇",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-skeleton-chef-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/skeleton-chef/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “누구 몫이에요?”\n보니: “아직 퇴근 못 한 사람요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "mimic-storekeeper",
+      "title": "분실물 보관함을 채용했습니다",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-mimic-storekeeper-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/mimic-storekeeper/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “덥석 씨 거예요.”\n덥석: “그럼… 반납 안 해도 되죠?”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "spider-tailor",
+      "title": "실밥 하나로 이어진 사이",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-spider-tailor-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/spider-tailor/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “이건 무슨 표시예요?”\n실비: “어디서 찢어져도, 여기로 돌아오라는 표시요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "nightmare-counselor",
+      "title": "면접관부터 상담합니다",
+      "page": 3,
+      "width": 320,
+      "file": "320-hire-nightmare-counselor-3.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/nightmare-counselor/03.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 3,
+        "line": "몽실: “그렇게까지 해야 한다고, 누가 그랬어요?”\n마법사: “…스승님이요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kobold-recruiter",
+      "title": "인사팀 직원은 누가 채용하죠?",
+      "page": 1,
+      "width": 320,
+      "file": "320-hire-kobold-recruiter-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kobold-recruiter/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "도기: “이 인원으로 밤을 넘긴다고요?”\n고비: “그래서 채용 중이에요…”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "duru-archivist",
+      "title": "삼백 년 전 지원서",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-duru-archivist-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/duru-archivist/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "두루: “이 도장은… 보관 기간이 얼마나 되나요?”\n고비: “원하시는 만큼요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "kkangtong-engineer",
+      "title": "불량품 아닙니다",
+      "page": 2,
+      "width": 320,
+      "file": "320-hire-kkangtong-engineer-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/kkangtong-engineer/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "깡통: “정리 속도는 자신 있습니다!”\n고비: “제 자리도 정리됐네요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "ddangkong-miner",
+      "title": "정문으로 오라고 했는데",
+      "page": 1,
+      "width": 320,
+      "file": "320-hire-ddangkong-miner-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/ddangkong-miner/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "땅콩: “지원자 땅콩, 도착했습니다!”\n고비: “정문 안내 못 받으셨어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "chalkak-photographer",
+      "title": "사진에 없는 사진사",
+      "page": 2,
+      "width": 320,
+      "file": "320-hire-chalkak-photographer-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/chalkak-photographer/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "찰칵: “제 사진만 잘 안 나와요.”\n고비: “브릭 씨 사진은 너무 잘 나왔는데요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "bongtu-postmaster",
+      "title": "가장 급한 결재",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-bongtu-postmaster-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/bongtu-postmaster/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "봉투: “어느 부서로 보낼까요?”\n고비: “받는 사람부터 봐요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-ward",
+      "title": "계약서에 없는 한 줄",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-merc-ward-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-ward/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “계약직도 우리 동료입니다.”\n본가드: “…그 조항은 마음에 드는군요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-accountant",
+      "title": "누락된 야근 수당",
+      "page": 1,
+      "width": 320,
+      "file": "320-hire-merc-accountant-1.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-accountant/01.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 1,
+        "line": "오울리: “야근은 했는데, 수당은 어디 있죠?”\n고비: “그런 것도 있었어요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-rescue",
+      "title": "벨을 누르기 전에",
+      "page": 2,
+      "width": 320,
+      "file": "320-hire-merc-rescue-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-rescue/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "플레어: “기다리는 동안 점검했어요!”\n고비: “얼마나 일찍 온 거예요?”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-chikchik",
+      "title": "막차는 아직 안 떠났어요",
+      "page": 2,
+      "width": 320,
+      "file": "320-hire-merc-chikchik-2.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-chikchik/02.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 2,
+        "line": "고비: “늦었잖아요.”\n칙칙: “아직 한 명이 달려오고 있어요.”",
+        "nextLabel": "다음 ",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-banchang",
+      "title": "괜찮다는 말의 반대말",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-merc-banchang-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-banchang/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “저도… 조금 안 괜찮은데요.”\n반창: “첫 환자분, 잘 오셨어요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-coco",
+      "title": "사원증에 발도장",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-merc-coco-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-coco/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “잘 부탁해, 코코.”\n사원증 사진에는 꼬리만 흔들려 흐릿하게 찍혀 있다.",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    },
+    {
+      "kind": "hire",
+      "id": "merc-q",
+      "title": "아무도 듣지 않던 신호",
+      "page": 4,
+      "width": 320,
+      "file": "320-hire-merc-q-4.jpg",
+      "loaded": {
+        "ok": true,
+        "src": "assets/hiring-stories/merc-q/04.webp"
+      },
+      "audit": {
+        "fullBleed": true,
+        "buttonVisible": true,
+        "nameOverflow": false,
+        "dots": 4,
+        "line": "고비: “다음 신호도 부탁할게요.”\n큐: “이번에는… 다들 들었네요.”",
+        "nextLabel": "이야기 완료 ✓",
+        "bodyOverflow": false
+      }
+    }
+  ]
+}
