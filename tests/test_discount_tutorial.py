@@ -34,4 +34,4 @@ class DiscountTutorialTests(unittest.TestCase):
         a=self.open(390,844);self.lesson(a);a.locator('#coach-next').click()
         a.evaluate('sp=0;summon();sync()')
         self.assertEqual(a.evaluate('DiscountTutorial.snapshot().stage'),'summon')
-        self.assertTrue(a.evaluate('summonDiscount'))
+        self.assertFalse(a.evaluate('summonDiscount'))

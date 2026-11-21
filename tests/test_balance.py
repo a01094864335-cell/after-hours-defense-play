@@ -22,7 +22,7 @@ class BalanceTests(unittest.TestCase):
         a.evaluate('cost=500;sp=0');self.reward(a,20);amount=a.evaluate('perkReward().sp');a.locator('#perk-sp').click()
         self.assertEqual(a.evaluate('sp'),amount);self.assertFalse(a.evaluate('bonusPending'))
         self.assertFalse(a.evaluate("choosePerk('sp')"));self.assertEqual(a.evaluate('sp'),amount)
-        self.assertEqual(amount,2600)
+        self.assertEqual(amount,250)
         a.evaluate('for(let i=0;i<5;i++)summon()');self.assertEqual(a.evaluate('[sp,cost]'),[0,550])
     def test_guarantees_are_counted_and_survive_reload(self):
         a=self.normal();a.evaluate('guaranteedMerge=1');self.reward(a,5);a.locator('#perk-merge').click()
@@ -55,25 +55,26 @@ class BalanceTests(unittest.TestCase):
         self.assertTrue(a.locator('#perk-targets').is_hidden())
     def fail_merge(self,a):
         a.evaluate('''()=>{paused=false;guaranteedMerge=0;board[0]={type:0,pip:1};board[1]={type:0,pip:1};const original=Math.random;try{Math.random=()=>0;merge(0,1)}finally{Math.random=original}}''')
-    def test_failure_discounts_only_next_successful_summon_and_preserves_base_growth(self):
+    def test_merge_refund_is_immediate_and_price_stays_stable(self):
         a=self.normal();a.evaluate('cost=100;sp=50');self.fail_merge(a)
-        self.assertTrue(a.evaluate('summonDiscount'));self.assertEqual(a.evaluate('summonPrice()'),50)
-        self.assertIn('반값',a.locator('#summon').inner_text());self.assertFalse(a.locator('#summon').is_disabled())
-        a.evaluate('summon()');self.assertEqual(a.evaluate('[sp,cost,summonDiscount]'),[0,110,False])
-        self.assertEqual(a.evaluate('summonPrice()'),110)
-    def test_unaffordable_full_board_or_invalid_merge_keep_discount_and_failures_do_not_stack(self):
-        a=self.normal();a.evaluate('cost=100;sp=49');self.fail_merge(a);self.fail_merge(a)
-        a.evaluate('summon()');self.assertEqual(a.evaluate('[sp,cost,summonDiscount]'),[49,100,True])
-        self.assertEqual(a.evaluate('summonPrice()'),50)
+        self.assertFalse(a.evaluate('summonDiscount'));self.assertEqual(a.evaluate('summonPrice()'),30)
+        self.assertEqual(a.evaluate('sp'),62)
+        self.assertNotIn('반값',a.locator('#summon').inner_text())
+        a.evaluate('summon()');self.assertEqual(a.evaluate('[sp,cost,summonDiscount]'),[32,110,False])
+        self.assertEqual(a.evaluate('summonPrice()'),30)
+    def test_invalid_merge_and_blocked_summon_never_grant_refund(self):
+        a=self.normal();a.evaluate('cost=100;sp=1;board=Array(15).fill(null);summon();merge(0,0)')
+        self.assertEqual(a.evaluate('[sp,cost]'),[1,100])
         a.evaluate('sp=500;board=Array.from({length:15},()=>({type:0,pip:1}));summon();merge(0,0)')
-        self.assertEqual(a.evaluate('[sp,cost,summonDiscount]'),[500,100,True])
-    def test_discount_reloads_and_legacy_snapshot_defaults_to_no_discount(self):
-        a=self.normal();self.fail_merge(a);a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.evaluate('resumeRun()')
-        self.assertTrue(a.evaluate('summonDiscount'))
-        a.evaluate('const legacy=runSnapshot();delete legacy.summonDiscount;legacy.guaranteedMerge=true;applySnapshot(legacy)')
-        self.assertFalse(a.evaluate('summonDiscount'));self.assertEqual(a.evaluate('guaranteedMerge'),1)
-        a.evaluate("document.querySelectorAll('dialog[open]').forEach(d=>d.close());ended=false;runReward=null;reset()")
-        self.assertFalse(a.evaluate('summonDiscount'))
+        self.assertEqual(a.evaluate('[sp,cost]'),[500,100])
+    def test_legacy_coupon_converts_once_and_current_refund_survives_reload(self):
+        a=self.normal();a.evaluate('dailyEnabled=false;const legacy=runSnapshot();delete legacy.economyVersion;legacy.summonDiscount=true;legacy.cost=100;legacy.sp=50;applySnapshot(legacy)')
+        self.assertEqual(a.evaluate('sp'),100);self.assertFalse(a.evaluate('summonDiscount'))
+        a.evaluate('const migrated=runSnapshot();applySnapshot(migrated)')
+        self.assertEqual(a.evaluate('sp'),100)
+        a.evaluate('paused=false');self.fail_merge(a)
+        before=a.evaluate('sp');a.reload(wait_until='networkidle');a.wait_for_function('GameSession.canWrite()');a.evaluate('resumeRun()')
+        self.assertEqual(a.evaluate('sp'),before)
     def test_speed_cycles_to_three_preserves_pause_and_reloads(self):
         a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset()');start_battle(a)
         for expected in [2,3,1,2,3]:

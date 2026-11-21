@@ -12,7 +12,7 @@ window.TutorialCoach=(()=>{
  skill:['필요한 순간에 직접 쓰는 힘','잘했다. 5등급부터는 직원을 선택해 고유 스킬을 직접 쓸 수 있다.\n한 번 쓰면 재사용 시간을 기다려야 하니, 적이 몰렸을 때를 노려라.'],
  item:['합성 조건을 바꾸는 방법','잘했다. 등급 합성권을 쓰면 종류가 달라도 같은 등급끼리 합칠 수 있다.\n이번에는 성공을 보장했지만, 실전에서 합성권이 실패 확률까지 없애주는 것은 아니다.'],
  king:['급할 때는 나를 불러라','호출은 제대로 배웠군. 지금 나와 있던 적들은 내가 정리했다.\n아직 나오지 않은 적은 남아 있으니 방어를 이어가거라. 정식 당직에서는 보유한 소모품이 필요하다.'],
- discount:['실패 뒤에도 수습할 기회가 있다','잘했다. 방금은 실패 보상 덕분에 반값으로 한 명을 더 불렀다.\n할인은 다음 유료 소환 한 번에만 적용된다. 이제 소환 가격이 원래대로 돌아왔는지 확인하거라.']};
+ discount:['실패 뒤에도 수습할 기회가 있다','잘했다. 합성으로 회수한 운영비를 다시 소환에 쓰는 거다.\n성공해도 실패해도 운영비 일부가 돌아온다. 자리가 차면 합치고, 빈자리에 새 동료를 불러보거라.']};
  function finish(message,lesson=task?.kind){task={kind:'feedback',lesson,delay:1.6};say(message);sync();saveActiveRun()}
  function showFeedback(){const entry=feedbackCopy[task.lesson];task.delay=-1;speak(entry[0],entry[1],'알겠습니다 · 계속하기',()=>{task=null;sync();saveActiveRun()});saveActiveRun()}
  function speak(title,text,label='계속하기',next=()=>{},speaker='king'){compact=false;dialogueNext=next;if(!dialogue){showGuide(title,text);return;}uiAttr(q('#coach-portrait'),'src',speaker==='gobi'?staffPortraitPath('gobi'):CombatComic.headPath('demon-king'));uiAttr(q('#coach-portrait'),'alt',speaker==='gobi'?'고비':'마왕');uiText(q('#coach-speaker'),speaker==='gobi'?'고비':'마왕');q('#coach-title').textContent=title;q('#coach-copy').textContent=text;q('#coach-next').textContent=label;dialogueNext=next;dialogue.hidden=false;paused=true;sync()}
@@ -20,7 +20,7 @@ window.TutorialCoach=(()=>{
  const originalGuide=showGuide;showGuide=function(title,text){if(tutorialMode&&dialogue)speak(title,text);else originalGuide(title,text)};
  function guide(title,text){speak(title,text,task?'직접 해보기':wave===0?'소환 연습 시작':'계속하기')}
  function failurePractice(){const pair=practicePair();if(!pair){task=null;window.DiscountTutorial?.start();return;}task={kind:'mergefail',pair};guide('실패했을 때도 배워두거라','연습할 직원은 마련해뒀다. 표시된 두 명을 합쳐보거라. 이번 한 번은 실패하도록 해뒀다.\n당황하지 말고, 어느 직원이 사라지고 누가 남는지 살펴보아라.');sync();saveActiveRun()}
- function showResult(){const outcome=task.outcome;task.delay=-1;speak(outcome==='success'?'잘했다. 등급이 하나 올랐다':'실패해도 둘 다 사라지는 건 아니다',outcome==='success'?'잘했다. 같은 종류·같은 등급을 합치면 등급이 하나 오른다. 종류는 랜덤으로 바뀌지.\n빈 출발 자리와 별이 늘어난 도착 자리를 보아라. 이번에는 성공했으니, 다음엔 실패도 배워보자.':'잘 보았느냐? 이동한 직원 한 명만 사라지고, 대상 직원은 그대로 남았다. 다음 유료 소환 한 번은 반값이 된다.\n이번 실패는 연습을 위한 것이었다. 실전에서는 표시된 확률로 결정된다.',outcome==='success'?'실패도 연습하기':'반값 소환 해보기',()=>{task=null;if(outcome==='success')failurePractice();else window.DiscountTutorial?.start();});saveActiveRun()}
+ function showResult(){const outcome=task.outcome;task.delay=-1;speak(outcome==='success'?'잘했다. 등급이 하나 올랐다':'실패해도 둘 다 사라지는 건 아니다',outcome==='success'?'잘했다. 같은 종류·같은 등급을 합치면 등급이 하나 오른다. 종류는 랜덤으로 바뀌지.\n빈 출발 자리와 별이 늘어난 도착 자리를 보아라. 이번에는 성공했으니, 다음엔 실패도 배워보자.':'잘 보았느냐? 이동한 직원 한 명만 사라지고, 대상 직원은 그대로 남았다. 성공 때처럼 운영비 일부가 즉시 돌아왔다.\n이번 실패는 연습을 위한 것이었다. 실전에서는 표시된 확률로 결정된다.',outcome==='success'?'실패도 연습하기':'회수한 SP로 소환하기',()=>{task=null;if(outcome==='success')failurePractice();else window.DiscountTutorial?.start();});saveActiveRun()}
  function mergeResult(outcome,a,b){task={kind:'merge-result',outcome,pair:[a,b],delay:1.6};selected=-1;paused=false;say(outcome==='success'?'합성 성공 · 보드의 변화를 확인하세요':'합성 실패 · 출발 직원 소멸 / 대상 직원 유지');sync();saveActiveRun()}
  const originalChance=failChance;failChance=function(pip){return tutorialMode&&task?.kind==='mergefail'?1:originalChance(pip)};
  function hint(){
@@ -32,7 +32,7 @@ window.TutorialCoach=(()=>{
   if(task?.kind==='skill')return '연습 중 · 표시한 5등급 직원 선택 → 아래 스킬 버튼을 누르세요.';
   if(task?.kind==='item')return '연습 중 · 등급 합성 버튼 → 표시한 두 직원을 차례로 터치하세요.';
   if(task?.kind==='king')return '연습 중 · 마왕 깨우기를 눌러 용사를 정리하세요. 연습용 1개를 사용해요.';
-  if(window.DiscountTutorial?.waitingForSummon?.())return '연습 중 · 반값으로 표시된 직원 소환 버튼을 누르세요.';
+  if(window.DiscountTutorial?.waitingForSummon?.())return '연습 중 · 직원 소환 버튼을 눌러 빈자리를 채우세요.';
   if(wave===0)return '준비 '+preparationCount()+'/5 · 아래 직원 소환 버튼을 '+(5-preparationCount())+'번 누르면 전투가 시작돼요.';
   if(wave<3)return sp<summonPrice()?'자동 공격 중 · 처치 보상으로 SP를 모으세요. 다음 소환 '+summonPrice()+' SP':'SP가 모였어요 · 직원 소환으로 방어선을 보강하세요.';
   return wave>=9?'실전 연습 · 소환·합성·장비·스킬로 10웨이브까지 막으세요.':'자동 공격 중 · 빈자리에는 소환, 같은 종류·등급은 합성하세요.';

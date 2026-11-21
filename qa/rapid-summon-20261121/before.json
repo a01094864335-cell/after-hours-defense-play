@@ -1,0 +1,630 @@
+{
+  "method": "5 seeded VM runs; 0.1s steps, summon/merge every 0.2s, merge first compatible pair only on full board, use ready skills, take SP reward, no gear. Comparison of loops, not human balance validation.",
+  "rows": [
+    {
+      "seed": 1,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "sp": 0,
+          "life": 3,
+          "summons": 5,
+          "merges": 0
+        },
+        {
+          "wave": 2,
+          "sp": 88,
+          "life": 3,
+          "summons": 6,
+          "merges": 0
+        },
+        {
+          "wave": 3,
+          "sp": 96,
+          "life": 3,
+          "summons": 8,
+          "merges": 0
+        },
+        {
+          "wave": 4,
+          "sp": 85,
+          "life": 3,
+          "summons": 10,
+          "merges": 0
+        },
+        {
+          "wave": 5,
+          "sp": 59,
+          "life": 3,
+          "summons": 12,
+          "merges": 0
+        },
+        {
+          "wave": 6,
+          "sp": 203,
+          "life": 3,
+          "summons": 15,
+          "merges": 0
+        },
+        {
+          "wave": 7,
+          "sp": 177,
+          "life": 3,
+          "summons": 17,
+          "merges": 3
+        },
+        {
+          "wave": 8,
+          "sp": 31,
+          "life": 3,
+          "summons": 19,
+          "merges": 5
+        },
+        {
+          "wave": 9,
+          "sp": 116,
+          "life": 3,
+          "summons": 20,
+          "merges": 6
+        },
+        {
+          "wave": 10,
+          "sp": 112,
+          "life": 3,
+          "summons": 22,
+          "merges": 8
+        },
+        {
+          "wave": 11,
+          "sp": 785,
+          "life": 3,
+          "summons": 25,
+          "merges": 10
+        },
+        {
+          "wave": 12,
+          "sp": 279,
+          "life": 3,
+          "summons": 29,
+          "merges": 15
+        },
+        {
+          "wave": 13,
+          "sp": 105,
+          "life": 3,
+          "summons": 31,
+          "merges": 17
+        },
+        {
+          "wave": 14,
+          "sp": 305,
+          "life": 3,
+          "summons": 32,
+          "merges": 18
+        },
+        {
+          "wave": 15,
+          "sp": 113,
+          "life": 3,
+          "summons": 35,
+          "merges": 21
+        },
+        {
+          "wave": 16,
+          "sp": 1824,
+          "life": 1,
+          "summons": 38,
+          "merges": 24
+        }
+      ],
+      "end": {
+        "wave": 16,
+        "life": 1,
+        "sp": 1824,
+        "ended": false,
+        "summons": 38,
+        "merges": 24
+      }
+    },
+    {
+      "seed": 2,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "sp": 0,
+          "life": 3,
+          "summons": 5,
+          "merges": 0
+        },
+        {
+          "wave": 2,
+          "sp": 95,
+          "life": 3,
+          "summons": 6,
+          "merges": 0
+        },
+        {
+          "wave": 3,
+          "sp": 48,
+          "life": 3,
+          "summons": 9,
+          "merges": 0
+        },
+        {
+          "wave": 4,
+          "sp": 38,
+          "life": 3,
+          "summons": 11,
+          "merges": 0
+        },
+        {
+          "wave": 5,
+          "sp": 34,
+          "life": 3,
+          "summons": 13,
+          "merges": 0
+        },
+        {
+          "wave": 6,
+          "sp": 482,
+          "life": 3,
+          "summons": 15,
+          "merges": 1
+        },
+        {
+          "wave": 7,
+          "sp": 113,
+          "life": 3,
+          "summons": 19,
+          "merges": 5
+        },
+        {
+          "wave": 8,
+          "sp": 137,
+          "life": 3,
+          "summons": 21,
+          "merges": 7
+        },
+        {
+          "wave": 9,
+          "sp": 42,
+          "life": 3,
+          "summons": 23,
+          "merges": 9
+        },
+        {
+          "wave": 10,
+          "sp": 165,
+          "life": 3,
+          "summons": 24,
+          "merges": 10
+        },
+        {
+          "wave": 11,
+          "sp": 968,
+          "life": 3,
+          "summons": 26,
+          "merges": 12
+        },
+        {
+          "wave": 12,
+          "sp": 303,
+          "life": 3,
+          "summons": 30,
+          "merges": 16
+        },
+        {
+          "wave": 13,
+          "sp": 46,
+          "life": 3,
+          "summons": 32,
+          "merges": 18
+        },
+        {
+          "wave": 14,
+          "sp": 194,
+          "life": 3,
+          "summons": 33,
+          "merges": 19
+        },
+        {
+          "wave": 15,
+          "sp": 52,
+          "life": 3,
+          "summons": 35,
+          "merges": 21
+        },
+        {
+          "wave": 16,
+          "sp": 1479,
+          "life": 3,
+          "summons": 38,
+          "merges": 23
+        }
+      ],
+      "end": {
+        "wave": 16,
+        "life": 3,
+        "sp": 1479,
+        "ended": false,
+        "summons": 38,
+        "merges": 23
+      }
+    },
+    {
+      "seed": 3,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "sp": 0,
+          "life": 3,
+          "summons": 5,
+          "merges": 0
+        },
+        {
+          "wave": 2,
+          "sp": 39,
+          "life": 3,
+          "summons": 7,
+          "merges": 0
+        },
+        {
+          "wave": 3,
+          "sp": 55,
+          "life": 3,
+          "summons": 9,
+          "merges": 0
+        },
+        {
+          "wave": 4,
+          "sp": 52,
+          "life": 3,
+          "summons": 11,
+          "merges": 0
+        },
+        {
+          "wave": 5,
+          "sp": 55,
+          "life": 3,
+          "summons": 13,
+          "merges": 0
+        },
+        {
+          "wave": 6,
+          "sp": 252,
+          "life": 3,
+          "summons": 16,
+          "merges": 1
+        },
+        {
+          "wave": 7,
+          "sp": 135,
+          "life": 3,
+          "summons": 18,
+          "merges": 4
+        },
+        {
+          "wave": 8,
+          "sp": 246,
+          "life": 3,
+          "summons": 19,
+          "merges": 5
+        },
+        {
+          "wave": 9,
+          "sp": 114,
+          "life": 3,
+          "summons": 21,
+          "merges": 7
+        },
+        {
+          "wave": 10,
+          "sp": 257,
+          "life": 3,
+          "summons": 22,
+          "merges": 8
+        },
+        {
+          "wave": 11,
+          "sp": 1012,
+          "life": 3,
+          "summons": 24,
+          "merges": 10
+        },
+        {
+          "wave": 12,
+          "sp": 233,
+          "life": 3,
+          "summons": 29,
+          "merges": 15
+        },
+        {
+          "wave": 13,
+          "sp": 38,
+          "life": 3,
+          "summons": 31,
+          "merges": 17
+        },
+        {
+          "wave": 14,
+          "sp": 182,
+          "life": 3,
+          "summons": 32,
+          "merges": 18
+        },
+        {
+          "wave": 15,
+          "sp": 88,
+          "life": 3,
+          "summons": 34,
+          "merges": 20
+        },
+        {
+          "wave": 16,
+          "sp": 1409,
+          "life": 1,
+          "summons": 38,
+          "merges": 23
+        }
+      ],
+      "end": {
+        "wave": 16,
+        "life": 1,
+        "sp": 1409,
+        "ended": false,
+        "summons": 38,
+        "merges": 23
+      }
+    },
+    {
+      "seed": 4,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "sp": 0,
+          "life": 3,
+          "summons": 5,
+          "merges": 0
+        },
+        {
+          "wave": 2,
+          "sp": 67,
+          "life": 3,
+          "summons": 6,
+          "merges": 0
+        },
+        {
+          "wave": 3,
+          "sp": 75,
+          "life": 3,
+          "summons": 8,
+          "merges": 0
+        },
+        {
+          "wave": 4,
+          "sp": 78,
+          "life": 3,
+          "summons": 10,
+          "merges": 0
+        },
+        {
+          "wave": 5,
+          "sp": 59,
+          "life": 3,
+          "summons": 12,
+          "merges": 0
+        },
+        {
+          "wave": 6,
+          "sp": 315,
+          "life": 3,
+          "summons": 15,
+          "merges": 0
+        },
+        {
+          "wave": 7,
+          "sp": 38,
+          "life": 3,
+          "summons": 18,
+          "merges": 4
+        },
+        {
+          "wave": 8,
+          "sp": 100,
+          "life": 3,
+          "summons": 19,
+          "merges": 5
+        },
+        {
+          "wave": 9,
+          "sp": 157,
+          "life": 3,
+          "summons": 20,
+          "merges": 6
+        },
+        {
+          "wave": 10,
+          "sp": 247,
+          "life": 3,
+          "summons": 21,
+          "merges": 7
+        },
+        {
+          "wave": 11,
+          "sp": 832,
+          "life": 3,
+          "summons": 24,
+          "merges": 10
+        },
+        {
+          "wave": 12,
+          "sp": 98,
+          "life": 3,
+          "summons": 28,
+          "merges": 14
+        },
+        {
+          "wave": 13,
+          "sp": 174,
+          "life": 3,
+          "summons": 29,
+          "merges": 15
+        },
+        {
+          "wave": 14,
+          "sp": 282,
+          "life": 3,
+          "summons": 30,
+          "merges": 16
+        },
+        {
+          "wave": 15,
+          "sp": 88,
+          "life": 3,
+          "summons": 32,
+          "merges": 18
+        },
+        {
+          "wave": 16,
+          "sp": 1590,
+          "life": 3,
+          "summons": 34,
+          "merges": 20
+        }
+      ],
+      "end": {
+        "wave": 16,
+        "life": 3,
+        "sp": 1590,
+        "ended": false,
+        "summons": 34,
+        "merges": 20
+      }
+    },
+    {
+      "seed": 5,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "sp": 0,
+          "life": 3,
+          "summons": 5,
+          "merges": 0
+        },
+        {
+          "wave": 2,
+          "sp": 60,
+          "life": 3,
+          "summons": 6,
+          "merges": 0
+        },
+        {
+          "wave": 3,
+          "sp": 54,
+          "life": 3,
+          "summons": 8,
+          "merges": 0
+        },
+        {
+          "wave": 4,
+          "sp": 129,
+          "life": 3,
+          "summons": 9,
+          "merges": 0
+        },
+        {
+          "wave": 5,
+          "sp": 116,
+          "life": 3,
+          "summons": 11,
+          "merges": 0
+        },
+        {
+          "wave": 6,
+          "sp": 270,
+          "life": 3,
+          "summons": 14,
+          "merges": 0
+        },
+        {
+          "wave": 7,
+          "sp": 186,
+          "life": 3,
+          "summons": 16,
+          "merges": 2
+        },
+        {
+          "wave": 8,
+          "sp": 88,
+          "life": 3,
+          "summons": 18,
+          "merges": 4
+        },
+        {
+          "wave": 9,
+          "sp": 148,
+          "life": 3,
+          "summons": 19,
+          "merges": 5
+        },
+        {
+          "wave": 10,
+          "sp": 115,
+          "life": 3,
+          "summons": 21,
+          "merges": 7
+        },
+        {
+          "wave": 11,
+          "sp": 934,
+          "life": 3,
+          "summons": 22,
+          "merges": 8
+        },
+        {
+          "wave": 12,
+          "sp": 52,
+          "life": 3,
+          "summons": 27,
+          "merges": 13
+        },
+        {
+          "wave": 13,
+          "sp": 145,
+          "life": 3,
+          "summons": 28,
+          "merges": 14
+        },
+        {
+          "wave": 14,
+          "sp": 263,
+          "life": 3,
+          "summons": 29,
+          "merges": 15
+        },
+        {
+          "wave": 15,
+          "sp": 96,
+          "life": 3,
+          "summons": 31,
+          "merges": 17
+        },
+        {
+          "wave": 16,
+          "sp": 1536,
+          "life": 3,
+          "summons": 33,
+          "merges": 19
+        }
+      ],
+      "end": {
+        "wave": 16,
+        "life": 3,
+        "sp": 1536,
+        "ended": false,
+        "summons": 33,
+        "merges": 19
+      }
+    }
+  ]
+}

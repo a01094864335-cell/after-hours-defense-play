@@ -28,12 +28,12 @@ window.TacticalDuty=(()=>{
    `★${pip} · ${100-failure}% success / ${failure}% failure`,
    `Success: +1 empty cell · ${keep?'target kind stays':'random kind'}`,
    pip===5?'★5 unlocks a skill; total basic damage may fall':'Total basic damage is not guaranteed to increase',
-   failure?'Failure: moving staff lost; next paid summon half off':'No failure loss · one protection charge used'
+   failure?'Failure: moving staff lost; SP refunded on either outcome':'No failure loss · one protection charge used'
   ]:[
    `★${pip} · 성공 ${100-failure}% / 실패 ${failure}%`,
    `성공: 빈자리 +1 · ${keep?'도착 종류 유지':'종류 랜덤'}`,
    pip===5?'★5 스킬 해금 · 평타 총화력은 줄 수 있어요':'평타 총화력 증가를 보장하지 않아요',
-   failure?'실패: 이동 직원 소멸 · 다음 유료 소환 반값':'실패 손실 없음 · 보장 1회 사용'
+   failure?'실패: 이동 직원 소멸 · 성공/실패 모두 SP 일부 회수':'실패 손실 없음 · 보장 1회 사용'
   ];
   return {pip,failure,keep,lines};
  }

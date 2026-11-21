@@ -49,7 +49,7 @@ const insightUpdate=update;update=function(dt){
 const insightSpawn=spawn;spawn=function(type){insightSpawn(type);if(type==='boss')enemies.at(-1).insightSpawn=runInsights.seconds;};
 function resultHint(){if(!board.some(u=>u&&kinds[u.type].damage>0))return '이번 배치에는 공격하는 직원이 없었어요. 운영·버프 직원만으로는 적을 막을 수 없으니, 공격 직원을 소환한 뒤 당직을 시작해보세요.';const last=runInsights.breaches.at(-1);if(!last)return tutorialWon?'연수 수료! 이제 편성과 지원을 바꿔 정식 당직에 도전해보세요.':'다음 당직에서는 다른 편성과 장비 투자 순서를 비교해보세요.';
  if(last.name.includes('군단장')||last.damage===2)return '마지막 돌파 적은 '+last.name+' · 체력 '+Math.ceil(last.hp/Math.max(1,last.max)*100)+'%가 남았어요. 다음 판은 군단장 등장에 맞춰 스킬과 집중 공격을 준비해보세요.';
- if(runInsights.failed>=3)return '합성 실패 '+runInsights.failed+'회가 있었어요. 전투 중에는 공격 직원을 남기고, 반값 소환과 합성 보장을 활용해보세요.';
+ if(runInsights.failed>=3)return '합성 실패 '+runInsights.failed+'회가 있었어요. 전투 중에는 공격 직원을 남기고, 회수한 SP와 합성 보장을 활용해보세요.';
  return '마지막 돌파 적은 '+last.name+' · 체력 '+Math.ceil(last.hp/Math.max(1,last.max)*100)+'%가 남았어요. 선두 적 제어와 범위 공격 장비를 함께 점검해보세요.';}
 function runRecord(){return {id:runId,wave,cleared:window.TacticalDuty?.completedWave()??(tutorialWon?10:Math.max(0,wave-1)),coins:runReward?.total||0,seconds:Math.round(runInsights.seconds),rule:tutorialMode?'신입 연수':dailyEnabled?DAILY_RULES[dailyRule].name:'기본 규칙',deck:runDeck.map(i=>kinds[i].file),support:activeMerc,training:{...runTraining},king:{...runInsights.king},bosses:runInsights.bosses.map(b=>({...b})),tutorial:tutorialMode};}
 const insightSettle=settleRun;settleRun=function(){insightSettle();if(!ended||!runReward?.paid||tutorialMode&&!tutorialWon)return;const record=runRecord();if(profile().records.some(r=>r.id===runId))return;

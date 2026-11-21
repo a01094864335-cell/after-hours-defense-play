@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-21",
+  "preparationSP": 10,
+  "combatSP": "30 + 5 * floor((wave-1)/5), daily modifier rounded up",
+  "mergeRefund": "floor(base summon SP * 0.4), valid success and failure",
+  "holdDelayMs": 350,
+  "repeatMs": 200,
+  "legacyCoupon": "convert stored old coupon once on restore; snapshot economyVersion 2",
+  "balanceLimits": "5-seed automated action-frequency comparison, not human difficulty validation. Full boards without a compatible pair can still stop the loop. Merge odds and enemy stats unchanged.",
+  "checks": {
+    "mobileHold": "3 browser tests at 320x568 and 390x844 passed",
+    "tutorial": "4 browser tests passed",
+    "balance": "9 browser tests passed"
+  }
+}

@@ -38,6 +38,7 @@ files.add('story-art.js');
 files.add('story-art.css');
 files.add('story-fullscreen.css');
 files.add('story-fullscreen.js');
+files.add('rapid-summon.js');
 files.add('designs/story-fullscreen-20261120/index.html');
 files.add('designs/story-fullscreen-20261120/selected.html');
 files.add('qa/design-compare-20261120/index.html');
