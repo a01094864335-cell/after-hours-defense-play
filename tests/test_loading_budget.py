@@ -9,8 +9,14 @@ class LoadingBudgetTests(unittest.TestCase):
         p=self.open(390,844)
         urls=p.evaluate("performance.getEntriesByType('resource').map(r=>r.name)")
         image_bytes=p.evaluate("performance.getEntriesByType('resource').filter(r=>/\\.(webp|png|svg)$/.test(new URL(r.name).pathname)).reduce((a,r)=>a+r.decodedBodySize,0)")
-        self.assertGreater(image_bytes,1000000)
-        self.assertLess(image_bytes,2500000)
+        # Check actual visible art, not a minimum payload that penalizes compression.
+        for name in ['assets/moonlight/lobby.webp','title-logo.webp','assets/gobi.webp']:
+            self.assertTrue(any(name in url for url in urls),name)
+        faces=p.locator('#asset-lobby-host .a-member img')
+        self.assertEqual(faces.count(),5)
+        for face in faces.all():
+            self.assertTrue(face.evaluate('e=>e.complete&&e.naturalWidth>0'))
+        self.assertLess(image_bytes,850000)
         for name in ['roster-reference.webp','training-reference.webp','shop-reference.webp','gnb-lobby.webp','gnb-roster.webp','gnb-shop.webp']:
             self.assertFalse(any(name in url for url in urls),name)
         for name in ['open-scene/lobby-cast.webp','open-scene/shop-cast.webp','open-scene/training-cast.webp','open-scene/result-cast.webp','reference-ui/title-logo.svg','text-grid/shop-hero-wordless.webp']:
