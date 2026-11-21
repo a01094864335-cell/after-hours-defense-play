@@ -1,0 +1,2447 @@
+{
+  "method": "Deterministic VM, normal fresh stats, no daily/support/king; 0.1s combat steps, action every0.5s; idle=only initial5, merge=no gear/skills, active=skills+gear when locked. Mechanic evidence, not a human difficulty rating.",
+  "rows": [
+    {
+      "mode": "idle",
+      "seed": 1,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 100,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 248,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 14
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 420,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 30
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 627,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 48
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 873,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 81
+        },
+        {
+          "wave": 6,
+          "life": 1,
+          "sp": 1249,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 132
+        },
+        {
+          "wave": 7,
+          "life": 1,
+          "sp": 1573,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 177
+        }
+      ],
+      "end": {
+        "wave": 7,
+        "life": 0,
+        "ended": true,
+        "sp": 1815,
+        "summons": 5,
+        "merges": 0,
+        "seconds": 213,
+        "lockedSeconds": 0,
+        "longestLockedSeconds": 0,
+        "actions": 0,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "idle",
+      "seed": 2,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 100,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 248,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 14
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 434,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 32
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 641,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 52
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 887,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 85
+        },
+        {
+          "wave": 6,
+          "life": 1,
+          "sp": 1284,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 138
+        }
+      ],
+      "end": {
+        "wave": 6,
+        "life": 0,
+        "ended": true,
+        "sp": 1440,
+        "summons": 5,
+        "merges": 0,
+        "seconds": 171,
+        "lockedSeconds": 0,
+        "longestLockedSeconds": 0,
+        "actions": 0,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "idle",
+      "seed": 3,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 100,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 262,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 13
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 455,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 28
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 669,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 45
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 936,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 71
+        },
+        {
+          "wave": 6,
+          "life": 1,
+          "sp": 1389,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 120
+        },
+        {
+          "wave": 7,
+          "life": 1,
+          "sp": 1755,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 160
+        }
+      ],
+      "end": {
+        "wave": 7,
+        "life": 0,
+        "ended": true,
+        "sp": 2046,
+        "summons": 5,
+        "merges": 0,
+        "seconds": 196,
+        "lockedSeconds": 0,
+        "longestLockedSeconds": 0,
+        "actions": 0,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "idle",
+      "seed": 4,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 100,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 227,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 371,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 20
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 543,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 32
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 726,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 50
+        },
+        {
+          "wave": 6,
+          "life": 1,
+          "sp": 1053,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 110
+        },
+        {
+          "wave": 7,
+          "life": 1,
+          "sp": 1286,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 133
+        },
+        {
+          "wave": 8,
+          "life": 1,
+          "sp": 1531,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 160
+        },
+        {
+          "wave": 9,
+          "life": 1,
+          "sp": 1802,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 198
+        },
+        {
+          "wave": 10,
+          "life": 1,
+          "sp": 2116,
+          "summons": 5,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 243
+        }
+      ],
+      "end": {
+        "wave": 10,
+        "life": 0,
+        "ended": true,
+        "sp": 2334,
+        "summons": 5,
+        "merges": 0,
+        "seconds": 281,
+        "lockedSeconds": 0,
+        "longestLockedSeconds": 0,
+        "actions": 0,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "merge",
+      "seed": 1,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 46,
+          "summons": 14,
+          "merges": 8,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 42,
+          "summons": 21,
+          "merges": 12,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 41,
+          "summons": 32,
+          "merges": 21,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 78,
+          "summons": 46,
+          "merges": 31,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 286,
+          "summons": 65,
+          "merges": 50,
+          "blocked": 0,
+          "seconds": 59
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 393,
+          "summons": 77,
+          "merges": 62,
+          "blocked": 0,
+          "seconds": 71
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 456,
+          "summons": 90,
+          "merges": 75,
+          "blocked": 0,
+          "seconds": 84
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 615,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 5,
+          "seconds": 98
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 1139,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 20,
+          "seconds": 113
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 2033,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 47,
+          "seconds": 140
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 2583,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 63,
+          "seconds": 156
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 3194,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 80,
+          "seconds": 173
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 3854,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 98,
+          "seconds": 191
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 4514,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 117,
+          "seconds": 211
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 5791,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 157,
+          "seconds": 250
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 6545,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 177,
+          "seconds": 270
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 7335,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 199,
+          "seconds": 292
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 8215,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 223,
+          "seconds": 316
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 9188,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 251,
+          "seconds": 345
+        },
+        {
+          "wave": 21,
+          "life": 1,
+          "sp": 11008,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 320,
+          "seconds": 413
+        },
+        {
+          "wave": 22,
+          "life": 1,
+          "sp": 12161,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 355,
+          "seconds": 448
+        },
+        {
+          "wave": 23,
+          "life": 1,
+          "sp": 13429,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 397,
+          "seconds": 490
+        },
+        {
+          "wave": 24,
+          "life": 1,
+          "sp": 14805,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 445,
+          "seconds": 538
+        }
+      ],
+      "end": {
+        "wave": 24,
+        "life": 0,
+        "ended": true,
+        "sp": 16092,
+        "summons": 99,
+        "merges": 84,
+        "seconds": 583,
+        "lockedSeconds": 490,
+        "longestLockedSeconds": 490,
+        "actions": 178,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "merge",
+      "seed": 2,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 55,
+          "summons": 14,
+          "merges": 7,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 45,
+          "summons": 22,
+          "merges": 13,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 37,
+          "summons": 33,
+          "merges": 22,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 75,
+          "summons": 44,
+          "merges": 31,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 104,
+          "summons": 61,
+          "merges": 46,
+          "blocked": 0,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 190,
+          "summons": 73,
+          "merges": 59,
+          "blocked": 0,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 211,
+          "summons": 86,
+          "merges": 72,
+          "blocked": 0,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 195,
+          "summons": 100,
+          "merges": 85,
+          "blocked": 0,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 544,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 11,
+          "seconds": 110
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 1263,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 34,
+          "seconds": 133
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 1750,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 50,
+          "seconds": 149
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 2298,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 67,
+          "seconds": 166
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 2874,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 85,
+          "seconds": 183
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 3478,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 104,
+          "seconds": 203
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 4552,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 142,
+          "seconds": 240
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 5222,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 162,
+          "seconds": 261
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 5907,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 183,
+          "seconds": 282
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 6689,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 206,
+          "seconds": 304
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 7452,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 230,
+          "seconds": 328
+        },
+        {
+          "wave": 21,
+          "life": 1,
+          "sp": 8999,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 287,
+          "seconds": 386
+        },
+        {
+          "wave": 22,
+          "life": 1,
+          "sp": 9942,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 318,
+          "seconds": 417
+        },
+        {
+          "wave": 23,
+          "life": 1,
+          "sp": 10944,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 353,
+          "seconds": 452
+        },
+        {
+          "wave": 24,
+          "life": 1,
+          "sp": 12033,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 392,
+          "seconds": 491
+        },
+        {
+          "wave": 25,
+          "life": 1,
+          "sp": 13241,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 439,
+          "seconds": 538
+        }
+      ],
+      "end": {
+        "wave": 25,
+        "life": 0,
+        "ended": true,
+        "sp": 14383,
+        "summons": 104,
+        "merges": 89,
+        "seconds": 585,
+        "lockedSeconds": 486,
+        "longestLockedSeconds": 486,
+        "actions": 188,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "merge",
+      "seed": 3,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 40,
+          "summons": 13,
+          "merges": 5,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 53,
+          "summons": 20,
+          "merges": 11,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 49,
+          "summons": 30,
+          "merges": 19,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 48,
+          "summons": 42,
+          "merges": 29,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 204,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 9,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 451,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 21,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 717,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 34,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 988,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 48,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 1302,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 63,
+          "seconds": 110
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 1804,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 89,
+          "seconds": 135
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 2144,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 105,
+          "seconds": 151
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 2531,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 122,
+          "seconds": 168
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 2925,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 140,
+          "seconds": 186
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 3347,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 159,
+          "seconds": 206
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 4099,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 203,
+          "seconds": 249
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 4573,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 223,
+          "seconds": 270
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 5069,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 245,
+          "seconds": 292
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 5599,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 269,
+          "seconds": 315
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 6180,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 295,
+          "seconds": 342
+        },
+        {
+          "wave": 21,
+          "life": 1,
+          "sp": 7188,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 364,
+          "seconds": 411
+        },
+        {
+          "wave": 22,
+          "life": 1,
+          "sp": 7851,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 398,
+          "seconds": 444
+        },
+        {
+          "wave": 23,
+          "life": 1,
+          "sp": 8545,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 438,
+          "seconds": 485
+        },
+        {
+          "wave": 24,
+          "life": 1,
+          "sp": 9291,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 485,
+          "seconds": 531
+        }
+      ],
+      "end": {
+        "wave": 24,
+        "life": 0,
+        "ended": true,
+        "sp": 9988,
+        "summons": 50,
+        "merges": 35,
+        "seconds": 578,
+        "lockedSeconds": 531,
+        "longestLockedSeconds": 531,
+        "actions": 80,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "merge",
+      "seed": 4,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 40,
+          "summons": 13,
+          "merges": 5,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 42,
+          "summons": 21,
+          "merges": 12,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 36,
+          "summons": 32,
+          "merges": 20,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 56,
+          "summons": 44,
+          "merges": 30,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 125,
+          "summons": 61,
+          "merges": 46,
+          "blocked": 0,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 197,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 1,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 673,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 14,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 1133,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 28,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 1657,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 43,
+          "seconds": 110
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 2509,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 68,
+          "seconds": 135
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 3059,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 84,
+          "seconds": 151
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 3677,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 101,
+          "seconds": 168
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 4330,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 119,
+          "seconds": 186
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 5004,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 139,
+          "seconds": 206
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 6729,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 203,
+          "seconds": 270
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 7490,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 225,
+          "seconds": 293
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 8399,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 252,
+          "seconds": 319
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 9342,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 281,
+          "seconds": 349
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 10406,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 316,
+          "seconds": 383
+        },
+        {
+          "wave": 21,
+          "life": 1,
+          "sp": 12219,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 381,
+          "seconds": 448
+        },
+        {
+          "wave": 22,
+          "life": 1,
+          "sp": 13526,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 428,
+          "seconds": 495
+        }
+      ],
+      "end": {
+        "wave": 22,
+        "life": 0,
+        "ended": true,
+        "sp": 14748,
+        "summons": 72,
+        "merges": 57,
+        "seconds": 541,
+        "lockedSeconds": 474,
+        "longestLockedSeconds": 474,
+        "actions": 124,
+        "upgrades": 0
+      }
+    },
+    {
+      "mode": "active",
+      "seed": 1,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 46,
+          "summons": 14,
+          "merges": 8,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 42,
+          "summons": 21,
+          "merges": 12,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 41,
+          "summons": 32,
+          "merges": 21,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 78,
+          "summons": 46,
+          "merges": 31,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 286,
+          "summons": 65,
+          "merges": 50,
+          "blocked": 0,
+          "seconds": 59
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 393,
+          "summons": 77,
+          "merges": 62,
+          "blocked": 0,
+          "seconds": 71
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 656,
+          "summons": 90,
+          "merges": 75,
+          "blocked": 0,
+          "seconds": 84
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 115,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 5,
+          "seconds": 98
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 178,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 19,
+          "seconds": 112
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 381,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 40,
+          "seconds": 133
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 464,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 56,
+          "seconds": 149
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 373,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 72,
+          "seconds": 165
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 1312,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 89,
+          "seconds": 182
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 2560,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 107,
+          "seconds": 200
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 4385,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 133,
+          "seconds": 226
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 5835,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 152,
+          "seconds": 245
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 7255,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 173,
+          "seconds": 266
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 8806,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 193,
+          "seconds": 286
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 10403,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 215,
+          "seconds": 308
+        },
+        {
+          "wave": 21,
+          "life": 3,
+          "sp": 13087,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 254,
+          "seconds": 347
+        },
+        {
+          "wave": 22,
+          "life": 3,
+          "sp": 14790,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 277,
+          "seconds": 370
+        },
+        {
+          "wave": 23,
+          "life": 3,
+          "sp": 16850,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 301,
+          "seconds": 395
+        },
+        {
+          "wave": 24,
+          "life": 3,
+          "sp": 18662,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 327,
+          "seconds": 420
+        },
+        {
+          "wave": 25,
+          "life": 3,
+          "sp": 20523,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 353,
+          "seconds": 446
+        },
+        {
+          "wave": 26,
+          "life": 1,
+          "sp": 25662,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 434,
+          "seconds": 527
+        },
+        {
+          "wave": 27,
+          "life": 1,
+          "sp": 28016,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 464,
+          "seconds": 557
+        },
+        {
+          "wave": 28,
+          "life": 1,
+          "sp": 30213,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 499,
+          "seconds": 592
+        },
+        {
+          "wave": 29,
+          "life": 1,
+          "sp": 32900,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 536,
+          "seconds": 629
+        },
+        {
+          "wave": 30,
+          "life": 1,
+          "sp": 35677,
+          "summons": 99,
+          "merges": 84,
+          "blocked": 579,
+          "seconds": 672
+        }
+      ],
+      "end": {
+        "wave": 30,
+        "life": 0,
+        "ended": true,
+        "sp": 40127,
+        "summons": 99,
+        "merges": 84,
+        "seconds": 743,
+        "lockedSeconds": 650,
+        "longestLockedSeconds": 650,
+        "actions": 198,
+        "upgrades": 20
+      }
+    },
+    {
+      "mode": "active",
+      "seed": 2,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 55,
+          "summons": 14,
+          "merges": 7,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 45,
+          "summons": 22,
+          "merges": 13,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 37,
+          "summons": 33,
+          "merges": 22,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 75,
+          "summons": 44,
+          "merges": 31,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 104,
+          "summons": 61,
+          "merges": 46,
+          "blocked": 0,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 190,
+          "summons": 73,
+          "merges": 59,
+          "blocked": 0,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 211,
+          "summons": 86,
+          "merges": 72,
+          "blocked": 0,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 195,
+          "summons": 100,
+          "merges": 85,
+          "blocked": 0,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 64,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 11,
+          "seconds": 110
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 194,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 31,
+          "seconds": 130
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 128,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 47,
+          "seconds": 145
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 212,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 63,
+          "seconds": 162
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 346,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 80,
+          "seconds": 179
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 378,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 99,
+          "seconds": 197
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 398,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 124,
+          "seconds": 222
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 1343,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 143,
+          "seconds": 242
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 2348,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 163,
+          "seconds": 262
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 3394,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 184,
+          "seconds": 283
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 4561,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 206,
+          "seconds": 304
+        },
+        {
+          "wave": 21,
+          "life": 3,
+          "sp": 6385,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 243,
+          "seconds": 342
+        },
+        {
+          "wave": 22,
+          "life": 3,
+          "sp": 7568,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 266,
+          "seconds": 365
+        },
+        {
+          "wave": 23,
+          "life": 3,
+          "sp": 8798,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 290,
+          "seconds": 389
+        },
+        {
+          "wave": 24,
+          "life": 3,
+          "sp": 10105,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 315,
+          "seconds": 414
+        },
+        {
+          "wave": 25,
+          "life": 3,
+          "sp": 11461,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 341,
+          "seconds": 440
+        },
+        {
+          "wave": 26,
+          "life": 3,
+          "sp": 14178,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 400,
+          "seconds": 499
+        },
+        {
+          "wave": 27,
+          "life": 3,
+          "sp": 15552,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 427,
+          "seconds": 526
+        },
+        {
+          "wave": 28,
+          "life": 3,
+          "sp": 17019,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 455,
+          "seconds": 554
+        },
+        {
+          "wave": 29,
+          "life": 3,
+          "sp": 18516,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 484,
+          "seconds": 583
+        },
+        {
+          "wave": 30,
+          "life": 3,
+          "sp": 20223,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 519,
+          "seconds": 618
+        },
+        {
+          "wave": 31,
+          "life": 1,
+          "sp": 23508,
+          "summons": 104,
+          "merges": 89,
+          "blocked": 598,
+          "seconds": 696
+        }
+      ],
+      "end": {
+        "wave": 31,
+        "life": 1,
+        "ended": false,
+        "sp": 23508,
+        "summons": 104,
+        "merges": 89,
+        "seconds": 696,
+        "lockedSeconds": 598,
+        "longestLockedSeconds": 598,
+        "actions": 208,
+        "upgrades": 20
+      }
+    },
+    {
+      "mode": "active",
+      "seed": 3,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 40,
+          "summons": 13,
+          "merges": 5,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 53,
+          "summons": 20,
+          "merges": 11,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 49,
+          "summons": 30,
+          "merges": 19,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 48,
+          "summons": 42,
+          "merges": 29,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 104,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 9,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 57,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 21,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 239,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 34,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 124,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 48,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 58,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 63,
+          "seconds": 109
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 387,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 83,
+          "seconds": 130
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 163,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 99,
+          "seconds": 146
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 272,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 116,
+          "seconds": 162
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 148,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 133,
+          "seconds": 179
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 203,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 151,
+          "seconds": 198
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 607,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 180,
+          "seconds": 226
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 371,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 199,
+          "seconds": 245
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 541,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 219,
+          "seconds": 266
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 1182,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 240,
+          "seconds": 287
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 1824,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 262,
+          "seconds": 309
+        },
+        {
+          "wave": 21,
+          "life": 3,
+          "sp": 2928,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 303,
+          "seconds": 349
+        },
+        {
+          "wave": 22,
+          "life": 3,
+          "sp": 3661,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 326,
+          "seconds": 372
+        },
+        {
+          "wave": 23,
+          "life": 3,
+          "sp": 4396,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 350,
+          "seconds": 396
+        },
+        {
+          "wave": 24,
+          "life": 3,
+          "sp": 5178,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 375,
+          "seconds": 422
+        },
+        {
+          "wave": 25,
+          "life": 3,
+          "sp": 6009,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 401,
+          "seconds": 448
+        },
+        {
+          "wave": 26,
+          "life": 3,
+          "sp": 7466,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 460,
+          "seconds": 506
+        },
+        {
+          "wave": 27,
+          "life": 3,
+          "sp": 8345,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 488,
+          "seconds": 535
+        },
+        {
+          "wave": 28,
+          "life": 3,
+          "sp": 9272,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 521,
+          "seconds": 568
+        },
+        {
+          "wave": 29,
+          "life": 3,
+          "sp": 10244,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 557,
+          "seconds": 603
+        },
+        {
+          "wave": 30,
+          "life": 3,
+          "sp": 11261,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 597,
+          "seconds": 644
+        },
+        {
+          "wave": 31,
+          "life": 1,
+          "sp": 12806,
+          "summons": 50,
+          "merges": 35,
+          "blocked": 665,
+          "seconds": 712
+        }
+      ],
+      "end": {
+        "wave": 31,
+        "life": 1,
+        "ended": false,
+        "sp": 12806,
+        "summons": 50,
+        "merges": 35,
+        "seconds": 712,
+        "lockedSeconds": 665,
+        "longestLockedSeconds": 665,
+        "actions": 100,
+        "upgrades": 20
+      }
+    },
+    {
+      "mode": "active",
+      "seed": 4,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "life": 3,
+          "sp": 70,
+          "summons": 6,
+          "merges": 0,
+          "blocked": 0,
+          "seconds": 0
+        },
+        {
+          "wave": 2,
+          "life": 3,
+          "sp": 40,
+          "summons": 13,
+          "merges": 5,
+          "blocked": 0,
+          "seconds": 9
+        },
+        {
+          "wave": 3,
+          "life": 3,
+          "sp": 42,
+          "summons": 21,
+          "merges": 12,
+          "blocked": 0,
+          "seconds": 18
+        },
+        {
+          "wave": 4,
+          "life": 3,
+          "sp": 36,
+          "summons": 32,
+          "merges": 20,
+          "blocked": 0,
+          "seconds": 29
+        },
+        {
+          "wave": 5,
+          "life": 3,
+          "sp": 56,
+          "summons": 44,
+          "merges": 30,
+          "blocked": 0,
+          "seconds": 40
+        },
+        {
+          "wave": 6,
+          "life": 3,
+          "sp": 125,
+          "summons": 61,
+          "merges": 46,
+          "blocked": 0,
+          "seconds": 56
+        },
+        {
+          "wave": 7,
+          "life": 3,
+          "sp": 97,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 1,
+          "seconds": 68
+        },
+        {
+          "wave": 8,
+          "life": 3,
+          "sp": 209,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 14,
+          "seconds": 81
+        },
+        {
+          "wave": 9,
+          "life": 3,
+          "sp": 57,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 28,
+          "seconds": 95
+        },
+        {
+          "wave": 10,
+          "life": 3,
+          "sp": 177,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 43,
+          "seconds": 110
+        },
+        {
+          "wave": 11,
+          "life": 3,
+          "sp": 296,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 62,
+          "seconds": 129
+        },
+        {
+          "wave": 12,
+          "life": 3,
+          "sp": 380,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 77,
+          "seconds": 144
+        },
+        {
+          "wave": 13,
+          "life": 3,
+          "sp": 873,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 94,
+          "seconds": 161
+        },
+        {
+          "wave": 14,
+          "life": 3,
+          "sp": 2137,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 111,
+          "seconds": 178
+        },
+        {
+          "wave": 15,
+          "life": 3,
+          "sp": 3460,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 129,
+          "seconds": 197
+        },
+        {
+          "wave": 16,
+          "life": 3,
+          "sp": 5760,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 160,
+          "seconds": 228
+        },
+        {
+          "wave": 17,
+          "life": 3,
+          "sp": 7105,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 180,
+          "seconds": 247
+        },
+        {
+          "wave": 18,
+          "life": 3,
+          "sp": 8570,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 200,
+          "seconds": 267
+        },
+        {
+          "wave": 19,
+          "life": 3,
+          "sp": 10181,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 221,
+          "seconds": 288
+        },
+        {
+          "wave": 20,
+          "life": 3,
+          "sp": 11703,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 243,
+          "seconds": 310
+        },
+        {
+          "wave": 21,
+          "life": 3,
+          "sp": 14897,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 292,
+          "seconds": 359
+        },
+        {
+          "wave": 22,
+          "life": 3,
+          "sp": 16615,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 316,
+          "seconds": 383
+        },
+        {
+          "wave": 23,
+          "life": 3,
+          "sp": 18690,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 340,
+          "seconds": 407
+        },
+        {
+          "wave": 24,
+          "life": 3,
+          "sp": 20502,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 366,
+          "seconds": 433
+        },
+        {
+          "wave": 25,
+          "life": 3,
+          "sp": 22483,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 395,
+          "seconds": 462
+        },
+        {
+          "wave": 26,
+          "life": 1,
+          "sp": 27037,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 461,
+          "seconds": 528
+        },
+        {
+          "wave": 27,
+          "life": 1,
+          "sp": 29246,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 499,
+          "seconds": 566
+        },
+        {
+          "wave": 28,
+          "life": 1,
+          "sp": 32303,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 540,
+          "seconds": 607
+        },
+        {
+          "wave": 29,
+          "life": 1,
+          "sp": 35335,
+          "summons": 72,
+          "merges": 57,
+          "blocked": 589,
+          "seconds": 656
+        }
+      ],
+      "end": {
+        "wave": 29,
+        "life": 0,
+        "ended": true,
+        "sp": 38085,
+        "summons": 72,
+        "merges": 57,
+        "seconds": 703,
+        "lockedSeconds": 636,
+        "longestLockedSeconds": 636,
+        "actions": 144,
+        "upgrades": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,1142 @@
+{
+  "resources": [
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/background.webp",
+      "bytes": 299350,
+      "duration": 228.39999997615814,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/skill-cutin.css",
+      "bytes": 3236,
+      "duration": 200.30000001192093,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/title-logo.webp",
+      "bytes": 102592,
+      "duration": 232,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/gm-mode.css",
+      "bytes": 1583,
+      "duration": 271.9000000357628,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/hiring-stories.css",
+      "bytes": 2668,
+      "duration": 204.19999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/ui.css",
+      "bytes": 74155,
+      "duration": 227.29999995231628,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/mobile/item-grade.webp",
+      "bytes": 21426,
+      "duration": 221.89999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/open-scene.css",
+      "bytes": 64271,
+      "duration": 240.5999999642372,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/mobile/item-king.webp",
+      "bytes": 28868,
+      "duration": 231.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/gm-mode.js",
+      "bytes": 2104,
+      "duration": 233.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/mobile/item-kind.webp",
+      "bytes": 22714,
+      "duration": 316.10000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/game-language.js",
+      "bytes": 7201,
+      "duration": 310.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/performance.js",
+      "bytes": 3853,
+      "duration": 251.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/expansion-catalog.js",
+      "bytes": 4872,
+      "duration": 256.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/motion/manifest.js",
+      "bytes": 24890,
+      "duration": 274.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/session-guard.js",
+      "bytes": 4060,
+      "duration": 281.60000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/manifest.js",
+      "bytes": 22842,
+      "duration": 273.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/bosses/manifest.js",
+      "bytes": 6578,
+      "duration": 282.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/expansion-v2/manifest.js",
+      "bytes": 9884,
+      "duration": 343.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/combat-comic/manifest.js",
+      "bytes": 18159,
+      "duration": 387.0999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/outlines.js",
+      "bytes": 192455,
+      "duration": 237.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-art.js",
+      "bytes": 1383,
+      "duration": 249.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/combat-motion.js",
+      "bytes": 5757,
+      "duration": 255.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/motion.js",
+      "bytes": 13648,
+      "duration": 390.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/training.js",
+      "bytes": 7627,
+      "duration": 251.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/save-transfer.js",
+      "bytes": 4372,
+      "duration": 300.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/skill-cutin.js",
+      "bytes": 8866,
+      "duration": 308.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/bosses.js",
+      "bytes": 15099,
+      "duration": 416.0999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/castle-stories.js",
+      "bytes": 38320,
+      "duration": 284.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/player-profile.js",
+      "bytes": 3314,
+      "duration": 405.9000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/meta.js",
+      "bytes": 17424,
+      "duration": 429.4000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/character-portraits.js",
+      "bytes": 2018,
+      "duration": 507.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/game.js",
+      "bytes": 41108,
+      "duration": 236,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/expansion-combat.js",
+      "bytes": 16463,
+      "duration": 290,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/staff-combat.js",
+      "bytes": 5339,
+      "duration": 405.39999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/app.js",
+      "bytes": 5170,
+      "duration": 301,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/staff-codex.js",
+      "bytes": 15078,
+      "duration": 401.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/progression.js",
+      "bytes": 35717,
+      "duration": 421.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/gm-ui.js",
+      "bytes": 2521,
+      "duration": 264.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/training-ui.js",
+      "bytes": 10094,
+      "duration": 282.9000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/reference-ui.js",
+      "bytes": 7541,
+      "duration": 300.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/recruitment.js",
+      "bytes": 4173,
+      "duration": 308,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/recruitment-dialog.js",
+      "bytes": 808,
+      "duration": 334.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/castle-story-player.js",
+      "bytes": 6502,
+      "duration": 390.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/shop-system.js",
+      "bytes": 5555,
+      "duration": 391.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/discount-tutorial.js",
+      "bytes": 3188,
+      "duration": 310.5999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/usability.js",
+      "bytes": 3573,
+      "duration": 345.5999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/new-hire-trial.js",
+      "bytes": 3502,
+      "duration": 385.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/orientation.js",
+      "bytes": 753,
+      "duration": 282.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/performance-ui.js",
+      "bytes": 1780,
+      "duration": 362.7000000476837,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/story-loading.js",
+      "bytes": 1290,
+      "duration": 270.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/lobby-duo.js",
+      "bytes": 3055,
+      "duration": 339.60000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/live-ui-audit-fixes.js",
+      "bytes": 9182,
+      "duration": 387.30000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/save-transfer-ui.js",
+      "bytes": 4424,
+      "duration": 387.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/development.js",
+      "bytes": 16277,
+      "duration": 388.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/live-proposal-skin.js",
+      "bytes": 1113,
+      "duration": 389,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/dialog-layout.js",
+      "bytes": 5548,
+      "duration": 272.0999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/game-sfx.js",
+      "bytes": 10821,
+      "duration": 281.0999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/approved-ui.js",
+      "bytes": 6408,
+      "duration": 336.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/game-audio.js",
+      "bytes": 3903,
+      "duration": 366.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/hiring-stories/game-data.js",
+      "bytes": 26495,
+      "duration": 368.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/tactical-duty.js",
+      "bytes": 24711,
+      "duration": 353.10000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/hiring-stories.js",
+      "bytes": 5153,
+      "duration": 389.60000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/tutorial-coach.js",
+      "bytes": 19874,
+      "duration": 390.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/gameworld-ui.js",
+      "bytes": 1649,
+      "duration": 387.5999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-presentation.js",
+      "bytes": 13202,
+      "duration": 391.19999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/open-scene.js",
+      "bytes": 5464,
+      "duration": 334.9000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/lobby.css",
+      "bytes": 11651,
+      "duration": 230.69999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-roster-20261109/roster.css",
+      "bytes": 12345,
+      "duration": 238.0999999642372,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-roster-20261109/roster.js",
+      "bytes": 6930,
+      "duration": 347,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/lobby.js",
+      "bytes": 9957,
+      "duration": 387.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-shop-20261109/shop.css",
+      "bytes": 13459,
+      "duration": 383.9000000357628,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-shop-20261109/shop.js",
+      "bytes": 7718,
+      "duration": 401.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-comic.css",
+      "bytes": 13586,
+      "duration": 338,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-training-20261109/training.css",
+      "bytes": 9189,
+      "duration": 385,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-comic.js",
+      "bytes": 4859,
+      "duration": 384.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-training-20261109/training.js",
+      "bytes": 7064,
+      "duration": 388.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-exact.css",
+      "bytes": 15226,
+      "duration": 238,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/shared-chrome.css",
+      "bytes": 45792,
+      "duration": 385.60000002384186,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-tools.css",
+      "bytes": 25053,
+      "duration": 247,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-base.css",
+      "bytes": 4984,
+      "duration": 268.19999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/shared-chrome.js",
+      "bytes": 7819,
+      "duration": 386,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-people.css",
+      "bytes": 41343,
+      "duration": 319,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-stories.css",
+      "bytes": 28906,
+      "duration": 229.5999999642372,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-tools.js",
+      "bytes": 4777,
+      "duration": 368.69999998807907,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-people.js",
+      "bytes": 4776,
+      "duration": 383.5999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/text-grid.css",
+      "bytes": 16080,
+      "duration": 219.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/story-art.css",
+      "bytes": 3000,
+      "duration": 230.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/text-grid.js",
+      "bytes": 3107,
+      "duration": 347,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-stories.js",
+      "bytes": 5388,
+      "duration": 360.7000000476837,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/battle-cohesion.css",
+      "bytes": 4377,
+      "duration": 219.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/language-settings.css",
+      "bytes": 1373,
+      "duration": 282.39999997615814,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/wave-rewards.css",
+      "bytes": 6177,
+      "duration": 402.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/story-art.js",
+      "bytes": 4676,
+      "duration": 358.89999997615814,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-settings.css",
+      "bytes": 6259,
+      "duration": 399.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/language-settings.js",
+      "bytes": 2537,
+      "duration": 391.0999999642372,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-settings.js",
+      "bytes": 6767,
+      "duration": 406.60000002384186,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/moonlight-ui.css",
+      "bytes": 26771,
+      "duration": 229.69999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-shop.css",
+      "bytes": 12078,
+      "duration": 263.30000001192093,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-people.css",
+      "bytes": 16751,
+      "duration": 269.5999999642372,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-shop.js",
+      "bytes": 5868,
+      "duration": 417.5,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/single-screen-people.js",
+      "bytes": 7878,
+      "duration": 597.6999999880791,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/story-fullscreen.css",
+      "bytes": 20396,
+      "duration": 236.4000000357628,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/rapid-summon.js",
+      "bytes": 1450,
+      "duration": 417.80000001192093,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/story-fullscreen.js",
+      "bytes": 2711,
+      "duration": 423.4000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/moonlight-ui.js",
+      "bytes": 2125,
+      "duration": 441.4000000357628,
+      "type": "script"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/coin.svg",
+      "bytes": 462,
+      "duration": 202.4000000357628,
+      "type": "css"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-approved/lobby-background.webp",
+      "bytes": 124818,
+      "duration": 201.5,
+      "type": "css"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/mobile/lobby-gobi.webp",
+      "bytes": 112026,
+      "duration": 205.20000004768372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/shield.svg",
+      "bytes": 380,
+      "duration": 193.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/electric-technician.webp",
+      "bytes": 48756,
+      "duration": 200.10000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/orc-technician.webp",
+      "bytes": 35654,
+      "duration": 203.39999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/gobi.webp",
+      "bytes": 51344,
+      "duration": 205.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/slime-cleaner.webp",
+      "bytes": 34192,
+      "duration": 206.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/goblin-guard.webp",
+      "bytes": 42952,
+      "duration": 208.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/skeleton-chef.webp",
+      "bytes": 41664,
+      "duration": 204.79999995231628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/ghost-courier.webp",
+      "bytes": 37386,
+      "duration": 216.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/bat-nurse.webp",
+      "bytes": 45344,
+      "duration": 219.89999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/nightmare-counselor.webp",
+      "bytes": 49670,
+      "duration": 220.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/mimic-storekeeper.webp",
+      "bytes": 51684,
+      "duration": 227.60000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/spider-tailor.webp",
+      "bytes": 48218,
+      "duration": 239.4000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/kkangtong-engineer.webp",
+      "bytes": 54354,
+      "duration": 222.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/duru-archivist.webp",
+      "bytes": 47894,
+      "duration": 236.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/kobold-recruiter.webp",
+      "bytes": 49932,
+      "duration": 243.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/ddangkong-miner.webp",
+      "bytes": 44536,
+      "duration": 213.4000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/chalkak-photographer.webp",
+      "bytes": 38546,
+      "duration": 228.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-portraits/bongtu-postmaster.webp",
+      "bytes": 50716,
+      "duration": 230.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/staff.svg",
+      "bytes": 347,
+      "duration": 216.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/goblin-guard-idle.webp",
+      "bytes": 32062,
+      "duration": 195.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/orc-technician-idle.webp",
+      "bytes": 34576,
+      "duration": 213,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/gobi-idle.webp",
+      "bytes": 36758,
+      "duration": 206,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/electric-technician-idle.webp",
+      "bytes": 30266,
+      "duration": 219.89999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/character-motion/slime-cleaner-idle.webp",
+      "bytes": 27096,
+      "duration": 227.89999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/book.svg",
+      "bytes": 0,
+      "duration": 184.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/help.svg",
+      "bytes": 0,
+      "duration": 184,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/home.svg",
+      "bytes": 0,
+      "duration": 184.29999995231628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/shop.svg",
+      "bytes": 0,
+      "duration": 184.29999995231628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/scroll.svg",
+      "bytes": 420,
+      "duration": 228.39999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/moon.svg",
+      "bytes": 0,
+      "duration": 184.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/gear.svg",
+      "bytes": 418,
+      "duration": 218.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-live/board-cell-selected.svg",
+      "bytes": 425,
+      "duration": 193.89999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-live/board-cell-merge.svg",
+      "bytes": 429,
+      "duration": 242.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-live/board-cell.svg",
+      "bytes": 429,
+      "duration": 244,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/arrow-left.svg",
+      "bytes": 0,
+      "duration": 178.10000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/close.svg",
+      "bytes": 355,
+      "duration": 199.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/arrow-right.svg",
+      "bytes": 399,
+      "duration": 211.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/ui-v2/icons/sword.svg",
+      "bytes": 0,
+      "duration": 160.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/gear.svg",
+      "bytes": 302,
+      "duration": 200.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/book.svg",
+      "bytes": 227,
+      "duration": 233.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/arrow.svg",
+      "bytes": 194,
+      "duration": 210.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/moon.svg",
+      "bytes": 215,
+      "duration": 210.5999999642372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/help.svg",
+      "bytes": 247,
+      "duration": 211.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/sword.svg",
+      "bytes": 217,
+      "duration": 225.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/scroll.svg",
+      "bytes": 251,
+      "duration": 202.9000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/home.svg",
+      "bytes": 217,
+      "duration": 214,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/shop.svg",
+      "bytes": 212,
+      "duration": 219.4000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/back.svg",
+      "bytes": 194,
+      "duration": 210.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/shield.svg",
+      "bytes": 235,
+      "duration": 233.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/close.svg",
+      "bytes": 193,
+      "duration": 247.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/open-scene/icons/staff.svg",
+      "bytes": 230,
+      "duration": 270.4000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/lobby.css",
+      "bytes": 11651,
+      "duration": 16.899999976158142,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/wallet.webp",
+      "bytes": 34658,
+      "duration": 214.80000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/settings.webp",
+      "bytes": 12052,
+      "duration": 225.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/story.webp",
+      "bytes": 31500,
+      "duration": 211.5999999642372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/training.webp",
+      "bytes": 28970,
+      "duration": 220.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/button-primary.webp",
+      "bytes": 76854,
+      "duration": 229.0999999642372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/gobi.webp",
+      "bytes": 86854,
+      "duration": 241.5999999642372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/records.webp",
+      "bytes": 21502,
+      "duration": 242.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/paper.webp",
+      "bytes": 77236,
+      "duration": 250.0999999642372,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-roster-20261109/roster.css",
+      "bytes": 12345,
+      "duration": 13.800000011920929,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-shop-20261109/shop.css",
+      "bytes": 13459,
+      "duration": 12.5,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/battle-exact/item-grade.webp",
+      "bytes": 14884,
+      "duration": 256.5,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/battle-exact/item-kind.webp",
+      "bytes": 11914,
+      "duration": 249.79999995231628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/battle-exact/item-king.webp",
+      "bytes": 11502,
+      "duration": 239.9000000357628,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-training-20261109/training.css",
+      "bytes": 9189,
+      "duration": 30.69999998807907,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/shared-chrome.css",
+      "bytes": 45792,
+      "duration": 20,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/book.svg",
+      "bytes": 596,
+      "duration": 225.60000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/shop.svg",
+      "bytes": 716,
+      "duration": 219.10000002384186,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/home.svg",
+      "bytes": 606,
+      "duration": 221.69999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/close.svg",
+      "bytes": 222,
+      "duration": 241.30000001192093,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/back.svg",
+      "bytes": 224,
+      "duration": 251.39999997615814,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/concept-people.css",
+      "bytes": 41343,
+      "duration": 11.699999988079071,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/shared-chrome/active-tile.svg",
+      "bytes": 787,
+      "duration": 200.80000001192093,
+      "type": "css"
+    },
+    {
+      "path": "/after-hours-defense-play/previews/asset-lobby-20261109/assets/BlackHanSans-Regular.woff2",
+      "bytes": 190600,
+      "duration": 222.39999997615814,
+      "type": "css"
+    },
+    {
+      "path": "/after-hours-defense-play/moonlight-ui.css",
+      "bytes": 26771,
+      "duration": 9.899999976158142,
+      "type": "link"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/moonlight/lobby.webp",
+      "bytes": 93596,
+      "duration": 208.19999998807907,
+      "type": "img"
+    },
+    {
+      "path": "/after-hours-defense-play/assets/concept-stories/torn-paper.svg",
+      "bytes": 661,
+      "duration": 204,
+      "type": "css"
+    },
+    {
+      "path": "/favicon.ico",
+      "bytes": 9115,
+      "duration": 200.39999997615814,
+      "type": "other"
+    }
+  ],
+  "stats": {
+    "draws": 0,
+    "updates": 0,
+    "uiFlushes": 1,
+    "backgroundBuilds": 0,
+    "portraitDraws": 0
+  },
+  "total": 3837267,
+  "imageBytes": 2157726,
+  "requests": 188
+}

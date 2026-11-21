@@ -3,7 +3,7 @@
 (() => {
  if(typeof URL!=='function'||typeof MutationObserver!=='function'||typeof document.createElement!=='function'||!document.body)return;
  const sheet=new URL('concept-people.css?v=approved-3',document.baseURI).href;
- const image=(id,cls)=>{const img=document.createElement('img');img.src=new URL('assets/character-portraits/'+id+'.webp',document.baseURI).href;img.alt='';img.className=cls;return img};
+ const image=(id,cls)=>{const img=document.createElement('img');img.loading='lazy';img.decoding='async';img.src=new URL('assets/character-portraits/'+id+'.webp',document.baseURI).href;img.alt='';img.className=cls;return img};
  const watched=new WeakSet();let queued=false;
  function refresh(){
   for(const id of ['starter-choice','staff-trial'])document.getElementById(id)?.classList.add('concept-modal');

@@ -42,6 +42,8 @@ files.add('rapid-summon.js');
 files.add('designs/story-fullscreen-20261120/index.html');
 files.add('designs/story-fullscreen-20261120/selected.html');
 files.add('qa/design-compare-20261120/index.html');
+// Opt-in audit report; never requested by the game entry point.
+for(const name of fs.readdirSync(path.join(root,'qa/flow-loading-20261121')))files.add('qa/flow-loading-20261121/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/art-review')))if(/\.(html|json)$/.test(name))files.add('assets/art-review/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/art-review/before')))if(name.endsWith('.webp'))files.add('assets/art-review/before/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/text-grid')))if(/\.(webp|html|json)$/.test(name))files.add('assets/text-grid/'+name);
@@ -60,6 +62,8 @@ files.add('assets/tutorial/demon-king-night-mentor.webp');
 files.add('assets/comic/01-first-shift-sd.webp');
 for(const f of ['hiring-stories.js','hiring-stories.css','assets/hiring-stories/game-data.js'])files.add(f);
 for(const dir of fs.readdirSync(path.join(root,'assets/hiring-stories'))){const p=path.join(root,'assets/hiring-stories',dir);if(!fs.statSync(p).isDirectory())continue;for(const name of fs.readdirSync(p))if(name.endsWith('.webp'))files.add('assets/hiring-stories/'+dir+'/'+name);}
+
+for(const name of fs.readdirSync(path.join(root,'assets/character-portraits/thumbs')))if(name.endsWith('.webp'))files.add('assets/character-portraits/thumbs/'+name);
 
 // Publish the isolated design reference without replacing the live game.
 for(const name of fs.readdirSync(path.join(root,'previews/ui-directions-20261102')))if(/\.(html|css|js|png)$/.test(name))files.add('previews/ui-directions-20261102/'+name);

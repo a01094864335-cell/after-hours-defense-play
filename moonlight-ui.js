@@ -16,7 +16,7 @@
  const shop=document.getElementById('asset-shop-host')?.shadowRoot;
  if(shop){
   const stage=shop.querySelector('.hero-stage');const scene=document.createElement('div');scene.className='moon-shop-scene';
-  scene.innerHTML='<img class="grid-shop-hero moon-counter" alt=""><h2 class="grid-shop-title">영웅 채용팩</h2><img class="moon-postmaster" alt="" src="'+url('assets/character-portraits/ghost-courier.webp')+'"><div class="moon-candidates">'+['gobi','slime-cleaner','electric-technician'].map(id=>'<img alt="" src="'+url('assets/character-portraits/'+id+'.webp')+'">').join('')+'</div>';
+  scene.innerHTML='<img loading="lazy" decoding="async" class="grid-shop-hero moon-counter" alt=""><h2 class="grid-shop-title">영웅 채용팩</h2><img loading="lazy" decoding="async" class="moon-postmaster" alt="" src="'+url('assets/character-portraits/ghost-courier.webp')+'"><div class="moon-candidates">'+['gobi','slime-cleaner','electric-technician'].map(id=>'<img loading="lazy" decoding="async" alt="" src="'+url('assets/character-portraits/'+id+'.webp')+'">').join('')+'</div>';
   stage.querySelectorAll('.grid-shop-hero,.grid-shop-title,.grid-shop-eyebrow').forEach(e=>e.remove());stage.append(scene);GamePerformance.loadOnDisplay(scene.querySelector('.moon-counter'),url('assets/moonlight/shop.webp')); stage.setAttribute('aria-label','달빛 우편 창구의 영웅 채용팩');
  }
  document.documentElement.dataset.uiVersion='moonlight-20261119';

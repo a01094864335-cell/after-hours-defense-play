@@ -4,7 +4,7 @@
  if(typeof URL!=='function' || !document.currentScript || typeof document.createElement!=='function')return;
  const root=new URL('.',document.currentScript.src);
  const ids=['menu','info','leave','guide','perk','equipment','deck','daily-events-dialog','journey-dialog','save-transfer-dialog','story-archive'];
- function image(key){const i=document.createElement('img');i.src=new URL('assets/character-portraits/'+key+'.webp',root).href;i.alt='';i.className='concept-hero';i.setAttribute('aria-hidden','true');return i;}
+ function image(key){const i=document.createElement('img');i.loading='lazy';i.decoding='async';i.src=new URL('assets/character-portraits/'+key+'.webp',root).href;i.alt='';i.className='concept-hero';i.setAttribute('aria-hidden','true');return i;}
  function decorate(panel,key,kind){const header=panel.querySelector(':scope > header,:scope > .sheet-head');if(!header||header.querySelector('.concept-hero'))return;const i=image(key);i.classList.add(kind);header.prepend(i);}
  function footer(panel,id,label,target){if(panel.querySelector('#'+id))return;const f=document.createElement('footer');f.className='ui-dialog-actions concept-footer';const b=document.createElement('button');b.id=id;b.type='button';b.textContent=label;b.addEventListener('click',()=>panel.querySelector(target)?.click());f.append(b);panel.append(f);}
  function refresh(){

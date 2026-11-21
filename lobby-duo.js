@@ -3,7 +3,7 @@
  const q=s=>document.querySelector(s),lobby=q('#lobby'),art=q('.lobby-art');
  if(!lobby||!art||typeof art.append!=='function')return;
  document.documentElement.classList.add('duo-live');
- const oldHero=q('.lobby-gobi'),largeHero=new Image();largeHero.className='lobby-gobi';largeHero.dataset.motion='static-duo-gobi';GamePerformance.loadOnDisplay(largeHero,'assets/mobile/lobby-gobi.webp');largeHero.alt='신입 고비';oldHero.replaceWith(largeHero);
+ const oldHero=q('.lobby-gobi'),largeHero=new Image();largeHero.className='lobby-gobi';largeHero.dataset.motion='static-duo-gobi';if(!document.body.classList.contains('asset-lobby-active'))GamePerformance.loadOnDisplay(largeHero,'assets/mobile/lobby-gobi.webp');largeHero.alt='신입 고비';oldHero.replaceWith(largeHero);
  const title=q('.lobby-title'),heading=title.querySelector('h1');
  heading.className='duo-sr';const floating=document.createElement('div');floating.className='duo-logo-float';
  const logo=new Image();GamePerformance.loadOnDisplay(logo,'assets/reference-ui/title-logo.svg');logo.alt='';floating.append(logo);

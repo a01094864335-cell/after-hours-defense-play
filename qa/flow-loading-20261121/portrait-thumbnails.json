@@ -1,0 +1,194 @@
+[
+  {
+    "file": "assets/character-portraits/thumbs/bat-nurse.webp",
+    "originalBytes": 45344,
+    "bytes": 15228,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "5b2318c4bfbc327b4076fa3aaf9d76acab572b10d9ecb881effb93dda1afe9b5"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/bongtu-postmaster.webp",
+    "originalBytes": 50716,
+    "bytes": 15902,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "66fc223cafd9acfaff5ca10cf33999ed5913735184f8c8a906d94819cfb095e0"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/chalkak-photographer.webp",
+    "originalBytes": 38546,
+    "bytes": 12966,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "69654c43e19e065b0e46fa3edb05c13c2d3f8ec5e8f2369d5841912371d5e109"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/ddangkong-miner.webp",
+    "originalBytes": 44536,
+    "bytes": 13146,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "d06eaeda7d0db8fe704a02f4e06ec2595679edb57ea3e9257353f73c1f659adb"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/duru-archivist.webp",
+    "originalBytes": 47894,
+    "bytes": 14300,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "38bedcadc4a103815bed34f12840a1e8a8e00ee68cbef973f301d58f09605d8b"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/electric-technician.webp",
+    "originalBytes": 48756,
+    "bytes": 15292,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "96a2ed3be22673c03c53d07b5e81191ca16f321f9ebb7cc94bcedf2a039800fd"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/ghost-courier.webp",
+    "originalBytes": 37386,
+    "bytes": 12840,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "e970fc7d446f4d4b3546e04d338a842939041222db7e52be61ee18b39d517f2b"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/gobi.webp",
+    "originalBytes": 51344,
+    "bytes": 16002,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "ed47dfe9c4cc0dbf2578596271a8759458ed599cc2473c8c6f8c2d6f00811e0e"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/goblin-guard.webp",
+    "originalBytes": 42952,
+    "bytes": 14174,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "9d58e230633d5bd30ad95ef8fc6d64eb8fafab99ae2c46b289c61b6e142a8e83"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/kkangtong-engineer.webp",
+    "originalBytes": 54354,
+    "bytes": 16228,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "1167784990443adcd7f60ce515681e68982ca8ac1074505056f039f735713cfe"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/kobold-recruiter.webp",
+    "originalBytes": 49932,
+    "bytes": 16356,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "85d93b9a47ceb80710b412d1eb73c34c15178f0b88ef8c94774716639ed363e9"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-accountant.webp",
+    "originalBytes": 41102,
+    "bytes": 19518,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "223d917c230285f2c8d5ce0fe2c887d03ab3e4b36f3fb9ad09651f834b8fd513"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-banchang.webp",
+    "originalBytes": 32308,
+    "bytes": 15560,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "d9688921f364aa0577ba830717198ea9df3795c8f51b15ee127033db1fc6f0c2"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-chikchik.webp",
+    "originalBytes": 33720,
+    "bytes": 16006,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "3ada889bdcfa11ed05dd4fee8f7265dd78e1480405e004e6d902e019033c61d0"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-coco.webp",
+    "originalBytes": 35020,
+    "bytes": 16906,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "d257f988cfaf1905ffae3f5ecc77b8013a51405c648c45c6b364abf614434630"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-q.webp",
+    "originalBytes": 28246,
+    "bytes": 13230,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "0477a2ef49363e26d490629f88d2640cd28487bc9010fadeee3fe80c7ff6e6fb"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-rescue.webp",
+    "originalBytes": 35910,
+    "bytes": 16834,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "e6e7db3ad2f2efa5d4b04ed8d442a8e570bb9d9d169bafdb79f393b02ad7ee08"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/merc-ward.webp",
+    "originalBytes": 39464,
+    "bytes": 18698,
+    "width": 192,
+    "sourceWidth": 352,
+    "sha256": "61073f1f3c4dbfecd5b7258d63529ff4bf8cbb08071f7cdb8380fd2e7d194de9"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/mimic-storekeeper.webp",
+    "originalBytes": 51684,
+    "bytes": 15828,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "73ba4b6202d13bd6cf166feb635e287e5559abc0444c910a4d1e064fee185837"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/nightmare-counselor.webp",
+    "originalBytes": 49670,
+    "bytes": 17112,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "bf5934e29590f444e006a902979d7c1ebc2ab7986bad3fa7faeaaf6e24a45b4d"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/orc-technician.webp",
+    "originalBytes": 35654,
+    "bytes": 12226,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "a8ba3265b13808022857407a76a56a3e7285a0fe00bcf2f1caa7bb45a9fb9933"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/skeleton-chef.webp",
+    "originalBytes": 41664,
+    "bytes": 14362,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "d3013f1dbdaa71cb94093de61b3327dfdc9dbc94441f513ceb3f87d9127f8bd3"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/slime-cleaner.webp",
+    "originalBytes": 34192,
+    "bytes": 11532,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "2575392a51c2a522ed2123478f54bb9fc1dfe35b02f8ec9e8b05bf671f667152"
+  },
+  {
+    "file": "assets/character-portraits/thumbs/spider-tailor.webp",
+    "originalBytes": 48218,
+    "bytes": 16508,
+    "width": 192,
+    "sourceWidth": 512,
+    "sha256": "a6da0c9d00e7aa3ea7ef45b8a3b9c2314af79dabf2e93251ce7d4b89b53f38bf"
+  }
+]

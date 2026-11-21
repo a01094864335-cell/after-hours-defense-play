@@ -6,16 +6,15 @@ window.CharacterPortraits = (() => {
  const known = new Set(ids), cache = new Map();
  const revisions={"merc-ward": "342e55ab2455", "merc-accountant": "b880599e09e8", "merc-rescue": "4528a3818baa", "merc-chikchik": "5371c39fab5f", "merc-banchang": "698ad81f3380", "merc-coco": "bd7227033b27", "merc-q": "1e9426d1fafc"};
  function src(id, fallback='') { return known.has(id) ? 'assets/character-portraits/' + id + '.webp' + (revisions[id]?'?v='+revisions[id]:'') : fallback; }
- function image(id, className='', alt='') {
-  const img = new Image(); img.addEventListener('load',()=>window.GamePerformance?.invalidate()); img.src = src(id); img.alt = alt; img.className = className;
+ function image(id, className='', alt='', lazy=false) {
+  const img = new Image(); img.loading=lazy?'lazy':'eager'; img.addEventListener('load',()=>window.GamePerformance?.invalidate()); img.src = src(id); img.alt = alt; img.className = className;
   img.dataset.characterId = id; img.dataset.motion = 'static-character-identity'; img.decoding = 'async';
-  if(!cache.has(id))cache.set(id,img);
   return img;
  }
  function preload(id) {
   if(!known.has(id))return null;
-  if(!cache.has(id))image(id);
-  return cache.get(id);
+  if(!cache.has(id))cache.set(id,image(id));
+  const img=cache.get(id);img.loading='eager';return img;
  }
  function draw(ctx,id,x,y,size,options={}) {
   if(!known.has(id))return false;
