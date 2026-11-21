@@ -284,7 +284,7 @@ class SharedChromeTests(unittest.TestCase):
     def test_approved_equipment_and_deck_card_geometry(self):
         for width,height in [(320,568),(390,844),(430,932)]:
             page=self.open(width,height)
-            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');renderMeta();openSheet('equipment')")
+            page.evaluate("meta.tutorialComplete=true;restartTo('lobby');board[0]={type:0,pip:1};sync();renderMeta();openSheet('equipment')")
             cards=page.locator('#equipment #cards>.card:visible')
             self.assertGreater(cards.count(),0)
             for card in cards.all():
@@ -293,7 +293,7 @@ class SharedChromeTests(unittest.TestCase):
                 for arrow in card.locator('.live-direction-icon').all():
                     self.assertLessEqual(arrow.bounding_box()['height'],16)
             page.locator('#equipment-close').click()
-            page.evaluate('openDeck()')
+            page.evaluate('board=Array(15).fill(null);openDeck()')
             for card in page.locator('#deck-options .deck-choice:visible').all():
                 self.assertEqual(card.evaluate('e=>getComputedStyle(e).flexDirection'),'column')
                 name=card.locator('strong')

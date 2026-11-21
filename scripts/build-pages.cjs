@@ -39,9 +39,11 @@ files.add('story-art.css');
 files.add('story-fullscreen.css');
 files.add('story-fullscreen.js');
 files.add('rapid-summon.js');
+files.add('duty-patch.js');files.add('duty-patch.css');
 files.add('designs/story-fullscreen-20261120/index.html');
 files.add('designs/story-fullscreen-20261120/selected.html');
 files.add('qa/design-compare-20261120/index.html');
+for(const name of fs.readdirSync(path.join(root,'qa/duty-balance-20261121')))if(!name.endsWith('.cjs'))files.add('qa/duty-balance-20261121/'+name);
 // Opt-in audit report; never requested by the game entry point.
 for(const name of fs.readdirSync(path.join(root,'qa/flow-loading-20261121')))files.add('qa/flow-loading-20261121/'+name);
 for(const name of fs.readdirSync(path.join(root,'assets/art-review')))if(/\.(html|json)$/.test(name))files.add('assets/art-review/'+name);

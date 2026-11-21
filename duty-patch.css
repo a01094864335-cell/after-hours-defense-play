@@ -1,0 +1,31 @@
+/* Compact controls use existing paper/navy/gold palette, without new bitmaps. */
+html body #battle #board-trash{position:absolute;right:8px;bottom:8px;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;width:48px;min-height:48px;padding:4px;border:2px solid #172c50;border-radius:10px;background:#fff4d6;color:#172c50;box-shadow:0 3px #172c50;font:700 11px/1.2 system-ui;touch-action:manipulation}
+html body #battle #board-trash svg{width:22px;height:22px}
+html body #battle #board-trash:disabled{background:#dce2e9;color:#657184;box-shadow:none;opacity:.65}
+html body #battle #board-trash[data-armed=true]{background:#ffcfb3;color:#8a281e;border-color:#8a281e}
+html body #battle #board-trash:focus-visible{outline:3px solid #ffcc38;outline-offset:2px}
+html body #perk#perk.reward-roulette .concept-bonus-mascot{display:none!important}
+html body #perk#perk.reward-roulette #perk-options>button{min-height:78px!important;opacity:1!important;filter:none!important;pointer-events:none;transition:background .08s,box-shadow .08s}
+html body #perk#perk.reward-roulette #perk-options>button>small:first-child{display:none!important}
+html body #perk#perk.reward-roulette #perk-options>button[data-lit=true]{background:#ffe369!important;box-shadow:inset 0 0 0 3px #d79a14,0 3px #142c52!important}
+html body #perk#perk.reward-roulette #perk-options>button[data-winner=true]{border-color:#b47c00!important}
+html body #perk#perk.reward-roulette #roulette-status{flex-shrink:0;min-height:36px;margin:0 5px 5px;padding:6px 8px;text-align:center;color:#fff3bc;background:#10254b;border-radius:8px;font:700 14px/1.4 system-ui;overflow-wrap:anywhere}
+html body #perk#perk.reward-roulette #roulette-claim{display:block;flex-shrink:0;width:calc(100% - 10px);margin:8px 5px;min-height:48px;padding:10px 14px;border:2px solid #142c52;border-radius:10px;background:#ffe369;color:#142c52;box-shadow:0 3px #142c52;font:800 17px/1.3 system-ui}
+html body #perk#perk.reward-roulette #roulette-claim:disabled{background:#dce2e9;color:#657184;box-shadow:none}
+@media(max-height:650px){html body #perk#perk.reward-roulette #perk-options>button{min-height:69px!important}html body #perk#perk.reward-roulette #perk-options>button>span{font-size:17px!important}html body #perk#perk.reward-roulette #roulette-status{font-size:12px;min-height:32px}}
+@media(prefers-reduced-motion:reduce){html body #perk#perk.reward-roulette #perk-options>button{transition:none}}
+
+html body #battle .skill-row #board-trash{left:59%;right:auto;top:50%;bottom:auto;transform:translateY(-50%);width:44px;min-height:44px;z-index:5}
+html body #battle .skill-row #board-trash[hidden]{display:none!important}
+html body #battle .skill-row[data-selected=true] #skill-help{display:none!important}
+html body #battle .skill-row[data-selected=false] #board-trash{left:auto;right:2%}
+html body #battle .skill-row[data-selected=true] #skill{left:auto!important;right:2%!important;width:23%!important}
+html body #battle .skill-row[data-selected=true] #battle-selected-name{width:36%!important}
+html body #equipment#equipment.concept-modal #cards>.card[hidden]{display:none!important}
+html body #perk#perk.reward-roulette #roulette-status{color:#fff3bc!important;opacity:1!important}
+html body #perk#perk.reward-roulette #roulette-claim{background:#ffe369!important;color:#142c52!important;border:2px solid #142c52!important}
+html body #perk#perk.reward-roulette #roulette-claim:disabled{background:#dce2e9!important;color:#657184!important}
+html body #perk#perk.reward-roulette #perk-options>button:disabled,html body #perk#perk.reward-roulette #perk-options>button:disabled>*{color:#173959!important;opacity:1!important;filter:none!important}
+html body #equipment #equipment-empty{padding:20px 12px!important;text-align:center;color:#173959;font:700 15px/1.5 system-ui}
+
+html body #battle .skill-row:has(#board-trash:not([hidden])) #skill-help{display:none!important}

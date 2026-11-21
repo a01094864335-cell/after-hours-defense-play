@@ -25,6 +25,6 @@ class InitialAssetTests(unittest.TestCase):
         p=self.open(320,568);p.evaluate('saveChange(d=>d.tutorialComplete=true);restartTo("lobby")')
         enter_preparation(p)
         for _ in range(5):p.locator('#summon').click()
-        p.locator('#upgrade-open').click();face=p.locator('#up0 img').first
-        face.wait_for(state='visible');p.wait_for_function("document.querySelector('#up0 img').complete&&document.querySelector('#up0 img').naturalWidth>0")
+        p.locator('#upgrade-open').click();face=p.locator('#cards .card:visible img').first
+        face.wait_for(state='visible');p.wait_for_function("document.querySelector('#cards .card:not([hidden]) img').complete&&document.querySelector('#cards .card:not([hidden]) img').naturalWidth>0")
         self.assertEqual(face.evaluate('e=>e.naturalWidth'),512)

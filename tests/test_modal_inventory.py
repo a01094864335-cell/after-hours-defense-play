@@ -37,9 +37,9 @@ CASES = [
     ('shop-earned', '#shop', "saveChange(d=>d.coins=PACK_PRICE);renderMeta();document.querySelector('#shop-open').click()"),
     ('training-staff', '#training-dialog', "document.querySelector('#training-entry').click()"),
     ('training-merc', '#training-dialog', "document.querySelector('#training-entry').click();document.querySelector('#training-tab-merc').click()"),
-    ('equipment', '#equipment', BATTLE + "playing=true;wave=1;sp=9999;sync();openSheet('equipment')"),
-    ('equipment-poor', '#equipment', BATTLE + "playing=true;wave=1;sp=0;sync();openSheet('equipment')"),
-    ('equipment-max', '#equipment', BATTLE + "playing=true;wave=1;sp=9999;levels.fill(5);sync();openSheet('equipment')"),
+    ('equipment', '#equipment', BATTLE + "board[0]={type:0,pip:1};playing=true;wave=1;sp=9999;sync();openSheet('equipment')"),
+    ('equipment-poor', '#equipment', BATTLE + "board[0]={type:0,pip:1};playing=true;wave=1;sp=0;sync();openSheet('equipment')"),
+    ('equipment-max', '#equipment', BATTLE + "board[0]={type:0,pip:1};playing=true;wave=1;sp=9999;levels.fill(5);sync();openSheet('equipment')"),
     ('story-archive', '#story-archive', "meta.stories=[CastleStories[0].id];openStoryArchive()"),
     ('story-empty', '#story-archive', "meta.stories=[];openStoryArchive()"),
     ('story-owned', '#story-archive', "meta.stories=CastleStories.map(s=>s.id);openStoryArchive()"),
@@ -269,7 +269,7 @@ class ModalInventoryTests(unittest.TestCase):
                             self.assertIn('직원 소환', surface.inner_text())
                         if name == 'perk-full-life':
                             self.assertFalse(page.locator('#perk-life').is_visible())
-                            self.assertEqual(page.locator('#perk-options>button:visible:enabled').count(),3)
+                            self.assertEqual(page.locator('#perk-options>button:visible:disabled').count(),3)
                         if name in ('shop-poor', 'shop-affordable', 'shop-earned'):
                             self.assertEqual(page.locator('#asset-shop-host .purchase').is_disabled(), name == 'shop-poor')
                         if name == 'equipment':

@@ -57,6 +57,7 @@ function readRewards(s){
  const bundle=s.rewardBundle??null,support=s.rewardSupport??null;
  if(support&&(!['power','boss','slow'].includes(support.id)||!Number.isSafeInteger(support.until)||support.until<5||support.until%5||support.until>s.wave+5))throw Error('invalid reward support');
  if(bundle){
+  if(bundle.winner!==undefined&&(!Number.isInteger(bundle.winner)||bundle.winner<0||bundle.winner>2))throw Error('invalid reward winner');
   if(!s.bonusPending||bundle.wave!==s.wave||bundle.wave%5||!Array.isArray(bundle.offers)||bundle.offers.length!==3||new Set(bundle.offers.map(o=>o.id)).size!==3)throw Error('invalid reward offers');
   for(const o of bundle.offers){
    if(!o||!['sp','life','merge','equipment','staff','keep','build','power','boss','slow'].includes(o.id)||!Number.isSafeInteger(o.amount)||o.amount<1||o.amount>(o.id==='sp'?100000000:5))throw Error('invalid reward offer');
@@ -72,7 +73,7 @@ function rewardEligible(o){
  if(o.id==='sp')return !(board.every(u=>u&&u.pip===7)&&runDeck.every(type=>levels[type]>=5));
  if(o.id==='life')return life<3;
  if(o.id==='merge')return Number(guaranteedMerge)<3&&board.some(u=>!u||u.pip<7);
- if(o.id==='equipment')return runDeck.includes(o.type)&&levels[o.type]<5;
+ if(o.id==='equipment')return runDeck.includes(o.type)&&deployedType(o.type)&&levels[o.type]<5;
  if(o.id==='staff')return runDeck.includes(o.type)&&board.some(u=>!u);
  if(o.id==='keep')return !tutorialMode&&!t?.keep&&board.some(u=>!u||u.pip<7);
  if(o.id==='build')return !tutorialMode&&!t?.build&&(o.build!=='economy'||runDeck.includes(3)||activeMerc==='accountant');
@@ -80,7 +81,7 @@ function rewardEligible(o){
 }
 function makeRewardOffers(){
  const r=perkReward(),deployed=runDeck.filter(type=>board.some(u=>u?.type===type));
- const equipmentType=[...runDeck].sort((a,b)=>Number(deployed.includes(b))-Number(deployed.includes(a))||levels[a]-levels[b]||a-b).find(type=>levels[type]<5);
+ const equipmentType=[...deployed].sort((a,b)=>Number(deployed.includes(b))-Number(deployed.includes(a))||levels[a]-levels[b]||a-b).find(type=>levels[type]<5);
  const staffType=[...runDeck].sort((a,b)=>Math.max(0,...board.filter(u=>u?.type===a).map(u=>u.pip))-Math.max(0,...board.filter(u=>u?.type===b).map(u=>u.pip))||a-b)[0];
  const o=id=>({id,amount:id==='sp'?r.sp:id==='merge'?r.merges:id==='equipment'?r.equipment:id==='staff'?r.pip:1,...(id==='equipment'?{type:equipmentType}:id==='staff'?{type:staffType}:id==='build'?{build:runDeck.includes(3)||activeMerc==='accountant'?'economy':'chain'}:{})});
  const tier=r.tier,growth=tier===1?'merge':tier===2?'equipment':tier===3?'staff':tier===4?'keep':tier===5?'staff':tier===6?'equipment':['equipment','staff','keep'][(tier-7)%3];
@@ -91,16 +92,17 @@ function makeRewardOffers(){
   const found=candidates.map(o).find(x=>!picked.some(p=>p.id===x.id)&&rewardEligible(x)&&(!tutorialMode||!['keep','build'].includes(x.id)));
   picked.push(found);
  }
- return {wave,offers:picked};
+ return {wave,offers:picked,winner:Math.min(2,Math.floor(Math.random()*3))};
 }
 function rewardCopy(o){
  const en=document.documentElement?.lang?.startsWith('en'),name=o.type===undefined?'':kinds[o.type].name;
  const text={sp:en?['Summon supply','+'+o.amount+' SP','Based on '+perkReward().summons+' base summons when offered']:['소환 보급','+'+o.amount+' SP','보상 생성 시 기본 소환 '+perkReward().summons+'회 기준'],life:en?['Throne repair',life+' → '+Math.min(3,life+1)+' / 3','Restore 1 life']:['왕좌 수리',life+' → '+Math.min(3,life+1)+' / 3','생명력 1 회복'],merge:en?['Merge insurance',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount),'Guaranteed merges · max 3']:['합성 보험',Number(guaranteedMerge)+' → '+Math.min(3,Number(guaranteedMerge)+o.amount)+'회','성공 보장 누적 · 최대 3회'],equipment:en?['Equipment delivery','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' · all matching staff']:['장비 배송','Lv.'+levels[o.type]+' → '+Math.min(5,levels[o.type]+o.amount),name+' 전체 · 무료 강화'],staff:en?['Extra staff','★'+o.amount+' · +1',name+' · this shift only']:['추가 출근','★'+o.amount+' · 1명',name+' · 이번 당직만'],keep:en?['Keep their kind','100% · 1 merge','Target kind stays · next merge']:['종류 유지 합성','100% · 1회','도착 직원 종류 유지 · 다음 합성'],power:en?['Fire support','Damage +10%','Next 5 waves · no stacking']:['화력 지원','피해 +10%','다음 5웨이브 · 중첩 없음'],boss:en?['Boss pursuit','Boss damage +20%','Next 5 waves · no stacking']:['군단장 추격','보스 피해 +20%','다음 5웨이브 · 중첩 없음'],slow:en?['Slow their march','Enemy speed −10%','Next 5 waves · no stacking']:['진군 지연','적 속도 −10%','다음 5웨이브 · 중첩 없음']};
- if(o.id==='build'){const count=window.TacticalDuty?.buildOptions().filter(x=>x.eligible).length||2;return en?['Choose a strategy',count+' options · pick one','For this shift · changes how you play']:['근무 전략 선택',count+'종 중 1개','이번 당직만 적용 · 플레이 방향 선택'];}
+ if(o.id==='build'){const names={chain:en?'Chain lightning':'연쇄 잔광',economy:en?'Overtime accounting':'정산 특근',guard:en?'Emergency ward':'비상 방벽'};return en?['Duty strategy',names[o.build],'For this shift']:['근무 전략',names[o.build],'이번 당직에 적용'];}
  return text[o.id];
 }
 function renderPerkChoices(){
  if(!rewardBundle||rewardBundle.wave!==wave)rewardBundle=makeRewardOffers();
+ if(rewardBundle.winner===undefined)rewardBundle.winner=Math.min(2,Math.floor(Math.random()*3));
  const used=new Set(rewardBundle.offers.filter(rewardEligible).map(o=>o.id));
  rewardBundle.offers=rewardBundle.offers.map(o=>{if(rewardEligible(o))return o;const replacement=[...makeRewardOffers().offers,...['power','boss','slow'].map(id=>({id,amount:1}))].find(x=>!used.has(x.id)&&rewardEligible(x));used.add(replacement.id);return replacement});
  const en=document.documentElement?.lang?.startsWith('en'),ids=['sp','life','merge','equipment','staff','keep','build','power','boss','slow'],root=document.querySelector('#perk-options');
@@ -122,7 +124,7 @@ function showPerkTargets(){renderPerkChoices()}
 function choosePerk(id,type){
  if(!bonusPending||!playing||ended||!paused||!GameSession.canWrite())return false;
  if(!rewardBundle||rewardBundle.wave!==wave)rewardBundle=makeRewardOffers();
- const o=rewardBundle.offers.find(o=>o.id===id);if(!o||!rewardEligible(o)||type!==undefined&&type!==o.type)return false;
+ const o=rewardBundle.offers.find(o=>o.id===id);if(rewardBundle.winner!==undefined&&rewardBundle.offers[rewardBundle.winner]!==o)return false;if(!o||!rewardEligible(o)||type!==undefined&&type!==o.type)return false;
  if(id==='keep'||id==='build'){const saved=rewardBundle;rewardBundle=null;if(window.TacticalDuty.choose(id==='keep'?'keep':o.build))return true;rewardBundle=saved;return false;}
  if(id==='sp')sp+=o.amount;
  else if(id==='life')life=Math.min(3,life+1);

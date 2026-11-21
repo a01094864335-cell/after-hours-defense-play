@@ -24,8 +24,8 @@ class VisualIssueTests(unittest.TestCase):
         self.assertEqual(before,a.locator('#info .ui-dialog-header h2').bounding_box());self.inside(a,'#info-close');a.locator('#info-close').click();self.assertFalse(a.locator('#info').is_visible())
     def test_reward_cards_and_footer_are_reachable_on_short_phone(self):
         a=self.open(320,568);a.evaluate("saveChange(d=>{d.tutorialComplete=true});reset();setScreen('battle');wave=20;playing=true;paused=true;bonusPending=true;renderPerkChoices();document.querySelector('#perk').showModal()")
-        self.assertEqual(a.locator('#perk-options>button:visible:enabled').count(),3)
-        ui.assert_reachable(self,a,'#perk-options>button:visible:last-child')
+        self.assertEqual(a.locator('#perk-options>button:visible:disabled').count(),3)
+        self.inside(a,'#perk-options>button:visible:last-child');ui.assert_reachable(self,a,'#roulette-claim')
         ui.assert_reachable(self,a,'#perk-reposition');self.assertTrue(a.locator('#perk-back').is_hidden())
     def test_final_list_items_scroll_clear_of_fixed_footers(self):
         a=self.open(320,568)

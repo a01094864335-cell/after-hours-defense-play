@@ -17,7 +17,7 @@ class WaveRewardTests(unittest.TestCase):
                     cards=p.locator('#perk-options>button:visible')
                     self.assertEqual(cards.count(),3)
                     for c in cards.all():
-                        self.assertTrue(c.is_enabled());r=c.bounding_box()
+                        self.assertFalse(c.is_enabled());r=c.bounding_box()
                         self.assertGreaterEqual(r['x'],0);self.assertLessEqual(r['x']+r['width'],width)
                         self.assertEqual(c.evaluate('e=>e.scrollWidth<=e.clientWidth+1'),True)
                         self.assertLessEqual(r['y']+r['height'],height)
@@ -27,10 +27,10 @@ class WaveRewardTests(unittest.TestCase):
             p.context.close()
     def test_saved_offer_survives_reload_and_single_click_awards_fixed_target_once(self):
         p=self.open(390,844);self.seed(p,25)
-        p.evaluate('saveActiveRun()');before=p.evaluate('JSON.stringify(rewardBundle)')
+        p.evaluate("rewardBundle.winner=rewardBundle.offers.findIndex(o=>o.id==='staff');saveActiveRun()");before=p.evaluate('JSON.stringify(rewardBundle)')
         target=p.evaluate("rewardBundle.offers.find(o=>o.id==='staff').type")
         p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');self.assertTrue(p.evaluate('resumeRun()'))
         self.assertEqual(p.evaluate('JSON.stringify(rewardBundle)'),before)
-        p.locator('#perk-staff').click();self.assertFalse(p.evaluate('bonusPending'))
+        p.locator('#roulette-claim').click();self.assertFalse(p.evaluate('bonusPending'))
         self.assertEqual(p.evaluate(f'board.filter(u=>u?.type==={target}&&u.pip===4).length'),1)
         self.assertFalse(p.evaluate("choosePerk('staff')"))

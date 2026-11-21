@@ -1,0 +1,52 @@
+'use strict';
+// Board removal never generates SP or changes recruitment/ownership.
+window.BoardRecycle=(()=>{
+ let armed=null,button=null,empty=null;
+ const allowed=()=>playing&&!ended&&!paused&&!tutorialMode&&!itemMode&&!window.TutorialCoach?.held?.()&&GameSession.canWrite();
+ function discard(index,confirm=false){
+  const unit=board[index];if(!allowed()||!unit||!Number.isInteger(index))return false;
+  if(unit.pip>=3&&(!confirm||armed!==unit)){armed=unit;selected=index;say('★'+unit.pip+' '+kinds[unit.type].name+' · 버리기를 한 번 더 누르면 제거돼요. SP는 돌려받지 않아요.');refresh();return false;}
+  board[index]=null;selected=-1;drag=null;armed=null;window.TacticalDuty?.hidePreview();
+  burst('smoke',cells[index].x,cells[index].y,'#c6d5df',.35);say(kinds[unit.type].name+' 퇴장 · 빈자리 +1');sync();saveActiveRun();return true;
+ }
+ function refresh(){if(empty)empty.hidden=board.some(Boolean);if(!button)return;const u=board[drag?.from]||board[selected];button.hidden=!u;if(armed!==u)armed=null;button.disabled=!allowed()||!u;button.dataset.armed=String(!!armed);button.querySelector('span').textContent=armed?'확인':'버리기';button.setAttribute('aria-label',u?(armed?'다시 눌러 ':'')+kinds[u.type].name+' '+u.pip+'등급 버리기 · SP 반환 없음':'직원을 선택한 뒤 버리기');}
+ function drop(e,index){if(!button||!allowed())return false;const r=button.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)return false;selected=index;discard(index,true);refresh();return true;}
+ if(typeof document.createElement==='function'){
+  empty=document.createElement('p');empty.id='equipment-empty';empty.textContent='보드에 직원을 소환하면 강화할 수 있어요.';document.querySelector('#cards').before(empty);
+  button=document.createElement('button');button.id='board-trash';button.type='button';button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>버리기</span>';
+  document.querySelector('.skill-row').append(button);button.onclick=()=>discard(selected,true);
+  const oldSkill=syncSkill;syncSkill=function(){oldSkill();refresh()};refresh();
+ }
+ return {discard,drop,refresh};
+})();
+// The winner is part of the saved reward bundle. Animation never rolls the prize.
+window.RewardRoulette=(()=>{
+ let bundle=null,timer=null,ready=false,status=null,claim=null;
+ function stop(){if(timer!==null)clearTimeout(timer);timer=null;}
+ function render(){
+  if(!claim||!bonusPending||!rewardBundle)return;
+  const active=rewardBundle,en=document.documentElement.lang.startsWith('en'),root=document.querySelector('#perk-options');
+  const cards=active.offers.map(o=>document.querySelector('#perk-'+o.id));
+  document.querySelector('#perk').classList.add('reward-roulette');
+  document.querySelector('#perk h2').textContent=en?'Lucky shift bonus':'당직 보너스 룰렛';
+  document.querySelector('#perk-intro').textContent=en?'Wave '+wave+' cleared · one prize, no blanks':wave+'웨이브 돌파 · 꽝 없이 보상 1개';
+  document.querySelector('#perk-note').textContent=en?'Each ticket has a 1/3 chance. The result is saved; reloading cannot reroll it.':'각 보상 당첨 확률 1/3 · 추첨 결과 저장 · 새로고침해도 결과 유지';
+  for(const c of cards){c.disabled=true;c.tabIndex=-1;}
+  if(bundle!==active){stop();bundle=active;ready=false;saveActiveRun();}
+  const paint=index=>cards.forEach((c,i)=>{c.dataset.lit=String(i===index);c.dataset.winner=String(ready&&i===active.winner)});
+  const finish=()=>{if(bundle!==active||!bonusPending)return;ready=true;paint(active.winner);const copy=rewardCopy(active.offers[active.winner]);status.textContent=(en?'Winner! ':'당첨! ')+copy[0]+' · '+copy[1];claim.disabled=false;claim.textContent=en?'Receive & continue':'보상 받고 계속';};
+  if(ready){finish();return}claim.disabled=true;claim.textContent=en?'Drawing…':'추첨 중…';status.textContent=en?'Which bonus will it be?':'이번 당직 보너스는?';
+  if(timer!==null)return;
+  let step=0;const count=15+active.winner;
+  const tick=()=>{timer=null;if(bundle!==active||!bonusPending)return;paint(step%3);if(step++>=count){finish();return}timer=setTimeout(tick,65+step*8);};
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){timer=setTimeout(finish,300)}else tick();
+ }
+ function take(){if(!ready||bundle!==rewardBundle||!bonusPending||!GameSession.canWrite())return false;const offer=bundle.offers[bundle.winner];const ok=choosePerk(offer.id);if(ok){stop();bundle=null;ready=false;}return ok;}
+ if(typeof document.createElement==='function'){
+  status=document.createElement('p');status.id='roulette-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');
+  claim=document.createElement('button');claim.id='roulette-claim';claim.type='button';claim.onclick=take;
+  const root=document.querySelector('#perk-options');root.before(status);root.after(claim);
+  const old=renderPerkChoices;renderPerkChoices=function(){old();render()};
+ }
+ return {render,take};
+})();
