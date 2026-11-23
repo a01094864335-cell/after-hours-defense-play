@@ -11,6 +11,7 @@ class NoDailyTests(unittest.TestCase):
         for w,h in [(320,568),(390,844)]:
             p=self.open(w,h);p.evaluate("saveChange(d=>d.tutorialComplete=true);restartTo('lobby')")
             self.assertFalse(p.locator('#asset-lobby-host .a-daily').is_visible())
+            self.assertTrue(p.evaluate("document.querySelector('#asset-lobby-host').shadowRoot.querySelector('link').href===document.querySelector('link[href*=\"previews/asset-lobby-20261109/lobby.css\"]').href"))
             ui.assert_reachable(self,p,'#asset-lobby-host .a-start')
             out=os.getenv('NO_DAILY_QA_DIR')
             if out:Path(out).mkdir(parents=True,exist_ok=True);p.screenshot(path=str(Path(out)/f'lobby-{w}.png'))
