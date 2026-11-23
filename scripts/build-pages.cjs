@@ -27,6 +27,7 @@ files.add('battle-comic.css');
 files.add('battle-exact.css');
 files.add('battle-cohesion.css');
 for(const file of ['game-language.js','language-settings.js','language-settings.css'])files.add(file);
+files.add('narrative-en.js');files.add('narrative-locale.js');
 files.add('wave-rewards.css');
 for(const name of ['single-screen-settings','single-screen-people','single-screen-shop'])for(const ext of ['css','js'])files.add(name+'.'+ext);
 files.add('assets/single-screen/training-yard.webp');

@@ -33,6 +33,7 @@ const HiringStories=(()=>{
   dialog.querySelector('.hire-image-status').textContent='그림을 불러오는 중…';
   img.alt=current.name+'의 입사 이야기 '+(page+1)+'번째 장면';img.src='assets/hiring-stories/'+p.file;
   if(page<3){const next=new Image();next.src='assets/hiring-stories/'+current.panels[page+1].file}
+  window.NarrativeLocale?.apply(dialog);
  }
  function move(n){if(!current)return;page=Math.max(0,Math.min(3,page+n));render()}
  const api={has:id=>episodes.has(id),canView:id=>episodes.has(id)&&owned(id),open(id){

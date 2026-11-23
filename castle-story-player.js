@@ -65,7 +65,7 @@ document.querySelector('#story-open').onclick=openStoryArchive;
 document.querySelector('#story-archive-list').onclick=e=>{const card=e.target.closest('[data-story]');if(card)replayCastleStory(card.dataset.story)};
 document.querySelector('#story-archive-close').onclick=()=>document.querySelector('#story-archive').close();
 document.querySelector('#story-archive').addEventListener('close',()=>{if(castleArchiveResume&&!ended)paused=false;castleArchiveResume=false;sync()});
-document.querySelector('#promo').addEventListener('close',()=>{castleReplay=false});
+document.querySelector('#promo').addEventListener('close',()=>{if(!document.querySelector('#promo').open)castleReplay=false});
 document.querySelector('#story-retry').onclick=()=>{discoverCastleStory();renderCastleStory()};
 
 // Transfer the menu pause to the archive before the asynchronous close event.

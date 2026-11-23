@@ -1,0 +1,13 @@
+test_defeat_does_not_claim_a_safe_clock_out (test_qc_november.NovemberQCTests.test_defeat_does_not_claim_a_safe_clock_out) ... ok
+test_english_discard_confirmation_preserves_the_high_rank_guard (test_qc_november.NovemberQCTests.test_english_discard_confirmation_preserves_the_high_rank_guard) ... ok
+test_english_help_topics_stay_whole_and_restore_korean (test_qc_november.NovemberQCTests.test_english_help_topics_stay_whole_and_restore_korean) ... ok
+test_preparation_cancelled_touch_drag_redraws_without_changing_board (test_qc_november.NovemberQCTests.test_preparation_cancelled_touch_drag_redraws_without_changing_board) ... ok
+test_roulette_has_one_highlight_and_full_color_reward_portraits (test_qc_november.NovemberQCTests.test_roulette_has_one_highlight_and_full_color_reward_portraits) ... ok
+test_secondary_finger_cannot_replace_or_release_primary_drag (test_qc_november.NovemberQCTests.test_secondary_finger_cannot_replace_or_release_primary_drag) ... ok
+test_story_discovery_is_readable_on_fullscreen_art (test_qc_november.NovemberQCTests.test_story_discovery_is_readable_on_fullscreen_art) ... ok
+test_unchanged_recycle_controls_do_not_rewrite_dom (test_qc_november.NovemberQCTests.test_unchanged_recycle_controls_do_not_rewrite_dom) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 20.521s
+
+OK

@@ -1,0 +1,37 @@
+{
+  "castleStories": 40,
+  "castleScenesIncludingIntro": 160,
+  "hiringStories": 19,
+  "hiringScenes": 76,
+  "uniqueStoryScenes": 236,
+  "personnel": 24,
+  "browserRegressionMethodsPassed": 4,
+  "hiringViewports": [
+    [
+      320,
+      568
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "castleViewport": [
+    320,
+    568
+  ],
+  "publicSubpathJourneysPassed": 10,
+  "publicSubpathChecks": 60,
+  "sourceAndNumericContractPassed": true,
+  "ciTarget": {
+    "scenarios": 136,
+    "repetitions": 10,
+    "attempts": 1360
+  },
+  "gameDefectsFixedIncludingQueuedClose": 9,
+  "publicOrigin": "Not directly reachable from this execution environment; official Pages package tested locally.",
+  "runtime": {
+    "passed": 3335,
+    "failed": 0
+  }
+}

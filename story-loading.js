@@ -9,5 +9,5 @@
  face.addEventListener('error',()=>{failed=true;status.hidden=false;label.textContent='그림을 읽지 못했어요. 대사는 계속 볼 수 있어요.';retry.hidden=false;});
  retry.onclick=()=>{const url=face.src;begin();face.src=url;};
  const show=renderCastleStory;renderCastleStory=function(){show();begin();};
- document.querySelector('#promo').addEventListener('close',()=>{status.hidden=true;});status.hidden=true;
+ document.querySelector('#promo').addEventListener('close',()=>{if(!document.querySelector('#promo').open)status.hidden=true;});status.hidden=true;
 })();
