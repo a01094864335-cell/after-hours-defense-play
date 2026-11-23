@@ -1,0 +1,14 @@
+test_preparation_cancelled_touch_drag_redraws_without_changing_board (test_qc_november.NovemberQCTests.test_preparation_cancelled_touch_drag_redraws_without_changing_board) ... FAIL
+
+======================================================================
+FAIL: test_preparation_cancelled_touch_drag_redraws_without_changing_board (test_qc_november.NovemberQCTests.test_preparation_cancelled_touch_drag_redraws_without_changing_board)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 70, in _cancelled_drag_test
+    self.assertGreater(p.evaluate('GamePerformance.stats.draws'),draws)
+AssertionError: 22 not greater than 22
+
+----------------------------------------------------------------------
+Ran 1 test in 10.864s
+
+FAILED (failures=1)

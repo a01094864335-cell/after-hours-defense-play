@@ -41,3 +41,7 @@ html body #menu#menu.single-screen-settings #menu-page-manage #shared-menu-reset
 /* Compact cards have one content row, not the legacy three-row illustration span. */
 html body #info#info.single-screen-settings .concept-help-card > img.concept-hero {grid-row:1!important}
 html body #info#info.single-screen-settings .concept-help-card > div {grid-row:1!important}
+
+/* Four short English topics must remain words, not stacked letter fragments. */
+html[lang=en] body #info#info.single-screen-settings .single-screen-tabs{gap:4px!important}
+html[lang=en] body #info#info.single-screen-settings .single-screen-tabs button{white-space:nowrap!important;overflow-wrap:normal!important;word-break:normal!important;padding-inline:0!important}

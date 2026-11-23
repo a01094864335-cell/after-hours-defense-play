@@ -1,0 +1,291 @@
+{
+  "base": "http://127.0.0.1:46319/after-hours-defense-play/",
+  "sourceRevision": "871d5817c8565d9d10df07a22c0ea43b28509561",
+  "buildManifestSha256": "2e76e0710b0e39ae86a88b7aa3fa1e1ebafa1d2ee5cebc0b0aa40bf5302d4615",
+  "scope": "Native UI with isolated storage; tutorial completion/400 coins and milestone/defeat are controlled fixtures, not natural full-game wins.",
+  "rounds": [
+    {
+      "round": 1,
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 2,
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 3,
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 4,
+      "language": "en",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 5,
+      "language": "ko",
+      "viewport": [
+        390,
+        640
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/ui-v2/icons/arrow-right.svg",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 6,
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 7,
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 8,
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 9,
+      "language": "ko",
+      "viewport": [
+        1440,
+        1000
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "round": 10,
+      "language": "en",
+      "viewport": [
+        390,
+        640
+      ],
+      "checks": [
+        "native language selection",
+        "native item purchase and exact wallet debit",
+        "support archive and exact training purchase",
+        "five native summons, pause, discard and reload/resume",
+        "saved roulette winner, native claim, duplicate rejection",
+        "defeat, settlement, native return and reload without double payment"
+      ],
+      "pageErrors": [],
+      "httpErrors": [],
+      "cancelledRequests": [
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/lobby-night.mp3",
+          "error": "net::ERR_ABORTED"
+        },
+        {
+          "url": "http://127.0.0.1:46319/after-hours-defense-play/assets/audio/night-shift.mp3",
+          "error": "net::ERR_ABORTED"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "passed": 10
+}
