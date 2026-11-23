@@ -11,9 +11,9 @@ const staffIdentity=[
 const staffRecords=kinds.slice(0,6).map((k,i)=>({id:k.file,name:staffIdentity[i][0],job:k.name,dept:staffIdentity[i][1],story:staffIdentity[i][2],quote:staffIdentity[i][3],traits:staffIdentity[i][4],color:staffIdentity[i][5],group:'staff',image:'assets/pixel/'+k.file+'.webp',role:roles[i],ability:[
  '가장 앞선 적 한 명에게 석궁을 발사합니다. 기본 피해 14 · 기본 간격 0.8초.',
  '선두 적 주변 반경 65 안의 적을 함께 공격합니다. 기본 피해 20 · 기본 간격 1.5초.',
- '세제 공격으로 2초간 이동 속도를 50% 낮춥니다. 군단장에게는 25% 감속. 기본 피해 5 · 기본 간격 1.1초.',
+ '세제 공격으로 2초간 이동 속도를 50% 낮춥니다. 군단장에게는 25% 감속. 기본 피해 5 · 기본 간격 1.1초. 협업: 청소부의 공격에 젖은 적은 전기기사 피해 +20%.',
  '5초마다 등급 × (5 + 장비 레벨 × 2) SP를 생산합니다. 직접 공격은 하지 않습니다.',
- '130 거리 안의 적에게 최대 3명까지 번개를 연결합니다. 기본 피해 16, 다음 대상마다 80%로 감소 · 기본 간격 1.25초.',
+ '130 거리 안의 적에게 최대 3명까지 번개를 연결합니다. 기본 피해 16, 다음 대상마다 80%로 감소 · 기본 간격 1.25초. 협업: 청소부의 공격에 젖은 적에게 피해 +20%.',
  '일직선 경로의 적들을 관통하는 소포를 던집니다. 기본 피해 20 · 기본 간격 1.4초.'
  ][i],skill:skillNames[i],skillText:skillDescriptions[i]+' · 재사용 20초',status:'근무 가능'}));
 const incomingStaff=[

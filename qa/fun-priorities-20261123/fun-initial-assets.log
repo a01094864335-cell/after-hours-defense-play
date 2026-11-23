@@ -1,0 +1,8 @@
+test_cold_lobby_has_bounded_image_payload (test_initial_assets.InitialAssetTests.test_cold_lobby_has_bounded_image_payload) ... ok
+test_deferred_equipment_portrait_loads_when_opened (test_initial_assets.InitialAssetTests.test_deferred_equipment_portrait_loads_when_opened) ... ok
+test_lobby_thumbnail_does_not_downgrade_full_size_cutin (test_initial_assets.InitialAssetTests.test_lobby_thumbnail_does_not_downgrade_full_size_cutin) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.632s
+
+OK

@@ -10,6 +10,11 @@
   const root=lobby.querySelector('#asset-lobby');lobby.querySelector('.a-world').src=url('assets/moonlight/lobby.webp');
   root.insertBefore(lobby.querySelector('.a-gobi'),lobby.querySelector('.a-bottom'));
 
+  const gobi=lobby.querySelector('.a-gobi'),ground=document.createElement('span');ground.className='a-gobi-ground';ground.setAttribute('aria-hidden','true');root.insertBefore(ground,gobi);gobi.alt=GameLanguage.t('신입 고비');
+  const dock=lobby.querySelector('.a-bottom');let dockHeight='';
+  const placeGobi=()=>{const value=Math.round(dock.getBoundingClientRect().height)+'px';if(value!==dockHeight){dockHeight=value;root.style.setProperty('--lobby-dock-height',value)}};
+  if(typeof ResizeObserver==='function')new ResizeObserver(placeGobi).observe(dock);else{window.addEventListener('resize',placeGobi);for(const sheet of lobby.querySelectorAll('link'))sheet.addEventListener('load',placeGobi)}
+  placeGobi();
   const resume=lobby.querySelector('.a-resume');const update=()=>resume.hidden=resume.disabled;
   new MutationObserver(update).observe(resume,{attributes:true,attributeFilter:['disabled']});update();
  }

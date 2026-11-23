@@ -24,15 +24,16 @@ window.TacticalDuty=(()=>{
   if(a===b||!compatible(board[a],board[b]))return null;
   const pip=Math.max(board[a].pip,board[b].pip)+1,keep=keepType(a,b)!==undefined;
   const failure=keep?0:Math.round(failChance(pip)*100),en=document.documentElement?.lang?.startsWith('en');
+  const ratio=mergeBasicRatio(board[a],board[b]),change=ratio===null?null:Math.round((ratio-1)*100),basic=en?(change===null?'Role effects differ by staff kind':`Same kind: combined basic DPS ${change>=0?'+':''}${change}%`):(change===null?'운영·지원 효과는 직군별로 달라요':`동일 직군이면 평타 총화력 ${change>=0?'+':''}${change}%`);
   const lines=en?[
    `★${pip} · ${100-failure}% success / ${failure}% failure`,
    `Success: +1 empty cell · ${keep?'target kind stays':'random kind'}`,
-   pip===5?'★5 unlocks a skill; total basic damage may fall':'Total basic damage is not guaranteed to increase',
+   basic+(pip===5?' · ★5 skill unlock':''),
    failure?'Failure: moving staff lost; SP refunded on either outcome':'No failure loss · one protection charge used'
   ]:[
    `★${pip} · 성공 ${100-failure}% / 실패 ${failure}%`,
    `성공: 빈자리 +1 · ${keep?'도착 종류 유지':'종류 랜덤'}`,
-   pip===5?'★5 스킬 해금 · 평타 총화력은 줄 수 있어요':'평타 총화력 증가를 보장하지 않아요',
+   basic+(pip===5?' · ★5 스킬 해금':''),
    failure?'실패: 이동 직원 소멸 · 성공/실패 모두 SP 일부 회수':'실패 손실 없음 · 보장 1회 사용'
   ];
   return {pip,failure,keep,lines};
@@ -60,6 +61,7 @@ window.TacticalDuty=(()=>{
   const neighbors=u.stun>0?[]:adjacentCells(index).filter(i=>board[i]&&(u.type===16?board[i].type!==16&&board[i].pip>=5:![3,11,16].includes(board[i].type)));
   const liveBoss=enemies.find(e=>e.hp>0&&e.type==='boss'&&!e.decoy),boss=liveBoss?bossDefinition(liveBoss):plannedBoss(wave>0&&wave%5===0?wave:(Math.floor(wave/5)+1)*5);
   const lines=[kinds[u.type].name+' · '+kinds[u.type].desc];
+  if(!tutorialMode&&(u.type===2||u.type===4))lines.push(document.documentElement?.lang?.startsWith('en')?'Cleaner wets enemies · Electrician damage +20% while wet':'청소부가 젖게 한 적 · 전기기사 피해 +20%');
   if(rearranging)lines.push('전열 정비: 빈 칸으로 이동 · 합성은 전투 재개 후');
   if(u.type===11)lines.push(u.stun>0?'기절 중 · 인접 공속 지원 중단':'상하좌우 공격 직원 '+neighbors.length+'명 지원 · 가장 강한 공속 지원만 적용');
   else if(u.type===16)lines.push(u.stun>0?'기절 중 · 스킬 충전 지원 중단':'상하좌우 ★5 이상 '+neighbors.length+'명 충전 · 봉투끼리 지원 불가');
@@ -84,12 +86,12 @@ window.TacticalDuty=(()=>{
   preview(selected,targets[0]);
  }
  function hidePreview(){if(previewNode)previewNode.hidden=true;if(canvas.getAttribute?.('aria-describedby')==='tactical-preview')canvas.removeAttribute?.('aria-describedby')}
- function finishBonus(){choosingBuild=false;rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
+ function finishBonus(id){window.PlayObservations?.noteReward(rewardBundle?.offers.find(o=>o.id===id));choosingBuild=false;rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
  function choose(id){
   if(tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite())return false;
   if(id==='keep'){if(state.keep)return false;state.keep=1;}
   else {if(state.build||!Object.hasOwn(builds,id)||id==='economy'&&!runDeck.includes(3)&&activeMerc!=='accountant')return false;state.build=id;}
-  finishBonus();return true;
+  finishBonus(id==='keep'?'keep':'build');return true;
  }
  function buildOptions(){
   const en=document.documentElement?.lang?.startsWith('en');
@@ -108,6 +110,7 @@ window.TacticalDuty=(()=>{
  function showBuildChoices(){
   if(!ui||tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite()||state.build||!rewardBundle?.offers.some(o=>o.id==='build'))return false;
   choosingBuild=true;const targets=q('#perk-targets'),en=document.documentElement?.lang?.startsWith('en');targets.replaceChildren();
+  q('#perk h2').textContent=en?'Choose your strategy':'당직 전략 선택';q('#perk-intro').textContent=en?'One strategy for this shift':'이번 당직에 적용할 전략 1개';q('#perk-back').textContent=en?'Back':'뒤로';
   const legend=document.createElement('legend');legend.textContent=en?'One strategy for this shift':'이번 당직 전략 · 1종만 선택';targets.append(legend);
   for(const option of buildOptions()){
    const button=document.createElement('button');button.type='button';button.dataset.strategy=option.id;button.disabled=!option.eligible;
@@ -258,5 +261,5 @@ window.TacticalDuty=(()=>{
    advanceProgress=function(){paused=true;showGuide('전투 체험 완료','재화와 근무 기록은 변경되지 않았어요.');q('#guide-next').onclick=finish;};
   }
  }
- return {read,snapshot,restore,reset,move,canMove,keepType,consumeKeep,mergeDetails,planningDetails,preview,selectedPreview,hidePreview,choose,buildOptions,chooseBuild,showBuildChoices,startReposition,endReposition,cashOut,money,eligibleStarter,starterCandidates,claimStarter,markStarterComplete,draw,refresh,repositioning:()=>rearranging,completedWave:()=>state.completed||undefined};
+ return {read,snapshot,restore,reset,move,canMove,keepType,consumeKeep,mergeDetails,planningDetails,preview,selectedPreview,hidePreview,choose,buildOptions,chooseBuild,showBuildChoices,startReposition,endReposition,cashOut,money,eligibleStarter,starterCandidates,claimStarter,markStarterComplete,draw,refresh,repositioning:()=>rearranging,choosingBuild:()=>choosingBuild,completedWave:()=>state.completed||undefined};
 })();

@@ -1,0 +1,4747 @@
+{
+  "method": "27 runs: 3 decks × training 1/10/30 × 3 seeds; shared seed-derived boss schedule, one action every0.5 simulated seconds; no daily/support/king/items; actual saved roulette winners, manual choice rounds prefer eligible strategy then staff/equipment. 60-wave/1800s caps are censored, not wins. No human skill/retention claims.",
+  "runtimeHashes": {
+    "gm-mode.js": "67bcf0ff4657524b88bc7be6f5db6fac9498e92721ffb99d03c64a3282d1b26b",
+    "game-language.js": "c2fd00a147249539ddbc98287ab915b108a6f044088a9321f323b5a7f3f324f4",
+    "performance.js": "270e23a3c1a88a7603cbc5bc2bd8609f7ba746226b05df7a8c726359616a8733",
+    "session-guard.js": "fb4a846f026d63e2420b753e0111903fd3aa7c69a4d218b05cacfb25439a4b4b",
+    "expansion-catalog.js": "f39ea8c31dab8e41500e1d1060f41dccbb111cb6b5b3cca419ebf9879b38394e",
+    "assets/motion/manifest.js": "f495b72ec7052846194fb79757c3d4354684424599d921c6ae0ba964dd018058",
+    "assets/bosses/manifest.js": "324a4596c7c8bc2fc12bab891f548c1b770bbc1db7ea0def5d5330720d520f8a",
+    "assets/expansion-v2/manifest.js": "3c1144523b1bed97133ae42dd2eca65d2016bc6eb9803a46f52c8899737cb0bd",
+    "assets/character-motion/manifest.js": "29224c080768d3d9742994104ea005b40af284991c99a00c370af1e8354cd8d9",
+    "assets/combat-comic/manifest.js": "be91c4584f4674f252a178e217848d06ab74503954025d61ca5f01984e0f0919",
+    "assets/character-motion/outlines.js": "3e531178ae49a788f7a75e0023de6d266f06a3affe29e8931387f9ea6602b1f4",
+    "motion.js": "e5057bf0e3340aed57bc2a320b593f651680611ac78ace7676cbc80e2db4d4b1",
+    "battle-art.js": "f02f57f304d37fd9892b1acb6c14a7f250768a6a4f35e12e8830e5210e2bc25e",
+    "combat-motion.js": "e704b89d6a98ee2278c578994e75b107947c6c5ad416787fa5546a442f8a9765",
+    "skill-cutin.js": "43ee76a0142ffcce5bce7d3d43467f98e103cd1846b11550ab10a039cccdb6db",
+    "training.js": "17472868785b047fc7b9b520f06dfba7d9e3ce610a0a38039be30ccde413b812",
+    "bosses.js": "dad98b3abc827955d3a786d380f630d544ce03be1a7496479fdc3f62c9112569",
+    "save-transfer.js": "3235c457d46d572d0902ccffff67fc95bfc2e97657010f03453d69331403f899",
+    "player-profile.js": "a1b3fb4f9a621c6e90fbc24854bf08640e6264c8e541511457439e3610363ca5",
+    "castle-stories.js": "bc3b69a72fe7dc2ca2a98d48a9f5f8d0cac9d7f7b9c82d2ccdd1cefca10cf09e",
+    "character-portraits.js": "ed2db7bac46371d6cf2a0c6cebd161ddc5ef7e86bb3c426726c2f54676a2136c",
+    "meta.js": "7c310fd8d7e646a39b65bdcc3aad7ac7a1d3b76357ef5a9b3b77346998a13504",
+    "staff-combat.js": "a680db4ea9fbcdf1fccece88e1e2810fe503df3d137e5d98e8605630dae5a7ba",
+    "expansion-combat.js": "d70e368e6e094d65aca7bdc1e72af0f0e774f1356835109c41d0398c51f30a93",
+    "game.js": "3f75d2c2308ee199c92e1e15187cc9f9eca71a2c2c87c23d051b72a6a7dbf140",
+    "app.js": "cb591a233e7ec8dd6ee9f8c25617ceb64b5f579de70a80eb45d14e123a4f75bb",
+    "staff-codex.js": "ad1ab6b7a3e3f42cf35cf67d09fcb3f8029d18ef0916580d368cbc49013e2c85",
+    "progression.js": "03235b5aef121c9353a768f5a3b992d3cf79f6e0a89a5b73868cf7bff1c4214f",
+    "recruitment.js": "18ea76c18eb3103ab1131f24ee27bd2bc6b96da36c799fae3a70eb2d4a9d64e8",
+    "training-ui.js": "5ad2c022cd72b66e3f4ee745b5b2d717e523d02fdfa0f55a0991323f399e63a4",
+    "reference-ui.js": "f3f935e13dc2273b28e319b8c79480cb204d773e90a9f809f3de79d86efa0c92",
+    "castle-story-player.js": "da6aafefb92df8720e4ab6fe2362764eb5409f0a8c51d7792fde8d156701226a",
+    "shop-system.js": "ca77fdc392965841d4926d36ccc2347060101447751e9b44d0310f4e9f6486cf",
+    "recruitment-dialog.js": "b50ea74ba4a3c64fee4e7c909e47e2d6ae997ced179b53163fbfaab1d0fcebd8",
+    "gm-ui.js": "7a5a13a0d220f3de9ad5b59118f212359057222f01a6dd14f61f2f93a084980f",
+    "new-hire-trial.js": "c9712c01866f5f9e55181a3b518da71caa74ebd35e69ceeb429671607d78efb1",
+    "usability.js": "9983f27c19fcd8c4df80c7001b87a7fc9b9802915b806e58d4fd9acb87ad3f14",
+    "discount-tutorial.js": "f8564d7c36848afcd7075a541d05c4532a0b2a135a0572f54bcebc2662bf893a",
+    "performance-ui.js": "90d4a37deb8ea2f9f4d26886efbe64738548216750e2faecbedd1d9415dd0a9b",
+    "orientation.js": "a8c087037676e6358ed56fd88f065f4acb379ac552151c286dd4cdea78550181",
+    "live-proposal-skin.js": "0c715de43f176c4ed5823cf20e635a42be62c1e52cfbdf1af9485fbf1dced95a",
+    "live-ui-audit-fixes.js": "5bfb16122fb991e80af305c692655906ed7a0734f3413bf50f8e3d9340c2a9c7",
+    "lobby-duo.js": "9f4ef12f68295b3b42ebe7a7ed784aa8f4d0a355b9b06d02178f60ba1146f59e",
+    "development.js": "9799ca8bc11c89bb1ed776f01cf589e1d90541420eded2c6c19712373d0be60f",
+    "save-transfer-ui.js": "52a19d693301fcbc77e07c88a53652f4660b30968619ad736ce083bc01083a71",
+    "story-loading.js": "6725480f58e929cc8a4c5c4ed0b8ac68aa48254f1c2df1094e99936c0a99119b",
+    "dialog-layout.js": "fade6a54680c6319cf34c464ed4c60c4d0e92d4c9cdc0a8cfec5cb46fddc5110",
+    "game-audio.js": "8ef26ccd4eefabf6c41e725c6fa8dcfa9ee1cab9ccf54968309284e91c0f3510",
+    "game-sfx.js": "c3029f811f6afd26a7da585a85d9b7ae49e536d95ad7205a0d0ba6c8879b50f4",
+    "approved-ui.js": "c94ffeff11ae1775054436385b4415d6f6b7e8982aa6cafd0ac94b9449207f4c",
+    "assets/hiring-stories/game-data.js": "2178e3fa027c9298ea9e6cf3bee77340a7cdf971e8bc0ead927a6c1e0c4aee07",
+    "hiring-stories.js": "5f4c7959451cd13b82a3f47ded251c511509cdc250b3afb84511ee04ae04702e",
+    "tutorial-coach.js": "6179c50c91554df4b86599a8d3f0f17acdeec8d34bb81bd280917d496709388a",
+    "tactical-duty.js": "54cd4a3a699f61168b2f42f08dded0f677875288cac9587e9c393a4875b61ae0",
+    "battle-presentation.js": "4515bd87f1008c0be885c98f527a506edafbfc66e3e8b7d0118d151ede26441a",
+    "gameworld-ui.js": "d5b82853278fd346cfc65e3854fbd0533ebddc71f9ad448e019a0f62ef6baf0d",
+    "open-scene.js": "4b4278b46ac0283fff903a6e2dfd4632c3d70c39bab3dd3c8422582202fb3dd2",
+    "previews/asset-lobby-20261109/lobby.js": "18a7dac909795e4562460a3b528cf7e19eda9b023cbadd18e8538ab188ae8420",
+    "previews/asset-roster-20261109/roster.js": "310292c726dc021269dd0d3d2a5429e2ecfa1530ee596689dfc0c578ed3ffbe8",
+    "previews/asset-shop-20261109/shop.js": "930e123d7dd410e035ee8badcea59622af27b0261ae300c61601357dfcee9504",
+    "previews/asset-training-20261109/training.js": "74872f727e31e524e054e27ccd97a24dd622cd535954ee6d54b40694d5f7493f",
+    "battle-comic.js": "5d6da36665873d3a2ba06042d0d9f8b124dbd154f1e98f3f793912b8b3c14058",
+    "shared-chrome.js": "b60168f4f2c0cb65a600d29ed984590fdbff9c55b316a27fc69403c2c6cc8050",
+    "concept-tools.js": "062338d8cc264426a2a9530f7dfac6777e49e667af336406135a15286dedaff8",
+    "concept-people.js": "a30a9a9411c6ce482ce47934408dd5fd9daced6290bb2b6799d9cad4084f6dcf",
+    "concept-stories.js": "25c4d077094d488f92901d36b287b2c5f8a42002122fe2795277b1f9d3d38712",
+    "text-grid.js": "f9b4a917b3b5d7ec4ea49059872b09de27b026ecdc58df3b4d6fa4d0bf2ab3d3",
+    "story-art.js": "1081c49e1bdda7e24477afeb6c034f0caa6290156059c93d34533bcece3d1904",
+    "language-settings.js": "62a9e78201e0ca980a465a175d0ccc15f5f2186f2df77494478d44e6c8693fa7",
+    "single-screen-settings.js": "67e4fdc61c6b0e902ae853cf3ecaa9894d66d07c46fb4d987f234e2eaa537f5d",
+    "single-screen-people.js": "68d83e29cada8b14b477ca0b70f2096558951b0768d7a98d5bd4cedd3ee6154b",
+    "single-screen-shop.js": "1f43cf64cb46482fd5b6743c90e1a59f4166c0f977506cc4f474e0903f0385f3",
+    "moonlight-ui.js": "0ea3563c8a70df268e2f5e1355aa3b9fd062fb6056e713520b44ebfabb8e0ee0",
+    "story-fullscreen.js": "9585e49f9c5b415a3f4037ab7d8434cb0a06d08aebd7f5f9e55db8dbe86bab80",
+    "rapid-summon.js": "0c7e61cfed206b5fbb3b333b4c185a02bbea32d4a9141d9f7771f97d89340169",
+    "duty-patch.js": "a769921015a2d37cd8b4573a04cbff991b085981a492d0ce7b95ff905d6b188b",
+    "narrative-en.js": "fd1ccff04b49e15c319e208f9c1a2465daa898056f261d4e753eeb88813c16dd",
+    "narrative-locale.js": "83000faf1408686966c61d182727cbfb96a7dedf9698995bc7432eb0aa4c6872",
+    "play-observations.js": "83b47c1bb722a2a294c3b3aea61560712e121f6cf23ed3b0e43088718e885140"
+  },
+  "rows": [
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 1,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 30,
+      "ended": true,
+      "censored": false,
+      "seconds": 739,
+      "actions": 1479,
+      "fullBoardSeconds": 344,
+      "summons": 258,
+      "merges": 117,
+      "failed": 14,
+      "cooperationHits": 5327,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.0000000000003,
+          "sp": 75,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 116.69999999999764,
+          "sp": 62,
+          "units": 9,
+          "highest": 5,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 141.29999999999626,
+          "sp": 37,
+          "units": 10,
+          "highest": 5,
+          "gear": 8,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 156.69999999999538,
+          "sp": 116,
+          "units": 7,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 173.49999999999443,
+          "sp": 120,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 190.49999999999346,
+          "sp": 90,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 207.89999999999247,
+          "sp": 115,
+          "units": 12,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 237.1999999999908,
+          "sp": 113,
+          "units": 15,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 257.19999999999,
+          "sp": 138,
+          "units": 12,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 277.79999999999467,
+          "sp": 85,
+          "units": 12,
+          "highest": 6,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 299.19999999999953,
+          "sp": 205,
+          "units": 15,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 321.20000000000454,
+          "sp": 83,
+          "units": 14,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 459.1000000000359,
+          "sp": 129,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 694.3000000000893,
+          "sp": 135,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 1,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 32,
+      "ended": true,
+      "censored": false,
+      "seconds": 773,
+      "actions": 1547,
+      "fullBoardSeconds": 313,
+      "summons": 315,
+      "merges": 138,
+      "failed": 10,
+      "cooperationHits": 4918,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.0000000000003,
+          "sp": 37,
+          "units": 7,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 112.0999999999979,
+          "sp": 61,
+          "units": 7,
+          "highest": 5,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 135.1999999999966,
+          "sp": 100.25,
+          "units": 9,
+          "highest": 5,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 150.59999999999573,
+          "sp": 89,
+          "units": 9,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 166.8999999999948,
+          "sp": 113.75,
+          "units": 8,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 183.89999999999384,
+          "sp": 92.25,
+          "units": 8,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 201.49999999999284,
+          "sp": 120.5,
+          "units": 9,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 235.89999999999088,
+          "sp": 111.75,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 255.79999999998975,
+          "sp": 174.25,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 276.0999999999943,
+          "sp": 189.25,
+          "units": 14,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 296.899999999999,
+          "sp": 272.75,
+          "units": 13,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 318.4000000000039,
+          "sp": 130.75,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 444.1000000000325,
+          "sp": 180.5,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 30,
+          "seconds": 621.1000000000727,
+          "sp": 246.5,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 1,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 31,
+      "ended": true,
+      "censored": false,
+      "seconds": 751,
+      "actions": 1503,
+      "fullBoardSeconds": 432,
+      "summons": 248,
+      "merges": 94,
+      "failed": 10,
+      "cooperationHits": 3757,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 45.60000000000038,
+          "sp": 74,
+          "units": 8,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 116.79999999999764,
+          "sp": 82,
+          "units": 10,
+          "highest": 5,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 140.5999999999963,
+          "sp": 446,
+          "units": 11,
+          "highest": 5,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 155.89999999999543,
+          "sp": 68,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 172.1999999999945,
+          "sp": 103,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 189.09999999999354,
+          "sp": 95,
+          "units": 11,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 206.19999999999257,
+          "sp": 165,
+          "units": 14,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 232.69999999999106,
+          "sp": 115,
+          "units": 13,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 252.29999999998995,
+          "sp": 114,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 272.2999999999934,
+          "sp": 117,
+          "units": 12,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 293.09999999999815,
+          "sp": 218,
+          "units": 14,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 314.60000000000304,
+          "sp": 77,
+          "units": 15,
+          "highest": 5,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 441.80000000003196,
+          "sp": 94,
+          "units": 15,
+          "highest": 5,
+          "gear": 23,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 628.6000000000744,
+          "sp": 134,
+          "units": 15,
+          "highest": 5,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 1,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 27,
+      "ended": true,
+      "censored": false,
+      "seconds": 607,
+      "actions": 1215,
+      "fullBoardSeconds": 126,
+      "summons": 170,
+      "merges": 147,
+      "failed": 18,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.70000000000031,
+          "sp": 52,
+          "units": 9,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 115.99999999999768,
+          "sp": 100,
+          "units": 11,
+          "highest": 4,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 139.69999999999635,
+          "sp": 64,
+          "units": 12,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 154.99999999999548,
+          "sp": 112,
+          "units": 12,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 171.29999999999455,
+          "sp": 102,
+          "units": 12,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 187.9999999999936,
+          "sp": 156,
+          "units": 13,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 205.39999999999262,
+          "sp": 69,
+          "units": 13,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 234.79999999999094,
+          "sp": 146,
+          "units": 15,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 258.89999999999037,
+          "sp": 51,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 278.99999999999494,
+          "sp": 124,
+          "units": 8,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 299.8999999999997,
+          "sp": 170,
+          "units": 8,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 321.4000000000046,
+          "sp": 80,
+          "units": 11,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 469.8000000000383,
+          "sp": 111,
+          "units": 12,
+          "highest": 6,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 1,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 27,
+      "ended": true,
+      "censored": false,
+      "seconds": 590,
+      "actions": 1181,
+      "fullBoardSeconds": 260,
+      "summons": 169,
+      "merges": 109,
+      "failed": 5,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 41.50000000000032,
+          "sp": 60,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.09999999999785,
+          "sp": 99,
+          "units": 11,
+          "highest": 5,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 136.59999999999653,
+          "sp": 50.75,
+          "units": 9,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 151.89999999999566,
+          "sp": 30.75,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 168.19999999999473,
+          "sp": 99.75,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 184.89999999999378,
+          "sp": 120,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 202.0999999999928,
+          "sp": 115.75,
+          "units": 11,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 228.5999999999913,
+          "sp": 141.25,
+          "units": 14,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 1,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 248.0999999999902,
+          "sp": 116.5,
+          "units": 14,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 268.09999999999246,
+          "sp": 102,
+          "units": 13,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 288.79999999999717,
+          "sp": 199.5,
+          "units": 15,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 310.20000000000203,
+          "sp": 162.75,
+          "units": 14,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 449.8000000000338,
+          "sp": 288,
+          "units": 14,
+          "highest": 6,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 1,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 21,
+      "ended": true,
+      "censored": false,
+      "seconds": 482,
+      "actions": 963,
+      "fullBoardSeconds": 118,
+      "summons": 162,
+      "merges": 128,
+      "failed": 8,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.500000000000306,
+          "sp": 45,
+          "units": 9,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.19999999999784,
+          "sp": 96,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 140.3999999999963,
+          "sp": 366,
+          "units": 11,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 155.69999999999544,
+          "sp": 116,
+          "units": 11,
+          "highest": 4,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 172.2999999999945,
+          "sp": 110,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 189.9999999999935,
+          "sp": 88,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 209.49999999999238,
+          "sp": 75,
+          "units": 12,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 257.49999999999005,
+          "sp": 155,
+          "units": 15,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 281.29999999999546,
+          "sp": 47,
+          "units": 15,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 306.5000000000012,
+          "sp": 170,
+          "units": 14,
+          "highest": 6,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 339.9000000000088,
+          "sp": 155,
+          "units": 15,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 384.0000000000188,
+          "sp": 217,
+          "units": 14,
+          "highest": 6,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 1,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 30,
+      "ended": true,
+      "censored": false,
+      "seconds": 769,
+      "actions": 1538,
+      "fullBoardSeconds": 86,
+      "summons": 141,
+      "merges": 122,
+      "failed": 13,
+      "cooperationHits": 2774,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.0000000000003,
+          "sp": 38,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 115.19999999999773,
+          "sp": 72,
+          "units": 12,
+          "highest": 4,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 141.19999999999627,
+          "sp": 105,
+          "units": 11,
+          "highest": 4,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 156.4999999999954,
+          "sp": 108,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 173.09999999999445,
+          "sp": 96,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 189.8999999999935,
+          "sp": 99,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 207.79999999999248,
+          "sp": 122,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 245.59999999999033,
+          "sp": 68,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 265.5999999999919,
+          "sp": 30,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 286.2999999999966,
+          "sp": 37,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 308.2000000000016,
+          "sp": 106,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 331.1000000000068,
+          "sp": 122,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 508.8000000000472,
+          "sp": 152,
+          "units": 13,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 708.0000000000924,
+          "sp": 92,
+          "units": 13,
+          "highest": 5,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 1,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "chain",
+      "wave": 33,
+      "ended": true,
+      "censored": false,
+      "seconds": 838,
+      "actions": 1677,
+      "fullBoardSeconds": 65,
+      "summons": 157,
+      "merges": 140,
+      "failed": 8,
+      "cooperationHits": 6106,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.1000000000003,
+          "sp": 73,
+          "units": 10,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.59999999999782,
+          "sp": 83,
+          "units": 10,
+          "highest": 4,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 11,
+          "seconds": 137.2999999999965,
+          "sp": 61,
+          "units": 10,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 152.49999999999562,
+          "sp": 89,
+          "units": 10,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 168.99999999999469,
+          "sp": 77,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 185.79999999999373,
+          "sp": 104,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 203.09999999999275,
+          "sp": 101,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 238.69999999999072,
+          "sp": 103,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 258.6999999999903,
+          "sp": 95,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 278.99999999999494,
+          "sp": 72,
+          "units": 14,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 300.3999999999998,
+          "sp": 141,
+          "units": 14,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 323.10000000000497,
+          "sp": 157,
+          "units": 14,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 460.9000000000363,
+          "sp": 158,
+          "units": 12,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 636.8000000000762,
+          "sp": 95,
+          "units": 12,
+          "highest": 6,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 1,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 30,
+      "ended": true,
+      "censored": false,
+      "seconds": 768,
+      "actions": 1536,
+      "fullBoardSeconds": 220,
+      "summons": 135,
+      "merges": 105,
+      "failed": 7,
+      "cooperationHits": 3210,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.800000000000296,
+          "sp": 61,
+          "units": 8,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 111.39999999999795,
+          "sp": 32,
+          "units": 10,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 137.69999999999646,
+          "sp": 380,
+          "units": 11,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 152.8999999999956,
+          "sp": 83,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 169.29999999999467,
+          "sp": 71,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 185.99999999999372,
+          "sp": 86,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 203.19999999999274,
+          "sp": 57,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 230.69999999999118,
+          "sp": 102,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 250.59999999999005,
+          "sp": 158,
+          "units": 10,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 270.9999999999931,
+          "sp": 126,
+          "units": 13,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 292.29999999999797,
+          "sp": 159,
+          "units": 12,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 314.30000000000297,
+          "sp": 70,
+          "units": 15,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 471.1000000000386,
+          "sp": 176,
+          "units": 13,
+          "highest": 6,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 721.9000000000956,
+          "sp": 133,
+          "units": 15,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 10,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 30,
+      "ended": true,
+      "censored": false,
+      "seconds": 697,
+      "actions": 1395,
+      "fullBoardSeconds": 397,
+      "summons": 163,
+      "merges": 75,
+      "failed": 8,
+      "cooperationHits": 7207,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.700000000000294,
+          "sp": 33.70000000000002,
+          "units": 8,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.99999999999802,
+          "sp": 77.6,
+          "units": 13,
+          "highest": 4,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 131.09999999999684,
+          "sp": 99.91999999999997,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 146.29999999999598,
+          "sp": 50.959999999999965,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 162.39999999999506,
+          "sp": 107.65999999999997,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 178.79999999999413,
+          "sp": 83.93999999999996,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 195.79999999999316,
+          "sp": 49.03,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 222.49999999999164,
+          "sp": 64.23999999999998,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 242.09999999999053,
+          "sp": 154.99999999999997,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 262.0999999999911,
+          "sp": 187.39999999999995,
+          "units": 14,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 282.8999999999958,
+          "sp": 190.4899999999999,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 304.3000000000007,
+          "sp": 129.80999999999983,
+          "units": 15,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 433.40000000003005,
+          "sp": 164.4299999999995,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 656.6000000000807,
+          "sp": 124.69999999999914,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 10,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 33,
+      "ended": true,
+      "censored": false,
+      "seconds": 836,
+      "actions": 1673,
+      "fullBoardSeconds": 506,
+      "summons": 212,
+      "merges": 84,
+      "failed": 5,
+      "cooperationHits": 8099,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.50000000000029,
+          "sp": 41.35000000000002,
+          "units": 7,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.89999999999803,
+          "sp": 80.85750000000006,
+          "units": 8,
+          "highest": 5,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 131.39999999999682,
+          "sp": 78.27000000000007,
+          "units": 10,
+          "highest": 5,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 146.59999999999596,
+          "sp": 117.50750000000005,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 162.69999999999504,
+          "sp": 194.07000000000005,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 179.0999999999941,
+          "sp": 66.69500000000005,
+          "units": 9,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 196.29999999999313,
+          "sp": 75.42000000000007,
+          "units": 11,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 226.8999999999914,
+          "sp": 90.80750000000009,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 2,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 246.49999999999028,
+          "sp": 187.9825000000001,
+          "units": 14,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 266.4999999999921,
+          "sp": 109.0700000000001,
+          "units": 15,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 287.2999999999968,
+          "sp": 202.84500000000008,
+          "units": 15,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 308.7000000000017,
+          "sp": 79.14500000000004,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 433.10000000003,
+          "sp": 109.81999999999977,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 30,
+          "seconds": 619.5000000000723,
+          "sp": 221.19499999999954,
+          "units": 15,
+          "highest": 5,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 10,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 38,
+      "ended": true,
+      "censored": false,
+      "seconds": 965,
+      "actions": 1931,
+      "fullBoardSeconds": 303,
+      "summons": 272,
+      "merges": 183,
+      "failed": 13,
+      "cooperationHits": 7040,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 42.70000000000034,
+          "sp": 76.19,
+          "units": 7,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.09999999999785,
+          "sp": 54.01000000000005,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 136.49999999999653,
+          "sp": 114.29000000000006,
+          "units": 9,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 151.79999999999566,
+          "sp": 75.29000000000006,
+          "units": 10,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 167.99999999999474,
+          "sp": 116.65000000000006,
+          "units": 10,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 184.5999999999938,
+          "sp": 55.65000000000006,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 201.89999999999281,
+          "sp": 101.13000000000008,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 230.2999999999912,
+          "sp": 116.71000000000006,
+          "units": 12,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 249.7999999999901,
+          "sp": 109.23000000000005,
+          "units": 11,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 269.8999999999929,
+          "sp": 82.86000000000003,
+          "units": 14,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 290.6999999999976,
+          "sp": 120.48,
+          "units": 12,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 312.10000000000247,
+          "sp": 72.45000000000005,
+          "units": 11,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 435.8000000000306,
+          "sp": 205.81999999999994,
+          "units": 12,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 574.5000000000621,
+          "sp": 139.45999999999998,
+          "units": 15,
+          "highest": 6,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 10,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 27,
+      "ended": true,
+      "censored": false,
+      "seconds": 582,
+      "actions": 1165,
+      "fullBoardSeconds": 290,
+      "summons": 156,
+      "merges": 94,
+      "failed": 8,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 41.00000000000031,
+          "sp": 45.88,
+          "units": 10,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.39999999999783,
+          "sp": 60.790000000000006,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 135.79999999999657,
+          "sp": 48.129999999999995,
+          "units": 15,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 150.9999999999957,
+          "sp": 134.95,
+          "units": 14,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 167.0999999999948,
+          "sp": 169.52999999999997,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 183.59999999999386,
+          "sp": 67.28,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 200.69999999999288,
+          "sp": 68.55999999999997,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 224.49999999999153,
+          "sp": 96.30999999999995,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 243.99999999999042,
+          "sp": 48.999999999999915,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 264.09999999999155,
+          "sp": 164.9699999999999,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 284.8999999999963,
+          "sp": 81.28999999999989,
+          "units": 15,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 306.30000000000115,
+          "sp": 30.1099999999999,
+          "units": 14,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 445.1000000000327,
+          "sp": 145.70999999999984,
+          "units": 15,
+          "highest": 5,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 10,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 25,
+      "ended": true,
+      "censored": false,
+      "seconds": 506,
+      "actions": 1013,
+      "fullBoardSeconds": 236,
+      "summons": 157,
+      "merges": 67,
+      "failed": 2,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.80000000000031,
+          "sp": 46.360000000000014,
+          "units": 10,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.69999999999804,
+          "sp": 81.45500000000004,
+          "units": 12,
+          "highest": 5,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 129.9999999999969,
+          "sp": 37.10500000000005,
+          "units": 12,
+          "highest": 5,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 145.19999999999604,
+          "sp": 87.10500000000005,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 161.29999999999512,
+          "sp": 93.33000000000004,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 177.6999999999942,
+          "sp": 127.78000000000003,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 194.79999999999322,
+          "sp": 116.83000000000004,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 222.29999999999166,
+          "sp": 112.40500000000009,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 241.79999999999055,
+          "sp": 50.4550000000001,
+          "units": 14,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 261.79999999999103,
+          "sp": 254.40500000000014,
+          "units": 14,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 282.59999999999576,
+          "sp": 143.3550000000002,
+          "units": 15,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 304.10000000000065,
+          "sp": 170.80500000000023,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 464.100000000037,
+          "sp": 195.7925000000006,
+          "units": 15,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 10,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 23,
+      "ended": true,
+      "censored": false,
+      "seconds": 577,
+      "actions": 1154,
+      "fullBoardSeconds": 93,
+      "summons": 155,
+      "merges": 141,
+      "failed": 16,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.800000000000296,
+          "sp": 52.83000000000001,
+          "units": 9,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 110.19999999999801,
+          "sp": 96.5,
+          "units": 10,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 139.39999999999637,
+          "sp": 387.83000000000004,
+          "units": 8,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 156.4999999999954,
+          "sp": 111.24000000000004,
+          "units": 11,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 174.1999999999944,
+          "sp": 32.26000000000005,
+          "units": 11,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 192.89999999999333,
+          "sp": 163.20000000000007,
+          "units": 13,
+          "highest": 4,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 236.09999999999087,
+          "sp": 107.83000000000011,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 284.0999999999961,
+          "sp": 149.33000000000015,
+          "units": 14,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 311.50000000000233,
+          "sp": 94.33000000000013,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 347.4000000000105,
+          "sp": 82.90000000000015,
+          "units": 15,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 385.50000000001916,
+          "sp": 163.02000000000018,
+          "units": 11,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 414.4000000000257,
+          "sp": 159.1800000000002,
+          "units": 12,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 10,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 35,
+      "ended": true,
+      "censored": false,
+      "seconds": 851,
+      "actions": 1702,
+      "fullBoardSeconds": 345,
+      "summons": 155,
+      "merges": 106,
+      "failed": 10,
+      "cooperationHits": 3587,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.800000000000296,
+          "sp": 61,
+          "units": 8,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 113.39999999999783,
+          "sp": 99,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 138.7999999999964,
+          "sp": 72,
+          "units": 11,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 153.99999999999554,
+          "sp": 75,
+          "units": 11,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 170.19999999999462,
+          "sp": 63,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 186.89999999999367,
+          "sp": 40,
+          "units": 14,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 203.9999999999927,
+          "sp": 95,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 234.69999999999095,
+          "sp": 71,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 254.29999999998984,
+          "sp": 97,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 274.4999999999939,
+          "sp": 104,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 295.29999999999865,
+          "sp": 76,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 317.0000000000036,
+          "sp": 59,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 443.60000000003237,
+          "sp": 115,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 584.4000000000643,
+          "sp": 184,
+          "units": 15,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 10,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "chain",
+      "wave": 35,
+      "ended": true,
+      "censored": false,
+      "seconds": 873,
+      "actions": 1746,
+      "fullBoardSeconds": 520,
+      "summons": 148,
+      "merges": 73,
+      "failed": 5,
+      "cooperationHits": 5147,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.800000000000296,
+          "sp": 59,
+          "units": 8,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 110.59999999999799,
+          "sp": 62,
+          "units": 12,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 11,
+          "seconds": 133.29999999999671,
+          "sp": 62,
+          "units": 13,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 148.49999999999585,
+          "sp": 115,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 164.79999999999492,
+          "sp": 78,
+          "units": 9,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 181.39999999999398,
+          "sp": 51,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 198.399999999993,
+          "sp": 74,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 226.6999999999914,
+          "sp": 130,
+          "units": 14,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 246.1999999999903,
+          "sp": 90,
+          "units": 14,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 266.19999999999203,
+          "sp": 33,
+          "units": 14,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 287.0999999999968,
+          "sp": 138,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 308.7000000000017,
+          "sp": 154,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 435.10000000003043,
+          "sp": 125,
+          "units": 15,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 583.4000000000641,
+          "sp": 111,
+          "units": 15,
+          "highest": 5,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 10,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 35,
+      "ended": true,
+      "censored": false,
+      "seconds": 891,
+      "actions": 1782,
+      "fullBoardSeconds": 163,
+      "summons": 161,
+      "merges": 127,
+      "failed": 13,
+      "cooperationHits": 3037,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.700000000000294,
+          "sp": 72,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.79999999999804,
+          "sp": 59,
+          "units": 8,
+          "highest": 5,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 133.89999999999668,
+          "sp": 387,
+          "units": 10,
+          "highest": 5,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 149.09999999999582,
+          "sp": 65,
+          "units": 9,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 165.2999999999949,
+          "sp": 103,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 181.89999999999395,
+          "sp": 121,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 199.09999999999297,
+          "sp": 65,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 227.29999999999137,
+          "sp": 111,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 246.89999999999026,
+          "sp": 103,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 266.9999999999922,
+          "sp": 131,
+          "units": 8,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 287.89999999999696,
+          "sp": 134,
+          "units": 11,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 309.5000000000019,
+          "sp": 111,
+          "units": 12,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 435.4000000000305,
+          "sp": 98,
+          "units": 15,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 579.7000000000633,
+          "sp": 155,
+          "units": 11,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 30,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 41,
+      "ended": true,
+      "censored": false,
+      "seconds": 975,
+      "actions": 1950,
+      "fullBoardSeconds": 597,
+      "summons": 252,
+      "merges": 129,
+      "failed": 8,
+      "cooperationHits": 8489,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 69,
+          "units": 10,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 108.7999999999981,
+          "sp": 148.39999999999998,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 128.199999999997,
+          "sp": 56.8,
+          "units": 9,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 143.39999999999614,
+          "sp": 84.4,
+          "units": 13,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 159.19999999999524,
+          "sp": 194,
+          "units": 12,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 175.5999999999943,
+          "sp": 123.59999999999998,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 192.59999999999334,
+          "sp": 32.19999999999996,
+          "units": 13,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 213.19999999999217,
+          "sp": 127.79999999999997,
+          "units": 12,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 232.59999999999107,
+          "sp": 145.39999999999992,
+          "units": 13,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 252.59999999998993,
+          "sp": 79.99999999999991,
+          "units": 13,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 273.1999999999936,
+          "sp": 177.5999999999999,
+          "units": 14,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 294.39999999999844,
+          "sp": 183.7999999999999,
+          "units": 12,
+          "highest": 6,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 405.8000000000238,
+          "sp": 144.19999999999985,
+          "units": 13,
+          "highest": 6,
+          "gear": 19,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 527.2000000000513,
+          "sp": 264.00000000000006,
+          "units": 14,
+          "highest": 6,
+          "gear": 22,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 30,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 43,
+      "ended": true,
+      "censored": false,
+      "seconds": 1049,
+      "actions": 2099,
+      "fullBoardSeconds": 443,
+      "summons": 292,
+      "merges": 211,
+      "failed": 13,
+      "cooperationHits": 11831,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 51.999999999999986,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 107.49999999999817,
+          "sp": 90.19999999999999,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 126.69999999999708,
+          "sp": 52.19999999999999,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 141.89999999999623,
+          "sp": 57.69999999999999,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 157.89999999999532,
+          "sp": 122.94999999999999,
+          "units": 10,
+          "highest": 6,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 174.39999999999438,
+          "sp": 243.7,
+          "units": 10,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 191.3999999999934,
+          "sp": 38.69999999999999,
+          "units": 13,
+          "highest": 6,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 214.99999999999207,
+          "sp": 70.95000000000005,
+          "units": 15,
+          "highest": 6,
+          "gear": 16,
+          "pairs": 2,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 234.39999999999097,
+          "sp": 33.700000000000045,
+          "units": 14,
+          "highest": 6,
+          "gear": 16,
+          "pairs": 1,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 254.39999999998983,
+          "sp": 65.45000000000005,
+          "units": 12,
+          "highest": 6,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 274.99999999999403,
+          "sp": 206.70000000000005,
+          "units": 12,
+          "highest": 6,
+          "gear": 19,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 296.19999999999885,
+          "sp": 279.95000000000005,
+          "units": 13,
+          "highest": 6,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 409.0000000000245,
+          "sp": 176.70000000000005,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 30,
+          "seconds": 532.5000000000525,
+          "sp": 154.95000000000005,
+          "units": 14,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "level": 30,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 40,
+      "ended": true,
+      "censored": false,
+      "seconds": 969,
+      "actions": 1939,
+      "fullBoardSeconds": 586,
+      "summons": 342,
+      "merges": 111,
+      "failed": 12,
+      "cooperationHits": 6315,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 41.40000000000032,
+          "sp": 58.00000000000003,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.09999999999808,
+          "sp": 49.400000000000006,
+          "units": 11,
+          "highest": 4,
+          "gear": 8,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 130.89999999999685,
+          "sp": 105.20000000000002,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 146.099999999996,
+          "sp": 64.20000000000003,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 162.19999999999507,
+          "sp": 78,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 2,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 178.69999999999413,
+          "sp": 78.00000000000001,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 195.69999999999317,
+          "sp": 72.19999999999999,
+          "units": 15,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 217.8999999999919,
+          "sp": 55.19999999999999,
+          "units": 14,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 237.2999999999908,
+          "sp": 79.80000000000003,
+          "units": 15,
+          "highest": 5,
+          "gear": 17,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 257.29999999999,
+          "sp": 130.39999999999998,
+          "units": 15,
+          "highest": 5,
+          "gear": 18,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 277.8999999999947,
+          "sp": 209.99999999999994,
+          "units": 15,
+          "highest": 5,
+          "gear": 19,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 299.0999999999995,
+          "sp": 101.19999999999993,
+          "units": 15,
+          "highest": 5,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 412.4000000000253,
+          "sp": 138.79999999999984,
+          "units": 15,
+          "highest": 5,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 539.100000000054,
+          "sp": 301.79999999999984,
+          "units": 14,
+          "highest": 5,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 30,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 29,
+      "ended": true,
+      "censored": false,
+      "seconds": 631,
+      "actions": 1262,
+      "fullBoardSeconds": 355,
+      "summons": 185,
+      "merges": 94,
+      "failed": 9,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 40.0000000000003,
+          "sp": 65.2,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 109.79999999999804,
+          "sp": 101.00000000000001,
+          "units": 7,
+          "highest": 5,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 129.49999999999693,
+          "sp": 384.6,
+          "units": 9,
+          "highest": 5,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 144.69999999999607,
+          "sp": 128.80000000000004,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 160.59999999999516,
+          "sp": 126.20000000000002,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 176.99999999999423,
+          "sp": 165.39999999999998,
+          "units": 14,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 193.99999999999326,
+          "sp": 157.39999999999998,
+          "units": 12,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 216.49999999999199,
+          "sp": 61.79999999999991,
+          "units": 15,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 235.89999999999088,
+          "sp": 146.39999999999995,
+          "units": 14,
+          "highest": 5,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 255.89999999998975,
+          "sp": 32.59999999999991,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 276.4999999999944,
+          "sp": 143.5999999999999,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 297.7999999999992,
+          "sp": 107.59999999999991,
+          "units": 15,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 421.60000000002736,
+          "sp": 182.19999999999993,
+          "units": 15,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 30,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "economy",
+      "wave": 34,
+      "ended": true,
+      "censored": false,
+      "seconds": 764,
+      "actions": 1529,
+      "fullBoardSeconds": 399,
+      "summons": 386,
+      "merges": 119,
+      "failed": 3,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 52.2,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 107.79999999999815,
+          "sp": 118.04999999999998,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 11,
+          "seconds": 127.69999999999702,
+          "sp": 104.29999999999998,
+          "units": 10,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 12,
+          "seconds": 142.89999999999617,
+          "sp": 135.04999999999998,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 13,
+          "seconds": 158.79999999999526,
+          "sp": 75.29999999999998,
+          "units": 13,
+          "highest": 5,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 14,
+          "seconds": 175.19999999999433,
+          "sp": 112.79999999999995,
+          "units": 13,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 15,
+          "seconds": 192.19999999999337,
+          "sp": 101.54999999999995,
+          "units": 14,
+          "highest": 5,
+          "gear": 13,
+          "pairs": 1,
+          "strategy": "economy"
+        },
+        {
+          "wave": 16,
+          "seconds": 216.59999999999198,
+          "sp": 76.79999999999995,
+          "units": 15,
+          "highest": 5,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 17,
+          "seconds": 235.99999999999088,
+          "sp": 47.549999999999955,
+          "units": 14,
+          "highest": 5,
+          "gear": 23,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 18,
+          "seconds": 255.99999999998974,
+          "sp": 194.29999999999995,
+          "units": 15,
+          "highest": 5,
+          "gear": 25,
+          "pairs": 2,
+          "strategy": "economy"
+        },
+        {
+          "wave": 19,
+          "seconds": 276.5999999999944,
+          "sp": 564.8,
+          "units": 14,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 20,
+          "seconds": 297.7999999999992,
+          "sp": 147.79999999999995,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 25,
+          "seconds": 408.9000000000245,
+          "sp": 217.79999999999995,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        },
+        {
+          "wave": 30,
+          "seconds": 545.0000000000554,
+          "sp": 164.04999999999995,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "economy"
+        }
+      ]
+    },
+    {
+      "deck": [
+        0,
+        3,
+        8,
+        10,
+        11
+      ],
+      "level": 30,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 33,
+      "ended": true,
+      "censored": false,
+      "seconds": 784,
+      "actions": 1568,
+      "fullBoardSeconds": 319,
+      "summons": 302,
+      "merges": 184,
+      "failed": 15,
+      "cooperationHits": 0,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.50000000000029,
+          "sp": 70.19999999999999,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 108.29999999999812,
+          "sp": 60.399999999999935,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 129.29999999999694,
+          "sp": 404.59999999999997,
+          "units": 14,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 144.49999999999608,
+          "sp": 85.8,
+          "units": 14,
+          "highest": 4,
+          "gear": 14,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 160.49999999999517,
+          "sp": 75.60000000000001,
+          "units": 14,
+          "highest": 4,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 176.99999999999423,
+          "sp": 196,
+          "units": 11,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 193.99999999999326,
+          "sp": 113.99999999999997,
+          "units": 13,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 220.29999999999177,
+          "sp": 34.99999999999997,
+          "units": 15,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 239.89999999999065,
+          "sp": 156.79999999999995,
+          "units": 12,
+          "highest": 5,
+          "gear": 16,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 273.4999999999937,
+          "sp": 41.999999999999886,
+          "units": 13,
+          "highest": 5,
+          "gear": 19,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 296.799999999999,
+          "sp": 119.99999999999989,
+          "units": 12,
+          "highest": 5,
+          "gear": 20,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 318.20000000000385,
+          "sp": 155.99999999999986,
+          "units": 12,
+          "highest": 5,
+          "gear": 20,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 441.5000000000319,
+          "sp": 31.399999999999864,
+          "units": 15,
+          "highest": 5,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 594.6000000000666,
+          "sp": 95.39999999999986,
+          "units": 15,
+          "highest": 6,
+          "gear": 25,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 30,
+      "seed": 4201,
+      "preferredStrategy": "chain",
+      "strategy": "chain",
+      "wave": 40,
+      "ended": true,
+      "censored": false,
+      "seconds": 1115,
+      "actions": 2230,
+      "fullBoardSeconds": 125,
+      "summons": 186,
+      "merges": 164,
+      "failed": 22,
+      "cooperationHits": 5118,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 1,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 61,
+          "units": 8,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 110.399999999998,
+          "sp": 99,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 11,
+          "seconds": 132.49999999999676,
+          "sp": 72,
+          "units": 12,
+          "highest": 4,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 12,
+          "seconds": 147.6999999999959,
+          "sp": 75,
+          "units": 12,
+          "highest": 4,
+          "gear": 9,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 13,
+          "seconds": 163.79999999999498,
+          "sp": 113,
+          "units": 14,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 14,
+          "seconds": 180.39999999999404,
+          "sp": 65,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 15,
+          "seconds": 197.39999999999307,
+          "sp": 94,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 16,
+          "seconds": 224.59999999999152,
+          "sp": 44,
+          "units": 15,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 1,
+          "strategy": "chain"
+        },
+        {
+          "wave": 17,
+          "seconds": 244.3999999999904,
+          "sp": 103,
+          "units": 12,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 18,
+          "seconds": 264.6999999999917,
+          "sp": 142,
+          "units": 7,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 19,
+          "seconds": 285.69999999999646,
+          "sp": 145,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 20,
+          "seconds": 307.60000000000144,
+          "sp": 128,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 25,
+          "seconds": 440.7000000000317,
+          "sp": 144,
+          "units": 12,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "chain"
+        },
+        {
+          "wave": 30,
+          "seconds": 586.1000000000647,
+          "sp": 173,
+          "units": 13,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "chain"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 30,
+      "seed": 4202,
+      "preferredStrategy": "economy",
+      "strategy": "guard",
+      "wave": 43,
+      "ended": true,
+      "censored": false,
+      "seconds": 1122,
+      "actions": 2245,
+      "fullBoardSeconds": 443,
+      "summons": 188,
+      "merges": 132,
+      "failed": 14,
+      "cooperationHits": 4882,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 3,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 59,
+          "units": 8,
+          "highest": 3,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 108.6999999999981,
+          "sp": 37,
+          "units": 9,
+          "highest": 4,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 11,
+          "seconds": 132.49999999999676,
+          "sp": 400,
+          "units": 9,
+          "highest": 4,
+          "gear": 6,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 12,
+          "seconds": 147.6999999999959,
+          "sp": 103,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 13,
+          "seconds": 163.699999999995,
+          "sp": 62,
+          "units": 8,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 14,
+          "seconds": 180.09999999999405,
+          "sp": 46,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 15,
+          "seconds": 197.0999999999931,
+          "sp": 123,
+          "units": 12,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 16,
+          "seconds": 223.3999999999916,
+          "sp": 109,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 17,
+          "seconds": 242.7999999999905,
+          "sp": 100,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 18,
+          "seconds": 262.79999999999126,
+          "sp": 160,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 19,
+          "seconds": 283.599999999996,
+          "sp": 160,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 20,
+          "seconds": 305.00000000000085,
+          "sp": 99,
+          "units": 15,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 25,
+          "seconds": 426.80000000002855,
+          "sp": 142,
+          "units": 13,
+          "highest": 6,
+          "gear": 11,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 30,
+          "seconds": 559.7000000000587,
+          "sp": 125,
+          "units": 15,
+          "highest": 6,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    },
+    {
+      "deck": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "level": 30,
+      "seed": 4203,
+      "preferredStrategy": "guard",
+      "strategy": "guard",
+      "wave": 40,
+      "ended": true,
+      "censored": false,
+      "seconds": 1078,
+      "actions": 2156,
+      "fullBoardSeconds": 421,
+      "summons": 176,
+      "merges": 123,
+      "failed": 13,
+      "cooperationHits": 5424,
+      "checkpoints": [
+        {
+          "wave": 1,
+          "seconds": 0,
+          "sp": 100,
+          "units": 5,
+          "highest": 1,
+          "gear": 5,
+          "pairs": 4,
+          "strategy": null
+        },
+        {
+          "wave": 5,
+          "seconds": 39.40000000000029,
+          "sp": 72,
+          "units": 7,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": null
+        },
+        {
+          "wave": 10,
+          "seconds": 108.19999999999813,
+          "sp": 98,
+          "units": 9,
+          "highest": 4,
+          "gear": 5,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 11,
+          "seconds": 132.19999999999678,
+          "sp": 371,
+          "units": 10,
+          "highest": 4,
+          "gear": 7,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 12,
+          "seconds": 147.3999999999959,
+          "sp": 124,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 13,
+          "seconds": 163.499999999995,
+          "sp": 37,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 14,
+          "seconds": 180.09999999999405,
+          "sp": 132,
+          "units": 11,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 15,
+          "seconds": 197.0999999999931,
+          "sp": 130,
+          "units": 13,
+          "highest": 4,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 16,
+          "seconds": 222.29999999999166,
+          "sp": 95,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 1,
+          "strategy": "guard"
+        },
+        {
+          "wave": 17,
+          "seconds": 241.69999999999055,
+          "sp": 89,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 18,
+          "seconds": 261.699999999991,
+          "sp": 153,
+          "units": 10,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 19,
+          "seconds": 282.49999999999574,
+          "sp": 120,
+          "units": 11,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 20,
+          "seconds": 304.0000000000006,
+          "sp": 66,
+          "units": 13,
+          "highest": 5,
+          "gear": 10,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 25,
+          "seconds": 429.6000000000292,
+          "sp": 172,
+          "units": 13,
+          "highest": 5,
+          "gear": 12,
+          "pairs": 0,
+          "strategy": "guard"
+        },
+        {
+          "wave": 30,
+          "seconds": 570.4000000000611,
+          "sp": 181,
+          "units": 11,
+          "highest": 5,
+          "gear": 15,
+          "pairs": 0,
+          "strategy": "guard"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "level": 1,
+      "runs": 9,
+      "meanWave": 29,
+      "minWave": 21,
+      "maxWave": 33,
+      "censored": 0
+    },
+    {
+      "level": 10,
+      "runs": 9,
+      "meanWave": 31.22222222222222,
+      "minWave": 23,
+      "maxWave": 38,
+      "censored": 0
+    },
+    {
+      "level": 30,
+      "runs": 9,
+      "meanWave": 38.111111111111114,
+      "minWave": 29,
+      "maxWave": 43,
+      "censored": 0
+    }
+  ]
+}

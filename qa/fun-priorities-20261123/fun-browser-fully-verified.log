@@ -1,0 +1,10 @@
+test_choice_selection_reload_and_exact_single_reward_in_both_languages (test_fun_priorities.FunPriorityTests.test_choice_selection_reload_and_exact_single_reward_in_both_languages) ... ok
+test_cooperative_battle_and_report_download_preserve_wallet (test_fun_priorities.FunPriorityTests.test_cooperative_battle_and_report_download_preserve_wallet) ... ok
+test_fifteenth_choice_and_following_roulette_keep_different_controls (test_fun_priorities.FunPriorityTests.test_fifteenth_choice_and_following_roulette_keep_different_controls) ... ok
+test_lobby_full_body_art_stays_clear_of_controls_and_old_sticker_is_not_loaded (test_fun_priorities.FunPriorityTests.test_lobby_full_body_art_stays_clear_of_controls_and_old_sticker_is_not_loaded) ... ok
+test_three_strategy_buttons_are_reachable_and_guard_is_granted_once (test_fun_priorities.FunPriorityTests.test_three_strategy_buttons_are_reachable_and_guard_is_granted_once) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 28.296s
+
+OK

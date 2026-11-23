@@ -13,7 +13,9 @@ class BalanceTests(unittest.TestCase):
         a=self.open(390,844);a.evaluate('saveChange(d=>{d.tutorialComplete=true});reset();dailyEnabled=false;playing=true;wave=5;sync()');return a
     def reward(self,a,w,winner=None):
         a.evaluate("w=>{rewardBundle=null;wave=w;bonusPending=true;paused=true;renderPerkChoices();document.querySelector('#perk').showModal()}",w)
-        if winner:
+        if winner and a.evaluate("rewardBundle.mode==='choice'"):
+            a.locator('#perk-'+winner).click()
+        elif winner:
             a.evaluate("id=>{rewardBundle.winner=rewardBundle.offers.findIndex(o=>o.id===id);RewardRoulette.render()}",winner)
         a.wait_for_function("!document.querySelector('#roulette-claim').disabled")
     def test_rewards_increase_and_sp_keeps_up_with_summon_cost(self):
