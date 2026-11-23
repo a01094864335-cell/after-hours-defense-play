@@ -31,12 +31,10 @@ class VisualIssueTests(unittest.TestCase):
         a=self.open(320,568)
         surfaces=[
             ('#roster-open','#asset-roster-host .r-scroll','#asset-roster-host .r-card:last-child','#asset-roster-host .r-nav [data-action="close"]'),
-            ('#training-entry','#asset-training-host .scroll','#asset-training-host #effects details:last-child summary','#asset-training-host .back'),
+            ('#training-entry','#asset-training-host .scroll','#asset-training-host .policy','#asset-training-host .back'),
         ]
         for opener,scroller,last,close in surfaces:
             a.locator('#asset-lobby-host [data-proxy="'+opener+'"]').click()
-            if opener=='#training-entry':
-                a.locator('#asset-training-host [data-ss-label="effects"]').click()
             a.locator(scroller).evaluate('e=>e.scrollTop=e.scrollHeight')
             self.assertGreater(a.locator(last).count(),0)
             ui.assert_reachable(self,a,last)

@@ -9,7 +9,7 @@ window.BoardRecycle=(()=>{
   const unit=board[index];if(!allowed()||!unit||!Number.isInteger(index))return false;
   if(unit.pip>=3&&(!confirm||armed!==unit)){armed=unit;selected=index;say(english()?'★'+unit.pip+' '+nameOf(unit)+' · Press again to discard. No SP is returned.':'★'+unit.pip+' '+kinds[unit.type].name+' · 버리기를 한 번 더 누르면 제거돼요. SP는 돌려받지 않아요.');refresh();return false;}
   board[index]=null;selected=-1;drag=null;armed=null;window.TacticalDuty?.hidePreview();
-  burst('smoke',cells[index].x,cells[index].y,'#c6d5df',.35);say(english()?nameOf(unit)+' discarded · +1 empty slot · No SP returned.':kinds[unit.type].name+' 퇴장 · 빈자리 +1');sync();saveActiveRun();return true;
+  burst('staffExit',cells[index].x,cells[index].y,kinds[unit.type].color,.5,{sprite:kinds[unit.type].file,staffType:unit.type,pip:unit.pip});say(english()?nameOf(unit)+' discarded · +1 empty slot · No SP returned.':kinds[unit.type].name+' 퇴장 · 빈자리 +1');sync();saveActiveRun();return true;
  }
  function refresh(){
   const en=english();

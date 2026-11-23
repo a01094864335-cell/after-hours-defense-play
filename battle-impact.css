@@ -1,0 +1,20 @@
+/* A short nonblocking comic cut-in. All words remain live localized text. */
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning:not([hidden]){position:absolute!important;inset:10px 10px auto!important;left:10px!important;right:10px!important;top:10px!important;transform:none!important;width:auto!important;max-width:none!important;height:auto!important;min-height:86px!important;box-sizing:border-box!important;display:grid!important;grid-template-columns:66px minmax(0,1fr)!important;align-items:center!important;gap:8px!important;margin:0!important;padding:8px 12px!important;border:0!important;border-radius:8px!important;background:repeating-radial-gradient(circle at 2px 2px,#e9a92d66 0 1px,transparent 1.5px 8px),linear-gradient(110deg,#ffe77a,#fff2bb)!important;background-size:8px 8px,100% 100%!important;color:#10254b!important;box-shadow:3px 5px #10254b!important;z-index:20!important;pointer-events:none!important;animation:comic-boss-pop .34s cubic-bezier(.2,.8,.2,1) both!important;overflow:visible!important;transition:opacity .25s,translate .25s!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning[data-phase=out]{opacity:0!important;translate:18px 0!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning .warning-icon{display:none!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning .comic-boss-portrait{display:block!important;width:66px!important;height:78px!important;object-fit:contain!important;align-self:end!important;filter:none!important;transform:rotate(-5deg)!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning small{display:block!important;color:#9b3c29!important;font:900 11px/1.3 system-ui!important;letter-spacing:.7px!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning strong{display:block!important;margin:4px 0!important;font:900 clamp(14px,4.4vw,19px)/1.15 system-ui!important;color:#10254b!important;overflow-wrap:anywhere!important;text-shadow:none!important}
+html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning p{display:block!important;margin:0!important;max-width:none!important;white-space:normal!important;font:700 11px/1.35 system-ui!important;color:#405370!important;overflow:visible!important;text-overflow:clip!important}
+@keyframes comic-boss-pop{0%{opacity:0;translate:-30px 0;scale:.86;rotate:-4deg}65%{opacity:1;translate:3px 0;scale:1.035;rotate:1deg}100%{opacity:1;translate:0 0;scale:1;rotate:0deg}}
+@media(prefers-reduced-motion:reduce){html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning:not([hidden]){animation:none!important;transition:none!important}}
+
+html body #app-shell #battle.battle-d[data-boss-cue=true] :is(#message,#item-hint){visibility:hidden!important}
+html body #app-shell #battle.battle-d :is(#message,#item-hint){background:#fff0bf!important;border:0!important;border-radius:5px!important;box-shadow:1px 2px #10254b!important;color:#10254b!important;text-shadow:none!important}
+@media(max-height:650px){
+ html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning:not([hidden]){inset:4px 8px auto!important;left:8px!important;right:8px!important;top:4px!important;min-height:0!important;padding:5px 8px!important;grid-template-columns:40px minmax(0,1fr)!important;gap:8px!important}
+ html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning .comic-boss-portrait{width:40px!important;height:48px!important}
+ html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning small{font-size:10px!important}
+ html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning strong{font-size:14px!important;margin:3px 0!important}
+ html body #app-shell #battle.battle-d #boss-warning.comic-boss-warning p{font-size:10px!important}
+}

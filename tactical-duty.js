@@ -42,7 +42,7 @@ window.TacticalDuty=(()=>{
   if(!ui||!board[a]||a===b||b<0){hidePreview();return}
   const moving=canMove()&&!board[b],details=mergeDetails(a,b);
   if(!moving&&!details){hidePreview();return}
-  if(!moving&&paused){showPlanning(a);return}
+  if(!moving&&paused){hidePreview();return}
   uiText(previewNode,moving?'↪ 무료 재배치 · 등급·스킬 대기시간 유지':details.lines.join('\n'));
   previewNode.hidden=false;canvas.setAttribute('aria-describedby','tactical-preview');
   positionPreview(b);
@@ -79,12 +79,8 @@ window.TacticalDuty=(()=>{
   if(!ui)return;const plan=planningDetails(index);if(!plan){hidePreview();return;}
   uiText(previewNode,plan.lines.join('\n'));previewNode.hidden=false;canvas.setAttribute('aria-describedby','tactical-preview');positionPreview(index);
  }
- function selectedPreview(){
-  if(selected<0||!board[selected]||drag||ended||appScreen!=='battle'){hidePreview();return}
-  const targets=board.map((u,i)=>i!==selected&&compatible(board[selected],u)?i:-1).filter(i=>i>=0);
-  if(!targets.length||new Set(targets.map(i=>Math.max(board[selected].pip,board[i].pip))).size>1){showPlanning(selected);return}
-  preview(selected,targets[0]);
- }
+ function selectedPreview(){hidePreview();}
+
  function hidePreview(){if(previewNode)previewNode.hidden=true;if(canvas.getAttribute?.('aria-describedby')==='tactical-preview')canvas.removeAttribute?.('aria-describedby')}
  function finishBonus(id){window.PlayObservations?.noteReward(rewardBundle?.offers.find(o=>o.id===id));choosingBuild=false;rewardBundle=null;bonusPending=false;rearranging=false;hidePreview();q('#perk').close();paused=false;nextWave();sync();saveActiveRun()}
  function choose(id){

@@ -1,0 +1,370 @@
+[
+  {
+    "character": "goblin-guard",
+    "master": "designs/rank5-20261123/masters/group-0.png",
+    "masterSHA256": "ed011f95d2a2a4580a58de9752f1a7ebd6953a2eb2a2ede2b3dee30bb84fe5d0",
+    "sourceGrid": {
+      "row": 0,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        922,
+        1225,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 54790,
+    "poses": 2
+  },
+  {
+    "character": "orc-technician",
+    "master": "designs/rank5-20261123/masters/group-0.png",
+    "masterSHA256": "ed011f95d2a2a4580a58de9752f1a7ebd6953a2eb2a2ede2b3dee30bb84fe5d0",
+    "sourceGrid": {
+      "row": 1,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        922,
+        1225,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 60932,
+    "poses": 2
+  },
+  {
+    "character": "slime-cleaner",
+    "master": "designs/rank5-20261123/masters/group-0.png",
+    "masterSHA256": "ed011f95d2a2a4580a58de9752f1a7ebd6953a2eb2a2ede2b3dee30bb84fe5d0",
+    "sourceGrid": {
+      "row": 2,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        922,
+        1225,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 54542,
+    "poses": 2
+  },
+  {
+    "character": "gobi",
+    "master": "designs/rank5-20261123/masters/group-0.png",
+    "masterSHA256": "ed011f95d2a2a4580a58de9752f1a7ebd6953a2eb2a2ede2b3dee30bb84fe5d0",
+    "sourceGrid": {
+      "row": 3,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        922,
+        1225,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 67636,
+    "poses": 2
+  },
+  {
+    "character": "electric-technician",
+    "master": "designs/rank5-20261123/masters/group-0.png",
+    "masterSHA256": "ed011f95d2a2a4580a58de9752f1a7ebd6953a2eb2a2ede2b3dee30bb84fe5d0",
+    "sourceGrid": {
+      "row": 4,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        922,
+        1225,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 69048,
+    "poses": 2
+  },
+  {
+    "character": "ghost-courier",
+    "master": "designs/rank5-20261123/masters/group-1.png",
+    "masterSHA256": "d54262db3464a05f57c05a86733b3aa0bec45bfe59e0b354d767c4dba587e945",
+    "sourceGrid": {
+      "row": 0,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        605,
+        907,
+        1199,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 65212,
+    "poses": 2
+  },
+  {
+    "character": "bat-nurse",
+    "master": "designs/rank5-20261123/masters/group-1.png",
+    "masterSHA256": "d54262db3464a05f57c05a86733b3aa0bec45bfe59e0b354d767c4dba587e945",
+    "sourceGrid": {
+      "row": 1,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        605,
+        907,
+        1199,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 66468,
+    "poses": 2
+  },
+  {
+    "character": "skeleton-chef",
+    "master": "designs/rank5-20261123/masters/group-1.png",
+    "masterSHA256": "d54262db3464a05f57c05a86733b3aa0bec45bfe59e0b354d767c4dba587e945",
+    "sourceGrid": {
+      "row": 2,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        605,
+        907,
+        1199,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 68578,
+    "poses": 2
+  },
+  {
+    "character": "mimic-storekeeper",
+    "master": "designs/rank5-20261123/masters/group-1.png",
+    "masterSHA256": "d54262db3464a05f57c05a86733b3aa0bec45bfe59e0b354d767c4dba587e945",
+    "sourceGrid": {
+      "row": 3,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        605,
+        907,
+        1199,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 65476,
+    "poses": 2
+  },
+  {
+    "character": "spider-tailor",
+    "master": "designs/rank5-20261123/masters/group-1.png",
+    "masterSHA256": "d54262db3464a05f57c05a86733b3aa0bec45bfe59e0b354d767c4dba587e945",
+    "sourceGrid": {
+      "row": 4,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        605,
+        907,
+        1199,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 69878,
+    "poses": 2
+  },
+  {
+    "character": "nightmare-counselor",
+    "master": "designs/rank5-20261123/masters/group-2.png",
+    "masterSHA256": "c3b7b269dc8433da490f7281e831249c0834187150595655d0dcc64ae7d3b95c",
+    "sourceGrid": {
+      "row": 0,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        921,
+        1229,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 66540,
+    "poses": 2
+  },
+  {
+    "character": "kobold-recruiter",
+    "master": "designs/rank5-20261123/masters/group-2.png",
+    "masterSHA256": "c3b7b269dc8433da490f7281e831249c0834187150595655d0dcc64ae7d3b95c",
+    "sourceGrid": {
+      "row": 1,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        921,
+        1229,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 62180,
+    "poses": 2
+  },
+  {
+    "character": "duru-archivist",
+    "master": "designs/rank5-20261123/masters/group-2.png",
+    "masterSHA256": "c3b7b269dc8433da490f7281e831249c0834187150595655d0dcc64ae7d3b95c",
+    "sourceGrid": {
+      "row": 2,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        921,
+        1229,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 62942,
+    "poses": 2
+  },
+  {
+    "character": "kkangtong-engineer",
+    "master": "designs/rank5-20261123/masters/group-2.png",
+    "masterSHA256": "c3b7b269dc8433da490f7281e831249c0834187150595655d0dcc64ae7d3b95c",
+    "sourceGrid": {
+      "row": 3,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        921,
+        1229,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 70454,
+    "poses": 2
+  },
+  {
+    "character": "ddangkong-miner",
+    "master": "designs/rank5-20261123/masters/group-2.png",
+    "masterSHA256": "c3b7b269dc8433da490f7281e831249c0834187150595655d0dcc64ae7d3b95c",
+    "sourceGrid": {
+      "row": 4,
+      "rows": 5,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        307,
+        614,
+        921,
+        1229,
+        1536
+      ],
+      "columnDivider": 512
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 61400,
+    "poses": 2
+  },
+  {
+    "character": "chalkak-photographer",
+    "master": "designs/rank5-20261123/masters/group-3.png",
+    "masterSHA256": "32e11d5a80b257f7af37a9ee4a704f0d319db8f9dcf6e8cef9fbb125cc2af0fc",
+    "sourceGrid": {
+      "row": 0,
+      "rows": 2,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        627,
+        1254
+      ],
+      "columnDivider": 627
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 57436,
+    "poses": 2
+  },
+  {
+    "character": "bongtu-postmaster",
+    "master": "designs/rank5-20261123/masters/group-3.png",
+    "masterSHA256": "32e11d5a80b257f7af37a9ee4a704f0d319db8f9dcf6e8cef9fbb125cc2af0fc",
+    "sourceGrid": {
+      "row": 1,
+      "rows": 2,
+      "columns": 2,
+      "rowCuts": [
+        0,
+        627,
+        1254
+      ],
+      "columnDivider": 626
+    },
+    "encoding": "Alpha-measured empty gutters, ImageMagick mechanical crop/resize/pack; WebP q86 alpha100",
+    "bytes": 58512,
+    "poses": 2
+  }
+]

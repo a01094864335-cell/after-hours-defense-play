@@ -1,0 +1,1040 @@
+'use strict';
+Object.assign(MotionSheets, {
+  "rank5-goblin-guard": {
+    "baseKey": "goblin-guard",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/goblin-guard.webp",
+    "width": 512,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 222,
+        "h": 280,
+        "pivotX": 96.84931506849314,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 222,
+        "h": 280,
+        "pivotX": 96.84931506849314,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 222,
+        "h": 280,
+        "pivotX": 96.84931506849314,
+        "pivotY": 280
+      },
+      {
+        "x": 228,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 138.3431952662722,
+        "pivotY": 240
+      },
+      {
+        "x": 228,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 138.3431952662722,
+        "pivotY": 240
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 222,
+        "h": 280,
+        "pivotX": 96.84931506849314,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "4b570e99349cff5e8559ba76033e5cc24a9cfb6656232689ed876b646193e342"
+  },
+  "rank5-orc-technician": {
+    "baseKey": "orc-technician",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/orc-technician.webp",
+    "width": 547,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 257,
+        "h": 280,
+        "pivotX": 118.46153846153847,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 257,
+        "h": 280,
+        "pivotX": 118.46153846153847,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 257,
+        "h": 280,
+        "pivotX": 118.46153846153847,
+        "pivotY": 280
+      },
+      {
+        "x": 263,
+        "y": 2,
+        "w": 280,
+        "h": 222,
+        "pivotX": 146.22222222222223,
+        "pivotY": 222
+      },
+      {
+        "x": 263,
+        "y": 2,
+        "w": 280,
+        "h": 222,
+        "pivotX": 146.22222222222223,
+        "pivotY": 222
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 257,
+        "h": 280,
+        "pivotX": 118.46153846153847,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "41c5cad2174b3bacc16fb7e658a94de4cf0ab30cebc949170a74e403775091da"
+  },
+  "rank5-slime-cleaner": {
+    "baseKey": "slime-cleaner",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/slime-cleaner.webp",
+    "width": 570,
+    "sheetHeight": 244,
+    "height": 240,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 120.0,
+        "pivotY": 240
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 120.0,
+        "pivotY": 240
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 120.0,
+        "pivotY": 240
+      },
+      {
+        "x": 286,
+        "y": 2,
+        "w": 280,
+        "h": 201,
+        "pivotX": 154.98694516971278,
+        "pivotY": 201
+      },
+      {
+        "x": 286,
+        "y": 2,
+        "w": 280,
+        "h": 201,
+        "pivotX": 154.98694516971278,
+        "pivotY": 201
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 240,
+        "pivotX": 120.0,
+        "pivotY": 240
+      }
+    ],
+    "sha256": "122f7b425214cd443438b232a232767643102881a0bfea30c4d6df71e6a72f66"
+  },
+  "rank5-gobi": {
+    "baseKey": "gobi",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/gobi.webp",
+    "width": 517,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 227,
+        "h": 280,
+        "pivotX": 99.51219512195122,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 227,
+        "h": 280,
+        "pivotX": 99.51219512195122,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 227,
+        "h": 280,
+        "pivotX": 99.51219512195122,
+        "pivotY": 280
+      },
+      {
+        "x": 233,
+        "y": 2,
+        "w": 280,
+        "h": 274,
+        "pivotX": 159.59044368600684,
+        "pivotY": 274
+      },
+      {
+        "x": 233,
+        "y": 2,
+        "w": 280,
+        "h": 274,
+        "pivotX": 159.59044368600684,
+        "pivotY": 274
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 227,
+        "h": 280,
+        "pivotX": 99.51219512195122,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "9eb1cc92735707449faf9dbf1e985e3d3b43587533bbf7a1a74b787e1f84cc30"
+  },
+  "rank5-electric-technician": {
+    "baseKey": "electric-technician",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/electric-technician.webp",
+    "width": 556,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 127.36111111111111,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 127.36111111111111,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 127.36111111111111,
+        "pivotY": 280
+      },
+      {
+        "x": 272,
+        "y": 2,
+        "w": 280,
+        "h": 246,
+        "pivotX": 161.21212121212122,
+        "pivotY": 246
+      },
+      {
+        "x": 272,
+        "y": 2,
+        "w": 280,
+        "h": 246,
+        "pivotX": 161.21212121212122,
+        "pivotY": 246
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 127.36111111111111,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "2cae31f8c738be06ebb680024ce17cb94b158adebd45f0800c3e24cbeeb8de7f"
+  },
+  "rank5-ghost-courier": {
+    "baseKey": "ghost-courier",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/ghost-courier.webp",
+    "width": 564,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 274,
+        "h": 280,
+        "pivotX": 122.92682926829268,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 274,
+        "h": 280,
+        "pivotX": 122.92682926829268,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 274,
+        "h": 280,
+        "pivotX": 122.92682926829268,
+        "pivotY": 280
+      },
+      {
+        "x": 280,
+        "y": 2,
+        "w": 280,
+        "h": 198,
+        "pivotX": 129.87531172069825,
+        "pivotY": 198
+      },
+      {
+        "x": 280,
+        "y": 2,
+        "w": 280,
+        "h": 198,
+        "pivotX": 129.87531172069825,
+        "pivotY": 198
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 274,
+        "h": 280,
+        "pivotX": 122.92682926829268,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "773b9dfe3f7856965342dd8dcce5322075568ebca5e077e923fe3431488a6e1c"
+  },
+  "rank5-bat-nurse": {
+    "baseKey": "bat-nurse",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/bat-nurse.webp",
+    "width": 569,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 279,
+        "h": 280,
+        "pivotX": 129.7560975609756,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 279,
+        "h": 280,
+        "pivotX": 129.7560975609756,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 279,
+        "h": 280,
+        "pivotX": 129.7560975609756,
+        "pivotY": 280
+      },
+      {
+        "x": 285,
+        "y": 2,
+        "w": 280,
+        "h": 216,
+        "pivotX": 135.17241379310346,
+        "pivotY": 216
+      },
+      {
+        "x": 285,
+        "y": 2,
+        "w": 280,
+        "h": 216,
+        "pivotX": 135.17241379310346,
+        "pivotY": 216
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 279,
+        "h": 280,
+        "pivotX": 129.7560975609756,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "f6e274c5da378cef66c23a72022c4ef248712c97cb0bce95544b41fcf4361305"
+  },
+  "rank5-skeleton-chef": {
+    "baseKey": "skeleton-chef",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/skeleton-chef.webp",
+    "width": 533,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 103.10810810810811,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 103.10810810810811,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 103.10810810810811,
+        "pivotY": 280
+      },
+      {
+        "x": 249,
+        "y": 2,
+        "w": 280,
+        "h": 246,
+        "pivotX": 143.35329341317365,
+        "pivotY": 246
+      },
+      {
+        "x": 249,
+        "y": 2,
+        "w": 280,
+        "h": 246,
+        "pivotX": 143.35329341317365,
+        "pivotY": 246
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 103.10810810810811,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "33cbc66e48968ec3c65c2a8dceb6504f10dd66c16af854ea6de5efc9e73cc27e"
+  },
+  "rank5-mimic-storekeeper": {
+    "baseKey": "mimic-storekeeper",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/mimic-storekeeper.webp",
+    "width": 570,
+    "sheetHeight": 254,
+    "height": 250,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 132.86624203821657,
+        "pivotY": 250
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 132.86624203821657,
+        "pivotY": 250
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 132.86624203821657,
+        "pivotY": 250
+      },
+      {
+        "x": 286,
+        "y": 2,
+        "w": 280,
+        "h": 234,
+        "pivotX": 158.07807807807808,
+        "pivotY": 234
+      },
+      {
+        "x": 286,
+        "y": 2,
+        "w": 280,
+        "h": 234,
+        "pivotX": 158.07807807807808,
+        "pivotY": 234
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 132.86624203821657,
+        "pivotY": 250
+      }
+    ],
+    "sha256": "7552678ed224625d3325cadd6c887432c0e81cdc3276fc61db2e8d826bf04e2f"
+  },
+  "rank5-spider-tailor": {
+    "baseKey": "spider-tailor",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/spider-tailor.webp",
+    "width": 550,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 260,
+        "h": 280,
+        "pivotX": 123.34405144694534,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 260,
+        "h": 280,
+        "pivotX": 123.34405144694534,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 260,
+        "h": 280,
+        "pivotX": 123.34405144694534,
+        "pivotY": 280
+      },
+      {
+        "x": 266,
+        "y": 2,
+        "w": 280,
+        "h": 249,
+        "pivotX": 147.24137931034483,
+        "pivotY": 249
+      },
+      {
+        "x": 266,
+        "y": 2,
+        "w": 280,
+        "h": 249,
+        "pivotX": 147.24137931034483,
+        "pivotY": 249
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 260,
+        "h": 280,
+        "pivotX": 123.34405144694534,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "98327887d082ab298f19cc0f968add75905dea745daced0823a43b08034e2c00"
+  },
+  "rank5-nightmare-counselor": {
+    "baseKey": "nightmare-counselor",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/nightmare-counselor.webp",
+    "width": 560,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 270,
+        "h": 280,
+        "pivotX": 130.60070671378094,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 270,
+        "h": 280,
+        "pivotX": 130.60070671378094,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 270,
+        "h": 280,
+        "pivotX": 130.60070671378094,
+        "pivotY": 280
+      },
+      {
+        "x": 276,
+        "y": 2,
+        "w": 280,
+        "h": 212,
+        "pivotX": 146.34666666666666,
+        "pivotY": 212
+      },
+      {
+        "x": 276,
+        "y": 2,
+        "w": 280,
+        "h": 212,
+        "pivotX": 146.34666666666666,
+        "pivotY": 212
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 270,
+        "h": 280,
+        "pivotX": 130.60070671378094,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "cc7072478c09a63676503d7b9aa6679432d282fbac9c952c50f42453b47791f5"
+  },
+  "rank5-kobold-recruiter": {
+    "baseKey": "kobold-recruiter",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/kobold-recruiter.webp",
+    "width": 556,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 124.66431095406361,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 124.66431095406361,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 124.66431095406361,
+        "pivotY": 280
+      },
+      {
+        "x": 272,
+        "y": 2,
+        "w": 280,
+        "h": 218,
+        "pivotX": 150.35616438356163,
+        "pivotY": 218
+      },
+      {
+        "x": 272,
+        "y": 2,
+        "w": 280,
+        "h": 218,
+        "pivotX": 150.35616438356163,
+        "pivotY": 218
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 266,
+        "h": 280,
+        "pivotX": 124.66431095406361,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "43826226c349e505944515dfefdc75d692df184624842bdd7eaad4517c74a647"
+  },
+  "rank5-duru-archivist": {
+    "baseKey": "duru-archivist",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/duru-archivist.webp",
+    "width": 534,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 244,
+        "h": 280,
+        "pivotX": 125.9515570934256,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 244,
+        "h": 280,
+        "pivotX": 125.9515570934256,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 244,
+        "h": 280,
+        "pivotX": 125.9515570934256,
+        "pivotY": 280
+      },
+      {
+        "x": 250,
+        "y": 2,
+        "w": 280,
+        "h": 236,
+        "pivotX": 140.40816326530611,
+        "pivotY": 236
+      },
+      {
+        "x": 250,
+        "y": 2,
+        "w": 280,
+        "h": 236,
+        "pivotX": 140.40816326530611,
+        "pivotY": 236
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 244,
+        "h": 280,
+        "pivotX": 125.9515570934256,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "7a2dee521f3f836c348d35e5d75c0eea592154b2a803d55c83d303a3437a91c6"
+  },
+  "rank5-kkangtong-engineer": {
+    "baseKey": "kkangtong-engineer",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/kkangtong-engineer.webp",
+    "width": 542,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 252,
+        "h": 280,
+        "pivotX": 104.07894736842105,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 252,
+        "h": 280,
+        "pivotX": 104.07894736842105,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 252,
+        "h": 280,
+        "pivotX": 104.07894736842105,
+        "pivotY": 280
+      },
+      {
+        "x": 258,
+        "y": 2,
+        "w": 280,
+        "h": 234,
+        "pivotX": 145.41436464088397,
+        "pivotY": 234
+      },
+      {
+        "x": 258,
+        "y": 2,
+        "w": 280,
+        "h": 234,
+        "pivotX": 145.41436464088397,
+        "pivotY": 234
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 252,
+        "h": 280,
+        "pivotX": 104.07894736842105,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "1448207479e0f6f088271dbcda5588e97d3a8cfd31bad41c654d810cc7d80a2d"
+  },
+  "rank5-ddangkong-miner": {
+    "baseKey": "ddangkong-miner",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/ddangkong-miner.webp",
+    "width": 566,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 276,
+        "h": 280,
+        "pivotX": 147.88732394366198,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 276,
+        "h": 280,
+        "pivotX": 147.88732394366198,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 276,
+        "h": 280,
+        "pivotX": 147.88732394366198,
+        "pivotY": 280
+      },
+      {
+        "x": 282,
+        "y": 2,
+        "w": 280,
+        "h": 203,
+        "pivotX": 158.16793893129773,
+        "pivotY": 203
+      },
+      {
+        "x": 282,
+        "y": 2,
+        "w": 280,
+        "h": 203,
+        "pivotX": 158.16793893129773,
+        "pivotY": 203
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 276,
+        "h": 280,
+        "pivotX": 147.88732394366198,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "74cdfe6bbab9a8652acf2f5e162304dbf53baabd82d8ee0c18d1214fb539d736"
+  },
+  "rank5-chalkak-photographer": {
+    "baseKey": "chalkak-photographer",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/chalkak-photographer.webp",
+    "width": 533,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 115.44354838709678,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 115.44354838709678,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 115.44354838709678,
+        "pivotY": 280
+      },
+      {
+        "x": 249,
+        "y": 2,
+        "w": 280,
+        "h": 239,
+        "pivotX": 144.92592592592592,
+        "pivotY": 239
+      },
+      {
+        "x": 249,
+        "y": 2,
+        "w": 280,
+        "h": 239,
+        "pivotX": 144.92592592592592,
+        "pivotY": 239
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 243,
+        "h": 280,
+        "pivotX": 115.44354838709678,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "8f4059bebd4d93e22c5ec79b7884a7828ddc74751e8396dcd27b5e4a696b5c45"
+  },
+  "rank5-bongtu-postmaster": {
+    "baseKey": "bongtu-postmaster",
+    "group": "staff",
+    "artStyle": "main-comic",
+    "rankForm": 5,
+    "file": "assets/rank5/bongtu-postmaster.webp",
+    "width": 506,
+    "sheetHeight": 284,
+    "height": 280,
+    "frames": [
+      {
+        "x": 2,
+        "y": 2,
+        "w": 216,
+        "h": 280,
+        "pivotX": 116.3235294117647,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 216,
+        "h": 280,
+        "pivotX": 116.3235294117647,
+        "pivotY": 280
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 216,
+        "h": 280,
+        "pivotX": 116.3235294117647,
+        "pivotY": 280
+      },
+      {
+        "x": 222,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 144.60526315789474,
+        "pivotY": 250
+      },
+      {
+        "x": 222,
+        "y": 2,
+        "w": 280,
+        "h": 250,
+        "pivotX": 144.60526315789474,
+        "pivotY": 250
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "w": 216,
+        "h": 280,
+        "pivotX": 116.3235294117647,
+        "pivotY": 280
+      }
+    ],
+    "sha256": "555f76c68f9db2fb5112746266dfe965676356bfae06601ce76f332b40f39202"
+  }
+});

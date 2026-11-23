@@ -1,0 +1,10 @@
+test_double_size_fonts_use_reachable_scrolling_fallbacks (test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks) ... ok
+test_five_primary_screens_fit_both_short_phone_sizes (test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes) ... ok
+test_recruitment_rules_are_modal_and_purchase_keeps_native_economy (test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy) ... ok
+test_topic_tabs_support_click_arrows_home_end_and_hidden_panels (test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels) ... ok
+test_training_yard_loads_without_displacing_live_upgrade_and_navigation (test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 62.591s
+
+OK

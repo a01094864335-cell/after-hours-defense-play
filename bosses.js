@@ -44,7 +44,7 @@ function readBossPlans(s){
  return plans;
 }
 function showBossWarning(w){
- const b=bossForWave(w);bossWarning={wave:w,id:b.id,left:4.5};Motion.preload(b.file);
+ const b=bossForWave(w);bossWarning={wave:w,id:b.id,left:3.2};Motion.preload(b.file);
  const el=document.querySelector('#boss-warning');if(!el)return;
  document.querySelector('#boss-warning-label').textContent='WARNING · '+w+'차 공격';
  document.querySelector('#boss-warning-name').textContent=b.name+' 등장 예정';
@@ -53,8 +53,7 @@ function showBossWarning(w){
  el.hidden=paused||!playing;
 }
 function announceBossWave(){
- if(wave%5===4)showBossWarning(wave+1);
- else if(wave>0&&wave%5===0)showBossWarning(wave);
+ if(wave>0&&wave%5===0)showBossWarning(wave);
 }
 function tickBossWarning(dt){
  const el=document.querySelector('#boss-warning');if(!el)return;

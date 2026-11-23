@@ -61,6 +61,8 @@ for(const name of fs.readdirSync(path.join(root,'assets/night-watch')))if(/\.(sv
 files.add('tutorial-coach.js');
 files.add('tactical-duty.js');
 files.add('battle-presentation.js');
+for(const name of fs.readdirSync(path.join(root,'assets/rank5')))if(/\.(webp|json|js)$/.test(name))files.add('assets/rank5/'+name);
+files.add('battle-impact.js');files.add('battle-impact.css');
 files.add('assets/pixel/demon-king.webp');
 files.add('assets/tutorial/demon-king-night-mentor.webp');
 files.add('assets/comic/01-first-shift-sd.webp');

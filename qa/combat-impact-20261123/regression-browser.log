@@ -1,0 +1,33 @@
+test_background_and_portrait_bitmaps_are_reused (test_performance.PerformanceTests.test_background_and_portrait_bitmaps_are_reused) ... ok
+test_boss_warning_drawing_uses_cached_geometry (test_performance.PerformanceTests.test_boss_warning_drawing_uses_cached_geometry) ... ok
+test_closed_shop_is_not_rebuilt_and_refreshes_on_open (test_performance.PerformanceTests.test_closed_shop_is_not_rebuilt_and_refreshes_on_open) ... ok
+test_hidden_tab_stops_and_does_not_catch_up (test_performance.PerformanceTests.test_hidden_tab_stops_and_does_not_catch_up) ... ok
+test_mobile_default_mode_toggle_persists (test_performance.PerformanceTests.test_mobile_default_mode_toggle_persists) ... ok
+test_mobile_preparation_sleeps_then_native_summons_start_combat (test_performance.PerformanceTests.test_mobile_preparation_sleeps_then_native_summons_start_combat) ... ok
+test_portraits_appear_after_opening_static_dialogs (test_performance.PerformanceTests.test_portraits_appear_after_opening_static_dialogs) ... ok
+test_render_limit_and_fixed_simulation_rate (test_performance.PerformanceTests.test_render_limit_and_fixed_simulation_rate) ... ok
+test_static_lobby_and_pause_do_not_keep_drawing (test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing) ... ok
+test_cashout_keeps_completed_wave_and_pays_once_after_reload (test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload) ... ok
+test_planning_move_and_strategy_survive_resume (test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume) ... ok
+test_staff_practice_uses_real_skill_without_parent_save_changes (test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes) ... ok
+test_guarantees_are_counted_and_survive_reload (test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload) ... ok
+test_invalid_merge_and_blocked_summon_never_grant_refund (test_balance.BalanceTests.test_invalid_merge_and_blocked_summon_never_grant_refund) ... ok
+test_late_reward_choices_fit_short_phone (test_balance.BalanceTests.test_late_reward_choices_fit_short_phone) ... ok
+test_late_rewards_bind_staff_and_equipment_without_spend (test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend) ... ok
+test_legacy_coupon_converts_once_and_current_refund_survives_reload (test_balance.BalanceTests.test_legacy_coupon_converts_once_and_current_refund_survives_reload) ... ok
+test_merge_refund_is_immediate_and_price_stays_stable (test_balance.BalanceTests.test_merge_refund_is_immediate_and_price_stays_stable) ... ok
+test_rewards_increase_and_sp_keeps_up_with_summon_cost (test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost) ... ok
+test_speed_cycles_to_three_preserves_pause_and_reloads (test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads) ... ok
+test_unavailable_rewards_and_invalid_targets_do_not_consume_choice (test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice) ... ok
+test_active_training_home_cancel_and_confirm (test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm) ... ok
+test_battle_pause_and_result_page (test_training_page.TrainingPageTests.test_battle_pause_and_result_page) ... ok
+test_independent_page_history_and_navigation_ten_times (test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times) ... ok
+test_landscape_keeps_page_inside_inert_guard (test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard) ... ok
+test_reload_reopen_back_stays_in_lobby (test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby) ... ok
+test_result_training_home_starts_fresh_duty (test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty) ... ok
+test_hidden_art_waits_for_entry_and_uses_live_navigation (test_loading_budget.LoadingBudgetTests.test_hidden_art_waits_for_entry_and_uses_live_navigation) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 112.061s
+
+OK

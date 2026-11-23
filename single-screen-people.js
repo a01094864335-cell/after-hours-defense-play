@@ -88,14 +88,13 @@
     if(!scroll||!paper||!effectsTitle||!effectsList||!stage)return;
     seen.add(root);const link=document.createElement('link');link.rel='stylesheet';link.href=sheet;shadow.append(link);
     const overview=document.createElement('section'),effects=document.createElement('section');overview.className='ss-training-main';effects.className='ss-training-effects';
-    effects.append(effectsTitle,effectsList);paper.prepend(stage);overview.append(paper);
+    effects.append(effectsTitle,effectsList);effects.hidden=true;paper.prepend(stage);overview.append(paper);
     // Decorative illustration uses spare room only; no intrinsic image height can displace controls.
     const yard=document.createElement('div');yard.className='ss-training-yard';yard.setAttribute('aria-hidden','true');overview.append(yard);
     scroll.replaceChildren(overview,effects);
-    const nav=tabs(['train','effects'],[overview,effects],english()?'Training view':'훈련소 보기');scroll.before(nav);root.classList.add('ss-training');
+    root.classList.add('ss-training');
     watchSurface(root);watchSurface(document.getElementById('training-dialog'));
-    const page=document.getElementById('training-dialog');
-    new MutationObserver(()=>{if(!page.hidden)nav.querySelector('button').click();}).observe(page,{attributes:true,attributeFilter:['hidden']});
+
   }
   function translate() {
     for(const scope of [document,document.getElementById('asset-training-host')?.shadowRoot].filter(Boolean))

@@ -1,0 +1,18 @@
+{
+  "rank5Characters": 17,
+  "newPoses": 34,
+  "rank5WebPBytes": 1082024,
+  "localChecks": {
+    "runtimePass": 3353,
+    "newBrowserPass": 5,
+    "relatedBrowserPass": 28,
+    "modalCaptures": 200
+  },
+  "ciTarget": {
+    "scenarios": 146,
+    "independentAttemptsEach": 10,
+    "totalAttempts": 1460
+  },
+  "ciStatus": "pending final main release workflow; final outcome recorded on PR",
+  "assetLoading": "No rank5 WebP in cold lobby; per-character load on visible rank5; base sprite fallback during load."
+}
