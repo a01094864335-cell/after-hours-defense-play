@@ -89,7 +89,7 @@ window.BattlePresentation=(()=>{
  for(const key of Object.keys(itemCatalog))q('#item-'+key).setAttribute('aria-label',itemCatalog[key].name);
  function selection(){const u=board[selected];const source=u?staffPortraitPath(kinds[u.type].file):null;if(source&&portrait.getAttribute('src')!==source)portrait.src=source;
   const english=document.documentElement.lang.startsWith('en');
-  uiText(name,u?(window.GameLanguage?.t(staffRecords.find(r=>r.id===kinds[u.type].file)?.name||kinds[u.type].name)||kinds[u.type].name):(english?'Pick a staff member':'보드의 직원을 눌러보세요'));uiText(grade,u?(u.pip<5?'★'+u.pip+' · ★5 해금':'✦'.repeat(u.pip)):(english?'Unique skills unlock at ★5':'★5부터 고유 스킬을 사용할 수 있어요'));
+  uiText(name,u?(window.GameLanguage?.t(staffRecords.find(r=>r.id===kinds[u.type].file)?.name||kinds[u.type].name)||kinds[u.type].name):(english?'Select staff':'직원 선택'));uiText(grade,u?(u.pip<5?'★'+u.pip:'✦'.repeat(u.pip)):(english?'Skills unlock at ★5':'★5부터 고유 스킬'));
   uiProp(portrait,'hidden',!u);uiProp(q('#skill'),'hidden',!u);supportPresentation();
   const original=!u?'직원 선택 후 스킬 사용':skillNames[u.type]+' · '+(u.pip<5?'5등급 해금':u.stun>0?'기절 중':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'초 후 사용':!playing?'당직 시작 후 사용':paused?'일시정지 중':'사용');uiAttr(q('#skill'),'aria-label',original);uiText(q('#skill'),!u?'선택':u.stun>0?'기절':u.pip<5?'★5':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':!playing?'대기':paused?'일시정지':'사용');
   uiAttr(skillRow,'data-selected',u?'true':'false');uiAttr(skillRow,'data-skill-state',q('#skill').getAttribute('data-state'));

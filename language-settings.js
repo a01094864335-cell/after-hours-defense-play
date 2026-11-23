@@ -13,7 +13,7 @@
  }
  function refresh(){
   for(const button of field.querySelectorAll('[data-language]'))button.setAttribute('aria-pressed',String(button.dataset.language===GameLanguage.current));
-  field.querySelector('#language-coverage').textContent=GameLanguage.current==='en'?'English draft: stories and personnel. Some other UI text remains in Korean.':'스토리·인사기록 영어 초안 제공 · 일부 다른 UI는 한글로 표시됩니다.';
+  field.querySelector('#language-coverage').textContent=GameLanguage.current==='en'?'Draft English · Some UI remains in Korean.':'영문 초안 제공 · 일부 UI는 한글 표시';
   GameLanguage.translateTree(menu);window.AssetLobby?.refresh();refreshCommon();
  }
  field.addEventListener('click',event=>{const button=event.target.closest('button[data-language]');if(!button)return;const ok=GameLanguage.set(button.dataset.language);status.hidden=ok;status.textContent=ok?'':GameLanguage.current==='en'?'Language could not be saved. Please try again.':'언어 설정을 저장하지 못했어요. 다시 시도해주세요.';refresh()});

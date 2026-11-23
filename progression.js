@@ -149,7 +149,8 @@ function applySnapshot(s,allowSettled=false,validateOnly=false){if(s&&Array.isAr
 function resumeRun(){try{const data=JSON.parse(GameStorage.getItem(RUN_SAVE));applySnapshot(data.snapshot);tutorialCheckpoint=data.checkpoint;if(bonusPending){renderPerkChoices();document.querySelector('#perk').showModal();}else{showGuide('근무 이어하기','저장된 시점에서 다시 시작합니다. 접속하지 않은 시간은 진행하지 않아요.');window.DiscountTutorial?.resume()}return true}catch(e){showMetaStatus('저장된 전투를 불러오지 못했어요. 새 당직을 시작할 수 있습니다.');return false}}
 function renderDeckOptions(){
  const available=staffRecords.filter(r=>r.group!=='merc'&&staffOwned(r));
- document.querySelector('#deck-tip').textContent=deckSwap===-1?'출전 중 '+meta.deck.length+' / 5 · 대기 직원을 고른 뒤 교체할 출전 직원을 누르세요. 교체 즉시 저장됩니다.':staffRecords.find(r=>r.id===deckSwap).name+' 선택됨 · 교체할 출전 직원을 누르세요. 다시 누르면 취소합니다.';
+ const en=window.GameLanguage?.current==='en',name=deckSwap===-1?'':staffRecords.find(r=>r.id===deckSwap).name;
+ document.querySelector('#deck-tip').textContent=deckSwap===-1?(en?'Team '+meta.deck.length+'/5 · Reserve → staff to replace · Autosaved':'출전 '+meta.deck.length+'/5 · 대기 직원 → 교체할 직원 선택 · 즉시 저장'):(en?(window.GameLanguage?.t(name)||name)+' selected · Choose replacement · Select again to cancel':name+' 선택 · 교체할 직원 선택 · 다시 누르면 취소');
  document.querySelector('#deck-options').innerHTML=available.map(r=>{const picked=meta.deck.includes(r.id),chosen=deckSwap===r.id;return '<button class="deck-choice '+(picked?'picked ':'')+(chosen?'swap-target':'')+'" data-choice="'+r.id+'" aria-pressed="'+chosen+'"><img loading="lazy" decoding="async" src="'+r.image+'" alt=""><strong>'+r.name+'</strong><span>'+r.role+'</span><small>'+(chosen?'◎ 교체 대기':picked?'✓ 출전 중':'대기 직원')+'</small></button>'}).join('');
  for(const r of available)document.querySelector('[data-choice="'+r.id+'"]').onclick=()=>swapDeckStaff(r.id);
 }

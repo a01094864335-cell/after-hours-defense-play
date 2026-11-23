@@ -20,7 +20,7 @@ class DutyPatchTests(unittest.TestCase):
             p.locator('#equipment-close').click() if p.locator('#equipment-close').count() else p.locator('#equipment button[data-close]').click()
             p.context.close()
     def test_drag_to_trash_frees_cell(self):
-        p=self.open(390,844);self.battle(p);pos=board_point(p,p.evaluate('cells[0]'));p.mouse.move(pos['x'],pos['y']);p.mouse.down();p.mouse.move(pos['x']+15,pos['y']+15,steps=3)
+        p=self.open(390,844);self.battle(p);p.locator('#game').click(trial=True);pos=board_point(p,p.evaluate('cells[0]'));p.mouse.move(pos['x'],pos['y']);p.mouse.down();p.mouse.move(pos['x']+15,pos['y']+15,steps=3)
         # Raw mouse dispatch is not a locator action with auto-waiting. Observe
         # the delivered drag before reading the newly revealed drop target.
         p.wait_for_function('drag?.from===0&&drag.moved',timeout=5000)

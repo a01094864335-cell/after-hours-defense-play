@@ -3,6 +3,12 @@
 const GameLanguage=(()=>{
  const key='after-hours-language-v1',listeners=new Set(),originals=new WeakMap();
  const messages={
+  '지급 완료':'Paid','저장 재시도 필요':'Retry saving',
+  '등급 합성권':'Rank merge ticket','종류 합성권':'Kind merge ticket','마왕 깨우기':'Wake the king',
+  '종류가 달라도 같은 등급 합성':'Merge matching ranks across kinds',
+  '등급이 달라도 같은 종류 합성':'Merge matching kinds across ranks',
+  '현재 적이 있을 때 마왕 즉시 출동':'Call the king while enemies are present',
+
   '주 메뉴':'Main navigation','당직 메뉴':'Settings','설정':'Settings','언어':'Language','확인':'Done','닫기':'Close','뒤로':'Back',
   '효과음':'Sound effects','효과음 볼륨':'Effects volume','효과음 켜기':'Enable effects','효과음 끄기':'Mute effects','배경 음악':'Music','배경음악':'Music','배경 음악 볼륨':'Music volume','BGM 볼륨':'Music volume','BGM 켜기':'Enable music','BGM 끄기':'Mute music',
   '화면과 연출':'Display & effects','당직 도구':'Shift tools','이야기와 저장':'Stories & saves','현재 당직 초기화':'Reset this shift','근무 안내':'How to play','당직 안내':'How to play','훈련소':'Training','야간 훈련소':'Training room','스토리 다시 보기':'Replay stories','이야기 다시 보기':'Replay stories','이야기 보기':'View stories','저장 기록 내보내기 · 가져오기':'Export / import saves','기록 내보내기·가져오기':'Export / import saves','저장 내보내기 / 가져오기':'Export / import saves','현재 판 초기화':'Reset current run','처음부터 다시':'Start over','초기화':'Reset','절전 모드 켜짐 · 30 FPS':'Power saving · 30 FPS','부드러운 화면 · 60 FPS':'Smooth display · 60 FPS',
@@ -12,9 +18,9 @@ const GameLanguage=(()=>{
   '근무 편성':'Team selection','오늘의 당직':'On duty','저장 백업 · 기기 옮기기':'Back up / transfer saves','영구 훈련소':'Permanent training','스킬 연출 · 간결하게':'Skill effects · Compact','스킬 연출 · 크게 보기':'Skill effects · Full','이 브라우저는 효과음을 지원하지 않아요':'Sound effects are unavailable in this browser.',
   '현재 전투의 웨이브·배치·장비 레벨·SP를 초기화하며 미정산 처치 보상은 지급하지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지돼요. 이미 사용한 아이템은 반환하지 않아요.':'Resets this run’s waves, board, equipment and SP. Unsettled kill rewards are lost. Coins, recruited staff and saved teams are kept. Used items are not refunded.',
   '상점 닫기':'Close shop','도감 닫기':'Close staff list','훈련소 닫기':'Close training','이야기 닫기':'Close story','야간 파견 상점':'Night shift shop','직원 훈련':'Staff training','특수 용병 훈련':'Support training','훈련하기':'Train','인사기록':'Staff records','완료':'Done','편성 완료':'Team ready','공방 나가기':'Leave workshop','확인했어요':'Got it',
-  '알겠어요':'Got it','직원 소환':'Summon staff','SP를 사용해 빈 자리에 랜덤 직원을 파견하세요.':'Spend SP to summon random staff into an empty cell.',
-  '5등급 스킬 해금':'Rank 5 skills','5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.':'Select staff at rank 5 or above to use their unique skill. Wait for its cooldown before using it again.',
-  '같은 종류·등급 합성':'Merge matching staff','같은 직원을 합치면 더 높은 등급의 랜덤 직원이 와요. 합성 실패 확률을 확인하세요.':'Merge staff of the same kind and rank to get random staff at the next rank. Check the failure chance first.',
+  '알겠어요':'Got it','직원 소환':'Summon staff','빈칸에 랜덤 직원 소환 · SP 소모':'Spend SP → random staff in an empty cell.',
+  '5등급 스킬 해금':'Rank 5 skills','★5 이상 직원 선택 → 스킬 사용 · 재사용 대기':'Select ★5+ staff to use skills. Cooldowns apply.',
+  '같은 종류·등급 합성':'Merge matching staff','같은 종류·등급 2명 → 다음 등급의 랜덤 직원':'Match kind + rank → random staff one rank higher.',
   '합성 실패 확률은 2등급 5%부터 7등급 30%까지 증가해요. 실패하면 이동한 직원만 사라져요. 합성권은 선택 후 두 직원을 고르면 사용돼요.':'Failure chance rises from 5% at rank 2 to 30% at rank 7. Only the moving staff is lost on failure. Select a merge ticket, then choose two staff to use it.',
   '키보드 조작':'Keyboard controls','키보드: 보드에 Tab으로 이동한 뒤 방향키로 칸 이동, Enter·Space로 선택·합성, Escape로 선택 취소, S로 선택 직원 스킬을 사용해요.':'Tab to the board. Use arrow keys to move, Enter or Space to select or merge, Escape to cancel, and S to use the selected staff skill.',
   '잠깐 쉬어 갈까요?':'Take a break?','전투는 잠시 멈춰 있어요':'The battle is paused.','계속 근무':'Continue shift','근무 종료':'End shift',

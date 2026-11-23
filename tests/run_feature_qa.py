@@ -1,7 +1,8 @@
 """Auditable independent repetitions of every browser regression (not screenshots).
 
 Run one CI shard: FEATURE_QA_SHARD=0 python tests/run_feature_qa.py
-The five shards cover attempts 1..10. No automatic retry masks failed attempts.
+The five shards cover attempts 1..10 by default. FEATURE_QA_TOTAL_ATTEMPTS=5
+uses shards 0,1,2 for exactly five rounds. No retries mask failed attempts.
 """
 import importlib
 import json
@@ -17,6 +18,12 @@ OUT = Path(os.environ.get('FEATURE_QA_DIR', '/tmp/feature-qa'))
 SHARD = int(os.environ.get('FEATURE_QA_SHARD', '0'))
 if SHARD not in range(5):
     raise ValueError('FEATURE_QA_SHARD must be 0..4')
+TOTAL = int(os.environ.get('FEATURE_QA_TOTAL_ATTEMPTS', '10'))
+if TOTAL not in range(1, 11):
+    raise ValueError('FEATURE_QA_TOTAL_ATTEMPTS must be 1..10')
+ATTEMPTS = list(range(SHARD*2+1, min(SHARD*2+3, TOTAL+1)))
+if not ATTEMPTS:
+    raise ValueError('This shard has no attempts in the requested total')
 OUT.mkdir(parents=True, exist_ok=True)
 
 # Modal inventory is already independently captured in the existing release job.
@@ -30,7 +37,7 @@ for name in modules:
 ids = sorted({f'{cls.__module__}.{cls.__name__}.{method}' for cls in classes
               for method in unittest.defaultTestLoader.getTestCaseNames(cls)})
 report = {'sourceCommit': os.environ.get('GITHUB_SHA', 'local-uncommitted'),
-          'shard': SHARD, 'engine': 'chromium', 'attemptsPerScenarioTarget': 10,
+          'shard': SHARD, 'engine': 'chromium', 'attemptsPerScenarioTarget': TOTAL,
           'isolation': 'Each test uses new browser contexts; no live user storage. Scenario-controlled fixtures are documented in test source.',
           'seed': None, 'seedPolicy': 'Existing browser scenarios use their documented deterministic fixtures; no global RNG override.',
           'retryPolicy': 'No retries. Every failure remains in this report.',
@@ -117,7 +124,7 @@ class Result(unittest.TextTestResult):
         super().stopTest(test)
 
 ok = True
-for attempt in range(SHARD*2+1, SHARD*2+3):
+for attempt in ATTEMPTS:
     Result.attempt = attempt
     suite = unittest.TestSuite(unittest.defaultTestLoader.loadTestsFromTestCase(cls) for cls in classes)
     result = unittest.TextTestRunner(verbosity=2, resultclass=Result).run(suite)
@@ -130,4 +137,4 @@ for attempt in range(SHARD*2+1, SHARD*2+3):
 report['counts'] = {state: sum(a['status'] == state for a in report['attempts'])
                     for state in ['passed', 'failed', 'error', 'skipped', 'not-run', 'running']}
 save()
-sys.exit(0 if ok and report['counts']['passed'] == len(ids)*2 else 1)
+sys.exit(0 if ok and report['counts']['passed'] == len(ids)*len(ATTEMPTS) else 1)
