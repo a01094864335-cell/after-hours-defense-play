@@ -17,7 +17,7 @@ class WaveRewardTests(unittest.TestCase):
                     cards=p.locator('#perk-options>button:visible')
                     self.assertEqual(cards.count(),3)
                     for c in cards.all():
-                        self.assertEqual(c.is_enabled(),w in [5,15]);r=c.bounding_box()
+                        self.assertFalse(c.is_enabled());r=c.bounding_box()
                         self.assertGreaterEqual(r['x'],0);self.assertLessEqual(r['x']+r['width'],width)
                         self.assertEqual(c.evaluate('e=>e.scrollWidth<=e.clientWidth+1'),True)
                         self.assertLessEqual(r['y']+r['height'],height)

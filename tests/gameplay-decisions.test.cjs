@@ -23,7 +23,7 @@ test('planning uses live boss identity, existing mine radius and actual leading 
 });
 test('first boss bonus offers an early strategy without changing SP or merge amounts',()=>{
  const b=boot();b.run(prepare+'wave=5;paused=true;bonusPending=true;renderPerkChoices()');assert.equal(b.run("rewardBundle.offers.some(o=>o.id==='build')"),true);assert.equal(b.run("rewardBundle.offers.some(o=>o.id==='merge')"),true);
- const before=b.run('sp');assert.equal(b.run("window.TacticalDuty.chooseBuild('chain')"),true);assert.equal(b.run('sp'),before);assert.equal(b.run('wave'),6);assert.equal(b.run("window.TacticalDuty.chooseBuild('guard')"),false);b.run('var snapshot=runSnapshot();applySnapshot(snapshot)');assert.equal(b.run('window.TacticalDuty.snapshot().build'),'chain');
+ b.run("rewardBundle.winner=rewardBundle.offers.findIndex(o=>o.id==='build');rewardBundle.offers[rewardBundle.winner].build='chain'");const before=b.run('sp');assert.equal(b.run("choosePerk('build')"),true);assert.equal(b.run('sp'),before);assert.equal(b.run('wave'),6);assert.equal(b.run("window.TacticalDuty.chooseBuild('guard')"),false);b.run('var snapshot=runSnapshot();applySnapshot(snapshot)');assert.equal(b.run('window.TacticalDuty.snapshot().build'),'chain');
 });
 test('strategy eligibility and reward presence are enforced before any state change',()=>{
  const b=boot();b.run(prepare+"runDeck=[0,1,2,4,5];activeMerc=null;wave=5;paused=true;bonusPending=true;renderPerkChoices();var before=JSON.stringify(runSnapshot())");assert.equal(b.run("window.TacticalDuty.chooseBuild('economy')"),false);assert.equal(b.run('JSON.stringify(runSnapshot())===before'),true);
@@ -31,7 +31,7 @@ test('strategy eligibility and reward presence are enforced before any state cha
 });
 test('all three early strategies retain their existing real combat effects',()=>{
  for(const id of ['chain','economy','guard']){
-  const b=boot();b.run(prepare+`wave=5;paused=true;bonusPending=true;renderPerkChoices();window.TacticalDuty.chooseBuild('${id}');dailyEnabled=false;`);
+  const b=boot();b.run(prepare+`wave=5;paused=true;bonusPending=true;renderPerkChoices();rewardBundle.winner=rewardBundle.offers.findIndex(o=>o.id==='build');rewardBundle.offers[rewardBundle.winner].build='${id}';choosePerk('build');dailyEnabled=false;`);
   if(id==='economy'){b.run('var amount=trainingIncome({pip:1,paydays:0})');assert.equal(b.run('amount'),8.75)}
   if(id==='guard'){b.run('var before=life;breachDamage(1);var once=life;breachDamage(1)');assert.equal(b.run('once'),b.run('before'));assert.equal(b.run('life'),b.run('before')-1)}
   if(id==='chain'){b.run("enemies=[];spawn('normal');spawn('normal');enemies.forEach((e,i)=>{e.hp=e.max=1000;e.x=100+i*10;e.y=200;e.progress=i});attackOwner=0;hitEnemy(enemies[0],100,false)");assert.equal(b.run('enemies[1].hp'),975)}

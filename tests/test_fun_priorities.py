@@ -18,47 +18,36 @@ class FunPriorityTests(unittest.TestCase):
         if out:
             Path(out).mkdir(parents=True,exist_ok=True);p.screenshot(path=str(Path(out)/(name+'.png')))
 
-    def test_choice_selection_reload_and_exact_single_reward_in_both_languages(self):
-        for width,height,lang in [(320,568,'ko'),(390,844,'en')]:
-            p=self.open(width,height);errors=[];p.on('pageerror',lambda e:errors.append(str(e)));self.reward(p,5,lang)
-            self.assertTrue(p.locator('#roulette-claim').is_disabled())
-            self.assertEqual(p.locator('#perk-options>button:visible:enabled').count(),3)
-            if lang=='ko':p.locator('#perk-sp').focus();p.locator('#perk-sp').press('Enter')
-            else:p.locator('#perk-sp').click()
-            self.assertEqual(p.locator('#perk-sp').get_attribute('aria-pressed'),'true')
-            self.assertEqual(p.evaluate('document.activeElement.id'),'perk-sp')
-            self.capture(p,f'{lang}-{width}-choice')
-            saved=p.evaluate('({offers:JSON.stringify(rewardBundle.offers),selection:rewardBundle.selection})')
-            p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');self.assertTrue(p.evaluate('resumeRun()'))
-            self.assertEqual(p.evaluate('JSON.stringify(rewardBundle.offers)'),saved['offers']);self.assertEqual(p.evaluate('rewardBundle.selection'),saved['selection'])
+    def test_fifth_and_fifteenth_roulette_survive_reload_in_both_languages(self):
+        for width,height,lang,wave in [(320,568,'ko',5),(390,844,'en',15)]:
+            p=self.open(width,height);errors=[];p.on('pageerror',lambda e:errors.append(str(e)));self.reward(p,wave,lang)
+            self.assertEqual(p.locator('#perk-options>button:visible:disabled').count(),3)
             p.wait_for_function('!document.querySelector("#roulette-claim").disabled')
-            before=p.evaluate('({sp,amount:rewardBundle.offers[rewardBundle.selection].amount})')
+            self.assertEqual(p.locator('#perk-options [data-winner="true"]').count(),1)
+            self.capture(p,f'{lang}-{width}-wave{wave}-roulette')
+            saved=p.evaluate('JSON.stringify(rewardBundle)')
+            p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');self.assertTrue(p.evaluate('resumeRun()'))
+            self.assertEqual(p.evaluate('JSON.stringify(rewardBundle)'),saved)
+            p.wait_for_function('!document.querySelector("#roulette-claim").disabled')
             ui.assert_reachable(self,p,'#roulette-claim');p.locator('#roulette-claim').click()
-            self.assertEqual(p.evaluate('wave'),6);self.assertGreaterEqual(p.evaluate('sp'),before['sp']+before['amount'])
-            self.assertFalse(p.evaluate('RewardRoulette.take()'));self.assertEqual(p.evaluate('runInsights.observations.choices.length'),1)
-            self.assertEqual(errors,[]);p.context.close()
+            self.assertEqual(p.evaluate('wave'),wave+1);self.assertFalse(p.evaluate('RewardRoulette.take()'))
+            self.assertEqual(p.evaluate('runInsights.observations.choices.length'),1);self.assertEqual(errors,[]);p.context.close()
 
-    def test_three_strategy_buttons_are_reachable_and_guard_is_granted_once(self):
-        for width,height,lang in [(320,568,'ko'),(390,844,'en')]:
-            p=self.open(width,height);self.reward(p,5,lang)
-            p.locator('#perk-build').click();p.locator('#roulette-claim').click()
-            self.assertEqual(p.locator('#perk-targets [data-strategy]:visible').count(),3)
-            for id in ['chain','economy','guard']:
-                target=p.locator('#perk-targets [data-strategy="'+id+'"]');target.scroll_into_view_if_needed();ui.assert_reachable(self,p,'#perk-targets [data-strategy="'+id+'"]')
-            self.capture(p,f'{lang}-{width}-strategies')
-            p.locator('#perk-targets [data-strategy="guard"]').click()
-            self.assertEqual(p.evaluate('TacticalDuty.snapshot().build'),'guard');self.assertEqual(p.evaluate('wave'),6)
-            self.assertFalse(p.evaluate("TacticalDuty.chooseBuild('guard')"));p.context.close()
+    def test_saved_choice_converts_to_roulette_and_keeps_its_new_winner(self):
+        p=self.open(320,568);self.reward(p,5,'ko')
+        p.evaluate("rewardBundle.mode='choice';delete rewardBundle.winner;rewardBundle.selection=0;saveActiveRun()")
+        p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');self.assertTrue(p.evaluate('resumeRun()'))
+        self.assertEqual(p.evaluate('rewardBundle.mode'),'roulette');self.assertEqual(p.locator('#perk-options>button:visible:disabled').count(),3)
+        p.wait_for_function('!document.querySelector("#roulette-claim").disabled');saved=p.evaluate('JSON.stringify(rewardBundle)')
+        p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');p.evaluate('resumeRun()');self.assertEqual(p.evaluate('JSON.stringify(rewardBundle)'),saved)
+        p.locator('#roulette-claim').click();self.assertEqual(p.evaluate('wave'),6)
 
-    def test_fifteenth_choice_and_following_roulette_keep_different_controls(self):
-        p=self.open(320,568);self.reward(p,15,'en')
-        p.locator('#perk-staff').click();ui.assert_reachable(self,p,'#roulette-claim')
-        amount=p.evaluate("rewardBundle.offers.find(o=>o.id==='staff').amount")
-        p.locator('#roulette-claim').click();self.assertTrue(p.evaluate('pip=>board.some(u=>u?.pip===pip)',amount))
-        self.reward(p,20,'en');p.wait_for_function('!document.querySelector("#roulette-claim").disabled')
-        self.assertEqual(p.locator('#perk-options>button:visible:enabled').count(),0)
-        self.assertEqual(p.locator('#perk-options [data-winner="true"]').count(),1)
-        self.capture(p,'en-320-roulette');p.locator('#roulette-claim').click();self.assertEqual(p.evaluate('wave'),21)
+    def test_strategy_reward_grants_saved_strategy_without_another_choice(self):
+        p=self.open(390,844);self.reward(p,5,'en')
+        p.evaluate("rewardBundle.offers.find(o=>o.id==='build').build='guard';rewardBundle.winner=rewardBundle.offers.findIndex(o=>o.id==='build');saveActiveRun()")
+        p.reload(wait_until='networkidle');p.wait_for_function('GameSession.canWrite()');p.evaluate('resumeRun()')
+        p.locator('#roulette-claim').click();self.assertEqual(p.evaluate('TacticalDuty.snapshot().build'),'guard');self.assertEqual(p.evaluate('wave'),6)
+        self.assertFalse(p.evaluate("TacticalDuty.chooseBuild('guard')"))
 
     def test_cooperative_battle_and_report_download_preserve_wallet(self):
         p=self.open(390,844);self.reward(p,10,'en')

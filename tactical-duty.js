@@ -98,12 +98,14 @@ window.TacticalDuty=(()=>{
   ];
  }
  function chooseBuild(id){
+  if(rewardBundle?.mode!=='choice')return false;
   if(tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite()||state.build)return false;
   const option=buildOptions().find(o=>o.id===id&&o.eligible),offer=rewardBundle?.wave===wave&&rewardBundle.offers.find(o=>o.id==='build');
   if(!option||!offer)return false;
   const old=offer.build;offer.build=id;const result=choosePerk('build');if(!result)offer.build=old;return result;
  }
  function showBuildChoices(){
+  if(rewardBundle?.mode!=='choice')return false;
   if(!ui||tutorialMode||!playing||ended||!bonusPending||!paused||!GameSession.canWrite()||state.build||!rewardBundle?.offers.some(o=>o.id==='build'))return false;
   choosingBuild=true;const targets=q('#perk-targets'),en=document.documentElement?.lang?.startsWith('en');targets.replaceChildren();
   q('#perk h2').textContent=en?'Choose your strategy':'당직 전략 선택';q('#perk-intro').textContent=en?'One strategy for this shift':'이번 당직에 적용할 전략 1개';q('#perk-back').textContent=en?'Back':'뒤로';

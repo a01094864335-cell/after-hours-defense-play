@@ -94,7 +94,7 @@ function makeRewardOffers(){
   const found=candidates.map(o).find(x=>!picked.some(p=>p.id===x.id)&&rewardEligible(x)&&(!tutorialMode||!['keep','build'].includes(x.id)));
   picked.push(found);
  }
- const mode=!tutorialMode&&[5,15].includes(wave)?'choice':'roulette';
+ const mode='roulette'; // Every five-wave milestone uses the same saved draw.
  return {wave,offers:picked,mode,...(mode==='roulette'?{winner:Math.min(2,Math.floor(Math.random()*3))}:{})};
 }
 function rewardCopy(o){
@@ -106,7 +106,8 @@ function rewardCopy(o){
 }
 function renderPerkChoices(){
  if(!rewardBundle||rewardBundle.wave!==wave)rewardBundle=makeRewardOffers();
- if(rewardBundle.mode!=='choice'&&rewardBundle.winner===undefined)rewardBundle.winner=Math.min(2,Math.floor(Math.random()*3));
+ if(rewardBundle.mode==='choice'){rewardBundle.mode='roulette';delete rewardBundle.selection;}
+ if(rewardBundle.winner===undefined)rewardBundle.winner=Math.min(2,Math.floor(Math.random()*3));
  const used=new Set(rewardBundle.offers.filter(rewardEligible).map(o=>o.id));
  rewardBundle.offers=rewardBundle.offers.map((o,index)=>{if(rewardEligible(o))return o;if(rewardBundle.selection===index)delete rewardBundle.selection;const replacement=[...makeRewardOffers().offers,...['power','boss','slow'].map(id=>({id,amount:1}))].find(x=>!used.has(x.id)&&rewardEligible(x));used.add(replacement.id);return replacement});
  const en=document.documentElement?.lang?.startsWith('en'),ids=['sp','life','merge','equipment','staff','keep','build','power','boss','slow'],root=document.querySelector('#perk-options');
