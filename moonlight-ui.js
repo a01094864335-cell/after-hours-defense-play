@@ -27,7 +27,16 @@
   const hero=scene.querySelector('.moon-counter'),shortScreen=window.matchMedia?.('(max-height:650px)');
   function loadRecruitArt(){const wide=!!shortScreen?.matches;hero.dataset.sceneFormat=wide?'wide':'portrait';GamePerformance.loadOnDisplay(hero,url('assets/moonlight/'+(wide?'recruit-gate-rush-wide.webp':'recruit-gate-rush.webp')))}
   loadRecruitArt();shortScreen?.addEventListener?.('change',loadRecruitArt);
-  stage.setAttribute('aria-label','새 동료를 맞이하는 성문 앞 영웅 채용팩');
+  stage.setAttribute('aria-label','랜덤 동료 채용팩');
+  scene.classList.add('recruit-draw-scene');
+  const draw=document.createElement('div');draw.className='recruit-draw';
+  draw.innerHTML='<p class="draw-kicker"></p><div class="draw-portraits" aria-hidden="true"></div><div class="draw-envelope" aria-hidden="true"><i></i><span>?</span></div><p class="draw-caption"></p>';
+  scene.append(draw);
+  // Preview real members of the pool; the display never predicts the next roll.
+  const previewIds=['goblin-guard','slime-cleaner','merc-ward','skeleton-chef'];
+  for(const id of previewIds){const card=document.createElement('span');card.className='draw-portrait';card.append(CharacterPortraits.image(id,'','',true));draw.querySelector('.draw-portraits').append(card)}
+  const translateDraw=()=>{const en=window.GameLanguage?.current==='en';draw.querySelector('.draw-kicker').textContent=en?'WHO WILL ARRIVE?':'이번엔 누가 올까?';draw.querySelector('.draw-caption').textContent=en?'Open a pack · Meet 1 random colleague':'봉투를 열면 · 랜덤 동료 1명';scene.querySelector('.grid-shop-title').textContent=en?'Hero Recruit Pack':'영웅 채용팩';stage.setAttribute('aria-label',en?'Random colleague recruit pack':'랜덤 동료 채용팩')};
+  window.GameLanguage?.subscribe(translateDraw);translateDraw();
 
  }
  document.documentElement.dataset.uiVersion='moonlight-20261119';
