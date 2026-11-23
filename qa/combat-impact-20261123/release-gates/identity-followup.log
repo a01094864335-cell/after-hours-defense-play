@@ -1,0 +1,10 @@
+test_all_support_choices_use_the_same_face_in_lobby_and_training (test_character_portraits.CharacterPortraitTests.test_all_support_choices_use_the_same_face_in_lobby_and_training) ... ok
+test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates (test_character_portraits.CharacterPortraitTests.test_battle_uses_matching_bodies_and_portraits_without_changing_cell_coordinates) ... ok
+test_every_staff_keeps_identity_between_party_roster_and_training (test_character_portraits.CharacterPortraitTests.test_every_staff_keeps_identity_between_party_roster_and_training) ... ok
+test_icon_only_consumables_keep_accessible_names_and_toggle_actions (test_character_portraits.CharacterPortraitTests.test_icon_only_consumables_keep_accessible_names_and_toggle_actions) ... ok
+test_staff_and_enemies_render_matching_full_bodies (test_character_portraits.CharacterPortraitTests.test_staff_and_enemies_render_matching_full_bodies) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 11.276s
+
+OK

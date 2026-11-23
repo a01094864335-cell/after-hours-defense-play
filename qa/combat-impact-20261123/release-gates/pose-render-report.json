@@ -1,0 +1,5813 @@
+{
+  "sourceCommit": "local-uncommitted",
+  "fixture": "Production Motion.draw in Chromium; isolated pose gallery, not gameplay screenshot",
+  "coverage": {
+    "staff": [
+      "goblin-guard",
+      "orc-technician",
+      "slime-cleaner",
+      "gobi",
+      "electric-technician",
+      "ghost-courier",
+      "bat-nurse",
+      "skeleton-chef",
+      "mimic-storekeeper",
+      "spider-tailor",
+      "nightmare-counselor",
+      "kobold-recruiter",
+      "duru-archivist",
+      "kkangtong-engineer",
+      "ddangkong-miner",
+      "chalkak-photographer",
+      "bongtu-postmaster"
+    ],
+    "rankForms": [
+      "rank5-goblin-guard",
+      "rank5-orc-technician",
+      "rank5-slime-cleaner",
+      "rank5-gobi",
+      "rank5-electric-technician",
+      "rank5-ghost-courier",
+      "rank5-bat-nurse",
+      "rank5-skeleton-chef",
+      "rank5-mimic-storekeeper",
+      "rank5-spider-tailor",
+      "rank5-nightmare-counselor",
+      "rank5-kobold-recruiter",
+      "rank5-duru-archivist",
+      "rank5-kkangtong-engineer",
+      "rank5-ddangkong-miner",
+      "rank5-chalkak-photographer",
+      "rank5-bongtu-postmaster"
+    ],
+    "masked": [
+      "bat-nurse",
+      "bongtu-postmaster",
+      "ddangkong-miner",
+      "duru-archivist",
+      "ghost-courier",
+      "gobi",
+      "goblin-guard",
+      "kkangtong-engineer",
+      "kobold-recruiter",
+      "nightmare-counselor",
+      "orc-technician",
+      "skeleton-chef",
+      "slime-cleaner"
+    ],
+    "maskRevision": "6c3086e884c9b319f88772f31e9aee1576dc024d6ae6fa1646e09d881a63e159",
+    "matching": true,
+    "path2D": true
+  },
+  "renders": [
+    {
+      "key": "goblin-guard",
+      "pose": 0,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1194,
+      "bounds": {
+        "left": 239,
+        "right": 275,
+        "top": 428,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16759,
+      "bounds": {
+        "left": 191,
+        "right": 330,
+        "top": 280,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 1,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1205,
+      "bounds": {
+        "left": 239,
+        "right": 275,
+        "top": 428,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16863,
+      "bounds": {
+        "left": 191,
+        "right": 329,
+        "top": 280,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 2,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1214,
+      "bounds": {
+        "left": 239,
+        "right": 274,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16869,
+      "bounds": {
+        "left": 191,
+        "right": 330,
+        "top": 290,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 3,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1294,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 431,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17821,
+      "bounds": {
+        "left": 173,
+        "right": 356,
+        "top": 290,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 4,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1291,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17828,
+      "bounds": {
+        "left": 176,
+        "right": 339,
+        "top": 283,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 5,
+      "mode": "board",
+      "size": 51.11493401562079,
+      "drawn": true,
+      "opaque": 1264,
+      "bounds": {
+        "left": 236,
+        "right": 274,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "goblin-guard",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17307,
+      "bounds": {
+        "left": 180,
+        "right": 327,
+        "top": 284,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1405,
+      "bounds": {
+        "left": 238,
+        "right": 278,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22046,
+      "bounds": {
+        "left": 184,
+        "right": 344,
+        "top": 280,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1424,
+      "bounds": {
+        "left": 238,
+        "right": 278,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22406,
+      "bounds": {
+        "left": 184,
+        "right": 344,
+        "top": 280,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1519,
+      "bounds": {
+        "left": 235,
+        "right": 280,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23840,
+      "bounds": {
+        "left": 169,
+        "right": 354,
+        "top": 293,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1471,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23783,
+      "bounds": {
+        "left": 163,
+        "right": 362,
+        "top": 289,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1498,
+      "bounds": {
+        "left": 236,
+        "right": 277,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23943,
+      "bounds": {
+        "left": 177,
+        "right": 344,
+        "top": 280,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.06636836940069,
+      "drawn": true,
+      "opaque": 1499,
+      "bounds": {
+        "left": 235,
+        "right": 274,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "orc-technician",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23833,
+      "bounds": {
+        "left": 174,
+        "right": 335,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 0,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1387,
+      "bounds": {
+        "left": 236,
+        "right": 277,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26037,
+      "bounds": {
+        "left": 167,
+        "right": 349,
+        "top": 281,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 1,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1422,
+      "bounds": {
+        "left": 234,
+        "right": 275,
+        "top": 435,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26825,
+      "bounds": {
+        "left": 160,
+        "right": 342,
+        "top": 281,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 2,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1498,
+      "bounds": {
+        "left": 231,
+        "right": 280,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28325,
+      "bounds": {
+        "left": 146,
+        "right": 365,
+        "top": 284,
+        "bottom": 476
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 3,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1494,
+      "bounds": {
+        "left": 231,
+        "right": 281,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28630,
+      "bounds": {
+        "left": 141,
+        "right": 373,
+        "top": 281,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 4,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1477,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 435,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28450,
+      "bounds": {
+        "left": 158,
+        "right": 361,
+        "top": 281,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 5,
+      "mode": "board",
+      "size": 43.883750190635965,
+      "drawn": true,
+      "opaque": 1426,
+      "bounds": {
+        "left": 232,
+        "right": 279,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "slime-cleaner",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27088,
+      "bounds": {
+        "left": 149,
+        "right": 364,
+        "top": 285,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 0,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1019,
+      "bounds": {
+        "left": 241,
+        "right": 271,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17551,
+      "bounds": {
+        "left": 190,
+        "right": 320,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 1,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1019,
+      "bounds": {
+        "left": 241,
+        "right": 271,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17550,
+      "bounds": {
+        "left": 190,
+        "right": 320,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 2,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1119,
+      "bounds": {
+        "left": 239,
+        "right": 271,
+        "top": 435,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19117,
+      "bounds": {
+        "left": 189,
+        "right": 327,
+        "top": 288,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 3,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1158,
+      "bounds": {
+        "left": 240,
+        "right": 273,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20053,
+      "bounds": {
+        "left": 190,
+        "right": 334,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 4,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1208,
+      "bounds": {
+        "left": 237,
+        "right": 274,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20396,
+      "bounds": {
+        "left": 175,
+        "right": 333,
+        "top": 280,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 5,
+      "mode": "board",
+      "size": 45.8953226237265,
+      "drawn": true,
+      "opaque": 1137,
+      "bounds": {
+        "left": 237,
+        "right": 273,
+        "top": 435,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "gobi",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19267,
+      "bounds": {
+        "left": 175,
+        "right": 330,
+        "top": 285,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1545,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22190,
+      "bounds": {
+        "left": 168,
+        "right": 343,
+        "top": 279,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1586,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22648,
+      "bounds": {
+        "left": 168,
+        "right": 344,
+        "top": 279,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1461,
+      "bounds": {
+        "left": 232,
+        "right": 278,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21027,
+      "bounds": {
+        "left": 162,
+        "right": 346,
+        "top": 298,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1486,
+      "bounds": {
+        "left": 230,
+        "right": 280,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21607,
+      "bounds": {
+        "left": 151,
+        "right": 350,
+        "top": 288,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1557,
+      "bounds": {
+        "left": 233,
+        "right": 275,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22336,
+      "bounds": {
+        "left": 166,
+        "right": 333,
+        "top": 280,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.67286804519128,
+      "drawn": true,
+      "opaque": 1540,
+      "bounds": {
+        "left": 233,
+        "right": 278,
+        "top": 431,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "electric-technician",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22379,
+      "bounds": {
+        "left": 165,
+        "right": 346,
+        "top": 284,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 0,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 236,
+        "right": 276,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22586,
+      "bounds": {
+        "left": 169,
+        "right": 341,
+        "top": 284,
+        "bottom": 474
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 1,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1445,
+      "bounds": {
+        "left": 235,
+        "right": 278,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24154,
+      "bounds": {
+        "left": 169,
+        "right": 352,
+        "top": 283,
+        "bottom": 474
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 2,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 236,
+        "right": 279,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22537,
+      "bounds": {
+        "left": 169,
+        "right": 355,
+        "top": 284,
+        "bottom": 474
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 3,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1455,
+      "bounds": {
+        "left": 233,
+        "right": 282,
+        "top": 436,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24727,
+      "bounds": {
+        "left": 162,
+        "right": 369,
+        "top": 294,
+        "bottom": 474
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 4,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1503,
+      "bounds": {
+        "left": 231,
+        "right": 280,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26569,
+      "bounds": {
+        "left": 147,
+        "right": 362,
+        "top": 286,
+        "bottom": 476
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 5,
+      "mode": "board",
+      "size": 46.4303197770971,
+      "drawn": true,
+      "opaque": 1478,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 435,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "ghost-courier",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25046,
+      "bounds": {
+        "left": 155,
+        "right": 360,
+        "top": 289,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1554,
+      "bounds": {
+        "left": 237,
+        "right": 275,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22966,
+      "bounds": {
+        "left": 184,
+        "right": 334,
+        "top": 280,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1576,
+      "bounds": {
+        "left": 236,
+        "right": 276,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23593,
+      "bounds": {
+        "left": 181,
+        "right": 342,
+        "top": 280,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1512,
+      "bounds": {
+        "left": 237,
+        "right": 276,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22552,
+      "bounds": {
+        "left": 181,
+        "right": 341,
+        "top": 280,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1561,
+      "bounds": {
+        "left": 231,
+        "right": 280,
+        "top": 434,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23180,
+      "bounds": {
+        "left": 158,
+        "right": 359,
+        "top": 295,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1593,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23326,
+      "bounds": {
+        "left": 172,
+        "right": 349,
+        "top": 290,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.871127748390265,
+      "drawn": true,
+      "opaque": 1406,
+      "bounds": {
+        "left": 237,
+        "right": 274,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "bat-nurse",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20700,
+      "bounds": {
+        "left": 180,
+        "right": 328,
+        "top": 288,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 0,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1216,
+      "bounds": {
+        "left": 239,
+        "right": 274,
+        "top": 428,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16077,
+      "bounds": {
+        "left": 194,
+        "right": 322,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 1,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1231,
+      "bounds": {
+        "left": 235,
+        "right": 270,
+        "top": 428,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16651,
+      "bounds": {
+        "left": 181,
+        "right": 314,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 2,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1206,
+      "bounds": {
+        "left": 235,
+        "right": 272,
+        "top": 428,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 15877,
+      "bounds": {
+        "left": 181,
+        "right": 320,
+        "top": 282,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 3,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1467,
+      "bounds": {
+        "left": 232,
+        "right": 280,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19549,
+      "bounds": {
+        "left": 165,
+        "right": 349,
+        "top": 282,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 4,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1408,
+      "bounds": {
+        "left": 234,
+        "right": 276,
+        "top": 427,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18645,
+      "bounds": {
+        "left": 175,
+        "right": 333,
+        "top": 280,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 5,
+      "mode": "board",
+      "size": 52.34627092846273,
+      "drawn": true,
+      "opaque": 1316,
+      "bounds": {
+        "left": 234,
+        "right": 274,
+        "top": 426,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "skeleton-chef",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17840,
+      "bounds": {
+        "left": 176,
+        "right": 329,
+        "top": 279,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1745,
+      "bounds": {
+        "left": 235,
+        "right": 280,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26608,
+      "bounds": {
+        "left": 171,
+        "right": 353,
+        "top": 279,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1776,
+      "bounds": {
+        "left": 235,
+        "right": 280,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27000,
+      "bounds": {
+        "left": 170,
+        "right": 352,
+        "top": 279,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1623,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 431,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24516,
+      "bounds": {
+        "left": 178,
+        "right": 350,
+        "top": 279,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1725,
+      "bounds": {
+        "left": 231,
+        "right": 281,
+        "top": 431,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26243,
+      "bounds": {
+        "left": 156,
+        "right": 358,
+        "top": 280,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1635,
+      "bounds": {
+        "left": 236,
+        "right": 275,
+        "top": 431,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24366,
+      "bounds": {
+        "left": 178,
+        "right": 335,
+        "top": 280,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.76367107196843,
+      "drawn": true,
+      "opaque": 1678,
+      "bounds": {
+        "left": 236,
+        "right": 281,
+        "top": 431,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "mimic-storekeeper",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25680,
+      "bounds": {
+        "left": 175,
+        "right": 357,
+        "top": 280,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1606,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24734,
+      "bounds": {
+        "left": 170,
+        "right": 338,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1614,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24664,
+      "bounds": {
+        "left": 171,
+        "right": 338,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1621,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24611,
+      "bounds": {
+        "left": 172,
+        "right": 340,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1784,
+      "bounds": {
+        "left": 232,
+        "right": 282,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26753,
+      "bounds": {
+        "left": 161,
+        "right": 363,
+        "top": 278,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1682,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25696,
+      "bounds": {
+        "left": 170,
+        "right": 351,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.78286852589641,
+      "drawn": true,
+      "opaque": 1666,
+      "bounds": {
+        "left": 235,
+        "right": 280,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "spider-tailor",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24974,
+      "bounds": {
+        "left": 172,
+        "right": 354,
+        "top": 279,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 0,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1463,
+      "bounds": {
+        "left": 237,
+        "right": 278,
+        "top": 433,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23921,
+      "bounds": {
+        "left": 178,
+        "right": 350,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 1,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1484,
+      "bounds": {
+        "left": 233,
+        "right": 274,
+        "top": 433,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24270,
+      "bounds": {
+        "left": 164,
+        "right": 336,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 2,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1435,
+      "bounds": {
+        "left": 234,
+        "right": 275,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24183,
+      "bounds": {
+        "left": 165,
+        "right": 342,
+        "top": 287,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 3,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1600,
+      "bounds": {
+        "left": 233,
+        "right": 281,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26543,
+      "bounds": {
+        "left": 159,
+        "right": 364,
+        "top": 288,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 4,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1461,
+      "bounds": {
+        "left": 233,
+        "right": 279,
+        "top": 434,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24530,
+      "bounds": {
+        "left": 160,
+        "right": 358,
+        "top": 287,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 5,
+      "mode": "board",
+      "size": 47.477456878564475,
+      "drawn": true,
+      "opaque": 1447,
+      "bounds": {
+        "left": 234,
+        "right": 277,
+        "top": 434,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "nightmare-counselor",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24066,
+      "bounds": {
+        "left": 163,
+        "right": 348,
+        "top": 286,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 0,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1502,
+      "bounds": {
+        "left": 237,
+        "right": 280,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21274,
+      "bounds": {
+        "left": 184,
+        "right": 350,
+        "top": 283,
+        "bottom": 476
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 1,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1502,
+      "bounds": {
+        "left": 233,
+        "right": 276,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21273,
+      "bounds": {
+        "left": 170,
+        "right": 336,
+        "top": 283,
+        "bottom": 476
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 2,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1519,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21424,
+      "bounds": {
+        "left": 167,
+        "right": 339,
+        "top": 287,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 3,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1513,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21566,
+      "bounds": {
+        "left": 175,
+        "right": 349,
+        "top": 290,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 4,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1491,
+      "bounds": {
+        "left": 233,
+        "right": 276,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21466,
+      "bounds": {
+        "left": 168,
+        "right": 337,
+        "top": 285,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 5,
+      "mode": "board",
+      "size": 50.51111084728395,
+      "drawn": true,
+      "opaque": 1432,
+      "bounds": {
+        "left": 231,
+        "right": 274,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kobold-recruiter",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20791,
+      "bounds": {
+        "left": 163,
+        "right": 332,
+        "top": 283,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 0,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1475,
+      "bounds": {
+        "left": 236,
+        "right": 275,
+        "top": 428,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19217,
+      "bounds": {
+        "left": 182,
+        "right": 327,
+        "top": 281,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 1,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1483,
+      "bounds": {
+        "left": 235,
+        "right": 275,
+        "top": 428,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19364,
+      "bounds": {
+        "left": 178,
+        "right": 329,
+        "top": 281,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 2,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1514,
+      "bounds": {
+        "left": 233,
+        "right": 275,
+        "top": 428,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19951,
+      "bounds": {
+        "left": 172,
+        "right": 333,
+        "top": 282,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 3,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1628,
+      "bounds": {
+        "left": 232,
+        "right": 280,
+        "top": 428,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21518,
+      "bounds": {
+        "left": 167,
+        "right": 352,
+        "top": 284,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 4,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1582,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 427,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21299,
+      "bounds": {
+        "left": 174,
+        "right": 339,
+        "top": 281,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 5,
+      "mode": "board",
+      "size": 52.55915577544543,
+      "drawn": true,
+      "opaque": 1450,
+      "bounds": {
+        "left": 235,
+        "right": 275,
+        "top": 428,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "duru-archivist",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18812,
+      "bounds": {
+        "left": 179,
+        "right": 329,
+        "top": 282,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 0,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1549,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20801,
+      "bounds": {
+        "left": 179,
+        "right": 334,
+        "top": 278,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 1,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1562,
+      "bounds": {
+        "left": 235,
+        "right": 275,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21093,
+      "bounds": {
+        "left": 179,
+        "right": 332,
+        "top": 279,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 2,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1624,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 431,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21677,
+      "bounds": {
+        "left": 180,
+        "right": 339,
+        "top": 292,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 3,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1702,
+      "bounds": {
+        "left": 233,
+        "right": 281,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22575,
+      "bounds": {
+        "left": 170,
+        "right": 354,
+        "top": 286,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 4,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1644,
+      "bounds": {
+        "left": 234,
+        "right": 280,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21974,
+      "bounds": {
+        "left": 174,
+        "right": 349,
+        "top": 278,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 5,
+      "mode": "board",
+      "size": 51.998595045831514,
+      "drawn": true,
+      "opaque": 1509,
+      "bounds": {
+        "left": 234,
+        "right": 275,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "kkangtong-engineer",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20248,
+      "bounds": {
+        "left": 172,
+        "right": 329,
+        "top": 279,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 0,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1741,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24054,
+      "bounds": {
+        "left": 177,
+        "right": 334,
+        "top": 279,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 1,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1733,
+      "bounds": {
+        "left": 235,
+        "right": 276,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24083,
+      "bounds": {
+        "left": 177,
+        "right": 335,
+        "top": 279,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 2,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1674,
+      "bounds": {
+        "left": 237,
+        "right": 278,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22951,
+      "bounds": {
+        "left": 187,
+        "right": 343,
+        "top": 280,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 3,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1910,
+      "bounds": {
+        "left": 231,
+        "right": 281,
+        "top": 429,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26238,
+      "bounds": {
+        "left": 162,
+        "right": 354,
+        "top": 286,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 4,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1767,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24447,
+      "bounds": {
+        "left": 176,
+        "right": 347,
+        "top": 280,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 5,
+      "mode": "board",
+      "size": 51.75526330416059,
+      "drawn": true,
+      "opaque": 1775,
+      "bounds": {
+        "left": 234,
+        "right": 278,
+        "top": 427,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "ddangkong-miner",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25108,
+      "bounds": {
+        "left": 176,
+        "right": 346,
+        "top": 279,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 0,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1461,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24416,
+      "bounds": {
+        "left": 171,
+        "right": 349,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 1,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1497,
+      "bounds": {
+        "left": 234,
+        "right": 276,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25041,
+      "bounds": {
+        "left": 166,
+        "right": 344,
+        "top": 278,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 2,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1486,
+      "bounds": {
+        "left": 234,
+        "right": 276,
+        "top": 433,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24949,
+      "bounds": {
+        "left": 163,
+        "right": 342,
+        "top": 280,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 3,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1612,
+      "bounds": {
+        "left": 234,
+        "right": 282,
+        "top": 434,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26586,
+      "bounds": {
+        "left": 162,
+        "right": 368,
+        "top": 283,
+        "bottom": 482
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 4,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1571,
+      "bounds": {
+        "left": 234,
+        "right": 282,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25661,
+      "bounds": {
+        "left": 165,
+        "right": 367,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 5,
+      "mode": "board",
+      "size": 46.65511366758871,
+      "drawn": true,
+      "opaque": 1489,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 432,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "chalkak-photographer",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24778,
+      "bounds": {
+        "left": 160,
+        "right": 347,
+        "top": 278,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1285,
+      "bounds": {
+        "left": 239,
+        "right": 273,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19110,
+      "bounds": {
+        "left": 190,
+        "right": 323,
+        "top": 279,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1273,
+      "bounds": {
+        "left": 238,
+        "right": 272,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19046,
+      "bounds": {
+        "left": 186,
+        "right": 318,
+        "top": 279,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1268,
+      "bounds": {
+        "left": 239,
+        "right": 275,
+        "top": 430,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18738,
+      "bounds": {
+        "left": 189,
+        "right": 334,
+        "top": 279,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1392,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 431,
+        "bottom": 481
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 20973,
+      "bounds": {
+        "left": 168,
+        "right": 360,
+        "top": 283,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1275,
+      "bounds": {
+        "left": 237,
+        "right": 272,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18738,
+      "bounds": {
+        "left": 183,
+        "right": 326,
+        "top": 281,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.38218697575111,
+      "drawn": true,
+      "opaque": 1279,
+      "bounds": {
+        "left": 238,
+        "right": 274,
+        "top": 430,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "bongtu-postmaster",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19033,
+      "bounds": {
+        "left": 186,
+        "right": 332,
+        "top": 281,
+        "bottom": 480
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 0,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1229,
+      "bounds": {
+        "left": 238,
+        "right": 277,
+        "top": 429,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19194,
+      "bounds": {
+        "left": 188,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 1,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1229,
+      "bounds": {
+        "left": 238,
+        "right": 277,
+        "top": 429,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19194,
+      "bounds": {
+        "left": 188,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 2,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1229,
+      "bounds": {
+        "left": 238,
+        "right": 277,
+        "top": 429,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19194,
+      "bounds": {
+        "left": 188,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 3,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1080,
+      "bounds": {
+        "left": 231,
+        "right": 281,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16521,
+      "bounds": {
+        "left": 158,
+        "right": 355,
+        "top": 310,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 4,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1080,
+      "bounds": {
+        "left": 231,
+        "right": 281,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 16521,
+      "bounds": {
+        "left": 158,
+        "right": 355,
+        "top": 310,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 5,
+      "mode": "board",
+      "size": 51.06029313790806,
+      "drawn": true,
+      "opaque": 1229,
+      "bounds": {
+        "left": 238,
+        "right": 277,
+        "top": 429,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-goblin-guard",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19194,
+      "bounds": {
+        "left": 188,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1512,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25253,
+      "bounds": {
+        "left": 173,
+        "right": 353,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1512,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25253,
+      "bounds": {
+        "left": 173,
+        "right": 353,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1512,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25253,
+      "bounds": {
+        "left": 173,
+        "right": 353,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1108,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18469,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 322,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1108,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18469,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 322,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.46606517640722,
+      "drawn": true,
+      "opaque": 1512,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-orc-technician",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 25253,
+      "bounds": {
+        "left": 173,
+        "right": 353,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 0,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 1150,
+      "bounds": {
+        "left": 237,
+        "right": 281,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30682,
+      "bounds": {
+        "left": 157,
+        "right": 387,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 1,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 1150,
+      "bounds": {
+        "left": 237,
+        "right": 281,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30682,
+      "bounds": {
+        "left": 157,
+        "right": 387,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 2,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 1150,
+      "bounds": {
+        "left": 237,
+        "right": 281,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30682,
+      "bounds": {
+        "left": 157,
+        "right": 387,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 3,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 868,
+      "bounds": {
+        "left": 231,
+        "right": 275,
+        "top": 448,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23386,
+      "bounds": {
+        "left": 128,
+        "right": 358,
+        "top": 314,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 4,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 868,
+      "bounds": {
+        "left": 231,
+        "right": 275,
+        "top": 448,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23386,
+      "bounds": {
+        "left": 128,
+        "right": 358,
+        "top": 314,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 5,
+      "mode": "board",
+      "size": 38.74841772151898,
+      "drawn": true,
+      "opaque": 1150,
+      "bounds": {
+        "left": 237,
+        "right": 281,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-slime-cleaner",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30682,
+      "bounds": {
+        "left": 157,
+        "right": 387,
+        "top": 282,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 0,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1096,
+      "bounds": {
+        "left": 240,
+        "right": 276,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21143,
+      "bounds": {
+        "left": 187,
+        "right": 344,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 1,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1096,
+      "bounds": {
+        "left": 240,
+        "right": 276,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21143,
+      "bounds": {
+        "left": 187,
+        "right": 344,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 2,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1096,
+      "bounds": {
+        "left": 240,
+        "right": 276,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21143,
+      "bounds": {
+        "left": 187,
+        "right": 344,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 3,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1226,
+      "bounds": {
+        "left": 230,
+        "right": 273,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24215,
+      "bounds": {
+        "left": 143,
+        "right": 339,
+        "top": 285,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 4,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1226,
+      "bounds": {
+        "left": 230,
+        "right": 273,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24215,
+      "bounds": {
+        "left": 143,
+        "right": 339,
+        "top": 285,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 5,
+      "mode": "board",
+      "size": 45.32250056848328,
+      "drawn": true,
+      "opaque": 1096,
+      "bounds": {
+        "left": 240,
+        "right": 276,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-gobi",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21143,
+      "bounds": {
+        "left": 187,
+        "right": 344,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 0,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 1203,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23639,
+      "bounds": {
+        "left": 166,
+        "right": 353,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 1,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 1203,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23639,
+      "bounds": {
+        "left": 166,
+        "right": 353,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 2,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 1203,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23639,
+      "bounds": {
+        "left": 166,
+        "right": 353,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 3,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 976,
+      "bounds": {
+        "left": 231,
+        "right": 274,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19433,
+      "bounds": {
+        "left": 143,
+        "right": 339,
+        "top": 305,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 4,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 976,
+      "bounds": {
+        "left": 231,
+        "right": 274,
+        "top": 441,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19433,
+      "bounds": {
+        "left": 143,
+        "right": 339,
+        "top": 305,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 5,
+      "mode": "board",
+      "size": 44.866588940706194,
+      "drawn": true,
+      "opaque": 1203,
+      "bounds": {
+        "left": 236,
+        "right": 278,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-electric-technician",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23639,
+      "bounds": {
+        "left": 166,
+        "right": 353,
+        "top": 282,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 0,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 1611,
+      "bounds": {
+        "left": 235,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28130,
+      "bounds": {
+        "left": 170,
+        "right": 361,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 1,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 1611,
+      "bounds": {
+        "left": 235,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28130,
+      "bounds": {
+        "left": 170,
+        "right": 361,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 2,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 1611,
+      "bounds": {
+        "left": 235,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28130,
+      "bounds": {
+        "left": 170,
+        "right": 361,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 3,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 991,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 446,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17175,
+      "bounds": {
+        "left": 164,
+        "right": 361,
+        "top": 340,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 4,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 991,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 446,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17175,
+      "bounds": {
+        "left": 164,
+        "right": 361,
+        "top": 340,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 5,
+      "mode": "board",
+      "size": 47.87771342622301,
+      "drawn": true,
+      "opaque": 1611,
+      "bounds": {
+        "left": 235,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ghost-courier",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 28130,
+      "bounds": {
+        "left": 170,
+        "right": 361,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1609,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27738,
+      "bounds": {
+        "left": 165,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1609,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27738,
+      "bounds": {
+        "left": 165,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1609,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27738,
+      "bounds": {
+        "left": 165,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1022,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17718,
+      "bounds": {
+        "left": 160,
+        "right": 357,
+        "top": 327,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1022,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 17718,
+      "bounds": {
+        "left": 160,
+        "right": 357,
+        "top": 327,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.46454599804303,
+      "drawn": true,
+      "opaque": 1609,
+      "bounds": {
+        "left": 234,
+        "right": 281,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bat-nurse",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27738,
+      "bounds": {
+        "left": 165,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 0,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1440,
+      "bounds": {
+        "left": 237,
+        "right": 280,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22761,
+      "bounds": {
+        "left": 183,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 1,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1440,
+      "bounds": {
+        "left": 237,
+        "right": 280,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22761,
+      "bounds": {
+        "left": 183,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 2,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1440,
+      "bounds": {
+        "left": 237,
+        "right": 280,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22761,
+      "bounds": {
+        "left": 183,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 3,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1233,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19703,
+      "bounds": {
+        "left": 155,
+        "right": 352,
+        "top": 305,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 4,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1233,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19703,
+      "bounds": {
+        "left": 155,
+        "right": 352,
+        "top": 305,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 5,
+      "mode": "board",
+      "size": 50.45602931379081,
+      "drawn": true,
+      "opaque": 1440,
+      "bounds": {
+        "left": 237,
+        "right": 280,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-skeleton-chef",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22761,
+      "bounds": {
+        "left": 183,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 0,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1301,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30904,
+      "bounds": {
+        "left": 152,
+        "right": 372,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 1,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1301,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30904,
+      "bounds": {
+        "left": 152,
+        "right": 372,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 2,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1301,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30904,
+      "bounds": {
+        "left": 152,
+        "right": 372,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 3,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1174,
+      "bounds": {
+        "left": 230,
+        "right": 275,
+        "top": 442,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27961,
+      "bounds": {
+        "left": 132,
+        "right": 352,
+        "top": 294,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 4,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1174,
+      "bounds": {
+        "left": 230,
+        "right": 275,
+        "top": 442,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27961,
+      "bounds": {
+        "left": 132,
+        "right": 352,
+        "top": 294,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 5,
+      "mode": "board",
+      "size": 40.85366990015775,
+      "drawn": true,
+      "opaque": 1301,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-mimic-storekeeper",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 30904,
+      "bounds": {
+        "left": 152,
+        "right": 372,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1588,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26193,
+      "bounds": {
+        "left": 169,
+        "right": 352,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1588,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26193,
+      "bounds": {
+        "left": 169,
+        "right": 352,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1588,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26193,
+      "bounds": {
+        "left": 169,
+        "right": 352,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1372,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22600,
+      "bounds": {
+        "left": 152,
+        "right": 349,
+        "top": 302,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1372,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 436,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22600,
+      "bounds": {
+        "left": 152,
+        "right": 349,
+        "top": 302,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.123677111433906,
+      "drawn": true,
+      "opaque": 1588,
+      "bounds": {
+        "left": 234,
+        "right": 279,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-spider-tailor",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26193,
+      "bounds": {
+        "left": 169,
+        "right": 352,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1691,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27710,
+      "bounds": {
+        "left": 164,
+        "right": 354,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1691,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27710,
+      "bounds": {
+        "left": 164,
+        "right": 354,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1691,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27710,
+      "bounds": {
+        "left": 164,
+        "right": 354,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1136,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18941,
+      "bounds": {
+        "left": 152,
+        "right": 349,
+        "top": 330,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1136,
+      "bounds": {
+        "left": 230,
+        "right": 278,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18941,
+      "bounds": {
+        "left": 152,
+        "right": 349,
+        "top": 330,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.424002195815035,
+      "drawn": true,
+      "opaque": 1691,
+      "bounds": {
+        "left": 233,
+        "right": 280,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-nightmare-counselor",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27710,
+      "bounds": {
+        "left": 164,
+        "right": 354,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1529,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26446,
+      "bounds": {
+        "left": 168,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1529,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26446,
+      "bounds": {
+        "left": 168,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1529,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26446,
+      "bounds": {
+        "left": 168,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1065,
+      "bounds": {
+        "left": 230,
+        "right": 276,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18643,
+      "bounds": {
+        "left": 150,
+        "right": 347,
+        "top": 325,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1065,
+      "bounds": {
+        "left": 230,
+        "right": 276,
+        "top": 443,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18643,
+      "bounds": {
+        "left": 150,
+        "right": 347,
+        "top": 325,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.106028803926634,
+      "drawn": true,
+      "opaque": 1529,
+      "bounds": {
+        "left": 235,
+        "right": 279,
+        "top": 432,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kobold-recruiter",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 26446,
+      "bounds": {
+        "left": 168,
+        "right": 354,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 0,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1623,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 428,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24150,
+      "bounds": {
+        "left": 167,
+        "right": 338,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 1,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1623,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 428,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24150,
+      "bounds": {
+        "left": 167,
+        "right": 338,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 2,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1623,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 428,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24150,
+      "bounds": {
+        "left": 167,
+        "right": 338,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 3,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1433,
+      "bounds": {
+        "left": 230,
+        "right": 281,
+        "top": 437,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21605,
+      "bounds": {
+        "left": 157,
+        "right": 354,
+        "top": 312,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 4,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1433,
+      "bounds": {
+        "left": 230,
+        "right": 281,
+        "top": 437,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21605,
+      "bounds": {
+        "left": 157,
+        "right": 354,
+        "top": 312,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 5,
+      "mode": "board",
+      "size": 51.51436929643803,
+      "drawn": true,
+      "opaque": 1623,
+      "bounds": {
+        "left": 233,
+        "right": 277,
+        "top": 428,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-duru-archivist",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24150,
+      "bounds": {
+        "left": 167,
+        "right": 338,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 0,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1436,
+      "bounds": {
+        "left": 238,
+        "right": 281,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23995,
+      "bounds": {
+        "left": 183,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 1,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1436,
+      "bounds": {
+        "left": 238,
+        "right": 281,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23995,
+      "bounds": {
+        "left": 183,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 2,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1436,
+      "bounds": {
+        "left": 238,
+        "right": 281,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23995,
+      "bounds": {
+        "left": 183,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 3,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1266,
+      "bounds": {
+        "left": 231,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21041,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 314,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 4,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1266,
+      "bounds": {
+        "left": 231,
+        "right": 279,
+        "top": 439,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21041,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 314,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 5,
+      "mode": "board",
+      "size": 48.89796175733404,
+      "drawn": true,
+      "opaque": 1436,
+      "bounds": {
+        "left": 238,
+        "right": 281,
+        "top": 431,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-kkangtong-engineer",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 23995,
+      "bounds": {
+        "left": 183,
+        "right": 360,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 0,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 1437,
+      "bounds": {
+        "left": 232,
+        "right": 276,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27407,
+      "bounds": {
+        "left": 151,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 1,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 1437,
+      "bounds": {
+        "left": 232,
+        "right": 276,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27407,
+      "bounds": {
+        "left": 151,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 2,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 1437,
+      "bounds": {
+        "left": 232,
+        "right": 276,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27407,
+      "bounds": {
+        "left": 151,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 3,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 994,
+      "bounds": {
+        "left": 230,
+        "right": 275,
+        "top": 447,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18968,
+      "bounds": {
+        "left": 144,
+        "right": 341,
+        "top": 336,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 4,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 994,
+      "bounds": {
+        "left": 230,
+        "right": 275,
+        "top": 447,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 18968,
+      "bounds": {
+        "left": 144,
+        "right": 341,
+        "top": 336,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 5,
+      "mode": "board",
+      "size": 45.73011460827916,
+      "drawn": true,
+      "opaque": 1437,
+      "bounds": {
+        "left": 232,
+        "right": 276,
+        "top": 434,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-ddangkong-miner",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 27407,
+      "bounds": {
+        "left": 151,
+        "right": 344,
+        "top": 281,
+        "bottom": 477
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 0,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1526,
+      "bounds": {
+        "left": 235,
+        "right": 277,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24574,
+      "bounds": {
+        "left": 175,
+        "right": 346,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 1,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1526,
+      "bounds": {
+        "left": 235,
+        "right": 277,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24574,
+      "bounds": {
+        "left": 175,
+        "right": 346,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 2,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1526,
+      "bounds": {
+        "left": 235,
+        "right": 277,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24574,
+      "bounds": {
+        "left": 175,
+        "right": 346,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 3,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1406,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 437,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22307,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 310,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 4,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1406,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 437,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 22307,
+      "bounds": {
+        "left": 153,
+        "right": 350,
+        "top": 310,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 5,
+      "mode": "board",
+      "size": 49.908516564389394,
+      "drawn": true,
+      "opaque": 1526,
+      "bounds": {
+        "left": 235,
+        "right": 277,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-chalkak-photographer",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 24574,
+      "bounds": {
+        "left": 175,
+        "right": 346,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 0,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 235,
+        "right": 273,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 0,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21316,
+      "bounds": {
+        "left": 174,
+        "right": 325,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 1,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 235,
+        "right": 273,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 1,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21316,
+      "bounds": {
+        "left": 174,
+        "right": 325,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 2,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 235,
+        "right": 273,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 2,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21316,
+      "bounds": {
+        "left": 174,
+        "right": 325,
+        "top": 281,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 3,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1258,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 3,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19977,
+      "bounds": {
+        "left": 153,
+        "right": 351,
+        "top": 302,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 4,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1258,
+      "bounds": {
+        "left": 230,
+        "right": 279,
+        "top": 435,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 4,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 19977,
+      "bounds": {
+        "left": 153,
+        "right": 351,
+        "top": 302,
+        "bottom": 478
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 5,
+      "mode": "board",
+      "size": 50.01918890590986,
+      "drawn": true,
+      "opaque": 1348,
+      "bounds": {
+        "left": 235,
+        "right": 273,
+        "top": 430,
+        "bottom": 479
+      }
+    },
+    {
+      "key": "rank5-bongtu-postmaster",
+      "pose": 5,
+      "mode": "cutin",
+      "size": 200,
+      "drawn": true,
+      "opaque": 21316,
+      "bounds": {
+        "left": 174,
+        "right": 325,
+        "top": 281,
+        "bottom": 478
+      }
+    }
+  ],
+  "screenshots": [
+    "goblin-guard-six-poses.png",
+    "orc-technician-six-poses.png",
+    "slime-cleaner-six-poses.png",
+    "gobi-six-poses.png",
+    "electric-technician-six-poses.png",
+    "ghost-courier-six-poses.png",
+    "bat-nurse-six-poses.png",
+    "skeleton-chef-six-poses.png",
+    "mimic-storekeeper-six-poses.png",
+    "spider-tailor-six-poses.png",
+    "nightmare-counselor-six-poses.png",
+    "kobold-recruiter-six-poses.png",
+    "duru-archivist-six-poses.png",
+    "kkangtong-engineer-six-poses.png",
+    "ddangkong-miner-six-poses.png",
+    "chalkak-photographer-six-poses.png",
+    "bongtu-postmaster-six-poses.png",
+    "rank5-goblin-guard-six-poses.png",
+    "rank5-orc-technician-six-poses.png",
+    "rank5-slime-cleaner-six-poses.png",
+    "rank5-gobi-six-poses.png",
+    "rank5-electric-technician-six-poses.png",
+    "rank5-ghost-courier-six-poses.png",
+    "rank5-bat-nurse-six-poses.png",
+    "rank5-skeleton-chef-six-poses.png",
+    "rank5-mimic-storekeeper-six-poses.png",
+    "rank5-spider-tailor-six-poses.png",
+    "rank5-nightmare-counselor-six-poses.png",
+    "rank5-kobold-recruiter-six-poses.png",
+    "rank5-duru-archivist-six-poses.png",
+    "rank5-kkangtong-engineer-six-poses.png",
+    "rank5-ddangkong-miner-six-poses.png",
+    "rank5-chalkak-photographer-six-poses.png",
+    "rank5-bongtu-postmaster-six-poses.png"
+  ],
+  "pageErrors": []
+}
