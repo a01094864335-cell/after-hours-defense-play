@@ -35,22 +35,25 @@ function drawStaffMotion(u,i,x,y,ghost) {
   let pose=Motion.unitFrame(u,time,i,[3,11,16].includes(u.type)?0:k.interval/u.pip);
   // The recruiter supports neighbors continuously; show a periodic approval stamp.
   if(u.type===11&&!u.motionState&&!u.stun&&!calm){const phase=(time+i*.7)%5.5;if(phase>4.5)pose=[2,3,4,5][Math.min(3,Math.floor((phase-4.5)*4))]}
-  if(!Motion.draw(ctx,k.file,x,y+16-lift-arrival*15,76,pose,{flip}))image(k.file,x,y+15-lift,85);
+  const key=window.BattleImpact?.staffKey(u)||k.file, squash=calm?0:Math.sin(Math.min(1,arrival)*Math.PI)*.12;
+  const options={flip,staff:u,cell:i,scaleX:1+squash,scaleY:1-squash};
+  if(!Motion.draw(ctx,key,x,y+16-lift-arrival*15,76,pose,options)&&!(key!==k.file&&Motion.draw(ctx,k.file,x,y+16-lift-arrival*15,76,pose,options)))image(k.file,x,y+15-lift,85);
   if(u.motionState==='skill'&&!calm){const p=u.motionAge/u.motionDuration;ctx.globalAlpha*=1-p;for(let n=0;n<5;n++){const a=n*Math.PI*2/5+p*2;spark(x+Math.cos(a)*29,y-18+Math.sin(a)*21,3,k.color)}}
   ctx.restore();
 }
 function drawEnemyMotion(e,h) {
-  const moving=!reduce?.matches&&!(e.freeze>0),step=moving?Math.sin(e.progress/8):0;
+  const moving=!reduce?.matches&&!(e.freeze>0),step=moving?Math.abs(Math.sin(e.progress/(e.type==='fast'?8:11))):0;
+  const hop=step*(e.type==='boss'?2.5:e.type==='knight'?3:5.5),squash=moving?(1-step)*.055:0;
   let pose=Motion.frame('walk',e.progress/65);
   if(e.freeze>0)pose=0;
   if(e.hurt>0)pose=5;
   if(e.cast>0)pose=Motion.frame('cast',.6-e.cast,.6);
   if(e.type==='boss'&&e.warning)pose=3;
   ctx.save();if(e.decoy)ctx.globalAlpha=.55;
-  ctx.fillStyle='#100b243d';ctx.beginPath();ctx.ellipse(e.x,e.y+10,h*.22,4,0,0,Math.PI*2);ctx.fill();
+  ctx.fillStyle='#100b243d';ctx.beginPath();ctx.ellipse(e.x,e.y+10,h*(.22-step*.035),4-step*.6,0,0,Math.PI*2);ctx.fill();
   const recoil=reduce?.matches?0:e.hurt/0.15*2;
   if(e.rush>0&&!reduce?.matches){Motion.draw(ctx,enemyDefinition(e).file,e.x-6,e.y+12,h*.91,pose,{alpha:.18})}
-  if(!Motion.draw(ctx,enemyDefinition(e).file,e.x-recoil,e.y+12-Math.abs(step),h*.91,pose,{enemy:e}))image(e.type==='boss'?'hero-leon':enemyDefinition(e).file,e.x,e.y+13,h);
+  if(!Motion.draw(ctx,enemyDefinition(e).file,e.x-recoil,e.y+12-hop,h*.91,pose,{enemy:e,scaleX:1+squash,scaleY:1-squash}))image(e.type==='boss'?'hero-leon':enemyDefinition(e).file,e.x,e.y+13,h);
   ctx.restore();
 }
 function drawMercenary() {

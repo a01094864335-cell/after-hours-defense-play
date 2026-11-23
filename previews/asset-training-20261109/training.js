@@ -12,18 +12,24 @@
  function hydrateArt(){if(!(!dialog.hidden))return;for(const image of root.querySelectorAll('image[data-art-src]')){image.setAttribute('href',image.dataset.artSrc);image.removeAttribute('data-art-src')}}
  function refresh(){hydrateArt();
   const level=trainingLevel(trainingGroup,false),next=Math.min(TRAINING_MAX,level+1),cost=trainingCost(level),milestone=TRAINING_MILESTONES.find(n=>n>level),staff=trainingGroup==='staff';
-  const state=JSON.stringify([trainingGroup,meta.coins,meta.training,meta.staff,meta.owned,playing,ended,saveWarning,q('#training-status').textContent]);if(state===last)return;last=state;
-  root.querySelectorAll('[data-group]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.group===trainingGroup)));
-  local('#level').innerHTML=(staff?'직원 전체':'지원 영웅 전체')+' <span>Lv.'+level+'</span>'+(level<30?' <em>➜ Lv.'+next+'</em>':' <em>MAX!</em>');
-  local('#power-label').textContent=staff?'공격 피해':'효과 예시 · 회계사'+(meta.owned.includes('accountant')?'':' (미고용)');local('#power-value').innerHTML=staff?'+'+((staffTrainingMultiplier(level)-1)*100).toFixed(1)+'%'+(level<TRAINING_MAX?' <span>➜ +'+((staffTrainingMultiplier(next)-1)*100).toFixed(1)+'%</span>':''):(2+(level-1)*.02).toFixed(2)+(level<TRAINING_MAX?' <span>➜ '+(2+(next-1)*.02).toFixed(2)+' SP</span>':' SP');
+  const en=window.GameLanguage?.current==='en';
+  const state=JSON.stringify([en,trainingGroup,meta.coins,meta.training,meta.staff,meta.owned,playing,ended,saveWarning,q('#training-status').textContent]);if(state===last)return;last=state;
+  root.querySelectorAll('[data-group]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.group===trainingGroup));b.textContent=en?(b.dataset.group==='staff'?'Staff':'Support'):(b.dataset.group==='staff'?'직원 강화':'지원 영웅 강화');});
+  local('#level').innerHTML=(en?(staff?'All staff':'All support'):(staff?'직원 전체':'지원 영웅 전체'))+' <span>Lv.'+level+'</span>'+(level<TRAINING_MAX?' <em>➜ Lv.'+next+'</em>':' <em>MAX!</em>');
+  local('.power').hidden=!staff;
+  local('#power-label').textContent=staff?(en?'Attack damage':'공격 피해'):(en?'Shared training level':'공통 훈련 레벨');
+  local('#power-value').innerHTML=staff?'+'+((staffTrainingMultiplier(level)-1)*100).toFixed(1)+'%'+(level<TRAINING_MAX?' <span>➜ +'+((staffTrainingMultiplier(next)-1)*100).toFixed(1)+'%</span>':''):'Lv.'+level+(level<TRAINING_MAX?' <span>➜ Lv.'+next+'</span>':'');
+  local('.policy').textContent=en?'Applies to the whole group, including future hires.':'그룹 전체에 적용 · 새로 채용한 동료에게도 유지';
   local('#milestones').innerHTML=TRAINING_MILESTONES.map(n=>`<span class="medal ${level>=n?'unlocked':n===milestone?'next':''}"><b>${n}</b><small>${level>=n?'해금':n===milestone?'다음':'잠김'}</small></span>`).join('');local('#next').textContent=milestone?'다음 Lv.'+milestone:'모두 해금!';
-  const opened=new Set([...root.querySelectorAll('details[open]')].map(d=>d.dataset.id));
-  local('#effects').innerHTML=[...q('#training-effects').children].map((card,i)=>{const sealed=card.classList.contains('staff-locked'),title=card.querySelector('.training-character-title'),name=title.querySelector('b').textContent,img=staff?staffPortraitPath(kinds[i].file):mercPortraitPath(Object.keys(mercCatalog)[i]),effects=card.querySelector('ol').innerHTML;return `<details data-id="${trainingGroup+i}" ${opened.has(trainingGroup+i)?'open':''}><summary><img loading="lazy" decoding="async" src="${img}" alt="" data-character-id="${staff?kinds[i].file:'merc-'+Object.keys(mercCatalog)[i]}" ${sealed?'class="sealed"':''}><span><b>${name}</b><small>${sealed?'채용 후 효과 공개':staff?'직원 공통 레벨 적용':'영구 고용 후 적용'}</small></span><i>⌄</i></summary><ol>${effects}</ol></details>`}).join('');
-  local('#coins').textContent=meta.coins.toLocaleString();local('#remaining').textContent=level===30?'최대 레벨 달성':meta.coins>=cost?'훈련 후 '+(meta.coins-cost).toLocaleString()+' 코인':(cost-meta.coins)+' 코인 부족';
-  local('#upgrade').disabled=q('#training-upgrade').disabled;local('#upgrade').textContent=level===30?'MAX · 훈련 완료':'Lv.'+next+' 훈련 · '+cost+' 코인';local('#hint').textContent=q('#training-price-hint').textContent;local('#status').textContent=q('#training-status').textContent;
+  local('#coins').textContent=meta.coins.toLocaleString();
+  local('#coins').parentElement.firstChild.nodeValue=en?'Coins ':'● 보유 ';local('#coins').parentElement.lastChild.nodeValue=en?'':' 코인';
+  local('#remaining').textContent=level===TRAINING_MAX?(en?'Maximum level':'최대 레벨 달성'):meta.coins>=cost?(en?(meta.coins-cost).toLocaleString()+' coins after training':'훈련 후 '+(meta.coins-cost).toLocaleString()+' 코인'):(en?'Need '+(cost-meta.coins)+' more coins':(cost-meta.coins)+' 코인 부족');
+  local('#upgrade').disabled=q('#training-upgrade').disabled;
+  local('#upgrade').textContent=level===TRAINING_MAX?(en?'MAX · Training complete':'MAX · 훈련 완료'):(en?'Train · '+cost+' coins':'강화하기 · '+cost+' 코인');
+  local('#hint').textContent=saveWarning||(playing&&!ended?(en?'Training is available after the battle.':'전투가 끝난 뒤 강화할 수 있어요.'):'');local('#status').textContent=q('#training-status').textContent;
   if(previousGroup!==trainingGroup)local('.scroll').scrollTop=0;previousGroup=trainingGroup;
  }
  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;if(b.dataset.group){q('#training-tab-'+b.dataset.group).click();q('#training-status').textContent='';refresh();}else if(b.dataset.action==='upgrade'){const before=trainingLevel(trainingGroup,false);q('#training-upgrade').click();refresh();if(trainingLevel(trainingGroup,false)>before){root.classList.remove('success');void root.offsetWidth;root.classList.add('success');}}else{trainingNavigate(b.dataset.action);}});
  const native=window.renderTraining;window.renderTraining=function(...args){const result=native.apply(this,args);refresh();return result;};
- new MutationObserver(()=>{if(!dialog.hidden)refresh()}).observe(dialog,{attributes:true,attributeFilter:['hidden']});new MutationObserver(refresh).observe(q('#training-status'),{childList:true,characterData:true,subtree:true});function reset(){last='';root.classList.remove('success')}refresh();window.AssetTraining={refresh,reset};
+ new MutationObserver(()=>{if(!dialog.hidden)refresh()}).observe(dialog,{attributes:true,attributeFilter:['hidden']});new MutationObserver(refresh).observe(q('#training-status'),{childList:true,characterData:true,subtree:true});function reset(){last='';root.classList.remove('success')}window.GameLanguage?.subscribe(()=>{last='';refresh()});refresh();window.AssetTraining={refresh,reset};
 })();

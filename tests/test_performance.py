@@ -63,7 +63,13 @@ class PerformanceTests(unittest.TestCase):
         for button,host,close in [('#training-entry','#asset-training-host','.back'),('#roster-open','#asset-roster-host','.r-close')]:
             a.locator('#asset-lobby-host [data-proxy="'+button+'"]').click()
             if button=='#training-entry':
-                a.locator(host+' [data-ss-label="effects"]').click()
+                yard=a.locator(host+' .ss-training-yard')
+                self.assertTrue(yard.is_visible())
+                loaded=yard.evaluate(r"""async e=>{const src=getComputedStyle(e).backgroundImage.match(/url\(["']?([^"')]+)["']?\)/)[1];const im=new Image();im.src=src;await im.decode();return im.naturalWidth>0}""")
+                self.assertTrue(loaded)
+                self.assertEqual(a.locator(host+' #effects details').count(),0)
+                a.locator(host+' '+close).click()
+                continue
             # The approved interfaces display original portrait images in shadow DOM,
             # not the hidden legacy animated canvases. Verify the visible asset loads.
             portrait=a.locator(host+' img[data-character-id]').first

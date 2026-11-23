@@ -18,7 +18,7 @@ window.BattlePresentation=(()=>{
  }
  function staffSize(data,row,cell){
   const b=bodyBounds(data),space=Math.max(1,cell-7),vertical=Math.max(1,row-13);
-  const presence=Math.min(cell*.80,row*.70);
+  const presence=Math.min(cell*(data.rankForm===5?.87:.80),row*(data.rankForm===5?.76:.70));
   // Narrow silhouettes can read taller despite equal footprint; keep reviewed
   // per-character art corrections board-only, without rescaling source pixels.
   return Math.min(presence/b.presence,space/(2*b.side),vertical/(b.top+b.bottom))*data.height*(data.boardScale??1);
@@ -54,7 +54,7 @@ window.BattlePresentation=(()=>{
   NightWatchArt.selection(paint,width,height);
   const {row,cell}=geometry,enemyHUD=[];
   for(const actor of actors){const p=viewPoint(actor,a),data=Motion.sheets[actor.key];let size=actor.size*width/600*(staffKeys.has(actor.key)?1.35:data?.group==='enemy'?1.05:1.12);
-   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)){size=staffSize(data,row,cell);if(missingBorders.has(actor.key)||(typeof Path2D==='function'&&typeof StaffOutlineMasks!=='undefined'&&StaffOutlineMasks.characters[actor.key]?.sourceSha256===data.sha256))actor.options.outline=1.25;}else if(data.group==='enemy')size=enemySize(data,actor.size,width,p,actor.options.enemy?.type==='boss'||actor.key==='hero-leon'||actor.key.startsWith('commander-')); if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
+   if(data){const f=data.frames[Math.max(0,Math.min(5,actor.pose))];if(staffKeys.has(actor.key)||actor.options.staff){size=staffSize(data,row,cell);if(missingBorders.has(actor.key)||(typeof Path2D==='function'&&typeof StaffOutlineMasks!=='undefined'&&StaffOutlineMasks.characters[actor.key]?.sourceSha256===data.sha256))actor.options.outline=1.25;}else if(data.group==='enemy')size=enemySize(data,actor.size,width,p,actor.options.enemy?.type==='boss'||actor.key==='hero-leon'||actor.key.startsWith('commander-')); if(actor.options.enemy)enemyHUD.push({e:actor.options.enemy,x:p.x,top:p.y-f.pivotY*size/data.height});}
    if(!oldMotion(paint,actor.key,p.x,p.y,size,actor.pose,actor.options)){const fallback=images[actor.key];if(fallback?.complete&&fallback.naturalWidth){const w=size*fallback.naturalWidth/fallback.naturalHeight;paint.save();paint.globalAlpha=actor.options.alpha??1;paint.drawImage(fallback,p.x-w/2,p.y-size,w,size);paint.restore()}}
   }
   for(const t of texts){const p=viewPoint(t,a);let font=fonts.get(t.font);if(!font){font=t.font.replace(/([\d.]+)px/,(_,n)=>Math.max(7.5,Number(n)*width/600)+'px');fonts.set(t.font,font)}paint.save();paint.font=font;paint.fillStyle=t.fill;paint.textAlign=t.align;paint.globalAlpha=t.alpha;paint.fillText(t.text,p.x,p.y);paint.restore();}
@@ -89,7 +89,7 @@ window.BattlePresentation=(()=>{
  for(const key of Object.keys(itemCatalog))q('#item-'+key).setAttribute('aria-label',itemCatalog[key].name);
  function selection(){const u=board[selected];const source=u?staffPortraitPath(kinds[u.type].file):null;if(source&&portrait.getAttribute('src')!==source)portrait.src=source;
   const english=document.documentElement.lang.startsWith('en');
-  uiText(name,u?skillNames[u.type]:(english?'Pick a staff member':'보드의 직원을 눌러보세요'));uiText(grade,u?(u.pip<5?'★'+u.pip+' · ★5 해금':'✦'.repeat(u.pip)):(english?'Unique skills unlock at ★5':'★5부터 고유 스킬을 사용할 수 있어요'));
+  uiText(name,u?(window.GameLanguage?.t(staffRecords.find(r=>r.id===kinds[u.type].file)?.name||kinds[u.type].name)||kinds[u.type].name):(english?'Pick a staff member':'보드의 직원을 눌러보세요'));uiText(grade,u?(u.pip<5?'★'+u.pip+' · ★5 해금':'✦'.repeat(u.pip)):(english?'Unique skills unlock at ★5':'★5부터 고유 스킬을 사용할 수 있어요'));
   uiProp(portrait,'hidden',!u);uiProp(q('#skill'),'hidden',!u);supportPresentation();
   const original=!u?'직원 선택 후 스킬 사용':skillNames[u.type]+' · '+(u.pip<5?'5등급 해금':u.stun>0?'기절 중':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'초 후 사용':!playing?'당직 시작 후 사용':paused?'일시정지 중':'사용');uiAttr(q('#skill'),'aria-label',original);uiText(q('#skill'),!u?'선택':u.stun>0?'기절':u.pip<5?'★5':(u.skillCD||0)>0?Math.ceil(u.skillCD)+'s':!playing?'대기':paused?'일시정지':'사용');
   uiAttr(skillRow,'data-selected',u?'true':'false');uiAttr(skillRow,'data-skill-state',q('#skill').getAttribute('data-state'));

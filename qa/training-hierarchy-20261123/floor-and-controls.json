@@ -1,0 +1,146 @@
+[
+  {
+    "lang": "ko",
+    "size": [
+      320,
+      568
+    ],
+    "group": "staff",
+    "yardBottom": 406.203125,
+    "barTop": 417.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "ko",
+    "size": [
+      320,
+      568
+    ],
+    "group": "merc",
+    "yardBottom": 406.203125,
+    "barTop": 417.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "ko",
+    "size": [
+      390,
+      844
+    ],
+    "group": "staff",
+    "yardBottom": 682.203125,
+    "barTop": 693.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "ko",
+    "size": [
+      390,
+      844
+    ],
+    "group": "merc",
+    "yardBottom": 682.203125,
+    "barTop": 693.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "ko",
+    "size": [
+      430,
+      932
+    ],
+    "group": "staff",
+    "yardBottom": 770.203125,
+    "barTop": 781.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "ko",
+    "size": [
+      430,
+      932
+    ],
+    "group": "merc",
+    "yardBottom": 770.203125,
+    "barTop": 781.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      320,
+      568
+    ],
+    "group": "staff",
+    "yardBottom": 406.203125,
+    "barTop": 417.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      320,
+      568
+    ],
+    "group": "merc",
+    "yardBottom": 406.203125,
+    "barTop": 417.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      390,
+      844
+    ],
+    "group": "staff",
+    "yardBottom": 682.203125,
+    "barTop": 693.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      390,
+      844
+    ],
+    "group": "merc",
+    "yardBottom": 682.203125,
+    "barTop": 693.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      430,
+      932
+    ],
+    "group": "staff",
+    "yardBottom": 770.203125,
+    "barTop": 781.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  },
+  {
+    "lang": "en",
+    "size": [
+      430,
+      932
+    ],
+    "group": "merc",
+    "yardBottom": 770.203125,
+    "barTop": 781.203125,
+    "background": "linear-gradient(rgba(16, 37, 75, 0.08), rgba(16, 37, 75, 0.08)), url(\"http://127.0.0.1:40829/assets/open-scene/training-room.webp\")",
+    "position": "50% 100%"
+  }
+]

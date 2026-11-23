@@ -1,0 +1,10 @@
+test_cartoon_boss_cues_begin_at_five_ten_fifteen_and_do_not_cover_other_copy (test_battle_impact.BattleImpactTests.test_cartoon_boss_cues_begin_at_five_ten_fifteen_and_do_not_cover_other_copy) ... ok
+test_enemy_hop_reduced_motion_and_effect_budget_leave_engine_state_unchanged (test_battle_impact.BattleImpactTests.test_enemy_hop_reduced_motion_and_effect_budget_leave_engine_state_unchanged) ... ok
+test_failure_and_departure_effects_keep_atomic_loss_refund_and_wallet (test_battle_impact.BattleImpactTests.test_failure_and_departure_effects_keep_atomic_loss_refund_and_wallet) ... ok
+test_rank5_art_is_lazy_and_all_forms_fit_mobile_cells (test_battle_impact.BattleImpactTests.test_rank5_art_is_lazy_and_all_forms_fit_mobile_cells) ... ok
+test_selection_has_no_bubble_and_keeps_the_native_skill_action (test_battle_impact.BattleImpactTests.test_selection_has_no_bubble_and_keeps_the_native_skill_action) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 15.695s
+
+OK

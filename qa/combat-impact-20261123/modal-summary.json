@@ -1,0 +1,7 @@
+{
+  "cases": 200,
+  "complete": true,
+  "failures": [],
+  "uncovered": [],
+  "note": "Final sprite gutter measurements were then revalidated by native battle tests and full runtime checks; main CI repeats entire modal inventory."
+}

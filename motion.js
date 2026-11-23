@@ -91,7 +91,7 @@ const Motion = (() => {
     ctx.save();
     ctx.imageSmoothingEnabled = data.group === 'king' || data.artStyle === 'main-comic';
     ctx.translate(Math.round(x), Math.round(y));
-    ctx.scale(options.flip ? -1 : 1, 1);
+    ctx.scale((options.flip ? -1 : 1)*(options.scaleX??1),options.scaleY??1);
     if (options.angle) ctx.rotate(options.angle);
     if (options.alpha !== undefined) ctx.globalAlpha *= options.alpha;
     const dx=Math.round(-f.pivotX*scale),dy=Math.round(-f.pivotY*scale),w=Math.round(f.w*scale),h=Math.round(f.h*scale);

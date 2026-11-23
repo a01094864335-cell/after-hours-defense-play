@@ -95,7 +95,7 @@ class SingleScreenLayoutTests(unittest.TestCase):
              [SHOP + '#asset-shop > header', SHOP + '.tabs', SHOP + '.paper',
               SHOP + '.recruit-purchase-dock', SHOP + '.purchase', SHOP + 'footer']),
             ('training', TRAINING + '.scroll',
-             [TRAINING + '#asset-training > header', TRAINING + '.tabs', TRAINING + '.ss-people-tabs',
+             [TRAINING + '#asset-training > header', TRAINING + '.tabs',
               TRAINING + '.paper', TRAINING + '.upgrade-bar', TRAINING + '#upgrade', TRAINING + 'footer']),
         ]
         for width, height in SIZES:
@@ -132,7 +132,6 @@ class SingleScreenLayoutTests(unittest.TestCase):
             ('settings', '#menu .single-screen-tabs', 2),
             ('help', '#info .single-screen-tabs', 4),
             ('dossier', '#roster-detail .ss-people-tabs', 3),
-            ('training', TRAINING + '.ss-people-tabs', 2),
         ]:
             with self.subTest(screen=name):
                 page = self.ready(320, 568)
@@ -220,14 +219,17 @@ class SingleScreenLayoutTests(unittest.TestCase):
                 self.assertLessEqual(yard.bounding_box()['y'] + yard.bounding_box()['height'], dock['y'] + 1)
                 fixed = [TRAINING + '#upgrade', TRAINING + '.back', TRAINING + 'footer']
                 before = {selector: page.locator(selector).bounding_box() for selector in fixed}
-                page.locator(TRAINING + '[data-ss-label="effects"]').click()
-                self.assertTrue(yard.is_hidden())
-                page.locator(TRAINING + '.scroll').evaluate('e=>e.scrollTop=e.scrollHeight')
-                ui.assert_reachable(self, page, TRAINING + '#effects details:last-child summary')
+                self.assertEqual(page.locator(TRAINING + '.ss-people-tabs').count(), 0)
+                self.assertTrue(page.locator(TRAINING + '.ss-training-effects').is_hidden())
+                group = page.locator(TRAINING + '[data-group="merc"]')
+                group.focus();page.keyboard.press('Space')
+                self.assertEqual(page.evaluate('trainingGroup'), 'merc')
+                self.assertEqual(group.get_attribute('aria-pressed'), 'true')
+                self.assertTrue(page.locator(TRAINING + '.power').is_hidden())
                 for selector in fixed:
                     self.assert_visible_without_scroll(page, selector)
                     self.assertEqual(page.locator(selector).bounding_box(), before[selector])
-                page.locator(TRAINING + '[data-ss-label="train"]').click()
+                page.locator(TRAINING + '[data-group="staff"]').click()
                 cost = page.evaluate('trainingCost(meta.training.staff)')
                 page.locator(TRAINING + '#upgrade').click()
                 self.assertEqual(page.evaluate('meta.training.staff'), 2)

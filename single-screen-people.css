@@ -110,3 +110,13 @@ html body #roster#roster#roster.ss-people-reflow>.sheet-head{position:relative!i
  #asset-training#asset-training#asset-training.ss-training{overflow:auto!important}
  #asset-training#asset-training#asset-training.ss-training .scroll{flex:none!important;overflow:visible!important}
 }
+
+/* One decision level: choose a group, review its next level, then train. */
+#asset-training#asset-training#asset-training.ss-training :is(.stage,#milestones,.ss-training-effects){display:none!important}
+#asset-training#asset-training#asset-training.ss-training :is(#level,.power){margin-right:0!important}
+#asset-training#asset-training#asset-training.ss-training #level{font-size:22px!important;line-height:1.35!important;margin-bottom:12px!important}
+#asset-training#asset-training#asset-training.ss-training .power{margin-bottom:12px!important;padding:10px 12px!important;border:0!important;border-radius:8px!important;background:#edf4fb!important}
+#asset-training#asset-training#asset-training.ss-training .policy{font-size:12px!important;color:#405773!important;line-height:1.5!important}
+#asset-training#asset-training#asset-training.ss-training .tabs button{border:0!important;box-shadow:none!important;border-radius:10px!important;background:#e7edf5!important;color:#405773!important;min-height:48px!important}
+#asset-training#asset-training#asset-training.ss-training .tabs button[aria-pressed=true]{background:#2258bb!important;color:#fffdf7!important}
+#asset-training#asset-training#asset-training.ss-training .tabs button:after{display:none!important}

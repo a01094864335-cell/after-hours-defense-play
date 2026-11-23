@@ -28,7 +28,7 @@ test('training keeps summary separate from effects and supports large fonts',()=
 test('new training illustration only fills spare room and cannot become a control',()=>{
  assert(js.includes("yard.setAttribute('aria-hidden','true')"));
  assert(css.includes("assets/single-screen/training-yard.webp"));
- assert(css.includes('flex:1 1 0!important;min-height:0!important;max-height:240px!important'));
- assert(css.includes('pointer-events:none!important'));assert(css.includes('max-height:85px!important'));
+ assert(css.includes('flex:1 1 0!important;min-height:0!important;max-height:none!important'));
+ assert(css.includes('pointer-events:none!important'));assert(css.includes("training-yard.webp') center bottom/contain"));
  assert(css.includes('.ss-training.ss-people-reflow .ss-training-yard{display:none!important}'));
 });
