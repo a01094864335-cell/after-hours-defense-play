@@ -200,3 +200,17 @@ body{background:#081421!important}
 /* The retired daily chip no longer supplies clearance above the roster. */
 #asset-lobby#asset-lobby#asset-lobby>.a-gobi{bottom:calc(var(--lobby-dock-height,310px) + 10px)}
 #asset-lobby#asset-lobby#asset-lobby>.a-gobi-ground{bottom:calc(var(--lobby-dock-height,310px) + 6px)}
+
+/* Give the support hero the same portrait slot as each active staff member. */
+#asset-lobby#asset-lobby#asset-lobby .a-roster{grid-template-columns:minmax(0,5fr) minmax(44px,1fr);gap:0}
+#asset-lobby#asset-lobby#asset-lobby .a-support{gap:0;min-width:0;min-height:60px;justify-content:center}
+#asset-lobby#asset-lobby#asset-lobby .a-support>span:first-child{display:none!important}
+#asset-lobby#asset-lobby#asset-lobby .a-support .a-plus:has(img){width:100%;height:55px;background:transparent;border:0;border-radius:0}
+#asset-lobby#asset-lobby#asset-lobby .a-support .a-plus img{display:block;width:100%;height:55px;max-width:100%;object-fit:contain}
+@media(max-height:650px){
+ #asset-lobby#asset-lobby#asset-lobby .a-support .a-plus:has(img),
+ #asset-lobby#asset-lobby#asset-lobby .a-support .a-plus img{height:48px}
+}
+#asset-lobby#asset-lobby#asset-lobby .a-member{justify-content:center;gap:0}
+#asset-lobby#asset-lobby#asset-lobby .a-support{height:68px;align-self:start}
+@media(max-height:650px){#asset-lobby#asset-lobby#asset-lobby .a-support{height:62px}}
