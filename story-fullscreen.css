@@ -93,3 +93,6 @@ html body :is(#promo#promo#promo,#hiring-story#hiring-story#hiring-story) .story
 html body :is(#promo#promo#promo,#hiring-story#hiring-story#hiring-story) button .live-direction-icon{display:none!important}
 
 html body :is(#promo#promo#promo,#hiring-story#hiring-story#hiring-story) #promo-aside:empty{display:none!important}
+
+/* Override the older light-card discovery text on the dark fullscreen footer. */
+html body :is(#promo#promo#promo,#hiring-story#hiring-story#hiring-story) #story-discovery:not(:empty){color:#d4dcdf!important;font-size:12px!important}

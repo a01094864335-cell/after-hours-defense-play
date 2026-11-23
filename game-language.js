@@ -12,6 +12,12 @@ const GameLanguage=(()=>{
   '근무 편성':'Team selection','오늘의 당직':'On duty','저장 백업 · 기기 옮기기':'Back up / transfer saves','영구 훈련소':'Permanent training','스킬 연출 · 간결하게':'Skill effects · Compact','스킬 연출 · 크게 보기':'Skill effects · Full','이 브라우저는 효과음을 지원하지 않아요':'Sound effects are unavailable in this browser.',
   '현재 전투의 웨이브·배치·장비 레벨·SP를 초기화하며 미정산 처치 보상은 지급하지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지돼요. 이미 사용한 아이템은 반환하지 않아요.':'Resets this run’s waves, board, equipment and SP. Unsettled kill rewards are lost. Coins, recruited staff and saved teams are kept. Used items are not refunded.',
   '상점 닫기':'Close shop','도감 닫기':'Close staff list','훈련소 닫기':'Close training','이야기 닫기':'Close story','야간 파견 상점':'Night shift shop','직원 훈련':'Staff training','특수 용병 훈련':'Support training','훈련하기':'Train','인사기록':'Staff records','완료':'Done','편성 완료':'Team ready','공방 나가기':'Leave workshop','확인했어요':'Got it',
+  '알겠어요':'Got it','직원 소환':'Summon staff','SP를 사용해 빈 자리에 랜덤 직원을 파견하세요.':'Spend SP to summon random staff into an empty cell.',
+  '5등급 스킬 해금':'Rank 5 skills','5등급 이상 직원을 선택해 고유 스킬을 사용하세요. 다시 사용하려면 충전 시간이 필요해요.':'Select staff at rank 5 or above to use their unique skill. Wait for its cooldown before using it again.',
+  '같은 종류·등급 합성':'Merge matching staff','같은 직원을 합치면 더 높은 등급의 랜덤 직원이 와요. 합성 실패 확률을 확인하세요.':'Merge staff of the same kind and rank to get random staff at the next rank. Check the failure chance first.',
+  '합성 실패 확률은 2등급 5%부터 7등급 30%까지 증가해요. 실패하면 이동한 직원만 사라져요. 합성권은 선택 후 두 직원을 고르면 사용돼요.':'Failure chance rises from 5% at rank 2 to 30% at rank 7. Only the moving staff is lost on failure. Select a merge ticket, then choose two staff to use it.',
+  '키보드 조작':'Keyboard controls','키보드: 보드에 Tab으로 이동한 뒤 방향키로 칸 이동, Enter·Space로 선택·합성, Escape로 선택 취소, S로 선택 직원 스킬을 사용해요.':'Tab to the board. Use arrow keys to move, Enter or Space to select or merge, Escape to cancel, and S to use the selected staff skill.',
+  '잠깐 쉬어 갈까요?':'Take a break?','전투는 잠시 멈춰 있어요':'The battle is paused.','계속 근무':'Continue shift','근무 종료':'End shift',
   '정예 당직':'Elite shift','화력 지원':'Fire support','느긋한 침입자':'Slow invaders','야식 보급':'Late-night supplies','정비 할인':'Maintenance discount','마력 충전':'Mana recharge','성과급 당직':'Bonus pay','긴축 근무':'Austerity shift','급행 군단':'Marching legion','군단장 특별 훈련':'Boss training','꽁꽁 얼어붙은 밤':'Freezing night','수상한 보급품':'Suspicious supplies','속전속결':'Blitz','위험 수당':'Hazard pay','마력 과부하':'Mana overload'
  };
  const reverse=new Map(Object.entries(messages).map(([ko,en])=>[en,ko]));

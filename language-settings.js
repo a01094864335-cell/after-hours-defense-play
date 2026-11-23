@@ -6,6 +6,8 @@
  field.innerHTML='<legend>언어 / Language</legend><div class="language-options" role="group" aria-label="언어 / Language"><button type="button" id="language-ko" lang="ko" data-language="ko">한국어</button><button type="button" id="language-en" lang="en" data-language="en">English</button></div><small id="language-coverage"></small><p id="language-status" role="status" hidden></p>';
  body.prepend(field);const status=field.querySelector('#language-status');
  function refreshCommon(){
+  const help=document.querySelector('#info');if(help?.open)GameLanguage.translateTree(help);
+  const pause=document.querySelector('#ref-pause');if(pause&&!pause.hidden)GameLanguage.translateTree(pause);
   for(const root of [document,...['asset-lobby-host','asset-roster-host','asset-shop-host','asset-training-host'].map(id=>document.getElementById(id)?.shadowRoot).filter(Boolean)])
    for(const chrome of root.querySelectorAll('.shared-gnb,.shared-art-header,.shared-icon-button'))GameLanguage.translateTree(chrome);
  }

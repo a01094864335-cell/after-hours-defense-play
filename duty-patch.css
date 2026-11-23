@@ -29,3 +29,12 @@ html body #perk#perk.reward-roulette #perk-options>button:disabled,html body #pe
 html body #equipment #equipment-empty{padding:20px 12px!important;text-align:center;color:#173959;font:700 15px/1.5 system-ui}
 
 html body #battle .skill-row:has(#board-trash:not([hidden])) #skill-help{display:none!important}
+
+/* A roulette ticket is disabled for input, not an unavailable reward. Only the
+   current/drawn ticket gets gold; the old SP-card color must not mimic a win. */
+html body #perk#perk#perk.reward-roulette #perk-options>button:not([data-lit=true]){background:#e7eef6!important;box-shadow:0 3px #142c52!important}
+html body #perk#perk.reward-roulette #perk-options>button::before{filter:none!important;opacity:1!important}
+html body #perk#perk.reward-roulette::backdrop{background:#030c1cc7!important}
+html body:has(#perk[open]) #tactical-preview{visibility:hidden!important}
+
+html body #perk#perk#perk.reward-roulette #perk-options>button[data-lit=true]{background:#ffe369!important;box-shadow:inset 0 0 0 3px #d79a14,0 3px #142c52!important}

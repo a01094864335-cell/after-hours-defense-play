@@ -29,7 +29,7 @@
     });
     body.prepend(tabs); select(0);
     if (typeof GameLanguage !== 'undefined') {
-      const english = {basic:'Basic', manage:'Manage', basics:'Basics', merge:'Merge', support:'Battle', boss:'Bosses'};
+      const english = {basic:'Basic', manage:'Manage', basics:'Guide', merge:'Merge', support:'Fight', boss:'Boss'};
       const translateTabs = () => panels.forEach(({button}, i) => { button.dataset.noTranslate = 'true'; button.textContent = GameLanguage.current === 'en' ? english[definitions[i][0]] : definitions[i][1]; });
       GameLanguage.subscribe(translateTabs); translateTabs();
     }

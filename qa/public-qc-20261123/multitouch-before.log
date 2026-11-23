@@ -1,0 +1,14 @@
+test_secondary_finger_cannot_replace_or_release_primary_drag (test_qc_november.NovemberQCTests.test_secondary_finger_cannot_replace_or_release_primary_drag) ... FAIL
+
+======================================================================
+FAIL: test_secondary_finger_cannot_replace_or_release_primary_drag (test_qc_november.NovemberQCTests.test_secondary_finger_cannot_replace_or_release_primary_drag)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 105, in test_secondary_finger_cannot_replace_or_release_primary_drag
+    self.assertEqual(p.evaluate('drag.from'),ids[0])
+AssertionError: 10 != 6
+
+----------------------------------------------------------------------
+Ran 1 test in 14.013s
+
+FAILED (failures=1)

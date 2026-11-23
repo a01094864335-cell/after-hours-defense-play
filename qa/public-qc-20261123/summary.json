@@ -1,0 +1,30 @@
+{
+  "sourceCommit": "871d5817c8565d9d10df07a22c0ea43b28509561",
+  "scenarioCount": 124,
+  "independentAttemptsPerScenario": 10,
+  "executionCount": 1240,
+  "counts": {
+    "passed": 1240
+  },
+  "coverage": "Every inventory scenario has exactly attempts 1..10; no retries; no fixture errors.",
+  "candidateRegressionTests": {
+    "passed": 8,
+    "log": "qc-after-eight.log"
+  },
+  "screenCaptures": {
+    "before": 102,
+    "after": 68,
+    "pageErrors": 0
+  },
+  "publicSubpathJourneys": {
+    "passed": 10,
+    "checkGroups": 60,
+    "report": "public-subpath-report.json"
+  },
+  "publicOrigin": "Blocked by CONNECT policy; tests use the official packaged game locally, not the public CDN.",
+  "candidateRuntime": {
+    "passed": 3334,
+    "failed": 0,
+    "log": "runtime-final.log"
+  }
+}

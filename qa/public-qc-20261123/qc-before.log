@@ -1,0 +1,47 @@
+test_defeat_does_not_claim_a_safe_clock_out (test_qc_november.NovemberQCTests.test_defeat_does_not_claim_a_safe_clock_out) ... FAIL
+test_english_discard_confirmation_preserves_the_high_rank_guard (test_qc_november.NovemberQCTests.test_english_discard_confirmation_preserves_the_high_rank_guard) ... FAIL
+test_roulette_has_one_highlight_and_full_color_reward_portraits (test_qc_november.NovemberQCTests.test_roulette_has_one_highlight_and_full_color_reward_portraits) ... FAIL
+test_story_discovery_is_readable_on_fullscreen_art (test_qc_november.NovemberQCTests.test_story_discovery_is_readable_on_fullscreen_art) ... FAIL
+
+======================================================================
+FAIL: test_defeat_does_not_claim_a_safe_clock_out (test_qc_november.NovemberQCTests.test_defeat_does_not_claim_a_safe_clock_out)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 43, in test_defeat_does_not_claim_a_safe_clock_out
+    self.assertNotIn('무사히',p.locator('#result-title-badge').inner_text())
+AssertionError: '무사히' unexpectedly found in '무사히 근무 종료'
+
+======================================================================
+FAIL: test_english_discard_confirmation_preserves_the_high_rank_guard (test_qc_november.NovemberQCTests.test_english_discard_confirmation_preserves_the_high_rank_guard)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 48, in test_english_discard_confirmation_preserves_the_high_rank_guard
+    self.assertEqual(p.locator('#board-trash span').inner_text(),'Trash')
+AssertionError: '버리기' != 'Trash'
+- 버리기
++ Trash
+
+
+======================================================================
+FAIL: test_roulette_has_one_highlight_and_full_color_reward_portraits (test_qc_november.NovemberQCTests.test_roulette_has_one_highlight_and_full_color_reward_portraits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 32, in test_roulette_has_one_highlight_and_full_color_reward_portraits
+    self.assertEqual(card['filter'],'none',card)
+AssertionError: 'grayscale(1)' != 'none'
+- grayscale(1)
++ none
+ : {'winner': False, 'color': 'rgb(255, 227, 74)', 'filter': 'grayscale(1)'}
+
+======================================================================
+FAIL: test_story_discovery_is_readable_on_fullscreen_art (test_qc_november.NovemberQCTests.test_story_discovery_is_readable_on_fullscreen_art)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 20, in test_story_discovery_is_readable_on_fullscreen_art
+    self.assertGreater(min(channels),150,color)
+AssertionError: 51 not greater than 150 : rgb(51, 75, 104)
+
+----------------------------------------------------------------------
+Ran 4 tests in 19.528s
+
+FAILED (failures=4)

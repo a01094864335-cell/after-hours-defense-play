@@ -1,0 +1,14 @@
+test_unchanged_recycle_controls_do_not_rewrite_dom (test_qc_november.NovemberQCTests.test_unchanged_recycle_controls_do_not_rewrite_dom) ... FAIL
+
+======================================================================
+FAIL: test_unchanged_recycle_controls_do_not_rewrite_dom (test_qc_november.NovemberQCTests.test_unchanged_recycle_controls_do_not_rewrite_dom)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/after-hours-defense-play/tests/test_qc_november.py", line 117, in test_unchanged_recycle_controls_do_not_rewrite_dom
+    self.assertEqual(changes,0)
+AssertionError: 60 != 0
+
+----------------------------------------------------------------------
+Ran 1 test in 6.907s
+
+FAILED (failures=1)
