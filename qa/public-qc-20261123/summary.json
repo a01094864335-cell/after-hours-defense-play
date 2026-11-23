@@ -26,5 +26,20 @@
     "passed": 3334,
     "failed": 0,
     "log": "runtime-final.log"
+  },
+  "firstMainCI": {
+    "runId": 45099157259,
+    "passed": 1319,
+    "failed": 1,
+    "failedScenario": "test_duty_patch.DutyPatchTests.test_drag_to_trash_frees_cell",
+    "attempt": 7,
+    "deployment": "blocked",
+    "originalReport": "main-first-run-shard-3.json"
+  },
+  "dragObservationFollowup": {
+    "originalProbeAttempts": 80,
+    "originalProbeFailures": 0,
+    "eventConditionTestPasses": 10,
+    "gameCodeChanged": false
   }
 }
