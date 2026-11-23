@@ -3,6 +3,10 @@
 const GameLanguage=(()=>{
  const key='after-hours-language-v1',listeners=new Set(),originals=new WeakMap();
  const messages={
+
+  "일반 직원 17종 각 약 5.29%, 지원 영웅 7종 각 약 1.43%. 9팩 연속 미보유 지원을 만나지 못하면 다음 팩은 미보유 지원 중 균등 확률로 확정됩니다. 미보유 지원 채용 시 보장 횟수가 초기화됩니다.": "17 staff · ~5.29% each; 7 supports · ~1.43% each. After 9 packs without unowned support, the next guarantees one with equal odds. Recruiting unowned support resets the counter.",
+  "중복은 채용 포인트 +1. 일반 직원은 3포인트, 지원 영웅은 10포인트로 도감에서 지정 채용할 수 있습니다.": "Duplicate: +1 point. Choose staff for 3 points or support for 10 in the roster."
+,
   '지급 완료':'Paid','저장 재시도 필요':'Retry saving',
   '등급 합성권':'Rank merge ticket','종류 합성권':'Kind merge ticket','마왕 깨우기':'Wake the king',
   '종류가 달라도 같은 등급 합성':'Merge matching ranks across kinds',
@@ -17,7 +21,7 @@ const GameLanguage=(()=>{
   '신입 연수를 마친 뒤 근무 직원을 바꿀 수 있어요.':'Complete orientation to change your team.','진행 중인 근무를 마친 뒤 편성할 수 있어요.':'Finish this shift to edit your team.','현재 판을 종료하거나 초기화한 뒤 편성할 수 있어요.':'End or reset this run to edit your team.','현재 상태에서는 사용할 수 없어요.':'Unavailable right now.',
   '근무 편성':'Team selection','오늘의 당직':'On duty','저장 백업 · 기기 옮기기':'Back up / transfer saves','영구 훈련소':'Permanent training','스킬 연출 · 간결하게':'Skill effects · Compact','스킬 연출 · 크게 보기':'Skill effects · Full','이 브라우저는 효과음을 지원하지 않아요':'Sound effects are unavailable in this browser.',
   '현재 전투의 웨이브·배치·장비 레벨·SP를 초기화하며 미정산 처치 보상은 지급하지 않아요. 보유 코인·영구 고용·저장된 근무 명단은 유지돼요. 이미 사용한 아이템은 반환하지 않아요.':'Resets this run’s waves, board, equipment and SP. Unsettled kill rewards are lost. Coins, recruited staff and saved teams are kept. Used items are not refunded.',
-  '상점 닫기':'Close shop','도감 닫기':'Close staff list','훈련소 닫기':'Close training','이야기 닫기':'Close story','야간 파견 상점':'Night shift shop','직원 훈련':'Staff training','특수 용병 훈련':'Support training','훈련하기':'Train','인사기록':'Staff records','완료':'Done','편성 완료':'Team ready','공방 나가기':'Leave workshop','확인했어요':'Got it',
+  '상점 닫기':'Close shop','도감 닫기':'Close staff list','훈련소 닫기':'Close training','이야기 닫기':'Close story','야간 파견 상점':'Shop','직원 훈련':'Staff training','특수 용병 훈련':'Support training','훈련하기':'Train','인사기록':'Staff records','완료':'Done','편성 완료':'Team ready','공방 나가기':'Leave workshop','확인했어요':'Got it',
   '알겠어요':'Got it','직원 소환':'Summon staff','빈칸에 랜덤 직원 소환 · SP 소모':'Spend SP → random staff in an empty cell.',
   '5등급 스킬 해금':'Rank 5 skills','★5 이상 직원 선택 → 스킬 사용 · 재사용 대기':'Select ★5+ staff to use skills. Cooldowns apply.',
   '같은 종류·등급 합성':'Merge matching staff','같은 종류·등급 2명 → 다음 등급의 랜덤 직원':'Match kind + rank → random staff one rank higher.',
