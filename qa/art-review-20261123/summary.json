@@ -1,0 +1,28 @@
+{
+  "baseline": "c704da43b09d239bd9c3467ed37bb8e6d8ceda80",
+  "imageFileChecks": 884,
+  "sourceVisualReview": {
+    "storyPanels": 236,
+    "staffPoses": 102,
+    "otherCombatPoses": 120
+  },
+  "runtime": {
+    "primaryScreens": 126,
+    "supportScreens": 14,
+    "storyStates": 472,
+    "pageErrors": 0
+  },
+  "localTests": {
+    "nodePass": 3348,
+    "sharedChromePass": 10,
+    "assetScreensFinalPass": 4,
+    "modalCapturesBeforeFinalDecorativeFloorAlignment": 200,
+    "finalTrainingStates": 12
+  },
+  "ciStatus": "pending final main workflow; linked from pull request",
+  "notes": [
+    "Fullscreen backgrounds intentionally extend behind caption scrims.",
+    "Final 12 training screenshots supersede pre-floor-alignment captures.",
+    "Packaged historical/reference images receive file checks, not a claim of full hand-drawn visual approval."
+  ]
+}

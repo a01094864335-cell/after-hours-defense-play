@@ -1,0 +1,9 @@
+test_main_roster_navigation_and_compact_scroll (test_asset_screens.AssetScreenTests.test_main_roster_navigation_and_compact_scroll) ... ok
+test_shop_live_wallet_guarantee_and_navigation (test_asset_screens.AssetScreenTests.test_shop_live_wallet_guarantee_and_navigation) ... ok
+test_staff_and_support_actions_keep_original_state_rules (test_asset_screens.AssetScreenTests.test_staff_and_support_actions_keep_original_state_rules) ... ok
+test_training_live_upgrades_and_mobile_navigation (test_asset_screens.AssetScreenTests.test_training_live_upgrades_and_mobile_navigation) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 23.251s
+
+OK

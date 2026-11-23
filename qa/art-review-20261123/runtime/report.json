@@ -1,0 +1,6419 @@
+{
+  "surfaces": [
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "lobby",
+      "file": "ko-320-lobby.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "settings",
+      "file": "ko-320-settings.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "info",
+      "file": "ko-320-info.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "pause",
+      "file": "ko-320-pause.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "roster",
+      "file": "ko-320-roster.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "roster-detail",
+      "file": "ko-320-roster-detail.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "shop-pack",
+      "file": "ko-320-shop-pack.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "shop-items",
+      "file": "ko-320-shop-items.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "training-staff",
+      "file": "ko-320-training-staff.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "training-merc",
+      "file": "ko-320-training-merc.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "equipment",
+      "file": "ko-320-equipment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "story-owned",
+      "file": "ko-320-story-owned.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "cinematic",
+      "file": "ko-320-cinematic.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "perk-wave5",
+      "file": "ko-320-perk-wave5.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "deck",
+      "file": "ko-320-deck.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "daily",
+      "file": "ko-320-daily.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "recruitment",
+      "file": "ko-320-recruitment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "hiring",
+      "file": "ko-320-hiring.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "starter",
+      "file": "ko-320-starter.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "staff-trial",
+      "file": "ko-320-staff-trial.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "result",
+      "file": "ko-320-result.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "lobby",
+      "file": "ko-390-lobby.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "settings",
+      "file": "ko-390-settings.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "info",
+      "file": "ko-390-info.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "pause",
+      "file": "ko-390-pause.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "roster",
+      "file": "ko-390-roster.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "roster-detail",
+      "file": "ko-390-roster-detail.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "shop-pack",
+      "file": "ko-390-shop-pack.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "shop-items",
+      "file": "ko-390-shop-items.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "training-staff",
+      "file": "ko-390-training-staff.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "training-merc",
+      "file": "ko-390-training-merc.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "equipment",
+      "file": "ko-390-equipment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "story-owned",
+      "file": "ko-390-story-owned.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "cinematic",
+      "file": "ko-390-cinematic.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "perk-wave5",
+      "file": "ko-390-perk-wave5.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "deck",
+      "file": "ko-390-deck.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "daily",
+      "file": "ko-390-daily.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "recruitment",
+      "file": "ko-390-recruitment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "hiring",
+      "file": "ko-390-hiring.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "starter",
+      "file": "ko-390-starter.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "staff-trial",
+      "file": "ko-390-staff-trial.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "result",
+      "file": "ko-390-result.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "lobby",
+      "file": "ko-430-lobby.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "settings",
+      "file": "ko-430-settings.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "info",
+      "file": "ko-430-info.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "pause",
+      "file": "ko-430-pause.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "roster",
+      "file": "ko-430-roster.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "roster-detail",
+      "file": "ko-430-roster-detail.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "shop-pack",
+      "file": "ko-430-shop-pack.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "shop-items",
+      "file": "ko-430-shop-items.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "training-staff",
+      "file": "ko-430-training-staff.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "training-merc",
+      "file": "ko-430-training-merc.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "equipment",
+      "file": "ko-430-equipment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "story-owned",
+      "file": "ko-430-story-owned.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "cinematic",
+      "file": "ko-430-cinematic.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "perk-wave5",
+      "file": "ko-430-perk-wave5.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "deck",
+      "file": "ko-430-deck.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "daily",
+      "file": "ko-430-daily.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "recruitment",
+      "file": "ko-430-recruitment.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "hiring",
+      "file": "ko-430-hiring.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "starter",
+      "file": "ko-430-starter.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "staff-trial",
+      "file": "ko-430-staff-trial.jpg"
+    },
+    {
+      "language": "ko",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "result",
+      "file": "ko-430-result.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "lobby",
+      "file": "en-320-lobby.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "settings",
+      "file": "en-320-settings.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "info",
+      "file": "en-320-info.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "pause",
+      "file": "en-320-pause.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "roster",
+      "file": "en-320-roster.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "roster-detail",
+      "file": "en-320-roster-detail.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "shop-pack",
+      "file": "en-320-shop-pack.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "shop-items",
+      "file": "en-320-shop-items.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "training-staff",
+      "file": "en-320-training-staff.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "training-merc",
+      "file": "en-320-training-merc.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "equipment",
+      "file": "en-320-equipment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "story-owned",
+      "file": "en-320-story-owned.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "cinematic",
+      "file": "en-320-cinematic.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "perk-wave5",
+      "file": "en-320-perk-wave5.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "deck",
+      "file": "en-320-deck.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "daily",
+      "file": "en-320-daily.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "recruitment",
+      "file": "en-320-recruitment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "hiring",
+      "file": "en-320-hiring.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "starter",
+      "file": "en-320-starter.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "staff-trial",
+      "file": "en-320-staff-trial.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        320,
+        568
+      ],
+      "name": "result",
+      "file": "en-320-result.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "lobby",
+      "file": "en-390-lobby.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "settings",
+      "file": "en-390-settings.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "info",
+      "file": "en-390-info.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "pause",
+      "file": "en-390-pause.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "roster",
+      "file": "en-390-roster.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "roster-detail",
+      "file": "en-390-roster-detail.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "shop-pack",
+      "file": "en-390-shop-pack.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "shop-items",
+      "file": "en-390-shop-items.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "training-staff",
+      "file": "en-390-training-staff.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "training-merc",
+      "file": "en-390-training-merc.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "equipment",
+      "file": "en-390-equipment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "story-owned",
+      "file": "en-390-story-owned.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "cinematic",
+      "file": "en-390-cinematic.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "perk-wave5",
+      "file": "en-390-perk-wave5.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "deck",
+      "file": "en-390-deck.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "daily",
+      "file": "en-390-daily.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "recruitment",
+      "file": "en-390-recruitment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "hiring",
+      "file": "en-390-hiring.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "starter",
+      "file": "en-390-starter.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "staff-trial",
+      "file": "en-390-staff-trial.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        390,
+        844
+      ],
+      "name": "result",
+      "file": "en-390-result.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "lobby",
+      "file": "en-430-lobby.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "settings",
+      "file": "en-430-settings.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "info",
+      "file": "en-430-info.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "pause",
+      "file": "en-430-pause.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "roster",
+      "file": "en-430-roster.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "roster-detail",
+      "file": "en-430-roster-detail.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "shop-pack",
+      "file": "en-430-shop-pack.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "shop-items",
+      "file": "en-430-shop-items.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "training-staff",
+      "file": "en-430-training-staff.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "training-merc",
+      "file": "en-430-training-merc.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "equipment",
+      "file": "en-430-equipment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "story-owned",
+      "file": "en-430-story-owned.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "cinematic",
+      "file": "en-430-cinematic.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "perk-wave5",
+      "file": "en-430-perk-wave5.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "deck",
+      "file": "en-430-deck.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "daily",
+      "file": "en-430-daily.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "recruitment",
+      "file": "en-430-recruitment.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "hiring",
+      "file": "en-430-hiring.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "starter",
+      "file": "en-430-starter.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "staff-trial",
+      "file": "en-430-staff-trial.jpg"
+    },
+    {
+      "language": "en",
+      "viewport": [
+        430,
+        932
+      ],
+      "name": "result",
+      "file": "en-430-result.jpg"
+    }
+  ],
+  "stories": [
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 1,
+      "image": "assets/comic/01-first-shift-sd.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 2,
+      "image": "assets/comic/02-invasion.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 3,
+      "image": "assets/comic/03-emergency-staff.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 4,
+      "image": "assets/comic/04-night-duty.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 263.65625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 1,
+      "image": "assets/castle-stories/midnight-soup/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 2,
+      "image": "assets/castle-stories/midnight-soup/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 3,
+      "image": "assets/castle-stories/midnight-soup/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 4,
+      "image": "assets/castle-stories/midnight-soup/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 1,
+      "image": "assets/castle-stories/clean-floor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 2,
+      "image": "assets/castle-stories/clean-floor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 3,
+      "image": "assets/castle-stories/clean-floor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 4,
+      "image": "assets/castle-stories/clean-floor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 1,
+      "image": "assets/castle-stories/payday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 2,
+      "image": "assets/castle-stories/payday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 3,
+      "image": "assets/castle-stories/payday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 4,
+      "image": "assets/castle-stories/payday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 1,
+      "image": "assets/castle-stories/parcel/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 2,
+      "image": "assets/castle-stories/parcel/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 3,
+      "image": "assets/castle-stories/parcel/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 4,
+      "image": "assets/castle-stories/parcel/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 1,
+      "image": "assets/castle-stories/blackout/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 2,
+      "image": "assets/castle-stories/blackout/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 3,
+      "image": "assets/castle-stories/blackout/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 4,
+      "image": "assets/castle-stories/blackout/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 1,
+      "image": "assets/castle-stories/attendance/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 2,
+      "image": "assets/castle-stories/attendance/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 3,
+      "image": "assets/castle-stories/attendance/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 4,
+      "image": "assets/castle-stories/attendance/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 1,
+      "image": "assets/castle-stories/cape/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 2,
+      "image": "assets/castle-stories/cape/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 3,
+      "image": "assets/castle-stories/cape/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 4,
+      "image": "assets/castle-stories/cape/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 1,
+      "image": "assets/castle-stories/counseling/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 2,
+      "image": "assets/castle-stories/counseling/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 3,
+      "image": "assets/castle-stories/counseling/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 4,
+      "image": "assets/castle-stories/counseling/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 1,
+      "image": "assets/castle-stories/inventory/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 2,
+      "image": "assets/castle-stories/inventory/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 3,
+      "image": "assets/castle-stories/inventory/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 4,
+      "image": "assets/castle-stories/inventory/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 1,
+      "image": "assets/castle-stories/inspection/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 2,
+      "image": "assets/castle-stories/inspection/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 3,
+      "image": "assets/castle-stories/inspection/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 4,
+      "image": "assets/castle-stories/inspection/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 1,
+      "image": "assets/castle-stories/coffee/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 2,
+      "image": "assets/castle-stories/coffee/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 3,
+      "image": "assets/castle-stories/coffee/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 4,
+      "image": "assets/castle-stories/coffee/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 1,
+      "image": "assets/castle-stories/birthday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 2,
+      "image": "assets/castle-stories/birthday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 3,
+      "image": "assets/castle-stories/birthday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 4,
+      "image": "assets/castle-stories/birthday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 1,
+      "image": "assets/castle-stories/rain/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 2,
+      "image": "assets/castle-stories/rain/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 3,
+      "image": "assets/castle-stories/rain/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 4,
+      "image": "assets/castle-stories/rain/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 1,
+      "image": "assets/castle-stories/photo/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 2,
+      "image": "assets/castle-stories/photo/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 3,
+      "image": "assets/castle-stories/photo/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 4,
+      "image": "assets/castle-stories/photo/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 1,
+      "image": "assets/castle-stories/lost-key/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 2,
+      "image": "assets/castle-stories/lost-key/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 3,
+      "image": "assets/castle-stories/lost-key/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 4,
+      "image": "assets/castle-stories/lost-key/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 1,
+      "image": "assets/castle-stories/quiet-night/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 2,
+      "image": "assets/castle-stories/quiet-night/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 3,
+      "image": "assets/castle-stories/quiet-night/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 4,
+      "image": "assets/castle-stories/quiet-night/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 1,
+      "image": "assets/castle-stories/suggestion/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 2,
+      "image": "assets/castle-stories/suggestion/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 3,
+      "image": "assets/castle-stories/suggestion/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 4,
+      "image": "assets/castle-stories/suggestion/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 1,
+      "image": "assets/castle-stories/gate-cat/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 2,
+      "image": "assets/castle-stories/gate-cat/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 3,
+      "image": "assets/castle-stories/gate-cat/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 4,
+      "image": "assets/castle-stories/gate-cat/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 1,
+      "image": "assets/castle-stories/shift-handoff/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 2,
+      "image": "assets/castle-stories/shift-handoff/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 3,
+      "image": "assets/castle-stories/shift-handoff/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 4,
+      "image": "assets/castle-stories/shift-handoff/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 1,
+      "image": "assets/castle-stories/empty-throne/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 2,
+      "image": "assets/castle-stories/empty-throne/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 3,
+      "image": "assets/castle-stories/empty-throne/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 4,
+      "image": "assets/castle-stories/empty-throne/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 1,
+      "image": "assets/castle-stories/fridge-label/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 2,
+      "image": "assets/castle-stories/fridge-label/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 3,
+      "image": "assets/castle-stories/fridge-label/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 4,
+      "image": "assets/castle-stories/fridge-label/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 1,
+      "image": "assets/castle-stories/shortcut-trap/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 2,
+      "image": "assets/castle-stories/shortcut-trap/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 3,
+      "image": "assets/castle-stories/shortcut-trap/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 4,
+      "image": "assets/castle-stories/shortcut-trap/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 1,
+      "image": "assets/castle-stories/praise-approval/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 2,
+      "image": "assets/castle-stories/praise-approval/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 3,
+      "image": "assets/castle-stories/praise-approval/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 4,
+      "image": "assets/castle-stories/praise-approval/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 1,
+      "image": "assets/castle-stories/chair-project/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 2,
+      "image": "assets/castle-stories/chair-project/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 3,
+      "image": "assets/castle-stories/chair-project/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 4,
+      "image": "assets/castle-stories/chair-project/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 1,
+      "image": "assets/castle-stories/laundry-weather/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 2,
+      "image": "assets/castle-stories/laundry-weather/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 3,
+      "image": "assets/castle-stories/laundry-weather/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 4,
+      "image": "assets/castle-stories/laundry-weather/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 1,
+      "image": "assets/castle-stories/guard-dog-holiday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 2,
+      "image": "assets/castle-stories/guard-dog-holiday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 3,
+      "image": "assets/castle-stories/guard-dog-holiday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 4,
+      "image": "assets/castle-stories/guard-dog-holiday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 1,
+      "image": "assets/castle-stories/castle-sports/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 2,
+      "image": "assets/castle-stories/castle-sports/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 3,
+      "image": "assets/castle-stories/castle-sports/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 4,
+      "image": "assets/castle-stories/castle-sports/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 1,
+      "image": "assets/castle-stories/one-note-band/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 2,
+      "image": "assets/castle-stories/one-note-band/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 3,
+      "image": "assets/castle-stories/one-note-band/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 4,
+      "image": "assets/castle-stories/one-note-band/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 1,
+      "image": "assets/castle-stories/shield-bandage/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 2,
+      "image": "assets/castle-stories/shield-bandage/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 3,
+      "image": "assets/castle-stories/shield-bandage/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 4,
+      "image": "assets/castle-stories/shield-bandage/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 1,
+      "image": "assets/castle-stories/slow-reply/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 2,
+      "image": "assets/castle-stories/slow-reply/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 3,
+      "image": "assets/castle-stories/slow-reply/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 4,
+      "image": "assets/castle-stories/slow-reply/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 1,
+      "image": "assets/castle-stories/castle-flea-market/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 2,
+      "image": "assets/castle-stories/castle-flea-market/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 3,
+      "image": "assets/castle-stories/castle-flea-market/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 4,
+      "image": "assets/castle-stories/castle-flea-market/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 1,
+      "image": "assets/castle-stories/vacation-form/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 2,
+      "image": "assets/castle-stories/vacation-form/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 3,
+      "image": "assets/castle-stories/vacation-form/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 4,
+      "image": "assets/castle-stories/vacation-form/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 1,
+      "image": "assets/castle-stories/overtime-shadow/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 2,
+      "image": "assets/castle-stories/overtime-shadow/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 3,
+      "image": "assets/castle-stories/overtime-shadow/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 4,
+      "image": "assets/castle-stories/overtime-shadow/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 1,
+      "image": "assets/castle-stories/ghost-scary-story/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 2,
+      "image": "assets/castle-stories/ghost-scary-story/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 3,
+      "image": "assets/castle-stories/ghost-scary-story/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 4,
+      "image": "assets/castle-stories/ghost-scary-story/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 1,
+      "image": "assets/castle-stories/plant-duty/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 2,
+      "image": "assets/castle-stories/plant-duty/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 3,
+      "image": "assets/castle-stories/plant-duty/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 4,
+      "image": "assets/castle-stories/plant-duty/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 1,
+      "image": "assets/castle-stories/emergency-cookie/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 2,
+      "image": "assets/castle-stories/emergency-cookie/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 3,
+      "image": "assets/castle-stories/emergency-cookie/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 4,
+      "image": "assets/castle-stories/emergency-cookie/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 1,
+      "image": "assets/castle-stories/fallen-star/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 2,
+      "image": "assets/castle-stories/fallen-star/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 3,
+      "image": "assets/castle-stories/fallen-star/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 4,
+      "image": "assets/castle-stories/fallen-star/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 1,
+      "image": "assets/castle-stories/call-by-name/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 2,
+      "image": "assets/castle-stories/call-by-name/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 3,
+      "image": "assets/castle-stories/call-by-name/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 4,
+      "image": "assets/castle-stories/call-by-name/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 1,
+      "image": "assets/castle-stories/same-place-tomorrow/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 2,
+      "image": "assets/castle-stories/same-place-tomorrow/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 3,
+      "image": "assets/castle-stories/same-place-tomorrow/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 4,
+      "image": "assets/castle-stories/same-place-tomorrow/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 1,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 2,
+      "image": "assets/hiring-stories/ghost-courier/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 3,
+      "image": "assets/hiring-stories/ghost-courier/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 4,
+      "image": "assets/hiring-stories/ghost-courier/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 1,
+      "image": "assets/hiring-stories/bat-nurse/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 2,
+      "image": "assets/hiring-stories/bat-nurse/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 3,
+      "image": "assets/hiring-stories/bat-nurse/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 4,
+      "image": "assets/hiring-stories/bat-nurse/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 1,
+      "image": "assets/hiring-stories/skeleton-chef/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 2,
+      "image": "assets/hiring-stories/skeleton-chef/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 3,
+      "image": "assets/hiring-stories/skeleton-chef/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 4,
+      "image": "assets/hiring-stories/skeleton-chef/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 1,
+      "image": "assets/hiring-stories/mimic-storekeeper/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 2,
+      "image": "assets/hiring-stories/mimic-storekeeper/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 3,
+      "image": "assets/hiring-stories/mimic-storekeeper/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 4,
+      "image": "assets/hiring-stories/mimic-storekeeper/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 1,
+      "image": "assets/hiring-stories/spider-tailor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 2,
+      "image": "assets/hiring-stories/spider-tailor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 3,
+      "image": "assets/hiring-stories/spider-tailor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 4,
+      "image": "assets/hiring-stories/spider-tailor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 1,
+      "image": "assets/hiring-stories/nightmare-counselor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 2,
+      "image": "assets/hiring-stories/nightmare-counselor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 3,
+      "image": "assets/hiring-stories/nightmare-counselor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 4,
+      "image": "assets/hiring-stories/nightmare-counselor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 1,
+      "image": "assets/hiring-stories/kobold-recruiter/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 2,
+      "image": "assets/hiring-stories/kobold-recruiter/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 3,
+      "image": "assets/hiring-stories/kobold-recruiter/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 4,
+      "image": "assets/hiring-stories/kobold-recruiter/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 1,
+      "image": "assets/hiring-stories/duru-archivist/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 2,
+      "image": "assets/hiring-stories/duru-archivist/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 3,
+      "image": "assets/hiring-stories/duru-archivist/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 4,
+      "image": "assets/hiring-stories/duru-archivist/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 1,
+      "image": "assets/hiring-stories/kkangtong-engineer/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 2,
+      "image": "assets/hiring-stories/kkangtong-engineer/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 3,
+      "image": "assets/hiring-stories/kkangtong-engineer/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 4,
+      "image": "assets/hiring-stories/kkangtong-engineer/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 1,
+      "image": "assets/hiring-stories/ddangkong-miner/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 2,
+      "image": "assets/hiring-stories/ddangkong-miner/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 3,
+      "image": "assets/hiring-stories/ddangkong-miner/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 4,
+      "image": "assets/hiring-stories/ddangkong-miner/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 1,
+      "image": "assets/hiring-stories/chalkak-photographer/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 2,
+      "image": "assets/hiring-stories/chalkak-photographer/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 3,
+      "image": "assets/hiring-stories/chalkak-photographer/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 4,
+      "image": "assets/hiring-stories/chalkak-photographer/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 1,
+      "image": "assets/hiring-stories/bongtu-postmaster/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 2,
+      "image": "assets/hiring-stories/bongtu-postmaster/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 3,
+      "image": "assets/hiring-stories/bongtu-postmaster/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 4,
+      "image": "assets/hiring-stories/bongtu-postmaster/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-ward/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-ward/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-ward/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-ward/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-accountant/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-accountant/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-accountant/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-accountant/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-rescue/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-rescue/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-rescue/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-rescue/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-chikchik/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-chikchik/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-chikchik/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-chikchik/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-banchang/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-banchang/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-banchang/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-banchang/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-coco/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-coco/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-coco/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-coco/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-q/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-q/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-q/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "ko",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-q/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 1,
+      "image": "assets/comic/01-first-shift-sd.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 2,
+      "image": "assets/comic/02-invasion.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 3,
+      "image": "assets/comic/03-emergency-staff.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 263.65625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "first-shift",
+      "panel": 4,
+      "image": "assets/comic/04-night-duty.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 241.265625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 1,
+      "image": "assets/castle-stories/midnight-soup/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 2,
+      "image": "assets/castle-stories/midnight-soup/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 3,
+      "image": "assets/castle-stories/midnight-soup/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "midnight-soup",
+      "panel": 4,
+      "image": "assets/castle-stories/midnight-soup/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 1,
+      "image": "assets/castle-stories/clean-floor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 2,
+      "image": "assets/castle-stories/clean-floor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 3,
+      "image": "assets/castle-stories/clean-floor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "clean-floor",
+      "panel": 4,
+      "image": "assets/castle-stories/clean-floor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 1,
+      "image": "assets/castle-stories/payday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 2,
+      "image": "assets/castle-stories/payday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 3,
+      "image": "assets/castle-stories/payday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 289.25
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "payday",
+      "panel": 4,
+      "image": "assets/castle-stories/payday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 1,
+      "image": "assets/castle-stories/parcel/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 2,
+      "image": "assets/castle-stories/parcel/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 3,
+      "image": "assets/castle-stories/parcel/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "parcel",
+      "panel": 4,
+      "image": "assets/castle-stories/parcel/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 1,
+      "image": "assets/castle-stories/blackout/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 2,
+      "image": "assets/castle-stories/blackout/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 3,
+      "image": "assets/castle-stories/blackout/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "blackout",
+      "panel": 4,
+      "image": "assets/castle-stories/blackout/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 1,
+      "image": "assets/castle-stories/attendance/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 2,
+      "image": "assets/castle-stories/attendance/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 3,
+      "image": "assets/castle-stories/attendance/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "attendance",
+      "panel": 4,
+      "image": "assets/castle-stories/attendance/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 1,
+      "image": "assets/castle-stories/cape/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 2,
+      "image": "assets/castle-stories/cape/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 3,
+      "image": "assets/castle-stories/cape/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "cape",
+      "panel": 4,
+      "image": "assets/castle-stories/cape/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 1,
+      "image": "assets/castle-stories/counseling/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 2,
+      "image": "assets/castle-stories/counseling/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 289.25
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 3,
+      "image": "assets/castle-stories/counseling/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "counseling",
+      "panel": 4,
+      "image": "assets/castle-stories/counseling/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 1,
+      "image": "assets/castle-stories/inventory/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 2,
+      "image": "assets/castle-stories/inventory/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 3,
+      "image": "assets/castle-stories/inventory/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inventory",
+      "panel": 4,
+      "image": "assets/castle-stories/inventory/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 1,
+      "image": "assets/castle-stories/inspection/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 263.65625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 2,
+      "image": "assets/castle-stories/inspection/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 3,
+      "image": "assets/castle-stories/inspection/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "inspection",
+      "panel": 4,
+      "image": "assets/castle-stories/inspection/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 1,
+      "image": "assets/castle-stories/coffee/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 2,
+      "image": "assets/castle-stories/coffee/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 3,
+      "image": "assets/castle-stories/coffee/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "coffee",
+      "panel": 4,
+      "image": "assets/castle-stories/coffee/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 1,
+      "image": "assets/castle-stories/birthday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 2,
+      "image": "assets/castle-stories/birthday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 3,
+      "image": "assets/castle-stories/birthday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "birthday",
+      "panel": 4,
+      "image": "assets/castle-stories/birthday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 1,
+      "image": "assets/castle-stories/rain/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 2,
+      "image": "assets/castle-stories/rain/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 3,
+      "image": "assets/castle-stories/rain/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "rain",
+      "panel": 4,
+      "image": "assets/castle-stories/rain/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 1,
+      "image": "assets/castle-stories/photo/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 2,
+      "image": "assets/castle-stories/photo/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 3,
+      "image": "assets/castle-stories/photo/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "photo",
+      "panel": 4,
+      "image": "assets/castle-stories/photo/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 1,
+      "image": "assets/castle-stories/lost-key/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 2,
+      "image": "assets/castle-stories/lost-key/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 3,
+      "image": "assets/castle-stories/lost-key/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "lost-key",
+      "panel": 4,
+      "image": "assets/castle-stories/lost-key/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 1,
+      "image": "assets/castle-stories/quiet-night/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 2,
+      "image": "assets/castle-stories/quiet-night/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 3,
+      "image": "assets/castle-stories/quiet-night/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "quiet-night",
+      "panel": 4,
+      "image": "assets/castle-stories/quiet-night/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 1,
+      "image": "assets/castle-stories/suggestion/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 2,
+      "image": "assets/castle-stories/suggestion/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 3,
+      "image": "assets/castle-stories/suggestion/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "suggestion",
+      "panel": 4,
+      "image": "assets/castle-stories/suggestion/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 1,
+      "image": "assets/castle-stories/gate-cat/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 2,
+      "image": "assets/castle-stories/gate-cat/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 3,
+      "image": "assets/castle-stories/gate-cat/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "gate-cat",
+      "panel": 4,
+      "image": "assets/castle-stories/gate-cat/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 1,
+      "image": "assets/castle-stories/shift-handoff/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 2,
+      "image": "assets/castle-stories/shift-handoff/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 3,
+      "image": "assets/castle-stories/shift-handoff/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shift-handoff",
+      "panel": 4,
+      "image": "assets/castle-stories/shift-handoff/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 1,
+      "image": "assets/castle-stories/empty-throne/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 2,
+      "image": "assets/castle-stories/empty-throne/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 3,
+      "image": "assets/castle-stories/empty-throne/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "empty-throne",
+      "panel": 4,
+      "image": "assets/castle-stories/empty-throne/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 1,
+      "image": "assets/castle-stories/fridge-label/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 2,
+      "image": "assets/castle-stories/fridge-label/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 3,
+      "image": "assets/castle-stories/fridge-label/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fridge-label",
+      "panel": 4,
+      "image": "assets/castle-stories/fridge-label/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 1,
+      "image": "assets/castle-stories/shortcut-trap/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 2,
+      "image": "assets/castle-stories/shortcut-trap/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 3,
+      "image": "assets/castle-stories/shortcut-trap/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shortcut-trap",
+      "panel": 4,
+      "image": "assets/castle-stories/shortcut-trap/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 1,
+      "image": "assets/castle-stories/praise-approval/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 2,
+      "image": "assets/castle-stories/praise-approval/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 3,
+      "image": "assets/castle-stories/praise-approval/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "praise-approval",
+      "panel": 4,
+      "image": "assets/castle-stories/praise-approval/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 1,
+      "image": "assets/castle-stories/chair-project/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 2,
+      "image": "assets/castle-stories/chair-project/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 3,
+      "image": "assets/castle-stories/chair-project/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "chair-project",
+      "panel": 4,
+      "image": "assets/castle-stories/chair-project/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 1,
+      "image": "assets/castle-stories/laundry-weather/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 2,
+      "image": "assets/castle-stories/laundry-weather/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 3,
+      "image": "assets/castle-stories/laundry-weather/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "laundry-weather",
+      "panel": 4,
+      "image": "assets/castle-stories/laundry-weather/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 1,
+      "image": "assets/castle-stories/guard-dog-holiday/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 2,
+      "image": "assets/castle-stories/guard-dog-holiday/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 3,
+      "image": "assets/castle-stories/guard-dog-holiday/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "guard-dog-holiday",
+      "panel": 4,
+      "image": "assets/castle-stories/guard-dog-holiday/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 1,
+      "image": "assets/castle-stories/castle-sports/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 2,
+      "image": "assets/castle-stories/castle-sports/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 3,
+      "image": "assets/castle-stories/castle-sports/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-sports",
+      "panel": 4,
+      "image": "assets/castle-stories/castle-sports/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 1,
+      "image": "assets/castle-stories/one-note-band/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 2,
+      "image": "assets/castle-stories/one-note-band/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 3,
+      "image": "assets/castle-stories/one-note-band/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "one-note-band",
+      "panel": 4,
+      "image": "assets/castle-stories/one-note-band/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 1,
+      "image": "assets/castle-stories/shield-bandage/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 2,
+      "image": "assets/castle-stories/shield-bandage/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 3,
+      "image": "assets/castle-stories/shield-bandage/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "shield-bandage",
+      "panel": 4,
+      "image": "assets/castle-stories/shield-bandage/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 1,
+      "image": "assets/castle-stories/slow-reply/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 2,
+      "image": "assets/castle-stories/slow-reply/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 3,
+      "image": "assets/castle-stories/slow-reply/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "slow-reply",
+      "panel": 4,
+      "image": "assets/castle-stories/slow-reply/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 1,
+      "image": "assets/castle-stories/castle-flea-market/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 2,
+      "image": "assets/castle-stories/castle-flea-market/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 3,
+      "image": "assets/castle-stories/castle-flea-market/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "castle-flea-market",
+      "panel": 4,
+      "image": "assets/castle-stories/castle-flea-market/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 1,
+      "image": "assets/castle-stories/vacation-form/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 2,
+      "image": "assets/castle-stories/vacation-form/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 3,
+      "image": "assets/castle-stories/vacation-form/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "vacation-form",
+      "panel": 4,
+      "image": "assets/castle-stories/vacation-form/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 1,
+      "image": "assets/castle-stories/overtime-shadow/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 2,
+      "image": "assets/castle-stories/overtime-shadow/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 3,
+      "image": "assets/castle-stories/overtime-shadow/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "overtime-shadow",
+      "panel": 4,
+      "image": "assets/castle-stories/overtime-shadow/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 1,
+      "image": "assets/castle-stories/ghost-scary-story/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 2,
+      "image": "assets/castle-stories/ghost-scary-story/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 3,
+      "image": "assets/castle-stories/ghost-scary-story/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "ghost-scary-story",
+      "panel": 4,
+      "image": "assets/castle-stories/ghost-scary-story/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 1,
+      "image": "assets/castle-stories/plant-duty/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 2,
+      "image": "assets/castle-stories/plant-duty/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 3,
+      "image": "assets/castle-stories/plant-duty/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "plant-duty",
+      "panel": 4,
+      "image": "assets/castle-stories/plant-duty/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 1,
+      "image": "assets/castle-stories/emergency-cookie/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 2,
+      "image": "assets/castle-stories/emergency-cookie/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 3,
+      "image": "assets/castle-stories/emergency-cookie/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "emergency-cookie",
+      "panel": 4,
+      "image": "assets/castle-stories/emergency-cookie/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 1,
+      "image": "assets/castle-stories/fallen-star/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 2,
+      "image": "assets/castle-stories/fallen-star/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 3,
+      "image": "assets/castle-stories/fallen-star/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "fallen-star",
+      "panel": 4,
+      "image": "assets/castle-stories/fallen-star/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 1,
+      "image": "assets/castle-stories/call-by-name/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 2,
+      "image": "assets/castle-stories/call-by-name/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 3,
+      "image": "assets/castle-stories/call-by-name/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "call-by-name",
+      "panel": 4,
+      "image": "assets/castle-stories/call-by-name/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 1,
+      "image": "assets/castle-stories/same-place-tomorrow/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 334.03125
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 2,
+      "image": "assets/castle-stories/same-place-tomorrow/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 311.640625
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 3,
+      "image": "assets/castle-stories/same-place-tomorrow/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 286.046875
+    },
+    {
+      "language": "en",
+      "kind": "castle",
+      "id": "same-place-tomorrow",
+      "panel": 4,
+      "image": "assets/castle-stories/same-place-tomorrow/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 308.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 1,
+      "image": "assets/hiring-stories/ghost-courier/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 2,
+      "image": "assets/hiring-stories/ghost-courier/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 3,
+      "image": "assets/hiring-stories/ghost-courier/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ghost-courier",
+      "panel": 4,
+      "image": "assets/hiring-stories/ghost-courier/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 1,
+      "image": "assets/hiring-stories/bat-nurse/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 2,
+      "image": "assets/hiring-stories/bat-nurse/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 3,
+      "image": "assets/hiring-stories/bat-nurse/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bat-nurse",
+      "panel": 4,
+      "image": "assets/hiring-stories/bat-nurse/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 1,
+      "image": "assets/hiring-stories/skeleton-chef/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 2,
+      "image": "assets/hiring-stories/skeleton-chef/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 3,
+      "image": "assets/hiring-stories/skeleton-chef/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "skeleton-chef",
+      "panel": 4,
+      "image": "assets/hiring-stories/skeleton-chef/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 1,
+      "image": "assets/hiring-stories/mimic-storekeeper/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 2,
+      "image": "assets/hiring-stories/mimic-storekeeper/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 3,
+      "image": "assets/hiring-stories/mimic-storekeeper/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "mimic-storekeeper",
+      "panel": 4,
+      "image": "assets/hiring-stories/mimic-storekeeper/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 1,
+      "image": "assets/hiring-stories/spider-tailor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 2,
+      "image": "assets/hiring-stories/spider-tailor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 3,
+      "image": "assets/hiring-stories/spider-tailor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "spider-tailor",
+      "panel": 4,
+      "image": "assets/hiring-stories/spider-tailor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 1,
+      "image": "assets/hiring-stories/nightmare-counselor/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 2,
+      "image": "assets/hiring-stories/nightmare-counselor/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 3,
+      "image": "assets/hiring-stories/nightmare-counselor/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "nightmare-counselor",
+      "panel": 4,
+      "image": "assets/hiring-stories/nightmare-counselor/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 1,
+      "image": "assets/hiring-stories/kobold-recruiter/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 2,
+      "image": "assets/hiring-stories/kobold-recruiter/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 3,
+      "image": "assets/hiring-stories/kobold-recruiter/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kobold-recruiter",
+      "panel": 4,
+      "image": "assets/hiring-stories/kobold-recruiter/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 1,
+      "image": "assets/hiring-stories/duru-archivist/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 2,
+      "image": "assets/hiring-stories/duru-archivist/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 3,
+      "image": "assets/hiring-stories/duru-archivist/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "duru-archivist",
+      "panel": 4,
+      "image": "assets/hiring-stories/duru-archivist/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 1,
+      "image": "assets/hiring-stories/kkangtong-engineer/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 2,
+      "image": "assets/hiring-stories/kkangtong-engineer/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 3,
+      "image": "assets/hiring-stories/kkangtong-engineer/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "kkangtong-engineer",
+      "panel": 4,
+      "image": "assets/hiring-stories/kkangtong-engineer/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 1,
+      "image": "assets/hiring-stories/ddangkong-miner/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 2,
+      "image": "assets/hiring-stories/ddangkong-miner/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 3,
+      "image": "assets/hiring-stories/ddangkong-miner/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "ddangkong-miner",
+      "panel": 4,
+      "image": "assets/hiring-stories/ddangkong-miner/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 1,
+      "image": "assets/hiring-stories/chalkak-photographer/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 2,
+      "image": "assets/hiring-stories/chalkak-photographer/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 3,
+      "image": "assets/hiring-stories/chalkak-photographer/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "chalkak-photographer",
+      "panel": 4,
+      "image": "assets/hiring-stories/chalkak-photographer/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 1,
+      "image": "assets/hiring-stories/bongtu-postmaster/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 2,
+      "image": "assets/hiring-stories/bongtu-postmaster/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 3,
+      "image": "assets/hiring-stories/bongtu-postmaster/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "bongtu-postmaster",
+      "panel": 4,
+      "image": "assets/hiring-stories/bongtu-postmaster/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-ward/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-ward/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-ward/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-ward",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-ward/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-accountant/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-accountant/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-accountant/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-accountant",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-accountant/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-rescue/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-rescue/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-rescue/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-rescue",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-rescue/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-chikchik/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 341.4375
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-chikchik/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-chikchik/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-chikchik",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-chikchik/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-banchang/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-banchang/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-banchang/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-banchang",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-banchang/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-coco/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-coco/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-coco/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-coco",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-coco/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 1,
+      "image": "assets/hiring-stories/merc-q/01.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 392.625
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 2,
+      "image": "assets/hiring-stories/merc-q/02.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 3,
+      "image": "assets/hiring-stories/merc-q/03.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 418.21875
+    },
+    {
+      "language": "en",
+      "kind": "hiring",
+      "id": "merc-q",
+      "panel": 4,
+      "image": "assets/hiring-stories/merc-q/04.webp",
+      "decoded": true,
+      "artHeight": 568,
+      "artBottom": 568,
+      "captionTop": 367.03125
+    }
+  ],
+  "supports": [
+    {
+      "language": "ko",
+      "id": "ward",
+      "label": "본가드\n자동 지원",
+      "file": "ko-320-support-ward.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "accountant",
+      "label": "오울리\n자동 지원",
+      "file": "ko-320-support-accountant.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "rescue",
+      "label": "플레어\n자동 지원",
+      "file": "ko-320-support-rescue.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "chikchik",
+      "label": "칙칙\n자동 지원",
+      "file": "ko-320-support-chikchik.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "banchang",
+      "label": "반창\n자동 지원",
+      "file": "ko-320-support-banchang.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "coco",
+      "label": "코코\n자동 지원",
+      "file": "ko-320-support-coco.jpg"
+    },
+    {
+      "language": "ko",
+      "id": "q",
+      "label": "큐\n자동 지원",
+      "file": "ko-320-support-q.jpg"
+    },
+    {
+      "language": "en",
+      "id": "ward",
+      "label": "본가드\nAuto support",
+      "file": "en-320-support-ward.jpg"
+    },
+    {
+      "language": "en",
+      "id": "accountant",
+      "label": "오울리\nAuto support",
+      "file": "en-320-support-accountant.jpg"
+    },
+    {
+      "language": "en",
+      "id": "rescue",
+      "label": "플레어\nAuto support",
+      "file": "en-320-support-rescue.jpg"
+    },
+    {
+      "language": "en",
+      "id": "chikchik",
+      "label": "칙칙\nAuto support",
+      "file": "en-320-support-chikchik.jpg"
+    },
+    {
+      "language": "en",
+      "id": "banchang",
+      "label": "반창\nAuto support",
+      "file": "en-320-support-banchang.jpg"
+    },
+    {
+      "language": "en",
+      "id": "coco",
+      "label": "코코\nAuto support",
+      "file": "en-320-support-coco.jpg"
+    },
+    {
+      "language": "en",
+      "id": "q",
+      "label": "큐\nAuto support",
+      "file": "en-320-support-q.jpg"
+    }
+  ],
+  "errors": []
+}
