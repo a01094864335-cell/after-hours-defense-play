@@ -21,6 +21,7 @@ const GameLanguage=(()=>{
   '정예 당직':'Elite shift','화력 지원':'Fire support','느긋한 침입자':'Slow invaders','야식 보급':'Late-night supplies','정비 할인':'Maintenance discount','마력 충전':'Mana recharge','성과급 당직':'Bonus pay','긴축 근무':'Austerity shift','급행 군단':'Marching legion','군단장 특별 훈련':'Boss training','꽁꽁 얼어붙은 밤':'Freezing night','수상한 보급품':'Suspicious supplies','속전속결':'Blitz','위험 수당':'Hazard pay','마력 과부하':'Mana overload'
  };
  const reverse=new Map(Object.entries(messages).map(([ko,en])=>[en,ko]));
+ function register(entries){for(const [ko,en] of Object.entries(entries)){if(typeof en!=='string'||!en.trim())throw Error('Empty translation: '+ko);messages[ko]=en;reverse.set(en,ko)}}
  let language='ko';try{const saved=GameStorage.getItem(key);if(saved==='ko'||saved==='en')language=saved}catch{}
  function t(value){const text=String(value),trimmed=text.trim();if(language==='ko')return text;const translated=messages[trimmed];return translated?text.replace(trimmed,translated):text;}
  function apply(){if(document.documentElement)document.documentElement.lang=language;for(const fn of listeners)fn(language);}
@@ -36,7 +37,7 @@ const GameLanguage=(()=>{
    const trimmed=source.trim();if(reverse.has(trimmed))source=source.replace(trimmed,reverse.get(trimmed));
    const translated=t(source);originals.set(node,{source,translated});if(value!==translated)node.nodeValue=translated;
   }
-  const selector='button[aria-label],img[alt],input[aria-label],nav.shared-gnb[aria-label]';
+  const selector='button[aria-label],img[alt],input[aria-label],nav[aria-label],[role="img"][aria-label]';
   for(const el of [...(root.matches?.(selector)?[root]:[]),...root.querySelectorAll(selector)]){
    if(el.closest('[data-no-translate]'))continue;
    const attr=el.tagName==='IMG'?'alt':'aria-label',value=el.getAttribute(attr),source=reverse.get(value)||value,translated=t(source);if(value!==translated)el.setAttribute(attr,translated);
@@ -44,6 +45,6 @@ const GameLanguage=(()=>{
  }
  if(document.documentElement)document.documentElement.lang=language;
  window.addEventListener?.('storage',event=>{if(GMTest.enabled||GMTest.fresh||event.key!==key||!['ko','en'].includes(event.newValue)||event.newValue===language)return;language=event.newValue;apply()});
- return Object.freeze({key,t,set,subscribe,translateTree,get current(){return language}});
+ return Object.freeze({key,t,set,subscribe,translateTree,register,get current(){return language}});
 })();
 window.GameLanguage=GameLanguage;

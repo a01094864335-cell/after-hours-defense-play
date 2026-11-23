@@ -18,9 +18,9 @@
  }
  function refresh(dialog){
   const label=dialog.querySelector('#promo-count,.hire-page')?.textContent||'1 / 4',match=label.match(/(\d+)\s*\/\s*(\d+)/),page=match?Number(match[1]):1,total=match?Number(match[2]):4;
-  const dots=dialog.querySelector('.story-dots');dots.setAttribute('aria-label',page+' / '+total+' 페이지');const progress=String(page).padStart(2,'0')+' / '+String(total).padStart(2,'0');if(dots.textContent!==progress)dots.textContent=progress;
+  const dots=dialog.querySelector('.story-dots');dots.setAttribute('aria-label',page+' / '+total+(document.documentElement.lang.startsWith('en')?' pages':' 페이지'));const progress=String(page).padStart(2,'0')+' / '+String(total).padStart(2,'0');if(dots.textContent!==progress)dots.textContent=progress;
   const next=dialog.querySelector('#promo-next,[data-hire-next]');if(next)next.dataset.last=String(page===total);
-  const tag=dialog.querySelector('.story-chapter-tag');if(tag){const value=typeof currentCastleStory!=='undefined'&&currentCastleStory.original?'첫 당직 이야기':'마왕성 야간 일지';if(tag.textContent!==value)tag.textContent=value}
+  const tag=dialog.querySelector('.story-chapter-tag');if(tag){const source=typeof currentCastleStory!=='undefined'&&currentCastleStory.original?'첫 당직 이야기':'마왕성 야간 일지',value=GameLanguage.t(source);if(tag.textContent!==value)tag.textContent=value}
  }
  if(promo)setup(promo);
  new MutationObserver(records=>{for(const r of records)for(const n of r.addedNodes)if(n.nodeType===1&&n.id==='hiring-story')setup(n)}).observe(document.body,{childList:true});

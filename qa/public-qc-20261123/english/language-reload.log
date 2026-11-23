@@ -1,0 +1,8 @@
+test_controls_and_english_text_fit_short_phone_and_audio_state_stays_native (test_game_language.GameLanguageTests.test_controls_and_english_text_fit_short_phone_and_audio_state_stays_native) ... ok
+test_storage_failure_and_switch_during_paused_battle_preserve_state (test_game_language.GameLanguageTests.test_storage_failure_and_switch_during_paused_battle_preserve_state) ... ok
+test_switch_reload_and_korean_restore_keep_game_saves (test_game_language.GameLanguageTests.test_switch_reload_and_korean_restore_keep_game_saves) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 9.834s
+
+OK

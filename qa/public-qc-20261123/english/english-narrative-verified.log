@@ -1,0 +1,9 @@
+test_all_forty_castle_stories_and_intro_have_readable_english (test_english_narrative.EnglishNarrativeTests.test_all_forty_castle_stories_and_intro_have_readable_english) ... ok
+test_all_nineteen_hiring_stories_translate_each_native_page (test_english_narrative.EnglishNarrativeTests.test_all_nineteen_hiring_stories_translate_each_native_page) ... ok
+test_all_personnel_bios_and_locale_switch_preserve_identity_and_progress (test_english_narrative.EnglishNarrativeTests.test_all_personnel_bios_and_locale_switch_preserve_identity_and_progress) ... ok
+test_queued_close_cannot_clear_reopened_story_or_resume_combat (test_english_narrative.EnglishNarrativeTests.test_queued_close_cannot_clear_reopened_story_or_resume_combat) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 73.484s
+
+OK
