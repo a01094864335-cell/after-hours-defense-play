@@ -1,0 +1,38 @@
+[
+  {
+    "width": 320,
+    "lang": "ko",
+    "height": 56,
+    "exitRight": true
+  },
+  {
+    "width": 320,
+    "lang": "en",
+    "height": 56,
+    "exitRight": true
+  },
+  {
+    "width": 390,
+    "lang": "ko",
+    "height": 56,
+    "exitRight": true
+  },
+  {
+    "width": 390,
+    "lang": "en",
+    "height": 56,
+    "exitRight": true
+  },
+  {
+    "width": 430,
+    "lang": "ko",
+    "height": 56,
+    "exitRight": true
+  },
+  {
+    "width": 430,
+    "lang": "en",
+    "height": 56,
+    "exitRight": true
+  }
+]

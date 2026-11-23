@@ -42,11 +42,15 @@ class BattleImpactTests(unittest.TestCase):
                 warning=p.locator('#boss-warning');self.assertTrue(warning.is_visible())
                 self.assertIn(str(wave),p.locator('#boss-warning-label').inner_text())
                 self.assertEqual(p.locator('#message').evaluate('e=>getComputedStyle(e).visibility'),'hidden')
-                p.wait_for_timeout(400)
+                p.wait_for_function("document.querySelector('#boss-warning').getAnimations().every(a=>a.playState==='finished')")
+                self.assertEqual(warning.evaluate('e=>e.offsetHeight'),56)
                 bounds=warning.bounding_box();self.assertGreaterEqual(bounds['x'],0);self.assertLessEqual(bounds['x']+bounds['width'],320)
                 remaining=p.evaluate('paused=true;bossWarning.left')
                 p.evaluate('tickBossWarning(1)');self.assertEqual(p.evaluate('bossWarning.left'),remaining)
-                p.evaluate('paused=false;tickBossWarning(4)');self.assertTrue(warning.is_hidden())
+                p.evaluate('paused=false;bossWarning.left=.39;tickBossWarning(0)')
+                p.wait_for_function("document.querySelector('#boss-warning').getAnimations().every(a=>a.playState==='finished')")
+                self.assertGreaterEqual(warning.bounding_box()['x'],320)
+                p.evaluate('tickBossWarning(1)');self.assertTrue(warning.is_hidden())
             p.context.close()
 
     def test_failure_and_departure_effects_keep_atomic_loss_refund_and_wallet(self):

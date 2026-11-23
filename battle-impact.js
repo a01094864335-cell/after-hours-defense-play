@@ -51,11 +51,10 @@ window.BattleImpact=(()=>{
  if(typeof document.createElement==='function'){
   const node=document.querySelector('#boss-warning'),stage=document.querySelector('.board-stage'),battle=document.querySelector('#battle');
   if(node&&stage){
-   stage.append(node);node.classList.add('comic-boss-warning');const art=document.createElement('img');art.className='comic-boss-portrait';art.alt='';art.decoding='async';node.prepend(art);
-   const names={leon:'Commander Leon',aegis:'Commander Aegis',ruby:'Crimson Knight Ruby',lumen:'Choir Captain Lumen',neve:'Frost Witch Neve',mira:'Illusionist Mira',chrono:'Clockwork Knight Chrono'};
+   stage.append(node);node.classList.add('comic-boss-warning');const art=document.createElement('img');art.className='comic-boss-portrait';art.alt='';art.decoding='async';node.prepend(art);node.querySelector('.warning-icon').textContent='!';
    function paintWarning(){if(!bossWarning)return;const b=bossCatalog.find(x=>x.id===bossWarning.id);if(!b)return;const source=Motion.sheets[b.file]?.fallback;if(source&&art.getAttribute('src')!==source)art.src=source;
-    uiText(document.querySelector('#boss-warning-label'),en()?'BOSS WAVE '+bossWarning.wave:'WAVE '+bossWarning.wave+' · 군단장');
-    uiText(document.querySelector('#boss-warning-name'),en()?names[b.id]:b.name);
+    uiText(document.querySelector('#boss-warning-label'),'WAVE '+String(bossWarning.wave).padStart(2,'0'));
+    uiText(document.querySelector('#boss-warning-name'),en()?({leon:'LEON',aegis:'AEGIS',ruby:'RUBY',lumen:'LUMEN',neve:'NEVE',mira:'MIRA',chrono:'CHRONO'}[b.id]+' INCOMING!'):b.name+' 등장!');
     uiText(document.querySelector('#boss-warning-detail'),en()?'Incoming! Get your skills ready.':'등장! 스킬을 준비하세요.');
     uiAttr(node,'data-phase',bossWarning.left<.4?'out':'in');uiAttr(battle,'data-boss-cue',node.hidden?'false':'true');
    }
