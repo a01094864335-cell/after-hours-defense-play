@@ -11,18 +11,24 @@
  shadow.append(style,root);dialog.append(host);dialog.classList.add('asset-shop-dialog');const local=s=>root.querySelector(s);let tab='pack',last='';
  function hydrateArt(){if(!(dialog.open))return;for(const image of root.querySelectorAll('image[data-art-src]')){image.setAttribute('href',image.dataset.artSrc);image.removeAttribute('data-art-src')}}
  function refresh(){hydrateArt();
-  const state=JSON.stringify([meta.coins,meta.recruitPoints,meta.items,meta.owned,meta.staff,profile().pity,saveWarning,playing,ended,q('#shop-status').textContent,q('#buy-staff-pack').disabled,q('#buy-staff-pack').textContent]);if(state===last)return;last=state;
+  const en=window.GameLanguage?.current==='en',t=value=>window.GameLanguage?.t(value)||value;
+  const state=JSON.stringify([en,meta.coins,meta.recruitPoints,meta.items,meta.owned,meta.staff,profile().pity,saveWarning,playing,ended,q('#shop-status').textContent,q('#buy-staff-pack').disabled,q('#buy-staff-pack').textContent]);if(state===last)return;last=state;
   local('#coins').textContent=meta.coins.toLocaleString();local('#points').textContent=meta.recruitPoints;local('#pity').textContent=missingSupports().length?profile().pity+'/10':'수집 완료';
-  const native=q('#buy-staff-pack'),button=local('.purchase');button.disabled=native.disabled;local('#price').textContent=packComplete()?'전체 영웅 채용 완료':playing&&!ended?'당직 종료 후 채용 가능':PACK_PRICE+' 코인 · 채용팩 열기';
-  local('#balance').textContent=saveWarning?'저장 상태를 확인해주세요':meta.coins<PACK_PRICE?(PACK_PRICE-meta.coins)+' 코인 부족':'구매 후 '+(meta.coins-PACK_PRICE).toLocaleString()+' 코인';
+  const native=q('#buy-staff-pack'),button=local('.purchase');button.disabled=native.disabled;local('#price').textContent=packComplete()?(en?'Collection complete':'전체 채용 완료'):playing&&!ended?(en?'Available after shift':'당직 종료 후 채용 가능'):(en?'Open · '+PACK_PRICE+' coins':'열기 · '+PACK_PRICE+' 코인');
+  local('#balance').textContent=saveWarning?(en?'Check save status':'저장 상태 확인 필요'):meta.coins<PACK_PRICE?(en?'Need '+(PACK_PRICE-meta.coins)+' coins':(PACK_PRICE-meta.coins)+' 코인 부족'):(en?(meta.coins-PACK_PRICE).toLocaleString()+' coins after purchase':'구매 후 '+(meta.coins-PACK_PRICE).toLocaleString()+' 코인');
   local('#pips').innerHTML=Array.from({length:SUPPORT_PITY},(_,i)=>'<i class="'+(i<profile().pity?'filled':'')+'">'+(i===SUPPORT_PITY-1?'★':'')+'</i>').join('');local('#guarantee-note').textContent=missingSupports().length?(SUPPORT_PITY-profile().pity)+'팩 안에 미보유 지원 영웅 1명 확정!':'지원 영웅 수집 완료!';
-  local('#status').textContent=q('#shop-status').textContent;
-  local('#products').innerHTML=Object.entries(itemCatalog).map(([key,k])=>`<article><img src="${itemArtwork(key)}" alt=""><h3>${k.name}</h3><p>${k.desc}</p><span>보유 ${meta.items[key]||0}개</span><button data-item="${key}" ${(!!saveWarning||meta.coins<k.price)?'disabled':''}>${k.price} 코인 · 1개 구매</button></article>`).join('');
+  local('#status').textContent=t(q('#shop-status').textContent);
+  local('#points').previousElementSibling.textContent=en?'Recruit points':'채용 포인트';
+  root.querySelectorAll('.tabs button').forEach(b=>b.textContent=en?(b.dataset.tab==='pack'?'Recruit':'Items'):(b.dataset.tab==='pack'?'채용팩':'아이템'));
+  const rates=local('.rate-banner').querySelectorAll(':scope > span');for(let i=0;i<2;i++)rates[i].firstChild.nodeValue=en?(i?'Support ':'Staff '):(i?'지원 영웅 ':'일반 직원 ');
+  local('#items h2').textContent=en?'Battle items':'전투 아이템';local('#items > p').textContent=en?'Single use · Pay with coins':'1회 소비 · 코인으로 구매';
+  local('#products').innerHTML=Object.entries(itemCatalog).map(([key,k])=>`<article><img src="${itemArtwork(key)}" alt=""><h3>${t(k.name)}</h3><p>${t(k.desc)}</p><span>${en?'Owned '+(meta.items[key]||0):'보유 '+(meta.items[key]||0)+'개'}</span><button data-item="${key}" ${(!!saveWarning||meta.coins<k.price)?'disabled':''}>${en?'Buy 1 · '+k.price+' coins':'1개 구매 · '+k.price+' 코인'}</button></article>`).join('');
  }
  function select(next){tab=next;local('#pack').hidden=tab!=='pack';local('#items').hidden=tab!=='items';root.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tab===tab)));shopTab(tab);local('.scroll').scrollTop=0;}
  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;if(b.dataset.tab)select(b.dataset.tab);else if(b.dataset.item){q('#buy-'+b.dataset.item).click();refresh();}else if(b.dataset.action==='close')dialog.close();else if(b.dataset.action==='roster'){dialog.close();q('#roster-open').click();}else if(b.dataset.action==='buy'){if(q('#recruit-dialog')?.open)return;q('#buy-staff-pack').click();refresh();}});
  const previous=window.renderRecruitShop;window.renderRecruitShop=function(...args){const result=previous.apply(this,args);refresh();return result;};
  new MutationObserver(()=>{if(dialog.open){window.renderRecruitShop();refresh();select('pack');}}).observe(dialog,{attributes:true,attributeFilter:['open']});
  new MutationObserver(refresh).observe(q('#shop-status'),{childList:true,characterData:true,subtree:true});
+ window.GameLanguage?.subscribe(refresh);
  dialog.addEventListener('close',()=>{local('details').open=false;last='';});refresh();window.AssetShop={refresh};
 })();

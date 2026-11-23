@@ -34,7 +34,7 @@ class BattleCohesionTests(unittest.TestCase):
             p=self.open(w,h);self.seed(p)
             self.assertFalse(p.locator('#skill').is_visible())
             self.assertFalse(p.locator('#battle-selected-portrait').is_visible())
-            self.assertIn('보드의 직원',p.locator('#battle-selected-name').inner_text())
+            self.assertIn('직원 선택',p.locator('#battle-selected-name').inner_text())
             help=p.locator('#skill-help').bounding_box();row=p.locator('.skill-row').bounding_box()
             self.assertGreaterEqual(help['height'],44)
             self.assertGreaterEqual(help['y'],row['y']-1)

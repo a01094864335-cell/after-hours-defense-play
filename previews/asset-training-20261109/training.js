@@ -19,14 +19,14 @@
   local('.power').hidden=!staff;
   local('#power-label').textContent=staff?(en?'Attack damage':'공격 피해'):(en?'Shared training level':'공통 훈련 레벨');
   local('#power-value').innerHTML=staff?'+'+((staffTrainingMultiplier(level)-1)*100).toFixed(1)+'%'+(level<TRAINING_MAX?' <span>➜ +'+((staffTrainingMultiplier(next)-1)*100).toFixed(1)+'%</span>':''):'Lv.'+level+(level<TRAINING_MAX?' <span>➜ Lv.'+next+'</span>':'');
-  local('.policy').textContent=en?'Applies to the whole group, including future hires.':'그룹 전체에 적용 · 새로 채용한 동료에게도 유지';
+  local('.policy').textContent=en?'Includes future hires.':'앞으로 채용할 동료도 함께 강화';
   local('#milestones').innerHTML=TRAINING_MILESTONES.map(n=>`<span class="medal ${level>=n?'unlocked':n===milestone?'next':''}"><b>${n}</b><small>${level>=n?'해금':n===milestone?'다음':'잠김'}</small></span>`).join('');local('#next').textContent=milestone?'다음 Lv.'+milestone:'모두 해금!';
   local('#coins').textContent=meta.coins.toLocaleString();
   local('#coins').parentElement.firstChild.nodeValue=en?'Coins ':'● 보유 ';local('#coins').parentElement.lastChild.nodeValue=en?'':' 코인';
-  local('#remaining').textContent=level===TRAINING_MAX?(en?'Maximum level':'최대 레벨 달성'):meta.coins>=cost?(en?(meta.coins-cost).toLocaleString()+' coins after training':'훈련 후 '+(meta.coins-cost).toLocaleString()+' 코인'):(en?'Need '+(cost-meta.coins)+' more coins':(cost-meta.coins)+' 코인 부족');
+  local('#remaining').textContent=level===TRAINING_MAX?(en?'Maximum level':'최대 레벨 달성'):meta.coins>=cost?(en?(meta.coins-cost).toLocaleString()+' coins after training':'훈련 후 '+(meta.coins-cost).toLocaleString()+' 코인'):(en?'Need '+(cost-meta.coins)+' coins':(cost-meta.coins)+' 코인 부족');
   local('#upgrade').disabled=q('#training-upgrade').disabled;
   local('#upgrade').textContent=level===TRAINING_MAX?(en?'MAX · Training complete':'MAX · 훈련 완료'):(en?'Train · '+cost+' coins':'강화하기 · '+cost+' 코인');
-  local('#hint').textContent=saveWarning||(playing&&!ended?(en?'Training is available after the battle.':'전투가 끝난 뒤 강화할 수 있어요.'):'');local('#status').textContent=q('#training-status').textContent;
+  local('#hint').textContent=saveWarning||(playing&&!ended?(en?'Available after battle.':'전투 종료 후 강화 가능'):'');local('#status').textContent=q('#training-status').textContent;
   if(previousGroup!==trainingGroup)local('.scroll').scrollTop=0;previousGroup=trainingGroup;
  }
  root.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;if(b.dataset.group){q('#training-tab-'+b.dataset.group).click();q('#training-status').textContent='';refresh();}else if(b.dataset.action==='upgrade'){const before=trainingLevel(trainingGroup,false);q('#training-upgrade').click();refresh();if(trainingLevel(trainingGroup,false)>before){root.classList.remove('success');void root.offsetWidth;root.classList.add('success');}}else{trainingNavigate(b.dataset.action);}});

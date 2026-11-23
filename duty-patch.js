@@ -7,13 +7,13 @@ window.BoardRecycle=(()=>{
  const allowed=()=>playing&&!ended&&!paused&&!tutorialMode&&!itemMode&&!window.TutorialCoach?.held?.()&&GameSession.canWrite();
  function discard(index,confirm=false){
   const unit=board[index];if(!allowed()||!unit||!Number.isInteger(index))return false;
-  if(unit.pip>=3&&(!confirm||armed!==unit)){armed=unit;selected=index;say(english()?'★'+unit.pip+' '+nameOf(unit)+' · Press again to discard. No SP is returned.':'★'+unit.pip+' '+kinds[unit.type].name+' · 버리기를 한 번 더 누르면 제거돼요. SP는 돌려받지 않아요.');refresh();return false;}
+  if(unit.pip>=3&&(!confirm||armed!==unit)){armed=unit;selected=index;say(english()?'★'+unit.pip+' '+nameOf(unit)+' · Press again to discard · No SP refund':'★'+unit.pip+' '+kinds[unit.type].name+' · 다시 누르면 버리기 · SP 반환 없음');refresh();return false;}
   board[index]=null;selected=-1;drag=null;armed=null;window.TacticalDuty?.hidePreview();
-  burst('staffExit',cells[index].x,cells[index].y,kinds[unit.type].color,.5,{sprite:kinds[unit.type].file,staffType:unit.type,pip:unit.pip});say(english()?nameOf(unit)+' discarded · +1 empty slot · No SP returned.':kinds[unit.type].name+' 퇴장 · 빈자리 +1');sync();saveActiveRun();return true;
+  burst('staffExit',cells[index].x,cells[index].y,kinds[unit.type].color,.5,{sprite:kinds[unit.type].file,staffType:unit.type,pip:unit.pip});say(english()?nameOf(unit)+' discarded · +1 slot · No SP refund':kinds[unit.type].name+' 퇴장 · 빈자리 +1');sync();saveActiveRun();return true;
  }
  function refresh(){
   const en=english();
-  if(empty){uiProp(empty,'hidden',board.some(Boolean));uiText(empty,en?'Summon staff onto the board to upgrade them.':'보드에 직원을 소환하면 강화할 수 있어요.')}
+  if(empty){uiProp(empty,'hidden',board.some(Boolean));uiText(empty,en?'Summon staff to unlock upgrades.':'직원 소환 후 강화 가능')}
   if(!button)return;
   const u=board[drag?.from]||board[selected];
   if(armed!==u)armed=null;
@@ -25,7 +25,7 @@ window.BoardRecycle=(()=>{
 
  function drop(e,index){if(!button||!allowed())return false;const r=button.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)return false;selected=index;discard(index,true);refresh();return true;}
  if(typeof document.createElement==='function'){
-  empty=document.createElement('p');empty.id='equipment-empty';empty.textContent='보드에 직원을 소환하면 강화할 수 있어요.';document.querySelector('#cards').before(empty);
+  empty=document.createElement('p');empty.id='equipment-empty';empty.textContent='직원 소환 후 강화 가능';document.querySelector('#cards').before(empty);
   button=document.createElement('button');button.id='board-trash';button.type='button';button.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M9 6V3h6v3M6 6l1 15h10l1-15M10 10v7m4-7v7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>버리기</span>';
   document.querySelector('.skill-row').append(button);button.onclick=()=>discard(selected,true);
   const oldSkill=syncSkill;syncSkill=function(){oldSkill();refresh()};refresh();

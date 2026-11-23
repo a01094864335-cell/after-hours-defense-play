@@ -58,11 +58,12 @@
     setText(summary, english ? 'Rates & guarantee rules' : '확률 · 보장 규칙');
     setText(rulesTitle, english ? 'Recruitment rules' : '채용 확률 · 보장 규칙');
     setText(rulesDone, english ? 'Got it' : '알겠어요');
+    window.GameLanguage?.translateTree(rulesBody);
     rulesClose.setAttribute('aria-label', english ? 'Close recruitment rules' : '채용 규칙 닫기');
     dock.setAttribute('aria-label', english ? 'Buy recruit pack' : '채용팩 구매');
-    setText(rosterLink, english ? 'Choose a colleague ›' : '동료 지정 채용 ›');
+    setText(rosterLink, english ? 'Choose staff ›' : '지정 채용 ›');
     const left = SUPPORT_PITY - profile().pity;
-    setText(q('#guarantee-note'), complete ? (english ? 'All support heroes collected' : '지원 영웅을 모두 모았어요') : (english ? `Unowned support guaranteed within ${left} pack${left === 1 ? '' : 's'}` : `미보유 지원 영웅, ${left}팩 안에 확정`));
+    setText(q('#guarantee-note'), complete ? (english ? 'All support heroes collected' : '지원 영웅을 모두 모았어요') : (english ? `New support within ${left} pack${left === 1 ? '' : 's'}` : `미보유 지원 · ${left}팩 내 보장`));
   }
   new MutationObserver(refresh).observe(pack, {attributes: true, attributeFilter: ['hidden']});
   const observer = new MutationObserver(refresh);

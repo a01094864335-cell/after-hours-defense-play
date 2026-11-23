@@ -35,10 +35,14 @@ class BattleImpactTests(unittest.TestCase):
 
     def test_cartoon_boss_cues_begin_at_five_ten_fifteen_and_do_not_cover_other_copy(self):
         for lang in ['ko','en']:
-            p=self.open(320,568);self.battle(p);p.evaluate('x=>GameLanguage.set(x)',lang)
+            p=self.open(320,568);self.battle(p)
+            # Drive the presentation clock explicitly while CSS animations finish.
+            # Live frame ticks must not consume the remaining exit window.
+            p.evaluate('window.manualBossTick=tickBossWarning;tickBossWarning=()=>{}')
+            p.evaluate('x=>GameLanguage.set(x)',lang)
             p.evaluate('clearBossWarning();wave=3;nextWave();sync()');self.assertTrue(p.locator('#boss-warning').is_hidden())
             for wave in [5,10,15]:
-                p.evaluate('w=>{wave=w-1;nextWave();sync();tickBossWarning(0)}',wave)
+                p.evaluate('w=>{wave=w-1;nextWave();sync();manualBossTick(0)}',wave)
                 warning=p.locator('#boss-warning');self.assertTrue(warning.is_visible())
                 self.assertIn(str(wave),p.locator('#boss-warning-label').inner_text())
                 self.assertEqual(p.locator('#message').evaluate('e=>getComputedStyle(e).visibility'),'hidden')
@@ -46,11 +50,11 @@ class BattleImpactTests(unittest.TestCase):
                 self.assertEqual(warning.evaluate('e=>e.offsetHeight'),56)
                 bounds=warning.bounding_box();self.assertGreaterEqual(bounds['x'],0);self.assertLessEqual(bounds['x']+bounds['width'],320)
                 remaining=p.evaluate('paused=true;bossWarning.left')
-                p.evaluate('tickBossWarning(1)');self.assertEqual(p.evaluate('bossWarning.left'),remaining)
-                p.evaluate('paused=false;bossWarning.left=.39;tickBossWarning(0)')
+                p.evaluate('manualBossTick(1)');self.assertEqual(p.evaluate('bossWarning.left'),remaining)
+                p.evaluate('paused=false;bossWarning.left=.39;manualBossTick(0)')
                 p.wait_for_function("document.querySelector('#boss-warning').getAnimations().every(a=>a.playState==='finished')")
                 self.assertGreaterEqual(warning.bounding_box()['x'],320)
-                p.evaluate('tickBossWarning(1)');self.assertTrue(warning.is_hidden())
+                p.evaluate('manualBossTick(1)');self.assertTrue(warning.is_hidden())
             p.context.close()
 
     def test_rank5_acquisition_alert_prioritizes_boss_and_does_not_replay_selection(self):

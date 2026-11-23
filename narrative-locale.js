@@ -37,7 +37,7 @@ window.NarrativeLocale=(()=>{
   '채용 이야기 페이지':'Hiring story pages','이야기 건너뛰기':'Skip story','그림 전체':'Full art','대사 보기':'Read story',
   '직원 인사기록':'Personnel record','야간 인사기록부':'Night Personnel Files','봉인된 인사기록':'Sealed personnel record','인사기록 보기':'View record','어떤 동료인가요?':'What kind of colleague?',
   '당직에 임하는 한마디':'A word before the shift','기본 능력':'Basic ability','5등급 해금 · 수동 스킬':'Rank 5 unlock · Manual skill','자동 지원 능력':'Automatic support',
-  '기본 피해·간격은 장비 Lv.1, 1등급 기준. 등급이 높아지면 공격 간격이 짧아져요.':'Base damage and interval are for rank 1 with Lv.1 equipment. Higher ranks attack faster.',
+  '기준: ★1 · 장비 Lv.1 / 등급이 높을수록 공격 속도 증가':'Base: ★1 · Gear Lv.1. Higher ranks attack faster.',
   '채용팩에서 영구 고용 · 직원 도감에서 지원 영웅 1명을 선택해요.':'Permanently hired from packs · Choose one support hero in Staff.',
   '근무 명단 변경은 즉시 저장돼요. 당직 시작 전 5명을 채워주세요.':'Roster changes save immediately. Fill all five slots before starting.',
   '근무 명단에서 해제':'Remove from team','근무 명단에 추가':'Add to team','입사 이야기 보기 →':'Read first-day story →',
