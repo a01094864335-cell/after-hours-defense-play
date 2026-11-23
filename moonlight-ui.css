@@ -197,3 +197,6 @@ body{background:#081421!important}
  #asset-training#asset-training#asset-training#asset-training.ss-training[data-training-group="merc"] .ss-training-yard{background-image:url('assets/moonlight/training-support-practice-portrait.webp')!important;background-position:50% 54%!important}
 }
 @media(max-height:650px){#asset-shop#asset-shop#asset-shop#asset-shop .moon-counter{object-position:center!important}}
+/* The retired daily chip no longer supplies clearance above the roster. */
+#asset-lobby#asset-lobby#asset-lobby>.a-gobi{bottom:calc(var(--lobby-dock-height,310px) + 10px)}
+#asset-lobby#asset-lobby#asset-lobby>.a-gobi-ground{bottom:calc(var(--lobby-dock-height,310px) + 6px)}

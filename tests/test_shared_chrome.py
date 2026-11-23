@@ -66,7 +66,7 @@ class SharedChromeTests(unittest.TestCase):
             self.assertEqual(errors,[])
             page.context.close()
 
-    def test_lobby_gift_and_daily_have_independent_touch_targets(self):
+    def test_lobby_gift_remains_reachable_without_retired_daily_entry(self):
         for width,height in [(320,568),(360,640),(390,650),(390,684),(390,844)]:
             page=self.open(width,height)
             page.evaluate("meta.tutorialComplete=true;meta.profile.starterClaim='';restartTo('lobby');playing=false;renderMeta();TacticalDuty.refresh();AssetLobby.refresh()")
@@ -75,19 +75,16 @@ class SharedChromeTests(unittest.TestCase):
             self.assertTrue(gift.is_visible())
             before=page.evaluate("JSON.stringify({coins:meta.coins,staff:meta.staff,claim:meta.profile.starterClaim})")
             for attempt in range(10):
-                g,d=gift.bounding_box(),daily.bounding_box()
+                g=gift.bounding_box();self.assertFalse(daily.is_visible())
                 self.assertGreaterEqual(g['height'],44)
-                self.assertGreaterEqual(d['height'],44)
-                self.assertGreaterEqual(d['y']-(g['y']+g['height']),5)
                 # Real pointer dispatch, not DOM .click(): catches covered hitboxes.
                 gift.click()
                 self.assertTrue(page.locator('#starter-choice').evaluate('e=>e.open'))
                 self.assertFalse(page.locator('#daily-events-dialog').evaluate('e=>e.open'))
                 page.locator('#starter-close').click()
-                daily.click()
-                self.assertTrue(page.locator('#daily-events-dialog').evaluate('e=>e.open'))
+                page.evaluate("document.querySelector('#daily-events-open').click()")
+                self.assertFalse(page.locator('#daily-events-dialog').evaluate('e=>e.open'))
                 self.assertFalse(page.locator('#starter-choice').evaluate('e=>e.open'))
-                page.locator('#daily-events-close').click()
             self.assertEqual(before,page.evaluate("JSON.stringify({coins:meta.coins,staff:meta.staff,claim:meta.profile.starterClaim})"))
             # Claim visibility and orientation/resizing must not duplicate or lose navigation.
             page.evaluate("meta.profile.starterClaim='complete';TacticalDuty.refresh();AssetLobby.refresh()")

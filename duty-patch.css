@@ -47,3 +47,6 @@ html body #play-observations{margin:12px 0;padding:12px 0;line-height:1.5;color:
 html body #play-observations h3{font-size:17px;margin:0 0 8px}
 html body #play-observations p{font-size:14px;overflow-wrap:anywhere}
 html body #play-observations button{min-height:44px;max-width:100%;white-space:normal;padding:10px 14px}
+
+/* Daily modifiers are retired; keep legacy nodes inert for saved/UI compatibility. */
+html body #daily-option,html body #daily-current,html body #daily-events-open,html body #daily-events-dialog{display:none!important}

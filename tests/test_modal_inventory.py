@@ -54,7 +54,6 @@ CASES = [
     ('perk-staff-bound', '#perk', PERK + "wave=25;rewardBundle=null;renderPerkChoices()"),
     ('deck', '#deck', 'openDeck()'),
     ('deck-swap', '#deck', 'openDeck();swapDeckStaff(meta.staff.find(id=>!meta.deck.includes(id)))'),
-    ('daily', '#daily-events-dialog', "document.querySelector('#daily-events-open').click()"),
     ('backup', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click()"),
     ('backup-invalid', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value='{invalid';document.querySelector('#save-preview').click()"),
     ('backup-preview', '#save-transfer-dialog', "document.querySelector('#save-transfer-open').click();document.querySelector('#save-text').value=JSON.stringify(SaveTransfer.exportData());document.querySelector('#save-preview').click()"),
@@ -84,7 +83,6 @@ APPROVED26 = [
     ('05-perk', '보너스 · 보상 티켓', 'perk-wave5'),
     ('06-equipment', '장비 · 정비 작업대', 'equipment'),
     ('07-deck', '편성 · 열린 인사철', 'deck'),
-    ('08-daily', '변주 · 고정 게시판', 'daily'),
     ('10-backup', '백업 · 보관 서류함', 'backup'),
     ('11-storyarchive', '이야기 · 책 표지 서가', 'story-archive'),
     ('12-notice', '알림 · 전투 메모', 'notice'),
@@ -235,7 +233,7 @@ class ModalInventoryTests(unittest.TestCase):
                     try:
                         page.goto(f'http://127.0.0.1:{self.server.server_port}/', wait_until='networkidle')
                         page.wait_for_function('GameSession.canWrite()')
-                        inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
+                        inventory.update(page.locator('dialog:not(#daily-events-dialog),[role="dialog"]:not(#daily-events-dialog)').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         if name == 'shop-affordable':
                             # Seed the real persisted wallet before boot, like a returning
                             # player. Changing only meta after initialization leaves the
@@ -278,7 +276,7 @@ class ModalInventoryTests(unittest.TestCase):
                             self.assertEqual(page.locator('#cards button:visible:enabled').count(), 0)
                         if name == 'deck-swap':
                             self.assertEqual(page.locator('#deck-options .swap-target').count(), 1)
-                        inventory.update(page.locator('dialog,[role="dialog"]').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
+                        inventory.update(page.locator('dialog:not(#daily-events-dialog),[role="dialog"]:not(#daily-events-dialog)').evaluate_all("xs=>xs.map(e=>e.id?'#'+e.id:'.'+e.classList[0])"))
                         surface.evaluate("""async root=>{await document.fonts.ready;const images=[];function walk(n){for(const e of n.querySelectorAll('*')){if(e.tagName==='IMG'&&e.getBoundingClientRect().width){e.loading='eager';images.push(e)}if(e.shadowRoot)walk(e.shadowRoot)}}walk(root);await Promise.all(images.map(i=>i.complete?Promise.resolve():new Promise(r=>{i.addEventListener('load',r,{once:true});i.addEventListener('error',r,{once:true});setTimeout(r,5000)})));await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)))}""")
                         entry['geometry'] = surface.evaluate(GEOMETRY)
                         if name == 'starter':

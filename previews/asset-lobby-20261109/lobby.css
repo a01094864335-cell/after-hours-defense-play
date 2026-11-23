@@ -61,3 +61,6 @@ body.asset-lobby-active{margin:0!important;overflow:hidden!important;background:
  #asset-lobby .a-shortcuts span{font-size:13px}
  #asset-lobby .a-logo{height:clamp(24px,calc(100dvh - 500px - env(safe-area-inset-bottom,0px)),96px);object-fit:contain;object-position:left top}
 }
+
+/* No date-dependent combat rules or lobby entry. */
+.a-daily{display:none!important}

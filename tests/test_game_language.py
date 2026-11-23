@@ -30,7 +30,7 @@ class GameLanguageTests(unittest.TestCase):
                     ui.assert_reachable(self,p,selector);b=p.locator(selector).bounding_box();self.assertGreaterEqual(b['height'],44);self.assertLessEqual(b['x']+b['width'],width)
             toggle=p.locator('#sfx-toggle');toggle.scroll_into_view_if_needed();before=toggle.get_attribute('aria-pressed');toggle.click();self.assertNotEqual(toggle.get_attribute('aria-pressed'),before);self.assertIn(toggle.inner_text(),['Enable effects','Mute effects'])
             ui.assert_reachable(self,p,'#shared-menu-confirm');p.locator('#shared-menu-confirm').click()
-            for selector in ['.a-start','.a-daily','.a-mode','.a-profile > span']:
+            for selector in ['.a-start','.a-mode','.a-profile > span']:
                 self.assertTrue(p.locator('#asset-lobby-host '+selector).evaluate('e=>e.scrollWidth<=e.clientWidth+1'),selector)
             p.context.close()
     def test_storage_failure_and_switch_during_paused_battle_preserve_state(self):
