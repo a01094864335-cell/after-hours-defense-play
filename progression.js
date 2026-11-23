@@ -123,7 +123,7 @@ function renderPerkChoices(){
  });
  document.querySelector('#perk-note').textContent=en?'Targets are fixed. Merge insurance adds up to 3 charges. Temporary support expires after the next 5 waves.':'대상 고정 · 합성 보장 최대 3회 누적 · 전투 지원은 다음 5웨이브까지 적용';
 }
-function selectRewardOffer(index){if(!bonusPending||!playing||ended||!paused||!GameSession.canWrite()||rewardBundle?.mode!=='choice'||!Number.isInteger(index)||index<0||index>=3||!rewardEligible(rewardBundle.offers[index]||{}))return false;rewardBundle.selection=index;saveActiveRun();renderPerkChoices();return true}
+function selectRewardOffer(index){if(!bonusPending||!playing||ended||!paused||!GameSession.canWrite()||rewardBundle?.mode!=='choice'||!Number.isInteger(index)||index<0||index>=3||!rewardEligible(rewardBundle.offers[index]||{}))return false;rewardBundle.selection=index;saveActiveRun();renderPerkChoices();document.querySelector('#perk-'+rewardBundle.offers[index].id)?.focus?.({preventScroll:true});return true}
 // Retained entry point for older callers: targets now live directly on the card.
 function showPerkTargets(){renderPerkChoices()}
 function choosePerk(id,type){

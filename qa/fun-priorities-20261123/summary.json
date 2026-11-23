@@ -76,5 +76,6 @@
     "totalAttempts": 1410
   },
   "lobbyProductionImageBytes": 56286,
-  "originRestriction": "Public host is blocked by this execution environment; official package browser checks and GitHub deployment checks are reported separately."
+  "originRestriction": "Public host is blocked by this execution environment; official package browser checks and GitHub deployment checks are reported separately.",
+  "keyboardSelectionFocusPreserved": true
 }

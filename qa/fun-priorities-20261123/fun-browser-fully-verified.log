@@ -5,6 +5,6 @@ test_lobby_full_body_art_stays_clear_of_controls_and_old_sticker_is_not_loaded (
 test_three_strategy_buttons_are_reachable_and_guard_is_granted_once (test_fun_priorities.FunPriorityTests.test_three_strategy_buttons_are_reachable_and_guard_is_granted_once) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 28.296s
+Ran 5 tests in 23.289s
 
 OK
