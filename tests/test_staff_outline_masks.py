@@ -1,6 +1,6 @@
 """Real Chromium staff outline coverage, not an artwork quality approval.
 
-Draw all 102 poses through production Motion.draw at board and cutin sizes.
+Draw all 102 base poses and the 17 rank forms through production Motion.draw.
 The isolated gallery is not a live gameplay screenshot. Set
 OUTLINE_REQUIRE_FULL=1 to require all 13 masked characters in final CI.
 """
@@ -38,16 +38,18 @@ class StaffOutlineBrowserTests(unittest.TestCase):
         self.out.mkdir(parents=True, exist_ok=True)
         return page
 
-    def test_all_102_poses_render_at_board_and_cutin_sizes(self):
+    def test_all_staff_poses_and_rank_forms_render_at_board_and_cutin_sizes(self):
         page = self.open_fixture()
         coverage = page.evaluate("""()=>{
-          const staff=Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].group==='staff');
-          return {staff,masked:Object.keys(StaffOutlineMasks.characters),
+          const staff=Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].group==='staff'&&!Motion.sheets[k].rankForm);
+          const rankForms=Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].rankForm===5);
+          return {staff,rankForms,masked:Object.keys(StaffOutlineMasks.characters),
             maskRevision:StaffOutlineMasks.sha256,
             matching:Object.entries(StaffOutlineMasks.characters).every(([k,m])=>m.frames.length===6&&m.sourceSha256===Motion.sheets[k].sha256),
             path2D:typeof Path2D==='function'};
         }""")
         self.assertEqual(len(coverage['staff']), 17)
+        self.assertEqual(len(coverage['rankForms']), 17)
         self.assertTrue(coverage['matching'])
         self.assertTrue(coverage['path2D'])
         self.assertGreater(len(coverage['masked']), 0)
@@ -56,7 +58,7 @@ class StaffOutlineBrowserTests(unittest.TestCase):
         report = {'sourceCommit': os.environ.get('GITHUB_SHA', 'local-uncommitted'),
                   'fixture': 'Production Motion.draw in Chromium; isolated pose gallery, not gameplay screenshot',
                   'coverage': coverage, 'renders': [], 'screenshots': []}
-        for key in coverage['staff']:
+        for key in coverage['staff']+coverage['rankForms']:
             result = page.evaluate("""key=>{
               document.querySelector('#outline-browser-gallery')?.remove();
               const gallery=document.createElement('canvas');gallery.id='outline-browser-gallery';
@@ -100,13 +102,13 @@ class StaffOutlineBrowserTests(unittest.TestCase):
             report['screenshots'].append(screenshot)
         report['pageErrors'] = self.errors
         (self.out / 'pose-render-report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2))
-        self.assertEqual(len(report['renders']), 204)
+        self.assertEqual(len(report['renders']), 408)
         self.assertEqual(self.errors, [])
 
-    def test_fifteen_character_board_reuses_warm_display_masks(self):
+    def test_normal_and_rank_form_boards_reuse_warm_display_masks(self):
         page = self.open_fixture()
         result = page.evaluate("""()=>{
-          const keys=Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].group==='staff').slice(0,15);
+          const keys=Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].group==='staff'&&!Motion.sheets[k].rankForm).slice(0,15).concat(Object.keys(Motion.sheets).filter(k=>Motion.sheets[k].rankForm===5).slice(0,15));
           const target=document.createElement('canvas');target.width=target.height=256;const ctx=target.getContext('2d');
           const bp=window.BattlePresentation,a=bp.axes(390,390),row=(a.y[1][3]-a.y[1][2])/3;
           const cell=(bp.project({x:490,y:0},390,390).x-bp.project({x:110,y:0},390,390).x)/5;
@@ -119,7 +121,7 @@ class StaffOutlineBrowserTests(unittest.TestCase):
           }finally{document.createElement=original}
         }""")
         (self.out / 'cache-report.json').write_text(json.dumps(result, indent=2))
-        self.assertEqual(result['characters'], 15)
+        self.assertEqual(result['characters'], 30)
         self.assertGreater(result['coldCreated'], 0)
         self.assertEqual(result['warmCreated'], 0, result)
         self.assertEqual(self.errors, [])

@@ -55,15 +55,23 @@ class CharacterPortraitTests(unittest.TestCase):
             actual = page.locator('#asset-roster-host #r-team img').evaluate_all('(xs)=>xs.map(x=>x.src)')
             self.assertEqual(actual, expected)
             page.locator('#asset-roster-host .r-close').click()
+        # Individual faces now belong to the roster/dossier; group training no
+        # longer presents the retired per-character effect list.
+        page.locator('#asset-lobby-host [data-proxy="#roster-open"]').click()
+        actual = page.locator('#asset-roster-host .r-card img').evaluate_all('(xs)=>xs.map(x=>({id:x.dataset.characterId,src:new URL(x.src).pathname}))')
+        expected = page.evaluate('kinds.map(k=>({id:k.file,src:new URL(staffRecords.find(r=>r.id===k.file).image,document.baseURI).pathname}))')
+        self.assertEqual(len(actual),17)
+        self.assertEqual({x['id']:x['src'] for x in actual},{x['id']:x['src'] for x in expected})
+        page.locator('#asset-roster-host .r-close').click()
         page.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
-        self.assertEqual(page.locator('#asset-training-host #effects summary img').count(), 17)
-        faces = page.locator('#asset-training-host #effects summary img').evaluate_all('(xs)=>xs.map(x=>({id:x.dataset.characterId,src:x.getAttribute("src")}))')
-        expected = page.evaluate('kinds.map(k=>staffRecords.find(r=>r.id===k.file).image)')
-        self.assertEqual([x['src'] for x in faces], expected)
+        self.assertEqual(page.locator('#asset-training-host #effects summary img').count(),0)
+        self.assertTrue(page.locator('#asset-training-host .ss-training-effects').is_hidden())
         page.locator('#asset-training-host .back').click()
-        page.evaluate("document.querySelector('#roster-open').click();showStaffRecord('gobi')")
-        self.assertTrue(page.locator('#roster-detail .dossier-hero img').get_attribute('src').endswith('/gobi.webp'))
-        self.assertEqual(page.locator('#roster-detail .dossier-hero canvas').count(), 0)
+        page.evaluate("document.querySelector('#roster-open').click()")
+        for row in expected:
+            page.evaluate('id=>showStaffRecord(id)',row['id'])
+            self.assertEqual(page.locator('#roster-detail .dossier-hero img').evaluate('e=>new URL(e.src).pathname'),row['src'])
+            self.assertEqual(page.locator('#roster-detail .dossier-hero canvas').count(),0)
 
     def test_all_support_choices_use_the_same_face_in_lobby_and_training(self):
         page = self.open(320, 568)
@@ -72,12 +80,18 @@ class CharacterPortraitTests(unittest.TestCase):
             page.evaluate('key=>{meta.equipped=key;renderMeta()}', key)
             path = page.locator('#asset-lobby-host #a-support-art img').get_attribute('src')
             self.assertTrue(path.split('?')[0].endswith('/merc-' + key + '.webp'))
+        expected = page.evaluate('Object.keys(mercCatalog).map(id=>staffRecords.find(r=>r.id==="merc-"+id).image)')
+        page.locator('#asset-lobby-host [data-proxy="#roster-open"]').click()
+        page.locator('#asset-roster-host [data-group="merc"]').click()
+        actual = page.locator('#asset-roster-host .r-card img').evaluate_all('(xs)=>xs.map(x=>new URL(x.src).pathname)')
+        canonical = page.evaluate('xs=>xs.map(x=>new URL(x,document.baseURI).pathname)',expected)
+        self.assertEqual(len(actual),7)
+        self.assertEqual(actual,canonical)
+        page.locator('#asset-roster-host .r-close').click()
         page.locator('#asset-lobby-host [data-proxy="#training-entry"]').click()
         page.locator('#asset-training-host [data-group="merc"]').click()
-        self.assertEqual(page.locator('#asset-training-host #effects summary img').count(), 7)
-        actual = page.locator('#asset-training-host #effects summary img').evaluate_all('(xs)=>xs.map(x=>x.getAttribute("src"))')
-        expected = page.evaluate('Object.keys(mercCatalog).map(id=>staffRecords.find(r=>r.id==="merc-"+id).image)')
-        self.assertEqual(actual, expected)
+        self.assertEqual(page.locator('#asset-training-host #effects summary img').count(),0)
+        self.assertTrue(page.locator('#asset-training-host .ss-training-effects').is_hidden())
         page.locator('#asset-training-host .back').click()
         page.evaluate("revealRecruit('merc-ward',false);HiringStories.close()")
         self.assertEqual(page.locator('#recruit-dialog .recruit-reveal img').get_attribute('src'), expected[0])
@@ -89,10 +103,11 @@ class CharacterPortraitTests(unittest.TestCase):
           const before=JSON.stringify(cells),unit={type:3,pip:5,cool:1,attack:0,arrival:0,income:5,skillCD:12};
           await Promise.all(CharacterPortraits.ids.map(id=>{const img=CharacterPortraits.image(id);return img.decode()}));
           await Promise.all(CharacterMotion.ids.map(id=>Motion.preload(id).decode()));
+          await Promise.all([3,4].map(type=>Motion.preload(BattleImpact.formKey({type,pip:5})).decode()));
           reset();tutorialMode=false;setScreen('battle');board[7]=unit;board[8]={...unit,type:4};selected=7;playing=true;paused=false;sync();
           await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
           const drawn=window.__battleSpriteSources;drawn.length=0;draw();
-          return {sameCells:JSON.stringify(cells)===before,gobi:drawn.some(x=>x.endsWith('/character-motion/gobi.webp')),jjit:drawn.some(x=>x.endsWith('/character-motion/electric-technician.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
+          return {sameCells:JSON.stringify(cells)===before,gobi:drawn.some(x=>x.endsWith('/rank5/gobi.webp')),jjit:drawn.some(x=>x.endsWith('/rank5/electric-technician.webp')),selected:document.querySelector('#battle-selected-portrait').getAttribute('src'),staffCount:board.filter(Boolean).length};
         }''')
         self.assertTrue(result['sameCells'])
         self.assertTrue(result['gobi'])
@@ -107,7 +122,7 @@ class CharacterPortraitTests(unittest.TestCase):
           reset();tutorialMode=false;setScreen('battle');playing=true;paused=true;wave=8;
           await Promise.all([...kinds.map(k=>k.file),'novice-adventurer'].map(id=>Motion.preload(id).decode()));
           const before=JSON.stringify(cells),drawn=window.__battleSpriteSources;drawn.length=0;
-          for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:5,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw();
+          for(let type=0;type<kinds.length;type++){board=Array(15).fill(null);board[7]={type,pip:4,cool:1,skillCD:0};selected=7;draw()}spawn('normal');draw();
           return {sameCells:before===JSON.stringify(cells),staff:kinds.map(k=>({id:k.file,body:drawn.some(src=>src.endsWith('/character-motion/'+k.file+'.webp'))})),heads:drawn.filter(src=>src.includes('/character-portraits/')),enemy:drawn.some(src=>src.endsWith('/combat-comic/novice-adventurer.webp'))};
         }''')
         self.assertTrue(result['sameCells'])
