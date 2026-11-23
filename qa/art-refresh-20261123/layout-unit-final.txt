@@ -1,0 +1,13 @@
+✔ people presentation retains native controls and training state authority (0.858587ms)
+✔ dossier classifies existing nested growth and story disclosures (0.166047ms)
+✔ people tabs support accessible keyboard navigation and hidden panels (0.128871ms)
+✔ training keeps summary separate from effects and supports large fonts (0.108051ms)
+✔ new training illustration only fills spare room and cannot become a control (0.147279ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 64.996529

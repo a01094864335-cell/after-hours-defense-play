@@ -182,3 +182,18 @@ body{background:#081421!important}
 /* The actor and its contact shadow share the dock-relative ground plane. */
 #asset-lobby#asset-lobby#asset-lobby>.a-gobi-ground{position:absolute;left:65%;bottom:calc(var(--lobby-dock-height,310px) - 44px);width:35%;max-width:150px;height:16px;transform:translateX(-50%);background:radial-gradient(ellipse,#020914a6 0%,#05142666 35%,transparent 72%);z-index:1;pointer-events:none}
 @media(max-height:650px){#asset-lobby#asset-lobby#asset-lobby>.a-gobi-ground{left:72%;width:28%;max-width:100px;height:12px}}
+
+/* Approved S2/T4 art: one full scene, no unrelated portrait stickers. */
+#asset-shop#asset-shop#asset-shop#asset-shop .moon-counter{object-position:50% 57%!important}
+#asset-shop#asset-shop#asset-shop#asset-shop .moon-shop-scene::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(#0b1c3180,transparent 28%);z-index:1}
+#asset-shop#asset-shop#asset-shop#asset-shop .moon-shop-scene .grid-shop-title{z-index:2!important}
+/* The artwork fills only the room left between real training stats and the pinned dock. */
+#asset-training#asset-training#asset-training#asset-training.ss-training .ss-training-yard{background:url('assets/moonlight/training-staff-buddy.webp') 50% 54%/cover no-repeat!important;border-radius:12px!important;overflow:hidden!important;margin-top:8px!important;min-height:0!important;flex:1 1 0!important}
+#asset-training#asset-training#asset-training#asset-training.ss-training[data-training-group="merc"] .ss-training-yard{background-image:url('assets/moonlight/training-support-practice.webp')!important;background-position:35% 54%!important}
+@media(max-height:650px){#asset-training#asset-training#asset-training#asset-training.ss-training .ss-training-yard{background-position:50% 40%!important}#asset-training#asset-training#asset-training#asset-training.ss-training[data-training-group="merc"] .ss-training-yard{background-position:35% 62%!important}}
+
+@media(min-height:651px){
+ #asset-training#asset-training#asset-training#asset-training.ss-training .ss-training-yard{background-image:url('assets/moonlight/training-staff-buddy-portrait.webp')!important;background-position:50% 54%!important}
+ #asset-training#asset-training#asset-training#asset-training.ss-training[data-training-group="merc"] .ss-training-yard{background-image:url('assets/moonlight/training-support-practice-portrait.webp')!important;background-position:50% 54%!important}
+}
+@media(max-height:650px){#asset-shop#asset-shop#asset-shop#asset-shop .moon-counter{object-position:center!important}}

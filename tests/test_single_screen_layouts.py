@@ -211,7 +211,7 @@ class SingleScreenLayoutTests(unittest.TestCase):
                     return {src:image.src,width:image.naturalWidth,height:image.naturalHeight};
                 }''')
                 self.assertIsNotNone(art)
-                self.assertTrue(art['src'].endswith('/assets/single-screen/training-yard.webp'))
+                self.assertTrue(art['src'].endswith('/assets/moonlight/training-staff-buddy' + ('-portrait' if height > 650 else '') + '.webp'))
                 self.assertGreater(art['width'], 0)
                 self.assertGreater(art['height'], 0)
                 self.assert_visible_without_scroll(page, TRAINING + '.ss-training-yard')
@@ -225,6 +225,8 @@ class SingleScreenLayoutTests(unittest.TestCase):
                 group.focus();page.keyboard.press('Space')
                 self.assertEqual(page.evaluate('trainingGroup'), 'merc')
                 self.assertEqual(group.get_attribute('aria-pressed'), 'true')
+                self.assertIn('training-support-practice', yard.evaluate('e=>getComputedStyle(e).backgroundImage'))
+                self.assertEqual(page.locator(TRAINING + '#asset-training').get_attribute('data-training-group'), 'merc')
                 self.assertTrue(page.locator(TRAINING + '.power').is_hidden())
                 for selector in fixed:
                     self.assert_visible_without_scroll(page, selector)

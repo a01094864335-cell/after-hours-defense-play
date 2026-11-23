@@ -7,6 +7,7 @@ for(const track of ['lobby-night','night-shift','commander'])files.add('assets/a
 for(const f of ['dialog-layout.js','dialog-layout.css','index.html','game-audio.js','game-sfx.js','assets/audio/lobby-night.wav','assets/audio/night-shift.wav','assets/audio/commander.wav','intro-cinematic.css','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
 for(const f of ['moonlight-ui.css','moonlight-ui.js','assets/moonlight/lobby.webp','assets/moonlight/shop.webp'])files.add(f);
 files.add('assets/moonlight/gobi-lobby.webp');
+for(const f of ['recruit-gate-rush','recruit-gate-rush-wide','training-staff-buddy','training-staff-buddy-portrait','training-support-practice','training-support-practice-portrait'])files.add('assets/moonlight/'+f+'.webp');
 files.add('enamel-ui.css');
 files.add('visual-pass.css');
 files.add('roomy-buttons.css');
