@@ -21,6 +21,10 @@ class DutyPatchTests(unittest.TestCase):
             p.context.close()
     def test_drag_to_trash_frees_cell(self):
         p=self.open(390,844);self.battle(p);pos=board_point(p,p.evaluate('cells[0]'));p.mouse.move(pos['x'],pos['y']);p.mouse.down();p.mouse.move(pos['x']+15,pos['y']+15,steps=3)
+        # Raw mouse dispatch is not a locator action with auto-waiting. Observe
+        # the delivered drag before reading the newly revealed drop target.
+        p.wait_for_function('drag?.from===0&&drag.moved',timeout=5000)
+        p.locator('#board-trash').wait_for(state='visible',timeout=5000)
         r=p.locator('#board-trash').bounding_box();self.assertIsNotNone(r);p.mouse.move(r['x']+r['width']/2,r['y']+r['height']/2,steps=8);p.mouse.up();self.assertIsNone(p.evaluate('board[0]'))
     def test_roulette_pauses_combat_preserves_result_and_single_claim(self):
         for w,h in [(320,568),(390,844)]:
