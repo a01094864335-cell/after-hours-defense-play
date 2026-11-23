@@ -135,7 +135,7 @@ function choosePerk(id,type){
  else if(id==='life')life=Math.min(3,life+1);
  else if(id==='merge')guaranteedMerge=Math.min(3,Number(guaranteedMerge)+o.amount);
  else if(id==='equipment')levels[o.type]=Math.min(5,levels[o.type]+o.amount);
- else if(id==='staff'){board[board.findIndex(u=>!u)]={type:o.type,pip:o.amount,cool:0,attack:0,arrival:.5,income:5,skillCD:0};noteRoster();}
+ else if(id==='staff'){const slot=board.findIndex(u=>!u);board[slot]={type:o.type,pip:o.amount,cool:0,attack:0,arrival:.5,income:5,skillCD:0};window.BattleImpact?.acquire(board[slot]);noteRoster();}
  else {rewardSupport={id,until:wave+5};say(rewardCopy(o).slice(0,2).join(' · ')+' · '+(wave+1)+'–'+(wave+5)+'W');}
  window.PlayObservations?.noteReward(o); rewardBundle=null;bonusPending=false;document.querySelector('#perk').close();paused=false;nextWave();sync();saveActiveRun();return true;
 }

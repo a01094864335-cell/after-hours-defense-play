@@ -1,6 +1,7 @@
 'use strict';
 // Presentation only: never changes hit boxes, speed, damage, RNG or saved state.
 window.BattleImpact=(()=>{
+ let acquire=()=>{};
  const en=()=>document.documentElement?.lang?.startsWith('en');
  function formKey(u){const base=kinds[u.type]?.file;return u.pip>=5&&Motion.sheets['rank5-'+base]?'rank5-'+base:base}
  function staffKey(u){const base=kinds[u.type]?.file,key=formKey(u);if(key===base)return base;const image=Motion.preload(key);return image?.complete&&image.naturalWidth?key:base}
@@ -62,9 +63,37 @@ window.BattleImpact=(()=>{
    const nativeTick=tickBossWarning;tickBossWarning=function(dt){nativeTick(dt);if(bossWarning)uiAttr(node,'data-phase',bossWarning.left<.4?'out':'in');uiAttr(battle,'data-boss-cue',bossWarning&&!node.hidden?'true':'false')};
    window.GameLanguage?.subscribe(paintWarning);
   }
+  if(stage&&battle){
+   const rank=document.createElement('aside');rank.id='rank5-warning';rank.className='comic-boss-warning';rank.hidden=true;rank.setAttribute('role','status');rank.setAttribute('aria-live','polite');rank.setAttribute('aria-atomic','true');rank.setAttribute('data-no-translate','');
+   rank.innerHTML='<span class="warning-icon" aria-hidden="true">★</span><div><small>★★★★★</small><strong></strong></div><img class="comic-boss-portrait" alt="" decoding="async">';stage.append(rank);
+   const title=rank.querySelector('strong'),portrait=rank.querySelector('img');
+   let pending=[],current=null;
+   function paintRank(){if(!current)return;const k=kinds[current.unit.type],record=typeof staffRecords==='undefined'?null:staffRecords.find(r=>r.id===k.file),name=record?.name||k.name;uiText(title,(en()?GameLanguage.t(name):name)+(en()?' · ★5 AWAKENED!':' · ★5 각성!'));uiAttr(portrait,'src',staffPortraitPath(k.file));}
+   function clearRank(){pending=[];current=null;rank.hidden=true;uiAttr(battle,'data-rank5-cue','false');}
+   function tickRank(dt){
+    if(ended){clearRank();return;}
+    const visible=playing&&!paused&&!bossWarning&&!document.hidden&&!document.querySelector('dialog[open]')&&(typeof appScreen==='undefined'||appScreen==='battle');
+    if(!visible){rank.hidden=true;uiAttr(battle,'data-rank5-cue','false');return;}
+    if(!current&&pending.length){current={unit:pending.shift(),left:2.8};paintRank();}
+    if(current){current.left-=dt;if(current.left<=0){current=null;rank.hidden=true;}else{rank.hidden=false;uiAttr(rank,'data-phase',current.left<.4?'out':'in');}}
+    uiAttr(battle,'data-rank5-cue',current?'true':'false');
+   }
+   acquire=unit=>{if(unit?.pip!==5||!kinds[unit.type]||pending.includes(unit)||current?.unit===unit)return;pending.push(unit);if(pending.length>6)pending.shift();tickRank(0);};
+   const tick=tickBossWarning;tickBossWarning=function(dt){tick(dt);tickRank(dt)};
+   const nativeReset=reset;reset=function(...args){clearRank();return nativeReset.apply(this,args)};
+   const nativeStaff=drawStaffMotion;drawStaffMotion=function(u,i,x,y,ghost){
+    if(current?.unit===u&&!rank.hidden&&!ghost){
+     const calm=reduce?.matches,p=1-current.left/2.8;ctx.save();ctx.strokeStyle='#ffe28a';ctx.lineWidth=2.5;ctx.globalAlpha=current.left<.4?current.left/.4:.9;
+     ctx.beginPath();ctx.ellipse(x,y-18,29+(calm?0:Math.sin(p*Math.PI*4)*1.5),38,0,0,Math.PI*2);ctx.stroke();
+     if(!calm)for(let n=0;n<(GamePerformance.lowPower?1:3);n++){const a=n*Math.PI*2/3+p*2;ctx.fillStyle='#ffe28a';polygon(ctx,x+Math.cos(a)*35,y-18+Math.sin(a)*42,4,4,.28);ctx.fill();}ctx.restore();
+    }
+    return nativeStaff(u,i,x,y,ghost);
+   };
+   window.GameLanguage?.subscribe(paintRank);
+  }
   const notice=document.querySelector('#message');
   if(notice&&typeof MutationObserver==='function'){let text=notice.textContent,animation;new MutationObserver(()=>{if(notice.textContent===text)return;text=notice.textContent;if(reduce?.matches||GamePerformance.lowPower)return;animation?.cancel();animation=notice.animate?.([{opacity:.55,translate:'0 3px'},{opacity:1,translate:'0 0'}],{duration:150,easing:'ease-out'});}).observe(notice,{childList:true,characterData:true,subtree:true});}
  }
  window.GamePerformance?.invalidate();
- return Object.freeze({formKey,staffKey});
+ return Object.freeze({formKey,staffKey,acquire:unit=>acquire(unit)});
 })();

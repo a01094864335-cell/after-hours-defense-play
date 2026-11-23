@@ -53,6 +53,29 @@ class BattleImpactTests(unittest.TestCase):
                 p.evaluate('tickBossWarning(1)');self.assertTrue(warning.is_hidden())
             p.context.close()
 
+    def test_rank5_acquisition_alert_prioritizes_boss_and_does_not_replay_selection(self):
+        for lang in ['ko','en']:
+            p=self.open(320,568);self.battle(p)
+            p.evaluate("window.manualCueTick=tickBossWarning;tickBossWarning=()=>{};board[0]={type:4,pip:4};board[1]={type:4,pip:4};randomType=()=>4;Math.random=()=>.99")
+            p.evaluate('x=>GameLanguage.set(x)',lang)
+            p.evaluate('merge(0,1);sync();draw()')
+            cue=p.locator('#rank5-warning');self.assertTrue(cue.is_visible())
+            self.assertIn('AWAKENED' if lang=='en' else '각성',cue.inner_text())
+            self.assertEqual(cue.evaluate('e=>e.offsetHeight'),56)
+            self.assertTrue(cue.locator('strong').evaluate('e=>e.scrollWidth<=e.clientWidth'))
+            self.assertTrue(cue.locator('img').get_attribute('src').endswith('electric-technician.webp'))
+            p.evaluate('showBossWarning(5);manualCueTick(0)');self.assertTrue(cue.is_hidden())
+            p.evaluate('clearBossWarning();manualCueTick(0)');self.assertTrue(cue.is_visible())
+            p.evaluate('paused=true;manualCueTick(10)');self.assertTrue(cue.is_hidden())
+            p.evaluate('paused=false;manualCueTick(0)');self.assertTrue(cue.is_visible())
+            p.evaluate('manualCueTick(2.45)');self.assertEqual(cue.get_attribute('data-phase'),'out')
+            p.wait_for_function("document.querySelector('#rank5-warning').getAnimations().every(a=>a.playState==='finished')")
+            self.assertGreaterEqual(cue.bounding_box()['x'],320)
+            p.evaluate('manualCueTick(.5);selectBoardCell(1);sync()');self.assertTrue(cue.is_hidden())
+            p.evaluate('BattleImpact.acquire(board[1]);reset();playing=true;setScreen("battle");manualCueTick(0)');self.assertTrue(cue.is_hidden())
+            p.evaluate('BattleImpact.acquire({type:4,pip:6});manualCueTick(0)');self.assertTrue(cue.is_hidden())
+            p.context.close()
+
     def test_failure_and_departure_effects_keep_atomic_loss_refund_and_wallet(self):
         p=self.open(390,844);self.battle(p)
         p.evaluate("board[0]={type:4,pip:5};board[1]={type:4,pip:5};sp=100;window.beforeWallet=meta.coins;window.expectedRefund=mergeRefund();Math.random=()=>0;merge(0,1);draw()")

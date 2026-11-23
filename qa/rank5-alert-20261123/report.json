@@ -1,0 +1,38 @@
+[
+  {
+    "width": 320,
+    "language": "ko",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  },
+  {
+    "width": 320,
+    "language": "en",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  },
+  {
+    "width": 390,
+    "language": "ko",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  },
+  {
+    "width": 390,
+    "language": "en",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  },
+  {
+    "width": 430,
+    "language": "ko",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  },
+  {
+    "width": 430,
+    "language": "en",
+    "mergeAndCopy": true,
+    "priorityPauseExitReset": true
+  }
+]
