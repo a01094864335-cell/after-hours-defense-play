@@ -1,0 +1,15 @@
+test_approved_equipment_and_deck_card_geometry (test_shared_chrome.SharedChromeTests.test_approved_equipment_and_deck_card_geometry) ... ok
+test_backup_and_recruitment_title_chrome (test_shared_chrome.SharedChromeTests.test_backup_and_recruitment_title_chrome) ... ok
+test_backup_edit_invalidates_preview_presentation (test_shared_chrome.SharedChromeTests.test_backup_edit_invalidates_preview_presentation) ... ok
+test_lobby_gift_and_daily_have_independent_touch_targets (test_shared_chrome.SharedChromeTests.test_lobby_gift_and_daily_have_independent_touch_targets) ... ok
+test_paper_settings_keeps_live_sliders_and_pinned_confirmation (test_shared_chrome.SharedChromeTests.test_paper_settings_keeps_live_sliders_and_pinned_confirmation) ... ok
+test_result_accordion_targets_are_at_least_44px (test_shared_chrome.SharedChromeTests.test_result_accordion_targets_are_at_least_44px) ... ok
+test_roster_touch_targets_and_real_content_fit (test_shared_chrome.SharedChromeTests.test_roster_touch_targets_and_real_content_fit) ... ok
+test_shared_navigation_and_close_across_mobile_sizes (test_shared_chrome.SharedChromeTests.test_shared_navigation_and_close_across_mobile_sizes) ... ok
+test_shop_refreshes_earned_balance_without_reload (test_shared_chrome.SharedChromeTests.test_shop_refreshes_earned_balance_without_reload) ... ok
+test_shop_wallet_contents_stay_inside_pill (test_shared_chrome.SharedChromeTests.test_shop_wallet_contents_stay_inside_pill) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 90.214s
+
+OK

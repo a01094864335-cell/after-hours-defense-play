@@ -71,8 +71,8 @@ html body #roster#roster#roster .ss-dossier [hidden],#asset-training#asset-train
 #asset-training#asset-training#asset-training.ss-training .ss-training-effects li{font-size:13px!important;line-height:1.5!important}
 /* Optional new yard art occupies the old empty floor, never the purchase row. */
 #asset-training#asset-training#asset-training.ss-training .ss-training-main:not([hidden]){display:flex!important;flex-direction:column!important;height:100%!important;min-height:0!important}
-#asset-training#asset-training#asset-training.ss-training .ss-training-yard{flex:1 1 0!important;min-height:0!important;max-height:240px!important;margin:8px 0 0!important;background:url('assets/single-screen/training-yard.webp') center/contain no-repeat!important;pointer-events:none!important}
-@media(max-height:620px),(max-width:350px){#asset-training#asset-training#asset-training.ss-training .ss-training-yard{max-height:85px!important}}
+#asset-training#asset-training#asset-training.ss-training .ss-training-yard{flex:1 1 0!important;min-height:0!important;max-height:none!important;margin:8px 0 0!important;background:url('assets/single-screen/training-yard.webp') center bottom/contain no-repeat!important;pointer-events:none!important}
+
 @media(max-width:350px){
  html body #roster#roster#roster .ss-dossier>.dossier-hero{grid-template-columns:68px minmax(0,1fr)!important;gap:7px!important}
  html body #roster#roster#roster .ss-dossier>.dossier-hero>:is(img,canvas[data-motion]){width:68px!important;height:68px!important}

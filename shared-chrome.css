@@ -30,7 +30,7 @@ html body button.shared-icon-button:not([hidden]),
 #asset-lobby button.shared-icon-button:not([hidden]),
 #asset-roster button.shared-icon-button:not([hidden]),
 #asset-shop button.shared-icon-button:not([hidden]),
-#asset-training button.shared-icon-button:not([hidden]){box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:8px!important;border:3px solid #101d49!important;border-radius:10px 8px 11px 6px!important;background:linear-gradient(145deg,#fff28a,#ffce22 65%,#ffac16)!important;color:#101d49!important;box-shadow:inset 0 0 0 2px #fff6a5,0 3px 0 #101d49!important;font-size:0!important;line-height:1!important;transform:none!important;text-shadow:none!important;overflow:hidden!important}
+#asset-training button.shared-icon-button:not([hidden]){box-sizing:border-box!important;display:grid!important;place-items:center!important;flex:0 0 44px!important;width:44px!important;height:44px!important;min-width:44px!important;min-height:44px!important;padding:8px!important;border:2px solid #101d49!important;border-radius:50%!important;background:#fffdf7!important;color:#101d49!important;box-shadow:none!important;font-size:0!important;line-height:1!important;transform:none!important;text-shadow:none!important;overflow:hidden!important}
 html body button.shared-icon-button>img,
 #asset-lobby button.shared-icon-button>img,
 #asset-roster button.shared-icon-button>img,

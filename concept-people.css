@@ -132,7 +132,7 @@ html body dialog#roster#roster.asset-roster-detail.shared-paper-modal{border-ima
 html body dialog#roster#roster.asset-roster-detail.shared-paper-modal #roster-title{background:none!important;color:#10254b!important;-webkit-text-fill-color:#10254b!important;text-shadow:none!important;font:400 27px/1.2 ConceptPeopleHead,system-ui!important}
 #asset-training#asset-training header.shared-art-header{display:block!important}
 #asset-shop#asset-shop header.shared-art-header .wallet{left:auto!important;right:9px!important}
-#asset-training#asset-training{background:linear-gradient(#10254b1f,#10254b1f),url('previews/asset-lobby-20261109/assets/background.webp') center/cover!important}
+#asset-training#asset-training{background:linear-gradient(#10254b14,#10254b14),url('assets/open-scene/training-room.webp') center bottom/cover no-repeat!important}
 /* Dossier stays scrollable at small viewport heights; actions retain their native footer. */
 html body #roster#roster.asset-roster-detail #roster-detail>.panel-scroll-body{overflow:auto!important;min-height:0!important;padding-right:3px!important}
 html body #roster#roster.asset-roster-detail #roster-detail .live-dossier-actions{background:#fffdf7!important;border:0!important;padding:8px 0 0!important}
