@@ -1,0 +1,44 @@
+[
+  {
+    "path": "assets/moonlight/recruit-gate-rush.webp",
+    "width": 960,
+    "height": 1200,
+    "bytes": 276382,
+    "sha256": "fe6fd164a3cc8198fcc88f806c2e92f4fdf7803f276edc0768c92f57ecc4c59e"
+  },
+  {
+    "path": "assets/moonlight/recruit-gate-rush-wide.webp",
+    "width": 1440,
+    "height": 480,
+    "bytes": 206412,
+    "sha256": "d19fe4225319fc69779ed90bc4ccf3495beff26bd9e29e870e7cdfa176677e7e"
+  },
+  {
+    "path": "assets/moonlight/training-staff-buddy.webp",
+    "width": 1280,
+    "height": 853,
+    "bytes": 265328,
+    "sha256": "20ad6cc4a79da30025435dae19ab9f8453fabec7fc05c37efae92a27ed2b1af4"
+  },
+  {
+    "path": "assets/moonlight/training-staff-buddy-portrait.webp",
+    "width": 960,
+    "height": 1200,
+    "bytes": 276710,
+    "sha256": "199f488863e2c0266e01c9061bf56d49116b325920c510aecade03bb28dc0dc6"
+  },
+  {
+    "path": "assets/moonlight/training-support-practice.webp",
+    "width": 1280,
+    "height": 853,
+    "bytes": 287740,
+    "sha256": "d128845e51bc8f2bc3ac7003c0a823db43e404baa4ef8a4eadcf475a3892a73e"
+  },
+  {
+    "path": "assets/moonlight/training-support-practice-portrait.webp",
+    "width": 960,
+    "height": 1200,
+    "bytes": 316008,
+    "sha256": "2f1dd4c146536edf30a56f1f47a165c183a977eeff671e965f5802accb218c71"
+  }
+]

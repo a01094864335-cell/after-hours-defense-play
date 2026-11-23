@@ -13,7 +13,7 @@
  function refresh(){hydrateArt();
   const level=trainingLevel(trainingGroup,false),next=Math.min(TRAINING_MAX,level+1),cost=trainingCost(level),milestone=TRAINING_MILESTONES.find(n=>n>level),staff=trainingGroup==='staff';
   const en=window.GameLanguage?.current==='en';
-  const state=JSON.stringify([en,trainingGroup,meta.coins,meta.training,meta.staff,meta.owned,playing,ended,saveWarning,q('#training-status').textContent]);if(state===last)return;last=state;
+  const state=JSON.stringify([en,trainingGroup,meta.coins,meta.training,meta.staff,meta.owned,playing,ended,saveWarning,q('#training-status').textContent]);if(state===last)return;last=state;root.dataset.trainingGroup=trainingGroup;
   root.querySelectorAll('[data-group]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.group===trainingGroup));b.textContent=en?(b.dataset.group==='staff'?'Staff':'Support'):(b.dataset.group==='staff'?'직원 강화':'지원 영웅 강화');});
   local('#level').innerHTML=(en?(staff?'All staff':'All support'):(staff?'직원 전체':'지원 영웅 전체'))+' <span>Lv.'+level+'</span>'+(level<TRAINING_MAX?' <em>➜ Lv.'+next+'</em>':' <em>MAX!</em>');
   local('.power').hidden=!staff;

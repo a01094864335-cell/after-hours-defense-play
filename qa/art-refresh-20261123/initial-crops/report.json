@@ -1,0 +1,122 @@
+{
+  "base": "http://127.0.0.1:8894/",
+  "checks": [
+    {
+      "width": 320,
+      "height": 568,
+      "staff": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-staff-buddy.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "support": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-support-practice.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "yard": {
+        "x": 10,
+        "y": 290.78125,
+        "width": 298,
+        "height": 115.421875,
+        "inside": true
+      },
+      "purchase": "exact price",
+      "training": "support level and coins persist after reload",
+      "errors": [],
+      "bad": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "staff": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-staff-buddy.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "support": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-support-practice.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "yard": {
+        "x": 10,
+        "y": 293.484375,
+        "width": 368,
+        "height": 388.71875,
+        "inside": true
+      },
+      "purchase": "exact price",
+      "training": "support level and coins persist after reload",
+      "errors": [],
+      "bad": []
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "staff": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-staff-buddy.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "support": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-support-practice.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "yard": {
+        "x": 10,
+        "y": 293.484375,
+        "width": 408,
+        "height": 476.71875,
+        "inside": true
+      },
+      "purchase": "exact price",
+      "training": "support level and coins persist after reload",
+      "errors": [],
+      "bad": []
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "staff": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-staff-buddy.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "support": {
+        "src": "http://127.0.0.1:8894/assets/moonlight/training-support-practice.webp",
+        "width": 1280,
+        "height": 853,
+        "backgroundSize": "cover",
+        "pointerEvents": "none"
+      },
+      "yard": {
+        "x": 490,
+        "y": 293.484375,
+        "width": 458,
+        "height": 544.71875,
+        "inside": true
+      },
+      "purchase": "exact price",
+      "training": "support level and coins persist after reload",
+      "errors": [],
+      "bad": []
+    }
+  ],
+  "pass": true
+}

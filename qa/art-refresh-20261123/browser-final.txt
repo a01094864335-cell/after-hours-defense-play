@@ -1,0 +1,25 @@
+test_double_size_fonts_use_reachable_scrolling_fallbacks (test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks) ... ok
+test_five_primary_screens_fit_both_short_phone_sizes (test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes) ... ok
+test_recruitment_rules_are_modal_and_purchase_keeps_native_economy (test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy) ... ok
+test_topic_tabs_support_click_arrows_home_end_and_hidden_panels (test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels) ... ok
+test_training_yard_loads_without_displacing_live_upgrade_and_navigation (test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation) ... ok
+test_background_and_portrait_bitmaps_are_reused (test_performance.PerformanceTests.test_background_and_portrait_bitmaps_are_reused) ... ok
+test_boss_warning_drawing_uses_cached_geometry (test_performance.PerformanceTests.test_boss_warning_drawing_uses_cached_geometry) ... ok
+test_closed_shop_is_not_rebuilt_and_refreshes_on_open (test_performance.PerformanceTests.test_closed_shop_is_not_rebuilt_and_refreshes_on_open) ... ok
+test_hidden_tab_stops_and_does_not_catch_up (test_performance.PerformanceTests.test_hidden_tab_stops_and_does_not_catch_up) ... ok
+test_mobile_default_mode_toggle_persists (test_performance.PerformanceTests.test_mobile_default_mode_toggle_persists) ... ok
+test_mobile_preparation_sleeps_then_native_summons_start_combat (test_performance.PerformanceTests.test_mobile_preparation_sleeps_then_native_summons_start_combat) ... ok
+test_portraits_appear_after_opening_static_dialogs (test_performance.PerformanceTests.test_portraits_appear_after_opening_static_dialogs) ... ok
+test_render_limit_and_fixed_simulation_rate (test_performance.PerformanceTests.test_render_limit_and_fixed_simulation_rate) ... ok
+test_static_lobby_and_pause_do_not_keep_drawing (test_performance.PerformanceTests.test_static_lobby_and_pause_do_not_keep_drawing) ... ok
+test_active_training_home_cancel_and_confirm (test_training_page.TrainingPageTests.test_active_training_home_cancel_and_confirm) ... ok
+test_battle_pause_and_result_page (test_training_page.TrainingPageTests.test_battle_pause_and_result_page) ... ok
+test_independent_page_history_and_navigation_ten_times (test_training_page.TrainingPageTests.test_independent_page_history_and_navigation_ten_times) ... ok
+test_landscape_keeps_page_inside_inert_guard (test_training_page.TrainingPageTests.test_landscape_keeps_page_inside_inert_guard) ... ok
+test_reload_reopen_back_stays_in_lobby (test_training_page.TrainingPageTests.test_reload_reopen_back_stays_in_lobby) ... ok
+test_result_training_home_starts_fresh_duty (test_training_page.TrainingPageTests.test_result_training_home_starts_fresh_duty) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 104.797s
+
+OK
