@@ -27,17 +27,54 @@
   const hero=scene.querySelector('.moon-counter'),shortScreen=window.matchMedia?.('(max-height:650px)');
   function loadRecruitArt(){const wide=!!shortScreen?.matches;hero.dataset.sceneFormat=wide?'wide':'portrait';GamePerformance.loadOnDisplay(hero,url('assets/moonlight/'+(wide?'recruit-gate-rush-wide.webp':'recruit-gate-rush.webp')))}
   loadRecruitArt();shortScreen?.addEventListener?.('change',loadRecruitArt);
-  stage.setAttribute('aria-label','랜덤 동료 채용팩');
-  scene.classList.add('recruit-draw-scene');
-  const draw=document.createElement('div');draw.className='recruit-draw';
-  draw.innerHTML='<p class="draw-kicker"></p><div class="draw-portraits" aria-hidden="true"></div><div class="draw-envelope" aria-hidden="true"><i></i><span>?</span></div><p class="draw-caption"></p>';
-  scene.append(draw);
-  // Preview real members of the pool; the display never predicts the next roll.
-  const previewIds=['goblin-guard','slime-cleaner','merc-ward','skeleton-chef'];
-  for(const id of previewIds){const card=document.createElement('span');card.className='draw-portrait';card.append(CharacterPortraits.image(id,'','',true));draw.querySelector('.draw-portraits').append(card)}
-  const translateDraw=()=>{const en=window.GameLanguage?.current==='en';draw.querySelector('.draw-kicker').textContent=en?'WHO WILL ARRIVE?':'이번엔 누가 올까?';draw.querySelector('.draw-caption').textContent=en?'Open a pack · Meet 1 random colleague':'봉투를 열면 · 랜덤 동료 1명';scene.querySelector('.grid-shop-title').textContent=en?'Hero Recruit Pack':'영웅 채용팩';stage.setAttribute('aria-label',en?'Random colleague recruit pack':'랜덤 동료 채용팩')};
-  window.GameLanguage?.subscribe(translateDraw);translateDraw();
+  stage.setAttribute('aria-label','새 동료를 맞이하는 성문 앞 영웅 채용팩');
 
  }
  document.documentElement.dataset.uiVersion='moonlight-20261119';
+})();
+
+/* Paid recruitment presentation: save the roll once, then reveal it after opening. */
+(()=>{
+ if(typeof document==='undefined'||typeof document.getElementById!=='function'||typeof document.body?.attachShadow!=='function')return;
+ const buy=document.getElementById('buy-staff-pack');
+ if(!buy||typeof revealRecruit!=='function')return;
+ const originalClick=buy.onclick,originalReveal=revealRecruit;
+ let purchasing=false,opening=null,timer=0;
+ const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function finish(){
+  if(!opening)return;
+  const {cover,dialog,focus,observer}=opening;opening=null;clearTimeout(timer);observer.disconnect();cover.remove();
+  dialog.removeAttribute('data-recruit-opening');
+  const target=focus?.isConnected?focus:dialog.querySelector('.ref-recruit-actions button:last-child,button');
+  if(dialog.open)target?.focus({preventScroll:true});
+ }
+ buy.onclick=function(event){
+  if(opening||purchasing)return false;
+  purchasing=true;
+  try{return originalClick.call(this,event)}finally{purchasing=false}
+ };
+ revealRecruit=function(...args){
+  const result=originalReveal.apply(this,args);
+  if(!purchasing)return result;
+  const dialog=document.querySelector('#hiring-story[open]')||document.querySelector('#recruit-dialog[open]');
+  if(!dialog)return result;
+  const en=window.GameLanguage?.current==='en',cover=document.createElement('div');
+  cover.className='recruit-opening';cover.setAttribute('role','group');cover.setAttribute('aria-label',en?'Opening recruit pack':'채용팩 개봉 중');
+  cover.innerHTML='<div class="recruit-opening-glow" aria-hidden="true"></div><div class="recruit-opening-art" aria-hidden="true"><img src="assets/reference-ui/recruit-envelope-art.webp" alt=""><span>✦</span></div><p role="status"></p><button type="button"></button>';
+  cover.querySelector('p').textContent=en?'Who is at the door…?':'어떤 동료가 찾아왔을까…?';
+  const skip=cover.querySelector('button');skip.textContent=en?'Reveal now ›':'바로 확인 ›';skip.onclick=finish;
+  const focus=dialog.querySelector('[data-hire-next]')||dialog.querySelector('.ref-recruit-actions button:last-child')||dialog.querySelector('button');
+  const observer=new MutationObserver(()=>{if(!dialog.open)finish()});observer.observe(dialog,{attributes:true,attributeFilter:['open']});
+  opening={cover,dialog,focus,observer};dialog.setAttribute('data-recruit-opening','');dialog.append(cover);skip.focus({preventScroll:true});
+  timer=setTimeout(finish,reduced()?250:1500);
+  return result;
+ };
+ // Keep keyboard interaction inside the temporary opening layer.
+ document.addEventListener('keydown',event=>{
+  if(!opening)return;
+  if(event.key==='Escape'){event.preventDefault();event.stopImmediatePropagation();finish()}
+  else if(event.key==='Tab'){event.preventDefault();event.stopImmediatePropagation();opening.cover.querySelector('button').focus()}
+  else if(event.key.startsWith('Arrow')){event.preventDefault();event.stopImmediatePropagation()}
+ },true);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)finish()});
 })();

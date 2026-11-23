@@ -214,46 +214,20 @@ body{background:#081421!important}
 #asset-lobby#asset-lobby#asset-lobby .a-member{justify-content:center;gap:0}
 #asset-lobby#asset-lobby#asset-lobby .a-support{height:68px;align-self:start}
 @media(max-height:650px){#asset-lobby#asset-lobby#asset-lobby .a-support{height:62px}}
-
-/* Recruit packs: a sealed invitation and actual possible colleagues. */
-#asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene{background:#102944}
-#asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene .moon-counter{opacity:.3;filter:saturate(.65);object-position:center!important}
-#asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 55%,#407aa344,transparent 65%),linear-gradient(#0b1c3166,transparent 40%,#0b1c31);pointer-events:none}
-#asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene .grid-shop-title{top:27px!important;z-index:3;font-size:26px!important;text-shadow:0 2px 4px #07101c!important}
-.recruit-draw{position:absolute;inset:0;z-index:2;display:flex;align-items:center;justify-content:center;isolation:isolate}
-.draw-kicker{position:absolute;top:8px;left:0;right:0;text-align:center;margin:0;color:#e8ca82;font:700 11px/1.3 system-ui;letter-spacing:2px}
-.draw-caption{position:absolute;bottom:8px;left:4px;right:4px;text-align:center;margin:0;color:#e7ecf4;font:600 12px/1.4 system-ui}
-.draw-envelope{position:absolute;top:51%;left:50%;width:126px;height:90px;transform:translate(-50%,-34%) rotate(-5deg);border:2px solid #ffe5a6;border-radius:8px 8px 14px 14px;background:linear-gradient(145deg,#426793,#183654);box-shadow:0 9px 0 #08172c77,0 0 34px #ebc66b33;display:grid;place-items:center}
-.draw-envelope::before{content:"";position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 65%);background:linear-gradient(#fce7b0,#d7a84f)}
-.draw-envelope i{position:absolute;inset:0;border-radius:inherit;background:linear-gradient(35deg,transparent 49%,#f6d79566 50%,transparent 51%),linear-gradient(-35deg,transparent 49%,#f6d79566 50%,transparent 51%)}
-.draw-envelope span{z-index:1;display:grid;place-items:center;width:44px;height:44px;border:2px solid #ffe7a8;border-radius:50%;background:#a74453;color:#fff2c6;font:900 30px/1 system-ui;box-shadow:0 3px 0 #602837;transform:rotate(5deg)}
-.draw-portraits{position:absolute;inset:67px 16px 38px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center;gap:8px;pointer-events:none}
-.draw-portrait{display:grid;place-items:center;aspect-ratio:1;width:100%;max-width:74px;border:1px solid #83a9cc;border-radius:14px;background:linear-gradient(150deg,#304f72,#132a43);box-shadow:0 4px 0 #071726;transform:translateY(-20px) rotate(-12deg)}
-.draw-portrait:nth-child(2){transform:translateY(-43px) rotate(-6deg)}
-.draw-portrait:nth-child(3){transform:translateY(-43px) rotate(6deg)}
-.draw-portrait:nth-child(4){transform:translateY(-20px) rotate(12deg)}
-.draw-portrait img{width:88%;height:88%;object-fit:contain}
-#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .hero-stage:has(.recruit-draw){min-height:250px!important}
-#asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .purchase:not(:disabled){box-shadow:inset 0 2px #ffefbd,inset 0 -4px #c48a36,0 0 16px #e5b85522!important}
-@media(max-height:700px){
- #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .hero-stage:has(.recruit-draw){min-height:154px!important}
- #asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene .grid-shop-title{top:22px!important;font-size:20px!important}
- .draw-kicker{top:5px;font-size:10px}.draw-caption{bottom:3px;font-size:11px}
- .draw-portraits{inset:52px 22px 26px;gap:14px}.draw-portrait{max-width:55px;transform:rotate(-12deg)}
- .draw-portrait:nth-child(2){transform:translateY(-6px) rotate(-6deg)}.draw-portrait:nth-child(3){transform:translateY(-6px) rotate(6deg)}.draw-portrait:nth-child(4){transform:rotate(12deg)}
- .draw-envelope{width:88px;height:60px;top:60%;transform:translate(-50%,-30%) rotate(-5deg)}.draw-envelope span{width:32px;height:32px;font-size:23px}
-}
-@media(prefers-reduced-motion:no-preference){
- #shop[open] #asset-shop-host{--recruit-active:running}
- .draw-envelope{animation:recruit-envelope-arrival .65s ease-out both;animation-play-state:var(--recruit-active,paused)}
- #recruit-dialog[open] .recruit-reveal>img{animation:recruit-portrait-arrival .55s cubic-bezier(.2,.8,.3,1) both}
-}
-@keyframes recruit-envelope-arrival{from{opacity:0;translate:0 12px}to{opacity:1;translate:0 0}}
-@keyframes recruit-portrait-arrival{from{opacity:0;transform:translateY(16px) scale(.85)}to{opacity:1;transform:translateY(0) scale(1)}}
-@media(max-height:620px){
- #asset-shop#asset-shop#asset-shop#asset-shop.single-screen-shop .hero-stage:has(.recruit-draw){min-height:116px!important}
- #asset-shop#asset-shop#asset-shop#asset-shop .recruit-draw-scene .grid-shop-title{top:18px!important;font-size:18px!important}
- .draw-portraits{inset:40px 25px 18px;gap:18px}.draw-portrait{max-width:45px;border-radius:9px}
- .draw-envelope{width:72px;height:49px;top:57%}.draw-envelope span{width:27px;height:27px;font-size:20px}
- .draw-caption{font-size:10px;bottom:1px}
-}
+/* A finite opening effect covers the committed result, never another random roll. */
+.recruit-opening{position:fixed;inset:0;z-index:2147483647;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;padding:24px;background:radial-gradient(ellipse at 50% 43%,#29446a,#0a182bee 65%);color:#fff0ca;overflow:hidden;isolation:isolate;box-sizing:border-box}
+.recruit-opening-art{position:relative;width:min(65vw,260px);aspect-ratio:325/200;border:2px solid #e9c47d;border-radius:18px;box-shadow:0 8px 28px #0007;animation:recruit-pack-shake 1.5s ease-in both}
+.recruit-opening-art img{width:100%;height:100%;display:block;object-fit:cover;border-radius:16px}
+.recruit-opening-art span{position:absolute;inset:0;display:grid;place-items:center;font:100px/1 system-ui;color:#fff4c6;text-shadow:0 0 28px #ffd772;opacity:0;animation:recruit-pack-spark 1.5s ease-in both}
+.recruit-opening-glow{position:absolute;inset:-30%;z-index:-1;background:repeating-conic-gradient(from 0deg at 50% 50%,transparent 0deg 20deg,#f4d78a22 20deg 32deg,transparent 32deg 45deg);mask-image:radial-gradient(ellipse,#000,transparent 65%);animation:recruit-pack-glow 1.5s ease-in both}
+.recruit-opening p{margin:0;font:700 17px/1.5 system-ui,sans-serif;text-align:center;color:#fff0ca}
+.recruit-opening button{min-height:44px;min-width:120px;padding:10px 20px;border:1px solid #9eacc0;border-radius:22px;background:#132b44;color:#ebdfc1;font:600 14px/1.4 system-ui,sans-serif;box-shadow:none}
+.recruit-opening button:focus-visible{outline:2px solid #ffe0a1;outline-offset:4px}
+@keyframes recruit-pack-shake{0%,15%{transform:scale(.9) rotate(0deg)}25%{transform:rotate(-4deg)}35%{transform:rotate(4deg)}45%{transform:rotate(-5deg)}55%{transform:rotate(5deg)}65%{transform:rotate(-3deg)}78%{transform:scale(1.05)}100%{transform:scale(1.12);filter:brightness(1.35)}}
+@keyframes recruit-pack-glow{from{opacity:0;transform:rotate(-12deg) scale(.8)}to{opacity:1;transform:rotate(20deg) scale(1.2)}}
+@keyframes recruit-pack-spark{0%,68%{opacity:0;transform:scale(.5)}90%{opacity:1}100%{opacity:.7;transform:scale(1.6)}}
+@media(prefers-reduced-motion:reduce){.recruit-opening-art,.recruit-opening-art span,.recruit-opening-glow{animation:none}.recruit-opening-glow{opacity:.3}}
+html body dialog[data-recruit-opening]>:not(.recruit-opening){visibility:hidden!important}
+html body :is(#hiring-story#hiring-story#hiring-story#hiring-story,#recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog) .recruit-opening{background:radial-gradient(ellipse at 50% 43%,#29446a,#0a182b 70%)!important;visibility:visible!important;opacity:1!important}
+html body :is(#hiring-story#hiring-story#hiring-story#hiring-story,#recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog) .recruit-opening p{position:static!important;color:#fff0ca!important;opacity:1!important;font:700 17px/1.5 system-ui,sans-serif!important;margin:0!important;background:none!important;text-align:center!important}
+html body :is(#hiring-story#hiring-story#hiring-story#hiring-story,#recruit-dialog#recruit-dialog#recruit-dialog#recruit-dialog) .recruit-opening button{position:static!important;min-height:44px!important;min-width:120px!important;padding:10px 20px!important;border:1px solid #9eacc0!important;border-radius:22px!important;background:#132b44!important;color:#ebdfc1!important;font:600 14px/1.4 system-ui,sans-serif!important;box-shadow:none!important;opacity:1!important}
