@@ -1,0 +1,52 @@
+[
+  {
+    "round": 1,
+    "viewport": [
+      320,
+      568
+    ],
+    "realSettingsAndPurchase": true,
+    "priceDebitedOnceAndPersisted": true,
+    "localizedOddsAndFocus": true
+  },
+  {
+    "round": 2,
+    "viewport": [
+      390,
+      844
+    ],
+    "realSettingsAndPurchase": true,
+    "priceDebitedOnceAndPersisted": true,
+    "localizedOddsAndFocus": true
+  },
+  {
+    "round": 3,
+    "viewport": [
+      430,
+      932
+    ],
+    "realSettingsAndPurchase": true,
+    "priceDebitedOnceAndPersisted": true,
+    "localizedOddsAndFocus": true
+  },
+  {
+    "round": 4,
+    "viewport": [
+      320,
+      568
+    ],
+    "realSettingsAndPurchase": true,
+    "priceDebitedOnceAndPersisted": true,
+    "localizedOddsAndFocus": true
+  },
+  {
+    "round": 5,
+    "viewport": [
+      390,
+      844
+    ],
+    "realSettingsAndPurchase": true,
+    "priceDebitedOnceAndPersisted": true,
+    "localizedOddsAndFocus": true
+  }
+]
