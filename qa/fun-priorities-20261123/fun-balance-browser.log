@@ -1,0 +1,14 @@
+test_guarantees_are_counted_and_survive_reload (test_balance.BalanceTests.test_guarantees_are_counted_and_survive_reload) ... ok
+test_invalid_merge_and_blocked_summon_never_grant_refund (test_balance.BalanceTests.test_invalid_merge_and_blocked_summon_never_grant_refund) ... ok
+test_late_reward_choices_fit_short_phone (test_balance.BalanceTests.test_late_reward_choices_fit_short_phone) ... ok
+test_late_rewards_bind_staff_and_equipment_without_spend (test_balance.BalanceTests.test_late_rewards_bind_staff_and_equipment_without_spend) ... ok
+test_legacy_coupon_converts_once_and_current_refund_survives_reload (test_balance.BalanceTests.test_legacy_coupon_converts_once_and_current_refund_survives_reload) ... ok
+test_merge_refund_is_immediate_and_price_stays_stable (test_balance.BalanceTests.test_merge_refund_is_immediate_and_price_stays_stable) ... ok
+test_rewards_increase_and_sp_keeps_up_with_summon_cost (test_balance.BalanceTests.test_rewards_increase_and_sp_keeps_up_with_summon_cost) ... ok
+test_speed_cycles_to_three_preserves_pause_and_reloads (test_balance.BalanceTests.test_speed_cycles_to_three_preserves_pause_and_reloads) ... ok
+test_unavailable_rewards_and_invalid_targets_do_not_consume_choice (test_balance.BalanceTests.test_unavailable_rewards_and_invalid_targets_do_not_consume_choice) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 34.872s
+
+OK

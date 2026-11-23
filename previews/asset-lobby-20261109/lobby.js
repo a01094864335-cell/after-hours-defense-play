@@ -2,7 +2,7 @@
 // Asset-first lobby. All game state and actions stay in the existing game modules.
 (()=>{
  if(!document.currentScript || !document.body || typeof document.body.attachShadow!=='function' || document.getElementById('asset-lobby-host'))return;
- const here=new URL('.',document.currentScript.src),asset=name=>name==='background.webp'&&document.body.classList.contains('asset-lobby-active')?new URL('../../assets/moonlight/lobby.webp',here).href:['resume.webp','panel-paper.webp'].includes(name)?new URL('../../assets/shared-chrome/paper.webp',here).href:new URL('assets/'+name,here).href;
+ const here=new URL('.',document.currentScript.src),asset=name=>name==='gobi.webp'&&document.body.classList.contains('asset-lobby-active')?new URL('../../assets/moonlight/gobi-lobby.webp',here).href:name==='background.webp'&&document.body.classList.contains('asset-lobby-active')?new URL('../../assets/moonlight/lobby.webp',here).href:['resume.webp','panel-paper.webp'].includes(name)?new URL('../../assets/shared-chrome/paper.webp',here).href:new URL('assets/'+name,here).href;
  const root=document.createElement('section');root.id='asset-lobby';root.setAttribute('aria-label','당직실');
  const local=s=>root.querySelector(s),game=s=>document.querySelector(s),t=value=>GameLanguage.t(value);
  const retiredArt=new Set(['panel-paper.webp','resume.webp','button-primary.webp']);

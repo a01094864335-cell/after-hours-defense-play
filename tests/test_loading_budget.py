@@ -10,7 +10,7 @@ class LoadingBudgetTests(unittest.TestCase):
         urls=p.evaluate("performance.getEntriesByType('resource').map(r=>r.name)")
         image_bytes=p.evaluate("performance.getEntriesByType('resource').filter(r=>/\\.(webp|png|svg)$/.test(new URL(r.name).pathname)).reduce((a,r)=>a+r.decodedBodySize,0)")
         # Check actual visible art, not a minimum payload that penalizes compression.
-        for name in ['assets/moonlight/lobby.webp','title-logo.webp','assets/gobi.webp']:
+        for name in ['assets/moonlight/lobby.webp','title-logo.webp','assets/moonlight/gobi-lobby.webp']:
             self.assertTrue(any(name in url for url in urls),name)
         faces=p.locator('#asset-lobby-host .a-member img')
         self.assertEqual(faces.count(),5)

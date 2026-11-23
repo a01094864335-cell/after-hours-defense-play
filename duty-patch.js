@@ -41,11 +41,23 @@ window.RewardRoulette=(()=>{
   if(!claim||!bonusPending||!rewardBundle)return;
   const active=rewardBundle,en=document.documentElement.lang.startsWith('en'),root=document.querySelector('#perk-options');
   const cards=active.offers.map(o=>document.querySelector('#perk-'+o.id));
-  document.querySelector('#perk').classList.add('reward-roulette');
+  const dialog=document.querySelector('#perk');dialog.classList.add('reward-roulette');dialog.classList.toggle('reward-choice',active.mode==='choice');status.hidden=false;claim.hidden=false;
+  if(active.mode==='choice'){
+   stop();bundle=active;ready=true;
+   dialog.querySelector('h2').textContent=en?'Choose your shift bonus':'당직 보너스 선택';
+   document.querySelector('#perk-intro').textContent=en?'Wave '+wave+' cleared · Choose one of three':wave+'웨이브 돌파 · 원하는 보상 1개 선택';
+   document.querySelector('#perk-note').textContent=en?'Your choice is saved. Strategies offer another choice; only one strategy per shift.':'선택 상태 저장 · 전략은 세부 선택 가능 · 당직 전략은 한 판에 1개';
+   cards.forEach((c,i)=>{c.disabled=!rewardEligible(active.offers[i]);c.tabIndex=0;c.dataset.lit=String(active.selection===i);c.dataset.winner='false';c.setAttribute('aria-pressed',String(active.selection===i));c.onclick=()=>selectRewardOffer(i)});
+   const selected=active.offers[active.selection];claim.disabled=!selected||!rewardEligible(selected);
+   claim.textContent=selected?.id==='build'?(en?'Choose a strategy':'전략 고르기'):(en?'Receive & continue':'선택한 보상 받기');
+   status.textContent=selected?(en?'Selected: ':'선택: ')+rewardCopy(selected)[0]:(en?'Pick the reward you need.':'필요한 보상을 눌러주세요.');
+   if(window.TacticalDuty?.choosingBuild()){window.TacticalDuty.showBuildChoices();status.hidden=true;claim.hidden=true}
+   return;
+  }
   document.querySelector('#perk h2').textContent=en?'Lucky shift bonus':'당직 보너스 룰렛';
   document.querySelector('#perk-intro').textContent=en?'Wave '+wave+' cleared · one prize, no blanks':wave+'웨이브 돌파 · 꽝 없이 보상 1개';
   document.querySelector('#perk-note').textContent=en?'Each ticket has a 1/3 chance. The result is saved; reloading cannot reroll it.':'각 보상 당첨 확률 1/3 · 추첨 결과 저장 · 새로고침해도 결과 유지';
-  for(const c of cards){c.disabled=true;c.tabIndex=-1;}
+  for(const c of cards){c.disabled=true;c.tabIndex=-1;c.removeAttribute('aria-pressed')}
   if(bundle!==active){stop();bundle=active;ready=false;saveActiveRun();}
   const paint=index=>cards.forEach((c,i)=>{c.dataset.lit=String(i===index);c.dataset.winner=String(ready&&i===active.winner)});
   const finish=()=>{if(bundle!==active||!bonusPending)return;ready=true;paint(active.winner);const copy=rewardCopy(active.offers[active.winner]);status.textContent=(en?'Winner! ':'당첨! ')+copy[0]+' · '+copy[1];claim.disabled=false;claim.textContent=en?'Receive & continue':'보상 받고 계속';};
@@ -55,7 +67,7 @@ window.RewardRoulette=(()=>{
   const tick=()=>{timer=null;if(bundle!==active||!bonusPending)return;paint(step%3);if(step++>=count){finish();return}timer=setTimeout(tick,65+step*8);};
   if(matchMedia('(prefers-reduced-motion: reduce)').matches){timer=setTimeout(finish,300)}else tick();
  }
- function take(){if(!ready||bundle!==rewardBundle||!bonusPending||!GameSession.canWrite())return false;const offer=bundle.offers[bundle.winner];const ok=choosePerk(offer.id);if(ok){stop();bundle=null;ready=false;}return ok;}
+ function take(){if(!ready||bundle!==rewardBundle||!bonusPending||!GameSession.canWrite())return false;const offer=bundle.offers[bundle.mode==='choice'?bundle.selection:bundle.winner];if(!offer)return false;if(bundle.mode==='choice'&&offer.id==='build'){const opened=window.TacticalDuty.showBuildChoices();if(opened){status.hidden=true;claim.hidden=true}return opened}const ok=choosePerk(offer.id);if(ok){stop();bundle=null;ready=false;}return ok;}
  if(typeof document.createElement==='function'){
   status=document.createElement('p');status.id='roulette-status';status.setAttribute('role','status');status.setAttribute('aria-live','polite');
   claim=document.createElement('button');claim.id='roulette-claim';claim.type='button';claim.onclick=take;

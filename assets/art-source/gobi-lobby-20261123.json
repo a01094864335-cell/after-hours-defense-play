@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-23",
+  "purpose": "Main lobby Gobi: natural clipboard grip, complete body and feet, amber/cool lighting, no white sticker contour.",
+  "generator": "image_gen",
+  "production": "assets/moonlight/gobi-lobby.webp",
+  "master": "assets/art-source/gobi-lobby-20261123.png",
+  "sourceReferences": [
+    "previews/asset-lobby-20261109/assets/gobi.webp",
+    "assets/moonlight/lobby.webp"
+  ],
+  "runtimeChanges": "Dock-height-relative pose and contact shadow; no edits to roster portraits or battle sheets.",
+  "files": {
+    "previews/asset-lobby-20261109/assets/gobi.webp": {
+      "sha256": "e5ec25e4a648efa5f5fc67bba28d5fee405a3df867879a2deef96109e9b32b1c",
+      "bytes": 86854
+    },
+    "assets/moonlight/lobby.webp": {
+      "sha256": "15993db82c94035a58800ddb11aa6f72dedab04ddb4de1bff7c098cab6959eb2",
+      "bytes": 93596
+    },
+    "assets/art-source/gobi-lobby-20261123.png": {
+      "sha256": "15cd076a6b70bcc12583cc1ad7fc24a05718b6072d50764c9352098cc9ee0da9",
+      "bytes": 2021740
+    },
+    "assets/moonlight/gobi-lobby.webp": {
+      "sha256": "3c38f7f98eb4e0b1067eb7385ad767ead70ab00a894249b87686eab4fe7e9a71",
+      "bytes": 56286
+    }
+  }
+}

@@ -1,0 +1,8 @@
+test_cashout_keeps_completed_wave_and_pays_once_after_reload (test_tactical_duty.TacticalDutyTests.test_cashout_keeps_completed_wave_and_pays_once_after_reload) ... ok
+test_planning_move_and_strategy_survive_resume (test_tactical_duty.TacticalDutyTests.test_planning_move_and_strategy_survive_resume) ... ok
+test_staff_practice_uses_real_skill_without_parent_save_changes (test_tactical_duty.TacticalDutyTests.test_staff_practice_uses_real_skill_without_parent_save_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 7.726s
+
+OK

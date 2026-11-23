@@ -6,6 +6,7 @@ const old=JSON.parse(fs.readFileSync(path.join(root,'release-manifest.json'))),f
 for(const track of ['lobby-night','night-shift','commander'])files.add('assets/audio/'+track+'.mp3');
 for(const f of ['dialog-layout.js','dialog-layout.css','index.html','game-audio.js','game-sfx.js','assets/audio/lobby-night.wav','assets/audio/night-shift.wav','assets/audio/commander.wav','intro-cinematic.css','player-profile.js','development.js','development.css','save-transfer.js','save-transfer-ui.js','story-loading.js'])files.add(f);
 for(const f of ['moonlight-ui.css','moonlight-ui.js','assets/moonlight/lobby.webp','assets/moonlight/shop.webp'])files.add(f);
+files.add('assets/moonlight/gobi-lobby.webp');
 files.add('enamel-ui.css');
 files.add('visual-pass.css');
 files.add('roomy-buttons.css');
@@ -40,7 +41,7 @@ files.add('story-art.css');
 files.add('story-fullscreen.css');
 files.add('story-fullscreen.js');
 files.add('rapid-summon.js');
-files.add('duty-patch.js');files.add('duty-patch.css');
+files.add('play-observations.js');files.add('duty-patch.js');files.add('duty-patch.css');
 files.add('designs/story-fullscreen-20261120/index.html');
 files.add('designs/story-fullscreen-20261120/selected.html');
 files.add('qa/design-compare-20261120/index.html');

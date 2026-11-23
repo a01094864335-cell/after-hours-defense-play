@@ -8,6 +8,10 @@ function trainingCost(level){return level>=TRAINING_MAX?0:Math.round((8+2*(level
 function staffTrainingMultiplier(level=trainingLevel('staff')){return 1+(level-1)*.8/29}
 const GRADE_POWER=Object.freeze([1,1.05,1.2,1.5,2,2.7,3.8]);
 function gradePower(pip){return GRADE_POWER[Math.max(1,Math.min(7,pip||1))-1]}
+// Direct basic hits grow separately; skills, burns and income retain their curve.
+const BASIC_GRADE_POWER=Object.freeze([1,1.05,1.4,2.1,3.1,4.8,7.6]);
+function basicGradePower(pip){return typeof tutorialMode!=='undefined'&&tutorialMode?gradePower(pip):BASIC_GRADE_POWER[Math.max(1,Math.min(7,pip||1))-1]}
+function mergeBasicRatio(a,b){if(!a||!b||a.type!==b.type||!kinds[a.type]?.damage||Math.max(a.pip,b.pip)>=7)return null;const pip=Math.max(a.pip,b.pip)+1;return pip*basicGradePower(pip)/(a.pip*basicGradePower(a.pip)+b.pip*basicGradePower(b.pip))}
 function enemyGrowth(base,early,late,w){return base*Math.pow(early,Math.min(w,15))*Math.pow(late,Math.max(0,w-15))}
 function staffPower(type){return (1+(levels[type]-1)*.45)*staffTrainingMultiplier()}
 function trainingIncome(u){const base=u.pip*(7+(levels[3]-1)*2)*(1+(trainingLevel('staff')-1)*.4/29);u.paydays=(u.paydays||0)+1;return Math.round((base+(u.paydays%5===0?u.pip*trainingTier():0))*100)/100}

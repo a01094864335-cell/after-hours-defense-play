@@ -1,0 +1,81 @@
+{
+  "baselineCommit": "84e71ed798fe319b5314119e97171a50b753be67",
+  "localRuntime": {
+    "passed": 3348,
+    "failed": 0
+  },
+  "browserNewScenariosPassed": 5,
+  "relatedBrowserPassed": {
+    "balance": 9,
+    "tactical": 3,
+    "rewards": 2,
+    "performance": 9,
+    "initialAssets": 3,
+    "loading": 1
+  },
+  "balance": {
+    "before": [
+      {
+        "level": 1,
+        "runs": 9,
+        "meanWave": 27.666666666666668,
+        "minWave": 22,
+        "maxWave": 30,
+        "censored": 0
+      },
+      {
+        "level": 10,
+        "runs": 9,
+        "meanWave": 27.88888888888889,
+        "minWave": 21,
+        "maxWave": 33,
+        "censored": 0
+      },
+      {
+        "level": 30,
+        "runs": 9,
+        "meanWave": 32.77777777777778,
+        "minWave": 25,
+        "maxWave": 40,
+        "censored": 0
+      }
+    ],
+    "after": [
+      {
+        "level": 1,
+        "runs": 9,
+        "meanWave": 29,
+        "minWave": 21,
+        "maxWave": 33,
+        "censored": 0
+      },
+      {
+        "level": 10,
+        "runs": 9,
+        "meanWave": 31.22222222222222,
+        "minWave": 23,
+        "maxWave": 38,
+        "censored": 0
+      },
+      {
+        "level": 30,
+        "runs": 9,
+        "meanWave": 38.111111111111114,
+        "minWave": 29,
+        "maxWave": 43,
+        "censored": 0
+      }
+    ],
+    "totalSimulatedRuns": 54,
+    "censored": 0,
+    "humanPlaytest": false
+  },
+  "releaseCITarget": {
+    "browserScenarios": 141,
+    "attemptsPerScenario": 10,
+    "totalAttempts": 1410
+  },
+  "lobbyProductionImageBytes": 56286,
+  "originRestriction": "Public host is blocked by this execution environment; official package browser checks and GitHub deployment checks are reported separately.",
+  "keyboardSelectionFocusPreserved": true
+}

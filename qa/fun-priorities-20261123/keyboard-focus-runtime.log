@@ -1,0 +1,21 @@
+✔ new fifth and fifteenth waves allow choice; other milestones keep their saved roulette (221.826042ms)
+✔ manual selection survives reload without reroll or wallet changes; only one award is possible (35.059231ms)
+✔ choice inputs reject missing ownership, bad indices and malformed saved modes atomically (50.887477ms)
+✔ previously saved wave-five winners remain roulette rather than being exchanged for new choices (33.664639ms)
+✔ all three strategies are reachable and economy retains its actual roster requirement (133.976221ms)
+✔ roulette strategy offers can include guard without bypassing the saved winning card (99.754243ms)
+✔ same-kind low-grade direct DPS is preserved; higher ranks retain a bounded space/skill tradeoff (32.769055ms)
+✔ the new basic curve reaches actual combat hits rather than only preview text (34.302531ms)
+✔ cleaner wet plus electrician grants exactly twenty percent and no extra stack from repeated wetting (29.392302ms)
+✔ wet expiry and save/resume keep the exact duration; invalid status cannot mutate the run (41.941969ms)
+✔ tutorial and shared hits cannot acquire cooperative bonuses (62.491304ms)
+✔ midgame checkpoints deduplicate and observations survive valid restores and reject invalid imports (57.928878ms)
+✔ fatal breaches shortly after a merge are recorded before the paid result is saved (82.690692ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1012.967466
