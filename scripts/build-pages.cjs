@@ -8,6 +8,7 @@ for(const f of ['dialog-layout.js','dialog-layout.css','index.html','game-audio.
 for(const f of ['moonlight-ui.css','moonlight-ui.js','assets/moonlight/lobby.webp','assets/moonlight/shop.webp'])files.add(f);
 files.add('assets/moonlight/gobi-lobby.webp');
 for(const f of ['recruit-gate-rush','recruit-gate-rush-wide','training-staff-buddy','training-staff-buddy-portrait','training-support-practice','training-support-practice-portrait'])files.add('assets/moonlight/'+f+'.webp');
+for(const f of ['shared-controls.js','shared-controls.css'])files.add(f);
 files.add('enamel-ui.css');
 files.add('visual-pass.css');
 files.add('roomy-buttons.css');

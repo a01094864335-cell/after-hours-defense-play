@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "close",
+    "label": "상점 닫기",
+    "width": 44,
+    "height": 44
+  },
+  {
+    "kind": "primary",
+    "label": "G열기 · 120 코인›",
+    "width": 362,
+    "height": 56
+  }
+]

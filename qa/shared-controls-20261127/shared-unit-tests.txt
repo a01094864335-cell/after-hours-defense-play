@@ -1,0 +1,17 @@
+✔ shared comic artwork is local, text-free and included in the Pages build (2.203277ms)
+✔ shared presentation preserves words on acknowledgement and forwards settings confirmation (0.47081ms)
+✔ plain modal headers are normalized before close enhancement; recruitment retains its actual heading (1.459491ms)
+✔ the text-free plaque stretches to long DOM headings without letter scaling (0.503949ms)
+✔ modal frames use a square scalable source and perk cards have explicit active and disabled surfaces (0.338233ms)
+✔ modal details group original controls and distinguish selection from destructive actions (0.32309ms)
+✔ shop opening refreshes canonical purchase availability after wallet changes (2.051421ms)
+✔ local touch audit keeps real roster and result controls at least 44px (0.707031ms)
+✔ repeated presentation refresh does not rewrite unchanged closed-dialog classes (17.232871ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 120.977904

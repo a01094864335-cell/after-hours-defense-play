@@ -1,0 +1,8 @@
+test_fullscreen_story_preserves_state_and_navigation (test_story_art.StoryArtTests.test_fullscreen_story_preserves_state_and_navigation) ... ok
+test_dynamic_dialog_icon_and_worded_action_remain_distinct (test_shared_controls.SharedControlsTests.test_dynamic_dialog_icon_and_worded_action_remain_distinct) ... ok
+test_native_identity_keyboard_and_form_semantics_survive_refresh (test_shared_controls.SharedControlsTests.test_native_identity_keyboard_and_form_semantics_survive_refresh) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 9.423s
+
+OK

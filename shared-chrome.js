@@ -5,13 +5,6 @@
  const base = new URL('.', document.currentScript.src);
  const url = name => new URL('assets/shared-chrome/' + name + '.svg', base).href;
  const sheets = new WeakSet();
- function icon(button, name) {
-  if (button.dataset.chromeIcon === name && button.querySelector('img')) return;
-  if (!button.hasAttribute('aria-label')) button.setAttribute('aria-label', button.textContent.trim() || (name === 'back' ? '뒤로' : '닫기'));
-  button.dataset.chromeIcon = name;
-  const image = document.createElement('img'); image.src = url(name); image.alt = ''; image.draggable = false;
-  button.replaceChildren(image); button.classList.add('shared-icon-button');
- }
  // Group existing controls without cloning them or taking ownership of their state.
  function group(parent, id, title, nodes) {
   if (!parent || parent.querySelector('#' + id)) return;
@@ -73,12 +66,8 @@
    title.setAttribute('role', 'heading'); title.setAttribute('aria-level', '2');
    if (title.parentElement.classList.contains('panel-scroll-body') && title.previousElementSibling) title.parentElement.prepend(title);
   }
-  // Only dismissal controls become icon buttons. Acknowledgement actions keep words.
-  const closeSelector = 'dialog.shared-paper-modal header [id$="-close"],dialog .sheet-head [id$="-close"],dialog .ui-dialog-header [id$="-close"],#recruit-close,[data-hire-close],.r-close,header .close';
-  for (const button of scope.querySelectorAll(closeSelector)) {
-   if (button.tagName === 'BUTTON') icon(button, 'close');
-  }
-  for (const button of scope.querySelectorAll('#roster-back,.r-back,header .back')) icon(button, 'back');
+  // Shared controls preserve native handlers and worded acknowledgements.
+  globalThis.GameControls?.enhance(scope);
   detailContent(scope);
   const menu = scope.querySelector('dialog#menu');
   if (menu && !menu.querySelector('#shared-menu-confirm')) {
@@ -112,10 +101,11 @@
    if (!shadow) continue;
    if (!sheets.has(shadow)) {
     sheets.add(shadow);
-    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = new URL('shared-chrome.css?v=paper-comic-4', base).href;
+    const link = document.createElement('link'); link.rel = 'stylesheet'; link.href = document.querySelector('link[href*="shared-chrome.css"]')?.href || new URL('shared-chrome.css?v=paper-comic-4', base).href;
     shadow.append(link);
     observer.observe(shadow, {childList:true,subtree:true});
    }
+   globalThis.GameControls?.mount(shadow);
    enhance(shadow);
   }
  }
