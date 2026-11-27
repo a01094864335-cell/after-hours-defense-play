@@ -1,0 +1,20 @@
+# 공통 버튼 컴포넌트 검수
+
+기준 main 및 비교 공개 버전: 9087b5b7f191e9353a92b98ccc067e0610b5a2c1.
+
+- shared-controls.js/css로 닫기·뒤로가기·기본·보조·위험 버튼 규칙을 통합.
+- 기존 DOM 노드와 핸들러, form type, 포커스, disabled/hidden, 게임 상태를 보존.
+- 문서와 Shadow DOM에 같은 버전 CSS 연결. 동적 모달에도 적용.
+- 기존 설정/스토리/화면별 중복 닫기 스킨 제거. 위치 및 게임 동작은 화면이 유지.
+- 가격·확률·보상·밸런스 변경 없음. main 병합/공개 배포 수행하지 않음.
+
+## 검증
+
+전체 Node 단위 테스트 3,355 PASS (`unit-tests.txt`).
+배포 산출물의 공통 UI/모바일/컴포넌트 브라우저 17 PASS (`browser-tests.txt`).
+스토리 3 PASS (`story-tests.txt`), 최종 스토리 스타일 정리 후 스토리 이동 및 컴포넌트 3 PASS (`final-story-component-tests.txt`, 일부 시나리오 중복).
+빌드 1,092파일, 새 JS/CSS 포함. build.json의 revision은 빌드 당시 기준 커밋이며 작업 변경을 포함한 로컬 산출물이다.
+
+320×568, 390×684, 390×844, 430×932 및 큰 글꼴 배치, 키보드 Enter/Escape, 실제 화면 이동, 구매 가능 상태, 저장 백업, 동적 모달, 폼 제출/비활성, 반복 적용 시 노드·포커스 보존을 검사.
+
+전후 캡처는 gallery.html 참조. 비교 캡처 스크립트: scripts/capture-shared-controls.cjs. 실제 모바일 기기 검증은 수행하지 않음. 사용법: docs/shared-controls.md.

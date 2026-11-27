@@ -1,0 +1,8 @@
+test_every_hiring_panel_updates_the_art_not_the_shared_close_icon (test_story_art.StoryArtTests.test_every_hiring_panel_updates_the_art_not_the_shared_close_icon) ... ok
+test_fullscreen_story_preserves_state_and_navigation (test_story_art.StoryArtTests.test_fullscreen_story_preserves_state_and_navigation) ... ok
+test_shop_and_battle_share_item_artwork (test_story_art.StoryArtTests.test_shop_and_battle_share_item_artwork) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 17.595s
+
+OK

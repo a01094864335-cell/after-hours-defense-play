@@ -1,0 +1,22 @@
+test_approved_equipment_and_deck_card_geometry (test_shared_chrome.SharedChromeTests.test_approved_equipment_and_deck_card_geometry) ... ok
+test_backup_and_recruitment_title_chrome (test_shared_chrome.SharedChromeTests.test_backup_and_recruitment_title_chrome) ... ok
+test_backup_edit_invalidates_preview_presentation (test_shared_chrome.SharedChromeTests.test_backup_edit_invalidates_preview_presentation) ... ok
+test_lobby_gift_remains_reachable_without_retired_daily_entry (test_shared_chrome.SharedChromeTests.test_lobby_gift_remains_reachable_without_retired_daily_entry) ... ok
+test_paper_settings_keeps_live_sliders_and_pinned_confirmation (test_shared_chrome.SharedChromeTests.test_paper_settings_keeps_live_sliders_and_pinned_confirmation) ... ok
+test_result_accordion_targets_are_at_least_44px (test_shared_chrome.SharedChromeTests.test_result_accordion_targets_are_at_least_44px) ... ok
+test_roster_touch_targets_and_real_content_fit (test_shared_chrome.SharedChromeTests.test_roster_touch_targets_and_real_content_fit) ... ok
+test_shared_navigation_and_close_across_mobile_sizes (test_shared_chrome.SharedChromeTests.test_shared_navigation_and_close_across_mobile_sizes) ... ok
+test_shop_refreshes_earned_balance_without_reload (test_shared_chrome.SharedChromeTests.test_shop_refreshes_earned_balance_without_reload) ... ok
+test_shop_wallet_contents_stay_inside_pill (test_shared_chrome.SharedChromeTests.test_shop_wallet_contents_stay_inside_pill) ... ok
+test_double_size_fonts_use_reachable_scrolling_fallbacks (test_single_screen_layouts.SingleScreenLayoutTests.test_double_size_fonts_use_reachable_scrolling_fallbacks) ... ok
+test_five_primary_screens_fit_both_short_phone_sizes (test_single_screen_layouts.SingleScreenLayoutTests.test_five_primary_screens_fit_both_short_phone_sizes) ... ok
+test_recruitment_rules_are_modal_and_purchase_keeps_native_economy (test_single_screen_layouts.SingleScreenLayoutTests.test_recruitment_rules_are_modal_and_purchase_keeps_native_economy) ... ok
+test_topic_tabs_support_click_arrows_home_end_and_hidden_panels (test_single_screen_layouts.SingleScreenLayoutTests.test_topic_tabs_support_click_arrows_home_end_and_hidden_panels) ... ok
+test_training_yard_loads_without_displacing_live_upgrade_and_navigation (test_single_screen_layouts.SingleScreenLayoutTests.test_training_yard_loads_without_displacing_live_upgrade_and_navigation) ... ok
+test_dynamic_dialog_icon_and_worded_action_remain_distinct (test_shared_controls.SharedControlsTests.test_dynamic_dialog_icon_and_worded_action_remain_distinct) ... ok
+test_native_identity_keyboard_and_form_semantics_survive_refresh (test_shared_controls.SharedControlsTests.test_native_identity_keyboard_and_form_semantics_survive_refresh) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 114.069s
+
+OK
