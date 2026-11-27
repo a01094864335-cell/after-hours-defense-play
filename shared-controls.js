@@ -23,8 +23,8 @@
     const english = document.documentElement.lang === 'en';
     button.setAttribute('aria-label', button.textContent.trim() || (kind === 'back' ? (english?'Back':'뒤로') : (english?'Close':'닫기')));
    }
-   button.classList.add('shared-icon-button');
-   button.dataset.chromeIcon = kind;
+   if (!button.classList.contains('shared-icon-button')) button.classList.add('shared-icon-button');
+   if (button.dataset.chromeIcon !== kind) button.dataset.chromeIcon = kind;
    const current = button.firstElementChild;
    const src = new URL('assets/shared-chrome/' + kind + '.svg', base).href;
    if (button.childNodes.length !== 1 || current?.tagName !== 'IMG' || current.src !== src) {

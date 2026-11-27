@@ -15,8 +15,9 @@ class SharedControlsTests(unittest.TestCase):
           b.dataset.controlKind='primary';form.append(b);document.body.append(form);
           let count=0;form.addEventListener('submit',e=>{e.preventDefault();count++});
           b.focus();const ref=b;for(let i=0;i<10;i++)GameControls.enhance(form);
+          const focused=document.activeElement===b;
           b.click();b.disabled=true;GameControls.enhance(form);b.click();
-          return {same:ref===form.firstChild,focused:document.activeElement===b,
+          return {same:ref===form.firstChild,focused,
             type:b.type,count,disabled:b.disabled,kind:b.dataset.uiControl};
         }""")
         self.assertEqual(result,dict(same=True,focused=True,type='submit',count=1,disabled=True,kind='primary'))
@@ -38,7 +39,13 @@ class SharedControlsTests(unittest.TestCase):
             self.assertTrue(button.locator('img').evaluate('(e)=>e.complete&&e.naturalWidth>0'))
             size=button.bounding_box();self.assertEqual(size['width'],44);self.assertEqual(size['height'],44)
             before=button.evaluate('(b)=>{window.keptIcon=b.firstChild;return getComputedStyle(b).backgroundColor}')
-            page.evaluate('GameControls.enhance(document)')
+            writes=button.evaluate('''(b)=>{
+              const observer=new MutationObserver(()=>{});
+              observer.observe(b,{attributes:true,childList:true,subtree:true});
+              for(let i=0;i<5;i++)GameControls.enhance(document);
+              const count=observer.takeRecords().length;observer.disconnect();return count;
+            }''')
+            self.assertEqual(writes,0)
             self.assertTrue(button.evaluate('(b)=>b.firstChild===window.keptIcon'))
             button.focus();page.keyboard.press('Enter')
             self.assertFalse(page.locator('#component-test').evaluate('(d)=>d.open'))
